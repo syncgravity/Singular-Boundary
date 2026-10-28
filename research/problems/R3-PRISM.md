@@ -1,15 +1,16 @@
 # R3-PRISM — relative Wilson partition insertion
 
-**2026-10-28 recovery correction:** The original 14-inserted-temporal-face **Penrose Q14** support, canonical Z5 labels, complete three-periodic oriented incidence, retained 54-face Bianchi fill and 54x101 fractional-cover certificate have now been recovered. [See exact source evidence](../../docs/evidence/R3_Q14_HISTORICAL_RECOVERY_2026-10-28.md).
+## Updated 2026-10-28 theorem recovery
 
-This is a **different claim** from certifying the older twelve-prism / 37-independent-link insertion and its conditioned boundary partition; equivalence remains unproved. For the recovered Q14:
-- 14 inserted faces, 36 supporting links, 62 affected retained faces.
-- 54 Bianchi-fill faces, **10 outside** the 62-face affected set; previous F⊂A(H) shortcut invalid.
-- Exact full-fill fractional-cover optimum 22, 40 positively weighted links, 103 retained star faces (49 leakage).
-- `lambda E S_fill <= 33 + lambda Σ w_e E m_e`; **frustration control remains open**.
-- Historical Bianchi bound `S_Q <= 44 S_fill` and noncommutative source audit recorded; independently complete based-word proof still to review.
-- Elementary 62x62 B has diagonal 1 and reported rho≈4; no strict contraction from this B.
+**CLOSED for the original Q14 *unconditioned* full finite-volume, stationary-completion, temporal-deletion Wilson model:** [historical SU(2) transfer theorem](../theorems/R3_STATIONARY_TEMPORAL_DELETION_2026-10-27.md). The original Q14 source sets \`R=all_faces-Q\`, Q contains 14 temporal faces in two of three periodic slabs, and the completed geometry/couplings are time-stationary. For homogeneous lambda,
+\[
+-\log(Z_{\mathrm{completed}}/Z_{\mathrm{Q14\ cavity}})
+\le21\log(1+\lambda)+14[\log(6\pi)+1/2].
+\]
+This is an **all-links-integrated** comparison, not pointwise for exterior boundary values.
 
-[Finite-block frustration-gap theorem](../theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md) remains a separate conditional theorem, not evidence that arbitrary exteriors on this Q14 block satisfy its zero-frustration hypothesis. The Wilson Hamiltonian R3-IR and quantum R2 mass-gap gates remain open.
+**Still open:** (i) identity with the older four-spatial-face / twelve-prism / 37-independent-link historical *fixed-boundary* model; (ii) arbitrary nonstationary **completed** three-slab masks, whose localized negative-bridge overlap is not bounded; (iii) arbitrary spatial-face insertions; (iv) proof that this Euclidean insertion result yields interacting Hamiltonian uniform IR spectral coercivity or quantum spatial continuum. See [14-archive reconciliation](../../docs/evidence/R3_FOURTEEN_ARCHIVE_RECONCILIATION_2026-10-28.md).
 
-**Next:** certify the old twelve-prism/Q14 relation, analyze full retained face-word peeling and boundary leakage; prove a genuinely interacting nonabelian or correlated Gibbs estimate rather than repeating historical Monte Carlo.
+**Preserved separate Q14 geometry and local analytic results:** canonical 14 faces, 36 support links, 62 affected retained faces, 54 Bianchi fill; rational fractional-cover optimum 22; six private-edge removals; 28 exposed fill faces and pointwise exterior leakage. The Ward/collar route does *not* provide general local raw-energy suppression, and its remaining Gibbs-staple problem is **not needed to prove the restricted stationary Q14 ratio**. Never infer fixed-boundary uniformity from an unconditioned trace estimate.
+
+No MCMC was rerun. The original source archives remain immutable and are not yet uploaded to GitHub.
