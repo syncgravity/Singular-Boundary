@@ -1,0 +1,30 @@
+# R3-IR — independent three-priority audit (2026-10-28)
+
+**Evidence:** published-theorem audit plus exact finite-model proofs, NOT an interacting continuum mass-gap proof. No historical Monte Carlo replay and no modifications to originals.
+
+## Priority 1: Yarotsky 2004 spectral-gap authentication
+Henheik, Teufel & Wessel (2022), DOI 10.1007/s11005-021-01494-y, was directly read: Definition 1 allows arbitrary finite subsets of Z^ν, possibly infinite-dimensional local Hilbert spaces, unbounded on-site positive operators with a common gap, and bounded finite-range site-dependent interactions. Its Theorem 3 proves exponential local perturbation stability, not time-connected decay or a spectral gap. Its Theorem 7 is the separate Yarotsky **2005** bulk uniqueness result. The authors ATTRIBUTE a volume-independent spectral gap to Yarotsky, *Perturbations of ground states in weakly interacting quantum spin systems*, J. Math. Phys. 45, 2134-2152 (2004), DOI 10.1063/1.1705718, but explicitly note a finite-boundary difference. The 2004 original abstract is accessible; its **complete original primary text was not available** for full assessment of the nonuniform finite-volume gap, free boundaries and unbounded local domains. Hence the Penrose fixed-scale interacting gap remains **source-supported, pending original primary theorem audit**. The already proved Z5 embedded SU2 link rotor satisfies the 2022 weak-locality model with on-site gap g=3a_*/4, interaction range two and ||Φ_x||≤4b_*.
+
+## Priority 2: theorem SC-1 — direct smallness hypothesis actually fails under refinement
+**Independently proved**, for the specified geometric Hamiltonian coefficients (actual Stage 26 identity separately pending):
+a_e(a)=g3²/(2w_e), b_f(a)=4/(g3²a²σ_f), with σ_- =sin(pi/5), σ_+=sin(2pi/5), w_e in [σ_-/2,σ_+], φ=σ_+/σ_-=(1+sqrt(5))/2. Let g(a)=3 min_e a_e/4 and assign each plaquette to an incident link site, defining positive anchored Φ_x=Σ_{f:x(f)=x}b_f(1-p_f). On any patch containing a complete face, for ANY such anchoring,
+
+(32/(3φ))/(g3²a)^2 <= sup_x||Φ_x||/g(a) <= (128φ/3)/(g3²a)^2.
+
+Proof: g in [3g3²/(8σ_+),3g3²/(4σ_-)]; each nonnegative plaquette has norm exactly 2b_f, so the anchored norm is at least 2b_f >= 8/(g3²a²σ_+); at most two faces per link anchor give norm at most 4b_* <=16/(g3²a²σ_-). Divide by the respective g bounds. Thus the actual normalized weak-interaction strength diverges at fixed g3² as a→0. This **rules out a direct application of small-norm weak-perturbation stability throughout the physical refinement trajectory**; it does not rule out a physical mass gap, operator renormalization or other nonperturbative estimates.
+
+## Priority 3: exact source-inserted bridge, observability and first moment
+**SI-1 (independently proved).** For a finite positive self-adjoint trace-class transfer T with simple leading eigenvalue λ0 and bounded self-adjoint source A, define Z_N(J0,Jn)=Tr(T^(N-n) exp(J0 A) T^n exp(Jn A)), 0<n<N. The mixed logarithmic derivative at zero equals
+Tr(T^(N-n) A T^n A)/Tr(T^N) - [Tr(T^N A)/Tr(T^N)]².
+For N→∞ at fixed n it converges to the vacuum-connected C_A(n)=<QAΩ,(T/λ0)^n QAΩ>, with nonnegative spectral weights. An uninserted partition comparison gives no such mixed-derivative bound.
+
+**Exact rational logical counterexample.** With T=diag(1,1/2,1/4) and A=|0><2|+|2><0|, the finite N=6,n=2 mixed derivative is 272/4161; as N→∞ C_A(n)=(1/4)^n, while a lower excitation exists with transfer eigenvalue 1/2 and is invisible to A. This is an abstract matrix witness, NOT an SU2 gauge counterexample.
+
+**SI-2 (independently proved spectral criterion).** At each finite compact physical gauge-link Hilbert space with simple strictly positive vacuum Ω, if EVERY bounded gauge-invariant multiplication observable A has a model-derived bound C_A(t)≤C_A^* exp(-mt) for all t≥0 with common m>0 and a finite source-dependent prefactor C_A^* independent of t, then H−E0≥mQ. For otherwise positive spectral measure below m gives a slower tail, a contradiction; bounded invariant A times Ω are dense. No separate quantitative Wilson frame is needed when this entire observable class is controlled. A finite collection of measured scalar channels does not satisfy the premise. Assuming decay rather than deriving it would be circular; Wilson-loop-only algebraic and winding/center completeness still need proof.
+
+**SI-3 (independently proved f-sum/time-freezing consequence).** For bounded real invariant multiplication A, V_A=||QAΩ||², M1(A)=<QAΩ,(H−E0)QAΩ>=Σ_e a_e ∫|∇_e A|²Ω²dU. Hence 0≤V_A−C_A(t)≤tM1(A). A separately proved gap m implies V_A≤M1(A)/m. For physical-area bare Wilson average W_D=Σ_{f∈D}(A_f/Area_D)p_f and the declared Penrose coefficients, M1(W_D)≤2φ g3²a²/Area_D. Thus 0≤V_D−C_D(t)≤2φ g3²t a²/Area_D and, CONDITIONALLY on a common gap m, V_D≤2φ g3²a²/(m Area_D). This rechecks historical S1 and gives a fixed-time consequence. Persistent nonzero bare variance would obstruct a uniform gap; a surviving gap forces this bare variance to vanish. A rescaled source (sqrt(Area_D)/a)(W_D−<W_D>) has uniformly bounded M1 but has no proved continuum existence.
+
+## R2 and genuine next proof
+The fixed-graph time semigroup and geometric isotropy are NOT quantum spatial continuum reconstruction. The remaining gates are: (i) verify literal Stage7/26 source couplings and reflection-positive temporal seam, (ii) construct normalized gauge-invariant continuum fields with Schwinger convergence, (iii) OS-positive Hilbert-space reconstruction and nontriviality, (iv) control boundary/center sectors, and (v) derive a model-based all-scale common source-inserted decay rate along the strong-magnetic trajectory for a dense family. The latter is the real interacting spectrum obligation. It cannot import the failed weak-interaction condition, an assumed mixing estimate, or a gap-strength frame. No 2+1D result is claimed to settle 3+1D Yang-Mills.
+
+Exact rational/symbolic audit is in scripts/audit/verify_three_priority_gates.py. Historical source data were not regenerated.
