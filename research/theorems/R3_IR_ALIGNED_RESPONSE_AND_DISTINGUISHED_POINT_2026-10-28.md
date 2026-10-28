@@ -63,3 +63,13 @@ Thus even a **uniform positive gap** cannot prevent an h³-wide variance spike w
 - **Most productive next theorem:** bound the **aligned third-source inverse-energy response**, equivalently ∂_tV_h(t), near t=0 by o(h⁻³), from actual nonlinear Wilson dynamics without assuming a gap-equivalent mixing estimate. Alternatively derive a direct fixed-coupling variance estimate. The exact toy obstruction requires an argument using SU(2) Wilson locality beyond operator positivity and spectral concavity alone.
 
 Reproducibility: scripts/audit/verify_aligned_response.py, exact symbolic Kato, susceptibility, h-scaling and two-level avoided-crossing checks, no Monte Carlo. Preserves historical binary/source artifacts and earlier claims with explicit corrections.
+## Theorem AR-5 — Exact aligned third-source response identity
+
+For the centered multiplier A_c(t)=A_h−〈A_h〉_t, differentiating the normalized ground vector in the parallel-phase gauge gives Ω_t' =−K_t⁻¹Q_t (∂_tH_h)Ω_t. As A_h itself is parameter independent,
+V_h'(t)=−2 Re〈Q_t A_c(t)² Ω_t,K_t⁻¹Q_t(∂_tH_h)Ω_t〉.
+By the exact source alignment ∂_tH_h−〈∂_tH_h〉=−h⁻³ A_c,
+**h³ V_h'(t)=2 Re〈Q_t A_c(t)² Ω_t,K_t⁻¹ Q_t A_c(t)Ω_t〉.**
+
+The RHS is a time-integrated connected **three-source** spectral response, not an assumed transfer contraction: K_t⁻¹Q_t=∫₀^∞e^(−uK_t)Q_t du at each finite regulator. A model-derived sup_{|t|≤τ}|h³V_h'(t)|→0 (uniform in the prescribed finite-physical-area class) would be sufficient by AR-3 to conclude V_h(0)→0. It is NOT proved by a first moment, vacuum uniqueness, or analyticity at fixed regulator. The exact positive two-level model has sup |h³V'|=3sqrt(3)/(8δ), demonstrating why merely bounding this rescaled response by O(1) cannot force fixed-coupling collapse.
+
+**Scope correction:** Constants involving F_hh²≤A₀ are uniform under *mesh refinement at bounded total physical area*, not under an infinite-volume limit with A₀→∞. The nonlinear continuum and uniform infinite-volume spectral gap remain open.
