@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+# Raw historical assets stay outside normal Git until LFS storage is verified.
+data/raw/
