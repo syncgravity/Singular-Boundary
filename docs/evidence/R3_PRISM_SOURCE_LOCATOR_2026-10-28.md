@@ -1,0 +1,11 @@
+# R3-PRISM historical definition: recovery status, 2026-10-28
+
+The archived \`Branch · Branch · Compare Continuum Mass Gaps.txt\` (SHA-256 \`b75a371a07e29826432fde37e573cf00f15e130260d889997729083f2fcd8496\`) describes a four-spatial-plaquette three-step twelve-prism complex and a 37-independent-link Haar bound with coefficient \(111/2\), but **does not give** oriented face words, exact \(Q\), cavity \(C\), and frozen/integrated boundary assignment.
+
+The 602-file local archival tree was searched for twelve-/three-step prisms, numbered inserted faces, fixed or integrated link assignments, and insertion source conventions. The October 28 mathematical notes explicitly identify this historical definition as missing. The 52-face square-grid control is not the Penrose complex; the Stage 26 full oriented incidence is production geometry and its empty Q/fixed sets are **not** the historical insertion.
+
+**Unverified lead, not primary evidence:** earlier discussion described a separately constructed candidate with \(Q=\{13,18,22,25,26,29,32,37\}\), 37 gauge-fixed independent link coordinates, a 26-link repair region, and a 27-link collar including edge 45. No matching original numbered-incidence certificate is present in the recovered local source tree. It must not be labeled the historical twelve-prism geometry.
+
+**Exact source needed:** twelve prism IDs/four Penrose spatial face IDs, oriented attaching words for spatial/temporal faces, \(C,Q\), the actual independent/fixed link list and admissible exterior holonomies, action/coupling normalization, temporal identifications, and whether the intended ratio conditions exterior pointwise or integrates exterior under the cavity Gibbs law.
+
+**Gate before proof:** apply the separate two-sided frustration-gap theorem to the **verified original** block and establish whether \(\Delta(\eta)=0\) for all admitted exteriors, or pursue an annealed near-flat event/collar transport. Do not reconstruct an alternative prism silently or repeat Stage 19–26 Monte Carlo.

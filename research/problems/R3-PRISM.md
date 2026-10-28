@@ -1,7 +1,9 @@
 # R3-PRISM — Historical relative partition insertion
 
-**Status:** Historical definition not yet located in verified primary source. This is a retrieval obligation, not authorization to recreate the prism geometry.
+**2026-10-28 status:** The exact historical four-spatial-face / three-step twelve-prism insertion geometry and boundary convention remain *source-unlocated*. An earlier 37-link global Haar estimate and a separately constructed eight-inserted-face candidate are **not** original-incidence certification. Preserve that distinction.
 
-Find the exact source for: twelve 3-step Penrose prism labels and anchor selection; face orientation; cavity `C`; inserted set `Q`; fixed versus integrated link partition; boundary conditioning; Wilson couplings; the precise ratio `Z_(C+Q)/Z_C`; and any theorem relating this to the separate Hamiltonian R3-IR line.
+**New theorem-level development:** [two-sided finite-block frustration-gap test](../theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md). For a specified *finite* Wilson block with independent SU(2) Haar links, the large-coupling insertion ratio has rate \(\Delta(\eta)\), the difference of inserted and cavity minimum actions. A pointwise logarithmic lower comparison at fixed exterior holds exactly when \(\Delta=0\); a support-local uniform comparison additionally needs \(m,n=O(|Q|)\) and uniform admitted-boundary compatibility. This does **not** establish those hypotheses for the Penrose object.
 
-**Guardrail:** `penrose_stage26_full_incidence.json` is exploratory full-simulation incidence; it has empty inserted/fixed sets, and an unreliable `partition_certified` marker. Never label it the historical twelve-prism partition solely on that export.
+**Recovery dependency:** [exact source locator](../../docs/evidence/R3_PRISM_SOURCE_LOCATOR_2026-10-28.md). Need oriented face words, actual Q, cavity C, fixed/integrated links, boundary holonomy class, normalized Wilson action, and pointwise-versus-annealed definition. The separate Hamiltonian R3-IR and quantum R2 gates remain open; a scalar partition-ratio estimate does not imply a physical gap.
+
+**Guardrail:** The known Stage 26 incidence exporter has empty inserted/fixed index sets and an unreliable partition_certified marker. Never assign the full simulated face list to the original twelve-prism R3 ratio or repeat historical Monte Carlo to fill missing sources.

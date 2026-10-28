@@ -1,9 +1,10 @@
 claim_id,title,program,kind,primary_source,status,notes
 R3-PRISM-001,historical twelve-prism relative Wilson insertion,R3-PRISM,historical definition,unknown,missing-original-location,not recovered / do not infer
+R3-PRISM-002,finite-block frustration-gap two-sided estimate,R3-PRISM,finite theorem,research/theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md,derived-with-proof / original-geometry-unverified,Pointwise criterion only; no Penrose R3 closure
 R3-IR-001,Hamiltonian neutral-sector uniform IR estimate,R3-IR,theorem target,R3_THEOREM_OBSTRUCTION_AND_MULTISCALE_GATE.md,open,Source explicitly states open
 R3-IR-002,isolated SU(2) character blocking and first source insertion,R3-IR,finite theorem,FORMAL_CHARACTER_BLOCKING_AND_R2_AUDIT.md,source-asserted proved,Only stated local subcomplex
 R3-IR-003,strict local bounded-diameter Wilson-frame no-go,R3-IR,obstruction,FORMAL_NOTE.md,source-asserted proved,Electric reference and stated extensions
 R3-IR-004,full-measure finite-regulator cumulant bound,R3-IR,finite theorem,R3_full_measure_cumulant_2026_10_26.zip,source-asserted proved,Recheck exact hypotheses at review
 R2-001,fixed-spatial-graph time-continuum transfer limit,R2,theorem,FORMAL_CHARACTER_BLOCKING_AND_R2_AUDIT.md,source-asserted proved,Specified normalization only
 R2-002,quantum Penrose spatial continuum and uniform gap,R2,theorem target,FORMAL_R3_R2_PROOF_AUDIT.md,open,No full continuum claim
-D1-001,Stage 26 production Wilson-action source certificate,D1,code audit,Penrose_YM_Stage7_Large_Matched_Pilot.zip,not executed,Stage 7 recovered; audit still due
+D1-001,Stage 26 production Wilson-action source certificate,D1,code audit,Penrose_YM_Stage7_Large_Matched_Pilot.zip,source-to-incidence verified,Deterministic action correspondence verified 2026-10-28; transfer and continuum distinct
