@@ -1,0 +1,21 @@
+file,sha256,bytes,python_ast,archive_io,writes,flags,original_provenance
+verify.py,26615a3f3eeccb5ab0670794a69f17677a360d64ae743b86fde7a0f2b4aab9a5,2013,PASS,,np.savez,,unmatched
+verify (1).py,df559625a9751743baa183ed547b4ca93ee9278cc008808b4842d1afe5a314bd,2839,PASS,,json.dump;np.savez;open,,unmatched
+verify (2).py,4e214cdfa33dd880183feb19c18ff32dd6e3ea666cd5db48c1185d5b1c1668e7,1015,PASS,np.load,,allow_pickle=True,unmatched
+verify (3).py,285b49dd800e24da56ef5cf3fc0a5318058f2a6202576618d732f404a12e1e44,1158,PASS,np.load,json.dump;open,allow_pickle=True,unmatched
+verify (4).py,a9de0f0e954a13ffdc483a0afb935e8112cf314319dbe2a68cd1cf09f6bc27d7,594,PASS,,,,unmatched
+verify (5).py,b2cceaaf06c695818e05f8db1ada890dc8b7ad181b2e06aa36fced6e2f71d899,1608,PASS,np.load,json.dump;open,allow_pickle=True,unmatched
+verify (6).py,e00facb85d411ad969216f2d165a1f95c574b21f241cca4c5ab478b46e04582c,3001,PASS,,json.dump;np.savez;open,,unmatched
+verify (7).py,3b01a4cf108a952e4da3e2124ab5da98d0f922d3bd21276c9bf5d5e2b2b76049,3322,PASS,,json.dump;np.savez;open,,unmatched
+verify (8).py,0bc8280a335d52295dc137c94a12d2fa95d27bd2356d503eebf0a27765666e04,2305,PASS,np.load,json.dump;np.savez;open,,unmatched
+verify (9).py,4de3438fc8229063f731ba6ff50b93392d339634c506e4c6f942fc5d2f5d3233,2639,PASS,np.load,json.dump;open,,unmatched
+verify (10).py,837cd47968b4d8d19d2e71408b23134c78ba47676d2477b9901e4fd49d6b59e9,4053,PASS,np.load,json.dump;open,,unmatched
+verify (11).py,6a6f4458c584ba7657ede0b3a39c07ea67748b784ec5358f8acfedfe7d9335e8,3908,PASS,np.load,(out / 'certificate.json').write_text,,unmatched
+verify (12).py,cbe89cccc2ff0debfb3769a7856a85380564021518814a7946eed73de0e20208,2444,PASS,np.load,json.dump;open,,unmatched
+verify (13).py,49168a93342cf13ba92410067ba01ebcf7b15a6a66fa8e41a3fc5f7f1c356abc,3412,PASS,np.load,json.dump;np.savez_compressed;open,vacuous assert: or True,unmatched
+verify (14).py,1eb098ffd26d059eccd1116c6f2ac3ffd1f328962dffe32f8fbede59b2f73d95,2598,PASS,np.load,(root / 'certificate.json').write_text;np.savez_compressed,,unmatched
+verify (15).py,f24b6cdcf5362d83950e4275042526eb031ce0026b7ba80a25199021d85dc3ed,1446,PASS,np.load,(root / 'certificate.json').write_text,,unmatched
+verify (16).py,45322cc6cffd283d6ea76616aeb498ccf8f802e4505f9480d9f910f7c3fbefe8,1868,PASS,,(P / 'certificate.json').write_text,,unmatched
+verify (17).py,32efb5612f956b057a8078337fea7a172fda129598ad79ccbcb55a2ecbcc1234,1669,PASS,np.load,(root / 'certificate.json').write_text,,unmatched
+verify (18).py,1a725e246daadd7c2c620853f0b5bca7320c5849daa51cc0d7ffcce131c41856,2510,PASS,,(out / 'certificate.json').write_text;np.savez_compressed,,unmatched
+verify (19).py,c595a8b340e1e74b01218c1d5654f53c65d81a24f1acf20d5380b37de7d612ac,4980,PASS,np.load,(ROOT / 'certificate.json').write_text;np.savez_compressed,,unmatched
