@@ -1,0 +1,6 @@
+# Future binary research assets; requires a working git-lfs client and verified remote LFS uploads.
+data/raw/** filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.jsonl.gz filter=lfs diff=lfs merge=lfs -text
