@@ -1,6 +1,10 @@
 claim_id,title,program,kind,primary_source,status,notes
-R3-PRISM-001,historical twelve-prism relative Wilson insertion,R3-PRISM,historical definition,unknown,missing-original-location,not recovered / do not infer
-R3-PRISM-002,finite-block frustration-gap two-sided estimate,R3-PRISM,finite theorem,research/theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md,derived-with-proof / original-geometry-unverified,Pointwise criterion only; no Penrose R3 closure
+R3-PRISM-001,original Penrose Q14 support labels/word incidence,R3-PRISM,provenance,R3_recovered_original_2026_10_27_bundle.zip;R3_historical_wordlevel_2026_10_27_bundle.zip,source-recovered / read-only cross-verified,Three seed rhombi and slabs 0/1; Q14 H36 A62 F54
+R3-PRISM-002,finite-block frustration-gap two-sided estimate,R3-PRISM,finite theorem,research/theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md,derived-with-proof / original-boundary-unverified,Pointwise criterion only; no Penrose R3 closure
+R3-PRISM-003,54-fill fractional link cover optimum 22,R3-PRISM,finite rational certificate,R3_Q14_full_cover_2026_10_27_bundle.zip,independently witness-checked,Four 54x101 matrices; 40 selected links; 49 star leakage faces
+R3-PRISM-004,original older twelve-prism/37-link correspondence and boundary,R3-PRISM,historical definition,Branch Compare Continuum Mass Gaps.txt,open-Q14-equivalence,Do not identify automatically with Q14
+R3-PRISM-005,original Q14 Bianchi energetic coefficient 44,R3-PRISM,finite nonabelian claim,R3_recovered_original_2026_10_27_bundle.zip,source-asserted / full-word-review-pending,14-face peeling and 54 retained fill; 44 source-reported
+R3-PRISM-006,uniform Gibbs control of Q14 staple minimum,R3-PRISM,theorem target,R3_Q14_full_cover_2026_10_27_bundle.zip,open,Cover only proves 33 plus unsuppressed frustration
 R3-IR-001,Hamiltonian neutral-sector uniform IR estimate,R3-IR,theorem target,R3_THEOREM_OBSTRUCTION_AND_MULTISCALE_GATE.md,open,Source explicitly states open
 R3-IR-002,isolated SU(2) character blocking and first source insertion,R3-IR,finite theorem,FORMAL_CHARACTER_BLOCKING_AND_R2_AUDIT.md,source-asserted proved,Only stated local subcomplex
 R3-IR-003,strict local bounded-diameter Wilson-frame no-go,R3-IR,obstruction,FORMAL_NOTE.md,source-asserted proved,Electric reference and stated extensions

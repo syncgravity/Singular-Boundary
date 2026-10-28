@@ -1,11 +1,16 @@
-# R3-PRISM historical definition: recovery status, 2026-10-28
+# R3-PRISM historical incidence locator — corrected after Q14 recovery
 
-The archived \`Branch · Branch · Compare Continuum Mass Gaps.txt\` (SHA-256 \`b75a371a07e29826432fde37e573cf00f15e130260d889997729083f2fcd8496\`) describes a four-spatial-plaquette three-step twelve-prism complex and a 37-independent-link Haar bound with coefficient \(111/2\), but **does not give** oriented face words, exact \(Q\), cavity \(C\), and frozen/integrated boundary assignment.
+**Partially resolved.** The earlier blanket statement “historical Q insertion missing” is **superseded for the independently archived Q14 construction**.
 
-The 602-file local archival tree was searched for twelve-/three-step prisms, numbered inserted faces, fixed or integrated link assignments, and insertion source conventions. The October 28 mathematical notes explicitly identify this historical definition as missing. The 52-face square-grid control is not the Penrose complex; the Stage 26 full oriented incidence is production geometry and its empty Q/fixed sets are **not** the historical insertion.
+## Recovered
 
-**Unverified lead, not primary evidence:** earlier discussion described a separately constructed candidate with \(Q=\{13,18,22,25,26,29,32,37\}\), 37 gauge-fixed independent link coordinates, a 26-link repair region, and a 27-link collar including edge 45. No matching original numbered-incidence certificate is present in the recovered local source tree. It must not be labeled the historical twelve-prism geometry.
+- Original Q14 seed/source: `R3_recovered_original_2026_10_27_bundle.zip` → `R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py` and `HISTORICAL_Q14_CANONICAL.json`.
+- Actual historical canonical face labels: `R3_historical_wordlevel_2026_10_27_bundle.zip` → `historical_Q_labels.json`, four word-level `certificate_radius_*.json` files with the **complete oriented spacetime words and retained stars**.
+- Exact full 54-fill link-cover incidence and rational primal/dual witnesses: `R3_Q14_full_cover_2026_10_27_bundle.zip` → four `cover_radius_*.json`.
+- Counts and source correspondence: Q=14, H=36, A(H)=62, fill F=54, F outside A(H)=10; four radii exact word/cover correspondence; optimal fractional cover 22.
 
-**Exact source needed:** twelve prism IDs/four Penrose spatial face IDs, oriented attaching words for spatial/temporal faces, \(C,Q\), the actual independent/fixed link list and admissible exterior holonomies, action/coupling normalization, temporal identifications, and whether the intended ratio conditions exterior pointwise or integrates exterior under the cavity Gibbs law.
+## Still separate/unresolved
 
-**Gate before proof:** apply the separate two-sided frustration-gap theorem to the **verified original** block and establish whether \(\Delta(\eta)=0\) for all admitted exteriors, or pursue an annealed near-flat event/collar transport. Do not reconstruct an alternative prism silently or repeat Stage 19–26 Monte Carlo.
+The older four-spatial-rhombus × three-time-step **twelve-prism / 37-independent-link** object has not been proven identical to this Q14 construction. Neither a pointwise fixed-exterior partition nor an annealed global Wilson partition theorem is automatically specified by Q14's `R=all faces minus Q` code. A definitive comparison needs the older prism's original face words, boundary/fixed link indices, and a source-level identification map. A candidate eight-face insertion Q=`{13,18,22,25,26,29,32,37}` is a different local example.
+
+**Do not reconstruct the originals from counts alone.** Do not identify illustrative Q14 (H=35, A=53) with original Q14 (H=36, A=62). Further source-linked findings: [Q14 historical audit](R3_Q14_HISTORICAL_RECOVERY_2026-10-28.md).
