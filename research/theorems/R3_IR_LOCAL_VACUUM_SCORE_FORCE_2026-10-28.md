@@ -32,7 +32,7 @@ This is a **localized score-Fisher bound** of the true nonlinear vacuum, not a g
 
 The exact SU(2) fundamental Casimir gives `Δ_e p_f=−(3/4)p_f` on each boundary link e of f and `|∇_e p_f|²=(1-p_f²)/4≤d_f/2`. Therefore
 
-\[ \boxed{\ \mathcal L Y_h=D_h+F_h,\quad D_h=\frac{3h}{4}\sum_{f∈D}q_f\sum_{e∈∂f}a_ep_f,\quad F_h=-2\sum_{e∈S}a_e\nabla_e\log\Omega\cdot\nabla_eY_h.\ } \tag{VF-2}\]
+\[ \boxed{\ \mathcal L Y_h=D_h+F_h,\quad D_h=\frac{3h}{4}\sum_{f∈D}q_f\sum_{e∈∂f}a_ep_f,\quad F_h=+2\sum_{e∈S}a_e\nabla_e\log\Omega\cdot\nabla_eY_h.\ } \tag{VF-2}\]
 
 The geometrical force `||D_h||_∞≤3a_max q_*hF_D`, and the exact local SU(2) f-sum satisfies the pointwise bound
 
@@ -95,3 +95,5 @@ A pointwise or monotone estimate derived from the nonlinear eigenvalue equation,
 ## Reproducibility and integrity
 
 `verify_local_score.py` checks exact SU2 Casimir geometry, Hölder exponents p/(2-p), exact h scalings for VF-5/VF-8, pure-electric one-rhombus drift and the canonical three-face spatial fixture. It verifies algebraic identities, *not* continuum behavior or the original temporal Q14 protocol. No Monte Carlo samples were taken; historical archives are unchanged.
+
+**Algebraic sign erratum (2026-10-28):** The abbreviated vacuum-score force is `F_h=+2Σ_e a_e ∇_e logΩ·∇_eY_h`, equivalently `−2hΣ_f q_fΣ_{e∈∂f}a_e∇_e logΩ·∇_e p_f`. The former minus-sign abbreviation was a transcription error; its absolute-value estimates are unchanged. See the exact joint-force Ward identity in `R3_IR_JOINT_FORCE_COVARIANCE_WARD_2026-10-28.md`.
