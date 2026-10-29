@@ -78,7 +78,7 @@ Define the true ground-state generator and its exact force decomposition (VF-2):
 
 `D_h=(3h/4) sum_f q_f sum_{e in boundary(f)} a_e p_f`,
 
-`F_h=-2sum_{e in S}a_e grad_e(logOmega_h).grad_e Y_h`.
+`F_h=+2sum_{e in S}a_e grad_e(logOmega_h).grad_e Y_h`.
 
 Then
 
@@ -157,3 +157,5 @@ Source identity with the historic Stage7/Stage26 numerical action, physical quar
 ## Verification notes
 
 `verify_weighted_score_second_moment.py` uses exact SymPy identities to check the fundamental SU(2) Casimir relation, exponential multiplier chain rule, weighted-kinetic IMS inequality, scaling of the second spectral moment and spectral Chebyshev bound, and the canonical three-face, ten-edge **spatial** Penrose seed. It does **not** prove the infinite sequence from finite numerical tests or certify the original temporal Q14. Exact theorems rest on the mathematical form comparison and ground-state calculus above. No Monte Carlo.
+
+**Algebraic sign erratum (2026-10-28):** The abbreviated vacuum-score force is `F_h=+2Σ_e a_e ∇_e logΩ·∇_eY_h`, equivalently `−2hΣ_f q_fΣ_{e∈∂f}a_e∇_e logΩ·∇_e p_f`. The former minus-sign abbreviation was a transcription error; its absolute-value estimates are unchanged. See the exact joint-force Ward identity in `R3_IR_JOINT_FORCE_COVARIANCE_WARD_2026-10-28.md`.
