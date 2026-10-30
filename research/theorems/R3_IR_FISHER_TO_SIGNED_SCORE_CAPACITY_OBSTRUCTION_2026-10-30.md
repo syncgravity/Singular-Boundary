@@ -6,7 +6,7 @@
 
 For every \(\delta>0\) and \(L>0\), there exists a smooth strictly positive class function \(\Omega\) on \(SU(2)\), normalized in Haar \(L^2\), whose marginal score Fisher energy is less than \(\delta\), while its positive one-sided radial current budget on \(0<u<\pi/2\) is at least \(L\). This remains true for a product original-link lattice with \(\Omega\) depending only on the target Wilson class angle and invariant under the full vertex Gauss group.
 
-Consequently **no universal bound** of the form \(\mathfrak T_f\le F(I_f)\), with \(F(x)\) finite for a fixed \(x>0\), follows from the Fisher estimate alone; indeed \(\mathfrak T_f\) can be arbitrarily large while \(I_f\) tends to zero.
+Consequently **no universal bound** of the form \(\mathfrak T_f\le F(I_f)\), bounded uniformly on Fisher-energy sublevel sets, follows from the Fisher estimate alone; indeed \(\mathfrak T_f\) can be arbitrarily large while \(I_f\) tends to zero.
 
 ## Construction and proof
 
@@ -33,10 +33,10 @@ for a universal \(C_0\), uniformly in \(0<\epsilon<1\), once \(a\) is sufficient
 
 By the exact score contraction theorem, the marginal Fisher information is
 \[
-I_f=4\int_0^\pi |\partial_u\psi|^2
-\frac{2\sin^2u}{\pi}\,du\le4C_0a;
+I_f=A_f\int_0^\pi |\partial_u\psi|^2
+\frac{2\sin^2u}{\pi}\,du\le A_f C_0a;
 \]
-choose \(a<\delta/(4C_0)\). On the other hand,
+choose \(a<\delta/(A_f C_0)\). On the other hand,
 \(\partial_u\log\psi\ge0\) for \(u\in[a,2a]\), and by the exact radial score identity \(\mathfrak T_f=\int_0^{\pi/2}[\partial_u\log\psi]_+du\). Therefore
 \[
 \mathfrak T_f=\log\psi(2a)-\log\psi(a)
