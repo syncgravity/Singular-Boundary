@@ -1,0 +1,24 @@
+{
+  "conditional_field_norm": 9.881047805343023,
+  "n_samples": 6000,
+  "one_link_fixed_neighborhood": true,
+  "remaining_slab_equilibration": "NOT TESTED",
+  "note": "exact multihit uses analytic mean, no heatbath samples required; heatbath is an optional exact single-link Gibbs draw",
+  "results": {
+    "metropolis": {
+      "projected_mean": 0.8599335554285517,
+      "target_mean": 0.8524872326092088,
+      "mean_error": 0.0074463228193428765,
+      "lag1_autocorrelation": 0.8536752738956159,
+      "seconds": 0.4751959639997949,
+      "acceptance": 0.5241666666666667
+    },
+    "exact_heatbath": {
+      "projected_mean": 0.8539007107722303,
+      "target_mean": 0.8524872326092088,
+      "mean_error": 0.0014134781630215087,
+      "lag1_autocorrelation": 0.00364048458848786,
+      "seconds": 0.8422378759996718
+    }
+  }
+}

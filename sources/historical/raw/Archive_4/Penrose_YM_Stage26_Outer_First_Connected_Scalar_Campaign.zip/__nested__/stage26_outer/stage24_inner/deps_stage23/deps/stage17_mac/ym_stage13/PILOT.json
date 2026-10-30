@@ -1,0 +1,17 @@
+{
+  "geometry": "5x5 square nt15 only",
+  "physical_admission": false,
+  "n_outer": 16,
+  "inner": 16,
+  "conditional_warm_sweeps": 16,
+  "mean_direct": 0.005102811686768648,
+  "mean_conditional": -0.008342314584625332,
+  "mean_inner_direct": -0.023134450171915122,
+  "sd_direct": 0.46162482695601603,
+  "sd_conditional": 0.1114683572393164,
+  "std_ratio_descriptive": 4.141308245576213,
+  "direct_vs_conditional_mean_diff_se": -0.1094867814394021,
+  "max_cache_error": 0.0,
+  "seconds": 7.899400482000146,
+  "note": "16 outer configurations from one short chain. Deep inner equilibration, outer independence and cost-adjusted variance are not validated. Product of inner means is a finite-N conditional estimator with dependence from shared inner trajectory."
+}

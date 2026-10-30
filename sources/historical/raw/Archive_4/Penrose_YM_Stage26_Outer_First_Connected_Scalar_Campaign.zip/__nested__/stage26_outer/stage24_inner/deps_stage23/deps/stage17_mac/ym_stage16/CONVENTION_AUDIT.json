@@ -1,0 +1,9 @@
+{
+  "gauge_type": "random local SU2 gauge rotation of the flat identity field",
+  "npaths": 128,
+  "corrected_direct_max_gauge_residual": 1.3322676295501878e-15,
+  "corrected_multihit_max_gauge_residual": 7.771561172376096e-16,
+  "legacy_stage13_direct_max_deviation_from_flat_unity": 1.97630004971762,
+  "legacy_stage13_direct_mean_deviation_from_flat_unity": 1.0218111339000804,
+  "interpretation": "Stage13-15 legacy matrix mapping is not gauge-covariant with the original Wilson-action quaternion group law; transporter claims require correction."
+}
