@@ -1,0 +1,199 @@
+# The Singular Boundary — Signed Radial-Current Theorem
+
+The next proof step yields a sharper criterion for the **actual nonlinear SU(2) magnetic-deleted vacuum**. It replaces the earlier positive-part fiber-energy condition with a weaker first-order quantity: the signed radial vacuum-score current.
+
+The central result is that rapid oscillations in the effective fiber energy can make the previous budget diverge even when the deleted-face holonomy distribution remains almost exactly Haar. The new current criterion recognizes those cancellations.
+
+## 1. Exact nonlinear radial-current identity
+
+For the deleted-face marginal
+
+\[
+d\nu_f^-(u)=\frac2\pi\sin^2u\,\psi_f(u)^2\,du,
+\]
+
+define the conditional vacuum-score current
+
+\[
+C_f(p)=
+\mathbb E_{\Omega_f^-}\left[
+\sum_{e\in\partial f}
+a_e\nabla_ep_f\cdot\nabla_e\log\Omega_f^-
+\;\middle|\;p_f=p
+\right].
+\]
+
+The exact marginal-score Ward identity gives
+
+\[
+\boxed{
+\frac{d}{du}\log\psi_f(u)
+=
+-\frac{4C_f(\cos u)}{A_f\sin u}.
+}
+\]
+
+Define the positive radial-current budget
+
+\[
+\boxed{
+\mathfrak T_f=
+\frac4{A_f}
+\int_0^{\pi/2}
+\frac{[-C_f(\cos u)]_+}{\sin u}\,du.
+}
+\]
+
+This is an identity involving the true interacting deleted ground state. It retains all shared-link interactions and slow collective modes.
+
+## 2. A strictly sharper hierarchy
+
+Let
+
+\[
+\mathfrak O_f=
+\sup_{0\le v\le u\le\pi/2}
+[\log\psi_f(u)-\log\psi_f(v)]_+
+\]
+
+measure the largest increase in the logarithmic marginal amplitude toward the equator.
+
+Let \(\mathfrak B_f\) be the positive effective-fiber-potential budget from the preceding theorem.
+
+The exact radial Riccati equation proves
+
+\[
+\boxed{
+0\le\mathfrak O_f\le\mathfrak T_f\le\mathfrak B_f.
+}
+\]
+
+Thus bounding \(\mathfrak T_f\) is sufficient, but potentially much easier than bounding \(\mathfrak B_f\).
+
+The deleted-vacuum center-ball probability satisfies
+
+\[
+\boxed{
+\mathbb P_{\Omega_f^-}(d_f\le\delta)
+\ge
+e^{-2\mathfrak T_f}
+\mathbb P_{\mathrm{Haar}}(d_f\le\delta).
+}
+\]
+
+Combining this with the earlier exact magnetic-deletion variational theorem gives
+
+\[
+\boxed{
+\Delta_f\le
+\sqrt{\frac{A_fb_f}{2}}
+\left[
+2+\log\frac{2e^2\kappa_f}{m_H(1/\kappa_f)}
++2\mathfrak T_f
+\right],
+}
+\]
+
+where \(\kappa_f=\sqrt{2b_f/A_f}\).
+
+Under the declared Penrose coefficients,
+
+\[
+\Delta_f\le
+Ch^{-1}\left[1+\log(1/h)+\mathfrak T_{f,h}\right].
+\]
+
+Therefore an independently established bound
+
+\[
+\boxed{
+\sup_{f\in D_R}\mathfrak T_{f,h}=o(h^{-1/4})
+}
+\]
+
+would suffice to close the current bulk extreme-defect and fixed-support Wilson–angle comparison obligations.
+
+**That uniform interacting-vacuum current estimate remains open.**
+
+## 3. Exact countermodel separating the two budgets
+
+To determine whether the improvement is substantive, I constructed a family of smooth, strictly positive, center-symmetric SU(2) rotor ground states:
+
+\[
+\psi_n(u)=
+\frac{1+n^{-3/2}\cos(2nu)}
+{\sqrt{1+\tfrac12n^{-3}}}.
+\]
+
+Each is the exact positive ground state of a suitable nonnegative SU(2) class potential.
+
+The model has
+
+\[
+\mathfrak T_n\sim n^{-1/2}\to0,
+\qquad
+\mathfrak B_n\sim\frac2\pi n^{1/2}\to\infty,
+\]
+
+yet its center-ball probability remains asymptotically Haar for **every shrinking cap radius**.
+
+<box gap={2}>
+  <text weight="medium">Deterministic SU(2) verification</text>
+  <table>
+    <table-row><table-cell width="16%">\(n\)</table-cell><table-cell>Current budget \(\mathfrak T_n\)</table-cell><table-cell>Previous budget \(\mathfrak B_n\)</table-cell><table-cell>Center mass / Haar mass</table-cell></table-row>
+    {#each [[16,0.250020,2.61204,0.993055],[32,0.176778,3.63133,0.999097],[64,0.125000,5.10672,0.999648],[128,0.088388,7.20883,1.000080],[256,0.062500,10.18883,1.000031],[512,0.044194,14.40645,1.000008]] as d}
+      <table-row>
+        <table-cell><text tabularNums>{d[0]}</text></table-cell>
+        <table-cell><text tabularNums>{d[1].toFixed(6)}</text></table-cell>
+        <table-cell><text tabularNums>{d[2].toFixed(5)}</text></table-cell>
+        <table-cell><text tabularNums>{d[3].toFixed(6)}</text></table-cell>
+      </table-row>
+    {/each}
+  </table>
+</box>
+
+This is an exact quantum rotor countermodel to the **necessity of the old sufficient condition**, not a simulation of the nonlinear Penrose ground state.
+
+It demonstrates that the signed-current criterion captures genuine cancellations lost when the positive part is taken before integrating the effective potential.
+
+## 4. Deliverables and research record
+
+I created and verified the complete mathematical report, executable Python checker, execution log and file hash manifest.
+
+[Download the signed radial-current proof and verification package](sandbox:/mnt/data/singular_boundary_deleted_radial_current_2026-10-29.zip)
+
+<text color="secondary" size="xs">SHA-256: `9a2bbc776d4fe5a9645f920f4f3b50c3e14954c7fb87946b69c83fd54ae484fc`</text>
+
+The executable checks passed. No Monte Carlo runs or historical Stage 26 data were modified.
+
+The research ledger was updated successfully on `audit/2026-10-28-independent-reconstruction`:
+
+<Link url="https://github.com/syncgravity/singular-boundary/blob/audit/2026-10-28-independent-reconstruction/research/claims/CLAIM_LEDGER.csv">Claims R3-IR-289–292</Link>
+
+<text color="secondary" size="xs">Ledger commit `35e4b46`. The standalone theorem-file upload was blocked, so the complete new report is provided in the local proof package.</text>
+
+## 5. Next remaining proof obligation
+
+The immediate mathematical problem is no longer to bound the entire positive effective-fiber-energy excess. It is to prove a **one-sided conditional current estimate**:
+
+\[
+\boxed{
+\sup_{f\in D_R}\frac4{A_f}
+\int_0^{\pi/2}
+\frac{
+\left[
+-\mathbb E_{\Omega_{f,h}^-}
+\left(
+\sum_{e\in\partial f}
+a_e\nabla_ep_f\cdot\nabla_e\log\Omega_{f,h}^-
+\mid p_f=\cos u
+\right)
+\right]_+
+}{\sin u}\,du
+=o(h^{-1/4}).
+}
+\]
+
+This formulation is exact, gauge-invariant, and first order in the vacuum score. It avoids the fast-mode assumption and allows cancellations between positive and negative fiber-energy contributions.
+
+The current criterion and its conditional bulk consequence are proved. **The requisite uniform current bound, complete bulk magnetic-deletion theorem, fixed-support connected covariance and interacting continuum mass gap remain open.**
