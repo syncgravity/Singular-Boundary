@@ -1,0 +1,309 @@
+{
+  "protocol": {
+    "geometry": "independent Z5 window membership and basis-step faces",
+    "beta_values": [
+      1,
+      2
+    ],
+    "offset": 0,
+    "burn_sweeps": 100,
+    "thin_sweeps": 3,
+    "raw_draws_per_setting": 800,
+    "target_ess_bulk": 400,
+    "target_ess_tail": 400,
+    "target_rank_rhat": "< 1.01",
+    "warning": "Rhat/ESS do not prove stationarity or isolate quasiperiodic causation; one offset is insufficient for offset robustness."
+  },
+  "settings": [
+    {
+      "radius": 5.0,
+      "beta": 1.0,
+      "offset": 0,
+      "graph": {
+        "vertices": 90,
+        "edges": 159,
+        "faces": 70,
+        "euler": 1,
+        "boundary_edges": 38,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 15,
+          "3": 40,
+          "4": 13,
+          "5": 18,
+          "6": 2,
+          "7": 2
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 17.4,
+        "mean_degree": 3.533333333333333,
+        "gamma_sum": 1.0
+      },
+      "chains": 4,
+      "draws_per_chain": 200,
+      "raw_draws": 800,
+      "all_chains_completed": true,
+      "mean_proposal_acceptance": 0.8688162623539982,
+      "plaquette": {
+        "mean": 0.24046279027473014,
+        "sd": 0.054761374261575055,
+        "ess_bulk": 609.5233656412254,
+        "ess_tail": 583.2033762938445,
+        "rhat_rank": 1.0015316284049842,
+        "mcse_mean": 0.002217766828849518,
+        "mcse_over_sd": 0.04049874311510257
+      },
+      "lambda0": {
+        "mean": 0.3065627053524412,
+        "sd": 0.02753449852360089,
+        "ess_bulk": 646.7800515923147,
+        "ess_tail": 683.1948898182164,
+        "rhat_rank": 1.002008427044235,
+        "mcse_mean": 0.0010793927280928323,
+        "mcse_over_sd": 0.03920146674062877
+      },
+      "lambda2": {
+        "mean": 0.3481465425175954,
+        "sd": 0.02881115627144342,
+        "ess_bulk": 697.467300457859,
+        "ess_tail": 680.5923704453451,
+        "rhat_rank": 1.0029444312789912,
+        "mcse_mean": 0.0010855242788629874,
+        "mcse_over_sd": 0.03767722019330824
+      },
+      "gap": {
+        "mean": 0.04158383716515426,
+        "sd": 0.025229066788415525,
+        "ess_bulk": 801.7565744473649,
+        "ess_tail": 772.0123213322529,
+        "rhat_rank": 1.0029872681992074,
+        "mcse_mean": 0.0009057807158464507,
+        "mcse_over_sd": 0.03590226794525589
+      },
+      "diagnostics_gate": true
+    },
+    {
+      "radius": 5.0,
+      "beta": 2.0,
+      "offset": 0,
+      "graph": {
+        "vertices": 90,
+        "edges": 159,
+        "faces": 70,
+        "euler": 1,
+        "boundary_edges": 38,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 15,
+          "3": 40,
+          "4": 13,
+          "5": 18,
+          "6": 2,
+          "7": 2
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 17.4,
+        "mean_degree": 3.533333333333333,
+        "gamma_sum": 1.0
+      },
+      "chains": 4,
+      "draws_per_chain": 200,
+      "raw_draws": 800,
+      "all_chains_completed": true,
+      "mean_proposal_acceptance": 0.7591531895777169,
+      "plaquette": {
+        "mean": 0.43524995464224747,
+        "sd": 0.047238851100464385,
+        "ess_bulk": 497.1229308128397,
+        "ess_tail": 584.8296655029648,
+        "rhat_rank": 1.0041853979860265,
+        "mcse_mean": 0.00212008066171862,
+        "mcse_over_sd": 0.04488002168405358
+      },
+      "lambda0": {
+        "mean": 0.25205162664930536,
+        "sd": 0.023475466001509283,
+        "ess_bulk": 427.58492285713277,
+        "ess_tail": 416.07574857972617,
+        "rhat_rank": 1.005620101845713,
+        "mcse_mean": 0.0011410289665420687,
+        "mcse_over_sd": 0.04860516790033943
+      },
+      "lambda2": {
+        "mean": 0.29143832680962617,
+        "sd": 0.02274116493559412,
+        "ess_bulk": 484.4839668055203,
+        "ess_tail": 696.1500003681647,
+        "rhat_rank": 1.007503689904413,
+        "mcse_mean": 0.0010263503258753272,
+        "mcse_over_sd": 0.04513182718572607
+      },
+      "gap": {
+        "mean": 0.03938670016032084,
+        "sd": 0.018948141116882214,
+        "ess_bulk": 685.9857696006737,
+        "ess_tail": 729.9837405741516,
+        "rhat_rank": 1.0059179938876612,
+        "mcse_mean": 0.000721706890550425,
+        "mcse_over_sd": 0.03808853259528484
+      },
+      "diagnostics_gate": true
+    },
+    {
+      "radius": 6.5,
+      "beta": 1.0,
+      "offset": 0,
+      "graph": {
+        "vertices": 148,
+        "edges": 269,
+        "faces": 122,
+        "euler": 1,
+        "boundary_edges": 50,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 21,
+          "3": 67,
+          "4": 18,
+          "5": 34,
+          "6": 3,
+          "7": 5
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 18.35135135135135,
+        "mean_degree": 3.635135135135135,
+        "gamma_sum": 1.0
+      },
+      "chains": 4,
+      "draws_per_chain": 200,
+      "raw_draws": 800,
+      "all_chains_completed": true,
+      "mean_proposal_acceptance": 0.86722517259692,
+      "plaquette": {
+        "mean": 0.23805017345857654,
+        "sd": 0.044024220200489676,
+        "ess_bulk": 571.0501843315819,
+        "ess_tail": 610.9522743920152,
+        "rhat_rank": 1.0037987096810865,
+        "mcse_mean": 0.001845647434419729,
+        "mcse_over_sd": 0.0419234554528055
+      },
+      "lambda0": {
+        "mean": 0.328176079284377,
+        "sd": 0.02721685304680096,
+        "ess_bulk": 585.2402911527009,
+        "ess_tail": 672.2956499226074,
+        "rhat_rank": 1.004740055620765,
+        "mcse_mean": 0.0011213650180801303,
+        "mcse_over_sd": 0.04120112696908338
+      },
+      "lambda2": {
+        "mean": 0.3630103688811579,
+        "sd": 0.024657483707735347,
+        "ess_bulk": 631.5521572880807,
+        "ess_tail": 657.9939882797211,
+        "rhat_rank": 1.012626017289988,
+        "mcse_mean": 0.0009813698915015039,
+        "mcse_over_sd": 0.039800082730811516
+      },
+      "gap": {
+        "mean": 0.03483428959678094,
+        "sd": 0.02222509777620798,
+        "ess_bulk": 672.9781822226208,
+        "ess_tail": 598.4584412763992,
+        "rhat_rank": 1.0008035890219085,
+        "mcse_mean": 0.0008540316121503693,
+        "mcse_over_sd": 0.038426450166829516
+      },
+      "diagnostics_gate": true
+    },
+    {
+      "radius": 6.5,
+      "beta": 2.0,
+      "offset": 0,
+      "graph": {
+        "vertices": 148,
+        "edges": 269,
+        "faces": 122,
+        "euler": 1,
+        "boundary_edges": 50,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 21,
+          "3": 67,
+          "4": 18,
+          "5": 34,
+          "6": 3,
+          "7": 5
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 18.35135135135135,
+        "mean_degree": 3.635135135135135,
+        "gamma_sum": 1.0
+      },
+      "chains": 4,
+      "draws_per_chain": 200,
+      "raw_draws": 800,
+      "all_chains_completed": true,
+      "mean_proposal_acceptance": 0.7560780669144999,
+      "plaquette": {
+        "mean": 0.4321229653685305,
+        "sd": 0.03649036600830648,
+        "ess_bulk": 560.1114135168689,
+        "ess_tail": 535.1928646064781,
+        "rhat_rank": 0.9991069172864806,
+        "mcse_mean": 0.0015432642207708212,
+        "mcse_over_sd": 0.04229237438779103
+      },
+      "lambda0": {
+        "mean": 0.2667284869539142,
+        "sd": 0.02193587463742751,
+        "ess_bulk": 589.7311765506264,
+        "ess_tail": 508.21087374380573,
+        "rhat_rank": 1.0036446639535554,
+        "mcse_mean": 0.000899972275560625,
+        "mcse_over_sd": 0.04102741697953866
+      },
+      "lambda2": {
+        "mean": 0.2986780512493711,
+        "sd": 0.02091804675200057,
+        "ess_bulk": 574.1878739686372,
+        "ess_tail": 575.9319569413656,
+        "rhat_rank": 1.0024288749956456,
+        "mcse_mean": 0.0008775607486081085,
+        "mcse_over_sd": 0.04195232752905957
+      },
+      "gap": {
+        "mean": 0.031949564295456874,
+        "sd": 0.01822784484402925,
+        "ess_bulk": 723.9519659832699,
+        "ess_tail": 735.4634468494543,
+        "rhat_rank": 1.0001905183926485,
+        "mcse_mean": 0.0006899285940790366,
+        "mcse_over_sd": 0.03785025602217758
+      },
+      "diagnostics_gate": true
+    }
+  ],
+  "total_checkpoint_files": 16,
+  "total_retained_draws": 3200
+}

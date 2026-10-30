@@ -1,0 +1,16 @@
+R 5.0 beta 1.0 raw 800 accepted 0.8688162623539982 gate True
+  plaquette mean 0.2404628 mcse 0.0022178 rhat 1.00153 essBulk 609.5 essTail 583.2
+  lambda0 mean 0.3065627 mcse 0.0010794 rhat 1.00201 essBulk 646.8 essTail 683.2
+  gap mean 0.0415838 mcse 0.0009058 rhat 1.00299 essBulk 801.8 essTail 772.0
+R 5.0 beta 2.0 raw 800 accepted 0.7591531895777169 gate True
+  plaquette mean 0.43525 mcse 0.0021201 rhat 1.00419 essBulk 497.1 essTail 584.8
+  lambda0 mean 0.2520516 mcse 0.001141 rhat 1.00562 essBulk 427.6 essTail 416.1
+  gap mean 0.0393867 mcse 0.0007217 rhat 1.00592 essBulk 686.0 essTail 730.0
+R 6.5 beta 1.0 raw 800 accepted 0.86722517259692 gate True
+  plaquette mean 0.2380502 mcse 0.0018456 rhat 1.0038 essBulk 571.1 essTail 611.0
+  lambda0 mean 0.3281761 mcse 0.0011214 rhat 1.00474 essBulk 585.2 essTail 672.3
+  gap mean 0.0348343 mcse 0.000854 rhat 1.0008 essBulk 673.0 essTail 598.5
+R 6.5 beta 2.0 raw 800 accepted 0.7560780669144999 gate True
+  plaquette mean 0.432123 mcse 0.0015433 rhat 0.99911 essBulk 560.1 essTail 535.2
+  lambda0 mean 0.2667285 mcse 0.0009 rhat 1.00364 essBulk 589.7 essTail 508.2
+  gap mean 0.0319496 mcse 0.0006899 rhat 1.00019 essBulk 724.0 essTail 735.5

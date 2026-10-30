@@ -1,0 +1,701 @@
+[
+  {
+    "physical_cutoff": 5.0,
+    "offset": 0,
+    "graph_sha256": "4b8a9757c417164bc503fd32774338bd480985d1cd9cfe5b82e146f2ab9658cf",
+    "gamma": [
+      -0.05199999999999996,
+      0.06800000000000003,
+      0.18800000000000003,
+      0.30800000000000005,
+      0.488
+    ],
+    "vertices": 90,
+    "edges": 159,
+    "faces": 70,
+    "euler": 1,
+    "boundary_edges": 38,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 15,
+      "3": 40,
+      "4": 13,
+      "5": 18,
+      "6": 2,
+      "7": 2
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 17.4,
+    "mean_degree": 3.533333333333333,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 5.0,
+    "offset": 1,
+    "graph_sha256": "40dae643da8a02a15300be6b634f167566978b44f8971cf1207864d5f19e07c8",
+    "gamma": [
+      -0.12159999999999999,
+      0.12040000000000001,
+      0.34640000000000004,
+      0.1824,
+      0.47239999999999993
+    ],
+    "vertices": 94,
+    "edges": 167,
+    "faces": 74,
+    "euler": 1,
+    "boundary_edges": 38,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 17,
+      "3": 41,
+      "4": 11,
+      "5": 21,
+      "7": 4
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 17.74468085106383,
+    "mean_degree": 3.5531914893617023,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 5.0,
+    "offset": 2,
+    "graph_sha256": "62c934f80b52565d748a1a66ceb907dbd398fc8242445934aacc694c277e9f80",
+    "gamma": [
+      0.008799999999999975,
+      0.3727999999999999,
+      -0.2952,
+      0.25680000000000003,
+      0.6567999999999999
+    ],
+    "vertices": 93,
+    "edges": 166,
+    "faces": 74,
+    "euler": 1,
+    "boundary_edges": 36,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 13,
+      "3": 46,
+      "4": 10,
+      "5": 19,
+      "6": 2,
+      "7": 3
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 17.763440860215052,
+    "mean_degree": 3.5698924731182795,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 5.0,
+    "offset": 3,
+    "graph_sha256": "0a7a8f3f2b6135e50b18c4395913e2a04024770711537f5db721221ca520b4eb",
+    "gamma": [
+      0.1392,
+      0.6252,
+      0.06319999999999998,
+      0.3312,
+      -0.1588
+    ],
+    "vertices": 91,
+    "edges": 162,
+    "faces": 72,
+    "euler": 1,
+    "boundary_edges": 36,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 14,
+      "3": 42,
+      "4": 12,
+      "5": 19,
+      "6": 1,
+      "7": 3
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 17.67032967032967,
+    "mean_degree": 3.5604395604395602,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 5.0,
+    "offset": 4,
+    "graph_sha256": "1f4fe083179350e48fc8f29aece642cc5d73253caf90e14cf3b85de64cfd295f",
+    "gamma": [
+      0.2696,
+      -0.12240000000000012,
+      0.4215999999999999,
+      0.4055999999999999,
+      0.02560000000000001
+    ],
+    "vertices": 93,
+    "edges": 166,
+    "faces": 74,
+    "euler": 1,
+    "boundary_edges": 36,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 14,
+      "3": 43,
+      "4": 14,
+      "5": 17,
+      "6": 1,
+      "7": 4
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 17.806451612903224,
+    "mean_degree": 3.5698924731182795,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 6.5,
+    "offset": 0,
+    "graph_sha256": "ea8d3671988f0171ff3f33ad84f1eeaef1a2719123c14aee9b5f52669ced5434",
+    "gamma": [
+      -0.05199999999999996,
+      0.06800000000000003,
+      0.18800000000000003,
+      0.30800000000000005,
+      0.488
+    ],
+    "vertices": 148,
+    "edges": 269,
+    "faces": 122,
+    "euler": 1,
+    "boundary_edges": 50,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 21,
+      "3": 67,
+      "4": 18,
+      "5": 34,
+      "6": 3,
+      "7": 5
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.35135135135135,
+    "mean_degree": 3.635135135135135,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 6.5,
+    "offset": 1,
+    "graph_sha256": "97e4d694d3265a0403b003882b1abbc3213e4591186ff81b8a9e049fd52390f5",
+    "gamma": [
+      -0.12159999999999999,
+      0.12040000000000001,
+      0.34640000000000004,
+      0.1824,
+      0.47239999999999993
+    ],
+    "vertices": 150,
+    "edges": 274,
+    "faces": 125,
+    "euler": 1,
+    "boundary_edges": 48,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 18,
+      "3": 70,
+      "4": 24,
+      "5": 29,
+      "6": 2,
+      "7": 7
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.493333333333332,
+    "mean_degree": 3.6533333333333333,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 6.5,
+    "offset": 2,
+    "graph_sha256": "c15708b9024842085e09b6206908196735f8fb382b0a2eb03796d03e8d3c05a2",
+    "gamma": [
+      0.008799999999999975,
+      0.3727999999999999,
+      -0.2952,
+      0.25680000000000003,
+      0.6567999999999999
+    ],
+    "vertices": 152,
+    "edges": 278,
+    "faces": 127,
+    "euler": 1,
+    "boundary_edges": 48,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 18,
+      "3": 74,
+      "4": 16,
+      "5": 35,
+      "6": 4,
+      "7": 5
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.513157894736842,
+    "mean_degree": 3.6578947368421053,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 6.5,
+    "offset": 3,
+    "graph_sha256": "53ae54ae66e7830453a9e9b5f74f46424aa47ee36ceb33eced513067819f3fbb",
+    "gamma": [
+      0.1392,
+      0.6252,
+      0.06319999999999998,
+      0.3312,
+      -0.1588
+    ],
+    "vertices": 150,
+    "edges": 273,
+    "faces": 124,
+    "euler": 1,
+    "boundary_edges": 50,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 22,
+      "3": 66,
+      "4": 20,
+      "5": 33,
+      "6": 4,
+      "7": 5
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.413333333333334,
+    "mean_degree": 3.64,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 6.5,
+    "offset": 4,
+    "graph_sha256": "754496e392864af7aa51ab9b5d22493b1bdba1ee9cb4c686bf5c1709a8478c47",
+    "gamma": [
+      0.2696,
+      -0.12240000000000012,
+      0.4215999999999999,
+      0.4055999999999999,
+      0.02560000000000001
+    ],
+    "vertices": 152,
+    "edges": 277,
+    "faces": 126,
+    "euler": 1,
+    "boundary_edges": 50,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 22,
+      "3": 68,
+      "4": 20,
+      "5": 32,
+      "6": 4,
+      "7": 6
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.5,
+    "mean_degree": 3.6447368421052633,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 8.0,
+    "offset": 0,
+    "graph_sha256": "0ea824b52f828d73748d91c225fe6698ac4aa9d218b3e5a65461feeabfd8b1a4",
+    "gamma": [
+      -0.05199999999999996,
+      0.06800000000000003,
+      0.18800000000000003,
+      0.30800000000000005,
+      0.488
+    ],
+    "vertices": 226,
+    "edges": 421,
+    "faces": 196,
+    "euler": 1,
+    "boundary_edges": 58,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 24,
+      "3": 107,
+      "4": 25,
+      "5": 56,
+      "6": 5,
+      "7": 9
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.123893805309734,
+    "mean_degree": 3.725663716814159,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 8.0,
+    "offset": 1,
+    "graph_sha256": "2f02ab6a7e0fed2507a2ce15d742bab9af75ca1f1bd5dec7186711f10722da46",
+    "gamma": [
+      -0.12159999999999999,
+      0.12040000000000001,
+      0.34640000000000004,
+      0.1824,
+      0.47239999999999993
+    ],
+    "vertices": 233,
+    "edges": 432,
+    "faces": 200,
+    "euler": 1,
+    "boundary_edges": 64,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 29,
+      "3": 106,
+      "4": 24,
+      "5": 60,
+      "6": 6,
+      "7": 8
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 18.99570815450644,
+    "mean_degree": 3.708154506437768,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 8.0,
+    "offset": 2,
+    "graph_sha256": "22df4197e55cfacec78dd7e3d5d982f3dab960665b2499b34425802b9a193855",
+    "gamma": [
+      0.008799999999999975,
+      0.3727999999999999,
+      -0.2952,
+      0.25680000000000003,
+      0.6567999999999999
+    ],
+    "vertices": 238,
+    "edges": 443,
+    "faces": 206,
+    "euler": 1,
+    "boundary_edges": 62,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 25,
+      "3": 110,
+      "4": 31,
+      "5": 56,
+      "6": 10,
+      "7": 6
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.016806722689076,
+    "mean_degree": 3.722689075630252,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 8.0,
+    "offset": 3,
+    "graph_sha256": "a8fd5e3727cce2958be1a6b425bd93d2a6eb25f013bac780b592fbcf0c5300df",
+    "gamma": [
+      0.1392,
+      0.6252,
+      0.06319999999999998,
+      0.3312,
+      -0.1588
+    ],
+    "vertices": 235,
+    "edges": 436,
+    "faces": 202,
+    "euler": 1,
+    "boundary_edges": 64,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 28,
+      "3": 108,
+      "4": 28,
+      "5": 55,
+      "6": 7,
+      "7": 9
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.029787234042555,
+    "mean_degree": 3.7106382978723405,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 8.0,
+    "offset": 4,
+    "graph_sha256": "bf5b6566ba8cab94a9aeac651caf9431062a577eced6a49beb9fe3beea2c62b2",
+    "gamma": [
+      0.2696,
+      -0.12240000000000012,
+      0.4215999999999999,
+      0.4055999999999999,
+      0.02560000000000001
+    ],
+    "vertices": 236,
+    "edges": 439,
+    "faces": 204,
+    "euler": 1,
+    "boundary_edges": 62,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 25,
+      "3": 112,
+      "4": 28,
+      "5": 56,
+      "6": 5,
+      "7": 10
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.084745762711865,
+    "mean_degree": 3.7203389830508473,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 10.0,
+    "offset": 0,
+    "graph_sha256": "7a473a6c469208cb36773e6e54fcca7cc43f21eaef406184eb71766e81fe971d",
+    "gamma": [
+      -0.05199999999999996,
+      0.06800000000000003,
+      0.18800000000000003,
+      0.30800000000000005,
+      0.488
+    ],
+    "vertices": 377,
+    "edges": 714,
+    "faces": 338,
+    "euler": 1,
+    "boundary_edges": 76,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 31,
+      "3": 181,
+      "4": 44,
+      "5": 95,
+      "6": 10,
+      "7": 16
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.639257294429708,
+    "mean_degree": 3.787798408488064,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 10.0,
+    "offset": 1,
+    "graph_sha256": "81cc19c34d29f484d02cc0fc4a4d9f94dac92ffa1aa218ba43de569cd58248cc",
+    "gamma": [
+      -0.12159999999999999,
+      0.12040000000000001,
+      0.34640000000000004,
+      0.1824,
+      0.47239999999999993
+    ],
+    "vertices": 375,
+    "edges": 709,
+    "faces": 335,
+    "euler": 1,
+    "boundary_edges": 78,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 31,
+      "3": 183,
+      "4": 40,
+      "5": 94,
+      "6": 12,
+      "7": 15
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.589333333333332,
+    "mean_degree": 3.7813333333333334,
+    "gamma_sum": 1.0
+  },
+  {
+    "physical_cutoff": 10.0,
+    "offset": 2,
+    "graph_sha256": "26ff09c0be591b7a5c537e0c979b7b652b3045d51987649182d0500f9a9a0378",
+    "gamma": [
+      0.008799999999999975,
+      0.3727999999999999,
+      -0.2952,
+      0.25680000000000003,
+      0.6567999999999999
+    ],
+    "vertices": 376,
+    "edges": 709,
+    "faces": 334,
+    "euler": 1,
+    "boundary_edges": 82,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 32,
+      "3": 186,
+      "4": 40,
+      "5": 89,
+      "6": 12,
+      "7": 17
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.54787234042553,
+    "mean_degree": 3.771276595744681,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 10.0,
+    "offset": 3,
+    "graph_sha256": "7ab37262f53c1927dbd7ffb7a2a313b6627760f66702381cde85a805df843520",
+    "gamma": [
+      0.1392,
+      0.6252,
+      0.06319999999999998,
+      0.3312,
+      -0.1588
+    ],
+    "vertices": 380,
+    "edges": 718,
+    "faces": 339,
+    "euler": 1,
+    "boundary_edges": 80,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 27,
+      "3": 197,
+      "4": 33,
+      "5": 96,
+      "6": 10,
+      "7": 17
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.573684210526316,
+    "mean_degree": 3.778947368421053,
+    "gamma_sum": 0.9999999999999998
+  },
+  {
+    "physical_cutoff": 10.0,
+    "offset": 4,
+    "graph_sha256": "5a238825aaafc96e3bd2e3574a61e611929ab95a738567b9db85fc56cfb74a7b",
+    "gamma": [
+      0.2696,
+      -0.12240000000000012,
+      0.4215999999999999,
+      0.4055999999999999,
+      0.02560000000000001
+    ],
+    "vertices": 377,
+    "edges": 711,
+    "faces": 335,
+    "euler": 1,
+    "boundary_edges": 82,
+    "max_degree": 7,
+    "degree_histogram": {
+      "2": 34,
+      "3": 183,
+      "4": 37,
+      "5": 96,
+      "6": 12,
+      "7": 15
+    },
+    "height_classes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_normalized_m2": 19.53315649867374,
+    "mean_degree": 3.7718832891246685,
+    "gamma_sum": 0.9999999999999998
+  }
+]
