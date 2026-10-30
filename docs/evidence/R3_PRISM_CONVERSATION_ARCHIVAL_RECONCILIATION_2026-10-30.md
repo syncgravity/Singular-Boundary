@@ -1,0 +1,45 @@
+# R3-PRISM conversation: historical archival reconciliation (2026-10-30)
+
+**Source class:** retrospective reconciliation of the visible current conversation and mounted original-byte artifacts, **NOT** a verbatim full-conversation export. Exact source conversation UUID, branch lineage, original message timestamps and complete predecessor transcripts are unavailable. Do not date original proofs from ZIP filename dates or confuse derived assistant summaries with original historical evidence.
+
+**Relation to current proof state:** supplements, does not supersede, [canonical state](../current/CANONICAL_RESEARCH_STATE_2026-10-30.md) and existing [R3-PRISM ledger](../../research/claims/CLAIM_LEDGER.csv). The older **twelve-prism/37-link fixed-boundary construction is distinct from the later Q14/H36/A62 all-integrated stationary construction**; equivalence has not been verified. The restricted homogeneous stationary Q14 ratio is already covered in [R3-PRISM](../../research/problems/R3-PRISM.md). The arbitrary nonstationary three-slab and exterior-conditioned versions remain open.
+
+## Recoverable sequence (historical order where reflected in the visible conversation; dates are not authenticated message timestamps)
+
+1. Original three-periodic-time SU(2) Penrose-prism model: plaquette action `d(g)=1-ReTr(g)/2`, retained action `S_R`, deleted 14 temporal faces `Q`. Reported geometry `Q=14`, `H=36`, `A(H)=62`, `F_Bianchi=54`. Original geometry generator `cavity_audit.py` and `verify_bianchi.py` are inside **R3_uploaded_gaussian_audit_2026_10_27_bundle.zip**. Existing claim links: R3-PRISM-001 and -005. The original nonabelian energy coefficient 44 requires preservation of word-level verification, not just linear incidence.
+2. Historical alternative Gaussian tangent and geodesic/59-pivot surgery arguments were explored; Gaussian estimates are **not nonlinear Wilson Gibbs theorems**. Reports describe a failure of deterministic positive action decrease for selected repair pivots in frustrated exterior fields. The independently identifiable historical 59-pivot original script remains a source gap; do not treat `construct_surgery.py` as proven identical to that repair.
+3. The original source was temporarily overlooked. The assistant incorrectly declared it lost and built an **illustrative, nonoriginal** 14-face candidate with `H=35, A=53`. This must remain in the scientific record **as a failed provenance reconstruction**, never as the historical Q14. Later retrieval found the authentic original scripts inside the Gaussian audit ZIP. This is a documented archival-process correction, not evidence of disappearance of all source bytes.
+4. Authentic Q14 faces were subsequently supplied to the word exporter; four radii gave `14,36,62,54`, and 84 pair-staple loops on H. The 54 Bianchi faces intersect A(H) in 44 faces, with **10 exterior faces**, so `S_F <= sum_(e in H) S_e` is **not a valid cover**. Exact optimum of complete 54-by-101 fractional link-cover LP is 22, with 40 positive edge weights and 49 additional retained star faces; 225 pair loops of length six. Existing ledger R3-PRISM-003; subsequently six private-edge faces peel off, leaving 48-face core and 190 pair words at the same optimum 22 (R3-PRISM-007/008). A pointwise fill-only frustration absorption bound fails (R3-PRISM-009).
+5. The elementary nonnegative `62x62` incidence matrix using `m_e <= S_e` has diagonal 1 and reported spectral radius 4; therefore it is **not** a strict contraction. This does not disprove every conceivable nonlinear/annealed contraction or Gibbs estimate.
+6. A single-link SU(2) thermal-excess conditional Gamma(3/2) stochastic domination, followed by weighted Hölder, yields a **joint thermal excess** bound for the 40-edge cover: `E exp[(s/22) sum_e w_e lambda(S_e-m_e)] <= (1-s)^(-3/2)` for `0<=s<1`. This is an analytic finite-Gibbs inequality **for thermal excess only**, not the 225 loop energies.
+7. Next a 192-link correlated block involving 255 retained faces was reported, with a centered block-minimum exponential estimate for `M=sum_e w_e m_e`; supplied original ZIP **R3_staple_minima_block_2026_10_27_bundle.zip** includes `block_audit.py`, `block_certificate.json`, and `FORMAL_NOTE.md`. Its current status here is **SOURCE-ASSERTED / INDEPENDENT PROOF AUDIT PENDING**, especially the sharp constants and claimed uniformity. The exterior boundary-compatible minimum `m_K(v)` is still not controlled in the full interacting Gibbs marginal. A centered statement does not imply absolute `O(log lambda/lambda)` 225-loop suppression.
+8. Even after the original stationary all-integrated Q14 ratio was proved by a separate Peter–Weyl/temporal-transfer argument, it did **not** close general nonstationary masks, fixed exterior, source-inserted connected infrared decay or continuum mass gap. Existing R3-PRISM-010/011 and R3-IR/R2 track records govern.
+
+## Primary accessible original-byte artifacts and their authenticated container SHA-256
+
+| Exact filename | Size | SHA-256 | Scope / intake |
+| --- | ---: | --- | --- |
+| `R3_uploaded_gaussian_audit_2026_10_27_bundle.zip` | 27913 | `a6396c61c060b356edf378e5eb2b81fa2aceb6e2e3a16270048951c7203e109e` | Source-generation code, original Bianchi script, Gaussian/compact audits; local original bytes available; remote LFS **unverified** |
+| `R3_word_incidence_2026_10_28_bundle.zip` | 83284 | `ecf9667c5de8bc9b0664aaa77a556b47afff08939a77cc86e376c180e8da37aa` | Retrospective illustrative initial generator; **not historical Q14**; local original bytes available; remote LFS **unverified** |
+| `R3_staple_minima_block_2026_10_27_bundle.zip` | 44891 | `97bee4defdd102279b482db3638cdcd1bcf2a291854554fa60e9035cc2e8b793` | Derived 192-link/255-face block certificate; proof audit pending; remote LFS **unverified** |
+| `R3_full_measure_cumulant_2026_10_26.zip` | 4297 | `a899fd063615cdb9b7bccdcf7084bf7b504d47087eaf4537e8096554dcd7de15` | Different R3-IR track; **do not merge claims into R3-PRISM**; remote LFS **unverified** |
+
+SHA-256 values above were calculated from the exact files mounted for this archival review, not inferred from older manifests. Separate local archival package includes a complete 46-file top-level inventory, original binary bytes and verification instructions. These GitHub lines are metadata only; **they do not mean the binary originals have been committed or uploaded to LFS**.
+
+## Scientific status and links to ledger
+
+- **PROVEN as finite identities under stated Wilson/SU(2) hypotheses:** elementary one-link staple algebra and thermal-excess Gamma/Hölder inequality; source-level algebra should still be attached for independent archival audit.
+- **NUMERICAL / finite rational certified:** original Q14 incidence as checked, 54-face cover optimum 22, pair-word enumerations; existing R3-PRISM-001/003/005/007/008, retaining each file's own certification limitations.
+- **COUNTEREXAMPLE:** failed pointwise fill-only frustration absorption, R3-PRISM-009; center-valued exterior link defect is a specific finite counterexample, not an impossibility theorem for Gibbs averaging.
+- **CORRECTED:** false claim all 54 fill faces touch H; illustrative Q14 substitution; unjustified identification of `construct_surgery.py` with historic 59-pivot executable.
+- **CONDITIONAL/UNVERIFIED:** purported 192-link block-minimum centered MGF until independently checked under precise boundary conditions; independent estimate for `m_K(v)` missing.
+- **OPEN:** joint absolute Gibbs bound for 225 pair loops in arbitrary nonstationary/fixed-boundary ensemble, older twelve-prism equivalence and proof for original 59-pivot repair; uniform interacting Hamiltonian signed radial current, connected covariance, R2 reconstruction, 4D continuum Yang–Mills mass gap.
+- **Do not promote:** three-periodic-time finite Wilson ratio, a Gaussian benchmark, a 2+1-dimensional numerical gauge system, or an arbitrary original finite-graph covariant Laplacian eigenvalue to 4D continuum Yang–Mills mass-gap proof.
+
+## Preservation boundaries
+
+- Current conversation transcript is not available as a downloadable exact full ordered message export. This document preserves the **visible research progression** without invented verbatim quotations, message IDs or dates.
+- `Branch · Read Conversation Content.txt` is a **different supplied signed radial-current text**, not a verbatim export of this entire Q14 conversation. Never assign it as this conversation's transcript.
+- Preserve the entire binary original archives as distinct immutable files; do not de-duplicate merely because their member filenames overlap. A content-addressed deduplication is possible only after actual byte-hash comparisons.
+- Do not change existing ledger status rows merely to strengthen a retrospective claim. This note links to current entries and exposes any independent proof-review work still required.
+- The remote main commit needs a fresh fetch/readback, and LFS needs a fresh-clone byte/hash audit before claiming remote original preservation.
