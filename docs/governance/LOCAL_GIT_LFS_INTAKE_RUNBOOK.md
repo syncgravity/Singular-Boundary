@@ -28,7 +28,7 @@ git commit -m "Preserve original archive.zip immutable research source"
 git push origin main
 ```
 
-Use the actual file name and verify it against the manifest; do not literally upload `archive.zip`. For the 17 identified binary session originals, repeat or batch after matching each local source to the manifest. For text records, place exact bytes in the registered `sources/originals/` path and use normal Git (unless deliberately changed with an explicit reason). For privacy, inspect verbatim conversations before committing.
+Use the actual file name and verify it against the manifest; do not literally upload `archive.zip`. For the 18 identified binary session originals, repeat or batch after matching each local source to the manifest. For text records, place exact bytes in the registered `sources/originals/` path and use normal Git (unless deliberately changed with an explicit reason). For privacy, inspect verbatim conversations before committing.
 
 **Verify the remote object, not just the pointer:**
 
