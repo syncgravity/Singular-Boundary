@@ -1,7 +1,11 @@
 """Validate necessary neighbor coupling support and finite gap arithmetic."""
 import sys
 from fractions import Fraction as F
-sys.path.insert(0,'/mnt/data/penrose_study_src')
+from pathlib import Path
+# Supply an external penrose_study checkout with PENROSE_STUDY_SRC if needed.
+import os
+if os.environ.get('PENROSE_STUDY_SRC'):
+ sys.path.insert(0,os.environ['PENROSE_STUDY_SRC'])
 from penrose_causal_study import Approximant
 from wilson_torus import penrose_faces
 f,_,_=penrose_faces(Approximant(M=5))
