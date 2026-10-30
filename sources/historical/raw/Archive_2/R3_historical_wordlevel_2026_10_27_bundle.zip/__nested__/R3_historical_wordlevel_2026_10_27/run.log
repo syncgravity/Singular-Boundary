@@ -1,0 +1,4 @@
+5 {'H': 36, 'A': 62, 'Q': 14, 'fill': 54, 'peel_success': True, 'max_energy_coeff': 4, 'file': 'certificate_radius_5.json', 'sha256': '487e16ae5b49d8e05cf6a0a155e03f18f0c5baa6714864d7de1bc20633e3d6e5'}
+6.5 {'H': 36, 'A': 62, 'Q': 14, 'fill': 54, 'peel_success': True, 'max_energy_coeff': 4, 'file': 'certificate_radius_6_5.json', 'sha256': 'dfdde4f137f94cba35edc993304d3d30c4d444e132feca1b5bb6e9e14bece1e5'}
+8 {'H': 36, 'A': 62, 'Q': 14, 'fill': 54, 'peel_success': True, 'max_energy_coeff': 4, 'file': 'certificate_radius_8.json', 'sha256': '86e07e497674ea6a83c243fa9c2dca55521ef05c6676be232b7868471952d353'}
+10 {'H': 36, 'A': 62, 'Q': 14, 'fill': 54, 'peel_success': True, 'max_energy_coeff': 4, 'file': 'certificate_radius_10.json', 'sha256': 'c3947d770746cb09d6f1aef072cbff0be30be0dbbfb121d8cc2c9a28b09dfca5'}

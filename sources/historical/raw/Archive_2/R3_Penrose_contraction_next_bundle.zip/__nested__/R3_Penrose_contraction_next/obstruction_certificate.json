@@ -1,0 +1,19 @@
+{
+  "scope": "local algebraic no-go for the naive star-based self-feedback coefficient; NOT a Penrose full matrix certificate",
+  "opposite_staple_star_n": 2,
+  "minimum_energy": 2,
+  "star_energy_for_all_link_values": 2,
+  "necessary_coefficient_for_m_le_cS": ">=1",
+  "naive_matrix": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.5
+    ]
+  ],
+  "spectral_radius": 1.0,
+  "conclusion": "Any proposed B with a diagonal >=1 is noncontractive. This does not preclude a more sophisticated face-word B avoiding self-feedback."
+}

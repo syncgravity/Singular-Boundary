@@ -1,0 +1,1364 @@
+{
+  "seed_faces_z5": [
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    ]
+  ],
+  "by_radius": [
+    {
+      "radius": 5.0,
+      "Q_indices": [
+        267,
+        268,
+        270,
+        272,
+        273,
+        275,
+        322,
+        426,
+        428,
+        429,
+        432,
+        440,
+        481,
+        482
+      ],
+      "canonical_temporal_faces": [
+        {
+          "face_index": 267,
+          "time_slab": 0,
+          "spatial_edge_index": 57,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 268,
+          "time_slab": 0,
+          "spatial_edge_index": 58,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 270,
+          "time_slab": 0,
+          "spatial_edge_index": 60,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 272,
+          "time_slab": 0,
+          "spatial_edge_index": 62,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 273,
+          "time_slab": 0,
+          "spatial_edge_index": 63,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 275,
+          "time_slab": 0,
+          "spatial_edge_index": 65,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 322,
+          "time_slab": 0,
+          "spatial_edge_index": 112,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 426,
+          "time_slab": 1,
+          "spatial_edge_index": 57,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 428,
+          "time_slab": 1,
+          "spatial_edge_index": 59,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 429,
+          "time_slab": 1,
+          "spatial_edge_index": 60,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 432,
+          "time_slab": 1,
+          "spatial_edge_index": 63,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 440,
+          "time_slab": 1,
+          "spatial_edge_index": 71,
+          "z5_endpoints": [
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 481,
+          "time_slab": 1,
+          "spatial_edge_index": 112,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 482,
+          "time_slab": 1,
+          "spatial_edge_index": 113,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "H_size": 36,
+      "affected_retained_faces_size": 62
+    },
+    {
+      "radius": 6.5,
+      "Q_indices": [
+        475,
+        476,
+        478,
+        480,
+        481,
+        483,
+        546,
+        744,
+        746,
+        747,
+        750,
+        758,
+        815,
+        816
+      ],
+      "canonical_temporal_faces": [
+        {
+          "face_index": 475,
+          "time_slab": 0,
+          "spatial_edge_index": 109,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 476,
+          "time_slab": 0,
+          "spatial_edge_index": 110,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 478,
+          "time_slab": 0,
+          "spatial_edge_index": 112,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 480,
+          "time_slab": 0,
+          "spatial_edge_index": 114,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 481,
+          "time_slab": 0,
+          "spatial_edge_index": 115,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 483,
+          "time_slab": 0,
+          "spatial_edge_index": 117,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 546,
+          "time_slab": 0,
+          "spatial_edge_index": 180,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 744,
+          "time_slab": 1,
+          "spatial_edge_index": 109,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 746,
+          "time_slab": 1,
+          "spatial_edge_index": 111,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 747,
+          "time_slab": 1,
+          "spatial_edge_index": 112,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 750,
+          "time_slab": 1,
+          "spatial_edge_index": 115,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 758,
+          "time_slab": 1,
+          "spatial_edge_index": 123,
+          "z5_endpoints": [
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 815,
+          "time_slab": 1,
+          "spatial_edge_index": 180,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 816,
+          "time_slab": 1,
+          "spatial_edge_index": 181,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "H_size": 36,
+      "affected_retained_faces_size": 62
+    },
+    {
+      "radius": 8.0,
+      "Q_indices": [
+        761,
+        762,
+        764,
+        766,
+        767,
+        769,
+        857,
+        1182,
+        1184,
+        1185,
+        1188,
+        1196,
+        1278,
+        1279
+      ],
+      "canonical_temporal_faces": [
+        {
+          "face_index": 761,
+          "time_slab": 0,
+          "spatial_edge_index": 173,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 762,
+          "time_slab": 0,
+          "spatial_edge_index": 174,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 764,
+          "time_slab": 0,
+          "spatial_edge_index": 176,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 766,
+          "time_slab": 0,
+          "spatial_edge_index": 178,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 767,
+          "time_slab": 0,
+          "spatial_edge_index": 179,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 769,
+          "time_slab": 0,
+          "spatial_edge_index": 181,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 857,
+          "time_slab": 0,
+          "spatial_edge_index": 269,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1182,
+          "time_slab": 1,
+          "spatial_edge_index": 173,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1184,
+          "time_slab": 1,
+          "spatial_edge_index": 175,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1185,
+          "time_slab": 1,
+          "spatial_edge_index": 176,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1188,
+          "time_slab": 1,
+          "spatial_edge_index": 179,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1196,
+          "time_slab": 1,
+          "spatial_edge_index": 187,
+          "z5_endpoints": [
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1278,
+          "time_slab": 1,
+          "spatial_edge_index": 269,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1279,
+          "time_slab": 1,
+          "spatial_edge_index": 270,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "H_size": 36,
+      "affected_retained_faces_size": 62
+    },
+    {
+      "radius": 10.0,
+      "Q_indices": [
+        1324,
+        1325,
+        1327,
+        1329,
+        1330,
+        1332,
+        1452,
+        2038,
+        2040,
+        2041,
+        2044,
+        2052,
+        2166,
+        2167
+      ],
+      "canonical_temporal_faces": [
+        {
+          "face_index": 1324,
+          "time_slab": 0,
+          "spatial_edge_index": 310,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1325,
+          "time_slab": 0,
+          "spatial_edge_index": 311,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1327,
+          "time_slab": 0,
+          "spatial_edge_index": 313,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1329,
+          "time_slab": 0,
+          "spatial_edge_index": 315,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1330,
+          "time_slab": 0,
+          "spatial_edge_index": 316,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1332,
+          "time_slab": 0,
+          "spatial_edge_index": 318,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 1452,
+          "time_slab": 0,
+          "spatial_edge_index": 438,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2038,
+          "time_slab": 1,
+          "spatial_edge_index": 310,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2040,
+          "time_slab": 1,
+          "spatial_edge_index": 312,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2041,
+          "time_slab": 1,
+          "spatial_edge_index": 313,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2044,
+          "time_slab": 1,
+          "spatial_edge_index": 316,
+          "z5_endpoints": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2052,
+          "time_slab": 1,
+          "spatial_edge_index": 324,
+          "z5_endpoints": [
+            [
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2166,
+          "time_slab": 1,
+          "spatial_edge_index": 438,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "face_index": 2167,
+          "time_slab": 1,
+          "spatial_edge_index": 439,
+          "z5_endpoints": [
+            [
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "H_size": 36,
+      "affected_retained_faces_size": 62
+    }
+  ]
+}

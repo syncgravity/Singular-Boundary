@@ -1,0 +1,101 @@
+{
+  "catalogue_sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+  "catalogue_fields": {
+    "idx": {
+      "shape": [
+        22808,
+        22
+      ],
+      "dtype": "int64"
+    },
+    "sign": {
+      "shape": [
+        22808,
+        22
+      ],
+      "dtype": "int64"
+    },
+    "length": {
+      "shape": [
+        22808
+      ],
+      "dtype": "int64"
+    },
+    "roots": {
+      "shape": [
+        22808
+      ],
+      "dtype": "int64"
+    },
+    "distance": {
+      "shape": [
+        22808
+      ],
+      "dtype": "float64"
+    },
+    "target": {
+      "shape": [
+        22808
+      ],
+      "dtype": "int64"
+    },
+    "faces": {
+      "shape": [
+        22808
+      ],
+      "dtype": "int64"
+    },
+    "cidx": {
+      "shape": [
+        68424,
+        16
+      ],
+      "dtype": "int64"
+    },
+    "csign": {
+      "shape": [
+        68424,
+        16
+      ],
+      "dtype": "int64"
+    },
+    "clength": {
+      "shape": [
+        68424
+      ],
+      "dtype": "int64"
+    },
+    "ckind": {
+      "shape": [
+        68424
+      ],
+      "dtype": "int64"
+    },
+    "F": {
+      "shape": [],
+      "dtype": "int64"
+    },
+    "graph_hash": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "threshold": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "coverage_version": {
+      "shape": [],
+      "dtype": "<U25"
+    }
+  },
+  "catalogue_metadata": {
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "coverage_version": "stage19_complete_22808_v1"
+  },
+  "candidate_files": [
+    "R3_direct_closure_2026_10_28/test_peeling.py",
+    "R3_direct_closure_2026_10_28/peeling_certificate.py",
+    "R3_direct_closure_2026_10_28/__pycache__/test_peeling.cpython-313.pyc",
+    "R3_direct_closure_2026_10_28/__pycache__/peeling_certificate.cpython-313.pyc"
+  ]
+}

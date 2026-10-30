@@ -1,0 +1,42 @@
+{
+  "5": {
+    "H": 35,
+    "A": 53,
+    "Q": 14,
+    "fill": null,
+    "peel_success": false,
+    "max_energy_coeff": null,
+    "file": "certificate_radius_5.json",
+    "sha256": "87d3416be86371b3678250e8581a67c4c871994168bb331496a5fb3f898cbd22"
+  },
+  "6.5": {
+    "H": 35,
+    "A": 53,
+    "Q": 14,
+    "fill": null,
+    "peel_success": false,
+    "max_energy_coeff": null,
+    "file": "certificate_radius_6_5.json",
+    "sha256": "17604472f1addabe1262a0f79f1b6c738e6a4204d59840f7a9c393e07a456128"
+  },
+  "8": {
+    "H": 35,
+    "A": 53,
+    "Q": 14,
+    "fill": null,
+    "peel_success": false,
+    "max_energy_coeff": null,
+    "file": "certificate_radius_8.json",
+    "sha256": "6c6a9f0db28605807574727e5f76c74028f42f8b907cc3fe38fab5a3c917b7bb"
+  },
+  "10": {
+    "H": 35,
+    "A": 53,
+    "Q": 14,
+    "fill": null,
+    "peel_success": false,
+    "max_energy_coeff": null,
+    "file": "certificate_radius_10.json",
+    "sha256": "93e02021c18f7ecaa312ff5b7225ef7af240a46e3ccf0d5066d5a347e3c4aedf"
+  }
+}

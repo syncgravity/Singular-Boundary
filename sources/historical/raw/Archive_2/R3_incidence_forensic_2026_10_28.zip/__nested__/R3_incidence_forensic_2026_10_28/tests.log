@@ -1,0 +1,9 @@
+test_exterior_blocks (test_audit.Tests.test_exterior_blocks) ... ok
+test_full_rank_not_sufficient (test_audit.Tests.test_full_rank_not_sufficient) ... ok
+test_partial (test_audit.Tests.test_partial) ... ok
+test_private_face (test_audit.Tests.test_private_face) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
