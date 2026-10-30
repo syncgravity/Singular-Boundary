@@ -19,9 +19,9 @@ Proof: chi_1/2=2p and chi_1/2²=chi_0+chi_1. Thus p²=chi_1/2²/4=(chi_0+chi_1)/
 
 Consequently
 F_beta^phys(p²)
-=1/4 +(1/4) exp(-3beta A/4)+O(exp(-2 beta A)),
+=1/4 +(1/4) exp(-3beta A/4)+O(exp(-3 beta A/2)),
 as beta tends to infinity. (PT-2)
-The next energy is j=1 with E_1=2A, so the remainder O(exp(-2beta A)) includes the denominator correction and j=1 contributions. In fact the j=1/2 contribution is strictly positive at every finite beta; a direct identity strengthens the conclusion:
+The next energy is j=1 with E_1=2A, but the normalization denominator produces an earlier order exp(-3 beta A/2) correction, so the stated remainder is O(exp(-3 beta A/2)). In fact the j=1/2 contribution is strictly positive at every finite beta; a direct identity strengthens the conclusion:
 For j=0, integral p² chi_j²=1/4, while for every j>=1/2,
 integral p² chi_j²=1/2,
 because chi_1/2 chi_j=chi_(j+1/2)+chi_(j-1/2), whose two character terms are orthogonal. Therefore
