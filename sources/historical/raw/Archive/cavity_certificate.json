@@ -1,0 +1,163 @@
+{
+  "support_seed_genuine_Z5_labels": [
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    ]
+  ],
+  "geometry_results": [
+    {
+      "radius": 5.0,
+      "rhombi": 70,
+      "Q_inserted_face_count": 14,
+      "H_initial_links": 36,
+      "K_one_shell_links": 125,
+      "K_two_shell_links": 258,
+      "retained_faces_touched_by_H": 62,
+      "retained_faces_touched_by_K": 175,
+      "surgery_k_over_q": 8.928571428571429,
+      "jacobian": 1,
+      "generic_net_inverse_multiplicity_log_bound": "k*(log 4097 + 1.5 log lambda)"
+    },
+    {
+      "radius": 6.5,
+      "rhombi": 122,
+      "Q_inserted_face_count": 14,
+      "H_initial_links": 36,
+      "K_one_shell_links": 125,
+      "K_two_shell_links": 258,
+      "retained_faces_touched_by_H": 62,
+      "retained_faces_touched_by_K": 175,
+      "surgery_k_over_q": 8.928571428571429,
+      "jacobian": 1,
+      "generic_net_inverse_multiplicity_log_bound": "k*(log 4097 + 1.5 log lambda)"
+    },
+    {
+      "radius": 8.0,
+      "rhombi": 196,
+      "Q_inserted_face_count": 14,
+      "H_initial_links": 36,
+      "K_one_shell_links": 125,
+      "K_two_shell_links": 258,
+      "retained_faces_touched_by_H": 62,
+      "retained_faces_touched_by_K": 175,
+      "surgery_k_over_q": 8.928571428571429,
+      "jacobian": 1,
+      "generic_net_inverse_multiplicity_log_bound": "k*(log 4097 + 1.5 log lambda)"
+    },
+    {
+      "radius": 10.0,
+      "rhombi": 338,
+      "Q_inserted_face_count": 14,
+      "H_initial_links": 36,
+      "K_one_shell_links": 125,
+      "K_two_shell_links": 258,
+      "retained_faces_touched_by_H": 62,
+      "retained_faces_touched_by_K": 175,
+      "surgery_k_over_q": 8.928571428571429,
+      "jacobian": 1,
+      "generic_net_inverse_multiplicity_log_bound": "k*(log 4097 + 1.5 log lambda)"
+    }
+  ],
+  "net_random_angle_checks": [
+    {
+      "lambda": 1.0,
+      "net_size": 2745,
+      "max_sample_geodesic_error": 0.24628736070071586,
+      "rigorous_geodesic_error_upper": 1.0
+    },
+    {
+      "lambda": 4.0,
+      "net_size": 17577,
+      "max_sample_geodesic_error": 0.1260184318887105,
+      "rigorous_geodesic_error_upper": 0.5
+    }
+  ],
+  "note": "Actual source anchor is Q14 overlapping temporal faces in intervals 0 and 1. Numerical net cover checks are supplemental; the mathematical cover guarantee follows from dominant-coordinate charts. No unconditional terminal s_K estimate."
+}

@@ -1,0 +1,115 @@
+{
+  "source": "Direct Z5 Penrose spacetime exact signed face-to-link incidence, Q14 retained cavity",
+  "method": "independent modular elimination with two primes",
+  "rows": [
+    {
+      "radius": 5.0,
+      "shell": 0,
+      "adjustable_links": 36,
+      "affected_retained_faces": 62,
+      "full_incidence_rank": 59,
+      "local_incidence_rank": 35,
+      "relative_exterior_rank": 24
+    },
+    {
+      "radius": 5.0,
+      "shell": 1,
+      "adjustable_links": 125,
+      "affected_retained_faces": 175,
+      "full_incidence_rank": 149,
+      "local_incidence_rank": 103,
+      "relative_exterior_rank": 46
+    },
+    {
+      "radius": 5.0,
+      "shell": 2,
+      "adjustable_links": 258,
+      "affected_retained_faces": 335,
+      "full_incidence_rank": 263,
+      "local_incidence_rank": 200,
+      "relative_exterior_rank": 63
+    },
+    {
+      "radius": 6.5,
+      "shell": 0,
+      "adjustable_links": 36,
+      "affected_retained_faces": 62,
+      "full_incidence_rank": 59,
+      "local_incidence_rank": 35,
+      "relative_exterior_rank": 24
+    },
+    {
+      "radius": 6.5,
+      "shell": 1,
+      "adjustable_links": 125,
+      "affected_retained_faces": 175,
+      "full_incidence_rank": 149,
+      "local_incidence_rank": 103,
+      "relative_exterior_rank": 46
+    },
+    {
+      "radius": 6.5,
+      "shell": 2,
+      "adjustable_links": 258,
+      "affected_retained_faces": 335,
+      "full_incidence_rank": 263,
+      "local_incidence_rank": 200,
+      "relative_exterior_rank": 63
+    },
+    {
+      "radius": 8.0,
+      "shell": 0,
+      "adjustable_links": 36,
+      "affected_retained_faces": 62,
+      "full_incidence_rank": 59,
+      "local_incidence_rank": 35,
+      "relative_exterior_rank": 24
+    },
+    {
+      "radius": 8.0,
+      "shell": 1,
+      "adjustable_links": 125,
+      "affected_retained_faces": 175,
+      "full_incidence_rank": 149,
+      "local_incidence_rank": 103,
+      "relative_exterior_rank": 46
+    },
+    {
+      "radius": 8.0,
+      "shell": 2,
+      "adjustable_links": 258,
+      "affected_retained_faces": 335,
+      "full_incidence_rank": 263,
+      "local_incidence_rank": 200,
+      "relative_exterior_rank": 63
+    },
+    {
+      "radius": 10.0,
+      "shell": 0,
+      "adjustable_links": 36,
+      "affected_retained_faces": 62,
+      "full_incidence_rank": 59,
+      "local_incidence_rank": 35,
+      "relative_exterior_rank": 24
+    },
+    {
+      "radius": 10.0,
+      "shell": 1,
+      "adjustable_links": 125,
+      "affected_retained_faces": 175,
+      "full_incidence_rank": 149,
+      "local_incidence_rank": 103,
+      "relative_exterior_rank": 46
+    },
+    {
+      "radius": 10.0,
+      "shell": 2,
+      "adjustable_links": 258,
+      "affected_retained_faces": 335,
+      "full_incidence_rank": 263,
+      "local_incidence_rank": 200,
+      "relative_exterior_rank": 63
+    }
+  ],
+  "interpretation": "positive exterior rank precludes universal flat completion with every outside link fixed; does not preclude averaged Gibbs suppression"
+}

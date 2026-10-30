@@ -1,0 +1,53 @@
+{
+  "status": "Exact theorem for normal Gaussian quotient; floating point numerical coefficient audit on two genuine Penrose ambient patches; NOT a nonlinear Haar concentration bound",
+  "results": [
+    {
+      "radius": 5.0,
+      "ambient_retained_faces": 673,
+      "A_faces": 62,
+      "crossing_faces": 33,
+      "solved_pivots": 59,
+      "normal_projector_covariance_max_eig": 0.9999999889782202,
+      "normal_projector_covariance_rank": 91,
+      "crossing_transfer_operator_norm": 14.510290665038848,
+      "crossing_transport_quadratic_eigenvalue_min": -0.9952944776699908,
+      "crossing_transport_quadratic_eigenvalue_max": 43.150432982768905,
+      "crossing_transport_positive_eigenvalue_count": 22,
+      "dimensionless_gaussian_crossing_mean_lambda_Gamma": 135.53357176106195,
+      "dimensionless_gaussian_crossing_std_lambda_Gamma": 64.30081566413119,
+      "dimensionless_gaussian_crossing_positive_part_upper_expectation": 159.85730272739428,
+      "gaussian_24_mode_covariance_rank": 24,
+      "gaussian_24_mode_covariance_max_eig": 0.9999999491575692,
+      "gaussian_expected_lambda_sH": 20.832405988983083,
+      "gaussian_lambda_sH_upper_mean": 36.0,
+      "gaussian_24_mode_tail": "P(lambda*sH >= t) <= min(1,2^36 exp(-t/2)), uniformly in ambient volume, for exactly linearized free-boundary Gaussian measure, NOT SU2",
+      "action_covariance_trace_all_A_C": 71.56513722664374,
+      "elapsed_seconds": 0.01627182960510254,
+      "linearized_Gaussian_theorem": "For each independent SU(2) tangent color the full retained curvature is N(0,P_im(D)/lambda). All local-marginal covariance eigenvalues are <=1, independent of ambient size. For local A, P(lambda*s_H^lin >= t) <= min(1, 2^(3|A|/2)*exp(-t/2)); this is NOT a nonabelian SU2 theorem."
+    },
+    {
+      "radius": 6.5,
+      "ambient_retained_faces": 1159,
+      "A_faces": 62,
+      "crossing_faces": 33,
+      "solved_pivots": 59,
+      "normal_projector_covariance_max_eig": 0.9999999889773384,
+      "normal_projector_covariance_rank": 91,
+      "crossing_transfer_operator_norm": 14.510290665038848,
+      "crossing_transport_quadratic_eigenvalue_min": -0.9952944752399775,
+      "crossing_transport_quadratic_eigenvalue_max": 42.789037409781486,
+      "crossing_transport_positive_eigenvalue_count": 22,
+      "dimensionless_gaussian_crossing_mean_lambda_Gamma": 133.97670055531307,
+      "dimensionless_gaussian_crossing_std_lambda_Gamma": 63.71063706979482,
+      "dimensionless_gaussian_crossing_positive_part_upper_expectation": 158.29888787084832,
+      "gaussian_24_mode_covariance_rank": 24,
+      "gaussian_24_mode_covariance_max_eig": 0.9999999489050639,
+      "gaussian_expected_lambda_sH": 20.768317974753174,
+      "gaussian_lambda_sH_upper_mean": 36.0,
+      "gaussian_24_mode_tail": "P(lambda*sH >= t) <= min(1,2^36 exp(-t/2)), uniformly in ambient volume, for exactly linearized free-boundary Gaussian measure, NOT SU2",
+      "action_covariance_trace_all_A_C": 71.49401360956563,
+      "elapsed_seconds": 0.04154610633850098,
+      "linearized_Gaussian_theorem": "For each independent SU(2) tangent color the full retained curvature is N(0,P_im(D)/lambda). All local-marginal covariance eigenvalues are <=1, independent of ambient size. For local A, P(lambda*s_H^lin >= t) <= min(1, 2^(3|A|/2)*exp(-t/2)); this is NOT a nonabelian SU2 theorem."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "geometry": [
+    {
+      "radius": 5.0,
+      "links": 747,
+      "faces": 687,
+      "max_face_edge_count": 4,
+      "max_link_face_incidence": 7,
+      "incidence_histogram": {
+        "2": 45,
+        "3": 234,
+        "4": 402,
+        "5": 54,
+        "6": 6,
+        "7": 6
+      }
+    },
+    {
+      "radius": 6.5,
+      "links": 1251,
+      "faces": 1173,
+      "max_face_edge_count": 4,
+      "max_link_face_incidence": 7,
+      "incidence_histogram": {
+        "2": 63,
+        "3": 351,
+        "4": 711,
+        "5": 102,
+        "6": 9,
+        "7": 15
+      }
+    },
+    {
+      "radius": 8.0,
+      "links": 1941,
+      "faces": 1851,
+      "max_face_edge_count": 4,
+      "max_link_face_incidence": 7,
+      "incidence_histogram": {
+        "2": 72,
+        "3": 495,
+        "4": 1164,
+        "5": 168,
+        "6": 15,
+        "7": 27
+      }
+    },
+    {
+      "radius": 10.0,
+      "links": 3273,
+      "faces": 3156,
+      "max_face_edge_count": 4,
+      "max_link_face_incidence": 7,
+      "incidence_histogram": {
+        "2": 93,
+        "3": 771,
+        "4": 2046,
+        "5": 285,
+        "6": 30,
+        "7": 48
+      }
+    }
+  ],
+  "nu": 7,
+  "p": 4,
+  "haar_ball_volume_coefficient": 0.08600409182186532,
+  "lambda_min": 1,
+  "local_energy_excess_bound": "lambda E[S_B-min(S_B)|exterior] <= |B|*(1.5 log(lambda)+16.453360404536)",
+  "uniform_conditional_upper_tail": "P(lambda*(S_B-min(S_B)) >= 3*|B|*log(lambda)+32.906720809073*|B|+2*s | exterior) <= exp(-s)",
+  "missing": "no uniform bound on lambda E exterior-conditional min(S_B); thus no arbitrary 3D R3 theorem",
+  "derivation": "SU(2)^|B| Haar geodesic balls radius lambda^-1/2 at action minimum; Hessian of each quadrilateral <= sum tangent norms squared; each link in <=7 faces; concavity of negative log partition function"
+}

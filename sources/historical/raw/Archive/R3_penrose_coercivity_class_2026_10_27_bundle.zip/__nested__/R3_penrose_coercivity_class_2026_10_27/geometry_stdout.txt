@@ -1,0 +1,4 @@
+{'radius': 5.0, 'Q_count': 14, 'H_links': 36, 'K_links': 125, 'A_K_retained_faces': 175, 'halo_frozen_links': 133, 'halo_vertices': 87, 'halo_bound_lambda_sK_epsilon1': 1400, 'eta_for_epsilon_quarter': 6.25, 'C_v_per_col': 7}
+{'radius': 6.5, 'Q_count': 14, 'H_links': 36, 'K_links': 125, 'A_K_retained_faces': 175, 'halo_frozen_links': 133, 'halo_vertices': 87, 'halo_bound_lambda_sK_epsilon1': 1400, 'eta_for_epsilon_quarter': 6.25, 'C_v_per_col': 7}
+{'radius': 8.0, 'Q_count': 14, 'H_links': 36, 'K_links': 125, 'A_K_retained_faces': 175, 'halo_frozen_links': 133, 'halo_vertices': 87, 'halo_bound_lambda_sK_epsilon1': 1400, 'eta_for_epsilon_quarter': 6.25, 'C_v_per_col': 7}
+{'radius': 10.0, 'Q_count': 14, 'H_links': 36, 'K_links': 125, 'A_K_retained_faces': 175, 'halo_frozen_links': 133, 'halo_vertices': 87, 'halo_bound_lambda_sK_epsilon1': 1400, 'eta_for_epsilon_quarter': 6.25, 'C_v_per_col': 7}

@@ -1,0 +1,105 @@
+{
+  "scope": "Exact linearization at the fully flat connection; strong restriction of any smooth correlated surgery that preserves all crossing plaquette holonomies while changing only H and its immediate 89-link halo. Does NOT rule out repairs that also change crossing plaquettes or links in an enlarged collar.",
+  "results": [
+    {
+      "radius": 5.0,
+      "H_links": 36,
+      "A_faces": 62,
+      "exterior_links": 89,
+      "crossing_retained_faces": 113,
+      "results": [
+        {
+          "prime": 1000003,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        },
+        {
+          "prime": 1000033,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        }
+      ]
+    },
+    {
+      "radius": 6.5,
+      "H_links": 36,
+      "A_faces": 62,
+      "exterior_links": 89,
+      "crossing_retained_faces": 113,
+      "results": [
+        {
+          "prime": 1000003,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        },
+        {
+          "prime": 1000033,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        }
+      ]
+    },
+    {
+      "radius": 8.0,
+      "H_links": 36,
+      "A_faces": 62,
+      "exterior_links": 89,
+      "crossing_retained_faces": 113,
+      "results": [
+        {
+          "prime": 1000003,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        },
+        {
+          "prime": 1000033,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        }
+      ]
+    },
+    {
+      "radius": 10.0,
+      "H_links": 36,
+      "A_faces": 62,
+      "exterior_links": 89,
+      "crossing_retained_faces": 113,
+      "results": [
+        {
+          "prime": 1000003,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        },
+        {
+          "prime": 1000033,
+          "local_rank": 35,
+          "unrestricted_exterior_rank": 24,
+          "crossing_fixed_exterior_rank": 1,
+          "crossing_constraint_rank": 67,
+          "crossing_fixed_available_free_tangents": 22
+        }
+      ]
+    }
+  ]
+}

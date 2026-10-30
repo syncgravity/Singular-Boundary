@@ -1,0 +1,27 @@
+radius 5.0 family compact n 1 Q 8 pivot 8 influenced 14
+radius 5.0 family compact n 3 Q 17 pivot 17 influenced 28
+radius 5.0 family compact n 6 Q 27 pivot 27 influenced 41
+radius 5.0 family compact n 16 Q 62 pivot 62 influenced 86
+radius 5.0 family filament n 1 Q 8 pivot 8 influenced 14
+radius 5.0 family filament n 3 Q 17 pivot 17 influenced 28
+radius 5.0 family filament n 6 Q 29 pivot 29 influenced 45
+radius 8.0 family compact n 1 Q 8 pivot 8 influenced 14
+radius 8.0 family compact n 3 Q 17 pivot 17 influenced 28
+radius 8.0 family compact n 6 Q 27 pivot 27 influenced 41
+radius 8.0 family compact n 16 Q 62 pivot 62 influenced 86
+radius 8.0 family compact n 40 Q 145 pivot 145 influenced 195
+radius 8.0 family compact n 80 Q 279 pivot 279 influenced 360
+radius 8.0 family filament n 1 Q 8 pivot 8 influenced 14
+radius 8.0 family filament n 3 Q 17 pivot 17 influenced 28
+radius 8.0 family filament n 6 Q 29 pivot 29 influenced 46
+radius 10.0 family compact n 1 Q 8 pivot 8 influenced 14
+radius 10.0 family compact n 3 Q 17 pivot 17 influenced 28
+radius 10.0 family compact n 6 Q 27 pivot 27 influenced 41
+radius 10.0 family compact n 16 Q 62 pivot 62 influenced 86
+radius 10.0 family compact n 40 Q 145 pivot 145 influenced 195
+radius 10.0 family compact n 80 Q 279 pivot 279 influenced 360
+radius 10.0 family compact n 160 Q 531 pivot 531 influenced 656
+radius 10.0 family filament n 1 Q 8 pivot 8 influenced 14
+radius 10.0 family filament n 3 Q 17 pivot 17 influenced 28
+radius 10.0 family filament n 6 Q 29 pivot 29 influenced 46
+PASSED 26 genuine Penrose supports 2 quaternion audits; staple 1.4999962499540054

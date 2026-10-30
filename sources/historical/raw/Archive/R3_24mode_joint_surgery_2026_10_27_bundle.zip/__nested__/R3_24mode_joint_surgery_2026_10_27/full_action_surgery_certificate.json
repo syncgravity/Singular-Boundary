@@ -1,0 +1,142 @@
+{
+  "construction": "exact branchwise Haar-preserving 3-color Q8 pivot-coordinate descent over a rank-complete 24-exterior-mode basis",
+  "scope": "full retained action never increases; NO quantitative coercivity proportional to s_H and no absolute Gibbs tail",
+  "results": [
+    {
+      "radius": 5.0,
+      "Q_count": 14,
+      "selected_mode_links": 24,
+      "colored_groups": [
+        12,
+        10,
+        2
+      ],
+      "faces_touched_by_surgery": 73,
+      "max_per_link_face_incidence": 4,
+      "Haar_jacobian_each_branch": 1,
+      "max_inverse_multiplicity": 4722366482869645213696,
+      "trials": [
+        {
+          "trial": 0,
+          "action_decrease": 0.0,
+          "nonidentity_mode_links": 0,
+          "modified_face_count": 0
+        },
+        {
+          "trial": 1,
+          "action_decrease": 15.353766630013077,
+          "nonidentity_mode_links": 16,
+          "modified_face_count": 54
+        },
+        {
+          "trial": 2,
+          "action_decrease": 56.0,
+          "nonidentity_mode_links": 8,
+          "modified_face_count": 28
+        }
+      ]
+    },
+    {
+      "radius": 6.5,
+      "Q_count": 14,
+      "selected_mode_links": 24,
+      "colored_groups": [
+        12,
+        10,
+        2
+      ],
+      "faces_touched_by_surgery": 73,
+      "max_per_link_face_incidence": 4,
+      "Haar_jacobian_each_branch": 1,
+      "max_inverse_multiplicity": 4722366482869645213696,
+      "trials": [
+        {
+          "trial": 0,
+          "action_decrease": 0.0,
+          "nonidentity_mode_links": 0,
+          "modified_face_count": 0
+        },
+        {
+          "trial": 1,
+          "action_decrease": 29.350414263124662,
+          "nonidentity_mode_links": 20,
+          "modified_face_count": 65
+        },
+        {
+          "trial": 2,
+          "action_decrease": 56.0,
+          "nonidentity_mode_links": 8,
+          "modified_face_count": 28
+        }
+      ]
+    },
+    {
+      "radius": 8.0,
+      "Q_count": 14,
+      "selected_mode_links": 24,
+      "colored_groups": [
+        12,
+        10,
+        2
+      ],
+      "faces_touched_by_surgery": 73,
+      "max_per_link_face_incidence": 4,
+      "Haar_jacobian_each_branch": 1,
+      "max_inverse_multiplicity": 4722366482869645213696,
+      "trials": [
+        {
+          "trial": 0,
+          "action_decrease": 0.0,
+          "nonidentity_mode_links": 0,
+          "modified_face_count": 0
+        },
+        {
+          "trial": 1,
+          "action_decrease": 26.47994532483618,
+          "nonidentity_mode_links": 17,
+          "modified_face_count": 58
+        },
+        {
+          "trial": 2,
+          "action_decrease": 56.0,
+          "nonidentity_mode_links": 8,
+          "modified_face_count": 28
+        }
+      ]
+    },
+    {
+      "radius": 10.0,
+      "Q_count": 14,
+      "selected_mode_links": 24,
+      "colored_groups": [
+        12,
+        10,
+        2
+      ],
+      "faces_touched_by_surgery": 73,
+      "max_per_link_face_incidence": 4,
+      "Haar_jacobian_each_branch": 1,
+      "max_inverse_multiplicity": 4722366482869645213696,
+      "trials": [
+        {
+          "trial": 0,
+          "action_decrease": 0.0,
+          "nonidentity_mode_links": 0,
+          "modified_face_count": 0
+        },
+        {
+          "trial": 1,
+          "action_decrease": 24.353099176500862,
+          "nonidentity_mode_links": 18,
+          "modified_face_count": 58
+        },
+        {
+          "trial": 2,
+          "action_decrease": 56.0,
+          "nonidentity_mode_links": 8,
+          "modified_face_count": 28
+        }
+      ]
+    }
+  ]
+}

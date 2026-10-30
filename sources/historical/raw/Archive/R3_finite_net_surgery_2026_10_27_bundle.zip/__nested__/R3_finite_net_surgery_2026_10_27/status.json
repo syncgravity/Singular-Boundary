@@ -1,0 +1,18 @@
+{
+  "model": "3-step periodic Wilson SU(2) on verified window-first Z5 Penrose rhombus spatial disks",
+  "proved": [
+    "finite quaternion geodesic 1/sqrt(lambda) net, cardinal <=4097 lambda^(3/2)",
+    "piecewise left-Haar translation, exact Jacobian 1 and inverse multiplicity <=(4097 lambda^(3/2))^|K|",
+    "full retained action nonincreasing for all configurations",
+    "quantitative decrease >=lambda(s_H-s_K)-2nu|K|",
+    "Peierls tail for lambda(s_H-s_K)",
+    "conditional absolute tail if an additional exterior collar-coercivity inequality holds",
+    "actual Penrose Q14 one-exterior-link center flip with Jacobian 1 and at most 90 branches"
+  ],
+  "not_proved": [
+    "positive absolute collar coercivity alpha for all Penrose support/boundary fields",
+    "absolute volume-uniform Gibbs tail for s_H",
+    "general local retained-energy inequality and arbitrary-support R3 insertion theorem",
+    "continuum Yang-Mills mass gap"
+  ]
+}

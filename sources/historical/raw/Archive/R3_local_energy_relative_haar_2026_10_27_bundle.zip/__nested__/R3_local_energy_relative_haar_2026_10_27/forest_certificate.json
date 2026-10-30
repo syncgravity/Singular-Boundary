@@ -1,0 +1,161 @@
+{
+  "title": "General three-interval cycle-breaking Haar chart",
+  "restriction": "For each spatial edge e at least one of t=0,1,2 temporal faces must remain retained. No result for all-three temporal insertion cycle.",
+  "proof": "Each selected temporal face chooses a spatial-link leaf pivot belonging to no other selected face on that spatial edge. Change of variables is independent Haar translation or inversion. The table CHOICES provides a constructive certificate.",
+  "verified": [
+    {
+      "support_size": 13,
+      "distinct_pivots": 13,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 3.3306690738754696e-16,
+      "holonomy_max_error": 4.1540741810552243e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 2.3248045376063626e-16,
+      "radius": 5.0,
+      "spatial_edges_selected": 8
+    },
+    {
+      "support_size": 36,
+      "distinct_pivots": 36,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 5.551115123125783e-16,
+      "holonomy_max_error": 7.348678496207199e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 1.962615573354719e-16,
+      "radius": 5.0,
+      "spatial_edges_selected": 24
+    },
+    {
+      "support_size": 76,
+      "distinct_pivots": 76,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 5.551115123125783e-16,
+      "holonomy_max_error": 7.142680465120772e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 2.5324586304240974e-16,
+      "radius": 5.0,
+      "spatial_edges_selected": 50
+    },
+    {
+      "support_size": 151,
+      "distinct_pivots": 151,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 5.551115123125783e-16,
+      "holonomy_max_error": 7.406111315403549e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 5.238750013840907e-16,
+      "radius": 5.0,
+      "spatial_edges_selected": 100
+    },
+    {
+      "support_size": 13,
+      "distinct_pivots": 13,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 6.661338147750939e-16,
+      "holonomy_max_error": 9.635822882292338e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 9.309503074677274e-17,
+      "radius": 8.0,
+      "spatial_edges_selected": 8
+    },
+    {
+      "support_size": 36,
+      "distinct_pivots": 36,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 6.661338147750939e-16,
+      "holonomy_max_error": 8.150173236313187e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 1.6883057536160649e-16,
+      "radius": 8.0,
+      "spatial_edges_selected": 24
+    },
+    {
+      "support_size": 76,
+      "distinct_pivots": 76,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 7.771561172376096e-16,
+      "holonomy_max_error": 7.243088545993919e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 4.5109481895347e-16,
+      "radius": 8.0,
+      "spatial_edges_selected": 50
+    },
+    {
+      "support_size": 151,
+      "distinct_pivots": 151,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 5.551115123125783e-16,
+      "holonomy_max_error": 6.713178136967714e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 5.20740757162067e-16,
+      "radius": 8.0,
+      "spatial_edges_selected": 100
+    },
+    {
+      "support_size": 301,
+      "distinct_pivots": 301,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 7.771561172376096e-16,
+      "holonomy_max_error": 9.036560719766055e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 3.6188843062238402e-16,
+      "radius": 8.0,
+      "spatial_edges_selected": 200
+    },
+    {
+      "support_size": 13,
+      "distinct_pivots": 13,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 4.440892098500626e-16,
+      "holonomy_max_error": 5.034405433428661e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 1.8619006149354548e-16,
+      "radius": 10.0,
+      "spatial_edges_selected": 8
+    },
+    {
+      "support_size": 36,
+      "distinct_pivots": 36,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 4.440892098500626e-16,
+      "holonomy_max_error": 5.147892387644517e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 1.594436429147036e-16,
+      "radius": 10.0,
+      "spatial_edges_selected": 24
+    },
+    {
+      "support_size": 76,
+      "distinct_pivots": 76,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 6.661338147750939e-16,
+      "holonomy_max_error": 7.967349055175334e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 1.1775693440128312e-16,
+      "radius": 10.0,
+      "spatial_edges_selected": 50
+    },
+    {
+      "support_size": 151,
+      "distinct_pivots": 151,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 6.661338147750939e-16,
+      "holonomy_max_error": 7.468261590855957e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 2.2887833992611187e-16,
+      "radius": 10.0,
+      "spatial_edges_selected": 100
+    },
+    {
+      "support_size": 301,
+      "distinct_pivots": 301,
+      "max_retained_faces_per_pivot": 3,
+      "roundtrip_max_error": 7.771561172376096e-16,
+      "holonomy_max_error": 7.579689568002537e-16,
+      "far_face_change_error": 0.0,
+      "changed_holonomy_error": 2.5739461938222585e-16,
+      "radius": 10.0,
+      "spatial_edges_selected": 200
+    }
+  ]
+}

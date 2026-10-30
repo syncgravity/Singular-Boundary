@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "radius": 5.0,
+      "Q_count": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_retained_faces": 175,
+      "halo_frozen_links": 133,
+      "halo_vertices": 87,
+      "halo_bound_lambda_sK_epsilon1": 1400,
+      "eta_for_epsilon_quarter": 6.25,
+      "C_v_per_col": 7,
+      "exterior_halo_keys": []
+    },
+    {
+      "radius": 6.5,
+      "Q_count": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_retained_faces": 175,
+      "halo_frozen_links": 133,
+      "halo_vertices": 87,
+      "halo_bound_lambda_sK_epsilon1": 1400,
+      "eta_for_epsilon_quarter": 6.25,
+      "C_v_per_col": 7,
+      "exterior_halo_keys": []
+    },
+    {
+      "radius": 8.0,
+      "Q_count": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_retained_faces": 175,
+      "halo_frozen_links": 133,
+      "halo_vertices": 87,
+      "halo_bound_lambda_sK_epsilon1": 1400,
+      "eta_for_epsilon_quarter": 6.25,
+      "C_v_per_col": 7,
+      "exterior_halo_keys": []
+    },
+    {
+      "radius": 10.0,
+      "Q_count": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_retained_faces": 175,
+      "halo_frozen_links": 133,
+      "halo_vertices": 87,
+      "halo_bound_lambda_sK_epsilon1": 1400,
+      "eta_for_epsilon_quarter": 6.25,
+      "C_v_per_col": 7,
+      "exterior_halo_keys": []
+    }
+  ],
+  "scope": "genuine Z5 Penrose 14 temporal faces, fixed local labels"
+}

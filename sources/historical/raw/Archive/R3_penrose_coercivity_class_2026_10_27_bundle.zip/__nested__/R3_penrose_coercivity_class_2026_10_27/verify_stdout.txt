@@ -1,0 +1,4 @@
+rad 5.0 H/K 36 125 halo 133 pair 229 264 drop 8.0 sK_fraction 0.03577294731605656
+rad 6.5 H/K 36 125 halo 133 pair 417 472 drop 8.0 sK_fraction 0.03405563174194486
+rad 8.0 H/K 36 125 halo 133 pair 684 758 drop 8.0 sK_fraction 0.03208242474155269
+rad 10.0 H/K 36 125 halo 133 pair 1222 1321 drop 8.0 sK_fraction 0.03472606799105523

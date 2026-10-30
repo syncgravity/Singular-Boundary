@@ -1,0 +1,29 @@
+{
+  "lambda_min": 1,
+  "penrose_incidence_max": 7,
+  "Q14": {
+    "Q": 14,
+    "H_links": 36,
+    "K_links": 125,
+    "A_K_faces": 175,
+    "halo_links": 133,
+    "epsilon": 0.25,
+    "eta_over_Q": 6.25,
+    "alpha": 1,
+    "joint_tail_constant_additive": 2877.251284693359,
+    "joint_tail_loglambda_coefficient": 187.5,
+    "defect_event_delta": 0.05,
+    "defect_sH_lower": 1.7,
+    "defect_gibbs_exp_rate": 7.840532622729933
+  },
+  "general_Penrose": {
+    "per_Q_H_bound": 4,
+    "per_Q_K_bound": 88,
+    "per_Q_A_K_bound": 616,
+    "epsilon": 0.25,
+    "eta_per_Q": 308.0,
+    "joint_tail_additive_per_Q": 2271.9849044241246,
+    "joint_tail_loglambda_coefficient_per_Q": 132.0
+  },
+  "warning": "The stated tails control either large frustration AND the near-pure-gauge exterior event, or a special 13-link center defect. They do not bound the unconditional entire s_H tail."
+}

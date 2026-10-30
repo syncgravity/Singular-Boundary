@@ -1,0 +1,190 @@
+{
+  "scope": "two-dimensional planar free-boundary Penrose retained Wilson measure (NOT 3D prism)",
+  "Penrose_geometry": [
+    {
+      "radius": 5.0,
+      "vertices": 90,
+      "edges": 159,
+      "rhombi": 70,
+      "boundary_staple_links_m1": 38,
+      "interior_staple_links_m2": 121,
+      "max_number_incident_retained_faces": 2,
+      "rigorous_uniform_lambda_E_F_e_upper": 3.0,
+      "rigorous_tail_at_lambda_F_e_ge_12": 0.019830017413330868,
+      "rigorous_local_E_d_sum_coefficient": 1.5
+    },
+    {
+      "radius": 6.5,
+      "vertices": 148,
+      "edges": 269,
+      "rhombi": 122,
+      "boundary_staple_links_m1": 50,
+      "interior_staple_links_m2": 219,
+      "max_number_incident_retained_faces": 2,
+      "rigorous_uniform_lambda_E_F_e_upper": 3.0,
+      "rigorous_tail_at_lambda_F_e_ge_12": 0.019830017413330868,
+      "rigorous_local_E_d_sum_coefficient": 1.5
+    },
+    {
+      "radius": 8.0,
+      "vertices": 226,
+      "edges": 421,
+      "rhombi": 196,
+      "boundary_staple_links_m1": 58,
+      "interior_staple_links_m2": 363,
+      "max_number_incident_retained_faces": 2,
+      "rigorous_uniform_lambda_E_F_e_upper": 3.0,
+      "rigorous_tail_at_lambda_F_e_ge_12": 0.019830017413330868,
+      "rigorous_local_E_d_sum_coefficient": 1.5
+    },
+    {
+      "radius": 10.0,
+      "vertices": 377,
+      "edges": 714,
+      "rhombi": 338,
+      "boundary_staple_links_m1": 76,
+      "interior_staple_links_m2": 638,
+      "max_number_incident_retained_faces": 2,
+      "rigorous_uniform_lambda_E_F_e_upper": 3.0,
+      "rigorous_tail_at_lambda_F_e_ge_12": 0.019830017413330868,
+      "rigorous_local_E_d_sum_coefficient": 1.5
+    }
+  ],
+  "mgf_samples": [
+    {
+      "lambda": 1.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.2177539253173755,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 1.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 1.5046942494128497,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 1.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 1.887594299349388,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 4.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.4681643927393084,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 4.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.408596120143031,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 4.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 4.652518912435672,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 8.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.5113427080532977,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 8.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.6650889679290803,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 8.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 6.419122947989977,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 16.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.5266528387608933,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 16.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.7558916104243867,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 16.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 7.34469632775034,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 32.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.5333687430560539,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 32.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.793832295728862,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 32.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 7.699498984731875,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 100.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.537654642052435,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 100.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.817678558025424,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 100.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 7.908193516627116,
+      "gamma_majorant": 8.0
+    },
+    {
+      "lambda": 1000.0,
+      "theta": 0.25,
+      "single_plaquette_exact_mgf": 1.5394080549330742,
+      "gamma_majorant": 1.539600717839002
+    },
+    {
+      "lambda": 1000.0,
+      "theta": 0.5,
+      "single_plaquette_exact_mgf": 2.8273650697740043,
+      "gamma_majorant": 2.8284271247461903
+    },
+    {
+      "lambda": 1000.0,
+      "theta": 0.75,
+      "single_plaquette_exact_mgf": 7.990982502904787,
+      "gamma_majorant": 8.0
+    }
+  ],
+  "verified_max_lambda_excess": 1.4999624962508395,
+  "two_staple_F_le_S_max_violation": -0.011623417325070329,
+  "theorems": {
+    "local_raw_curvature": "lambda E sum_{p in A} d(Wp) <= (3/2)|A|",
+    "staple_bound": "lambda E F_e <= (3/2) m_e <= 3",
+    "staple_tail": "P(lambda F_e >= t) <= 2^(3m_e/2) exp(-t/2)",
+    "conditional_block": "lambda E[S_B|b] <= lambda min_u S_B(u;b) + (3/2)|B| log(lambda) + C_nu |B| for lambda>=1",
+    "3d_prism_status": "NOT PROVED: need control of block conditional minimum or exterior staple frustration"
+  }
+}

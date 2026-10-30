@@ -1,0 +1,5 @@
+radius,vertices,edges,rhombi,boundary_staple_links_m1,interior_staple_links_m2,max_number_incident_retained_faces,rigorous_uniform_lambda_E_F_e_upper,rigorous_tail_at_lambda_F_e_ge_12,rigorous_local_E_d_sum_coefficient
+5.0,90,159,70,38,121,2,3.0,0.019830017413330868,1.5
+6.5,148,269,122,50,219,2,3.0,0.019830017413330868,1.5
+8.0,226,421,196,58,363,2,3.0,0.019830017413330868,1.5
+10.0,377,714,338,76,638,2,3.0,0.019830017413330868,1.5

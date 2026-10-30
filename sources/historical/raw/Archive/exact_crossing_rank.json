@@ -1,0 +1,16 @@
+{
+  "field": "Q rationals, exact SymPy elimination",
+  "local_rank": 35,
+  "crossing_rank": 67,
+  "crossing_nullity": 22,
+  "rank_after_crossing_fixed_moves": 36,
+  "extra_exterior_modes_accessible_while_preserving_crossing_faces": 1,
+  "total_exterior_modes": 24,
+  "rank_full_local_plus_halo": 59,
+  "dimensions": {
+    "A_faces": 62,
+    "H_links": 36,
+    "E_exterior_links": 89,
+    "crossing_faces": 113
+  }
+}

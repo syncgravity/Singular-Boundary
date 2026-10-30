@@ -1,0 +1,16 @@
+[
+  {
+    "edge": 19,
+    "pure_exterior_relators": [
+      [
+        229,
+        [
+          1
+        ]
+      ]
+    ],
+    "H_pivots": 35,
+    "H_remaining": 1,
+    "max_residual": 1
+  }
+]

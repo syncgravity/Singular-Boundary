@@ -1,0 +1,258 @@
+{
+  "A_face_count": 62,
+  "Q_face_count": 14,
+  "H_link_count": 36,
+  "X_exterior_pivot_count": 24,
+  "J_total_link_count": 60,
+  "solved_group_relators": 59,
+  "residual_trivial_relators": 3,
+  "free_group_link_count": 1,
+  "crossing_retained_face_count": 33,
+  "max_fully_expanded_group_word_length": null,
+  "max_face_error": 2.2648549702353193e-14,
+  "max_crossing_increase": 8.249914964063692,
+  "count_full_action_increases": 5,
+  "samples": [
+    {
+      "mode": "all_haar",
+      "trial": 0,
+      "A_before": 60.99271701299077,
+      "A_after": -6.683542608243442e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 8.249914964063692,
+      "total_action_decrease": 52.742802048927146,
+      "max_affected_face_error": 6.661338147750939e-16
+    },
+    {
+      "mode": "all_haar",
+      "trial": 1,
+      "A_before": 64.07255667574539,
+      "A_after": 2.2115642650533118e-13,
+      "crossing_faces": 33,
+      "crossing_delta": -2.59072344480645,
+      "total_action_decrease": 66.6632801205516,
+      "max_affected_face_error": 2.0650148258027912e-14
+    },
+    {
+      "mode": "all_haar",
+      "trial": 2,
+      "A_before": 59.90776039709232,
+      "A_after": 2.696731726814505e-13,
+      "crossing_faces": 33,
+      "crossing_delta": -0.09807440364308917,
+      "total_action_decrease": 60.005834800735144,
+      "max_affected_face_error": 2.2648549702353193e-14
+    },
+    {
+      "mode": "all_haar",
+      "trial": 3,
+      "A_before": 60.78551116145965,
+      "A_after": -2.0095036745715333e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 4.442294142952768,
+      "total_action_decrease": 56.3432170185069,
+      "max_affected_face_error": 3.3306690738754696e-16
+    },
+    {
+      "mode": "all_haar",
+      "trial": 4,
+      "A_before": 62.11809052962266,
+      "A_after": -1.850741782050136e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 3.2863165870290416,
+      "total_action_decrease": 58.8317739425938,
+      "max_affected_face_error": 8.881784197001252e-16
+    },
+    {
+      "mode": "all_haar",
+      "trial": 5,
+      "A_before": 62.663425831549915,
+      "A_after": 1.6864287744056128e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 3.311858437336504,
+      "total_action_decrease": 59.351567394213234,
+      "max_affected_face_error": 1.5432100042289676e-14
+    },
+    {
+      "mode": "all_haar",
+      "trial": 6,
+      "A_before": 63.12106565974406,
+      "A_after": 1.617594946878853e-13,
+      "crossing_faces": 33,
+      "crossing_delta": -3.3766479208172626,
+      "total_action_decrease": 66.49771358056117,
+      "max_affected_face_error": 1.3433698597964394e-14
+    },
+    {
+      "mode": "all_haar",
+      "trial": 7,
+      "A_before": 59.35664609326828,
+      "A_after": 7.949196856316121e-14,
+      "crossing_faces": 33,
+      "crossing_delta": -1.3877343843247907,
+      "total_action_decrease": 60.744380477593,
+      "max_affected_face_error": 8.992806499463768e-15
+    },
+    {
+      "mode": "center_defect",
+      "trial": 0,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 1,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 2,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 3,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 4,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 5,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 6,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 7,
+      "A_before": 26.0,
+      "A_after": 0.0,
+      "crossing_faces": 33,
+      "crossing_delta": -24.0,
+      "total_action_decrease": 50.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "near_flat",
+      "trial": 0,
+      "A_before": 0.05425979438397455,
+      "A_after": -2.1516122217235534e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 0.07411542943579286,
+      "total_action_decrease": -0.01985563505160315,
+      "max_affected_face_error": 2.220446049250313e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 1,
+      "A_before": 0.03643625154660468,
+      "A_after": 8.237854842718662e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 0.08096912539257095,
+      "total_action_decrease": -0.04453287384604865,
+      "max_affected_face_error": 7.327471962526033e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 2,
+      "A_before": 0.05462533491987909,
+      "A_after": 1.2612133559741778e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 0.06828205441006074,
+      "total_action_decrease": -0.013656719490307778,
+      "max_affected_face_error": 9.769962616701378e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 3,
+      "A_before": 0.057967607371013696,
+      "A_after": -1.4432899320127035e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 0.04826870379884618,
+      "total_action_decrease": 0.00969890357218195,
+      "max_affected_face_error": 4.440892098500626e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 4,
+      "A_before": 0.04698151965756847,
+      "A_after": 1.2745360322696797e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 0.09339030331338383,
+      "total_action_decrease": -0.04640878365594281,
+      "max_affected_face_error": 1.2545520178264269e-14
+    },
+    {
+      "mode": "near_flat",
+      "trial": 5,
+      "A_before": 0.05770704534203841,
+      "A_after": -3.83026943495679e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 0.026937761225179324,
+      "total_action_decrease": 0.03076928411689739,
+      "max_affected_face_error": 1.4432899320127035e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 6,
+      "A_before": 0.057718141596523664,
+      "A_after": 1.7263968032921184e-13,
+      "crossing_faces": 33,
+      "crossing_delta": 0.03686543543735754,
+      "total_action_decrease": 0.020852706158993484,
+      "max_affected_face_error": 1.4988010832439613e-14
+    },
+    {
+      "mode": "near_flat",
+      "trial": 7,
+      "A_before": 0.04699989095206181,
+      "A_after": -3.275157922644212e-14,
+      "crossing_faces": 33,
+      "crossing_delta": 0.081380335908948,
+      "total_action_decrease": -0.03438044495685344,
+      "max_affected_face_error": 3.3306690738754696e-16
+    }
+  ],
+  "interpretation": "Global flat extension of the 62 local retained face holonomies for arbitrary frozen links; no proof of Gibbs coercivity because crossing retained plaquettes can increase."
+}

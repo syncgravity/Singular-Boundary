@@ -1,0 +1,107 @@
+{
+  "construction": "For frozen K-exterior b, select canonical argmin of S_K on a deterministic delta/sqrt(lambda) product SU2 net; this target depends only on b. Apply partial geodesic contraction of all K links toward the target by tau=1-1/(pi sqrt(lambda)); choose the lower full-action candidate of this map and identity. The map is piecewise one-to-one a.e., with at most two inverse branches; all link changes confined to K.",
+  "proof": "Haar Jacobian per SU2 link is (1-tau)*[sin((1-tau)theta)/sin(theta)]^2 >= (1-tau)^3. Distance from global K minimizer at output <= (1+delta)/sqrt(lambda) in each link. Action Taylor bound is lambda[S_K(output)-s_K]<=2nu*k*(1+delta)^2. Full-action nonincrease by identity option. A(B) subset A(K) gives S_K(U)>=s_B, hence Gibbs tail inequality with factor 2*(pi sqrt(lambda))^(3k)*exp(2nu*k*(1+delta)^2).",
+  "tested_collar_sizes": [
+    59,
+    125
+  ],
+  "bounds": [
+    {
+      "lambda": 1,
+      "links": 59,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.6816901138162093,
+      "action_error_lambda_scaled": 932.4765625,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -202.61718979534382,
+      "log_tail_prefactor": 1135.7868994759037,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 1,
+      "links": 125,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.6816901138162093,
+      "action_error_lambda_scaled": 1975.5859375,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -429.27370719352507,
+      "log_tail_prefactor": 2405.552791874085,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 8,
+      "links": 59,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.8874604604803618,
+      "action_error_lambda_scaled": 932.4765625,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -386.6477662340093,
+      "log_tail_prefactor": 1319.8174759145693,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 8,
+      "links": 125,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.8874604604803618,
+      "action_error_lambda_scaled": 1975.5859375,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -819.1689962584943,
+      "log_tail_prefactor": 2795.4480809390543,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 32,
+      "links": 59,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.9437302302401809,
+      "action_error_lambda_scaled": 932.4765625,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -509.33481719311965,
+      "log_tail_prefactor": 1442.5045268736794,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 32,
+      "links": 125,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.9437302302401809,
+      "action_error_lambda_scaled": 1975.5859375,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -1079.0991889684738,
+      "log_tail_prefactor": 3055.378273649034,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 1024,
+      "links": 59,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.9900528160567565,
+      "action_error_lambda_scaled": 932.4765625,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -816.0524445908954,
+      "log_tail_prefactor": 1749.2221542714553,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    },
+    {
+      "lambda": 1024,
+      "links": 125,
+      "nu": 7,
+      "net_resolution_over_sqrt_lambda": 0.0625,
+      "fractional_geodesic_contraction": 0.9900528160567565,
+      "action_error_lambda_scaled": 1975.5859375,
+      "inverse_multiplicity": 2,
+      "min_log_Jacobian": -1728.9246707434227,
+      "log_tail_prefactor": 3705.2037554239823,
+      "tail_theorem": "P(lambda(s_B-s_K)>=t)<=min(1, exp(log_tail_prefactor-t)), assuming B subset K, with true SU2 Haar measure for all exterior b. This DOES NOT bound s_K."
+    }
+  ],
+  "limitation": "Deterministic product-net search is exponential in number K of links. The map provides conditional-minimum increment control only, not the absolute distribution of s_K. O(|Q|) physical changed links, not polynomial computational complexity."
+}

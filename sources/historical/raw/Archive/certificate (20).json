@@ -1,0 +1,187 @@
+{
+  "proof_scope": "gauge-covariant near-pure-gauge exterior halo condition on fixed 14-face Penrose support; unconditional exponential suppression for a specified 13-link obstruction event, NOT full s_H tail",
+  "geometry": [
+    {
+      "radius": 5.0,
+      "Q": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_faces": 175,
+      "halo_links": 133,
+      "special_exterior_link_id": 19,
+      "special_z5_endpoints": [
+        [
+          -2,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "two_retained_temporal_face_ids": [
+        229,
+        264
+      ],
+      "shared_only_H_link": 512,
+      "pair_exterior_link_count": 6,
+      "incident_retained_face_count": 4,
+      "local_defect_link_neighborhood_count": 13,
+      "exact_center_defect_s_H_lower": 2.0,
+      "all_links_identity_except_e_center_flip_action_drop": 8.0,
+      "nearflat_epsilon": 0.25,
+      "eta_per_Q": 6.25,
+      "lambda_sK_bound": 87.5,
+      "center_flip_delta": 0.05,
+      "center_flip_gibbs_suppression_exponent": 7.840532622729933,
+      "certified_bad_class_sH_lower": 1.7,
+      "max_observed_sK_over_bound": 0.03577294731605656,
+      "min_observed_center_flip_decrease": 7.965110589916812,
+      "min_observed_retained_temporal_pair_energy": 1.900573295561304,
+      "checked_random_gauge_and_exterior_samples": 12
+    },
+    {
+      "radius": 6.5,
+      "Q": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_faces": 175,
+      "halo_links": 133,
+      "special_exterior_link_id": 51,
+      "special_z5_endpoints": [
+        [
+          -2,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "two_retained_temporal_face_ids": [
+        417,
+        472
+      ],
+      "shared_only_H_link": 869,
+      "pair_exterior_link_count": 6,
+      "incident_retained_face_count": 4,
+      "local_defect_link_neighborhood_count": 13,
+      "exact_center_defect_s_H_lower": 2.0,
+      "all_links_identity_except_e_center_flip_action_drop": 8.0,
+      "nearflat_epsilon": 0.25,
+      "eta_per_Q": 6.25,
+      "lambda_sK_bound": 87.5,
+      "center_flip_delta": 0.05,
+      "center_flip_gibbs_suppression_exponent": 7.840532622729933,
+      "certified_bad_class_sH_lower": 1.7,
+      "max_observed_sK_over_bound": 0.03405563174194486,
+      "min_observed_center_flip_decrease": 7.971964199252216,
+      "min_observed_retained_temporal_pair_energy": 1.8937652707833745,
+      "checked_random_gauge_and_exterior_samples": 12
+    },
+    {
+      "radius": 8.0,
+      "Q": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_faces": 175,
+      "halo_links": 133,
+      "special_exterior_link_id": 96,
+      "special_z5_endpoints": [
+        [
+          -2,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "two_retained_temporal_face_ids": [
+        684,
+        758
+      ],
+      "shared_only_H_link": 1356,
+      "pair_exterior_link_count": 6,
+      "incident_retained_face_count": 4,
+      "local_defect_link_neighborhood_count": 13,
+      "exact_center_defect_s_H_lower": 2.0,
+      "all_links_identity_except_e_center_flip_action_drop": 8.0,
+      "nearflat_epsilon": 0.25,
+      "eta_per_Q": 6.25,
+      "lambda_sK_bound": 87.5,
+      "center_flip_delta": 0.05,
+      "center_flip_gibbs_suppression_exponent": 7.840532622729933,
+      "certified_bad_class_sH_lower": 1.7,
+      "max_observed_sK_over_bound": 0.03208242474155269,
+      "min_observed_center_flip_decrease": 7.965597551216032,
+      "min_observed_retained_temporal_pair_energy": 1.9037939909707684,
+      "checked_random_gauge_and_exterior_samples": 12
+    },
+    {
+      "radius": 10.0,
+      "Q": 14,
+      "H_links": 36,
+      "K_links": 125,
+      "A_K_faces": 175,
+      "halo_links": 133,
+      "special_exterior_link_id": 208,
+      "special_z5_endpoints": [
+        [
+          -2,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "two_retained_temporal_face_ids": [
+        1222,
+        1321
+      ],
+      "shared_only_H_link": 2305,
+      "pair_exterior_link_count": 6,
+      "incident_retained_face_count": 4,
+      "local_defect_link_neighborhood_count": 13,
+      "exact_center_defect_s_H_lower": 2.0,
+      "all_links_identity_except_e_center_flip_action_drop": 8.0,
+      "nearflat_epsilon": 0.25,
+      "eta_per_Q": 6.25,
+      "lambda_sK_bound": 87.5,
+      "center_flip_delta": 0.05,
+      "center_flip_gibbs_suppression_exponent": 7.840532622729933,
+      "certified_bad_class_sH_lower": 1.7,
+      "max_observed_sK_over_bound": 0.03472606799105523,
+      "min_observed_center_flip_decrease": 7.970125708911117,
+      "min_observed_retained_temporal_pair_energy": 1.9079140890779571,
+      "checked_random_gauge_and_exterior_samples": 12
+    }
+  ],
+  "analytical_joint_tail": "P(lambda s_H >=t and halo_good) <= min(1,exp(-t+8 epsilon^2 |A(K)|+|K|(1.5log(lambda)+log(4097)+2nu)))",
+  "full_probability_tail_obstruction": "P(lambda s_H>=t) <= joint_bound + P(halo_bad); halo_bad probability not controlled by these arguments"
+}

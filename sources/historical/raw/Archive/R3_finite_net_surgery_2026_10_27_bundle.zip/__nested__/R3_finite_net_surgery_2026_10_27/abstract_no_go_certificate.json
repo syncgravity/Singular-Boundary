@@ -1,0 +1,26 @@
+{
+  "model": "abstract two-quadrilateral Wilson-word system, NOT certified as a Penrose or embedded prism 2-complex",
+  "face_words": [
+    "U x a b",
+    "U x a c"
+  ],
+  "frozen_background": {
+    "a": "I",
+    "b": "I",
+    "c": "-I"
+  },
+  "identity": "W2=-W1, d(W1)+d(W2)=2 for every U,x",
+  "H": [
+    "U"
+  ],
+  "K": [
+    "U",
+    "x"
+  ],
+  "s_H": 2,
+  "s_K": 2,
+  "full_action_for_all_Ux": 2,
+  "trials": 500,
+  "max_numerical_action_error": 2.220446049250313e-16,
+  "consequence": "No universal positive alpha for an absolute-action surgery follows solely from bounded face word length, O(q) adjustable links, and Haar-jacobian control; an exterior compatibility input is necessary."
+}

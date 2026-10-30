@@ -1,0 +1,170 @@
+{
+  "model": "SU2 Wilson on genuine direct-Z5 open Penrose rhombus disks x 3-periodic time",
+  "construction": "piecewise left-Haar translations selected by minimization over finite quaternion net on K",
+  "net_definition": "four dominant quaternion-component charts, each sign, 3 coordinates in grid step 2/ceil(6sqrt(lambda)), plus identity",
+  "net_cardinality_upper": "4097 lambda^(3/2) per active link for lambda>=1",
+  "geodesic_cover_radius_upper": "lambda^(-1/2)",
+  "global_full_retained_action_decrement": "lambda[S_R(U)-S_R(TU)] >= lambda[s_B(U_outside_B)-s_K(U_outside_K)]-2 nu |K| for B subset K",
+  "jacobian_on_each_branch": 1,
+  "total_inverse_multiplicity_upper": "(4097 lambda^(3/2))^|K|",
+  "certified_increment_tail": "P(lambda(s_B-s_K)>=t) <= min(1,exp[|K|*(1.5log(lambda)+log(4097)+2nu)-t])",
+  "absolute_tail_status": "open: no uniform terminal estimate on s_K; no full arbitrary-support R3 theorem",
+  "geometries": [
+    {
+      "radius": 5.0,
+      "spatial_faces": 70,
+      "spacetime_retained_faces": 687,
+      "anchor_z5_labels": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "B0_links": 1,
+      "B0_affected_retained_faces": 4,
+      "B0_boundary_links": 12,
+      "B1_links": 13,
+      "B1_affected_retained_faces": 28,
+      "B1_boundary_links": 38,
+      "B2_links": 51,
+      "B2_affected_retained_faces": 89,
+      "B2_boundary_links": 87,
+      "max_incident_faces": 7
+    },
+    {
+      "radius": 6.5,
+      "spatial_faces": 122,
+      "spacetime_retained_faces": 1173,
+      "anchor_z5_labels": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "B0_links": 1,
+      "B0_affected_retained_faces": 4,
+      "B0_boundary_links": 12,
+      "B1_links": 13,
+      "B1_affected_retained_faces": 28,
+      "B1_boundary_links": 38,
+      "B2_links": 51,
+      "B2_affected_retained_faces": 89,
+      "B2_boundary_links": 87,
+      "max_incident_faces": 7
+    },
+    {
+      "radius": 8.0,
+      "spatial_faces": 196,
+      "spacetime_retained_faces": 1851,
+      "anchor_z5_labels": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "B0_links": 1,
+      "B0_affected_retained_faces": 4,
+      "B0_boundary_links": 12,
+      "B1_links": 13,
+      "B1_affected_retained_faces": 28,
+      "B1_boundary_links": 38,
+      "B2_links": 51,
+      "B2_affected_retained_faces": 89,
+      "B2_boundary_links": 87,
+      "max_incident_faces": 7
+    },
+    {
+      "radius": 10.0,
+      "spatial_faces": 338,
+      "spacetime_retained_faces": 3156,
+      "anchor_z5_labels": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "B0_links": 1,
+      "B0_affected_retained_faces": 4,
+      "B0_boundary_links": 12,
+      "B1_links": 13,
+      "B1_affected_retained_faces": 28,
+      "B1_boundary_links": 38,
+      "B2_links": 51,
+      "B2_affected_retained_faces": 89,
+      "B2_boundary_links": 87,
+      "max_incident_faces": 7
+    }
+  ],
+  "single_link_full_net_tests": [
+    {
+      "lambda": 1.0,
+      "spatial_radius": 5,
+      "spatial_anchor_edge": 58,
+      "retained_faces_adjacent_to_anchor": 4,
+      "net_grid_n": 6,
+      "net_cardinality": 2745,
+      "initial_incident_action": 4.490355175946859,
+      "selected_incident_action": 2.73107702763736,
+      "exact_conditional_minimum": 2.719086199123992,
+      "lambda_times_minimizer_gap": 0.01199082851336808,
+      "action_decrease": 1.759278148309499,
+      "haar_jacobian_on_chosen_branch": 1,
+      "max_inverse_multiplicity": 2745
+    },
+    {
+      "lambda": 4.0,
+      "spatial_radius": 5,
+      "spatial_anchor_edge": 58,
+      "retained_faces_adjacent_to_anchor": 4,
+      "net_grid_n": 12,
+      "net_cardinality": 17577,
+      "initial_incident_action": 4.490355175946859,
+      "selected_incident_action": 2.7225744485366095,
+      "exact_conditional_minimum": 2.719086199123992,
+      "lambda_times_minimizer_gap": 0.013952997650470422,
+      "action_decrease": 1.7677807274102495,
+      "haar_jacobian_on_chosen_branch": 1,
+      "max_inverse_multiplicity": 17577
+    }
+  ]
+}

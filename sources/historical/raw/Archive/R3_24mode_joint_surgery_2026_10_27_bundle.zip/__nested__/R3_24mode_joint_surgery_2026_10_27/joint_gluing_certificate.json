@@ -1,0 +1,258 @@
+{
+  "A_face_count": 62,
+  "Q_face_count": 14,
+  "H_link_count": 36,
+  "X_exterior_pivot_count": 24,
+  "J_total_link_count": 60,
+  "solved_group_relators": 59,
+  "residual_trivial_relators": 3,
+  "free_group_link_count": 1,
+  "crossing_retained_face_count": 38,
+  "max_fully_expanded_group_word_length": null,
+  "max_face_error": 3.9968028886505635e-15,
+  "max_crossing_increase": 6.648813751817876,
+  "count_full_action_increases": 3,
+  "samples": [
+    {
+      "mode": "all_haar",
+      "trial": 0,
+      "A_before": 60.99271701299077,
+      "A_after": -3.452793606584237e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 2.8639961280072725,
+      "total_action_decrease": 58.12872088498352,
+      "max_affected_face_error": 4.440892098500626e-16
+    },
+    {
+      "mode": "all_haar",
+      "trial": 1,
+      "A_before": 64.07255667574539,
+      "A_after": -2.375877272697835e-14,
+      "crossing_faces": 38,
+      "crossing_delta": -0.5399867617315692,
+      "total_action_decrease": 64.61254343747697,
+      "max_affected_face_error": 6.661338147750939e-16
+    },
+    {
+      "mode": "all_haar",
+      "trial": 2,
+      "A_before": 59.90776039709232,
+      "A_after": 3.219646771412954e-15,
+      "crossing_faces": 38,
+      "crossing_delta": 3.228497077633385,
+      "total_action_decrease": 56.67926331945894,
+      "max_affected_face_error": 1.9984014443252818e-15
+    },
+    {
+      "mode": "all_haar",
+      "trial": 3,
+      "A_before": 60.78551116145965,
+      "A_after": 2.042810365310288e-14,
+      "crossing_faces": 38,
+      "crossing_delta": -2.5941081735721667,
+      "total_action_decrease": 63.3796193350318,
+      "max_affected_face_error": 2.6645352591003757e-15
+    },
+    {
+      "mode": "all_haar",
+      "trial": 4,
+      "A_before": 62.11809052962266,
+      "A_after": 1.609823385706477e-14,
+      "crossing_faces": 38,
+      "crossing_delta": -0.4464310713476891,
+      "total_action_decrease": 62.56452160097034,
+      "max_affected_face_error": 2.1094237467877974e-15
+    },
+    {
+      "mode": "all_haar",
+      "trial": 5,
+      "A_before": 62.663425831549915,
+      "A_after": -1.0325074129013956e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 6.648813751817876,
+      "total_action_decrease": 56.01461207973205,
+      "max_affected_face_error": 1.3322676295501878e-15
+    },
+    {
+      "mode": "all_haar",
+      "trial": 6,
+      "A_before": 63.12106565974406,
+      "A_after": 5.4067861299245124e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 5.895695496186157,
+      "total_action_decrease": 57.225370163557855,
+      "max_affected_face_error": 3.9968028886505635e-15
+    },
+    {
+      "mode": "all_haar",
+      "trial": 7,
+      "A_before": 59.35664609326828,
+      "A_after": -9.880984919163893e-15,
+      "crossing_faces": 38,
+      "crossing_delta": -0.0665657877632242,
+      "total_action_decrease": 59.42321188103152,
+      "max_affected_face_error": 2.55351295663786e-15
+    },
+    {
+      "mode": "center_defect",
+      "trial": 0,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 1,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 2,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 3,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 4,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 5,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 6,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "center_defect",
+      "trial": 7,
+      "A_before": 34.0,
+      "A_after": 0.0,
+      "crossing_faces": 38,
+      "crossing_delta": -22.0,
+      "total_action_decrease": 56.0,
+      "max_affected_face_error": 0.0
+    },
+    {
+      "mode": "near_flat",
+      "trial": 0,
+      "A_before": 0.05425979438397455,
+      "A_after": -5.88418203051333e-15,
+      "crossing_faces": 38,
+      "crossing_delta": 0.029635067762298406,
+      "total_action_decrease": 0.024624726621682025,
+      "max_affected_face_error": 6.661338147750939e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 1,
+      "A_before": 0.03643625154660468,
+      "A_after": 4.9960036108132044e-15,
+      "crossing_faces": 38,
+      "crossing_delta": 0.07181046614451614,
+      "total_action_decrease": -0.035374214597916454,
+      "max_affected_face_error": 6.661338147750939e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 2,
+      "A_before": 0.05462533491987909,
+      "A_after": 8.659739592076221e-15,
+      "crossing_faces": 38,
+      "crossing_delta": 0.03734758281439343,
+      "total_action_decrease": 0.017277752105476996,
+      "max_affected_face_error": 1.4432899320127035e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 3,
+      "A_before": 0.057967607371013696,
+      "A_after": -4.440892098500626e-16,
+      "crossing_faces": 38,
+      "crossing_delta": 0.041433725758344475,
+      "total_action_decrease": 0.016533881612669665,
+      "max_affected_face_error": 9.992007221626409e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 4,
+      "A_before": 0.04698151965756847,
+      "A_after": 1.099120794378905e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 0.06288674823909435,
+      "total_action_decrease": -0.015905228581536868,
+      "max_affected_face_error": 7.771561172376096e-16
+    },
+    {
+      "mode": "near_flat",
+      "trial": 5,
+      "A_before": 0.05770704534203841,
+      "A_after": 4.6629367034256575e-15,
+      "crossing_faces": 38,
+      "crossing_delta": 0.006280537671730868,
+      "total_action_decrease": 0.05142650767030288,
+      "max_affected_face_error": 2.1094237467877974e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 6,
+      "A_before": 0.057718141596523664,
+      "A_after": 1.8318679906315083e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 0.02791100262700319,
+      "total_action_decrease": 0.029807138969502156,
+      "max_affected_face_error": 2.220446049250313e-15
+    },
+    {
+      "mode": "near_flat",
+      "trial": 7,
+      "A_before": 0.04699989095206181,
+      "A_after": 3.3306690738754696e-14,
+      "crossing_faces": 38,
+      "crossing_delta": 0.04963286923714394,
+      "total_action_decrease": -0.0026329782851154393,
+      "max_affected_face_error": 2.886579864025407e-15
+    }
+  ],
+  "interpretation": "Global flat extension of the 62 local retained face holonomies for arbitrary frozen links; no proof of Gibbs coercivity because crossing retained plaquettes can increase."
+}
