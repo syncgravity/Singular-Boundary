@@ -9,11 +9,11 @@ The original claim ledger contained two distinct assertions sharing each of **R3
 | Historical occurrence | Assertion | Future unambiguous alias | Evidence | Mathematical classification |
 | --- | --- | --- | --- | --- |
 | First R3-IR-378 | Commutator-generated source suppresses its own infrared spectral weight | R3-IR-378 [first occurrence] | `R3_R2_CONVERSATION_CLAIM_CROSSWALK_2026-10-30.md` | Finite algebra only; not generic Wilson IR |
-| Second R3-IR-378 | Completed-cage target-score identity and Fisher contraction | **R3-IR-381** | `R3_IR_TARGET_SCORE_FISHER_CONTRACTION_2026-10-30.md` | Finite-volume theorem recorded in main; no regulator-uniform current result |
+| Second R3-IR-378 | Completed-cage target-score identity and Fisher contraction | **R3-IR-9001** | `R3_IR_TARGET_SCORE_FISHER_CONTRACTION_2026-10-30.md` | Finite-volume theorem recorded in main; no regulator-uniform current result |
 | First R3-IR-379 | High-spin scalar Wilson source low-energy projection claim | R3-IR-379 [first occurrence] | `SCALAR_WILSON_IR_AND_COMPLETENESS.md` | Source-asserted, **UNVERIFIED** |
-| Second R3-IR-379 | Fisher energy does not control unweighted positive radial-score budget | **R3-IR-382** | `R3_IR_FISHER_TO_SIGNED_SCORE_CAPACITY_OBSTRUCTION_2026-10-30.md` | Exact functional countermodel; not physical Wilson ground state |
+| Second R3-IR-379 | Fisher energy does not control unweighted positive radial-score budget | **R3-IR-9002** | `R3_IR_FISHER_TO_SIGNED_SCORE_CAPACITY_OBSTRUCTION_2026-10-30.md` | Exact functional countermodel; not physical Wilson ground state |
 
-R3-IR-381/382 were appended to the ledger as additional aliases without deleting the older ambiguous rows. For machine readers, the original `R3-IR-378` and `R3-IR-379` must remain **ambiguous** unless occurrence/source is specified; no blanket find-and-replace is safe. Alias status is from prior source reports, not a fresh independent proof audit here.
+R3-IR-9001/9002 are the disambiguation aliases after correcting an archival-write race: temporary aliases R3-IR-381/382 were previously appended to the ledger as additional aliases without deleting the older ambiguous rows. For machine readers, the original `R3-IR-378` and `R3-IR-379` must remain **ambiguous** unless occurrence/source is specified; no blanket find-and-replace is safe. Alias status is from prior source reports, not a fresh independent proof audit here.
 
 ## Mounted source reconciliation
 
@@ -49,3 +49,7 @@ The separate prepared 602-file source import, `NOTES.zip` (188 Markdown members)
 5. Do not promote source-asserted or computed claims to independently established theorems without reviewing complete arguments and original verification records.
 
 **Proof verdict:** the four-dimensional interacting Yang–Mills mass-gap problem remains OPEN.
+
+## Explicit correction of archival alias collision
+
+During this archival operation, the first proposed aliases `R3-IR-381` and `R3-IR-382` were committed, then a concurrent original theorem ledger update assigned `R3-IR-381` to a different center-endpoint result. The archival aliases were therefore **corrected in a separate, non-force commit to `R3-IR-9001` and `R3-IR-9002`**, leaving the real `R3-IR-381` center-endpoint claim untouched. The earlier alias commit remains available in Git history. **Do not reuse the temporary aliases**. The pre-existing historical collisions at R3-IR-378 and R3-IR-379 remain preserved and must be disambiguated by source or archival alias.
