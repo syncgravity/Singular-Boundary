@@ -63,3 +63,7 @@ The [local Git LFS runbook](docs/governance/LOCAL_GIT_LFS_INTAKE_RUNBOOK.md) con
 ## How to contribute recovered material
 
 As each historical chat becomes available, preserve a verbatim source export and attachment manifest, register its provenance, reconcile its claims and tests with the claim ledger, and link any newly resolved proof obligations. As each binary original is recovered, perform the SHA-256, Git LFS upload, fresh-clone retrieval, and status update. Commit incrementally to make changes reviewable and preserve history.
+
+## Paper 3 / Wilson-transfer / R3-IR / R2 conversation provenance (26–30 Oct 2026)
+
+The [dated retrospective chronology](sources/conversations/2026-10-26_TO_2026-10-30_PAPER3_WILSON_R3R2_RETROSPECTIVE_CHRONOLOGY.md) and [claim crosswalk](research/theorems/R3_R2_CONVERSATION_CLAIM_CROSSWALK_2026-10-30.md) preserve the evolving program, original failed approaches, Stage26 findings and later D1 correction. [Source byte intake](sources/source-manifests/THIS_CONVERSATION_RECOVERED_ORIGINALS_2026-10-30.md) describes 90 locally verified original files awaiting actual remote Git/LFS upload. **This is not a native full-conversation transcript and not a completed remote archive.** The interacting neutral infrared and quantum continuum gap gates remain open.
