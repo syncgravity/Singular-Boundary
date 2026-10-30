@@ -1,0 +1,6 @@
+s=   0  lim_b[b Cov(d1,d2)]=-0.000000000000  exact=0.000000000000
+s=0.25  lim_b[b Cov(d1,d2)]=0.000653572971  exact=0.000653572971
+s=   1  lim_b[b Cov(d1,d2)]=0.010582579234  exact=0.010582579234
+s= 2.5  lim_b[b Cov(d1,d2)]=0.071385284536  exact=0.071385284536
+equal-link C = 0.011907811293054666 diagonal = 0.7380921887069454 
+PASS all exact SU2 spatial incidence and independent 6-D quadrature checks

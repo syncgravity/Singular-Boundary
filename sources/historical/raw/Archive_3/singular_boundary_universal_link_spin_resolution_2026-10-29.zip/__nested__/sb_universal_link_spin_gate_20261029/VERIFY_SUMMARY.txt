@@ -1,0 +1,7 @@
+Verification outcome (2026-10-29):
+- Four new standalone scripts: PASS.
+- Prior exact 35-dimensional continuous SU2 eight-face Ritz regression: PASS.
+- Full pending patch collection of 16 scripts: PASS, each executed in Python using the exact source files staged.
+- Numerical SU2 character-rotor spectrum is a local benchmark, NOT a full eight-face Wilson spectrum.
+- Exact 433-dimensional first shell enumeration counts basis states only, not Hamiltonian eigenpairs.
+- No uniform connected Penrose cap probability or continuum mass gap has been certified.

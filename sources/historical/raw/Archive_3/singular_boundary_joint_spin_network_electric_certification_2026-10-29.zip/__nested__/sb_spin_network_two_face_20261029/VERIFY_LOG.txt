@@ -1,0 +1,43 @@
+===== verify_exact_tree_gauge_q8.py =====
+PASS: 8-face nonabelian gauge-fixed tree model 15 vertices, 22 edges, 8 independent Q8 coordinates
+PASS: complete local kinetic generator exact after gauge reduction (22 edges); magnetic Wilson words; target center string
+LIMITATION: Q8 is a finite SU2 subgroup, not SU2 Haar or a nonperturbative solution of the eight-face SU2 spectral problem.
+===== verify_multiface_trial_and_tail.py =====
+kappa 0.75 mean p 0.34414400706879766 mean d 0.6558559929312023 kinetic moment 0.6882880141374896
+kappa 2.5 mean p 0.7193405813643325 mean d 0.28065941863566746 kinetic moment 0.4316043488185737
+kappa 7.0 mean p 0.894921760983111 mean d 0.10507823901688895 kinetic moment 0.19176894878217277
+kappa 20.0 mean p 0.9627404353619458 mean d 0.03725956463805424 kinetic moment 0.07220553265214735
+a,b,optimized trial energy,certificate 4.0 4.0 2.96962464536528 4.242640687119285
+a,b,optimized trial energy,certificate 4.0 100.0 19.907479497395183 21.213203435596423
+a,b,optimized trial energy,certificate 3.5 400.0 38.540576717421885 39.68626966596886
+Ritz sandwich 60.0 lower 3.621431969493443 exact 5.036589008721528 Ritz 5.058148133624659
+Ritz sandwich 100.0 lower 4.212526084219554 exact 5.04565808935294 Ritz 5.058148133624659
+Ritz sandwich 1000.0 lower 4.976743001201555 exact 5.056956311614984 Ritz 5.058148133624659
+h 0.2 S 148.49242404917499 B 1399.9999999999998 M for absolute cap control 4215665671.9593196 cert error/Haar 0.12501173002898097
+h 0.1 S 296.98484809834997 B 5599.999999999999 M for absolute cap control 70220909038.7067 cert error/Haar 0.1250040645637539
+h 0.05 S 593.9696961966999 B 22399.999999999996 M for absolute cap control 1145694027682.3538 cert error/Haar 0.12500142307515613
+h 0.025 S 1187.9393923933999 B 89599.99999999999 M for absolute cap control 18508383167734.273 cert error/Haar 0.12500050071767085
+PASS SU2 multi-face trial, gap-free electric tail, finite Ritz energy enclosure and cap accuracy scale
+===== verify_ritz_certification.py =====
+M 40.0 certified gap 5.925251293375356 true gap 5.9256141525669666 certified cap error 0.03010613849204608 actual error 3.5003206846351276e-06
+M 80.0 certified gap 5.9254952120509214 true gap 5.925660192002095 certified cap error 0.03010489919487942 actual error 1.5347816249011714e-06
+M 200.0 certified gap 5.925621915693429 true gap 5.925684649757926 certified cap error 0.0301042554817908 actual error 5.498788423485834e-07
+M 600.0 certified gap 5.925674223069523 true gap 5.925694700291379 certified cap error 0.030103989744162604 actual error 1.7261910412180725e-07
+PASS certified finite Ritz gap and ground-state observable control, not an SU2 8-face spectrum
+===== verify_spin_network_two_face.py =====
+Af Ag ae 4.0 4.0 1.0 electric T block [[11.0, -1.4142135623730951], [-1.4142135623730951, 10.0]] eigenvalues 9.0 12.0 inverse cross 0.013094570021973104
+Af Ag ae 3.8 5.2 0.7 electric T block [[11.5, -0.9899494936611666], [-0.9899494936611666, 10.8]] eigenvalues 10.1 12.200000000000001 inverse cross 0.008034000110868094
+Af Ag ae 6.5 4.2 0.3 electric T block [[16.15, -0.4242640687119285], [-0.4242640687119285, 15.849999999999998]] eigenvalues 15.549999999999997 16.45 inverse cross 0.0016585934917734873
+h 0.2 energy trial upper 210.0 conservative electric cutoff M 5961851567.715556 cap error/Haar 0.12501173002898097
+h 0.1 energy trial upper 420.0 conservative electric cutoff M 99307361924.70647 cap error/Haar 0.1250040645637539
+h 0.05 energy trial upper 840.0 conservative electric cutoff M 1620256032278.2407 cap error/Haar 0.12500142307515613
+h 0.025 energy trial upper 1680.0 conservative electric cutoff M 26174806493407.72 cap error/Haar 0.12500050071767083
+PASS: exact angular SU2 Haar Gram, full two-face electric spin recoupling, certified electric-energy truncation scale
+===== verify_su2_class_leakage.py =====
+conditional SU2 color average mean/maxerror: 1.2027416100105862e-16 variance/maxerror: 5.551115123125783e-17
+SU2 mixed-gradient six-edge skein: PASS on 34 noncommuting configurations
+Haar exact E[Gamma_e(p_f,p_g)^2]/a_e^2 = 0.01171875
+Haar exact ||(I-P_class) [-a_e Delta_e](p_f p_g)||^2/a_e^2 = 0.046875
+Haar exact center-even ||(I-P_class) T[chi_1(f)chi_1(g)]||^2/a_e^2 = 5.333333333333333
+Haar exact normalized center-even ||(I-P_class) T[2chi_1(f)p_g]||^2/a_e^2 = 2.0
+PASS: class compression loses a genuine SU2 center-even electric color channel; not a mass-gap proof

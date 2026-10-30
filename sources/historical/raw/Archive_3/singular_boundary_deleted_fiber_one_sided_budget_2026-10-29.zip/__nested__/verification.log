@@ -1,0 +1,7 @@
+Haar            E0= 0.0000000 B= 0.0000000 maxlogrise= 0.0000000 cap=0.001693004 cap_lower=0.0016925506
+equator2        E0= 0.4706544 B= 0.2923623 maxlogrise= 0.2447166 cap=0.0011760028 cap_lower=0.00094318967
+equator8        E0= 1.6093235 B= 1.2762733 maxlogrise= 0.9164800 cap=0.00040217777 cap_lower=0.00013182105
+equator40       E0= 5.0634475 B= 7.6285169 maxlogrise= 3.5074583 cap=4.3227788e-06 cap_lower=4.0040188e-10
+equator150      E0=10.9920012 B=32.2053729 maxlogrise= 8.7347980 cap=3.8887293e-10 cap_lower=1.8001563e-31
+oscillatory20   E0= 2.2454911 B= 0.6814908 maxlogrise= 0.4778861 cap=0.00099025721 cap_lower=0.00043311802
+PASS exact Haar integral, Riccati budget, SU2 rotor probabilities and deletion scale; not a Penrose vacuum computation.

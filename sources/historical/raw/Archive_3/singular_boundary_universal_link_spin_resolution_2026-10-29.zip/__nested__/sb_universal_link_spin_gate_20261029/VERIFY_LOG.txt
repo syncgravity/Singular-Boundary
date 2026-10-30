@@ -1,0 +1,58 @@
+[1] universal SU2 rotor bandlimit
+SU2 rotor b=     16 E=   3.91287 mean_d=  0.13264 |P_{n<=2}Omega|=0.891801; bound=1.000000
+SU2 rotor b=     64 E=   8.15636 mean_d=  0.06630 |P_{n<=2}Omega|=0.686486; bound=1.000000
+SU2 rotor b=    256 E=  16.64204 mean_d=  0.03315 |P_{n<=2}Omega|=0.469107; bound=1.000000
+SU2 rotor b=   1024 E=  33.61280 mean_d=  0.01657 |P_{n<=2}Omega|=0.299605; bound=0.875384
+SU2 rotor b=   4096 E=  67.55403 mean_d=  0.00829 |P_{n<=2}Omega|=0.184705; bound=0.711350
+SU2 rotor b=  16384 E= 135.43633 mean_d=  0.00414 |P_{n<=2}Omega|=0.111840; bound=0.577990
+PASS: universal SU2 Haar cap projector bound; b^1/4 necessary link spin; true rotor overlap inequalities. Does NOT certify eight-face ground state.
+[2] universal SU2 magnetic compression
+max edge character index 0 dim diagonal D 1 cap width 0.8853413770001135 magnetic energy factor 0.44267068850005675
+max edge character index 1 dim diagonal D 5 cap width 0.30278249185356393 magnetic energy factor 0.15139124592678196
+max edge character index 2 dim diagonal D 14 cap width 0.1524141907807907 magnetic energy factor 0.07620709539039534
+max edge character index 4 dim diagonal D 55 cap width 0.061216566695935656 magnetic energy factor 0.030608283347967828
+max edge character index 8 dim diagonal D 285 cap width 0.020443136182969317 magnetic energy factor 0.010221568091484659
+max edge character index 16 dim diagonal D 1785 cap width 0.00601661120388908 magnetic energy factor 0.00300830560194454
+max edge character index 32 dim diagonal D 12529 cap width 0.0016412188218343068 magnetic energy factor 0.0008206094109171534
+max edge character index 50 dim diagonal D 45526 cap width 0.0006943915580812508 magnetic energy factor 0.0003471957790406254
+PASS exact universal SU2 magnetic compression P_J V P_J >= const*b/(J+1)^2, independent of color and volume
+[3] 35-state asymmetric eight-face exclusion
+b 1e+03  seven-cap overlap certificate upper 1.00000000
+b 1e+06  seven-cap overlap certificate upper 0.35679269
+b 1e+12  seven-cap overlap certificate upper 0.01523529
+b 1e+24  seven-cap overlap certificate upper 0.00002778
+overlap eta 0.25 necessary character index lower 45.43957794137137
+overlap eta 0.5 necessary character index lower 148.6112718581206
+overlap eta 0.8 necessary character index lower 327.65331478498706
+PASS: exact finite 35-state sup kernel, seven-face Haar cap rarity, b^-21/92 overlap exclusion and universal b^1/4 link-spin necessity
+[4] complete 8-face fundamental spin network enumeration
+Eight-face open disk: V,E,F 15 22 8 cycle rank 8
+Eulerian link-spin configurations 256 four-intertwiner multiplicity distribution {0: 161, 1: 68, 2: 22, 3: 4, 4: 1}
+Complete physical j_e<=1/2 spin-network Hilbert dimension 433
+Target center parity sectors even 246 odd 187
+Exact center flux dimensions tracked by face-boundary coefficient, not state-dependent gauge choice
+PASS exact SU2 spin-1/2 graph enumeration; magnetic recoupling and ground spectrum NOT calculated
+[5] prior eight-face joint-color Ritz regression
+Exact continuous SU2 eight-face Gauss-invariant Ritz: vertices 15 links 22 retained magnetic faces 7
+Basis: 29 independent face character products + 6 relative-color states
+b = 1 Ritz E0 6.70737797 E1 9.55514418 gap 2.84776621 color norm^2 0.00011672 residual >= 0.34124718 residual/gap >= 0.11983
+      analytic E0(P) >= 4.47312670  true E0 <= 15.04216812   certified energy-bias floor >= 0.00000000
+b = 4 Ritz E0 23.02166345 E1 28.23662487 gap 5.21496142 color norm^2 0.00034652 residual >= 3.86148507 residual/gap >= 0.74046
+      analytic E0(P) >= 17.89250679  true E0 <= 30.08433625   certified energy-bias floor >= 0.00000000
+b = 16 Ritz E0 83.87164285 E1 101.13822040 gap 17.26657755 color norm^2 0.00004946 residual >= 19.27068087 residual/gap >= 1.11607
+      analytic E0(P) >= 71.57002716  true E0 <= 60.16867250   certified energy-bias floor >= 11.40135466
+b = 64 Ritz E0 325.88073510 E1 392.07421279 gap 66.19347769 color norm^2 0.00000370 residual >= 80.76009068 residual/gap >= 1.22006
+      analytic E0(P) >= 286.28010862  true E0 <= 120.33734500   certified energy-bias floor >= 165.94276363
+b = 256 Ritz E0 1293.57978916 E1 1555.63260357 gap 262.05281442 color norm^2 0.00000024 residual >= 326.64547667 residual/gap >= 1.24649
+      analytic E0(P) >= 1145.12043450  true E0 <= 240.67469000   certified energy-bias floor >= 904.44574450
+PASS exact SU2 Ritz block and explicit model basis; certificate not attained.
+max edge character index 0 dim diagonal D 1 cap width 0.8853413770001135 magnetic energy factor 0.44267068850005675
+max edge character index 1 dim diagonal D 5 cap width 0.30278249185356393 magnetic energy factor 0.15139124592678196
+max edge character index 2 dim diagonal D 14 cap width 0.1524141907807907 magnetic energy factor 0.07620709539039534
+max edge character index 4 dim diagonal D 55 cap width 0.061216566695935656 magnetic energy factor 0.030608283347967828
+max edge character index 8 dim diagonal D 285 cap width 0.020443136182969317 magnetic energy factor 0.010221568091484659
+max edge character index 16 dim diagonal D 1785 cap width 0.00601661120388908 magnetic energy factor 0.00300830560194454
+max edge character index 32 dim diagonal D 12529 cap width 0.0016412188218343068 magnetic energy factor 0.0008206094109171534
+max edge character index 50 dim diagonal D 45526 cap width 0.0006943915580812508 magnetic energy factor 0.0003471957790406254
+PASS exact universal SU2 magnetic compression P_J V P_J >= const*b/(J+1)^2, independent of color and volume
+PASS volume cancels from necessary b^1/4 spin-cutoff ratio under bounded Penrose-type coefficients

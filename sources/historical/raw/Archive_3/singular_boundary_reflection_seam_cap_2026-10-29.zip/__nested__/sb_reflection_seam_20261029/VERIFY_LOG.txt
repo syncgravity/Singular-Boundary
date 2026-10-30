@@ -1,0 +1,22 @@
+SU2 positive character kernel spin 0.5 min eig -0.0
+SU2 positive character kernel spin 1 min eig -0.0
+SU2 positive character kernel spin 1.5 min eig 0.0441477877
+SU2 positive character kernel spin 2 min eig 0.1272251211
+SU2 positive character kernel spin 3 min eig 0.8857580867
+SU2 positive character kernel spin 5 min eig 3.6203994868
+finite Hilbert-Schmidt cone character response spin 0.5 : 0.0138884506
+finite Hilbert-Schmidt cone character response spin 1 : 0.020832414
+finite Hilbert-Schmidt cone character response spin 1.5 : 0.027776115
+finite Hilbert-Schmidt cone character response spin 2 : 0.0347198966
+finite Hilbert-Schmidt cone character response spin 3 : 0.0486072466
+finite Hilbert-Schmidt cone character response spin 5 : 0.0763837414
+patch 3 main missing None faces 9 edges 24 fixed diagonal faces [(0, 0), (1, 1), (2, 2)]
+patch 3 main missing (0, 0) faces 8 edges 22 fixed diagonal faces [(1, 1), (2, 2)]
+patch 3 main missing (2, 2) faces 8 edges 22 fixed diagonal faces [(0, 0), (1, 1)]
+patch 3 anti missing (0, 2) faces 8 edges 22 fixed diagonal faces [(1, 1), (2, 0)]
+patch 3 anti missing (2, 0) faces 8 edges 22 fixed diagonal faces [(1, 1), (0, 2)]
+center-cap delta 0.2 H(a/2) 0.006923416494429526 ratio h^3/2 0.07740614959043855
+center-cap delta 0.05 H(a/2) 0.0008451969999250723 ratio h^3/2 0.07559671784845384
+center-cap delta 0.01 H(a/2) 7.513920164489059e-05 ratio h^3/2 0.07513920164489059
+center-cap delta 0.001 H(a/2) 2.3728977880181996e-06 ratio h^3/2 0.07503761664912914
+PASS: exact SU2 PD character kernels, Wilson exponential Schur kernel, finite semigroup PSD preservation, 3x3 diagonal reflection pairs, Haar cap

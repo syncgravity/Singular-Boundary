@@ -1,0 +1,9 @@
+h=0.002500 r=0.200000 norm=0.98513150 excess=0.68637140 L2dist=0.0953349 Haarcap=7.49982185e-05 trialcap=0.0000e+00
+h=0.001111 r=0.133333 norm=0.99553790 excess=0.46104242 L2dist=0.0521145 Haarcap=2.22263271e-05 trialcap=0.0000e+00
+h=0.000625 r=0.100000 norm=0.99810912 excess=0.34707194 L2dist=0.0339014 Haarcap=9.37741570e-06 trialcap=0.0000e+00
+h=0.000400 r=0.080000 norm=0.99902986 excess=0.27821160 L2dist=0.0242754 Haarcap=4.80139891e-06 trialcap=0.0000e+00
+h=0.000278 r=0.066667 norm=0.99943795 excess=0.23211553 L2dist=0.0184743 Haarcap=2.77863828e-06 trialcap=0.0000e+00
+PASS exact SU2 center-even Haar cap, normalized positive smoothstep, energy o(1), cap depletion, transfer threshold
+PASS: sharp S3 Sobolev cap capacity exponent J=o(sqrt(h)), smoothstep saturates energy O(sqrt(h))
+PASS interacting SU2 physical b=5: E0=3.4044604410, local Fisher=1.0240248689, electric score=1.0240248689
+PASS genuine 3-face/10-edge spatial Penrose fixture

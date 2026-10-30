@@ -1,0 +1,12 @@
+Exact quartic-remainder variance lower coefficient: 875*a**2/16384
+Exact quartic-remainder variance upper coefficient: 5*a**2/16
+F= 3 weighted quartic var/norm2= 44926.90836999394 min eigen K= 3.8062430400804557
+F= 3 weighted quartic var/norm2= 43308.33045490416 min eigen K= 3.8062430400804557
+F= 3 weighted quartic var/norm2= 44595.450209411414 min eigen K= 3.8062430400804557
+F= 25 weighted quartic var/norm2= 42885.00575891065 min eigen K= 3.448269187457224
+F= 25 weighted quartic var/norm2= 38648.22135645057 min eigen K= 3.448269187457224
+F= 25 weighted quartic var/norm2= 43064.08430432603 min eigen K= 3.448269187457224
+F= 100 weighted quartic var/norm2= 42338.861260429716 min eigen K= 3.3883191803838195
+F= 100 weighted quartic var/norm2= 39781.000450396634 min eigen K= 3.3883191803838195
+F= 100 weighted quartic var/norm2= 42641.16335865466 min eigen K= 3.3883191803838195
+PASS: exact SU(2) Taylor, 3-color Wick fourth covariance, signed coercivity and spatial incidence.

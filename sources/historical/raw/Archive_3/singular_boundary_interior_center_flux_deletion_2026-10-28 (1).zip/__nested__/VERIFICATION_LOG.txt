@@ -1,0 +1,13 @@
+PASS Penrose Z5 spatial seed: 3 faces, 10 edges, center twist length 1
+PASS 5x5 interior grid: 25 faces, 60 edges, center twist length 3
+PASS 10x10 interior grid: 100 faces, 220 edges, center twist length 5
+PASS symbolic center-odd Ritz and susceptibility
+PASS nonlinear SU2 one-face b=   0.1: E0=0.099166811, Ritz=0.099166898
+PASS nonlinear SU2 one-face b=   1.0: E0=0.918058177, Ritz=0.918861170
+PASS nonlinear SU2 one-face b=   5.0: E0=3.404460441, Ritz=3.584524053
+PASS nonlinear SU2 one-face b=  20.0: E0=8.161931279, Ritz=11.388125792
+PASS nonlinear SU2 one-face b= 100.0: E0=19.895497028, Ritz=51.477505060
+PASS Gaussian 3-face BULK deletion: increment=3.573544929, bound=3.617717160
+PASS Gaussian 25-face BULK deletion: increment=3.147424090, bound=3.515370542
+PASS Gaussian 100-face BULK deletion: increment=3.397947661, bound=3.638606617
+PASS ALL deterministic physical center-flux / Gaussian rank-one checks; no Monte Carlo

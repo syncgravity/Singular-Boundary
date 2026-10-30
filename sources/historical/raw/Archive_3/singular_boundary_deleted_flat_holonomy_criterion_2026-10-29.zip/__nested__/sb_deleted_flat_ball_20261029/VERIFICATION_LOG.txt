@@ -1,0 +1,5 @@
+h=0.200 b=100.0 kappa=7.071 haar_ball=0.03123505 deletion=19.895497 trial=20.808869 bound=143.052978
+h=0.100 b=400.0 kappa=14.142 haar_ball=0.01116530 deletion=41.111364 trial=42.037493 bound=334.807990
+h=0.050 b=1600.0 kappa=28.284 haar_ball=0.00396890 deletion=83.539057 trial=84.471022 bound=767.336464
+h=0.025 b=6400.0 kappa=56.569 haar_ball=0.00140698 deletion=168.392503 trial=169.327280 bound=1730.421917
+PASS: exact SU(2) Haar small-ball asymptotics, true interacting character ground energies, variational trial, Penrose spatial incidence; no Monte Carlo

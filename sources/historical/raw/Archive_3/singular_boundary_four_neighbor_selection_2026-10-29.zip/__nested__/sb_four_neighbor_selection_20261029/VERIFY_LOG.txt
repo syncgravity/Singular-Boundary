@@ -1,0 +1,17 @@
+finite Wilson patch: faces 9 edges 24 central target (1, 1) neighbors [(0, 1), (1, 0), (1, 2), (2, 1)] retained corners 4
+center flip for neighbor (0, 1) dual path length 1 target unchanged
+center flip for neighbor (1, 0) dual path length 1 target unchanged
+center flip for neighbor (1, 2) dual path length 1 target unchanged
+center flip for neighbor (2, 1) dual path length 1 target unchanged
+spin j=1: degree each neighbor >= 2; total >= 8; leading Haar tensor overlap 1/6912 = 0.00014467592593
+spin j=2: degree each neighbor >= 4; total >= 16; leading Haar tensor overlap 1/8192000 = 1.220703125e-07
+spin j=3: degree each neighbor >= 6; total >= 24; leading Haar tensor overlap 1/5754585088 = 1.7377447456e-10
+Taylor sparsity verified for spin 1
+Taylor sparsity verified for spin 2
+Taylor sparsity verified for spin 3
+PASS: exact 3x3 face incidence, neighbor flux parity, and SU2 all-order representation selection
+center-even rotor obstruction: h 0.2 cap/Haar 0.00172527691811671
+center-even rotor obstruction: h 0.1 cap/Haar 1.2522436309282772e-07
+center-even rotor obstruction: h 0.05 cap/Haar 3.886136697742396e-16
+center-even rotor obstruction: h 0.025 cap/Haar 2.4098577930185668e-33
+PASS: explicit four-coupling even, Haar-hyperplane, spin-filtered positive rotor can deplete center cap

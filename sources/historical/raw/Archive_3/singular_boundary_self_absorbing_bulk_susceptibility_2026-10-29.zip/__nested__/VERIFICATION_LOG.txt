@@ -1,0 +1,8 @@
+Nonlinear SU2 one-face b=4:  ΔE=2.902659557, ∫m1=2.820136601, (A/2)ΔE=5.805319115
+Nonlinear SU2 one-face b=25:  ΔE=9.283149252, ∫m1=12.340119770, (A/2)ΔE=18.566298504
+Nonlinear SU2 one-face b=100:  ΔE=19.895497028, ∫m1=31.030245363, (A/2)ΔE=39.790994057
+h=0.200, single-neighbor cutoff=7.477, UV absorption h×bound=2048.000
+h=0.100, single-neighbor cutoff=17.78, UV absorption h×bound=2048.000
+h=0.050, single-neighbor cutoff=42.29, UV absorption h×bound=2048.000
+h=0.025, single-neighbor cutoff=100.6, UV absorption h×bound=2048.000
+PASS exact SU2 fsum, integrated source moment, single-neighbor graph, spectral cutoff algebra; no Monte Carlo

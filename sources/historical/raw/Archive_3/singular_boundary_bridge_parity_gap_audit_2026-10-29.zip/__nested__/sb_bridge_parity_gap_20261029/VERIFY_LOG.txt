@@ -1,0 +1,7 @@
+Parity comparator sign=-1, F(0)=1.00000000, F(0.001)=0.99999925, Fprime0=0, Fsecond0=-1.50000799
+Parity comparator sign=+1, F(0)=1.00000000, F(0.001)=1.00000025, Fprime0=0, Fsecond0=0.49999901
+3x3 U(1) gauge disk: 9 face modes, 24 electric edges, 6561 Fourier basis states per deleted-charge block
+U(1) deleted face Fourier charge 0 lowest Ritz energy 7.9224248790873055
+U(1) deleted face Fourier charge 1 lowest Ritz energy 11.734454975970058
+U(1) deleted face Fourier charge -1 lowest Ritz energy 11.73445497597007
+PASS: exact center-parity Ward test and cycle-rich U(1) gauge face-block computation

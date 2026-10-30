@@ -1,0 +1,2 @@
+PASS: positive-resolvent gaussian submodularity, 3-face Penrose seed, exact center-parity two-level opposite sign.
+No Monte Carlo; no nonlinear SU2 mixed-sign inference.

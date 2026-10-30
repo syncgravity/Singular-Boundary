@@ -1,0 +1,22 @@
+strength 8.0 center_favoring True hcap 0.02 prob 0.006356634 Haar 0.001692551
+strength 8.0 center_favoring True hcap 0.1 prob 0.059712632 Haar 0.018693037
+strength 8.0 center_favoring True hcap 0.2 prob 0.137800443 Haar 0.052044019
+strength 8.0 center_favoring False hcap 0.02 prob 0.000400487 Haar 0.001692551
+strength 8.0 center_favoring False hcap 0.1 prob 0.00538008 Haar 0.018693037
+strength 8.0 center_favoring False hcap 0.2 prob 0.018766701 Haar 0.052044019
+center_avoid_trial 8.0 total_trial_energy 2.5687198201928414 relative_sqrtlambda 0.9081796019133236
+strength 40.0 center_favoring True hcap 0.02 prob 0.034810752 Haar 0.001692551
+strength 40.0 center_favoring True hcap 0.1 prob 0.236908992 Haar 0.018693037
+strength 40.0 center_favoring True hcap 0.2 prob 0.391220725 Haar 0.052044019
+strength 40.0 center_favoring False hcap 0.02 prob 4.302e-06 Haar 0.001692551
+strength 40.0 center_favoring False hcap 0.1 prob 0.000131344 Haar 0.018693037
+strength 40.0 center_favoring False hcap 0.2 prob 0.001074269 Haar 0.052044019
+center_avoid_trial 40.0 total_trial_energy 6.880572079408152 relative_sqrtlambda 1.0879139687945345
+strength 150.0 center_favoring True hcap 0.02 prob 0.090217621 Haar 0.001692551
+strength 150.0 center_favoring True hcap 0.1 prob 0.39913976 Haar 0.018693037
+strength 150.0 center_favoring True hcap 0.2 prob 0.486875676 Haar 0.052044019
+strength 150.0 center_favoring False hcap 0.02 prob 0.0 Haar 0.001692551
+strength 150.0 center_favoring False hcap 0.1 prob 1.24e-07 Haar 0.018693037
+strength 150.0 center_favoring False hcap 0.2 prob 6.89e-06 Haar 0.052044019
+center_avoid_trial 150.0 total_trial_energy 14.265366088802345 relative_sqrtlambda 1.1647622637189443
+PASS: exact Haar diffusion, nontrivial conditional fiber cancellation, Haar cap asymptotic, true SU2 rotor sign tests

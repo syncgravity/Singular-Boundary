@@ -1,0 +1,26 @@
+Exact continuous SU2 eight-face Gauss-invariant Ritz: vertices 15 links 22 retained magnetic faces 7
+Basis: 29 independent face character products + 6 relative-color states
+b = 1 Ritz E0 6.70737797 E1 9.55514418 gap 2.84776621 color norm^2 0.00011672 residual >= 0.34124718 residual/gap >= 0.11983
+      analytic E0(P) >= 4.47312670  true E0 <= 15.04216812   certified energy-bias floor >= 0.00000000
+b = 4 Ritz E0 23.02166345 E1 28.23662487 gap 5.21496142 color norm^2 0.00034652 residual >= 3.86148507 residual/gap >= 0.74046
+      analytic E0(P) >= 17.89250679  true E0 <= 30.08433625   certified energy-bias floor >= 0.00000000
+b = 16 Ritz E0 83.87164285 E1 101.13822040 gap 17.26657755 color norm^2 0.00004946 residual >= 19.27068087 residual/gap >= 1.11607
+      analytic E0(P) >= 71.57002716  true E0 <= 60.16867250   certified energy-bias floor >= 11.40135466
+b = 64 Ritz E0 325.88073510 E1 392.07421279 gap 66.19347769 color norm^2 0.00000370 residual >= 80.76009068 residual/gap >= 1.22006
+      analytic E0(P) >= 286.28010862  true E0 <= 120.33734500   certified energy-bias floor >= 165.94276363
+b = 256 Ritz E0 1293.57978916 E1 1555.63260357 gap 262.05281442 color norm^2 0.00000024 residual >= 326.64547667 residual/gap >= 1.24649
+      analytic E0(P) >= 1145.12043450  true E0 <= 240.67469000   certified energy-bias floor >= 904.44574450
+PASS exact SU2 Ritz block and explicit model basis; certificate not attained.
+class max n 0 j_max 0.0 max projected Wilson trace 0 min deficit 1
+class max n 1 j_max 0.5 max projected Wilson trace 0.5 min deficit 0.5
+class max n 2 j_max 1.0 max projected Wilson trace 0.7071067811865477 min deficit 0.2928932188134523
+class max n 3 j_max 1.5 max projected Wilson trace 0.8090169943749476 min deficit 0.19098300562505244
+class max n 4 j_max 2.0 max projected Wilson trace 0.8660254037844386 min deficit 0.1339745962155614
+class max n 8 j_max 4.0 max projected Wilson trace 0.9510565162951541 min deficit 0.048943483704845914
+class max n 16 j_max 8.0 max projected Wilson trace 0.9848077530122085 min deficit 0.015192246987791536
+class max n 32 j_max 16.0 max projected Wilson trace 0.9957341762950345 min deficit 0.004265823704965532
+b 16 minimum class n to remove energy-scale contradiction 1 b^(1/4) 2.0
+b 256 minimum class n to remove energy-scale contradiction 5 b^(1/4) 4.0
+b 4096 minimum class n to remove energy-scale contradiction 11 b^(1/4) 8.0
+b 65536 minimum class n to remove energy-scale contradiction 23 b^(1/4) 16.0
+PASS exact SU2 character Jacobi spectrum and b^(1/4) necessary class-cutoff scaling

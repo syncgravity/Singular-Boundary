@@ -1,0 +1,8 @@
+b=    0.5 exact_interacting_E0=0.47925619 Haar_trial=0.56004843 bound=1.50000000
+b=      4 exact_interacting_E0=2.90265956 Haar_trial=2.96962465 bound=4.24264069
+b=     25 exact_interacting_E0=9.28314925 Haar_trial=9.30762890 bound=10.60660172
+b=    100 exact_interacting_E0=19.89549703 Haar_trial=19.90747950 bound=21.21320344
+b=   1600 exact_interacting_E0=83.53905683 Haar_trial=83.54198169 bound=84.85281374
+PASS: real 3-face Penrose spatial incidence, nonlinear five-face interior bridge,
+      cycle-rich 3x3 obstruction, Haar Catalan moments, normalized SU2 Ritz.
+No Monte Carlo; no Stage7/26 Hamiltonian certification.

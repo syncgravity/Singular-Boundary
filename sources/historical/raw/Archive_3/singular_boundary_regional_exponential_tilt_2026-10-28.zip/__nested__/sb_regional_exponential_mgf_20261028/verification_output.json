@@ -1,0 +1,73 @@
+{
+  "checks": [
+    "exact SU2 commutators and Haar divergence form",
+    "fixed area regional exponential tilt scale and sharp tail rate",
+    "exact one-plaquette hierarchy and finite h upper/lower certificates",
+    "actual spatial three-rhombus Penrose 10-edge incidence",
+    "nonlinear one-face character basis deterministic evaluation"
+  ],
+  "nonlinear_rotor_values": [
+    {
+      "h": 0.2,
+      "b": 99.99999999999999,
+      "E0_h": 3.979099405662889,
+      "Ed_over_h": 0.5304665124616058,
+      "var_d_over_h2": 0.17919068440327277,
+      "m1_d_over_h": 0.9688159438739363,
+      "m2_d": 5.247060512947426,
+      "m3_d_times_h": 28.51366262909893,
+      "component_count": 24,
+      "normalized_source_variance_over_h": 0.17202305702714188,
+      "normalized_source_first_moment": 0.930063306118979,
+      "normalized_source_second_moment_times_h": 5.03717809242953,
+      "normalized_source_third_moment_times_h2": 27.37311612393498
+    },
+    {
+      "h": 0.1,
+      "b": 399.99999999999994,
+      "E0_h": 4.11113642375967,
+      "Ed_over_h": 0.5303626008390433,
+      "var_d_over_h2": 0.18335118341450207,
+      "m1_d_over_h": 1.014261634499749,
+      "m2_d": 5.612992218063716,
+      "m3_d_times_h": 31.08790975204209,
+      "component_count": 99,
+      "normalized_source_variance_over_h": 0.1815176715803571,
+      "normalized_source_first_moment": 1.0041190181547517,
+      "normalized_source_second_moment_times_h": 5.55686229588308,
+      "normalized_source_third_moment_times_h2": 30.777030654521674
+    },
+    {
+      "h": 0.05,
+      "b": 1599.9999999999998,
+      "E0_h": 4.176952841511642,
+      "Ed_over_h": 0.5303380301744434,
+      "var_d_over_h2": 0.18542700973519935,
+      "m1_d_over_h": 1.0373417885496752,
+      "m2_d": 5.803823694481554,
+      "m3_d_times_h": 32.478282191518524,
+      "component_count": 399,
+      "normalized_source_variance_over_h": 0.1849634422108614,
+      "normalized_source_first_moment": 1.0347484340783013,
+      "normalized_source_second_moment_times_h": 5.789314135245352,
+      "normalized_source_third_moment_times_h2": 32.39708648603973
+    },
+    {
+      "h": 0.025,
+      "b": 6399.999999999999,
+      "E0_h": 4.209812563599364,
+      "Ed_over_h": 0.5303320497282967,
+      "var_d_over_h2": 0.18646385383733158,
+      "m1_d_over_h": 1.0489712010364338,
+      "m2_d": 5.901239040007935,
+      "m3_d_times_h": 33.200472526975354,
+      "component_count": 1599,
+      "normalized_source_variance_over_h": 0.18634731392868328,
+      "normalized_source_first_moment": 1.0483155940357862,
+      "normalized_source_second_moment_times_h": 5.897550765607932,
+      "normalized_source_third_moment_times_h2": 33.179722231646004
+    }
+  ],
+  "scope": "One-face nonlinear SU2 and separate disjoint product comparison; not connected Penrose quantum vacuum",
+  "status": "All algebraic assertions checked; proofs are in PROOF_REPORT.md; no stochastic simulations"
+}

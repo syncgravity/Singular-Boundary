@@ -1,0 +1,3 @@
+PASS exact 3-face Penrose incidence; strictly signed diagonal dominance; time-decay uniform bounds; no Monte Carlo
+3-face K eigenvalues [3.80624304, 3.93488434, 4.0]
+uniform signed lower/upper factors 105/64 4

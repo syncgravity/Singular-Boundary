@@ -1,0 +1,2 @@
+PASS: exact three spectral trichotomy witnesses; EW inverse moment and UV band; matrix Gram reflection positivity; 3-face spatial fixture
+LIMIT: pure spectral certificates do NOT establish actual Penrose vacuum variance or mass gap

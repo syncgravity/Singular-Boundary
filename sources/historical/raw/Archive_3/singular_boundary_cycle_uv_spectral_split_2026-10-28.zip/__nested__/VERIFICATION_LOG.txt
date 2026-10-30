@@ -1,0 +1,13 @@
+PASS authentic spatial Penrose seed: 3 faces, 10 edges, peripheral edge-disjoint pair
+PASS interacting SU2 character rotor b=0; gap=3.00000000
+PASS interacting SU2 character rotor b=0.5; gap=3.02898633
+PASS interacting SU2 character rotor b=5; gap=4.94088473
+PASS interacting SU2 character rotor b=20; gap=11.27058013
+PASS interacting SU2 character rotor b=60; gap=20.59263094
+PASS UV cutoff h=0.2000, m=1, lambda=11.2, h*UV=2.828427
+PASS UV cutoff h=0.1000, m=4, lambda=44.7, h*UV=2.828427
+PASS UV cutoff h=0.0500, m=25, lambda=200, h*UV=2.828427
+PASS UV cutoff h=0.0250, m=400, lambda=1.13e+03, h*UV=2.828427
+PASS UV cutoff h=0.0125, m=6400, lambda=6.4e+03, h*UV=2.828427
+PASS exact signed Kato response in unique-positive center-symmetric two-state comparison
+ALL TESTS PASS — analytic theorem uses actual SU2 f-sums, not a Gaussian vacuum

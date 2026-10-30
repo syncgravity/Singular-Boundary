@@ -1,0 +1,9 @@
+SU2 exact shared-link Fierz: 128 noncommuting checks, max abs error 5.55e-17
+SU2 local gradient signs: 62 positive, 66 negative
+Six-state Markov exact mixed first moment: 0
+Six-state Markov exact inverse-energy mixed moment: -(8*z - 9)/(216*z)
+center-even Markov eps 1/4 gap 0.126716 mixed m1 4.1e-20 mixed inverse m-1 0.12962963 source/driver fsum 0.16667 0.20833
+center-even Markov eps 1/16 gap 0.0388659 mixed m1 5e-18 mixed inverse m-1 0.62962963 source/driver fsum 0.16667 0.17708
+center-even Markov eps 1/64 gap 0.0102372 mixed m1 3.4e-18 mixed inverse m-1 2.6296296 source/driver fsum 0.16667 0.16927
+center-even Markov eps 1/256 gap 0.00259289 mixed m1 1.7e-18 mixed inverse m-1 10.62963 source/driver fsum 0.16667 0.16732
+PASS: exact SU2 local mixed fsum, local sign freedom, and center-even diffusion inverse-moment obstruction

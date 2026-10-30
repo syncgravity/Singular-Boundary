@@ -1,0 +1,11 @@
+grid3 noncentral faces 9 edges 24 dual minimum 2 path 2 non-target holonomy max residual 0.0
+grid3 center faces 9 edges 24 dual minimum 2 path 2 non-target holonomy max residual 0.0
+grid5 noncentral faces 25 edges 60 dual minimum 3 path 3 non-target holonomy max residual 0.0
+grid5 center faces 25 edges 60 dual minimum 3 path 3 non-target holonomy max residual 0.0
+grid7 noncentral faces 49 edges 112 dual minimum 4 path 4 non-target holonomy max residual 0.0
+grid7 center faces 49 edges 112 dual minimum 4 path 4 non-target holonomy max residual 0.0
+penrose3 noncentral faces 3 edges 10 dual minimum 1 path 2 non-target holonomy max residual 0.0
+penrose3 center faces 3 edges 10 dual minimum 1 path 2 non-target holonomy max residual 0.0
+noncentral electric derivative obstruction Frobenius norm: 0.83276384
+PASS SU2 nonabelian dual-path, preserved other holonomies, dual minimal length, center parity and electric obstruction
+PASS collective path generator has one SU2 generator per crossed edge

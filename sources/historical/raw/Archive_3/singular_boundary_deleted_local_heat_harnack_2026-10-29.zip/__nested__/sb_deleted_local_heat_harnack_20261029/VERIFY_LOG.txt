@@ -1,0 +1,8 @@
+Exact center-even SU2 comparator H = -a Δ + a(2κ p² + κ² p²(1-p²))
+kappa= 5  center cap=8.97903452776e-05  Haar=0.0520440193  cap/Haar=0.0017253 T_cap=4.5
+kappa=10  center cap=2.34082361932e-09  Haar=0.0186930367  cap/Haar=1.2522e-07 T_cap=9.5
+kappa=20  center cap=2.58816918004e-18  Haar=0.00666000551  cap/Haar=3.8861e-16 T_cap=19.5
+kappa=40  center cap=5.69599969946e-36  Haar=0.00236362482  cap/Haar=2.4099e-33 T_cap=39.5
+heat t=0.5, min=2.33913063e-06, max=11.3615278, ratio=4857158.33
+heat t=1.0, min=0.0088235849, max=4.55175159, ratio=515.861936
+PASS exact SU2 rotor ground equation, Haar cap exponential depletion, kernel positivity and mass-one

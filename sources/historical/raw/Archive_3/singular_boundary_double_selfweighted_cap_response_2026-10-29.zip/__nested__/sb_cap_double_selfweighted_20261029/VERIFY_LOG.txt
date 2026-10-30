@@ -1,0 +1,15 @@
+group-convolution 0.4 alpha 0.0005910180533143571 nu 0.00048062533482190814 k(identity) 0.00048062533873721285
+weighted-gradient max test ratio 0.08184364164511701
+group-convolution 0.7 alpha 0.0031400724649057405 nu 0.0025567423056902373 k(identity) 0.002556742326529882
+weighted-gradient max test ratio 0.08145286398038681
+group-convolution 1.0 alpha 0.009032561784969743 nu 0.007368760162450428 k(identity) 0.007368760222563391
+weighted-gradient max test ratio 0.08083580744918466
+nonlinear rotor b 4.0 Delta_g 2.9026595574539114 integrated_m1 11.280546402770614 upper 23.22127645963129 bridge 4.242640687119285
+nonlinear rotor b 25.0 Delta_g 9.283149252123376 integrated_m1 308.5029942433207 upper 464.1574626061688 bridge 10.606601717798211
+nonlinear rotor b 100.0 Delta_g 19.89549702831644 integrated_m1 3103.0245363112945 upper 3979.099405663288 bridge 21.213203435596423
+h 0.2 ratio normalized UV/bridge sqrtF 124.14959466392314
+h 0.1 ratio normalized UV/bridge sqrtF 126.2162003358736
+h 0.05 ratio normalized UV/bridge sqrtF 127.23132355472997
+h 0.025 ratio normalized UV/bridge sqrtF 127.73454129201416
+h 0.0125 ratio normalized UV/bridge sqrtF 127.98508783238437
+PASS self-weighted convolution f-sum, integrated neighbor f-sum, and h^-11/8 scaling; no Monte Carlo

@@ -1,0 +1,10 @@
+conditional SU2 color average mean/maxerror: 1.2027416100105862e-16 variance/maxerror: 5.551115123125783e-17
+SU2 mixed-gradient six-edge skein: PASS on 34 noncommuting configurations
+Haar exact E[Gamma_e(p_f,p_g)^2]/a_e^2 = 0.01171875
+Haar exact ||(I-P_class) [-a_e Delta_e](p_f p_g)||^2/a_e^2 = 0.046875
+Haar exact center-even ||(I-P_class) T[chi_1(f)chi_1(g)]||^2/a_e^2 = 5.333333333333333
+Haar exact normalized center-even ||(I-P_class) T[2chi_1(f)p_g]||^2/a_e^2 = 2.0
+PASS: class compression loses a genuine SU2 center-even electric color channel; not a mass-gap proof
+PASS: 8-face nonabelian gauge-fixed tree model 15 vertices, 22 edges, 8 independent Q8 coordinates
+PASS: complete local kinetic generator exact after gauge reduction (22 edges); magnetic Wilson words; target center string
+LIMITATION: Q8 is a finite SU2 subgroup, not SU2 Haar or a nonperturbative solution of the eight-face SU2 spectral problem.

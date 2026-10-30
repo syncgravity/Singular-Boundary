@@ -1,0 +1,6 @@
+PASS: independent Haar quaternion moments, exact face/merged spectral split
+PASS: positive cross covariance coefficient -3*t**2/(8*E1*E2*(-2*E1 - 2*E2 + 3*t)*(2*E1 + 2*E2 + t))
+PASS: equal-link covariance coefficient 1/(2808*a**2)
+PASS: mixed first spectral moment coefficient -3*t**2*(E1 + E2)/(16*E1*E2*(-2*E1 - 2*E2 + 3*t)*(2*E1 + 2*E2 + t))
+PASS: authentic 3-face 10-edge Penrose spatial seed
+NOTE: analytic weak-field result, not a computation of strong-field vacuum

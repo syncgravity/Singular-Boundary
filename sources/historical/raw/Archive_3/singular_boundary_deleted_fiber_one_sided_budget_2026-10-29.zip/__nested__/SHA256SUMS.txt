@@ -1,0 +1,6 @@
+SHA-256 manifest — one-sided deleted-face fiber potential theorem
+
+816983a1c2a792be09287839041bbe13b0e6403a78185bf57d46a22b87ebfeda  PROOF_REPORT.md
+a26084c17baa0062b7bc0552f9c32d000c751a8889d0f1fb1779c70808482c16  README.md
+440ff2104585443439f02b3542e2ba90ce263709c6e2c87a56ccad55da958afc  verify_one_sided_fiber_budget.py
+5709003a0e33ecc1bf91a5316711f5189b691e706bd8977ebf7b8278d7024f6a  verification.log

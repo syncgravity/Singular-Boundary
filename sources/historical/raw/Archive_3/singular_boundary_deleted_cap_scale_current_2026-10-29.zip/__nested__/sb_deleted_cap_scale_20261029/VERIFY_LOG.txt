@@ -1,0 +1,14 @@
+HAAR a=0.02 mass=1.697516919e-06 CS1=1.485315203e-06 CS2=7.426572863e-07 K=78.5450526
+HAAR a=0.10 mass=0.0002117825816 CS1=0.000185279842 CS2=9.263500875e-05 K=15.7341738
+HAAR a=0.40 mass=0.01315318665 CS1=0.01150782471 CS2=0.005734531761 K=4.03369887
+HAAR a=1.00 mass=0.173590706 CS1=0.1562443298 CS2=0.07418001479 K=1.86672667
+SHAPES haar PASS
+SHAPES increasing PASS
+SHAPES decreasing PASS
+SHAPES oscillatory PASS
+SHAPES center-dip PASS
+COMPARATOR n= 8 T_global_lower=   1.6219 T_cap=0 J_power=0.015625 Haar_mass_ratio=1.000000000000
+COMPARATOR n=16 T_global_lower=   8.1093 T_cap=0 J_power=0.00390625 Haar_mass_ratio=1.000000000000
+COMPARATOR n=32 T_global_lower=  34.0591 T_cap=0 J_power=0.0009765625 Haar_mass_ratio=1.000000000000
+COMPARATOR n=64 T_global_lower= 137.8581 T_cap=0 J_power=0.00024414062 Haar_mass_ratio=1.000000000000
+PASS: exact SU2 Haar cap, cap-scale current, two-scale shell and positive rotor separation; no Monte Carlo

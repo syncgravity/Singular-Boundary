@@ -1,0 +1,9 @@
+cap a=0.5 alpha=1.56353240e-04 F=2.44463357e-08 var=2.77859205e-13 m1/A=1.65239117e-11 chi*A=1.17592603e-14 (chi/F)/a^5*A=1.539275e-05 Jensen ratio=2.51677 Jmax=56
+cap a=0.25 alpha=1.95878114e-05 F=3.83682355e-10 var=5.45646782e-16 m1/A=1.29877895e-13 chi*A=6.25743602e-18 (chi/F)/a^5*A=1.6700311e-05 Jensen ratio=2.72966 Jmax=112
+cap a=0.125 alpha=2.44984301e-06 F=6.00173075e-12 var=1.06691387e-18 m1/A=1.01620893e-15 chi*A=3.17340321e-21 (chi/F)/a^5*A=1.7326015e-05 Jensen ratio=2.83302 Jmax=224
+cap a=0.0625 alpha=3.06273099e-07 F=9.38032114e-14 var=2.08433988e-21 m1/A=7.94213838e-18 chi*A=1.57717987e-24 (chi/F)/a^5*A=1.7630451e-05 Jensen ratio=2.88325 Jmax=448
+neighbor b=4 <p>_1=0.469882463 int_chi=0.939764925 exact_identity=0.939764925 min_bound=0.000000000 max_bound=2.000000000 chi/b=0.234941231
+neighbor b=25 <p>_1=0.787625646 int_chi=9.845320578 exact_identity=9.845320578 min_bound=7.196699141 max_bound=12.500000000 chi/b=0.393812823
+neighbor b=100 <p>_1=0.893906698 int_chi=44.695334875 exact_identity=44.695334875 min_bound=39.393398282 max_bound=50.000000000 chi/b=0.446953349
+neighbor b=400 <p>_1=0.946963740 int_chi=189.392747983 exact_identity=189.392747983 min_bound=178.786796564 max_bound=200.000000000 chi/b=0.473481870
+PASS: full-time Wilson driver susceptibility identity, two-sided bounds, exact Haar cap self H^-1 scale, Jensen lower bound; no Penrose gap claim

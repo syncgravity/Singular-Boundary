@@ -1,0 +1,5 @@
+n= 7, h=0.125000, omega_full=3.12144515, Green_ff=0.48897059, Schur=2.04511278, omega_deleted=3.91190403
+n=15, h=0.062500, omega_full=3.13654849, Green_ff=0.60009326, Schur=1.66640764, omega_deleted=3.77631174
+n=31, h=0.031250, omega_full=3.14033116, Green_ff=0.71060738, Schur=1.40724685, omega_deleted=3.66933181
+n=63, h=0.015625, omega_full=3.14127725, Green_ff=0.82097399, Schur=1.21806539, omega_deleted=nan
+PASS collective O(1) normal frequencies and soft deleted longitudinal Schur coefficient.

@@ -1,0 +1,20 @@
+JET N=0 epsilon=0.01 Mminus1=1.546875 eps*Mminus1=0.01546875 firstmoment_O=0.01578125 C(1)=0.00972141238
+JET N=0 epsilon=0.001 Mminus1=15.609375 eps*Mminus1=0.015609375 firstmoment_O=0.015640625 C(1)=0.00986126654
+JET N=1 epsilon=0.01 Mminus1=0.530805546 eps*Mminus1=0.00530805546 firstmoment_O=0.0214466887 C(1)=0.00211207678
+JET N=1 epsilon=0.001 Mminus1=5.3562909 eps*Mminus1=0.0053562909 firstmoment_O=0.0214466102 C(1)=0.00213934735
+JET N=2 epsilon=0.01 Mminus1=0.207509453 eps*Mminus1=0.00207509453 firstmoment_O=0.0250685383 C(1)=0.000522391533
+JET N=2 epsilon=0.001 Mminus1=2.0915276 eps*Mminus1=0.0020915276 firstmoment_O=0.0251150774 C(1)=0.000528103567
+JET N=4 epsilon=0.01 Mminus1=0.0379303637 eps*Mminus1=0.000379303637 firstmoment_O=0.0304663202 C(1)=3.81911923e-05
+JET N=4 epsilon=0.001 Mminus1=0.381430959 eps*Mminus1=0.000381430959 firstmoment_O=0.0305266891 C(1)=3.84869168e-05
+JET N=6 epsilon=0.01 Mminus1=0.00777547378 eps*Mminus1=7.77547378e-05 firstmoment_O=0.0349340082 C(1)=3.12989249e-06
+JET N=6 epsilon=0.001 Mminus1=0.0780654487 eps*Mminus1=7.80654487e-05 firstmoment_O=0.034983317 C(1)=3.14759279e-06
+WILSON b=25 u=0.16 Eprime=13.2529384 m1=399.66571 pointwise_bound=1325.82521
+WILSON b=25 u=0.25 Eprime=10.6548432 m1=358.014114 pointwise_bound=1060.66017
+WILSON b=25 u=1 Eprime=5.30935884 m1=220.195408 pointwise_bound=530.330086
+WILSON b=100 u=0.04 Eprime=53.0117537 m1=6394.65136 pointwise_bound=21213.2034
+WILSON b=100 u=0.25 Eprime=21.2374354 m1=3523.12654 pointwise_bound=8485.28137
+WILSON b=100 u=1 Eprime=10.6093302 m1=1937.63189 pointwise_bound=4242.64069
+WILSON b=400 u=0.01 Eprime=212.047015 m1=102314.422 pointwise_bound=339411.255
+WILSON b=400 u=0.25 Eprime=42.437321 m1=31002.1102 pointwise_bound=67882.251
+WILSON b=400 u=1 Eprime=21.214504 m1=16228.1862 pointwise_bound=33941.1255
+PASS exact zero mixed time moments of arbitrary preset finite order; strict positive-time response; inverse-energy divergence; pointwise nonlinear SU2 Wilson f-sum bounds

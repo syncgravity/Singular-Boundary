@@ -1,0 +1,5 @@
+PASS cell cohomology: 9 faces, 24 edges; H^1(disk;Z2)=0, center flux canonical in physical gauge quotient
+PASS reflection conjugates north path to east path up to vertex-center gauge, hence R C_f=C_f R physically
+PASS center-filtered parity sector resolvent estimate; new (r,s)= 0.03605551275463989 0.0008666666666666665 old 0.8012336167697753 1.1555555555555554
+PASS physical reflection-even center-odd Wilson trial Rayleigh quotient 3 A_f /4 at Haar; generic positive-spin1 marginal gives <= same
+PASS overall: exact sector filtration, cochain reflection commutation, gap-sector sharpening

@@ -1,0 +1,14 @@
+9-face disk: 9 faces 24 primal edges
+256 subsets of 8 surrounding magnetic couplings: open arc 251 connected obstruction 5
+potentially non-Haar support: ['E', 'N', 'NE', 'NW', 'S', 'SW', 'W']
+potentially non-Haar support: ['E', 'N', 'NE', 'NW', 'S', 'SE', 'W']
+potentially non-Haar support: ['E', 'N', 'NE', 'S', 'SE', 'SW', 'W']
+potentially non-Haar support: ['E', 'N', 'NW', 'S', 'SE', 'SW', 'W']
+potentially non-Haar support: ['E', 'N', 'NE', 'NW', 'S', 'SE', 'SW', 'W']
+integer spin 1 minimum total Taylor order 14
+integer spin 2 minimum total Taylor order 22
+integer spin 3 minimum total Taylor order 30
+integer spin 4 minimum total Taylor order 38
+PASS exact graph support, center parity thresholds, SU2 Haar orthogonality
+PASS exact full-coupling 3-corner + 4-corner second-derivative interaction formula
+PASS smooth positive comparator: signed endpoint response cancels but adverse-part budget nonzero

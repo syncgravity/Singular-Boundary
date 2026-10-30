@@ -1,0 +1,26 @@
+Asymmetric half-side test, all local potentials nonnegative, positive-definite crossing factors
+M 4.0 gap 2.0871707319380297 <s_L s_R> -0.9189985002301048
+M 10.0 gap 8.022462172943849 <s_L s_R> -0.9944095749128112
+M 40.0 gap 38.004736532153416 <s_L s_R> -0.999750756212197
+Mirror-symmetric reference gap 5.972753900146867 cap probability 0.9950235199353314
+asym strength 0.005 actual cap 0.9950235097396657 certified lower 0.9926610692409163
+asym strength 0.025 actual cap 0.9950232650367854 certified lower 0.9831998380300875
+asym strength 0.08 actual cap 0.9950209090943631 certified lower 0.9570890859112945
+h 0.2 Haar half cap 0.006923416494429526 critical eps/gap 0.028577446345899628
+h 0.1 Haar half cap 0.0024091152340992767 critical eps/gap 0.01705736591263324
+h 0.05 Haar half cap 0.0008451969999250723 critical eps/gap 0.010174025599002025
+h 0.02 Haar half cap 0.00021284664328894527 critical eps/gap 0.005131614686894071
+h 0.01 Haar half cap 7.513920164489059e-05 critical eps/gap 0.0030553385996916656
+h 0.001 Haar half cap 2.3728977880181996e-06 critical eps/gap 0.0005443247235357068
+PASS exact nonnegative local potentials, crossing PD, negative asymmetric correlation, gap-sensitive cap stability
+reflection sector gaps even, odd 5.972753900146866 6.029962316042445
+parity mismatch 0.005 true cap 0.9950235097396657 sector lower 0.9950214509639332 odd norm 5.8413267747577816e-05 even deviation 4.832092411368735e-08
+parity mismatch 0.025 true cap 0.9950232650367854 sector lower 0.9949717959374635 odd norm 0.00029207109241423493 even deviation 1.2080426634503534e-06
+parity mismatch 0.08 true cap 0.9950209090943631 sector lower 0.9944938944992279 odd norm 0.0009347739338961959 even deviation 1.2372285281887073e-05
+parity mismatch 0.35 true cap 0.9949732839977864 sector lower 0.9848970949101623 odd norm 0.004102557933680867 even deviation 0.0002375577378947839
+parity mismatch 0.8 true cap 0.994754794063299 sector lower 0.9423784469025999 odd norm 0.009511194106780349 even deviation 0.0012587515355859647
+PASS exact odd/even sector resolvent bounds and h^(3/8) near-reflection threshold
+sampled SU2 positive crossing and asymmetric halves M 5.0 spin1 expectation -0.9560849351719525
+sampled SU2 positive crossing and asymmetric halves M 12.0 spin1 expectation -0.9940679690788928
+sampled SU2 positive crossing and asymmetric halves M 40.0 spin1 expectation -0.9995267406328349
+PASS sampled SU2 genuine spin-one kernel can have negative expectation without reflection pairing; NOT a Wilson Hamiltonian counterexample

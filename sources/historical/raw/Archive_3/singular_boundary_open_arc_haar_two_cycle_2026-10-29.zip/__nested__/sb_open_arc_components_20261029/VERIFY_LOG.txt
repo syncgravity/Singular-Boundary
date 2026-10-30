@@ -1,0 +1,5 @@
+five-face star faces 5 edges 16 remaining components 4 target colors [1, 3, 2, 0] open arcs [[3], [0], [2], [1]] incident dual bridges [(0, 1), (1, 0), (-1, 0), (0, -1)]
+seven-face two-cycle faces 7 edges 20 remaining components 2 target colors [0, 1, 1, 0] open arcs [[0, 3], [1, 2]] incident dual bridges []
+full three-by-three faces 9 edges 24 remaining components 1 target colors [0, 0, 0, 0] open arcs [] incident dual bridges []
+Q8 non-Abelian Haar path orbit: eight values equiprobable after integrating closed-loop environment
+PASS: exact face incidence, two-cycle non-bridge extension, open-arc Haar transport

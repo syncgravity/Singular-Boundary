@@ -1,0 +1,17 @@
+3x3 punctured disk: 8 remaining faces, 24 links, dual cycle C8
+L0 eigenvalues: [2.         2.58578644 2.58578644 4.         4.         5.41421356
+ 5.41421356 6.        ]
+theta=0.000000000, three-color sqrt-trace difference=0.000000000000
+theta=0.261799388, three-color sqrt-trace difference=0.000002793744
+theta=0.523598776, three-color sqrt-trace difference=0.000010426326
+theta=0.785398163, three-color sqrt-trace difference=0.000020852462
+theta=1.570796327, three-color sqrt-trace difference=0.000041704162
+theta=2.356194490, three-color sqrt-trace difference=0.000020852462
+theta=3.141592654, three-color sqrt-trace difference=-0.000000000000
+heat check t 0.1 difference 3.99325017497e-12
+heat check t 0.5 difference 3.23525729762e-07
+heat check t 1.0 difference 1.21759596085e-05
+heat check t 2.0 difference 7.89807702076e-05
+heat check t 4.0 difference 2.27792425762e-05
+explicit universal C8 sqrt-trace lower coefficient 8.65767214215e-07
+PASS: covariant linearization, dual C8 holonomy, exact heat trace, square root flux barrier, original Penrose spatial incidence

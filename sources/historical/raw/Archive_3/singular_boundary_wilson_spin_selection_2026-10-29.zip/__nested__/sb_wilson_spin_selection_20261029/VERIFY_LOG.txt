@@ -1,0 +1,11 @@
+Exact SU2 character-basis oscillator check (-Delta - t p), rational coefficients:
+spin j=1/2, first nonzero t^1, coefficient 4/3 (~1.33333333)
+spin j=2/2, first nonzero t^2, coefficient 7/9 (~0.777777778)
+spin j=3/2, first nonzero t^3, coefficient 4/15 (~0.266666667)
+spin j=4/2, first nonzero t^4, coefficient 11/180 (~0.0611111111)
+spin j=5/2, first nonzero t^5, coefficient 143/14175 (~0.0100881834)
+spin j=6/2, first nonzero t^6, coefficient 143/113400 (~0.00126102293)
+PASS: representation selection, exact Clebsch-Gordan orthogonality, analytic rotor series
+PASS exact Haar fundamental trial norm= 1.0 per-link fsum= 0.75
+PASS finite-volume physical gap upper bound and at-most O(h^2) endpoint window
+Exact cap ratio: 14224123/16581375 = 0.8578373627036359

@@ -1,0 +1,7 @@
+smooth bump a=1.000 spin cutoff J=60: A=0.011244625, norm2=0.0092187015, tail=1.41e-09, certified cap>=0.013715617, Haar cap=0.17359071
+smooth bump a=0.500 spin cutoff J=100: A=0.0014380428, norm2=0.0011753142, tail=1.99e-09, certified cap>=0.0017578088, Haar cap=0.025230676
+smooth bump a=0.300 spin cutoff J=160: A=0.00031213388, norm2=0.00025493921, tail=5.62e-10, certified cap>=0.00037995693, Haar cap=0.0056273251
+center-avoiding smooth SU2 rotor kappa=1: <chi_spin1>=-0.219316899 < 0
+center-avoiding smooth SU2 rotor kappa=5: <chi_spin1>=-0.653258626 < 0
+center-avoiding smooth SU2 rotor kappa=20: <chi_spin1>=-0.9026378 < 0
+PASS exact group-character cap identity; Fourier minorization and finite-spin tail; sign obstruction. No Monte Carlo.

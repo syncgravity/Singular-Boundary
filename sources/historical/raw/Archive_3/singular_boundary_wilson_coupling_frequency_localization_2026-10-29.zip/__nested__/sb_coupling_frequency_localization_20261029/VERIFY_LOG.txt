@@ -1,0 +1,6 @@
+b=100.0  C=25.0  total=44.69533488 exact=44.69533488 early_fraction=0.88110498 high_fraction=0.01598140 guaranteed_early_fraction=0.575736
+b=400.0  C=25.0  total=189.39274798 exact=189.39274798 early_fraction=0.83173791 high_fraction=0.00001806 guaranteed_early_fraction=0.575736
+b=1600.0 C=25.0  total=778.78647879 exact=778.78647879 early_fraction=0.80907994 high_fraction=0.00000080 guaranteed_early_fraction=0.575736
+b=1600.0 C=64.0  total=778.78647879 exact=778.78647879 early_fraction=0.89098911 high_fraction=0.00000080 guaranteed_early_fraction=0.734835
+SU2 heat kernel k1: min=0.008823585, max=4.551751589, Haar norm=1.000000000, positivity ratio=1.938503172e-03
+PASS: SU2 exact full-time susceptibility, bridge boundary-layer localization, spectral UV fsum, Haar heat kernel

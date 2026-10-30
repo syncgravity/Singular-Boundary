@@ -1,0 +1,8 @@
+PASS: exact SU2 character coefficients, spin window and strict positive cap-suppressed rotor
+Heat-kernel center-cap removal with positive finite character window
+  J     a       removed_mass    min(c_j/d_j) j<=J       mass(B_a)
+  4  0.030000   0.00456812       0.28331196           0 (exact)
+  8  0.015000   0.00451565       0.32166150           0 (exact)
+ 12  0.010000   0.00450600       0.33554074           0 (exact)
+ 24  0.005000   0.00450022       0.35000760           0 (exact)
+PASS: exact UV mixed-resolvent spectral exponent and h-independent ratio at Lambda=10 h^-2

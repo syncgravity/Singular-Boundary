@@ -1,0 +1,16 @@
+{
+  "vertices": 15,
+  "edges": 22,
+  "faces": 8,
+  "eulerian_edge_spin_assignments": 256,
+  "intertwiner_four_vertex_occurrence_histogram": {
+    "0": 161,
+    "1": 68,
+    "2": 22,
+    "3": 4,
+    "4": 1
+  },
+  "all_sector_dimension": 433,
+  "center_even_dimension": 246,
+  "center_odd_dimension": 187
+}

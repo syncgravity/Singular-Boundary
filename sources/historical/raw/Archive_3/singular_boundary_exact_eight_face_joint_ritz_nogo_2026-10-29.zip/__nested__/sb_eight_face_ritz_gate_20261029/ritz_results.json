@@ -1,0 +1,102 @@
+[
+  {
+    "strength": 1.0,
+    "b_sum": 7.3500000000000005,
+    "matrix_dim": 35,
+    "electric_coeff_range": [
+      0.8,
+      1.1760000000000002
+    ],
+    "ritz_e0": 6.707377966238409,
+    "ritz_e1": 9.555144178034933,
+    "ritz_gap": 2.8477662117965235,
+    "color_weight": 0.00011672467227673748,
+    "true_ground_energy_upper_bound": 15.042168124831203,
+    "rigorous_ritz_lower_bound": 4.473126697263155,
+    "rigorous_ritz_energy_bias_floor": 0,
+    "lower_bound_residual_norm": 0.3412471776002319,
+    "residual_lower_over_ritz_gap": 0.11982977260796801,
+    "target_f_kinematic_character_coefficients": "all 0 within basis; cap exactly Haar",
+    "uniform_full_theorem": false
+  },
+  {
+    "strength": 4.0,
+    "b_sum": 29.400000000000002,
+    "matrix_dim": 35,
+    "electric_coeff_range": [
+      0.8,
+      1.1760000000000002
+    ],
+    "ritz_e0": 23.021663452297446,
+    "ritz_e1": 28.236624872263484,
+    "ritz_gap": 5.214961419966038,
+    "color_weight": 0.0003465243614771277,
+    "true_ground_energy_upper_bound": 30.084336249662407,
+    "rigorous_ritz_lower_bound": 17.89250678905262,
+    "rigorous_ritz_energy_bias_floor": 0,
+    "lower_bound_residual_norm": 3.8614850653032025,
+    "residual_lower_over_ritz_gap": 0.7404628250017524,
+    "target_f_kinematic_character_coefficients": "all 0 within basis; cap exactly Haar",
+    "uniform_full_theorem": false
+  },
+  {
+    "strength": 16.0,
+    "b_sum": 117.60000000000001,
+    "matrix_dim": 35,
+    "electric_coeff_range": [
+      0.8,
+      1.1760000000000002
+    ],
+    "ritz_e0": 83.87164285477567,
+    "ritz_e1": 101.13822040217045,
+    "ritz_gap": 17.266577547394775,
+    "color_weight": 4.945573974629674e-05,
+    "true_ground_energy_upper_bound": 60.16867249932481,
+    "rigorous_ritz_lower_bound": 71.57002715621049,
+    "rigorous_ritz_energy_bias_floor": 11.401354656885673,
+    "lower_bound_residual_norm": 19.27068087259953,
+    "residual_lower_over_ritz_gap": 1.1160683592161633,
+    "target_f_kinematic_character_coefficients": "all 0 within basis; cap exactly Haar",
+    "uniform_full_theorem": false
+  },
+  {
+    "strength": 64.0,
+    "b_sum": 470.40000000000003,
+    "matrix_dim": 35,
+    "electric_coeff_range": [
+      0.8,
+      1.1760000000000002
+    ],
+    "ritz_e0": 325.8807350967781,
+    "ritz_e1": 392.07421279037703,
+    "ritz_gap": 66.19347769359894,
+    "color_weight": 3.701082284144382e-06,
+    "true_ground_energy_upper_bound": 120.33734499864963,
+    "rigorous_ritz_lower_bound": 286.28010862484194,
+    "rigorous_ritz_energy_bias_floor": 165.94276362619232,
+    "lower_bound_residual_norm": 80.7600906828434,
+    "residual_lower_over_ritz_gap": 1.2200611525001215,
+    "target_f_kinematic_character_coefficients": "all 0 within basis; cap exactly Haar",
+    "uniform_full_theorem": false
+  },
+  {
+    "strength": 256.0,
+    "b_sum": 1881.6000000000001,
+    "matrix_dim": 35,
+    "electric_coeff_range": [
+      0.8,
+      1.1760000000000002
+    ],
+    "ritz_e0": 1293.5797891562365,
+    "ritz_e1": 1555.632603574698,
+    "ritz_gap": 262.05281441846137,
+    "color_weight": 2.415756484109376e-07,
+    "true_ground_energy_upper_bound": 240.67468999729925,
+    "rigorous_ritz_lower_bound": 1145.1204344993678,
+    "rigorous_ritz_energy_bias_floor": 904.4457445020685,
+    "lower_bound_residual_norm": 326.6454766696294,
+    "residual_lower_over_ritz_gap": 1.2464871915018727,
+    "target_f_kinematic_character_coefficients": "all 0 within basis; cap exactly Haar",
+    "uniform_full_theorem": false
+  }
+]

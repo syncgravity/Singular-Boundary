@@ -1,0 +1,224 @@
+[
+  {
+    "b": 16.0,
+    "energy": 3.9128687534534112,
+    "magnetic_deficit": 0.13263715817124466,
+    "truncations": {
+      "0": {
+        "overlap": 0.38694253108631077,
+        "certified_upper": 0.9526705582005447,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.8918013061732162,
+        "certified_upper": 1.0,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.9947620841121362,
+        "certified_upper": 1.0,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.9999997750212894,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 1.0,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 1.0,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  },
+  {
+    "b": 64.0,
+    "energy": 8.15635718805903,
+    "magnetic_deficit": 0.06629768608009212,
+    "truncations": {
+      "0": {
+        "overlap": 0.23688590091033088,
+        "certified_upper": 0.7764930390274778,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.6864856826248319,
+        "certified_upper": 1.0,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.9280783653146731,
+        "certified_upper": 1.0,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.9995056418830355,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 0.9999999999928483,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 0.9999999999999999,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  },
+  {
+    "b": 256.0,
+    "energy": 16.642043851683155,
+    "magnetic_deficit": 0.033146410598345,
+    "truncations": {
+      "0": {
+        "overlap": 0.1428381057041334,
+        "certified_upper": 0.6322995700087634,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.4691071134202631,
+        "certified_upper": 1.0,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.7489804350983943,
+        "certified_upper": 1.0,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.9776066113970422,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 0.9999973571647025,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 0.9999999999999999,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  },
+  {
+    "b": 1024.0,
+    "energy": 33.6128049299572,
+    "magnetic_deficit": 0.016572911343577412,
+    "truncations": {
+      "0": {
+        "overlap": 0.08551680229189988,
+        "certified_upper": 0.5145344358923847,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.2996046524608186,
+        "certified_upper": 0.8753842928555684,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.529874715575823,
+        "certified_upper": 1.0,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.8603478920171954,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 0.9982572098388695,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 0.9999999999487709,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  },
+  {
+    "b": 4096.0,
+    "energy": 67.55402855065418,
+    "magnetic_deficit": 0.008286419528287903,
+    "truncations": {
+      "0": {
+        "overlap": 0.051021678646944145,
+        "certified_upper": 0.41850016775144794,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.18470469701245537,
+        "certified_upper": 0.7113501977505698,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.34534425440421485,
+        "certified_upper": 0.9358027776473932,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.6538379205824296,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 0.959744565026526,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 0.9999916646984818,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  },
+  {
+    "b": 16384.0,
+    "energy": 135.4363283506217,
+    "magnetic_deficit": 0.004143205282874818,
+    "truncations": {
+      "0": {
+        "overlap": 0.030389018173458848,
+        "certified_upper": 0.3402707879567236,
+        "D": 1
+      },
+      "2": {
+        "overlap": 0.11183984068793533,
+        "certified_upper": 0.5779902659956001,
+        "D": 14
+      },
+      "4": {
+        "overlap": 0.21522786099449764,
+        "certified_upper": 0.7602545111051194,
+        "D": 55
+      },
+      "8": {
+        "overlap": 0.44515648038656336,
+        "certified_upper": 1.0,
+        "D": 285
+      },
+      "16": {
+        "overlap": 0.8152111840497688,
+        "certified_upper": 1.0,
+        "D": 1785
+      },
+      "32": {
+        "overlap": 0.9969549889412713,
+        "certified_upper": 1.0,
+        "D": 12529
+      }
+    }
+  }
+]

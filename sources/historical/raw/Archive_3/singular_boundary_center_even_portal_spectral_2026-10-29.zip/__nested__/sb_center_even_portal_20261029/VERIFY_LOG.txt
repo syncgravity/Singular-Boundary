@@ -1,0 +1,11 @@
+SU2 Haar p^2 0.25 p^4 0.125 spin-one variance 1.0 m1/A_f 2.0
+noncommuting SU2 V scalar 0.0 Haar_U chi1(UV^-1) 2.3434116470995494e-16
+noncommuting SU2 V scalar 0.11 Haar_U chi1(UV^-1) 1.0354609603463125e-16
+noncommuting SU2 V scalar 0.45 Haar_U chi1(UV^-1) 1.1035833919480436e-16
+noncommuting SU2 V scalar 0.85 Haar_U chi1(UV^-1) 1.5804404131601613e-16
+noncommuting SU2 V scalar 1.0 Haar_U chi1(UV^-1) -5.994773980952335e-17
+nonlinear SU2 driver b=1 QW norm=0.48533438 self susceptibility=0.07544740 mixed chi1 portal response EXACTLY 0 in every spectral window
+nonlinear SU2 driver b=10 QW norm=2.53765346 self susceptibility=0.84706963 mixed chi1 portal response EXACTLY 0 in every spectral window
+nonlinear SU2 driver b=100 QW norm=8.46618413 self susceptibility=2.65376386 mixed chi1 portal response EXACTLY 0 in every spectral window
+7-face two-cycle components: (20, [2, 2], [1, 1, 0, 0]) 9-face connected: (24, [4], [0, 0, 0, 0])
+PASS all deterministic Haar spin-one, non-Abelian group quadrature, positive driver response, and open-arc geometry checks

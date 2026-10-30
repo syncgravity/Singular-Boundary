@@ -1,0 +1,5 @@
+h 0.2 Haar cap 0.0520440193309139 ratio to h^3/2 0.5818698252311829
+h 0.05 Haar cap 0.006660005505070663 ratio to h^3/2 0.5956890015944328
+h 0.01 Haar cap 0.0005993097557010239 ratio to h^3/2 0.5993097557010238
+h 0.001 Haar cap 1.8977487186709928e-05 ratio to h^3/2 0.6001208377666447
+PASS normalized strictly positive SU2 witness, radial contraction, Haar cap and O(h^1/2) threshold

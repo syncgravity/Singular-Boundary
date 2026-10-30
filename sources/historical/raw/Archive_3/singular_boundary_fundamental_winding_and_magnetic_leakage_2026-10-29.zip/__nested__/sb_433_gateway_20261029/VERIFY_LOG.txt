@@ -1,0 +1,35 @@
+$ python verify_fundamental_shell_winding.py
+h 0.1 cap_Haar 0.018693036734249307 witness_cap 0.06614487416414294 ratio 3.538476658688236
+h 0.01 cap_Haar 0.0005993097557010062 witness_cap 0.0023685830904717044 ratio 3.9521851061830255
+h 0.001 cap_Haar 1.8977487186701095e-05 witness_cap 7.581889194307361e-05 ratio 3.9952018513918652
+h 0.0001 cap_Haar 6.002018741945945e-07 witness_cap 2.400519410990636e-06 ratio 3.9995200185135564
+exact J=1/2 Hilbert dimension 433
+target-center even 246 odd 187
+electric occupancies: count {0: 1, 4: 8, 6: 10, 8: 45, 10: 72, 12: 125, 14: 86, 16: 86}
+witness chi_1 expectation = 1.0 electric units 3/4*16 = 12
+PASS exact 433-shell census, two disjoint Wilson loops, center-even non-Haar witness
+
+$ python verify_exact_magnetic_edge_leakage.py
+link cutoff J= 0.5 exact omitted (J+1/2) fusion coefficient 0.5
+link cutoff J= 1.0 exact omitted (J+1/2) fusion coefficient 0.5
+link cutoff J= 1.5 exact omitted (J+1/2) fusion coefficient 0.5
+link cutoff J= 2.0 exact omitted (J+1/2) fusion coefficient 0.5
+link cutoff J= 2.5 exact omitted (J+1/2) fusion coefficient 0.5
+link cutoff J= 4.0 exact omitted (J+1/2) fusion coefficient 0.5000000000000001
+seven exact target-center-even outgoing singular values [np.float64(0.5), np.float64(1.0), np.float64(1.5), np.float64(2.5), np.float64(3.5), np.float64(5.5), np.float64(6.5)]
+PASS exact SU2 fusion, seven independent color-even boundary channels, nondecaying operator leakage
+
+$ python verify_state_dependent_rotor_residual.py
+b=16 J=2 Ritz_E=7.1605943596 state_residual=0.27628072 operator_leak=8
+b=16 J=4 Ritz_E=7.1587123721 state_residual=7.89349715e-05 operator_leak=8
+b=16 J=8 Ritz_E=7.1587123721 state_residual=9.76236308e-16 operator_leak=8
+b=16 J=16 Ritz_E=7.1587123721 state_residual=3.74362815e-46 operator_leak=8
+b=256 J=2 Ritz_E=43.0228196698 state_residual=32.207749 operator_leak=128
+b=256 J=4 Ritz_E=32.7816706933 state_residual=5.50230742 operator_leak=128
+b=256 J=8 Ritz_E=32.6254287588 state_residual=0.00177552058 operator_leak=128
+b=256 J=16 Ritz_E=32.6254287522 state_residual=1.55718137e-16 operator_leak=128
+b=4096 J=2 Ritz_E=557.8982479620 state_residual=586.260974 operator_leak=2048
+b=4096 J=4 Ritz_E=227.1757776449 state_residual=264.183126 operator_leak=2048
+b=4096 J=8 Ritz_E=136.7812556919 state_residual=54.212729 operator_leak=2048
+b=4096 J=16 Ritz_E=134.4512199604 state_residual=0.0271450653 operator_leak=2048
+PASS continuous SU2 nonlinear rotor: rho=b/2 at every cutoff, actual Ritz residual decays with spin resolution

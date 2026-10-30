@@ -1,0 +1,6 @@
+PASS: SU2 pointwise class-angle, cutoff-support and Gamma(S) inequalities
+PASS: interacting SU2 h=0.2 b=5 P_event=0.627132 m1=0.024761673 varS=0.004402731 entropy=0.35384733
+PASS: interacting SU2 h=0.1 b=5 P_event=0.796188 m1=0.011751751 varS=0.0021380378 entropy=0.21984789
+PASS: interacting SU2 h=0.05 b=20 P_event=0.733053 m1=0.000659546 varS=5.2131313e-05 entropy=0.23637689
+PASS: spectral soft-mode projection algebra; authentic 3-face 10-edge spatial fixture
+ALL CHECKS PASS (no Monte Carlo; no Stage26 source verification)
