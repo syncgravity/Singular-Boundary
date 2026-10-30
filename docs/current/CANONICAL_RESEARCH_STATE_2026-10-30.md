@@ -180,3 +180,7 @@ The [new zero-temperature physical resolvent identity](../../research/theorems/R
 ## R3-IR-416 — Exact environmental tensor resolvent for complete Wilson cap curvature
 
 [Interacting-environment reduction](../../research/theorems/R3_IR_ENVIRONMENTAL_TENSOR_RESOLVENT_CURVATURE_2026-10-30.md): at the final-neighbor zero-coupling private-link boundary, SU(2) quaternion/Haar integration rewrites **both channels** of the physical normalized spin-one curvature using environmental spin-half resolvent `S=(H_y-E0+3a_e/4)^-1`, spin-one resolvent `T=(H_y-E0+2a_e)^-1`, vector field `v=S(m omega)` and traceless tensor `Z_ij=(m_i v_j+m_j v_i)/2-delta_ij(m dot v)/4`. The exact formula is `c1''=(4b_g^2/3)sum_ij<omega,n_i n_j T Z_ij>+(b_g^2/6)int[4(n dot v)^2-|v|^2]dy`. The interacting Wilson environment is retained, but neither tensor contraction has a proved favorable sign. No t=1 cap survival, regulator-uniform estimate, or continuum mass gap follows. [Claim R3-IR-416](../../research/claims/append_only/R3-IR-416.md).
+
+## R3-IR-417: Two-channel cancellation for incomplete cages
+
+With one other target neighbor magnetically absent, a second private edge forces zero target spin-one curvature for all final-neighbor couplings. Both environmental resolvent channels in R3-IR-416 therefore cancel exactly. This is a Wilson-specific signed identity, not positivity in the completed cage. See `research/theorems/R3_IR_INCOMPLETE_CAGE_TWO_CHANNEL_WARD_CANCELLATION_2026-10-30.md`. Full-coupling cap survival and continuum gap OPEN.
