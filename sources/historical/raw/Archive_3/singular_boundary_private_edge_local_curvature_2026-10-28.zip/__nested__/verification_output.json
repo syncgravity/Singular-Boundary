@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "candidate_test": "private magnetic face edge with no other face incidence",
+  "optimized_kappa": "sqrt(2 b/A)",
+  "E0_increment_bound": "3 sqrt(A b)/(2 sqrt(2))",
+  "boundary_face_curvature": "(3/(2 sqrt(2))) sqrt(A/b)",
+  "uniform_electric_special_case": "(3/sqrt(2)) sqrt(a/b)",
+  "geometric_trajectory": "(3/(2 sqrt(2))) sqrt(phi) g3^2 h",
+  "seed_faces": 3,
+  "seed_edges": 10,
+  "private_edges_by_face": [
+    2,
+    3,
+    3
+  ],
+  "two_boundary_face_pure_connector_squared_gradient_bound": "<=128 min(E d_f,E d_g)",
+  "Monte_Carlo": false,
+  "full_bulk_local_curvature_proved": false
+}

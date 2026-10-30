@@ -1,0 +1,3 @@
+PASS: probability area fraction, AG1 exponential moment, trace lower scale
+PASS: SU2 local magnetic Hessian, mixed-link zero mode, original 3-rhombus 10-edge geometry
+STATUS: fixed-support connected covariance, conditional vacuum score Hessian, continuum gap OPEN

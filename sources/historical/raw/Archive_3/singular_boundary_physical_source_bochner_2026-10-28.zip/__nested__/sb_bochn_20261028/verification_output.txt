@@ -1,0 +1,4 @@
+N=24 m2=0.325527660402, geom=0.023923985427, scoreCurv=0.008628780613, residual=+0.00e+00
+N=36 m2=0.325527660402, geom=0.023923985427, scoreCurv=0.008628780613, residual=-3.47e-18
+N=48 m2=0.325527660402, geom=0.023923985427, scoreCurv=0.008628780613, residual=-3.47e-18
+PASS: full mixed-link Bochner geometry and interacting physical SU(2) score Hessian; 3-face spatial fixture; no Monte Carlo

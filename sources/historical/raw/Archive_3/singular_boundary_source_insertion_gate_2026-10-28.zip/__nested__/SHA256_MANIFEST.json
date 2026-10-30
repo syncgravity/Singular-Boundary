@@ -1,0 +1,10 @@
+{
+  "generated_analysis_only": true,
+  "files_sha256": {
+    "R3_IR_SINGLE_TRACE_COMPLETENESS_AND_COMPOSITE_OBSTRUCTION_2026-10-28.md": "be3a587804774673aed89711c85ad4f83d7f638488144b7cd9a355d4203fbcc0",
+    "TRACE_CERTIFICATE.json": "646d8ed92d8b00aebd8606885c5a82be1d81a91b9341dbd9283ab1595b80fe6e",
+    "TRANSFER_COUNTEREXAMPLE_CERTIFICATE.json": "885cf070d1890b9fc8dd1e6775c2b3f4049aef5ac0592db88e201b3a790305a9",
+    "verify_composite_transfer_no_go.py": "ab24f2a9abd0a2110078c3ca5d044cf8ecc84e0fea67293894d7d2557fa09d9e",
+    "verify_trace_sources.py": "42353eac2178087755983e915025d31f67055dd918f6561ec92a33f65a8f3ab2"
+  }
+}

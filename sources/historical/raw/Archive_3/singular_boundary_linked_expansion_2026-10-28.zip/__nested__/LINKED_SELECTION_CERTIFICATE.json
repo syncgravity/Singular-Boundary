@@ -1,0 +1,97 @@
+{
+  "historical_fixture": "HISTORICAL_Q14_CANONICAL.json seed_faces_z5",
+  "seed_faces": 3,
+  "distinct_links": 10,
+  "face_overlap": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "coefficient_selection": {
+    "0-1": [
+      {
+        "order": 0,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 1,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 2,
+        "parity_admissible": 2,
+        "jointly_admissible": 2
+      },
+      {
+        "order": 3,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 4,
+        "parity_admissible": 20,
+        "jointly_admissible": 20
+      },
+      {
+        "order": 5,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 6,
+        "parity_admissible": 182,
+        "jointly_admissible": 182
+      }
+    ],
+    "1-2": [
+      {
+        "order": 0,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 1,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 2,
+        "parity_admissible": 2,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 3,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 4,
+        "parity_admissible": 20,
+        "jointly_admissible": 12
+      },
+      {
+        "order": 5,
+        "parity_admissible": 0,
+        "jointly_admissible": 0
+      },
+      {
+        "order": 6,
+        "parity_admissible": 182,
+        "jointly_admissible": 150
+      }
+    ]
+  },
+  "first_joint_order_0_1": 2,
+  "first_joint_order_1_2": 4,
+  "kp_activity_condition": "exp(beta*b_max)-1 < 1/(21*e)",
+  "no_claim_of_nonzero_first_allowed_coefficient": true,
+  "all_assertions_passed": true,
+  "simulations": false
+}

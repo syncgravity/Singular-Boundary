@@ -1,0 +1,4 @@
+PASS: SU(2) Bessel normalization derivative and fundamental Casimir
+PASS: exact positive-state mixture variance and rarity h^p scaling
+PASS: canonical three-face Z^5 fixture, 10 edges, max face incidence 2
+No Monte Carlo, no synthetic historical results, no actual interacting vacuum claim

@@ -1,0 +1,27 @@
+{
+  "three_face_fixture": "three canonical spatial Penrose seed rhombi",
+  "seed_face_count": 3,
+  "seed_edge_count": 10,
+  "reflection_permutation": [
+    0,
+    2,
+    1
+  ],
+  "quartic_terms": [
+    "4*x^2*y^2/(d1*d2)",
+    "2*x^2*y^2/d1^2",
+    "-8*x^4/d1^2"
+  ],
+  "counterexample": {
+    "low_gap": "1/N",
+    "high_energy": "N",
+    "source_variance": "1/N^2",
+    "first_moment": "1/N^3",
+    "middle_even_term": "2",
+    "total_quartic_bracket": "2-4/N^2"
+  },
+  "exact_sylvester_commutator": true,
+  "simulations": false,
+  "nonlinear_Penrose_mass_gap_proved": false,
+  "all_checks_passed": true
+}

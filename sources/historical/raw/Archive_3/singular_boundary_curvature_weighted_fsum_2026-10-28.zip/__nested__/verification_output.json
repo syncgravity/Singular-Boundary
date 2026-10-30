@@ -1,0 +1,30 @@
+{
+  "casimir_carre_du_champ": "(1-p^2)/4",
+  "holonomy_deficit_identity": "2(1-p)-(1-p^2)=(1-p)^2",
+  "electric_single_face_M1": "3a/4",
+  "authentic_seed_faces": 3,
+  "authentic_seed_edges": 10,
+  "authentic_seed_overlap_matrix": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "energy_matrix_locality": "strictly edge-neighbor support",
+  "new_first_moment_rate": "O(h^(3-2alpha))",
+  "alpha_1_rate": "O(h)",
+  "positive_gap_nontrivial_variance_requires_alpha_at_least": "3/2",
+  "simulations_run": false,
+  "physical_continuum_gap_proved": false
+}

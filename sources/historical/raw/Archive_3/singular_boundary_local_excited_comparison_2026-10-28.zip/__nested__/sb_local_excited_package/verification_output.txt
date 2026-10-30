@@ -1,0 +1,5 @@
+PASS: exact mesoscopic transition exponent h^(3gamma-1+delta), gamma=1/2
+PASS: original Z5 three-seed incidence, 7 regional boundaries, SU2 Casimir and trial optimization
+PASS: excited-energy collar correction and bounded observable spectral norm
+PASS: coherent source obstruction; NO MONTE CARLO and NO nonlinear mass gap claim
+Subsets (mask,faces,links,crossing): [(1, 1, 4, 2), (2, 1, 4, 1), (3, 2, 7, 1), (4, 1, 4, 1), (5, 2, 7, 1), (6, 2, 8, 1), (7, 3, 10, 0)]

@@ -1,0 +1,42 @@
+{
+  "reference": "3 canonical Penrose spatial seed rhombi (not temporal Q14)",
+  "vertices": 8,
+  "edges": 10,
+  "faces": 3,
+  "tree_root": [
+    0,
+    -1,
+    -1,
+    0,
+    -1
+  ],
+  "pure_connector_edge": [
+    [
+      -1,
+      -1,
+      -1,
+      0,
+      -1
+    ],
+    [
+      0,
+      -1,
+      -1,
+      0,
+      -1
+    ]
+  ],
+  "pure_connector_in_boundary_of_selected_faces": false,
+  "quaternion_pair_checks": 36,
+  "analytic_connector_identity": "sum_a |X_e^a Q_v|^2 = 64 |S_A x S_B|^2",
+  "electric_haar_cross_moment": "3/8",
+  "electric_haar_pure_connector_dirichlet_per_a": "24 (sum_A v_f^2)(sum_B v_f^2)",
+  "source_weights": "(0, 1/sqrt(2), 1/sqrt(2))",
+  "electric_vacuum_mean_Q": "3",
+  "electric_vacuum_variance_Q": "7/2",
+  "one_pure_connector_dirichlet_per_a": "6",
+  "quartic_curvature_bound": "|grad_e Q|\u00b2 <= 256 (sum_A |v|sqrt(d_f))\u00b2 (sum_B |v|sqrt(d_f))\u00b2",
+  "stochastic_simulations": 0,
+  "interacting_variance_lower_bound_proved": false,
+  "volume_uniform_gap_proved": false
+}

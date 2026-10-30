@@ -1,0 +1,6 @@
+b=0 m1=0.0075 m2=0.0225 m3=0.0675 m3V=0 m3T=0.0675
+b=0.5 m1=0.007470021695 m2=0.02273507732 m3=0.06973517025 m3V=0.0008249257594 m3T=0.0689102445
+b=5 m1=0.006076014573 m2=0.03255276604 m3=0.1867760905 m3V=0.04740686706 m3T=0.1393692235
+b=20 m1=0.003848518037 m2=0.04428920573 m3=0.5190093049 m3V=0.2003738078 m3T=0.3186354971
+PASS: interacting SU2 physical triple commutator, magnetic derivative exact, m2²<=m1*m3; authentic Penrose spatial fixture.
+PASS: SU2 radial electric triple commutator has order <=2 and every coefficient is quadratic in source amplitude h.

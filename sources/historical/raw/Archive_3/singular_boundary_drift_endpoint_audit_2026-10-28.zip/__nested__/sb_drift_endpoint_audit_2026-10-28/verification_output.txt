@@ -1,0 +1,5 @@
+PASS: SU2 one-plaquette Riccati, endpoint drift slopes, E<=b threshold b>9a/4
+PASS: scalar source rescaling, SU2 S3 Casimir curvature, regression spectral identity
+PASS: original canonical 3-face spatial incidence; NO MONTE CARLO
+slope at p=-1: -(4*E + 9*a - 8*b)/3
+slope at p=+1: -(4*E + 9*a)/3

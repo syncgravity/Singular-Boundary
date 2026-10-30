@@ -1,0 +1,21 @@
+{
+  "source": "canonical three-rhombus Penrose seed, not the full Q14 temporal cavity",
+  "seed_faces": 3,
+  "seed_distinct_edges": 10,
+  "face_dirichlet_matrix": "Matrix([[4, -1, -1], [-1, 4, 0], [-1, 0, 4]])",
+  "face_dirichlet_spectrum": [
+    "4-sqrt(2)",
+    "4",
+    "4+sqrt(2)"
+  ],
+  "isoperimetric_cheeger_lower_for_seed": "pi*sqrt(5/8 - sqrt(5)/8)/6",
+  "all_nonempty_seed_subsets_checked": 7,
+  "Gaussian_covariance_Sigma_V_Sigma": "M/4 (exact)",
+  "Gaussian_one_face_quadratic_Wilson_variance": "3a/(4b)",
+  "Gaussian_centered_quadratic_fourth_moment_ratio_bound": 15,
+  "alpha_three_halves_variance_order": "O(h)",
+  "alpha_three_halves_three_source_response_order": "O(h^(3/2)) (conditional finite-area Gaussian model)",
+  "nonlinear_three_source_window_proved": false,
+  "simulation": false,
+  "all_exact_checks_passed": true
+}

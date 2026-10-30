@@ -1,0 +1,9 @@
+{
+  "generated_at_utc_date": "2026-10-28",
+  "scope": "read-only deterministic finite incidence; no stochastic simulations",
+  "files": {
+    "R3_IR_MULTIFACE_STRONG_FIELD_DUAL_LAPLACIAN_2026-10-28.md": "d38ce71f5ad4f0d7f4b98a084afe319aa884f40dc5e72513cdd8aa48a81cd00e",
+    "DUAL_CERTIFICATE.json": "208c1b49e332270a63a63cceba3cb0f6e782f369af8a85b4a97819634d1cdc53",
+    "verify_collective_dual.py": "884e100d9162488d95d9b25c978381492a2642d82e69ff0aaabd0c53e0118fc3"
+  }
+}

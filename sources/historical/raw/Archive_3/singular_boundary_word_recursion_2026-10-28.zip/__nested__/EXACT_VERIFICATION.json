@@ -1,0 +1,68 @@
+{
+  "symbolic_radial_energies": [
+    {
+      "twice_spin": 0,
+      "electric_energy_over_a": 0
+    },
+    {
+      "twice_spin": 1,
+      "electric_energy_over_a": 3
+    },
+    {
+      "twice_spin": 2,
+      "electric_energy_over_a": 8
+    },
+    {
+      "twice_spin": 3,
+      "electric_energy_over_a": 15
+    },
+    {
+      "twice_spin": 4,
+      "electric_energy_over_a": 24
+    },
+    {
+      "twice_spin": 5,
+      "electric_energy_over_a": 35
+    },
+    {
+      "twice_spin": 6,
+      "electric_energy_over_a": 48
+    }
+  ],
+  "single_face_multiplication": "n->n+1,n-1; amplitude b/2",
+  "halfline_walk_counts": {
+    "0": {
+      "0": 1
+    },
+    "1": {
+      "1": 1
+    },
+    "2": {
+      "0": 1,
+      "2": 1
+    },
+    "3": {
+      "1": 2,
+      "3": 1
+    },
+    "4": {
+      "0": 2,
+      "2": 3,
+      "4": 1
+    },
+    "5": {
+      "1": 5,
+      "3": 4,
+      "5": 1
+    }
+  },
+  "Mandelstam_rational_pairs": 36,
+  "connector_trace_values": [
+    -2,
+    0
+  ],
+  "proven_error_envelope": "exp(-bt) sum_{n>N}(bt)^n/n!",
+  "nonperturbative_ground_overlap": "fixed character cutoff vanishes as b/a -> infinity",
+  "random_samples": 0,
+  "Monte_Carlo": false
+}

@@ -1,0 +1,13 @@
+{
+  "product_trial_optimized_energy_bound": "3/sqrt(2) sqrt[(sum a_e)(sum b_f)]",
+  "uniform_mean_curvature_bound": "3 sqrt(2) sqrt(a/b)",
+  "geometric_mean_curvature_bound": "(3/sqrt(2)) phi g3^2 h",
+  "pointwise_obstruction_torque_over_mean_deficit": "8 F",
+  "canonical_seed": {
+    "faces": 3,
+    "edges": 10,
+    "boundary_edges": 8
+  },
+  "simulations": false,
+  "interacting_gap_proved": false
+}

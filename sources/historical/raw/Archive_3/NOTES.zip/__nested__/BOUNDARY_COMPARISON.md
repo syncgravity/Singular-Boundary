@@ -1,0 +1,68 @@
+# The Singular Boundary — Boundary law comparison on Penrose rhombus complexes
+Date: 2026-10-26
+
+## A. Exact theorem for *spatial two-dimensional Euclidean* Wilson theory
+
+Let G be a finite simply connected disk of a plane rhombus tiling, with free boundary links, normalized Haar links, and positive spatial Wilson density proportional to exp(sum_f t_f p_f), p_f=Tr W_f/2. The oriented plaquette holonomies W_f, defined after parallel transport to a common root along a dual spanning tree, are independent SU(2) variables with laws rho_{t_f}(W_f)=e^{t_f p(W_f)} dW_f/z(t_f), z(t)=2 I_1(t)/t. The choice of root transports does not affect central class observables. Proof: fix a primal spanning tree. The independent non-tree links are in bijection with fundamental face generators of the free group of the disk. Changing generators to face loops by elementary tree operations preserves product Haar measure on compact groups; equivalently iteratively integrate boundary leaf-face link. The spatial Wilson action is then a sum of independent class functions.
+
+For two adjacent faces with parameters t,s, the fused outer boundary V=W_1 W_2 (with appropriate basepoint and orientation) has density
+
+    d mu_iso(V) = z( sqrt(t*t+s*s+2*t*s*p(V)) )/[z(t)z(s)] dV.
+
+Hence d mu_full_2D^V/d mu_iso^V=1 **exactly** for all patch sizes and spatial edge lengths, provided the geometry is a topological disk and exterior links are integrated with free boundary conditions. This is an unconditional D=1 theorem for 2D spatial Euclidean Wilson theory and says nothing about the full 2+1-dimensional ground-state measure.
+
+## B. A strictly local, but not cutoff-uniform, 2+1D *exterior-conditioned* comparison
+
+Consider a 3D Euclidean SU(2) Wilson action on a stack of spatial rhombus disks, with positive spatial coefficients t_f and temporal plaquette coefficients tau_e, at a specified time slice n. Let B consist of all seven spatial links of two neighboring rhombi at time n. Condition on all links outside B (including all temporal links and spatial links at other times).
+
+In the conditional distribution of the seven block link variables, the two interior plaquette terms are exp[t p_1+s p_2]. All remaining factors depending on these seven links form R(U_B)=exp(X(U_B)), where
+
+    X(U_B) = sum_{f not in {f1,f2}, f touches B} t_f p_f(U_B; exterior)
+             + sum_{temporal plaquettes touching B} tau_e p^time_e(U_B; exterior).
+
+There are at most six spatial exterior faces touching B, since each outer rhombus boundary edge meets at most one exterior face, and the shared internal edge already meets both interior faces. With a single time step in each time direction each of the seven block spatial links enters two temporal plaquettes. Define
+
+    M_B = sum_{external spatial faces touching B} t_f
+          + 2 sum_{e in B} tau_e.
+
+Then |X(U_B)|<=M_B uniformly in the external configuration. If lambda_iso is the **seven-link free-boundary block law** proportional to exp(t p1+s p2) product Haar, and lambda_cond is the true 3D conditional seven-link law given exterior, then
+
+    exp(-2 M_B) <= d lambda_cond/d lambda_iso <= exp(2 M_B).
+
+The same domination holds for the pushed-forward fused boundary holonomy V, with lambda_iso^V=mu_iso. This is rigorously **independent of the total spatial volume**; it is local to six external spatial plaquettes and fourteen incident temporal plaquettes. But the upper constant D_B=e^{2M_B} is not cutoff-uniform when Wilson couplings grow as h->0. It does NOT compare the full *unconditioned* 3D time-slice boundary marginal to the isolated law: averaging conditional measures whose reference law includes variable frozen exterior cannot silently reproduce a free-boundary 2D marginal without an additional argument. It also does not compare the quantum ground-state marginal Omega^2 dU, which requires a genuine time-continuum/ground-state limit.
+
+There is one useful identity: if the actual conditional distribution satisfies domination by D_B, then for the *same original two-face internal shared-link observable*, the conditional covariance is NOT necessarily the earlier C(V;t,s): exterior potentials depend on the shared internal link and change the conditional kernel. Thus the measure comparison alone cannot transfer the C formula unless the induced conditional source kernel is independently compared. A bound on a fixed test function |C(V;t,s)| can be transferred, but calling that the full conditional covariance would be erroneous.
+
+## C. Why a universal pointwise D cannot follow from positivity alone
+
+For an **effective exterior Wilson loop** (which genuinely arises among the multiloop terms generated under blocking), consider the reweighted fused-holonomy law
+
+    d mu_tilde_T(V)= exp[-T p(V)] d mu_iso,T,T(V) / Ztilt_T.
+
+Here the negative effective coefficient represents an exterior-induced frustrated holonomy; it is a mathematically admissible positive probability density but is *not claimed to be generated by the original positive fundamental-plaquette Penrose action*. Its importance is as a counterexample to deducing uniform D solely from local positivity and the isolated-block kernel.
+
+Let v=p(V). The Haar distribution of v has positive density c sqrt(1-v*v) on (-1,1). At T large, Laplace's method gives
+
+    (1/T) log z(T sqrt(2+2v)) -> sqrt(2+2v),  v>-1;
+
+and for the tilt normalization
+
+    (1/T) log E_{mu_iso}exp(-T v)
+       -> max_{v in [-1,1]} [sqrt(2+2v)-v] - max_v sqrt(2+2v)
+       = 3/2 - 2 = -1/2.
+
+At v=-1/2 the RN ratio to mu_iso is exp(T/2)/Ztilt_T, so its logarithmic growth rate is 1. Thus
+
+    liminf_{T->infty} (1/T) log || d mu_tilde_T/d mu_iso,T,T ||_infty >= 1.
+
+This proves exponential failure of *universal* domination in a broader induced-effective-interaction class; does not prove such exponential failure for the full original 2+1D positive Wilson action.
+
+## D. Scientific consequence
+
+- **Proved:** D=1 for a free-boundary purely spatial 2D Wilson lattice, on every simply connected Penrose disk.
+- **Proved:** explicit exterior-conditioned 3D *local* comparison D_B=e^{2M_B}, independent of total number of faces, but not uniform as spatial/temporal Wilson couplings grow.
+- **Proved as a diagnostic:** induced exterior multiloop reweighting can make the pointwise RN constant exponentially large.
+- **Open:** any volume- and cutoff-uniform comparison between the true *2+1D* interacting Penrose time-slice/ground-state boundary law and the isolated spatial two-face law.
+- **Open:** matching the actual exterior-conditioned connected covariance to C(V;t,s), and the operator-norm graded Wilson-frame contraction and physical continuum gap.
+
+The exact 2D result must not be presented as a 2+1D physical quantum gap estimate. The 3D conditional domination must not be used to replace the induced conditional connected source covariance without checking that extra exterior terms do not touch the integrated shared link.

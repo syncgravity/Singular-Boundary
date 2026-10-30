@@ -1,0 +1,5 @@
+PASS exact SU2 Casimir, 1-face Haar normalization, physical gap 3a, Dirichlet/Rayleigh inequality
+Haar p-=p+= 0.19550110947789 bridge= 0.60899778104423
+Actual Rayleigh g = 3.8200806475943 coarse neck upper bound = 95.602336805605
+PASS rare-phase h and exp(-1/h^2) neck implies exponential small gap upper bound
+PASS canonical 3-face Z5 graph fixture; no stochastic simulation; uniform continuum gap remains OPEN

@@ -1,0 +1,12 @@
+{
+  "reference_electric_gap": "3*a",
+  "ground_energy": "b - b**2/(12*a) + O(b**3/a**2)",
+  "first_excited_energy": "3*a + b + b**2/(30*a) + O(b**3/a**2)",
+  "excitation_gap": "3*a + 7*b**2/(60*a) + O(b**3/a**2)",
+  "composite_overlap_lowest": "b/(15*a) + O((b/a)**2)",
+  "composite_lowest_spectral_weight": "b**2/(225*a**2) + O((b/a)**3)",
+  "electric_p2_connected": "exp(-8*a*t)/16",
+  "electric_fourth_cumulant": "exp(-8*a*t)/16 - exp(-6*a*t)/8",
+  "note": "fixed finite single rhombus, b/a near zero; long-time and b->0 limits nonuniform",
+  "new_monte_carlo": false
+}

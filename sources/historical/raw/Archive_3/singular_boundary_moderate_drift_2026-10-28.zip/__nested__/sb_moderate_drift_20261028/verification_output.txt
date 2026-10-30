@@ -1,0 +1,5 @@
+PASS exact SU2 effective drift -3ap, Haar variance 1/4, M1=3a/4
+PASS actual truncated boundary flux / drift integration by parts
+PASS exponential Agmon scaling and fixed-energy spectral witness cutoff
+PASS canonical 3-face spatial fixture, 10 links; no Monte Carlo
+OPEN: nonlinear Penrose conditional drift monotonicity κ_h→infinity; covariance o(h)

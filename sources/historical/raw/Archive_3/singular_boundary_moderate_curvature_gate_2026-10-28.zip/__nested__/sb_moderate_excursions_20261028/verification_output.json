@@ -1,0 +1,28 @@
+{
+  "exact_checks": true,
+  "asymptotic_rare_variance_limit": "9/64 for c1=1,c2=2,I=1",
+  "half_mixture_divergence": "9/(256*h)",
+  "agmon_true_vacuum_tail_mgf": "O(h^4) for fixed theta",
+  "deterministic_bessel_evaluations": [
+    {
+      "h": "0.1",
+      "faces": 100,
+      "overlap_log": "-8.66841910656992872",
+      "variance_eps_h": "0.1553606166515668873083"
+    },
+    {
+      "h": "0.05",
+      "faces": 400,
+      "overlap_log": "-35.0136625997312441",
+      "variance_eps_h": "0.1488395715066232389225"
+    },
+    {
+      "h": "0.025",
+      "faces": 1600,
+      "overlap_log": "-140.706039943062057",
+      "variance_eps_h": "0.1449488046950847472558"
+    }
+  ],
+  "nonlinear_ground_state_variance_proved": false,
+  "monte_carlo": false
+}

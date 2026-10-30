@@ -1,0 +1,18 @@
+{
+  "suite": "exact rational SU(2) quaternion traces",
+  "pair_trace_product_identity_cases": 64,
+  "triple_trace_formula_cases": 512,
+  "handedness_witness_traces": [
+    "2",
+    "-2"
+  ],
+  "two_face_mixed_word_witness_traces": [
+    "-2",
+    "0"
+  ],
+  "two_face_cycle_rank": 2,
+  "two_face_generating_trace_coordinates": 3,
+  "checks_passed": true,
+  "simulations_run": false,
+  "full_interacting_gap_proved": false
+}

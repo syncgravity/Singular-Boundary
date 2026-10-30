@@ -1,0 +1,46 @@
+{
+  "exact_rademacher_sign_patterns": 8,
+  "rademacher_identity": "passed",
+  "coherent_example": [
+    {
+      "h": "1/2",
+      "mean_deficit": "1/2",
+      "smooth_variance": "3",
+      "random_sign_mean_variance": "3/4"
+    },
+    {
+      "h": "1/3",
+      "mean_deficit": "2/9",
+      "smooth_variance": "32/9",
+      "random_sign_mean_variance": "32/81"
+    },
+    {
+      "h": "1/4",
+      "mean_deficit": "1/8",
+      "smooth_variance": "15/4",
+      "random_sign_mean_variance": "15/64"
+    },
+    {
+      "h": "1/8",
+      "mean_deficit": "1/32",
+      "smooth_variance": "63/16",
+      "random_sign_mean_variance": "63/1024"
+    },
+    {
+      "h": "1/16",
+      "mean_deficit": "1/128",
+      "smooth_variance": "255/64",
+      "random_sign_mean_variance": "255/16384"
+    },
+    {
+      "h": "1/64",
+      "mean_deficit": "1/2048",
+      "smooth_variance": "4095/1024",
+      "random_sign_mean_variance": "4095/4194304"
+    }
+  ],
+  "positive_covariance_fixture": "passed",
+  "physical_penrose_variance_established": false,
+  "physical_mass_gap_established": false,
+  "simulations_performed": false
+}

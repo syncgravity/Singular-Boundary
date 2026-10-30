@@ -1,0 +1,3 @@
+PASS exact SU2 Casimir, pointwise gradient/deficit, scaling, 3-seed incidence
+PASS low-energy curved-state scaling alpha 3/2: Gamma=O(1), ||(A-c)P_low||²=O(h^-2) at fixed physical area
+No Monte Carlo; no assumed interacting gap.

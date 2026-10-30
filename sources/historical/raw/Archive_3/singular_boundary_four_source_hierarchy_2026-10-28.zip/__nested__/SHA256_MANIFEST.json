@@ -1,0 +1,26 @@
+{
+  "audit_date": "2026-10-28",
+  "files": {
+    "EXACT_CERTIFICATE.json": {
+      "sha256": "e9f100302077e87b30d37d0c5f84b877e41e5ec8dc7e56e62c243d980858e984",
+      "size_bytes": 1117
+    },
+    "R3_IR_FOUR_SOURCE_HIERARCHY_AND_INTERACTING_RHOMBUS_2026-10-28.md": {
+      "sha256": "71506421938b8e04065c3428a8575497d8b84800749d8732cc75a97eea9436ee",
+      "size_bytes": 12946
+    },
+    "RHOMBUS_CERTIFICATE.json": {
+      "sha256": "05c421cecd36b10a161c77538bebc004052cf0c1fa38ac839ae96e5e97ea4b17",
+      "size_bytes": 573
+    },
+    "verify_four_source.py": {
+      "sha256": "b563141ca1e8796762973d97661624f2fb76cb3cb27b10a4f23bbaba9b92b5a4",
+      "size_bytes": 4072
+    },
+    "verify_interacting_rhombus.py": {
+      "sha256": "0d046d61ad8f3f86f376ab8f937cc87d2b4fe8960e6201903da62a57367d1035",
+      "size_bytes": 2069
+    }
+  },
+  "scope": "deterministic derived source-insertion checks only; historical originals immutable"
+}

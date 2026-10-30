@@ -1,0 +1,20 @@
+{
+  "seed": "original three spatial rhombi, not full temporal Q14",
+  "dual_laplacian_eigenvalues": [
+    "4-sqrt(2)",
+    "4",
+    "4+sqrt(2)"
+  ],
+  "positive_sqrt_matrix_exactly_squares_to_L": true,
+  "row_sums_squared_root_entries": [
+    4,
+    4,
+    4
+  ],
+  "three_face_constant_source_variance": "9*a/(4*b)",
+  "square_F_n2_b_b0n2_alpha2_variance": "3*a/(4*b0)",
+  "square_low_energy_upper": "3*Lambda^2/(32*b0^2*n^2)",
+  "square_fixed_t_upper": "3/(8*e^2*t^2*b0^2*n^2)",
+  "monte_carlo": false,
+  "nonlinear_interacting_variance_proved": false
+}

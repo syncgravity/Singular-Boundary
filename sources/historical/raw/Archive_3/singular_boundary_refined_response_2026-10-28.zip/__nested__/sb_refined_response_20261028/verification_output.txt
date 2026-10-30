@@ -1,0 +1,5 @@
+PASS: exact Pauli avoided-crossing, spectral Cauchy identity
+PASS: all symbolic integrated exponents; alpha=1 -> h^4, alpha=3/2 -> h^2
+PASS: sharpness toy alpha=1: first moment O(h), spike width O(h^4)
+PASS: admissible toy alpha=3/2: fixed gap, spike width O(h^(5/2))
+PASS: SU2 gradient Casimir identity; no simulations or inferred physical variance

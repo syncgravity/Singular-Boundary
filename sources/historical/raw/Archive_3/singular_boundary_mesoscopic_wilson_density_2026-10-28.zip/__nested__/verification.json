@@ -1,0 +1,25 @@
+{
+  "canonical_seed_faces": 3,
+  "canonical_seed_links": 10,
+  "connected_disk_patches": 6,
+  "boundary_lengths": {
+    "0": 4,
+    "1": 4,
+    "0,1": 6,
+    "2": 4,
+    "0,2": 6,
+    "0,1,2": 8
+  },
+  "exact_rational_SU2_boundary_inequalities_checked": 42,
+  "all_checks_passed": true,
+  "max_actual_minus_upper": "0",
+  "anchored_two_face_root_coverage": {
+    "0": 3,
+    "1": 2,
+    "2": 1
+  },
+  "general_deficit_bound": "d(W_partial_Q) <= |Q| sum_{f in Q} d_f",
+  "mesoscopic_GNS_norm_bound": "||(Wbar_D-1) Omega||^2 <= 2 k (2*3^(k-1)-1) delta_D",
+  "any_monte_carlo": false,
+  "any_nontrivial_spectral_gap_proved": false
+}

@@ -1,0 +1,5 @@
+PASS: source-aligned susceptibility identity, dimensionless h^3 integrated bound
+PASS: strictly positive avoided crossing with V(0)=1 and gap >=2 delta
+PASS: exact integral asymptotic (pi delta/2) h^3 at K=h^-3
+PASS: critical response growth order h^-3 is sharp for these abstract data
+No Gaussian or nonlinear Penrose spectral gap is inferred.

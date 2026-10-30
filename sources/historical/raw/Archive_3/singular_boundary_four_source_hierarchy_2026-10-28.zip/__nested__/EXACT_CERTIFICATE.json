@@ -1,0 +1,41 @@
+{
+  "kernel_cases": [
+    {
+      "k": 2,
+      "rho": "9999/10000",
+      "delta": "1/8",
+      "lambda_parity": "79993/80000",
+      "min_entry": "7/320000",
+      "positive_definite": true,
+      "all_rows_stochastic": true,
+      "eigenvalue_coordinate": "1/8"
+    },
+    {
+      "k": 3,
+      "rho": "9999/10000",
+      "delta": "1/8",
+      "lambda_parity": "79993/80000",
+      "min_entry": "7/640000",
+      "positive_definite": true,
+      "all_rows_stochastic": true,
+      "eigenvalue_coordinate": "1/8"
+    },
+    {
+      "k": 4,
+      "rho": "9999/10000",
+      "delta": "1/8",
+      "lambda_parity": "79993/80000",
+      "min_entry": "7/1280000",
+      "positive_definite": true,
+      "all_rows_stochastic": true,
+      "eigenvalue_coordinate": "1/8"
+    }
+  ],
+  "k3_n2_six_cumulant": "80433297/81920000",
+  "four_point_electric_formula": "exp(-8*a*t)/16-exp(-6*a*t)/8",
+  "composite_covariance_electric": "exp(-8*a*t)/16",
+  "fundamental_covariance_electric": "exp(-3*a*t)/4",
+  "zero_time_four_cumulant": "-1/16",
+  "stochastic_simulations": false,
+  "physical_interacting_mass_gap_proved": false
+}

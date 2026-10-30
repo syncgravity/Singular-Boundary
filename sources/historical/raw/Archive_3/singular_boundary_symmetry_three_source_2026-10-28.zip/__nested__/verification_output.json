@@ -1,0 +1,27 @@
+{
+  "canonical_seed_faces": 3,
+  "distinct_canonical_edges": 10,
+  "z5_reflection_coordinate_permutation": [
+    3,
+    2,
+    1,
+    0,
+    4
+  ],
+  "induced_face_permutation": [
+    0,
+    2,
+    1
+  ],
+  "reflection_angle_degrees": 108,
+  "odd_source": "p_face1 - p_face2",
+  "exact_source_response_at_physical_coupling": "zero for every spectral cutoff",
+  "two_level_source_variance_at_zero": "1",
+  "two_level_gap_lower_bound": "2*delta",
+  "two_level_nearby_window_response": "-1/(4*delta)",
+  "two_level_spike_width": "h^(5/2)",
+  "two_level_second_derivative_at_zero": "-2 h^(-5)/delta^2",
+  "checks_passed": true,
+  "monte_carlo": false,
+  "generic_nonlinear_Penrose_spectral_window_proved": false
+}

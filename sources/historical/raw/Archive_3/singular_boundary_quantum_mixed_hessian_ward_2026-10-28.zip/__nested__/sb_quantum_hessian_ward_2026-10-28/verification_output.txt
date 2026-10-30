@@ -1,0 +1,3 @@
+PASS exact SU2 Hessian at flat link, Casimir, weak-coupling Ward coefficient b²/(24a)
+PASS original canonical 3-face 10-edge spatial Penrose fixture; not temporal Q14
+No statistical simulations, no uniform gap assertion, no verified Stage26 identity

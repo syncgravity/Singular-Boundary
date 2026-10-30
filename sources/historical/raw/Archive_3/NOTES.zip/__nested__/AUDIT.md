@@ -1,0 +1,37 @@
+# Gate D1 and J-to-transfer: source-traced theorem/obstruction audit
+26 October 2026. This note distinguishes confirmed production interfaces, contextual action descriptions, conditional theorems, and outstanding checks.
+
+## Evidence and provenance
+* Uploaded `stage26_outer.py`: `setup_geometry(kind,20,3.5)` is imported from `stage22_shifted`, itself importing `stage7_checkpointed.setup_geometry`; it passes `lat['fi']`, `lat['sg']`, `lat['beta']`, `lat['adj']`, `lat['degree']` to the Stage 7 sweep. Cache is recomputed by `get_plaquettes`. Its snapshot uses 1,368,480 SU(2) quaternion links (20*(45616+22808)).
+* Recovered `stage22_shifted_PRODUCTION_SOURCE.py` confirms this delegation to Stage 7 and uses `matched_basis.weighted_observe` for scalar measurements.
+* `YM_2P1_CAUSAL_NOTE.md` gives the **related** Euclidean action `S=Σ_{t,f} β_s(f)(1-P_f(t))+Σ_{t,e} β_t(e)(1-P^time_e(t))` on a periodic time circle, with 3D links, spatial faces and timelike ribbons. This describes the designed discretization but is not a line-by-line independent proof of the missing production builder.
+* Paper 3 defines `J(z1,z2)=(iz1,iz2)` on `R_eff^4 ≅ C²` and kinematic helical trajectories `z2(τ)=A exp(2πipτ)`, p=3/13,5/13,8/13. Paper 3's kinematic/dynamic distinction must be maintained.
+
+## D1: precise conditional transfer theorem
+Let G finite, U_e(t)∈SU(2), temporal link variables A_v(t), periodic t. Take action `S=Σ_{t,f} β_s(f)(1-½ ReTr W_f(t))+Σ_{t,e} β_t(e)(1-½ ReTr[U_e(t) A_{head(e)}(t) U_e(t+1)^{-1} A_{tail(e)}(t)^{-1}])`. Assume β_s(f) real and independent of t, β_t(e)>0 independent of t, no cross-step non-Wilson terms, and no twist at the temporal seam. Integrating temporal gauge links (equivalently gauge projection) gives physical transfer `T=P M_{e^{-V/2}} C M_{e^{-V/2}} P` with V(U)=Σ_f β_s(f)(1-½ReTr W_f(U)) and `C` product of temporal Wilson convolution factors. The central SU(2) kernel `k_β(g)=exp[(β/2)ReTr g]` has Peter-Weyl coefficients `I_{2j}(β)-I_{2j+2}(β)>0` for β>0, proving C≥0; hence T≥0 and self-adjoint on L²(SU(2)^E)^gauge. The transfer kernel is compact on the finite-link configuration space. Its strictly positive kernel on gauge-invariant nonnegative functions implies a simple top eigenvalue; there is a finite-volume excitation separation if nonzero subleading physical eigenvalues exist. None of these arguments proves a lower gap uniform in graph size or lattice spacing.
+
+### Action-level verification still outstanding
+The available sources do not include the literal `stage7_checkpointed.py` defining `setup_geometry` and the construction of `lat['fi']`, `lat['sg']`, and `lat['beta']`. A checkpoint/probe exposes shapes but not a mathematical face-type map. Thus exact Stage 26 equivalence to the above factorized action is **not verified**. Check all: temporal ribbons `E*Nt`, spatial faces `F*Nt`; edge and face orientations; β constant under t-shifts and β_t>0; each ribbon joins only t and t+1; twisted seam absent; same normalization as ½ReTr; and updates account for every incident plaquette. An executed source audit must print these tests and their hashes. It would be scientifically inaccurate to label D1 fully closed from the current files.
+
+## J: formal representation and obstruction
+**Proposition J-kinematic.** On effective geometric real space R⁴, constant J²=-I is integrable and commutes with the stipulated C5 action. It generates spatial rotations; by itself it does not define a map on SU(2) link configurations, physical gauge states or Euclidean time evolution. Proof: definition only uses coordinates z1,z2 and has no action on gauge-equivalence classes.
+
+**Necessary construction.** To assert physical action, supply a one-parameter unitary group R(θ) on H_phys (or densely defined self-adjoint generator K with R(θ)=exp(iθK)), an observable map Φ intertwining geometric e^{θJ} and R(θ), and a dynamical relation such as R(θ)T=TR(θ), an exact covariance equation, or a quantitatively bounded commutator. If an exact symmetry commutes with T, it yields invariant spectral sectors and selection rules; it does **not**, without an additional inequality, yield a positive bound on their energy gaps.
+
+**Obstruction O1 (arbitrary J, arbitrary gap).** Fix ANY J on R⁴ and any finite gauge Hilbert space with two invariant orthogonal states. Let T_ε have eigenvalues (1,exp(-ε)) on those states and nonnegative remaining eigenvalues. All J identities remain true while the normalized gap ε→0. Therefore geometric J alone cannot bound a transfer Hamiltonian's gap. The same principle applies to positive compact transfer operators as abstract operators; no unconditional inequality is derivable from J²=-I.
+
+**Obstruction O2 (observer spectrum vs physical spectrum).** For fixed H, any two time-independent bounded gauge-invariant observables O_3 and O_8 have correlators with energies from the same spectrum(H); only their spectral weights differ. Arbitrary phases along an external helical sampling parameter are kinematic frequencies, not eigenvalues of H. A phase-dependent operator in *Euclidean time* can introduce spurious frequencies and invalidate stationary mass fits.
+
+**Obstruction O3 (regulator symmetry).** The periodic M55 torus is not certified to admit a physical C5 graph automorphism respecting the weighted Wilson couplings. Geometric C5 covariance in the parent representation is not automatically a symmetry of the finite regulator or of T. The appropriate weaker object is an explicitly defined observation map (not necessarily symmetry), whose intertwining properties must be tested, not assumed.
+
+**Obstruction O4 (fundamental-spinor versus pure-gauge spaces).** The conditional connection-Laplacian coercivity bound acts on spinor fields for one connection U. T acts on gauge-invariant functions of *all* links. Neither Hilbert space contains the other canonically as a gap-preserving physical sector. The Wilson measure has nonzero support near flat links; hence deterministic frustration hypotheses cannot hold for every configuration.
+
+## Proof obligations, ordered by leverage
+1. Obtain/extract literal Stage 7 geometry builder; certify D1 with source and incidence tensors rather than checkpoint shape alone.
+2. Decide whether geometric J induces a genuine symmetry, a non-symmetry observation map, or a covariant family of gauge-observable multipliers. Specify Φ, domain, representation, and state-independent constants.
+3. Prove equivariance or bound commutator with T on the same regulator; test if C5 automorphisms are absent; if absent, state symmetry is broken and quantify boundary/bulk defect.
+4. Prove a physically meaningful inequality comparing H=-log(T/λ0)/a_t with geometric operators on H_phys. Without such an inequality no J-implied gap follows.
+5. Analyze spatial/infinite-volume and continuum scaling independently; finite-volume simplicity is not a uniform gap theorem.
+
+## Decision
+Do not purchase new Monte Carlo time for this proof audit. Gate D1 is a small *source-certification* task; J-to-H is an open theorem-or-obstruction task with explicit counterexamples preventing a direct deduction. The nine-day Stage 26 ensemble remains valid numerical input but did not resolve a scalar mass or continuum ratio.

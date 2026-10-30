@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-10-28",
+  "files": [
+    {
+      "file": "EXACT_VERIFICATION.json",
+      "sha256": "60bb0b4457ac95f7a32fa7e0361a904f0126936da41fa967c454303600dbba4b",
+      "size": 1175
+    },
+    {
+      "file": "R3_IR_WORD_RECURSION_AND_STRONG_FIELD_COMPLEXITY_2026-10-28.md",
+      "sha256": "ee3c2447071f3037412093d0af09f0517d8413442fa5589dc107d3b95b42eeee",
+      "size": 11571
+    },
+    {
+      "file": "verify_word_recursion.py",
+      "sha256": "daa71f6cadc1cd6b2a97eb6f0ed66e056765a6830e1da18c1eda42196e8a5b86",
+      "size": 3136
+    }
+  ],
+  "historical_simulations_rerun": false
+}

@@ -1,0 +1,20 @@
+{
+  "historical_seed_faces": 3,
+  "seed_edges": 10,
+  "reflection_face_permutation": [
+    0,
+    2,
+    1
+  ],
+  "outer_faces_edge_disjoint": true,
+  "electric_one_plaquette_variance": "1/4",
+  "electric_one_plaquette_second_response_over_c2": "-1/(32*a**2)",
+  "electric_seed_outer_antisymmetric_variance": "1/2",
+  "electric_seed_outer_antisymmetric_second_response_over_c2": "-1/(16*a**2)",
+  "one_plaquette_even_three_source_linear_b_coefficient": "-1/(64*a**2)",
+  "abstract_positive_second_derivative_example": "28",
+  "abstract_negative_second_derivative_example": "-8",
+  "tests_passed": true,
+  "monte_carlo": false,
+  "uniform_nonlinear_Penrose_response_proved": false
+}

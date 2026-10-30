@@ -1,0 +1,129 @@
+{
+  "source": "Three canonical seed rhombi transcribed from historical HISTORICAL_Q14_CANONICAL.json; no original generator reexecuted",
+  "seed_face_count": 3,
+  "seed_unique_links": 10,
+  "oriented_incidence_B": [
+    [
+      1,
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      -1,
+      1,
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      1
+    ]
+  ],
+  "seed_BBt": [
+    [
+      4,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4,
+      0
+    ],
+    [
+      -1,
+      0,
+      4
+    ]
+  ],
+  "seed_eigenvalues": [
+    "4-sqrt(2)",
+    "4",
+    "4+sqrt(2)"
+  ],
+  "seed_boundary_edges": 8,
+  "seed_constant_vector_rayleigh": "8/3",
+  "square_control_exact_formula": "lambda_min = 4-4*cos(pi/(m+1))",
+  "square_controls": [
+    {
+      "side_faces": 1,
+      "faces": 1,
+      "boundary_edges": 4,
+      "lambda_min_dual": 4.0,
+      "constant_trial_bound": 4.0,
+      "gaussian_singlet_gap_factor_sqrt_ab": 2.828427124746
+    },
+    {
+      "side_faces": 2,
+      "faces": 4,
+      "boundary_edges": 8,
+      "lambda_min_dual": 2.0,
+      "constant_trial_bound": 2.0,
+      "gaussian_singlet_gap_factor_sqrt_ab": 2.0
+    },
+    {
+      "side_faces": 3,
+      "faces": 9,
+      "boundary_edges": 12,
+      "lambda_min_dual": 1.171572875254,
+      "constant_trial_bound": 1.333333333333,
+      "gaussian_singlet_gap_factor_sqrt_ab": 1.53073372946
+    },
+    {
+      "side_faces": 4,
+      "faces": 16,
+      "boundary_edges": 16,
+      "lambda_min_dual": 0.7639320225,
+      "constant_trial_bound": 1.0,
+      "gaussian_singlet_gap_factor_sqrt_ab": 1.2360679775
+    },
+    {
+      "side_faces": 6,
+      "faces": 36,
+      "boundary_edges": 24,
+      "lambda_min_dual": 0.39612452839,
+      "constant_trial_bound": 0.666666666667,
+      "gaussian_singlet_gap_factor_sqrt_ab": 0.890083735825
+    },
+    {
+      "side_faces": 8,
+      "faces": 64,
+      "boundary_edges": 32,
+      "lambda_min_dual": 0.241229516856,
+      "constant_trial_bound": 0.5,
+      "gaussian_singlet_gap_factor_sqrt_ab": 0.694592710668
+    },
+    {
+      "side_faces": 12,
+      "faces": 144,
+      "boundary_edges": 48,
+      "lambda_min_dual": 0.116232730296,
+      "constant_trial_bound": 0.333333333333,
+      "gaussian_singlet_gap_factor_sqrt_ab": 0.482146721021
+    }
+  ],
+  "harmonic_physical_singlet_gap_formula": "sqrt(2*a*b*lambda_min(B*B.T))",
+  "actual_interacting_penrose_gap_proved": false,
+  "monte_carlo": false
+}

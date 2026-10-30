@@ -1,0 +1,5 @@
+PASS: exact regional barrier, chain-rule absorption, weighted moment, tail constants
+PASS: SU(2) Casimir and 3-face canonical incidence; no simulations
+Tail: E[X exp(2lambda(X-2L)) 1_{X>=2L}] <= 64 amax h^2/(beta L)
+Tail second moment: <= 128 amax h^2/beta if 4lambda L>=1
+Fixed-support connected covariance and full mass gap remain OPEN

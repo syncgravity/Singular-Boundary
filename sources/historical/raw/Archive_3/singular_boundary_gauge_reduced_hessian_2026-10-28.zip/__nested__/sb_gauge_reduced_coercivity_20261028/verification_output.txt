@@ -1,0 +1,6 @@
+PASS canonical seed (V,E,F)= (8, 10, 3)
+PASS B d0=0, ranks d0=7 / d1=3, 3 purely gauge-reduced modes
+PASS face Dirichlet dual graph matrix and eigenvalues 4, 4±sqrt(2)
+PASS magnetic flat Hessian rank 3 per Lie algebra, gauge nullity 7
+PASS deleting each face creates exactly 1 extra physical zero mode per Lie algebra
+PASS conservative planar Cheeger seed lower bound; no simulation

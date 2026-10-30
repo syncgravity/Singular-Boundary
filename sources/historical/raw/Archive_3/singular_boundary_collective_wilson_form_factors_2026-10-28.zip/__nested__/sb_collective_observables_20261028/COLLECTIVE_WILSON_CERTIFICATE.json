@@ -1,0 +1,32 @@
+{
+  "model": "physical SO(3) singlet Gaussian tangent model for original three-rhombus Penrose seed",
+  "trace_identity_pairs": 36,
+  "global_wilson_identity_triples": 27,
+  "all_exact_checks_passed": true,
+  "dual_L": [
+    [
+      4,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4,
+      0
+    ],
+    [
+      -1,
+      0,
+      4
+    ]
+  ],
+  "lowest_dual_eigenvalue": "4 - sqrt(2)",
+  "lowest_eigenvector": "(1/sqrt(2), 1/2, 1/2)",
+  "collective_source_lowest_singlet_energy": "sqrt(2*a*b*(4-sqrt(2)))",
+  "collective_source_lowest_singlet_spectral_weight": "12*a*(4-sqrt(2))/b",
+  "elementary_face0_lowest_singlet_weight": "3*a*(4-sqrt(2))/(64*b)",
+  "all_face_average_lowest_singlet_weight": "a*(4-sqrt(2))/(48*b)",
+  "all_face_average_total_variance": "a/(4*b)",
+  "interacting_multiface_uniform_gap_established": false,
+  "historical_mcmc_rerun": false
+}

@@ -1,0 +1,22 @@
+def setup_geometry(kind,nt,beta):
+    pen,square=pair()
+    g=pen if kind=='penrose' else square
+    a=(pen['physical_area']/pen['F'])**.5
+    return g,assemble_vectorized(g,nt,beta,a)
+
+def process(checkpoint,kind='penrose',seed=101,nt=20,beta=3.5,total_sweeps=2,
+            burn=1000,thin=10,limit=2,verify=True,measure=False):
+    cp=Path(checkpoint);cp.parent.mkdir(parents=True,exist_ok=True)
+    geom,lat=setup_geometry(kind,nt,beta)
+    settings={'kind':kind,'seed':seed,'nt':nt,'beta':beta,'burn':burn,'thin':thin,
+              'spatial_geometry_hash':geom['graph_hash'],'L':lat['L'],'P':lat['P'],
+              'rng_scheme':'xorshift128plus-high-53-v1','initial_state':'Haar_SU2_normalized_four_Gaussians'}
+    if cp.exists():
+        with np.load(cp,allow_pickle=False) as z:
+            old=json.loads(str(z['settings_json'].item()))
+            if old!=settings:raise ValueError('checkpoint parameter or graph mismatch')
+            links=z['links'].copy();pf=z['plaquette_trace'].copy();st=z['rng'].copy()
+            completed=int(z['sweeps'].item())
+            history=json.loads(str(z['history_json'].item()))
+            saved_obs=list(z['observables_scalar']) if 'observables_scalar' in z.files else []
+            saved_flux=list
