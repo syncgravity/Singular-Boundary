@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_character_positivity_2026-10-29.zip/__nested__/sb_deleted_character_positivity_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_character_positivity_2026-10-29.zip!/sb_deleted_character_positivity_20261029/SHA256SUMS.txt",
+   "sha256": "3e2f670100c4aaea04bd3456d909ce339368e9c618f9ad9b2d7168288a64e689",
+   "bytes": 344,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_character_positivity_2026-10-29.zip/__nested__/sb_deleted_character_positivity_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_character_positivity_2026-10-29.zip!/sb_deleted_character_positivity_20261029/PROOF_REPORT.md",
+   "sha256": "c1e238b5d1b325e7a771f3a99c1abb62333f9e7e3b3600478218be45c5e34817",
+   "bytes": 9461,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_orbit_radial_2026-10-29.zip/__nested__/sb_deleted_orbit_radial_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_orbit_radial_2026-10-29.zip!/sb_deleted_orbit_radial_20261029/README.md",
+   "sha256": "c08d7e49367207b6a6d0663052e5d5879adf756636f78a9c5f9af2f2ff349bc6",
+   "bytes": 263,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_orbit_radial_2026-10-29.zip/__nested__/sb_deleted_orbit_radial_20261029/verify_orbit_radial.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_orbit_radial_2026-10-29.zip!/sb_deleted_orbit_radial_20261029/verify_orbit_radial.py",
+   "sha256": "1b9ec3d25d3211b14d315487179ab8ec7244c7c6bc56784cdae45dca7c1fcfa7",
+   "bytes": 1733,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_orbit_radial_2026-10-29.zip/__nested__/sb_deleted_orbit_radial_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_orbit_radial_2026-10-29.zip!/sb_deleted_orbit_radial_20261029/VERIFY_LOG.txt",
+   "sha256": "555945614946563ffa626e8cba8ff6d22f2f63e8f266cbd4dda2108d6d263dcc",
+   "bytes": 384,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_orbit_radial_2026-10-29.zip/__nested__/sb_deleted_orbit_radial_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_orbit_radial_2026-10-29.zip!/sb_deleted_orbit_radial_20261029/SHA256SUMS.txt",
+   "sha256": "da02b47caf6b048a11178bf060ddf08a178e326b3208c59ecd4344f3f8849ec0",
+   "bytes": 328,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_orbit_radial_2026-10-29.zip/__nested__/sb_deleted_orbit_radial_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_orbit_radial_2026-10-29.zip!/sb_deleted_orbit_radial_20261029/PROOF_REPORT.md",
+   "sha256": "c95b37030bb4c8c3151f2cc32f48924d7be8ef0c5e76e305757ad0ca028f1580",
+   "bytes": 8804,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_orbit_transport_2026-10-29.zip/__nested__/sb_deleted_face_orbit_transport_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_orbit_transport_2026-10-29.zip!/sb_deleted_face_orbit_transport_20261029/README.md",
+   "sha256": "de4f7eacb4366b18dbfbeb64f828803f9c7229b1d1ec1128265325f45b62856a",
+   "bytes": 826,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_orbit_transport_2026-10-29.zip/__nested__/sb_deleted_face_orbit_transport_20261029/verify_orbit_transport.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_orbit_transport_2026-10-29.zip!/sb_deleted_face_orbit_transport_20261029/verify_orbit_transport.py",
+   "sha256": "257884f146623a578e900596e473a4560161151c27e680240c445bb4fe60d30e",
+   "bytes": 5848,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_orbit_transport_2026-10-29.zip/__nested__/sb_deleted_face_orbit_transport_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_orbit_transport_2026-10-29.zip!/sb_deleted_face_orbit_transport_20261029/VERIFY_LOG.txt",
+   "sha256": "c0875e4a3943b284022fe4ceb8e29e7a9c0aeaec53b39f9d728715ace978e689",
+   "bytes": 999,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_orbit_transport_2026-10-29.zip/__nested__/sb_deleted_face_orbit_transport_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_orbit_transport_2026-10-29.zip!/sb_deleted_face_orbit_transport_20261029/SHA256SUMS.txt",
+   "sha256": "ea7796e6d5179a0f0a762877ce3c71af4b4faa573ba9cbb5a30a67c21ee0e78e",
+   "bytes": 331,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_orbit_transport_2026-10-29.zip/__nested__/sb_deleted_face_orbit_transport_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_orbit_transport_2026-10-29.zip!/sb_deleted_face_orbit_transport_20261029/PROOF_REPORT.md",
+   "sha256": "0716bac0e99e3b2cc37ff04c42b61c5162aae6d846ab5f9337dcee71f257c2bc",
+   "bytes": 11085,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_local_heat_harnack_2026-10-29.zip/__nested__/sb_deleted_local_heat_harnack_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_local_heat_harnack_2026-10-29.zip!/sb_deleted_local_heat_harnack_20261029/README.md",
+   "sha256": "726cb7120b02b98177e787882b8c238993ef6c6fea59949b2f3609bc15ddb497",
+   "bytes": 768,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_local_heat_harnack_2026-10-29.zip/__nested__/sb_deleted_local_heat_harnack_20261029/verify_deleted_local_heat_harnack.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_local_heat_harnack_2026-10-29.zip!/sb_deleted_local_heat_harnack_20261029/verify_deleted_local_heat_harnack.py",
+   "sha256": "547fd355afcb7117a791ad66923c69a44291828787a1df9c829ece96d19f0e68",
+   "bytes": 1889,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_local_heat_harnack_2026-10-29.zip/__nested__/sb_deleted_local_heat_harnack_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_local_heat_harnack_2026-10-29.zip!/sb_deleted_local_heat_harnack_20261029/VERIFY_LOG.txt",
+   "sha256": "5c96d78fe13eb601d86e3156ab1571eac355044e33fbf62dc1bda297b9ee0fd0",
+   "bytes": 662,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_local_heat_harnack_2026-10-29.zip/__nested__/sb_deleted_local_heat_harnack_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_local_heat_harnack_2026-10-29.zip!/sb_deleted_local_heat_harnack_20261029/SHA256SUMS.txt",
+   "sha256": "60727226c2bbf09ff231ad40d0284f246bb6dde36b1fe0572f769c86458e6b35",
+   "bytes": 342,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_local_heat_harnack_2026-10-29.zip/__nested__/sb_deleted_local_heat_harnack_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_local_heat_harnack_2026-10-29.zip!/sb_deleted_local_heat_harnack_20261029/PROOF_REPORT.md",
+   "sha256": "8fc4a4f48bb6aed5c6952a08abcf028aebe644355409e47867d24bcec8322054",
+   "bytes": 9887,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_cap_scale_current_2026-10-29.zip/__nested__/sb_deleted_cap_scale_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_cap_scale_current_2026-10-29.zip!/sb_deleted_cap_scale_20261029/README.md",
+   "sha256": "a1030ec91856503c5968134847533565a1a8ccc57b4b2757685d58394d98c8b2",
+   "bytes": 577,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_cap_scale_current_2026-10-29.zip/__nested__/sb_deleted_cap_scale_20261029/verify_cap_scale_current.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_cap_scale_current_2026-10-29.zip!/sb_deleted_cap_scale_20261029/verify_cap_scale_current.py",
+   "sha256": "f6f742e8f77065a15622183099415e2be3bf334889db9e50d6cdc6a40c504cf2",
+   "bytes": 3459,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_cap_scale_current_2026-10-29.zip/__nested__/sb_deleted_cap_scale_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_cap_scale_current_2026-10-29.zip!/sb_deleted_cap_scale_20261029/VERIFY_LOG.txt",
+   "sha256": "a65760141d3b59c50d1fc57e82a27116568ea6bc359d8bacd1e79b33367a1c48",
+   "bytes": 945,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_cap_scale_current_2026-10-29.zip/__nested__/sb_deleted_cap_scale_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_cap_scale_current_2026-10-29.zip!/sb_deleted_cap_scale_20261029/SHA256SUMS.txt",
+   "sha256": "03c688899b326c7979693aa9eb7a148e1a947ad8c9c4cb69d61fba0f4c362ddb",
+   "bytes": 333,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_cap_scale_current_2026-10-29.zip/__nested__/sb_deleted_cap_scale_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_cap_scale_current_2026-10-29.zip!/sb_deleted_cap_scale_20261029/PROOF_REPORT.md",
+   "sha256": "5f5a2b9a04da2c2ab94316526ceb007d896a80fc992ff5f19320a72c24d5fd8f",
+   "bytes": 8712,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_radial_current_2026-10-29.zip/__nested__/sb_deleted_radial_current_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_radial_current_2026-10-29.zip!/sb_deleted_radial_current_20261029/README.md",
+   "sha256": "504a28e9910c3498c9407dc8426dc52573dddc78cfdfceffe69fa1551553e502",
+   "bytes": 820,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_radial_current_2026-10-29.zip/__nested__/sb_deleted_radial_current_20261029/verify_signed_radial_current.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_radial_current_2026-10-29.zip!/sb_deleted_radial_current_20261029/verify_signed_radial_current.py",
+   "sha256": "3bffbc408bc8ffaa98df47ebc66d9bc2a4e1ac20bcdd828156113a88e48d1905",
+   "bytes": 2890,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_radial_current_2026-10-29.zip/__nested__/sb_deleted_radial_current_20261029/verification.log",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_radial_current_2026-10-29.zip!/sb_deleted_radial_current_20261029/verification.log",
+   "sha256": "7338bb6d50db232ea72fbdf3f041b1c4b6a05ec59992997b56fcdd488b493980",
+   "bytes": 890,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_radial_current_2026-10-29.zip/__nested__/sb_deleted_radial_current_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_radial_current_2026-10-29.zip!/sb_deleted_radial_current_20261029/SHA256SUMS.txt",
+   "sha256": "4a261d301b434e952df9fd227a0ed2d9800798db4bf0a05d503b6eaa296e2eea",
+   "bytes": 339,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_radial_current_2026-10-29.zip/__nested__/sb_deleted_radial_current_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_radial_current_2026-10-29.zip!/sb_deleted_radial_current_20261029/PROOF_REPORT.md",
+   "sha256": "594e8781950f662c8d8baff2d39f748f61dca6642c03fe5a637b90c12e593c09",
+   "bytes": 10189,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip!/PROOF_REPORT.md",
+   "sha256": "816983a1c2a792be09287839041bbe13b0e6403a78185bf57d46a22b87ebfeda",
+   "bytes": 8184,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip!/README.md",
+   "sha256": "a26084c17baa0062b7bc0552f9c32d000c751a8889d0f1fb1779c70808482c16",
+   "bytes": 837,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip/__nested__/verify_one_sided_fiber_budget.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip!/verify_one_sided_fiber_budget.py",
+   "sha256": "440ff2104585443439f02b3542e2ba90ce263709c6e2c87a56ccad55da958afc",
+   "bytes": 3559,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip/__nested__/verification.log",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip!/verification.log",
+   "sha256": "5709003a0e33ecc1bf91a5316711f5189b691e706bd8977ebf7b8278d7024f6a",
+   "bytes": 758,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip/__nested__/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_fiber_one_sided_budget_2026-10-29.zip!/SHA256SUMS.txt",
+   "sha256": "029082ae8693859763c4d52a231276075d207fdebffb58fe7d70e3a456e56c79",
+   "bytes": 409,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_exact_fiber_2026-10-29.zip/__nested__/sb_deleted_exact_fiber_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_exact_fiber_2026-10-29.zip!/sb_deleted_exact_fiber_20261029/README.md",
+   "sha256": "c6756fa93956a765f30b570d1d49052e581fa447f1f79b80d1c9429a0257522d",
+   "bytes": 433,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_exact_fiber_2026-10-29.zip/__nested__/sb_deleted_exact_fiber_20261029/verify_exact_deleted_fiber.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_exact_fiber_2026-10-29.zip!/sb_deleted_exact_fiber_20261029/verify_exact_deleted_fiber.py",
+   "sha256": "0dd2d4a5e0d7dd29a266c11bbbd328877b643f294bd4858d9cc67fd299fab1c1",
+   "bytes": 3156,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_exact_fiber_2026-10-29.zip/__nested__/sb_deleted_exact_fiber_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_exact_fiber_2026-10-29.zip!/sb_deleted_exact_fiber_20261029/VERIFY_LOG.txt",
+   "sha256": "3228581ccaba559a14fb54a08b6af850afd2e37f7542d0b98da1a2111a50df7b",
+   "bytes": 1821,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_exact_fiber_2026-10-29.zip/__nested__/sb_deleted_exact_fiber_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_exact_fiber_2026-10-29.zip!/sb_deleted_exact_fiber_20261029/SHA256SUMS.txt",
+   "sha256": "9c5bb3cd6118f33713dcb5c811c37db64b91209e96adce629793d9c7a289dd93",
+   "bytes": 335,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_exact_fiber_2026-10-29.zip/__nested__/sb_deleted_exact_fiber_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_exact_fiber_2026-10-29.zip!/sb_deleted_exact_fiber_20261029/PROOF_REPORT.md",
+   "sha256": "d45ee7751065df13a80c6160880f772094e020d7bbdebb0017b9ad3f19d5ddc2",
+   "bytes": 8608,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_marginal_capacity_2026-10-29.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_marginal_capacity_2026-10-29.zip!/PROOF_REPORT.md",
+   "sha256": "d7d10f1f3c38bc51ac5036627a5b0ec5a54d2e15f170c1067d0e8cd1e4e8e8ca",
+   "bytes": 11332,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_marginal_capacity_2026-10-29.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_marginal_capacity_2026-10-29.zip!/README.md",
+   "sha256": "4ef30e05a20197af9011487bf953b46f170ed28e10e010bc6cb6baaf7ef2573e",
+   "bytes": 392,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_marginal_capacity_2026-10-29.zip/__nested__/verify_deleted_marginal_capacity.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_marginal_capacity_2026-10-29.zip!/verify_deleted_marginal_capacity.py",
+   "sha256": "729b104a5af12a8e2769dc7477b320a7419238c3231f5fc8aee6b9f8d2a5b103",
+   "bytes": 3624,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_marginal_capacity_2026-10-29.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_marginal_capacity_2026-10-29.zip!/VERIFICATION_LOG.txt",
+   "sha256": "e2dc95f4854492d2645f9f24c9d37ade115e4a019f4690541e212f7222491d10",
+   "bytes": 953,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_marginal_capacity_2026-10-29.zip/__nested__/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_marginal_capacity_2026-10-29.zip!/SHA256SUMS.txt",
+   "sha256": "01e704c299e0266df9461eb0d691ba150ae3c1c8b8f4c3f4d454537662c8c39c",
+   "bytes": 347,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip/__nested__/sb_deleted_flux_collective_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip!/sb_deleted_flux_collective_20261029/README.md",
+   "sha256": "9d3f696a2ac1f5c1ad7027f1c6ee74a44a4ee9f16f689b81e3458a51c399e504",
+   "bytes": 641,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip/__nested__/sb_deleted_flux_collective_20261029/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip!/sb_deleted_flux_collective_20261029/VERIFICATION_LOG.txt",
+   "sha256": "1b3ebe750dfda05a99fde8306d34827d11971ce7542dd864bb790b5a449d8975",
+   "bytes": 502,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip/__nested__/sb_deleted_flux_collective_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip!/sb_deleted_flux_collective_20261029/SHA256SUMS.txt",
+   "sha256": "a5ab078dc87bdf522848fdd1d0981166f9b2b57d7750f2c16fffd664a8ff9e40",
+   "bytes": 338,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip/__nested__/sb_deleted_flux_collective_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip!/sb_deleted_flux_collective_20261029/PROOF_REPORT.md",
+   "sha256": "b2eb2e695e4edc630d66ed68b1a3302ff8a758314df7e4baec6f20ad2c13c986",
+   "bytes": 10467,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip/__nested__/sb_deleted_flux_collective_20261029/verify_collective_modes.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_collective_BO_audit_2026-10-29.zip!/sb_deleted_flux_collective_20261029/verify_collective_modes.py",
+   "sha256": "c38defde1540f71ba7535b8602be2ec203979d42122cb6013a7c92f394cbd655",
+   "bytes": 2536,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip/__nested__/sb_deleted_flux_harmonic_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip!/sb_deleted_flux_harmonic_20261029/README.md",
+   "sha256": "00395e3da5a907429b6e9729515beefb2ffa4703f19778e8296d1402d90fcd52",
+   "bytes": 464,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip/__nested__/sb_deleted_flux_harmonic_20261029/verify_flux_harmonic.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip!/sb_deleted_flux_harmonic_20261029/verify_flux_harmonic.py",
+   "sha256": "b687742e9349581d9a93fca167912a49d8ac7b25558a49f0488c1dc26d3a7fe9",
+   "bytes": 4293,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip/__nested__/sb_deleted_flux_harmonic_20261029/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip!/sb_deleted_flux_harmonic_20261029/VERIFICATION_LOG.txt",
+   "sha256": "cdd9089ad19e5e5b3f77bf7a25062f7711dd0432d5bbbea319617191583e8e76",
+   "bytes": 1074,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip/__nested__/sb_deleted_flux_harmonic_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip!/sb_deleted_flux_harmonic_20261029/SHA256SUMS.txt",
+   "sha256": "1baabb8dbfed6448c5be2a3135dcd9e93f9501b252234311454b5608cdc019b1",
+   "bytes": 259,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip/__nested__/sb_deleted_flux_harmonic_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_face_flux_diamagnetism_2026-10-29.zip!/sb_deleted_flux_harmonic_20261029/PROOF_REPORT.md",
+   "sha256": "6d1b2ecbe43adb442030d103dfff2ee1f797ba21719c35ac7dc9a45005ee2de2",
+   "bytes": 10361,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip/__nested__/sb_deleted_flat_ball_20261029/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip!/sb_deleted_flat_ball_20261029/VERIFICATION_LOG.txt",
+   "sha256": "ae71dc073cc8f4c967461879ca1edf8476c8839499917dffc2e9a9e2993c2c80",
+   "bytes": 564,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip/__nested__/sb_deleted_flat_ball_20261029/verify_deleted_flat_ball.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip!/sb_deleted_flat_ball_20261029/verify_deleted_flat_ball.py",
+   "sha256": "acd29586c5ff32ad16bd81646e25a80a5212a41f89d28a81a9be534467fa0eeb",
+   "bytes": 2262,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip/__nested__/sb_deleted_flat_ball_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip!/sb_deleted_flat_ball_20261029/SHA256SUMS.txt",
+   "sha256": "67ba5320add15fab50c59c5e60c9bba3a07a170cf2dd4cf2aee6d3746f80d5cb",
+   "bytes": 383,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip/__nested__/sb_deleted_flat_ball_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_flat_holonomy_criterion_2026-10-29.zip!/sb_deleted_flat_ball_20261029/PROOF_REPORT.md",
+   "sha256": "187b030fde775c3fc5db7c81a439cc7acce8a7a49a5cafa28020a179c0ac55ae",
+   "bytes": 8323,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip!/PROOF_REPORT.md",
+   "sha256": "614e45f2151176d60f4af698df2d668b532ee33689ec554f1b580798a12fdcf5",
+   "bytes": 9539,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip/__nested__/verify_self_absorbing.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip!/verify_self_absorbing.py",
+   "sha256": "203bd89c67dd38dda024f52a95a82a24506de19a60ffbbec404b079c36e2cd52",
+   "bytes": 4217,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip!/VERIFICATION_LOG.txt",
+   "sha256": "c2511983ee3cbec88db488c41d5de1b52d87eadff3e79fcdc8a12ccf8c2cb8e0",
+   "bytes": 660,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip!/README.md",
+   "sha256": "fe50f052e83dcb709e633c1527393d7ce99dfc9a7ad7f41287fadb55ae6ef8c2",
+   "bytes": 420,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip/__nested__/SHA256_MANIFEST.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_self_absorbing_bulk_susceptibility_2026-10-29.zip!/SHA256_MANIFEST.txt",
+   "sha256": "5cca9523305aa6d34b2ebf317f4989157bb6b27b29efcfdcc72fe63898f60165",
+   "bytes": 336,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_uv_spectral_split_2026-10-28.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_uv_spectral_split_2026-10-28.zip!/PROOF_REPORT.md",
+   "sha256": "fc151fcff0ee67b921d52aae9f8d50c0e3b8a9a7c5b7e80cf0885d6af7bff512",
+   "bytes": 7818,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_uv_spectral_split_2026-10-28.zip/__nested__/verify_cycle_uv_split.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_uv_spectral_split_2026-10-28.zip!/verify_cycle_uv_split.py",
+   "sha256": "7f97c0a4ef6276a661b2629fab7e6ba21491baa2c4b585f2d729e5561db1d995",
+   "bytes": 3288,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_uv_spectral_split_2026-10-28.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_uv_spectral_split_2026-10-28.zip!/VERIFICATION_LOG.txt",
+   "sha256": "6118c0ef980edc9d55092971be4183bc23446616b64c51dc0a95542b4352046b",
+   "bytes": 845,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_uv_spectral_split_2026-10-28.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_uv_spectral_split_2026-10-28.zip!/README.md",
+   "sha256": "98e08ed985f60453f57e73fc73139e130bc3a01b11afca975929f2f95c430f70",
+   "bytes": 493,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_uv_spectral_split_2026-10-28.zip/__nested__/SHA256_MANIFEST.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_uv_spectral_split_2026-10-28.zip!/SHA256_MANIFEST.json",
+   "sha256": "aaba5bb14e53ef015eb41ce0616e2ac61759f17c23b52f6d0b829d0c9f361dda",
+   "bytes": 367,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip!/PROOF_REPORT.md",
+   "sha256": "9dbde171807b880508eed16b8de3ccaf8f4f53ba59aad88d58d69bcf3790c78d",
+   "bytes": 8601,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip!/README.md",
+   "sha256": "64232744868f7533e8e4f0d97ec578f6a3ad5929fd026b3c6a64c4ea680a3680",
+   "bytes": 1049,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip/__nested__/verify_cycle_susceptibility.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip!/verify_cycle_susceptibility.py",
+   "sha256": "e1ae83668ca594675d1c4a93d71097cec21e9580c27e49c24e6c6ede6cac0769",
+   "bytes": 3875,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip!/VERIFICATION_LOG.txt",
+   "sha256": "23eafe3d9c271aa035c8e7f915b0a9e3e7f694dd55f12908c09006d26349ee1d",
+   "bytes": 170,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip/__nested__/SHA256_MANIFEST.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_cycle_susceptibility_submodularity_2026-10-28.zip!/SHA256_MANIFEST.json",
+   "sha256": "dc18c5fecea44106c6025a7217294e37db4c423e6c376a7667431ad8d3606856",
+   "bytes": 373,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip!/PROOF_REPORT.md",
+   "sha256": "b8925c61bb1911aa10f3c32f785653ade937d038c271fd862b3aab81993d01ac",
+   "bytes": 11071,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip!/README.md",
+   "sha256": "3b39dcf28e18cd50110467a648736c6b167a744169f1d8c575ab164888a3fa95",
+   "bytes": 633,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/verify_center_flux_bulk_deletion.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip!/verify_center_flux_bulk_deletion.py",
+   "sha256": "bea03b2dffd7156235e11216059e83efa64f856f3d14b59b152e19a8228812b1",
+   "bytes": 4964,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip!/VERIFICATION_LOG.txt",
+   "sha256": "1ad14c8cce0cb64c534ebc9f933c08dee1338f7fe87d30ae4dacf7344510b8b3",
+   "bytes": 935,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/SHA256_MANIFEST.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip!/SHA256_MANIFEST.json",
+   "sha256": "530d39d601b089782289b3e03a392c9dadb63b4bde5fdad91b509dd1b00bd9e5",
+   "bytes": 377,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bulk_bridge_deletion_2026-10-28.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bulk_bridge_deletion_2026-10-28.zip!/PROOF_REPORT.md",
+   "sha256": "f5c7b1d9c6aa20ba0f9840411854a437186bdbb05ec49d9f5b4de5c661e76853",
+   "bytes": 13741,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bulk_bridge_deletion_2026-10-28.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bulk_bridge_deletion_2026-10-28.zip!/README.md",
+   "sha256": "1f7d7081def519e93969f44a624788458e20b94f9f24011a64d2692349fa7e19",
+   "bytes": 1328,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bulk_bridge_deletion_2026-10-28.zip/__nested__/SHA256_MANIFEST.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bulk_bridge_deletion_2026-10-28.zip!/SHA256_MANIFEST.json",
+   "sha256": "5d68e56f8c0e2b440a1ff1f2b5edff728ee9ddafe1c7dbcce67fc9c509b95e5c",
+   "bytes": 372,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bulk_bridge_deletion_2026-10-28.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bulk_bridge_deletion_2026-10-28.zip!/VERIFICATION_LOG.txt",
+   "sha256": "308b06cf910108062c5e631a188203fb25459a60608373315c237f63f3b560c3",
+   "bytes": 627,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bulk_bridge_deletion_2026-10-28.zip/__nested__/verify_bulk_bridge_deletion.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bulk_bridge_deletion_2026-10-28.zip!/verify_bulk_bridge_deletion.py",
+   "sha256": "fb372504118529823786e83bd6bf96eee13e92eb86c26b513a919501d53d7883",
+   "bytes": 4465,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28.zip/__nested__/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28.zip!/PROOF_REPORT.md",
+   "sha256": "b8925c61bb1911aa10f3c32f785653ade937d038c271fd862b3aab81993d01ac",
+   "bytes": 11071,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/PROOF_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28.zip!/README.md",
+   "sha256": "3b39dcf28e18cd50110467a648736c6b167a744169f1d8c575ab164888a3fa95",
+   "bytes": 633,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28.zip/__nested__/verify_center_flux_bulk_deletion.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28.zip!/verify_center_flux_bulk_deletion.py",
+   "sha256": "bea03b2dffd7156235e11216059e83efa64f856f3d14b59b152e19a8228812b1",
+   "bytes": 4964,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/verify_center_flux_bulk_deletion.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28.zip/__nested__/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28.zip!/VERIFICATION_LOG.txt",
+   "sha256": "1ad14c8cce0cb64c534ebc9f933c08dee1338f7fe87d30ae4dacf7344510b8b3",
+   "bytes": 935,
+   "extension": ".txt",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/VERIFICATION_LOG.txt"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28.zip/__nested__/SHA256_MANIFEST.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_interior_center_flux_deletion_2026-10-28.zip!/SHA256_MANIFEST.json",
+   "sha256": "530d39d601b089782289b3e03a392c9dadb63b4bde5fdad91b509dd1b00bd9e5",
+   "bytes": 377,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_interior_center_flux_deletion_2026-10-28 (1).zip/__nested__/SHA256_MANIFEST.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip/__nested__/sb_sparse_defect_rare_event_20261028/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip!/sb_sparse_defect_rare_event_20261028/README.md",
+   "sha256": "e0c516b57e1cc9fa895ee61323090cd22f21ab93c4e2b53830b56ebd3a3bf9e2",
+   "bytes": 370,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip/__nested__/sb_sparse_defect_rare_event_20261028/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip!/sb_sparse_defect_rare_event_20261028/VERIFICATION_LOG.txt",
+   "sha256": "c4fc96a89d2f4aab4d23da735ee08826ab4b689ab5a79e64b728d3134adb7ede",
+   "bytes": 530,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip/__nested__/sb_sparse_defect_rare_event_20261028/verify_rare_event_soft_mode.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip!/sb_sparse_defect_rare_event_20261028/verify_rare_event_soft_mode.py",
+   "sha256": "41a281faf3f18bd9e09b6cca345ed1ffaf00f4265d02c389164737037c7c7021",
+   "bytes": 4521,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip/__nested__/sb_sparse_defect_rare_event_20261028/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_rare_event_soft_mode_2026-10-28.zip!/sb_sparse_defect_rare_event_20261028/PROOF_REPORT.md",
+   "sha256": "0749e4548da9a4ccaa22b18999b7a25a77bcfc1e49c10f16fbbe472ee56ecadb",
+   "bytes": 8690,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fixed_support_defect_localization_2026-10-28.zip/__nested__/sb_fixed_support_defect_localization_20261028/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fixed_support_defect_localization_2026-10-28.zip!/sb_fixed_support_defect_localization_20261028/README.md",
+   "sha256": "9a2edfcef4a893f5c15ecd50d8272f2c9d8e5f37db7b6a0876ab0fe5c76dae0d",
+   "bytes": 600,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fixed_support_defect_localization_2026-10-28.zip/__nested__/sb_fixed_support_defect_localization_20261028/verify_sparse_defect_energy_localization.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fixed_support_defect_localization_2026-10-28.zip!/sb_fixed_support_defect_localization_20261028/verify_sparse_defect_energy_localization.py",
+   "sha256": "816b8689b0189495e2c8a70634e1e8e49441cad6b9c0920a5de60c2a8051a673",
+   "bytes": 3411,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fixed_support_defect_localization_2026-10-28.zip/__nested__/sb_fixed_support_defect_localization_20261028/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fixed_support_defect_localization_2026-10-28.zip!/sb_fixed_support_defect_localization_20261028/PROOF_REPORT.md",
+   "sha256": "dd2b3e37e1b2ae3a8076e27970c9969604ba69b274ae005ea37ade741372bc02",
+   "bytes": 7923,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_angle_audit_2026-10-28.zip/__nested__/sb_sparse_defect_20261028/verify.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_angle_audit_2026-10-28.zip!/sb_sparse_defect_20261028/verify.py",
+   "sha256": "966278c8163a240d1575fb26322933048905ff02a4685a2db2eb067b4d83e227",
+   "bytes": 2379,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_angle_audit_2026-10-28.zip/__nested__/sb_sparse_defect_20261028/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_angle_audit_2026-10-28.zip!/sb_sparse_defect_20261028/README.md",
+   "sha256": "a5091913ce48ca6c4d1ac026816a6e186538150776b9b49a430cbb1a54c3df08",
+   "bytes": 994,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_sparse_defect_angle_audit_2026-10-28.zip/__nested__/sb_sparse_defect_20261028/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_sparse_defect_angle_audit_2026-10-28.zip!/sb_sparse_defect_20261028/PROOF_REPORT.md",
+   "sha256": "c23a1039bc697f514daeedcdb00d6a5cf7a4d06dafb66ebe0f492229c045d118",
+   "bytes": 11446,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mesoscopic_angle_comparison_2026-10-28.zip/__nested__/sb_mesoscopic_angle_comparison_20261028/verify_mesoscopic_angle_comparison.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mesoscopic_angle_comparison_2026-10-28.zip!/sb_mesoscopic_angle_comparison_20261028/verify_mesoscopic_angle_comparison.py",
+   "sha256": "6d1da939c146d12b7f260bda67882a3aa0a6151f4c7a336d95fc177d0cac4d88",
+   "bytes": 2553,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mesoscopic_angle_comparison_2026-10-28.zip/__nested__/sb_mesoscopic_angle_comparison_20261028/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mesoscopic_angle_comparison_2026-10-28.zip!/sb_mesoscopic_angle_comparison_20261028/PROOF_REPORT.md",
+   "sha256": "7cfa653eeea852ae1926bcea25e205481f9ffa56297d414d4be070a936d9899f",
+   "bytes": 9362,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_volume_uniform_quartic_remainder_2026-10-28.zip/__nested__/sb_uniform_nonlinear_remainder_2026-10-28/verify_quartic_remainder.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_volume_uniform_quartic_remainder_2026-10-28.zip!/sb_uniform_nonlinear_remainder_2026-10-28/verify_quartic_remainder.py",
+   "sha256": "60cdf26c5789ff67ad574fa91538b2d32ac9f96b5d7aebb544a08dffddfee6f1",
+   "bytes": 3000,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_volume_uniform_quartic_remainder_2026-10-28.zip/__nested__/sb_uniform_nonlinear_remainder_2026-10-28/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_volume_uniform_quartic_remainder_2026-10-28.zip!/sb_uniform_nonlinear_remainder_2026-10-28/PROOF_REPORT.md",
+   "sha256": "e57ea80d30fc50ccb3296180b9ce73f6fa22a3c76711677941a1ae8ef66305b5",
+   "bytes": 9568,
+   "extension": ".md",
+   "duplicate_of": null
+  }
+ ]
+}

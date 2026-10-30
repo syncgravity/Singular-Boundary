@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_6_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_6_5.json",
+   "sha256": "9b38da4485557002728209664e0f8fa45ca04be6801b4f0725ebd3247cef6033",
+   "bytes": 28404,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_6_5.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/verify_bianchi.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/verify_bianchi.py",
+   "sha256": "5e82066b939968415bb4f8b78b6c1a67553a4e04a91084c1831ea2a604128c05",
+   "bytes": 2621,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pairs_regeneration.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pairs_regeneration.log",
+   "sha256": "2bc7a1c864e0ceef8a147019bf1c23dcfa387bd62b7c1a0166b88e70febfde6d",
+   "bytes": 581,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/verify_pair_words.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/verify_pair_words.py",
+   "sha256": "c079d7820382ad522b501574630bf6a8fa0fabe9fb4a2600ce7c0bcd1ecdec8c",
+   "bytes": 1598,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/verify_pair_words.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_5_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_5_0.json",
+   "sha256": "0c06340aa14233d1d8f8fcf4e5d9ca433ad06d9a9feb6e1f4801825cab084c0f",
+   "bytes": 27845,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_5_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/verify_mgf.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/verify_mgf.py",
+   "sha256": "a71900d64607cb19cc14a47f07253f8487d5c217a6f7eb4aec9b11f3a3eb551a",
+   "bytes": 682,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cover_radius_6_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cover_radius_6_5.json",
+   "sha256": "b22575f6cbfdc3f5960303c369621e17579b5a1a5e099c3af310d0214359fb6f",
+   "bytes": 57649,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_6_5.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cover_radius_8_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cover_radius_8_0.json",
+   "sha256": "a418e877253c7d5a83ab358d2cf196b249cdc65a02c4b3dd3bdf7f17fee615b4",
+   "bytes": 57831,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_8_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/FORMAL_NOTE (114).md",
+   "archive": "Archive 2.zip",
+   "source_member": "FORMAL_NOTE (114).md",
+   "sha256": "763bd0e7cbb2eee2930587e327ee70ec96c93cbf761a46e41debaf49cc150241",
+   "bytes": 4635,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/FORMAL_NOTE (115).md",
+   "archive": "Archive 2.zip",
+   "source_member": "FORMAL_NOTE (115).md",
+   "sha256": "bb525207ed4f8ce39a9a6e8c32975786020fe970a48599344bb212395e750a31",
+   "bytes": 4989,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/mgf_verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "mgf_verification.json",
+   "sha256": "ad215be3b6c0b2aaf73ff23dd121913ac67e8df560cd138ce45471662e3330a1",
+   "bytes": 2628,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/mgf_verification.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/block_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "block_certificate.json",
+   "sha256": "1994efaa1a7a0fba6e3c2f929942dd80352919da9e07e9eb3e80f1d321fb45db",
+   "bytes": 12698,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/README.md",
+   "sha256": "046a23a34bdbeaf063f0fe5f3bced9ba7985ca8e301c02a93c592e264a9fd719",
+   "bytes": 1354,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/SHA256SUMS.txt",
+   "sha256": "5a2dec9b6d53d0f87c9776468336d76d72cfb83ba2a81efafa0b6ded45d80c76",
+   "bytes": 612,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/VERIFY_LOG.txt",
+   "sha256": "7a2e387d4b748dbabfe1ef894f65d8c8228bce1bb03b5ea6d1deb77b08ad0f62",
+   "bytes": 1585,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/CLAIM_STATUS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/CLAIM_STATUS.csv",
+   "sha256": "46a56bde281fa4a56287ee1f0715b9f6394954ac0a22a1cf1a72f27c0d7e4b38",
+   "bytes": 823,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/verify_energy_shift_certificate.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/verify_energy_shift_certificate.py",
+   "sha256": "255fcef851f0dda7c18e8b010a39f0f9e89c771594d76bf1e369927a174ab5be",
+   "bytes": 3838,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/SOFT_CAP_CERTIFICATES.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/SOFT_CAP_CERTIFICATES.csv",
+   "sha256": "6b819d4bf1ba07159289ace50ac60747673974ada95132dd3f3f4f0865f63d3b",
+   "bytes": 566,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/PROOF_REPORT.md",
+   "sha256": "a868996ca0fd9ffaba7921a914a2a677f9cae0fda8603bf0353ffbdc69c7c9b2",
+   "bytes": 10584,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_ground_selection_energy_shift_2026-10-29.zip/__nested__/sb_ground_selection_energy_shift_20261029/INDICATOR_CAP_CERTIFICATES.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_ground_selection_energy_shift_2026-10-29.zip!/sb_ground_selection_energy_shift_20261029/INDICATOR_CAP_CERTIFICATES.csv",
+   "sha256": "f361b6a3fd3e49a9dbc71ea219ff825b26d0058aeb1349431aa94c252d1a5998",
+   "bytes": 1071,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/CAP_CERTIFICATES.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/CAP_CERTIFICATES.csv",
+   "sha256": "47328c8c879dae7ae474f42655a3a01fc55b4b4409d1b610154c357efc209e82",
+   "bytes": 388,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/CAP_VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/CAP_VERIFY_LOG.txt",
+   "sha256": "91facbb06ed9c703e0502c7e671f781c279db72d24b0a937632c9a2348a1122f",
+   "bytes": 947,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/CLAIM_STATUS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/CLAIM_STATUS.csv",
+   "sha256": "13a37f3879718542e91e5aa7b87c219068f41e2e7554a9f10537b7b3204c2f34",
+   "bytes": 1241,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/COLOR_CAPS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/COLOR_CAPS.csv",
+   "sha256": "c4b047916b9da7a23a2cd5ca118d8a5ac3af228ad895da8c7459220ebc79224b",
+   "bytes": 786,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/ENERGY_CERTIFICATES.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/ENERGY_CERTIFICATES.csv",
+   "sha256": "5f666a56aca15906c92eb67762382ade2117da2949b111ed12050887ccf3f384",
+   "bytes": 873,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/PROOF_REPORT.md",
+   "sha256": "ca7d8603db8b6dda7db20397625cdf6ac0cb195d48fb9d8123d27232294e33e8",
+   "bytes": 11588,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/README.md",
+   "sha256": "48e739dbab5e56afa6375501780743793fa639a13e591d2c5d4d7d60acc43af1",
+   "bytes": 1205,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/SCORE_VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/SCORE_VERIFY_LOG.txt",
+   "sha256": "da250337774f9dc14fd3476f553dab246821974a351167c8e1c1183e8ff7b4c5",
+   "bytes": 1053,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/SHA256SUMS.txt",
+   "sha256": "7bd6003a992c29c3110581be7b3d52001bae2dbb1cf495035433c8b1eb4f0b1d",
+   "bytes": 1018,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/VERIFY_LOG.txt",
+   "sha256": "5e9127bcb28a389b3fb18ef067dfc5ad9c69706022544f72270b7412e3a84137",
+   "bytes": 1577,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/verify_cap_transfer.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/verify_cap_transfer.py",
+   "sha256": "c871a31758522a679aaf468defbf402568823c401628388a08679f38758d614a",
+   "bytes": 2988,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/verify_joint_color.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/verify_joint_color.py",
+   "sha256": "35da313383bd9b766e54bdae79d3ab3c232089c5a0ce164a7594801a5f06ee8e",
+   "bytes": 6278,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip/__nested__/joint_highspin_color_gate/verify_radial_score.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_color_cap_selection_2026-10-29.zip!/joint_highspin_color_gate/verify_radial_score.py",
+   "sha256": "fcaf4b5d77ce0f8b711ad2bf736300260f8122fb1dc015b6adb955665149f675",
+   "bytes": 1310,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/CAP_DATA.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/CAP_DATA.csv",
+   "sha256": "2a30a1e936d11bff7a0c76d38f514bb64af357f971777ece27095f8f53d9a97a",
+   "bytes": 586,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/CHECKIN_INSTRUCTIONS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/CHECKIN_INSTRUCTIONS.md",
+   "sha256": "23e3e9434a46109751271b730de492860c76c84b20a4352a600b94bdc1887a7d",
+   "bytes": 1593,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/CLAIM_LEDGER_ADDITIONS_R3IR441_447.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/CLAIM_LEDGER_ADDITIONS_R3IR441_447.csv",
+   "sha256": "0b2bcdf8d3d278a54d56b68401f29d7f7de220ecd8fcd96b6a6e2519270904d3",
+   "bytes": 2104,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/JOINT_VARIATIONAL_DATA.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/JOINT_VARIATIONAL_DATA.csv",
+   "sha256": "de685d48ee9f7795f774f6e862548e1aec00713a6b480ad963a843b384896d25",
+   "bytes": 949,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/PROOF_REPORT.md",
+   "sha256": "e33462bfa8246bcea6995e048b930069aeb26ecdb46658ea09a16f754ea0c364",
+   "bytes": 9460,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/README.md",
+   "sha256": "ce1da04e825a6f7931ce2418ddf1d8bdc673544a305bf927dbca66abcfbf1029",
+   "bytes": 859,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/SHA256SUMS.txt",
+   "sha256": "1a3a14f364a42e497db986132170fd8e83e573da6164e2d70bd155a2d8ac9164",
+   "bytes": 695,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/VERIFY_LOG.txt",
+   "sha256": "b7b02f2dc4e7f70735551e943c316cd42324340f4dad9280b8bc1b2b33645971",
+   "bytes": 1714,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_highspin_cap_selection_2026-10-29.zip/__nested__/sb_joint_highspin_variational_20261029/verify_joint_packet.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_highspin_cap_selection_2026-10-29.zip!/sb_joint_highspin_variational_20261029/verify_joint_packet.py",
+   "sha256": "8316a8a691c9e5d204441ea3dd924081310ee8e38ad331ceef3a3581368d3269",
+   "bytes": 5220,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/verify_joint_outer_gate.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/verify_joint_outer_gate.py",
+   "sha256": "f973b8ca975a4bad52bcdef94c8ae9a4953eed1b002042fb026114fa0f5a0831",
+   "bytes": 3875,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/SHA256SUMS.txt",
+   "sha256": "80ebc8a6f7b6bf1d16cd58fd8f2b9dc9c05471c2e51a33634c72ef8cf4de6e2d",
+   "bytes": 1239,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/CLAIM_LEDGER_ADDITIONS_R3IR435_440.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/CLAIM_LEDGER_ADDITIONS_R3IR435_440.csv",
+   "sha256": "230aead5996e19e9a549fc9e932f94a7dfb804ab32d442d96c9eb5956b49b98f",
+   "bytes": 1742,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/README.md",
+   "sha256": "7ed35880671cf741ecd2d719175786c244b6f7730937e640c5e21ade56353038",
+   "bytes": 1354,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/VERIFY_LOG.txt",
+   "sha256": "97f0b6d575eeaea3c5c7b2e56535a4ff6981892521b56a992ddf1e0534eb4736",
+   "bytes": 1995,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/RESULTS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/RESULTS.csv",
+   "sha256": "84c9f523dafd5bc32f25f8adb3921d2ee303ae184981e381d5d4fa85b2f36564",
+   "bytes": 3325,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_outer_spin_gate_2026-10-29.zip/__nested__/sb_joint_outer_spin_gate_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_outer_spin_gate_2026-10-29.zip!/sb_joint_outer_spin_gate_20261029/PROOF_REPORT.md",
+   "sha256": "339615f00759b83e5d9245921e0059d1faf5844e9040fa9135b7ef4588388409",
+   "bytes": 11959,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/target_spin1_433.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/target_spin1_433.py",
+   "sha256": "0ce970bfec49773ae34cfc3d5c142f6884423b96ebb44fdc93d33c19da9d8b09",
+   "bytes": 5490,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/REPOSITORY_STATUS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/REPOSITORY_STATUS.md",
+   "sha256": "6382886d728914e39d993502ef1496852fb32a130d8ae7d212dd37bf7e0b073e",
+   "bytes": 1198,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/FUNDAMENTAL_ELECTRIC_HISTOGRAM.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/FUNDAMENTAL_ELECTRIC_HISTOGRAM.json",
+   "sha256": "0f821b24dd494a127cb5f94f9d7fd9b0967225bf0fcaa2c92ab08353479af2bb",
+   "bytes": 768,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/SHA256SUMS.txt",
+   "sha256": "3444976276aa21d4c6388346c27e459fd8261c01707ebb77870bd6d0b4a98dd7",
+   "bytes": 2614,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/verify_saved_433_matrices.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/verify_saved_433_matrices.py",
+   "sha256": "4a217d74eb222b099eb716149ec1ffb0175516d20880a7cdfb519984f4c1a588",
+   "bytes": 3303,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/certify_spin1_minpoly.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/certify_spin1_minpoly.py",
+   "sha256": "099a5ae393bf5406bee16447ad01fa6cb21243bb9ede3f08294c977288cc7279",
+   "bytes": 2165,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/README.md",
+   "sha256": "c0ee2ee41fdfccf4061582f6eff48f4c305029b6a915fe79a99c8c81679295aa",
+   "bytes": 1144,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/REGEN_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/REGEN_LOG.txt",
+   "sha256": "d5f39bcb4cde1e6364acf00bd25105596bcc935e8a4f29fccfcab4a7d799cc9e",
+   "bytes": 2513,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/verify_prior_shell_census.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/verify_prior_shell_census.py",
+   "sha256": "05269a922f961bae72840280b32ecb535030b137fa055291e01a8f03d3144a8d",
+   "bytes": 3976,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/VERIFY_LOG.txt",
+   "sha256": "3aa7d60e76023ffcee695ec193b74f80b91dd764a5a9494a5ca3665059858d83",
+   "bytes": 745,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/build_433_exact.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/build_433_exact.py",
+   "sha256": "6483713165b8e7e7ef572777e321430d931d127195baeccddb34085bf7388241",
+   "bytes": 7801,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/PRIOR_CENSUS_VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/PRIOR_CENSUS_VERIFY_LOG.txt",
+   "sha256": "fc98f63a80745a7313e011431cb9a1d07d988396a4e35d700ddb0a4f97480621",
+   "bytes": 684,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/CLAIM_LEDGER_ADDITIONS_R3IR428_434.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/CLAIM_LEDGER_ADDITIONS_R3IR428_434.csv",
+   "sha256": "6ebf215ed59d8e9a5e75d713c656cb587b6f9225f32c7b65597e03140027bb8c",
+   "bytes": 2253,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip!/sb_433_full_magnetic_20261029/PROOF_REPORT.md",
+   "sha256": "ebc300158389b5e23f0ab3c0718abd3fa6e0cbee5e0eb2cc41cbca5edfd19624",
+   "bytes": 9295,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/CLAIM_LEDGER_ADDITIONS_R3IR421_427.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/CLAIM_LEDGER_ADDITIONS_R3IR421_427.csv",
+   "sha256": "1cce607e2abe0f16e6a4cfc3da7ca98b5fe986a91033120ff5068284c20006f3",
+   "bytes": 2244,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/FUNDAMENTAL_ELECTRIC_HISTOGRAM.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/FUNDAMENTAL_ELECTRIC_HISTOGRAM.json",
+   "sha256": "0f821b24dd494a127cb5f94f9d7fd9b0967225bf0fcaa2c92ab08353479af2bb",
+   "bytes": 768,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/FUNDAMENTAL_ELECTRIC_HISTOGRAM.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/PROOF_REPORT.md",
+   "sha256": "88d60a968ceb92aca36c5baf128f9bfcecb726a2987b0b31ced0df918aada027",
+   "bytes": 10871,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/README.md",
+   "sha256": "94d3bf546b93ef1962947bc8a21a521951306992b6391622d525b7ce7d88ff9d",
+   "bytes": 1284,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/ROTOR_BOUNDARY_RESIDUALS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/ROTOR_BOUNDARY_RESIDUALS.csv",
+   "sha256": "ad434813071b025c2e9867bb33b296adc11a75a6867c1c8b8208214130cafda4",
+   "bytes": 1465,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/SHA256SUMS.txt",
+   "sha256": "cbaa3bc9fb886055176c018dafa08e5bb94001d93fe8f8ebb95cce7cd1b17eb8",
+   "bytes": 749,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/VERIFY_LOG.txt",
+   "sha256": "e2c79c180a0a8da0dcff0ab864028fb59339507e7903a02893037b233f08b761",
+   "bytes": 2532,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/verify_exact_magnetic_edge_leakage.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/verify_exact_magnetic_edge_leakage.py",
+   "sha256": "1dd89792f021b97ee3e089990ba338ecf7d4cefe3cf16798488419dce4c8fcec",
+   "bytes": 1657,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/verify_fundamental_shell_winding.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/verify_fundamental_shell_winding.py",
+   "sha256": "05269a922f961bae72840280b32ecb535030b137fa055291e01a8f03d3144a8d",
+   "bytes": 3976,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_complete_433_wilson_magnetic_2026-10-29.zip/__nested__/sb_433_full_magnetic_20261029/verify_prior_shell_census.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip/__nested__/sb_433_gateway_20261029/verify_state_dependent_rotor_residual.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_fundamental_winding_and_magnetic_leakage_2026-10-29.zip!/sb_433_gateway_20261029/verify_state_dependent_rotor_residual.py",
+   "sha256": "a78d65ffc0f6761d9a3765b8947060f688f63d45ce8c5feeeb9b52763c6605f7",
+   "bytes": 1205,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/SHA256SUMS.txt",
+   "sha256": "fc58c8a9cfd5fe4167a87def10b3ce2f4f79c82b54ab5c2d1e4d0cbe0a64e35b",
+   "bytes": 934,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/ROTOR_CHECKS.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/ROTOR_CHECKS.json",
+   "sha256": "63929174a5d302ee70e470491ad963efeb4466ed2a9829c9cd98cb162bb801d1",
+   "bytes": 4891,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/FUNDAMENTAL_NETWORK_DIMENSIONS.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/FUNDAMENTAL_NETWORK_DIMENSIONS.json",
+   "sha256": "66acb202e367df4915dbbcadaefde7e9924eaebacdbc996775a602062da70d6f",
+   "bytes": 304,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/VERIFY_SUMMARY.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/VERIFY_SUMMARY.txt",
+   "sha256": "b3025bbe7f80339ea01e57b08b2c197dd9f1a0c8c529dd3ac4a3131ac6583452",
+   "bytes": 557,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/README.md",
+   "sha256": "45c59e3f9ca1e4eca6167a1f2ed16368fc08ac2004c65f6ea25bcde0607ca71e",
+   "bytes": 1338,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/verify_eight_face_overlap_exclusion.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/verify_eight_face_overlap_exclusion.py",
+   "sha256": "844012f222da32e83cd59aa1f9165fb56513dc94c7d0d827e258db927cb1a334",
+   "bytes": 2071,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/verify_universal_link_spin_gate.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/verify_universal_link_spin_gate.py",
+   "sha256": "bd0891c2768b27ba16cf12da87d75892919ac016da58910538a8b6a3450987c0",
+   "bytes": 2956,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/VERIFY_LOG.txt",
+   "sha256": "81a4c21e77c7dcfd89181d518489b6a627c8650014b687ebb80588649ed3272e",
+   "bytes": 5623,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/verify_universal_magnetic_compression.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/verify_universal_magnetic_compression.py",
+   "sha256": "e12afeaadd581e762b4b57ddf7653fb52378e8a9f45d677c3a3a37762fbe92cd",
+   "bytes": 1640,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/enumerate_eight_face_fundamental_networks.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/enumerate_eight_face_fundamental_networks.py",
+   "sha256": "4afa60b8d8085305b6aef4441e63c0b2fa0e7cd360dafdf942849efb964436c4",
+   "bytes": 2691,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_universal_link_spin_resolution_2026-10-29.zip/__nested__/sb_universal_link_spin_gate_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_universal_link_spin_resolution_2026-10-29.zip!/sb_universal_link_spin_gate_20261029/PROOF_REPORT.md",
+   "sha256": "d43756bc324d3e3154d00d0b0ae5c56fd332ec6ef331f93e39e9efa97b1bccda",
+   "bytes": 14507,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/PROOF_REPORT.md",
+   "sha256": "ddad5621b1f9f40461773825007ee279656e29a0753b6ebb8fa3037a2f6c593d",
+   "bytes": 10588,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/README.md",
+   "sha256": "64ac50c590a5cfa7cfdb42c1f89ca325af79e42a3460d0b15747a3ae643eeb0e",
+   "bytes": 1455,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/SHA256SUMS.txt",
+   "sha256": "3b2db4e7be4d495ec565c2e569d028c85bdc38695a21d687b1e64f0b193ec30a",
+   "bytes": 519,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/VERIFY_LOG.txt",
+   "sha256": "9293110709a0d764c0748fab5acf04a17c39b8605aace0c481b48e09e89eb15d",
+   "bytes": 2567,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/ritz_results.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/ritz_results.json",
+   "sha256": "e2dfdebf54a453e24c0d3ef2a86bb5523a3631d9257a497f5ae8d09181bca1ff",
+   "bytes": 3503,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/verify_eight_face_joint_ritz.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/verify_eight_face_joint_ritz.py",
+   "sha256": "b5ead881fe82f7926bd9a820a15098f14ae547ebfe18e2b9140e1476b66659f5",
+   "bytes": 5835,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip/__nested__/sb_eight_face_ritz_gate_20261029/verify_local_spin_resolution.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_eight_face_joint_ritz_nogo_2026-10-29.zip!/sb_eight_face_ritz_gate_20261029/verify_local_spin_resolution.py",
+   "sha256": "59a7833cbdc81a66153c0a9144fde46fffcf0232b3e7d479d0ec603958f6ebf0",
+   "bytes": 1267,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/SHA256SUMS.txt",
+   "sha256": "991c21cb9ec5484f0ca301b5090c018bcfdf0d46e81cc8664484928312117f23",
+   "bytes": 815,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_ritz_certification.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/verify_ritz_certification.py",
+   "sha256": "b86849c7cab8ae72b3f13d475998989d728b905abaf1f473e7153b2c721a0e4a",
+   "bytes": 1191,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/README.md",
+   "sha256": "b92c064338dcf8f7416169ecd6ab9aae47e085cc8b2b1761ddb12c560b8570af",
+   "bytes": 1532,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/CERTIFICATION_PROTOCOL.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/CERTIFICATION_PROTOCOL.md",
+   "sha256": "41c84d6853ffdbd33c65cd2be8bdf65ba5d1350c8e8786a30ed57f5813b3f6b0",
+   "bytes": 3174,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/VERIFY_LOG.txt",
+   "sha256": "5d30fe3b552cb0ee38be1e14685ae118698af3aa74374c4bbe1f45a50f5ed06c",
+   "bytes": 4425,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_spin_network_two_face.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/verify_spin_network_two_face.py",
+   "sha256": "6512b69ad3ef2efbb2bd1fa18e2b598907bac1fe95cbfb070f282332c7254f73",
+   "bytes": 3594,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_multiface_trial_and_tail.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/verify_multiface_trial_and_tail.py",
+   "sha256": "4e3d2d46241b3d249db905ffa1f474fabb01b5c425fd7f8f878496f421ce610c",
+   "bytes": 2975,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_exact_tree_gauge_q8.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/verify_exact_tree_gauge_q8.py",
+   "sha256": "a52d688e9d4b143d649b8ee6dc9eed2888116bfe480e734cdf682fa60ab780b9",
+   "bytes": 6504,
+   "extension": ".py",
+   "duplicate_of": null
+  }
+ ]
+}

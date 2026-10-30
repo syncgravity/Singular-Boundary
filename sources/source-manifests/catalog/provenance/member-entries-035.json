@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_su2_class_leakage.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/verify_su2_class_leakage.py",
+   "sha256": "a823392be58a58cf6368fd92620d404677229afe6b913d853adfe7a8336566d2",
+   "bytes": 3361,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip!/sb_spin_network_two_face_20261029/PROOF_REPORT.md",
+   "sha256": "82daf74e48ded885edba242fa948375405230f8fac83348833477c74c026c0b1",
+   "bytes": 11600,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/SHA256SUMS.txt",
+   "sha256": "24c9920678b5965d4568ec2ad88d3f415fcc9ef8a61c77683f788b717b95296c",
+   "bytes": 429,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/README.md",
+   "sha256": "e557d2bbc561ef014f637c4e490c1a4432784a587d67de6d2d1ecaafd09f84eb",
+   "bytes": 848,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/VERIFY_LOG.txt",
+   "sha256": "dcd643c05f59afe22f18699b382c5f3fc1ad305749d139d5706da75b61e6eec8",
+   "bytes": 919,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/verify_exact_tree_gauge_q8.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/verify_exact_tree_gauge_q8.py",
+   "sha256": "a52d688e9d4b143d649b8ee6dc9eed2888116bfe480e734cdf682fa60ab780b9",
+   "bytes": 6504,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_exact_tree_gauge_q8.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/verify_su2_class_leakage.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/verify_su2_class_leakage.py",
+   "sha256": "a823392be58a58cf6368fd92620d404677229afe6b913d853adfe7a8336566d2",
+   "bytes": 3361,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_joint_spin_network_electric_certification_2026-10-29.zip/__nested__/sb_spin_network_two_face_20261029/verify_su2_class_leakage.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip/__nested__/sb_exact_tree_gauge_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_exact_su2_color_leakage_and_eight_face_tree_gauge_2026-10-29.zip!/sb_exact_tree_gauge_20261029/PROOF_REPORT.md",
+   "sha256": "a21fc3eb3103ccc4cad860fa1e1cc4ca67b0d21fca7b646d195e6bf58694c960",
+   "bytes": 10533,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/SHA256SUMS.txt",
+   "sha256": "6fa2a53a55a6ca616649b514aa96417f4a849ce4a52ca679eba0a2dd9dc9d90b",
+   "bytes": 445,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/verify_late_jet_and_wilson_fsum.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/verify_late_jet_and_wilson_fsum.py",
+   "sha256": "2e5d5fc3995f72ad641003da77e896f5cfbceb70e6b345338f83789d9505a189",
+   "bytes": 2914,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/README.md",
+   "sha256": "7f202cb7b0732e5ca06bc00cd46f2f96feb96044bae4aeea5e9fe507c95475c6",
+   "bytes": 1138,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/VERIFY_LOG.txt",
+   "sha256": "92baa6523ea6c0782c18de23beed4d23f04c2636eba5dd2c8aae2549eb6230b3",
+   "bytes": 1995,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/CLAIM_LEDGER_ADDITIONS_R3IR389_393.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/CLAIM_LEDGER_ADDITIONS_R3IR389_393.csv",
+   "sha256": "1b291adf7ab59f91550803610857ee42ae611146019a97d94f97aa994bdbc91c",
+   "bytes": 1636,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip/__nested__/sb_late_response_jet_obstruction_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_late_wilson_fsum_and_finite_jet_nogo_2026-10-29.zip!/sb_late_response_jet_obstruction_20261029/PROOF_REPORT.md",
+   "sha256": "378297afac3fa662e741dabbb9bc4f2d19ed463048574d0d492fac7630793d80",
+   "bytes": 10053,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/CLAIM_LEDGER_ADDITIONS_R3IR383_388.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/CLAIM_LEDGER_ADDITIONS_R3IR383_388.csv",
+   "sha256": "ab79a3baca01953f3a48b80078cb6230ec107a6cf505d8c34e8b8bf659aeb2e3",
+   "bytes": 1913,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/SHA256SUMS.txt",
+   "sha256": "1b79baee498ff28576f97eb71a685aecfda8ab816a2603cf2ea0a3ad5b81c545",
+   "bytes": 452,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/verify_coupling_frequency_localization.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/verify_coupling_frequency_localization.py",
+   "sha256": "f2f98ac7105a6ad0260ddd6d484dbee7b1449c4f2bbd3c0121aa807c3c9af334",
+   "bytes": 3251,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/README.md",
+   "sha256": "4bf09896f9f9836c42fe05b65a5384de886439cf1fd6cc0f053cbd35152991eb",
+   "bytes": 704,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/VERIFY_LOG.txt",
+   "sha256": "6ca4c256408b391fc81fbdd374d8c250ef47bd8dd68afe7bd8a0c79e3a9c6c21",
+   "bytes": 785,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip/__nested__/sb_coupling_frequency_localization_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_coupling_frequency_localization_2026-10-29.zip!/sb_coupling_frequency_localization_20261029/PROOF_REPORT.md",
+   "sha256": "d9de0e82d6663002f08e7e2cedc6f5adb5a12d02ceb04d5a53b7d1874a657855",
+   "bytes": 9653,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/CLAIM_LEDGER_ADDITIONS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/CLAIM_LEDGER_ADDITIONS.csv",
+   "sha256": "2ff3ba75731bb4d2ef1889761594b1103263c6318c6342b0957c71d6974034ff",
+   "bytes": 1665,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/SHA256SUMS.txt",
+   "sha256": "020911a7903801835dccb813c0a0f7be97c88d0243db24596217a4f7b915009d",
+   "bytes": 522,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/CHECKIN_INSTRUCTIONS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/CHECKIN_INSTRUCTIONS.md",
+   "sha256": "a271c89a241837f0a0faae675dad284edfe5bcf43d73dc7ebea562aaefb76c47",
+   "bytes": 1043,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/verify_fulltime_susceptibility.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/verify_fulltime_susceptibility.py",
+   "sha256": "262925b83d792ead2b19890093435327ae9660c5989add78beab95b2b0a64041",
+   "bytes": 3050,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/README.md",
+   "sha256": "b8a0b05455e2ee4590a35d36fcb54568425220ad7d971309cbca16c73b3cdf2f",
+   "bytes": 792,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/VERIFY_LOG.txt",
+   "sha256": "63748dbaea870ffbc19f63c804018837a813e576e065a12a95648a44eb17051f",
+   "bytes": 1392,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip/__nested__/sb_wilson_fulltime_susceptibility_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_fulltime_autocorrelation_cauchy_nogo_2026-10-29.zip!/sb_wilson_fulltime_susceptibility_20261029/PROOF_REPORT.md",
+   "sha256": "74d333bbafd79d317bb8f92c837532caab47efc19a947e7db3c76a87317d06a2",
+   "bytes": 10079,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/CLAIM_LEDGER_ADDITIONS.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/CLAIM_LEDGER_ADDITIONS.csv",
+   "sha256": "b418009f16477d9d997cab088ac5fface449703f9fdabbc728ddc83c61b0531c",
+   "bytes": 1440,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/SHA256SUMS.txt",
+   "sha256": "75aad9d8af631a8303035f38757574246d87610551aa1270f8242c63fef08eeb",
+   "bytes": 706,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/CHECKIN_INSTRUCTIONS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/CHECKIN_INSTRUCTIONS.md",
+   "sha256": "4d5e2bf16915395750a4cb918416b870c546bb7fd069153e852b5eaf81c162db",
+   "bytes": 1113,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/verify_skein_spectral.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/verify_skein_spectral.py",
+   "sha256": "b2667d40443f3ae7cc936f4bdf60a2e56d74ad0254390e5827a1b8f88214a765",
+   "bytes": 3886,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/README.md",
+   "sha256": "cc016b1d8f172598ff3c57865794dcf860fe5be89b1a1f94af487308f3847269",
+   "bytes": 918,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/ADDITIONAL_SEMIGROUP_AUDIT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/ADDITIONAL_SEMIGROUP_AUDIT.md",
+   "sha256": "42d1a527d89d1e8f1491b3fef0fa6d3d62c1f856b1e178c4f6d61c05823f5c96",
+   "bytes": 1918,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/VERIFY_LOG.txt",
+   "sha256": "b314716114f1eebc3e692d0fb2c85bb30a47407921fe55ddf949a16270cbbe4a",
+   "bytes": 838,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/verify_semigroup_short_time.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/verify_semigroup_short_time.py",
+   "sha256": "029e16ca77f70acb2217a73554f0428b1efd2b27a4282497e5892d88cbf6ffb5",
+   "bytes": 1069,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip!/sb_mixed_fsum_checkin_20261029/PROOF_REPORT.md",
+   "sha256": "28157d02ff7ac7a19cce9e3312bcb5f59b2c8931a7de185aeca096040ecba3e0",
+   "bytes": 10279,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip/__nested__/sb_connected_mixed_skein_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip!/sb_connected_mixed_skein_20261029/SHA256SUMS.txt",
+   "sha256": "fd66252acdd508ac68d7aba3ea14efc7311ac535070d4da400575df21e2d6ebf",
+   "bytes": 330,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip/__nested__/sb_connected_mixed_skein_20261029/verify_skein_spectral.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip!/sb_connected_mixed_skein_20261029/verify_skein_spectral.py",
+   "sha256": "b2667d40443f3ae7cc936f4bdf60a2e56d74ad0254390e5827a1b8f88214a765",
+   "bytes": 3886,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/verify_skein_spectral.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip/__nested__/sb_connected_mixed_skein_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip!/sb_connected_mixed_skein_20261029/README.md",
+   "sha256": "cc016b1d8f172598ff3c57865794dcf860fe5be89b1a1f94af487308f3847269",
+   "bytes": 918,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip/__nested__/sb_connected_mixed_skein_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip!/sb_connected_mixed_skein_20261029/VERIFY_LOG.txt",
+   "sha256": "b314716114f1eebc3e692d0fb2c85bb30a47407921fe55ddf949a16270cbbe4a",
+   "bytes": 838,
+   "extension": ".txt",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/VERIFY_LOG.txt"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip/__nested__/sb_connected_mixed_skein_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_wilson_mixed_fsum_2026-10-29.zip!/sb_connected_mixed_skein_20261029/PROOF_REPORT.md",
+   "sha256": "28157d02ff7ac7a19cce9e3312bcb5f59b2c8931a7de185aeca096040ecba3e0",
+   "bytes": 10279,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_mixed_fsum_checkin_and_short_time_2026-10-29.zip/__nested__/sb_mixed_fsum_checkin_20261029/PROOF_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_even_portal_spectral_2026-10-29.zip/__nested__/sb_center_even_portal_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_even_portal_spectral_2026-10-29.zip!/sb_center_even_portal_20261029/SHA256SUMS.txt",
+   "sha256": "02f8e6a887df290394dacdbe1cc68e0983041d7b682365a5db614fe851b3d6fb",
+   "bytes": 334,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_even_portal_spectral_2026-10-29.zip/__nested__/sb_center_even_portal_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_even_portal_spectral_2026-10-29.zip!/sb_center_even_portal_20261029/README.md",
+   "sha256": "073773f732715538de6b54c025befbf756eba70f9f02b052f0a1c1287e165d1c",
+   "bytes": 1123,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_even_portal_spectral_2026-10-29.zip/__nested__/sb_center_even_portal_20261029/verify_center_even_portal.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_even_portal_spectral_2026-10-29.zip!/sb_center_even_portal_20261029/verify_center_even_portal.py",
+   "sha256": "bbea662adeb9ec4878dcdb4520d891d30f40ecfd361e1ae2e2842f8a0158350f",
+   "bytes": 3194,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_even_portal_spectral_2026-10-29.zip/__nested__/sb_center_even_portal_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_even_portal_spectral_2026-10-29.zip!/sb_center_even_portal_20261029/VERIFY_LOG.txt",
+   "sha256": "4e38e941f040b463d99d159610922e27cad395a09ac9bda622e7b3f27186bf92",
+   "bytes": 1059,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_even_portal_spectral_2026-10-29.zip/__nested__/sb_center_even_portal_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_even_portal_spectral_2026-10-29.zip!/sb_center_even_portal_20261029/PROOF_REPORT.md",
+   "sha256": "ad5c7d4a255eb1fdd3570d13e735273a9565ece0a3aab6a5d5dc8266dd0a3153",
+   "bytes": 9633,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_flux_spectral_filter_2026-10-29.zip/__nested__/sb_center_sector_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_flux_spectral_filter_2026-10-29.zip!/sb_center_sector_20261029/SHA256SUMS.txt",
+   "sha256": "9c490253d5092230c51245298479f2ca176a90f9acc05694df7a5754eec5b32f",
+   "bytes": 329,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_flux_spectral_filter_2026-10-29.zip/__nested__/sb_center_sector_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_flux_spectral_filter_2026-10-29.zip!/sb_center_sector_20261029/README.md",
+   "sha256": "d83bcd0b93a15fdcb47528d34701f5f3185bf7dc8a0b6aa2d0f46dfcf5fd096c",
+   "bytes": 701,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_flux_spectral_filter_2026-10-29.zip/__nested__/sb_center_sector_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_flux_spectral_filter_2026-10-29.zip!/sb_center_sector_20261029/VERIFY_LOG.txt",
+   "sha256": "9783d14dcfcefdd66de57608317ebe578666b90da7fed7becc9de8938067d24e",
+   "bytes": 592,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_flux_spectral_filter_2026-10-29.zip/__nested__/sb_center_sector_20261029/verify_center_sector.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_flux_spectral_filter_2026-10-29.zip!/sb_center_sector_20261029/verify_center_sector.py",
+   "sha256": "2de01ded51aefe8810286ffec7bac7cab499e36689f17f2c28e963058258dbc0",
+   "bytes": 3646,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_center_flux_spectral_filter_2026-10-29.zip/__nested__/sb_center_sector_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_center_flux_spectral_filter_2026-10-29.zip!/sb_center_sector_20261029/PROOF_REPORT.md",
+   "sha256": "72461e69a68b0df62deae6580e5dd91ed29958fb021d5210a32e250f32af8f38",
+   "bytes": 9953,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_asymmetry_stability_2026-10-29.zip/__nested__/sb_reflection_asymmetry_stability_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_asymmetry_stability_2026-10-29.zip!/sb_reflection_asymmetry_stability_20261029/SHA256SUMS.txt",
+   "sha256": "0979b658b308ed3f6136625c6531384bda14b5018f0e8bb58f110961ed648df6",
+   "bytes": 335,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_asymmetry_stability_2026-10-29.zip/__nested__/sb_reflection_asymmetry_stability_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_asymmetry_stability_2026-10-29.zip!/sb_reflection_asymmetry_stability_20261029/README.md",
+   "sha256": "1c484889373aafaeec6b01b0d95712a781d5890c94ff084a609bbe560f7950f6",
+   "bytes": 564,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_asymmetry_stability_2026-10-29.zip/__nested__/sb_reflection_asymmetry_stability_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_asymmetry_stability_2026-10-29.zip!/sb_reflection_asymmetry_stability_20261029/VERIFY_LOG.txt",
+   "sha256": "b661179fbe9fd929bdfd7e3a181b7beab2dd26d4045189fad179137664cb714c",
+   "bytes": 2540,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_asymmetry_stability_2026-10-29.zip/__nested__/sb_reflection_asymmetry_stability_20261029/verify_asymmetry_stability.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_asymmetry_stability_2026-10-29.zip!/sb_reflection_asymmetry_stability_20261029/verify_asymmetry_stability.py",
+   "sha256": "4737beeabfa56fe60eb2153ca19abcabb5b08b18402e7d84afbd08dc153f03ff",
+   "bytes": 5401,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_asymmetry_stability_2026-10-29.zip/__nested__/sb_reflection_asymmetry_stability_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_asymmetry_stability_2026-10-29.zip!/sb_reflection_asymmetry_stability_20261029/PROOF_REPORT.md",
+   "sha256": "fa2495b7ad14d4da8f31cf5e890c0b953468647547a9c8a2bead8ae1dd0cb4aa",
+   "bytes": 10484,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_seam_cap_2026-10-29.zip/__nested__/sb_reflection_seam_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_seam_cap_2026-10-29.zip!/sb_reflection_seam_20261029/SHA256SUMS.txt",
+   "sha256": "38ef53ea101284c27bc39aec2e73246df5dab281edcbe7ec83e20d0e8bd03a19",
+   "bytes": 331,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_seam_cap_2026-10-29.zip/__nested__/sb_reflection_seam_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_seam_cap_2026-10-29.zip!/sb_reflection_seam_20261029/README.md",
+   "sha256": "caf6f66547df3b276cd214b7052f1965c7da90ec70af930a007686f2ef2c1461",
+   "bytes": 663,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_seam_cap_2026-10-29.zip/__nested__/sb_reflection_seam_20261029/verify_reflection_seam.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_seam_cap_2026-10-29.zip!/sb_reflection_seam_20261029/verify_reflection_seam.py",
+   "sha256": "cfa75f6fb71502aa5c9319ee2154d9d0c847e7f2dadefd394bff173fdb9f58fb",
+   "bytes": 3865,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_seam_cap_2026-10-29.zip/__nested__/sb_reflection_seam_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_seam_cap_2026-10-29.zip!/sb_reflection_seam_20261029/VERIFY_LOG.txt",
+   "sha256": "cfe4172b4c6348cd6b664f66599efa9a832ec518441d81d60ac0da8007e112b3",
+   "bytes": 1651,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_reflection_seam_cap_2026-10-29.zip/__nested__/sb_reflection_seam_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_reflection_seam_cap_2026-10-29.zip!/sb_reflection_seam_20261029/PROOF_REPORT.md",
+   "sha256": "c76ae21b92873653cd96cb93994214e52f08de0dcda0720f8a4069011346e2ba",
+   "bytes": 10307,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/verify_corner_inclusion.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/verify_corner_inclusion.py",
+   "sha256": "e743294bb114c5799228454270f0a76c8e9248d3fba2c41f041d0ae9aa0c36af",
+   "bytes": 1959,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/SHA256SUMS.txt",
+   "sha256": "7632da87dd562411b5ae79bd9429fcfd78f121ff941ef233828417b519f0276e",
+   "bytes": 432,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/verify_connected_3x3_selection.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/verify_connected_3x3_selection.py",
+   "sha256": "d5b9c365cad7bcd53d6fd703115eb3d4858a811961eabcdcf6919faa6ce97f29",
+   "bytes": 3299,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/README.md",
+   "sha256": "527e392167619361d3995dea09513efd53566cb8f313cdc2f094b613e4cb1acd",
+   "bytes": 640,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/VERIFY_LOG.txt",
+   "sha256": "663afa1e4d8971890fd5a0fd83b9a04acaf3b457b632fbc1b6ab51398c68147f",
+   "bytes": 910,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip/__nested__/sb_connected_bulk_selection_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_connected_bulk_corner_sewing_2026-10-29.zip!/sb_connected_bulk_selection_20261029/PROOF_REPORT.md",
+   "sha256": "eafbb212e280e083b30ee1984b20ec913f387b348791d8e86fec414e0af226fe",
+   "bytes": 11132,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip/__nested__/sb_open_arc_components_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip!/sb_open_arc_components_20261029/SHA256SUMS.txt",
+   "sha256": "d2d2f1bb319df05af76572a738b9ccc8a25883a23db8b1bb9bfb2b4a1f5cd733",
+   "bytes": 335,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip/__nested__/sb_open_arc_components_20261029/verify_open_arc_components.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip!/sb_open_arc_components_20261029/verify_open_arc_components.py",
+   "sha256": "1fd264bae3978ae3bdf9eafeffe44242b53538e81e9eb55820369b49a25a3caa",
+   "bytes": 4328,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip/__nested__/sb_open_arc_components_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip!/sb_open_arc_components_20261029/README.md",
+   "sha256": "a919aab435c806f716aec756719125db605f55e3262f73a29e1d350addb6d69a",
+   "bytes": 1039,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip/__nested__/sb_open_arc_components_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip!/sb_open_arc_components_20261029/VERIFY_LOG.txt",
+   "sha256": "bf3a048214142e2c49bdcef1af3d5a7bb9a2bd18309d32c613dc750eb302822c",
+   "bytes": 619,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip/__nested__/sb_open_arc_components_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_open_arc_haar_two_cycle_2026-10-29.zip!/sb_open_arc_components_20261029/PROOF_REPORT.md",
+   "sha256": "e82902b1dbad35fb347ff2a2a59bc2c9b9e7b37b3cb9c76c6cb901ec1749e9d5",
+   "bytes": 10398,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_four_neighbor_selection_2026-10-29.zip/__nested__/sb_four_neighbor_selection_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_four_neighbor_selection_2026-10-29.zip!/sb_four_neighbor_selection_20261029/SHA256SUMS.txt",
+   "sha256": "e27d7096fc04f00ad53425a1643951ac5c9dba88a1cb29b1da1096d0c91e99a7",
+   "bytes": 339,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_four_neighbor_selection_2026-10-29.zip/__nested__/sb_four_neighbor_selection_20261029/verify_four_neighbor_selection.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_four_neighbor_selection_2026-10-29.zip!/sb_four_neighbor_selection_20261029/verify_four_neighbor_selection.py",
+   "sha256": "7464dc4ebf7e13985caf3f8e75a343b6913f350659d55a61e5a97f315bb54693",
+   "bytes": 4102,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_four_neighbor_selection_2026-10-29.zip/__nested__/sb_four_neighbor_selection_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_four_neighbor_selection_2026-10-29.zip!/sb_four_neighbor_selection_20261029/README.md",
+   "sha256": "0b0dac1719f7d4731b51f4631338a245e9f420293127cb68b0ecae3c633fafe0",
+   "bytes": 825,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_four_neighbor_selection_2026-10-29.zip/__nested__/sb_four_neighbor_selection_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_four_neighbor_selection_2026-10-29.zip!/sb_four_neighbor_selection_20261029/VERIFY_LOG.txt",
+   "sha256": "2a842e3e2499a524f9b92e7edbf7d0fd7e7f1cf9543734cfa8110e335e62effc",
+   "bytes": 1297,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_four_neighbor_selection_2026-10-29.zip/__nested__/sb_four_neighbor_selection_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_four_neighbor_selection_2026-10-29.zip!/sb_four_neighbor_selection_20261029/PROOF_REPORT.md",
+   "sha256": "e07c564e61d8ec6a5af55031a8422ce17d2a0787a9fe4f27fb4f2e1e064d08d3",
+   "bytes": 10616,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_spin_selection_2026-10-29.zip/__nested__/sb_wilson_spin_selection_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_spin_selection_2026-10-29.zip!/sb_wilson_spin_selection_20261029/SHA256SUMS.txt",
+   "sha256": "e4f6926f4e6b4dff57d191ffdf327d2e3a23d65f0b52870da42ae6d650a2bff6",
+   "bytes": 337,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_spin_selection_2026-10-29.zip/__nested__/sb_wilson_spin_selection_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_spin_selection_2026-10-29.zip!/sb_wilson_spin_selection_20261029/README.md",
+   "sha256": "5c4b5832839618d0d717ca0c1c98a7d8db1ed82a086c682d61c672b18ca012cd",
+   "bytes": 698,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_spin_selection_2026-10-29.zip/__nested__/sb_wilson_spin_selection_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_spin_selection_2026-10-29.zip!/sb_wilson_spin_selection_20261029/VERIFY_LOG.txt",
+   "sha256": "43fdba6f98b33128269a3124832e63cb80e5c212e01fcd02606db446b2bde6ce",
+   "bytes": 763,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_spin_selection_2026-10-29.zip/__nested__/sb_wilson_spin_selection_20261029/verify_wilson_spin_selection.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_spin_selection_2026-10-29.zip!/sb_wilson_spin_selection_20261029/verify_wilson_spin_selection.py",
+   "sha256": "508d7ac7f7e4f0187444f8e9234aee7ead0d9cdf32c797ef55b94c6422cb1da0",
+   "bytes": 2519,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_wilson_spin_selection_2026-10-29.zip/__nested__/sb_wilson_spin_selection_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_wilson_spin_selection_2026-10-29.zip!/sb_wilson_spin_selection_20261029/PROOF_REPORT.md",
+   "sha256": "86b517022934d6634402d4d5137758cb21a56062bf1f1f77839b6d84c368d8f5",
+   "bytes": 10295,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bridge_parity_gap_audit_2026-10-29.zip/__nested__/sb_bridge_parity_gap_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bridge_parity_gap_audit_2026-10-29.zip!/sb_bridge_parity_gap_20261029/PROOF_REPORT.md",
+   "sha256": "c2a3977a54f5917565c5fd29fbe06b1c5067438e44c4400fa32785288d1013fa",
+   "bytes": 7982,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bridge_parity_gap_audit_2026-10-29.zip/__nested__/sb_bridge_parity_gap_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bridge_parity_gap_audit_2026-10-29.zip!/sb_bridge_parity_gap_20261029/VERIFY_LOG.txt",
+   "sha256": "50ffd1ed9625bf59effd89728e75a3547f6795c85627b7d6b4e8ed707262c2a8",
+   "bytes": 602,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bridge_parity_gap_audit_2026-10-29.zip/__nested__/sb_bridge_parity_gap_20261029/verify_bridge_parity_and_abelian.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bridge_parity_gap_audit_2026-10-29.zip!/sb_bridge_parity_gap_20261029/verify_bridge_parity_and_abelian.py",
+   "sha256": "e2a5f8966c3302e37b91aeb95d5847b7ed6e3ec28ee7027f2021760982883066",
+   "bytes": 2421,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_bridge_parity_gap_audit_2026-10-29.zip/__nested__/sb_bridge_parity_gap_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_bridge_parity_gap_audit_2026-10-29.zip!/sb_bridge_parity_gap_20261029/SHA256SUMS.txt",
+   "sha256": "38ba8fa7075491c727759e640bc555bacd1eced8f5d82453cfc177fab3f204be",
+   "bytes": 265,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/SINGULAR_BOUNDARY_PROOF_STATUS_2026-10-29.md",
+   "archive": "Archive 3.zip",
+   "source_member": "SINGULAR_BOUNDARY_PROOF_STATUS_2026-10-29.md",
+   "sha256": "034eb4b103ec644d62f9dced6a3cf6d346bf1c339747e63f02f14efc51271cc7",
+   "bytes": 6065,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_double_selfweighted_cap_response_2026-10-29.zip/__nested__/sb_cap_double_selfweighted_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_double_selfweighted_cap_response_2026-10-29.zip!/sb_cap_double_selfweighted_20261029/README.md",
+   "sha256": "b803cd54482ec2af033eae702faa2c17ab4449c491df767f01e989bfe7a44197",
+   "bytes": 797,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_double_selfweighted_cap_response_2026-10-29.zip/__nested__/sb_cap_double_selfweighted_20261029/verify_double_selfweighted_cap.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_double_selfweighted_cap_response_2026-10-29.zip!/sb_cap_double_selfweighted_20261029/verify_double_selfweighted_cap.py",
+   "sha256": "20252f7f1b89ceea5b062905203ccb234e4f25d7946ad88fb2ee0698dce51691",
+   "bytes": 3723,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_double_selfweighted_cap_response_2026-10-29.zip/__nested__/sb_cap_double_selfweighted_20261029/VERIFY_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_double_selfweighted_cap_response_2026-10-29.zip!/sb_cap_double_selfweighted_20261029/VERIFY_LOG.txt",
+   "sha256": "35158d3da0d08335f6f3d032abcdc45ef77fd8d3e0b7432f0b315f5ce6ab3dd0",
+   "bytes": 1275,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_double_selfweighted_cap_response_2026-10-29.zip/__nested__/sb_cap_double_selfweighted_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_double_selfweighted_cap_response_2026-10-29.zip!/sb_cap_double_selfweighted_20261029/SHA256SUMS.txt",
+   "sha256": "a3e166d7577f7bdfda5b5f8ab672844bcbee93ed59953867aefd5b0b83c1e355",
+   "bytes": 339,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_double_selfweighted_cap_response_2026-10-29.zip/__nested__/sb_cap_double_selfweighted_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_double_selfweighted_cap_response_2026-10-29.zip!/sb_cap_double_selfweighted_20261029/PROOF_REPORT.md",
+   "sha256": "706a96d58ae48385b02d4b4ec0604018d9cd77b8c208c84ed19c6c465c70b0ff",
+   "bytes": 8645,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_character_cap_response_2026-10-29.zip/__nested__/sb_character_cap_response_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_character_cap_response_2026-10-29.zip!/sb_character_cap_response_20261029/README.md",
+   "sha256": "65d660a25078193e3192c607bd4998a4d95320f26176df45d7ad89fc94c3fe6c",
+   "bytes": 652,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_character_cap_response_2026-10-29.zip/__nested__/sb_character_cap_response_20261029/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_character_cap_response_2026-10-29.zip!/sb_character_cap_response_20261029/VERIFICATION_LOG.txt",
+   "sha256": "1bb67c91de65b071f41bccf7df1e233a3ae1ee48fe2d7b93f4c479823c2180c1",
+   "bytes": 575,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_character_cap_response_2026-10-29.zip/__nested__/sb_character_cap_response_20261029/verify_character_cap_response.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_character_cap_response_2026-10-29.zip!/sb_character_cap_response_20261029/verify_character_cap_response.py",
+   "sha256": "de39ba5667b467a912bee272621afe678c6eaf9a45006221d0c029ee097d9975",
+   "bytes": 3192,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_character_cap_response_2026-10-29.zip/__nested__/sb_character_cap_response_20261029/SHA256SUMS.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_character_cap_response_2026-10-29.zip!/sb_character_cap_response_20261029/SHA256SUMS.txt",
+   "sha256": "7a7e9fc45eed293117f5876efcdb554b375b50c51dd0692f3d576730b1a20cad",
+   "bytes": 344,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_character_cap_response_2026-10-29.zip/__nested__/sb_character_cap_response_20261029/PROOF_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_character_cap_response_2026-10-29.zip!/sb_character_cap_response_20261029/PROOF_REPORT.md",
+   "sha256": "7329dd816e52297453dc9c9284df6ff13d5727dd7cfa33fa041b01dcaa624ee4",
+   "bytes": 9675,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_character_positivity_2026-10-29.zip/__nested__/sb_deleted_character_positivity_20261029/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_character_positivity_2026-10-29.zip!/sb_deleted_character_positivity_20261029/README.md",
+   "sha256": "3b2e49a1b3e89aacf187ce3a9b5381864b77ed7b0db77b66d4ff62262234b532",
+   "bytes": 529,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_character_positivity_2026-10-29.zip/__nested__/sb_deleted_character_positivity_20261029/VERIFICATION_LOG.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_character_positivity_2026-10-29.zip!/sb_deleted_character_positivity_20261029/VERIFICATION_LOG.txt",
+   "sha256": "096a4a464ae87dd1ee71752f093c10eabc3cd9745eb03c2f1d0ffa2ad6dc2dfc",
+   "bytes": 750,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_deleted_character_positivity_2026-10-29.zip/__nested__/sb_deleted_character_positivity_20261029/verify_character_minorization.py",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_deleted_character_positivity_2026-10-29.zip!/sb_deleted_character_positivity_20261029/verify_character_minorization.py",
+   "sha256": "931f173e09b78a2e9bcf47a4d1f0f133d12b4404bebc5816b0bb2ba4c8ec1eeb",
+   "bytes": 2312,
+   "extension": ".py",
+   "duplicate_of": null
+  }
+ ]
+}

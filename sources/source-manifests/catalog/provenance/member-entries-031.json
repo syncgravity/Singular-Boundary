@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/clean_flat_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/clean_flat_certificate.json",
+   "sha256": "342acd8a01398bf0dde97fb251e909da7457440fe2462fe8053e7ed8bfe86c2d",
+   "bytes": 3097,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/compute_presentation.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/compute_presentation.py",
+   "sha256": "92d75cea19264582dadf30b7b26a690ac43b8fadeded8f886abd733102b85af0",
+   "bytes": 6052,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/compute_presentation.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/haar_audit.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/haar_audit.json",
+   "sha256": "56109d28c9063f23f4617c3397110e8b56f8c37617f9675f9385fbcea35a76a5",
+   "bytes": 2419,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/laplace_prefactor.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/laplace_prefactor.py",
+   "sha256": "7428771ac08e0d513baca86b93d3ac36b3c728f8693a3f923741488693313f84",
+   "bytes": 2430,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/laplace_prefactor_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/laplace_prefactor_certificate.json",
+   "sha256": "e91a7ba123bc98070f9f2469ba8a6278ba5c770d5f6d459a43b16dfbacb264af",
+   "bytes": 611,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/presentation.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/presentation.json",
+   "sha256": "1b6a741806401dc8da70d4cb9dd1d22638c82f2c8cea1191f99b92816be21f91",
+   "bytes": 13530,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/quantitative_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/quantitative_certificate.json",
+   "sha256": "54e25a3e7be1d9b58e3beedd16eeb2c5ca4616a2cf141fc8032f42f13b4b3eb2",
+   "bytes": 2819,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/quantitative_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/quantitative_haar.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/quantitative_haar.py",
+   "sha256": "25c1853c22d78da984f9ff35afd7148558d190bc70a41bfab7e2f973aa175d7a",
+   "bytes": 3141,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_nonabelian_relative_2026_10_27_bundle.zip/__nested__/R3_nonabelian_relative_2026_10_27/reproduce_stdout.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_nonabelian_relative_2026_10_27_bundle.zip!/R3_nonabelian_relative_2026_10_27/reproduce_stdout.txt",
+   "sha256": "3f2607567e16fd2416804f2ec078c6bfe49d0112d338832da5ca03c8a683306c",
+   "bytes": 1407,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (15).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (15).json",
+   "sha256": "6c1d68faea733759078b2b7dde88f4a72bc84daa85c5258683720f6bb528aef2",
+   "bytes": 4638,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (20).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (20).py",
+   "sha256": "db58e6e333b8cfb19f5cca35cad61eb813419f0e35ac14618508ae1e15d9e944",
+   "bytes": 7817,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (92).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (92).md",
+   "sha256": "12bbd49eff34ad516f9b476e108c3b8a7126ad6e764d77e36f1b725fa2420961",
+   "bytes": 10148,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/bianchi_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "bianchi_certificate.json",
+   "sha256": "b41036b62e0132ccb996400ba879f65b83d1380398a31de6cf476309b3c00ca1",
+   "bytes": 1626,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/exact_rank_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "exact_rank_certificate.json",
+   "sha256": "7de8a7cd4068cf625a2b90e4b557c27aff814ea1d506a4fb1d1d726ddb995629",
+   "bytes": 968,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/uniform_gaussian.py",
+   "archive": "Archive.zip",
+   "source_member": "uniform_gaussian.py",
+   "sha256": "492df995f63e9513116486a7031c9e092c859999e9526bfea7cc389a12ad15a6",
+   "bytes": 2739,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/bianchi_repair.py",
+   "archive": "Archive.zip",
+   "source_member": "bianchi_repair.py",
+   "sha256": "57351053f113f590b8d18dbf4a0a580bf45b76dfbfc56b134fb70b9d2f97cc37",
+   "bytes": 2582,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (19).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (19).py",
+   "sha256": "c595a8b340e1e74b01218c1d5654f53c65d81a24f1acf20d5380b37de7d612ac",
+   "bytes": 4980,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (91).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (91).md",
+   "sha256": "7bd06a6e04172929c526d20e8190bb98753b2d91f2596efff4a895f6960a565b",
+   "bytes": 9936,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/audit_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "audit_certificate.json",
+   "sha256": "b4d60c8e66721595b2643d486d7b2d7b0f276d919fb3617b6d3c335344560ed6",
+   "bytes": 1376,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/gaussian_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "gaussian_certificate.json",
+   "sha256": "0f7edf04ca0b518412c200f8ecf66436eda4e22474003a0f25a8dbbcc104d86e",
+   "bytes": 1003,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/linearized_gaussian.py",
+   "archive": "Archive.zip",
+   "source_member": "linearized_gaussian.py",
+   "sha256": "a44e0c277768ecdf29cee02dc2f2970002ae13eebb3a27b3d5d229e2e32e779e",
+   "bytes": 2489,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/run.py",
+   "archive": "Archive.zip",
+   "source_member": "run.py",
+   "sha256": "f658a5ac3abdb97abe525d2b63f93175270317ef7ef249c09d8a0c55708d033b",
+   "bytes": 8892,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/summary.csv",
+   "archive": "Archive.zip",
+   "source_member": "summary.csv",
+   "sha256": "01b550f2077e313daa0feb6668c5e6358592d837bbc82f687b1e04e860f74ddb",
+   "bytes": 2426,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (90).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (90).md",
+   "sha256": "1ff72c6073cd0411aa9b8e94955426f8029090a965185437cc2b44a2cc6131fa",
+   "bytes": 7955,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (14).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (14).json",
+   "sha256": "d4f6b59eb994a5e6a7b270a28d718c8e6d0990401d103bd6079f1728823c7130",
+   "bytes": 1056,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (18).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (18).py",
+   "sha256": "1a725e246daadd7c2c620853f0b5bca7320c5849daa51cc0d7ffcce131c41856",
+   "bytes": 2510,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (89).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (89).md",
+   "sha256": "af7775fe0d0c7e32be07262cfbfe5617fe302aeb17384196e9bef9b38d44f3df",
+   "bytes": 4278,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/r3_shared_edge_15state_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "r3_shared_edge_15state_certificate.json",
+   "sha256": "7ec79bd990501150d4f9d46f022b1d0980695691cf80698e9d72d08ffb356bf1",
+   "bytes": 2075,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/r3_shared_edge_15state_note.md",
+   "archive": "Archive.zip",
+   "source_member": "r3_shared_edge_15state_note.md",
+   "sha256": "68d093358606e2e90c7647fd9908e7fed7f27ae914b7954a2c1a55b2e60fc53d",
+   "bytes": 5295,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/r3_two_loop_7state_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "r3_two_loop_7state_certificate.json",
+   "sha256": "fb579b07bae4fe8af3ff6355fc649b221a2d392fec8dc9b5337b7e73f6678e46",
+   "bytes": 3313,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/r3_two_loop_7state.py",
+   "archive": "Archive.zip",
+   "source_member": "r3_two_loop_7state.py",
+   "sha256": "0c5edc4fe39b39d5e72fb3fb8c187e0213ba9a11a6c3cd72de5bc3f58987222e",
+   "bytes": 3656,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/r3_two_loop_7state_note.md",
+   "archive": "Archive.zip",
+   "source_member": "r3_two_loop_7state_note.md",
+   "sha256": "51895f1c6a89e912fa3bbcbd91146a7147bdfc797adb835ebf0ea8ce44f8fcbb",
+   "bytes": 3473,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (13).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (13).json",
+   "sha256": "e94c26fb16ae80d62a72e1832c0bda605cf4c03e00b54b04d3218f0208631064",
+   "bytes": 1201,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (17).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (17).py",
+   "sha256": "32efb5612f956b057a8078337fea7a172fda129598ad79ccbcb55a2ecbcc1234",
+   "bytes": 1669,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (88).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (88).md",
+   "sha256": "2ea9d86ce089713bdd58b20f9d37746aea2301d2db558914fb1187de2e22c9e1",
+   "bytes": 5066,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (12).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (12).json",
+   "sha256": "e6a5f8572aa15dd906a22f5b656a5aa486a029f032da060f5190ebc8a7eeab8f",
+   "bytes": 495,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (16).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (16).py",
+   "sha256": "45322cc6cffd283d6ea76616aeb498ccf8f802e4505f9480d9f910f7c3fbefe8",
+   "bytes": 1868,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (87).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (87).md",
+   "sha256": "b72863e9808c1fd055181266e28a88a9ba8ce985ac51f8b829ef7fd498501d75",
+   "bytes": 4570,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (11).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (11).json",
+   "sha256": "5db8f10b7c093cf3cd1e4ae981be6a34f0e22b8cbdfda039aca001c3dbb3e65b",
+   "bytes": 677,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (15).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (15).py",
+   "sha256": "f24b6cdcf5362d83950e4275042526eb031ce0026b7ba80a25199021d85dc3ed",
+   "bytes": 1446,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (86).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (86).md",
+   "sha256": "e893787f976d6c71ce94daaf2ee1242f8f966fafd8b1f371f5178549215ab054",
+   "bytes": 3328,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (10).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (10).json",
+   "sha256": "978c6cc196645adfa711a961c012dc388c57b26777639feff5e07a7c917fc378",
+   "bytes": 1213,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (14).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (14).py",
+   "sha256": "1eb098ffd26d059eccd1116c6f2ac3ffd1f328962dffe32f8fbede59b2f73d95",
+   "bytes": 2598,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (85).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (85).md",
+   "sha256": "acc07449ab3edb1b4f3b257bbb44c746e97978a6916fc740ef1eddcdcd818f00",
+   "bytes": 3798,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (9).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (9).json",
+   "sha256": "953ba76118ae038f6d5d373eae9af1e8f35bce0289610e07a54f34b23d43d77b",
+   "bytes": 1084,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (13).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (13).py",
+   "sha256": "49168a93342cf13ba92410067ba01ebcf7b15a6a66fa8e41a3fc5f7f1c356abc",
+   "bytes": 3412,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (84).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (84).md",
+   "sha256": "314abce9563daac8b2452548f2fa77b1924e7873a060a2e9bdef6525f684d21e",
+   "bytes": 4081,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (8).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (8).json",
+   "sha256": "2568c9fe59e2d89b9f81a16a0d88cce4820ca8060b04265afdfc8adc75a6e9c7",
+   "bytes": 1815,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (12).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (12).py",
+   "sha256": "cbe89cccc2ff0debfb3769a7856a85380564021518814a7946eed73de0e20208",
+   "bytes": 2444,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (83).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (83).md",
+   "sha256": "3330f8bf0a8fc72528cada1344934e5bdacb0b26d4d67b60efdb9994f73f098f",
+   "bytes": 4722,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/ym_stage36_notes.md",
+   "archive": "Archive.zip",
+   "source_member": "ym_stage36_notes.md",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Stage19_Full_Auxiliary_Finite_Isometry_Gate.zip/__nested__/stage19_final_gate/symmetry.log"
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (7).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (7).json",
+   "sha256": "a35a0aad8bbaba1330f1dd573b3196da83481f35ecc8eea30b67960a7a204018",
+   "bytes": 4746,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/contract.py",
+   "archive": "Archive.zip",
+   "source_member": "contract.py",
+   "sha256": "6481c21c71318e8a4f1e31808ea20d19b40fd2fd6f3e4da985c1b62da646752e",
+   "bytes": 4058,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (11).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (11).py",
+   "sha256": "6a6f4458c584ba7657ede0b3a39c07ea67748b784ec5358f8acfedfe7d9335e8",
+   "bytes": 3908,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (82).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (82).md",
+   "sha256": "e827787c2f56510472f8af493024e208916c624e45f326197240576abf0d05df",
+   "bytes": 3937,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (6).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (6).json",
+   "sha256": "904672c1f28e5d4d1ded5a4a196bdf1163c8993245a59e36b3f7a9c2716a6727",
+   "bytes": 1495,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/compute.py",
+   "archive": "Archive.zip",
+   "source_member": "compute.py",
+   "sha256": "0965fd20526c9c3d034eb6a89fe45d9fbeb30f78bdb9654dcae4add1c1094d1b",
+   "bytes": 3463,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (5).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (5).json",
+   "sha256": "8aae8c54ca1a59f94f5c85415e1b75ca837dcb9607ab4264e56d7c897dd07b43",
+   "bytes": 2513,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (10).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (10).py",
+   "sha256": "837cd47968b4d8d19d2e71408b23134c78ba47676d2477b9901e4fd49d6b59e9",
+   "bytes": 4053,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (81).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (81).md",
+   "sha256": "db85e92d9e450ac475bd0a5672a928b4fd8ed8eb6ad1f269614e29f14ec7c925",
+   "bytes": 4806,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/selection_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "selection_certificate.json",
+   "sha256": "d52130e4aefaff71cc08f05470cdabe9ebe189d1d95fdcafe934fdd7c7332be0",
+   "bytes": 4595,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (9).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (9).py",
+   "sha256": "4de3438fc8229063f731ba6ff50b93392d339634c506e4c6f942fc5d2f5d3233",
+   "bytes": 2639,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (80).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (80).md",
+   "sha256": "735e4ae27f1964df5a4534611be2f6aaa6d1ac12436ab854212b70dc97c87f62",
+   "bytes": 4974,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (8).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (8).py",
+   "sha256": "0bc8280a335d52295dc137c94a12d2fa95d27bd2356d503eebf0a27765666e04",
+   "bytes": 2305,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (79).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (79).md",
+   "sha256": "59b25445f866def1ec73d21bdc890e938c7cb0fc3e997d503b37b1f38b0d0728",
+   "bytes": 5131,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (4).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (4).json",
+   "sha256": "df99fc5eb437a1583c3c1b1cf6644c665a8df73bcc535492c51c68318d48c918",
+   "bytes": 810,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (7).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (7).py",
+   "sha256": "3b01a4cf108a952e4da3e2124ab5da98d0f922d3bd21276c9bf5d5e2b2b76049",
+   "bytes": 3322,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (78).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (78).md",
+   "sha256": "aced2dd3a50a0f8916f2c0a54d5e0c600c065a3c096f3256ff76a29b218cc188",
+   "bytes": 3897,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (77).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (77).md",
+   "sha256": "6106811c735ef38f0ba85d1642295d2d770176f9bc533f8421b89b378bb8c368",
+   "bytes": 5253,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (3).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (3).json",
+   "sha256": "746a22a6b9135041a6dbda35edc14003668a087c0ce63c40f253f0190d8363e5",
+   "bytes": 702,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (6).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (6).py",
+   "sha256": "e00facb85d411ad969216f2d165a1f95c574b21f241cca4c5ab478b46e04582c",
+   "bytes": 3001,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (5).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (5).py",
+   "sha256": "b2cceaaf06c695818e05f8db1ada890dc8b7ad181b2e06aa36fced6e2f71d899",
+   "bytes": 1608,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (2).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (2).json",
+   "sha256": "f69ff6c7bbb9295b0fe4b45d40b9671dff158912426d1a8ab7b37020f58e2927",
+   "bytes": 981,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (76).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (76).md",
+   "sha256": "ff2609f9ee833a0fc5368de0c4abb92b7bfa5b353111ad85fe41a5af2a5460f7",
+   "bytes": 4936,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (75).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (75).md",
+   "sha256": "b33b6d4978aa1b5aae45768686ccacb6ce516544f1c3c27de55621b5713a6ab6",
+   "bytes": 4767,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (4).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (4).py",
+   "sha256": "a9de0f0e954a13ffdc483a0afb935e8112cf314319dbe2a68cd1cf09f6bc27d7",
+   "bytes": 594,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (74).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (74).md",
+   "sha256": "275caf9fb9eab72e3d7bbea8e1ff3d5a6a84c15563c884ca2fe5f2dfa22ad2fe",
+   "bytes": 4469,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (73).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (73).md",
+   "sha256": "067e320a88847acbb9f4c732203e63e47ca1db7860aea0ba84172aeff6cc5eb9",
+   "bytes": 3723,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (1).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (1).json",
+   "sha256": "678e8dbce9ed6efe96377ce84c0e578968cd6cb7d217c0048f043d4d1ce28b5a",
+   "bytes": 484,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (3).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (3).py",
+   "sha256": "285b49dd800e24da56ef5cf3fc0a5318058f2a6202576618d732f404a12e1e44",
+   "bytes": 1158,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (72).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (72).md",
+   "sha256": "15a64029d161338314b3f30efb544fe252161ff14a68135157d2d5ec9d1b2d7d",
+   "bytes": 4291,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (2).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (2).py",
+   "sha256": "4e214cdfa33dd880183feb19c18ff32dd6e3ea666cd5db48c1185d5b1c1668e7",
+   "bytes": 1015,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (71).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (71).md",
+   "sha256": "e7d0917bcbdbb6e7efe4ed8c6f8ff33fdf4265651de0bb6b5dddf7cc1c5170ef",
+   "bytes": 3482,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE(70).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE(70).md",
+   "sha256": "75b79e8706221196b8fe38ddc10407932f588f792d81f10ecb506eff32023e07",
+   "bytes": 4564,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "certificate.json",
+   "sha256": "3c518df723d74d667ee9433d1293c7afd144612ce44bf5d6bb706b96b9f16e11",
+   "bytes": 368,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify (1).py",
+   "archive": "Archive.zip",
+   "source_member": "verify (1).py",
+   "sha256": "df559625a9751743baa183ed547b4ca93ee9278cc008808b4842d1afe5a314bd",
+   "bytes": 2839,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (69).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (69).md",
+   "sha256": "96167c23ad7224c13e98b6df8a26306dc4e853328ffb980acda6898e46db7d0a",
+   "bytes": 4214,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify.py",
+   "archive": "Archive.zip",
+   "source_member": "verify.py",
+   "sha256": "26615a3f3eeccb5ab0670794a69f17677a360d64ae743b86fde7a0f2b4aab9a5",
+   "bytes": 2013,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (68).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (68).md",
+   "sha256": "0fa6cead5c3c0e744e3fb78bf2f2a94f03387a0ba12c4bce235671e74ed41ad3",
+   "bytes": 3649,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (67).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (67).md",
+   "sha256": "1cbb528c6d410e77c188fad4509dfdf857e91457864adc5df492070e36a380b8",
+   "bytes": 4139,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (66).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (66).md",
+   "sha256": "95c8d44aaf9ee341b93e02f54787b9fc43511fd301cd446820ca5495a912c9b3",
+   "bytes": 4359,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (65).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (65).md",
+   "sha256": "44926d5ec954d777a6ee043e24ed581170afd45d52575d31cb4ca4192dbf60df",
+   "bytes": 3127,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (64).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (64).md",
+   "sha256": "6cccd91f26e02936989b30d6a2dea0b1787e60758c9e3051d01a2162c1eac525",
+   "bytes": 5191,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (63).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (63).md",
+   "sha256": "ec173643f9efa2c6b4bf5f5f3cf52c5298f95ade5a77040d5303a0db363ee39c",
+   "bytes": 5646,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (62).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (62).md",
+   "sha256": "5323dff32f63f96e792b52ce697bf8e148548a01763f2e35efe78b4dd1c520b6",
+   "bytes": 3195,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (61).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (61).md",
+   "sha256": "dae48fdcf31a65669f5dbe6c78e2f58d680d927d3b1f79fcb94fdac617828a3a",
+   "bytes": 3609,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (60).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (60).md",
+   "sha256": "bef9363b902ae0239db2d7e26f0cc7e49ba30f9110b232b0cb94400d0a4690f5",
+   "bytes": 5189,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (59).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (59).md",
+   "sha256": "67eb4425cae77f46ef59e36c58e24bbd8dffe5e9bbb2659d3aac1daf7d4c845c",
+   "bytes": 4165,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (58).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (58).md",
+   "sha256": "85f2ec7298ef0a4ddbde4b22de2d562a58b3b78a4689115a79550840831549f7",
+   "bytes": 5288,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (57).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (57).md",
+   "sha256": "947d305c2c2063c5f34fc9a06acec37a9ba93c3c54535cc8110597fd1964141f",
+   "bytes": 4101,
+   "extension": ".md",
+   "duplicate_of": null
+  }
+ ]
+}

@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/certificate_radius_10.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/certificate_radius_10.json",
+   "sha256": "93e02021c18f7ecaa312ff5b7225ef7af240a46e3ccf0d5066d5a347e3c4aedf",
+   "bytes": 137495,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/manifest.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/manifest.json",
+   "sha256": "3228dca676608506a89617a876c475aafd64045a9f6598451b9183a5e97b4ca4",
+   "bytes": 1008,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/certificate_radius_8.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/certificate_radius_8.json",
+   "sha256": "6c6a9f0db28605807574727e5f76c74028f42f8b907cc3fe38fab5a3c917b7bb",
+   "bytes": 85017,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/verification.json",
+   "sha256": "dd1cbb904fd74a4a7e9e736f26b48bf5285e587555882d47e3caf9fcebe4a8da",
+   "bytes": 1250,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/example_Q_labels.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_word_incidence_2026_10_28_bundle.zip!/R3_word_incidence_2026_10_28/example_Q_labels.json",
+   "sha256": "08b98f26c692245aac7c77ca226b82c638e27a58adc32b30b41884e6782ffc88",
+   "bytes": 2142,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/FORMAL_NOTE (111).md",
+   "archive": "Archive 2.zip",
+   "source_member": "FORMAL_NOTE (111).md",
+   "sha256": "4efde6b007fca023ada1aa12831e48f92c39121f082a87996d201a18931c0eb0",
+   "bytes": 5602,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/certificate.py",
+   "archive": "Archive 2.zip",
+   "source_member": "certificate.py",
+   "sha256": "df4fe95e820b4065d3150bec1e89bd3bf880b807e7f062c9cfafb026fc0dcf94",
+   "bytes": 6266,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/certificate.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/verification (1).json",
+   "archive": "Archive 2.zip",
+   "source_member": "verification (1).json",
+   "sha256": "dd1cbb904fd74a4a7e9e736f26b48bf5285e587555882d47e3caf9fcebe4a8da",
+   "bytes": 1250,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/verification.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/example_Q_labels.json",
+   "archive": "Archive 2.zip",
+   "source_member": "example_Q_labels.json",
+   "sha256": "08b98f26c692245aac7c77ca226b82c638e27a58adc32b30b41884e6782ffc88",
+   "bytes": 2142,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/example_Q_labels.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/RECOVERY_RESULT.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/RECOVERY_RESULT.md",
+   "sha256": "4eafe5bcce467022cd0b2d2648b1495c5e3f6e9209c5d42592f2c14cdfdf2930",
+   "bytes": 920,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/cavity_run.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/cavity_run.log",
+   "sha256": "5d3cd0bd75f2dc74c7a6b34f9036817099e1f7a5bb4a59928bd1a0dcd9f36601",
+   "bytes": 3271,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/bianchi_run.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/bianchi_run.log",
+   "sha256": "6c74241d086e7ef4a9bcce1c1421c53dab7020d5e14ad5a545559d6912865b82",
+   "bytes": 74,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/HISTORICAL_Q14_CANONICAL.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/HISTORICAL_Q14_CANONICAL.json",
+   "sha256": "bd9db7bb5bcfd03ecbbdea0f1204668fe5add1b4add967c09b6d365388f6d8c5",
+   "bytes": 24024,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "a174c8daa2310d58d1dbaeb7a478c5fb29ca3fc17e616ddcd3e323fd11fa7817",
+   "bytes": 8318,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (104).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py",
+   "sha256": "fa23e1a4dd40e195671964ad026a4eb803633c87102a0e3e384e4957acaf04a0",
+   "bytes": 3754,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py",
+   "sha256": "492df995f63e9513116486a7031c9e092c859999e9526bfea7cc389a12ad15a6",
+   "bytes": 2739,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json",
+   "sha256": "6c1d68faea733759078b2b7dde88f4a72bc84daa85c5258683720f6bb528aef2",
+   "bytes": 4638,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py",
+   "sha256": "5e82066b939968415bb4f8b78b6c1a67553a4e04a91084c1831ea2a604128c05",
+   "bytes": 2621,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json",
+   "sha256": "24d43eae1433ea6aabc0f5734a55fa26cc7b7b72ecb6627cf42b7fe826ec222c",
+   "bytes": 1744,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_certificate.json",
+   "sha256": "281d5ca0f1a569d23e03f61e61fd5196494a6306a1e3dc4a31b88b40e6dcce10",
+   "bytes": 3270,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/cavity_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/gaussian_penrose_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/gaussian_penrose_certificate.json",
+   "sha256": "b5077d42eff359c96cea7137981cdf8869b1ed2d5a2d4053cc19bb8f85c9a07e",
+   "bytes": 18586,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/gaussian_penrose_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py",
+   "sha256": "a3d9dc0fcce0abb73f048ad886f513c2f5145ec04ee3e708ddfc3db85b40f433",
+   "bytes": 3932,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py",
+   "sha256": "0ea1c77e7e46240d98891699d510a652cf851d404edaa5d1a47f7dc1447c4d69",
+   "bytes": 899,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/local_schur_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_recovered_original_2026_10_27_bundle.zip!/R3_recovered_original_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/local_schur_certificate.json",
+   "sha256": "21b6925aedc5b930644dea977ec4337bd3f4ebc701531dd9dab949e6d0965591",
+   "bytes": 3396,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/local_schur_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/RECOVERY_RESULT.md",
+   "archive": "Archive 2.zip",
+   "source_member": "RECOVERY_RESULT.md",
+   "sha256": "4eafe5bcce467022cd0b2d2648b1495c5e3f6e9209c5d42592f2c14cdfdf2930",
+   "bytes": 920,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/RECOVERY_RESULT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/HISTORICAL_Q14_CANONICAL.json",
+   "archive": "Archive 2.zip",
+   "source_member": "HISTORICAL_Q14_CANONICAL.json",
+   "sha256": "bd9db7bb5bcfd03ecbbdea0f1204668fe5add1b4add967c09b6d365388f6d8c5",
+   "bytes": 24024,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/HISTORICAL_Q14_CANONICAL.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/certificate.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/certificate.py",
+   "sha256": "df4fe95e820b4065d3150bec1e89bd3bf880b807e7f062c9cfafb026fc0dcf94",
+   "bytes": 6266,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/certificate.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "47c7aed6f0c2b81d9341851bcfaa92711846bb7a1f59f33f812c63a7a82b3496",
+   "bytes": 4001,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/certificate_radius_6_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/certificate_radius_6_5.json",
+   "sha256": "dfdde4f137f94cba35edc993304d3d30c4d444e132feca1b5bb6e9e14bece1e5",
+   "bytes": 60047,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/run.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/run.log",
+   "sha256": "a2503874e13cf62265ed24b37ab543c89242b57f65beb2a856daa67ba1edfd52",
+   "bytes": 814,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/certificate_radius_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/certificate_radius_5.json",
+   "sha256": "487e16ae5b49d8e05cf6a0a155e03f18f0c5baa6714864d7de1bc20633e3d6e5",
+   "bytes": 41217,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/verify_words.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/verify_words.py",
+   "sha256": "3c9c36df904d63d9c6fe1db4277dbd6d180c8f2801d516400450603d1db120b5",
+   "bytes": 2352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/verify_words.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/README.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/README.md",
+   "sha256": "8785af00c8d23fc3a8b863d1a28b5cf682c8c2b3522c5709cb183bbbd8feca6b",
+   "bytes": 462,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/certificate_radius_10.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/certificate_radius_10.json",
+   "sha256": "c3947d770746cb09d6f1aef072cbff0be30be0dbbfb121d8cc2c9a28b09dfca5",
+   "bytes": 140051,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/manifest.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/manifest.json",
+   "sha256": "c613756dbd482db27c01fb1a1b04d5ee7fbcaec9d1484b360cb4422426c3a35e",
+   "bytes": 984,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/verify.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/verify.log",
+   "sha256": "f658be6e41170e3c48be286acb21bb98dbe58438d9fec0581ecc03fae9efd715",
+   "bytes": 1076,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/certificate_radius_8.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/certificate_radius_8.json",
+   "sha256": "86e07e497674ea6a83c243fa9c2dca55521ef05c6676be232b7868471952d353",
+   "bytes": 87461,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/audit_contraction.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/audit_contraction.py",
+   "sha256": "22dff5d0a85adc56f4f154dca575be876003cc8f293845c61bdca890ce512d3c",
+   "bytes": 1620,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/historical_Q_labels.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/historical_Q_labels.json",
+   "sha256": "735c77f32b43808b9110a9e130a407b5c98a821cb1ee69a1dcc33db7d99583f0",
+   "bytes": 2142,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/contraction_audit.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/contraction_audit.json",
+   "sha256": "1eac8f14350e63358122987e7f12e3d3d7fa149802047fa1cb89e6a06f5178f1",
+   "bytes": 1529,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_historical_wordlevel_2026_10_27_bundle.zip!/R3_historical_wordlevel_2026_10_27/verification.json",
+   "sha256": "450fbb3af93f90fe3588f94bd55d8028b425aaa7b02457eae79ff60daf464999",
+   "bytes": 1246,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/FORMAL_NOTE (112).md",
+   "archive": "Archive 2.zip",
+   "source_member": "FORMAL_NOTE (112).md",
+   "sha256": "47c7aed6f0c2b81d9341851bcfaa92711846bb7a1f59f33f812c63a7a82b3496",
+   "bytes": 4001,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/verification (2).json",
+   "archive": "Archive 2.zip",
+   "source_member": "verification (2).json",
+   "sha256": "450fbb3af93f90fe3588f94bd55d8028b425aaa7b02457eae79ff60daf464999",
+   "bytes": 1246,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/verification.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/contraction_audit.json",
+   "archive": "Archive 2.zip",
+   "source_member": "contraction_audit.json",
+   "sha256": "1eac8f14350e63358122987e7f12e3d3d7fa149802047fa1cb89e6a06f5178f1",
+   "bytes": 1529,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_historical_wordlevel_2026_10_27_bundle.zip/__nested__/R3_historical_wordlevel_2026_10_27/contraction_audit.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/certificate (1).py",
+   "archive": "Archive 2.zip",
+   "source_member": "certificate (1).py",
+   "sha256": "df4fe95e820b4065d3150bec1e89bd3bf880b807e7f062c9cfafb026fc0dcf94",
+   "bytes": 6266,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_word_incidence_2026_10_28_bundle.zip/__nested__/R3_word_incidence_2026_10_28/certificate.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/solve_cover.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/solve_cover.py",
+   "sha256": "444df8841bedb0ef682ec8aa31b6ddfdcb416bed1f98f32d290238c8124b6006",
+   "bytes": 3935,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_summary.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_summary.json",
+   "sha256": "4bcf020ecea52610b0e17f663e4aabe1e5778c85aeeed93e4bf25c3bbea722e0",
+   "bytes": 931,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_5_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/cover_radius_5_0.json",
+   "sha256": "7d08bad9c6c0a5a6c17bc25f87224f86233ba204e68af8c772997369d05e3271",
+   "bytes": 57525,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cavity_audit.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "2c11fd918b986499514a7028195b95846e48c2c6a677c8ba458a55ff5eb47020",
+   "bytes": 6457,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_10_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_staple_radius_10_0.json",
+   "sha256": "15f3776a83600f37122832feea7d5565702f9941778cf1cbb7646363f0f2b3ad",
+   "bytes": 29650,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_8_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_staple_radius_8_0.json",
+   "sha256": "4b279baa9e4ca22327f901794eb01b60df0395f1ae8682d431d096667d072ab2",
+   "bytes": 29059,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/summary.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/summary.json",
+   "sha256": "c3ae65a8d0d07d695995bafd6baafb562a7788e40fa05162d84479023bec95ab",
+   "bytes": 1151,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_verification.json",
+   "sha256": "9fc79681b1e309e902c0004ea193d2e8ce86844efd01fc052cbe481a79ca036f",
+   "bytes": 618,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_10_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/cover_radius_10_0.json",
+   "sha256": "0184e5bf8491c3a194c40bbc74f9067e9a6c9975ff7ed8918b40e0c3e03da11a",
+   "bytes": 58011,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/construct_surgery.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_bounds.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_bounds.py",
+   "sha256": "a2b4e858d7d6d29d744b3a4e302f28867a3da154b2deee3f82cd823afbb17341",
+   "bytes": 2389,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_6_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_staple_radius_6_5.json",
+   "sha256": "9b38da4485557002728209664e0f8fa45ca04be6801b4f0725ebd3247cef6033",
+   "bytes": 28404,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/verify_bianchi.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/verify_bianchi.py",
+   "sha256": "5e82066b939968415bb4f8b78b6c1a67553a4e04a91084c1831ea2a604128c05",
+   "bytes": 2621,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/verify_pair_words.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/verify_pair_words.py",
+   "sha256": "c079d7820382ad522b501574630bf6a8fa0fabe9fb4a2600ce7c0bcd1ecdec8c",
+   "bytes": 1598,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_5_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/pair_staple_radius_5_0.json",
+   "sha256": "0c06340aa14233d1d8f8fcf4e5d9ca433ad06d9a9feb6e1f4801825cab084c0f",
+   "bytes": 27845,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py",
+   "sha256": "fa23e1a4dd40e195671964ad026a4eb803633c87102a0e3e384e4957acaf04a0",
+   "bytes": 3754,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/audit_penrose_gaussian.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json",
+   "sha256": "6c1d68faea733759078b2b7dde88f4a72bc84daa85c5258683720f6bb528aef2",
+   "bytes": 4638,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/uploaded_exact_compact_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json",
+   "sha256": "24d43eae1433ea6aabc0f5734a55fa26cc7b7b72ecb6627cf42b7fe826ec222c",
+   "bytes": 1744,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/bianchi_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "a174c8daa2310d58d1dbaeb7a478c5fb29ca3fc17e616ddcd3e323fd11fa7817",
+   "bytes": 8318,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (104).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/local_schur_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/local_schur_certificate.json",
+   "sha256": "21b6925aedc5b930644dea977ec4337bd3f4ebc701531dd9dab949e6d0965591",
+   "bytes": 3396,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/local_schur_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py",
+   "sha256": "a3d9dc0fcce0abb73f048ad886f513c2f5145ec04ee3e708ddfc3db85b40f433",
+   "bytes": 3932,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/audit_local_schur.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py",
+   "sha256": "492df995f63e9513116486a7031c9e092c859999e9526bfea7cc389a12ad15a6",
+   "bytes": 2739,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/original_uploaded_gaussian.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py",
+   "sha256": "0ea1c77e7e46240d98891699d510a652cf851d404edaa5d1a47f7dc1447c4d69",
+   "bytes": 899,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_uploaded_benchmarks.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py",
+   "sha256": "5e82066b939968415bb4f8b78b6c1a67553a4e04a91084c1831ea2a604128c05",
+   "bytes": 2621,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/verify_bianchi.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/gaussian_penrose_certificate.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/gaussian_penrose_certificate.json",
+   "sha256": "b5077d42eff359c96cea7137981cdf8869b1ed2d5a2d4053cc19bb8f85c9a07e",
+   "bytes": 18586,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/gaussian_penrose_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/direct_cut_project.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/R3_uploaded_gaussian_audit_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_6_5.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/cover_radius_6_5.json",
+   "sha256": "b22575f6cbfdc3f5960303c369621e17579b5a1a5e099c3af310d0214359fb6f",
+   "bytes": 57649,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_8_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_Q14_full_cover_2026_10_27_bundle.zip!/R3_Q14_full_cover_2026_10_27/cover_radius_8_0.json",
+   "sha256": "a418e877253c7d5a83ab358d2cf196b249cdc65a02c4b3dd3bdf7f17fee615b4",
+   "bytes": 57831,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/FORMAL_NOTE (113).md",
+   "archive": "Archive 2.zip",
+   "source_member": "FORMAL_NOTE (113).md",
+   "sha256": "2c11fd918b986499514a7028195b95846e48c2c6a677c8ba458a55ff5eb47020",
+   "bytes": 6457,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/summary.json",
+   "archive": "Archive 2.zip",
+   "source_member": "summary.json",
+   "sha256": "c3ae65a8d0d07d695995bafd6baafb562a7788e40fa05162d84479023bec95ab",
+   "bytes": 1151,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/summary.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/pair_verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "pair_verification.json",
+   "sha256": "9fc79681b1e309e902c0004ea193d2e8ce86844efd01fc052cbe481a79ca036f",
+   "bytes": 618,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_verification.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/solve_cover.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/solve_cover.py",
+   "sha256": "444df8841bedb0ef682ec8aa31b6ddfdcb416bed1f98f32d290238c8124b6006",
+   "bytes": 3935,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/solve_cover.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_summary.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_summary.json",
+   "sha256": "4bcf020ecea52610b0e17f663e4aabe1e5778c85aeeed93e4bf25c3bbea722e0",
+   "bytes": 931,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_summary.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/mgf_verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/mgf_verification.json",
+   "sha256": "ad215be3b6c0b2aaf73ff23dd121913ac67e8df560cd138ce45471662e3330a1",
+   "bytes": 2628,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cover_radius_5_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cover_radius_5_0.json",
+   "sha256": "7d08bad9c6c0a5a6c17bc25f87224f86233ba204e68af8c772997369d05e3271",
+   "bytes": 57525,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_5_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cavity_audit.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "763bd0e7cbb2eee2930587e327ee70ec96c93cbf761a46e41debaf49cc150241",
+   "bytes": 4635,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/words_regeneration.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/words_regeneration.log",
+   "sha256": "04a91caf403ebe7084845b0b3ec32bae9361403d4898fdb1c3b4a214801fee23",
+   "bytes": 589,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cover_regeneration.log",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cover_regeneration.log",
+   "sha256": "b667e54a76ca085413879ee980217511bc7fbcfe82a9b853d4f7cc9b5ab4e96d",
+   "bytes": 881,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_10_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_10_0.json",
+   "sha256": "15f3776a83600f37122832feea7d5565702f9941778cf1cbb7646363f0f2b3ad",
+   "bytes": 29650,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_10_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_8_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_staple_radius_8_0.json",
+   "sha256": "4b279baa9e4ca22327f901794eb01b60df0395f1ae8682d431d096667d072ab2",
+   "bytes": 29059,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_staple_radius_8_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/summary.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/summary.json",
+   "sha256": "c3ae65a8d0d07d695995bafd6baafb562a7788e40fa05162d84479023bec95ab",
+   "bytes": 1151,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/summary.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_verification.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_verification.json",
+   "sha256": "9fc79681b1e309e902c0004ea193d2e8ce86844efd01fc052cbe481a79ca036f",
+   "bytes": 618,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_verification.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/cover_radius_10_0.json",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/cover_radius_10_0.json",
+   "sha256": "0184e5bf8491c3a194c40bbc74f9067e9a6c9975ff7ed8918b40e0c3e03da11a",
+   "bytes": 58011,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/cover_radius_10_0.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/construct_surgery.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/pair_bounds.py",
+   "archive": "Archive 2.zip",
+   "source_member": "R3_joint_thermal_mgf_2026_10_27_bundle.zip!/R3_joint_thermal_mgf_2026_10_27/pair_bounds.py",
+   "sha256": "a2b4e858d7d6d29d744b3a4e302f28867a3da154b2deee3f82cd823afbb17341",
+   "bytes": 2389,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/pair_bounds.py"
+  }
+ ]
+}

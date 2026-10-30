@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/relative_words.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/relative_words.py",
+   "sha256": "b0706fc6b8b1b4be011761e0a33a47eed908b93a68b4cf7332ac6d55a5970795",
+   "bytes": 3583,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/relative_words.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/wilson_crossing_geodesic_samples.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/wilson_crossing_geodesic_samples.json",
+   "sha256": "a3dd396d8dc03e436238d90efd28b12d15135a3d9763896aa4ce1c7236e46d93",
+   "bytes": 61144,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "efb649fa89366160c2dc586a7335e30d3bc2cf96b934a4c096ea82773ada6adc",
+   "bytes": 13136,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (102).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/adaptive_surgery_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/adaptive_surgery_certificate.json",
+   "sha256": "46e15f4a55c735a8a8d4834298543ddea5ddba019c6ffbf9bc824f7306cc6c1f",
+   "bytes": 3258,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/adaptive_surgery_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/wilson_crossing_probe.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/wilson_crossing_probe.py",
+   "sha256": "a95deb6244db69f6b245b4ddc1744e205cbfdf20ade797a190246061e38b6003",
+   "bytes": 5520,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/direct_cut_project.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/optimized_basis.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/optimized_basis.json",
+   "sha256": "d386ef7adfe796d147876236c4e16a1f9ccb5e604cb020a5f187b3d565591f3d",
+   "bytes": 5712,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/optimized_basis.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/validate_jacobian.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/validate_jacobian.py",
+   "sha256": "3a84808e2f0372ea19a524d07e3711ec424192ae39b805c1772b50392c38ef79",
+   "bytes": 1594,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/gaussian_joint_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/gaussian_joint_audit.py",
+   "sha256": "4a86c901d7144c9c2d312f8e3b1c91662e00047127a4c56d8b921dae2c85e771",
+   "bytes": 5582,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/gaussian_joint_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/wilson_crossing_samples.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/wilson_crossing_samples.json",
+   "sha256": "2c5f71962787e75d497134a6b5438e45705ca439731f88064d438f87cf517cd8",
+   "bytes": 36346,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/gaussian_joint_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/gaussian_joint_certificate.json",
+   "sha256": "edb49c582912cbd9bdc80ecf43ad984a45c9e4978e636a460a1df38806cd4966",
+   "bytes": 3367,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/multiscale_collar.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/multiscale_collar.py",
+   "sha256": "4a5cafd8524f21ccfd0a5f49ce323f5da32e6b38134a2864a4b58b0e2c6e9bc1",
+   "bytes": 3073,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/multiscale_collar.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/relative_words_joint_optimized.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/relative_words_joint_optimized.json",
+   "sha256": "a2f7a9158bdf29b478423724c6545884cac6165c1be682900c96895081ea145b",
+   "bytes": 13544,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/relative_words_joint_optimized.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/construct_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/classify_modes.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/classify_modes.py",
+   "sha256": "ed90d7701a083dcf3ddbb58d14a51101ce696b066af95466140a89d74573e596",
+   "bytes": 6442,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/classify_modes.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_crossing_transport_2026_10_27_bundle.zip/__nested__/R3_crossing_transport_2026_10_27/multiscale_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_crossing_transport_2026_10_27_bundle.zip!/R3_crossing_transport_2026_10_27/multiscale_certificate.json",
+   "sha256": "0c3d73da0d35986adf30db406a572a1e1e5fb3676974b13a7955063a515e8b70",
+   "bytes": 5412,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/theorem_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "theorem_certificate.json",
+   "sha256": "e60467bac4ca54df011fe92c9e4f60485393a3833df6ad410674a26bb4049e18",
+   "bytes": 1492,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/exact_crossing_rank.json",
+   "archive": "Archive.zip",
+   "source_member": "exact_crossing_rank.json",
+   "sha256": "dad4960fa1f158b30c32c49f7eddf5ed0dec86ad070d8508e208bd80d86522db",
+   "bytes": 415,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/relative_words.py",
+   "archive": "Archive.zip",
+   "source_member": "relative_words.py",
+   "sha256": "b0706fc6b8b1b4be011761e0a33a47eed908b93a68b4cf7332ac6d55a5970795",
+   "bytes": 3583,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/relative_words.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/joint_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "joint_surgery.py",
+   "sha256": "a2a41e7e4cf8caaa7769a66c3009f9ba38a119b758477202b0213a7ce6d41292",
+   "bytes": 4431,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/mode_table.csv",
+   "archive": "Archive.zip",
+   "source_member": "mode_table.csv",
+   "sha256": "c4c20b0fb3b340e96d6d05157d3621d2a0dbd836306172a3cff7771339f587d1",
+   "bytes": 1815,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "9a67759cee376837fd205f35d2516b42a1ada90617dbd97b61f022776c01fa59",
+   "bytes": 13810,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/README.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/README.txt",
+   "sha256": "ec245ec15155cf07a26d43d7297d652df12bbee6022aed061ae3f42ace796e81",
+   "bytes": 1448,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/cavity_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/classify_modes.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/classify_modes.py",
+   "sha256": "ed90d7701a083dcf3ddbb58d14a51101ce696b066af95466140a89d74573e596",
+   "bytes": 6442,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/classify_modes.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/construct_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/crossing_no_go.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/crossing_no_go.py",
+   "sha256": "f5faa4a52002029514e39cb2cfb3e58f49ffe56a4cd85b9355be1d65535d5cb4",
+   "bytes": 3651,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/crossing_no_go_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/crossing_no_go_certificate.json",
+   "sha256": "8332524ad125ddcfc797762a39c0788fb6d06efc5ecb9bcbb789e812eb730ff1",
+   "bytes": 3112,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/direct_cut_project.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/exact_crossing_rank.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/exact_crossing_rank.json",
+   "sha256": "dad4960fa1f158b30c32c49f7eddf5ed0dec86ad070d8508e208bd80d86522db",
+   "bytes": 415,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/exact_crossing_rank.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/exact_crossing_rank.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/exact_crossing_rank.py",
+   "sha256": "b4cab62ba79140f5f73a91c308f563a6780a59cb7949379d8fa134886df37375",
+   "bytes": 1902,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/full_action_surgery_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/full_action_surgery_certificate.json",
+   "sha256": "478177351ff02a3f6e967a9fce6f95f45b29698e5c5eb81529b2fba8b2f2bf22",
+   "bytes": 3593,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/joint_gluing_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/joint_gluing_certificate.json",
+   "sha256": "7fa1ad624335b1ae8fd24155d2a4bc9d68982a8dd089be28298b0361927f7278",
+   "bytes": 7635,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/joint_gluing_optimized_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/joint_gluing_optimized_certificate.json",
+   "sha256": "cac1179e9ec2ce52741dccd543027dd1df4e05de2fc591cb8266189de4ecb0c0",
+   "bytes": 7630,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/joint_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/joint_surgery.py",
+   "sha256": "a2a41e7e4cf8caaa7769a66c3009f9ba38a119b758477202b0213a7ce6d41292",
+   "bytes": 4431,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/joint_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/mode_table.csv",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/mode_table.csv",
+   "sha256": "c4c20b0fb3b340e96d6d05157d3621d2a0dbd836306172a3cff7771339f587d1",
+   "bytes": 1815,
+   "extension": ".csv",
+   "duplicate_of": "sources/historical/raw/Archive/mode_table.csv"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/modes_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/modes_certificate.json",
+   "sha256": "cb6dadcf7800090251aedd2cafee4e381017a218fee463fd559480c3939c4840",
+   "bytes": 466898,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/optimize_basis.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/optimize_basis.py",
+   "sha256": "dd67f96a38de17522016002c4994e558d8cdf46de26b6f8f2c39afdb881bc539",
+   "bytes": 3001,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/optimized_basis.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/optimized_basis.json",
+   "sha256": "d386ef7adfe796d147876236c4e16a1f9ccb5e604cb020a5f187b3d565591f3d",
+   "bytes": 5712,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/optimized_basis.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/relative_gluing_nested_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/relative_gluing_nested_certificate.json",
+   "sha256": "6c620a1bf9fd0fee0448f791e1f1d6bb4955558ee1bf0559ce62d0e9034570ef",
+   "bytes": 1052,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/relative_words.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/relative_words.py",
+   "sha256": "b0706fc6b8b1b4be011761e0a33a47eed908b93a68b4cf7332ac6d55a5970795",
+   "bytes": 3583,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/relative_words.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/relative_words_initial.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/relative_words_initial.json",
+   "sha256": "6292b14e06a7a7406bc1d06ad08ef0b2d264b8e8f9a3e8b8b93008ba80c337e0",
+   "bytes": 6508,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/relative_words_joint.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/relative_words_joint.json",
+   "sha256": "27fc98139b4845439cadf5ad91513fdaebaa6d163f2e7487bfe18c57537dd04e",
+   "bytes": 12649,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/relative_words_joint_optimized.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/relative_words_joint_optimized.json",
+   "sha256": "a2f7a9158bdf29b478423724c6545884cac6165c1be682900c96895081ea145b",
+   "bytes": 13544,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/R3_su2_joint_tail_next_2026_10_27_bundle.zip/__nested__/R3_su2_joint_tail_next_2026_10_27/relative_words_joint_optimized.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/theorem_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/theorem_certificate.json",
+   "sha256": "e60467bac4ca54df011fe92c9e4f60485393a3833df6ad410674a26bb4049e18",
+   "bytes": 1492,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/theorem_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/theorem_certificate.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/theorem_certificate.py",
+   "sha256": "afaa72cf6613bcf69905ece7a6b9dafb9cd950b6f5a28ddb47fb1373c16eff0d",
+   "bytes": 2880,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/verify_joint_gluing.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/verify_joint_gluing.py",
+   "sha256": "9f628d0326ccf453957161c8af9effd9ec246aeb82e5bf8ecca53a402b1bce3b",
+   "bytes": 4256,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/word_length_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/word_length_audit.py",
+   "sha256": "c4fe12314d8c573c225430ac880a21b4254f1f1ee7180d3bb216ee3f0581ddd2",
+   "bytes": 1446,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/word_lengths_joint.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/word_lengths_joint.json",
+   "sha256": "47896acaf1a70088c4939aeb62ec212fa4c8cfed8a61c77a1b9bd748e8eb4ee5",
+   "bytes": 1989,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_24mode_joint_surgery_2026_10_27_bundle.zip/__nested__/R3_24mode_joint_surgery_2026_10_27/word_lengths_joint_optimized.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_24mode_joint_surgery_2026_10_27_bundle.zip!/R3_24mode_joint_surgery_2026_10_27/word_lengths_joint_optimized.json",
+   "sha256": "6afe5f42d1766241db29c20f3b93f251fd28623b8ab2f1737a8938e2f42bb17d",
+   "bytes": 2015,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/verify_coercivity.py",
+   "archive": "Archive.zip",
+   "source_member": "verify_coercivity.py",
+   "sha256": "bf664c46e2003ada1671c54893d0823b41e045bf16b8ac2f59ad89045b68cc80",
+   "bytes": 6301,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (20).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (20).json",
+   "sha256": "8a6c8288ec8d2742076b4ce42ecefcb50598edf97d540c00e57049d6e40239ce",
+   "bytes": 5385,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/nonabelian_witness.py",
+   "archive": "Archive.zip",
+   "source_member": "nonabelian_witness.py",
+   "sha256": "35a8d348e80f57c94b43924a1bee644fb0062e2e5cdd70f6189102a496b6b975",
+   "bytes": 3889,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/certificate (19).json",
+   "archive": "Archive.zip",
+   "source_member": "certificate (19).json",
+   "sha256": "8a6c8288ec8d2742076b4ce42ecefcb50598edf97d540c00e57049d6e40239ce",
+   "bytes": 5385,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/certificate (20).json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (101).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (101).md",
+   "sha256": "ae4cd499de46899610c047ede5a85ed84c7b4c17a12f647eefa02590310dfb73",
+   "bytes": 12335,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "ae4cd499de46899610c047ede5a85ed84c7b4c17a12f647eefa02590310dfb73",
+   "bytes": 12335,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (101).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/README.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/README.txt",
+   "sha256": "5f72d7bfd662315bbfbe8d0fc26b6b6ad5990e4dd3f1a668f3dd56812325849e",
+   "bytes": 578,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/audit.py",
+   "sha256": "ace6b3b7fd19a95994b5e48fdad527fc9973799b291a06b5d010eaf0b818a94b",
+   "bytes": 1370,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/cavity_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/certificate.json",
+   "sha256": "8a6c8288ec8d2742076b4ce42ecefcb50598edf97d540c00e57049d6e40239ce",
+   "bytes": 5385,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/certificate (20).json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/constants.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/constants.py",
+   "sha256": "374e17ebef2a5de98f3260f2c6ba4de4b166f93225c29ecdf11016d84a5e4708",
+   "bytes": 1040,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/construct_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/direct_cut_project.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/full_analytic_constants.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/full_analytic_constants.json",
+   "sha256": "5ea2397a9094049886749954d1d4a663b97109fa5d40bc681b307aa21663722e",
+   "bytes": 884,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/geometry_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/geometry_certificate.json",
+   "sha256": "0d44535c2ae663a65079a0475a87726befbd09d0f83448243a2f6ae5f4a34604",
+   "bytes": 1409,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/geometry_stdout.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/geometry_stdout.txt",
+   "sha256": "b0fa8bebc806bbf38e458821928243767611d8d46c80e8aa8eecb888a0debede",
+   "bytes": 905,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/nonabelian_candidates.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/nonabelian_candidates.json",
+   "sha256": "62b7cb17321772437a86c27a32b09e92e963244c6cd47a4f82584d00cbf8c43d",
+   "bytes": 191,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/nonabelian_single_link_witness.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/nonabelian_single_link_witness.json",
+   "sha256": "13c60f8cb4167f64e2495c026b769edce1fd96c51b0bda3a37c00e6d339685c7",
+   "bytes": 4843,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/nonabelian_witness.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/nonabelian_witness.py",
+   "sha256": "35a8d348e80f57c94b43924a1bee644fb0062e2e5cdd70f6189102a496b6b975",
+   "bytes": 3889,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/nonabelian_witness.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/verify_coercivity.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/verify_coercivity.py",
+   "sha256": "bf664c46e2003ada1671c54893d0823b41e045bf16b8ac2f59ad89045b68cc80",
+   "bytes": 6301,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/verify_coercivity.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_coercivity_class_2026_10_27_bundle.zip/__nested__/R3_penrose_coercivity_class_2026_10_27/verify_stdout.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_coercivity_class_2026_10_27_bundle.zip!/R3_penrose_coercivity_class_2026_10_27/verify_stdout.txt",
+   "sha256": "241e6907e049c160aedd9cffc92e4557ceae4dcb7d020867560446bf31133f19",
+   "bytes": 331,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/rank_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "rank_certificate.json",
+   "sha256": "df1aa8718ea0f6a61e65f94ddd12c9179b24bfd8097090178eda896b11168fee",
+   "bytes": 3026,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/cavity_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "cavity_certificate.json",
+   "sha256": "281d5ca0f1a569d23e03f61e61fd5196494a6306a1e3dc4a31b88b40e6dcce10",
+   "bytes": 3270,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/center_flip_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "center_flip_audit.py",
+   "sha256": "47abe9c139be694bfe9960dbec4a596faa41fa13113344f6dfe38162576d174a",
+   "bytes": 3336,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/construct_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/FORMAL_NOTE (100).md",
+   "archive": "Archive.zip",
+   "source_member": "FORMAL_NOTE (100).md",
+   "sha256": "ef95d6480cfb3b00f2aa3511a13099d3423f2683d50b525f0a2164ba85eedb0c",
+   "bytes": 11677,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/FORMAL_NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/FORMAL_NOTE.md",
+   "sha256": "ef95d6480cfb3b00f2aa3511a13099d3423f2683d50b525f0a2164ba85eedb0c",
+   "bytes": 11677,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (100).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/README.txt",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/README.txt",
+   "sha256": "1ff5e20d0cfe3ff00afebfe6ce409a74b55814a86ab898c4996222deb7324450",
+   "bytes": 805,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/abstract_no_go.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/abstract_no_go.py",
+   "sha256": "c9b99c36cfd2a008ea6501ff32e75d455f62cfa693aba23d10c571a483d41e07",
+   "bytes": 1457,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/abstract_no_go_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/abstract_no_go_certificate.json",
+   "sha256": "3ef490d2e440a939a389deea64329e54fcb7ed412d48121d0cd341607ec8d2bd",
+   "bytes": 696,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/cavity_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/cavity_audit.py",
+   "sha256": "b0c6110f69ae43d3baa8b0ce46e14dfeda687b89c3377c2d1afa088d2d74f919",
+   "bytes": 3514,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/cavity_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/cavity_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/cavity_certificate.json",
+   "sha256": "281d5ca0f1a569d23e03f61e61fd5196494a6306a1e3dc4a31b88b40e6dcce10",
+   "bytes": 3270,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/cavity_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/center_flip_audit.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/center_flip_audit.py",
+   "sha256": "47abe9c139be694bfe9960dbec4a596faa41fa13113344f6dfe38162576d174a",
+   "bytes": 3336,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/center_flip_audit.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/center_flip_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/center_flip_certificate.json",
+   "sha256": "1eae6beb2cb3b8599aa38e60c2cb8250b129bfc5617dfaf2442f5af40e9d05ab",
+   "bytes": 4538,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/certificate.json",
+   "sha256": "96c18301367ab8a4a6e8897f85e0fc29cb052e43f49bddee59e7b093eebbd48f",
+   "bytes": 4556,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/construct_surgery.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/construct_surgery.py",
+   "sha256": "f9116069020e1c8f2c9539b99d4393e5a1ae8da0e194b4c1d66edf8d4d26c5f8",
+   "bytes": 6352,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive/R3_uploaded_gaussian_audit_2026_10_27_bundle.zip/__nested__/R3_uploaded_gaussian_audit_2026_10_27/construct_surgery.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/direct_cut_project.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/no_go_replay.log",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/no_go_replay.log",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "extension": ".log",
+   "duplicate_of": "sources/historical/raw/Archive_4/Stage19_Full_Auxiliary_Finite_Isometry_Gate.zip/__nested__/stage19_final_gate/symmetry.log"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/rank_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/rank_certificate.json",
+   "sha256": "df1aa8718ea0f6a61e65f94ddd12c9179b24bfd8097090178eda896b11168fee",
+   "bytes": 3026,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/rank_certificate.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/rank_obstruction.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/rank_obstruction.py",
+   "sha256": "52acdb6df8bbb3082745352e19e88c40696515a4529caf407eb597806667a417",
+   "bytes": 2458,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/rank_replay.log",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/rank_replay.log",
+   "sha256": "3fbb3baa0510e8de503db14d91266588f7af9715f1289d5e2c27e35a9411e3b9",
+   "bytes": 155,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/replay.log",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/replay.log",
+   "sha256": "d49d7a02250718a12c6ab1e36b618dbfd59a8d98cc8fb422b73a6a9635a00a50",
+   "bytes": 3721,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_finite_net_surgery_2026_10_27_bundle.zip/__nested__/R3_finite_net_surgery_2026_10_27/status.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_finite_net_surgery_2026_10_27_bundle.zip!/R3_finite_net_surgery_2026_10_27/status.json",
+   "sha256": "51a2e63f394f620115d561268c6513c275b3c6910ca1ecf8f8c6cca3b700a99c",
+   "bytes": 951,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/CHECK.json",
+   "archive": "Archive.zip",
+   "source_member": "CHECK.json",
+   "sha256": "64037ebc9b6a27006113b7f08ca8a1ed1527a20ecfdb0aec8c4cf4d9d3ab40f9",
+   "bytes": 225,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_exterior_surgery_2026_10_27.zip/__nested__/R3_exterior_surgery_2026_10_27/NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "R3_exterior_surgery_2026_10_27.zip!/R3_exterior_surgery_2026_10_27/NOTE.md",
+   "sha256": "a171d2e08097af3ed338ebec9d2397ccef2e5ff5f1c2b91a1288ba969222ca8d",
+   "bytes": 5866,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_exterior_surgery_2026_10_27.zip/__nested__/R3_exterior_surgery_2026_10_27/check.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_exterior_surgery_2026_10_27.zip!/R3_exterior_surgery_2026_10_27/check.py",
+   "sha256": "3725247b3fbd671f75160c05e83599f0fb257ff2f08fad00355d4de8a2048099",
+   "bytes": 733,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_exterior_surgery_2026_10_27.zip/__nested__/R3_exterior_surgery_2026_10_27/CHECK.json",
+   "archive": "Archive.zip",
+   "source_member": "R3_exterior_surgery_2026_10_27.zip!/R3_exterior_surgery_2026_10_27/CHECK.json",
+   "sha256": "64037ebc9b6a27006113b7f08ca8a1ed1527a20ecfdb0aec8c4cf4d9d3ab40f9",
+   "bytes": 225,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive/CHECK.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive/NOTE.md",
+   "archive": "Archive.zip",
+   "source_member": "NOTE.md",
+   "sha256": "a171d2e08097af3ed338ebec9d2397ccef2e5ff5f1c2b91a1288ba969222ca8d",
+   "bytes": 5866,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_exterior_surgery_2026_10_27.zip/__nested__/R3_exterior_surgery_2026_10_27/NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive/shell_certificate.json",
+   "archive": "Archive.zip",
+   "source_member": "shell_certificate.json",
+   "sha256": "b3360c8422f0325611a1c0f6340959890e78259567b9f2df9a0edee31d97689b",
+   "bytes": 4290,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive/R3_penrose_peierls_shell_2026_10_27_bundle.zip/__nested__/R3_penrose_peierls_shell_2026_10_27/direct_cut_project.py",
+   "archive": "Archive.zip",
+   "source_member": "R3_penrose_peierls_shell_2026_10_27_bundle.zip!/R3_penrose_peierls_shell_2026_10_27/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  }
+ ]
+}

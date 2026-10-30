@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (113).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (113).md",
+   "sha256": "2c11fd918b986499514a7028195b95846e48c2c6a677c8ba458a55ff5eb47020",
+   "bytes": 6457,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_Q14_full_cover_2026_10_27_bundle.zip/__nested__/R3_Q14_full_cover_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (114).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (114).md",
+   "sha256": "763bd0e7cbb2eee2930587e327ee70ec96c93cbf761a46e41debaf49cc150241",
+   "bytes": 4635,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_joint_thermal_mgf_2026_10_27_bundle.zip/__nested__/R3_joint_thermal_mgf_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (115).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (115).md",
+   "sha256": "bb525207ed4f8ce39a9a6e8c32975786020fe970a48599344bb212395e750a31",
+   "bytes": 4989,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/FORMAL_NOTE (115).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (12).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (12).md",
+   "sha256": "32a576748bbc0fda7222d0e19544e851da08eabfb17821ad7e9aca57e0bf243f",
+   "bytes": 4618,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (12).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (13).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (13).md",
+   "sha256": "930fc13c92da662b33a01b8562d844479ffe18d6bf5fe3852eef5fe20c415256",
+   "bytes": 4696,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (13).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (14).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (14).md",
+   "sha256": "3f4a77937ea84193d1bcb05e47a86151287863f76d97845f4a5461219d5c673a",
+   "bytes": 7140,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (14).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (15).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (15).md",
+   "sha256": "cb8e2cb7d0767f41809dd4e8bde8c8c518d556fb39f14fc6ad25adb6c294187a",
+   "bytes": 4326,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (15).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (16).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (16).md",
+   "sha256": "45535a6bee85dcfefa222cec8b6a3649329cfb31d197e448df20776b8ac383ca",
+   "bytes": 3502,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (16).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (17).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (17).md",
+   "sha256": "f9b54364d94300ec5ce219810145c7d1faacbdde478401e2d51d7bcdc0594c95",
+   "bytes": 5565,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (17).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (18)md.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (18)md.md",
+   "sha256": "7fa29d8cd0ef36d4a390cc1e1cce7a56bc4062f3100c29c1920cfaf4e076a7ff",
+   "bytes": 5001,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (18)md.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (19).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (19).md",
+   "sha256": "0789edc39797d411fe88a06fcb4fb6f25b7fac85f33d1ceda86e306768c72484",
+   "bytes": 4581,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (19).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (2).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (2).md",
+   "sha256": "07e1fe347b4715002f8d90ca2e5cdb8eeafbc393d93d319807bd49557bda3f85",
+   "bytes": 5266,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (2).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (20).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (20).md",
+   "sha256": "d418dfc595b28d0ec88b249e7ca576c7279e232d3b99a2d07ed08c9651530358",
+   "bytes": 3995,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (20).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (21).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (21).md",
+   "sha256": "cf3df455d8b296b1178da401997f53b42fac25b50fd0db3549a6450fec8acd00",
+   "bytes": 4220,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (21).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (22).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (22).md",
+   "sha256": "2521a68f6b03455bb567c7b2cb466d7c23055d860e41728b5d8fa75254c83353",
+   "bytes": 3785,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (22).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (23).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (23).md",
+   "sha256": "d98042bba71b6e73d66834e27ee96fa08cae4b3c0eada647dc1a8c10633fca24",
+   "bytes": 4959,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (23).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (24).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (24).md",
+   "sha256": "af5c51778266b4f2eae18914adba3a67cc8f6a82e3102e3531bb7ed32aaadf5e",
+   "bytes": 6273,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (24).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (25).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (25).md",
+   "sha256": "83811dfa649258c713c10a61e2e94586a664f1ad90500ea3cb409a1839ab8cda",
+   "bytes": 3338,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (25).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (26).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (26).md",
+   "sha256": "af23223b212714b00f0f82b24a0e805ee670350b27900bdca73b59dd720dd9ff",
+   "bytes": 5700,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (26).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (27).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (27).md",
+   "sha256": "faee515dcf67ee90f2509c9450e824f5e04f003d455edb766d069b77442e604b",
+   "bytes": 4754,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (27).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (28).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (28).md",
+   "sha256": "3c38cd2c0aa5c6d0d4bd2d47e5964bf78179e3c098b70288e06daf12400d200a",
+   "bytes": 3161,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (28).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (29).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (29).md",
+   "sha256": "15ee3e10ce9620e2650fd1abd6d60f0247703e3edf47c5fd5c103a7f80fd2fcf",
+   "bytes": 3266,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (29).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (3).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (3).md",
+   "sha256": "3522d117cdfb5f22f793545ec1208156f1e338e9b085b28ff1f85984ac13254c",
+   "bytes": 7898,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (3).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (30).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (30).md",
+   "sha256": "2141d2ea14077b12449ca47efb2ed75c62db604c1fc9d03914bc7fafc169cdfb",
+   "bytes": 4800,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (30).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (31).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (31).md",
+   "sha256": "4c553b6ebd60c3046152110de28299bdb4d3ddb0353fff5e19ad10b0e80d6c0c",
+   "bytes": 5006,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (31).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (32).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (32).md",
+   "sha256": "478bbdac8eee5712756578f6e470c963cbc19752771d62ae3ece4c446e1c0361",
+   "bytes": 4556,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (32).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (33).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (33).md",
+   "sha256": "8b84b44f14852be3819c170c078042570ea73472d96ebd83b2dd25a70cc7f77d",
+   "bytes": 3573,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (33).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (34).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (34).md",
+   "sha256": "ed1cb53197259bfffe0855d3858c1440cd67531c73c69594817f78c87aa289e6",
+   "bytes": 4973,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (34).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (35).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (35).md",
+   "sha256": "63d8d6020d232e7099f1e3439a6d59b2fc56b03592b802e2c9f79d62c46e29cb",
+   "bytes": 3657,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (35).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (36).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (36).md",
+   "sha256": "c6c779640260d87d6f7b40f78d3a991848d2dbc315ffc3f2a21881f8a83e1314",
+   "bytes": 4046,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (36).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (37).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (37).md",
+   "sha256": "d0654b007b00a3a3542628f50cd27ea24bbb937ac511f0ddf27bf1c3b5cff33a",
+   "bytes": 3521,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (37).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (38).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (38).md",
+   "sha256": "c05f91f8126f34b4bb7c39299127a8af48193f2f4fa0e16aa54d5a349ccc2d98",
+   "bytes": 3426,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (38).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (39).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (39).md",
+   "sha256": "d49d428a84506b00340f11827f1787ef4b2dfbe341873d0b6d396ceeaa011a05",
+   "bytes": 3227,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (39).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (4).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (4).md",
+   "sha256": "c3d35c7de2242dd47c5872852181244f0c5644ab1bb49961759fc60d62ab907b",
+   "bytes": 6594,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (4).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (40).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (40).md",
+   "sha256": "16792fdf9bb28f10a349899034642fe3eff523ab5f6ee55863c6793aae2e6c7a",
+   "bytes": 3619,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (40).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (41).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (41).md",
+   "sha256": "2070c7ddee93f08b7f5b384c817542403b15ca82dc2bb90b3967d45c85202287",
+   "bytes": 3125,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (41).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (42).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (42).md",
+   "sha256": "a083f52e0654942bc8606bc24443ee3595413361faa1dcb0368c2a1fcbe95b06",
+   "bytes": 4098,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (42).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (43).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (43).md",
+   "sha256": "433dbc21f54b40c91e555521b1732d9af9135c15b2d8bd357df2614c33b0ca1b",
+   "bytes": 5032,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (43).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (44).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (44).md",
+   "sha256": "361cb703be2efa49173738126930ffd808fd979040af62bb489631a66f04eead",
+   "bytes": 5129,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (44).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (45).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (45).md",
+   "sha256": "4f88f203ff4bf29cdac0994e4f620ee6be09b062087c6b71a2c56d09af009b31",
+   "bytes": 4621,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (45).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (46).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (46).md",
+   "sha256": "7fdc6cab0c63ecc498777dd8a5344935ad75a09e958a4062923419ff4f78e027",
+   "bytes": 4832,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (46).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (47).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (47).md",
+   "sha256": "32e1a4d32d605340a33276ba5452d8ab9f8b932240877003ae8eec3248c1a5d1",
+   "bytes": 4631,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (47).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (48).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (48).md",
+   "sha256": "6c7f6ea411a2fdaeefbe21c7c0db5f0772a56ec5eaf72926608fc737a4340b74",
+   "bytes": 3867,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (48).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (49).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (49).md",
+   "sha256": "199c465f325afc75af93cc79bbce706bd1e6742b72fcf6307158f0541e8916bf",
+   "bytes": 4490,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (49).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (5).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (5).md",
+   "sha256": "fdff6d1a34caef94baf4331ae70a3586c0964343d45ada91d451df72e5d341cb",
+   "bytes": 2765,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (5).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (50).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (50).md",
+   "sha256": "65392b7cca69f4f07840903ac61f13d0275d502fd7c69014bb614b49733c55ec",
+   "bytes": 3684,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (50).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (51).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (51).md",
+   "sha256": "73324de3b8bb40e3c97dc189e655c60132bb5dce1eaccffaa1de386839a84ff6",
+   "bytes": 4354,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (51).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (52).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (52).md",
+   "sha256": "f124794231403e28ec5056a54a2cbfc5f2f76b1433f72e71989ff738eb2bed22",
+   "bytes": 4394,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (52).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (53).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (53).md",
+   "sha256": "88a68346583692d81aec1fdb0021fc74f9c528e48184e851e3b38ce0981a58eb",
+   "bytes": 3987,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (53).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (54).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (54).md",
+   "sha256": "c6bac32c533ca0a51eb546f791a43536483660c3f6ce74f2b4fd58bc8ecdb4e9",
+   "bytes": 3021,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (54).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (55).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (55).md",
+   "sha256": "42a70e1f66ab77121988de686bfbbb1a02ab1ac9ae1adeaac7cf84dd6d94d01a",
+   "bytes": 3089,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (55).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (56).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (56).md",
+   "sha256": "b0025ecf87ae48a34a7d844cfdb8d3cf3a7cf703bd846b077e2f66ae4ae0c236",
+   "bytes": 3069,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (56).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (57).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (57).md",
+   "sha256": "947d305c2c2063c5f34fc9a06acec37a9ba93c3c54535cc8110597fd1964141f",
+   "bytes": 4101,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (57).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (58).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (58).md",
+   "sha256": "85f2ec7298ef0a4ddbde4b22de2d562a58b3b78a4689115a79550840831549f7",
+   "bytes": 5288,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (58).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (59).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (59).md",
+   "sha256": "67eb4425cae77f46ef59e36c58e24bbd8dffe5e9bbb2659d3aac1daf7d4c845c",
+   "bytes": 4165,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (59).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (6).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (6).md",
+   "sha256": "882b9339174632bf7898e9bf95c139b56fa13f94c5c54ee93f323026a6b456db",
+   "bytes": 3607,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (6).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (60).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (60).md",
+   "sha256": "bef9363b902ae0239db2d7e26f0cc7e49ba30f9110b232b0cb94400d0a4690f5",
+   "bytes": 5189,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (60).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (61).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (61).md",
+   "sha256": "dae48fdcf31a65669f5dbe6c78e2f58d680d927d3b1f79fcb94fdac617828a3a",
+   "bytes": 3609,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (61).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (62).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (62).md",
+   "sha256": "5323dff32f63f96e792b52ce697bf8e148548a01763f2e35efe78b4dd1c520b6",
+   "bytes": 3195,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (62).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (63).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (63).md",
+   "sha256": "ec173643f9efa2c6b4bf5f5f3cf52c5298f95ade5a77040d5303a0db363ee39c",
+   "bytes": 5646,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (63).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (64).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (64).md",
+   "sha256": "6cccd91f26e02936989b30d6a2dea0b1787e60758c9e3051d01a2162c1eac525",
+   "bytes": 5191,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (64).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (65).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (65).md",
+   "sha256": "44926d5ec954d777a6ee043e24ed581170afd45d52575d31cb4ca4192dbf60df",
+   "bytes": 3127,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (65).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (66).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (66).md",
+   "sha256": "95c8d44aaf9ee341b93e02f54787b9fc43511fd301cd446820ca5495a912c9b3",
+   "bytes": 4359,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (66).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (67).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (67).md",
+   "sha256": "1cbb528c6d410e77c188fad4509dfdf857e91457864adc5df492070e36a380b8",
+   "bytes": 4139,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (67).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (68).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (68).md",
+   "sha256": "0fa6cead5c3c0e744e3fb78bf2f2a94f03387a0ba12c4bce235671e74ed41ad3",
+   "bytes": 3649,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (68).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (69).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (69).md",
+   "sha256": "96167c23ad7224c13e98b6df8a26306dc4e853328ffb980acda6898e46db7d0a",
+   "bytes": 4214,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (69).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (7).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (7).md",
+   "sha256": "220b6f8f2bba760d07719950a05e54c33a78ccf10eba960e06bf9d717a087671",
+   "bytes": 5349,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (7).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (71).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (71).md",
+   "sha256": "e7d0917bcbdbb6e7efe4ed8c6f8ff33fdf4265651de0bb6b5dddf7cc1c5170ef",
+   "bytes": 3482,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (71).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (72).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (72).md",
+   "sha256": "15a64029d161338314b3f30efb544fe252161ff14a68135157d2d5ec9d1b2d7d",
+   "bytes": 4291,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (72).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (73).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (73).md",
+   "sha256": "067e320a88847acbb9f4c732203e63e47ca1db7860aea0ba84172aeff6cc5eb9",
+   "bytes": 3723,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (73).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (74).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (74).md",
+   "sha256": "275caf9fb9eab72e3d7bbea8e1ff3d5a6a84c15563c884ca2fe5f2dfa22ad2fe",
+   "bytes": 4469,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (74).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (75).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (75).md",
+   "sha256": "b33b6d4978aa1b5aae45768686ccacb6ce516544f1c3c27de55621b5713a6ab6",
+   "bytes": 4767,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (75).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (76).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (76).md",
+   "sha256": "ff2609f9ee833a0fc5368de0c4abb92b7bfa5b353111ad85fe41a5af2a5460f7",
+   "bytes": 4936,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (76).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (77).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (77).md",
+   "sha256": "6106811c735ef38f0ba85d1642295d2d770176f9bc533f8421b89b378bb8c368",
+   "bytes": 5253,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (77).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (78).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (78).md",
+   "sha256": "aced2dd3a50a0f8916f2c0a54d5e0c600c065a3c096f3256ff76a29b218cc188",
+   "bytes": 3897,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (78).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (79).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (79).md",
+   "sha256": "59b25445f866def1ec73d21bdc890e938c7cb0fc3e997d503b37b1f38b0d0728",
+   "bytes": 5131,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (79).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (8).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (8).md",
+   "sha256": "89a833bb110cc7863ed8216b792a3fa93c08cea3387e10667533f542da06d78a",
+   "bytes": 5302,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (8).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (80).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (80).md",
+   "sha256": "735e4ae27f1964df5a4534611be2f6aaa6d1ac12436ab854212b70dc97c87f62",
+   "bytes": 4974,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (80).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (81).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (81).md",
+   "sha256": "db85e92d9e450ac475bd0a5672a928b4fd8ed8eb6ad1f269614e29f14ec7c925",
+   "bytes": 4806,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (81).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (82).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (82).md",
+   "sha256": "e827787c2f56510472f8af493024e208916c624e45f326197240576abf0d05df",
+   "bytes": 3937,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (82).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (83).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (83).md",
+   "sha256": "3330f8bf0a8fc72528cada1344934e5bdacb0b26d4d67b60efdb9994f73f098f",
+   "bytes": 4722,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (83).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (84).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (84).md",
+   "sha256": "314abce9563daac8b2452548f2fa77b1924e7873a060a2e9bdef6525f684d21e",
+   "bytes": 4081,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (84).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (85).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (85).md",
+   "sha256": "acc07449ab3edb1b4f3b257bbb44c746e97978a6916fc740ef1eddcdcd818f00",
+   "bytes": 3798,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (85).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (86).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (86).md",
+   "sha256": "e893787f976d6c71ce94daaf2ee1242f8f966fafd8b1f371f5178549215ab054",
+   "bytes": 3328,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (86).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (87).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (87).md",
+   "sha256": "b72863e9808c1fd055181266e28a88a9ba8ce985ac51f8b829ef7fd498501d75",
+   "bytes": 4570,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (87).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (88).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (88).md",
+   "sha256": "2ea9d86ce089713bdd58b20f9d37746aea2301d2db558914fb1187de2e22c9e1",
+   "bytes": 5066,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (88).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (89).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (89).md",
+   "sha256": "af7775fe0d0c7e32be07262cfbfe5617fe302aeb17384196e9bef9b38d44f3df",
+   "bytes": 4278,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (89).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (9).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (9).md",
+   "sha256": "5fa2c1fb091c82e120a7ce71971e011b2f22fbd69e7df20111d61ee6708f10b5",
+   "bytes": 6440,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (9).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (90).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (90).md",
+   "sha256": "1ff72c6073cd0411aa9b8e94955426f8029090a965185437cc2b44a2cc6131fa",
+   "bytes": 7955,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (90).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (91).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (91).md",
+   "sha256": "7bd06a6e04172929c526d20e8190bb98753b2d91f2596efff4a895f6960a565b",
+   "bytes": 9936,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (91).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (92).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (92).md",
+   "sha256": "12bbd49eff34ad516f9b476e108c3b8a7126ad6e764d77e36f1b725fa2420961",
+   "bytes": 10148,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (92).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (93).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (93).md",
+   "sha256": "c075d6f5cf46381b8b84abec7baa23878f039b12a2e43ec27ecd84265418ad24",
+   "bytes": 10168,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (93).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (94).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (94).md",
+   "sha256": "4a1c791d1bf8d9a7e2d178e334e48b7d56ee1187359c99327e4f8f86ccc4064e",
+   "bytes": 11500,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_relative_local_2026_10_27_bundle.zip/__nested__/R3_relative_local_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (95).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (95).md",
+   "sha256": "b3dc13583fb45e1b35f6c58dee1fbc88d1872f0bce18b08d299d0f6d94f24de0",
+   "bytes": 10326,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (95).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (96).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (96).md",
+   "sha256": "7af45c203a338f7357bbcaa448b74582f95b653194f3c8bbb9260acfc7dc0924",
+   "bytes": 7509,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (96).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (97).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (97).md",
+   "sha256": "c894c0ecf720d44f4d3ff50aa6f72d804d852c490a3f51331181a76bb940e4a1",
+   "bytes": 13247,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE (97).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (98).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (98).md",
+   "sha256": "c96baf406e4cbcee5268122f6af9489c4aa80d8b16af3356f547cf14f53672ba",
+   "bytes": 8579,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_staple_frustration_local_2026_10_27_bundle.zip/__nested__/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE (99).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE (99).md",
+   "sha256": "379c8de55a058069448a5969ecc8510053bbd523b97648576d0bf63599ed4542",
+   "bytes": 7882,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_penrose_peierls_shell_2026_10_27_bundle.zip/__nested__/R3_penrose_peierls_shell_2026_10_27/FORMAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE copy.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE copy.md",
+   "sha256": "24af5776396692637fb4de80646be8c262803e759ce2557746daed6f0ea967c3",
+   "bytes": 4929,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE copy.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE.md",
+   "sha256": "b387490e8d5ff58f29c1e7c81b8754e4018cdda14d25ce29d998e963b52dff37",
+   "bytes": 16592,
+   "extension": ".md",
+   "duplicate_of": null
+  }
+ ]
+}
