@@ -1,0 +1,71 @@
+{
+  "3": {
+    "vertices": 27,
+    "edges": 63,
+    "faces": 48,
+    "prisms": 12,
+    "spatial_faces": 12,
+    "temporal_faces": 36,
+    "boundary_ranks": [
+      26,
+      36,
+      12
+    ],
+    "chain_products_zero": true
+  },
+  "4": {
+    "vertices": 36,
+    "edges": 84,
+    "faces": 64,
+    "prisms": 16,
+    "spatial_faces": 16,
+    "temporal_faces": 48,
+    "boundary_ranks": [
+      35,
+      48,
+      16
+    ],
+    "chain_products_zero": true
+  },
+  "abstract_nonmonotonicity_3step": {
+    "F": [
+      [
+        0.32328931,
+        0.38289268,
+        0.05443869
+      ],
+      [
+        0.38289268,
+        0.76106876,
+        -0.16454553
+      ],
+      [
+        0.05443869,
+        -0.16454553,
+        0.19296188
+      ]
+    ],
+    "K2_diagonal": [
+      1.0,
+      0.02102904,
+      0.05867105
+    ],
+    "K3_diagonal": [
+      1.0,
+      0.625239,
+      0.40334433
+    ],
+    "DeltaK1_diagonal": [
+      0,
+      0,
+      1
+    ],
+    "derivative_trace": -0.0003173589106173984,
+    "F_eigenvalues": [
+      0.004843019692405496,
+      0.2724769277161193,
+      1.0000000025914755
+    ],
+    "warning": "finite-dimensional PSD example; NOT verified realization by Wilson temporal kernels"
+  }
+}

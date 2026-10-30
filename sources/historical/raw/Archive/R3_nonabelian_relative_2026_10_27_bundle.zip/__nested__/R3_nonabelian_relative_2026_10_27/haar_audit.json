@@ -1,0 +1,99 @@
+{
+  "gauge_fixed_free_group_rank": 2,
+  "survivor_chord_mapping": {
+    "19": 26,
+    "34": 59
+  },
+  "retained_face_dependence": {
+    "19": [
+      9,
+      10,
+      36,
+      39,
+      40,
+      41,
+      44,
+      45
+    ],
+    "34": [
+      36,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "haar_nielsen_max_quaternion_reconstruction_residual": 9.59877536665409e-16,
+  "nontrivial_retained_face9_word": [
+    -66,
+    47,
+    19,
+    68,
+    -19,
+    -46
+  ],
+  "selected_axis_example": [
+    {
+      "theta": 0.0,
+      "retained_face9": -1.0,
+      "retained_action_unit": 6.0,
+      "insertion_action_unit": 1.0
+    },
+    {
+      "theta": 0.19634954084936207,
+      "retained_face9": -0.9238795325112867,
+      "retained_action_unit": 5.923879532511287,
+      "insertion_action_unit": 1.0576441587903087
+    },
+    {
+      "theta": 0.39269908169872414,
+      "retained_face9": -0.7071067811865475,
+      "retained_action_unit": 5.707106781186548,
+      "insertion_action_unit": 1.2283614024661398
+    },
+    {
+      "theta": 0.5890486225480862,
+      "retained_face9": -0.38268343236508984,
+      "retained_action_unit": 5.38268343236509,
+      "insertion_action_unit": 1.5055911630923644
+    },
+    {
+      "theta": 0.7853981633974483,
+      "retained_face9": -2.220446049250313e-16,
+      "retained_action_unit": 5.0,
+      "insertion_action_unit": 1.8786796564403572
+    },
+    {
+      "theta": 0.9817477042468103,
+      "retained_face9": 0.3826834323650897,
+      "retained_action_unit": 4.61731656763491,
+      "insertion_action_unit": 2.333289300941193
+    },
+    {
+      "theta": 1.1780972450961724,
+      "retained_face9": 0.7071067811865475,
+      "retained_action_unit": 4.292893218813452,
+      "insertion_action_unit": 2.8519497029047303
+    },
+    {
+      "theta": 1.3744467859455345,
+      "retained_face9": 0.9238795325112867,
+      "retained_action_unit": 4.076120467488713,
+      "insertion_action_unit": 3.414729033951615
+    },
+    {
+      "theta": 1.5707963267948966,
+      "retained_face9": 1.0,
+      "retained_action_unit": 4.0,
+      "insertion_action_unit": 3.9999999999999996
+    }
+  ],
+  "technical_scope": "topological Tietze elimination and exact product-Haar coordinates, not a retained-action-preserving Haar factorization",
+  "numeric_global_coercivity_audit_count": 200,
+  "numeric_global_coercivity_all_passed": true
+}

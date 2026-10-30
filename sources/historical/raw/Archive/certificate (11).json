@@ -1,0 +1,36 @@
+{
+  "theorem": "single exceptional interval, n>=2, arbitrary subset of temporal faces",
+  "incidence_arrays": {
+    "d1": [
+      27,
+      63
+    ],
+    "d2": [
+      63,
+      48
+    ],
+    "d3": [
+      48,
+      12
+    ],
+    "spatial_d1": [
+      9,
+      12
+    ],
+    "spatial_d2": [
+      12,
+      4
+    ]
+  },
+  "matrix_example": {
+    "min_diff_3step": 177.02041454759058,
+    "positive_at_3_4_7": true
+  },
+  "q_values": {
+    "1": 0.41582083069941683,
+    "2": 0.21526928924893765,
+    "10": 0.024252536276891105,
+    "100": 0.0007948830605026051
+  },
+  "limitations": "does not establish independently different inserted supports in two or three time intervals"
+}

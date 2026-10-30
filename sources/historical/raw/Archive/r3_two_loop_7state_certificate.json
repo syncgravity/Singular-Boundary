@@ -1,0 +1,167 @@
+{
+  "status": "exact seven-state block for disjoint-edge loop products only; incomplete adjacent-loop recoupling",
+  "geometry": "3x3 vertices, 12 edges, four quadrilateral faces; face indices row major",
+  "labels": [
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "face_edge_indices": [
+    [
+      0,
+      2,
+      6,
+      8
+    ],
+    [
+      1,
+      3,
+      8,
+      10
+    ],
+    [
+      2,
+      4,
+      7,
+      9
+    ],
+    [
+      3,
+      5,
+      9,
+      11
+    ]
+  ],
+  "temporal_step1_links": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11
+  ],
+  "temporal_step2_links": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10
+  ],
+  "results": {
+    "0.5": {
+      "q": 0.6256832127394867,
+      "fundamental_mean": 0.2474358565566415,
+      "fundamental_second_moment": 1.0307697213203024,
+      "min_spatial_block_entry": 0.0005744715819645937,
+      "min_eigenvalue": 0.08127268246247628,
+      "mixed_7state": 1.5205080010993493e-06,
+      "one_two_cross": 1.711002233963784e-08,
+      "two_two": 3.924200911809848e-11,
+      "nonzero_x": 3,
+      "nonzero_y": 3,
+      "temporal_multipliers_first": [
+        1.0,
+        0.10403029146956186,
+        0.0,
+        0.0,
+        0.10403029146956186,
+        0.010822301543241996,
+        0.0
+      ],
+      "temporal_multipliers_second": [
+        1.0,
+        0.0,
+        0.26775540493102246,
+        0.26775540493102246,
+        0.0,
+        0.0,
+        0.0716929568697758
+      ]
+    },
+    "2.0": {
+      "q": 0.21526928924893765,
+      "fundamental_mean": 0.8662548534446234,
+      "fundamental_second_moment": 1.4012354396661293,
+      "min_spatial_block_entry": 0.0012092358975176007,
+      "min_eigenvalue": 0.0001550574398004819,
+      "mixed_7state": 7.104434027835627e-10,
+      "one_two_cross": 8.667218452045165e-11,
+      "two_two": 2.4363882325612055e-12,
+      "nonzero_x": 3,
+      "nonzero_y": 3,
+      "temporal_multipliers_first": [
+        1.0,
+        0.10403029146956186,
+        0.0,
+        0.0,
+        0.10403029146956186,
+        0.010822301543241996,
+        0.0
+      ],
+      "temporal_multipliers_second": [
+        1.0,
+        0.0,
+        0.26775540493102246,
+        0.26775540493102246,
+        0.0,
+        0.0,
+        0.0716929568697758
+      ]
+    },
+    "10.0": {
+      "q": 0.024252536276891105,
+      "fundamental_mean": 1.7083706166473633,
+      "fundamental_second_moment": 2.9749776300115816,
+      "min_spatial_block_entry": 3.459622010697519e-07,
+      "min_eigenvalue": 4.4953271288114005e-11,
+      "mixed_7state": 6.294974768255141e-20,
+      "one_two_cross": 2.132059142528885e-20,
+      "two_two": 2.330981477603401e-21,
+      "nonzero_x": 3,
+      "nonzero_y": 3,
+      "temporal_multipliers_first": [
+        1.0,
+        0.10403029146956186,
+        0.0,
+        0.0,
+        0.10403029146956186,
+        0.010822301543241996,
+        0.0
+      ],
+      "temporal_multipliers_second": [
+        1.0,
+        0.0,
+        0.26775540493102246,
+        0.26775540493102246,
+        0.0,
+        0.0,
+        0.0716929568697758
+      ]
+    }
+  },
+  "complete_mixed_coefficient": "NOT COMPUTED",
+  "support_local_theorem_for_arbitrary_3D_cavity": "NOT PROVED"
+}

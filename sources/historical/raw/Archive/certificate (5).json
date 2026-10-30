@@ -1,0 +1,106 @@
+{
+  "model": "constructed 2x2 quadrilateral prism extrusion, not Penrose-provenance certified",
+  "interface_faces": [
+    3,
+    4,
+    10,
+    13
+  ],
+  "retained_faces": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "minimum_retained_spin_faces": 8,
+  "number_minimal_surfaces": 2,
+  "minimal_surfaces": [
+    {
+      "retained_faces": [
+        0,
+        1,
+        2,
+        5,
+        16,
+        17,
+        18,
+        19
+      ],
+      "diagonal_cells": [
+        0,
+        3
+      ],
+      "common_edge": [
+        10
+      ],
+      "scalar_intertwiner_contraction": 0.00390625
+    },
+    {
+      "retained_faces": [
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15
+      ],
+      "diagonal_cells": [
+        1,
+        2
+      ],
+      "common_edge": [
+        10
+      ],
+      "scalar_intertwiner_contraction": 0.00390625
+    }
+  ],
+  "first_nonzero_Taylor_coefficient_scalar_four_character_moment": 3.0517578125e-05,
+  "leading_formula": "N(beta)=beta^8/32768 + R9(beta); N=int prod_{16 retained faces} exp(-beta d_p) prod_{4 seam faces} chi_1/2(W_p) dU",
+  "rigorous_remainder": "|R9(beta)| <= 16 * exp(32 beta) * (32 beta)^9 / 9! for beta>=0",
+  "scope": "scalar trace of four-port fundamental Fourier block; NOT the full 16x16 coefficient matrix; high-spin remainder controlled only by crude finite-volume Taylor bound, not cutoff-uniform at large beta",
+  "spin_truncation_bound": "|N(beta)-N_{j<=J}(beta)| <= 256*tau_J(beta), tau_J=sum_{d>2J+1}(2*d^2/beta) exp(-beta) I_d(beta); uniform for each beta and finite volume; cannot make J fixed uniformly as beta->infinity",
+  "spin_tail_examples": {
+    "0.5": {
+      "2": 3.139347322134167e-05,
+      "5": 4.4853010194856324e-14,
+      "10": 1.1102230246251565e-16,
+      "20": 1.1102230246251565e-16,
+      "40": 1.1102230246251565e-16
+    },
+    "2.0": {
+      "2": 0.009563700241056017,
+      "5": 4.8225258897360845e-08,
+      "10": 2.220446049250313e-16,
+      "20": 2.220446049250313e-16,
+      "40": 2.220446049250313e-16
+    },
+    "10.0": {
+      "2": 0.3945824354258699,
+      "5": 0.006628583889041084,
+      "10": 3.4845397678395784e-08,
+      "20": 1.1102230246251565e-16,
+      "40": 1.1102230246251565e-16
+    },
+    "100.0": {
+      "2": 0.9597915338435545,
+      "5": 0.7240160045741593,
+      "10": 0.20262184410100026,
+      "20": 0.0007031121644227589,
+      "40": 1.0047518372857667e-13
+    }
+  }
+}

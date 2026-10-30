@@ -1,0 +1,20 @@
+{
+  "scope": "Exploratory retained-cavity MCMC, not certified equilibrium or uniform energy estimate",
+  "configuration": {
+    "radii": [
+      5.0,
+      6.5,
+      8.0,
+      10.0
+    ],
+    "lambdas": [
+      16.0,
+      32.0
+    ],
+    "burn": 150,
+    "stride": 6,
+    "samples": 15,
+    "chains": 2
+  },
+  "rows": 96
+}

@@ -1,0 +1,92 @@
+{
+  "basis": [
+    "('product', ())",
+    "('product', (0,))",
+    "('product', (1,))",
+    "('product', (2,))",
+    "('product', (3,))",
+    "('product', (0, 3))",
+    "('product', (1, 2))",
+    "('j0', (0, 1))",
+    "('j1', (0, 1))",
+    "('j0', (0, 2))",
+    "('j1', (0, 2))",
+    "('j0', (1, 3))",
+    "('j1', (1, 3))",
+    "('j0', (2, 3))",
+    "('j1', (2, 3))"
+  ],
+  "adjacent_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "results": {
+    "0.5": {
+      "mixed15": 1.5205080010993493e-06,
+      "mixed7": 1.5205080010993493e-06,
+      "adjacent_increment": 0.0,
+      "negative_entries": 0,
+      "minimum_entry": 0.00014361789549114843,
+      "eig_min": 0.4415606784157652,
+      "temporal_nonzero": [
+        3,
+        3
+      ]
+    },
+    "2.0": {
+      "mixed15": 7.104434027835627e-10,
+      "mixed7": 7.104434027835627e-10,
+      "adjacent_increment": 0.0,
+      "negative_entries": 0,
+      "minimum_entry": 0.0003023089743794002,
+      "eig_min": 0.03764365829318583,
+      "temporal_nonzero": [
+        3,
+        3
+      ]
+    },
+    "diagonal_original": {
+      "mixed15": 7.104434027835624e-10,
+      "mixed7": 7.104434027835624e-10,
+      "adjacent_increment": 0.0,
+      "negative_weighted_terms": 0,
+      "adjacent_cross": 0.0,
+      "adjacent_adjacent": 0.0
+    },
+    "adjacent_overlap": {
+      "mixed15": 9.076315414884484e-10,
+      "mixed7": 7.560595306497718e-10,
+      "adjacent_increment": 1.5157201083867655e-10,
+      "negative_weighted_terms": 0,
+      "adjacent_cross": 1.448773519064467e-10,
+      "adjacent_adjacent": 6.694658932229848e-12
+    },
+    "10.0": {
+      "mixed15": 6.294974768255141e-20,
+      "mixed7": 6.294974768255141e-20,
+      "adjacent_increment": 0.0,
+      "negative_entries": 0,
+      "minimum_entry": 3.459622010697519e-07,
+      "eig_min": 4.533446775327054e-05,
+      "temporal_nonzero": [
+        3,
+        3
+      ]
+    }
+  },
+  "scope": "15 state orthonormal principal block; cross terms outside block uncomputed"
+}

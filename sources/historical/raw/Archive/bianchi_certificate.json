@@ -1,0 +1,80 @@
+{
+  "prism_count": 12,
+  "spatial_complex": "four-quadrilateral disk with three periodic temporal intervals; not Penrose-extracted",
+  "isolated_Q": [
+    12,
+    16,
+    19,
+    24,
+    28
+  ],
+  "local_face_fillings": [
+    {
+      "face": 12,
+      "cell": 0,
+      "other_retained_faces": [
+        0,
+        4,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "face": 16,
+      "cell": 1,
+      "other_retained_faces": [
+        1,
+        5,
+        13,
+        17,
+        18
+      ]
+    },
+    {
+      "face": 19,
+      "cell": 2,
+      "other_retained_faces": [
+        2,
+        6,
+        14,
+        20,
+        21
+      ]
+    },
+    {
+      "face": 24,
+      "cell": 4,
+      "other_retained_faces": [
+        4,
+        8,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "face": 28,
+      "cell": 5,
+      "other_retained_faces": [
+        5,
+        9,
+        25,
+        29,
+        30
+      ]
+    }
+  ],
+  "signed_face_boundary_equality_verified": true,
+  "one_face_per_prism_verified": true,
+  "repair_integer_matrix_H_shape": [
+    43,
+    5
+  ],
+  "repair_col_sum_max": 5,
+  "repair_row_sum_max": 2,
+  "schur_upper_bound_norm_H_squared": 10,
+  "measured_norm_H_squared": 7.135779205069856,
+  "gaussian_C1_le_11C0": "follows from D_Q=D_R H and ||H||\u00b2<=10 for every choice of local links",
+  "nonlinear_bianchi": "d(W_q) <= 5 sum_{p in chosen prism cell except q} d(W_p), with conjugations along transport paths. Total V_Q <=10 gamma/beta_min * retained local action under equal or uniformly comparable weights. Does NOT directly prove insertion free-energy lower bound."
+}

@@ -1,0 +1,25 @@
+# Cavity compatibility on gauge complexes: a free-shield theorem and a sharp geometric gap
+
+Date: 2026-10-26. Wilson SU(2) on finite oriented 2-complex (including time-like plaquettes), normalized Haar measure. This note proves a corrected cavity-event probability criterion under an explicitly testable combinatorial hypothesis. It does **not** claim the criterion for all interior Penrose spacetime supports, nor an R3/R2 mass gap.
+
+## Setup
+Let I be a nonempty set of internal links, m=|I|, and P(I) the faces containing a link in I; assume each face has boundary length at most L and each link incident to at most D faces. All incident beta_p <= c_+ lambda, lambda >=1. Define S_out(v)=sum_{p not in P(I)} beta_p d(W_p(v)), the cavity measure rho_I proportional to exp(-S_out) times Haar on exterior links, and E_I(v)=inf_{u in SU(2)^I} sum_{p in P(I)} beta_p d(W_p(u,v)).
+
+## Definition: free Haar shield
+A free shield for I is a subset H of exterior links with: (a) every h in H belongs to no face outside P(I), so S_out is independent of H; (b) for every face p in P(I) meeting an exterior link, choose an h_p in H intersecting that face, with all chosen h_p distinct, and no chosen h_p lies in any other face of P(I). Faces entirely within I have no assigned shield link. (The criterion may be weakened by a uniformly conditioned triangular constraint map, but this strong form suffices.) Let r be the number of faces having an assigned shield link; r <= |P(I)| <= Dm.
+
+## Theorem (exact polynomial cavity probability with free shield)
+There exist c_0,C_0>0 depending only on L,D,c_+ and fixed SU(2) metric conventions such that, uniformly in lattice volume, exterior nonshield fields, and lambda>=1, there is a gauge-invariant event B_I with
+ rho_I(B_I) >= (c_0 lambda^{-3/2})^r >= exp[-C_0 m(1+log lambda)]
+and E_I(v) <= C_0 m on B_I.
+
+Proof. Set all internal links to identity in a temporary gauge coordinate system (only an existence witness; E_I is gauge invariant). For every p meeting exterior, fix all nonshield exterior edges arbitrarily, then the unique chosen h_p appears once in W_p and has no occurrence in other incident faces. Thus there is a unique SU(2) value h_p^*(v\H) making W_p(I,v)=1. These choices can be made simultaneously. Faces entirely contained in I are already flat when all interior links equal identity. The event B_I is the set on which every h_p lies within SU(2) distance epsilon/sqrt(lambda) of its target h_p^*. On B_I, product metric and boundary length <=L imply d(W_p(I,v)) <= C epsilon^2/lambda. Therefore E_I(v) <= S_I(I;v) <= C c_+ |P(I)| <= C_0m. Conditional on nonshield exterior variables, all shield links have *exactly normalized Haar distribution*, because S_out omits them and the cavity measure's other factors are independent of them. Each Haar ball has mass >=c_0 lambda^{-3/2}. Conditional multiplication gives the stated probability, and averaging over nonshield variables preserves it. Gauge invariance of B_I follows by defining it equivalently through plaquette holonomy distances d(W_p(I,v)) with the witness transformed covariantly; the witness expression is gauge-dependent, but the existence of a completing internal configuration with bounded incident defects is gauge invariant. Strictly, one can instead define the gauge-invariant enlarged event B'_I={E_I(v)<= C_0m}, which contains the constructed event and inherits its lower probability. 
+
+## Corollary (logarithmic insertion free energy)
+The minimizer Haar-ball lower bound Z_I(v) >= c^m lambda^{-3m/2} exp[-E_I(v)-Cm] gives F_I=-log E_rho Z_I <= (3/2)m log lambda + Cm +(3/2)r log lambda - r log c_0 <= C m(1+log lambda). Combined with mu(A_X) <=exp[-c_-sqrt(lambda)|X|+F_I] and m<=K|X|, this proves contour suppression for free-shield supports.
+
+## Why this does not establish arbitrary interior Penrose supports
+In a bulk spacetime complex, each exterior link normally belongs to nondeleted plaquettes in S_out. Then the exact Haar step is unavailable. Moreover, deleting plaquettes touching I need not produce enough independently adjustable shield links to solve all incident curvature constraints. Distinct target plaquettes can share exterior links, and nonabelian Bianchi identities can impose constraints. Neither finite incidence nor Penrose rhombus shape regularity ensures the free-shield condition. In the genuinely arbitrary thin case the polynomial cavity compatibility event remains unproved.
+
+## Audit and further proof obligation
+One must prove a replacement shield lemma: a cavity-conditional lower bound on compatible exterior holonomy neighborhoods, polynomial in lambda with exponent O(m), *despite* the nondeleted Wilson interactions. That is a nonlinear correlated-exterior free-energy comparison, not a consequence of Haar measure alone. Do not infer it from the result here. The Penrose stage-26 data snapshots in the project are not a verified complete incidence model for every extruded spacetime region, so they cannot certify this uniform property.

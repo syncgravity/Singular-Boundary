@@ -1,0 +1,32 @@
+{
+  "haar_small_ball_c0": 0.15025784612028537,
+  "radius_coefficient": 0.25,
+  "energy_upper_bound": "(lambda / count retained faces) * E(sum retained Wilson deficit) <= 6 log(lambda)+24.717142279422, lambda>=1",
+  "constant": 24.71714227942168,
+  "verified_geometry": [
+    {
+      "radius": 5.0,
+      "faces": 687,
+      "active_links": 747,
+      "active_links_le_4_faces": true
+    },
+    {
+      "radius": 6.5,
+      "faces": 1173,
+      "active_links": 1251,
+      "active_links_le_4_faces": true
+    },
+    {
+      "radius": 8.0,
+      "faces": 1851,
+      "active_links": 1941,
+      "active_links_le_4_faces": true
+    },
+    {
+      "radius": 10.0,
+      "faces": 3156,
+      "active_links": 3273,
+      "active_links_le_4_faces": true
+    }
+  ]
+}

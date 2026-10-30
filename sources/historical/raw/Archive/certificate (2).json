@@ -1,0 +1,48 @@
+{
+  "model": "two-face-sharing quadrilateral prisms, not sampled Penrose patch",
+  "total_cells": 2,
+  "total_faces": 11,
+  "shared_face_id": 3,
+  "shared_face_edge_ids": [
+    1,
+    5,
+    8,
+    10
+  ],
+  "disk_data": [
+    {
+      "cell": 0,
+      "faces": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "face_count": 5,
+      "edge_count": 12,
+      "vertex_count": 8,
+      "Euler": 1,
+      "boundary_edge_count": 4
+    },
+    {
+      "cell": 1,
+      "faces": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "face_count": 5,
+      "edge_count": 12,
+      "vertex_count": 8,
+      "Euler": 1,
+      "boundary_edge_count": 4
+    }
+  ],
+  "two_disks_intersection_only_seam": true,
+  "integer_chain_complex_verified": true,
+  "analytic_kernel": "fL(h) fR(h^{-1}); fS=w_{beta_1}*...*w_{beta_5}; coefficient scalar c_j(beta)=2 exp(-beta) I_(2j+1)(beta)/beta >=0",
+  "guarantee": "Z_with_insert/Z_without_insert >= q(beta_insert)"
+}

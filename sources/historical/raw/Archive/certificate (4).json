@@ -1,0 +1,70 @@
+{
+  "origin": "constructed 2x2 quadrilateral patch, combinatorially admissible, not provenance-certified from a Penrose tiling",
+  "vertices": 18,
+  "edges": 33,
+  "faces": 20,
+  "prisms": 4,
+  "interior_seam_faces": [
+    3,
+    4,
+    10,
+    13
+  ],
+  "rank_d1": 17,
+  "rank_d2": 16,
+  "rank_d3": 4,
+  "chain_d1d2_zero": true,
+  "chain_d2d3_zero": true,
+  "seam_pair_shared_edges": [
+    [
+      4,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      4,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      4,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      4
+    ]
+  ],
+  "face_cell_incidence": [
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      -1
+    ]
+  ]
+}

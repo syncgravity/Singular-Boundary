@@ -1,0 +1,20 @@
+{
+  "source": "constructed two face-sharing quadrilateral prisms; NOT dataset-extracted Penrose tiling",
+  "vertices": 12,
+  "edges": 20,
+  "faces": 11,
+  "cells": 2,
+  "interior_faces": [
+    3
+  ],
+  "rank_d1": 11,
+  "rank_d2": 9,
+  "rank_d3": 2,
+  "chain_1_2_max": 0,
+  "chain_2_3_max": 0,
+  "max_faces_per_edge": 3,
+  "shared_face_incidence": [
+    1,
+    -1
+  ]
+}

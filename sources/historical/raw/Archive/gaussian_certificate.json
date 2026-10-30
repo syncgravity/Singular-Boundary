@@ -1,0 +1,32 @@
+{
+  "local_links": 36,
+  "exterior_links": 27,
+  "retained_residual_rank": 5,
+  "full_residual_rank": 5,
+  "equal_kernel": true,
+  "retained_positive_eigenvalues": [
+    2.869957793821963,
+    3.037105880956691,
+    5.2817598831023895,
+    5.608055409365892,
+    5.757373232166555
+  ],
+  "full_positive_eigenvalues": [
+    3.4098471339438357,
+    4.216645139120774,
+    5.304585378204405,
+    5.80395521402814,
+    6.316331736556422
+  ],
+  "generalized_eigenvalues": [
+    0.9999999999999997,
+    1.0028617068478274,
+    1.0041769539734602,
+    1.3036544363546905,
+    1.432774451676793
+  ],
+  "gaussian_mean_defect": 1.1152013232791562,
+  "gaussian_expected_exp_minus_defect": 0.38762571335593715,
+  "gaussian_free_energy_defect": 0.9477150612383232,
+  "linearized_assumptions": "Gaussian SU2 Lie algebra about common flat configuration, normalized quadratic Wilson action; 3 independent color components. Does not prove finite-coupling nonlinear large-lambda limit when gauge holonomy moduli occur."
+}

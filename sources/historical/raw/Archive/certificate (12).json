@@ -1,0 +1,19 @@
+{
+  "kappa": 2.0,
+  "gamma1": 3.0,
+  "gamma2": 5.0,
+  "gamma3": 1.2,
+  "tr_base": 0.012187597105243989,
+  "tr_nonuniform": 0.040373467653675,
+  "ratio_normalized": 3.3126683877910112,
+  "cutoffs": {
+    "8": 0.04037346765050148,
+    "12": 0.04037346765367499,
+    "20": 0.040373467653675,
+    "36": 0.040373467653675
+  },
+  "min_central_F_entry": 1.345587382920384e-41,
+  "abstract_PSD_mixed_term_negative": -0.8,
+  "abstract_PSD_bad_trace": -8.748999999999999,
+  "abstract_base_trace": 1.001
+}

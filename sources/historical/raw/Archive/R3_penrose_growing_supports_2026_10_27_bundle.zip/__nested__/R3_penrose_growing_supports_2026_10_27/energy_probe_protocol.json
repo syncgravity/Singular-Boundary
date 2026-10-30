@@ -1,0 +1,13 @@
+{
+  "scope": "Two-chain exploratory retained-Wilson SU(2) Metropolis per setting, not certified equilibrium or local supremum",
+  "radii": [5.0,6.5,8.0,10.0],
+  "lambdas": [4.0,8.0,16.0,32.0],
+  "chains": 2,
+  "measurements_per_chain": 15,
+  "stride": 6,
+  "burn_for_lambda_4_8": 100,
+  "burn_for_lambda_16_32": 150,
+  "observables": ["mean deficit over all retained faces", "fixed anchored spatial plaquette deficit", "four nearby retained temporal plaquette deficits"],
+  "geometry": "Z5 direct acceptance-window Penrose disk x three-periodic temporal circle",
+  "warning": "No validated autocorrelation times, convergence, or volume-uniform per-plaquette bound. High coupling cold/hot chains may mix slowly."
+}

@@ -1,0 +1,37 @@
+{
+  "model": "2x2 spatial quadrilateral disk times a two-edge temporal circle",
+  "vertices": 18,
+  "edges": 42,
+  "faces": 32,
+  "prisms": 8,
+  "spatial_faces": 8,
+  "temporal_faces": 24,
+  "temporal_faces_per_step": 12,
+  "matrix_ranks": [
+    17,
+    24,
+    8
+  ],
+  "chain_d1_d2_zero": true,
+  "chain_d2_d3_zero": true,
+  "temporal_multiplier_examples": {
+    "0.2": {
+      "fundamental": 0.04991687444594501,
+      "spin1": 0.001662511081100144
+    },
+    "2": {
+      "fundamental": 0.4331274267223117,
+      "spin1": 0.13374514655537642
+    },
+    "10": {
+      "fundamental": 0.8541853083236817,
+      "spin1": 0.6583258766705272
+    },
+    "100": {
+      "fundamental": 0.9850378800081565,
+      "spin1": 0.9605984847996737
+    }
+  },
+  "theorem": "for equal spatial Boltzmann multipliers on both time slices, on the gauge-invariant Hilbert space, Z_insert / Z_cavity >= product q(gamma_q) for any subset of 24 temporal faces; periodic two-step time",
+  "scope": "constructed combinatorial prism torus-in-time, not Penrose-extracted; no arbitrary number of steps theorem"
+}

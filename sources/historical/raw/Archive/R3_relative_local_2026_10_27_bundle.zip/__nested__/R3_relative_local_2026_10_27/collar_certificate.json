@@ -1,0 +1,383 @@
+{
+  "Q": [
+    13,
+    18,
+    22,
+    25,
+    26,
+    29,
+    32,
+    37
+  ],
+  "initial_local_edges": [
+    1,
+    6,
+    10,
+    13,
+    14,
+    17,
+    18,
+    20,
+    22,
+    25,
+    26,
+    29,
+    32,
+    37,
+    40,
+    41,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    55,
+    58
+  ],
+  "initial_local_rank": [
+    25,
+    25
+  ],
+  "exterior_ranks_initial": [
+    10,
+    11
+  ],
+  "candidate_extra_edges": [
+    {
+      "edge": 0,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 2,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 3,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 4,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 5,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 7,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 8,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 9,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 11,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 12,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 15,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 16,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 19,
+      "local_rank_retained": 25,
+      "local_rank_full": 25,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 0,
+      "full_rank_increment": 0
+    },
+    {
+      "edge": 21,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 23,
+      "local_rank_retained": 25,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 0,
+      "retained_rank_increment": 0,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 24,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 27,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 28,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 30,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 31,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 33,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 34,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 35,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 36,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 38,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 39,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 42,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 43,
+      "local_rank_retained": 25,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 0,
+      "retained_rank_increment": 0,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 45,
+      "local_rank_retained": 25,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 0,
+      "retained_rank_increment": 0,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 53,
+      "local_rank_retained": 25,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 0,
+      "retained_rank_increment": 0,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 54,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 56,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 57,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 59,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 60,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 61,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    },
+    {
+      "edge": 62,
+      "local_rank_retained": 26,
+      "local_rank_full": 26,
+      "exterior_rank_growth": 1,
+      "retained_rank_increment": 1,
+      "full_rank_increment": 1
+    }
+  ],
+  "greedy_collar": [
+    {
+      "edge": 23,
+      "exterior_rank_growth": 0,
+      "retained_rank": 25,
+      "full_rank": 26
+    }
+  ],
+  "resulting_local_edges": [
+    1,
+    6,
+    10,
+    13,
+    14,
+    17,
+    18,
+    20,
+    22,
+    23,
+    25,
+    26,
+    29,
+    32,
+    37,
+    40,
+    41,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    55,
+    58
+  ]
+}

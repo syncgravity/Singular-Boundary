@@ -1,0 +1,15 @@
+{
+  "n_haar_moduli_samples": 256,
+  "denominator_mean_normal_Hessian_inverse_sqrt": 8.217827505207046e-07,
+  "numerator_mean_normal_Hessian_inverse_sqrt": 3.19614564322945e-14,
+  "predicted_limit_lambda_to_infinity_of_lambda_3over2_times_Zall_over_ZR": 3.103198821336018e-08,
+  "denominator_amp_range": [
+    8.217827505206932e-07,
+    8.217827505207136e-07
+  ],
+  "numerator_amp_range": [
+    3.092368188578406e-14,
+    3.499053666559611e-14
+  ],
+  "status": "Numerical integral of analytically defined clean-Laplace prefactors. Exponent 3/2 rigorous for fixed complex; coefficient MC estimate not rigorous."
+}

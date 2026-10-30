@@ -1,0 +1,62 @@
+{
+  "good14": {
+    "Q": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      25,
+      26,
+      27,
+      31,
+      32,
+      33
+    ],
+    "rank_DR_exact_QQ": 30,
+    "rank_ALR_exact_QQ": 25,
+    "rank_D1_exact_QQ": 36,
+    "rank_AL1_exact_QQ": 31,
+    "effective_rank0": 5,
+    "effective_rank1": 5,
+    "rank_increase": 0
+  },
+  "rank_change8": {
+    "Q": [
+      13,
+      18,
+      22,
+      25,
+      26,
+      29,
+      32,
+      37
+    ],
+    "rank_DR_exact_QQ": 35,
+    "rank_ALR_exact_QQ": 25,
+    "rank_D1_exact_QQ": 36,
+    "rank_AL1_exact_QQ": 25,
+    "effective_rank0": 10,
+    "effective_rank1": 11,
+    "rank_increase": 1
+  },
+  "bianchi_isolated5": {
+    "Q": [
+      12,
+      16,
+      19,
+      24,
+      28
+    ],
+    "rank_DR_exact_QQ": 36,
+    "rank_ALR_exact_QQ": 16,
+    "rank_D1_exact_QQ": 36,
+    "rank_AL1_exact_QQ": 16,
+    "effective_rank0": 20,
+    "effective_rank1": 20,
+    "rank_increase": 0
+  }
+}

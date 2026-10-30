@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "modular_ranks_prime": 1000003,
+  "relative_ranks": {
+    "original": {
+      "local_count": 26,
+      "retained_local_rank": 25,
+      "full_local_rank": 25,
+      "exterior_retained_rank": 10,
+      "exterior_full_rank": 11
+    },
+    "collar45": {
+      "local_count": 27,
+      "retained_local_rank": 25,
+      "full_local_rank": 26,
+      "exterior_retained_rank": 10,
+      "exterior_full_rank": 10
+    }
+  },
+  "nonabelian_exterior_cycle_word": "a",
+  "exterior_loop_lengths": [
+    3,
+    11
+  ],
+  "one_edge_collar_preserves_nonabelian_flat_exterior": true,
+  "modified_edges_in_flat_gluing": [
+    45,
+    46,
+    47,
+    48,
+    51
+  ],
+  "max_gauge_word_length": 1,
+  "theorem_scope": "flat-stratum relative gluing on fixed combinatorial prism; no off-flat Gibbs-measure or arbitrary Penrose theorem"
+}

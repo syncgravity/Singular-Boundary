@@ -1,0 +1,28 @@
+# Curvature-energy transport, quotient modes, and a sharp boundary obstruction
+Date 2026-10-27. Research note. Does not prove arbitrary Penrose nonlinear tail.
+
+## I. Exact SU(2) series curvature-energy theorem
+Let g_1,...,g_n in SU(2), product g_1...g_n=h, and d(g)=1-Tr(g)/2=1-cos theta(g), theta in [0,pi]. Let lambda>0 and E_n(h)=min lambda sum_{i=1}^n d(g_i). Bi-invariant geodesic distance gives theta(h)<=sum theta(g_i). The elementary bounds 2 theta^2/pi^2 <= 1-cos theta <= theta^2/2 imply
+(2 lambda/(pi^2 n)) theta(h)^2 <= E_n(h) <= lambda n[1-cos(theta(h)/n)] <= lambda theta(h)^2/(2n).
+Upper bound achieved as trial by n equal geodesic roots of h. For n>=2, equality E_n(h)=lambda n[1-cos(theta(h)/n)] follows by replacing any angles with their proportional subdivision and convexity on [0,pi/2] (not used or needed in the note). Only inequalities claimed as theorem.
+Consequence: allowing a holonomy to spread over n links reduces minimum curvature energy to order lambda/n, without any contraction of the product holonomy h. This applies directly to serial independent face-holonomy coordinates only, not an arbitrary Penrose surface where other plaquettes constrain link motions.
+
+## II. Exact Gaussian constrained-energy formula and neutral quotient
+Let V,F,Y be finite-dimensional real Hilbert spaces, D:V->F a curvature map and C:V->Y a boundary-observable map. Let H=lambda D^*D+mu I>0, mu>0, and E(y)=min_{Cx=y} (1/2)<x,Hx>. For y in ran C,
+E(y)= (1/2)<y,(C H^{-1} C^*)^dagger y>.
+To establish, Lagrange multipliers give x_*=H^{-1}C^*(C H^{-1} C^*)^dagger y. If N=ker D and C(N) is the neutral boundary space, then as mu decreases to zero the energy vanishes for y in C(N). The quadratic energy is well-defined on quotient Y/C(N), with a positive effective stiffness only where appropriately coercive. A uniform spectral bound on the quotient Dirichlet-to-Neumann operator is independent data; bounded incidence does not supply it. Nested variational domains give E_{j+1}(y)<=E_j(y) only if boundary observable y is transported by a fixed, compatible identification and constraints are nested. Hence energy cancellation/telescoping is rigorous, but does not imply a contraction factor.
+
+## III. Nonlinear Wilson probability obstruction with Haar endpoint
+Let U_1,...,U_n be a nonlinear SU(2) Wilson chain with normalized Gibbs law proportional to product_i exp[-lambda d(U_i)] dU_i (independent increments), and H=U_1...U_n. The endpoint H is NOT Haar at finite lambda when H is defined as product of increments. However, if an outer group variable h is included as a *free* Haar coordinate in the Gibbs model with plaquette factors d(g_i^{-1}g_{i+1}) and both endpoints g_0 and g_n integrated with Haar, then the marginal of each g_j, in particular endpoint g_n, is Haar by simultaneous left multiplication; even though all relative increments are strongly coupled. If one freezes g_0=I, endpoint g_n is instead K_lambda^{*n}, not Haar. Thus a Haar endpoint assertion depends on boundary conditions.
+For the chain with free global SU(2) left mode, the boundary endpoint h=g_n is Haar and the constrained relative-energy E_n(g_0^{-1}g_n) has strongly concentrated difference for n<<lambda, not Haar. Absolute h alone is a neutral gauge/global mode and can have Haar law with zero energy. This illustrates the necessity of quotienting neutral holonomies before assigning them an energetic defect; the earlier naive Haar-endpoint argument would be invalid for the relative holonomy.
+
+## IV. Exact stochastic endpoint bound in genuine nonlinear Wilson chain
+Fix g_0=I, let increments U_i iid K_lambda. Product H_n has law K_lambda^{*n}. For fundamental f(g)=Tr(g)/2, E f(H_n) = [I_2(lambda)/I_1(lambda)]^n. This is exact. The Haar endpoint mixing scale is n ~ lambda, not O(1) shell count. At n much less than lambda, E d(H_n)=1-a_lambda^n~(3n)/(2lambda), so boundary holonomy is small, and by E_n(H_n)<=lambda theta(H_n)^2/(2n) the compatible energy may remain O(1). To get an absolute E_n bound, use theta^2 <= (pi^2/2) d from d>=2theta^2/pi^2, yielding E_n(H_n) <= (pi^2 lambda/(4n)) d(H_n). Thus
+E E_n(H_n) <= (pi^2 lambda/(4n))(1-a_lambda^n) <= C uniformly for lambda>=1 and 1<=n<=lambda, using 1-a_lambda<=C/lambda (proved from Bessel asymptotics plus continuity and positive lower bound). For n>lambda, E_n(h)<=lambda pi^2/(2n)<=pi^2/2 deterministically. So E E_n(H_n) <=C for all lambda>=1,n>=1. Moreover E_n(H_n) <= (pi^2 lambda/(4n)) d(H_n). A support-local exponential tail still requires a moment bound for theta(H_n), not inferred from the mean alone.
+This gives a positive, exact nonlinear expected compatible-energy estimate for a serial Wilson chain with correctly coupled boundary holonomy! It is NOT a theorem for general Penrose face couplings, whose marginals do not factor as a Wilson walk.
+
+## V. An exact large-deviation bound from Markov and bounded metric
+From the uniform mean one gets P(E_n(H_n)>s) <= C/s, an absolute but polynomial tail. One cannot convert this to an exponential tail without a stronger concentration estimate. A candidate via martingale/Bernstein for SU(2) random walk needs careful control of curvature and is not proved here.
+
+## VI. What remains
+The general Penrose problem requires: certified 3D prism incidence operators, quotient of neutral modes with compatible boundary traces, Wilson measure control of nonlinear constraint-induced boundary holonomy (e.g. support-local mgf of quotient energy), and localization of inverse Hessian/Dirichlet-to-Neumann response across shells. Do not infer volume-independent strong contraction or full R3/R2 mass gap from this chain model.

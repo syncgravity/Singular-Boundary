@@ -1,0 +1,44 @@
+{
+  "verified_4_plaquette_edges": 4,
+  "verified_faces": 48,
+  "sample_count": 720,
+  "largest_face_holonomy_gauge_covariance_error": 8.881784197001252e-16,
+  "largest_cavity_two_start_spread": 2.595257342363766e-11,
+  "largest_inserted_two_start_spread": 0.02733476358187481,
+  "representative_minima_replayed": [
+    {
+      "sample_id": 0,
+      "lambda": 1.0,
+      "sampled_E0": 5.166545735185052,
+      "recomputed_E0": 5.166545735186586,
+      "sampled_E1": 5.914234631818854,
+      "recomputed_E1": 5.914234631818854
+    },
+    {
+      "sample_id": 180,
+      "lambda": 4.0,
+      "sampled_E0": 8.008889792435244,
+      "recomputed_E0": 8.008889792435244,
+      "sampled_E1": 9.763161849934868,
+      "recomputed_E1": 9.763161849935571
+    },
+    {
+      "sample_id": 420,
+      "lambda": 30.0,
+      "sampled_E0": 9.774699464702012,
+      "recomputed_E0": 9.774699464702747,
+      "sampled_E1": 11.412747164203763,
+      "recomputed_E1": 11.412747164208788
+    },
+    {
+      "sample_id": 719,
+      "lambda": 300.0,
+      "sampled_E0": 6.262672379055523,
+      "recomputed_E0": 6.262672379055523,
+      "sampled_E1": 6.985337941378345,
+      "recomputed_E1": 6.985337941383142
+    }
+  ],
+  "all_720_cavity_raw_action_records_recomputed_exactly": false,
+  "scope": "five link samples covariance-tested and four full minima replayed; all two-start spreads examined."
+}

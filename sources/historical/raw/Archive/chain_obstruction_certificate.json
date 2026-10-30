@@ -1,0 +1,166 @@
+{
+  "4": {
+    "vertices": 1,
+    "edge_loops": 4,
+    "retained_two_edge_faces": 3,
+    "inserted_one_edge_faces": 1,
+    "max_edge_incidence": 2,
+    "max_face_length": 2,
+    "computed": [
+      {
+        "local_edges": 1,
+        "local_rank_retained": 1,
+        "local_rank_full": 1,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 2,
+        "local_rank_retained": 2,
+        "local_rank_full": 2,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 2,
+        "local_rank_retained": 2,
+        "local_rank_full": 2,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 3,
+        "local_rank_retained": 3,
+        "local_rank_full": 3,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 4,
+        "local_rank_retained": 3,
+        "local_rank_full": 4,
+        "new_exterior_rank": 0
+      }
+    ],
+    "group_presentation": "retained: <x0,...,xN-1 | x_i x_(i+1)^-1> = Z; inserting x0 kills the generator"
+  },
+  "8": {
+    "vertices": 1,
+    "edge_loops": 8,
+    "retained_two_edge_faces": 7,
+    "inserted_one_edge_faces": 1,
+    "max_edge_incidence": 2,
+    "max_face_length": 2,
+    "computed": [
+      {
+        "local_edges": 1,
+        "local_rank_retained": 1,
+        "local_rank_full": 1,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 2,
+        "local_rank_retained": 2,
+        "local_rank_full": 2,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 4,
+        "local_rank_retained": 4,
+        "local_rank_full": 4,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 7,
+        "local_rank_retained": 7,
+        "local_rank_full": 7,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 8,
+        "local_rank_retained": 7,
+        "local_rank_full": 8,
+        "new_exterior_rank": 0
+      }
+    ],
+    "group_presentation": "retained: <x0,...,xN-1 | x_i x_(i+1)^-1> = Z; inserting x0 kills the generator"
+  },
+  "16": {
+    "vertices": 1,
+    "edge_loops": 16,
+    "retained_two_edge_faces": 15,
+    "inserted_one_edge_faces": 1,
+    "max_edge_incidence": 2,
+    "max_face_length": 2,
+    "computed": [
+      {
+        "local_edges": 1,
+        "local_rank_retained": 1,
+        "local_rank_full": 1,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 2,
+        "local_rank_retained": 2,
+        "local_rank_full": 2,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 8,
+        "local_rank_retained": 8,
+        "local_rank_full": 8,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 15,
+        "local_rank_retained": 15,
+        "local_rank_full": 15,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 16,
+        "local_rank_retained": 15,
+        "local_rank_full": 16,
+        "new_exterior_rank": 0
+      }
+    ],
+    "group_presentation": "retained: <x0,...,xN-1 | x_i x_(i+1)^-1> = Z; inserting x0 kills the generator"
+  },
+  "32": {
+    "vertices": 1,
+    "edge_loops": 32,
+    "retained_two_edge_faces": 31,
+    "inserted_one_edge_faces": 1,
+    "max_edge_incidence": 2,
+    "max_face_length": 2,
+    "computed": [
+      {
+        "local_edges": 1,
+        "local_rank_retained": 1,
+        "local_rank_full": 1,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 2,
+        "local_rank_retained": 2,
+        "local_rank_full": 2,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 16,
+        "local_rank_retained": 16,
+        "local_rank_full": 16,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 31,
+        "local_rank_retained": 31,
+        "local_rank_full": 31,
+        "new_exterior_rank": 1
+      },
+      {
+        "local_edges": 32,
+        "local_rank_retained": 31,
+        "local_rank_full": 32,
+        "new_exterior_rank": 0
+      }
+    ],
+    "group_presentation": "retained: <x0,...,xN-1 | x_i x_(i+1)^-1> = Z; inserting x0 kills the generator"
+  }
+}

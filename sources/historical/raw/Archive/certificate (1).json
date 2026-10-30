@@ -1,0 +1,22 @@
+{
+  "provenance": "constructed local quadrilateral-prism patch; not certified extraction from Penrose tiling",
+  "vertices": 12,
+  "links": 20,
+  "faces": 11,
+  "prisms": 2,
+  "shared_face_index": 3,
+  "shared_face_boundary_edges": [
+    1,
+    5,
+    8,
+    10
+  ],
+  "chain_conditions": true,
+  "ranks": {
+    "d1": 11,
+    "d2": 9,
+    "d3": 2,
+    "d2_without_internal_face": 9
+  },
+  "theorem_scope": "All links on this finite patch integrated; no fixed external Wilson collar"
+}

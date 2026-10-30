@@ -1,0 +1,3022 @@
+{
+  "description": "actual nested regular Z5 Penrose disks with three-step periodic prism extrusion; exact modulo-prime ranks; six-face nonabelian peeling and conditional Gibbs locality",
+  "source": "unchanged direct_cut_project.py from verified uploaded Phase III bundle",
+  "offset": 0,
+  "radii": [
+    5.0,
+    6.5,
+    8.0,
+    10.0
+  ],
+  "fixed_spatial_labels": {
+    "overlapping14_faces": [
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "star8_vertex_0": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "star8_vertex_1": [
+      -1,
+      -1,
+      -1,
+      0,
+      -1
+    ],
+    "star8_t0_links": [
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "star8_t1_links": [
+      [
+        [
+          -1,
+          -2,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ]
+      ]
+    ]
+  },
+  "results": [
+    {
+      "radius": 5.0,
+      "geometry": {
+        "vertices": 90,
+        "edges": 159,
+        "faces": 70,
+        "euler": 1,
+        "boundary_edges": 38,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 15,
+          "3": 40,
+          "4": 13,
+          "5": 18,
+          "6": 2,
+          "7": 2
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 17.4,
+        "mean_degree": 3.533333333333333,
+        "gamma_sum": 1.0
+      },
+      "links_3d": 747,
+      "faces_3d": 687,
+      "cells_3d": 210,
+      "supports": {
+        "overlapping14": {
+          "tag": "overlapping14",
+          "Q_face_count": 14,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 477,
+          "global_rank_full": 477,
+          "additional_global_rank": 0,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 36,
+              "rank_retained_local": 35,
+              "rank_full_local": 35,
+              "rank_retained_exterior": 442,
+              "rank_full_exterior": 442,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 125,
+              "rank_retained_local": 103,
+              "rank_full_local": 103,
+              "rank_retained_exterior": 374,
+              "rank_full_exterior": 374,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 258,
+              "rank_retained_local": 200,
+              "rank_full_local": 200,
+              "rank_retained_exterior": 277,
+              "rank_full_exterior": 277,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 36,
+            "affected_retained_faces": 62,
+            "local_interacting_faces_including_Q": 76,
+            "boundary_exterior_links": 89,
+            "local_link_hash": "95e33ea0f2f2e7f04339947c512ee415e9552a11c01cbfd62c7bbc912cdf4a5b",
+            "local_face_hash": "8b6329e7a99631388a1aad0eefe3572e815baa68bc5ac2a82a00c8d5ca63bbfa",
+            "boundary_link_hash": "d42d5f3ab7b24c7c68fc06349cc27bd7acf1bc135f6fd1de6941d90e842834ec",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 14,
+            "peelable_Q_count": 14,
+            "unpeeled_Q_count": 0,
+            "elimination_max_expanded_face_count": 15,
+            "distinct_elimination_cells": 14,
+            "selected_cell_fingerprints": "094cbe3cd983d353b22b6d89509bcff001960bbfd6d4f8846b8d77fa70e72adb",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "retained_faces_in_expanded_repair": 54,
+            "pointwise_nonlinear_energy_coefficient": 35,
+            "max_retained_face_multiplicity": 3,
+            "max_nonabelian_face_factor_count": 17,
+            "nonlinear_curvature_coefficient_certified": 44,
+            "nonabelian_retained_face_support_count": 54
+          }
+        },
+        "star8": {
+          "tag": "star8",
+          "Q_face_count": 8,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -2,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 476,
+          "global_rank_full": 477,
+          "additional_global_rank": 1,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 25,
+              "rank_retained_local": 23,
+              "rank_full_local": 24,
+              "rank_retained_exterior": 453,
+              "rank_full_exterior": 453,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 96,
+              "rank_retained_local": 76,
+              "rank_full_local": 77,
+              "rank_retained_exterior": 400,
+              "rank_full_exterior": 400,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 208,
+              "rank_retained_local": 160,
+              "rank_full_local": 161,
+              "rank_retained_exterior": 316,
+              "rank_full_exterior": 316,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 25,
+            "affected_retained_faces": 48,
+            "local_interacting_faces_including_Q": 56,
+            "boundary_exterior_links": 71,
+            "local_link_hash": "a54abe9d7c0c637a87c32dc2fc8090310fb534a07ac79e575f227fe7e36060fb",
+            "local_face_hash": "3cf3f8cacdadb3c8a40c5f7796fa7d1c4323beb1460faf57a03cf452bc4f1827",
+            "boundary_link_hash": "f070ed1e2e26cc9bd97c0afeda122ef462360545d1295dcf50fd8188620250a9",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 7,
+            "peelable_Q_count": 4,
+            "unpeeled_Q_count": 4,
+            "elimination_max_expanded_face_count": 13,
+            "distinct_elimination_cells": 4,
+            "selected_cell_fingerprints": "acaf3ada0398dcb5fec5f69712a958e8d70db170df9fdea00b6470887d109bae",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "released_link_exact_Haar_coordinate": {
+              "canonical_key": [
+                "v",
+                0,
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ],
+              "incident_faces": 4,
+              "incident_retained_faces": 0,
+              "interpretation": "one ordinary temporal SU(2) link has exactly normalized Haar law under the retained cavity"
+            },
+            "unpeeled_face_fingerprints": [
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    0,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    0,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    0,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    0,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      "seconds": 0.057
+    },
+    {
+      "radius": 6.5,
+      "geometry": {
+        "vertices": 148,
+        "edges": 269,
+        "faces": 122,
+        "euler": 1,
+        "boundary_edges": 50,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 21,
+          "3": 67,
+          "4": 18,
+          "5": 34,
+          "6": 3,
+          "7": 5
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 18.35135135135135,
+        "mean_degree": 3.635135135135135,
+        "gamma_sum": 1.0
+      },
+      "links_3d": 1251,
+      "faces_3d": 1173,
+      "cells_3d": 366,
+      "supports": {
+        "overlapping14": {
+          "tag": "overlapping14",
+          "Q_face_count": 14,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 807,
+          "global_rank_full": 807,
+          "additional_global_rank": 0,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 36,
+              "rank_retained_local": 35,
+              "rank_full_local": 35,
+              "rank_retained_exterior": 772,
+              "rank_full_exterior": 772,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 125,
+              "rank_retained_local": 103,
+              "rank_full_local": 103,
+              "rank_retained_exterior": 704,
+              "rank_full_exterior": 704,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 258,
+              "rank_retained_local": 200,
+              "rank_full_local": 200,
+              "rank_retained_exterior": 607,
+              "rank_full_exterior": 607,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 36,
+            "affected_retained_faces": 62,
+            "local_interacting_faces_including_Q": 76,
+            "boundary_exterior_links": 89,
+            "local_link_hash": "95e33ea0f2f2e7f04339947c512ee415e9552a11c01cbfd62c7bbc912cdf4a5b",
+            "local_face_hash": "8b6329e7a99631388a1aad0eefe3572e815baa68bc5ac2a82a00c8d5ca63bbfa",
+            "boundary_link_hash": "d42d5f3ab7b24c7c68fc06349cc27bd7acf1bc135f6fd1de6941d90e842834ec",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 14,
+            "peelable_Q_count": 14,
+            "unpeeled_Q_count": 0,
+            "elimination_max_expanded_face_count": 15,
+            "distinct_elimination_cells": 14,
+            "selected_cell_fingerprints": "094cbe3cd983d353b22b6d89509bcff001960bbfd6d4f8846b8d77fa70e72adb",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "retained_faces_in_expanded_repair": 54,
+            "pointwise_nonlinear_energy_coefficient": 35,
+            "max_retained_face_multiplicity": 3,
+            "max_nonabelian_face_factor_count": 17,
+            "nonlinear_curvature_coefficient_certified": 44,
+            "nonabelian_retained_face_support_count": 54
+          }
+        },
+        "star8": {
+          "tag": "star8",
+          "Q_face_count": 8,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -2,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 806,
+          "global_rank_full": 807,
+          "additional_global_rank": 1,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 25,
+              "rank_retained_local": 23,
+              "rank_full_local": 24,
+              "rank_retained_exterior": 783,
+              "rank_full_exterior": 783,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 96,
+              "rank_retained_local": 76,
+              "rank_full_local": 77,
+              "rank_retained_exterior": 730,
+              "rank_full_exterior": 730,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 208,
+              "rank_retained_local": 160,
+              "rank_full_local": 161,
+              "rank_retained_exterior": 646,
+              "rank_full_exterior": 646,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 25,
+            "affected_retained_faces": 48,
+            "local_interacting_faces_including_Q": 56,
+            "boundary_exterior_links": 71,
+            "local_link_hash": "a54abe9d7c0c637a87c32dc2fc8090310fb534a07ac79e575f227fe7e36060fb",
+            "local_face_hash": "3cf3f8cacdadb3c8a40c5f7796fa7d1c4323beb1460faf57a03cf452bc4f1827",
+            "boundary_link_hash": "f070ed1e2e26cc9bd97c0afeda122ef462360545d1295dcf50fd8188620250a9",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 7,
+            "peelable_Q_count": 4,
+            "unpeeled_Q_count": 4,
+            "elimination_max_expanded_face_count": 13,
+            "distinct_elimination_cells": 4,
+            "selected_cell_fingerprints": "acaf3ada0398dcb5fec5f69712a958e8d70db170df9fdea00b6470887d109bae",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "released_link_exact_Haar_coordinate": {
+              "canonical_key": [
+                "v",
+                0,
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ],
+              "incident_faces": 4,
+              "incident_retained_faces": 0,
+              "interpretation": "one ordinary temporal SU(2) link has exactly normalized Haar law under the retained cavity"
+            },
+            "unpeeled_face_fingerprints": [
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    0,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    0,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    0,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    0,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      "seconds": 0.094
+    },
+    {
+      "radius": 8.0,
+      "geometry": {
+        "vertices": 226,
+        "edges": 421,
+        "faces": 196,
+        "euler": 1,
+        "boundary_edges": 58,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 24,
+          "3": 107,
+          "4": 25,
+          "5": 56,
+          "6": 5,
+          "7": 9
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 19.123893805309734,
+        "mean_degree": 3.725663716814159,
+        "gamma_sum": 1.0
+      },
+      "links_3d": 1941,
+      "faces_3d": 1851,
+      "cells_3d": 588,
+      "supports": {
+        "overlapping14": {
+          "tag": "overlapping14",
+          "Q_face_count": 14,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 1263,
+          "global_rank_full": 1263,
+          "additional_global_rank": 0,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 36,
+              "rank_retained_local": 35,
+              "rank_full_local": 35,
+              "rank_retained_exterior": 1228,
+              "rank_full_exterior": 1228,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 125,
+              "rank_retained_local": 103,
+              "rank_full_local": 103,
+              "rank_retained_exterior": 1160,
+              "rank_full_exterior": 1160,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 258,
+              "rank_retained_local": 200,
+              "rank_full_local": 200,
+              "rank_retained_exterior": 1063,
+              "rank_full_exterior": 1063,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 36,
+            "affected_retained_faces": 62,
+            "local_interacting_faces_including_Q": 76,
+            "boundary_exterior_links": 89,
+            "local_link_hash": "95e33ea0f2f2e7f04339947c512ee415e9552a11c01cbfd62c7bbc912cdf4a5b",
+            "local_face_hash": "8b6329e7a99631388a1aad0eefe3572e815baa68bc5ac2a82a00c8d5ca63bbfa",
+            "boundary_link_hash": "d42d5f3ab7b24c7c68fc06349cc27bd7acf1bc135f6fd1de6941d90e842834ec",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 14,
+            "peelable_Q_count": 14,
+            "unpeeled_Q_count": 0,
+            "elimination_max_expanded_face_count": 15,
+            "distinct_elimination_cells": 14,
+            "selected_cell_fingerprints": "094cbe3cd983d353b22b6d89509bcff001960bbfd6d4f8846b8d77fa70e72adb",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "retained_faces_in_expanded_repair": 54,
+            "pointwise_nonlinear_energy_coefficient": 35,
+            "max_retained_face_multiplicity": 3,
+            "max_nonabelian_face_factor_count": 17,
+            "nonlinear_curvature_coefficient_certified": 44,
+            "nonabelian_retained_face_support_count": 54
+          }
+        },
+        "star8": {
+          "tag": "star8",
+          "Q_face_count": 8,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -2,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 1262,
+          "global_rank_full": 1263,
+          "additional_global_rank": 1,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 25,
+              "rank_retained_local": 23,
+              "rank_full_local": 24,
+              "rank_retained_exterior": 1239,
+              "rank_full_exterior": 1239,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 96,
+              "rank_retained_local": 76,
+              "rank_full_local": 77,
+              "rank_retained_exterior": 1186,
+              "rank_full_exterior": 1186,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 208,
+              "rank_retained_local": 160,
+              "rank_full_local": 161,
+              "rank_retained_exterior": 1102,
+              "rank_full_exterior": 1102,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 25,
+            "affected_retained_faces": 48,
+            "local_interacting_faces_including_Q": 56,
+            "boundary_exterior_links": 71,
+            "local_link_hash": "a54abe9d7c0c637a87c32dc2fc8090310fb534a07ac79e575f227fe7e36060fb",
+            "local_face_hash": "3cf3f8cacdadb3c8a40c5f7796fa7d1c4323beb1460faf57a03cf452bc4f1827",
+            "boundary_link_hash": "f070ed1e2e26cc9bd97c0afeda122ef462360545d1295dcf50fd8188620250a9",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 7,
+            "peelable_Q_count": 4,
+            "unpeeled_Q_count": 4,
+            "elimination_max_expanded_face_count": 13,
+            "distinct_elimination_cells": 4,
+            "selected_cell_fingerprints": "acaf3ada0398dcb5fec5f69712a958e8d70db170df9fdea00b6470887d109bae",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "released_link_exact_Haar_coordinate": {
+              "canonical_key": [
+                "v",
+                0,
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ],
+              "incident_faces": 4,
+              "incident_retained_faces": 0,
+              "interpretation": "one ordinary temporal SU(2) link has exactly normalized Haar law under the retained cavity"
+            },
+            "unpeeled_face_fingerprints": [
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    0,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    0,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    0,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    0,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      "seconds": 0.141
+    },
+    {
+      "radius": 10.0,
+      "geometry": {
+        "vertices": 377,
+        "edges": 714,
+        "faces": 338,
+        "euler": 1,
+        "boundary_edges": 76,
+        "max_degree": 7,
+        "degree_histogram": {
+          "2": 31,
+          "3": 181,
+          "4": 44,
+          "5": 95,
+          "6": 10,
+          "7": 16
+        },
+        "height_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_normalized_m2": 19.639257294429708,
+        "mean_degree": 3.787798408488064,
+        "gamma_sum": 1.0
+      },
+      "links_3d": 3273,
+      "faces_3d": 3156,
+      "cells_3d": 1014,
+      "supports": {
+        "overlapping14": {
+          "tag": "overlapping14",
+          "Q_face_count": 14,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 2142,
+          "global_rank_full": 2142,
+          "additional_global_rank": 0,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 36,
+              "rank_retained_local": 35,
+              "rank_full_local": 35,
+              "rank_retained_exterior": 2107,
+              "rank_full_exterior": 2107,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 125,
+              "rank_retained_local": 103,
+              "rank_full_local": 103,
+              "rank_retained_exterior": 2039,
+              "rank_full_exterior": 2039,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 258,
+              "rank_retained_local": 200,
+              "rank_full_local": 200,
+              "rank_retained_exterior": 1942,
+              "rank_full_exterior": 1942,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 36,
+            "affected_retained_faces": 62,
+            "local_interacting_faces_including_Q": 76,
+            "boundary_exterior_links": 89,
+            "local_link_hash": "95e33ea0f2f2e7f04339947c512ee415e9552a11c01cbfd62c7bbc912cdf4a5b",
+            "local_face_hash": "8b6329e7a99631388a1aad0eefe3572e815baa68bc5ac2a82a00c8d5ca63bbfa",
+            "boundary_link_hash": "d42d5f3ab7b24c7c68fc06349cc27bd7acf1bc135f6fd1de6941d90e842834ec",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 14,
+            "peelable_Q_count": 14,
+            "unpeeled_Q_count": 0,
+            "elimination_max_expanded_face_count": 15,
+            "distinct_elimination_cells": 14,
+            "selected_cell_fingerprints": "094cbe3cd983d353b22b6d89509bcff001960bbfd6d4f8846b8d77fa70e72adb",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "retained_faces_in_expanded_repair": 54,
+            "pointwise_nonlinear_energy_coefficient": 35,
+            "max_retained_face_multiplicity": 3,
+            "max_nonabelian_face_factor_count": 17,
+            "nonlinear_curvature_coefficient_certified": 44,
+            "nonabelian_retained_face_support_count": 54
+          }
+        },
+        "star8": {
+          "tag": "star8",
+          "Q_face_count": 8,
+          "Q_face_fingerprints": [
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              0,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -2,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            [
+              "t",
+              1,
+              [
+                [
+                  -1,
+                  -1,
+                  -1,
+                  0,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "global_rank_retained": 2141,
+          "global_rank_full": 2142,
+          "additional_global_rank": 1,
+          "collar": [
+            {
+              "radius": 0,
+              "adjustable_links": 25,
+              "rank_retained_local": 23,
+              "rank_full_local": 24,
+              "rank_retained_exterior": 2118,
+              "rank_full_exterior": 2118,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 1,
+              "adjustable_links": 96,
+              "rank_retained_local": 76,
+              "rank_full_local": 77,
+              "rank_retained_exterior": 2065,
+              "rank_full_exterior": 2065,
+              "exterior_rank_increase": 0
+            },
+            {
+              "radius": 2,
+              "adjustable_links": 208,
+              "rank_retained_local": 160,
+              "rank_full_local": 161,
+              "rank_retained_exterior": 1981,
+              "rank_full_exterior": 1981,
+              "exterior_rank_increase": 0
+            }
+          ],
+          "conditional_locality": {
+            "local_links": 25,
+            "affected_retained_faces": 48,
+            "local_interacting_faces_including_Q": 56,
+            "boundary_exterior_links": 71,
+            "local_link_hash": "a54abe9d7c0c637a87c32dc2fc8090310fb534a07ac79e575f227fe7e36060fb",
+            "local_face_hash": "3cf3f8cacdadb3c8a40c5f7796fa7d1c4323beb1460faf57a03cf452bc4f1827",
+            "boundary_link_hash": "f070ed1e2e26cc9bd97c0afeda122ef462360545d1295dcf50fd8188620250a9",
+            "max_incident_face_count_per_link": 6
+          },
+          "bianchi": {
+            "q_projection_rank": 7,
+            "peelable_Q_count": 4,
+            "unpeeled_Q_count": 4,
+            "elimination_max_expanded_face_count": 13,
+            "distinct_elimination_cells": 4,
+            "selected_cell_fingerprints": "acaf3ada0398dcb5fec5f69712a958e8d70db170df9fdea00b6470887d109bae",
+            "nonabelian_word_meaning": "products of transported plaquette words via six-face cell boundaries; bound counts face factors, not transport-link length",
+            "released_link_exact_Haar_coordinate": {
+              "canonical_key": [
+                "v",
+                0,
+                [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              ],
+              "incident_faces": 4,
+              "incident_retained_faces": 0,
+              "interpretation": "one ordinary temporal SU(2) link has exactly normalized Haar law under the retained cavity"
+            },
+            "unpeeled_face_fingerprints": [
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    0,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    -1,
+                    0,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    -1,
+                    0,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ],
+              [
+                "t",
+                0,
+                [
+                  [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  [
+                    0,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                  ]
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      "seconds": 0.297
+    }
+  ],
+  "limits": "No sampled exterior Gibbs marginals, nonlinear curved-config repair transport, or all-support theorem; conditional locality of the function is not a uniform lower bound on its expectation."
+}

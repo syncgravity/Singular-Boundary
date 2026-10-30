@@ -1,0 +1,204 @@
+{
+  "model": "constructed four-prism 2x2 quadrilateral extrusion; not provenance certified as Penrose tile geometry",
+  "face_ids_Q": [
+    3,
+    4,
+    10,
+    13
+  ],
+  "retained_face_count": 16,
+  "exact_port_spin_parity_selection": {
+    "0000": {
+      "selected_port_indices": [],
+      "minimum_half_integer_retained_faces": 0,
+      "minimal_surface_count": 1,
+      "one_minimal_retained_face_set": []
+    },
+    "0001": {
+      "selected_port_indices": [
+        3
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "0010": {
+      "selected_port_indices": [
+        4
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "0011": {
+      "selected_port_indices": [
+        3,
+        4
+      ],
+      "minimum_half_integer_retained_faces": 4,
+      "minimal_surface_count": 1,
+      "one_minimal_retained_face_set": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    "0100": {
+      "selected_port_indices": [
+        10
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "0101": {
+      "selected_port_indices": [
+        3,
+        10
+      ],
+      "minimum_half_integer_retained_faces": 4,
+      "minimal_surface_count": 1,
+      "one_minimal_retained_face_set": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "0110": {
+      "selected_port_indices": [
+        4,
+        10
+      ],
+      "minimum_half_integer_retained_faces": 8,
+      "minimal_surface_count": 2,
+      "one_minimal_retained_face_set": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "0111": {
+      "selected_port_indices": [
+        3,
+        4,
+        10
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "1000": {
+      "selected_port_indices": [
+        13
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "1001": {
+      "selected_port_indices": [
+        3,
+        13
+      ],
+      "minimum_half_integer_retained_faces": 8,
+      "minimal_surface_count": 2,
+      "one_minimal_retained_face_set": [
+        0,
+        1,
+        2,
+        5,
+        11,
+        12,
+        14,
+        15
+      ]
+    },
+    "1010": {
+      "selected_port_indices": [
+        4,
+        13
+      ],
+      "minimum_half_integer_retained_faces": 4,
+      "minimal_surface_count": 1,
+      "one_minimal_retained_face_set": [
+        11,
+        12,
+        14,
+        15
+      ]
+    },
+    "1011": {
+      "selected_port_indices": [
+        3,
+        4,
+        13
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "1100": {
+      "selected_port_indices": [
+        10,
+        13
+      ],
+      "minimum_half_integer_retained_faces": 4,
+      "minimal_surface_count": 1,
+      "one_minimal_retained_face_set": [
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "1101": {
+      "selected_port_indices": [
+        3,
+        10,
+        13
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "1110": {
+      "selected_port_indices": [
+        4,
+        10,
+        13
+      ],
+      "minimum_half_integer_retained_faces": null,
+      "minimal_surface_count": 0,
+      "one_minimal_retained_face_set": []
+    },
+    "1111": {
+      "selected_port_indices": [
+        3,
+        4,
+        10,
+        13
+      ],
+      "minimum_half_integer_retained_faces": 8,
+      "minimal_surface_count": 2,
+      "one_minimal_retained_face_set": [
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15
+      ]
+    }
+  },
+  "interpretation": "None = Fourier block with fundamental representations on selected ports and trivial on others is exactly zero at arbitrary positive Wilson couplings. Non-None = necessary parity condition, not guaranteed positivity/nonzero; minimum number of retained half-integer spins in a character expansion.",
+  "scope": "Exact center-parity constraints on the FULL exterior-integrated positive-coupling Fourier matrices. Numerical values of allowed nonzero matrices not computed."
+}

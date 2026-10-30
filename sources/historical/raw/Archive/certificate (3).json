@@ -1,0 +1,37 @@
+{
+  "source": "constructed three-rhombus strip, not provenance-certified Penrose tiles",
+  "vertices": 16,
+  "edges": 28,
+  "faces": 16,
+  "cells": 3,
+  "shared_faces": [
+    3,
+    9
+  ],
+  "shared_coefficients": [
+    [
+      1,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      -1
+    ]
+  ],
+  "shared_face_edge_disjoint": true,
+  "rank_d1": 15,
+  "rank_d2": 13,
+  "rank_d3": 3,
+  "d1d2_zero": true,
+  "d2d3_zero": true,
+  "middle_prism_other_faces": 4,
+  "fundamental_multiport_fourier_block_eigenvalues": [
+    0.0,
+    0.0,
+    0.0,
+    2.0
+  ],
+  "analytical_scope": "left/right five-face disk kernels, middle four-face annulus cylinder kernel; does not include external glued plaquettes"
+}

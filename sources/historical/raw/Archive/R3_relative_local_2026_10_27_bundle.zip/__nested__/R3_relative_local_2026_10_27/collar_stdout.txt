@@ -1,0 +1,4 @@
+base local rank [25, 25] effective exterior ranks [np.int64(10), np.int64(11)]
+single edges preserving [(23, 0, 1), (43, 0, 1), (45, 0, 1), (53, 0, 1)]
+45 {'edge': 45, 'local_rank_retained': 25, 'local_rank_full': 26, 'exterior_rank_growth': np.int64(0), 'retained_rank_increment': 0, 'full_rank_increment': 1} 53 {'edge': 53, 'local_rank_retained': 25, 'local_rank_full': 26, 'exterior_rank_growth': np.int64(0), 'retained_rank_increment': 0, 'full_rank_increment': 1}
+greedy steps [{'edge': 23, 'exterior_rank_growth': np.int64(0), 'retained_rank': 25, 'full_rank': 26}]

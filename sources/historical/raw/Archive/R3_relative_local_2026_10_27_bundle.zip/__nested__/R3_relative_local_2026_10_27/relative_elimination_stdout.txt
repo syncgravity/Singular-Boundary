@@ -1,0 +1,6 @@
+residual active {}
+collar [] local 26 retained eliminated 25 local remain 1 residual nonempty 8 max length 12 max replacement 5
+residual active {}
+collar [45] local 27 retained eliminated 25 local remain 2 residual nonempty 8 max length 12 max replacement 5
+residual active {35: [np.int64(49)]}
+collar [23] local 27 retained eliminated 25 local remain 2 residual nonempty 8 max length 12 max replacement 5

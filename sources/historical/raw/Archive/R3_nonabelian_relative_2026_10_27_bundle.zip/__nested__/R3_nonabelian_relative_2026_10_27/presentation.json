@@ -1,0 +1,998 @@
+{
+  "Q": [
+    13,
+    18,
+    22,
+    25,
+    26,
+    29,
+    32,
+    37
+  ],
+  "tree_edges": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    10,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+  ],
+  "spatial_tree_edges": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    10
+  ],
+  "free_edges": [
+    3,
+    6,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "relators": {
+    "0": [
+      -1
+    ],
+    "1": [
+      -2
+    ],
+    "2": [
+      -3
+    ],
+    "3": [
+      2,
+      -4
+    ],
+    "4": [
+      5,
+      6,
+      -7,
+      -8
+    ],
+    "5": [
+      9,
+      10,
+      -11,
+      -6
+    ],
+    "6": [
+      7,
+      12,
+      -13,
+      -14
+    ],
+    "7": [
+      11,
+      15,
+      -16,
+      -12
+    ],
+    "8": [
+      17,
+      18,
+      -19,
+      -20
+    ],
+    "9": [
+      21,
+      22,
+      -23,
+      -18
+    ],
+    "10": [
+      19,
+      24,
+      -25,
+      -26
+    ],
+    "11": [
+      23,
+      27,
+      -28,
+      -24
+    ],
+    "12": [
+      -5
+    ],
+    "13": [
+      -6
+    ],
+    "14": [
+      -7
+    ],
+    "15": [
+      1,
+      -8
+    ],
+    "16": [
+      -9
+    ],
+    "17": [
+      -10
+    ],
+    "18": [
+      2,
+      -11
+    ],
+    "19": [
+      -12
+    ],
+    "20": [
+      -13
+    ],
+    "21": [
+      3,
+      -14
+    ],
+    "22": [
+      -15
+    ],
+    "23": [
+      4,
+      -16
+    ],
+    "24": [
+      5,
+      -17
+    ],
+    "25": [
+      6,
+      -18
+    ],
+    "26": [
+      7,
+      -19
+    ],
+    "27": [
+      8,
+      -20
+    ],
+    "28": [
+      9,
+      -21
+    ],
+    "29": [
+      10,
+      -22
+    ],
+    "30": [
+      11,
+      -23
+    ],
+    "31": [
+      12,
+      -24
+    ],
+    "32": [
+      13,
+      -25
+    ],
+    "33": [
+      14,
+      -26
+    ],
+    "34": [
+      15,
+      -27
+    ],
+    "35": [
+      16,
+      -28
+    ],
+    "36": [
+      -29,
+      17,
+      30
+    ],
+    "37": [
+      -30,
+      18,
+      33
+    ],
+    "38": [
+      -32,
+      19,
+      33
+    ],
+    "39": [
+      -29,
+      20,
+      32,
+      -1
+    ],
+    "40": [
+      -30,
+      21,
+      31
+    ],
+    "41": [
+      -31,
+      22,
+      34
+    ],
+    "42": [
+      -33,
+      23,
+      34,
+      -2
+    ],
+    "43": [
+      -33,
+      24,
+      36
+    ],
+    "44": [
+      -35,
+      25,
+      36
+    ],
+    "45": [
+      -32,
+      26,
+      35,
+      -3
+    ],
+    "46": [
+      -34,
+      27,
+      37
+    ],
+    "47": [
+      -36,
+      28,
+      37,
+      -4
+    ]
+  },
+  "retained_tietze": {
+    "operations": [
+      {
+        "face": 19,
+        "generator": 12,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 36,
+        "max_rel_length": 4
+      },
+      {
+        "face": 31,
+        "generator": 24,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 35,
+        "max_rel_length": 4
+      },
+      {
+        "face": 0,
+        "generator": 1,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 34,
+        "max_rel_length": 4
+      },
+      {
+        "face": 1,
+        "generator": 2,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 33,
+        "max_rel_length": 4
+      },
+      {
+        "face": 2,
+        "generator": 3,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 32,
+        "max_rel_length": 4
+      },
+      {
+        "face": 3,
+        "generator": 4,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 31,
+        "max_rel_length": 4
+      },
+      {
+        "face": 12,
+        "generator": 5,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 30,
+        "max_rel_length": 4
+      },
+      {
+        "face": 14,
+        "generator": 7,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 29,
+        "max_rel_length": 4
+      },
+      {
+        "face": 15,
+        "generator": 8,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 28,
+        "max_rel_length": 4
+      },
+      {
+        "face": 16,
+        "generator": 9,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 27,
+        "max_rel_length": 4
+      },
+      {
+        "face": 21,
+        "generator": 14,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 26,
+        "max_rel_length": 4
+      },
+      {
+        "face": 23,
+        "generator": 16,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 25,
+        "max_rel_length": 4
+      },
+      {
+        "face": 24,
+        "generator": 17,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 24,
+        "max_rel_length": 4
+      },
+      {
+        "face": 27,
+        "generator": 20,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 23,
+        "max_rel_length": 4
+      },
+      {
+        "face": 28,
+        "generator": 21,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 22,
+        "max_rel_length": 3
+      },
+      {
+        "face": 33,
+        "generator": 26,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 21,
+        "max_rel_length": 3
+      },
+      {
+        "face": 35,
+        "generator": 28,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 20,
+        "max_rel_length": 3
+      },
+      {
+        "face": 4,
+        "generator": 6,
+        "sign": 1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 19,
+        "max_rel_length": 3
+      },
+      {
+        "face": 6,
+        "generator": 13,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 18,
+        "max_rel_length": 3
+      },
+      {
+        "face": 17,
+        "generator": 10,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 17,
+        "max_rel_length": 3
+      },
+      {
+        "face": 5,
+        "generator": 11,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 16,
+        "max_rel_length": 3
+      },
+      {
+        "face": 30,
+        "generator": 23,
+        "sign": -1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 15,
+        "max_rel_length": 3
+      },
+      {
+        "face": 11,
+        "generator": 27,
+        "sign": 1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 14,
+        "max_rel_length": 3
+      },
+      {
+        "face": 7,
+        "generator": 15,
+        "sign": 1,
+        "replacement": [],
+        "source_length": 1,
+        "remaining": 13,
+        "max_rel_length": 3
+      },
+      {
+        "face": 8,
+        "generator": 18,
+        "sign": 1,
+        "replacement": [
+          19
+        ],
+        "source_length": 2,
+        "remaining": 12,
+        "max_rel_length": 3
+      },
+      {
+        "face": 9,
+        "generator": 22,
+        "sign": 1,
+        "replacement": [
+          19
+        ],
+        "source_length": 2,
+        "remaining": 11,
+        "max_rel_length": 3
+      },
+      {
+        "face": 10,
+        "generator": 25,
+        "sign": -1,
+        "replacement": [
+          19
+        ],
+        "source_length": 2,
+        "remaining": 10,
+        "max_rel_length": 3
+      },
+      {
+        "face": 36,
+        "generator": 29,
+        "sign": -1,
+        "replacement": [
+          30
+        ],
+        "source_length": 2,
+        "remaining": 9,
+        "max_rel_length": 3
+      },
+      {
+        "face": 39,
+        "generator": 30,
+        "sign": -1,
+        "replacement": [
+          32
+        ],
+        "source_length": 2,
+        "remaining": 8,
+        "max_rel_length": 3
+      },
+      {
+        "face": 40,
+        "generator": 31,
+        "sign": 1,
+        "replacement": [
+          32
+        ],
+        "source_length": 2,
+        "remaining": 7,
+        "max_rel_length": 3
+      },
+      {
+        "face": 45,
+        "generator": 35,
+        "sign": 1,
+        "replacement": [
+          32
+        ],
+        "source_length": 2,
+        "remaining": 6,
+        "max_rel_length": 3
+      },
+      {
+        "face": 46,
+        "generator": 37,
+        "sign": 1,
+        "replacement": [
+          34
+        ],
+        "source_length": 2,
+        "remaining": 5,
+        "max_rel_length": 3
+      },
+      {
+        "face": 42,
+        "generator": 33,
+        "sign": -1,
+        "replacement": [
+          34
+        ],
+        "source_length": 2,
+        "remaining": 4,
+        "max_rel_length": 3
+      },
+      {
+        "face": 43,
+        "generator": 36,
+        "sign": 1,
+        "replacement": [
+          34
+        ],
+        "source_length": 2,
+        "remaining": 3,
+        "max_rel_length": 3
+      },
+      {
+        "face": 38,
+        "generator": 32,
+        "sign": -1,
+        "replacement": [
+          19,
+          34
+        ],
+        "source_length": 3,
+        "remaining": 2,
+        "max_rel_length": 0
+      }
+    ],
+    "remaining_generators": [
+      19,
+      34
+    ],
+    "remaining_relators": {
+      "20": [],
+      "34": [],
+      "41": [],
+      "44": [],
+      "47": []
+    }
+  },
+  "Q_reduced_words": {
+    "13": [],
+    "18": [],
+    "22": [],
+    "25": [
+      -19
+    ],
+    "26": [
+      -19
+    ],
+    "29": [
+      -19
+    ],
+    "32": [
+      -19
+    ],
+    "37": []
+  },
+  "haar_nielsen_word_lengths": {
+    "0": 1,
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4,
+    "8": 3,
+    "9": 6,
+    "10": 5,
+    "11": 4,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 2,
+    "16": 1,
+    "17": 1,
+    "18": 2,
+    "19": 1,
+    "20": 1,
+    "21": 2,
+    "22": 1,
+    "23": 2,
+    "24": 2,
+    "25": 3,
+    "26": 2,
+    "27": 2,
+    "28": 2,
+    "29": 3,
+    "30": 2,
+    "31": 2,
+    "32": 3,
+    "33": 2,
+    "34": 2,
+    "35": 2,
+    "36": 10,
+    "37": 8,
+    "38": 2,
+    "39": 10,
+    "40": 9,
+    "41": 7,
+    "42": 5,
+    "43": 5,
+    "44": 8,
+    "45": 9,
+    "46": 4,
+    "47": 6
+  },
+  "haar_nielsen_free_appearance_retained": {
+    "19": 8,
+    "34": 10
+  },
+  "haar_nielsen_free_appearance_inserted": {
+    "19": 5,
+    "34": 1
+  },
+  "haar_nielsen_retained_words": {
+    "0": [
+      38
+    ],
+    "1": [
+      39
+    ],
+    "2": [
+      40
+    ],
+    "3": [
+      -39,
+      41
+    ],
+    "4": [
+      -50,
+      42,
+      52,
+      53
+    ],
+    "5": [
+      -54,
+      -55,
+      43,
+      -42
+    ],
+    "6": [
+      -52,
+      -57,
+      44,
+      59
+    ],
+    "7": [
+      -43,
+      45,
+      61,
+      57
+    ],
+    "8": [
+      -62,
+      46,
+      65
+    ],
+    "9": [
+      -66,
+      47,
+      19,
+      68,
+      -19,
+      -46
+    ],
+    "10": [
+      19,
+      -69,
+      48,
+      -19,
+      71
+    ],
+    "11": [
+      -68,
+      49,
+      73,
+      69
+    ],
+    "12": [
+      50
+    ],
+    "14": [
+      52
+    ],
+    "15": [
+      -38,
+      53
+    ],
+    "16": [
+      54
+    ],
+    "17": [
+      55
+    ],
+    "19": [
+      57
+    ],
+    "20": [
+      44
+    ],
+    "21": [
+      -40,
+      59
+    ],
+    "23": [
+      -41,
+      61
+    ],
+    "24": [
+      -50,
+      62
+    ],
+    "27": [
+      -53,
+      65
+    ],
+    "28": [
+      -54,
+      66
+    ],
+    "30": [
+      -43,
+      68
+    ],
+    "31": [
+      -57,
+      69
+    ],
+    "33": [
+      -59,
+      71
+    ],
+    "34": [
+      45,
+      -49
+    ],
+    "35": [
+      -61,
+      73
+    ],
+    "36": [
+      74,
+      77,
+      76,
+      -34,
+      -19,
+      -62,
+      19,
+      34,
+      -76,
+      -77
+    ],
+    "38": [
+      76,
+      -80
+    ],
+    "39": [
+      74,
+      77,
+      76,
+      -34,
+      -19,
+      -65,
+      19,
+      34,
+      -76,
+      38
+    ],
+    "40": [
+      77,
+      76,
+      -34,
+      -19,
+      -66,
+      78,
+      19,
+      34,
+      -76
+    ],
+    "41": [
+      76,
+      -34,
+      -19,
+      -78,
+      47,
+      19,
+      34
+    ],
+    "42": [
+      80,
+      -34,
+      -68,
+      34,
+      39
+    ],
+    "43": [
+      80,
+      -34,
+      -69,
+      81,
+      34
+    ],
+    "44": [
+      76,
+      -34,
+      -19,
+      -83,
+      19,
+      -48,
+      81,
+      34
+    ],
+    "45": [
+      76,
+      -34,
+      -19,
+      -71,
+      83,
+      19,
+      34,
+      -76,
+      40
+    ],
+    "46": [
+      -34,
+      49,
+      84,
+      34
+    ],
+    "47": [
+      -34,
+      -81,
+      -73,
+      84,
+      34,
+      41
+    ]
+  },
+  "haar_nielsen_inserted_words": {
+    "13": [
+      -42
+    ],
+    "18": [
+      -39,
+      43
+    ],
+    "22": [
+      -45
+    ],
+    "25": [
+      42,
+      -19,
+      -46
+    ],
+    "26": [
+      -52,
+      -19
+    ],
+    "29": [
+      -55,
+      -19,
+      -47
+    ],
+    "32": [
+      -44,
+      48,
+      -19
+    ],
+    "37": [
+      77,
+      76,
+      -34,
+      -19,
+      46,
+      19,
+      34,
+      -80
+    ]
+  }
+}

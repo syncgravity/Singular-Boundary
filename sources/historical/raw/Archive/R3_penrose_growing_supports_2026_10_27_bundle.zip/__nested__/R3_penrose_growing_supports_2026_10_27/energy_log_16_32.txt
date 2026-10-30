@@ -1,0 +1,8 @@
+lambda 16.0 radius 5.0 elapsed 6.0
+lambda 16.0 radius 6.5 elapsed 7.4
+lambda 16.0 radius 8.0 elapsed 9.6
+lambda 16.0 radius 10.0 elapsed 13.6
+lambda 32.0 radius 5.0 elapsed 14.5
+lambda 32.0 radius 6.5 elapsed 16.0
+lambda 32.0 radius 8.0 elapsed 18.4
+lambda 32.0 radius 10.0 elapsed 22.5
