@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage7/stage7_checkpointed.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage7/stage7_checkpointed.py",
+   "sha256": "435fc8d5ec1a3af28bfade2cc03788178ce19880754d6dbe39914bb697410813",
+   "bytes": 7997,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage7/stage7_checkpointed.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage7/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage7/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py",
+   "sha256": "24f146cd027c39c5bd7c4db10ecf42d302a91802e46bd2c0462cb97228888765",
+   "bytes": 6181,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py",
+   "sha256": "03f625138c25f838bcdb0902cdbcd31ef5d98b354885fd85660e8f650da50bd3",
+   "bytes": 10229,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/wilson_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/wilson_torus.py",
+   "sha256": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a",
+   "bytes": 6075,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/wilson_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py",
+   "sha256": "9fa3da80876cdc572512b2fa60f84f42f3e84a2c663a6b9747d481c829d53478",
+   "bytes": 2226,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py",
+   "sha256": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+   "bytes": 18397,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py",
+   "sha256": "1556bdaa54c6dc37091158dc9187a13aae28bf842cbb5336f4299c1007379bff",
+   "bytes": 8684,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py",
+   "sha256": "836d871346ed214d9840bc6dd45ec27c14c4cdb5d1e2262147171d471ad2b124",
+   "bytes": 2851,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py",
+   "sha256": "6d1380e9e5ccdf45a0cbda3020a8c08ffa9b28960fcf3a72a0f456080c72e4d6",
+   "bytes": 13206,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py",
+   "sha256": "c3cdb06d9fe2c3a2f6a4556abcd3d69c0f7918732fb59baea2993892c9cecdf1",
+   "bytes": 10866,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage14_Cost_Adjusted_Multilevel_Benchmark.zip!/ym_stage13/deps/ym_stage6/source_stage5/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/README_14.md",
+   "archive": "Archive 4.zip",
+   "source_member": "README_14.md",
+   "sha256": "967a4a8ae9532e632bf154b727962f1c158e137c64cbbb852e1b87608e5d222f",
+   "bytes": 670,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_13_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_13_REPORT.md",
+   "sha256": "6a9211e71cbb82043a256021d969ed4f8015e7106fe263ad69f56271ca669c2b",
+   "bytes": 4906,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/STAGE_13_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/PILOT.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/PILOT.json",
+   "sha256": "7d327acfe752f29fad2527124b7654a7cdac61e99bfa926c2388a79832f7269b",
+   "bytes": 762,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/PILOT.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/README.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/README.md",
+   "sha256": "967a4a8ae9532e632bf154b727962f1c158e137c64cbbb852e1b87608e5d222f",
+   "bytes": 670,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/SHA256_MANIFEST.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/SHA256_MANIFEST.json",
+   "sha256": "9e010a6b94527479fe3064ab94946e324d02c3a48c8795ae5ff652399b8d4f49",
+   "bytes": 3630,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/SHA256_MANIFEST.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/STAGE_13_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/STAGE_13_REPORT.md",
+   "sha256": "6a9211e71cbb82043a256021d969ed4f8015e7106fe263ad69f56271ca669c2b",
+   "bytes": 4906,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/STAGE_13_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/TESTS.log",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/TESTS.log",
+   "sha256": "ad6ca236b642a3da96e7a7fc38d724538ebac77d6ea47e28c3641ce0dc01ba15",
+   "bytes": 97,
+   "extension": ".log",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/TESTS.log"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py",
+   "sha256": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+   "bytes": 18397,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py",
+   "sha256": "836d871346ed214d9840bc6dd45ec27c14c4cdb5d1e2262147171d471ad2b124",
+   "bytes": 2851,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py",
+   "sha256": "03f625138c25f838bcdb0902cdbcd31ef5d98b354885fd85660e8f650da50bd3",
+   "bytes": 10229,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py",
+   "sha256": "1556bdaa54c6dc37091158dc9187a13aae28bf842cbb5336f4299c1007379bff",
+   "bytes": 8684,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py",
+   "sha256": "c3cdb06d9fe2c3a2f6a4556abcd3d69c0f7918732fb59baea2993892c9cecdf1",
+   "bytes": 10866,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py",
+   "sha256": "6d1380e9e5ccdf45a0cbda3020a8c08ffa9b28960fcf3a72a0f456080c72e4d6",
+   "bytes": 13206,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage5_square_production.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py",
+   "sha256": "24f146cd027c39c5bd7c4db10ecf42d302a91802e46bd2c0462cb97228888765",
+   "bytes": 6181,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py",
+   "sha256": "9fa3da80876cdc572512b2fa60f84f42f3e84a2c663a6b9747d481c829d53478",
+   "bytes": 2226,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/test_stage5.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/source_stage5/wilson_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/source_stage5/wilson_torus.py",
+   "sha256": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a",
+   "bytes": 6075,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/wilson_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage6/stage6_multilevel.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage6/stage6_multilevel.py",
+   "sha256": "1e0de420b08d443c3cd2c3d2207df1a240d680ab9f9e766da4a614afd56da71c",
+   "bytes": 13193,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/stage6_multilevel.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/corrected_2p1_pilot.py",
+   "sha256": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+   "bytes": 18397,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/direct_cut_project.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage2_rational_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage2_rational_torus.py",
+   "sha256": "836d871346ed214d9840bc6dd45ec27c14c4cdb5d1e2262147171d471ad2b124",
+   "bytes": 2851,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage2_ym_calibration.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage2_ym_calibration.py",
+   "sha256": "03f625138c25f838bcdb0902cdbcd31ef5d98b354885fd85660e8f650da50bd3",
+   "bytes": 10229,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage3_periodic_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage3_periodic_pilot.py",
+   "sha256": "1556bdaa54c6dc37091158dc9187a13aae28bf842cbb5336f4299c1007379bff",
+   "bytes": 8684,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage4_smearing_flux.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage4_smearing_flux.py",
+   "sha256": "c3cdb06d9fe2c3a2f6a4556abcd3d69c0f7918732fb59baea2993892c9cecdf1",
+   "bytes": 10866,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage7_checkpointed.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage7_checkpointed.py",
+   "sha256": "435fc8d5ec1a3af28bfade2cc03788178ce19880754d6dbe39914bb697410813",
+   "bytes": 7997,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage7/stage7_checkpointed.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage7_large_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage7_large_torus.py",
+   "sha256": "ab7b347c3ad59cb380ae503b0edf34ea6e48efb40dcc88644d99e4c9ed9f6df5",
+   "bytes": 5207,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/stage7_measurement.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/stage7_measurement.py",
+   "sha256": "1f464b55267e0f2a566fec5a7732ff837e0a5c7607194e1abc2ca79bfd9bfb0e",
+   "bytes": 4634,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_measurement.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/test_stage7.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/test_stage7.py",
+   "sha256": "0a55d159a38e774fc56d2ffe727d3588ef4c5bdeeae25df760c6e8614827c001",
+   "bytes": 748,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage7/test_stage7.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/test_stage7_measurement.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/test_stage7_measurement.py",
+   "sha256": "ad7bdbdbd21fc898b5d618a3d05f1f77f1527200179fbb63d6687af2d6b2fb13",
+   "bytes": 1681,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage7/test_stage7_measurement.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/test_stage7_restart.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/test_stage7_restart.py",
+   "sha256": "4feb7a9724988f6b4bcd5341ae2ae47503e7b7f5b2e2cb1dc85009c68b1d062f",
+   "bytes": 1538,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage7/test_stage7_restart.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/deps/ym_stage7/wilson_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/deps/ym_stage7/wilson_torus.py",
+   "sha256": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a",
+   "bytes": 6075,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/wilson_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/pilot.py",
+   "sha256": "99fe11b2160b6c6e2a80bd3dfd680e71c85b9a493f0d09de6246fae39444229c",
+   "bytes": 1880,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/stage13_transport.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/stage13_transport.py",
+   "sha256": "632bf5f6d45ca2dd0346076704c317178f7dc221d6b959e826302eddfbc08b87",
+   "bytes": 4226,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/stage13_transport.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip/__nested__/ym_stage13/test_stage13.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage13_Temporal_Transporter_Pilot.zip!/ym_stage13/test_stage13.py",
+   "sha256": "372ad2045dbec63719369c5354f311ad7eee9146b224e0feffabbd4b629fb626",
+   "bytes": 2001,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/test_stage13.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "sha256": "4bf699630b7971ceb36512f3fc18ed85fdae2d0984c6c034b0a299fd8cbf9e12",
+   "bytes": 5576,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_12_Physical_Wilson_Audit.zip/__nested__/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_12_Physical_Wilson_Audit.zip!/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "sha256": "4bf699630b7971ceb36512f3fc18ed85fdae2d0984c6c034b0a299fd8cbf9e12",
+   "bytes": 5576,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_12_Physical_Wilson_Audit.zip/__nested__/STAGE12_PHYSICAL_WILSON_AUDIT.json",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_12_Physical_Wilson_Audit.zip!/STAGE12_PHYSICAL_WILSON_AUDIT.json",
+   "sha256": "a4898c14b50f81ee0bc633a0b42f9e6866949a7bb7fa10a437de80449e41c11c",
+   "bytes": 34198,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_12_Physical_Wilson_Audit.zip/__nested__/stage12_analyze.py",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_12_Physical_Wilson_Audit.zip!/stage12_analyze.py",
+   "sha256": "5c87e6ca2f9250ec065be7e05138384e3e5327c434fd6943041e44887ecb9e9b",
+   "bytes": 2068,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_11_HELDOUT_ANALYSIS.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_11_HELDOUT_ANALYSIS.md",
+   "sha256": "5f0214966ce6392cad35a8345f13cb3092735a1689b5ee922fe1aea581021635",
+   "bytes": 4054,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_11_Heldout_Spectroscopy_Analysis.zip/__nested__/STAGE_11_HELDOUT_ANALYSIS.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_11_Heldout_Spectroscopy_Analysis.zip!/STAGE_11_HELDOUT_ANALYSIS.md",
+   "sha256": "5f0214966ce6392cad35a8345f13cb3092735a1689b5ee922fe1aea581021635",
+   "bytes": 4054,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_11_HELDOUT_ANALYSIS.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_11_Heldout_Spectroscopy_Analysis.zip/__nested__/STAGE_11_DIAGNOSTICS.json",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_11_Heldout_Spectroscopy_Analysis.zip!/STAGE_11_DIAGNOSTICS.json",
+   "sha256": "4a9da1c589cf57d318ffe1504df3dc111686c4e2246518901baefb401e610b68",
+   "bytes": 16122,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_11_Heldout_Spectroscopy_Analysis.zip/__nested__/stage11_analyze.py",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_11_Heldout_Spectroscopy_Analysis.zip!/stage11_analyze.py",
+   "sha256": "23d4095515fd608dd6b2a226e535a17803f7d39ce190591a68ea2937e380ae54",
+   "bytes": 3554,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip/__nested__/ym_stage9/stage9_m1_manager.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip!/ym_stage9/stage9_m1_manager.py",
+   "sha256": "082b92d57e22ad23e6c85150f4e5f43bf9ef0a2aac9637a3528d50ab19f0ffba",
+   "bytes": 13644,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip/__nested__/ym_stage9/enable_numba_disk_cache.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip!/ym_stage9/enable_numba_disk_cache.py",
+   "sha256": "1e119102bb43e5585de2c5ddd788c51b7064d4fc63854d8d7de1408b9afe1213",
+   "bytes": 2317,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip/__nested__/ym_stage9/test_m1_manager.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip!/ym_stage9/test_m1_manager.py",
+   "sha256": "4b3aef550141939192405f49e02c7e439cdb49445d1d873f83427133f0152282",
+   "bytes": 4352,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip/__nested__/ym_stage9/APPLE_M1_STAGE9_GUIDE.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip!/ym_stage9/APPLE_M1_STAGE9_GUIDE.md",
+   "sha256": "20e60afb52be70eaa376583e3262c6c6a04bccca61d327af6923db923abc0f01",
+   "bytes": 10365,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip/__nested__/ym_stage9/M1_RESTART_MANIFEST.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage9_Apple_M1_Optimized_Restart.zip!/ym_stage9/M1_RESTART_MANIFEST.json",
+   "sha256": "1f0cadd0746ea3efa2314713eedb14efa97b5d22a7e142826e016d2cb02dad0b",
+   "bytes": 539,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_9_LOCAL_CONTINUATION.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_9_LOCAL_CONTINUATION.md",
+   "sha256": "9a80c63ee888943ffc1e46c6a5b5687165da490b531939b1aa92d48cfadd1aa7",
+   "bytes": 3786,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/README_7.md",
+   "archive": "Archive 4.zip",
+   "source_member": "README_7.md",
+   "sha256": "ea925d8f6d41339d6047b1d0288d2ba5b71d7c2d1de5cb7dba6b054fba6d947a",
+   "bytes": 2703,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_7_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_7_REPORT.md",
+   "sha256": "7b8ffddc2024bb1d2bdf9d1a1241d62e7ae240779e9f544e2cd242aa6dfd0f22",
+   "bytes": 8900,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage5_Report.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage5_Report.md",
+   "sha256": "07ec8dc9c1dc17c527130520c4e8ecc01ae131fad6ae72386afbfb4bdb125c74",
+   "bytes": 10440,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/wilson_simulation_data_audit.md",
+   "archive": "Archive 4.zip",
+   "source_member": "wilson_simulation_data_audit.md",
+   "sha256": "e7950011ce9cddc4f27ea5fa7ee4a7b5235a067be29eba41a84f9ff9244ec290",
+   "bytes": 2936,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/penrose_ym_bootstrap_template.csv",
+   "archive": "Archive 4.zip",
+   "source_member": "penrose_ym_bootstrap_template.csv",
+   "sha256": "4dc480e38b13c78d03301185880cac611ee1e729f376b2c10b5ad4cc61b314de",
+   "bytes": 46,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/penrose_ym_measurement_protocol.md",
+   "archive": "Archive 4.zip",
+   "source_member": "penrose_ym_measurement_protocol.md",
+   "sha256": "c5c9f72cb75653855496409a4fc0b0dee50c969d204cd17758568aa98c832ef2",
+   "bytes": 5702,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/penrose_ym_continuum_fit.py",
+   "archive": "Archive 4.zip",
+   "source_member": "penrose_ym_continuum_fit.py",
+   "sha256": "771faa0605c304da4023c500f4ce0ed2a4c58e62550ff55a1535a5b83fd01206",
+   "bytes": 6928,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_4_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_4_REPORT.md",
+   "sha256": "3a436bbe66dd460e683a9ff6a295753292ea88031a96ac3d28dacaf9af7c1a47",
+   "bytes": 9631,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/README.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/README.md",
+   "sha256": "73438f2b33f9967924d0c91c0f04c91dfbe4ffeba2ac39ba60540ae237de734d",
+   "bytes": 1453,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/SHA256_MANIFEST.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/SHA256_MANIFEST.json",
+   "sha256": "d8bdda793fec0b8dbf8dc6695de80d53e5413335ac3b5c619c46d9ebfdd1b9fe",
+   "bytes": 1852,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/STAGE_4_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/STAGE_4_REPORT.md",
+   "sha256": "3a436bbe66dd460e683a9ff6a295753292ea88031a96ac3d28dacaf9af7c1a47",
+   "bytes": 9631,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_4_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/corrected_2p1_pilot.py",
+   "sha256": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+   "bytes": 18397,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/direct_cut_project.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/outputs/physical_bins_t4_summary.csv",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/outputs/physical_bins_t4_summary.csv",
+   "sha256": "ba1fc1bed6fedc608478b500e0e29cf0dbc5326425c04cee4a654576a8bab723",
+   "bytes": 1967,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/outputs/rational_M5_stage4.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/outputs/rational_M5_stage4.json",
+   "sha256": "79484f5a18a2c530ff61f15a22786de0cdebd83488f3ea7fd37c004e1e3939bf",
+   "bytes": 17682,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/outputs/square_13x14_stage4.json",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/outputs/square_13x14_stage4.json",
+   "sha256": "580ed0997edd92ea44e703ebe2d3e5c3d1f1639db2467670e631dd10c099478e",
+   "bytes": 16519,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/run.log",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/run.log",
+   "sha256": "65859c8f183b24e2de8b2706f3f9c11c9c992eef33ba2d65fd92db34740778e8",
+   "bytes": 1187,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/stage2_rational_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/stage2_rational_torus.py",
+   "sha256": "836d871346ed214d9840bc6dd45ec27c14c4cdb5d1e2262147171d471ad2b124",
+   "bytes": 2851,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_rational_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/stage2_ym_calibration.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/stage2_ym_calibration.py",
+   "sha256": "03f625138c25f838bcdb0902cdbcd31ef5d98b354885fd85660e8f650da50bd3",
+   "bytes": 10229,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage2_ym_calibration.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/stage3_periodic_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/stage3_periodic_pilot.py",
+   "sha256": "1556bdaa54c6dc37091158dc9187a13aae28bf842cbb5336f4299c1007379bff",
+   "bytes": 8684,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage3_periodic_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/stage4_remeasure.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/stage4_remeasure.py",
+   "sha256": "2c49e39ccc6e013af7a25127537a18a577d7b049f8ffe2ca06b73a41388b0aa3",
+   "bytes": 7209,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/stage4_smearing_flux.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/stage4_smearing_flux.py",
+   "sha256": "c3cdb06d9fe2c3a2f6a4556abcd3d69c0f7918732fb59baea2993892c9cecdf1",
+   "bytes": 10866,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/stage4_smearing_flux.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/test_stage4.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/test_stage4.py",
+   "sha256": "24f146cd027c39c5bd7c4db10ecf42d302a91802e46bd2c0462cb97228888765",
+   "bytes": 6181,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/test_stage4.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/tests_stage4.log",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/tests_stage4.log",
+   "sha256": "8ff5e3f37bf3d645fccff29dd16dd7a264405062ec1355e0760fd95b2459ee38",
+   "bytes": 97,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage4_Smearing_Flux.zip/__nested__/ym_stage4/wilson_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "Penrose_YM_Stage4_Smearing_Flux.zip!/ym_stage4/wilson_torus.py",
+   "sha256": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a",
+   "bytes": 6075,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/wilson_torus.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/STAGE_3_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "STAGE_3_REPORT.md",
+   "sha256": "915c9d9864bfb12c8fb7acebc39e08ca2aa85c066ead2159887f60b898157f1d",
+   "bytes": 10916,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/penrose_2p1_integration_report.md",
+   "archive": "Archive 4.zip",
+   "source_member": "penrose_2p1_integration_report.md",
+   "sha256": "075493333917371564fc77fd4abb1ab0ddcaee5bb0b979e1405dfa315193f401",
+   "bytes": 5751,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/new_test.log",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/new_test.log",
+   "sha256": "648b70d04bc2ff100bde4db945890d1014ac3214b93c30f52ffb27b1d49a0259",
+   "bytes": 992,
+   "extension": ".log",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/README_NEXT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/README_NEXT.md",
+   "sha256": "e39540369d6d8c51f9827c4ccaf18fe79c5c855fa350a627652439626bcf103f",
+   "bytes": 5146,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/corrected_2p1_pilot.py",
+   "sha256": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+   "bytes": 18397,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/corrected_2p1_pilot.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/INTEGRATION_REPORT.md",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/INTEGRATION_REPORT.md",
+   "sha256": "075493333917371564fc77fd4abb1ab0ddcaee5bb0b979e1405dfa315193f401",
+   "bytes": 5751,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_2p1_integration_report.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/SOURCE_SHA256.json",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/SOURCE_SHA256.json",
+   "sha256": "2a921ceb30b9edaeec81b4343995f90dc571c93612b2b8339cd9f64a61a22c45",
+   "bytes": 1356,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/penrose_causal_study.py",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/penrose_causal_study.py",
+   "sha256": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+   "bytes": 11168,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/penrose_causal_study.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/test_corrected_2p1_pilot.py",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/test_corrected_2p1_pilot.py",
+   "sha256": "a578da294f20df0286590d280fd9e6d0d0bdd39a8027715fef4e534f0de9423f",
+   "bytes": 5148,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/direct_cut_project.py",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/direct_cut_project.py",
+   "sha256": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+   "bytes": 5855,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/deps/ym_stage6/source_stage5/direct_cut_project.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_4/corrected_penrose_2p1_integration_pilot.zip/__nested__/Corrected_Penrose_2p1_Pilot/wilson_torus.py",
+   "archive": "Archive 4.zip",
+   "source_member": "corrected_penrose_2p1_integration_pilot.zip!/Corrected_Penrose_2p1_Pilot/wilson_torus.py",
+   "sha256": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a",
+   "bytes": 6075,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/wilson_torus.py"
+  }
+ ]
+}
