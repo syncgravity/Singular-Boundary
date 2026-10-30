@@ -21,7 +21,7 @@ For regular center endpoint, A_f sin^2(u) psi'(u)=int_0^u sin^2(t)[W(t)-E]psi(t)
 A nonpositive primitive is sufficient for psi to be nonincreasing, K(delta)=0 and at-least-Haar center mass. Nothing in V>=0 or in the transverse energy term proves the primitive nonpositive; a positive ground state alone cannot determine its sign.
 
 ## Critical outstanding issues
-1. Verify precisely the full-angle versus folded-angle conditional ground state and endpoint terms in the repository's magnetic-deletion setting. The folded marginal is psi_fold^2(u)=psi_full^2(u)+psi_full^2(pi-u), with correct normalization convention; it is NOT obtained by assuming psi_full(pi-u)=psi_full(u).
+1. Verify precisely the full-angle versus folded-angle conditional ground state and endpoint terms in the repository's magnetic-deletion setting. The folded marginal is psi_fold^2(u)=[psi_full^2(u)+psi_full^2(pi-u)]/2, with correct normalization convention; it is NOT obtained by assuming psi_full(pi-u)=psi_full(u).
 2. Control the actual interacting W_f(u)-E_f in a one-sided integrated sense, uniformly over f in D_R, at the scale K_f(delta_f)=o(h^-1/4). This is OPEN.
 3. Check the published radial Ward/current constants against the chosen generator normalization and class-angle convention.
 4. Do not identify this conditional reduction with a complete bulk deletion theorem, Wilson-angle covariance proof, or continuum mass gap.
