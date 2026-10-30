@@ -1,0 +1,326 @@
+{
+  "square": {
+    "geometry": "square",
+    "face_anchors": 22801,
+    "roots_evaluated": 22801,
+    "all_anchors_tested": true,
+    "candidate_loops": 154670,
+    "selected_loops": 45602,
+    "anchors_with_no_match": 0,
+    "anchors_with_one_match": 0,
+    "anchors_with_multiple_matches": 22801,
+    "anchor_coverage": 1.0,
+    "selected_face_counts": {
+      "3": 0,
+      "5": 20072,
+      "8": 2807,
+      "10": 22723
+    },
+    "target_counts": [
+      57,
+      20015,
+      1428,
+      2802,
+      21300
+    ],
+    "target_definitions": [
+      [
+        1.4,
+        5.5
+      ],
+      [
+        1.9,
+        6.5
+      ],
+      [
+        2.5,
+        8.0
+      ],
+      [
+        3.2,
+        9.5
+      ],
+      [
+        4.0,
+        11.5
+      ]
+    ],
+    "matching_threshold": 1.5,
+    "distance_quantiles": [
+      0.24190946403031147,
+      1.2587208762491493,
+      1.348037029531488,
+      1.348037029531488,
+      1.4337260501379103
+    ],
+    "orientation_second_moment_bincount": [
+      6791,
+      0,
+      0,
+      19871,
+      2715,
+      0,
+      0,
+      0
+    ],
+    "orientation_undefined": 16225,
+    "rotation_reflection_orbits_completed": false,
+    "geometry_seconds": 4.80886567700054,
+    "construction_seconds": 14.149759552999967,
+    "matching_seconds": 1.3910402360006628,
+    "warning": "Anchored deterministic sample, not all loops or full point-group averaging; restricted matched subset NOT full-volume zero-momentum projector."
+  },
+  "penrose": {
+    "geometry": "penrose",
+    "face_anchors": 22808,
+    "roots_evaluated": 22808,
+    "all_anchors_tested": true,
+    "candidate_loops": 148706,
+    "selected_loops": 35928,
+    "anchors_with_no_match": 3254,
+    "anchors_with_one_match": 3180,
+    "anchors_with_multiple_matches": 16374,
+    "anchor_coverage": 0.8573307611364434,
+    "selected_face_counts": {
+      "3": 1900,
+      "5": 9727,
+      "8": 10870,
+      "10": 13431
+    },
+    "target_counts": [
+      3423,
+      8155,
+      5620,
+      9314,
+      9416
+    ],
+    "target_definitions": [
+      [
+        1.4,
+        5.5
+      ],
+      [
+        1.9,
+        6.5
+      ],
+      [
+        2.5,
+        8.0
+      ],
+      [
+        3.2,
+        9.5
+      ],
+      [
+        4.0,
+        11.5
+      ]
+    ],
+    "matching_threshold": 1.5,
+    "distance_quantiles": [
+      0.29171379553658655,
+      0.8335636909352551,
+      1.350670183570828,
+      1.4210899125991705,
+      1.4853439633526597
+    ],
+    "orientation_second_moment_bincount": [
+      1837,
+      2049,
+      2581,
+      3468,
+      14268,
+      4758,
+      3668,
+      3299
+    ],
+    "orientation_undefined": 0,
+    "rotation_reflection_orbits_completed": false,
+    "geometry_seconds": 4.516564216999541,
+    "construction_seconds": 13.124747187999674,
+    "matching_seconds": 1.3327529209991553,
+    "warning": "Anchored deterministic sample, not all loops or full point-group averaging; restricted matched subset NOT full-volume zero-momentum projector."
+  },
+  "subset512_measurement": {
+    "configuration": {
+      "roots": 512,
+      "variants": 2,
+      "max_per_anchor": 2,
+      "measure": true,
+      "seed": 101,
+      "inputs": "/mnt/data",
+      "output": "/mnt/data/stage19_target_measure"
+    },
+    "geometries": {
+      "square": {
+        "geometry": "square",
+        "face_anchors": 22801,
+        "roots_evaluated": 512,
+        "all_anchors_tested": false,
+        "candidate_loops": 3472,
+        "selected_loops": 1024,
+        "anchors_with_no_match": 0,
+        "anchors_with_one_match": 0,
+        "anchors_with_multiple_matches": 512,
+        "anchor_coverage": 1.0,
+        "selected_face_counts": {
+          "3": 0,
+          "5": 452,
+          "8": 62,
+          "10": 510
+        },
+        "target_counts": [
+          1,
+          451,
+          33,
+          61,
+          478
+        ],
+        "target_definitions": [
+          [
+            1.4,
+            5.5
+          ],
+          [
+            1.9,
+            6.5
+          ],
+          [
+            2.5,
+            8.0
+          ],
+          [
+            3.2,
+            9.5
+          ],
+          [
+            4.0,
+            11.5
+          ]
+        ],
+        "matching_threshold": 1.5,
+        "distance_quantiles": [
+          0.24190946403031147,
+          1.2587208762491493,
+          1.348037029531488,
+          1.348037029531488,
+          1.348037029531488
+        ],
+        "orientation_second_moment_bincount": [
+          155,
+          0,
+          0,
+          445,
+          59,
+          0,
+          0,
+          0
+        ],
+        "orientation_undefined": 365,
+        "rotation_reflection_orbits_completed": false,
+        "geometry_seconds": 4.482556539000143,
+        "construction_seconds": 0.28438258500045777,
+        "matching_seconds": 0.030044724000617862,
+        "warning": "Anchored deterministic sample, not all loops or full point-group averaging; restricted matched subset NOT full-volume zero-momentum projector.",
+        "matched_measure_seconds": 3.283066668999709,
+        "control_measure_seconds_including_catalogue": 4.368967770999916,
+        "matched_timeslice_mean": 0.9106900033335954,
+        "control_timeslice_means": [
+          0.6622263465701277,
+          0.8290053657205778,
+          0.9309857647952136
+        ],
+        "control_full_face_coverage": true
+      },
+      "penrose": {
+        "geometry": "penrose",
+        "face_anchors": 22808,
+        "roots_evaluated": 512,
+        "all_anchors_tested": false,
+        "candidate_loops": 3297,
+        "selected_loops": 813,
+        "anchors_with_no_match": 68,
+        "anchors_with_one_match": 75,
+        "anchors_with_multiple_matches": 369,
+        "anchor_coverage": 0.8671875,
+        "selected_face_counts": {
+          "3": 44,
+          "5": 226,
+          "8": 251,
+          "10": 292
+        },
+        "target_counts": [
+          77,
+          191,
+          119,
+          215,
+          211
+        ],
+        "target_definitions": [
+          [
+            1.4,
+            5.5
+          ],
+          [
+            1.9,
+            6.5
+          ],
+          [
+            2.5,
+            8.0
+          ],
+          [
+            3.2,
+            9.5
+          ],
+          [
+            4.0,
+            11.5
+          ]
+        ],
+        "matching_threshold": 1.5,
+        "distance_quantiles": [
+          0.29171379553658655,
+          0.8354364989907135,
+          1.3538414374411691,
+          1.4228019999013406,
+          1.4753267593930313
+        ],
+        "orientation_second_moment_bincount": [
+          48,
+          42,
+          60,
+          83,
+          307,
+          109,
+          84,
+          80
+        ],
+        "orientation_undefined": 0,
+        "rotation_reflection_orbits_completed": false,
+        "geometry_seconds": 4.465331261999381,
+        "construction_seconds": 0.40433956299966667,
+        "matching_seconds": 0.027858578000632406,
+        "warning": "Anchored deterministic sample, not all loops or full point-group averaging; restricted matched subset NOT full-volume zero-momentum projector.",
+        "matched_measure_seconds": 0.025643193000178144,
+        "control_measure_seconds_including_catalogue": 3.8577764609999576,
+        "matched_timeslice_mean": 0.9212024933192602,
+        "control_timeslice_means": [
+          0.690636454662495,
+          0.8503300559771387,
+          0.9514392091133146
+        ],
+        "control_full_face_coverage": true
+      }
+    },
+    "scientific_admission": false
+  },
+  "gate_results": {
+    "full_coverage_square": true,
+    "full_coverage_penrose": false,
+    "complete_point_group_orbits": false,
+    "joint_descriptor_population_matched": false,
+    "unrestricted_controls_preserved": true,
+    "physical_mass_admitted": false
+  }
+}

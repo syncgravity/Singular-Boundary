@@ -1,0 +1,11 @@
+{
+  "accepted": 22808,
+  "missing": 0,
+  "threshold": 1.5,
+  "original_accepted": 22658,
+  "newly_integrated": 150,
+  "max_distance": 1.4833839591244287,
+  "max_new_distance": 1.3689184150019102,
+  "sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21"
+}
