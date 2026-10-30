@@ -1,0 +1,2 @@
+sequence_id,conversation_title,started_utc,ended_utc,predecessor_id,successor_id,transcript_path,transcript_sha256,attachment_manifest_path,import_status,claim_review_status,notes
+SB-CHAT-UNASSIGNED-PRISM-R3,Compare Continuum Mass Gaps (branched continuation),,,,,,,sources/source-manifests/CONVERSATION_R3_AVAILABLE_ARTIFACTS_2026-10-30.md,DISCOVERED,PARTIAL,"Title from conversation context only; exact conversation ID and complete verbatim transcript unavailable; dates not independently verified; branch lineage not enumerated"
