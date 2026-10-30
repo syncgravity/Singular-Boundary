@@ -344,3 +344,8 @@ Read [FULL_PROOF_AUDIT_AND_DECISION_2026-10-30.md](FULL_PROOF_AUDIT_AND_DECISION
 ## R3-IR cross-cap net-score refinement (2026-10-30)
 
 [Exact cross-cap excursion theorem](../../research/theorems/R3_IR_CROSS_CAP_NET_SCORE_BOUND_2026-10-30.md): at the selected cap radius a, the maximal **net** adverse log-amplitude difference D_a across the cap/exterior interface suffices for `F(a)>=m(a)/[2m(a)+exp(2D_a)(1-2m(a))]>=m(a)exp(-2D_a)`, with `D_a<=O<=T`. This preserves score cancellations and strictly weakens the **conditional** magnetic-deletion gate from `sup T=o(h^(-1/4))` to `sup D_(a_h)=o(h^(-1/4))`, provided the pre-existing deletion theorem's hypotheses and coefficient scaling hold. No bound on the actual physical D_a has been proved; no inference about the independent spectral gap or 3+1D continuum is made.
+
+
+## Historical source recovery: October 26–28 Archive and Archive 2 (2026-10-30)
+
+The user supplied two original ZIP archives containing **298** non-macOS-metadata primary files, including **29** nested ZIP bundles with **351** nested files. The archives were opened and individually indexed by SHA-256 in the conversation workspace. The immutable checksums, inventory counts and exact status of the GitHub-side ingestion are in [the archive intake register](../../sources/source-manifests/OCT26_28_ARCHIVE_INTAKE_2026-10-30.md). **The original binary ZIP bytes and complete nested source tree have not been pushed to GitHub**; the repository now holds the provenance register only. Preserve historical notes verbatim and their original dates/claims. The stronger half-Haar gate and weaker cross-cap deletion gate remain distinct, with the physical source-current estimate and continuum gap still open.
