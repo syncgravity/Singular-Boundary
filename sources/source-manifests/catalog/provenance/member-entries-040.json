@@ -1,0 +1,904 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_NOTE(70).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_NOTE(70).md",
+   "sha256": "75b79e8706221196b8fe38ddc10407932f588f792d81f10ecb506eff32023e07",
+   "bytes": 4564,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_NOTE(70).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_R3_R2_PROOF_AUDIT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_R3_R2_PROOF_AUDIT.md",
+   "sha256": "3d68a0a35da384fde720ef42488f6c2c4c5682fb927fe42e150908f6ee90a9a0",
+   "bytes": 19271,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_RESULT (1).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_RESULT (1).md",
+   "sha256": "f9547c92ef009ebe0b0031aa28c6d1b1882b34ec68e5954136623fb7b0975d65",
+   "bytes": 8729,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_RESULT (2).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_RESULT (2).md",
+   "sha256": "2f52e120415eb48839f62ffd7c5f4374eb01b71472893e57f23b873ea526be37",
+   "bytes": 7086,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_RESULT (3).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_RESULT (3).md",
+   "sha256": "3a724b524379ca5dccf36937affe984f80f0a82e55109170c81e9fc989add91a",
+   "bytes": 7089,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_RESULT (3).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_RESULT (4).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_RESULT (4).md",
+   "sha256": "6c029ee5345cb36035159e091a0dbb2be77ef3e3f288ac155b84ef32c2a919e7",
+   "bytes": 6383,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_RESULT (4).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_RESULT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_RESULT.md",
+   "sha256": "7e299f4fb4681b7723b790c9d3fffda4897f17e02fc3d9b2b26b2ed1a47d6f43",
+   "bytes": 7127,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_THEOREM (1).md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_THEOREM (1).md",
+   "sha256": "6b3bcc610a7473c67f2716497b3a0c9fea02c2cd6e37b0c7a13c42ab30e938bb",
+   "bytes": 4784,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/FORMAL_THEOREM (1).md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_THEOREM.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_THEOREM.md",
+   "sha256": "4e29cc5bad07e8785019a59a1643d497f9b98ba88e9a885155cb7f15bcfed30e",
+   "bytes": 8675,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_full_measure_cumulant_2026_10_26.zip/__nested__/R3_full_measure_cumulant_2026_10_26/FORMAL_THEOREM.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_THEOREMS copy.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_THEOREMS copy.md",
+   "sha256": "4d9564d89d54e350ac48c446e9b4c558cc307794fb1f2d888921a24707d106ac",
+   "bytes": 6655,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_R2_graded_frame_exact_audit_2026_10_26.zip/__nested__/R3_R2_graded_frame_exact_audit_2026_10_26/FORMAL_THEOREMS.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/FORMAL_THEOREMS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/FORMAL_THEOREMS.md",
+   "sha256": "f2e76411d93f765e077e753b2e9f953a6c658932f84624c0356f964ef4f124e3",
+   "bytes": 12150,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/HELICAL_OBSERVER_TRANSFER_AND_FRUSTRATION.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/HELICAL_OBSERVER_TRANSFER_AND_FRUSTRATION.md",
+   "sha256": "8ed44b14a42e0a353e97a335736c1c70e21009be81ec2198fed160292a862a5e",
+   "bytes": 11240,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/HELICAL_SPECTROSCOPY_PROTOCOL.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/HELICAL_SPECTROSCOPY_PROTOCOL.md",
+   "sha256": "08a69910f348b557dd39b496756d6f8d7590f620ebecf043acb5261d8d9e0c29",
+   "bytes": 9912,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/LOCAL_RESPONSE_AUDIT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/LOCAL_RESPONSE_AUDIT.md",
+   "sha256": "69cba12e26e8b78ff38ad319964127591d6a38997acb7978f5a30850efdd3d98",
+   "bytes": 3976,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/LOCAL_STABILITY_THEOREM.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/LOCAL_STABILITY_THEOREM.md",
+   "sha256": "cbbaf9e6463ae0fc83a9b450258f3aeb4f0d4e3b66b3c7c7bad590cad8b76353",
+   "bytes": 5832,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/NONPERTURBATIVE_COERCIVITY_AUDIT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/NONPERTURBATIVE_COERCIVITY_AUDIT.md",
+   "sha256": "12d371d44a6a51e480c03108874c256353e2aadb426621072e1db2a369f67a1d",
+   "bytes": 5352,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/NOTE.md",
+   "sha256": "a171d2e08097af3ed338ebec9d2397ccef2e5ff5f1c2b91a1288ba969222ca8d",
+   "bytes": 5866,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/R3_exterior_surgery_2026_10_27.zip/__nested__/R3_exterior_surgery_2026_10_27/NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/penrose_2p1_integration_report.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/penrose_2p1_integration_report.md",
+   "sha256": "075493333917371564fc77fd4abb1ab0ddcaee5bb0b979e1405dfa315193f401",
+   "bytes": 5751,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_2p1_integration_report.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/penrose_ym_measurement_protocol.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/penrose_ym_measurement_protocol.md",
+   "sha256": "c5c9f72cb75653855496409a4fc0b0dee50c969d204cd17758568aa98c832ef2",
+   "bytes": 5702,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_ym_measurement_protocol.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/Penrose_YM_Stage5_Report.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/Penrose_YM_Stage5_Report.md",
+   "sha256": "07ec8dc9c1dc17c527130520c4e8ecc01ae131fad6ae72386afbfb4bdb125c74",
+   "bytes": 10440,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage5_Report.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/Penrose_YM_Stage8_Report.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/Penrose_YM_Stage8_Report.md",
+   "sha256": "54e72271f02ea9d8aecf7120c3ebefdd46f45a62c673c4f1dcea1e484e6548b5",
+   "bytes": 5217,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage8_Analysis_And_Resume_Code.zip/__nested__/ym_stage8/STAGE_8_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/POINCARE_CONSTANTS_AND_CONTINUUM_GATE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/POINCARE_CONSTANTS_AND_CONTINUUM_GATE.md",
+   "sha256": "9bc31e6b4f72c0fb2971890153be89a3a87ac51020ddbf1fd7371b4445022b24",
+   "bytes": 4834,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/PROOF_AUDIT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/PROOF_AUDIT.md",
+   "sha256": "4c58bac6c8ed8d5e4691074612a854b7f74bdcc4f2e40a3b20545d5a21f4b4f1",
+   "bytes": 4465,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_completion_audit_2026_10_28.zip/__nested__/R3_completion_audit_2026_10_28/PROOF_AUDIT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_boundary_uniformity_audit.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/R3_boundary_uniformity_audit.md",
+   "sha256": "83fed146b458ed280156b0e4f3f39257cb82efb855dd8e46b43716f9f49aefac",
+   "bytes": 6403,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_geometry_and_annealed_comparison.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/R3_geometry_and_annealed_comparison.md",
+   "sha256": "db163a784b3a3bae0a17282c629821e4c9d70116c856d1f9b2d6f5f9a9f47a2d",
+   "bytes": 5605,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_MATHEMATICAL_INVESTIGATION.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/R3_MATHEMATICAL_INVESTIGATION.md",
+   "sha256": "f7f156a7f2c207efcf4397ddd615bdc3cd34ee1cd8ee38d34015d4a9fb630c7b",
+   "bytes": 6167,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/r3_shared_edge_15state_note.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/r3_shared_edge_15state_note.md",
+   "sha256": "68d093358606e2e90c7647fd9908e7fed7f27ae914b7954a2c1a55b2e60fc53d",
+   "bytes": 5295,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/r3_shared_edge_15state_note.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_THEOREM_OBSTRUCTION_AND_MULTISCALE_GATE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/R3_THEOREM_OBSTRUCTION_AND_MULTISCALE_GATE.md",
+   "sha256": "3fd2db46a7955e4decb9d2d6e6c48f94a1f5bec49955f254b7fce4d41b0cbd98",
+   "bytes": 16498,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/r3_two_loop_7state_note.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/r3_two_loop_7state_note.md",
+   "sha256": "51895f1c6a89e912fa3bbcbd91146a7147bdfc797adb835ebf0ea8ce44f8fcbb",
+   "bytes": 3473,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/r3_two_loop_7state_note.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_14.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_14.md",
+   "sha256": "967a4a8ae9532e632bf154b727962f1c158e137c64cbbb852e1b87608e5d222f",
+   "bytes": 670,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_15.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_15.md",
+   "sha256": "48b3351a8dfaa9c74d23d62f613ab1beb388db30a611aac93c0201952f2fdd58",
+   "bytes": 617,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/README_15.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_16.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_16.md",
+   "sha256": "04311467aae1252a6dcc41ca317783c39bd2a98102d413827de87d006cff6033",
+   "bytes": 1703,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage16/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_7.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_7.md",
+   "sha256": "ea925d8f6d41339d6047b1d0288d2ba5b71d7c2d1de5cb7dba6b054fba6d947a",
+   "bytes": 2703,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/README_7.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_MAC_STAGE17.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_MAC_STAGE17.md",
+   "sha256": "a22c67c28d79c0ac1a5b2eda6f11290764ad66bd6d6ff5dad5fe0ec1b4d2e762",
+   "bytes": 5464,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/README_MAC_STAGE17.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README_MAC.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README_MAC.md",
+   "sha256": "436a3d7cac500fea535176dc910a062d21202a0da2812ed051568816a8a653b8",
+   "bytes": 3599,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage16_Mac_Multihit_Runner.zip/__nested__/stage16_mac/README_MAC.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/README.md",
+   "sha256": "ab67bc9e49617edda17032bc0317868b2259a6e82e9afec9a43c796efc122961",
+   "bytes": 2767,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/README.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/RECOVERY_RESULT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/RECOVERY_RESULT.md",
+   "sha256": "4eafe5bcce467022cd0b2d2648b1495c5e3f6e9209c5d42592f2c14cdfdf2930",
+   "bytes": 920,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_2/R3_recovered_original_2026_10_27_bundle.zip/__nested__/R3_recovered_original_2026_10_27/RECOVERY_RESULT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/RELATIVE_RESOLVENT_THEOREM.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/RELATIVE_RESOLVENT_THEOREM.md",
+   "sha256": "d73f1abe65f2da9f46d971386d6bfc54dabb795e9464dff143fce703ff7a68fa",
+   "bytes": 9857,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/REPORT.md",
+   "sha256": "ab674f3983b945fb36fffdccc6cc32230399a90ada1412d13c0182e1c123d872",
+   "bytes": 4190,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/SCALAR_WILSON_IR_AND_COMPLETENESS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/SCALAR_WILSON_IR_AND_COMPLETENESS.md",
+   "sha256": "542f7763e756c0050c9436b562928c1b49cf33171fb7d291955e6f436362026c",
+   "bytes": 13965,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/SPATIAL_BLOCKING_THEOREM.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/SPATIAL_BLOCKING_THEOREM.md",
+   "sha256": "99acff8a340abb95d3f0a51c7ca0e5c9537cd90d186c391ac4c6543b417b8915",
+   "bytes": 6869,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_11_HELDOUT_ANALYSIS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_11_HELDOUT_ANALYSIS.md",
+   "sha256": "5f0214966ce6392cad35a8345f13cb3092735a1689b5ee922fe1aea581021635",
+   "bytes": 4054,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_11_HELDOUT_ANALYSIS.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md",
+   "sha256": "4bf699630b7971ceb36512f3fc18ed85fdae2d0984c6c034b0a299fd8cbf9e12",
+   "bytes": 5576,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_12_PHYSICAL_DISTANCE_WILSON_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_13_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_13_REPORT.md",
+   "sha256": "6a9211e71cbb82043a256021d969ed4f8015e7106fe263ad69f56271ca669c2b",
+   "bytes": 4906,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage13/STAGE_13_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_14_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_14_REPORT.md",
+   "sha256": "d144112f4805331f318451ca5924ce1c4ca90b5f95a46314355b3fae470df4ae",
+   "bytes": 4320,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_14_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_15_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_15_REPORT.md",
+   "sha256": "833928ec8705e3d03795ee9d101bd860d94b13dca243c2fb2e5885e78d2d85a5",
+   "bytes": 5313,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage15_Batched_Transporter_Benchmark.zip/__nested__/ym_stage15/STAGE_15_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_16_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_16_REPORT.md",
+   "sha256": "486ee5d1a70c7bd4c406bd9bbf8cdb5cda07447b9389ae37690f5e0ede878c37",
+   "bytes": 12879,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/ym_stage16/STAGE_16_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_3_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_3_REPORT.md",
+   "sha256": "915c9d9864bfb12c8fb7acebc39e08ca2aa85c066ead2159887f60b898157f1d",
+   "bytes": 10916,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_3_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_4_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_4_REPORT.md",
+   "sha256": "3a436bbe66dd460e683a9ff6a295753292ea88031a96ac3d28dacaf9af7c1a47",
+   "bytes": 9631,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_4_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_7_REPORT.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_7_REPORT.md",
+   "sha256": "7b8ffddc2024bb1d2bdf9d1a1241d62e7ae240779e9f544e2cd242aa6dfd0f22",
+   "bytes": 8900,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_7_REPORT.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STAGE_9_LOCAL_CONTINUATION.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STAGE_9_LOCAL_CONTINUATION.md",
+   "sha256": "9a80c63ee888943ffc1e46c6a5b5687165da490b531939b1aa92d48cfadd1aa7",
+   "bytes": 3786,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/STAGE_9_LOCAL_CONTINUATION.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STRONG_COUPLING_GAP_THEOREM.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STRONG_COUPLING_GAP_THEOREM.md",
+   "sha256": "9120bd70b88f5a574ef04c5dd8bc0237f7cf4fbee5e6b835c5a8d03ec329861d",
+   "bytes": 10382,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/STRONG_ELECTRIC_GATE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/STRONG_ELECTRIC_GATE.md",
+   "sha256": "513bf81e1d7696c231a3efa87f4b21525ea6c1bbeb1ec64443f4805af990b42b",
+   "bytes": 4872,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive/STRONG_ELECTRIC_GATE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/THEOREM_OR_OBSTRUCTION.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/THEOREM_OR_OBSTRUCTION.md",
+   "sha256": "4cfd8eb9fd097b2924c0f02c1546bbfd38e39b5cd2be4ae048d8ca6a0df8b371",
+   "bytes": 8818,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/wilson_simulation_data_audit.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/wilson_simulation_data_audit.md",
+   "sha256": "e7950011ce9cddc4f27ea5fa7ee4a7b5235a067be29eba41a84f9ff9244ec290",
+   "bytes": 2936,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/wilson_simulation_data_audit.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/YM_2P1_CAUSAL_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/YM_2P1_CAUSAL_NOTE.md",
+   "sha256": "4819447081497f47c9a7d8e17a08fa6906409f1a8d81eeeeee82eb89c2195bfd",
+   "bytes": 17517,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/penrose_yang_mills_2p1_causal_study.zip/__nested__/YM_2P1_CAUSAL_NOTE.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/ym_stage36_notes.md",
+   "archive": "Archive 3.zip",
+   "source_member": "NOTES.zip!/ym_stage36_notes.md",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_4/Stage19_Full_Auxiliary_Finite_Isometry_Gate.zip/__nested__/stage19_final_gate/symmetry.log"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/script.deb.sh",
+   "archive": "Archive 3.zip",
+   "source_member": "script.deb.sh",
+   "sha256": "049b6a2e1121a226f6947ffbc0b8f87e4dcc7f6ebe13b853e45da30c1f9552ba",
+   "bytes": 10526,
+   "extension": ".sh",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_recovery_batch_checkpoint_2026-10-28.zip/__nested__/RECOVERY_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_recovery_batch_checkpoint_2026-10-28.zip!/RECOVERY_NOTE.md",
+   "sha256": "22f3e4eef4ad0a635a399af749b24d5375b02e7d0c654fc850f1883bd8474b74",
+   "bytes": 2909,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_recovery_batch_checkpoint_2026-10-28.zip/__nested__/manifest.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_recovery_batch_checkpoint_2026-10-28.zip!/manifest.csv",
+   "sha256": "bd1833620715654b3d62c0a4eeb69628a43414e2f805051d753b7b6b0a3b9c78",
+   "bytes": 2591,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_historical_recovery_checkpoint_2026_10_28.zip/__nested__/RECOVERY_STATUS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_historical_recovery_checkpoint_2026_10_28.zip!/RECOVERY_STATUS.md",
+   "sha256": "b5e57ac1fd007ae688e0124c161ff676ee79d8ae58885b3bbd0c557826de6c70",
+   "bytes": 2265,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_historical_recovery_checkpoint_2026_10_28.zip/__nested__/manifest.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_historical_recovery_checkpoint_2026_10_28.zip!/manifest.csv",
+   "sha256": "490e6f23c4e1d599e75455b2cacd44df23e496561f8452f5f76c1ffb6394dcbb",
+   "bytes": 1718,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_provenance_checkpoint_2026-10-28.zip/__nested__/singular_boundary_provenance_2026-10-28/PROVENANCE_STATUS.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_provenance_checkpoint_2026-10-28.zip!/singular_boundary_provenance_2026-10-28/PROVENANCE_STATUS.md",
+   "sha256": "acc6bcd8046cbc2fbf9c275ce82c9e9b18ac414cdd4152681afc9eac8586a970",
+   "bytes": 2840,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_provenance_checkpoint_2026-10-28.zip/__nested__/singular_boundary_provenance_2026-10-28/artifact_manifest.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_provenance_checkpoint_2026-10-28.zip!/singular_boundary_provenance_2026-10-28/artifact_manifest.csv",
+   "sha256": "ebd63765eb475d041413e942e3be68d311aeb259a9d7c4e4250856c89430b459",
+   "bytes": 1505,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_provenance_checkpoint_2026-10-28.zip/__nested__/singular_boundary_provenance_2026-10-28/stage7_setup_geometry_excerpt.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_provenance_checkpoint_2026-10-28.zip!/singular_boundary_provenance_2026-10-28/stage7_setup_geometry_excerpt.txt",
+   "sha256": "5e557d37d57241e07202ace74bc8ebddec785774611570f2d8c6d6e766fa1197",
+   "bytes": 1250,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_provenance_checkpoint_2026-10-28.zip/__nested__/singular_boundary_provenance_2026-10-28/stage7_zip_inventory.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_provenance_checkpoint_2026-10-28.zip!/singular_boundary_provenance_2026-10-28/stage7_zip_inventory.json",
+   "sha256": "e9028d0744ea56a1606e55e3521534c22e713a78d985010ed72a3df8f454a78e",
+   "bytes": 3503,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_stage26_geometry_bridge_2026-10-28.zip/__nested__/r3_stage26_geometry_bridge_2026-10-28/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_stage26_geometry_bridge_2026-10-28.zip!/r3_stage26_geometry_bridge_2026-10-28/README.md",
+   "sha256": "2af152f6b27e437342713bab9b6a11f09bbf65d481591115706c411f92618c72",
+   "bytes": 1791,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_stage26_geometry_bridge_2026-10-28.zip/__nested__/r3_stage26_geometry_bridge_2026-10-28/export_stage26_incidence.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_stage26_geometry_bridge_2026-10-28.zip!/r3_stage26_geometry_bridge_2026-10-28/export_stage26_incidence.py",
+   "sha256": "9075711b0c3de898ff0e94fd3a30232ddf0fc7740abd3a48af05d2916dcd8b5f",
+   "bytes": 5206,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/control_spatial.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/control_spatial.json",
+   "sha256": "efc57951eb3c08eb06dffa6d0e7d72bf6b2aecf1ef3e56dc9f4efdd0a91cb4e0",
+   "bytes": 341,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/RESEARCH_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/RESEARCH_NOTE.md",
+   "sha256": "d65b0a0a8317fe095cb5cbc148cd28bf05f593d071a5a37bfac1bb66bc195b65",
+   "bytes": 4004,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/generate_r3_incidence.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/generate_r3_incidence.py",
+   "sha256": "07d205b7d9aa5125a381f4220e2ae1065e0eb8a13de6379a72b99c514fb26b0f",
+   "bytes": 5776,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/control_linear_audit.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/control_linear_audit.json",
+   "sha256": "a6258df8b0a004a3ccd3f09469476b4158bfedf047ada9e290367868e3f8b431",
+   "bytes": 2062,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/audit_linear_repair.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/audit_linear_repair.py",
+   "sha256": "d04ece3b0b76aff26fa03c624653744e6246d32c09a7f648ffc330d781681daf",
+   "bytes": 2804,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/control_incidence.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_curvature_redistribution_2026-10-28.zip!/r3_curvature_redistribution_2026-10-28/control_incidence.json",
+   "sha256": "b362291986df3b2df15314c5516e7ffb696defe5bd27cc5149d2083a6a541215",
+   "bytes": 6919,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_penrose_incidence_2026-10-28.zip/__nested__/r3_penrose_incidence_2026-10-28/control_spatial.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_penrose_incidence_2026-10-28.zip!/r3_penrose_incidence_2026-10-28/control_spatial.json",
+   "sha256": "efc57951eb3c08eb06dffa6d0e7d72bf6b2aecf1ef3e56dc9f4efdd0a91cb4e0",
+   "bytes": 341,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/control_spatial.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_penrose_incidence_2026-10-28.zip/__nested__/r3_penrose_incidence_2026-10-28/RESEARCH_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_penrose_incidence_2026-10-28.zip!/r3_penrose_incidence_2026-10-28/RESEARCH_NOTE.md",
+   "sha256": "bb7419388b39a1f90c75e9f3ba643574c35be422d0f3f50fa5e810633dab23a6",
+   "bytes": 4548,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_penrose_incidence_2026-10-28.zip/__nested__/r3_penrose_incidence_2026-10-28/generate_r3_incidence.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_penrose_incidence_2026-10-28.zip!/r3_penrose_incidence_2026-10-28/generate_r3_incidence.py",
+   "sha256": "07d205b7d9aa5125a381f4220e2ae1065e0eb8a13de6379a72b99c514fb26b0f",
+   "bytes": 5776,
+   "extension": ".py",
+   "duplicate_of": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/generate_r3_incidence.py"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_penrose_incidence_2026-10-28.zip/__nested__/r3_penrose_incidence_2026-10-28/source_inventory.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_penrose_incidence_2026-10-28.zip!/r3_penrose_incidence_2026-10-28/source_inventory.json",
+   "sha256": "b81963ffc0515ba93b55514d1afc473229269b394641d84d42bea2e1609f85df",
+   "bytes": 401,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_penrose_incidence_2026-10-28.zip/__nested__/r3_penrose_incidence_2026-10-28/control_incidence.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_penrose_incidence_2026-10-28.zip!/r3_penrose_incidence_2026-10-28/control_incidence.json",
+   "sha256": "b362291986df3b2df15314c5516e7ffb696defe5bd27cc5149d2083a6a541215",
+   "bytes": 6919,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_3/r3_curvature_redistribution_2026-10-28.zip/__nested__/r3_curvature_redistribution_2026-10-28/control_incidence.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_compatibility_2026-10-28.zip/__nested__/r3_annealed_compatibility_2026-10-28/certificate.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_compatibility_2026-10-28.zip!/r3_annealed_compatibility_2026-10-28/certificate.json",
+   "sha256": "c808bb9710e688e9a32785d3e8ee181014f8274cac2b06dadcbc8ecd1bdcde52",
+   "bytes": 1631,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_compatibility_2026-10-28.zip/__nested__/r3_annealed_compatibility_2026-10-28/RESEARCH_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_compatibility_2026-10-28.zip!/r3_annealed_compatibility_2026-10-28/RESEARCH_NOTE.md",
+   "sha256": "64a0e82cbc7f7bd36d065c1230effa26c072a2ab6899f15d4bead9a4bb12b8f2",
+   "bytes": 5761,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_compatibility_2026-10-28.zip/__nested__/r3_annealed_compatibility_2026-10-28/verify.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_compatibility_2026-10-28.zip!/r3_annealed_compatibility_2026-10-28/verify.py",
+   "sha256": "35bed1af439b7156ea01a875f79d96077f8c1faa677b76c95027548fcdd24bd9",
+   "bytes": 1281,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_compatibility_theorem_2026-10-28.zip/__nested__/r3_compatibility_theorem_2026-10-28/RESEARCH_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_compatibility_theorem_2026-10-28.zip!/r3_compatibility_theorem_2026-10-28/RESEARCH_NOTE.md",
+   "sha256": "a315b99ebd1251dec42c0c2dfda9303d9ef0e3868fdca04524150bbef1265399",
+   "bytes": 4867,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_compatibility_theorem_2026-10-28.zip/__nested__/r3_compatibility_theorem_2026-10-28/checks.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_compatibility_theorem_2026-10-28.zip!/r3_compatibility_theorem_2026-10-28/checks.json",
+   "sha256": "f87e77124e7472c3c7e87a9861d923e18890728d0c2e3dca5f7c2d7132217870",
+   "bytes": 1984,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_compatibility_theorem_2026-10-28.zip/__nested__/r3_compatibility_theorem_2026-10-28/check.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_compatibility_theorem_2026-10-28.zip!/r3_compatibility_theorem_2026-10-28/check.py",
+   "sha256": "57fcad0777a0d7a0c292085e5db298c027c459520176baeacbf62abc61fea0a2",
+   "bytes": 1036,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_gibbs_smallball_audit_2026-10-28.zip/__nested__/r3_gibbs_smallball_audit_2026-10-28/RESEARCH_NOTE.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_gibbs_smallball_audit_2026-10-28.zip!/r3_gibbs_smallball_audit_2026-10-28/RESEARCH_NOTE.md",
+   "sha256": "5525eaf345ad37a1832cdaaa6e00492a2d3774a939a0580ff0130c690d2e59f1",
+   "bytes": 5254,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_gibbs_smallball_audit_2026-10-28.zip/__nested__/r3_gibbs_smallball_audit_2026-10-28/checks.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_gibbs_smallball_audit_2026-10-28.zip!/r3_gibbs_smallball_audit_2026-10-28/checks.json",
+   "sha256": "164aa24b088652683c7f957cb9cd174e10151be2f0fcc1251bae5a5644f5ac20",
+   "bytes": 1058,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_gibbs_smallball_audit_2026-10-28.zip/__nested__/r3_gibbs_smallball_audit_2026-10-28/check.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_gibbs_smallball_audit_2026-10-28.zip!/r3_gibbs_smallball_audit_2026-10-28/check.py",
+   "sha256": "3b648ae9072952d556470b067f340f690691436451dbee382dd77063419dc481",
+   "bytes": 636,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_stepwise_2026-10-28.zip/__nested__/R3_stepwise_research_note.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_stepwise_2026-10-28.zip!/R3_stepwise_research_note.md",
+   "sha256": "61262c140eeb71e0321e6bdbc8d0109e2f0dc3b47e0bac1439b69f8a8f99a201",
+   "bytes": 6199,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_stepwise_2026-10-28.zip/__nested__/geometry_audit.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_stepwise_2026-10-28.zip!/geometry_audit.py",
+   "sha256": "05003e7bd2dfe04442b4b8d0ec34937bf4a337572c0429f4752e1b10c17c8265",
+   "bytes": 2352,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_stepwise_2026-10-28.zip/__nested__/geometry_result.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_stepwise_2026-10-28.zip!/geometry_result.json",
+   "sha256": "a81ae111f7775f5502cb1464531854af8bae42d699b7976c1ea4c299034a9d1b",
+   "bytes": 656,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/R3_geometry_and_annealed_comparison.md",
+   "archive": "Archive 3.zip",
+   "source_member": "R3_geometry_and_annealed_comparison.md",
+   "sha256": "db163a784b3a3bae0a17282c629821e4c9d70116c856d1f9b2d6f5f9a9f47a2d",
+   "bytes": 5605,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_geometry_and_annealed_comparison.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_collar_2026-10-28.zip/__nested__/r3_annealed_collar_2026-10-28/verify.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_collar_2026-10-28.zip!/r3_annealed_collar_2026-10-28/verify.py",
+   "sha256": "a06272d39130e1015c66c8035328a37de029cdaf7d6c8d50b0e22919d8c812d4",
+   "bytes": 942,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_collar_2026-10-28.zip/__nested__/r3_annealed_collar_2026-10-28/numerical_certificate.json",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_collar_2026-10-28.zip!/r3_annealed_collar_2026-10-28/numerical_certificate.json",
+   "sha256": "1cd0e34677da0345c4e03fb7ef1b76d86b707bb7974631670338a2e5ca08b59a",
+   "bytes": 1504,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_annealed_collar_2026-10-28.zip/__nested__/r3_annealed_collar_2026-10-28/R3_geometry_and_annealed_comparison.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_annealed_collar_2026-10-28.zip!/r3_annealed_collar_2026-10-28/R3_geometry_and_annealed_comparison.md",
+   "sha256": "db163a784b3a3bae0a17282c629821e4c9d70116c856d1f9b2d6f5f9a9f47a2d",
+   "bytes": 5605,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_geometry_and_annealed_comparison.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/R3_boundary_uniformity_audit.md",
+   "archive": "Archive 3.zip",
+   "source_member": "R3_boundary_uniformity_audit.md",
+   "sha256": "83fed146b458ed280156b0e4f3f39257cb82efb855dd8e46b43716f9f49aefac",
+   "bytes": 6403,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_boundary_uniformity_audit.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_closure_audit_2026-10-28.zip/__nested__/r3_closure_audit_2026-10-28/verify_su2_frustration.py",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_closure_audit_2026-10-28.zip!/r3_closure_audit_2026-10-28/verify_su2_frustration.py",
+   "sha256": "94bb239190d4b99d10e454a2e5703bc7a6652c302d489e4a29d2af0784e08b2a",
+   "bytes": 943,
+   "extension": ".py",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_closure_audit_2026-10-28.zip/__nested__/r3_closure_audit_2026-10-28/numerical_certificate.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_closure_audit_2026-10-28.zip!/r3_closure_audit_2026-10-28/numerical_certificate.txt",
+   "sha256": "e82041557790ee0bf52048bddd33e4e103dd0506360d630670352511a0c0c2c5",
+   "bytes": 651,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/r3_closure_audit_2026-10-28.zip/__nested__/r3_closure_audit_2026-10-28/R3_boundary_uniformity_audit.md",
+   "archive": "Archive 3.zip",
+   "source_member": "r3_closure_audit_2026-10-28.zip!/r3_closure_audit_2026-10-28/R3_boundary_uniformity_audit.md",
+   "sha256": "83fed146b458ed280156b0e4f3f39257cb82efb855dd8e46b43716f9f49aefac",
+   "bytes": 6403,
+   "extension": ".md",
+   "duplicate_of": "sources/historical/raw/Archive_3/NOTES.zip/__nested__/R3_boundary_uniformity_audit.md"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/README.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/README.md",
+   "sha256": "6ca9a7414e60148e225feea9f09c926768a47b6b2b04283b9ed7ca35be776b89",
+   "bytes": 2175,
+   "extension": ".md",
+   "duplicate_of": null
+  }
+ ]
+}

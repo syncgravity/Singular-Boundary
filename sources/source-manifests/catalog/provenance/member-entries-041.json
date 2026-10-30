@@ -1,0 +1,166 @@
+{
+ "member_entries": [
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/Branch · Branch · Compare Continuum Mass Gaps.txt",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/Branch · Branch · Compare Continuum Mass Gaps.txt",
+   "sha256": "b75a371a07e29826432fde37e573cf00f15e130260d889997729083f2fcd8496",
+   "bytes": 6698,
+   "extension": ".txt",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed101_stage26.zip/__nested__/penrose_seed101/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/penrose_seed101_stage26.zip!/penrose_seed101/latest.json",
+   "sha256": "b097a0f7975fe66ae3701ad482e4d76eeec67b1af024f69cee25eed8561b1eed",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed101_stage26_full.zip/__nested__/penrose_seed101/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/penrose_seed101_stage26_full.zip!/penrose_seed101/latest.json",
+   "sha256": "b097a0f7975fe66ae3701ad482e4d76eeec67b1af024f69cee25eed8561b1eed",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed101_stage26.zip/__nested__/penrose_seed101/latest.json"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed211_stage26.zip/__nested__/penrose_seed211/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/penrose_seed211_stage26.zip!/penrose_seed211/latest.json",
+   "sha256": "2a160e7c2227883f2d61beafa378db4a69d324520b9a1edda466d778ec981c0a",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed307_stage26.zip/__nested__/penrose_seed307/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/penrose_seed307_stage26.zip!/penrose_seed307/latest.json",
+   "sha256": "ad13987345e2374270ddd263e04f3785a7a5bb3de326ca32f0bb31665c18909e",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/penrose_seed419_stage26.zip/__nested__/penrose_seed419/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/penrose_seed419_stage26.zip!/penrose_seed419/latest.json",
+   "sha256": "6896adf10098b65379b438cc78b3f5e8eb193bca689b9646e26b5c3520d23eb2",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/square_seed101_stage26.zip/__nested__/square_seed101/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/square_seed101_stage26.zip!/square_seed101/latest.json",
+   "sha256": "18ca9e6261ab00402b6ea570e898f12aad3228a1ce0f72630365df5b8f3c891e",
+   "bytes": 589,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/square_seed211_stage26.zip/__nested__/square_seed211/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/square_seed211_stage26.zip!/square_seed211/latest.json",
+   "sha256": "ef9577ee22fcf6d1f9bc714464112a5f2486e84cc352c1806add474c5913fcae",
+   "bytes": 591,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/square_seed307_stage26.zip/__nested__/square_seed307/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/square_seed307_stage26.zip!/square_seed307/latest.json",
+   "sha256": "621c976208a5ad0cbb4b48708548c2ee4959505bc7dd6b91335a55fef0ca4e49",
+   "bytes": 593,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/original_uploads/square_seed419_stage26.zip/__nested__/square_seed419/latest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/original_uploads/square_seed419_stage26.zip!/square_seed419/latest.json",
+   "sha256": "9909848d31450d9a10b469493b8fc7e9ed72da4c78cd4cb8e7dc0c8b93faef77",
+   "bytes": 594,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/artifact_manifest.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/artifact_manifest.json",
+   "sha256": "21b431f22ead8a1e8a03d123815c7f5c5e723dcdc6abb3f2adcd2b79a06f1b90",
+   "bytes": 24881,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/claim_register.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/claim_register.csv",
+   "sha256": "cc4ede3c08dd682e7cf0a9159e84beb664f109fb99e8fec48641d005c1f31200",
+   "bytes": 2273,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/container_member_inventory.json",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/container_member_inventory.json",
+   "sha256": "d3f4d4cae5acb7cf82f631fcae05f80e1451a87c34b0c02593118dc0a413de91",
+   "bytes": 152643,
+   "extension": ".json",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/conversation_reconstruction.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/conversation_reconstruction.csv",
+   "sha256": "5f8651d2bb13806515f47d2bfd89e5d303a9a4c13a888aa59c3424311b1dad17",
+   "bytes": 1014,
+   "extension": ".csv",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/missing_materials.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/missing_materials.md",
+   "sha256": "7d4072a5e657fd46858e96616f26365d6b5a88098546cc3c6cc2e4cbf41e4d19",
+   "bytes": 1403,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/research_roadmap.md",
+   "archive": "Archive 3.zip",
+   "source_member": "singular_boundary_research_archive_2026-10-28.zip!/records/research_roadmap.md",
+   "sha256": "eb19854bb83cd61452ec498cb14f42da68b4c59aea01ff1e55a72672fb81db1e",
+   "bytes": 1420,
+   "extension": ".md",
+   "duplicate_of": null
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/conversation_reconstruction.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "conversation_reconstruction.csv",
+   "sha256": "5f8651d2bb13806515f47d2bfd89e5d303a9a4c13a888aa59c3424311b1dad17",
+   "bytes": 1014,
+   "extension": ".csv",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/conversation_reconstruction.csv"
+  },
+  {
+   "path": "sources/historical/raw/Archive_3/claim_register.csv",
+   "archive": "Archive 3.zip",
+   "source_member": "claim_register.csv",
+   "sha256": "cc4ede3c08dd682e7cf0a9159e84beb664f109fb99e8fec48641d005c1f31200",
+   "bytes": 2273,
+   "extension": ".csv",
+   "duplicate_of": "sources/historical/raw/Archive_3/singular_boundary_research_archive_2026-10-28.zip/__nested__/records/claim_register.csv"
+  }
+ ]
+}
