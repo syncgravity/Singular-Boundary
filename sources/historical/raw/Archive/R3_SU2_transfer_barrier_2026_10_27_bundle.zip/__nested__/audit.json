@@ -1,0 +1,134 @@
+{
+  "bessel": [
+    {
+      "beta": 0,
+      "z": 1.0,
+      "lower_bound": 0.03217745087668464,
+      "min_first16_eigenvalues": 0.0
+    },
+    {
+      "beta": 0.1,
+      "z": 0.9059689361761865,
+      "lower_bound": 0.02789090511655144,
+      "min_first16_eigenvalues": 1.3199725192555575e-33
+    },
+    {
+      "beta": 1,
+      "z": 0.41582083069941683,
+      "lower_bound": 0.011376446858100363,
+      "min_first16_eigenvalues": 5.445278122789016e-19
+    },
+    {
+      "beta": 2.5,
+      "z": 0.16526771962501322,
+      "lower_bound": 0.00491416313307358,
+      "min_first16_eigenvalues": 1.2221089054067594e-13
+    },
+    {
+      "beta": 3.5,
+      "z": 0.10708570091602855,
+      "lower_bound": 0.0033707990690667743,
+      "min_first16_eigenvalues": 7.634325731822846e-12
+    },
+    {
+      "beta": 10,
+      "z": 0.024252536276891105,
+      "lower_bound": 0.0008819878617194658,
+      "min_first16_eigenvalues": 2.7285584928896434e-07
+    },
+    {
+      "beta": 100,
+      "z": 0.0007948830605026051,
+      "lower_bound": 3.170075278064974e-05,
+      "min_first16_eigenvalues": 0.00022130516861057977
+    },
+    {
+      "beta": 1000,
+      "z": 2.5221860513857258e-05,
+      "lower_bound": 1.0160159358387955e-06,
+      "min_first16_eigenvalues": 2.2201281637642393e-05
+    }
+  ],
+  "noncommutative_holder": [
+    {
+      "matrix_size": 2,
+      "slabs": 2,
+      "q_total": 3,
+      "cavity": 4292.942774134068,
+      "holder_upper": 11586.421607122498,
+      "ratio": 0.37051498035381997
+    },
+    {
+      "matrix_size": 2,
+      "slabs": 3,
+      "q_total": 6,
+      "cavity": 21740669.879516736,
+      "holder_upper": 41552126.823993355,
+      "ratio": 0.5232143705087815
+    },
+    {
+      "matrix_size": 2,
+      "slabs": 5,
+      "q_total": 10,
+      "cavity": 3544347759689.4556,
+      "holder_upper": 568789572075683.2,
+      "ratio": 0.0062313866739066096
+    },
+    {
+      "matrix_size": 3,
+      "slabs": 2,
+      "q_total": 4,
+      "cavity": 17132.0670995481,
+      "holder_upper": 108140.40208718691,
+      "ratio": 0.15842429627490728
+    },
+    {
+      "matrix_size": 3,
+      "slabs": 3,
+      "q_total": 4,
+      "cavity": 4065.0303584258218,
+      "holder_upper": 82360.20133924914,
+      "ratio": 0.0493567316777383
+    },
+    {
+      "matrix_size": 3,
+      "slabs": 5,
+      "q_total": 8,
+      "cavity": 688383658.871628,
+      "holder_upper": 238885222747.58298,
+      "ratio": 0.002881650237524343
+    },
+    {
+      "matrix_size": 5,
+      "slabs": 2,
+      "q_total": 1,
+      "cavity": 130.9556910001826,
+      "holder_upper": 546.317878202065,
+      "ratio": 0.2397060323765323
+    },
+    {
+      "matrix_size": 5,
+      "slabs": 3,
+      "q_total": 6,
+      "cavity": 3523056.135350691,
+      "holder_upper": 77833401.71187536,
+      "ratio": 0.04526406475708698
+    },
+    {
+      "matrix_size": 5,
+      "slabs": 5,
+      "q_total": 6,
+      "cavity": 25356196.042719677,
+      "holder_upper": 5458743397.633681,
+      "ratio": 0.004645060995853253
+    }
+  ],
+  "constants": {
+    "k": 36,
+    "q": 14,
+    "nu": 7,
+    "log_lambda_coefficient": 75.0,
+    "explicit_additive_constant": 490.8435862297267,
+    "general_k_le_4q_coefficient_per_q": 7.5
+  }
+}

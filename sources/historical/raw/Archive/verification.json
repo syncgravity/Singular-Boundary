@@ -1,0 +1,110 @@
+{
+  "convention": "SU(2) as unit quaternions, Haar=S^3 uniform, d=1-ReTr/2",
+  "tests": [
+    {
+      "t": 0,
+      "mean_cos": 0.0,
+      "mean_1_minus_cos": 1.0,
+      "t_times_excess": 0.0,
+      "quadrature_vs_bessel_error": 0.0,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 0.01,
+      "mean_cos": 0.0024999895833984383,
+      "mean_1_minus_cos": 0.9975000104166014,
+      "t_times_excess": 0.009975000104166014,
+      "quadrature_vs_bessel_error": 1.1102230246251565e-16,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 0.1,
+      "mean_cos": 0.02498958983941267,
+      "mean_1_minus_cos": 0.9750104101605934,
+      "t_times_excess": 0.09750104101605934,
+      "quadrature_vs_bessel_error": 6.106226635438361e-15,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 1,
+      "mean_cos": 0.2401937238700899,
+      "mean_1_minus_cos": 0.7598062761300034,
+      "t_times_excess": 0.7598062761300034,
+      "quadrature_vs_bessel_error": 9.325873406851315e-14,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 3,
+      "mean_cos": 0.5679236493072664,
+      "mean_1_minus_cos": 0.43207635069273775,
+      "t_times_excess": 1.2962290520782132,
+      "quadrature_vs_bessel_error": 4.107825191113079e-15,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 10,
+      "mean_cos": 0.8541853083236817,
+      "mean_1_minus_cos": 0.14581469167703068,
+      "t_times_excess": 1.4581469167703067,
+      "quadrature_vs_bessel_error": 7.123468481751161e-13,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 30,
+      "mean_cos": 0.9504312007210898,
+      "mean_1_minus_cos": 0.04956879927891354,
+      "t_times_excess": 1.4870639783674062,
+      "quadrature_vs_bessel_error": 3.316791286067655e-15,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 100,
+      "mean_cos": 0.9850378800081565,
+      "mean_1_minus_cos": 0.014962119991843483,
+      "t_times_excess": 1.4962119991843483,
+      "quadrature_vs_bessel_error": 8.673617379884035e-18,
+      "upper_bound": 1.5,
+      "passes": true
+    },
+    {
+      "t": 1000,
+      "mean_cos": 0.9985003753754932,
+      "mean_1_minus_cos": 0.0014996246245068123,
+      "t_times_excess": 1.4996246245068123,
+      "quadrature_vs_bessel_error": null,
+      "upper_bound": 1.5,
+      "passes": true
+    }
+  ],
+  "max_pair_identity_error": 1.4210854715202004e-14,
+  "opposite_staple_obstruction": {
+    "n": 2,
+    "staples": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "R": 0,
+    "m_e": 2,
+    "conditional_mean_S_e": 2,
+    "conditional_mean_each_face_d": 1,
+    "lambda_times_each_face_energy": "lambda (unbounded at fixed exterior)"
+  },
+  "all_checks_pass": true
+}

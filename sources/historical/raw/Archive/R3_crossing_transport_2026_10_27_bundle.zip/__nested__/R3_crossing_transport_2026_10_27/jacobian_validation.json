@@ -1,0 +1,5 @@
+{
+  "status": "PASS; independent numeric tangent-Jacobian check; proof analytic",
+  "max_relative_error": 3.4761679090777875e-09,
+  "trials": 68
+}

@@ -1,0 +1,14 @@
+{
+  "pivot_count": 59,
+  "fixed_remaining_count": 114,
+  "H_count": 36,
+  "A_count": 62,
+  "C_count": 33,
+  "rank_P_all_faces": 59,
+  "rank_A_H": 35,
+  "nonzero_relative_frustration_count": 96,
+  "best_one_link": 438,
+  "gaussian_sH_leading_coefficient_for_epsilon_squared": 0.311267110287512,
+  "gaussian_conditional_full_action_leading_coefficient_for_epsilon_squared": 0.439773748150748,
+  "interpretation": "At fixed nonpivot z=epsilon e, choose the global minimized full retained Wilson action over P. No P-only action-decreasing surgery can reduce it, but the original H conditional frustration s_H is positive to order epsilon squared. Strong conditional coercivity for any P-only action-decreasing map is impossible."
+}

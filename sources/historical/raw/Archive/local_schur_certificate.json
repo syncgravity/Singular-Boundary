@@ -1,0 +1,123 @@
+{
+  "source": "Genuine direct-Z5 Penrose rhombus disk x three-periodic time",
+  "nature": "eta regularized linear tangent model, NOT the compact SU(2) Wilson model",
+  "theorem": "If pointwise Bianchi quadratic bound S_Q<=44 S_R, then C0<=C1<=45 C0 and rank(C1-C0)<=|Q|; hence (3/2)log det((eta+lambda C1)/(eta+lambda C0))<=(3/2)|Q|log45 for all eta>0, lambda>=0, uniformly in volume.",
+  "data": [
+    {
+      "radius": 5.0,
+      "Q_faces": 14,
+      "retained_local_faces": 72,
+      "retained_Bianchi_support": 54,
+      "H_links": 36,
+      "exterior_boundary_links": 89,
+      "delta_rank": 14,
+      "delta_min_eigenvalue": -2.806784720014587e-15,
+      "largest_delta_eigenvalue": 1.7921921586845178,
+      "min_eig_45C0_minus_C1": -1.1691496152830223e-13,
+      "bounds": [
+        {
+          "eta": 1,
+          "lambda": 1,
+          "Schur_exterior_cost": 4.453049566939775
+        },
+        {
+          "eta": 1,
+          "lambda": 300,
+          "Schur_exterior_cost": 7.35123522969684
+        },
+        {
+          "eta": 0.001,
+          "lambda": 1,
+          "Schur_exterior_cost": 7.365598526437367
+        }
+      ]
+    },
+    {
+      "radius": 6.5,
+      "Q_faces": 14,
+      "retained_local_faces": 72,
+      "retained_Bianchi_support": 54,
+      "H_links": 36,
+      "exterior_boundary_links": 89,
+      "delta_rank": 14,
+      "delta_min_eigenvalue": -2.806784720014587e-15,
+      "largest_delta_eigenvalue": 1.7921921586845178,
+      "min_eig_45C0_minus_C1": -1.1691496152830223e-13,
+      "bounds": [
+        {
+          "eta": 1,
+          "lambda": 1,
+          "Schur_exterior_cost": 4.453049566939775
+        },
+        {
+          "eta": 1,
+          "lambda": 300,
+          "Schur_exterior_cost": 7.35123522969684
+        },
+        {
+          "eta": 0.001,
+          "lambda": 1,
+          "Schur_exterior_cost": 7.365598526437367
+        }
+      ]
+    },
+    {
+      "radius": 8.0,
+      "Q_faces": 14,
+      "retained_local_faces": 72,
+      "retained_Bianchi_support": 54,
+      "H_links": 36,
+      "exterior_boundary_links": 89,
+      "delta_rank": 14,
+      "delta_min_eigenvalue": -2.806784720014587e-15,
+      "largest_delta_eigenvalue": 1.7921921586845178,
+      "min_eig_45C0_minus_C1": -1.1691496152830223e-13,
+      "bounds": [
+        {
+          "eta": 1,
+          "lambda": 1,
+          "Schur_exterior_cost": 4.453049566939775
+        },
+        {
+          "eta": 1,
+          "lambda": 300,
+          "Schur_exterior_cost": 7.35123522969684
+        },
+        {
+          "eta": 0.001,
+          "lambda": 1,
+          "Schur_exterior_cost": 7.365598526437367
+        }
+      ]
+    },
+    {
+      "radius": 10.0,
+      "Q_faces": 14,
+      "retained_local_faces": 72,
+      "retained_Bianchi_support": 54,
+      "H_links": 36,
+      "exterior_boundary_links": 89,
+      "delta_rank": 14,
+      "delta_min_eigenvalue": -2.806784720014587e-15,
+      "largest_delta_eigenvalue": 1.7921921586845178,
+      "min_eig_45C0_minus_C1": -1.1691496152830223e-13,
+      "bounds": [
+        {
+          "eta": 1,
+          "lambda": 1,
+          "Schur_exterior_cost": 4.453049566939775
+        },
+        {
+          "eta": 1,
+          "lambda": 300,
+          "Schur_exterior_cost": 7.35123522969684
+        },
+        {
+          "eta": 0.001,
+          "lambda": 1,
+          "Schur_exterior_cost": 7.365598526437367
+        }
+      ]
+    }
+  ]
+}

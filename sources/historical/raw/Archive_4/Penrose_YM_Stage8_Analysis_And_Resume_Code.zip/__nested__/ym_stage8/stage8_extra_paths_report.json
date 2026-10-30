@@ -1,0 +1,18 @@
+{
+  "penrose": {
+    "number_paths": 288,
+    "max_steps": 12,
+    "min_r": 0.6291843368019376,
+    "max_r": 6.571554087401483,
+    "all_paths_contiguous_and_physical_displacements_certified": true,
+    "source_geometry_sha256": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21"
+  },
+  "square": {
+    "number_paths": 288,
+    "max_steps": 12,
+    "min_r": 0.5701084212785474,
+    "max_r": 6.841301055342569,
+    "all_paths_contiguous_and_physical_displacements_certified": true,
+    "source_geometry_sha256": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3"
+  }
+}

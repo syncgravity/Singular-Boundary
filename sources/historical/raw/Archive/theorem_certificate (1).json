@@ -1,0 +1,16 @@
+{
+  "model": "Penrose rhombus spatial disk x 3-periodic Euclidean time; Q14 fixed interior",
+  "rigorous_no_go": "59-pivot-only globally action-decreasing surgery cannot uniformly dominate positive original s_H; exact rational exterior perturbation witness link 438",
+  "rational_positive_witness_lower_coefficient": 0.0030959529379083186,
+  "local_relative_real_normal_mode_rank": 72,
+  "24_SU2_components": 24,
+  "compact_SU2_sequential_mgf": "for each finite Lambda and theta in [0,1): limsup_lambda E exp(theta lambda s_H) <= (1-theta)^-36",
+  "compact_SU2_sequential_tail": "limsup_lambda P(lambda s_H>=t) <= min(1,2^36 exp(-t/2))",
+  "fixed_volume_nonasymptotic_tail": "for each Lambda there exists lambda0(Lambda) such that for lambda>=lambda0(Lambda): P(lambda s_H>=t)<=min(1,2^37 exp(-t/2))",
+  "sequential_local_mean": "limsup_lambda lambda E s_H <=36 and limsup_lambda lambda E S_A <=88.5",
+  "Bianchi_curvature_coefficient": 44,
+  "inserted_face_count": 14,
+  "sequential_compact_Haar_insertion_ratio_lower": 1.916625273771631e-35,
+  "sequential_compact_Haar_free_energy_upper": 79.93991228517672,
+  "UNPROVED": "uniform volume-independent lambda threshold; joint finite-lambda absolute concentration; arbitrary-support nonlinear R3; continuum mass gap"
+}

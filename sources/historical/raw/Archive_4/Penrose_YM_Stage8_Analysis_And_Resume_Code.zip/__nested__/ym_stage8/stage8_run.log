@@ -1,0 +1,8 @@
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "1f066bbcd50bac99f77495b019d14dd5a2658031ea054fe79c132407fb363c89", "elapsed_seconds": 35.29, "kind": "square", "n_postburn_samples": 0, "seed": 101, "sweeps": 24}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "6a0886e5b0c10f2d7049103a4344a884332380e78f410c5b65d10e35d6fecc6a", "elapsed_seconds": 32.86, "kind": "square", "n_postburn_samples": 0, "seed": 211, "sweeps": 20}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "c3743e8c63fe8343c8b8436aec8a9af3a22a84c328dd125c5c205f9343592f1d", "elapsed_seconds": 31.77, "kind": "square", "n_postburn_samples": 0, "seed": 307, "sweeps": 20}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "02b2a703ef84dc1338c990049c42538f75794ed6d181feeacce87a82d673a414", "elapsed_seconds": 32.44, "kind": "square", "n_postburn_samples": 0, "seed": 419, "sweeps": 20}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "0bf6fc1d2ecf6c0b468b83120f605e78f6bd301b9a999a2614fe63d50a787805", "elapsed_seconds": 32.63, "kind": "penrose", "n_postburn_samples": 0, "seed": 101, "sweeps": 24}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "e162854c53a93b8454bf7cf0b279f2a7d3eade60702dc9522fe04a5507aa42d5", "elapsed_seconds": 33.0, "kind": "penrose", "n_postburn_samples": 0, "seed": 211, "sweeps": 20}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "8b77676d78ebd5337df40eaf6a507a1164d20a5c87d6f0b8fd83088e9b6fdf04", "elapsed_seconds": 34.56, "kind": "penrose", "n_postburn_samples": 0, "seed": 307, "sweeps": 20}
+CHECKPOINT {"cache_error": 0.0, "checkpoint_sha256": "e9151e84500f966258d51552b4e4a5c142b1d33219bbc225f517c8e695ca261b", "elapsed_seconds": 33.72, "kind": "penrose", "n_postburn_samples": 0, "seed": 419, "sweeps": 20}

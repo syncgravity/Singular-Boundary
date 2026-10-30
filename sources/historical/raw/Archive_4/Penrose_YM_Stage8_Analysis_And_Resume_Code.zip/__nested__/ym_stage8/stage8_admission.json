@@ -1,0 +1,117 @@
+{
+  "status": "NOT A PHYSICAL MASS OR STRING TENSION RESULT",
+  "n_chains_present": 8,
+  "production_samples_total": 0,
+  "requirements": {
+    "four_independent_checkpoint_states_per_geometry": true,
+    "four_converged_production_chains_per_geometry": false,
+    "all_chains_postburn_sampling": false,
+    "sampling_precision_Rhat_less_1p01_ESS400": false,
+    "scalar_multi_time_covariance_stable_fit": false,
+    "confinement_multi_distance_or_winding_fit": false,
+    "renormalized_coupling_and_anisotropy_match": false,
+    "finite_volume_and_orientation_stability": false,
+    "multiple_cutoffs_approximants_and_offsets": false,
+    "joint_bootstrap_ratio": false,
+    "continuum_extrapolated_contrast": false
+  },
+  "decision": {
+    "four_independent_checkpoint_states_per_geometry": "passed",
+    "four_converged_production_chains_per_geometry": "not established",
+    "all_chains_postburn_sampling": "not established",
+    "sampling_precision_Rhat_less_1p01_ESS400": "not established",
+    "scalar_multi_time_covariance_stable_fit": "not established",
+    "confinement_multi_distance_or_winding_fit": "not established",
+    "renormalized_coupling_and_anisotropy_match": "not established",
+    "finite_volume_and_orientation_stability": "not established",
+    "multiple_cutoffs_approximants_and_offsets": "not established",
+    "joint_bootstrap_ratio": "not established",
+    "continuum_extrapolated_contrast": "not established"
+  },
+  "mass_estimate": null,
+  "string_tension_estimate": null,
+  "mass_ratio": null,
+  "continuum_contrast": null,
+  "chains": [
+    {
+      "kind": "square",
+      "seed": 101,
+      "present": true,
+      "sweeps": 24,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52207891
+    },
+    {
+      "kind": "square",
+      "seed": 211,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52214878
+    },
+    {
+      "kind": "square",
+      "seed": 307,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52214809
+    },
+    {
+      "kind": "square",
+      "seed": 419,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52214421
+    },
+    {
+      "kind": "penrose",
+      "seed": 101,
+      "present": true,
+      "sweeps": 24,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52249180
+    },
+    {
+      "kind": "penrose",
+      "seed": 211,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52254679
+    },
+    {
+      "kind": "penrose",
+      "seed": 307,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52256013
+    },
+    {
+      "kind": "penrose",
+      "seed": 419,
+      "present": true,
+      "sweeps": 20,
+      "burn_threshold": 1000,
+      "production_samples": 0,
+      "cache_error": 0.0,
+      "checkpoint_bytes": 52256539
+    }
+  ]
+}

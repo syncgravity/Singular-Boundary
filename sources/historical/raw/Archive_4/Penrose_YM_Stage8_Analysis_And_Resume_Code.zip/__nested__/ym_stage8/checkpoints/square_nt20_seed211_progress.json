@@ -1,0 +1,165 @@
+{
+  "settings": {
+    "kind": "square",
+    "seed": 211,
+    "nt": 20,
+    "beta": 3.5,
+    "burn": 1000,
+    "thin": 10,
+    "spatial_geometry_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+    "L": 1368060,
+    "P": 1368060,
+    "rng_scheme": "xorshift128plus-high-53-v1",
+    "initial_state": "Haar_SU2_normalized_four_Gaussians"
+  },
+  "completed_sweeps": 20,
+  "required_sweeps": 10000,
+  "elapsed_seconds": 28.189299325999855,
+  "cache_error": 0.0,
+  "n_postburn_samples": 0,
+  "checkpoint_sha256": "6a0886e5b0c10f2d7049103a4344a884332380e78f410c5b65d10e35d6fecc6a",
+  "checkpoint": "checkpoints/square_nt20_seed211.npz",
+  "history": [
+    {
+      "sweep": 1,
+      "acceptance": 0.7063140505533383,
+      "spatial_plaquette": 0.1368278408426429,
+      "temporal_plaquette": 0.13971921950290722,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 2,
+      "acceptance": 0.6679173428066021,
+      "spatial_plaquette": 0.23834123338514085,
+      "temporal_plaquette": 0.24244579993853735,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 3,
+      "acceptance": 0.6377965878689531,
+      "spatial_plaquette": 0.3145480363929916,
+      "temporal_plaquette": 0.31842842794635623,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 4,
+      "acceptance": 0.6160702015993451,
+      "spatial_plaquette": 0.3728123113394313,
+      "temporal_plaquette": 0.3757629788523877,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 5,
+      "acceptance": 0.5981572445652968,
+      "spatial_plaquette": 0.4175107406224702,
+      "temporal_plaquette": 0.42152494867643375,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 6,
+      "acceptance": 0.5833267546745026,
+      "spatial_plaquette": 0.45371926493030723,
+      "temporal_plaquette": 0.45800406555997075,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 7,
+      "acceptance": 0.5716006607897315,
+      "spatial_plaquette": 0.4840994428045093,
+      "temporal_plaquette": 0.48769563981860925,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 8,
+      "acceptance": 0.5621544376708624,
+      "spatial_plaquette": 0.5081127602957887,
+      "temporal_plaquette": 0.511521514929189,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 9,
+      "acceptance": 0.5548704004210342,
+      "spatial_plaquette": 0.5286476322638047,
+      "temporal_plaquette": 0.5318873349613983,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 10,
+      "acceptance": 0.5477647179217285,
+      "spatial_plaquette": 0.5464329598690386,
+      "temporal_plaquette": 0.549310255191578,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 11,
+      "acceptance": 0.5418548894054355,
+      "spatial_plaquette": 0.5609736265215857,
+      "temporal_plaquette": 0.5639599527687326,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 12,
+      "acceptance": 0.5379113489174452,
+      "spatial_plaquette": 0.5742156317819074,
+      "temporal_plaquette": 0.5768597343350176,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 13,
+      "acceptance": 0.533065070245457,
+      "spatial_plaquette": 0.5850835019081373,
+      "temporal_plaquette": 0.5880576939513265,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 14,
+      "acceptance": 0.5296302793737117,
+      "spatial_plaquette": 0.5952149805568264,
+      "temporal_plaquette": 0.5978073738655026,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 15,
+      "acceptance": 0.5265361168369809,
+      "spatial_plaquette": 0.6035857619140478,
+      "temporal_plaquette": 0.6061791649869347,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 16,
+      "acceptance": 0.5238907650249258,
+      "spatial_plaquette": 0.6115418957121217,
+      "temporal_plaquette": 0.6134918284415323,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 17,
+      "acceptance": 0.522115989064807,
+      "spatial_plaquette": 0.6182904431574989,
+      "temporal_plaquette": 0.6199959675883789,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 18,
+      "acceptance": 0.5195430024998904,
+      "spatial_plaquette": 0.624040963495521,
+      "temporal_plaquette": 0.6262911567499678,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 19,
+      "acceptance": 0.5177155972691256,
+      "spatial_plaquette": 0.629797845012984,
+      "temporal_plaquette": 0.6315605729884057,
+      "status": "burn_in"
+    },
+    {
+      "sweep": 20,
+      "acceptance": 0.5161586480125141,
+      "spatial_plaquette": 0.634962420595666,
+      "temporal_plaquette": 0.6360446654891903,
+      "status": "burn_in"
+    }
+  ],
+  "physical_fit_admitted": false
+}

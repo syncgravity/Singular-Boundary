@@ -1,0 +1,16 @@
+{
+  "external_link": 438,
+  "P_links": 59,
+  "full_retained_face_rows": 95,
+  "local_A_faces": 62,
+  "local_H_links": 36,
+  "global_pivot_rank": 59,
+  "H_face_rank_exact": 35,
+  "witness_left_null_basis_index": 0,
+  "witness_nonzero_dot_r": "78127633963291163/351032644442371316",
+  "witness_squared_norm": "8",
+  "rigorous_lower_bound_sH_leading_coefficient": "6103927188702006837944222713892569/1971582679427268505058742227513149696",
+  "rigorous_lower_bound_float": 0.0030959529379083186,
+  "exact_rational_linear_system": "(D_RP^T D_RP) x_P=-D_RP^T D_R,z e_438",
+  "conclusion": "At nonpivot link e438=epsilon, all other nonpivots zero, the global pivot minimizer has positive original H conditional frustration for sufficiently small epsilon; every pivot-only action-nonincreasing repair is non-coercive there."
+}

@@ -1,0 +1,54 @@
+{
+  "trials_passed": 200,
+  "examples": [
+    {
+      "trial": 0,
+      "completed_trace": 26.929315176072457,
+      "cavity_trace": 4.052400182073279,
+      "local_negative_bridge_penalty": 0.018048952037917808,
+      "lower_ratio": 0.055962492015570874,
+      "actual_ratio": 6.645275384005868
+    },
+    {
+      "trial": 1,
+      "completed_trace": 12.89627113161664,
+      "cavity_trace": 10.21473431209565,
+      "local_negative_bridge_penalty": 0.019081687303277455,
+      "lower_ratio": 0.05591726323671019,
+      "actual_ratio": 1.262516550855922
+    },
+    {
+      "trial": 2,
+      "completed_trace": 29.686926292734324,
+      "cavity_trace": 3.704665795850964,
+      "local_negative_bridge_penalty": 0.0,
+      "lower_ratio": 0.05600000000000001,
+      "actual_ratio": 8.013388502137538
+    },
+    {
+      "trial": 3,
+      "completed_trace": 23.58516009955925,
+      "cavity_trace": 12.84996293017233,
+      "local_negative_bridge_penalty": 0.006571202949334112,
+      "lower_ratio": 0.05598440184993446,
+      "actual_ratio": 1.8354263142798772
+    },
+    {
+      "trial": 4,
+      "completed_trace": 37.61141731280632,
+      "cavity_trace": 7.912607904933877,
+      "local_negative_bridge_penalty": 0.0,
+      "lower_ratio": 0.05600000000000001,
+      "actual_ratio": 4.753352847087729
+    },
+    {
+      "trial": 5,
+      "completed_trace": 18.665294639394915,
+      "cavity_trace": 7.477060550262527,
+      "local_negative_bridge_penalty": 0.005732692021355985,
+      "lower_ratio": 0.05598280594058927,
+      "actual_ratio": 2.4963412445201554
+    }
+  ],
+  "meaning": "Finite PSD sanity checks of exact algebra; no SU2 Gibbs claim."
+}

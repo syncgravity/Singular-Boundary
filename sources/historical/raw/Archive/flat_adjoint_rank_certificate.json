@@ -1,0 +1,134 @@
+{
+  "model": "Penrose spatial disk x three-periodic temporal circle; flat Polyakov SU2 b arbitrary",
+  "proof_basis": "Exact 35/59 Tietze eliminations supply triangular SU2-invertible relator Jacobian blocks at ANY flat holonomy. These 16 SVD checks corroborate the ranks.",
+  "data": [
+    {
+      "radius": 5.0,
+      "polyakov_angle": 0.0,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 5.0,
+      "polyakov_angle": 0.41,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 5.0,
+      "polyakov_angle": 1.11,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 5.0,
+      "polyakov_angle": 2.31,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 6.5,
+      "polyakov_angle": 0.0,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 6.5,
+      "polyakov_angle": 0.41,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 6.5,
+      "polyakov_angle": 1.11,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 6.5,
+      "polyakov_angle": 2.31,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 8.0,
+      "polyakov_angle": 0.0,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 8.0,
+      "polyakov_angle": 0.41,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 8.0,
+      "polyakov_angle": 1.11,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 8.0,
+      "polyakov_angle": 2.31,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 10.0,
+      "polyakov_angle": 0.0,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 10.0,
+      "polyakov_angle": 0.41,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 10.0,
+      "polyakov_angle": 1.11,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    },
+    {
+      "radius": 10.0,
+      "polyakov_angle": 2.31,
+      "rank_H_35_pivots": 105,
+      "rank_joint_59_pivots": 177,
+      "max_abs_face_holonomy_residual": 0.0,
+      "exact_Tietze_certifies_all_flat_holonomies": true
+    }
+  ]
+}

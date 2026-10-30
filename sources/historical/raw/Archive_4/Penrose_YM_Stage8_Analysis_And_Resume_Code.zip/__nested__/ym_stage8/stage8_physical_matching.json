@@ -1,0 +1,80 @@
+{
+  "source": "Stage 7 deterministic 100-source spatial path plans",
+  "threshold": 0.05,
+  "matched_distinct_r": 8,
+  "total_distinct_square_r": 11,
+  "pairs": [
+    {
+      "square_r": 0.5701084,
+      "penrose_r": 0.6291843,
+      "relative_mismatch": 0.0985179014263992,
+      "matched_within_5pct": false
+    },
+    {
+      "square_r": 0.8062551,
+      "penrose_r": 0.7475339,
+      "relative_mismatch": 0.07558452273764331,
+      "matched_within_5pct": false
+    },
+    {
+      "square_r": 1.1402168,
+      "penrose_r": 1.2004863,
+      "relative_mismatch": 0.051496919878475815,
+      "matched_within_5pct": false
+    },
+    {
+      "square_r": 1.2748012,
+      "penrose_r": 1.2679042,
+      "relative_mismatch": 0.00542493046972719,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 1.6125101,
+      "penrose_r": 1.5820247,
+      "relative_mismatch": 0.019085971453496067,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 1.7103253,
+      "penrose_r": 1.6563562,
+      "relative_mismatch": 0.03206071022756384,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 1.8028411,
+      "penrose_r": 1.812953,
+      "relative_mismatch": 0.00559318352778996,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 2.0555551,
+      "penrose_r": 2.0506749,
+      "relative_mismatch": 0.0023769735255938745,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 2.2804337,
+      "penrose_r": 2.2837061,
+      "relative_mismatch": 0.0014339613348389247,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 2.3506172,
+      "penrose_r": 2.370076,
+      "relative_mismatch": 0.008244043480732967,
+      "matched_within_5pct": true
+    },
+    {
+      "square_r": 2.8505421,
+      "penrose_r": 2.8267782,
+      "relative_mismatch": 0.008371519922876313,
+      "matched_within_5pct": true
+    }
+  ],
+  "not_established": [
+    "same path orientation distribution",
+    "same long-distance static potential",
+    "renormalized coupling/anisotropy matching",
+    "matched continuum theory"
+  ]
+}

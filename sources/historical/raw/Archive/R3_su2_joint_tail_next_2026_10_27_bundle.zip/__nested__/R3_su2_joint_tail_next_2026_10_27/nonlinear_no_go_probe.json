@@ -1,0 +1,50 @@
+{
+  "scope": "numerical audit of exact rational tangent no-go. near-flat smooth implicit function theorem is analytic argument; numerical optimizer alone is not global minimum certificate",
+  "results": [
+    {
+      "epsilon": 0.04,
+      "full_P_min_score": 0.0007036260627573121,
+      "full_P_max_tangent_gradient": 3.167635948621536e-08,
+      "optimizer_iterations_P": 7,
+      "P_solver_success": true,
+      "original_H_conditional_min": 0.0004980249650070601,
+      "H_optimizer_gradient": 2.1398054398784436e-08,
+      "H_solver_iterations": 2,
+      "H_solver_success": true,
+      "selected_adaptive_tau": 0.0,
+      "adaptive_full_action_drop": 0.0,
+      "sH_over_epsilon_squared": 0.31126560312941254,
+      "local_full_action_over_epsilon_squared": 0.43976628922332006
+    },
+    {
+      "epsilon": 0.08,
+      "full_P_min_score": 0.002814361025859191,
+      "full_P_max_tangent_gradient": 1.867510790319632e-08,
+      "optimizer_iterations_P": 20,
+      "P_solver_success": true,
+      "original_H_conditional_min": 0.001992077806666215,
+      "H_optimizer_gradient": 3.8946802159338234e-08,
+      "H_solver_iterations": 1,
+      "H_solver_success": true,
+      "selected_adaptive_tau": 0.0,
+      "adaptive_full_action_drop": 0.0,
+      "sH_over_epsilon_squared": 0.31126215729159606,
+      "local_full_action_over_epsilon_squared": 0.4397439102904986
+    },
+    {
+      "epsilon": 0.16,
+      "full_P_min_score": 0.011255151672762587,
+      "full_P_max_tangent_gradient": 4.707845850039163e-08,
+      "optimizer_iterations_P": 29,
+      "P_solver_success": true,
+      "original_H_conditional_min": 0.007967927290073451,
+      "H_optimizer_gradient": 2.7125484771674383e-08,
+      "H_solver_iterations": 1,
+      "H_solver_success": true,
+      "selected_adaptive_tau": 0.0,
+      "adaptive_full_action_drop": 0.0,
+      "sH_over_epsilon_squared": 0.31124715976849415,
+      "local_full_action_over_epsilon_squared": 0.43965436221728854
+    }
+  ]
+}

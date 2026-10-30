@@ -1,0 +1,80 @@
+{
+  "model": "direct Z5 Penrose 14 inserted temporal faces",
+  "Q_count": 14,
+  "retained_face_support": 54,
+  "maximum_noncommuting_factor_count": 17,
+  "pointwise_nonabelian_Wilson_energy_coefficient": 44,
+  "justification": "Six-face prism boundary group identities express each peeled face as a product of transported (conjugated) other plaquette holonomies. Counting occurrences without abelian cancellation and using sqrt(d(AB))<=sqrt(d(A))+sqrt(d(B)) yields \u03a3_Q d\u226444 \u03a3_Afill d.",
+  "steps": [
+    {
+      "face": 272,
+      "cell": 20,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 270,
+      "cell": 27,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 268,
+      "cell": 29,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 273,
+      "cell": 31,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 275,
+      "cell": 32,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 322,
+      "cell": 53,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 428,
+      "cell": 99,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 426,
+      "cell": 100,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 432,
+      "cell": 101,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 440,
+      "cell": 104,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 482,
+      "cell": 117,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 481,
+      "cell": 123,
+      "noncommuting_face_factors": 5
+    },
+    {
+      "face": 267,
+      "cell": 28,
+      "noncommuting_face_factors": 17
+    },
+    {
+      "face": 429,
+      "cell": 97,
+      "noncommuting_face_factors": 17
+    }
+  ]
+}

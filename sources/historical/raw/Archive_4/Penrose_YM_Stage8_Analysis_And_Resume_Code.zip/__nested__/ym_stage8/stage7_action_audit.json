@@ -1,0 +1,89 @@
+{
+  "Penrose_M55": {
+    "V": 22808,
+    "E": 45616,
+    "F": 22808,
+    "L": 1368480,
+    "P": 1368480,
+    "nt": 20,
+    "area": 7410.863377501975,
+    "periods": [
+      [
+        -2.55351295663786e-15,
+        86.3481325796916
+      ],
+      [
+        -85.82540416450134,
+        -6.661338147750939e-16
+      ]
+    ],
+    "ref_spacing": 0.5700209286181483,
+    "tree_level_eigs": [
+      0.9999999999997947,
+      0.9999999999998925
+    ],
+    "calibrated_beta_spatial_range": [
+      2.975947085669216,
+      4.877246612624547
+    ],
+    "calibrated_beta_temporal_range": [
+      2.048831805188101,
+      3.349967052896397
+    ],
+    "checks": {
+      "n_spatial_face_incidence": 45616,
+      "all_spatial_degree_four": true,
+      "time_link_incidence_max": 7,
+      "closure": true
+    },
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "source": "corrected model-set for Penrose; square with matched area"
+  },
+  "square_151x151": {
+    "V": 22801,
+    "E": 45602,
+    "F": 22801,
+    "L": 1368060,
+    "P": 1368060,
+    "nt": 20,
+    "area": 7410.863377501975,
+    "periods": [
+      [
+        86.08637161306066,
+        0.0
+      ],
+      [
+        0.0,
+        86.08637161306066
+      ]
+    ],
+    "ref_spacing": 0.5700209286181483,
+    "tree_level_eigs": [
+      0.9999999999999171,
+      0.9999999999999171
+    ],
+    "calibrated_beta_spatial_range": [
+      3.498925815503331,
+      3.498925815503331
+    ],
+    "calibrated_beta_temporal_range": [
+      3.5,
+      3.5
+    ],
+    "checks": {
+      "n_spatial_face_incidence": 45602,
+      "all_spatial_degree_four": true,
+      "time_link_incidence_max": 4,
+      "closure": true
+    },
+    "graph_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+    "source": "corrected model-set for Penrose; square with matched area"
+  },
+  "conditions": {
+    "local_motif_gate_M55": "previous Stage 2 radius-2 TV=.0821 threshold=.15; toroidal bulk",
+    "reference_beta": 3.5,
+    "physical_volume_scale": "area is fixed between pair only; no continuum or renormalized tuning",
+    "production_status": "NOT RUN: ensemble / scalar mass / flux signal unavailable",
+    "elapsed_seconds": 4.417308984000556
+  }
+}

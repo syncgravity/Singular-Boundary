@@ -1,0 +1,48 @@
+{
+  "group": "Z2 toy, NOT SU2",
+  "positive_convolution_kernel": [
+    [
+      "1",
+      "7/10"
+    ],
+    [
+      "7/10",
+      "1"
+    ]
+  ],
+  "positive_outer_A0": [
+    [
+      "1",
+      "7/5"
+    ],
+    [
+      "7/5",
+      "4"
+    ]
+  ],
+  "positive_outer_A2": [
+    [
+      "4",
+      "7/5"
+    ],
+    [
+      "7/5",
+      "1"
+    ]
+  ],
+  "Loewner_positive_convolution_difference": [
+    [
+      "3/20",
+      "-3/20"
+    ],
+    [
+      "-3/20",
+      "3/20"
+    ]
+  ],
+  "z": "17/10",
+  "completed_trace": "543/25",
+  "cavity_trace": "324/25",
+  "monotonicity_defect": "-39/125",
+  "meaning": "Strictly positive integral kernels and positive convolution spectrum do not alone guarantee a 3-factor trace monotonicity. This does not rule out extra SU2 gauge structure."
+}

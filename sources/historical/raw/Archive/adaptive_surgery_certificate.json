@@ -1,0 +1,96 @@
+{
+  "map": "For each solved pivot p, conditional geodesic contraction U_p-> Exp_target[(1-tau)Log_target U_p]. Target depends exclusively on remaining links (verified). Choose tau from {0,0.1,0.25,0.5} minimizing all affected full retained plaquettes.",
+  "proof": "Each branch is a diffeomorphism a.e. onto geodesic ball radius (1-tau)\u03c0 centered at target, with Haar Jacobian j=(1-tau)[sin((1-tau)\u03b8)/sin\u03b8]^2 >= (1-tau)^3. All targets independent of the original pivot links. At most four inverse branches. Include identity to ensure full-action nonincrease. This alone does not force decrease proportional to s_H.",
+  "pivots": 59,
+  "affected_A_faces": 62,
+  "crossing_faces": 33,
+  "grid": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "max_inverse_multiplicity": 4,
+  "global_branch_J_lower_bound": 5.22024357439882e-54,
+  "negative_log_J_lower_bound": 122.68705095911031,
+  "direct_checks": [
+    {
+      "configuration": "flat",
+      "chosen_tau": 0.0,
+      "full_retained_action_decrease": 0.0,
+      "target_independence_error": 0.0,
+      "log_Haar_Jacobian": 0.0,
+      "far_link_change_error": 0.0,
+      "target_A_energy": 0.0
+    },
+    {
+      "configuration": "near_flat",
+      "chosen_tau": 0.5,
+      "full_retained_action_decrease": 0.47786820613556236,
+      "target_independence_error": 0.0,
+      "log_Haar_Jacobian": -121.34151176793851,
+      "far_link_change_error": 0.0,
+      "target_A_energy": -1.4588330543574557e-13
+    },
+    {
+      "configuration": "haar_random",
+      "chosen_tau": 0.5,
+      "full_retained_action_decrease": 27.974427129805704,
+      "target_independence_error": 0.0,
+      "log_Haar_Jacobian": -69.23037197555064,
+      "far_link_change_error": 0.0,
+      "target_A_energy": 2.270406085358445e-13
+    },
+    {
+      "configuration": "center_defect",
+      "chosen_tau": 0.0,
+      "full_retained_action_decrease": 0.0,
+      "target_independence_error": 0.0,
+      "log_Haar_Jacobian": 0.0,
+      "far_link_change_error": 0.0,
+      "target_A_energy": 0.0
+    }
+  ],
+  "Wilson_MCMC_diagnostic": [
+    {
+      "lambda": 8.0,
+      "samples": 20,
+      "mean_best_lambda_action_decrease": 18.69640931921151,
+      "median_best_lambda_action_decrease": 18.32592399661464,
+      "fraction_strict_improvement": 0.85,
+      "chosen_tau_histogram": {
+        "0.0": 3,
+        "0.1": 4,
+        "0.25": 3,
+        "0.5": 10
+      }
+    },
+    {
+      "lambda": 16.0,
+      "samples": 20,
+      "mean_best_lambda_action_decrease": 24.863276361585964,
+      "median_best_lambda_action_decrease": 23.87507895322586,
+      "fraction_strict_improvement": 1.0,
+      "chosen_tau_histogram": {
+        "0.0": 0,
+        "0.1": 3,
+        "0.25": 6,
+        "0.5": 11
+      }
+    },
+    {
+      "lambda": 32.0,
+      "samples": 20,
+      "mean_best_lambda_action_decrease": 20.179593372304947,
+      "median_best_lambda_action_decrease": 19.085889513388206,
+      "fraction_strict_improvement": 0.95,
+      "chosen_tau_histogram": {
+        "0.0": 1,
+        "0.1": 7,
+        "0.25": 7,
+        "0.5": 5
+      }
+    }
+  ],
+  "caveat": "No proof that adaptive decrease controls the absolute local minimum under the full SU2 Gibbs law. Short MCMC tests are exploratory, not equilibration certificates."
+}

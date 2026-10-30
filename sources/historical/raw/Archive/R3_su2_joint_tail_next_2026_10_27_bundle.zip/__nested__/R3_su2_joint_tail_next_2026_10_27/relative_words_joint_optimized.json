@@ -1,0 +1,797 @@
+{
+  "joint": true,
+  "optimized": true,
+  "radius": 5.0,
+  "faces": 62,
+  "Hlinks": 36,
+  "outside_links": 24,
+  "solved_count": 59,
+  "active_left": 1,
+  "nonempty_relators": 0,
+  "max_nonempty_length": 0,
+  "max_substitution_length": 17,
+  "operations": [
+    {
+      "face": 253,
+      "edge": 498,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        44,
+        509,
+        -203
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 20,
+      "edge": 43,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        43,
+        55,
+        -63
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 264,
+      "edge": 54,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        504,
+        214,
+        -513
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 90,
+      "edge": 213,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -202,
+        203,
+        222
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 269,
+      "edge": 507,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        60,
+        514,
+        -219
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 271,
+      "edge": 508,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        62,
+        510,
+        -221
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 276,
+      "edge": 510,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        67,
+        516,
+        -226
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 277,
+      "edge": 511,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        68,
+        513,
+        -227
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 325,
+      "edge": 537,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        116,
+        539,
+        -275
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 412,
+      "edge": 202,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        589,
+        362,
+        -599
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 427,
+      "edge": 597,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        218,
+        601,
+        -377
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 439,
+      "edge": 603,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        230,
+        606,
+        -389
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 484,
+      "edge": 627,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        275,
+        629,
+        -434
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 499,
+      "edge": 634,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        290,
+        636,
+        -449
+      ],
+      "max_remaining_len": 4
+    },
+    {
+      "face": 29,
+      "edge": 66,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -59,
+        60,
+        71
+      ],
+      "max_remaining_len": 6
+    },
+    {
+      "face": 30,
+      "edge": 62,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -58,
+        59,
+        66
+      ],
+      "max_remaining_len": 6
+    },
+    {
+      "face": 31,
+      "edge": 115,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -64,
+        62,
+        65
+      ],
+      "max_remaining_len": 6
+    },
+    {
+      "face": 97,
+      "edge": 219,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        219,
+        231,
+        -273
+      ],
+      "max_remaining_len": 6
+    },
+    {
+      "face": 99,
+      "edge": 218,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        218,
+        226,
+        -230
+      ],
+      "max_remaining_len": 8
+    },
+    {
+      "face": 100,
+      "edge": 217,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        217,
+        222,
+        -225
+      ],
+      "max_remaining_len": 8
+    },
+    {
+      "face": 101,
+      "edge": 222,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        221,
+        224,
+        -275
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 102,
+      "edge": 225,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        225,
+        229,
+        -237
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 434,
+      "edge": 224,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        601,
+        384,
+        -603
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 104,
+      "edge": 291,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -231,
+        230,
+        238
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 117,
+      "edge": 279,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -263,
+        262,
+        273
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 123,
+      "edge": 271,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        271,
+        274,
+        -275
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 169,
+      "edge": 388,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -378,
+        377,
+        385
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 170,
+      "edge": 383,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -377,
+        376,
+        381
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 229,
+      "edge": 512,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -20,
+        485,
+        179
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 321,
+      "edge": 111,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        536,
+        271,
+        -537
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 430,
+      "edge": 598,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        221,
+        600,
+        -380
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 471,
+      "edge": 625,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -262,
+        622,
+        421
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 32,
+      "edge": 69,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        -66,
+        -59,
+        60,
+        71,
+        78
+      ],
+      "max_remaining_len": 10
+    },
+    {
+      "face": 431,
+      "edge": 221,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        221,
+        600,
+        -380,
+        381,
+        -603
+      ],
+      "max_remaining_len": 12
+    },
+    {
+      "face": 501,
+      "edge": 229,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        231,
+        636,
+        451,
+        -639,
+        -238
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 281,
+      "edge": 230,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -514,
+        72,
+        546
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 27,
+      "edge": 71,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -60,
+        61,
+        114
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 28,
+      "edge": 57,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        61,
+        113,
+        -64
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 167,
+      "edge": 378,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        378,
+        390,
+        -432
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 171,
+      "edge": 381,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        380,
+        383,
+        -434
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 193,
+      "edge": 430,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        430,
+        433,
+        -434
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 312,
+      "edge": 535,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -103,
+        532,
+        262
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 496,
+      "edge": 635,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -287,
+        634,
+        446
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 586,
+      "edge": 58,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -688,
+        377,
+        691
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 587,
+      "edge": 59,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -688,
+        378,
+        694
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 641,
+      "edge": 113,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -716,
+        432,
+        726
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 585,
+      "edge": 375,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        688,
+        61,
+        113,
+        -64,
+        -689
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 187,
+      "edge": 431,
+      "word_length": 4,
+      "replacement_len": 3,
+      "replacement_word": [
+        -421,
+        422,
+        439
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 489,
+      "edge": 272,
+      "word_length": 8,
+      "replacement_len": 7,
+      "replacement_word": [
+        -262,
+        263,
+        631,
+        439,
+        -446,
+        -634,
+        287
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 480,
+      "edge": 261,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        622,
+        421,
+        430,
+        -627,
+        -271
+      ],
+      "max_remaining_len": 18
+    },
+    {
+      "face": 174,
+      "edge": 389,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        -378,
+        377,
+        385,
+        397,
+        -451
+      ],
+      "max_remaining_len": 18
+    },
+    {
+      "face": 279,
+      "edge": 377,
+      "word_length": 12,
+      "replacement_len": 11,
+      "replacement_word": [
+        377,
+        691,
+        66,
+        -20,
+        485,
+        179,
+        229,
+        -518,
+        -78,
+        -71,
+        -694
+      ],
+      "max_remaining_len": 18
+    },
+    {
+      "face": 590,
+      "edge": 65,
+      "word_length": 10,
+      "replacement_len": 9,
+      "replacement_word": [
+        -691,
+        -377,
+        688,
+        61,
+        113,
+        -64,
+        -689,
+        381,
+        693
+      ],
+      "max_remaining_len": 18
+    },
+    {
+      "face": 98,
+      "edge": 380,
+      "word_length": 18,
+      "replacement_len": 17,
+      "replacement_word": [
+        380,
+        -600,
+        224,
+        -274,
+        627,
+        -430,
+        -421,
+        -622,
+        263,
+        631,
+        439,
+        451,
+        -639,
+        -238,
+        237,
+        -229,
+        603
+      ],
+      "max_remaining_len": 16
+    },
+    {
+      "face": 591,
+      "edge": 688,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        380,
+        383,
+        -434,
+        718,
+        -64
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 53,
+      "edge": 63,
+      "word_length": 12,
+      "replacement_len": 11,
+      "replacement_word": [
+        62,
+        65,
+        -115,
+        537,
+        627,
+        -430,
+        -421,
+        -622,
+        -532,
+        103,
+        113
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 640,
+      "edge": 112,
+      "word_length": 6,
+      "replacement_len": 5,
+      "replacement_word": [
+        -716,
+        430,
+        433,
+        -434,
+        718
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 168,
+      "edge": 60,
+      "word_length": 10,
+      "replacement_len": 9,
+      "replacement_word": [
+        -688,
+        377,
+        385,
+        397,
+        -451,
+        -439,
+        -422,
+        421,
+        716
+      ],
+      "max_remaining_len": 14
+    },
+    {
+      "face": 323,
+      "edge": 715,
+      "word_length": 14,
+      "replacement_len": 13,
+      "replacement_word": [
+        -421,
+        422,
+        439,
+        726,
+        546,
+        -287,
+        634,
+        446,
+        -439,
+        -631,
+        -263,
+        -532,
+        103
+      ],
+      "max_remaining_len": 0
+    }
+  ],
+  "residual": {},
+  "residual_frozen_only_count": 0
+}

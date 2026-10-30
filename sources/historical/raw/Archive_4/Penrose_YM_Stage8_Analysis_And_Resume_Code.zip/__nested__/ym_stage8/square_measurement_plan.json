@@ -1,0 +1,31 @@
+{
+  "geometry": "square",
+  "number_scalar_loops": 91204,
+  "winding_lengths_edges": [
+    151,
+    151,
+    151,
+    151
+  ],
+  "winding_physical_lengths": [
+    86.08637161306066,
+    86.08637161306066,
+    86.08637161306066,
+    86.08637161306066
+  ],
+  "number_paths": 100,
+  "path_lengths_m": [
+    0.5701084,
+    0.8062551,
+    1.1402168,
+    1.2748012,
+    1.6125101,
+    1.7103253,
+    1.8028411,
+    2.0555551,
+    2.2804337,
+    2.3506172,
+    2.8505421
+  ],
+  "note": "plan only; no admitted spectroscopy measurements"
+}

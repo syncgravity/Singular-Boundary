@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-10-27",
+  "spatial_disk": {
+    "vertices": 16,
+    "edges": 24,
+    "faces": 9,
+    "center_face": 4,
+    "center_original_free_edges": 0,
+    "curvature_rank_cavity": 8,
+    "curvature_rank_inserted": 9,
+    "face_elimination_pivots": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "exact_Z_factorization": "product of q(beta_p) for arbitrary face couplings, including an interior face with zero originally unique links"
+  },
+  "single_prism": {
+    "vertices": 8,
+    "edges": 12,
+    "faces": [
+      0,
+      4,
+      12,
+      13,
+      14,
+      15
+    ],
+    "boundary_rank": 5,
+    "sphere_formula": "Z = (product q(beta_p)) sum_(n>=0) (n+1)^2 product_p I_(n+1)(beta_p)/I_1(beta_p); r_n(0)=delta_n0",
+    "coupling_rows": [
+      {
+        "lambda": 0.5,
+        "single_face_q": 0.6256832127394867,
+        "sphere_correction": 1.000014343533167,
+        "exact_insertion_ratio": 0.6256921872474006,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 1.0,
+        "single_face_q": 0.41582083069941683,
+        "sphere_correction": 1.0007681542851568,
+        "exact_insertion_ratio": 0.41614024525237603,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 3.0,
+        "single_face_q": 0.13121780886486725,
+        "sphere_correction": 1.1360620445304368,
+        "exact_insertion_ratio": 0.14907157221782516,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 10.0,
+        "single_face_q": 0.024252536276891105,
+        "sphere_correction": 3.4523622449945055,
+        "exact_insertion_ratio": 0.08372854058769846,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 30.0,
+        "single_face_q": 0.004794422039909837,
+        "sphere_correction": 15.174791839159749,
+        "exact_insertion_ratio": 0.07275435644471143,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 100.0,
+        "single_face_q": 0.0007948830605026051,
+        "sphere_correction": 87.31797802491401,
+        "exact_insertion_ratio": 0.06940758160934286,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 300.0,
+        "single_face_q": 0.00015336081360179302,
+        "sphere_correction": 446.60964664286956,
+        "exact_insertion_ratio": 0.06849241877155976,
+        "expected_large_lambda": 0.06804138174397717
+      },
+      {
+        "lambda": 1000.0,
+        "single_face_q": 2.5221860513857258e-05,
+        "sphere_correction": 2703.0615013840443,
+        "exact_insertion_ratio": 0.06817624014828594,
+        "expected_large_lambda": 0.06804138174397717
+      }
+    ],
+    "independent_quaternion_MC": [
+      {
+        "lambda": 1.0,
+        "n": 60000,
+        "mean": 0.4169036520138185,
+        "se": 0.0008401719464787942,
+        "exact": 0.41614024525237603,
+        "zscore": 0.9086315779073145
+      },
+      {
+        "lambda": 3.0,
+        "n": 60000,
+        "mean": 0.14887305027942252,
+        "se": 0.0007975870126807242,
+        "exact": 0.14907157221782516,
+        "zscore": -0.24890317325428818
+      },
+      {
+        "lambda": 10.0,
+        "n": 60000,
+        "mean": 0.08312573385470277,
+        "se": 0.0006635977161462566,
+        "exact": 0.08372854058769846,
+        "zscore": -0.9083918137880255
+      },
+      {
+        "lambda": 30.0,
+        "n": 60000,
+        "mean": 0.07201305063320694,
+        "se": 0.000629908112188707,
+        "exact": 0.07275435644471143,
+        "zscore": -1.1768475388080204
+      }
+    ]
+  },
+  "rank_changing_eight_face": {
+    "Q": [
+      13,
+      18,
+      22,
+      25,
+      26,
+      29,
+      32,
+      37
+    ],
+    "individual_free_Haar_edges": [],
+    "linearized_null_residual": 7.970609095140452e-16,
+    "new_curvature_linear_response_norm": 1.7862729249182512,
+    "generic_nonlin_wilson_trace_change_at_epsilon_007": 0.022402872289253084,
+    "flat_connection_retained_max_change": 2.220446049250313e-16,
+    "interpretation": "A linear relative null vector is not automatically an exact retained-action symmetry under noncommutative SU2 link rotations."
+  },
+  "scope": "Exact nonlinear compact-Haar result for planar disks and one closed prism surface. NOT for arbitrary glued 3D Penrose prism supports."
+}
