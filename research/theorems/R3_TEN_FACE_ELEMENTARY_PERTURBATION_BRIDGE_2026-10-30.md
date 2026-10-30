@@ -1,0 +1,8 @@
+# Ten-face elementary-plaquette perturbation bridge
+Date: 2026-10-30. Finite extracted open disk. Actual tenth-order amplitude OPEN.
+
+Active retained faces C={1,3,2,4,154,150,11,10,7,8} surrounding deleted face zero. Reconstructed from user-supplied penrose_study.zip, each active face has links in no other active retained face: 1:[0,86], 3:[87,89], 2:[1,88], 4:[4,372], 154:[297,300], 150:[291,295], 11:[16,34], 10:[13,26], 7:[7,25], 8:[9,11]. Each private link center flip is an SU2 gauge-compatible unitary reversing one active magnetic coupling and leaving the other nine unchanged. Thus the shifted ground energy of T-sum_g b_g p_g is even in each b_g.
+
+For the intermediate-normalized analytic ground state near b=0, define F_empty=1 and F_J=R sum_(g in J) p_g F_(J without g) with R=T_perp^-1. All squarefree energy coefficients vanish, so the recurrence is exact for each squarefree J. The ten-face coefficient is F_C=R sum_g p_g F_(C without g), using 1023 nonempty subset states instead of 10! ordered chains. The L2 normalization scalar is separately even by the center unitaries, hence does not alter the squarefree Q_f coefficient.
+
+The previously proved nonzero Q_f R(p_A p_B) for A=face1 and B=the nine-face union is a certificate for one specifically chosen retained composite source, not a coefficient of the actual elementary magnetic interaction series. It cannot establish Q_f F_C nonzero without showing how p_A p_B appears in the full source sum and bounding possible cancellations. The prior forest Wilson closure suggests a route for proper subsets but has not been separately validated across all 1022 proper subsets of this ten-cycle. No tenth-order amplitude, vacuum non-Haar probability, uniform cap estimate, or continuum mass gap is claimed.
