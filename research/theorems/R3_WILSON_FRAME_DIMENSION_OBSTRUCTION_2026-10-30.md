@@ -1,0 +1,11 @@
+# Dimension obstruction and current-adapted Wilson spectral frames
+Date: 2026-10-30
+Status: rigorous finite-dimensional frame bound; quantitative Penrose refinement remains OPEN.
+
+Let Omega be normalized ground state, P_L=1_(0,L](H-E), M a d-dimensional subspace of Ran P_L, and B_i bounded real gauge-invariant multiplication observables satisfying ||B_i||_infty<=1, i=1,...,N. Write w_i=P_L B_i Omega. If alpha||x||²<=sum_i|<x,w_i>|² for all x in M, then d alpha<=sum_i||P_M w_i||²<=sum_i||w_i||²<=N. Hence alpha<=N/d. In particular, N=o(d) precludes any refinement-uniform positive lower bound on the WHOLE d-dimensional subspace. No claim is made that d grows in the actual Penrose model.
+
+For the physically relevant current vectors v_a=P_L D_{gamma,a}Omega (a=1,2,3), only M_current=span{v_a} is required, dimension at most 3. Thus the dimension obstruction does NOT by itself rule out a small current-adapted observable family; however, finding that family with uniform conditioning and small mixed overlaps is an additional dynamical task. Choosing an observable after knowing v_a can be tautological, and must not be treated as an independently accessible diagnostic.
+
+At each fixed finite lattice and finite spectral cutoff the physical gauge-invariant Hilbert space is L² on compact graph-connection quotient. Standard gauge-invariant spin-network functions are dense, and for SU(2) the loop-trace invariant algebra is expected to generate the continuous invariant function algebra on a finite graph; using this assertion for a specific restricted Wilson-character family requires separate validation. Since Omega>0 smooth on compact link space, multiplication by Omega is invertible at a FIXED regulator. Thus dense invariant functions B imply P_L B Omega spans Ran P_L on the physical invariant sector at fixed regulator. The resulting finite frame constant is positive but has no uniform lower bound. Exact center-flux-even restrictions must be kept when selecting observables.
+
+The original condition L_gamma(L)+S_gamma/L=o(h^(3/2)) is NOT established. Quantitative observability and low-energy matrix element control are OPEN. No magnetic deletion bulk theorem or continuum mass gap claimed.
