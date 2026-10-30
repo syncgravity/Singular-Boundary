@@ -46,9 +46,9 @@ QO=\tfrac12v,\quad QP=-\tfrac12v.
 \]
 Therefore
 \[
-\boxed{\langle QO,R QP\rangle=-\tfrac14<0.}\tag{SA-3}
+\boxed{\langle QO,R QP\rangle=-\tfrac18<0.}\tag{SA-3}
 \]
-If instead \(P=(2,1)\), the overlap is \(+1/4\). In both examples the reversible semigroup is positivity preserving and its ground state is strictly positive, and both observables are positive. Thus **semigroup positivity, positive R, and positive O cannot determine the cross-source resolvent sign**.
+If instead \(P=(2,1)\), the overlap is \(+1/8\). In both examples the reversible semigroup is positivity preserving and its ground state is strictly positive, and both observables are positive. Thus **semigroup positivity, positive R, and positive O cannot determine the cross-source resolvent sign**.
 
 This is not an original-link SU(2) Wilson counterexample: the two-state dynamics lack Wilson plaquette geometry, Gauss constraints, and four-neighbor selection. It excludes only an unjustified universal positivity argument.
 
