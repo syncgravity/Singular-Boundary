@@ -1,0 +1,26 @@
+[
+  {
+    "radius": 5.0,
+    "pairs_checked": 225,
+    "largest_word_error": 3.3306690738754696e-16,
+    "minimum_triangle_slack": 0.14937457508131669
+  },
+  {
+    "radius": 6.5,
+    "pairs_checked": 225,
+    "largest_word_error": 3.3306690738754696e-16,
+    "minimum_triangle_slack": 0.11528350488279204
+  },
+  {
+    "radius": 8.0,
+    "pairs_checked": 225,
+    "largest_word_error": 3.3306690738754696e-16,
+    "minimum_triangle_slack": 0.32540255209705826
+  },
+  {
+    "radius": 10.0,
+    "pairs_checked": 225,
+    "largest_word_error": 3.3306690738754696e-16,
+    "minimum_triangle_slack": 0.0942567043792576
+  }
+]

@@ -1,0 +1,9 @@
+PASS normalized center-even target-color mixtures; nonclass squared-norm fraction = 1/2
+h 0.25 Haar 0.072146806 suppressed mixed 0.017527143 supp/Haar 0.2429372 enhanced mixed/Haar 4.109044
+h 0.1 Haar 0.018693037 suppressed mixed 0.00057333298 supp/Haar 0.03067094 enhanced mixed/Haar 4.734453
+h 0.03 Haar 0.0031047148 suppressed mixed 5.6093253e-06 supp/Haar 0.001806712 enhanced mixed/Haar 4.388507
+h 0.01 Haar 0.00059930976 suppressed mixed 9.5707161e-08 supp/Haar 0.0001596957 enhanced mixed/Haar 4.149349
+h 0.001 Haar 1.8977487e-05 suppressed mixed 2.6466214e-11 supp/Haar 1.394611e-06 enhanced mixed/Haar 4.015891
+h 0.0001 Haar 6.0020187e-07 suppressed mixed 8.2452924e-15 supp/Haar 1.373753e-08 enhanced mixed/Haar 4.001599
+PASS direct Hilbert-space cap-transfer criterion: sufficient residual/gap o(h^(3/4)) for Haar-order transfer
+LIMITATION: no full-Hilbert gap/residual has been certified for the interacting eight-face SU2 Hamiltonian

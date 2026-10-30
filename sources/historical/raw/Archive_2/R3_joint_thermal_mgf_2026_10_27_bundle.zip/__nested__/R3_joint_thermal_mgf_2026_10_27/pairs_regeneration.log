@@ -1,0 +1,4 @@
+{'radius': 5.0, 'loops': 225, 'max_reduced_word_length': 6, 'star_degree_histogram': {4: 23, 3: 10, 2: 2, 5: 4, 6: 1}, 'word_lengths': {6: 225}}
+{'radius': 6.5, 'loops': 225, 'max_reduced_word_length': 6, 'star_degree_histogram': {4: 23, 3: 10, 2: 2, 5: 4, 6: 1}, 'word_lengths': {6: 225}}
+{'radius': 8.0, 'loops': 225, 'max_reduced_word_length': 6, 'star_degree_histogram': {4: 23, 3: 10, 2: 2, 5: 4, 6: 1}, 'word_lengths': {6: 225}}
+{'radius': 10.0, 'loops': 225, 'max_reduced_word_length': 6, 'star_degree_histogram': {4: 23, 3: 10, 2: 2, 5: 4, 6: 1}, 'word_lengths': {6: 225}}

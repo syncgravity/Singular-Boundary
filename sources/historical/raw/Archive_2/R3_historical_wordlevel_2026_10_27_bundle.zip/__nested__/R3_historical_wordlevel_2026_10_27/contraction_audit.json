@@ -1,0 +1,58 @@
+{
+  "5": {
+    "Q": 14,
+    "H": 36,
+    "A": 62,
+    "fill": 54,
+    "pairs": 84,
+    "candidate_B": "elementary valid bound m_e <= sum incident retained plaquettes",
+    "B_diagonal_min": 1,
+    "B_row_sum_min": 1,
+    "B_row_sum_max": 4,
+    "B_spectral_radius_float": 4.000000000000001,
+    "strict_contraction_ruled_out_by_diagonal": true,
+    "fill_faces_all_in_A": false
+  },
+  "6_5": {
+    "Q": 14,
+    "H": 36,
+    "A": 62,
+    "fill": 54,
+    "pairs": 84,
+    "candidate_B": "elementary valid bound m_e <= sum incident retained plaquettes",
+    "B_diagonal_min": 1,
+    "B_row_sum_min": 1,
+    "B_row_sum_max": 4,
+    "B_spectral_radius_float": 4.000000000000001,
+    "strict_contraction_ruled_out_by_diagonal": true,
+    "fill_faces_all_in_A": false
+  },
+  "8": {
+    "Q": 14,
+    "H": 36,
+    "A": 62,
+    "fill": 54,
+    "pairs": 84,
+    "candidate_B": "elementary valid bound m_e <= sum incident retained plaquettes",
+    "B_diagonal_min": 1,
+    "B_row_sum_min": 1,
+    "B_row_sum_max": 4,
+    "B_spectral_radius_float": 4.000000000000001,
+    "strict_contraction_ruled_out_by_diagonal": true,
+    "fill_faces_all_in_A": false
+  },
+  "10": {
+    "Q": 14,
+    "H": 36,
+    "A": 62,
+    "fill": 54,
+    "pairs": 84,
+    "candidate_B": "elementary valid bound m_e <= sum incident retained plaquettes",
+    "B_diagonal_min": 1,
+    "B_row_sum_min": 1,
+    "B_row_sum_max": 4,
+    "B_spectral_radius_float": 4.000000000000001,
+    "strict_contraction_ruled_out_by_diagonal": true,
+    "fill_faces_all_in_A": false
+  }
+}

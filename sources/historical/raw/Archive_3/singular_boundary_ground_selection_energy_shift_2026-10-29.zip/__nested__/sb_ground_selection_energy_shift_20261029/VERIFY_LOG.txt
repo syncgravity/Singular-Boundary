@@ -1,0 +1,14 @@
+BINARY h=0.25 Haar+=0.0721468064 E_Ritz=0.0721468064 E_lower=0.0562659091 E_even45=0.062784187 certified_cap_over_Haar=0.77988080
+BINARY h=0.1 Haar+=0.0186930367 E_Ritz=0.0186930367 E_lower=0.0141624101 E_even45=0.0170477386 certified_cap_over_Haar=0.75763025
+BINARY h=0.03 Haar+=0.00310471485 E_Ritz=0.00310471485 E_lower=0.00233245513 E_even45=0.00299144609 certified_cap_over_Haar=0.75126227
+BINARY h=0.01 Haar+=0.000599309756 E_Ritz=0.000599309756 E_lower=0.000449628252 E_even45=0.000590978664 certified_cap_over_Haar=0.75024351
+BINARY h=0.003 Haar+=9.8580318e-05 E_Ritz=9.8580318e-05 E_lower=7.39391866e-05 E_even45=9.81400307e-05 certified_cap_over_Haar=0.75004005
+BINARY h=0.001 Haar+=1.89774872e-05 E_Ritz=1.89774872e-05 E_lower=1.42332617e-05 E_even45=1.89485156e-05 certified_cap_over_Haar=0.75000771
+BINARY h=0.0001 Haar+=6.00201874e-07 E_Ritz=6.00201874e-07 E_lower=4.50151552e-07 E_even45=6.00143525e-07 certified_cap_over_Haar=0.75000024
+SOFT h=0.25 alpha=0.00975562824 mu=9.51722824e-05 certified_cap_over_Haar=0.13505423
+SOFT h=0.1 alpha=0.00240911523 mu=5.80383621e-06 certified_cap_over_Haar=0.12883887
+SOFT h=0.01 alpha=7.51392016e-05 mu=5.64589962e-09 certified_cap_over_Haar=0.12537506
+SOFT h=0.001 alpha=2.37289779e-06 mu=5.63064391e-12 certified_cap_over_Haar=0.12503748
+SOFT h=0.0001 alpha=7.50274851e-08 mu=5.62912352e-15 certified_cap_over_Haar=0.12500375
+PASS exact SU2 source-energy certification, center-even SU2 rotor, rank-one Schur bounds and small-cap convolution lower limit 1/8
+LIMIT: free target rotor, not connected eight-face Wilson ground state

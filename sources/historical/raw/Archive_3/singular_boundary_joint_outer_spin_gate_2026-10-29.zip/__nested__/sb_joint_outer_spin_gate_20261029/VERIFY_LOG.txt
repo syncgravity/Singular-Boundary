@@ -1,0 +1,23 @@
+selected seven distinct private outer links [0, 4, 6, 11, 13, 20, 21]
+b=  1 J=1 dim=440 Ritz E=6.717910031 gap=2.799134214 wt=0.0007101 residual_floor=0.01537625
+b=  1 J=2 dim=454 Ritz E=6.717894607 gap=2.799080019 wt=0.0007148 residual_floor=0.00001489
+b=  1 J=4 dim=482 Ritz E=6.717894607 gap=2.799080019 wt=0.0007148 residual_floor=0.00000000
+b=  1 J=8 dim=538 Ritz E=6.717894607 gap=2.799080019 wt=0.0007148 residual_floor=0.00000000
+b=  4 J=1 dim=440 Ritz E=22.880225227 gap=4.175415821 wt=0.0098211 residual_floor=0.22616809
+b=  4 J=2 dim=454 Ritz E=22.877762714 gap=4.175618848 wt=0.0102844 residual_floor=0.00206081
+b=  4 J=4 dim=482 Ritz E=22.877762610 gap=4.175618864 wt=0.0102844 residual_floor=0.00000001
+b=  4 J=8 dim=538 Ritz E=22.877762610 gap=4.175618864 wt=0.0102844 residual_floor=0.00000000
+b= 16 J=1 dim=440 Ritz E=80.595894382 gap=11.623109448 wt=0.0124190 residual_floor=1.00558323
+b= 16 J=2 dim=454 Ritz E=80.575025338 gap=11.626213322 wt=0.0138152 residual_floor=0.03117726
+b= 16 J=4 dim=482 Ritz E=80.575011291 gap=11.626205218 wt=0.0138172 residual_floor=0.00000469
+b= 16 J=8 dim=538 Ritz E=80.575011291 gap=11.626205218 wt=0.0138172 residual_floor=0.00000000
+b= 64 J=1 dim=440 Ritz E=307.773989374 gap=40.338271934 wt=0.0115715 residual_floor=3.86579376
+b= 64 J=2 dim=454 Ritz E=307.681444730 gap=40.430816577 wt=0.0133018 residual_floor=0.18821697
+b= 64 J=4 dim=482 Ritz E=307.681249270 gap=40.431012037 wt=0.0133100 residual_floor=0.00025507
+b= 64 J=8 dim=538 Ritz E=307.681249270 gap=40.431012037 wt=0.0133100 residual_floor=0.00000000
+R_k cap bound k 0 lower sum_q <d_q> >= 0.10576546982503485
+R_k cap bound k 1 lower sum_q <d_q> >= 0.09014046982503485
+R_k cap bound k 3 lower sum_q <d_q> >= 0.05889046982503485
+R_k cap bound k 6 lower sum_q <d_q> >= 0.012015469825034849
+SU2 Haar cap 0.03125 0.003300141874253853 Peter Weyl dimension 5
+PASS: 433 shell, seven independent boundary links, nested single-face towers, class product Ritz, simultaneous high-link no-go

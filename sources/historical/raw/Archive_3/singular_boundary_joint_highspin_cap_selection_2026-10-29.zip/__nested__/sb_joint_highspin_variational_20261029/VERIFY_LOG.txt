@@ -1,0 +1,20 @@
+PASS exact normalized target SU2 electric Dirichlet identity m=1..8
+b 1 N [1, 1, 1, 1, 1, 1, 1] Eprod 14.00325 E_plus_m1 14.78485 E_plus_enh 17.91125 nonclass norm2 1.0045572917
+b 4 N [1, 1, 1, 1, 1, 1, 1] Eprod 25.02825 E_plus_m1 25.80985 E_plus_enh 28.93625 nonclass norm2 1.0045572917
+b 16 N [2, 2, 2, 2, 2, 2, 2] Eprod 58.543493 E_plus_m1 59.325093 E_plus_enh 62.451493 nonclass norm2 1.0031901042
+b 64 N [4, 3, 4, 4, 4, 4, 4] Eprod 126.137582 E_plus_m1 126.919182 E_plus_enh 130.045582 nonclass norm2 1.0016710069
+b 256 N [6, 6, 6, 6, 7, 7, 7] Eprod 260.081698 E_plus_m1 260.863298 E_plus_enh 263.989698 nonclass norm2 1.0010010999
+b 1024 N [9, 9, 10, 9, 10, 10, 10] Eprod 528.063782 E_plus_m1 528.845382 E_plus_enh 531.971782 nonclass norm2 1.000468097
+b 4096 N [14, 14, 14, 14, 15, 15, 15] Eprod 1064.228546 E_plus_m1 1065.010146 E_plus_enh 1068.136546 nonclass norm2 1.00026885
+b 65536 N [30, 29, 31, 30, 33, 32, 33] Eprod 4280.141597 E_plus_m1 4280.923197 E_plus_enh 4284.049597 nonclass norm2 1.0000648867
+h,haar_cap,suppressed_m1,ratio_m1_over_haar,enhanced_cap,ratio_enh_over_haar
+0.25 0.0721468064 0.00997106307 0.13820519 0.313941364 4.35142426
+0.1 0.0186930367 0.000471531161 0.0252249631 0.117392859 6.28003145
+0.05 0.00666000551 4.38126198e-05 0.00657846601 0.0472286836 7.09138807
+0.01 0.000599309756 1.63033614e-07 0.000272035642 0.00468066948 7.8101006
+0.001 1.89774872e-05 5.20097473e-11 2.74060242e-06 0.00015145593 7.98082111
+PASS m=1 cap asymptotics 16a^7/(35pi), ratio (24/35)a^4
+PASS conditional nonabelian color R^2 factor for m=0,1,2,4
+PASS independent 8-node SU2 relative-color angular contraction
+PASS exact off-class source norm via sine-packet omitted-character identity
+ALL PASSED

@@ -1,0 +1,43 @@
+{
+  "faces": 8,
+  "links": 22,
+  "vertices": 15,
+  "inner_links": 4,
+  "outer_links": 12,
+  "physical_shell_dim": 433,
+  "target_even": 246,
+  "target_odd": 187,
+  "occupied_link_electric_histogram": {
+    "0": 1,
+    "4": 8,
+    "6": 10,
+    "8": 45,
+    "10": 72,
+    "12": 125,
+    "14": 86,
+    "16": 86
+  },
+  "even_histogram": {
+    "0": 1,
+    "4": 7,
+    "6": 6,
+    "8": 24,
+    "10": 30,
+    "12": 54,
+    "14": 56,
+    "16": 68
+  },
+  "odd_histogram": {
+    "4": 1,
+    "6": 4,
+    "8": 21,
+    "10": 42,
+    "12": 71,
+    "14": 30,
+    "16": 18
+  },
+  "witness_spin_one_expectation": 1,
+  "witness_occupied_link_count": 16,
+  "witness_electric_energy_for_a_e_1": 12,
+  "witness_magnetic_expectation": "sum retained b_g; all retained p_g averages vanish"
+}

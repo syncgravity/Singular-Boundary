@@ -1,0 +1,9 @@
+h 0.1 cap_Haar 0.018693036734249307 witness_cap 0.06614487416414294 ratio 3.538476658688236
+h 0.01 cap_Haar 0.0005993097557010062 witness_cap 0.0023685830904717044 ratio 3.9521851061830255
+h 0.001 cap_Haar 1.8977487186701095e-05 witness_cap 7.581889194307361e-05 ratio 3.9952018513918652
+h 0.0001 cap_Haar 6.002018741945945e-07 witness_cap 2.400519410990636e-06 ratio 3.9995200185135564
+exact J=1/2 Hilbert dimension 433
+target-center even 246 odd 187
+electric occupancies: count {0: 1, 4: 8, 6: 10, 8: 45, 10: 72, 12: 125, 14: 86, 16: 86}
+witness chi_1 expectation = 1.0 electric units 3/4*16 = 12
+PASS exact 433-shell census, two disjoint Wilson loops, center-even non-Haar witness

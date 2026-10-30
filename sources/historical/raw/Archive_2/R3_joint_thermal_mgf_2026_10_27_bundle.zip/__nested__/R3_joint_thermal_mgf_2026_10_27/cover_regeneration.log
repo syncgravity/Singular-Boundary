@@ -1,0 +1,4 @@
+radius 5.0 {'Q': 14, 'H': 36, 'affected_A': 62, 'fill': 54, 'fill_outside_A': 10, 'cover_candidate_links': 101, 'nonzero_cover_links': 40, 'cover_star_union_faces': 103, 'outside_fill_star_leakage_faces': 49} minimum 22
+radius 6.5 {'Q': 14, 'H': 36, 'affected_A': 62, 'fill': 54, 'fill_outside_A': 10, 'cover_candidate_links': 101, 'nonzero_cover_links': 40, 'cover_star_union_faces': 103, 'outside_fill_star_leakage_faces': 49} minimum 22
+radius 8.0 {'Q': 14, 'H': 36, 'affected_A': 62, 'fill': 54, 'fill_outside_A': 10, 'cover_candidate_links': 101, 'nonzero_cover_links': 40, 'cover_star_union_faces': 103, 'outside_fill_star_leakage_faces': 49} minimum 22
+radius 10.0 {'Q': 14, 'H': 36, 'affected_A': 62, 'fill': 54, 'fill_outside_A': 10, 'cover_candidate_links': 101, 'nonzero_cover_links': 40, 'cover_star_union_faces': 103, 'outside_fill_star_leakage_faces': 49} minimum 22

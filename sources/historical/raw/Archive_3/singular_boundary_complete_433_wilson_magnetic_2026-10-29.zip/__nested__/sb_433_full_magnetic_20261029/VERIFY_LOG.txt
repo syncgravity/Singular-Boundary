@@ -1,0 +1,7 @@
+PASS 433-dimensional SU2 Wilson magnetic matrices, link-spin XOR and center parity
+PASS exact fundamental SU2 Haar quadratic moments against Q8 3-design
+b=1   E0=6.72388386 Ritz gap=2.81863616 residual floor=0.22454024 c1=4.868e-21 target weight=0.00000035 p_f2=0.25000000
+b=4   E0=23.02060267 Ritz gap=4.15097635 residual floor=1.41030923 c1=-8.557e-20 target weight=0.00048287 p_f2=0.25000000
+b=16  E0=81.14161151 Ritz gap=11.16814301 residual floor=4.86523183 c1=3.058e-19 target weight=0.00606225 p_f2=0.25000000
+b=64  E0=309.68796348 Ritz gap=38.42429782 residual floor=17.68372091 c1=8.182e-19 target weight=0.01143670 p_f2=0.25000000
+PASS projected eigenvalue residuals, full target spin-one operator and witness-consistent cap expansion

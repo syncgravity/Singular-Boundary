@@ -1,0 +1,11 @@
+m 1 h 0.01 strict epsilon 0.0001 cap/Haar 0.000275810635 positive log-score variation 9.21044
+m 1 h 0.001 strict epsilon 1e-06 cap/Haar 2.744436e-06 positive log-score variation 13.815512
+m 1 h 0.0001 strict epsilon 1e-08 cap/Haar 2.743e-08 positive log-score variation 18.420681
+m 2 h 0.01 strict epsilon 1.0000000000000002e-06 cap/Haar 8.7806e-08 positive log-score variation 13.815512
+m 2 h 0.001 strict epsilon 1e-09 cap/Haar 9e-12 positive log-score variation 20.723266
+m 2 h 0.0001 strict epsilon 1.0000000000000002e-12 cap/Haar 0.0 positive log-score variation 27.631021
+m 3 h 0.01 strict epsilon 1e-08 cap/Haar 3e-11 positive log-score variation 18.420681
+m 3 h 0.001 strict epsilon 1.0000000000000002e-12 cap/Haar 0.0 positive log-score variation 27.631021
+m 3 h 0.0001 strict epsilon 1.0000000000000002e-16 cap/Haar 0.0 positive log-score variation 36.841361
+PASS: strictly positive radial trial scores admit O(log(1/h)) budget and polynomially suppressed cap
+No conclusion about the unknown true nonlinear Wilson deleted-vacuum score current

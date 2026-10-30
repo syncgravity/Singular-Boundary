@@ -1,0 +1,14 @@
+PASS beta-integral target energy m²/(4m+1), color variance factor for m=1..8
+PASS smooth packet exact deficit, second deficit and conditional weighted deficit N=1..119
+b=       1 N=[1, 1, 1, 1, 1, 1, 1] E_base=   14.784850 E_color_upper=   433.20700 E_mixed_bound=   304.02655 color_norm_r2=0.0182292
+b=      16 N=[2, 2, 2, 2, 2, 2, 2] E_base=   62.933267 E_color_upper=   691.33364 E_mixed_bound=   585.71889 color_norm_r2=0.0133681
+b=     256 N=[6, 6, 7, 7, 7, 7, 7] E_base=  290.739990 E_color_upper=  2547.68903 E_mixed_bound=  2279.86257 color_norm_r2=0.00410568
+b=    4096 N=[15, 15, 16, 16, 17, 17, 17] E_base= 1198.181545 E_color_upper=  9741.17632 E_mixed_bound=  8886.06557 color_norm_r2=0.00114023
+b=   65536 N=[32, 32, 34, 33, 36, 35, 36] E_base= 4827.196905 E_color_upper= 36475.56684 E_mixed_bound= 33920.69773 color_norm_r2=0.000293254
+b= 1048576 N=[67, 66, 70, 68, 74, 72, 74] E_base=19345.182419 E_color_upper=140934.10954 E_mixed_bound=132354.54863 color_norm_r2=7.38541e-05
+h=0.25, Haar=0.0721468064, m=1 suppressed=0.00997106307, suppression ratio=0.13820519
+h=0.1, Haar=0.0186930367, m=1 suppressed=0.000471531161, suppression ratio=0.0252249631
+h=0.01, Haar=0.000599309756, m=1 suppressed=1.63033614e-07, suppression ratio=0.000272035642
+h=0.001, Haar=1.89774872e-05, m=1 suppressed=5.20097473e-11, suppression ratio=2.74060242e-06
+h=0.0001, Haar=6.00201874e-07, m=1 suppressed=1.64613264e-14, suppression ratio=2.74263162e-08
+PASS joint SU2 high-spin simultaneous product, fixed 50% nonclass sector and enhanced cap suppression; no true vacuum estimate
