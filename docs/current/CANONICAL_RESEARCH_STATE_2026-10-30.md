@@ -184,3 +184,7 @@ The [new zero-temperature physical resolvent identity](../../research/theorems/R
 ## R3-IR-417: Two-channel cancellation for incomplete cages
 
 With one other target neighbor magnetically absent, a second private edge forces zero target spin-one curvature for all final-neighbor couplings. Both environmental resolvent channels in R3-IR-416 therefore cancel exactly. This is a Wilson-specific signed identity, not positivity in the completed cage. See `research/theorems/R3_IR_INCOMPLETE_CAGE_TWO_CHANNEL_WARD_CANCELLATION_2026-10-30.md`. Full-coupling cap survival and continuum gap OPEN.
+
+## R3-IR-418 — Positive-weight full-coupling cage reconstruction
+
+[Exact four-coupling reconstruction](../../research/theorems/R3_IR_POSITIVE_WEIGHT_EIGHTFOLD_CAGE_RECONSTRUCTION_2026-10-30.md): on the genuine original-link SU(2) Wilson disk with deleted target face, the target spin-one expectation `C(t)` is even in each neighboring coupling and vanishes on each coordinate hyperplane. Thus its full-coupling value equals the integral over `[0,1]^4` of its eighth mixed derivative `D_8 C` with nonnegative weight `prod_i(1-u_i)` (weight total `1/16`). The complete signed last-neighbor two-channel curvature similarly equals a triple positive-weight integral of `D_8 C(u1,u2,u3,0)` (weight total `1/8`). This is an exact nonperturbative identity, but **NO favorable D_8 C sign or refinement-uniform lower bound has been proved**. The completed-cage cap survival and continuum mass gap remain OPEN. [Claim R3-IR-418](../../research/claims/append_only/R3-IR-418.md).
