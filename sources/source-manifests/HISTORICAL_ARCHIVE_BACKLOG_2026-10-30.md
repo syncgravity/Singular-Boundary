@@ -4,7 +4,7 @@ This is an **open intake backlog**, not evidence that original bytes were upload
 
 | Family | Known scope | Intended preservation | Outstanding verification |
 | --- | --- | --- | --- |
-| Session originals | 20 named items: 17 binary ZIP/NPZ/TAR and 3 text/Markdown | Binary files via Git LFS; verbatim text in regular Git | Original-byte remote pull and hashes, 1 text source locally unavailable at prior audit |
+| Session originals | 20 named items: 18 binary ZIP/NPZ/TAR and 2 text/Markdown | Binary files via Git LFS; verbatim text in regular Git | Original-byte remote pull and hashes, 1 text source locally unavailable at prior audit |
 | Prepared historical tree | 602 tracked text/code paths in independent local import | Merge original files as ordinary Git text, retain origin hashes | Locate exact tree and 582 historic source hashes; preserve remote ancestry |
 | NOTES.zip | 188 original Markdown members, 156 byte-distinct from an earlier import | Immutable original ZIP via LFS plus indexed exact text in Git | Match member SHA-256 and retain container ZIP |
 | Stage 19–35 historical archive chain | 42 verification ZIP archives identified by historic audits | LFS originals and hash inventory | Recover exact archive names, hashes and byte content; avoid guessing |
