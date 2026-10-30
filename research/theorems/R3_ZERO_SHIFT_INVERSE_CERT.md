@@ -1,0 +1,1 @@
+Zero-shift inverse certificate: for G=p_A p_B, T eigenvalues on its cyclic representation space are 15,17,19. With E3,E14 individual shared-link Haar projections, T^-1 G=G/19+2(E3+E14)G/323+8 E3 E14 G/4845. Consequently ||Q T^-1 G|| >= sqrt(3)/2584-2/4845>0 on the extracted open disk. This does not establish a nonzero interacting vacuum response or continuum gap.
