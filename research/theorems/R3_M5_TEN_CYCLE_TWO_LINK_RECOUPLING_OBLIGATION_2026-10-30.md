@@ -1,0 +1,9 @@
+# M5 ten-face cycle: first two-link recoupling obligation
+Date: 2026-10-30
+Status: exact cycle/forest graph reduction and identified nontrivial SU2 contraction. NONZERO deleted Q response UNPROVED.
+
+Prior validated periodic M5 retained cycle C=(1,3,2,4,154,150,11,10,7,8), adjoining shared link IDs (3,2,5,19,296,17,18,12,8,14). Its induced retained graph is a chordless ten-cycle. Every proper subset of C induces a forest. Therefore forest-only connected-union Wilson electric recursion suffices on proper squarefree subsets, subject to their actual link incidence; the first subset for which the full-cycle phenomenon can enter is J=C.
+
+For g=1, C\{1} is a connected nine-face path. The face g shares TWO distinct primal links with this nine-face union: link 3 adjacent to face 3, and link 14 adjacent to face 8. For G=p_1 p_(union(C\{1})), the product diffusion rule is T G=(lambda_1+lambda_union)G-2 Gamma_T(p_1,p_union). The cross-gradient Gamma_T has exactly two link-supported contributions, one from link 3 and one from link 14. This is the first configuration in the sequence for which the prior ONE-SHARED-EDGE Fierz merge rule cannot simply identify the result with a Wilson trace around one simple union boundary. The complete ten-face union is an annulus with inner boundary deleted face zero; its outer boundary is separate.
+
+This identifies a recoupling/basis-closure OBSTRUCTION, not a nonzero Q response. Being a function of both retained rooted holonomies and their connections does not automatically imply Q dependence. Need evaluate both shared-edge Fierz contractions with explicit oriented words, express them in a based-face spin-network basis, apply actual Haar conditional P_f, and calculate their sum and the full normalized response coefficient. No numerical SU2 matrix element, nonzero Q, cap bound or continuum mass gap established. Periodic M5 only, not an open disk.
