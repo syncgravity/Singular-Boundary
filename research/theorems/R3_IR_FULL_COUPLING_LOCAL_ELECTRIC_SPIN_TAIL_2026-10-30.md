@@ -32,7 +32,6 @@ This is a state-space tail, not a bound on the target character expectation by i
 |<chi_j(W_f)>|
 <= (2j+1)(2 delta_{j/2}+delta_{j/2}²)
 <= (2j+1)(2 sqrt[min(1,4b_g/(a_x j(j+2)))]+min(1,4b_g/(a_x j(j+2)]).
-
-The final parenthesis should read min(1,4b_g/[a_x j(j+2)]) in each appearance. No estimate better than the trivial |<chi_j>|<=2j+1 is claimed at large j, because the character multiplication operator norm grows with j. Hence LB-2 is **not sufficient** to close the cap-sensitive Fourier tail R3-IR-422 at physical magnetic scaling.
+ No estimate better than the trivial |<chi_j>|<=2j+1 is claimed at large j, because the character multiplication operator norm grows with j. Hence LB-2 is **not sufficient** to close the cap-sensitive Fourier tail R3-IR-422 at physical magnetic scaling.
 
 At physical b_g/a_x large, the kinetic tail only becomes small above spins of order sqrt(b_g/a_x); character resolution for radius a_h~sqrt(h) requires spins of order 1/a_h by R3-IR-423, and no favorable comparison of these scales has been established. This is a real full-coupling local Wilson estimate with an explicit limitation, not a cap-survival or infrared mass-gap theorem.
