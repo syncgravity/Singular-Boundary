@@ -1,0 +1,13 @@
+gap_id,severity,source_era,missing_or_unverified_artifact,github_evidence,required_proof_of_completion,status
+G1,high,Oct 11-28,602-entry prepared historical source tree,sources/source-manifests/IMPORT_STATUS.md,Import original text bytes and validate all ORIGIN SHA256 in main,OPEN
+G1B,high,Oct 28,NOTES.zip 188 original Markdown members,docs/evidence/NOTES_ZIP_HISTORICAL_RECONCILIATION_2026-10-28.md,Import original ZIP/member blobs and verify 188 hashes,OPEN
+G2,high,Oct 19-30,Stage26 eight ZIP and eight sweep NPZ plus full chain and dissertation archive,docs/evidence/STAGE26_RECORD_VERIFICATION_2026-10-28.md,Archive original bytes with stable storage and verify original SHA256,OPEN
+G2B,high,Oct 19-35,42 historical verification ZIP archives,docs/evidence/R3_IR_STAGE19_TO_35_HISTORICAL_RECONCILIATION_2026-10-28.md,Make original archives and lock manifest independently retrievable,OPEN
+G3,medium,Oct 11,four-vertex test original code and output,research/problems/R2.md,Match original test fixture and recorded numeric output with repository commit,OPEN
+G3B,medium,Oct 11,original no-measurements audit and continuum fitter,docs/current/STATUS.md,Locate wilson_simulation_data_audit.md and penrose_ym_continuum_fit.py original hashes,OPEN
+G3C,high,Oct 23,Level-I Gate A original theorem and assumptions,research/problems/R2.md,Import or locate exact I-A.1 theorem source and index conditional statement,OPEN
+G4,medium,Oct 24-30,sequential exact conversation messages and attachment relationship,docs/governance/SEQUENTIAL_CONVERSATION_PROVENANCE_PROTOCOL.md,Retrieve or source-match individual original messages where available and mark coverage precisely,PARTIAL_RETRIEVAL
+G4B,high,Oct 29-30,late Wilson Agmon and localization Library ZIP bundles,docs/current/CANONICAL_RESEARCH_STATE_2026-10-30.md,Inspect each original package member and crosslink claims/tests,OPEN
+G5,proof_blocker,Oct 26-30,R3-PRISM exact twelve-prism words and conditioning,research/problems/R3-PRISM.md,Recover original boundary/source specification and certify theorem,OPEN
+G5B,proof_blocker,Oct 29-30,completed-cage true Wilson current and interacting spectral IR bound,research/claims/CLAIM_LEDGER.csv,Prove physical uniform nonlinear estimate and spectral reconstruction gates,OPEN
+G6,high,Oct 30,CI1 CI2 verification scripts and CSV certificates,research/theorems/CONDITIONAL_HAAR_INCOMPLETE_CAGE_CI1_CI2_2026-10-30.md,Import named original verification scripts and certificates with SHA256 and execute from clean checkout,OPEN
