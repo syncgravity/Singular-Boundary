@@ -25,3 +25,7 @@ Before publication, every cited result must resolve to an exact source or indepe
 ## Present limitation
 
 GitHub and currently accessible Project files do not supply a complete enumerated list or verbatim exports of every ChatGPT Project conversation. The present conversation cannot certify historical completeness. Request/export missing conversations and import exact bytes before setting any register entry to RECONCILED.
+
+## Retrieval-first policy correction — 2026-10-30
+
+Before requesting exports, search available prior-conversation context and Project/Library files, reconstruct the research sequence and reconcile each recoverable claim with Git. Retrieved summaries are useful evidence of research history but are not verbatim transcripts; record this distinction. Request an export only for a specifically identified source gap that cannot be recovered by existing access. Do not impose bulk manual export on the researcher.
