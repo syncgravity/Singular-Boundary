@@ -1,0 +1,138 @@
+{
+  "descriptor_configuration": {
+    "area_edges": [
+      0.0,
+      0.8,
+      1.2,
+      1.6,
+      2.0,
+      2.5,
+      3.2,
+      4.5,
+      8.0,
+      "inf"
+    ],
+    "compactness_edges": [
+      0.0,
+      0.35,
+      0.5,
+      0.65,
+      0.8,
+      1.01,
+      "inf"
+    ],
+    "perimeter_edges": [
+      0.0,
+      3.5,
+      5.0,
+      6.5,
+      8.0,
+      10.0,
+      13.0,
+      18.0,
+      "inf"
+    ],
+    "anisotropy_edges": [
+      0.0,
+      0.35,
+      0.7,
+      1.000001
+    ],
+    "use_anisotropy": false
+  },
+  "matched_cells": 5,
+  "common_support_mass": 0.3559197344500078,
+  "max_joint_bin_probability_error": 4.978240042419202e-13,
+  "square": {
+    "retained_prior_mass": 0.6666666666666667,
+    "positive_paths": 81637,
+    "effective_path_count": 74724.45566541792,
+    "per_family_weight": [
+      0.0,
+      0.4699338728431969,
+      0.5300661271576227
+    ],
+    "anchor_coverage": 1.0,
+    "max_path_weight": 4.107454695848361e-05
+  },
+  "penrose": {
+    "retained_prior_mass": 0.5031567870922481,
+    "positive_paths": 60454,
+    "effective_path_count": 41185.34083097892,
+    "per_family_weight": [
+      0.0,
+      0.4699338728427357,
+      0.5300661271571194
+    ],
+    "anchor_coverage": 0.9419063486495967,
+    "max_path_weight": 4.106194077518347e-05
+  },
+  "bin_weights": [
+    {
+      "bin": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "square_original_mass": 0.33276318290105583,
+      "penrose_original_mass": 0.16668858879927603,
+      "coupled_mass": 0.16668858879927603,
+      "square_count": 38728,
+      "penrose_count": 19179
+    },
+    {
+      "bin": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "square_original_mass": 0.0005701504319985966,
+      "penrose_original_mass": 0.10102449432948825,
+      "coupled_mass": 0.0005701504319985966,
+      "square_count": 57,
+      "penrose_count": 11579
+    },
+    {
+      "bin": [
+        2,
+        5,
+        0,
+        5
+      ],
+      "square_original_mass": 0.31238395976756317,
+      "penrose_original_mass": 0.16771162165324616,
+      "coupled_mass": 0.16771162165324616,
+      "square_count": 39990,
+      "penrose_count": 21345
+    },
+    {
+      "bin": [
+        2,
+        5,
+        1,
+        4
+      ],
+      "square_original_mass": 0.020620440623949354,
+      "penrose_original_mass": 0.05017245410967403,
+      "coupled_mass": 0.020620440623949354,
+      "square_count": 2817,
+      "penrose_count": 6266
+    },
+    {
+      "bin": [
+        2,
+        5,
+        2,
+        3
+      ],
+      "square_original_mass": 0.000328932941537652,
+      "penrose_original_mass": 0.017559628200631356,
+      "coupled_mass": 0.000328932941537652,
+      "square_count": 45,
+      "penrose_count": 2085
+    }
+  ],
+  "interpretation": "Common-support, descriptor-histogram-matched restricted scalar operator. Not a full-volume unbiased scalar projector; not C4/C5 representation equivalence; not renormalized physics matching."
+}

@@ -1,0 +1,72 @@
+{
+  "geometry": "penrose",
+  "seed": 101,
+  "sweep": 10000,
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "geometry_seconds": 4.512050346000024,
+  "catalogue_seconds": 3.0093376080001235,
+  "measurement_seconds": {
+    "128": 2.9966848530000334,
+    "1024": 0.038713849000032496,
+    "all": 0.8629796130001068
+  },
+  "loops": 68424,
+  "counts": {
+    "3": {
+      "anchors": 22808,
+      "area_range": [
+        0.8452456456040409,
+        1.1442661358113453
+      ],
+      "area_quantiles": [
+        0.8452456456040409,
+        0.8560406091494308,
+        0.9942161425304237,
+        0.9996136243031184,
+        1.1442661358113453
+      ],
+      "orientation_defined_fraction": 1.0,
+      "unique_boundaries": null
+    },
+    "5": {
+      "anchors": 22808,
+      "area_range": [
+        1.4648765531094294,
+        1.761738050607656
+      ],
+      "area_quantiles": [
+        1.4648765531094294,
+        1.6095290646176563,
+        1.611688057326734,
+        1.6149265463903513,
+        1.761738050607656
+      ],
+      "orientation_defined_fraction": 1.0,
+      "unique_boundaries": null
+    },
+    "8": {
+      "anchors": 22808,
+      "area_range": [
+        2.3165991768407044,
+        2.8995272082917674
+      ],
+      "area_quantiles": [
+        2.3165991768407044,
+        2.602665710793541,
+        2.609142688920775,
+        2.750556711365385,
+        2.8995272082917674
+      ],
+      "orientation_defined_fraction": 1.0,
+      "unique_boundaries": null
+    }
+  },
+  "rejected_anchor_counts": {
+    "3": 0,
+    "5": 0,
+    "8": 0
+  },
+  "max_gauge_error": 5.551115123125783e-16,
+  "exact_root_coverage": true,
+  "caveat": "exact face-root average of deterministic rooted clusters, not full shape/rotation orbit; orientation diagnostic only; NOT glueball mass evidence"
+}

@@ -1,0 +1,21 @@
+{
+  "README.md": "73438f2b33f9967924d0c91c0f04c91dfbe4ffeba2ac39ba60540ae237de734d",
+  "STAGE_4_REPORT.md": "3a436bbe66dd460e683a9ff6a295753292ea88031a96ac3d28dacaf9af7c1a47",
+  "corrected_2p1_pilot.py": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+  "direct_cut_project.py": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+  "outputs/physical_bins_t4_summary.csv": "ba1fc1bed6fedc608478b500e0e29cf0dbc5326425c04cee4a654576a8bab723",
+  "outputs/rational_M5_stage4.json": "79484f5a18a2c530ff61f15a22786de0cdebd83488f3ea7fd37c004e1e3939bf",
+  "outputs/rational_M5_stage4_measurements.npz": "e52bdd05c15d72c171fd345760ac161d7d04140f4f71473a714b1b145cd2d6f6",
+  "outputs/square_13x14_stage4.json": "580ed0997edd92ea44e703ebe2d3e5c3d1f1639db2467670e631dd10c099478e",
+  "outputs/square_13x14_stage4_measurements.npz": "2176a6d3b5a6e428908082edcbd824e113b056d7cf85d6cfcb00223b3b20ff02",
+  "penrose_causal_study.py": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+  "run.log": "65859c8f183b24e2de8b2706f3f9c11c9c992eef33ba2d65fd92db34740778e8",
+  "stage2_rational_torus.py": "836d871346ed214d9840bc6dd45ec27c14c4cdb5d1e2262147171d471ad2b124",
+  "stage2_ym_calibration.py": "03f625138c25f838bcdb0902cdbcd31ef5d98b354885fd85660e8f650da50bd3",
+  "stage3_periodic_pilot.py": "1556bdaa54c6dc37091158dc9187a13aae28bf842cbb5336f4299c1007379bff",
+  "stage4_remeasure.py": "2c49e39ccc6e013af7a25127537a18a577d7b049f8ffe2ca06b73a41388b0aa3",
+  "stage4_smearing_flux.py": "c3cdb06d9fe2c3a2f6a4556abcd3d69c0f7918732fb59baea2993892c9cecdf1",
+  "test_stage4.py": "24f146cd027c39c5bd7c4db10ecf42d302a91802e46bd2c0462cb97228888765",
+  "tests_stage4.log": "8ff5e3f37bf3d645fccff29dd16dd7a264405062ec1355e0760fd95b2459ee38",
+  "wilson_torus.py": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a"
+}

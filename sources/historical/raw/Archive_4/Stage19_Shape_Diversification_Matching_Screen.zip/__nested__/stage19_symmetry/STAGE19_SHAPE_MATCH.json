@@ -1,0 +1,172 @@
+{
+  "geometries": {
+    "square": {
+      "sweep": 10000,
+      "graph_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+      "paths": 113801,
+      "catalogue_seconds": 15.277877374000127,
+      "duplicates": [
+        13438,
+        6817,
+        2750
+      ],
+      "invalid": [
+        0,
+        0,
+        19
+      ],
+      "root_multiplicity_range": [
+        1,
+        2
+      ],
+      "root_normalization": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "areas": [
+        0.9750708360381533,
+        2.600188896101742
+      ]
+    },
+    "penrose": {
+      "sweep": 10000,
+      "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+      "paths": 113509,
+      "catalogue_seconds": 13.732104270000036,
+      "duplicates": [
+        12329,
+        7374,
+        3636
+      ],
+      "invalid": [
+        0,
+        157,
+        3156
+      ],
+      "root_multiplicity_range": [
+        1,
+        2
+      ],
+      "root_normalization": [
+        0.9999999999999999,
+        1.0,
+        1.0
+      ],
+      "areas": [
+        0.8452456456040409,
+        3.0377027416727596
+      ]
+    }
+  },
+  "matching": {
+    "square_covered_root_weight": 1.0,
+    "penrose_covered_root_weight": 0.5359157605518531,
+    "strata": [
+      {
+        "key": [
+          0,
+          1,
+          2
+        ],
+        "square_count": 32164,
+        "penrose_count": 3158,
+        "square_root_weight": 1.0,
+        "penrose_root_weight": 0.09104261662574534,
+        "overlap_weight": 0.09104261662574534
+      },
+      {
+        "key": [
+          1,
+          3,
+          1
+        ],
+        "square_count": 38728,
+        "penrose_count": 19179,
+        "square_root_weight": 0.9982895487040042,
+        "penrose_root_weight": 0.5000657663977552,
+        "overlap_weight": 0.5000657663977552
+      },
+      {
+        "key": [
+          1,
+          3,
+          2
+        ],
+        "square_count": 57,
+        "penrose_count": 11579,
+        "square_root_weight": 0.0017104512959957897,
+        "penrose_root_weight": 0.3030734829884251,
+        "overlap_weight": 0.0017104512959957897
+      },
+      {
+        "key": [
+          2,
+          5,
+          0
+        ],
+        "square_count": 39990,
+        "penrose_count": 21345,
+        "square_root_weight": 0.9371518793035394,
+        "penrose_root_weight": 0.5031348649596633,
+        "overlap_weight": 0.5031348649596633
+      },
+      {
+        "key": [
+          2,
+          5,
+          1
+        ],
+        "square_count": 2817,
+        "penrose_count": 6582,
+        "square_root_weight": 0.06186132187184773,
+        "penrose_root_weight": 0.15775166608207647,
+        "overlap_weight": 0.06186132187184773
+      },
+      {
+        "key": [
+          2,
+          5,
+          2
+        ],
+        "square_count": 45,
+        "penrose_count": 2085,
+        "square_root_weight": 0.0009867988246129557,
+        "penrose_root_weight": 0.05267888460189406,
+        "overlap_weight": 0.0009867988246129557
+      }
+    ],
+    "area_edges": [
+      0.0,
+      0.8,
+      1.2,
+      1.6,
+      2.0,
+      2.5,
+      3.2,
+      4.5,
+      8.0,
+      null
+    ],
+    "compactness_edges": [
+      0.0,
+      0.35,
+      0.5,
+      0.65,
+      0.8,
+      1.01,
+      null
+    ],
+    "warning": "Matching intrinsic bins does not establish identical loop distributions or renormalized physical scale."
+  },
+  "variants": 2,
+  "admit_mass": false,
+  "admit_matched_operator": false,
+  "limitations": [
+    "finite deterministic hash variants, not uniform all connected cluster shapes",
+    "deduping clusters changes shape inclusion probabilities; root normalization only",
+    "shape orientation or full symmetry-orbit averages not yet proven",
+    "matched area/compactness bins may differ in finer shape distribution",
+    "one checkpoint per geometry: no temporal connected correlator or mass overlap test"
+  ]
+}

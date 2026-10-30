@@ -1,0 +1,93 @@
+{
+  "geometry": "square",
+  "geometry_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+  "seeds": [
+    101,
+    211,
+    307,
+    419
+  ],
+  "sampling": "deterministic spatial cluster subset, not full lattice zero-momentum sum",
+  "cluster_area_boundary_summary": {
+    "3": {
+      "n": 384,
+      "area_min": 0.9750708360381533,
+      "area_median": 0.9750708360381533,
+      "area_max": 0.9750708360381533,
+      "area_cv": 1.1386075591555434e-16,
+      "boundary_length_min": 8,
+      "boundary_length_max": 8
+    },
+    "5": {
+      "n": 384,
+      "area_min": 1.6251180600635886,
+      "area_median": 1.6251180600635886,
+      "area_max": 1.6251180600635886,
+      "area_cv": 0.0,
+      "boundary_length_min": 10,
+      "boundary_length_max": 12
+    },
+    "8": {
+      "n": 384,
+      "area_min": 2.600188896101742,
+      "area_median": 2.600188896101742,
+      "area_max": 2.600188896101742,
+      "area_cv": 0.0,
+      "boundary_length_min": 12,
+      "boundary_length_max": 18
+    }
+  },
+  "nested_spatial_coverage": {
+    "96": {
+      "rms_difference_to_largest": [
+        0.04009081263842317,
+        0.03782854825227594,
+        0.04269397593521995
+      ],
+      "average_signal": [
+        0.6675052066160196,
+        0.82384190949796,
+        0.9389919809329841
+      ]
+    },
+    "192": {
+      "rms_difference_to_largest": [
+        0.021910503713657038,
+        0.025376857679406378,
+        0.028840702494671817
+      ],
+      "average_signal": [
+        0.6596450842634229,
+        0.830781275531909,
+        0.9352013545978364
+      ]
+    }
+  },
+  "same_field_channel_correlations": [
+    [
+      1.0,
+      0.07036531763435834,
+      -0.060922809372561657
+    ],
+    [
+      0.07036531763435834,
+      0.9999999999999999,
+      -0.13713419491936538
+    ],
+    [
+      -0.060922809372561657,
+      -0.13713419491936538,
+      1.0
+    ]
+  ],
+  "same_field_rank": {
+    "singular_values": [
+      0.22966527394390726,
+      0.20312243426210816,
+      0.1961610249025217
+    ],
+    "effective_rank": 2.971492373030496
+  },
+  "elapsed_seconds": 8.765106209999885,
+  "mass_fit_admitted": false
+}

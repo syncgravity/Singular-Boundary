@@ -1,0 +1,32 @@
+{
+  "geometry": "square",
+  "seed": 101,
+  "checkpoint_sweeps": 10000,
+  "counts": {
+    "3": 96,
+    "5": 96,
+    "8": 96
+  },
+  "path_lengths": {
+    "3": [
+      8,
+      8
+    ],
+    "5": [
+      10,
+      12
+    ],
+    "8": [
+      12,
+      18
+    ]
+  },
+  "max_trace_gauge_error": 3.608224830031759e-16,
+  "obs_shape": [
+    20,
+    3
+  ],
+  "admit_scalar_mass": false,
+  "input_name": "square_nt20_seed101.npz",
+  "geometry_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3"
+}

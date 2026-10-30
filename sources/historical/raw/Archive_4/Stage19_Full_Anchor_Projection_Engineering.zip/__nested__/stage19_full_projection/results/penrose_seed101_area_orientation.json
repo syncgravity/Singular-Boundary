@@ -1,0 +1,130 @@
+{
+  "geometry": "penrose",
+  "seed": 101,
+  "occupied_bins": 20,
+  "total_roots": 68424,
+  "seconds": 4.836105912999983,
+  "bin_counts": [
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 0,
+      "count": 4761
+    },
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 1,
+      "count": 2415
+    },
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 2,
+      "count": 5023
+    },
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 3,
+      "count": 5067
+    },
+    {
+      "family": 0,
+      "area_bin": 1,
+      "orientation_bin": 0,
+      "count": 879
+    },
+    {
+      "family": 0,
+      "area_bin": 1,
+      "orientation_bin": 1,
+      "count": 980
+    },
+    {
+      "family": 0,
+      "area_bin": 1,
+      "orientation_bin": 2,
+      "count": 2309
+    },
+    {
+      "family": 0,
+      "area_bin": 1,
+      "orientation_bin": 3,
+      "count": 1374
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 0,
+      "count": 3448
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 1,
+      "count": 9237
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 2,
+      "count": 6659
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 3,
+      "count": 3464
+    },
+    {
+      "family": 2,
+      "area_bin": 4,
+      "orientation_bin": 0,
+      "count": 1488
+    },
+    {
+      "family": 2,
+      "area_bin": 4,
+      "orientation_bin": 1,
+      "count": 1585
+    },
+    {
+      "family": 2,
+      "area_bin": 4,
+      "orientation_bin": 2,
+      "count": 1780
+    },
+    {
+      "family": 2,
+      "area_bin": 4,
+      "orientation_bin": 3,
+      "count": 729
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 0,
+      "count": 4579
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 1,
+      "count": 6052
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 2,
+      "count": 3225
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 3,
+      "count": 3370
+    }
+  ],
+  "strict_geometry_match_warning": "bin labels are comparable but underlying cluster shapes remain regulator-dependent"
+}

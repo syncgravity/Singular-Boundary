@@ -1,0 +1,206 @@
+{
+  "summary": "Full strictly matched one-loop-per-accepted-root auxiliary measured on seed101 saved fields; three independent full-volume rooted controls retained. Strict 1.5 descriptor matching. This does not constitute temporally connected spectroscopy.",
+  "results": {
+    "square": {
+      "anchors": 22801,
+      "matched": 22801,
+      "missing": 0,
+      "coverage": 1.0,
+      "max_match_distance": 1.2587208762491493,
+      "mean_aux_unconditional": 0.8743728201515365,
+      "mean_aux_conditional": 0.8743728201515365,
+      "control_means": [
+        0.6622263465697029,
+        0.8290053657200472,
+        0.9309857647946178
+      ],
+      "target_counts": [
+        90,
+        14769,
+        52,
+        5394,
+        2496
+      ],
+      "face_counts": {
+        "5": 14859,
+        "8": 2644,
+        "10": 5298
+      },
+      "orientation_hist_12": [
+        4007,
+        0,
+        0,
+        0,
+        0,
+        5282,
+        2594,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "penrose": {
+      "anchors": 22808,
+      "matched": 22658,
+      "missing": 150,
+      "coverage": 0.9934233602244826,
+      "max_match_distance": 1.4833839591244287,
+      "mean_aux_unconditional": 0.9159752499645496,
+      "mean_aux_conditional": 0.9220391694408795,
+      "control_means": [
+        0.6906364546625035,
+        0.8503300559771487,
+        0.9514392091133257
+      ],
+      "target_counts": [
+        1634,
+        8630,
+        3170,
+        5801,
+        3423
+      ],
+      "face_counts": {
+        "3": 833,
+        "4": 394,
+        "5": 9037,
+        "6": 24,
+        "7": 37,
+        "8": 4537,
+        "9": 9,
+        "10": 7648,
+        "12": 134,
+        "15": 5
+      },
+      "orientation_hist_12": [
+        627,
+        768,
+        887,
+        1076,
+        1472,
+        951,
+        8252,
+        2664,
+        2024,
+        1674,
+        1345,
+        918
+      ]
+    }
+  },
+  "penrose_period_integer_matrix_entry_upper_bounds": [
+    [
+      1.0,
+      0.9939462684417891
+    ],
+    [
+      1.006090602430352,
+      0.9999999999999999
+    ]
+  ],
+  "penrose_affine_euclidean_isometries": [
+    {
+      "integer_matrix": [
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "det": 1,
+      "physical_Q": [
+        [
+          -0.9999999999999999,
+          1.7795302364047754e-33
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "translation_candidates_with_reference_degree": 832,
+      "probe_passes": 0,
+      "verified_affine_automorphisms_reference_images": [],
+      "verified_count": 0
+    },
+    {
+      "integer_matrix": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "det": -1,
+      "physical_Q": [
+        [
+          0.9999999999999999,
+          5.914460174992659e-17
+        ],
+        [
+          1.5522998610022666e-17,
+          -1.0
+        ]
+      ],
+      "translation_candidates_with_reference_degree": 832,
+      "probe_passes": 0,
+      "verified_affine_automorphisms_reference_images": [],
+      "verified_count": 0
+    },
+    {
+      "integer_matrix": [
+        1,
+        0,
+        0,
+        -1
+      ],
+      "det": -1,
+      "physical_Q": [
+        [
+          -0.9999999999999999,
+          -5.914460174992659e-17
+        ],
+        [
+          -1.5522998610022666e-17,
+          1.0
+        ]
+      ],
+      "translation_candidates_with_reference_degree": 832,
+      "probe_passes": 0,
+      "verified_affine_automorphisms_reference_images": [],
+      "verified_count": 0
+    },
+    {
+      "integer_matrix": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "det": 1,
+      "physical_Q": [
+        [
+          0.9999999999999999,
+          -1.7795302364047754e-33
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_candidates_with_reference_degree": 832,
+      "probe_passes": 1,
+      "verified_affine_automorphisms_reference_images": [
+        10
+      ],
+      "verified_count": 1
+    }
+  ],
+  "symmetry_scope": "Complete for Euclidean affine torus isometries Q with orthogonal physical action, assuming the stored period basis and numerical tolerance; integer matrix entry bounds <=1.007 prove [-2,2] enumeration sufficient; search covered [-3,3]. For each linear Q, reference-vertex image choices are exhaustive and all graph automorphism candidates were checked using exact edge incidence. This is NOT a classification of arbitrary non-geometric graph automorphisms.",
+  "limitations": [
+    "Penrose matched auxiliary omits 150 anchors; no imputation. Unconditional normalized as sum/F, conditional normalized by matched count; these are distinct operators.",
+    "Only one selected strict loop per accepted root, not all variants or complete orbit averages.",
+    "No exact fivefold symmetry average on periodic M55; orientation histograms not balanced.",
+    "Single saved gauge field per geometry cannot infer connected temporal correlator, physical mass, or matching continuum operators.",
+    "Benchmarks are in container, not Apple M1."
+  ]
+}

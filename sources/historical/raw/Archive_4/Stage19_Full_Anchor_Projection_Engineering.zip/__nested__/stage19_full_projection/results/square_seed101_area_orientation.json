@@ -1,0 +1,46 @@
+{
+  "geometry": "square",
+  "seed": 101,
+  "occupied_bins": 6,
+  "total_roots": 68403,
+  "seconds": 4.857153129000153,
+  "bin_counts": [
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 0,
+      "count": 153
+    },
+    {
+      "family": 0,
+      "area_bin": 0,
+      "orientation_bin": 3,
+      "count": 22648
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 0,
+      "count": 9
+    },
+    {
+      "family": 1,
+      "area_bin": 2,
+      "orientation_bin": 3,
+      "count": 22792
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 0,
+      "count": 8
+    },
+    {
+      "family": 2,
+      "area_bin": 5,
+      "orientation_bin": 3,
+      "count": 22793
+    }
+  ],
+  "strict_geometry_match_warning": "bin labels are comparable but underlying cluster shapes remain regulator-dependent"
+}

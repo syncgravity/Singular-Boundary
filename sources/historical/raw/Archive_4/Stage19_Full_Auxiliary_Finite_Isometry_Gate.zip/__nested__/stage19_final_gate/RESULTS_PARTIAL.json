@@ -1,0 +1,58 @@
+{
+  "penrose": {
+    "geometry": "penrose",
+    "F": 22808,
+    "covered": 22658,
+    "missing": 150,
+    "fraction": 0.9934233602244826,
+    "threshold": 1.5,
+    "scan_seconds": 30.121015837000414,
+    "aux_seconds": 3.6279309589999684,
+    "control_seconds_including_catalogue": 4.133490280999467,
+    "orientation_hist_12": [
+      627,
+      768,
+      887,
+      1076,
+      1472,
+      951,
+      8252,
+      2664,
+      2024,
+      1674,
+      1345,
+      918
+    ],
+    "undefined_orientation": 0,
+    "target_counts": [
+      1634,
+      8630,
+      3170,
+      5801,
+      3423
+    ],
+    "face_counts": {
+      "3": 833,
+      "4": 394,
+      "5": 9037,
+      "6": 24,
+      "7": 37,
+      "8": 4537,
+      "9": 9,
+      "10": 7648,
+      "12": 134,
+      "15": 5
+    },
+    "max_distance": 1.4833839591244287,
+    "aux_means_unconditional": 0.9159752499645496,
+    "aux_means_conditional": 0.9220391694408795,
+    "control_means": [
+      0.6906364546625035,
+      0.8503300559771487,
+      0.9514392091133257
+    ],
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "source": "/mnt/data/penrose_nt20_seed101.npz",
+    "scanned_valid_candidates": 76267
+  }
+}

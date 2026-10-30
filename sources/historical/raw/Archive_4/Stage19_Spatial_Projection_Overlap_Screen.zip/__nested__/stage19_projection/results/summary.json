@@ -1,0 +1,188 @@
+[
+  {
+    "geometry": "square",
+    "geometry_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+    "seeds": [
+      101,
+      211,
+      307,
+      419
+    ],
+    "sampling": "deterministic spatial cluster subset, not full lattice zero-momentum sum",
+    "cluster_area_boundary_summary": {
+      "3": {
+        "n": 384,
+        "area_min": 0.9750708360381533,
+        "area_median": 0.9750708360381533,
+        "area_max": 0.9750708360381533,
+        "area_cv": 1.1386075591555434e-16,
+        "boundary_length_min": 8,
+        "boundary_length_max": 8
+      },
+      "5": {
+        "n": 384,
+        "area_min": 1.6251180600635886,
+        "area_median": 1.6251180600635886,
+        "area_max": 1.6251180600635886,
+        "area_cv": 0.0,
+        "boundary_length_min": 10,
+        "boundary_length_max": 12
+      },
+      "8": {
+        "n": 384,
+        "area_min": 2.600188896101742,
+        "area_median": 2.600188896101742,
+        "area_max": 2.600188896101742,
+        "area_cv": 0.0,
+        "boundary_length_min": 12,
+        "boundary_length_max": 18
+      }
+    },
+    "nested_spatial_coverage": {
+      "96": {
+        "rms_difference_to_largest": [
+          0.04009081263842317,
+          0.03782854825227594,
+          0.04269397593521995
+        ],
+        "average_signal": [
+          0.6675052066160196,
+          0.82384190949796,
+          0.9389919809329841
+        ]
+      },
+      "192": {
+        "rms_difference_to_largest": [
+          0.021910503713657038,
+          0.025376857679406378,
+          0.028840702494671817
+        ],
+        "average_signal": [
+          0.6596450842634229,
+          0.830781275531909,
+          0.9352013545978364
+        ]
+      }
+    },
+    "same_field_channel_correlations": [
+      [
+        1.0,
+        0.07036531763435834,
+        -0.060922809372561657
+      ],
+      [
+        0.07036531763435834,
+        0.9999999999999999,
+        -0.13713419491936538
+      ],
+      [
+        -0.060922809372561657,
+        -0.13713419491936538,
+        1.0
+      ]
+    ],
+    "same_field_rank": {
+      "singular_values": [
+        0.22966527394390726,
+        0.20312243426210816,
+        0.1961610249025217
+      ],
+      "effective_rank": 2.971492373030496
+    },
+    "elapsed_seconds": 8.765106209999885,
+    "mass_fit_admitted": false
+  },
+  {
+    "geometry": "penrose",
+    "geometry_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "seeds": [
+      101,
+      211,
+      307,
+      419
+    ],
+    "sampling": "deterministic spatial cluster subset, not full lattice zero-momentum sum",
+    "cluster_area_boundary_summary": {
+      "3": {
+        "n": 384,
+        "area_min": 0.8452456456040409,
+        "area_median": 0.9952956388849625,
+        "area_max": 1.1442661358113453,
+        "area_cv": 0.0876999276437274,
+        "boundary_length_min": 6,
+        "boundary_length_max": 8
+      },
+      "5": {
+        "n": 384,
+        "area_min": 1.319144545246664,
+        "area_median": 1.6116880573267343,
+        "area_max": 1.9053110657613437,
+        "area_cv": 0.060906100038727935,
+        "boundary_length_min": 8,
+        "boundary_length_max": 12
+      },
+      "8": {
+        "n": 384,
+        "area_min": 2.3133606877770876,
+        "area_median": 2.6080631925662354,
+        "area_max": 2.904924690064462,
+        "area_cv": 0.045374661463539766,
+        "boundary_length_min": 10,
+        "boundary_length_max": 18
+      }
+    },
+    "nested_spatial_coverage": {
+      "96": {
+        "rms_difference_to_largest": [
+          0.04091675999420143,
+          0.04466653389075979,
+          0.04490132017550347
+        ],
+        "average_signal": [
+          0.6817181690113647,
+          0.8546940528859904,
+          0.9460234218503155
+        ]
+      },
+      "192": {
+        "rms_difference_to_largest": [
+          0.026048540424109933,
+          0.022358759842781253,
+          0.024497024935501543
+        ],
+        "average_signal": [
+          0.6858705601737087,
+          0.8549238787907646,
+          0.9505458369905411
+        ]
+      }
+    },
+    "same_field_channel_correlations": [
+      [
+        1.0,
+        0.1384599129300685,
+        -0.07600794313421921
+      ],
+      [
+        0.13845991293006854,
+        1.0,
+        -0.03246235722393225
+      ],
+      [
+        -0.0760079431342192,
+        -0.03246235722393225,
+        1.0
+      ]
+    ],
+    "same_field_rank": {
+      "singular_values": [
+        0.22592260493816915,
+        0.20887698548066208,
+        0.19183149107413244
+      ],
+      "effective_rank": 2.9736403908529523
+    },
+    "elapsed_seconds": 5.739997343000141,
+    "mass_fit_admitted": false
+  }
+]

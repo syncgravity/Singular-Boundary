@@ -1,0 +1,639 @@
+{
+  "strict_threshold": 1.5,
+  "scan_anchors": 22808,
+  "certified_penrose_covered": 22658,
+  "certified_penrose_uncovered": 150,
+  "scope": "Target-matched auxiliary measured on sampled spatial anchors, full-volume scalar controls on all anchors; NOT a full matched production operator. Symmetry screen of origin-fixed D4/D5 candidates and a finite set of centers, not an exhaustive graph automorphism classification.",
+  "square": {
+    "graph_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+    "vertices": 22801,
+    "sample_anchors": 256,
+    "sample_covered": 256,
+    "sample_coverage": 1.0,
+    "auxiliary_path_count": 256,
+    "full_control_paths": 68403,
+    "full_control_counts": [
+      22801,
+      22801,
+      22801
+    ],
+    "gauge_snapshot_sweep": 10000,
+    "symmetry_candidates": [
+      {
+        "family": "D4",
+        "k": 0,
+        "reflection": false,
+        "period_integer_error": 0.0,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 0,
+        "reflection": true,
+        "period_integer_error": 0.0,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 1,
+        "reflection": false,
+        "period_integer_error": 6.123233995736766e-17,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 1,
+        "reflection": true,
+        "period_integer_error": 6.123233995736766e-17,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 2,
+        "reflection": false,
+        "period_integer_error": 1.2246467991473532e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 2,
+        "reflection": true,
+        "period_integer_error": 1.2246467991473532e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 3,
+        "reflection": false,
+        "period_integer_error": 1.83697019872103e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 3,
+        "reflection": true,
+        "period_integer_error": 1.83697019872103e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 0,
+        "reflection": false,
+        "period_integer_error": 0.0,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 0,
+        "reflection": true,
+        "period_integer_error": 0.0,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 1,
+        "reflection": false,
+        "period_integer_error": 0.41221474770752675,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 1,
+        "reflection": true,
+        "period_integer_error": 0.41221474770752675,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 2,
+        "reflection": false,
+        "period_integer_error": 0.3090169943749475,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 2,
+        "reflection": true,
+        "period_integer_error": 0.3090169943749475,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 3,
+        "reflection": false,
+        "period_integer_error": 0.30901699437494734,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 3,
+        "reflection": true,
+        "period_integer_error": 0.30901699437494734,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 4,
+        "reflection": false,
+        "period_integer_error": 0.41221474770752675,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 4,
+        "reflection": true,
+        "period_integer_error": 0.41221474770752675,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 5,
+        "reflection": false,
+        "period_integer_error": 1.2246467991473532e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 5,
+        "reflection": true,
+        "period_integer_error": 1.2246467991473532e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 6,
+        "reflection": false,
+        "period_integer_error": 0.412214747707527,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 6,
+        "reflection": true,
+        "period_integer_error": 0.412214747707527,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 7,
+        "reflection": false,
+        "period_integer_error": 0.30901699437494756,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 7,
+        "reflection": true,
+        "period_integer_error": 0.30901699437494756,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 8,
+        "reflection": false,
+        "period_integer_error": 0.30901699437494723,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 8,
+        "reflection": true,
+        "period_integer_error": 0.30901699437494723,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 9,
+        "reflection": false,
+        "period_integer_error": 0.41221474770752664,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 9,
+        "reflection": true,
+        "period_integer_error": 0.41221474770752664,
+        "torus_compatible": false,
+        "automorphism_found": false
+      }
+    ],
+    "confirmed_candidate_symmetries": [
+      [
+        "D4",
+        0,
+        false
+      ],
+      [
+        "D4",
+        0,
+        true
+      ],
+      [
+        "D4",
+        1,
+        false
+      ],
+      [
+        "D4",
+        1,
+        true
+      ],
+      [
+        "D4",
+        2,
+        false
+      ],
+      [
+        "D4",
+        2,
+        true
+      ],
+      [
+        "D4",
+        3,
+        false
+      ],
+      [
+        "D4",
+        3,
+        true
+      ],
+      [
+        "D5",
+        0,
+        false
+      ],
+      [
+        "D5",
+        0,
+        true
+      ],
+      [
+        "D5",
+        5,
+        false
+      ],
+      [
+        "D5",
+        5,
+        true
+      ]
+    ],
+    "search_seconds": 0.6842502110002897,
+    "aux_measure_seconds": 3.262948913999935,
+    "control_catalogue_seconds": 3.3460833250001087,
+    "control_measure_seconds": 0.9983068550000098,
+    "aux_timeslice_mean": 0.8127053311754887,
+    "control_timeslice_mean": [
+      0.6622263465701277,
+      0.8290053657205778,
+      0.9309857647952136
+    ]
+  },
+  "penrose": {
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "vertices": 22808,
+    "sample_anchors": 256,
+    "sample_covered": 253,
+    "sample_coverage": 0.98828125,
+    "auxiliary_path_count": 253,
+    "full_control_paths": 68424,
+    "full_control_counts": [
+      22808,
+      22808,
+      22808
+    ],
+    "gauge_snapshot_sweep": 10000,
+    "symmetry_candidates": [
+      {
+        "family": "D4",
+        "k": 0,
+        "reflection": false,
+        "period_integer_error": 1.1102230246251565e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D4",
+        "k": 0,
+        "reflection": true,
+        "period_integer_error": 1.1102230246251565e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 1,
+        "reflection": false,
+        "period_integer_error": 0.006090602430351977,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 1,
+        "reflection": true,
+        "period_integer_error": 0.006090602430351977,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 2,
+        "reflection": false,
+        "period_integer_error": 1.232105635918563e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 2,
+        "reflection": true,
+        "period_integer_error": 1.8271539159694318e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 3,
+        "reflection": false,
+        "period_integer_error": 0.006090602430351977,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D4",
+        "k": 3,
+        "reflection": true,
+        "period_integer_error": 0.006090602430351977,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 0,
+        "reflection": false,
+        "period_integer_error": 1.1102230246251565e-16,
+        "torus_compatible": true,
+        "automorphism_found": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "D5",
+        "k": 0,
+        "reflection": true,
+        "period_integer_error": 1.1102230246251565e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 1,
+        "reflection": false,
+        "period_integer_error": 0.4157730418387807,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 1,
+        "reflection": true,
+        "period_integer_error": 0.4157730418387807,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 2,
+        "reflection": false,
+        "period_integer_error": 0.3090169943749475,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 2,
+        "reflection": true,
+        "period_integer_error": 0.3090169943749475,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 3,
+        "reflection": false,
+        "period_integer_error": 0.3090169943749474,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 3,
+        "reflection": true,
+        "period_integer_error": 0.30901699437494734,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 4,
+        "reflection": false,
+        "period_integer_error": 0.4157730418387806,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 4,
+        "reflection": true,
+        "period_integer_error": 0.4157730418387806,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 5,
+        "reflection": false,
+        "period_integer_error": 1.232105635918563e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 5,
+        "reflection": true,
+        "period_integer_error": 1.8271539159694318e-16,
+        "torus_compatible": true,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 6,
+        "reflection": false,
+        "period_integer_error": 0.41577304183878083,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 6,
+        "reflection": true,
+        "period_integer_error": 0.41577304183878083,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 7,
+        "reflection": false,
+        "period_integer_error": 0.30901699437494756,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 7,
+        "reflection": true,
+        "period_integer_error": 0.3090169943749476,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 8,
+        "reflection": false,
+        "period_integer_error": 0.30901699437494723,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 8,
+        "reflection": true,
+        "period_integer_error": 0.30901699437494723,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 9,
+        "reflection": false,
+        "period_integer_error": 0.4157730418387805,
+        "torus_compatible": false,
+        "automorphism_found": false
+      },
+      {
+        "family": "D5",
+        "k": 9,
+        "reflection": true,
+        "period_integer_error": 0.4157730418387805,
+        "torus_compatible": false,
+        "automorphism_found": false
+      }
+    ],
+    "confirmed_candidate_symmetries": [
+      [
+        "D4",
+        0,
+        false
+      ],
+      [
+        "D5",
+        0,
+        false
+      ]
+    ],
+    "search_seconds": 0.7288657629997033,
+    "aux_measure_seconds": 0.010880804999942484,
+    "control_catalogue_seconds": 2.8166902330003722,
+    "control_measure_seconds": 0.7942065990000629,
+    "aux_timeslice_mean": 0.9261445014513626,
+    "control_timeslice_mean": [
+      0.690636454662495,
+      0.8503300559771387,
+      0.9514392091133146
+    ]
+  }
+}

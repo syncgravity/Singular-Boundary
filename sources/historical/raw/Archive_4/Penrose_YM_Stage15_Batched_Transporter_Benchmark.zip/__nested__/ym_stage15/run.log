@@ -1,0 +1,120 @@
+stage15 chain 101 done
+stage15 chain 211 done
+stage15 chain 307 done
+stage15 chain 419 done
+{
+  "n_outer": 24,
+  "path_results": [
+    {
+      "length": 1.0,
+      "direct_mean": 0.11260476784023465,
+      "direct_sd": 0.5279360701501373,
+      "depths": {
+        "8": {
+          "mean": 0.028670921901198142,
+          "sd": 0.17912703333624408,
+          "raw_sd_ratio": 2.9472718903301134,
+          "mean_diff": -0.08393384593903652,
+          "paired_diff_naive_SE": 0.11067751851334386,
+          "elapsed_seconds_per_outer_for_all_paths": 0.11718263833328517,
+          "cost_ratio_conditional_to_direct_all_paths": 178.1831044566688,
+          "variance_time_ratio_conditional_to_direct": 20.512855336990985
+        },
+        "16": {
+          "mean": 0.00359234149193262,
+          "sd": 0.0846232503351467,
+          "raw_sd_ratio": 6.2386645284749696,
+          "mean_diff": -0.10901242634830204,
+          "paired_diff_naive_SE": 0.1070006337071574,
+          "elapsed_seconds_per_outer_for_all_paths": 0.14064499691662982,
+          "cost_ratio_conditional_to_direct_all_paths": 213.85900277844638,
+          "variance_time_ratio_conditional_to_direct": 5.494703614784301
+        },
+        "32": {
+          "mean": 0.011413070305303218,
+          "sd": 0.040569119797034356,
+          "raw_sd_ratio": 13.01324930862143,
+          "mean_diff": -0.10119169753493142,
+          "paired_diff_naive_SE": 0.10665556697709508,
+          "elapsed_seconds_per_outer_for_all_paths": 0.1879992958749502,
+          "cost_ratio_conditional_to_direct_all_paths": 285.8640038415264,
+          "variance_time_ratio_conditional_to_direct": 1.6880603613147396
+        }
+      }
+    },
+    {
+      "length": 2.0,
+      "direct_mean": -0.0833987079390577,
+      "direct_sd": 0.446684732101165,
+      "depths": {
+        "8": {
+          "mean": 0.052271326559634186,
+          "sd": 0.15491834191217732,
+          "raw_sd_ratio": 2.8833560092864214,
+          "mean_diff": 0.1356700344986919,
+          "paired_diff_naive_SE": 0.09184252088939215,
+          "elapsed_seconds_per_outer_for_all_paths": 0.11718263833328517,
+          "cost_ratio_conditional_to_direct_all_paths": 178.1831044566688,
+          "variance_time_ratio_conditional_to_direct": 21.43235947279893
+        },
+        "16": {
+          "mean": 0.027105652043878114,
+          "sd": 0.09037468461616414,
+          "raw_sd_ratio": 4.942586898071148,
+          "mean_diff": 0.11050435998293584,
+          "paired_diff_naive_SE": 0.09266166500856533,
+          "elapsed_seconds_per_outer_for_all_paths": 0.14064499691662982,
+          "cost_ratio_conditional_to_direct_all_paths": 213.85900277844638,
+          "variance_time_ratio_conditional_to_direct": 8.75424930134904
+        },
+        "32": {
+          "mean": -0.0011866845022381722,
+          "sd": 0.05443392512806066,
+          "raw_sd_ratio": 8.205998943678953,
+          "mean_diff": 0.08221202343681953,
+          "paired_diff_naive_SE": 0.09081053232160888,
+          "elapsed_seconds_per_outer_for_all_paths": 0.1879992958749502,
+          "cost_ratio_conditional_to_direct_all_paths": 285.8640038415264,
+          "variance_time_ratio_conditional_to_direct": 4.245184391236618
+        }
+      }
+    },
+    {
+      "length": 3.0,
+      "direct_mean": -0.04525522635964014,
+      "direct_sd": 0.4745687441265812,
+      "depths": {
+        "8": {
+          "mean": 0.0037259226958733863,
+          "sd": 0.09588503065002256,
+          "raw_sd_ratio": 4.949351748749423,
+          "mean_diff": 0.04898114905551355,
+          "paired_diff_naive_SE": 0.10394026011404578,
+          "elapsed_seconds_per_outer_for_all_paths": 0.11718263833328517,
+          "cost_ratio_conditional_to_direct_all_paths": 178.1831044566688,
+          "variance_time_ratio_conditional_to_direct": 7.2739427932175955
+        },
+        "16": {
+          "mean": 0.009185149251810196,
+          "sd": 0.06947570507649344,
+          "raw_sd_ratio": 6.830715047858475,
+          "mean_diff": 0.05444037561145034,
+          "paired_diff_naive_SE": 0.09723182479039089,
+          "elapsed_seconds_per_outer_for_all_paths": 0.14064499691662982,
+          "cost_ratio_conditional_to_direct_all_paths": 213.85900277844638,
+          "variance_time_ratio_conditional_to_direct": 4.5834785185109865
+        },
+        "32": {
+          "mean": -0.006352724274080023,
+          "sd": 0.04395720846486454,
+          "raw_sd_ratio": 10.796152910981801,
+          "mean_diff": 0.03890250208556013,
+          "paired_diff_naive_SE": 0.09232340101659925,
+          "elapsed_seconds_per_outer_for_all_paths": 0.1879992958749502,
+          "cost_ratio_conditional_to_direct_all_paths": 285.8640038415264,
+          "variance_time_ratio_conditional_to_direct": 2.452570036494691
+        }
+      }
+    }
+  ]
+}

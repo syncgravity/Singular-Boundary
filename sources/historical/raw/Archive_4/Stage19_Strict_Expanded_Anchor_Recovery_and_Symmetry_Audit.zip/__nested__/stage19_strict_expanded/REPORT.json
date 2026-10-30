@@ -1,0 +1,117 @@
+{
+  "geometry": "penrose_M55",
+  "geometry_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "threshold": 1.5,
+  "sizes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    15
+  ],
+  "variants": 4,
+  "anchors": 22808,
+  "previously_missing": 753,
+  "recovered_among_previously_missing": 603,
+  "now_covered": 22658,
+  "now_missing": 150,
+  "coverage": 0.9934233602244826,
+  "original_covered": 22055,
+  "symmetry_candidates": [
+    {
+      "type": "rotation",
+      "k": 0,
+      "angle_degrees": 0,
+      "period_lattice_integer_error": 1.1102230246251565e-16,
+      "torus_compatible": true,
+      "vertex_edge_automorphism": true,
+      "max_fractional_vertex_matching_error": 1.1102230246251565e-16,
+      "unique_image_vertices": 22808
+    },
+    {
+      "type": "rotation",
+      "k": 1,
+      "angle_degrees": 72,
+      "period_lattice_integer_error": 0.3090169943749475,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "rotation",
+      "k": 2,
+      "angle_degrees": 144,
+      "period_lattice_integer_error": 0.4157730418387806,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "rotation",
+      "k": 3,
+      "angle_degrees": 216,
+      "period_lattice_integer_error": 0.41577304183878083,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "rotation",
+      "k": 4,
+      "angle_degrees": 288,
+      "period_lattice_integer_error": 0.30901699437494723,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "reflection",
+      "k": 0,
+      "angle_degrees": 0,
+      "period_lattice_integer_error": 1.1102230246251565e-16,
+      "torus_compatible": true,
+      "vertex_edge_automorphism": false,
+      "max_fractional_vertex_matching_error": 0.006385609725944991,
+      "unique_image_vertices": 19683
+    },
+    {
+      "type": "reflection",
+      "k": 1,
+      "angle_degrees": 72,
+      "period_lattice_integer_error": 0.3090169943749475,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "reflection",
+      "k": 2,
+      "angle_degrees": 144,
+      "period_lattice_integer_error": 0.4157730418387806,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "reflection",
+      "k": 3,
+      "angle_degrees": 216,
+      "period_lattice_integer_error": 0.41577304183878083,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    },
+    {
+      "type": "reflection",
+      "k": 4,
+      "angle_degrees": 288,
+      "period_lattice_integer_error": 0.30901699437494723,
+      "torus_compatible": false,
+      "vertex_edge_automorphism": false
+    }
+  ],
+  "time_seconds": 6.709580183029175,
+  "caveat": "Combines full previous strict scan with exhaustive expanded scan only on previous failures; logically equivalent strict coverage to scanning all anchors with superset. Finite-torus global symmetries only; local approximate shape symmetry not assessed. Full loop catalogues and dynamic gauge measurements not computed.",
+  "symmetry_scope": "origin-fixed D5 candidate actions; nonzero translations, half-turn and other automorphisms not exhausted",
+  "symmetry_admission": false,
+  "scalar_mass_admission": false
+}

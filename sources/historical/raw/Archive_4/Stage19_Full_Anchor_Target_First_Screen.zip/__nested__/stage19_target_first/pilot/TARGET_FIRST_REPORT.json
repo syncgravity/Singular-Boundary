@@ -1,0 +1,293 @@
+{
+  "requested_root_sample": 192,
+  "requested_targets": 24,
+  "actual_targets": 19,
+  "predeclared_physical_targets": 22,
+  "features": [
+    "log(area)",
+    "log(perimeter)",
+    "compactness"
+  ],
+  "feature_scales": [
+    0.25,
+    0.25,
+    0.12
+  ],
+  "geometry_only": true,
+  "full_volume_control_preserved": true,
+  "pilot_subset_not_zero_momentum_projector": true,
+  "construction_seconds": 9.72358876599992,
+  "limitations": [
+    "Finite root subset: production requires a full-anchor target-constrained construction",
+    "Rotation/reflection invariant descriptors, not explicit full point-group orbit averaging",
+    "Matched descriptors do not prove equivalent lattice regulators or continuum operators",
+    "Single snapshot cannot establish connected temporal overlap or mass"
+  ],
+  "pairs": [
+    {
+      "square_anchor": 1074,
+      "penrose_anchor": 7642,
+      "square_faces": 10,
+      "penrose_faces": 10,
+      "distance": 0.04040215743933171,
+      "square_area": 3.250236120127177,
+      "penrose_area": 3.2212171219443904,
+      "square_perimeter": 11.402168425570949,
+      "penrose_perimeter": 11.390693851335236
+    },
+    {
+      "square_anchor": 22561,
+      "penrose_anchor": 2268,
+      "square_faces": 12,
+      "penrose_faces": 12,
+      "distance": 0.11114043865579039,
+      "square_area": 3.9002833441526126,
+      "penrose_area": 3.9822620518943888,
+      "square_perimeter": 13.682602110685139,
+      "penrose_perimeter": 13.916966723297897
+    },
+    {
+      "square_anchor": 358,
+      "penrose_anchor": 6328,
+      "square_faces": 6,
+      "penrose_faces": 6,
+      "distance": 0.3323827388035337,
+      "square_area": 1.9501416720763063,
+      "penrose_area": 1.844859269907159,
+      "square_perimeter": 7.981517897899664,
+      "penrose_perimeter": 7.592435460828341
+    },
+    {
+      "square_anchor": 596,
+      "penrose_anchor": 6567,
+      "square_faces": 10,
+      "penrose_faces": 10,
+      "distance": 0.25423258582713737,
+      "square_area": 3.250236120127177,
+      "penrose_area": 3.361551648034461,
+      "square_perimeter": 10.261951583013854,
+      "penrose_perimeter": 10.115981230506272
+    },
+    {
+      "square_anchor": 6804,
+      "penrose_anchor": 16239,
+      "square_faces": 7,
+      "penrose_faces": 8,
+      "distance": 0.7074854798595908,
+      "square_area": 2.275165284089024,
+      "penrose_area": 2.60374520714808,
+      "square_perimeter": 9.121734740456759,
+      "penrose_perimeter": 10.113254128221541
+    },
+    {
+      "square_anchor": 1193,
+      "penrose_anchor": 4059,
+      "square_faces": 7,
+      "penrose_faces": 7,
+      "distance": 0.6159916447103343,
+      "square_area": 2.275165284089024,
+      "penrose_area": 2.3673355055040375,
+      "square_perimeter": 7.981517897899664,
+      "penrose_perimeter": 7.592435460828341
+    },
+    {
+      "square_anchor": 9669,
+      "penrose_anchor": 4537,
+      "square_faces": 10,
+      "penrose_faces": 10,
+      "distance": 0.5899785023703447,
+      "square_area": 3.250236120127177,
+      "penrose_area": 3.2190581292353126,
+      "square_perimeter": 12.542385268128044,
+      "penrose_perimeter": 13.904704096258257
+    },
+    {
+      "square_anchor": 477,
+      "penrose_anchor": 4418,
+      "square_faces": 12,
+      "penrose_faces": 12,
+      "distance": 0.6420097980390163,
+      "square_area": 3.9002833441526126,
+      "penrose_area": 3.838689036740701,
+      "square_perimeter": 12.542385268128044,
+      "penrose_perimeter": 11.381158326580325
+    },
+    {
+      "square_anchor": 3700,
+      "penrose_anchor": 7522,
+      "square_faces": 5,
+      "penrose_faces": 4,
+      "distance": 0.7248586912927113,
+      "square_area": 1.6251180600635886,
+      "penrose_area": 1.3795963411008483,
+      "square_perimeter": 6.841301055342569,
+      "penrose_perimeter": 6.334066787224465
+    },
+    {
+      "square_anchor": 238,
+      "penrose_anchor": 8716,
+      "square_faces": 8,
+      "penrose_faces": 8,
+      "distance": 0.7497387113698519,
+      "square_area": 2.600188896101742,
+      "penrose_area": 2.467728666476165,
+      "square_perimeter": 10.261951583013854,
+      "penrose_perimeter": 11.378431224295596
+    },
+    {
+      "square_anchor": 10027,
+      "penrose_anchor": 1791,
+      "square_faces": 3,
+      "penrose_faces": 3,
+      "distance": 0.7798748223042535,
+      "square_area": 0.9750708360381533,
+      "penrose_area": 1.139948150393189,
+      "square_perimeter": 4.5608673702283795,
+      "penrose_perimeter": 5.049818641640591
+    },
+    {
+      "square_anchor": 1671,
+      "penrose_anchor": 0,
+      "square_faces": 4,
+      "penrose_faces": 4,
+      "distance": 0.9877799159901389,
+      "square_area": 1.300094448050871,
+      "penrose_area": 1.2327848368835435,
+      "square_perimeter": 5.701084212785474,
+      "penrose_perimeter": 5.06616258886568
+    },
+    {
+      "square_anchor": 6923,
+      "penrose_anchor": 3940,
+      "square_faces": 7,
+      "penrose_faces": 6,
+      "distance": 0.91704468325337,
+      "square_area": 2.275165284089024,
+      "penrose_area": 1.8534952407434713,
+      "square_perimeter": 9.121734740456759,
+      "penrose_perimeter": 8.867148081657307
+    },
+    {
+      "square_anchor": 8594,
+      "penrose_anchor": 477,
+      "square_faces": 5,
+      "penrose_faces": 5,
+      "distance": 1.0607440283084786,
+      "square_area": 1.6251180600635886,
+      "penrose_area": 1.7617380506076559,
+      "square_perimeter": 6.841301055342569,
+      "penrose_perimeter": 6.334066787224465
+    },
+    {
+      "square_anchor": 1909,
+      "penrose_anchor": 8119,
+      "square_faces": 4,
+      "penrose_faces": 3,
+      "distance": 1.1940218798774513,
+      "square_area": 1.300094448050871,
+      "penrose_area": 0.9909776534668067,
+      "square_perimeter": 5.701084212785474,
+      "penrose_perimeter": 5.059354166395501
+    },
+    {
+      "square_anchor": 3103,
+      "penrose_anchor": 7761,
+      "square_faces": 10,
+      "penrose_faces": 12,
+      "distance": 0.9593067420650685,
+      "square_area": 3.250236120127177,
+      "penrose_area": 3.8376095403861625,
+      "square_perimeter": 10.261951583013854,
+      "penrose_perimeter": 10.12278965297645
+    },
+    {
+      "square_anchor": 11220,
+      "penrose_anchor": 8477,
+      "square_faces": 5,
+      "penrose_faces": 5,
+      "distance": 1.1359387870211808,
+      "square_area": 1.6251180600635886,
+      "penrose_area": 1.4659560494639687,
+      "square_perimeter": 6.841301055342569,
+      "penrose_perimeter": 7.592435460828341
+    },
+    {
+      "square_anchor": 1790,
+      "penrose_anchor": 18508,
+      "square_faces": 7,
+      "penrose_faces": 8,
+      "distance": 1.1607068230894169,
+      "square_area": 2.275165284089024,
+      "penrose_area": 2.609142688920775,
+      "square_perimeter": 7.981517897899664,
+      "penrose_perimeter": 7.58970835854361
+    },
+    {
+      "square_anchor": 4297,
+      "penrose_anchor": 15403,
+      "square_faces": 10,
+      "penrose_faces": 10,
+      "distance": 1.4010072847550445,
+      "square_area": 3.250236120127177,
+      "penrose_area": 3.368028626161695,
+      "square_perimeter": 10.261951583013854,
+      "penrose_perimeter": 8.857612556902396
+    }
+  ],
+  "square": {
+    "graph_hash": "01437a57528c29282e06521040b47e09790c5179efa5b55c2051233526044bd3",
+    "candidates": 4384,
+    "root_sample_count": 192,
+    "matched_distinct_roots": 19,
+    "selected_face_counts": {
+      "3": 1,
+      "4": 2,
+      "5": 3,
+      "6": 1,
+      "7": 4,
+      "8": 1,
+      "10": 5,
+      "12": 2
+    },
+    "full_control_counts": [
+      22801,
+      22801,
+      22801
+    ],
+    "full_control_complete": true,
+    "matched_timeslice_mean": 0.9342003669091603,
+    "full_volume_control_timeslice_means": [
+      0.6622263465701277,
+      0.8290053657205778,
+      0.9309857647952136
+    ]
+  },
+  "penrose": {
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "candidates": 4454,
+    "root_sample_count": 192,
+    "matched_distinct_roots": 19,
+    "selected_face_counts": {
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 1,
+      "8": 3,
+      "10": 4,
+      "12": 3
+    },
+    "full_control_counts": [
+      22808,
+      22808,
+      22808
+    ],
+    "full_control_complete": true,
+    "matched_timeslice_mean": 0.906328767253575,
+    "full_volume_control_timeslice_means": [
+      0.690636454662495,
+      0.8503300559771387,
+      0.9514392091133146
+    ]
+  }
+}

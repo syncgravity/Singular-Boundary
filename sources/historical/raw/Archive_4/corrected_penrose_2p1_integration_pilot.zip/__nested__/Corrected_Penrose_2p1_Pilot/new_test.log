@@ -1,0 +1,11 @@
+test_boundary_edge_metropolis_delta_exact (test_corrected_2p1_pilot.CorrectedPilotTests.test_boundary_edge_metropolis_delta_exact) ... ok
+test_cut_and_project_geometry_and_open_boundary (test_corrected_2p1_pilot.CorrectedPilotTests.test_cut_and_project_geometry_and_open_boundary) ... ok
+test_gauge_covariance_all_plaquettes_operators_and_paths (test_corrected_2p1_pilot.CorrectedPilotTests.test_gauge_covariance_all_plaquettes_operators_and_paths) ... ok
+test_identity_config_and_multidistance_paths (test_corrected_2p1_pilot.CorrectedPilotTests.test_identity_config_and_multidistance_paths) ... ok
+test_one_edge_rectangle_agrees_with_temporal_plaquette (test_corrected_2p1_pilot.CorrectedPilotTests.test_one_edge_rectangle_agrees_with_temporal_plaquette) ... ok
+test_tiny_sampler_and_connected_shape (test_corrected_2p1_pilot.CorrectedPilotTests.test_tiny_sampler_and_connected_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.198s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "geometry": "penrose",
+  "seed": 101,
+  "checkpoint_sweeps": 10000,
+  "counts": {
+    "3": 96,
+    "5": 96,
+    "8": 96
+  },
+  "path_lengths": {
+    "3": [
+      6,
+      8
+    ],
+    "5": [
+      8,
+      12
+    ],
+    "8": [
+      12,
+      18
+    ]
+  },
+  "max_trace_gauge_error": 6.661338147750939e-16,
+  "obs_shape": [
+    20,
+    3
+  ],
+  "admit_scalar_mass": false,
+  "input_name": "penrose_nt20_seed101.npz",
+  "geometry_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21"
+}

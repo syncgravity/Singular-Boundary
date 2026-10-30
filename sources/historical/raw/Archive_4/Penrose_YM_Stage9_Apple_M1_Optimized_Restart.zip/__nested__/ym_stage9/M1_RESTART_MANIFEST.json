@@ -1,0 +1,9 @@
+{
+  "description": "Stage 9 Apple M1 safe clean restart and 1/2-worker launcher; no original gauge code overwritten by archive",
+  "files": {
+    "stage9_m1_manager.py": "082b92d57e22ad23e6c85150f4e5f43bf9ef0a2aac9637a3528d50ab19f0ffba",
+    "enable_numba_disk_cache.py": "1e119102bb43e5585de2c5ddd788c51b7064d4fc63854d8d7de1408b9afe1213",
+    "test_m1_manager.py": "4b3aef550141939192405f49e02c7e439cdb49445d1d873f83427133f0152282",
+    "APPLE_M1_STAGE9_GUIDE.md": "20e60afb52be70eaa376583e3262c6c6a04bccca61d327af6923db923abc0f01"
+  }
+}

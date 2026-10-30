@@ -1,0 +1,16 @@
+{
+  "INTEGRATION_REPORT.md": "075493333917371564fc77fd4abb1ab0ddcaee5bb0b979e1405dfa315193f401",
+  "README_NEXT.md": "e39540369d6d8c51f9827c4ccaf18fe79c5c855fa350a627652439626bcf103f",
+  "corrected_2p1_pilot.py": "db507cdee8b7f271f6c3641d6c1257486bb5410274758949773b6358aa1d3209",
+  "direct_cut_project.py": "2eea2dbf76bfc6ea4e47d27c0acaeb4b65718b13af4d1bbacf10169714db0486",
+  "new_test.log": "648b70d04bc2ff100bde4db945890d1014ac3214b93c30f52ffb27b1d49a0259",
+  "outputs/path_metadata.json": "090f89e0f81e9dd0b8f812c8784fdc7f4dfd9747815ef3264ba946faf5185a29",
+  "outputs/pilot_configs.npz": "2ca37b05aa9488dbd4da8ff657da38b0f708cb12fcf62bbecab450c7eff123ec",
+  "outputs/pilot_summary.json": "af5c2c04b086e4d2d37ee78b4310a8266ac989e03d642c03b5513b28a1a65bfa",
+  "outputs_R5/path_metadata.json": "394de6b62821265bca7fc50e49b947d47f91256d8636722195dc922b9825de4b",
+  "outputs_R5/pilot_configs.npz": "4f9f26e98fad6b5b7cd3dabc51e07c92d0b0198aefcb04c2d6b9c15267ef3208",
+  "outputs_R5/pilot_summary.json": "1fc4a46d7765445089d1e12213ddaf74d9c66afdfdc360a13afcaee11cd6eabe",
+  "penrose_causal_study.py": "0e986d81911b30af42920564813311141de5878b03aed55b2677ff6dff45adce",
+  "test_corrected_2p1_pilot.py": "a578da294f20df0286590d280fd9e6d0d0bdd39a8027715fef4e534f0de9423f",
+  "wilson_torus.py": "762d128e9c76441484d45ccde89e405e5f04dc85d5f27d2cfcc4bcb0770a100a"
+}

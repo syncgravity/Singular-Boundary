@@ -1,0 +1,11 @@
+test_agrees_with_independent_pentagrid_method_in_same_disk (test_direct.DirectWindowTests.test_agrees_with_independent_pentagrid_method_in_same_disk) ... ok
+test_complex_incidence_and_heights (test_direct.DirectWindowTests.test_complex_incidence_and_heights) ... ok
+test_exact_second_moment (test_direct.DirectWindowTests.test_exact_second_moment) ... ok
+test_flat_connection_and_independent_haar (test_direct.DirectWindowTests.test_flat_connection_and_independent_haar) ... ok
+test_gauge_covariance (test_direct.DirectWindowTests.test_gauge_covariance) ... ok
+test_restart_identical_to_unsplit (test_direct.DirectWindowTests.test_restart_identical_to_unsplit) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.838s
+
+OK
