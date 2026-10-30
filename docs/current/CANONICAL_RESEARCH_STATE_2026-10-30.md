@@ -40,3 +40,7 @@ On a minimal completed-cage original-link disk, formulate the target-angle condi
 ## Rules
 
 Every new theorem must have a precise source, hypotheses, evidence status, and claim-ledger mapping. New research changes should be committed to `main`, verified by re-reading GitHub, and mentioned by full SHA. Preserve historical records; avoid destructive renames and force-pushes. For large binary data use an explicit archival transfer and compare byte hashes.
+
+## 2026-10-30 additional completed-cage result (R3-IR-377)
+
+The actual Gauss-invariant Wilson ground state on **any fixed finite magnetic cage**, including completed cages, has a pointwise positive density whose oscillation is bounded by an explicit *global* heat-kernel comparison constant `R_t=exp(tK) M_t/m_t` (`K=2b sum c_q`; `m_t`, `M_t` the positive minimum and maximum of the free original-link heat kernel). Therefore the center cap has at least `R_t^-2` times its Haar mass. Full proof: [COMPLETED_CAGE_FINITE_VOLUME_CAP_POSITIVITY_2026-10-30.md](../../research/theorems/COMPLETED_CAGE_FINITE_VOLUME_CAP_POSITIVITY_2026-10-30.md). This is nonperturbative and valid at every finite coupling, **but the constant depends badly on magnetic volume, link dimension and coupling**, so it does not prove any of the required uniform signed radial-current or mass-gap estimates. It supplies a valid finite-volume baseline for a local comparison program.
