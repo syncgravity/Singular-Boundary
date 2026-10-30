@@ -14,7 +14,7 @@ Conjugating by S_g gives C(s)=-C(s), hence
 
 C(s)=0, for every s>=0. (CF-1)
 
-Likewise <Omega_0,p_g exp(-sK_0) O Omega_0>=0 is exactly zero (the displayed >=0 is not a positivity claim; it is only zero). More cleanly, the reverse correlator is identically zero by the same parity argument.
+The reverse correlator <Omega_0,p_g exp(-sK_0) O Omega_0> is also exactly zero by the same parity argument.
 
 The identity holds for the original full-link and physical Gauss-invariant semigroups (all insertions are gauge invariant), any other retained magnetic couplings, and requires no spectral gap estimate. Therefore the first neighbor-coupling derivative of the cap expectation vanishes at t_g=0, as in FN-2, now strengthened to every Euclidean time lag.
 
