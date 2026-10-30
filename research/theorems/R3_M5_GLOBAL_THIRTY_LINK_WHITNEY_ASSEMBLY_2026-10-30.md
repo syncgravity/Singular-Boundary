@@ -1,0 +1,11 @@
+# Assembled 30-link Whitney electric geometry on the extracted M5 11-face open disk
+
+Date: 2026-10-30. Tested numerically with archived penrose_study source. Finite regulator only.
+
+Faces D=(0,1,3,2,4,154,150,11,10,7,8), containing 30 distinct primal links. For each rhombus, form two triangles along its internal (0,2) diagonal; integrate the standard Whitney 1-form Gram matrix by exact-degree-2 three-point quadrature; remove the artificial diagonal by a local positive Schur complement to obtain a four-boundary-edge SPD form S_f. Resolve each local edge orientation against the original directed M5 link (source, endpoint, direction); multiply S_f entries by these orientation signs. Scatter-add all 11 face matrices onto the common 30-link index set.
+
+The real symmetric assembled 30x30 matrix H is positive definite to numerical accuracy, with eigenvalues min approximately 0.14317414869400802 and max approximately 1.1046593441618966, condition number 7.715494411793403, trace 14.094847896127085, and 132 nonzero ordered off-diagonal entries. Full matrix and eigenvalues are saved in local output global_whitney_11face.npz. The executable construction is research/scripts/assemble_global_whitney_11face.py. These are DOUBLE PRECISION spectral calculations, not directed-rounding/interval eigenvalue enclosures.
+
+A compatible gauge-covariant operator candidate takes transported link derivatives D_e into a common adjoint frame and defines the positive form t_H(Psi)=sum_e,e' H_ee' <D_e Psi,D_e' Psi>. Pointwise adjoint parallel transports are orthogonal, so t_H>=lambda_min(H) sum_e ||nabla_e Psi||^2; as a deliberately rounded illustrative constant, 0.14317 is below the computed min, but its use as a rigorous lower bound requires certified spectral arithmetic. The form is gauge invariant given coherent root-frame paths and operator domains. Paths/ordering and physical Hodge inverse-vs-mass derivation still require a complete treatment.
+
+This calculation does NOT establish coercivity uniform over enlarging disk families, physical scaling under refinement, a continuum Yang-Mills center cap estimate, or a continuum mass gap. The original eleven-face complex is extracted from a torus but treated as a separate OPEN disk with free boundary.
