@@ -32,3 +32,8 @@ Existing prior commits under `sources/historical/2026-10-26/` remain unchanged, 
 - Whether some readable data contain confidential or secret material: repository maintainers should audit before publishing.
 
 Reconciliation links: [previous archives](OCT26_28_ARCHIVE_INTAKE_2026-10-30.md), [Archive 3](ARCHIVE_3_OCT28_29_INTAKE_2026-10-30.md), [October 28 onward gaps](OCT28_ONWARD_COVERAGE_GAP_LEDGER_2026-10-30.md).
+
+
+## Archival completion update — 2026-10-30 (supersedes earlier pending-file figures)
+
+**All 1,281 distinct non-LFS source files from the four recovered archives are committed to `main` under `sources/historical/raw/`.** The full archive-byte original SHA-256 checks passed before import; 62 relay batches plus the original 14 raw-source files collectively cover all 1,281 paths. The final raw-source import commit is `9031e3e02f5c8c9767c548818bddf06e45f0931c`. The searchable [historical source catalogue](catalog/README.md) records every committed file's path, SHA-256, Git blob SHA-1 and per-archive grouping, and 41 committed provenance chunks map all 4,018 eligible historical text appearances, including 2,737 byte-identical duplicates. Search GitHub code for `path:sources/historical/raw/` plus a filename or phrase. Six independent spot checks against GitHub original blob hashes passed across the recovered source tree. These historical source files remain distinct from deferred LFS scientific binaries and ZIP originals. Earlier statements of `1,271 pending` are now **obsolete**, retained only as an audit of the transfer's prior state. This update does not imply all possible never-uploaded historical records or binaries are present, or that any theorem is proved.
