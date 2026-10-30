@@ -1,0 +1,3 @@
+# R3-IR-428: Optimized Wilson cap coefficient
+
+From R3-IR-427, `P(B)/Haar(B) >= exp(-4bs)m(as)^2`. Standard Gaussian SU(2) heat-kernel estimates yield `m(t)>=c0 exp(-C0/t)` for `0<t<=1`. Set `R=b/a`, `t=as`. Then the lower ratio is `c0^2 exp(-4Rt-2C0/t)`. Choosing `t=min(1,sqrt(C0/(2R)))` proves `P(B)>=c exp(-C sqrt(1+b/a)) Haar(B)` with universal positive constants. This applies to the finite original-link Wilson vacuum with the other environment couplings active. It does not yield a uniform half-Haar coefficient when `b/a` diverges or a continuum mass gap. Derivation is also preserved in the local R3-IR-428 note.
