@@ -1,0 +1,147 @@
+[
+  {
+    "path": "ym_stage7/README.md",
+    "uncompressed_bytes": 2703,
+    "crc32_hex": "3f7b44ba"
+  },
+  {
+    "path": "ym_stage7/STAGE_7_REPORT.md",
+    "uncompressed_bytes": 8900,
+    "crc32_hex": "5795bf98"
+  },
+  {
+    "path": "ym_stage7/stage7_large_torus.py",
+    "uncompressed_bytes": 5207,
+    "crc32_hex": "902a177c"
+  },
+  {
+    "path": "ym_stage7/stage7_checkpointed.py",
+    "uncompressed_bytes": 7997,
+    "crc32_hex": "b551c842"
+  },
+  {
+    "path": "ym_stage7/stage7_measurement.py",
+    "uncompressed_bytes": 4634,
+    "crc32_hex": "c9fb839c"
+  },
+  {
+    "path": "ym_stage7/test_stage7.py",
+    "uncompressed_bytes": 748,
+    "crc32_hex": "9f0fb12d"
+  },
+  {
+    "path": "ym_stage7/test_stage7_restart.py",
+    "uncompressed_bytes": 1538,
+    "crc32_hex": "f6a8f367"
+  },
+  {
+    "path": "ym_stage7/test_stage7_measurement.py",
+    "uncompressed_bytes": 1681,
+    "crc32_hex": "f830a123"
+  },
+  {
+    "path": "ym_stage7/stage2_rational_torus.py",
+    "uncompressed_bytes": 2851,
+    "crc32_hex": "385813da"
+  },
+  {
+    "path": "ym_stage7/stage2_ym_calibration.py",
+    "uncompressed_bytes": 10229,
+    "crc32_hex": "c6387457"
+  },
+  {
+    "path": "ym_stage7/stage3_periodic_pilot.py",
+    "uncompressed_bytes": 8684,
+    "crc32_hex": "254a7530"
+  },
+  {
+    "path": "ym_stage7/stage4_smearing_flux.py",
+    "uncompressed_bytes": 10866,
+    "crc32_hex": "0ec6ddae"
+  },
+  {
+    "path": "ym_stage7/corrected_2p1_pilot.py",
+    "uncompressed_bytes": 18397,
+    "crc32_hex": "bdd0c712"
+  },
+  {
+    "path": "ym_stage7/direct_cut_project.py",
+    "uncompressed_bytes": 5855,
+    "crc32_hex": "7b070de5"
+  },
+  {
+    "path": "ym_stage7/penrose_causal_study.py",
+    "uncompressed_bytes": 11168,
+    "crc32_hex": "791152ce"
+  },
+  {
+    "path": "ym_stage7/wilson_torus.py",
+    "uncompressed_bytes": 6075,
+    "crc32_hex": "d19df67b"
+  },
+  {
+    "path": "ym_stage7/M55_geometry.json",
+    "uncompressed_bytes": 1075,
+    "crc32_hex": "861681ab"
+  },
+  {
+    "path": "ym_stage7/stage7_action_audit.json",
+    "uncompressed_bytes": 2231,
+    "crc32_hex": "6fb61e0f"
+  },
+  {
+    "path": "ym_stage7/penrose_measurement_plan.json",
+    "uncompressed_bytes": 1195,
+    "crc32_hex": "f7dcb216"
+  },
+  {
+    "path": "ym_stage7/square_measurement_plan.json",
+    "uncompressed_bytes": 531,
+    "crc32_hex": "e9e2b073"
+  },
+  {
+    "path": "ym_stage7/penrose_measurement_smoke.json",
+    "uncompressed_bytes": 307,
+    "crc32_hex": "d73b7c99"
+  },
+  {
+    "path": "ym_stage7/square_measurement_smoke.json",
+    "uncompressed_bytes": 305,
+    "crc32_hex": "75c07629"
+  },
+  {
+    "path": "ym_stage7/penrose_warmup_observable_smoke.npz",
+    "uncompressed_bytes": 25941,
+    "crc32_hex": "9f28d47e"
+  },
+  {
+    "path": "ym_stage7/square_warmup_observable_smoke.npz",
+    "uncompressed_bytes": 25975,
+    "crc32_hex": "988cbe4d"
+  },
+  {
+    "path": "ym_stage7/checkpoints/square_nt20_seed101.npz",
+    "uncompressed_bytes": 52331332,
+    "crc32_hex": "a7f3860f"
+  },
+  {
+    "path": "ym_stage7/checkpoints/penrose_nt20_seed101.npz",
+    "uncompressed_bytes": 52352432,
+    "crc32_hex": "4e5b73c1"
+  },
+  {
+    "path": "ym_stage7/checkpoints/penrose_nt20_seed101_progress.json",
+    "uncompressed_bytes": 1499,
+    "crc32_hex": "3d0f9c7d"
+  },
+  {
+    "path": "ym_stage7/checkpoints/square_nt20_seed101_progress.json",
+    "uncompressed_bytes": 1501,
+    "crc32_hex": "36112c59"
+  },
+  {
+    "path": "ym_stage7/SHA256_MANIFEST.json",
+    "uncompressed_bytes": 2790,
+    "crc32_hex": "27a05936"
+  }
+]

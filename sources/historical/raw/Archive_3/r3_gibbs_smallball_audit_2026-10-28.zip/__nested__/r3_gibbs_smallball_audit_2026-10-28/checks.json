@@ -1,0 +1,41 @@
+{
+  "description": "Numerical check of ball-volume inequality only; not a verification of Penrose R3",
+  "checks": [
+    {
+      "lambda": 1,
+      "haar_ball_exact": 0.0032745272325944695,
+      "haar_ball_lower": 0.0013438139347166456,
+      "bound_valid": true
+    },
+    {
+      "lambda": 2,
+      "haar_ball_exact": 0.0011649818451755826,
+      "haar_ball_lower": 0.00047510997294555814,
+      "bound_valid": true
+    },
+    {
+      "lambda": 5,
+      "haar_ball_exact": 0.00029582718913713973,
+      "haar_ball_lower": 0.00012019437228551534,
+      "bound_valid": true
+    },
+    {
+      "lambda": 10,
+      "haar_ball_exact": 0.00010472153754934851,
+      "haar_ball_lower": 4.2495127851774177e-05,
+      "bound_valid": true
+    },
+    {
+      "lambda": 100,
+      "haar_ball_exact": 3.315313539753257e-06,
+      "haar_ball_lower": 1.3438139347166459e-06,
+      "bound_valid": true
+    },
+    {
+      "lambda": 1000,
+      "haar_ball_exact": 1.0485121456891757e-07,
+      "haar_ball_lower": 4.249512785177416e-08,
+      "bound_valid": true
+    }
+  ]
+}

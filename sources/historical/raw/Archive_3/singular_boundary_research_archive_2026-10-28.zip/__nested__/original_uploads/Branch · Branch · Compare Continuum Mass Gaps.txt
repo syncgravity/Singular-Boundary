@@ -1,0 +1,176 @@
+# R3 — Shared-edge recoupling: the two \(j=0,1\) channels
+
+The next calculation is complete for the **first adjacent two-loop sector** of the four-plaquette SU(2) spatial model.
+
+The result is encouraging: after explicitly separating the shared-edge singlet and triplet channels, their contributions to the tested three-step mixed coefficient are positive.
+
+More importantly, we have identified precisely what this establishes—and what is still needed for a uniform large-\(\lambda\) theorem.
+
+## 1. Exact orthonormal intertwiner states
+
+Let \(a,b\) be adjacent plaquettes sharing one spatial edge. Define
+
+\[
+X_{ab}=\chi_{1/2}(W_a)\chi_{1/2}(W_b)
+\]
+
+and let \(O_{ab}\) denote the fundamental character of the oriented outer boundary enclosing both plaquettes.
+
+The shared fundamental representations decompose as
+
+\[
+\frac12\otimes\frac12=0\oplus1.
+\]
+
+The normalized spin-network states are
+
+\[
+\boxed{
+\Psi_{ab}^{(0)}=O_{ab},
+\qquad
+\Psi_{ab}^{(1)}
+=\frac{2}{\sqrt3}\left(X_{ab}-\frac12O_{ab}\right).
+}
+\]
+
+Their Haar inner products satisfy
+
+\[
+\langle\Psi_{ab}^{(0)},\Psi_{ab}^{(1)}\rangle=0,
+\qquad
+\|\Psi_{ab}^{(0)}\|=\|\Psi_{ab}^{(1)}\|=1.
+\]
+
+These are distinct eigenstates of the temporal transfer operator.
+
+| Channel | Shared-edge spin | Other six boundary edges |
+|---|---|---|
+| \(j=0\) | Trivial | Fundamental |
+| \(j=1\) | Adjoint | Fundamental |
+
+The temporal multiplier is accordingly
+
+\[
+k_{ab}^{(j)}
+=
+k_j(t_{\mathrm{shared}})
+\prod_{e\in\partial(a\cup b)}
+k_{1/2}(t_e),
+\]
+
+where \(k_j(t)=I_{2j+1}(t)/I_1(t)\), with the appropriate zero-coupling limit.
+
+## 2. The exact \(15\times15\) spatial Wilson block
+
+We extended the previous seven states by adding both channels for each of the four adjacent plaquette pairs:
+
+<text color="secondary" size="sm">1 vacuum + 4 single loops + 2 disjoint two-loops + 8 shared-edge channels = 15 states.</text>
+
+The spatial multiplication matrix is
+
+\[
+F_{\alpha\beta}
+=
+\int f(U)\,
+\overline{\Psi_\alpha(U)}\Psi_\beta(U)\,dU.
+\]
+
+Using independent plaquette Haar coordinates, SU(2) character moments, and rotational symmetry of the quaternion components, I evaluated all 225 entries—including the cross terms between the original seven states and the eight new intertwiner states.
+
+The calculation is analytic in its SU(2) moments; the reported numerical entries come from Bessel-function evaluation.
+
+## 3. A genuinely overlapping temporal-support test
+
+For spatial Wilson coupling \(\kappa=2\), the new test uses:
+
+- First temporal interval: boundaries of spatial faces \(\{0,1\}\), coupling \(3\).
+- Second temporal interval: boundaries of spatial faces \(\{0,2\}\), coupling \(5\).
+
+These selections overlap on face 0 but activate different adjacent two-loop channels.
+
+<box border radius="lg" padding={3} gap={3}>
+  <text weight="medium">Exact 15-state mixed contraction</text>
+  <grid columns={2} gap={3}>
+    <grid-item>
+      <caption>Original seven-state contribution</caption>
+      <title size="lg" tabularNums>7.5606 × 10⁻¹⁰</title>
+    </grid-item>
+    <grid-item>
+      <caption>Complete 15-state contribution</caption>
+      <title size="lg" tabularNums>9.0763 × 10⁻¹⁰</title>
+    </grid-item>
+  </grid>
+  <divider color="subtle"/>
+  <text weight="medium">Additional shared-edge contributions</text>
+  <table>
+    <table-row>
+      <table-cell>One-loop/adjacent-channel cross terms</table-cell>
+      <table-cell align="end">+1.4488 × 10⁻¹⁰</table-cell>
+    </table-row>
+    <table-row>
+      <table-cell>Adjacent/adjacent terms</table-cell>
+      <table-cell align="end">+6.6947 × 10⁻¹²</table-cell>
+    </table-row>
+    <table-row>
+      <table-cell>**Total additional contribution**</table-cell>
+      <table-cell align="end">**+1.5157 × 10⁻¹⁰**</table-cell>
+    </table-row>
+  </table>
+</box>
+
+In this particular basis convention and test, no negative weighted term occurs within the computed block.
+
+The earlier diagonal-support test did not activate these adjacent channels. This new test genuinely exercises their recoupling.
+
+## 4. Does positivity extend to the full system?
+
+Not yet. We have established positivity of the selected 15-state contribution, but the complete spin-network expansion contains additional representations and intertwiners.
+
+| Objective | Status |
+|---|---|
+| Shared-edge \(j=0,1\) decomposition | **Explicit** |
+| Orthonormal two-channel basis | **Constructed** |
+| Full \(15\times15\) Wilson multiplication block | **Computed** |
+| One-loop/two-loop cross terms | **Computed** |
+| Mixed coefficient for overlapping supports within this block | **Positive** |
+| Complete infinite spin-network mixed sum | Open |
+| Uniform control of omitted channels as \(\lambda\to\infty\) | Open |
+| Arbitrary Penrose cavity insertion estimate | Open |
+
+The positivity observed here is not automatically basis-independent entrywise positivity, nor a proof that omitted contributions cancel.
+
+## 5. Parallel scalar lower-comparison route
+
+We retain the target
+
+\[
+\boxed{
+\frac{Z_{\mathrm{inserted}}}{Z_{\mathrm{cavity}}}
+\ge
+\exp[-C|Q|(1+\log\lambda)].
+}
+\]
+
+For the fixed three-step twelve-prism complex, a global Haar small-ball argument supplies the weaker estimate
+
+\[
+\mathcal F_Q
+\le\frac{111}{2}\log\lambda+C.
+\]
+
+This counts all 37 gauge-fixed SU(2) link variables and consequently depends on the entire finite complex. It is not the required ambient-volume-uniform bound.
+
+The next useful theorem would replace that global count with a local conditional comparison whose cost depends only on inserted support and a bounded surrounding neighborhood.
+
+That route remains necessary even if further finite spin-network sectors continue to contribute positively.
+
+## Reproducible artifacts
+
+- [Formal derivation and scope](sandbox:/mnt/data/r3_shared_edge_15state_note.md)
+- [Exact shared-edge recoupling calculation](sandbox:/mnt/data/r3_shared_edge_recoupling.py)
+- [Complete 15-state matrix and temporal coefficients](sandbox:/mnt/data/r3_shared_edge_15state_matrices.npz)
+- [Numerical verification certificate](sandbox:/mnt/data/r3_shared_edge_15state_certificate.json)
+
+**Research conclusion:** The first genuinely shared-edge SU(2) intertwiner obstruction does not produce a negative mixed contribution in the tested overlapping-support example. The calculation strengthens the representation-theoretic evidence, but it has not established uniform positivity or the complete support-local insertion theorem.
+
+I recommend using the 15-state result as a verified benchmark while moving the scalar argument toward a **localized conditional Haar-ball or correlated-transport estimate**, which addresses the large-\(\lambda\) and ambient-uniform requirements directly.

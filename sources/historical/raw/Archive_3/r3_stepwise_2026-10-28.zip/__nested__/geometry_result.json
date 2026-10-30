@@ -1,0 +1,34 @@
+{
+  "model": "2x2 square spatial plaquettes with 3 temporal intervals; all spatial and temporal faces coupled",
+  "vertices": 36,
+  "edges": 75,
+  "faces": 52,
+  "spatial_faces": 16,
+  "temporal_faces": 36,
+  "inserted_faces": [
+    "Tx_00_1",
+    "Tx_01_1",
+    "Ty_00_1",
+    "Ty_10_1"
+  ],
+  "strict_leaf_edges_by_inserted_face": {
+    "Tx_00_1": 0,
+    "Tx_01_1": 0,
+    "Ty_00_1": 0,
+    "Ty_10_1": 0
+  },
+  "cavity_free_edges_by_inserted_face": {
+    "Tx_00_1": 1,
+    "Tx_01_1": 0,
+    "Ty_00_1": 1,
+    "Ty_10_1": 0
+  },
+  "collar_face_sizes": {
+    "0": 4,
+    "1": 22,
+    "2": 46,
+    "3": 52,
+    "4": 52
+  },
+  "shared_with_cavity_edges": 11
+}

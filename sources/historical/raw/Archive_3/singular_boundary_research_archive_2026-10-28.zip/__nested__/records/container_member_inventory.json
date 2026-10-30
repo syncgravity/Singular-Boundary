@@ -1,0 +1,5552 @@
+[
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/._.DS_Store",
+    "uncompressed_bytes": 120
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/.DS_Store",
+    "uncompressed_bytes": 6148
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/._dissertation",
+    "uncompressed_bytes": 212
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/dissertation/._.DS_Store",
+    "uncompressed_bytes": 120
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/dissertation/.DS_Store",
+    "uncompressed_bytes": 6148
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/dissertation/._the_singular_boundary.pdf",
+    "uncompressed_bytes": 584
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/dissertation/the_singular_boundary.pdf",
+    "uncompressed_bytes": 441708
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/experiments/ExperimentA_Niobium_LDOS.pdf",
+    "uncompressed_bytes": 2178348
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/experiments/ExperimentB_HeatKernel_SpectralIdentity.pdf",
+    "uncompressed_bytes": 274771
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/._.DS_Store",
+    "uncompressed_bytes": 120
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/.DS_Store",
+    "uncompressed_bytes": 6148
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf",
+    "uncompressed_bytes": 1397475
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_4/._Sharpe_Paper4_Conformal_Boundary_CC.pdf",
+    "uncompressed_bytes": 594
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf",
+    "uncompressed_bytes": 368076
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf",
+    "uncompressed_bytes": 1281086
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf",
+    "uncompressed_bytes": 1235921
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_5/._Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf",
+    "uncompressed_bytes": 603
+  },
+  {
+    "container": "Sharpe_dissertation_v10.7.tar.gz",
+    "member": "delivery/papers/Paper_5/Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf",
+    "uncompressed_bytes": 311053
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010080.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "bc932b67"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010240.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "298ce1e7"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011360.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "44c6186c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011200.npz",
+    "uncompressed_bytes": 8071,
+    "crc32": "b293548e"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "3c1c17b6"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010320.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "309e50b8"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011980.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "bc7c8cfe"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011000.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "106afb85"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010120.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "8467e7fa"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010040.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "bdc82e0a"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011160.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "2636aa9b"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010280.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "c3ed1b30"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011820.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "ae0bc33c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010900.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "81e5633d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010860.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "c8ac8ff3"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011940.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "c49c9394"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010680.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "61ca0a6d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010520.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "5d671a1e"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011400.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "5f0e6031"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011560.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "f9ec46e3"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010440.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "7bbf77dc"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011760.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "635d5c7b"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010640.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "c5d6520c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010720.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "0060959a"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011600.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "2b5dd788"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010480.npz",
+    "uncompressed_bytes": 8081,
+    "crc32": "d1c3d35e"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011060.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "efb219d7"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010140.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "c6e5082c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010020.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "3f05f881"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011100.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "46687225"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011840.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "f4dfbdb4"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010960.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "06370eec"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010800.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "e52b5fe1"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011920.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "ad825d2d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010380.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "b42620f8"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010180.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "fff95616"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011880.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "c6856c6d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010220.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "7aa40910"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011300.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "9f8fc596"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011260.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "bac177b2"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010340.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "0646b651"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011700.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "918c1309"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010620.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "9f0b8e65"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010740.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "7af0190e"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011660.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "b21c281d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010580.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "444f7b8b"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010780.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "498234a2"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010540.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "6f708f43"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011460.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "134dc8b6"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011500.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "45d7b788"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010420.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "934285f3"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011900.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "a04706b4"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011280.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "08bfbddb"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010820.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "7d05e998"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010940.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "f06b5f54"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011860.npz",
+    "uncompressed_bytes": 8083,
+    "crc32": "3c6297f1"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011120.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "43703c22"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010160.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "df7d415d"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011040.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "fac492d9"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010360.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "4ab8c475"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011240.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "b66ebcf0"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011320.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "a897799c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010980.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "7c5b2c7b"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010200.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "e828cda3"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011080.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "d6dc1abe"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011480.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "c26ac6b9"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011640.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "7fec20c7"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010760.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "07a81231"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010600.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "8517d6d8"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011720.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "fa39d1ed"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010400.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "6a6e4ba1"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011520.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "6a06e850"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011440.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "f3870aef"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010560.npz",
+    "uncompressed_bytes": 8007,
+    "crc32": "1f508dc7"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011680.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "3d4917ea"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00012000.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "46854592"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010300.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "d85212c2"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010880.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "d58f7240"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011220.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "fba95ca3"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011340.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "19c9c22e"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010260.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "a4fbbaad"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011180.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "5f7d4286"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011960.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "41faf448"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010840.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "262ea270"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010920.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "29162b16"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011380.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "271f8a85"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011800.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "888961cf"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011140.npz",
+    "uncompressed_bytes": 8079,
+    "crc32": "c6885a97"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010060.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "1ddef350"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010100.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "5c424fa7"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011020.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "f91ba19c"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010460.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "6ae1621b"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011540.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "9f033bd0"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011420.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "e437a8cc"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010500.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "4266e827"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011780.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "9d3a37cb"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011580.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "ab7fa631"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011620.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "318154d4"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010700.npz",
+    "uncompressed_bytes": 8079,
+    "crc32": "6d501f78"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00010660.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "7e8267ef"
+  },
+  {
+    "container": "penrose_seed101_stage26.zip",
+    "member": "penrose_seed101/outer_00011740.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "c3c37064"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010080.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "bc932b67"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010240.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "298ce1e7"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011360.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "44c6186c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011200.npz",
+    "uncompressed_bytes": 8071,
+    "crc32": "b293548e"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "3c1c17b6"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010320.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "309e50b8"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011980.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "bc7c8cfe"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011000.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "106afb85"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010120.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "8467e7fa"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010040.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "bdc82e0a"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011160.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "2636aa9b"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010280.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "c3ed1b30"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011820.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "ae0bc33c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010900.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "81e5633d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010860.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "c8ac8ff3"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011940.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "c49c9394"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010680.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "61ca0a6d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010520.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "5d671a1e"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011400.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "5f0e6031"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011560.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "f9ec46e3"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010440.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "7bbf77dc"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011760.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "635d5c7b"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010640.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "c5d6520c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010720.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "0060959a"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011600.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "2b5dd788"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010480.npz",
+    "uncompressed_bytes": 8081,
+    "crc32": "d1c3d35e"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011060.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "efb219d7"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010140.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "c6e5082c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010020.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "3f05f881"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011100.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "46687225"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011840.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "f4dfbdb4"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010960.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "06370eec"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010800.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "e52b5fe1"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011920.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "ad825d2d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010380.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "b42620f8"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010180.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "fff95616"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011880.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "c6856c6d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010220.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "7aa40910"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011300.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "9f8fc596"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011260.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "bac177b2"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010340.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "0646b651"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011700.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "918c1309"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010620.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "9f0b8e65"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010740.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "7af0190e"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011660.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "b21c281d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010580.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "444f7b8b"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/restart.npz",
+    "uncompressed_bytes": 52231886,
+    "crc32": "ab339523"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010780.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "498234a2"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010540.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "6f708f43"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011460.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "134dc8b6"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011500.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "45d7b788"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010420.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "934285f3"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011900.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "a04706b4"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011280.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "08bfbddb"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010820.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "7d05e998"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010940.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "f06b5f54"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011860.npz",
+    "uncompressed_bytes": 8083,
+    "crc32": "3c6297f1"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011120.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "43703c22"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010160.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "df7d415d"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011040.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "fac492d9"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010360.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "4ab8c475"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011240.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "b66ebcf0"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011320.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "a897799c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010980.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "7c5b2c7b"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010200.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "e828cda3"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011080.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "d6dc1abe"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011480.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "c26ac6b9"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011640.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "7fec20c7"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010760.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "07a81231"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010600.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "8517d6d8"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011720.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "fa39d1ed"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010400.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "6a6e4ba1"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011520.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "6a06e850"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011440.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "f3870aef"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010560.npz",
+    "uncompressed_bytes": 8007,
+    "crc32": "1f508dc7"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011680.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "3d4917ea"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00012000.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "46854592"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010300.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "d85212c2"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010880.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "d58f7240"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011220.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "fba95ca3"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011340.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "19c9c22e"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010260.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "a4fbbaad"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011180.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "5f7d4286"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011960.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "41faf448"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010840.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "262ea270"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010920.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "29162b16"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011380.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "271f8a85"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011800.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "888961cf"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011140.npz",
+    "uncompressed_bytes": 8079,
+    "crc32": "c6885a97"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010060.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "1ddef350"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010100.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "5c424fa7"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011020.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "f91ba19c"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010460.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "6ae1621b"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011540.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "9f033bd0"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011420.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "e437a8cc"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010500.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "4266e827"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011780.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "9d3a37cb"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011580.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "ab7fa631"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011620.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "318154d4"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010700.npz",
+    "uncompressed_bytes": 8079,
+    "crc32": "6d501f78"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00010660.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "7e8267ef"
+  },
+  {
+    "container": "penrose_seed101_stage26_full.zip",
+    "member": "penrose_seed101/outer_00011740.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "c3c37064"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010080.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "daee215d"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010240.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "f8ad4835"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011360.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "90adcb78"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011200.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "6175c869"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "ba5374f3"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010320.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "6deb92b1"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011980.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "6b44c213"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011000.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "93aa825f"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010120.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "e44424e1"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010040.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "509b5b68"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011160.npz",
+    "uncompressed_bytes": 8080,
+    "crc32": "34220b70"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010280.npz",
+    "uncompressed_bytes": 8089,
+    "crc32": "56e5d08d"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011820.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "7c04074a"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010900.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "06416185"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010860.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "09427f2c"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011940.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "50291507"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010680.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "0f388f6f"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010520.npz",
+    "uncompressed_bytes": 8076,
+    "crc32": "4b6971eb"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011400.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "90675b41"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011560.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "ef59f5d9"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010440.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "d9735c8b"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011760.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "ed9de8b7"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010640.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "551d01b4"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010720.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "e38630ea"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011600.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "011639d9"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010480.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "84c7c0b1"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011060.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "92ff1f7e"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010140.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "05fac164"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010020.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "758a7660"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011100.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "7950f8d9"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011840.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "81092374"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010960.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "fe2b19ed"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010800.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "dda41b07"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011920.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "5188f4d0"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010380.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "084b614b"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010180.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "e9d6c5b1"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011880.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "7c7d67c6"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010220.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "7bc3ec05"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011300.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "deec4f57"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011260.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "1798abfd"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010340.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "c054b537"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011700.npz",
+    "uncompressed_bytes": 8074,
+    "crc32": "3577f2ba"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010620.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "7798b135"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010740.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "f96622d0"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011660.npz",
+    "uncompressed_bytes": 8081,
+    "crc32": "9ce05891"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010580.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "9f7263fd"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010780.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "bd9293bc"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010540.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "18d64ece"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011460.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "fc4c4f60"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011500.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "7472f50e"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010420.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "cb31bccf"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011900.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "28c56c78"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011280.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "2601aed2"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010820.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "50017bfc"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010940.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "3b0d1cab"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011860.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "88738782"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011120.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "36c16e2e"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010160.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "0a341db4"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011040.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "7f422a24"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010360.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "c0718977"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011240.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "39d4ae53"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011320.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "f859ab91"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010980.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "51f2e40b"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010200.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "b2d656f5"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011080.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "55fbdebc"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011480.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "bf38f5f8"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011640.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "f9a9d72d"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010760.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "7b64911b"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010600.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "93857982"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011720.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "4335f580"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010400.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "3c79ef75"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011520.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "81e3afda"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011440.npz",
+    "uncompressed_bytes": 8078,
+    "crc32": "ddb9504f"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010560.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "475dcd56"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011680.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "e22f30c0"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00012000.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "6ad2f82c"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010300.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "a87334a4"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010880.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "57398951"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011220.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "cbe4f92b"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011340.npz",
+    "uncompressed_bytes": 8076,
+    "crc32": "eed8b973"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010260.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "73ddc77f"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011180.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "f2d58655"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011960.npz",
+    "uncompressed_bytes": 8009,
+    "crc32": "4da9e384"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010840.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "1a9454bd"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010920.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "c768d7cd"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011380.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "9b06728d"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011800.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "cd2f5f9e"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011140.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "6378339c"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010060.npz",
+    "uncompressed_bytes": 8078,
+    "crc32": "8ac6fce0"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010100.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "fbecd938"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011020.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "e945c961"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010460.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "9cd2a47a"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011540.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "f67d76d8"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011420.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "e6caf74e"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010500.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "52fe15a8"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011780.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "30023c52"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011580.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "79ca023d"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011620.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "0b515346"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010700.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "66aa57ba"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00010660.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "89454906"
+  },
+  {
+    "container": "penrose_seed211_stage26.zip",
+    "member": "penrose_seed211/outer_00011740.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "47dedc7a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010080.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "fabaf376"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010240.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "96bf7adc"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011360.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "9710a41a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011200.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "6189ac34"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "47b70d23"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010320.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "6f41f4f8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011980.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "cefcef13"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011000.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "a9b5c8d8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010120.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "69c2fba7"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010040.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "9b324d13"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011160.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "8dea901b"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010280.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "8b2c0595"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011820.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "340d7c21"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010900.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "1893f276"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010860.npz",
+    "uncompressed_bytes": 8000,
+    "crc32": "19e27de0"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011940.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "689bc1f3"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010680.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "00c1bfeb"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010520.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "7924d56d"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011400.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "f4ef6c9a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011560.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "dbf697e9"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010440.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "bddaff39"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011760.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "770d774f"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010640.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "fcb7c71d"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010720.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "bb1f9a13"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011600.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "1e8dc767"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010480.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "9aa19323"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011060.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "ef0c3c67"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010140.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "b505a955"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010020.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "2c925709"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011100.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "f2efe3a4"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011840.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "ed4d80b5"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010960.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "4a76ccb7"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010800.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "55ad1177"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011920.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "e74c5784"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010380.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "7dfa1431"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010180.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "ba9d7d51"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011880.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "e355c8fb"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010220.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "f0786d60"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011300.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "0e5841ef"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011260.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "c7a26d88"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010340.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "97f8301c"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011700.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "c009c2bc"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010620.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "3acd24e5"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010740.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "e99bddd8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011660.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "1f0615f2"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010580.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "1a62094e"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010780.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "047f418c"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010540.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "bceabb2a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011460.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "9e6def97"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011500.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "5dbe3be6"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010420.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "ecb9cf97"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011900.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "edaafa8e"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011280.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "62227db2"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010820.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "4258bab8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010940.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "38ac14f4"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011860.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "f15b5c05"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011120.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "9d244dd1"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010160.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "21554479"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011040.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "cc16d56c"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010360.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "2f7bf131"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011240.npz",
+    "uncompressed_bytes": 8078,
+    "crc32": "950610f3"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011320.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "1d9c0d33"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010980.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "87b12731"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010200.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "521725b1"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011080.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "e152cc86"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011480.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "ce69230d"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011640.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "2e26b1a9"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010760.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "c0d9ec17"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010600.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "d70a7c73"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011720.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "c0d2bdb4"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010400.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "c2bd298a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011520.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "5b78bee9"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011440.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "f83e8e8d"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010560.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "b877c1e4"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011680.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "ef31edf8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00012000.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "b67fdf33"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010300.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "30446da4"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010880.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "263153c3"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011220.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "e6591e8b"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011340.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "7f1ba958"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010260.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "da8d9e35"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011180.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "f9324eb1"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011960.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "aa65bf7c"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010840.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "2bf7258a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010920.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "248161ef"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011380.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "60fca274"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011800.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "e8eac5d5"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011140.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "035a204a"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010060.npz",
+    "uncompressed_bytes": 8085,
+    "crc32": "c5fa4e1c"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010100.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "fd43398e"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011020.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "5caa1355"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010460.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "282cc41d"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011540.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "5ce06041"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011420.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "579398e7"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010500.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "5228e6e9"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011780.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "086b0956"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011580.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "762b6bb3"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011620.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "ee1a0569"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010700.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "a00b3192"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00010660.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "8bcd51b8"
+  },
+  {
+    "container": "penrose_seed307_stage26.zip",
+    "member": "penrose_seed307/outer_00011740.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "86f08743"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010080.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "20912697"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010240.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "63951872"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011360.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "d837f587"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011200.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "abf568ab"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "97b45938"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010320.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "73f51703"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011980.npz",
+    "uncompressed_bytes": 8078,
+    "crc32": "299c5ecf"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011000.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "d02fc2a2"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010120.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "7b506b47"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010040.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "09e9677c"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011160.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "83eeb89b"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010280.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "167add78"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011820.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "9290a927"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010900.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "dce2a11c"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010860.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "ca34b96c"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011940.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "dbd3a158"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010680.npz",
+    "uncompressed_bytes": 8007,
+    "crc32": "a5dea69e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010520.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "d4422792"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011400.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "c8f17cb3"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011560.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "63df1005"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010440.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "69e7dd32"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011760.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "736ab1c4"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010640.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "55060653"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010720.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "6e99baa7"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011600.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "82a668e8"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010480.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "a9853642"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011060.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "b122ca0e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010140.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "1552b5c5"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010020.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "fbed12b0"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011100.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "262f5360"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011840.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "e05ea88c"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010960.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "e4a6d04e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010800.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "9b003b80"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011920.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "3d6d5f6e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010380.npz",
+    "uncompressed_bytes": 8067,
+    "crc32": "9594e9a9"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010180.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "d9d897cd"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011880.npz",
+    "uncompressed_bytes": 8078,
+    "crc32": "8836b453"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010220.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "252f20d6"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011300.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "e6aac872"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011260.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "e9006fb3"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010340.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "59c8dbb5"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011700.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "059a9ad5"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010620.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "ff5d361b"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010740.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "eda6d105"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011660.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "54c7c4d5"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010580.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "0de12fa6"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010780.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "652c34e6"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010540.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "badfc6b3"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011460.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "f14dee79"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011500.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "3f598a27"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010420.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "0be57d51"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011900.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "41aad113"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011280.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "25ede2dd"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010820.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "edc7aef5"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010940.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "cc9cef16"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011860.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "0679337b"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011120.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "db4d4a9e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010160.npz",
+    "uncompressed_bytes": 8087,
+    "crc32": "a9e3f32d"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011040.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "b68f4747"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010360.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "30f0e27a"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011240.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "66aeeac2"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011320.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "f8768746"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010980.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "26f12c25"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010200.npz",
+    "uncompressed_bytes": 8076,
+    "crc32": "73c7db41"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011080.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "3aecc4f6"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011480.npz",
+    "uncompressed_bytes": 8061,
+    "crc32": "e5be2a9c"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011640.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "8ace0fe9"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010760.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "d00fb56f"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010600.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "efc5c1b9"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011720.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "adf8b2f8"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010400.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "2988693e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011520.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "3f288902"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011440.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "2f4d5d1b"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010560.npz",
+    "uncompressed_bytes": 8084,
+    "crc32": "a9115fa1"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011680.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "f13b3dce"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00012000.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "5180ecd4"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010300.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "f3d65201"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010880.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "ea3429c0"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011220.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "aeeef4f1"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011340.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "f2b09a9f"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010260.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "9f99a252"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011180.npz",
+    "uncompressed_bytes": 8071,
+    "crc32": "436d0a68"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011960.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "3c028a46"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010840.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "fd2d165d"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010920.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "3ca204f1"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011380.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "cb050129"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011800.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "bee3d43f"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011140.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "96e01484"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010060.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "786347d7"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010100.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "a2574256"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011020.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "7c51687d"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010460.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "8b1dd09f"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011540.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "b9f16380"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011420.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "9fa08fef"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010500.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "8df09275"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011780.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "bfaa20c6"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011580.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "400b759a"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011620.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "8fde5cf8"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010700.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "02bcea9e"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00010660.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "ffc9061b"
+  },
+  {
+    "container": "penrose_seed419_stage26.zip",
+    "member": "penrose_seed419/outer_00011740.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "7f4b129f"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010080.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "03ec5a34"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010240.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "595e9801"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011360.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "d53a981b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011200.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "4e14d99e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/latest.json",
+    "uncompressed_bytes": 589,
+    "crc32": "ea6671f4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010320.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "98c20aff"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011980.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "2784e4cd"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011000.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "5e48e536"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010120.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "8d4025ea"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010040.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "a7d78ce7"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011160.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "004deccd"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010280.npz",
+    "uncompressed_bytes": 7994,
+    "crc32": "a9843cb5"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011820.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "16605039"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010900.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "c8a977e3"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010860.npz",
+    "uncompressed_bytes": 8001,
+    "crc32": "c2be4c39"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011940.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "1d383b45"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010680.npz",
+    "uncompressed_bytes": 8004,
+    "crc32": "66fad6c0"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010520.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "2af1d869"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011400.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "7b5d78ad"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011560.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "c8065bd1"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010440.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "37555978"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011760.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "d67c5b9b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010640.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "b9cffa6b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010720.npz",
+    "uncompressed_bytes": 8009,
+    "crc32": "b7ce4d23"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011600.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "2ff9ca36"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010480.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "cb2b1888"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011060.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "ca6876db"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010140.npz",
+    "uncompressed_bytes": 7989,
+    "crc32": "637f2bcc"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010020.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "9124cc4e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011100.npz",
+    "uncompressed_bytes": 8005,
+    "crc32": "7d035a5e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011840.npz",
+    "uncompressed_bytes": 8007,
+    "crc32": "a0bc8543"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010960.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "c9333bb5"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010800.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "61cb8259"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011920.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "a1752286"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010380.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "29cc9092"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010180.npz",
+    "uncompressed_bytes": 8001,
+    "crc32": "ba401e85"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011880.npz",
+    "uncompressed_bytes": 8073,
+    "crc32": "cfa2b68c"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010220.npz",
+    "uncompressed_bytes": 8054,
+    "crc32": "170ba689"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011300.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "4eeb3f82"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011260.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "04d555ad"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010340.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "3fb5a8c4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011700.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "2287d6af"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010620.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "dd6d34eb"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010740.npz",
+    "uncompressed_bytes": 8009,
+    "crc32": "8c8e68cc"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011660.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "66093c2a"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010580.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "feac7bb3"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010780.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "719e34f3"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010540.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "25020d67"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011460.npz",
+    "uncompressed_bytes": 8009,
+    "crc32": "a83f731d"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011500.npz",
+    "uncompressed_bytes": 8005,
+    "crc32": "b3d7c955"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010420.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "60270207"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011900.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "ebe111ee"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011280.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "a449a895"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010820.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "d694e299"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010940.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "b310908b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011860.npz",
+    "uncompressed_bytes": 8005,
+    "crc32": "3b51ddff"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011120.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "d8a68f97"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010160.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "557460f2"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011040.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "d836116c"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010360.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "6f256ffe"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011240.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "4d05a432"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011320.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "4c56732b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010980.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "49af59a4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010200.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "58aa04ab"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011080.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "7475bbb4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011480.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "dba9eb5e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011640.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "9a1e6335"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010760.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "7570bc25"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010600.npz",
+    "uncompressed_bytes": 7995,
+    "crc32": "38befcd7"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011720.npz",
+    "uncompressed_bytes": 7997,
+    "crc32": "55f32195"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010400.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "da8c93ed"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011520.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "9d2eed05"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011440.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "7377a15c"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010560.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "e3ba018d"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011680.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "1faf01ad"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00012000.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "17fe088c"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010300.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "52cdc623"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010880.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "7e36cd02"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011220.npz",
+    "uncompressed_bytes": 7976,
+    "crc32": "6e391924"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011340.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "77b03783"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010260.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "89d6854e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011180.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "3af37eae"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011960.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "15532c41"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010840.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "06d1b45a"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010920.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "f8c532f1"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011380.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "23f3e9b4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011800.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "54c027e5"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011140.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "017e2df5"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010060.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "f0eb268f"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010100.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "57406bad"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011020.npz",
+    "uncompressed_bytes": 7992,
+    "crc32": "be152e24"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010460.npz",
+    "uncompressed_bytes": 7988,
+    "crc32": "11da589c"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011540.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "3af96349"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011420.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "310f31b4"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010500.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "9b892d6b"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011780.npz",
+    "uncompressed_bytes": 7995,
+    "crc32": "273ae560"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011580.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "651dae4d"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011620.npz",
+    "uncompressed_bytes": 8076,
+    "crc32": "43780723"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010700.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "ffe8ddc1"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00010660.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "9614995e"
+  },
+  {
+    "container": "square_seed101_stage26.zip",
+    "member": "square_seed101/outer_00011740.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "b589b686"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010080.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "8bff3b6a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010240.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "42c6fecd"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011360.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "a4fbfab0"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011200.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "fba5a173"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/latest.json",
+    "uncompressed_bytes": 591,
+    "crc32": "5678f0bf"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010320.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "84d43d2c"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011980.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "986cfcd3"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011000.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "61594d4d"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010120.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "864e3437"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010040.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "6d2d687a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011160.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "62d4bda4"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010280.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "706664b7"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011820.npz",
+    "uncompressed_bytes": 7987,
+    "crc32": "d89c4b50"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010900.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "f08bea28"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010860.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "6b63ebe2"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011940.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "ca71178a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010680.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "c6a3f97a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010520.npz",
+    "uncompressed_bytes": 8015,
+    "crc32": "a67ac378"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011400.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "bbb48551"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011560.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "0522b1e9"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010440.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "dd5edf1a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011760.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "69af37b3"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010640.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "11aa9eeb"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010720.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "4de71846"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011600.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "5dcbc843"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010480.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "7e539342"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011060.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "8e99ad96"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010140.npz",
+    "uncompressed_bytes": 8005,
+    "crc32": "de0f5caf"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010020.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "c35c1d41"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011100.npz",
+    "uncompressed_bytes": 8071,
+    "crc32": "c5f2ea98"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011840.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "324c5e34"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010960.npz",
+    "uncompressed_bytes": 8056,
+    "crc32": "d3447aa8"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010800.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "87d5443f"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011920.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "74ae59de"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010380.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "ece7c4c5"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010180.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "100ec292"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011880.npz",
+    "uncompressed_bytes": 8008,
+    "crc32": "2a64f705"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010220.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "0173e91a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011300.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "2e77f556"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011260.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "cc1d3fe7"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010340.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "caab993f"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011700.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "42d64631"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010620.npz",
+    "uncompressed_bytes": 8025,
+    "crc32": "6c9553fb"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010740.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "781cda50"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011660.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "db58b7f5"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010580.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "f6e3b798"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010780.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "a9d46321"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010540.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "702f7f43"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011460.npz",
+    "uncompressed_bytes": 8009,
+    "crc32": "cf6b2181"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011500.npz",
+    "uncompressed_bytes": 7998,
+    "crc32": "9c7da682"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010420.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "776e12a6"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011900.npz",
+    "uncompressed_bytes": 8045,
+    "crc32": "b4e1ad42"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011280.npz",
+    "uncompressed_bytes": 7985,
+    "crc32": "ab11989c"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010820.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "358e9856"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010940.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "6b64a2d4"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011860.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "a0207864"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011120.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "64a3d591"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010160.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "37dfc02e"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011040.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "dc105694"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010360.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "5717a32a"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011240.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "f8a0d38b"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011320.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "70c835b1"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010980.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "8e269b99"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010200.npz",
+    "uncompressed_bytes": 8060,
+    "crc32": "6150c7fb"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011080.npz",
+    "uncompressed_bytes": 8014,
+    "crc32": "3cf35f70"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011480.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "94896610"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011640.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "5bccfb90"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010760.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "08ca16e7"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010600.npz",
+    "uncompressed_bytes": 7985,
+    "crc32": "610cf08c"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011720.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "ba323674"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010400.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "9746ee40"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011520.npz",
+    "uncompressed_bytes": 7998,
+    "crc32": "ff048311"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011440.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "a1fa9ae9"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010560.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "394124f8"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011680.npz",
+    "uncompressed_bytes": 8015,
+    "crc32": "2e193ee5"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00012000.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "beb5e6ef"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010300.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "c3962496"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010880.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "be316a90"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011220.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "806ab979"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011340.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "f27a3fa5"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010260.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "77eca4af"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011180.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "5472368d"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011960.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "95400f31"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010840.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "6b756c23"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010920.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "04c8db30"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011380.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "cca0aaeb"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011800.npz",
+    "uncompressed_bytes": 8002,
+    "crc32": "3148ea2e"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011140.npz",
+    "uncompressed_bytes": 8037,
+    "crc32": "04addd30"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010060.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "5b1241a4"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010100.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "91ae1979"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011020.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "4786002e"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010460.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "d55d546f"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011540.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "cef6b1e1"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011420.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "a4a43e9d"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010500.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "19bf57fd"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011780.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "e9e3250e"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011580.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "ea5fc1ec"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011620.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "978f3cf9"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010700.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "0b640f69"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00010660.npz",
+    "uncompressed_bytes": 8074,
+    "crc32": "4985a251"
+  },
+  {
+    "container": "square_seed211_stage26.zip",
+    "member": "square_seed211/outer_00011740.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "e085984d"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010080.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "803f3495"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010240.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "fd5b35f7"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011360.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "d7329a3e"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011200.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "5dfe953a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/latest.json",
+    "uncompressed_bytes": 593,
+    "crc32": "58b3721a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010320.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "4e006b9c"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011980.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "0a2301db"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011000.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "a2b00de7"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010120.npz",
+    "uncompressed_bytes": 8075,
+    "crc32": "08406efd"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010040.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "9c51f360"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011160.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "bad444da"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010280.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "fb111e4b"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011820.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "4d55876f"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010900.npz",
+    "uncompressed_bytes": 8079,
+    "crc32": "2aece671"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010860.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "a018ce0c"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011940.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "74f5ed6d"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010680.npz",
+    "uncompressed_bytes": 8070,
+    "crc32": "a0db3b43"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010520.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "c5ca34b7"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011400.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "f61515e8"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011560.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "b5ad63bd"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010440.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "0b0128d7"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011760.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "be82222f"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010640.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "530a88f6"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010720.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "0a03aa64"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011600.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "9b92cc40"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010480.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "e4a35f9d"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011060.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "3db4e344"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010140.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "ea66bcf9"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010020.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "e4968731"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011100.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "0a1b7656"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011840.npz",
+    "uncompressed_bytes": 8074,
+    "crc32": "911f3ba2"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010960.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "3d7240f4"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010800.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "8dd50a6d"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011920.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "940d7ce5"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010380.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "8f4b9639"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010180.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "958b5875"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011880.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "6c898da2"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010220.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "68355f73"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011300.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "24cd1ac7"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011260.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "92b60c51"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010340.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "f9bdf538"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011700.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "eb7a6fe1"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010620.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "f07facd8"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010740.npz",
+    "uncompressed_bytes": 8071,
+    "crc32": "f181f24f"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011660.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "f5d0ae19"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010580.npz",
+    "uncompressed_bytes": 8058,
+    "crc32": "83cb67bf"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010780.npz",
+    "uncompressed_bytes": 8000,
+    "crc32": "1408eac8"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010540.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "94c4b09a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011460.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "c968d369"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011500.npz",
+    "uncompressed_bytes": 8068,
+    "crc32": "89aae85a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010420.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "726a9ec4"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011900.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "675d4249"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011280.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "d8924ecd"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010820.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "7ce98965"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010940.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "960df5e5"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011860.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "eb950597"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011120.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "cf94799a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010160.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "c721b6d6"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011040.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "91ac8caa"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010360.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "d1b505c8"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011240.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "33046560"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011320.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "2d331826"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010980.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "18c2e8ff"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010200.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "85e6f902"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011080.npz",
+    "uncompressed_bytes": 7997,
+    "crc32": "c360fe09"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011480.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "53005461"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011640.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "75c40099"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010760.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "a5f44ef3"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010600.npz",
+    "uncompressed_bytes": 8062,
+    "crc32": "6325bab4"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011720.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "d776b43e"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010400.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "c9ecabd9"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011520.npz",
+    "uncompressed_bytes": 8089,
+    "crc32": "06de72b6"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011440.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "15e2ef60"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010560.npz",
+    "uncompressed_bytes": 7998,
+    "crc32": "76407181"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011680.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "18f19ef0"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00012000.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "964326d0"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010300.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "c4ddebdc"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010880.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "f25bb7e9"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011220.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "6fec4d50"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011340.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "b8737d21"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010260.npz",
+    "uncompressed_bytes": 8050,
+    "crc32": "7eebac37"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011180.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "efbbea74"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011960.npz",
+    "uncompressed_bytes": 8046,
+    "crc32": "9213fa36"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010840.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "626e4c61"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010920.npz",
+    "uncompressed_bytes": 8069,
+    "crc32": "bde3919a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011380.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "60650eb5"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011800.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "50b227a8"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011140.npz",
+    "uncompressed_bytes": 8065,
+    "crc32": "9b767d2c"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010060.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "9a8c2358"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010100.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "760071d5"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011020.npz",
+    "uncompressed_bytes": 8033,
+    "crc32": "fc92d650"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010460.npz",
+    "uncompressed_bytes": 8041,
+    "crc32": "7674567a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011540.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "8d91b19a"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011420.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "4a3b5930"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010500.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "1f6f8bbb"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011780.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "6bb0537b"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011580.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "148c0401"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011620.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "ddf941f2"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010700.npz",
+    "uncompressed_bytes": 8013,
+    "crc32": "17fda87c"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00010660.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "0daa8bcb"
+  },
+  {
+    "container": "square_seed307_stage26.zip",
+    "member": "square_seed307/outer_00011740.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "e8a89a61"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010080.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "63e69fc6"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010240.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "72797981"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011360.npz",
+    "uncompressed_bytes": 8028,
+    "crc32": "27f469d6"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011200.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "9961bee9"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/latest.json",
+    "uncompressed_bytes": 594,
+    "crc32": "4ad73a56"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010320.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "f57e59b2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011980.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "1c8c5131"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011000.npz",
+    "uncompressed_bytes": 8030,
+    "crc32": "cd1b801d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010120.npz",
+    "uncompressed_bytes": 7995,
+    "crc32": "7ca370b2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010040.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "445eb5ac"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011160.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "be4e6b7c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010280.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "4244c5d4"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011820.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "95cc7e7c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010900.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "9f91cef7"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010860.npz",
+    "uncompressed_bytes": 8051,
+    "crc32": "9fd150ef"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011940.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "c133481a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010680.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "c7598ffd"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010520.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "ca721210"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011400.npz",
+    "uncompressed_bytes": 8039,
+    "crc32": "21fe3709"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011560.npz",
+    "uncompressed_bytes": 8049,
+    "crc32": "1ca6fed2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010440.npz",
+    "uncompressed_bytes": 8015,
+    "crc32": "f2064896"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011760.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "b442bcde"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010640.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "655f5799"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010720.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "94057573"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011600.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "00c6b210"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010480.npz",
+    "uncompressed_bytes": 8055,
+    "crc32": "63a2bc09"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011060.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "c5794a13"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010140.npz",
+    "uncompressed_bytes": 8043,
+    "crc32": "eb438933"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010020.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "67400232"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011100.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "8931a7aa"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011840.npz",
+    "uncompressed_bytes": 8020,
+    "crc32": "dea85473"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010960.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "300790c2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010800.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "952386c8"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011920.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "5025af06"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010380.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "8e18faf8"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010180.npz",
+    "uncompressed_bytes": 8017,
+    "crc32": "998876f2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011880.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "8768613d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010220.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "5ff091ff"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011300.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "e3c6f970"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011260.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "43c78c7a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010340.npz",
+    "uncompressed_bytes": 8042,
+    "crc32": "f5dbca9f"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011700.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "2898b89d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010620.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "4950be8a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010740.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "3905c28e"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011660.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "ec81c87e"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010580.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "2e140c33"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010780.npz",
+    "uncompressed_bytes": 8026,
+    "crc32": "6e20a501"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010540.npz",
+    "uncompressed_bytes": 8023,
+    "crc32": "bd9e741b"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011460.npz",
+    "uncompressed_bytes": 8021,
+    "crc32": "d1704d44"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011500.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "a2066c56"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010420.npz",
+    "uncompressed_bytes": 8038,
+    "crc32": "de36aef3"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011900.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "6db6445b"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011280.npz",
+    "uncompressed_bytes": 8011,
+    "crc32": "eb553629"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010820.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "3bc31a34"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010940.npz",
+    "uncompressed_bytes": 8072,
+    "crc32": "123e686c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011860.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "2c25d52f"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011120.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "b8bff9d9"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010160.npz",
+    "uncompressed_bytes": 8064,
+    "crc32": "44218c77"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011040.npz",
+    "uncompressed_bytes": 8036,
+    "crc32": "bbba3dc4"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010360.npz",
+    "uncompressed_bytes": 8004,
+    "crc32": "7f141fed"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011240.npz",
+    "uncompressed_bytes": 8066,
+    "crc32": "76f2447d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011320.npz",
+    "uncompressed_bytes": 8074,
+    "crc32": "4abd5ddd"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010980.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "97582f20"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010200.npz",
+    "uncompressed_bytes": 8027,
+    "crc32": "8448796d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011080.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "54ce450c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011480.npz",
+    "uncompressed_bytes": 8053,
+    "crc32": "d53ad77c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011640.npz",
+    "uncompressed_bytes": 8018,
+    "crc32": "9eb29ad4"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010760.npz",
+    "uncompressed_bytes": 8003,
+    "crc32": "74f69ad9"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010600.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "79450acc"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011720.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "266d0e6a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010400.npz",
+    "uncompressed_bytes": 8048,
+    "crc32": "03c008d8"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011520.npz",
+    "uncompressed_bytes": 8006,
+    "crc32": "0b088538"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011440.npz",
+    "uncompressed_bytes": 8019,
+    "crc32": "79233c3f"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010560.npz",
+    "uncompressed_bytes": 8000,
+    "crc32": "52e12d5f"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011680.npz",
+    "uncompressed_bytes": 8010,
+    "crc32": "2d9ac20d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00012000.npz",
+    "uncompressed_bytes": 8040,
+    "crc32": "80d072f6"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010300.npz",
+    "uncompressed_bytes": 8007,
+    "crc32": "533b0701"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010880.npz",
+    "uncompressed_bytes": 8057,
+    "crc32": "f37add22"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011220.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "074e3e74"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011340.npz",
+    "uncompressed_bytes": 8063,
+    "crc32": "36f5709f"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010260.npz",
+    "uncompressed_bytes": 8044,
+    "crc32": "22dc9837"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011180.npz",
+    "uncompressed_bytes": 7993,
+    "crc32": "79ab0be7"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011960.npz",
+    "uncompressed_bytes": 8034,
+    "crc32": "390b8b1a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010840.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "efb0878c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010920.npz",
+    "uncompressed_bytes": 8022,
+    "crc32": "a10d4f9d"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011380.npz",
+    "uncompressed_bytes": 8032,
+    "crc32": "8eefa066"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011800.npz",
+    "uncompressed_bytes": 8035,
+    "crc32": "ecdbfbec"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011140.npz",
+    "uncompressed_bytes": 8047,
+    "crc32": "37f686b3"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010060.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "6bde7ea1"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010100.npz",
+    "uncompressed_bytes": 8093,
+    "crc32": "c334bc75"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011020.npz",
+    "uncompressed_bytes": 8059,
+    "crc32": "7cb41da3"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010460.npz",
+    "uncompressed_bytes": 8077,
+    "crc32": "2f55d8eb"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011540.npz",
+    "uncompressed_bytes": 8024,
+    "crc32": "8bac2e60"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011420.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "01a9f2a2"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010500.npz",
+    "uncompressed_bytes": 8052,
+    "crc32": "7ca763bd"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011780.npz",
+    "uncompressed_bytes": 8001,
+    "crc32": "ec325af4"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011580.npz",
+    "uncompressed_bytes": 8031,
+    "crc32": "0843f8ab"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011620.npz",
+    "uncompressed_bytes": 8012,
+    "crc32": "896137ae"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010700.npz",
+    "uncompressed_bytes": 8029,
+    "crc32": "74be267a"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00010660.npz",
+    "uncompressed_bytes": 8016,
+    "crc32": "7f8a511c"
+  },
+  {
+    "container": "square_seed419_stage26.zip",
+    "member": "square_seed419/outer_00011740.npz",
+    "uncompressed_bytes": 7977,
+    "crc32": "daf86371"
+  }
+]

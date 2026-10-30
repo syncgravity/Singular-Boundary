@@ -1,0 +1,21 @@
+{
+  "kind": "square",
+  "seed": 211,
+  "stride": 20,
+  "burn": 96,
+  "depth": 32,
+  "thin": 3,
+  "reps": 2,
+  "offset_policy": "cyclic 0..4",
+  "beta_ref": 3.5,
+  "nt": 20,
+  "sweep": 12000,
+  "initial_sweep": 10000,
+  "observations": 100,
+  "offset": 4,
+  "record": "outer_00012000.npz",
+  "record_sha256": "2a9b932f6348081975c816813c7f15bd8e66d2bc3998189d7d96fb75526335e5",
+  "catalogue_sha256": "c81bff473a8418b141b23d8f6547aceb9f569d4dc9c352f7f2920b0373580ff8",
+  "source_sha256": "6fa782af9f636399f77fbda778f48b4c964ed480f5feace7692684ae8771d627",
+  "elapsed_seconds": 67992.666491708
+}

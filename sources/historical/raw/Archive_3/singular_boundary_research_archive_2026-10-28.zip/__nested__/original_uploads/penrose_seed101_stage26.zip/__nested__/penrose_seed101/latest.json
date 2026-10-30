@@ -1,0 +1,21 @@
+{
+  "kind": "penrose",
+  "seed": 101,
+  "stride": 20,
+  "burn": 96,
+  "depth": 32,
+  "thin": 3,
+  "reps": 2,
+  "offset_policy": "cyclic 0..4",
+  "beta_ref": 3.5,
+  "nt": 20,
+  "sweep": 12000,
+  "initial_sweep": 10000,
+  "observations": 100,
+  "offset": 4,
+  "record": "outer_00012000.npz",
+  "record_sha256": "4250335e3445882b1e49614a98da88c7aa3084c3fb9bd0183bdc7d1472ea7c01",
+  "catalogue_sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+  "source_sha256": "275243c7da74941db5bdd882dbb7f44ce02c915503033f040841b75f80409638",
+  "elapsed_seconds": 72943.81750141596
+}

@@ -1,0 +1,11 @@
+claim_id,claim,evidence_basis,status,qualification
+F01,"finite-graph gauge covariance, self-adjointness, positive semidefiniteness, Wilson-loop/heat-trace invariances",historical conversation summary,reported proved,Original proof code and detailed proof provenance not fully recovered
+F02,four-vertex finite example has positive gap,historical conversation summary,reported numerical verification,Not evidence of uniform Penrose or continuum gap
+A01,Theorem I-A.1: lambda_min(L_U) >= w_* delta^2/(q m^2 mu^*) subject to bounded geometry and uniform face holonomy separation,historical conversation summary,conditional theorem reported,Hypotheses not guaranteed in continuum limit; primary proof file absent
+S26,"2+1D SU(2), square vs periodic Penrose M=55, four seeds each; Stage 26 snapshots and 10k sweep diagnostics available",attached datasets + historical conversation summary,"datasets physically present, final spectroscopy not certified",No trustworthy final continuum extrapolation or scalar/string tension ratio identified
+R301,"5-, 7-, and 15-state truncated spin-network mixed terms reported nonnegative in tests",branch note + historical summaries,finite truncated tests,Not an infinite representation-sum positivity proof
+R302,15-state overlapping test: seven-state 7.5606e-10; full 15-state 9.0763e-10; added 1.5157e-10,attached branch text,numerical values documented in source text,Reproducing calculator/script not currently attached
+R303,global finite-complex Haar bound F_Q <= 111/2 log(lambda)+C,attached branch text,fixed-complex bound documented,Not uniform in ambient volume
+R304,support-local insertion target Z_inserted/Z_cavity >= exp[-C |Q| (1+log lambda)],attached branch text,target; unproved in full generality,Arbitrary-support Penrose comparison outstanding
+R305,"local concentration, Peierls collar, finite-net surgery, near-pure-gauge Penrose boundary coercivity, and some transfer comparisons",historical conversation summaries,reported restricted results,No local scripts/certificates mounted to independently verify
+OPEN,"unrestricted R3, complete recoupling positivity, all boundary modes, Gates B-D, infinite-volume/continuum Yang-Mills gap",historical summaries + branch note,open,Do not convert evidence into a theorem

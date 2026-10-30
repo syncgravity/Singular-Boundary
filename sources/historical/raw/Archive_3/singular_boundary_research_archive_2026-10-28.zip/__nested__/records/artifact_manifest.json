@@ -1,0 +1,1098 @@
+{
+  "created_utc": "2026-10-28",
+  "scope": "only currently mounted uploads",
+  "files": [
+    {
+      "filename": "Branch \u00b7 Branch \u00b7 Compare Continuum Mass Gaps.txt",
+      "relative_path": "original_uploads/Branch \u00b7 Branch \u00b7 Compare Continuum Mass Gaps.txt",
+      "bytes": 6698,
+      "sha256": "b75a371a07e29826432fde37e573cf00f15e130260d889997729083f2fcd8496",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file"
+    },
+    {
+      "filename": "Sharpe_dissertation_v10.7.tar.gz",
+      "relative_path": "original_uploads/Sharpe_dissertation_v10.7.tar.gz",
+      "bytes": 7004477,
+      "sha256": "c405acd6daa5a0a923429ab659b122b22231787d7a30e97db7f2974f278354d1",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "members": 18
+    },
+    {
+      "filename": "penrose_complete_catalogue.npz",
+      "relative_path": "original_uploads/penrose_complete_catalogue.npz",
+      "bytes": 1963431,
+      "sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "idx",
+          "shape": [
+            22808,
+            22
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "sign",
+          "shape": [
+            22808,
+            22
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "length",
+          "shape": [
+            22808
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "roots",
+          "shape": [
+            22808
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "distance",
+          "shape": [
+            22808
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            22808
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "faces",
+          "shape": [
+            22808
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "cidx",
+          "shape": [
+            68424,
+            16
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "csign",
+          "shape": [
+            68424,
+            16
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "clength",
+          "shape": [
+            68424
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "ckind",
+          "shape": [
+            68424
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "F",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "graph_hash",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "threshold",
+          "shape": [],
+          "dtype": "float64"
+        },
+        {
+          "key": "coverage_version",
+          "shape": [],
+          "dtype": "<U25"
+        }
+      ]
+    },
+    {
+      "filename": "penrose_seed101_stage26.zip",
+      "relative_path": "original_uploads/penrose_seed101_stage26.zip",
+      "bytes": 645269,
+      "sha256": "db0bdb04d0073c153332aa6f687dcd7db835b3f3009d49f411f85dd36ff0217e",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "penrose_seed101_stage26_full.zip",
+      "relative_path": "original_uploads/penrose_seed101_stage26_full.zip",
+      "bytes": 52884778,
+      "sha256": "6cfa12935428533cfeaff40a467705d632b19ede07b7f30e0bb9fb7a0cc68657",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 103
+    },
+    {
+      "filename": "penrose_seed101_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/penrose_seed101_sweep10000_multihit.npz",
+      "bytes": 49382,
+      "sha256": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U7"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "penrose_seed211_stage26.zip",
+      "relative_path": "original_uploads/penrose_seed211_stage26.zip",
+      "bytes": 652247,
+      "sha256": "2e7cecb2bae8a2c9a03b86ad8511fe36fc760cca4fdac0968cd9aa4f7bd1dfad",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "penrose_seed211_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/penrose_seed211_sweep10000_multihit.npz",
+      "bytes": 49351,
+      "sha256": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U7"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "penrose_seed307_stage26.zip",
+      "relative_path": "original_uploads/penrose_seed307_stage26.zip",
+      "bytes": 651680,
+      "sha256": "773f443d7c74a4a1ec58d46393cf7349cf354c22e4cb00eef393f73ae649e0d0",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "penrose_seed307_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/penrose_seed307_sweep10000_multihit.npz",
+      "bytes": 49380,
+      "sha256": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U7"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "penrose_seed419_stage26.zip",
+      "relative_path": "original_uploads/penrose_seed419_stage26.zip",
+      "bytes": 651945,
+      "sha256": "19e45b4b8f081e838ec46deea852e3b9c01a5e9fd4550060d81ddce7b5a93b7c",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "penrose_seed419_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/penrose_seed419_sweep10000_multihit.npz",
+      "bytes": 49359,
+      "sha256": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U7"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "square_seed101_stage26.zip",
+      "relative_path": "original_uploads/square_seed101_stage26.zip",
+      "bytes": 649489,
+      "sha256": "b41aee48bf589ff28ce86d77b416528a0f6c7a602781a846c84e5cae125ae9d0",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "square_seed101_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/square_seed101_sweep10000_multihit.npz",
+      "bytes": 45438,
+      "sha256": "770af817fd89c0279b1e39e27582ecb3f7acc48f8ca514bce5b3ee22c4ec07a0",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U6"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "square_seed211_stage26.zip",
+      "relative_path": "original_uploads/square_seed211_stage26.zip",
+      "bytes": 655198,
+      "sha256": "9add4dd034a32f5f22536910f3baf5d73ebfc9a79cb63c9661644548842fe675",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "square_seed211_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/square_seed211_sweep10000_multihit.npz",
+      "bytes": 45454,
+      "sha256": "65d893482f234179c319138c5f2c6ca40bc405ab45f95143a377ce0f4a938e25",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U6"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "square_seed307_stage26.zip",
+      "relative_path": "original_uploads/square_seed307_stage26.zip",
+      "bytes": 655673,
+      "sha256": "1136d4e3a95ae55b0ac0f57a459708af95992527d4c147a1a704b9405a51efca",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "square_seed307_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/square_seed307_sweep10000_multihit.npz",
+      "bytes": 45466,
+      "sha256": "e81dd6674894210161649274ceb1f256d9a3638e394919d051b44846a388f0e0",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U6"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "square_seed419_stage26.zip",
+      "relative_path": "original_uploads/square_seed419_stage26.zip",
+      "bytes": 650209,
+      "sha256": "d737863b5f8316242b70810079a0a90e437dbdb73831f72855a6803d53dc9a41",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "zip_integrity": "ok",
+      "members": 102
+    },
+    {
+      "filename": "square_seed419_sweep10000_multihit.npz",
+      "relative_path": "original_uploads/square_seed419_sweep10000_multihit.npz",
+      "bytes": 45453,
+      "sha256": "38b8df95d87c614c463ee9fbc232fdc03ba321d6cab3cf7e5243b063c970098d",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "direct",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "multihit",
+          "shape": [
+            4,
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "lags",
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "matched_pair_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "candidate_path_indices",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "r",
+          "shape": [
+            600
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "dx",
+          "shape": [
+            600,
+            2
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "source",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            600
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "source_checkpoint_sha256",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "sweep",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "geometry",
+          "shape": [],
+          "dtype": "<U6"
+        },
+        {
+          "key": "seed",
+          "shape": [],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "filename": "square_strict_catalogue.npz",
+      "relative_path": "original_uploads/square_strict_catalogue.npz",
+      "bytes": 1987770,
+      "sha256": "c81bff473a8418b141b23d8f6547aceb9f569d4dc9c352f7f2920b0373580ff8",
+      "origin": "mounted uploaded artifact",
+      "verified": "byte-level SHA-256 of currently mounted file",
+      "arrays": [
+        {
+          "key": "idx",
+          "shape": [
+            22801,
+            20
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "sign",
+          "shape": [
+            22801,
+            20
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "length",
+          "shape": [
+            22801
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "roots",
+          "shape": [
+            22801
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "distance",
+          "shape": [
+            22801
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "target",
+          "shape": [
+            22801
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "faces",
+          "shape": [
+            22801
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "cidx",
+          "shape": [
+            68403,
+            14
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "csign",
+          "shape": [
+            68403,
+            14
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "clength",
+          "shape": [
+            68403
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "ckind",
+          "shape": [
+            68403
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "F",
+          "shape": [],
+          "dtype": "int64"
+        },
+        {
+          "key": "graph_hash",
+          "shape": [],
+          "dtype": "<U64"
+        },
+        {
+          "key": "threshold",
+          "shape": [],
+          "dtype": "float64"
+        }
+      ]
+    }
+  ]
+}

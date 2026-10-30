@@ -1,0 +1,65 @@
+{
+  "schema": "r3-linearized-redistribution-v1",
+  "interpretation": "SU(2) Lie algebra first-order incidence rank only; three color coordinates share this rank; not a nonlinear gauge repair, finite-action estimate or Gibbs bound",
+  "n_q": 4,
+  "n_cavity": 12,
+  "n_integrated_edges": 28,
+  "collar_audit": [
+    {
+      "depth": 0,
+      "faces_in_collared_region": 4,
+      "movable_edges": 12,
+      "affected_cavity_faces": 10,
+      "rank_cavity": 8,
+      "rank_cavity_plus_insertions": 11,
+      "accessible_inserted_rank": 3,
+      "inserted_face_count": 4,
+      "all_inserted_directions_accessible": false
+    },
+    {
+      "depth": 1,
+      "faces_in_collared_region": 14,
+      "movable_edges": 28,
+      "affected_cavity_faces": 12,
+      "rank_cavity": 10,
+      "rank_cavity_plus_insertions": 13,
+      "accessible_inserted_rank": 3,
+      "inserted_face_count": 4,
+      "all_inserted_directions_accessible": false
+    },
+    {
+      "depth": 2,
+      "faces_in_collared_region": 16,
+      "movable_edges": 28,
+      "affected_cavity_faces": 12,
+      "rank_cavity": 10,
+      "rank_cavity_plus_insertions": 13,
+      "accessible_inserted_rank": 3,
+      "inserted_face_count": 4,
+      "all_inserted_directions_accessible": false
+    },
+    {
+      "depth": 3,
+      "faces_in_collared_region": 16,
+      "movable_edges": 28,
+      "affected_cavity_faces": 12,
+      "rank_cavity": 10,
+      "rank_cavity_plus_insertions": 13,
+      "accessible_inserted_rank": 3,
+      "inserted_face_count": 4,
+      "all_inserted_directions_accessible": false
+    },
+    {
+      "depth": 4,
+      "faces_in_collared_region": 16,
+      "movable_edges": 28,
+      "affected_cavity_faces": 12,
+      "rank_cavity": 10,
+      "rank_cavity_plus_insertions": 13,
+      "accessible_inserted_rank": 3,
+      "inserted_face_count": 4,
+      "all_inserted_directions_accessible": false
+    }
+  ],
+  "limitation": "If all Q directions are accessible this is only infinitesimal controllability, not existence of a uniformly bounded nonlinear measure-preserving map."
+}

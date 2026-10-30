@@ -1,0 +1,6 @@
+id,conversation_or_family,coverage,evidence_type,limitation
+C00,Compare Continuum Mass Gaps (original),initial finite graph SU(2) and Penrose mass gap work,recovered only as historical summaries,full transcript absent
+C01,Successive Branch conversations (unresolved exact count/order),"Stage 9-26 square/Penrose spectroscopy, Gates A-D, continuum ratio",historical summaries + present Stage 26 datasets,no complete export
+C02,Branch family of Compare Continuum Mass Gaps,"R3 5/7/15-state, local Haar estimates, surgery/coercivity and transfers",historical summaries,most primary scripts/certificates missing
+C03,Branch · Branch · Compare Continuum Mass Gaps.txt,"R3 shared-edge j=0,1 15-state note",verbatim attached text,"text is a research answer, not full conversation transcript"
+C04,Latest nested Branch · ... · Compare Continuum Mass Gaps,R3 continuation incl transfer penalty Omega_Lambda and unresolved support-local argument,historical context snippets,complete transcript not directly supplied

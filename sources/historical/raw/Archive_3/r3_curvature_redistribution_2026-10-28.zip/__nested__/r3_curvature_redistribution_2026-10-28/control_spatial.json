@@ -1,0 +1,7 @@
+{
+  "vertices": ["a","b","c","d"],
+  "edges": [{"id":"ab","u":"a","v":"b"},{"id":"bc","u":"b","v":"c"},{"id":"cd","u":"c","v":"d"},{"id":"da","u":"d","v":"a"}],
+  "faces": [{"id":"f0","boundary":[["ab",1],["bc",1],["cd",1],["da",1]]}],
+  "boundary_policy":"explicit", "fixed_boundary_edges":[],
+  "q":["r:1:ab","r:1:bc","r:1:cd","r:1:da"]
+}
