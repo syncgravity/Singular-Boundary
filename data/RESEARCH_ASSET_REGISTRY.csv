@@ -1,0 +1,7 @@
+asset_id,logical_name,kind,sha256,bytes,availability_2026_10_30,source_or_generator,canonical_remote_locator,notes
+R3-DATA-001,global_whitney_11face.npz,NPZ,,,UNAVAILABLE,historical matrix assembled in prior workspace,,Original 30x30 inverse Whitney input not recovered; reported diagnostics not file proof
+R3-DATA-002,m5_whitney_candidate_2026-10-30.npz,NPZ,55a0d1b731355b59d64ce5535d029913b72fe1bcea595e2375d1f90b98d47334,,EPHEMERAL_ONLY,research/scripts/reconstruct_m5_quadrilateral_whitney_candidate.py,,Alternative 30x30 mass matrix; differs from original and is not remotely backed up
+R3-SRC-001,penrose_causal_study.py,Python,,,EPHEMERAL_ONLY,Archive 4.zip nested penrose_yang_mills_2p1_causal_study.zip,,Recovered original source in current workspace but not verified remote committed
+R3-SRC-002,wilson_torus.py,Python,,,EPHEMERAL_ONLY,Archive 4.zip nested penrose_yang_mills_2p1_causal_study.zip,,Recovered original source in current workspace but not verified remote committed
+R3-SRC-003,reconstruct_m5_quadrilateral_whitney_candidate.py,Python,,,REMOTE_COMMITTED,research/scripts/reconstruct_m5_quadrilateral_whitney_candidate.py,research/scripts/reconstruct_m5_quadrilateral_whitney_candidate.py,Generator source in GitHub; imported historical dependencies not there
+R3-ARCHIVE-001,Archive 4.zip,ZIP,,,EPHEMERAL_ONLY,user provided upload,,Must not assume this attachment is remountable in another conversation
