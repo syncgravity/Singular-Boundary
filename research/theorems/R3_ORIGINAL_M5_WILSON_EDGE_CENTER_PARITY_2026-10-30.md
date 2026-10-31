@@ -45,3 +45,18 @@ Executable source `research/scripts/audit_m5_wilson_center_parity.py` verifies o
 Original 30×30 Whitney matrix is archived in ChatGPT Library `/The Singular Boundary/Source/global_whitney_11face.npz` with SHA-256 `d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf`. No binary outputs committed to Git.
 
 **Remaining proof obligation:** uniform-in-refinement *relative* quadratic response bound |Pr_b(C_delta)/c_delta−1|≤C b² with C controlled through physical coupling and the full kinetic dynamics; or a suitable nonperturbative local Harnack/current theorem. The continuum mass gap is unproved.
+
+
+## Fixed-regulator **relative** two-center cap corollary (nonconstructive constant)
+
+Let the relative radial marginal density be s_b(p)=E_Haar[Ω_b²|p0=p]; then ∫s_b(p)w(p)dp=1. The parity intertwiner implies s_{−b}(p)=s_b(−p). Define the symmetrization t_b(p)=[s_b(p)+s_b(−p)]/2. For b near zero, elliptic regularity and analytic perturbation theory on the fixed finite-dimensional compact configuration manifold imply Ω_b depends analytically on b in a smooth function topology, hence t_b depends analytically on b in C([-1,1]). Because t_{−b}=t_b and Ω_0 is independent of U13, we have t_0(p)=1 for all p. Accordingly for each **fixed regulator/background** there exist b_*>0 and finite C_h with
+
+  sup_{p∈[-1,1]} |t_b(p)−1|≤C_h b²,    |b|≤b_*.
+
+Since the two-center event C_delta is symmetric, Pr_b(C_delta)=∫_{C_delta}w(p)t_b(p)dp. Therefore **for every delta∈(0,1] simultaneously**,
+
+  Pr_b(C_delta)≥(1−C_h b²)c_delta.
+
+This is a finite-regulator *relative* result stronger than the pointwise-in-delta O_delta(b²) statement above. It is nonquantitative: the constants C_h and b_* depend on elliptic/analytic response norms of the full interacting Hamiltonian and are NOT proven bounded over Penrose refinement. The one-sided cap density generally has a nonzero odd-in-p first-order response; only its two-center symmetrization is even in b. Avoid mistakenly claiming s_b(p)=1+O(b²) unsymmetrized.
+
+It is not legitimate to replace C_h by a spectral gap alone without further regularity estimates, since a uniform L2 bound does not yield uniform C0 marginal control at shrinking caps.
