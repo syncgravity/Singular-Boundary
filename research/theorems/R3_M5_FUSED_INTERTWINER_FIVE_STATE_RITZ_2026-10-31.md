@@ -1,0 +1,11 @@
+# R3-IR-574: Fused two-loop intertwiner and exact-form five-state electric Ritz
+
+Construct the Haar-normalized fifth gauge-invariant trial state F=(2/sqrt(3)) [chi(U_A U_B) - chi(U_A)chi(U_B)/2] in addition to 1, chi_A, chi_B and chi_A chi_B. The two plaquettes are the original retained neighboring horizontal and vertical loops sharing the deleted M5 bottom chord. Each trace is residual-root-conjugation invariant. The five Haar Gram integrals computed using 24^3=13,824 SU(2) quaternion design nodes equal the identity to machine precision.
+
+The complete rooted inverse-Whitney electric Ritz matrix E in this ordered basis has diagonal [0,54.69413155,75.52908757,130.22321912,101.75513730], and one nonzero off-diagonal pair E_3,4=E_4,3=24.65408201758685. This is the first computed and nonzero intertwiner-channel electric coupling in this research sequence. The 4x4 character-product electric subblock remains diagonal. The normalized Wilson p_A and p_B multiplier matrices couple the old 4-state neighbors with coefficient 1/2, with no fifth-state magnetic coupling at this cutoff.
+
+At the previously defined candidate action coefficients b_A=25.71208103423584, b_B=19.38096560369536 and g^2=1, diagonalization yields 5-state Ritz eigenvalues approximately [-4.09909601,56.09483593,72.50186642,90.66400855,147.03996070], so the first gap is 60.19393194057146, compared with 60.436405726550944 in the original 4-state basis. Ritz gaps are NOT lower bounds for the full gauge-invariant finite-prism gap, and the model is not a calibrated 3+1D continuum limit.
+
+A separate three-loop test with plaquettes [4,29,33] sharing edges and a chord found an exactly orthonormal eight-state product-character Gram matrix but again an electric diagonal matrix, illustrating that physical support overlap alone does not force an intertwiner-channel coupling in a particular Galerkin basis. In contrast the fused trace resolves a genuinely new coupling.
+
+Complete executed scripts and JSON are saved in Library /The Singular Boundary/Source/: audit_m5_fused_intertwiner.py and m5_fused_intertwiner_five_state_2026-10-31.json; no binaries in Git. Next task is to integrate this fusion channel into the spin-1 nine-state/three-loop 18-state space and test enlarged truncation convergence. No Yang-Mills mass gap proved.
