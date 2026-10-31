@@ -19,3 +19,11 @@ All other data persisted in Library: `Archive 4.zip`, `Sharpe_dissertation_v10.7
 6. At each checkpoint, update Git with a **text-only** methods/results note and Library manifest with any new binary artifacts; make checkpoint/handoff independent of any single chat context.
 
 **Research status:** R3-IR-537's mass assembly mismatch is not resolved by the appearance of this binary; it establishes availability of the original array for direct comparisons. Its original generating code/convention is still an independent question. No refinement-uniform center-cap theorem or continuum Yang–Mills mass gap is claimed.
+
+## 2026-10-30 R3-IR-538 additional durable outputs
+
+- Original archived matrix independently re-materialized from Library; SHA-256 `d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf` verified again.
+- Library binary `/The Singular Boundary/Source/actual_m5_tree_wilson_results_2026-10-30.npz` (631 bytes), SHA-256 `ffb13bfb592634a7ed5c53c5ed0e79f5e23d65f7c0bf964ff7f0fb0d8dee68d5`. Array `results` has 25 rows of [T1,T2] form values.
+- Library source `/The Singular Boundary/Source/validate_actual_m5_two_tree_wilson_forms.py` holds the executed full Python reproducibility script. Its absolute input paths need adjusting when materialized in a new runtime, using the verified original matrix and the restored archive source modules.
+- Text-only scientific report in Git: `research/theorems/R3_ACTUAL_M5_ORIGINAL_WHITNEY_TWO_TREE_WILSON_FORM_2026-10-30.md`.
+- The original 25-file JSON manifest predates these two additions; use this section for new files until its next synchronized refresh.
