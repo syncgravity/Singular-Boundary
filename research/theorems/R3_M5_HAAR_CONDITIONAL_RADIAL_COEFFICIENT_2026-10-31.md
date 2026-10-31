@@ -1,0 +1,7 @@
+# R3-IR-600: Haar conditional M5 face-4 electric coefficient
+
+For the archived fixed 98-edge inverse-Whitney M5 kinetic metric, the face-4 oriented word [1,5,26,2] with signs [1,1,-1,-1] and independent Haar links gives conditional carré du champ a_H(p)=31.080093792156(1-p²). A deterministic 24³=13,824-node tensor of degree-five SU2 quaternion designs integrates three independent Haar link variables, while the fourth is constrained to make face holonomy have fixed trace p. Five independently evaluated p values {-0.75,-0.5,0,0.5,0.75} reproduce the coefficient with relative spread below 1e-14. The diagonal electric contribution is 32.814893282856(1-p²); nonzero mixed terms subtract 1.734799490700(1-p²). For the self-adjoint fixed-K Haar diffusion, the corresponding drift is b_H(p)=-93.240281376468 p, by the Haar marginal Ward relation with zero vacuum score.
+
+This is a Haar REFERENCE result only; the interacting face-deleted ground state is unknown, and its conditional a,b,c coefficients are not obtained. Rooted link-dependent gauge transports and divergence-form ordering require a separate audit. Pointwise nonclosure R3-IR-599 is compatible with Haar conditional closure. No continuum mass gap is claimed.
+
+Executed source m5_conditional_haar_radial.py and output m5_haar_conditional_gamma_2026-10-31.json saved in Library /The Singular Boundary/Source/.
