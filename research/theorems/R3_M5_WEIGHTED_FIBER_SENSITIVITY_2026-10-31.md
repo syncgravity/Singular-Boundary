@@ -1,0 +1,7 @@
+# R3-IR-601 — Sensitivity of M5 Haar-conditional radial kinetic coefficient to positive fiber weights
+
+For archived fixed-K inverse-Whitney M5 face 4, the Haar-conditional coefficient is a_H(p)=31.080093792156(1-p²). A *synthetic*, strictly positive fiber weight exp(0.5*(Gamma-E_HGamma)/35) modifies the coefficient. Deterministic 24³ node cubature yields conditional coefficients 13.649401646,23.462044776,31.349655772,23.462044776,13.649401646 at p=-.75,-.5,0,.5,.75. Normalized by (1-p²) these are 31.198632333,31.282726368,31.349655772,31.282726368,31.198632333, not constant. The exact mathematical change of measure is a_rho(p)=E_H[Gamma rho|p]/E_H[rho|p]; the susceptibility under rho_t=exp(tGamma/35) is Var_H(Gamma|p)/35.
+
+**Limitations:** this artificial weight is not an identified gauge-invariant physical vacuum; weighted exponential integrands are not degree-certified by 24-cell polynomial exactness; gauge-dependent rooted transport and full divergence-form ordering remain to be audited. No interacting vacuum estimate or continuum Yang-Mills mass gap follows.
+
+Executable, numerical results, and full mathematical note in ChatGPT Library /The Singular Boundary/Source/: audit_m5_weighted_fiber_2026_10_31.py, m5_weighted_fiber_sensitivity_2026-10-31.json, R3_IR_601_WEIGHTED_FIBER_AUDIT_2026-10-31.md.
