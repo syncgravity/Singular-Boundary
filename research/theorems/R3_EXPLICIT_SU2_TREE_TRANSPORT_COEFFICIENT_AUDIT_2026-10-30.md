@@ -1,0 +1,11 @@
+# R3-IR-532 — Explicit transport-tree coefficient difference on an SU(2) triangle (2026-10-30)
+
+**Result:** Two rooted spanning trees of the SAME three-edge oriented triangle give distinct pointwise adjoint transport coefficients on a shared configuration. This is an exact finite counterexample to coefficientwise tree independence, **NOT** a counterexample to unitary equivalence of the resulting quantizations.
+
+Triangle edges a:0->1, b:1->2, c:0->2, root 0. Tree T1={a,b} transports root-to-vertex-2 via U_a U_b; T2={a,c} via U_c. For a derivative based at vertex 2, its transported component involves Ad(U_a U_b) or Ad(U_c), respectively. Let U_a=(sqrt(1/2),sqrt(1/2),0,0), U_b=(sqrt(1/2),0,sqrt(1/2),0), U_c=(sqrt(1/2),0,0,sqrt(1/2)) in unit-quaternion SU2 coordinates. For root-frame vectors u=(1,0,0), v=(0,1,0), the mixed coefficient u·Ad(V_2)v equals 0 for T1 and -1 for T2. Therefore any off-diagonal nonzero K_ij that couples this component to a root-frame derivative can carry a different configuration-dependent principal coefficient.
+
+The matrix-valued principal coefficients might still be related by a gauge-compatible bundle rotation or a coordinate transformation; no explicit unitary intertwiner or spectral comparison has been constructed. Changing the tree while holding coordinate link variables and K fixed is NOT by itself a physically justified operation. The chosen example verifies a nonidentity of coefficients, not physical inequivalence.
+
+**Refinement obligation:** For R3-IR-529 the ratio rho_h=8 b_10,h M_13,13(h)/(3 g2_squared(h)) controls the additive bound, requiring rho_h<c_delta/(1+c_delta) for positivity. The h^-2 scaling used in R3-IR-531 was a *declared assumption*, not actual assembled Penrose refinement data; no extension follows without a sequence of actual matrices and independently derived coupling normalization. An additive estimate cannot imply a uniform relative double-center cap bound as delta->0 at fixed rho>0.
+
+Reproducer: research/scripts/validate_transport_tree_switch.py, an exact quaternion multiplication/rotation check. Further obligations: prove or disprove intertwining of tree-fixed operators, assemble genuine refinement matrices, derive relative cap control. Continuum Yang–Mills mass gap OPEN.
