@@ -2,8 +2,17 @@
 Requires penrose_causal_study.py and wilson_torus.py on PYTHONPATH.
 This is NOT validated as the historical global Whitney matrix.
 """
+import os, sys
+from pathlib import Path
 import numpy as np
 from numpy.polynomial.legendre import leggauss
+# Source provenance: archive-derived modules supplied through a local verified directory.
+# Avoid dependence on a previous chat's /mnt/data path.
+source = os.environ.get("PENROSE_SOURCE_DIR")
+if source:
+    assert Path(source, "penrose_causal_study.py").is_file()
+    assert Path(source, "wilson_torus.py").is_file()
+    sys.path.insert(0, source)
 from penrose_causal_study import Approximant
 from wilson_torus import penrose_faces
 A=Approximant(M=5)
@@ -33,4 +42,4 @@ for f in F:
 eig=np.linalg.eigvalsh(M)
 assert len(E)==30 and eig[0]>0 and np.allclose(M,M.T)
 print('eigen min/max',eig[0],eig[-1],'edge13',M[where[13],where[13]])
-np.savez_compressed('m5_whitney_candidate.npz',matrix=M,edge_ids=np.array(E),eigenvalues=eig)
+np.savez_compressed(os.environ.get('WHITNEY_OUTPUT','m5_whitney_candidate.npz'),matrix=M,edge_ids=np.array(E),eigenvalues=eig)
