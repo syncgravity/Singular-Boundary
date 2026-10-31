@@ -1,0 +1,7 @@
+# R3-IR — Geometric scale obstruction to naive Wilson cutoff-shell absorption
+
+Exact finite-volume consequence of the localized Wilson score Caccioppoli theorem. Let A_f=Σ_(k∈∂f)a_k, B_v=Σ_(k∋v)1/a_k, δ_v=2/B_v. For e∈∂f incident at v, **A_f B_v≥1**. A smooth angular cutoff switching from 1 to 0 across width ell and with |χ'|≤C/ell has Γχ≤A_f C²/(4ell²), while the IMS shell error is Bχ=Σ_a∫v_a²Γχ dν. A coarse *hypothetical* absorption Q_shell≤K Qχ would have coefficient K A_f B_v C²/(8ell²), bounded below by K C²/(8ell²); for ell=O(sqrt(h)), this is of order h^−1 or worse. **Importantly Q_shell≤Qχ does not follow from cutoff definitions and is generally false**, since χ vanishes in the outer transition shell. This is a methodological obstruction to naive absolute-value absorption, not a Wilson-vacuum counterexample.
+
+An honest finite-volume fallback using the global charged-sector score estimate Q_total≤F_total²/δ_v² gives Bχ≤A_f C² F_total²/(4ell²δ_v²). With one retained neighboring face, F_total²≤b_g²/4 and therefore Bχ≤A_f C² b_g²/(16ell²δ_v²). This bound does not yield regulator-uniform unweighted current control.
+
+10,000 deterministic random positive-coefficient checks verified A_f B_v≥1 and exact coefficient algebra; maximal relative floating-point discrepancy 4.42e−16. The full mathematical argument, reproducible script, results and checksums are preserved in Library `/The Singular Boundary/Proof Audits/R3_IR_SHELL_ABSORPTION_SCALE_GATE_2026-10-31.zip`. The unweighted current, covariance and continuum mass gap remain open.
