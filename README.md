@@ -6,6 +6,9 @@
 
 ## Read first
 
+- **[Cross-conversation continuity and restoration](docs/handoff/RESEARCH_CONTINUITY.md)** — canonical handoff; check asset availability before calculations.
+- **[Research asset registry](data/RESEARCH_ASSET_REGISTRY.csv)** — remote vs ephemeral vs missing, with byte hashes.
+
 - [Evidence governance](GOVERNANCE.md)
 - [Current evidence status](docs/current/STATUS.md)
 - [Research claim ledger](research/claims/CLAIM_LEDGER.csv)
