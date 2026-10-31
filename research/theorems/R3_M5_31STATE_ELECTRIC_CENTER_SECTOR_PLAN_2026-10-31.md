@@ -1,0 +1,7 @@
+# R3-IR-588 — Exact electric center-parity decomposition of the pending 31-state M5 contraction
+
+The independent rooted SU2 loop holonomies A,B,D each admit sign reversal through Haar-preserving non-tree chord center multiplication. The full inverse-Whitney electric quadratic form is invariant because Ad(-U)=Ad(U). Thus electric matrix elements between distinct parity triples vanish identically. The 31-character-plus-fusions basis of R3-IR-584 divides into eight exact parity blocks of dimensions 8,4,4,3,4,3,3,2. Consequently only sum dim² = 143 of the 961 ordered electric entries can be nonzero, and 818 entries (85.12 percent) vanish exactly. By symmetry there are at most 87 independent real matrix entries to evaluate, rather than 496 unrestricted upper-triangle entries.
+
+Polynomial degree audit remains: degree eight on non-tree chords 1,75 and four on 26,95, requiring a sufficient-design tensor 120×24×120×24=8,294,400 nodes if evaluated naively. The parity reduction removes impossible MATRIX ELEMENTS; it does not by itself shorten the integration tensor, so further moment factorization and edge tensor contractions remain necessary. The previously certified 17×17 block offers an independent regression check.
+
+Executable sector audit and machine-readable results are preserved in ChatGPT Library /The Singular Boundary/Source/: audit_m5_31_electric_parity_plan.py and m5_nested31_electric_sector_plan_2026-10-31.json. **No 31-state electric matrix or Ritz gap has been computed**, and no continuum mass-gap claim is made.
