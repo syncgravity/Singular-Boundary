@@ -1,5 +1,5 @@
-# R3-IR-604 — Conditional Ward identity and drift-correction reconciliation
-Date 2026-10-31. **Abstract diffusion result, not an interacting Penrose-vacuum estimate.**
+# R3-IR-605 — Conditional Ward identity and drift-correction reconciliation
+Date 2026-10-31. R3-IR-604 belongs to the prior branch's candidate rooted-electric covariance theorem; this independent Ward reconciliation is R3-IR-605. **Abstract diffusion result, not an interacting Penrose-vacuum estimate.**
 
 The uploaded previous-branch signed-current theorem states d_u log psi_f=−4C_f(cos u)/(A_f sin u) and proposes a uniform current criterion, but its interaction-dependent estimate remains open. R3-IR-598–603 subsequently flag that the complete mixed rooted-Whitney electric operator and its divergence ordering have not been recovered.
 
