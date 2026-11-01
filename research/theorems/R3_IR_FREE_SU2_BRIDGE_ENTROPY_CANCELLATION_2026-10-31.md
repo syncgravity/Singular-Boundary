@@ -1,0 +1,7 @@
+# R3-IR — Free SU(2) bridge-entropy cancellation obstruction
+
+Exact benchmark for the spectator-tilt entropy approach. For H=−Δ on SU(2) and Ω≡1, choose x=I and x′=−I. Let π₀(dy)=k_t(x′⁻¹y)dy, π₁(dy)=k_t(x⁻¹y)dy, and L=log(dπ₁/dπ₀). Then E_π₀ exp(L)=1 and the exact Wilson-ground-state log amplitude ratio is zero, but E_π₀ L=−D_KL(π₀||π₁)<0 and the entropy correction equals +D_KL(π₀||π₁)>0. Var_π₀(L)>0. Hence imposing separate smallness of the signed bridge mean and tilted fluctuation is **not necessary**, and fails to capture exact cancellation even for the Haar-uniform vacuum.
+
+One-link SU(2) character-series quadrature (−Δ eigenvalues n(n+2)/4, Haar radial weight 2sin²u/π): at t=1 mean −2.597276920888, entropy +2.597276920888, variance 4.131504201335, combined log ratio ≈0 (≤8e−14 quadrature error); at t=.75 variance 6.651108653586. This is a rigorous free-vacuum counterexample to the proposed separately-small sufficient strategy, not a no-go theorem for signed+entropy joint estimates in Wilson theory.
+
+Research next step: center bridge response at the exactly cancelling free reference; seek an interacting correction controlled jointly by magnetic-force and electric-commutator terms. Center-current, connected covariance and continuum Yang–Mills gap remain open. Reproducible source, proof and SHA256 manifest in Library /The Singular Boundary/Proof Audits/R3_IR_FREE_SU2_BRIDGE_ENTROPY_CANCELLATION_2026-10-31.zip.
