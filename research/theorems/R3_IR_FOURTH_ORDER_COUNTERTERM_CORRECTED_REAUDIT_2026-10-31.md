@@ -1,0 +1,7 @@
+# Corrected fourth-order SU(2) repeated-face covariance audit (supersedes prior values)
+
+Correct energy counterterm embedding in the repeated quaternion sector: the scalar identity is **sum_mu x_mu²=1**, not x_0². Exact original-link rational recomputation gives shared-face overlap coefficient **straight −53122501/100926259200**, **bent −3321553/6307891200**, and external bent bridge **+83111/5046312960**. Low-order checks 7/216 and 1/144 pass. The previously reported shared-face and bridge coefficients and fourth-order matrix norms are **superseded**.
+
+Corrected interior straight overlap **−95804101/100926259200**, bent overlap **−8013419/8410521600**. Conditional unit-weight complete fourth-order Taylor matrix bound for any square cage with one deleted magnetic face: **||C4||2 <= 2282009341/319599820800 ≈0.007140208449703861**, conditional on other archived local coefficients unchanged here. The 21×21 central-deletion cage has max absolute row sum 0.006797343468139181 and numerical spectral norm ≈0.006090133924350193. Independent all-pairs geometric checks pass on 3×3,5×5,7×7.
+
+This audit does not independently re-prove the isolated diagonal, one-sided or disjoint edge-adjacent local coefficients; further cross-audits remain mandatory. It does not establish physical-coupling covariance, regulator-uniform signed current or a mass gap. Full executable source, exact rational logs, geometry and spectral verifiers, and SHA256 manifest are in Library `/The Singular Boundary/Proof Audits/R3_IR_FOURTH_ORDER_COUNTERTERM_CORRECTED_REAUDIT_2026-10-31.zip`.
