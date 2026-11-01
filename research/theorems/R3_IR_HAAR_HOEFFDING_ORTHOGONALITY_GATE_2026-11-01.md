@@ -1,0 +1,5 @@
+# Haar-subset orthogonality and raw-cluster obstruction
+
+For independent SU(2) face holonomies with p_i=Re(U_i), shared-link Killing derivative D on U2,U3, f=p2 p3 and g=p1² p2 p3, exact Haar gives ||Df||²=1/32, <Df,Dg>=1/128≠0. So distinct overlapping raw cluster derivatives are not generally orthogonal; previous cubic 9x9 diagonal Gram is particular to that cubic coefficient. This is a quartic polynomial counterexample, not an actual S4 evaluation.
+
+Let E_i be conditional Haar integration in face i; Q_A=∏_{i∈A}(Id−E_i)∏_{j∉A}E_j. The Q_A are pairwise orthogonal projections with Σ_A Q_A=Id and ||F||²=Σ_A||Q_AF||². With canonical shared original-link action D=D_k^R−D_{k+1}^L, each E_i commutes with D, since E_i D_i=D_i E_i=0 for the fixed Killing derivative on the same SU(2) factor, and other E_j commute trivially. Thus [D,Q_A]=0 and ||DF||²=Σ_A||D Q_A F||², and DQ_A F=0 if A misses both incident faces. This is an exact all-order free-Haar decomposition but neither decay nor a lambda=1 interacting gap. Verify.py reproducibly checks covariance 1/128. See archived full theorem and verifier.
