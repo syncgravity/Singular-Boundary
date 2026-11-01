@@ -1,0 +1,7 @@
+# R3-IR — Free-word outer-loop invariance certification and grid-scaling audit
+
+31 October 2026. Universal finite-planar certificate: take a tree–cotree SU(2) holonomy translation in exact original-link free words. For each retained adjacent-face outer loop, freely and cyclically reduce the before/after words. If they differ only by cyclic rotation or inversion, their SU(2) Wilson traces are equal for all configurations and transport elements. Hence the exact second-order vacuum log-response from the archived Fierz/resolvent calculation is supported only on loops **not** positively certified. The simple exact support criterion additionally excludes all loops not meeting changed original links. Free-word noncertificate does not prove trace noninvariance.
+
+Standalone deterministic tester verifies exact face transformations and outer-loop certificates for central deleted face of odd square disks N=3,5,7,9,11, using original-link free word substitution. BFS dual depth respectively 2,3,4,5,6, changed links 2,3,4,5,6, and uncertified retained-pair outer loops 1,2,3,4,5. DFS depth 5,13,25,41,61 and uncertified outer-loop counts 3,10,22,37,57. This is an **observed finite sequence, not a general all-N theorem or proof of BFS optimality**. See Library archive `/The Singular Boundary/Proof Audits/R3_IR_OUTER_LOOP_WORD_SCALING_2026-10-31.zip` for code, per-pair results, SHA256 manifest and full caveats.
+
+Physical coupling λ=1, regulator-uniform signed current, connected covariance and continuum SU(2) Yang–Mills gap remain OPEN.
