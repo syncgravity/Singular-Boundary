@@ -1,0 +1,7 @@
+# Exact adjacent two-face fourth-order SU(2) vacuum score
+
+For an isolated two-plaquette gauge-invariant original-link chain, set a=Re A, b=Re B, r=Re(AB), with K a=3a, Kb=3b, Kr=9r/2 and Γ_aa=1−a², Γ_bb=1−b², Γ_rr=3(1−r²)/2, Γ_ab=(r−ab)/4, Γ_ar=3(b−ar)/4, Γ_br=3(a−br)/4. Starting from verified S1,S2,S3, the fourth-order source F4=Γ(S1,S3)+Γ(S2,S2)/2 has Haar mean −187/33696. The exact polynomial solution to KS4=F4+187/33696, modulo constant, is
+
+S4=−7(a⁴+b⁴)/25920−301(a³b+ab³)/1095120−41a²b²/146016+85789(a²+b²)/84913920+185633ab/305538480−135709r/152769240+661abr/1724814+101099(a²+b²)r/305538480−509r²/6132672.
+
+Exact symbolic substitution gives residual zero. Integrating B yields E_B S4=−7a⁴/25920+163361 a²/157697280+constant; subtracting the isolated one-face S4=−7a⁴/25920+53a²/51840 yields the nonzero centered one-face projection (2989/220776192)(a²−1/4). Thus raw two-face score interactions need Haar projection/recombination at fourth order. This is isolated-two-face formal perturbation only, not the full four-face/chain S4, and not a λ=1 gap or all-orders bound. Full report, executable SymPy verifier and execution log archived as R3_IR_FOURTH_ORDER_TWO_FACE_EXACT_SCORE_2026-11-01.zip in Proof Audits.
