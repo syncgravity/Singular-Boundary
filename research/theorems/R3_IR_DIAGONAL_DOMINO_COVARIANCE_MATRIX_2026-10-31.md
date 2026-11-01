@@ -1,0 +1,7 @@
+# R3-IR — Complete second-order domino covariance matrix
+
+For finite planar SU(2) original-link square disks and K+λV_- with first response F=Σc_k p_k and exact second response Q, the diagonal second coupling derivative of every two-face outer-loop variance **vanishes exactly**: M_ii=∂²_λ Var_νλ(r_i)|₀=0. Proof: (r_AB²−1/4) has zero Haar conditional expectation given either elementary face holonomy, while center parity eliminates its contraction with any fundamental-loop or distinct-plaquette bilinear term in Q+2F².
+
+Combined with prior exact overlapping-domino contraction, the full second derivative of the covariance matrix is M_ij=c_A c_C/8 for distinct dominoes sharing B (A,C their nonshared faces; c_deleted=0), and zero otherwise. On square disks each domino overlaps at most six others: **||M||₂≤3 c_max²/4**. For uniform weights a,b, c_max=b/(3a), hence **||M||₂≤b²/(12a²)**. The symmetric zero-diagonal, positive-off-diagonal M is generally indefinite (two-by-two overlap block ±c_Ac_C/8); it is a derivative, not a covariance matrix. No control at λ=1 or uniform Taylor remainder is claimed.
+
+Standalone analytic proof, 600000-Haar-quaternion diagnostic samples, seven-grid row-sum enumerator, JSON results and SHA256 archive in Library `/The Singular Boundary/Proof Audits/R3_IR_DIAGONAL_DOMINO_COVARIANCE_MATRIX_2026-10-31.zip`. Signed-current, connected covariance decay, continuum SU2 Yang–Mills gap remain OPEN.
