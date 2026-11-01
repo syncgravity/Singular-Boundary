@@ -1,0 +1,7 @@
+# R3-IR — Exact parity-sector path majorant for the overlapping AB²C vacuum response
+
+For finite original-link SU(2) planar straight or bent three-face configurations, with unit electric coefficients and independent magnetic couplings t_A,t_B,t_C, the mean-one vacuum Taylor coefficient satisfies the exact recursion u_ABBC=R[p_Au_BBC+p_Bu_ABC+p_Cu_ABB−u_AC/12]. The last term is the necessary second-order ground-energy counterterm e_BB=−1/12.
+
+Enumerating the 12 distinct ordered insertion paths of the multiset (A,B,B,C), the center-parity sector gap ≥(3/4)|∂F| for the odd-multiplicity face set F yields an **exact rational upper-bound sum 25/324** in both straight and bent geometries. The separate counterterm is bounded by **1/648**, using the nonshared AC sector gap 6. Consequently **||u_ABBC||_{L²(Haar)}≤17/216**, uniform in full-cage size at fixed unit electric coefficients. This is a norm majorant only: it does not evaluate the remaining density contraction ⟨r_AB r_BC w_ABBC⟩ or its resulting signed fourth connected covariance. The correct previously derived normalization/mean subtraction remains 29/23328.
+
+Reproducible exact-fraction 12-path checker, results JSON, theorem and SHA256 manifest in Library /The Singular Boundary/Proof Audits/R3_IR_OVERLAP_REPEATED_FACE_SECTOR_PATH_BOUND_2026-10-31.zip. Physical-coupling covariance decay, signed-current condition and Yang–Mills mass gap remain OPEN.
