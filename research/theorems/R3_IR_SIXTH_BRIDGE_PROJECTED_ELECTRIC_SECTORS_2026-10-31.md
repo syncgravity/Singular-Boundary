@@ -1,0 +1,7 @@
+# Exact five-face SU(2) original-link electric invariant matrices — initial eight sectors
+
+The five-face straight chain F_i=(i,0) admits a primal tree with one exterior chord per elementary face. Construct K=−Σ_eΣ_a X²_ea with exact rational left/right SU(2) quaternion derivatives, then project onto the conjugation-invariant basis using its exact Gram matrix. The sector results verify G T=TᵀG, exact rational eigenvalues, and correct zero mode for repeated bridge insertion.
+
+Sectors (face slots; eigenvalues): (0): 3; (2):3; (0,1):9/2,13/2; (1,2):9/2,13/2; (0,2):6,8; (0,1,2):6,8,8,10,13; (2,2):0,8; (0,1,2,3): 15/2,19/2 ×3,23/2 ×3,27/2,29/2 ×2,33/2 ×2,35/2,39/2.
+
+These exact checked matrices cover **eight sectors**, not all 47 nonvacuum coupling sectors and not yet the target 76×76 operator. The 0 repeated-bridge eigenvector represents the constant quaternion norm and must be removed in the mean-zero vacuum solve. Reproducer relies on archived `overlap_shared_face_exact_audit` modules; no signed sixth-order covariance or Yang–Mills mass gap is claimed. Complete matrix data/checker is archived in Library `/The Singular Boundary/Proof Audits/R3_IR_SIXTH_BRIDGE_PROJECTED_ELECTRIC_SECTORS_2026-10-31.zip`.
