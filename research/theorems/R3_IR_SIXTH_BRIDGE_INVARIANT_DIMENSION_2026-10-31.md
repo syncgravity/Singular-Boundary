@@ -1,0 +1,5 @@
+# Sixth-order bridge: exact SU(2) six-slot invariant dimension
+
+Target α=(1,1,2,1,1), straight five-face original-link Wilson SU(2) chain. Quaternion coordinate representation under simultaneous conjugation is V=V0⊕V1, with spin 0 scalar and spin 1 vector. Repeated bridge pair Sym² V=2V0⊕V1⊕V2. Thus the six-slot target invariant space has exactly **76** scalar basis dimensions, computed by integer angular-momentum fusion, compared to **4^6=4096** unsymmetrized components and **4^4·10=2560** symmetric bridge components.
+
+The 47 nonvacuum partial coupling multi-indices have exactly **421** invariant coefficients altogether, with multiplicities summed by insertion degree 1..6 equal to 5,22,62,118,138,76. Independently reproducible Python checker and SHA256 archive: Library /The Singular Boundary/Proof Audits/R3_IR_SIXTH_BRIDGE_INVARIANT_DIMENSION_2026-10-31.zip. The rational invariant basis, original-link electric matrices, exact six-slot Haar contraction and signed connected covariance **remain unevaluated**; no physical-coupling decay or mass-gap theorem is claimed.
