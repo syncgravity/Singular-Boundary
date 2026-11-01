@@ -1,0 +1,7 @@
+# Exact second-order Wilson free-coupling resolvent
+
+On a planar SU(2) original-link square cellulation, K=−Σ_e a_e Δ_e and V_-=Σ_(k≠f)b_k(1−p_k), let F=∂_λ log Ω_λ|₀=Σ c_k p_k, c_k=b_k/ε_k, ε_k=3Σ_(e∈∂k)a_e/4. For adjacent retained plaquettes k,l sharing e, r_kl is the normalized trace of the union's outer six-link boundary. The SU(2) Fierz identity gives Σ_a X_(e,a)p_k X_(e,a)p_l=(r_kl−p_kp_l)/4. Put β_kl=ε_k+ε_l+a_e/2, γ_kl=ε_k+ε_l−3a_e/2. The *actual exact second-order vacuum log response* Q=∂²_λ log Ω_λ|₀ equals, up to a constant:
+
+Q=−(1/4)Σ_k c_k²(p_k²−1/4)+Σ_(k<l adjacent across e)c_kc_l a_e[(3/(4γ_kl)+1/(4β_kl))r_kl−p_kp_l/β_kl].
+
+For any transport T preserving all retained plaquette traces, **Q(TU)−Q(U)=Σ_adj c_kc_l a_e(3/(4γ_kl)+1/(4β_kl))[r_kl(TU)−r_kl(U)].** This follows from diagonalization of K on the closed span of r_kl and p_kp_l, not a numerical resolvent inversion. The log-ratio leading perturbative term is λ²/2 times this difference. In a 3×3 completed planar cage with 24 links, 9 faces, and 12 noncommuting sample configurations, full 72-direction gradient checks show maximum Γ residual 1.36e−11, KQ residual 7.17e−8, and Q transport difference ranges −0.00610 to +0.01800, all 12 nonzero. Full mathematical report and verification archive in Library /The Singular Boundary/Proof Audits/R3_IR_EXACT_SECOND_ORDER_RESOLVENT_2026-10-31.zip. Physical λ=1 estimate, regulator-uniform current, covariance, mass gap OPEN.
