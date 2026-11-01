@@ -1,0 +1,3 @@
+# Exact adjacent-face quartic coupling in three-face SU(2) fourth-order score
+
+For physically oriented original-link three-face Hamiltonian, let a=Re(A), b=Re(B), r=Re(AB), h=(a²−1/4)(b²−1/4), j=ab(r−ab). The electric operator obeys Kh=16h−2j. Exact quaternion Haar integration against F4=Γ(S1,S3)+Γ(S2,S2)/2 yields <F4,h>=−1051/378473472, same on BC; <h,h>=1/256, <j,j>=1/192, <h,j>=0, <Kh,h>=1/16 and <Kh,j>=−1/96. Hence the exact fourth-order score constraint 16<S4,h>−2<S4,j>=−1051/378473472. Crucially h is not an eigenmode, and this does **not** determine <S4,h> by itself; span(h,j) has not yet been proved invariant. The complete quartic inversion, uniform λ=1 gap and continuum mass gap remain open. Full reproducible theorem and SymPy code archived in Proof Audits.
