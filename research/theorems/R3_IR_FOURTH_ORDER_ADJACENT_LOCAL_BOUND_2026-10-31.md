@@ -1,0 +1,9 @@
+# Fourth-order edge-adjacent SU(2) covariance: local coefficient bound
+
+Exact four-face locality: for two face-disjoint two-plaquette Wilson loops sharing an original link, SU(2) center parity forces the fourth connected covariance derivative at zero magnetic coupling to involve only one coupling from each of the four faces. All spectator couplings may be set to zero without changing that fourth coefficient. This reduces it exactly to the original-link four-face Hamiltonian.
+
+Let B4=sum of its four positive magnetic coefficients and delta=3/4 times the minimum electric coefficient among its original links. A Riesz projection on the circle |z|=delta/2 remains within operator distance 1/7 of the free ground projector for complex |lambda|<=delta/(16B4). The complex-symmetric vacuum expectation has bounded denominator and |Cov(r_D,r_E)|<4. The fourth derivative therefore obeys |C''''(0)|<=96(16B4/delta)^4 by Cauchy. This is a conservative uniform-in-*volume* coefficient estimate, not an exact signed evaluation and not uniform under b~h^-2 refinement.
+
+Every square-lattice domino has at most 24 face-disjoint edge-adjacent dominoes, so the corresponding block of the fourth-derivative covariance matrix has bounded row support and norm at most 24*96*(64 b_max/(3a_min/4))^4. An exact enumeration on N=3,5,7,9,11,15,21 square disks finds actual maximal neighbor degree 16 at N>=7. Overlapping-loop fourth coefficients, physical-coupling covariance, signed radial current and continuum Yang-Mills gap remain OPEN.
+
+Complete original report, executable enumeration, JSON and SHA256 manifest: `/The Singular Boundary/Proof Audits/R3_IR_FOURTH_ORDER_ADJACENT_LOCAL_BOUND_2026-10-31.zip`.
