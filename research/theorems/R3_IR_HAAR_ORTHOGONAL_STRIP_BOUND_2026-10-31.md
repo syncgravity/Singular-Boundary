@@ -1,0 +1,7 @@
+# Exact Haar-orthogonal strip bound, 2026-10-31
+
+For finite planar original-link SU(2) product Haar, distinct simple outer-boundary loops with distinct edge sets have normalized traces r_i=(1/2)Tr Hol_i satisfying E r_i=0 and E r_i r_j=δ_ij/4. Integrating a link present in one loop but absent in the other establishes the off-diagonal orthogonality; SU2 character orthogonality gives variance 1/4.
+
+For any product-Haar preserving holonomy transport T and the certified second-order Wilson log-vacuum response ΔQ=Σ_i C_i(r_i∘T−r_i), set S=Σ C_i r_i. Then EΔQ=0, ||ΔQ||_2≤(Σ_i C_i²)^(1/2), and μ(|ΔQ|≥z)≤Σ_i C_i²/z². Exact: ||ΔQ||²=2||S||²−2⟨S∘T,S⟩; cross overlap not assumed zero. For equal weights C=8b²/(351a) and the ten certified odd square cages with m=(N−1)/2 strip loops: ||ΔQ||_2≤[8b²/(351a)]√m. This **Haar L²** √m bound is not a pointwise bound and does not apply directly to the interacting Wilson vacuum. Under h~1/N, b~h^-2, a~1, certificate scales O(h^-9/2), still not uniform. Reweighting by physical Ω² requires independent estimates, e.g. ||Ω²||_2.
+
+Independent product-Haar numerical check: 900 configurations per 3x3,5x5,7x7,9x9 cage; observed simple-loop covariance consistent with 1/4 diagonal and zero off diagonal. These stochastic checks are not a Wilson-vacuum simulation. Full theorem, code, data and checksum archive in Library /The Singular Boundary/Proof Audits/R3_IR_HAAR_ORTHOGONAL_STRIP_BOUND_2026-10-31.zip. Signed current, connected covariance and continuum Yang–Mills mass gap OPEN.
