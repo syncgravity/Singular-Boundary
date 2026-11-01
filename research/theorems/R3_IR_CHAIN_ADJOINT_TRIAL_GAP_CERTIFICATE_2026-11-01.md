@@ -1,0 +1,3 @@
+# Adjoint-enriched exact variational gap certificate
+
+For an m-face original-link SU(2) chain at real λ, let S=Σp_i and Q=Σ(p_i²−1/4). The exact trial φ=1+aS+bQ has quotient [(3m/4)a²+(m/2)b²−λ((m/2)a+(m/8)ab)]/[1+(m/4)a²+(m/16)b²]. At m=3, λ=1, choose rational a=5/16,b=3/80 to obtain E0≤−25734/109927. Since the gauge-invariant free E1=3 and ||Σp_i||≤3, min–max gives E1(H3(1))≥0. Hence the **untruncated three-face gap Δ≥25734/109927≈0.23410081236**, improving the prior 3/13 bound. The general chain trial identity does **not** establish a chain-length-independent positive gap, and no continuum Yang–Mills mass-gap claim follows. See complete derivation and exact-fraction verifier in Library Proof Audits.
