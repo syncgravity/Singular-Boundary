@@ -1,0 +1,11 @@
+# R3-IR — Exact finite Peter–Weyl reduction of the outstanding four-face covariance
+
+For two face-disjoint retained square-lattice dominoes D and E with shared original links, two inequivalent support geometries occur: one common original link (four-in-a-row local case, 13 distinct links), and two common original links (2×2 parallel-domino case, 12 distinct links). An exhaustive checker on N=3,5,7,9,11,15,21 square grids finds at N=21 **5316 unordered one-link pairs** and **800 unordered two-link pairs**; maximum edge-adjacent disjoint-domino neighbor degree is 16.
+
+Let Hλ=K−λP, P=sum of four active b_k p_k, and ψλ=1+sum_(n≥1)λ^n u_n with Haar mean u_n=0. Then parity gives <r_D r_E>_0=<r_D r_E w_2>_0=0. Since w_4=2u_4+2u_1u_3+u_2², the exact yet **unevaluated** fourth mixed connected coefficient simplifies to
+
+**[λ⁴]Cov(r_D,r_E)=<r_D r_E(2u_4+2u_1u_3+u_2²)>_Haar−m_Dm_E**, with m_D,m_E the exact earlier weighted second-order domino means. Multivariate center parity permits only one insertion of each of the four active face couplings at order four, so the result is proportional to their product. All other magnetic couplings can be set to zero.
+
+Each plaquette multiplication changes an original-link SU(2) Peter–Weyl spin by at most 1/2. Since the electric operator and its mean-zero resolvent preserve individual link spins, the exact perturbative vacuum u_n has original-link spin j≤n/2. Thus **cutting each of 12 or 13 links to j≤2 computes the complete fourth-order coefficient exactly**, when all gauge-invariant spin-network states and Haar contractions in that sector are included. This is a finite-dimensional reduction, not a numerical evaluation of the mixed coefficient.
+
+The sign and value of the edge-adjacent mixed fourth coefficient remain OPEN, as do physical-coupling clustering, the signed-current estimate and continuum Yang–Mills mass gap. Full derivation and 7-grid/fusion-path checks: Library `/The Singular Boundary/Proof Audits/R3_IR_FOURFACE_EXACT_SECTOR_REDUCTION_2026-10-31.zip`.
