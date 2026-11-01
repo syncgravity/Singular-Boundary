@@ -1,0 +1,7 @@
+# Exact finite-volume anchored SU(2) score-polymer construction
+
+In gauge-fixed independent SU(2) face-holonomy Haar variables, let S_m(U)=log Ω_{m,λ}(U)^2 and choose identity holonomies as reference. Define Φ_A(U_A)=Σ_{B⊆A}(−1)^{|A|−|B|}S_m(U_B,I_{B^c}). The full score equals Σ_A Φ_A exactly. Nonempty interactions are normalization-independent and vanish when any involved face is at identity. With w_A=e^{Φ_A}−1, e^{S_m(U)−S_m(I)}=∏_{A≠∅}(1+w_A); expanding, integrating against product Haar, and grouping overlapping hyperedges produces an exact **finite-volume** hard-core polymer gas. The actual polymer activity z_C is the sum over connected overlapping hyperedge collections of union C, of their Haar-integrated product weights. Neither Φ_C nor w_C equals z_C in general, and disconnected anchored face supports cannot be discarded without proof.
+
+Exact calibration: using the previously calculated cubic three-face score, at SU(2) center configurations p_i=±1 the true normalized finite-volume score has Φ_{ABC}(−I,−I,−I)=−19 λ³/21060+O_3(λ⁴), and the A–C four-point mixed difference with B=+I is +19 λ³/42120+O_3(λ⁴). Both identities are checked by exact Möbius inversion of the degree-three polynomial; all eight center corners and the finite hypergraph partition identity pass.
+
+This is an algebraic finite-volume activity construction only. No volume-uniform bound on z_C, convergence of a polymer expansion, chain-uniform gap at λ=1, signed current, or continuum Yang–Mills mass gap is proved. Reproducible script and research audit are archived.
