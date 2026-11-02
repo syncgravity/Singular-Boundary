@@ -1,0 +1,9 @@
+# Residual multiplier star geometry and weighted-filtration locality obstruction — 2026-11-02
+
+In a finite dressed open SU(2) square strip let F_j be the sigma-algebra of original links through face j+1, H_j its martingale difference from F_{j-1}, plus the constants sector H_{-1}. The residual bond w_j on faces j,j+1 is F_j-measurable and satisfies E[w_j|F_{j-1}]=0. For the multiplication operator M_{w_j}, the only potentially nonzero projected blocks Pi_a M_{w_j} Pi_b are: b<j implies a=j; b=j implies a≤j; b>j implies a=b. Proof follows directly by nested conditional expectations. This is a long-range star, not a banded matrix.
+
+For F_0=p_1−E[p_1], j≥2, independence of dressed plaquette holonomies and centering imply Pi_j(w_j F_0)=w_j F_0, ||Pi_j M_{w_j} Pi_0 F_0||=||w_j||₂||F_0||₂. Since ||w_j||₂=M_g/sqrt(12)>0 for nontrivial dressing, the long-jump block does not decay with j. Therefore no uniformly exponentially decaying off-diagonal multiplier-block bound K rho^|a-b| (rho<1) exists in this filtration.
+
+This does not disprove third-order connected spatial decay: cumulant cancellations or different geometric norms could restore it. It disproves the naive attempt to compose the previously proved dressed inverse-sector decay with independent exponentially local multiplication-operator blocks. Exact 7-variable Walsh-filtration verification confirms the block support and unit-amplitude arbitrarily long star jumps in a finite product model.
+
+Full audit, verifier, log, SHA-256 manifest: Library /The Singular Boundary/Proof Audits. Interacting lambda=1 and continuum mass gaps remain open.
