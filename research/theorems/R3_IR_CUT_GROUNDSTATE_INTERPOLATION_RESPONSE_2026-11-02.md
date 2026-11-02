@@ -1,0 +1,5 @@
+# Uniform cut-ground-state interpolation response — 2026-11-02
+
+For H_t=L0+t Vcut with t∈[0,1], ||Vcut||∞≤v=269/72000 and certified uniform gap δ≥609/4000, let h_t be its normalized positive ground vector, E_t its eigenvalue, and R_t its reduced inverse. Exactly E'_t=<h_t,Vcut h_t>, h'_t=−R_t(Vcut−E'_t)h_t=−R_t Vcut h_t, and P'_t=|h'_t><h_t|+|h_t><h'_t|. Hence the sharper bound ||h'_t||≤v/δ=269/10962, ||P'_t||≤v/δ and |d/dt <h_t,O h_t>|≤(2v/δ)||O||∞ for bounded O; a conservative 2v/δ bound on ||h'_t|| is also valid.
+
+Endpoints: h0=1, h1=exp(s_g(p_cut))/sqrt(E_nu0 exp(2s_g(p_cut))) by exact conjugation, so h1 is a local multiplier. Intermediate h_t need not be local, and the uniform global estimates are NOT spatial decay. A two-state exact symbolic model verifies first-variation algebra, and exact rational calculations verify constants. Connected fourth-order spatial decay, interacting lambda=1 and continuum Yang-Mills gap remain open. Complete audit, checker, log and SHA256 manifest in Library /The Singular Boundary/Proof Audits.
