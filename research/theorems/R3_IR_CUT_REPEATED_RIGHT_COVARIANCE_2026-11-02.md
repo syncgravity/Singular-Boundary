@@ -1,0 +1,7 @@
+# R3-IR — Repeated right-bond equal-time connected covariance, 2026-11-02
+
+Conditional on prior weighted L4 cut-reference Poisson-gradient estimates, let ν0=νL⊗νR, φ_t the mean-one ground state of L0+tVcut and μ_t(G)=ν0(Gφ_t²)/ν0(φ_t²). For bounded left F and smooth right G whose derivative is supported in S_G, set G0=G−νR G and u=R_R G0. Exact integration by parts gives ν0(FG0φ_t²)=ν0(FΓ_R(u,φ_t²)). Apply Hölder and the weighted-gradient bounds to deduce |Cov_μt(F,G)|≤4(1+H) B D ||F||∞ ||∇_R G||4 (5/6)^r, r=d(S_G,S_cut), H=.15365300988559435, B=120/11, D=.6974777376801158. This does not require P_k G=0.
+
+For repeated G=w_k², ||∇_R G||4≤2vG_w, v=1/1152, G_w=√21·67/13824. Therefore **|Cov_μt(F,w_k²)|≤0.0013538867794692334 ||F||∞ (5/6)^r** with r≥max(0,k−j−2) for k≥j+2 and cut after face j. Uniform for t∈[0,1] and finite N under conditional weighted L4 inputs.
+
+The raw moment need not decay because the predictable square has nonzero expectation. This is equal-time covariance, not a four-time connected cumulant or fourth-order ground-energy extensivity theorem. Interacting λ=1 and continuum Yang–Mills gaps remain open. Full mathematical derivation, exact finite-state and arithmetic checker, execution log, SHA256 manifest archived in Library /The Singular Boundary/Proof Audits.
