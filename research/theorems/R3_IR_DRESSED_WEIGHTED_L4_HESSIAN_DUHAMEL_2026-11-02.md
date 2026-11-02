@@ -1,0 +1,9 @@
+# Dressed weighted L4 Hessian smoothing — 2026-11-02
+
+**Conditional theorem.** On the SU(2) product reference strip with dressed diffusion A=Delta+2grad S_g dot grad, assume the archived pointwise weighted Bochner certificate with rate c=11/120, isolated plaquette q_g=49/576, Hessian-block Schur bound b=49/120, and original-link neighbor weight-root ratios <=6/5. For any positive such weights, uniformly in strip length,
+
+||Hess P_t f||_(a,4) <= K t^(-1/2) exp(-delta*t)||grad f||_(a,4), delta=c/4=11/480, M=b+q_g=1421/2880, K=1+4M/(c*e)+1/sqrt(c*e)=10.92386068338508.
+
+**Proof outline.** Let V_ea=X_ea P_t f for orthonormal left-invariant frames. Duhamel with scalar component semigroup gives V(t)=P_t V0+integral P_(t-s)F(s)ds, F_ea=2Hess S_g(X_ea,grad P_s f)-2<covderiv_(grad S_g)X_ea,grad P_s f>. Pointwise weighted norm |F|_a<=M|V|_a: Hessian blocks give b, intra-link skew rotation has operator norm <=|grad_e S_g|<=q_g. Scalar dressed reverse Poincare gives ||X P_r H||_(a,4)<=(2r)^(-1/2)||H||_(a,4). Compatible gradient weighted contraction gives ||V(s)||_(a,4)<=exp(-cs)||V0||_(a,4). Integration and SU(2) frame connection correction yield ||Hess P_t f||_(a,4)<=[(2t)^(-1/2)+M sqrt(2t)+1/sqrt(2)]||grad f||_(a,4). Apply this at half-time to P_(t/2)f, giving [t^(-1/2)+M sqrt(t)+1/sqrt(2)]exp(-ct/2). Elementary envelopes produce the displayed K,delta. The centered Poisson resolvent satisfies ||Hess Rg||_(a,4)<=K sqrt(pi/delta)||grad g||_(a,4)=127.90141971854507||grad g||_(a,4).
+
+A full step-by-step proof, verification script, passing log and SHA-256 manifest are archived in Library /The Singular Boundary/Proof Audits. The inherited geometric assumptions have not been independently re-proved in this task. Neither pointwise nonlinear interacting curvature, the lambda=1 interacting gap, nor a continuum Yang–Mills mass gap follows.
