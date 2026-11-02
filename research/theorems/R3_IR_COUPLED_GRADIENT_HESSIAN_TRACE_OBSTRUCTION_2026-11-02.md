@@ -1,0 +1,7 @@
+# Coupled gradient–Hessian evolution: trace-mode audit (2026-11-02)
+
+For f_t=P_t f, G_t=grad f_t and H_t=Hess f_t on the finite original-link SU(2) strip with L=-Delta-2grad(S_g)·grad, the sign-corrected identity is dH_t/dt=Delta^(2)H_t+2nabla_X H_t−C(H_t)+2B_X(H_t,G_t), X=grad S_g. C(H)=Ric∘H+H∘Ric−2Rm*H; B_X=Hess(X·grad f)−nabla_X H, containing ordered ∇²X·grad f, two HessS×H terms and a curvature-ordering commutator.
+
+On SU(2)=S³(radius 2), mixed-link curvature C_ed=H_ed; diagonal blocks C_ee=(3/2)H_ee^TF; pure-trace diagonal blocks are undamped by C. The parallel metric tensor is also in the kernel of rough tensor Laplacian; thus strictly positive coercivity is not available on all symmetric tensor fields. However for the scalar height function p=Re(q), Delta p=−3p/4 and Hess p=−p g/4, so Hess(P_t p)=exp(−3t/4) Hess p. A compatible scalar Hessian can decay despite zero pointwise curvature coefficient. The correct next task is to prove quantitative trace coercivity on compatible Hessians and ordered higher-tensor forcing control. No uniform positive Hessian rate or interacting lambda=1 gap is asserted.
+
+Exact verifier checks rational block coefficients, coordinate trace mode and flat 1D drift commutator. Full mathematical report, verifier, log and SHA256 manifest are archived in the Proof Audits Library.
