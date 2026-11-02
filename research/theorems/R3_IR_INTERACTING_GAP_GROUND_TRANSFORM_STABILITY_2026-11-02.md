@@ -1,0 +1,9 @@
+# Interacting finite-strip gap: exact ground-state-transform stability criterion
+
+For finite SU(2) strip dressed generator L_N and residual W_N, H_N(lambda)=L_N+lambda W_N has positive smooth ground state h=exp(u) at every finite N and real lambda. With Dirichlet Gamma=|grad|², the exact logarithmic eigenfunction equation is L_N u−Gamma(u,u)+lambda W_N=E_N(lambda), and h^(-1)(H_N−E_N)h=L_N−2Gamma(u,·), reversible for density exp(2(S_g+u)) against Haar.
+
+**Conditional uniform interacting gap criterion:** Given archived reference Bakry–Emery curvature Ric−2Hess S_g≥kappa g, kappa=23/144, if Hess u_(N,lambda)≤eta g at every configuration, all N, and all lambda in [0,1], for an eta<23/288, then gap(H_N(lambda))≥23/144−2eta>0 uniformly in N and lambda. This is exact but does NOT establish the Hessian hypothesis. At lambda=0, derivative ∂_lambda u=−R_N(W_N−nu_N W_N), up to normalization; fourth-order energy response does not bound its pointwise Hessian.
+
+Global norm control ||W_N||inf≤(N−1)/1152 yields only gap≥kappa−2|lambda|(N−1)/1152 and is nonuniform. In a separate exactly solvable spin reference, L=sum_i [[1,−1],[-1,1]]_i, W=sum_i diag(1,−1)_i, ||W||=N but exact gap=2sqrt(1+lambda²) regardless of N; executable eigensolver verifies N=1..7 and lambda 0,1/4,1. This example illustrates failure of global-norm perturbation, NOT a theorem about SU(2).
+
+Missing: nonlinear uniform Hessian/local block control for log ground state to lambda=1, or a different robust gap-stability theorem. No 4D continuum Yang–Mills mass-gap implication. Complete proof report, verifier, log and SHA256 archive in the project's Proof Audits Library.
