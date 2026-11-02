@@ -1,0 +1,7 @@
+# Ordered SU(2) Hessian commutator audit — 2026-11-02
+
+For the open-strip original-link product manifold with sectional curvature 1/4 and Ricci 1/2 on each SU(2) link, let H=Hess f and L=-Delta-2grad(S_g)·grad. The undressed curvature Hessian commutator B(H)=−Ric∘H−H∘Ric+2Rm*H acts as B(H)_ed=−H_ed on distinct-link blocks e≠d, and B(H)_ee=−3/2(H_ee−tr(H_ee)I/3) on diagonal 3×3 blocks. Thus this commutator does not damp pure trace diagonal blocks.
+
+For X=grad S_g, the **exact ordered identity** is Hess(Lf)−(−roughDelta−2nabla_X)H=B(H)−2[Hess(X·grad f)−nabla_X H]. Its fully expanded drift terms involve Hess(S_g)*H, third ordered covariant derivatives of S_g times grad f and curvature contractions with X and grad f. The archived **directional** C3/C4 bounds do not by themselves bound every ordered covariant tensor. In flat 1D the exact commutator is (Lf)''−L(f'')=−4S''f''−2S'''f'. A weighted Hessian semigroup contraction therefore requires a coupled gradient/Hessian estimate or other coercive approach; none is proved here.
+
+The independently executed checker verified mixed and diagonal curvature block algebra in 180 random symmetric matrix cases and the 1D identity symbolically. The complete longer report, checker, log, and SHA256 are in The Singular Boundary Proof Audits Library. No uniform interacting lambda=1 or continuum Yang–Mills mass gap follows.
