@@ -1,0 +1,7 @@
+# Perturbative Hessian tails for dressed bond resolvents — 2026-11-02
+
+The exact relative resolvent identity modulo constants is `h_j^g-h_j^0=R_g Q_g F_j`, where `F_j=2<grad S_g,grad h_j^0>` and `h_j^0=R_0Q_0w_j`. Because the undressed bond response is supported on seven original links, its drift forcing F_j depends on at most 13 original links T_j (four adjacent faces). Define `D_g=sup_(N,j)||grad F_j||_infinity`, finite and N-uniform; D_g tends to zero when the first two derivatives of dressing vanish as g tends to zero. Under the archived dressed weighted W2,4 resolvent certificate C4=127.90141971854507, each local Hessian row tail has L4 norm at most `C4 D_g (5/6)^dist(e,T_j)`. Graph sums obey `sum_j (5/6)^dist(e,T_j)<=15` and `sum_j (5/6)^(2dist(e,T_j))<=105/11`. Thus a new strip-uniform **additive** signed-synthesis theorem holds:
+
+`||sum_j Hess_(e,*) h_j^g||_4 <=sqrt(3)||(sum_j|Hess_(e,*)h_j^g|^2)^1/2||_4 + C4(15+sqrt(315/11))D_g`, whose additive coefficient is approximately 2602.959589 times D_g.
+
+This is not a multiplicative sqrt(3)+O(g) bound, and no explicit numerical D_g bound is claimed absent checking the actual dressing profile. The theorem is conditional on inherited SU(2) weighted regularity assumptions; it does not prove interacting lambda=1 or continuum Yang-Mills mass gap. Complete report, verifier, log and SHA-256 manifest archived in The Singular Boundary Proof Audits Library.
