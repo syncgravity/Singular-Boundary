@@ -1,0 +1,3 @@
+# Parabolic Hessian concentration: exact heat-mode obstruction
+
+Date: 2026-11-02. Exact normalized-circle heat solutions f_k(t,x)=k^{-1} exp(-k²t) sin(kx) satisfy initial ∫|grad f_k|⁴=3/8, mixed spacetime ∫∫|grad f_k|²|Hess f_k|²=1/32, and ∫∫|grad |grad f_k|²|²=1/8, independently of k, whereas pure spacetime ∫∫|Hess f_k|⁴=3k²/32 diverges. The exact nonlinear Bochner balance 4(1/32)+2(1/8)=3/8 holds. Therefore the existing mixed-energy inequality cannot itself imply an unweighted time-integrated pure Hessian L4 bound, even among compatible heat gradients. This is not a counterexample to time-singular t^{-1/2} SU(2) smoothing. Full report and verifier archived in Proof Audits Library. No dressed W2,4 or interacting gap proved.
