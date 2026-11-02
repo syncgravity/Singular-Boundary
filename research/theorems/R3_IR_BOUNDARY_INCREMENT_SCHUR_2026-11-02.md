@@ -1,0 +1,7 @@
+# Boundary-increment orthogonality and quadratic old-block leakage — 2026-11-02
+
+In the finite straight SU(2) dressed strip, for nested adjacent blocks I⊂J=I∪{f}, let M be conditional expectation in ν_J onto old original links. The fresh Haar link gives exact old marginal ν_I and, by differentiating the constant conditional normalization, **M C_f h=0** for every smooth old-supported h, where C_f=2Γ(s_b(p_f),·). This orthogonality is for the source only.
+
+With the previously certified dressed gap κ=23/144 and ||s_b'||∞≤1/24 at |b|≤0.001, the single-link estimate is ||C_f h||_{L²(ν_J)}≤δ E_I(h), δ=1/24. For old-supported centered F write u0=Q_I F, d=Q_J F−Q_I F=Q_J C_f u0. Then **E_J(d)≤δ/√κ E_I(u0)=1/(2√23) E_I(u0)**. The old-block part of the difference obeys the weak Schur identity <v,L_I Md>=<C_f v,(1−M)d> for old v, hence **E_I(Md)≤δ²/κ E_I(u0)=1/92 E_I(u0)**. It need not vanish: the 2x2 positive block operator [[a,-t],[-t,d]] gives old leakage t²/[a(ad−t²)] for source (1,0).
+
+These are one-step conditional Hilbert-space theorems, not a closed multistep martingale recurrence or physical correlation-decay result. Complete proof, rational checker, log and hash manifest are in Library /The Singular Boundary/Proof Audits. The interacting λ=1 gap and continuum mass gap remain open.
