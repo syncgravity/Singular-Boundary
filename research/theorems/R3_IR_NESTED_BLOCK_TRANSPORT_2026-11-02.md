@@ -1,0 +1,7 @@
+# Nested conditional block transfer — 2026-11-02
+
+**Conditional theorem; not physical covariance decay.** For nested face intervals I_0⊂...⊂I_k of finite straight SU(2) strips, with one adjacent face added per step, work on the full original-link product with measures ν_I proportional to exp(2Σ_{f∈I}s_b(p_f)) Haar and conditional centered block resolvents Q_I=L_I^{-1}P_I. Under the prior certified conditions |b|≤0.001, gap(L_I)≥23/144, |s'_b|≤1/24, and 24/25≤ψ_b≤26/25, the single-boundary map B_{f|I}=2Γ_{e*}(s_b(p_f),Q_I·) obeys ||B_{f|I}F||_{L²(ν_{I∪f})}≤θ||F||_{L²(ν_I)}, θ=13/(24√23)≈0.1129453. Conditional projections are contractive in each block's own measure. Thus every ordered k-extension composition has norm ≤θ^k. At most 2^k paths exist; their terminal norm sum is ≤(2θ)^k||F||, and 2θ<1.
+
+**Limits:** Terminal measures differ; summing their norms does not form one common Hilbert-space operator. It has not been shown that these transfers exactly expand the physical dressed resolvent or include all centering/internal terms. No connected covariance decay, interacting λ=1 gap, or continuum mass gap follows.
+
+Detailed proof, exact rational verifier, log and SHA-256 manifest are archived in Library /The Singular Boundary/Proof Audits. Next: derive a rigorous nested-block telescoping identity and common terminal norm, checked on two and three adjacent faces.
