@@ -1,0 +1,7 @@
+# Fourth-order middle-time bridge — conditional analytic audit
+
+For centered residual bonds f1,...,f4, the exact bridge is T(a,b,d)=<P_a f1,f2 Q P_b Q(f3 P_d f4)>. Assume weighted L4 semigroup gradient estimate with c=11/120 and rho=6/5, centered L2 gap kappa=23/144, and full-future conditional Poincare. If f2 is strictly the rightmost bond w_m, set S=S1 union S3 union S4 and r=dist(T_>m,S). Let v=1/1152 and G=sqrt(21)*67/13824. Then
+
+|T| <= v^3 G/sqrt(kappa) (5/6)^r [sqrt(2) exp(-kappa a/2) exp(-c b)(exp(-c d)+sqrt(2)exp(-kappa d/2)) + 4 exp(-c a)exp(-kappa(b+d)/2)].
+
+The three-gap integral is <= 4.496677088610931e-7 (5/6)^r. The calculation uses weighted L4 product Leibniz on (P_a f1) Q P_b Q(f3 P_d f4), preserving both Q projections. Reversibility handles f3 as the rightmost bond. Together with the prior endpoint theorem this covers all time slots for a strictly rightmost spatial bond. The decay is a one-sided extremal gap, not a complete four-source tree estimate; repeated labels and full fourth-order energy extensivity still require investigation. All results conditional on earlier unverified SU(2) Bochner and Poincare assumptions. No interacting lambda=1 or continuum mass gap is proved. Detailed report, verifier, log and hash manifest in Library /The Singular Boundary/Proof Audits.
