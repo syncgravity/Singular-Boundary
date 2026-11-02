@@ -1,0 +1,9 @@
+# R3–IR: Fourth-order spacetime connectedness obstruction (2026-11-02)
+
+The earlier *static* endpoint bridge covariance bound does not imply fourth-order dynamical connectedness. Let L be a reversible Markov generator with simple stationary ground state, W bounded centered, and A_T=∫₀ᵀW(X_t)dt for its stationary Markov process. Finite-dimensional Feynman–Kac and the simple analytic ground eigenvalue imply **E⁽⁴⁾(0)=−lim_(T→∞) T⁻¹ κ₄(A_T)**, equivalently the negative long-time average of the integrated connected four-time cumulant.
+
+**Exact independent counterexample:** On two spins (x,y)∈{±1}² let x flip at rate 2+y and y flip at rate 2+x. The stationary measure is uniform *product*; x,y have zero equal-time covariance. The nonnegative reversible generator in state order (−,−),(−,+),(+,−),(+,+) is L=[[2,−1,−1,0],[−1,4,0,−3],[−1,0,4,−3],[0,−3,−3,6]]. With P the constant-state projector and R=(L+P)⁻¹−P, exactly summing the six unique orderings XXYY yields chain contribution 23/288, normalization contribution 23/384. Each unique ordering has multiplicity four in the mixed derivative; thus **E_xxyy=4(23/384−23/288)=−23/288≠0**. Exact rational SymPy verification passed.
+
+This does NOT refute SU(2) fourth-order clustering; it refutes the inference from old-prefix endpoint *equal-time* factorization/covariance alone to dynamic fourth-order connectedness. A valid fourth-order strip result needs a spatially summable bound on connected four-time cumulants with three relative-time integrals (or equivalent localized multi-resolvent responses), uniform in strip length. Previous full-generator factorization cancellation is valid only with *dynamical* factorization. No fourth-order extensivity, interacting λ=1 gap, or continuum Yang–Mills mass gap is claimed.
+
+Complete longer audit and exact verifier, log, SHA256 manifest archived in Library /The Singular Boundary/Proof Audits.
