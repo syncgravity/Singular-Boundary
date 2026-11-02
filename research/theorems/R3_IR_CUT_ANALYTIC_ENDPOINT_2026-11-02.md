@@ -1,0 +1,9 @@
+# R3-IR — Analytic cut-strength series and two-endpoint nonlinear envelope (2026-11-02)
+
+On the correctly cut SU(2) original-link Hilbert space, let H(z)=L0+zVcut, with κ0=23/144 and ||Vcut||≤c=269/72000. On the Riesz contour |ζ|=κ0/2, complex source |z|≤R=κ0/(8c)=2875/538 gives ||(ζ−H(z))^−1||≤8/(3κ0), hence the rank-one analytic spectral projection ||P(z)||≤4/3.
+
+For any bounded O, μ(z,O)=tr(P(z)O) is holomorphic in |z|<R with |μ(z,O)|≤4||O||∞/3. Therefore μ_t(O)=Σ a_n(O)t^n and |a_n(O)|≤(4/3)||O||∞(538/2875)^n, uniformly in volume. For residual w_k, all n≥2 terms obey |Σ_(n≥2)a_n(w_k)t^n|≤(4/3)v(qt)^2/(1−qt), v=1/1152, q=538/2875. This has no spatial decay.
+
+More sharply, for a right residual bond k≥j+2 across cut after face j, exact old-prefix centering at both factorized and full dressed endpoints implies μ_0(w_k)=μ_1(w_k)=0. Previous uniform interpolation gap δ=609/4000 yields |μ_t''(w_k)|≤12(c/δ)^2v. The Dirichlet endpoint Green-function inequality then proves **|μ_t(w_k)|≤6(c/δ)^2v t(1−t)=(72361/23071765248)t(1−t)**. This improves the earlier nondecaying t² remainder near the full endpoint. Earlier first coefficient retains conditional spatial decay |a1(w_k)|≤0.002401716(5/6)^max(0,k−j−2); no spatial bound is proved for n≥2. The endpoint coefficient sum rule Σ_(n≥1)a_n(w_k)=0 follows.
+
+All results conditional on earlier finite-strip dressed-reference gap, cut norm and SU(2) derivative certificates; no full-interpolation exponential localization, fourth-order extensivity, physical interacting λ=1 or continuum mass gap follows. Full report, verifier, log, SHA256 are archived under Library /The Singular Boundary/Proof Audits.
