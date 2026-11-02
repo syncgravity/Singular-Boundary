@@ -1,0 +1,7 @@
+# Fourth-order temporal clustering and connected time integrability — 2026-11-02
+
+Under a reversible stationary semigroup with L2 spectral gap κ, four centered bounded observables f1,...,f4 at ordered times t1≤t2≤t3≤t4 have fourth cumulant bounded by **3∏||fi||∞ exp[−κ(t4−t1)]**. Proof: subtract pair (12)(34) from the ordered four-point moment, insert Q between f2 and the middle evolution, and obtain a centered P_b factor. L2 mixing on the first and last centered observables contributes exp(−κa) and exp(−κc), while Q P_b Q contributes exp(−κb). The remaining pairings (13)(24) and (14)(23) each contribute exp[−κ(a+2b+c)].
+
+Feynman–Kac connected fourth-derivative representation integrates 24 time orderings over the three positive gaps. Thus **|E_ijkl|≤72 v^4/κ^3=1/99672064≈1.00329014958e−8** for any four (possibly repeated) SU(2) residual-bond labels with v=1/1152, conditional on earlier reference gap κ=23/144. This is a strictly temporal result; it is less sharp numerically than the earlier direct 48v^4/κ^3 bound, but explicitly supplies an integrable 3-time decay envelope. No spatial tree factor follows, so fourth-order extensivity is still open. Physical λ=1 and continuum mass gaps remain open.
+
+The full proof, verifier, execution log and SHA256 manifest are archived under /The Singular Boundary/Proof Audits in Library.
