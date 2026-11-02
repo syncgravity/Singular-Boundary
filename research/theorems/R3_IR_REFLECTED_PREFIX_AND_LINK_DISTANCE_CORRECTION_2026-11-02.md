@@ -1,0 +1,7 @@
+# Reflected prefix and corrected original-link distance audit
+
+For finite open SU(2) strips with E(f_m)={v_m,v_(m+1),t_m,b_m} and S_j=E(f_j) union E(f_(j+1)), graph adjacency means two distinct links share one plaquette. Exact link-graph enumeration (N=2..42; 11,480 bond pairs) and all-N column argument give **dist(S_i,S_k)=max(0,k−i−2)** for i<k, correcting the previously claimed max(0,k−i−1). Thus spatial-to-index decay costs q^(−2)=36/25, not 6/5, for q=5/6. The loose middle-gap 0.1 coefficient survives because (36/25)*0.037621<0.1.
+
+Right-to-left conditioning fixes all links in faces f_(j+1),...,f_(N−1), integrates the complementary left links, and has constant conditional normalizer z_g^(j+1). The freshly generated left face U_j has central weighted Haar law. Writing U_j=(a,b) and fixed U_(j+1)=(c,d), the residual cross term Re(U_j U_(j+1))−ac=−b·d, which is odd under b->−b; therefore P^R_(j+1) w_j=0. Under archived Hessian/dressing assumptions, conditional future-left Poincare rate >=23/144 and the mirror boundary commutator follow. The physical left isolation tail distance mirrors the right isolation formula.
+
+This repairs two specific structural dependencies, but does **not** re-certify every fourth-order cumulant chronology or the previously reported 62553.6(N−1) coefficient. Full report, verifier, execution log and SHA-256 manifest in The Singular Boundary/Proof Audits Library; neither mass-gap problem is solved.
