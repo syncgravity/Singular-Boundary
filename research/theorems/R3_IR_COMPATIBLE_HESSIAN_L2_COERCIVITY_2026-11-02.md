@@ -1,0 +1,7 @@
+# Compatible Hessian L2 coercivity — 2026-11-02
+
+**Theorem (undressed product SU(2), exact):** On SU(2)^m with orthonormal generators i/2,j/2,k/2 and Haar product, the positive scalar Laplacian −Δ has first nonzero eigenvalue 3/4 uniformly in m. Since Ric=1/2 g, polarized integrated Bochner gives <Hess φα,Hess φβ>=λα(λα−1/2) δαβ for orthonormal scalar eigenfunctions. Therefore ||Hess e^{tΔ}f||₂≤e^{−3t/4}||Hess f||₂. The corrected tensor operator A2=−Δ^(2)+C intertwines Hess(−Δf)=A2 Hess f; hence A2 has gap ≥3/4 on the closure of compatible scalar Hessians, even though parallel metric tensors are zero modes on the ambient symmetric-tensor space.
+
+**Limitations:** This is UNWEIGHTED, UNDRESSED L2 coercivity. It does not establish a pointwise or weighted Hessian contraction for L_N=−Δ−2∇S_g·∇. Third derivatives of S_g force a coupled gradient–Hessian system and the original undressed compatible decomposition alone does not settle its estimates. It does not prove a uniform Hess log ground-state bound, interacting λ=1 gap, or continuum Yang–Mills mass gap.
+
+Full independent mathematical report, reproducing checker, execution log and SHA-256 manifest are saved in Library /The Singular Boundary/Proof Audits.
