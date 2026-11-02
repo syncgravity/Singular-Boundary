@@ -1,0 +1,7 @@
+# Fourth-order factorization cancellation — 2026-11-02
+
+In a product Hilbert space H_A⊗H_B with independent generator L=L_A⊗I+I⊗L_B and two perturbation labels supported on each factor, the perturbed ground energy splits E(t)=E_A(t_A)+E_B(t_B). Hence every mixed fourth derivative involving both subsystems, including E_aabb, vanishes exactly.
+
+The previous exact fourth-order resolvent formula is E_abcd=−C_abcd+N_abcd, where C is the full 24-term ordered four-insertion chain sum and N the full 24-term normalization subtraction sum (all R include Q). Therefore C_abcd=N_abcd for the product-factor case. Crucially neither need individually vanish: an exact 16-state product-of-four-spin-flips comparison with u=x0 x1 and v=x2 x3 gives C_uuvv=1 and N_uuvv=1, so E_uuvv=0. All computations use rational inversion and assertions.
+
+This theorem establishes algebraic connectedness cancellation under exact dynamical factorization. The physical SU(2) strip does not factor exactly across separated bond groups, so no quantitative decay or fourth-order extensivity follows yet. Needed next: a cut-generator resolvent comparison with a physically local gradient estimate. The interacting lambda=1 and continuum Yang–Mills mass gaps remain open. Full audit, verifier, log and hashes archived in Library /The Singular Boundary/Proof Audits.
