@@ -1,0 +1,7 @@
+# R3–IR: isolated SU(2) dressing C3/C4 certificate, 2026-11-02
+
+The archived isolated fixed-point estimate for |g|≤10^-3 gives ψ_g=1+u_g>0, ||u_g||_A=Σ_(n≥1)|u_n| 2^n(n+1)^6≤1/25 and ψ≥24/25; s_g=log ψ_g. Markov's degree-n polynomial derivative inequality for second-kind character U_n implies ||U_n^(k)||∞≤n^(2k)(n+1). Thus ||u_g^(k)||∞≤(1/25) sup_(n≥1) n^(2k)/(2^n(n+1)^5). The exact global maxima for k=3,4 are respectively 729/8192 at n=3 and 390625/248832 at n=5; beyond n≥12 the consecutive ratio is ≤(13/12)^8/2<1. Hence ||u_g'''||∞≤729/204800, ||u_g''''||∞≤15625/248832.
+
+Differentiating s_g=log(1+u_g), using ||u'||,||u''||≤1/25 and ψ≥24/25, gives ||s_g'''||∞≤16033/1769472≈0.0090608950 and ||s_g''''||∞≤6891385/95551488≈0.0721222154. The previous q_g=||s_g'||+||s_g''||≤49/576 remains valid. These are *scalar p-character derivatives*, not covariant third/fourth derivatives of the full SU(2) link potential. A weighted Hessian resolvent theorem for the interacting log ground state and the λ=1 spectral gap remain open.
+
+Complete full proof, rational verifier, passing log and sha256 manifest are archived in The Singular Boundary/Proof Audits Library. The fixed-point ball was reused from the prior dressing certificate rather than proved anew in this audit.
