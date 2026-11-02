@@ -1,0 +1,7 @@
+# Fourth-order cut-strength comparison — 2026-11-02
+
+For finite open SU(2) strips, conditional on previous cut construction and gap certificates: L0=LL⊗I+I⊗LR, H_t=L0+t Vcut, ||Vcut||≤c=269/72000 and gap(H_t)≥δ=609/4000 for t∈[0,1]. For four multiplication residual bonds ||w_a||∞≤v=1/1152 supported on both sides of the cut, define D(t)=∂z1∂z2∂z3∂z4 E(H_t+Σz_aw_a)|z=0. Exact dynamical factorization at t=0 gives D(0)=0.
+
+Let r=δ/(32v). On the complex polydisc |z_a|≤r, the source perturbation has norm ≤δ/8. The circle radius δ/2 around the real ground eigenvalue carries perturbed resolvent norm ≤8/(3δ), hence Riesz projection ||P_t(z)||≤4/3. The analytic Hellmann–Feynman identity ∂tE=tr(P_t(z)Vcut) implies |∂tE|≤4c/3, even for complex sources. Four-variable Cauchy gives |D'(t)|≤(4c/3)r^-4. Integration over t yields **|D(1)|≤(4/3)·32^4 c v^4/δ^4 =134500000000/24367051009772667≈5.51974877658e−6**, independently of volume and cut position.
+
+This cut-strength comparison does not decay with distance between sources. It is weaker numerically than the existing fixed-quadruple resolvent estimate and does not imply fourth-order extensivity, interacting λ=1 gap, or continuum Yang–Mills mass gap. Detailed proof, verifier, execution log, and SHA256 manifest in Library /The Singular Boundary/Proof Audits.
