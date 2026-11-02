@@ -1,0 +1,7 @@
+# Dressed Hessian energy and resolvent theorem — 2026-11-02
+
+For the finite SU(2) strip with dressed invariant law ν∝exp(2S_g)dHaar and L=−Δ−2∇S_g·∇, assume the archived uniform Bakry–Émery curvature lower bound Ric−2Hess S_g≥κg, κ=23/144. The *exact integrated Bochner identity* is ||Lf||₂²=||Hess f||₂²+∫(Ric−2Hess S_g)(∇f,∇f)dν. Hence ||Hess f||₂²+κ||∇f||₂²≤||Lf||₂², with no dependence on strip length. Spectral calculus then yields ||Hess P_t f||₂≤exp(−κt)||Lf||₂ and ||Hess Rg||₂≤||Qg||₂, R=L^{-1}Q. Gradient energy dissipation also gives ∫₀∞||Hess P_t f||₂²dt≤(1/2)||∇f||₂². These implications avoid third derivatives of the dressing entirely.
+
+The new estimate is only **unweighted L² with the generator graph norm**. It is NOT a bound starting from ||Hess f||₂, nor a weighted or pointwise Hessian bound, nor a uniform Hessian estimate for log interacting ground states. For g=W_N, ||Qg||₂ may grow with N. The continuous SU(2) curvature premise is inherited from prior geometric and dressing certificates. No uniform interacting lambda=1 gap or continuum Yang–Mills mass gap is established.
+
+Full independent report, exact verifier, passing log and SHA256 manifest archived in Library /The Singular Boundary/Proof Audits.
