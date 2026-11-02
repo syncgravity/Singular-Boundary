@@ -1,0 +1,5 @@
+# Full nonlinear product, ordered third-resolvent response — 2026-11-02
+
+For finite dressed SU(2) strips and the earlier conditional weighted Bochner and full-future prefix Poincare theorems, define R=L_N^-1 Q, residual bonds w_i, v=1/1152, kappa=23/144, B=120/11, K=1440/(11 sqrt(23)), G=sqrt(21)*67/13824. For distinct i,j,k with k>max(i,j), put H_ij=w_j R w_i, S=support(w_i) union support(w_j), and d=d(future links beyond k,S). The weighted Leibniz rule gives ||grad H_ij||_{S,log(6/5)} <= v B G+G v/kappa = 0.00033103014270455836. The rightmost bond's exact prefix centering gives |<w_k,RQ(w_j Rw_i)>| <= v K (v B G+G v/kappa) (5/6)^d = 7.843699572871686e-6 (5/6)^d.
+
+The bound includes the *entire* nonlinear product, not only its prefix-centered contribution, and controls four of six permutations of three distinct bonds by self-adjoint reversal. Two permutations with rightmost spatial bond at middle remain open; they require a product of two resolvent responses. Thus no complete third-order decay, interacting lambda=1 gap or continuum mass gap follows. Full report, executable checker, log and SHA256 manifest in Library /The Singular Boundary/Proof Audits.
