@@ -1,0 +1,9 @@
+# Fourth-order corrected-offset coefficient reconciliation — 2026-11-02
+
+Source-of-record audit: see the complete full-length report, verified checker, execution log, and SHA256 in The Singular Boundary / Proof Audits Library under R3_IR_FOURTH_FINAL_OFFSET_RECONCILIATION_2026-11-02.md.
+
+For the original-link graph residual bond supports S_i=E_i∪E_(i+1), the corrected distance is D=max(0,k−i−2), so q^D <= (36/25)q^(k−i), q=5/6. Archived integrated middle-gap chronology coefficients for LLRR/RRLL, LRLR/RLRL and LRRL/RLLR are 0.0376093927883055, 0.0376206864037546 and 0.0376203198219835. The corrected largest coefficient is (36/25)(0.0376206864037546)=0.05417378842140662, smaller than the allocated 0.1. Outer-gap cases use the conditional extremal prefix bridge bound 4.496677088610931e−7 and cross-pair bound 0.03759635174898768; corrected sum (36/25)(0.03759680141669654)=0.054139394040043004, also smaller than 0.1. Ties and repeated labels require no positive separation and are allowed in the zero-gap estimates.
+
+The exact three-gap geometric sum for nonnegative gaps (including zeros for repeated indices) is 1086. The intentionally loose 24×24 counting gives the conditional coefficient 24²×0.1×1086=62553.6 times the number of residual bonds N−1. This numerical coefficient is unchanged after the corrected graph-distance factor.
+
+**IMPORTANT:** This verifies the reconciliation only given the earlier two-cluster cumulant and one-sided bridge inequalities and the archived continuous SU(2) Bochner/Poincare/dressing estimates. The arithmetic checker verifies constants and gap counting; it does not provide a from-scratch analytic proof or any interacting λ=1 or continuum Yang–Mills mass gap.
