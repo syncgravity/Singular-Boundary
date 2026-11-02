@@ -1,0 +1,7 @@
+# Three-face orientation and conditional-form audit (2026-11-02)
+
+Original-link quaternion test: for A=XY, B=Y^{-1}Z, C=Z^{-1}W and positive carré du champ defined from right-invariant generators U exp(t i_k/2), exact ambient polynomial differentiation gives Γ_Y(Re A,Re B)=[Re(AB)−Re A Re B]/4, Γ_Z(Re B,Re C)=[Re(BC)−Re B Re C]/4, and Γ_e(Re A,Re C)=0 on every original link. All exact symbolic assertions pass in 16 quaternion coordinates.
+
+This directly contradicts the *sign* of the older three-face Γ=(ab−Re AB)/4 if and only if its orientation, definition of mixed trace and positive carré du champ are identical. That convention discrepancy remains to be settled before older quartic coefficients are reused.
+
+These are linkwise algebraic identities, not a proof of nearest-neighbor projected conditional-generator blocks or bounded L² off-diagonal operator norms. Conditional expectations and block elimination can induce longer-range couplings. The bounded block-Schur decay criterion is not yet applicable to SU(2). Full audit, verifier, execution log and SHA-256 manifest are saved in Library /The Singular Boundary/Proof Audits. Physical connected covariance decay, interacting λ=1 gap and continuum Yang–Mills mass gap remain open.
