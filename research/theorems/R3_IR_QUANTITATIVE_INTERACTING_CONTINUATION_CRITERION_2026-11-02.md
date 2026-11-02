@@ -1,0 +1,9 @@
+# Quantitative interacting continuation criterion — 2026-11-02
+
+For each finite connected compact SU(2) strip M_N, H_N(lambda)=L_N+lambda W_N is a smooth elliptic Schrödinger operator. Strict positivity improvement and simplicity of its principal eigenfunction imply a globally defined positive ground state for all real lambda and real-analytic local dependence on lambda. This does **not** imply a spectral-gap bound independent of N.
+
+Writing u=log h, the exact Riccati/Poisson equation is u=−lambda R_NQ_NW_N+R_NQ_N|grad u|² modulo constants. The ground-state transform has weighted Ricci Ric−2Hess S_g−2Hess u. With archived q_g<333723/1e9, its reference curvature is >0.498665108. Therefore an N-uniform upper bound on the largest Hessian eigenvalue of u by eta<0.249332554 yields gap >=0.498665108−2eta>0.
+
+An abstract sufficient contraction theorem: suppose complete local Banach spaces X_N, uniform A,C,D>0 satisfy ||R QW||_X<=A, ||RQ<grad v,grad w>||_X<=C||v||_X||w||_X and lambda_max(Hess v)<=D||v||_X pointwise. If 4AC<1, then contraction on a ball of radius r(lambda)=[1−sqrt(1−4lambda AC)]/(2C) constructs the unique log positive ground state for all 0<=lambda<=1; if D r(1)<kappa_0/2, it yields the uniform interacting spectral gap. Equality 4AC=1 is not covered by the strict contraction proof.
+
+The present zero-coupling per-link Hessian L4 estimates (<2.705 first response, <13420 second response) do not supply an L-infinity Hessian bound, an X_N satisfying the algebra bound, or numerical A,C,D; no uniform positive radius of perturbative continuation has been certified. The extensive W_N also prevents direct use of a global sup norm with N-independent A. Full report, arithmetic verifier, log and hashes archived in Library /The Singular Boundary/Proof Audits. Neither lambda=1 interacting gap nor continuum Yang–Mills mass gap proved.
