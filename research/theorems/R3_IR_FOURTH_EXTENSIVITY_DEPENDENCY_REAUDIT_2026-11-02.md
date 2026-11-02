@@ -1,0 +1,9 @@
+# Independent fourth-order extensivity dependency re-audit (2026-11-02)
+
+**Verdict:** The published coefficient 62553.6(N−1) follows arithmetically from an assumed all-gap per-chronology majorant 0.1(5/6)^max(a,b,d), but the sources do not independently prove that majorant for both spatial extremes. The archived prefix-centering proof treats the **rightmost bond** with left-to-right filtration. A reflected **leftmost bond** result is invoked, without a separately proved right-to-left conditional Haar centering/Poincare lemma. Likewise, the explicit physical-link graph certificate for the asserted D≥max(0,b−1) support offset needs inclusion. These must be verified before promoting the conditional bound to a closed theorem.
+
+**Verified exact combinatorics:** Σ_(a,b,d≥0) (5/6)^max(a,b,d)=(1+4q+q²)/(1−q)³=1086. The loose 24×24 chronology/label factor times 0.1 gives 62553.6 per residual bond. Repeated labels correspond to nonnegative gaps; the combinatorial sum accommodates zeros, assuming the analytic per-chronology estimate holds. Exact rational checker verifies finite-M counts.
+
+**Verified model normalization:** For reversible refresh generator L=I−Π and centered multiplier V, E4=−m4+2m2² and ∫_R+³ K4=m4−2m2²; thus E''''(0)=−24∫K4 in that exact model, agreeing with archived fourth-order resolvent algebra.
+
+**Limitations:** The audit does not independently redo all SU(2) weighted L4 estimates or every repeated-index connected cumulant identity; these are upstream proof obligations. Interacting λ=1 gap and continuum Yang–Mills mass gap remain open. Full local audit, executable exact verifier, execution log and SHA-256 manifest in The Singular Boundary Library /Proof Audits.
