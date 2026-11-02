@@ -1,0 +1,5 @@
+# Fourth-order connected semigroup: cross-pair channel audit (2026-11-02)
+
+**Conditional partial result, not complete fourth-order clustering.** For centered f1...f4 at chronological times 0,a,a+b,a+b+c, the exact joint cumulant equals T−C13(a+b)C24(b+c)−C14(a+b+c)C23(b), with T=〈P_a f1,M2 Q P_b Q M3 P_c f4〉. The (12)(34) pair subtraction is already encoded in Q.
+
+Assume the previously archived weighted semigroup gradient estimate, B=120/11, c=11/120, q=5/6, and d_ij original-link support distance. Then each two-time covariance obeys |C_ij(s)|≤B e^(−cs) q^d_ij ||∇fi||2||∇fj||2. Therefore |C13C24|≤B² e^(−c(a+2b+c)) q^(d13+d24) ∏||∇fi||2 and analogously |C14C23| with q^(d14+d23). The triple-gap time integral is exactly 1/(2c³). The bridge has only the archived temporal bound |T|≤∏||fi||∞ e^(−κ(a+b+c)), κ=23/144, without a spatial factor. These are rigorous conditional *partial-channel* bounds, not a fourth-order spatial tree estimate, not extensivity, and not an interacting or continuum Yang–Mills gap proof. Detailed report, verifier, execution log and SHA256 manifest in Library /The Singular Boundary/Proof Audits.
