@@ -1,0 +1,9 @@
+# Local first- and second-coupling Hessian response (2026-11-02)
+
+**Conditional on pointwise anisotropic Bochner with both increasing and decreasing link weights** (neighboring weight-root ratios ≤6/5), the finite open SU(2) strip has volume-uniform **per-original-link** estimates for derivatives of log interacting ground state at lambda=0. This is not a lambda=1 theorem.
+
+Exact equations: u1=−R_N QW_N=−Σ_j R_N w_j, u2=2R_N QΓ(u1,u1), W_N=Σ_j w_j. Set q=5/6, B=120/11, C=√(30/11), G=√21·67/13824, r=√q. Because the support S_j spans columns j,...,j+2, **Σ_j q^dist(e,S_j)≤15** for every original link e and **Σ_d q^(2dist(e,d))≤183/11**. Pointwise weighted first-gradient and weighted L2 Hessian resolvent estimates give ||grad_e u1||∞≤15BG≈3.634381766 and (Σ_d||Hess_ed u1||₂²)½≤15CG≈0.550181862.
+
+Hessian symmetry and application of weights to either index yield ||Hess_ed u1||₂≤CG q^(−2)(h+11)q^(h/2), h=|col(e)−col(d)|. Using grad_e Γ(u1,u1)=2 Σ_d <Hess_ed u1,grad_d u1> yields ||grad_e Γ(u1,u1)||₂≤D=30BCG²K≈555.142486, where K=3q^(−2)[11+2(r/(1−r)²+11r/(1−r))]≈2082.231037. Decreasing weights a_d=q^(2dist(d,e)) have the same adjacent ratio control and finite total mass ≤183/11. The weighted Hessian Poisson inequality applied to u2 gives **(Σ_d||Hess_ed u2||₂²)½ ≤2C√(183/11)D≈7478.731623**, independent of N.
+
+These are deliberately coarse LOCAL L2 bounds. They do not imply configuration-pointwise Hessian curvature, all-order λ continuation, an SU(2) interacting gap at λ=1, or a continuum Yang–Mills mass gap. The decreasing-weight form of the weighted Bochner input must be checked against its full geometric proof. The complete 92-line report, verifier, execution log and SHA-256 manifest are archived in the project Proof Audits Library.
