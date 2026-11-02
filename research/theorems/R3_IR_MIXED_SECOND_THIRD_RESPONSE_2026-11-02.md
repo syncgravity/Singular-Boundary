@@ -1,0 +1,7 @@
+# R3-IR — Mixed second/third residual-bond derivatives (2026-11-02)
+
+For finite SU(2) dressed reference generator L≥0 with simple ground 1 and gap κ=23/144, bounded mean-zero bond multipliers w_i (||w_i||∞≤v=1/1152), let R=(L|_{1⊥})^{-1}Q and H(t)=L+Σ t_i w_i. With eigenfunction normalized by <1,h>=1, the exact eigenvalue derivatives at zero are E_i=0, h_i=−Rw_i, E_ij=−2<w_i,Rw_j>, h_ij=RQ(w_i Rw_j+w_j Rw_i), and **E_ijk=Σ_{σ∈S3}<w_{σ1},R w_{σ2} R w_{σ3}>** (all permutations with repeated-label multiplicities). For observables A, the ground-state second response is μ_ij(A)=2<A−<A>, h_ij+h_i h_j>.
+
+Conditional on preceding common-filtration inverse sector bound ||Π_i RΠ_j||≤C q^|i−j|, the second energy response obeys |E_ij|≤2Cv²q^|i−j|. Each fixed third derivative is uniformly bounded |E_ijk|≤6v³/κ²=1/6500352≈1.53838e−7, but this bound has no spatial decay and cannot be summed over O(N³) triples. The projected multiplication operators Π_a w_j Π_b must be estimated to control connected repeated insertions. Physical interacting full-bond gap, clustering and continuum mass gap remain open.
+
+Exact sympy rational eigenvector/eigenvalue Taylor recursion on a four-state reversible comparison model checks both second and third identities, including nonzero E_001=3/2. Full detailed report, verifier, log and SHA-256 manifest in Library /The Singular Boundary/Proof Audits.
