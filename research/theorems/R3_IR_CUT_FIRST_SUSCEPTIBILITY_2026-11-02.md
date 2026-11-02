@@ -1,0 +1,7 @@
+# Cut-factorized first-order distant susceptibility — 2026-11-02
+
+Conditional finite-volume result, not fourth-order connected clustering. At a physical original-link cut after face j, write H_t=L_L⊗I+I⊗L_R+tV_cut. At t=0, h0=1 and ν0=νL⊗νR. The local cut potential V_cut=−gp_(j+1)−E_g+2Γ(S0,s_g(p_(j+1))) has support inside faces j,j+1,j+2. Let \bar V_R(y)=∫V_cut(x,y)dνL(x), and G_cut,R=||∇_R \bar V_R||₂, finite and volume-independent under the certified smooth derivative bounds (not here given a sharp numerical value).
+
+For k≥j+2, right residual bond w_k has exact right-prefix centering P_k^R w_k=0. Exact eigenvector perturbation and factorization give μ'_0(w_k)=−2〈w_k,R_R \bar V_R〉. Conditional weighted Bochner + full future-link Poincare imply |μ'_0(w_k)|≤2 v(120/11)/sqrt(23/144) (5/6)^r G_cut,R, with v=1/1152, r=d_link(T_>k^R,supp∇\bar V_R)≥max(0,k−j−2). Therefore **|μ'_0(w_k)|≤0.0473896396 G_cut,R (5/6)^max(0,k−j−2)**. This theorem gives a genuinely spatial first-order coefficient at t=0, but not a bound throughout t∈[0,1] nor on the fourth mixed derivative. No fourth-order extensivity, physical interacting λ=1 or continuum mass gap follows. 
+
+Full audit, exact-rational finite-spin check, execution log and SHA256 file in Library /The Singular Boundary/Proof Audits.
