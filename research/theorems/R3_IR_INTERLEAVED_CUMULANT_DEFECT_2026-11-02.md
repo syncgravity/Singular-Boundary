@@ -1,0 +1,5 @@
+# Interleaved fourth-order cumulant: exact product-defect decomposition
+
+For chronological gaps a,b,d, let X=P_a f1,Y=f2,Z=f3,U=P_d f4. The exact identity is **K4=cum_nu(X,Y,P_bZ,P_bU)+Cov_nu(XY,D_b(Z,U))**, D_b(Z,U)=P_b(ZU)-(P_bZ)(P_bU). It retains all three pair partitions and does not bound the within-cluster subtraction separately.
+
+For LRLR clustering f1,f3 on left, f2,f4 on right, with link gap D, assuming the archived conditional weighted L4 semigroup gradient rate c=11/120, gap kappa=23/144 and bond norms v=1/1152,G=sqrt(21)*67/13824, **|Cov(XY,D_b)|≤(1440/17)v²G²(5/6)^D exp(-kappa a-c d)[exp(-kappa b)-exp(-2c b)]**. All three time integrals yield **785575/453048532992≈1.7339753752472074e-6** times (5/6)^D. The remaining equal-time four-cumulant of evolved observables is unresolved, so fourth-order extensivity and mass-gap objectives remain open. Complete audit, finite-state verifier, execution log and SHA256 manifest preserved in Library /The Singular Boundary/Proof Audits.
