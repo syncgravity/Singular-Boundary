@@ -1,0 +1,7 @@
+# Interacting second-order ground-state Hessian obstruction — 2026-11-02
+
+The finite-volume log-ground-state equation L_N u−Γ(u,u)+λW_N=E_N(λ) gives exact derivatives at λ=0: u'_0=−R_N QW_N, E''_0=−2〈QW_N,R_NQW_N〉, and **u''_0=2R_NQΓ(R_NQW_N,R_NQW_N)** modulo constants. This is a new nonlinear resolvent regularity obligation not entailed by previous first-gradient L2/L4 estimates. A pointwise upper Hessian bound η<23/288, uniform N and λ∈[0,1], would imply a uniform interacting gap but remains unproved.
+
+In the flat local model L=−∂²−2S'∂ the exact commutator is (Lf)''=L(f'')−4S''f''−2S'''f'. Therefore pointwise Hessian propagation invokes third derivatives of S. For S_n(x)=(a/n²)sin(nx), ||S_n''||∞=a but ||S_n'''||∞=an, demonstrating insufficiency of a uniform Hessian S certificate for a generic second-derivative argument (not disproving any result for the specific SU(2) dressing). Next: establish C3/C4 dressing and original-link geometry, weighted Hessian-resolvent bounds, and nonlinear λ continuation or replace with block gap stability. No λ=1 or continuum mass gap proved.
+
+Full mathematical report, executable verifier, passing log and SHA-256 manifest are archived in The Singular Boundary/Proof Audits.
