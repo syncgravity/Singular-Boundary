@@ -1,0 +1,17 @@
+# Gauge-invariant Wilson-character counterexample to unrestricted anchored quadratic Poisson closure (2026-11-02)
+
+**Exact theorem conditional on the archived original-link SU(2) open-strip face-coordinate Wigner realization.** The same-weight anchored bilinear Poisson map B=K^(-1)Q Gamma_K is NOT bounded on the residual-gauge-invariant Wigner coefficient polymer algebra A_(sigma,kappa,inv) × A_(sigma,kappa,inv) → A_(sigma,kappa,inv) uniformly in strip length, for any fixed finite sigma>=0 and kappa>=0. Unlike the previous highest-weight obstruction, this one uses only genuine gauge-invariant Wilson plaquette characters.
+
+Let chi_n(U)=tr_(n/2)(U), ||chi_n||_(W_sigma)=(n+1)e^(sigma n). On I_t=[1,t], set F_(I_t)=2^(−t)e^(−kappa t−sigma t) product_i chi_1(U_i). Define an extensive translation-invariant singleton source G_{ {j} }=(m+1)^(−1)e^(−kappa−sigma m)chi_m(U_j). Both exact anchored norms equal 1, and both observables are residual-simultaneous-conjugation invariant.
+
+The SU(2) Clebsch–Gordan identity chi_1 chi_m=chi_(m+1)+chi_(m−1), with K_1 chi_n=n(n+2)chi_n and 2Gamma=fKg+gKf−K(fg), gives the **exact same-face carré du champ**: Gamma_4(chi_1,chi_m)=−m chi_(m+1)+(m+2)chi_(m−1). Let P_cl conjugation-average each face separately. In degree n, the coefficient matrix projection A→tr(A)I/(n+1) is contractive in unnormalized Wigner l1; cross shared-link gradients of characters on distinct faces have zero P_cl projection. Hence on the distinct output multidegree c^(j)=(1,...,1,m+1,1,...,1), the independently-class-projected source is exactly −m chi_(m+1)(U_j)prod_(i≠j)chi_1(U_i).
+
+On any output multidegree c, K_t(c)=D(c)I−2sum_i C_i, D(c)=sum_i c_i(c_i+2). The archived exact edge-column Cauchy bound ||C_i||_(1→1)≤sqrt(d_i d_(i+1))/4 implies **||K_t(c)||_(1→1)≤3D(c)/2**, so for every nonconstant block source S, **||K_t(c)^(-1)S||_1≥2||S||_1/[3D(c)]**. For c^(j), D=3t+m²+4m. After input/output weights, source projected l1 equals e^(−kappa)m(m+2)/[2(m+1)] per insertion. Distinct multidegrees cannot cancel, giving the rigorous **full gauge-invariant anchored bilinear lower bound**
+
+**||B(F,G)||_(A_sigma,kappa) ≥ e^(−kappa) t m(m+2)/[3(m+1)(3t+m²+4m)].**
+
+At **t=m²**, this equals **e^(−kappa)m²(m+2)/[12(m+1)²] ~ e^(−kappa)m/12 → ∞**. Thus unrestricted same-weight anchored Wigner bilinear closure is impossible EVEN on gauge-invariant Wilson-character inputs within this model. The argument does not require calculating coupled-spin resolvent entries, and holds for every fixed analytic radius. Normalizing G by a singleton degree moment q adds (1+m)^(-q), showing q<1 cannot suffice even in the invariant character sector; the archived first-moment singleton tame bound is consistent and sharp for ungraded input.
+
+**Limits:** The claim concerns the precise archived open-strip face-coordinate Banach norm and residual simultaneous-conjugation invariant observables; the full equivalence of that reduction to the physical Gauss-law Yang–Mills theory is not certified. Other physical/gauge-invariant norms and graded spaces remain viable. There is no proof of an interacting lambda=1 lattice gap or continuum four-dimensional Yang–Mills mass gap.
+
+Full 8+ KB proof, exact-rational verifier (39,601 cases plus 500 square-profile identities), passing log, SHA-256 manifest are archived in The Singular Boundary / Proof Audits.
