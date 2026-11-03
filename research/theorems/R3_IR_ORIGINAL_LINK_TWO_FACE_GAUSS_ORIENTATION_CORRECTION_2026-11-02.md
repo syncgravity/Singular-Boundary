@@ -1,0 +1,11 @@
+# Original-link two-face Gauss-law and orientation correction (2026-11-02)
+
+**Foundational correction to The Singular Boundary's archived two-face electric spectrum.** On a genuine pair of adjacent SU(2) plaquettes with seven original links and opposite shared-link orientations, take A=H1 U, B=U^(-1)H2, a=Re A, b=Re B, w=Re(AB)=Re(H1H2). The trace w is the six-link outer Wilson loop. Since each contributing original link appears once, **Ka=3a, Kb=3b, Kw=(9/2)w** under the standard sum of original-link SU(2) electric Casimirs.
+
+Exact shared-link differentiation U(t)=U exp(tTα), Tα=i σα/2, gives **Gamma(a,b)=(w−ab)/4**, and hence **K(ab)=(13/2)ab−w/2**. With the inverted-neighbor mixed trace r=Re(A B^(-1))=2ab−w, the archived cross gradient and K(ab) formula are recovered: **Gamma(a,b)=(ab−r)/4**, **K(ab)=(11/2)ab+r/2**. But the full original-link operator necessarily satisfies the corrected **K(r)=2ab+(11/2)r**, not the archived K(r)=(15/2)r.
+
+Thus in coefficient basis (ab,r), the correct electric matrix is **[[11/2,2],[1/2,11/2]]**, with eigenvalues **9/2 and 13/2**, eigenvectors 2ab−r and 2ab+r. The corrected quadratic Poisson response is **K^(-1)Gamma(a,b)=(5/78)ab−(2/39)r**, not ab/22−2r/55.
+
+The earlier two-face quadratic spectral certificate and any subsequent claimed spectrum predicting 11/2,15/2 on this Wilson-character sector are **superseded**. Later all-length Wigner and nonlinear polymer norm estimates must be independently rechecked against the **physical original-link Gauss-law reduction**. The graph has E=7,V=6, hence two independent based cycle variables modulo residual simultaneous conjugation, but this configuration-space gauge fixing alone does not determine the induced electric differential operator. The audit does **not** show all abstract Wigner estimates false; it shows that physical applicability is not established and the foundational low-degree spectrum is wrong under the archived conventions.
+
+Independent verification of 2,560 exact rational SU(2) quaternion shared-link trace, Fierz, and Casimir checks passes. Full detailed seven-kilobyte proof, reproducer, log, and SHA-256 manifest are preserved in The Singular Boundary / Proof Audits. Neither an interacting lambda=1 mass gap nor the continuum four-dimensional Yang–Mills mass gap is proved.
