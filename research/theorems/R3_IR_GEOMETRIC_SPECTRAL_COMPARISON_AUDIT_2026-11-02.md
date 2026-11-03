@@ -1,0 +1,5 @@
+# Geometric–spectral comparison audit — 2026-11-02
+
+For undressed SU(2)^m with radius-two bi-invariant factors and L0=−Δ, previously established ordered left-invariant frame and covariant connection conversion imply **||∇Hess u||₂≤(7/3+√6)||L0^{3/2}u||₂**, for every smooth centered u and uniformly in m. Conditional on the archived weighted connection conversion lemma, the analogous positive fixed original-link weighted inequality is **||∇Hess u||_(a,2)≤(7/3+√6)||∇L0u||_(a,2)**. This is an undressed L² graph-norm comparison, not a pointwise or nonlinear theorem.
+
+For dressed Lg=L0−2Y·∇ with Y=∇Sg, **[X,Lg]u=−2[X,Y]u**, and the exact skew-frame/Hess Sg decomposition explains why the undressed proof does not transfer by simple commutation. The exact dressed ||Lg^{3/2} Rgf||₂=||∇f||₂ identity does not itself control geometric third derivatives or two-index locality. The required dressed operator-level comparison remains open; neither the interacting λ=1 uniform spectral gap nor the continuum 4D Yang–Mills mass gap is proved. Full audit, exact-rational verifier (692 tests), log and SHA256 in Proof Audits Library.
