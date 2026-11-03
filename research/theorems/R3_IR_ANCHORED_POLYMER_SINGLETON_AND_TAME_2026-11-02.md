@@ -1,0 +1,13 @@
+# Anchored connected-polymer tame estimate and extensive singleton theorem (2026-11-02)
+
+Under the archived original-link SU(2) open-strip Wigner coefficient conventions and ||K_T(c)^−1||_(1→1)≤2/D(c), define the anchored/per-site polymer norm A_(σ,κ)(F)=sup_x Σ_(I∋x)e^(κ|I|)||F_I||_(Wσ).
+
+**Theorem 1, arbitrary families:** For σ>0, κ>−log(1−e^(−2σ)), let B_o be the archived overlap constant and H=max{1/4,sup_(o≥1)e^(−κo)B_o}<∞. Then ||B(F,G)||_(Aσ,κ)≤H[||F||_(Aσ,κ)^(1)||G||_(Aσ,κ)+||F||_(Aσ,κ)||G||_(Aσ,κ)^(1)], where the superscript (1) weights each polymer by |I|+2. Hence for each η>0, ||B(F,G)||_(Aσ,κ)≤2H M_η||F||_(Aσ,κ+η)||G||_(Aσ,κ+η), M_η≤2+1/(eη). Proof: For a fixed output anchor x, x belongs to I or J. If x∈I, any interacting J intersects the one-step enlargement I^+ of |I|+2 sites, giving the claimed incidence factor; symmetrize. This is volume-uniform but loses the support-weight exponent, not the analytic radius.
+
+**Theorem 2, extensive finite-degree singleton source:** Let G consist only of one-site coefficients g_j, each of Peter–Weyl degree ≤m≥1, with g=sup_j||g_j||_(Wσ). For arbitrary anchored F and σ>0, κ>0, the site-aggregated operator obeys **||B(F,G)||_(Aσ,κ)≤[12m(m+1)^2+e^κ]g||F||_(Aσ,κ)**, independently of strip volume or polymer lengths, without loss of σ or κ.
+
+Proof: On input degree vector a of total degree N≥1 and insertion site j∈I, the original-link generator bound is 3b W_j(a), W_j(a)=4a_j+a_(j−1)+a_(j+1), Σ_j W_j≤6N. One-site degree b≤m alters only output face j, with at most m+1 Clebsch–Gordan degrees and output electric D≥3max(1,N−m) after projection Q. Therefore total internal-insertion Poisson source ≤12m(m+1)N/max(1,N−m)≤12m(m+1)^2 times the input Wigner norm and g. The at most two adjacent external singleton insertions use the previously archived endpoint coefficient 1/4 and cost at most e^κg||F|| in the anchored norm. This proves the theorem.
+
+**Limitation:** The raw archived B_1 pairwise overlap majorant produces a factor t for inserting singletons at t positions of a polymer of length t; this shows failure of that **proof method** for same-weight anchored closure, not a lower bound on the actual Poisson map. Theorem 2 is a bounded linear action of a band-limited extensive source, not closure under arbitrary extensive nonlinear polymer pairs. No convergence at λ=1, interacting spectral gap, or continuum Yang–Mills mass gap is proved.
+
+The complete mathematical report, exact-combinatorial verifier (561,525 checks), log and SHA-256 manifest are archived in the Proof Audits Library.
