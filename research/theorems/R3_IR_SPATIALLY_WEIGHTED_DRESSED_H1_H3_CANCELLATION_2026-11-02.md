@@ -1,0 +1,7 @@
+# Spatially weighted dressed source cancellation and conditional geometric H1–H3 recovery (2026-11-02)
+
+For reversible L=−Delta−2grad S·grad, u=RQf, F=Qf, H=Hess u, assign fixed original-link weight a_j to the *second* Hessian index. Product parallel transport preserves that index's link and its weight. Integration by parts in the *first* Hessian index and div_nu H=−grad F+(Ric−2Hess S)grad u prove exactly
+
+**<H,Hess F>_a=||grad F||²_a+<grad F,(2Hess S−Ric)grad u>_a**.
+
+This requires no Hess F bound, introduces no weight derivative, and uses no extensive drift bound. Conditional on archived weighted Bochner c=1/2−4rho q>0.4983981296, rho=6/5,q<333723/10^9, weighted commutator alpha=4rho q, beta=0.021rho+0.001 and weighted Ric−2Hess S norm M=1/2+4rho q, weighted Hessian energy gives **||nabla Hess(RQf)||²_a <= C||grad f||²_a**, C=1+M/c+alpha/(2c)+beta/c^(3/2)<2.083, hence norm constant <1.444, independent of strip length. The exact source cancellation is unconditional, while the numerical inequality inherits those analytic certificates. The bound is weighted dressed L2, not pointwise cross-link locality or a nonlinear lambda=1 closure. Neither interacting mass gap nor continuum Yang-Mills mass gap is proved. Full proof, checker, log, checksum in Proof Audits Library.
