@@ -1,0 +1,15 @@
+# Exact collective-link Wigner column non-dominance — 2026-11-02
+
+**New exact all-length structural obstruction for a standard coefficientwise inverse proof, conditional on the independently reconstructed original-link Gauss-tree differential operator.**
+
+On the corrected physical SU(2) straight strip with t face loops, each of fundamental Wigner degree 1, choose the full 4^t-dimensional coefficient block's all-highest-magnetic product basis column v_up. The original-link derivative fields are D_(t_j)=L_j, D_(v0)=L_1, D_(vj)=−R_j+L_(j+1), D_(vt)=−R_t, and D_(b_j)=−R_j+sum_(k>j)(L_k−R_k). The exact electric generator is K_t=−sum_(e,a)D_(e,a)^2.
+
+**ALL-t THEOREM:** The diagonal element of this column is **d_t=(t²+4t+1)/2**, while the full absolute off-diagonal column mass is **o_t=(t−1)(t²+t+3)/3**. Proof: Each original field D_e=sum_i l_(ei)L_i+sum_j r_(ej)R_j contributes the diagonal [sum_i(l_i+r_i)]²/4+[sum_i(l_i²+r_i²)]/2. The only off-diagonal transitions of the all-up vector flip one left and one right magnetic slot; their coefficient is G_(ij)=sum_e l_(ei)r_(ej), which equals 0 at i=1 and −min(i−1,j)−1_(j=i−1) for i≥2 (indices 1-based). Different flipped slots cannot cancel in coefficient l1. Summation gives the above exact formulas.
+
+Thus the ratio o_t/d_t exceeds one for **every t≥4**, grows asymptotically as **2t/3**, and proves that the conventional absolute-value diagonal-preconditioned Neumann argument **cannot be a contraction proof** of the desired volume-uniform Wigner l1 inverse in this basis. This does **NOT** prove the actual inverse l1 norm grows or fails to be uniformly bounded; it does **NOT** prove any obstruction in the residual Gauss-invariant subspace. The tested column is non-invariant.
+
+An independent sparse original-link generator was assembled on full fundamental matrices for t=1,...,8 (dimension up to 65,536). Exact column identities passed every tested matrix. Numerical conjugate-gradient solves with residual l2 <1.2e−10 gave inverse-column l1 respectively 0.3333333333, 0.2384165542, 0.2046328671, 0.1982115220, 0.2098716674, 0.2381061373, 0.2854699166, 0.3580120435. The trend for t=4..8 is suggestive **only**, not an all-length growth theorem.
+
+338,650 exact integer/rational combinatorial comparisons passed for t<=100; full source code, complete 8 KB proof, log, and SHA256 manifest are archived in The Singular Boundary / Proof Audits Library. The proven free gauge-invariant Hilbert gap 3 remains intact. Physical invariant Wigner coefficient inverse bounds, nonlinear interacting lambda=1 gap, and continuum four-dimensional Yang–Mills mass gap remain open.
+
+**Next target:** Analyze the corrected operator on Gauss-adapted spin-network or recoupled coefficient bases, and examine cancellation-aware inverse methods rather than absolute-value diagonal dominance.
