@@ -1,0 +1,17 @@
+# All-length physical SU(2) open-strip Gauss-tree electric operator — 2026-11-02
+
+**THEOREM, finite one-row original-link strip with a fixed maximal tree.** For t>=1 plaquettes, graph vertices B_0..B_t,T_0..T_t, bottom edges b_j, top chord edges t_j, and vertical edges v_j, take tree {b_1..b_t,v_0..v_t} and based loops A_j=P_(j-1) t_j P_j^-1, P_0=v_0, P_j=b_1...b_j v_j. E=3t+1, V=2(t+1), cycle rank=t. Write L_j, R_j for left/right SU(2) Lie derivatives and Q_j=L_j−R_j. Every original edge induces EXACTLY these loop-coordinate fields (for each generator a):
+
+**D_(t_j,a)=L_(j,a)**, j=1..t;
+**D_(v_0,a)=L_(1,a), D_(v_j,a)=−R_(j,a)+L_(j+1,a)** for j=1..t−1, **D_(v_t,a)=−R_(t,a)**;
+**D_(b_j,a)=−R_(j,a)+Σ_(k=j+1)^t Q_(k,a)**, j=1..t.
+
+The finite-graph physical free-electric operator is **K_phys^(t)=−Σ_(all 3t+1 edges e)Σ_(a=1)^3 D_(e,a)^2**, restricted to residual Gauss invariants Σ_j Q_(j,a)f=0. All derivative identities follow directly from the exact loop words and single-link variations. Bottom tree links induce **collective conjugation derivatives on all faces to their right**, so a nearest-neighbor spin-coupling ansatz does not represent the physical operator in these coordinates.
+
+**Checks:** The general-t symbolic link-path derivative construction was independently tested in complete fundamental magnetic matrix blocks for t=1,2,3,4 (sizes 4,16,64,256), including every original link, Hermiticity, Gauss covariance and the outer-loop Wilson trace. The outer rectangular Wilson trace tr(A_1...A_t) traverses 2t+2 original links and is an exact eigenfunction with energy **(3/2)(t+1)**; checks yield t=1:3, t=2:9/2, t=3:6, t=4:15/2. The three-face invariant spectrum previously verified is {6,8,8,10,13}; the corrected-sign nearest-neighbor ansatz gives {6,8,8,10,10}. A **new four-face gauge-invariant witness** tr(A1 A3 A2 A4) yields squared ℓ² difference of physical and nearest-neighbor Wigner coefficient vectors **exactly 60**, certified by a rational check of all dyadic Gaussian coefficient entries.
+
+**Critical caveat:** One may use the residual Gauss constraint to rewrite the action of a *single* derivative on invariant functions, but must not replace the square of a derivative with the square of its constraint-rewritten expression without commuting it through the Gauss generator. The all-t formula is the safe sum-of-squares identity. The original-link Hamiltonian is local in physical links, but the specific based-loop coordinate representation includes long-range derivative couplings.
+
+**Dependencies:** The all-length archived commuting-neighbor-coupling spectrum, endpoint Wigner norm estimates, anchored polymer theorem and nonlinear Wilson-character obstructions cannot be imported as **physical** results without rederivation for this corrected K_phys. The formula is for the finite free electric theory, NOT a uniform all-t inverse theorem, interacting λ=1 gap, or continuum 4D Yang–Mills mass gap.
+
+Full detailed proof, general-t reproducible verifier, passing execution log and SHA256 checksums are archived in The Singular Boundary / Proof Audits Library. Next target: establish coefficientwise and spectral inverse estimates on the physical residual-Gauss invariant blocks.
