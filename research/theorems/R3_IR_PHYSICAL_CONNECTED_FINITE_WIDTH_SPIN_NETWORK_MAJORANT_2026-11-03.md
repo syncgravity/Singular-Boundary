@@ -1,0 +1,15 @@
+# Physical connected finite-width spin-network fusion majorant (2026-11-03)
+
+**A restricted original-link SU(2) theorem, NOT an interacting mass-gap theorem.** Work in a fixed orthonormal physical Gauss-invariant original-link spin-network basis on a straight square ladder. For every connected plaquette interval I, write E(I) for the original-link union, |E(I)|=3|I|+1. Restrict both input polymer families to connected width |I|<=L and per-link Peter–Weyl labels n_e=2j_e<=m. Their anchored degree-graded coefficient norm is sup_x Σ_(I containing x) exp(κ|I|) Σ_(spin-net alpha on E(I)) exp(σ N_alpha)(1+N_alpha)^s |F_(I,alpha)|, N_alpha=Σ_e n_e, s,σ,κ>=0.
+
+Define H_m=Σ_(n=0)^m(n+1)^2=(m+1)(m+2)(2m+3)/6. The full product-group PW reproducing kernel implies ||h||_∞ <= H_m^(E/2)||h||_2 for edge cutoff m on E links. Each normalized original-link Lie derivative obeys ||∇_(e,a)h||_2 <= (m/2)||h||_2 and ||∇_(e,a)h||_∞ <= (m/2)H_m^(E/2)||h||_2. The physical local carré du champ is Γ_K(f,g)=Σ_(shared original edges e,a)(∇_(e,a)f)(∇_(e,a)g); it vanishes for link-disjoint supports. For two touching connected plaquette supports of width <=L, at most 3L+1 original links are shared and their connected union has <=2L faces and <=6L+1 links. CG multiplication gives output per-link degree <=2m, hence output SN coefficient l1 <=sqrt(H_(2m)^(6L+1)) times the L2 norm. The physical centered inverse K^-1Q has L2 norm <=1/3. Therefore each pair of unit input spin networks yields the explicit local constant
+
+**C_(m,L)=(3L+1)m²/4 *sqrt(H_m^(3L+1) H_(2m)^(6L+1)).**
+
+Analytic and polynomial degree weights are submultiplicative since N_out<=N_F+N_G. Pairwise products use no σ or κ loss; the anchored incidence partition x∈I vs x∈J\I charges at most L+2 source sites in each case. Thus
+
+**||K^-1QΓ_K(F,G)||_(A^s_(σ,κ))<= 2(L+2)C_(m,L)||F||_(A^s_(σ,κ))||G||_(A^s_(σ,κ))**, uniformly in finite strip volume, with both inputs restricted to width <=L and edge degree <=m.
+
+Output width can be 2L and edge degree 2m, so the estimate **does not close under nonlinear iteration on the same restricted class**, nor does it solve unrestricted anchored fusion. At m=L=1, the anchored constant is 6 sqrt(5^4 14^7)≈1.54 million, intentionally crude. A sharper next theorem must quantify local physical SU(2) intertwiners/6j coefficients and their energy-weighted fusion channels instead of replacing all coefficient l1 structure by global PW dimensions.
+
+**Verification:** 136,360 exact original-edge incidence, PW multiplicity and SU(2) degree-weight checks; regression reruns corrected physical connected two- and three-face fusion. Full 10 KB proof, executable verifier, passing log and SHA256 integrity manifest in The Singular Boundary / Proof Audits. No interacting lambda=1 spectral gap or continuum four-dimensional Yang–Mills mass gap follows.
