@@ -1,9 +1,9 @@
-# Research Observatory (prototype)
+# Research Observatory v0.2
 
-Private static proof-map prototype built against main at `fd1c1c1c8db078f8ec9d591d182059bd1635b164` on 2026-11-04.
+Open `index.html` together with `catalog.js` and `audit.js` in the same folder (works without a server). The **740-record catalog** is generated from the immutable source Git tree `fd1c1c1c8db078f8ec9d591d182059bd1635b164` and records paths, Git blob identifiers and source sizes. Only 12 selected theorem bodies have editorial annotations; all remaining records explicitly say `Indexed path and Git blob only`.
 
-Open `index.html` directly. No external JS dependencies, token, API key, or build step. GitHub source links require repository access. Do not enable public GitHub Pages without an explicit privacy and publication review.
+The site includes a P0–P5 dependency navigator, searchable 740-file theorem catalog, four candidate proof routes, exact missing implications, the supplied historical archive audit, and evidence controls.
 
-Views: proof dependency map P0–P5, source-linked theorem navigator, four candidate proof routes, evidence policy. The curated records are **not** individually mathematically certified, and the continuum Yang–Mills mass gap remains open.
+**Do not publish publicly before privacy and source-publication review.** Source links refer to the private GitHub repository. No secrets or binary data are embedded. The continuum mass gap is open.
 
-This first repository scaffold is intentionally compact. Expanded stand-alone HTML/ZIP version has been generated in the initiating research conversation. Follow-up work should integrate a generated full theorem manifest and provenance-aware claim/contradiction graph. No numerical binaries or source credentials are included.
+See `HISTORICAL_DOUBLE_AUDIT_2026-11-04.md` for source-level findings and limitations.
