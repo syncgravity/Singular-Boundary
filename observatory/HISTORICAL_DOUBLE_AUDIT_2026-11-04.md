@@ -31,3 +31,11 @@ Treat P0 regulator identity and action-coherent refinement as the first unresolv
 **What was not done:** no full equation-by-equation review of 740 theorem bodies, no complete dissertation mathematical audit, no Monte Carlo replay, no independent verification of all raw source bytes, and no external peer review.
 
 **Repository baseline:** `main` tree `fd1c1c1c8db078f8ec9d591d182059bd1635b164`; Observatory draft branch `feature/research-observatory-2026-11-04`.
+
+## Follow-up source checks
+
+Text extracted from the archived 23-page dissertation PDF showed **zero literal occurrences** of `SU(2)`, `mass gap`, `Yang–Mills`, or `Yang-Mills`. The 2026-03-08 draft discusses Penrose/quasicrystalline geometry but cannot be treated as an authored source of the subsequent November mass-gap proof statements. This is a text-search observation, not a complete conceptual reading of every proposition in the dissertation.
+
+Two supplied resumed-proof Markdown transcripts share the same SHA-256 digest of their first 20,000 characters. Consequently, duplicated conversation content is not independent evidence of a theorem.
+
+The read-only archive test `observatory/tools/verify_stage26.py` was executed against the mounted source files in this conversation: **8 Stage 26 ZIP latest-record hash matches, 8 sweep-source SHA matches, and 0 checker errors.** This does not re-run Monte Carlo or certify the source catalogue. The full local manifest and execution JSON are in the downloadable offline preview package, not automatically durable in this GitHub commit.

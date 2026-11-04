@@ -7,3 +7,5 @@ The site includes a P0–P5 dependency navigator, searchable 740-file theorem ca
 **Do not publish publicly before privacy and source-publication review.** Source links refer to the private GitHub repository. No secrets or binary data are embedded. The continuum mass gap is open.
 
 See `HISTORICAL_DOUBLE_AUDIT_2026-11-04.md` for source-level findings and limitations.
+
+To replay the mounted archive checks: `python observatory/tools/verify_stage26.py /path/to/uploads` (NumPy required). The checker makes no changes to inputs. The original archives must be supplied separately; this repository does not automatically contain them.
