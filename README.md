@@ -10,9 +10,11 @@
 
 The Observatory is an interactive research map, not a declaration of a completed proof. It provides a P0–P5 dependency graph, a searchable source-pinned index of **740 theorem Markdown files**, nine typed proof-path connections, explicit obstructions, and historical evidence notes. Only selected records have claim-level editorial annotations. Indexing a theorem path **does not certify the statement**.
 
-**Hosting:** the linked public GitHub Pages URL is **not live**. The deployment workflow failed to enable Pages because the GitHub Actions integration lacks site-creation permission. GitHub Pages must be enabled in repository **Settings → Pages → Build and deployment → Source: GitHub Actions** before this becomes a verified live site. The GitHub Actions publisher is at [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+**Hosting:** the linked public GitHub Pages URL is **not live**. The deployment workflow failed to enable Pages because the GitHub Actions integration lacks site-creation permission. GitHub Pages activation is intentionally **deferred** until publication is authorized. Deployments are manual-only; the URL is not live. When ready, enable repository **Settings → Pages → Build and deployment → Source: GitHub Actions**. The GitHub Actions publisher is at [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
 **Publication boundary:** GitHub Pages publishes the static `observatory/` site publicly even while this repository remains private. The page contains theorem titles, research summaries and source references, but no uploaded raw numerical binaries or credentials. Links to private repository files require GitHub access; the site itself is not independent public access to the underlying evidence.
+
+The latest exact-family investigation is the [three-face nested all-spin theorem and scope audit](research/audits/THREEFACE_ALL_SPIN_NESTED_2026-11-04.md). It preserves the two-shared-link Gauss-invariant physical sector, but does not establish unrestricted tame closure or a mass gap.
 
 ## Start here
 
