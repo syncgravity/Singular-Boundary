@@ -29,6 +29,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 **Latest width-two P2 interface:** [arbitrary two-face matrices against singleton and two-face histories](research/audits/TWOFACE_SINGLETON_AND_WIDTH2_PW_2026-11-04.md) establish a direct all-spin one-step first-moment bound on input history widths ≤2 in the corrected face-coordinate PW norm. The exterior joining constant is 1/5, correcting a preliminary 1/6 claim; outputs can have width four, so the all-history tame and Borel results remain conditional.
 
+**New width-independent pairwise certification:** [all finite-width face-PW two-history bound and crossing/end-joining anchored theorem](research/audits/WIDTH34_PAIRWISE_CROSSING_PW_2026-11-04.md) proves a per-pair constant 2+6 shared faces and crossing-only uniform bound directly in the corrected original-link face norm. Width-three/four two-step feedback is checked. **Nested anchored closure and the graded tame/Borel status remain open/conditional.**
+
 ## Start here
 
 | Research question | Canonical record |
