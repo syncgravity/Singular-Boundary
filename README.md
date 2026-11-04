@@ -37,6 +37,8 @@ The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CAS
 
 **Current P2 gauge/Borel targets:** [Balanced SU(2) intertwiner twirl and Borel radius optimization](research/audits/P2_GAUGE_BALANCED_TWIRL_BOREL_OPTIMUM_2026-11-04.md). The old unbalanced matrix-space obstruction projects to zero under Gauss averaging; a new alternating even-width coefficient projects to a nonzero physical intertwiner with *exactly preserved trace-class norm*. This is **not** a gauge-invariant nonlinear same-grade no-go. The existing certified local Borel radius is maximized at κ=log4 within its stated majorant, but analytic continuation and Borel summability remain unresolved.
 
+**Latest P2 continuation:** [Physical Gauss-invariant high-spin Poisson response and actual Borel-plane Volterra equation](research/audits/P2_PHYSICAL_TWIRL_RESPONSE_BOREL_VOLTERRA_2026-11-04.md). Direct single-insertion estimates on every even-width Gauss-balanced input decrease like 1/m for invariant singleton and extended Wilson-trace inner inputs; this does **not** control summation over all nested insertion sites. The formal local Borel transform satisfies its actual differentiated convolution equation; for each **fixed** finite volume the score has an analytic small-coupling fixed point and entire Borel transform with a **volume-dependent** bound. No uniform ray continuation or physical mass gap is asserted.
+
 ## Start here
 
 | Research question | Canonical record |
