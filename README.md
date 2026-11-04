@@ -27,6 +27,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 **New self-contained local PW certification:** [same-face CG multiplier and adjacent physical original-link shared-edge Poisson bounds](research/audits/LOCAL_PW_POISSON_TWO_GATES_2026-11-04.md), constants 2/3 and 1/6. Together these control the first interaction of any singleton-history families. **No all-history nonlinear closure** or change to the conditional Borel-disk proof status follows.
 
+**Latest width-two P2 interface:** [arbitrary two-face matrices against singleton and two-face histories](research/audits/TWOFACE_SINGLETON_AND_WIDTH2_PW_2026-11-04.md) establish a direct all-spin one-step first-moment bound on input history widths ≤2 in the corrected face-coordinate PW norm. The exterior joining constant is 1/5, correcting a preliminary 1/6 claim; outputs can have width four, so the all-history tame and Borel results remain conditional.
+
 ## Start here
 
 | Research question | Canonical record |
