@@ -35,6 +35,8 @@ The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CAS
 
 **P2 next targets:** [Corrected extremal matrix obstruction and formal local Borel germ](research/audits/P2_EXTREMAL_MATRIX_OBSTRUCTION_AND_LOCAL_BOREL_2026-11-04.md). In the full (not necessarily gauge-invariant) face PW matrix space, a corrected U21 extremal family disproves all-history same-grade L^(r) closure. For the gauge-invariant fundamental magnetic source, the source-order degree cap and P-23 graded theorem yield a volume-uniform Gevrey-1 formal score bound and a local analytic Borel transform with radius at least 9 exp(-sigma)/5120 at kappa=log4. **Neither finding proves Borel summability, the interacting vacuum or a continuum mass gap.**
 
+**Current P2 gauge/Borel targets:** [Balanced SU(2) intertwiner twirl and Borel radius optimization](research/audits/P2_GAUGE_BALANCED_TWIRL_BOREL_OPTIMUM_2026-11-04.md). The old unbalanced matrix-space obstruction projects to zero under Gauss averaging; a new alternating even-width coefficient projects to a nonzero physical intertwiner with *exactly preserved trace-class norm*. This is **not** a gauge-invariant nonlinear same-grade no-go. The existing certified local Borel radius is maximized at κ=log4 within its stated majorant, but analytic continuation and Borel summability remain unresolved.
+
 ## Start here
 
 | Research question | Canonical record |
