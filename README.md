@@ -25,6 +25,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 **Operator certification gate:** [Peter–Weyl original-link/face norm-transport audit](research/audits/PW_OPERATOR_NORM_TRANSPORT_GATE_2026-11-04.md) proves exact exponential norm mismatch for the same Wilson loop. It independently certifies the fixed-coordinate PW multiplication algebra and face-sector free inverse, but **not** the general coefficientwise nonlinear Poisson bound. The P2 graded tame and local Borel disk remain conditional.
 
+**New self-contained local PW certification:** [same-face CG multiplier and adjacent physical original-link shared-edge Poisson bounds](research/audits/LOCAL_PW_POISSON_TWO_GATES_2026-11-04.md), constants 2/3 and 1/6. Together these control the first interaction of any singleton-history families. **No all-history nonlinear closure** or change to the conditional Borel-disk proof status follows.
+
 ## Start here
 
 | Research question | Canonical record |
