@@ -43,6 +43,8 @@ The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CAS
 
 **Current P2 spectral/Borel continuation gates:** [Exact balanced Gauss-twirl singular spectrum and fixed-history entire Borel transforms](research/audits/P2_GAUSS_SPECTRUM_HISTORYWISE_ENTIRE_BOREL_2026-11-04.md). For every even width N, the physical invariant input has Schatten-1 norm 1, Schatten-2 squared 1/(N+1), operator norm 2/(N+2), and rank (N/2+1)^2, with explicit all-spin singular values. Every **fixed history** of the formal infinite-row score has an entire Borel transform with volume-dependent exponential type O(|I|^2). Neither finding controls the **summed physical Poisson response** at N~m^2 or globally anchored positive-ray Borel continuation; no interacting/continuum gap is proved.
 
+**Current P2 continuation:** [Exact SU(2) Gauss cubature and Fréchet-entire local-history Borel equation](research/audits/P2_EXACT_HAAR_CUBATURE_FRECHET_BOREL_2026-11-04.md). An exact O(S^3)-node tensor-product Haar twirl, true physical Poisson equivariance under gauge averaging, and a uniform 2^-q/D Schatten inverse truncation make a structured (not yet trace-norm solved) route toward the summed N~m² response. The infinite-row formal Borel germ now extends to an entire **product-topology** history-family solution of the actual nonlinear Volterra equation; this is strictly weaker than globally anchored Borel summability or a physical interacting state. All such claims remain open.
+
 ## Start here
 
 | Research question | Canonical record |
