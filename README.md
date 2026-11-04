@@ -39,6 +39,8 @@ The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CAS
 
 **Latest P2 continuation:** [Physical Gauss-invariant high-spin Poisson response and actual Borel-plane Volterra equation](research/audits/P2_PHYSICAL_TWIRL_RESPONSE_BOREL_VOLTERRA_2026-11-04.md). Direct single-insertion estimates on every even-width Gauss-balanced input decrease like 1/m for invariant singleton and extended Wilson-trace inner inputs; this does **not** control summation over all nested insertion sites. The formal local Borel transform satisfies its actual differentiated convolution equation; for each **fixed** finite volume the score has an analytic small-coupling fixed point and entire Borel transform with a **volume-dependent** bound. No uniform ray continuation or physical mass gap is asserted.
 
+**Latest P2 formal-thermodynamic audit:** [exact summed Gauss-sector additivity and infinite-row local Borel germ](research/audits/P2_SUMMED_GAUSS_AND_INFINITE_LOCAL_BOREL_2026-11-04.md). Separately gauge-invariant high-spin singleton insertions into the balanced even-width outer intertwiner have disjoint output sectors for m≥3 and an exact summed norm identity; a spectator-energy upper estimate still permits O(m) at N≈m², so the physical same-grade question is open. Each formal score coefficient on a fixed history stabilizes under strip enlargement, yielding an infinite-row **local analytic Borel germ**, but finite-volume truncations do not converge in global anchored sup norm. No Borel summability, interacting infinite-volume state or continuum mass gap follows.
+
 ## Start here
 
 | Research question | Canonical record |
