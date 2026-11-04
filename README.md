@@ -21,6 +21,8 @@ The latest analytic step is the [variable-high-spin recoupled PW matrix-sector a
 
 The next fixed-sector step, [four independent PW degrees on overlapping extended histories](research/audits/FOUR_DEGREE_PW_MATRIX_OVERLAP_2026-11-04.md), establishes a conservative first-moment constant 6e^(-κ) for arbitrary Fourier matrices on one three-face overlap. The **unrestricted long-history nonlinear closure remains open**; the conditional Borel-disk result is not upgraded.
 
+**Latest conditional P2 audit:** [Weighted exceptional-energy charging for nested histories](research/audits/WEIGHTED_EXCEPTION_UNBOUNDED_NESTED_2026-11-04.md) provides an alternative width-unrestricted, same-radius graded tame proof under the existing coefficientwise PW assumptions. It changes neither the conditional status of the formal Borel disk nor the unresolved interacting/continuum gap.
+
 ## Start here
 
 | Research question | Canonical record |
