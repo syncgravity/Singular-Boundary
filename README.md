@@ -33,6 +33,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CASIMIR_CLOSURE_2026-11-04.md) establishes an all-width **graded** tame estimate for the corrected original-link finite straight-strip SU(2) model, in one fixed face-coordinate projective norm. The estimate still requires one extra inner spin moment and does **not** prove nonlinear convergence or the continuum mass gap.
 
+**P2 next targets:** [Corrected extremal matrix obstruction and formal local Borel germ](research/audits/P2_EXTREMAL_MATRIX_OBSTRUCTION_AND_LOCAL_BOREL_2026-11-04.md). In the full (not necessarily gauge-invariant) face PW matrix space, a corrected U21 extremal family disproves all-history same-grade L^(r) closure. For the gauge-invariant fundamental magnetic source, the source-order degree cap and P-23 graded theorem yield a volume-uniform Gevrey-1 formal score bound and a local analytic Borel transform with radius at least 9 exp(-sigma)/5120 at kappa=log4. **Neither finding proves Borel summability, the interacting vacuum or a continuum mass gap.**
+
 ## Start here
 
 | Research question | Canonical record |
