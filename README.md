@@ -1,76 +1,74 @@
 # The Singular Boundary
 
-**Canonical research repository and evidence-preserving proof program.**
+**A source-preserving research program investigating Penrose/quasicrystalline geometry, physical SU(2) lattice gauge theory, and the Yang–Mills existence and mass-gap problem.**
 
-The Singular Boundary investigates quasicrystalline and Penrose geometry, finite-volume SU(2) lattice gauge systems, Wilson Hamiltonians, connected score expansions, and possible mathematical routes toward a nontrivial interacting continuum Yang–Mills theory with a positive mass gap.
+> **Scientific status (November 4, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
-> **Scientific status — 2026-11-01:** This is an active research program, **not a completed proof of the four-dimensional Yang–Mills existence and mass-gap problem**. Finite-volume identities, exact low-order calculations, conditional inequalities, and intrinsic Peter–Weyl estimates are recorded with their limitations. No λ=1 all-order interacting convergence theorem, regulator-uniform Penrose deleted-face current theorem, full physical temporal spectral theorem, or continuum Osterwalder–Schrader reconstruction and positive mass gap has been established.
+## Research Observatory
 
-## Read this before beginning or resuming research
+**[Open the Research Observatory](https://syncgravity.github.io/singular-boundary/)** · [View website source](observatory/index.html) · [Read proof-path discovery](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md)
 
-| Question | Starting point |
+The Observatory is an interactive research map, not a declaration of a completed proof. It provides a P0–P5 dependency graph, a searchable source-pinned index of **740 theorem Markdown files**, nine typed proof-path connections, explicit obstructions, and historical evidence notes. Only selected records have claim-level editorial annotations. Indexing a theorem path **does not certify the statement**.
+
+**Hosting:** the address above is the intended GitHub Pages URL. GitHub Pages must be enabled in repository **Settings → Pages → Build and deployment → Source: GitHub Actions** before this becomes a verified live site. The GitHub Actions publisher is at [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+
+**Publication boundary:** GitHub Pages publishes the static `observatory/` site publicly even while this repository remains private. The page contains theorem titles, research summaries and source references, but no uploaded raw numerical binaries or credentials. Links to private repository files require GitHub access; the site itself is not independent public access to the underlying evidence.
+
+## Start here
+
+| Research question | Canonical record |
 | --- | --- |
-| What is the latest defensible mathematical checkpoint? | [Current checkpoint](docs/research/CURRENT_CHECKPOINT.md) |
-| What must actually be proved, without circular dependencies? | [P0–P5 proof dependencies](docs/research/PROOF_DEPENDENCIES.md) |
-| Has a theorem already been calculated, corrected, or superseded? | [Theorem navigator](docs/research/THEOREM_INDEX.md) and [correction history](docs/research/DISCOVERY_TIMELINE.md) |
-| How should an AI or researcher resume without duplicating work? | [Mandatory research handoff](docs/research/AI_RESEARCH_HANDOFF.md) |
-| How strong is the evidence for a result? | [Evidence protocol](docs/research/EVIDENCE_PROTOCOL.md) |
-| Where are primary sources, scripts, and missing originals? | [Source and code map](docs/research/SOURCE_AND_CODE_MAP.md) |
-| Which claims are proved, conditional, numerical, or open? | [Append-only claim ledger](research/claims/CLAIM_LEDGER.csv) |
-| What is missing from durable original-byte storage? | [Archival intake register](sources/source-manifests/ARCHIVAL_INTAKE_REGISTER_2026-10-30.csv) and [backlog](sources/source-manifests/HISTORICAL_ARCHIVE_BACKLOG_2026-10-30.md) |
+| What is the latest source-certified research priority? | [November 4 P0 regulator review](docs/research/REPOSITORY_REVIEW_AND_P0_OBJECTIVE_2026-11-04.md) |
+| What remains to complete the mass-gap proof? | [P0–P5 proof dependencies](docs/research/PROOF_DEPENDENCIES.md) |
+| Which theorem or correction already addresses this idea? | [740-file theorem navigator](docs/research/THEOREM_INDEX.md) |
+| What did the historical conversations and archives establish? | [Double investigation](observatory/HISTORICAL_DOUBLE_AUDIT_2026-11-04.md) |
+| Which proof pathways presently connect or fail? | [Typed proof-path discovery](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) |
+| What counts as mathematical evidence? | [Evidence protocol](docs/research/EVIDENCE_PROTOCOL.md) |
+| How should an AI researcher continue without duplicating work? | [AI research handoff](docs/research/AI_RESEARCH_HANDOFF.md) |
+| Where are original sources and their custody gaps? | [Source/code map](docs/research/SOURCE_AND_CODE_MAP.md) · [archive intake](sources/source-manifests/ARCHIVAL_INTAKE_REGISTER_2026-10-30.csv) |
+| What claims exist and which are contested? | [Append-only claim ledger](research/claims/CLAIM_LEDGER.csv) · [historical identity crosswalk](docs/research/HISTORICAL_FLAG_IDENTITY_CROSSWALK_2026-11-01.csv) |
 
-## The actual proof frontier
+## Proof frontier: P0–P5
 
-**P0 — Model identity and provenance.** Verify geometric incidence, original-link operator, Gauss sector, boundary conditions, physical temporal construction, regulator conventions, source bytes, and production data. The M55 spatial reconstruction is not interchangeable with the temporal Q14, twelve-prism, or continuum records.
+**P0 — Geometry, regulator, and provenance.** Certify one genuinely refining three-dimensional SU(2) spatial regulator, with compatible chain/cochain geometry, original-link electric and magnetic action, Gauss sector, source identity, physical units and temporal specification. Historical Penrose patches, extruded prisms, and the exact dyadic cubic benchmark are **different constructions**; similarity of numerical values does not establish equivalence.
 
-**P1 — Operator algebra.** Respect the full November 1 shared-link sign/orientation correction sequence. The operator may appear as `D^-=R_A-L_B` or `D^+=R_A+L_B` under different orientations; never import a carré-du-champ sign without a coordinate and original-link convention check.
+**P1 — Physical operator algebra.** Apply the corrected original-link orientation and shared-link sign conventions. Earlier face-coordinate operators and reduced Wigner models cannot silently replace the original Gauss-invariant Hamiltonian.
 
-**P2 — Connected analytic convergence.** Exact two-, three-, and four-face polynomial calculations, all-length free-electric Peter–Weyl inverse bounds, and an intrinsic analytic bilinear estimate provide the latest recorded foundation. The **nonlinear connected recurrence still needs a noncircular all-order analytic-radius and interval-growth majorant**. Formal Gevrey growth, even improved estimates, is not ordinary convergence at physical coupling.
+**P2 — Nonlinear vacuum score.** Exact low-order Poisson calculations, Peter–Weyl inverse estimates, history-aware reconstruction, source multigrading and local-first tame bounds provide finite-strip ingredients. The newest [conditional Gevrey-1 coefficient majorant](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) is **formal**, not ordinary convergence at coupling one or an interacting spectral gap.
 
-**P3 — Penrose interacting vacuum.** The deleted-face signed-current condition `sup_f T_(f,h) = o(h^(-1/4))` is a **sufficient condition within one proposed route**, not a theorem already established for the physical Wilson vacuum and not a necessary premise of every mass-gap proof. The essential issue is a regulator-uniform Wilson-specific current/anti-depletion or alternative completed-cage estimate.
+**P3 — Penrose interacting vacuum.** Prove the required Wilson-specific deleted-face current/anti-depletion bound on a certified regulator, or find an alternate completed-cage estimate. The previously recorded `sup_f T_(f,h)=o(h^(-1/4))` is a sufficient condition within one strategy, not an established fact about the interacting vacuum or a necessary condition for every proof.
 
-**P4 — Physical spectrum.** Establish the required Gauss-invariant, source-visible, interacting temporal/infrared spectral estimates. Finite reference-operator gaps and gauge-charged response coercivity do not certify a continuum physical mass gap.
+**P4 — Physical interacting spectrum.** Derive a Gauss-invariant, source-visible, volume/refinement-controlled infrared spectral estimate. The finite cubic strong-coupling gap and small-magnetic stability result do **not** extend directly along the asymptotically free `g0(a)→0` continuum trajectory.
 
-**P5 — Continuum theory.** Specify and prove the correct dimension, normalization, limit order, nontriviality, reflection positivity/OS reconstruction, and positive mass gap without circular assumptions.
+**P5 — Continuum existence and positive mass gap.** Establish nontriviality, physical normalization, appropriate infinite-volume/refinement limits, reflection positivity/OS reconstruction, and a strictly positive mass gap in physical units without circular assumptions.
 
-The program should not be declared closer to completion solely because a new identity, countermodel, numerical checker, or conditional sufficient criterion was added.
+## Repository map
 
-## Operating rules for researchers and AI systems
+| Directory | Role |
+| --- | --- |
+| [`research/theorems/`](research/theorems/) | Theorem records, exact calculations, conditional results and counterexamples |
+| [`research/problems/`](research/problems/) | Open scientific obligations: R3-PRISM, R3-IR, R2, D1 |
+| [`research/claims/`](research/claims/) | Claim ledger and proposition-level reconciliation |
+| [`research/tests/`](research/tests/) and [`scripts/`](scripts/) | Existing verification and reproducibility programs |
+| [`sources/`](sources/) | Historical references, preserved records and archival intake |
+| [`docs/research/`](docs/research/) | Proof dependencies, indexes, corrections, handoff and checkpoints |
+| [`docs/governance/`](docs/governance/) | Integrity, review, branch and evidence standards |
+| [`observatory/`](observatory/) | Static research-map website, indexed catalog, audit and proof-path reports |
 
-1. Read the latest checkpoint, P0–P5 map, and correction/supersession chain before beginning mathematics.
-2. Specify model, spatial/temporal dimension, topology, boundary conditions, gauge sector, link orientations, differential-generator normalization, and whether `S=log Ω` or `S=log Ω²`.
-3. Distinguish **source located**, **source retrieved**, **statement inspected**, **derivation independently checked**, **code reproduced**, and **publication-ready**. A verification log alone is not independent mathematical certification.
-4. Record every claim's exact assumptions, scope, source commit, proof, dependence chain, counterexamples, limitations, verifier, inputs, output hashes, and status.
-5. Never overwrite immutable original evidence, silently fix old transcripts, substitute reconstructed files for original bytes, or upgrade a numerical/candidate result to a proof.
-6. Keep separate research tracks separate until a genuine mathematical implication joins them. Explicitly mark any additional hypothesis that has not been proved.
-7. For new work, prefer a theorem that closes a mapped dependency over another equivalent rewriting of an open condition.
-8. Preserve original binaries in Git LFS or a verified archive, with original SHA-256 and fresh-clone readback. A Library reference is not evidence of Git byte preservation.
-9. Use reviewed branches and pull requests; never force-push canonical history or blindly merge divergent experimental research.
-10. Reconcile the ledger and checkpoint whenever the mathematical frontier changes.
+## Historical integrity
 
-## Research areas and original records
+On November 4, 2026, all ten former non-main historical branch heads were integrated into `main`; the canonical theorem index covers **740 files**. This is a verified **Git ancestry** statement, not proof that all theorem bodies or historical original bytes were independently certified. Historical duplicate claim IDs and original-source custody are still subject to the [acceptance gate](docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md). [Branch consolidation report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md).
 
-- [R3-PRISM](research/problems/R3-PRISM.md): original twelve-prism geometry and Wilson insertion.
-- [R3-IR](research/problems/R3-IR.md): gauge-neutral Hamiltonian, completed-cage magnetic deletion, conditional vacuum current, infrared covariance.
-- [R2](research/problems/R2.md): time normalization, continuum reconstruction, mass-gap obligations.
-- [D1](research/problems/D1.md): source/production-action certification, Stage 7–26 experimental provenance.
-- [Repository research navigator](docs/research/README.md): theorem index, chronology, evidence, handoff and dependency map.
+The uploaded Stage 26 data checks validate selected recorded hashes and source linkages, not Monte Carlo physics, a true 3D refinement, or a continuum Yang–Mills theorem.
 
-## Archival integrity
+## Research and publication rules
 
-The repository contains curated mathematical records, original-source references, numerical audit reports and historical correction chains. It is **not** a verified complete copy of every historical conversation or binary archive. Consult the [Git LFS intake runbook](docs/governance/LOCAL_GIT_LFS_INTAKE_RUNBOOK.md), [reconciliation tracker](docs/evidence/SOURCE_RECONCILIATION_GAPS_2026-10-30.csv), and [repository standard](docs/governance/REPOSITORY_OPERATING_STANDARD.md) before describing source preservation as complete.
+1. Always specify model and dimension, geometry, orientation, Gauss sector, coupling, boundary conditions, source bytes, and physical normalization.
+2. Read the source and correction chain before importing a lemma. A theorem filename, verifier count, or archived AI conversation is not independent certification.
+3. Keep physical, auxiliary, gauge-reduced, and toy models distinct until equivalence is proved.
+4. Preserve source-qualified contradictory claims, failed experiments and binary provenance; never rewrite archived evidence to appear consistent.
+5. Label conjectural, conditional, exact finite-volume, numerical, reproduced and publication-ready assertions separately.
+6. Keep repository writes reviewed and non-destructive. Do not force-push the canonical research record.
+7. Deploy only the curated `observatory/` directory to Pages; never upload the private repository source tree or archival binaries as a website artifact.
 
-The independent prepared 602-file tree, the original historical data families, and proof bundles require item-by-item reconciliation and verified upload/readback. Git ancestry and failed experiments must be preserved. Historical notes are evidence, not automatic mathematical endorsement.
-
-## Research continuity
-
-A new collaborator or AI should first state the **highest defensible checkpoint and exact remaining obligation**. It should cite immutable commits and original files, detect prior corrections, and avoid restarting superseded calculations. The goal is a coherent, reproducible, independently reviewable proof program, not an unbroken stream of claimed theorems.
-
-
-## November 4, 2026 — research resumption checkpoint
-
-Before launching another theorem calculation, read [the repository-wide review and selected P0 regulator-certification objective](docs/research/REPOSITORY_REVIEW_AND_P0_OBJECTIVE_2026-11-04.md). A [pinned 538-file theorem navigator](docs/research/THEOREM_INDEX_SNAPSHOT_2026-11-04.md) supplements, but does not overwrite, the older 335-file historical index. The full main-tree and historical branch-only Git inventories are linked from [research navigation](docs/research/README.md). **202 theorem paths and 94 scripts exist only on the historical audit branch**; search both branches before declaring work new. The historical-record certification gate remains blocked. Full source-body and mathematical certification are not implied by the tree inventories.
-
-## November 4, 2026 — branch consolidation verified
-
-**All 10 historical/non-main branch heads are now merged into `main` (Git ancestry verified; zero commits behind).** The historical audit merge brought 307 previously absent source paths, including 202 theorem files and 94 research scripts, without overwriting original theorem bodies or either conflicting claim ledger. The canonical [theorem index](docs/research/THEOREM_INDEX.md) now covers all 740 theorem files. The source-qualified claim collision crosswalk remains intact. **The historical provenance/certification gate remains open, but Git branch merging is complete.** See [verified merge report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md). Branch pointers are retained solely for historical integrity.
+**Research objective:** a coherent, independently checkable sequence of implications to a nontrivial continuum SU(2) Yang–Mills theory with a strictly positive physical mass gap.
