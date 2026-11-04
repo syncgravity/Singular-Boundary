@@ -6,11 +6,11 @@
 
 ## Research Observatory
 
-**[Open the Research Observatory](https://syncgravity.github.io/singular-boundary/)** · [View website source](observatory/index.html) · [Read proof-path discovery](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md)
+**[Browse the Research Observatory source (available now)](observatory/)** · [Open the local website entry point](observatory/index.html) · [Read proof-path discovery](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) · [Public Pages URL (not active)](https://syncgravity.github.io/singular-boundary/)
 
 The Observatory is an interactive research map, not a declaration of a completed proof. It provides a P0–P5 dependency graph, a searchable source-pinned index of **740 theorem Markdown files**, nine typed proof-path connections, explicit obstructions, and historical evidence notes. Only selected records have claim-level editorial annotations. Indexing a theorem path **does not certify the statement**.
 
-**Hosting:** the address above is the intended GitHub Pages URL. GitHub Pages must be enabled in repository **Settings → Pages → Build and deployment → Source: GitHub Actions** before this becomes a verified live site. The GitHub Actions publisher is at [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+**Hosting:** the linked public GitHub Pages URL is **not live**. The deployment workflow failed to enable Pages because the GitHub Actions integration lacks site-creation permission. GitHub Pages must be enabled in repository **Settings → Pages → Build and deployment → Source: GitHub Actions** before this becomes a verified live site. The GitHub Actions publisher is at [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
 **Publication boundary:** GitHub Pages publishes the static `observatory/` site publicly even while this repository remains private. The page contains theorem titles, research summaries and source references, but no uploaded raw numerical binaries or credentials. Links to private repository files require GitHub access; the site itself is not independent public access to the underlying evidence.
 
@@ -34,7 +34,7 @@ The Observatory is an interactive research map, not a declaration of a completed
 
 **P1 — Physical operator algebra.** Apply the corrected original-link orientation and shared-link sign conventions. Earlier face-coordinate operators and reduced Wigner models cannot silently replace the original Gauss-invariant Hamiltonian.
 
-**P2 — Nonlinear vacuum score.** Exact low-order Poisson calculations, Peter–Weyl inverse estimates, history-aware reconstruction, source multigrading and local-first tame bounds provide finite-strip ingredients. The newest [conditional Gevrey-1 coefficient majorant](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) is **formal**, not ordinary convergence at coupling one or an interacting spectral gap.
+**P2 — Nonlinear vacuum score.** Exact low-order Poisson calculations, Peter–Weyl inverse estimates, history-aware reconstruction, source multigrading and local-first tame bounds provide finite-strip ingredients. The newest [conditional Gevrey-1 coefficient majorant](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) and [uniform local Borel-disk deduction](research/audits/LOCAL_FIRST_BOREL_DISK_2026-11-04.md) are **formal**, not ordinary convergence at coupling one or an interacting spectral gap.
 
 **P3 — Penrose interacting vacuum.** Prove the required Wilson-specific deleted-face current/anti-depletion bound on a certified regulator, or find an alternate completed-cage estimate. The previously recorded `sup_f T_(f,h)=o(h^(-1/4))` is a sufficient condition within one strategy, not an established fact about the interacting vacuum or a necessary condition for every proof.
 
