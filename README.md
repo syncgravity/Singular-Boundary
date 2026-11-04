@@ -31,6 +31,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 **New width-independent pairwise certification:** [all finite-width face-PW two-history bound and crossing/end-joining anchored theorem](research/audits/WIDTH34_PAIRWISE_CROSSING_PW_2026-11-04.md) proves a per-pair constant 2+6 shared faces and crossing-only uniform bound directly in the corrected original-link face norm. Width-three/four two-step feedback is checked. **Nested anchored closure and the graded tame/Borel status remain open/conditional.**
 
+The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CASIMIR_CLOSURE_2026-11-04.md) establishes an all-width **graded** tame estimate for the corrected original-link finite straight-strip SU(2) model, in one fixed face-coordinate projective norm. The estimate still requires one extra inner spin moment and does **not** prove nonlinear convergence or the continuum mass gap.
+
 ## Start here
 
 | Research question | Canonical record |
