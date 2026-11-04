@@ -6,6 +6,12 @@
 
 ## Research Observatory
 
+**Research Observatory current source version: v2.4.** This private source tree contains 37 distinct proof pathways; its Observatory page header and footer share this version. GitHub Pages publication remains disabled/manual-only, and the 4D continuum Yang–Mills mass gap remains **OPEN**.
+
+**Current P2 error-certified gates:** [physical Gauss-invariant extensive Poisson response brackets and finite-window Borel/Laplace truncation errors](research/audits/P2_CERTIFIED_RESPONSE_BRACKETS_BOREL_LAPLACE_2026-11-04.md). The complete corrected original-link Schatten response is enclosed around a q-order electric Neumann approximation with a sector-dependent geometric error (contraction approaching 3/8 at N~m²). The approximate nuclear norm still needs a scalable computation or dual certificate. Fixed-history local score reconstruction has exact Borel Taylor and small-coupling Laplace-tail estimates, but the allowed coupling decays like L^-2. **No physical same-grade conclusion, global Borel summability, positive interacting continuum gap, or claimed mass-gap solution follows.**
+
+
+
 **[Browse the Research Observatory source (available now)](observatory/)** · [Open the local website entry point](observatory/index.html) · [Read proof-path discovery](observatory/PROOF_PATH_DISCOVERY_2026-11-04.md) · [Public Pages URL (not active)](https://syncgravity.github.io/singular-boundary/)
 
 The Observatory is an interactive research map, not a declaration of a completed proof. It provides a P0–P5 dependency graph, a searchable source-pinned index of **740 theorem Markdown files**, nine typed proof-path connections, explicit obstructions, and historical evidence notes. Only selected records have claim-level editorial annotations. Indexing a theorem path **does not certify the statement**.
