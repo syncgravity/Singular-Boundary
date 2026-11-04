@@ -41,6 +41,8 @@ The [direct face-PW nested Casimir audit](research/audits/DIRECT_FACE_NESTED_CAS
 
 **Latest P2 formal-thermodynamic audit:** [exact summed Gauss-sector additivity and infinite-row local Borel germ](research/audits/P2_SUMMED_GAUSS_AND_INFINITE_LOCAL_BOREL_2026-11-04.md). Separately gauge-invariant high-spin singleton insertions into the balanced even-width outer intertwiner have disjoint output sectors for m≥3 and an exact summed norm identity; a spectator-energy upper estimate still permits O(m) at N≈m², so the physical same-grade question is open. Each formal score coefficient on a fixed history stabilizes under strip enlargement, yielding an infinite-row **local analytic Borel germ**, but finite-volume truncations do not converge in global anchored sup norm. No Borel summability, interacting infinite-volume state or continuum mass gap follows.
 
+**Current P2 spectral/Borel continuation gates:** [Exact balanced Gauss-twirl singular spectrum and fixed-history entire Borel transforms](research/audits/P2_GAUSS_SPECTRUM_HISTORYWISE_ENTIRE_BOREL_2026-11-04.md). For every even width N, the physical invariant input has Schatten-1 norm 1, Schatten-2 squared 1/(N+1), operator norm 2/(N+2), and rank (N/2+1)^2, with explicit all-spin singular values. Every **fixed history** of the formal infinite-row score has an entire Borel transform with volume-dependent exponential type O(|I|^2). Neither finding controls the **summed physical Poisson response** at N~m^2 or globally anchored positive-ray Borel continuation; no interacting/continuum gap is proved.
+
 ## Start here
 
 | Research question | Canonical record |
