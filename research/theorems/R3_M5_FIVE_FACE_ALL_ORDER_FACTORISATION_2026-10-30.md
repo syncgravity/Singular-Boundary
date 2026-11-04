@@ -1,0 +1,18 @@
+# Indexed Penrose five-face fourth-order coefficient vanishes by exact magnetic factorization
+Date: 2026-10-30
+Status: VERIFIED edge incidence from uploaded periodic M=5 Penrose code; PROVED all-coupling exact Haar for specified truncated five-face Hamiltonian. Does NOT apply to fully coupled periodic or open-disk Penrose vacuum.
+
+Source: Archive 4.zip -> penrose_yang_mills_2p1_causal_study.zip, Python modules penrose_causal_study.py and wilson_torus.py. Execute Approximant(M=5) then penrose_faces(a). Face f=0 has edges [1,4,13,0] and signs [+,+,-,-]. Its four edge neighbors are faces [2,4,10,1], whose directed face link words are:
+face2 edges [2,88,5,1], signs [+,+,-,-];
+face4 edges [5,372,19,4], signs [+,+,-,-];
+face10 edges [13,18,26,12], signs [+,+,-,-];
+face1 edges [0,14,86,3], signs [+,+,-,-].
+Pairwise shared link sets among retained neighbors: 2&4 share {5}; all other neighbor pairs share no link. Therefore retained neighbor face 1 is edge-disjoint from faces 2,4,10, and face 10 is also edge-disjoint from faces 2,4,1.
+
+Consider the TRUNCATED five-face deleted Hamiltonian H_- = sum_all_links a_e(-Delta_e) + sum_{j in {1,2,4,10}} b_j(1-p_j), with target face 0 deleted and ALL OTHER PLAQUETTE COUPLINGS ZERO. The link set E_1={0,14,86,3} of retained face 1 is disjoint from the link sets for the other retained active faces. Therefore the full link Hamiltonian splits as H_{face1}(U_e for e in E1) tensor I + I tensor H_rest. The unique positive full link ground state factorizes into the unique positive one-plaquette factor and the rest factor. A one-plaquette SU2 ground state depends only on its one plaquette holonomy: for a simple four-edge word, T on functions of that word equals A_1(-Delta_SU2), hence the invariant subspace of functions of the word contains the positive ground state (alternatively positivity plus reducing subspace). The one-plaquette ground-state density is therefore phi(W_1)^2.
+
+For any particular link e of this isolated plaquette, its marginal under phi(W_1)^2 product Haar is exactly Haar, because at least one other independent link in W_1 can be integrated to yield a constant (Haar convolution). In particular the shared deleted-face edge U_0 is Haar, independent of every link outside E1, under the factorized full density. W_0 contains U_0 once and all its remaining edges are outside E1 (face 0 edges [1,4,13,0]). Therefore W_0 has Haar distribution independent of retained face holonomies. The full ground state is gauge invariant due to uniqueness, so this establishes P_0 Omega=Omega, Q_0 Omega=0. It follows that the mixed four-coupling derivative C_0 from the 24-resolvent formula of R3_INTERIOR_FOURTH_ORDER_24_RESOLVENT_COEFFICIENT_2026-10-30.md is EXACTLY ZERO for this specific indexed star. This is a proof of vanishing without evaluating 24 terms separately.
+
+This refines the prior statement that fourth order is the first POSSIBLE nonzero term in an arbitrary four-neighbor interior star: even with four nonzero neighbor couplings, a factorized retained interaction graph may force the coefficient to vanish to all orders. Connectivity of retained magnetic edge support to every deleted boundary edge is a further necessary nontriviality diagnostic; it is not a sufficient criterion.
+
+CRITICAL SCOPE: The supplied geometry is a PERIODIC M5 torus and the modeled active plaquettes are only the four neighboring faces; in the actual fully coupled periodic model all other plaquette terms are present, so edge sets that factorize here cease to be isolated. Do not claim the physical Penrose deleted ground state is Haar in the full model, and do not claim the continuum mass gap.

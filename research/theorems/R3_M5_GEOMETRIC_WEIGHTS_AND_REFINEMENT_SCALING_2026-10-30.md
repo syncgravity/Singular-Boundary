@@ -1,0 +1,11 @@
+# M5 Penrose-derived geometry-weight audit (2026-10-30)
+
+This is an explicit positive DIAGONAL discrete-Hodge candidate, not a proof that these are the uniquely consistent Hamiltonian coefficients on a nonorthogonal Penrose rhombus complex.
+
+The archived Approximant(M=5) projected edges from its Qpar matrix have step lengths approximately (0.53452248,0.66262782,0.64658118,0.64658118,0.66262782). The 188 torus faces have five distinct planar rhombus areas, with (rounded area: count): (0.1944611171:24), (0.2268713032:28), (0.3241018618:60), (0.3889222341:24), (0.4213324203:52). Extract the 11-face OPEN disk C plus deleted face zero and recompute boundary incidence, discarding periodic neighbors.
+
+For physical scale h>0, the physical primal edge length is ell_e=h*||Qpar e_direction|| and the face area is A_f=h^2*abs(det(Qpar e_i,Qpar e_j)). Define a positive barycentric normal dual thickness ellstar_e=sum_(f incident in open disk) A_f/(2 ell_e), with one face at free boundary and two for an interior edge. The diagonal candidate edge-electric weight for spatial d=2 is a_e=(g_2^2/2)*(ell_e/ellstar_e), and magnetic plaquette weight is b_f=C_mag/(g_2^2 A_f), C_mag>0 fixed by the convention for 1-Tr(W_f)/2. At h=1, the geometric electric factor ell_e/ellstar_e ranges from 0.9922503153 to 1.9845006306 for 14 internal edges and from 1.7631141281 to 4.2997513663 for 16 boundary edges. Area weights are positive.
+
+Under uniform geometric rescaling h: ell_e->h ell_e, ellstar_e->h ellstar_e, A_f->h^2 A_f, hence a_e scales h^0 and b_f scales h^-2 at fixed dimensionful g_2^2; b_f/a_e scales h^-2. This fails the earlier *sufficient* small-ratio local cap condition b_f/a_min=O(h^(3/4)). It does not disprove a nonperturbative center-cap theorem. The anisotropic/nonorthogonal geometry generally requires a full discrete Hodge mass matrix with off-diagonal electric terms, whose positivity and gauge-covariant quantization remain unverified. The barycentric normal-thickness rule is one modeling choice, not a canonical circumcentric dual. No Wilson continuum limit, refinement-uniform cap, or 3+1 dimensional Yang-Mills mass gap is proved.
+
+Reproduce using research/scripts/validate_m5_geometric_weights.py with PENROSE_STUDY_SRC pointing at the archived Python modules.

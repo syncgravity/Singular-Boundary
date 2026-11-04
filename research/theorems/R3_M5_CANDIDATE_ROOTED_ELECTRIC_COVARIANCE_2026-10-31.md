@@ -1,0 +1,13 @@
+# R3-IR-604 — Candidate M5 rooted electric coefficient: gauge covariance and positivity audit
+
+Date: 2026-10-31. Starting from the actual M5 48-vertex, 98-edge, 47-tree-link data and its inverse 98x98 Whitney metric K=M1^-1, choose root (0,0) and oriented root-to-source paths P_s. Define the **candidate** closed electric form Q=1/2 ∫ Σ_{ee'} K_{ee'} (Ad(P_s(e)) X_e ψ)·(Ad(P_s(e')) X_e' ψ) dHaar. The corresponding coefficient block is A_(e,a;e',b)(U)=K_ee' [Ad(P_s(e))^T Ad(P_s(e'))]_(a,b), for left-invariant derivatives X on each link.
+
+This natural construction is symmetric positive definite: every 3x3 adjoint block is an orthogonal change of variables, so the full coefficient is congruent to K tensor I3. The archived K has minimum eigenvalue 4.383453160723884 and maximum eigenvalue 336.3142328606066. Vertex gauge transformations act on P_s by G_root P_s G_s^-1, so root-frame gradients transform by a common root rotation and the quadratic form is invariant; the coefficient A itself transforms covariantly under local gradient frame rotations.
+
+Executed numerical checks using reproducible independent Haar links and vertex gauges: root transport covariance max 1.33e-15; all 98x98 3x3 coefficient-block gauge covariance max 5.12e-13; tree-gauge reduction P_v=I max 4.88e-15. Full mixed face carré-du-champ gauge residuals on face 4,29,33 are 0, 2.84e-14, 9.24e-14 respectively. With U tree gauge transformed, all adjoint transports become identity **at that configuration**; tree-edge differential derivatives still must be retained, and derivatives of link-dependent transports generally contribute to the divergence-form differential operator.
+
+The self-adjoint nonnegative electric operator associated with the form is H_E=-1/2 Σ_{ea,e'b} X_ea [ A_(ea;e'b)(U) X_e'b ], on an appropriate smooth core and its Friedrichs extension. An explicitly nonzero electric first-order differential drift can arise from X A; this is not represented by naively freezing A before differentiation.
+
+**Source and claim limitation:** the archived incidence and mass matrices, and the archived Galerkin script, do not specify the original author's unique rooted physical electric coefficient convention. This is one mathematically natural gauge-covariant positive candidate, NOT proof of equivalence to the original physical non-Abelian Whitney Hamiltonian. The true interacting deleted-ground-state Ω_f^- and its conditional a,b,c remain unknown. No regulator-uniform current estimate or continuum Yang–Mills mass gap is proved.
+
+Executed program `audit_M5_candidate_rooted_electric_A.py` and JSON `m5_candidate_rooted_electric_covariance_2026-10-31.json` preserved in ChatGPT Library `/The Singular Boundary/Source/`.

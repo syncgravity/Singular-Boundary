@@ -1,0 +1,7 @@
+# R3-IR-603: M5 spanning-tree and rooted chord covariance
+
+Recovered from the archived M5 incidence arrays: 48 vertices, 98 directed edges, 47 tree links, and 51 chords. Root chosen conventionally as the least vertex (0,0). Tree path lengths are at most six. For vertex transformations U_xy -> G_x U_xy G_y^{-1}, the root-to-vertex tree holonomy P_v transforms as G_root P_v G_v^{-1}; the rooted chord W_e=P_source U_e P_target^{-1} transforms by root conjugation. Direct quaternion verification across all vertices and chords has respective maximum errors 7.77e-16 and 1.44e-15.
+
+This determines paths and transport orientation for the chosen root convention, but does NOT determine the unique physical rooted Whitney electric coefficient A(U), whether each adjoint transport appears directly or inversely in the kinetic contraction, or its self-adjoint differential ordering. Consequently the actual interacting vacuum conditional radial coefficients remain uncomputed. Neither a regulator-uniform nonlinear score estimate nor continuum mass gap is established.
+
+Source and data archived in Library /The Singular Boundary/Source/reconstruct_M5_rooted_tree_2026_10_31.py and m5_rooted_tree_paths_covariance_2026-10-31.json.

@@ -1,0 +1,13 @@
+# Whitney patch-size coercivity from local rhombus forms
+
+Date 2026-10-30. Archived periodic M5 tile geometry, extracted connected open face sets. **This is geometric SPD control, not a physical Yang-Mills continuum spectral gap.**
+
+For each M5 rhombus f, compute the 5-edge degree-one Whitney mass matrix on its two-triangle subdivision. Eliminate the internal diagonal via a 4x4 SPD Schur complement S_f. Orient and assemble into a global physical-link matrix H_P by summing face contributions with signs. For every global edge vector x, the exact algebraic identity is x^T H_P x=sum_(f in P) x_f^T S_f x_f >= c_tile sum_f ||x_f||² >= c_tile ||x||², where c_tile=min_(f in the finite allowed family) lambda_min(S_f)>0 and each assembled link belongs to at least one face. This is a size-independent *structural* lower bound; its numerical value requires interval-certified local matrices to qualify as an explicit rigorous constant.
+
+Ran archived Approximant(M=5) using a breadth-first connected face ordering from face 0. (faces,links,lambda_min,lambda_max) in double precision: (11,30,0.163745150776,1.106219771667); (25,61,0.163767450799,1.306777706156); (50,114,0.163767457533,1.308775623981); (100,223,0.166707462332,1.343296304252); (150,318,0.166707464020,1.343303015890); (187,376,0.212490953052,1.343303015893); (188,376,0.313851504515,1.343303015893). Face-local minimum across all 188 approximant faces about 0.143159504823; six distinct eigenvalue values when rounded to eight decimal places. All numeric eigenvalues are floating-point checks and not certified interval bounds.
+
+The 11-face BFS patch is different from the previously analyzed special 11-face deleted-holonomy annulus, whose assembled lambda_min was about 0.143174148694. Do not conflate these.
+
+For any genuine Penrose tiling family admitting finitely many nondegenerate face shapes up to rotation/reflection, the same algebraic coercivity inequality gives a size-independent geometric constant once a common, coherent local Hodge construction is established. Under homogeneous 2D spatial scaling, Whitney 1-form L2 mass is scale invariant. This statement does not settle the actual electric canonical metric, potentially its inverse, gauge-covariant transport ordering, magnetic scaling, deleted-face conditional Haar behavior, shrinking-cap probability, or continuum Yang-Mills mass gap. At fixed M5 full torus, the original global plaquette constraint remains; open disk results do not transfer automatically.
+
+Reproduction: research/scripts/validate_whitney_patch_sweep.py. Geometry source is the archived penrose_study.zip modules, loaded by PENROSE_STUDY_SRC or installed Python path.

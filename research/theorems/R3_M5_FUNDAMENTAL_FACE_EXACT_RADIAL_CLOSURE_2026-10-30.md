@@ -1,0 +1,11 @@
+# R3-IR-546: Fundamental-face radial closure on the archived M5 graph
+
+For a simple face f with exactly one non-tree edge, the root-transported electric derivatives of the plaquette trace p_f align in a common SU(2) adjoint frame. Their signs equal the oriented face incidence s. Therefore the radial diffusion is exactly Gamma(p_f,p_f) = kappa_f (1-p_f^2) with kappa_f = s^T K_face s / 4 and K equal to the inverse of the original Whitney matrix. Its Haar-symmetric drift is Lp_f = -3 kappa_f p_f. These equalities hold pointwise, and consequently under ANY interacting positive ground-state conditional measure; the geometric correction in the anisotropic Ward formula R3-IR-545 vanishes for this face.
+
+Archive SHA256: d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf. Face 0 edge IDs [1,4,13,0], signs [1,1,-1,-1]. Original matrix yields kappa_0 = 2.362228738429273. Both rooted trees T1 and T2 include exactly three face-0 edges. 32 Haar samples per tree gave ratio Gamma/(1-p^2) constant to 2e-10. Independently Lp was evaluated by a second finite difference at six configurations with errors at most 6e-8.
+
+Control: face 10 has two non-tree edges in T1 and shows nonconstant Gamma/(1-p^2), sample standard deviation 0.145996 across 32 random configurations. In T2 it has one chord and ratio becomes constant 3.139779887. This identifies the fundamental-cycle graph condition, not generic isotropy, as the relevant exact closure mechanism.
+
+For the deleted face 0, the R3-IR-545 radial score simplifies to d(log psi)/dp = j(p)/[kappa_0(1-p^2)] with j the actual interacting conditional current. This does NOT bound j or prove refinement-uniform caps; that is the next obligation. Root-tree frame transformations require metric co-transport as in R3-IR-542. Continuum mass gap remains open.
+
+Reproducer: research/scripts/validate_actual_m5_fundamental_radial_closure.py. Binary research arrays and original Whitney NPZ are held in ChatGPT Library under /The Singular Boundary/Source, not Git.

@@ -1,0 +1,11 @@
+# R3-IR-602 — SU(2) adjoint rooted-transport derivative and operator-ordering audit
+
+Date 2026-10-31. Follow-up to R3-IR-598–601. The archived M5 script `compute_m5_connected_sixteen_full.py` forms a rooted fixed-K electric **quadratic matrix** with all face-edge derivatives retained in tree gauge and `K=inv(M5_mass3d)`. This is distinct from deriving a globally self-adjoint differential operator with configuration-dependent rooted transport.
+
+For SU(2) left-invariant generators X_a, adjoint SO(3) rotation R and so(3) generators J_a, `X_a R(U)=J_a R(U)` and `X_a R(U^{-1})=-R(U^{-1}) J_a`. Therefore the contracted derivative `Σ_a[X_a R(U)]_{ab}=0`, while `Σ_a[X_a R(U^{-1})]_{ab}` is generally nonzero. For U a rotation about axis z through t, the latter has norm `2|sin(t)|`; deterministic central differences agree to ≤3.34e-11 for t=0,.4,1,1.57,2. This is an illustrative link-local model; not a Penrose-specific proof that its complete rooted operator has a nonzero drift.
+
+Let A_{ea,e'b}(U) be the **actual** gauge-covariant symmetric positive electric coefficient matrix. Its closed quadratic form is `Q(ψ,φ)=1/2∫ Σ (X_ea ψ) A_{ea,e'b}(U) (X_e'b φ) dHaar`. The corresponding nonnegative self-adjoint operator acts, on a smooth core, as `H_E φ=−1/2 Σ_{ea,e'b} X_ea(A_{ea,e'b}(U)X_e'b φ)`; expansion contains the necessary coefficient derivative term `−(1/2) Σ (X_ea A_{ea,e'b})X_e'b φ` in addition to second derivatives. Since the edge fields X are Haar divergence free, this operator ordering is the one guaranteed by the quadratic form (assuming positivity/regularity). Its electric carré du champ and drift in the conditioned face Ward equation must be derived from A rather than a matrix frozen after tree gauge fixing.
+
+**Still open:** independently reconstruct the precise root-to-vertex spanning-tree parallel transports P_e, index conventions, and whether adjoint matrices are R(P_e) or R(P_e^-1) in the full physical electric form. Then compute A(U), its derivatives, and conditional a_f,b_f,c_f for the genuine interacting face-deleted ground-state density Ω^-². Neither a uniform one-sided score estimate nor a continuum SU2 Yang–Mills mass gap is established.
+
+Executed audit: ChatGPT Library `/The Singular Boundary/Source/audit_rooted_transport_divergence_2026_10_31.py` and `rooted_transport_divergence_audit_2026-10-31.json`.

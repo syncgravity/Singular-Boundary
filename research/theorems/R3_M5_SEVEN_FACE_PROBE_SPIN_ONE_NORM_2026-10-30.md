@@ -1,0 +1,6 @@
+# Seven-face spin-one deleted-holonomy probe: exact Haar norm
+Date: 2026-10-30. Scope: exact SU(2) local independent-face Haar algebra, not a nonzero seventh-order amplitude.
+
+With p_i=(1/2)Tr W_i=(1/2)chi_{1/2}(W_i), define O=(p_f^2-1/4) product_(g in S) p_g, S={1,2,3,4,7,8,10}. The SU(2) character identity chi_{1/2}^2=chi_0+chi_1 gives p_f^2-1/4=chi_1(W_f)/4 exactly. Therefore P_f O=0 and O is a bona fide deleted-holonomy spin-one probe. For the LOCAL measure in which these eight based face holonomies are independent normalized Haar variables, orthogonality implies E[p_g^2]=1/4, E[(p_f^2-1/4)^2]=1/16, hence ||O||²=1/262144 and ||O||=1/512; the exactly normalized probe is 512 O. The norm identity is a valuable finite-spin implementation unit test. For periodic torus representations, first certify that the chosen eight face holonomies have this independent Haar marginal; do not replace the torus global constraint silently.
+
+Let F_S be the exact seven-face squarefree ground-state coefficient from the 127-subset recursion. The desired amplitude <O,F_S> is STILL UNEVALUATED. A norm bound using ||R||<=1/gamma_T and ||p_g||<=1 yields |<O,F_S>|<= (5040/512)gamma_T^-7 when the norm identity applies. This is only an upper bound; it does not certify nonvanishing, the full Q-sector spectral gap, a uniform Penrose cap probability, or continuum mass gap.

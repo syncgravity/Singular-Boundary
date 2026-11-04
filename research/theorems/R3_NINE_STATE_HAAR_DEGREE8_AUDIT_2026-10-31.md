@@ -1,0 +1,7 @@
+# R3-IR-569 — SU(2) degree-eight Haar integration rule
+
+The earlier 24-cell quaternion rule is not exact at degree 6 or 8. For Haar-uniform q on the unit 3-sphere, E[q0^6]=5/64 but the 24-cell rule gives 3/32. Likewise E[q0^8]=7/128 versus 11/128; E[q0^4 q1^4]=3/640 versus 1/384. Rotating this rule and obtaining equal nine-state eigenvalues does not establish exactness. The nine-state Ritz numbers in R3-IR-568 remain approximate.
+
+A replacement 300-point cubature uses the parameterization q=(t,sqrt(1-t²)y,sqrt(1-t²)sqrt(1-y²)cos(phi),sqrt(1-t²)sqrt(1-y²)sin(phi)), with 5-point Gauss-Jacobi alpha=beta=1/2 in t, 5-point Gauss-Legendre in y, and 12 equally spaced phi nodes. Fourier cancellation and Gaussian quadrature exactness prove integration of every quaternion polynomial of total degree <=8. An executed independent moment audit checked all 495 degree<=8 monomials against exact rational Haar moments; maximum absolute numerical error was 6.66e-16.
+
+A naive three-chord tensor of this rule has 27 million nodes. The attempted direct nine-state Ritz recomputation did not finish. **Therefore no nine-state electric Ritz coefficient has been newly certified.** A factorized polynomial/moment contraction is required. The quadrature certification and results were persisted in ChatGPT Library /The Singular Boundary/Source/ as audit_nine_state_design_degree.py and nine_state_haar_design_certification_2026-10-31.json. No continuum spectrum or mass gap proved.

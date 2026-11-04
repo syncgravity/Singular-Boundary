@@ -1,0 +1,11 @@
+# R3-IR-578 — Connected three-loop M5 fused-intertwiner trial space
+
+The three Wilson plaquettes have incidence indices A=4, B=29, D=33. Plaquette D shares physical edges with A and B. The union of their non-tree supports uses chords 1,26,75,95. In tree gauge, a product 24-cell SU(2) Haar cubature has 24^4=331776 nodes.
+
+Construct the eight products chi_A^a chi_B^b chi_D^d for a,b,d=0,1, together with F_AD=(2/sqrt(3))[chi(U_A U_D)-chi_A chi_D/2] and F_BD=(2/sqrt(3))[chi(U_B U_D)-chi_B chi_D/2]. The complete 10x10 Haar Gram matrix is the identity to maximum absolute numerical error 3.33e-16. These ten functions are invariant under vertex SU(2) gauge transformations because every loop holonomy transforms by conjugation at the common root.
+
+An independent full inverse-Whitney rooted-electric Haar contraction on the subspace (1,chi_A,chi_D,chi_A chi_D,F_AD) yields diagonal kinetic entries approximately (0,54.6941315502,80.04311574,134.7372472,113.7668365) and an offdiagonal intertwiner coupling E_(chi_A chi_D,F_AD)=3.322648562899463. The five-state Gram matrix is identity within 3.33e-16. Both Wilson p_A and p_D projected multipliers have no matrix elements linking F_AD to the four product vectors at this cutoff. The five-state electric integrands on the four non-tree chord quaternions have degree at most four per chord, sufficient for 24-cell Haar quadrature exactness in mathematical form; displayed decimals remain floating point.
+
+The ten-state Gram construction and five-state kinetic calculation are **not** a computation of a combined ten-state three-loop electric Hamiltonian or its Ritz gap. This new connected three-loop direction is also distinct from the previously certified 20-state space using an edge-disjoint third loop. No finite-prism full-spectrum or continuum Yang-Mills gap is proved.
+
+Executed source and complete numerical matrices in ChatGPT Library /The Singular Boundary/Source: audit_m5_coupled_fused_intertwiner.py, m5_coupled_A_D_fused_five_state_2026-10-31.json, audit_m5_three_loop_fusion_gram.py, m5_three_loop_two_fusions_gram_2026-10-31.json. Next obligation: contract all ten electric entries and the complete magnetic projection, retaining all plaquettes and required polynomial moments; then merge with higher-spin basis.

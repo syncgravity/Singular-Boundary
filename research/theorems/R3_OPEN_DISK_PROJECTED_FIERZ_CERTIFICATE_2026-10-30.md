@@ -1,0 +1,5 @@
+# Open disk deleted-fiber Fierz certificate
+
+For the extracted 11-face open disk, A=face 1 and B=the nine-face boundary share electric links 3 and 14. The physical SU(2) Fierz identity is Gamma_T(p_A,p_B)=(p_S3+p_S14-2p_A p_B)/4 for unit link coefficients. Along the deleted-face Haar fiber U0 -> U0 h and U86 -> U86 U14^-1 h U14, the retained holonomies stay fixed. The smoothing S3 is constant; S14 has normalized trace Tr(h^-1 M h N)/2. Schur averaging gives Q_f Gamma_T=(p_S14-p_A p_B)/4. Its conditional squared norm is (1-p_A^2)(1-p_B^2)/48. Independent Haar marginals of A and B under the open disk product-link measure yield global squared norm 3/256 and norm sqrt(3)/16 >0.
+
+This is an exact nonzero electric SOURCE, not a proof that Q_f T_perp^-1(p_A p_B) or the interacting ground-state Q component is nonzero. Reproducible source: supplied local validate_m5_deleted_fiber.py; direct matrix regression was rerun successfully. Periodic-versus-disk distinction is essential. Continuum gap remains open.

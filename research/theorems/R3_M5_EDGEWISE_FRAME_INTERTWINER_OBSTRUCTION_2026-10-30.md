@@ -1,0 +1,11 @@
+# R3-IR-539 — Actual M5 edgewise adjoint frame candidate is not an electric-form isometry
+
+Date 2026-10-30. Verified original archived binary `global_whitney_11face.npz` SHA-256 `d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf`, with original 30x30 inverse Whitney matrix K. Archived M5 disk rooted trees T1 (BFS root 0, link 4 tree, link 13 chord), T2=T1-{4}+{13}.
+
+Let V_i^(a)(U) be the rooted transporter for edge i under tree a and D_i^(a)=Ad(V_i^(a))X_i. Define the **candidate change of edge frame** R_i=Ad(V_i^(2)(V_i^(1))^-1). On smooth cylinder functions, D_i^(2)F=R_i D_i^(1)F POINTWISE (the rotation multiplies derivatives but does not itself differentiate F). Every R_i belongs to SO(3). The electric principal form with the **same fixed** edge matrix K is Q_a=Σ_ij K_ij D_i^(a)F·D_j^(a)F. Pointwise invariance for arbitrary differential vectors requires K_ij(R_i^T R_j-I_3)=0 for all i,j. An SU2 adjoint rotation common to every link preserves Q, but independently varying edge rotations need not.
+
+For a deterministic seeded random Haar link configuration (numpy seed 539), the archived K has **192 off-diagonal coupled unordered pairs** with |K_ij|>1e-8 and ||R_i^T R_j-I||_F>1e-6. Largest measured Frobenius discrepancy about 2.826102948. For the gauge-invariant test F=p_face0 p_face10, an independent gradient consistency check confirms D2_i F=R_i D1_i F to 1e-11 (central finite differences). Consequently the direct edgewise frame identification, holding fixed the inverse Whitney edge metric, fails as a pointwise **principal-form isometry**. This is consistent with R3-IR-538's actual gauge-invariant Q1≠Q2 samples.
+
+**LIMIT:** This excludes ONLY the naive independent edge-frame rotation with fixed K as a quadratic-energy isometry. It does NOT prove the absence of an arbitrary gauge-compatible unitary intertwiner, coordinate transform, or coupled transformation of K; nor does it establish spectral inequivalence. It does not derive a unique canonical physical operator, refine M(h), or prove a uniform cap/mass gap.
+
+Reproducer is persisted in ChatGPT Library at `/The Singular Boundary/Source/audit_m5_tree_frame_intertwiner.py`, depending on the archived full Wilson-form regression and original Whitney NPZ also stored in Library. Source files and all binary artifacts must stay retrievable beyond a chat; no NPZ in Git.
