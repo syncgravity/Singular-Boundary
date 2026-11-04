@@ -66,3 +66,7 @@ The independent prepared 602-file tree, the original historical data families, a
 
 A new collaborator or AI should first state the **highest defensible checkpoint and exact remaining obligation**. It should cite immutable commits and original files, detect prior corrections, and avoid restarting superseded calculations. The goal is a coherent, reproducible, independently reviewable proof program, not an unbroken stream of claimed theorems.
 
+
+## November 4, 2026 — research resumption checkpoint
+
+Before launching another theorem calculation, read [the repository-wide review and selected P0 regulator-certification objective](docs/research/REPOSITORY_REVIEW_AND_P0_OBJECTIVE_2026-11-04.md). A [pinned 538-file theorem navigator](docs/research/THEOREM_INDEX_SNAPSHOT_2026-11-04.md) supplements, but does not overwrite, the older 335-file historical index. The full main-tree and historical branch-only Git inventories are linked from [research navigation](docs/research/README.md). **202 theorem paths and 94 scripts exist only on the historical audit branch**; search both branches before declaring work new. The historical-record certification gate remains blocked. Full source-body and mathematical certification are not implied by the tree inventories.
