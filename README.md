@@ -42,6 +42,11 @@ The Observatory is an interactive research map, not a declaration of a completed
 
 **P5 — Continuum existence and positive mass gap.** Establish nontriviality, physical normalization, appropriate infinite-volume/refinement limits, reflection positivity/OS reconstruction, and a strictly positive mass gap in physical units without circular assumptions.
 
+
+### November 4, 2026 — Independent nested physical PW audit
+
+The [shared-link two-face calculation](research/audits/NESTED_PW_COEFFICIENTWISE_AUDIT_2026-11-04.md) and [arbitrary-spin nested Wilson family theorem](research/audits/ALL_SPIN_NESTED_WILSON_FAMILY_2026-11-04.md) verify the corrected electric inverse and coefficientwise nuclear PW norms in one structured family; its exact local-first L¹×L² ratio is ≤e^(−κ)/16 and decays as 1/n at high spin. **This does not independently certify the unrestricted arbitrary-history local-first tame estimate or the conditional Borel disk.** [Exact verifier](research/tests/verify_all_spin_nested_family_2026_11_04.py).
+
 ## Repository map
 
 | Directory | Role |
