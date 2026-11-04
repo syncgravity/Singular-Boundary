@@ -19,6 +19,8 @@ The latest exact-family investigation is the [three-face nested all-spin theorem
 
 The latest analytic step is the [variable-high-spin recoupled PW matrix-sector audit](research/audits/VARIABLE_HIGH_SPIN_RECOUPLED_MATRIX_SECTORS_2026-11-04.md). It establishes a fixed-three-face first-moment bound for arbitrary matrices in two matched degree sectors, while leaving the general all-width nonlinear closure and Borel hypothesis open.
 
+The next fixed-sector step, [four independent PW degrees on overlapping extended histories](research/audits/FOUR_DEGREE_PW_MATRIX_OVERLAP_2026-11-04.md), establishes a conservative first-moment constant 6e^(-κ) for arbitrary Fourier matrices on one three-face overlap. The **unrestricted long-history nonlinear closure remains open**; the conditional Borel-disk result is not upgraded.
+
 ## Start here
 
 | Research question | Canonical record |
