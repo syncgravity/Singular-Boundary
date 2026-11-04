@@ -23,6 +23,8 @@ The next fixed-sector step, [four independent PW degrees on overlapping extended
 
 **Latest conditional P2 audit:** [Weighted exceptional-energy charging for nested histories](research/audits/WEIGHTED_EXCEPTION_UNBOUNDED_NESTED_2026-11-04.md) provides an alternative width-unrestricted, same-radius graded tame proof under the existing coefficientwise PW assumptions. It changes neither the conditional status of the formal Borel disk nor the unresolved interacting/continuum gap.
 
+**Operator certification gate:** [Peter–Weyl original-link/face norm-transport audit](research/audits/PW_OPERATOR_NORM_TRANSPORT_GATE_2026-11-04.md) proves exact exponential norm mismatch for the same Wilson loop. It independently certifies the fixed-coordinate PW multiplication algebra and face-sector free inverse, but **not** the general coefficientwise nonlinear Poisson bound. The P2 graded tame and local Borel disk remain conditional.
+
 ## Start here
 
 | Research question | Canonical record |
