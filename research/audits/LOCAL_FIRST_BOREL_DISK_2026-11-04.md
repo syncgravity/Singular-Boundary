@@ -88,3 +88,17 @@ The exact arithmetic script [`verify_local_first_borel.py`](../scripts/verify_lo
 ## 5. Status decision
 
 **Conditionally valid mathematical inference**, with the analytic tame hypothesis and local source norm explicitly identified. **No novel unconditional proof of a Yang–Mills mass gap.**
+
+## 6. Independent one-face convention sanity check (not nested fusion)
+
+The repository already contains [exact single-face dressing](../../research/theorems/R3_IR_EXACT_SINGLE_FACE_DRESSING_2026-11-03.md), including an actual holomorphic one-face eigenbranch for `|z|<3/4`; therefore the divergence of a positive equality majorant **does not imply** divergence of the signed physical series. Avoid duplicating this earlier research.
+
+For the source convention `H=K-z χ_1/2` on one four-link elementary plaquette, the source-graded score has `S_1=χ_1/6`. The SU(2) character identity `χ_1²=1+χ_2`, `Kχ_1=3χ_1` and `Kχ_2=8χ_2` give `Γ_K(χ_1,χ_1)=3−χ_2`, hence the centered second-order coefficient is
+
+```
+S_2 = K^{-1}Q Γ_K(S_1,S_1) = −χ_2/288.
+```
+
+Independently expanding the published normalized one-face eigenfunction `ψ=1+zχ_1/6+z²χ_2/96+O(z³)` gives `[z²] log ψ = −χ_2/288−1/72`; the difference is solely the Haar-constant score normalization discarded by `Q`. Thus the **centered** order-two coefficient agrees with the formal Poisson recurrence exactly. This checks an elementary orientation/sign/normalization interface only, not the difficult shared-link coefficientwise tame estimate.
+
+The older [fourth-order one-face calibration](../../research/theorems/R3_IR_FOURTH_ORDER_ONE_FACE_CALIBRATION_2026-11-01.md) uses `S_1=χ_1/3`, which is twice the `χ_1/6` above. Their coupling and source conventions must be reconciled explicitly before transferring displayed coefficients; matching the word “one-face” is insufficient.
