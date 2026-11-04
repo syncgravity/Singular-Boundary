@@ -25,3 +25,9 @@ The [November 1 publication proof map](../../research/audits/SINGULAR_BOUNDARY_P
 ## Repository rules
 
 Preserve every earlier theorem, counterexample, failed attempt and historical data byte. Create errata and supersession links rather than overwriting source history. Never cite an index as proof. Name the exact model, operator, dimension, coupling, boundary, sector and normalization with any mathematical claim.
+
+## November 4, 2026 — Current full-tree inventory and research-resumption gate
+
+The earlier 335-record theorem index remains a dated baseline. The [pinned 538-file theorem index](THEOREM_INDEX_SNAPSHOT_2026-11-04.md), [all 2,150 main-tree blobs](FULL_MAIN_TREE_SNAPSHOT_2026-11-04.csv), [claim/index coverage flags](THEOREM_TREE_COVERAGE_2026-11-04.csv), [historical branch-only paths](HISTORICAL_BRANCH_ONLY_TREE_2026-11-04.csv), and [all 11 branch differences](ALL_BRANCH_DIFFERENCES_2026-11-04.csv) are now available. These are **discovery and provenance inventories**, not mathematical proof certification.
+
+Read the [repository-wide audit and selected P0 objective](REPOSITORY_REVIEW_AND_P0_OBJECTIVE_2026-11-04.md) before starting new calculations. The historical certification freeze remains in effect unless explicitly changed by the project owner. Avoid duplicating 202 theorem files and 94 scripts found only on the historical audit branch. Content-level review of all 2,150 tracked file bodies remains unfinished.
