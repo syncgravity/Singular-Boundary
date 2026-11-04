@@ -16,6 +16,9 @@ The Observatory is an interactive research map, not a declaration of a completed
 
 The latest exact-family investigation is the [three-face nested all-spin theorem and scope audit](research/audits/THREEFACE_ALL_SPIN_NESTED_2026-11-04.md). It preserves the two-shared-link Gauss-invariant physical sector, but does not establish unrestricted tame closure or a mass gap.
 
+
+The latest analytic step is the [variable-high-spin recoupled PW matrix-sector audit](research/audits/VARIABLE_HIGH_SPIN_RECOUPLED_MATRIX_SECTORS_2026-11-04.md). It establishes a fixed-three-face first-moment bound for arbitrary matrices in two matched degree sectors, while leaving the general all-width nonlinear closure and Borel hypothesis open.
+
 ## Start here
 
 | Research question | Canonical record |
