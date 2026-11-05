@@ -88,6 +88,23 @@ Exact symbolic/generator arguments above establish the finite proposition; these
 
 The immediate task is therefore **not** to prove another one- or two-plaquette bound, and not to make a prettier map: it is to obtain the first rigorously scale-comparable **3D interacting, gauge-invariant correlation bound**. This is what the atlas now reveals as the actual transition to a continuum proof.
 
+## 6A. A small conditional theorem explaining the shortest possible RG-to-gap bridge
+
+Fix a dense *candidate* family of gauge-invariant renormalized physical observables F, whose fine-grid representatives F_{j,R} are defined by a common, source-specified blocking/renormalization prescription. Denote the **actual interacting vacuum** centered self-correlations at spatial refinement h_j=2^(−j)h_0 and physical time τ≥0 by C_{j,R}^F(τ), with the same model, chosen boundary conventions and coefficients at every j. Assume:
+
+1. For one fixed initial resolution j=0, **uniform in physical box size R**, C_{0,R}^F(τ)≤A_F e^(−Mτ) for τ≥0, where M>0 does not depend on R or F (but A_F may depend on F).
+2. There are nonnegative errors δ_{j,F} with ∑_{j=0}^∞ δ_{j,F}<∞ and a **common M>0** such that
+
+       sup_R sup_{τ≥0} e^(Mτ) |C_{j+1,R}^F(τ) − C_{j,R}^F(τ)| ≤ δ_{j,F}.
+
+Then, by a telescoping sum and the triangle inequality,
+
+       0 ≤ C_{j,R}^F(τ) ≤ (A_F + ∑_k δ_{k,F}) e^(−Mτ)
+
+for every j,R and τ≥0. Any pointwise/OS limit satisfying the separate consistency, positivity, vacuum-density and nontriviality hypotheses inherits the same physical M; the elementary spectral-support lemma in `docs/research/UNIFORM_INTERACTING_THEOREM_BRIDGE_2026-11-04.md` then excludes positive spectrum below M.
+
+**This is a conditional bridge, not a renormalization theorem:** no δ_{j,F} or common M has been proved for the SU(2) target. Its practical role is to expose an **observable falsifiable one-step task**: compare two genuine 3D refinements in an exponentially time-weighted, gauge-invariant connected correlation norm with a summable error **and** verify a volume-uniform starting bound. The strong weighted norm is purposefully stringent; achieving it may be as hard as the continuum mass-gap problem. Convergence in unweighted finite-time norms, or with M_j→0, would not suffice.
+
 ## 7. Source provenance
 
 Existing repository records (not replaced):
