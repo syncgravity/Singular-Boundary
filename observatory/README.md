@@ -1,4 +1,4 @@
-# Research Observatory v2.26-draft · Proof Atlas + theorem integration
+# Research Observatory v2.27-draft · P0 finite transfer test + Proof Atlas
 
 Open `index.html` together with `catalog.js`, `audit.js`, and `proofpaths.js` in the same folder (works without a server). The **740-record catalog** is generated from the immutable source Git tree `fd1c1c1c8db078f8ec9d591d182059bd1635b164` and records paths, Git blob identifiers and source sizes. Only 12 selected theorem bodies have editorial annotations; all remaining records explicitly say `Indexed path and Git blob only`.
 
@@ -21,3 +21,10 @@ To replay the mounted archive checks: `python observatory/tools/verify_stage26.p
 [`graph.html`](graph.html) opens the private interactive 78-node / 116-link curated P0–P5 knowledge graph. Click a gate for its **exact unclosed acceptance criteria**, then explore finite theorem records, candidate model identity, signed-current and infrared obligations, and **26 hashed archived files**. The six continuum gates are OPEN. The existing 740 indexed theorem paths and 78 legacy proof pathways remain a separate discovery snapshot; they are not certified by graph inclusion. Graph code and data are offline (`graph.css`, `graph-app.js`, `knowledge-graph-data.js`); human-reviewable text records are `knowledge-graph.json` and `data-manifest.json`. No original numerical arrays or transcripts enter Git.
 
 Source generation: `python observatory/tools/build_knowledge_graph.py`. Structural, SHA, model-scope and status validator: `python observatory/tools/verify_knowledge_graph.py` (optional `--data-dir /path/to/uploads`). The mathematical/ethical acceptance protocol is [`KNOWLEDGE_GRAPH_CLOSURE_PROTOCOL_2026-11-04.md`](../docs/research/KNOWLEDGE_GRAPH_CLOSURE_PROTOCOL_2026-11-04.md). Source originals remain in **Library → The Singular Boundary → Data** pending user-configured Git LFS. Browser annotations are local-only and must be exported/imported as JSON for review; they cannot close the canonical gates.
+
+
+## P0 review increment (private, stacked draft)
+
+The updated [`graph.html`](graph.html) now displays **80 curated nodes and 122 typed edges**. A *finite* P0 cubic heat-kernel transfer-action candidate and an explicitly **conditional** scale-telescope correlation criterion have been added, with both source and assumption labels. The selected temporal heat-kernel/space Wilson action has finite-time transfer positivity and the fixed-spatial-grid Kogut–Susskind limit; **it is not proved equivalent in the continuum to the isotropic 4D Wilson action**, and supplies no uniform interacting state, OS continuum theory or positive mass gap. All 6 gates remain **OPEN**. Rebuild and verify with the existing `observatory/tools/build_knowledge_graph.py` / `verify_knowledge_graph.py` plus `research/scripts/verify_heat_kernel_p0_2026_11_04.py`. The original 740 catalog and 78 historical proof paths are separate and unchanged.
+
+Audit: `research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md`; simulation JSON `docs/evidence/P0_HEAT_KERNEL_TRANSFER_CHECKS_2026-11-04.json`; no new raw binary data in Git.
