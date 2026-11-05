@@ -1,0 +1,327 @@
+{
+  "scope": "Provenance and descriptive checks only; neither 600 samples nor four seed trials justify independence or uncertainty estimates without the exact simulation protocol.",
+  "lag_values": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "paired_seed_labels": [
+    101,
+    211,
+    307,
+    419
+  ],
+  "sweep_rows": [
+    {
+      "geometry": "penrose",
+      "seed": 101,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "compact_sha256": "db0bdb04d0073c153332aa6f687dcd7db835b3f3009d49f411f85dd36ff0217e",
+      "input_stage9_checkpoint_sha256": "275243c7da74941db5bdd882dbb7f44ce02c915503033f040841b75f80409638",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.014978729492849995,
+          -0.029770082027590874,
+          0.001956865510299773,
+          0.022545842350345832
+        ],
+        "multihit": [
+          0.014253798746179524,
+          -0.003107446861902862,
+          -0.003269026794522991,
+          -0.003165307150999634
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "penrose",
+      "seed": 211,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "compact_sha256": "2e7cecb2bae8a2c9a03b86ad8511fe36fc760cca4fdac0968cd9aa4f7bd1dfad",
+      "input_stage9_checkpoint_sha256": "364561c3194a55d0bf06e1ce715a3bb9f9137c30f8489866cc64cb7b6280af7c",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.007422562514771022,
+          -0.04056047114801364,
+          0.04815938992655558,
+          -0.005919170656079166
+        ],
+        "multihit": [
+          0.000880956740195128,
+          0.0006422910365599292,
+          0.003302104226822307,
+          -0.0027714632597049364
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "penrose",
+      "seed": 307,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "compact_sha256": "773f443d7c74a4a1ec58d46393cf7349cf354c22e4cb00eef393f73ae649e0d0",
+      "input_stage9_checkpoint_sha256": "e3d38b5066eea5da8cb3272681a1c5fa588cd4cb37d04d4f1cf69ced57fb4476",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.0053957882005141455,
+          -0.04056321976600689,
+          -0.00971973143633131,
+          0.00811134503459566
+        ],
+        "multihit": [
+          0.008302388428044842,
+          -0.005197546119904725,
+          0.002651722818799173,
+          -0.0012688909909144834
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "penrose",
+      "seed": 419,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "compact_sha256": "19e45b4b8f081e838ec46deea852e3b9c01a5e9fd4550060d81ddce7b5a93b7c",
+      "input_stage9_checkpoint_sha256": "41f401576419a97ec51f0ad5ce014dd0aad81caea18ebe1afbdef25d2abb010e",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.03248968747375218,
+          -0.01404655651019412,
+          -0.005172438980952063,
+          -0.0077745417909452245
+        ],
+        "multihit": [
+          0.010157326852955869,
+          -0.0033132276881746043,
+          -0.005949966968231431,
+          -0.0007385416192836417
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "square",
+      "seed": 101,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "770af817fd89c0279b1e39e27582ecb3f7acc48f8ca514bce5b3ee22c4ec07a0",
+      "compact_sha256": "b41aee48bf589ff28ce86d77b416528a0f6c7a602781a846c84e5cae125ae9d0",
+      "input_stage9_checkpoint_sha256": "701b0565371b3256fbdf6e03532e9d936f05adfb7e0c5692e6fb9cea0b3336ae",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.03751957583295313,
+          0.0038411968012019536,
+          0.07042176291707515,
+          0.021074301084421817
+        ],
+        "multihit": [
+          0.0010462930340410168,
+          -0.00676351302393752,
+          0.0009219504186257054,
+          0.0019434872381477038
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "square",
+      "seed": 211,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "65d893482f234179c319138c5f2c6ca40bc405ab45f95143a377ce0f4a938e25",
+      "compact_sha256": "9add4dd034a32f5f22536910f3baf5d73ebfc9a79cb63c9661644548842fe675",
+      "input_stage9_checkpoint_sha256": "6fa782af9f636399f77fbda778f48b4c964ed480f5feace7692684ae8771d627",
+      "mean_over_600_pairs": {
+        "direct": [
+          -0.03368591534435684,
+          -0.01711061566539526,
+          -0.0034474315694041882,
+          0.005305738254933735
+        ],
+        "multihit": [
+          -0.019523646510209457,
+          -0.011704758688344266,
+          0.001997913650188801,
+          -0.0008383185019072637
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "square",
+      "seed": 307,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "e81dd6674894210161649274ceb1f256d9a3638e394919d051b44846a388f0e0",
+      "compact_sha256": "1136d4e3a95ae55b0ac0f57a459708af95992527d4c147a1a704b9405a51efca",
+      "input_stage9_checkpoint_sha256": "2b4756806d74e42f070347a13bc34861c2c7fa93886b58883f114491f0176bcc",
+      "mean_over_600_pairs": {
+        "direct": [
+          0.017216503953318963,
+          0.027486379711686743,
+          -0.01373138274444405,
+          0.022925089713618327
+        ],
+        "multihit": [
+          0.001916137193033612,
+          0.0050560292572184385,
+          0.0025459096565249497,
+          0.0010823557609769205
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    },
+    {
+      "geometry": "square",
+      "seed": 419,
+      "lags": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "sweep_sha256": "38b8df95d87c614c463ee9fbc232fdc03ba321d6cab3cf7e5243b063c970098d",
+      "compact_sha256": "d737863b5f8316242b70810079a0a90e437dbdb73831f72855a6803d53dc9a41",
+      "input_stage9_checkpoint_sha256": "13a931681ea59da4126f1aa1a8772c70748b5b65ceb393f122c7e7491da6ff8d",
+      "mean_over_600_pairs": {
+        "direct": [
+          -0.03305728115957653,
+          -0.026286287401297265,
+          -0.004531777526103071,
+          -0.025364671904233197
+        ],
+        "multihit": [
+          -0.010226428403679384,
+          -0.009967007539406011,
+          -0.01227894830342026,
+          -0.0008567091796190192
+        ]
+      },
+      "input_checkpoint_lineage_metadata_verified": true,
+      "compact_crc_pass": true
+    }
+  ],
+  "overall_mean_of_four_seed_means": {
+    "penrose": {
+      "direct": [
+        0.015071691920471836,
+        -0.03123508236295138,
+        0.008806021254892995,
+        0.004240868734479275
+      ],
+      "multihit": [
+        0.00839861769184384,
+        -0.0027439824083555654,
+        -0.0008162916792832355,
+        -0.0019860507552256737
+      ]
+    },
+    "square": {
+      "direct": [
+        -0.00300177917941532,
+        -0.003017331638450957,
+        0.01217779276928096,
+        0.00598511428718517
+      ],
+      "multihit": [
+        -0.006696911171703553,
+        -0.00584481249861734,
+        -0.0017032936445202011,
+        0.0003327038293995854
+      ]
+    }
+  },
+  "penrose_minus_square_descriptive": {
+    "direct": [
+      0.018073471099887155,
+      -0.028217750724500425,
+      -0.0033717715143879654,
+      -0.0017442455527058951
+    ],
+    "multihit": [
+      0.015095528863547394,
+      0.0031008300902617743,
+      0.0008870019652369657,
+      -0.002318754584625259
+    ]
+  },
+  "paper_sources": [
+    {
+      "archive_member": "delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf",
+      "sha256": "2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5",
+      "bytes": 1397475
+    },
+    {
+      "archive_member": "delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf",
+      "sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
+      "bytes": 1235921
+    },
+    {
+      "archive_member": "delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf",
+      "sha256": "ece7f92a3f55e2c63fa3e7dd10e1bf8b9d0c0c5505ea6c19a490c05567f086d2",
+      "bytes": 1281086
+    },
+    {
+      "archive_member": "delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf",
+      "sha256": "871bf58f9d5adf66b2ad7d115f8031dd0c36efc18b147ae91caa48e6865d54ab",
+      "bytes": 368076
+    },
+    {
+      "archive_member": "delivery/papers/Paper_5/Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf",
+      "sha256": "ab4b616939fa9fc8f78e87801cd0b754223a13b7b251c597351957ef97d2fd7e",
+      "bytes": 311053
+    }
+  ],
+  "critical_distinctions": [
+    "Square control sweep records and Penrose sweep records have distinct simulation source SHA-256; matching seed labels do not establish identical random streams or matched physical sites.",
+    "The sweep arrays are 2D displacement data; neither these arrays nor the compact Stage26 files certify a 3D refining regulator.",
+    "The Paper 2 spectral-zeta ratio is a different experiment and is NOT recalculated by this multihit comparison.",
+    "Internal 600-pair measurements may be dependent. Means are descriptive, not confidence intervals or tests of significance.",
+    "The source checkpoint SHA in sweeps is the INPUT Stage 9 checkpoint SHA, not Python generator source SHA and not the latest Stage26 output record SHA."
+  ]
+}
