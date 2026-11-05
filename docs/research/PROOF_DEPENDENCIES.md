@@ -10,6 +10,14 @@ P0 requires separate model-indexed subcertificates: **P0-H** for historical Penr
 
 [Read the detailed P0 hierarchy and evidence audit](P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md).
 
+## 2026-11-05 ultraviolet and quasicrystal transfer contract (draft)
+
+**A finite cubic 3D SU(2) gap is not the 4D continuum mass gap.** R3-IR-589's full finite-Gauss-space sufficient estimate is Δ_h≥[3g₀²/2−2F/g₀²]/h with F=3n²(n+1), h=1/n. Its positive lower-bound criterion g₀⁴>4F/3 forces *large* bare coupling under refinement, whereas asymptotic freedom requires g₀(h)→0. The separate periodic weak-perturbation Yarotsky application applies for small z=4/g₀⁴, also outside the ultraviolet z→∞ trajectory. These are limitations of particular proof certificates—not counterexamples to the physical mass gap.
+
+**Model-transfer interfaces (all OPEN or conditional):** T0 genuine 3D quasicrystal refinement; T1 same-action Gauss-invariant original-link quantum dynamics; T2 renormalized physical observable map; T3 interacting, all-large-physical-time exponentially weighted correlation comparison uniform in h and spatial volume; T4 nontrivial 4D OS reconstruction; T5 spectral support transfer on a dense physical observable set. Small finite-time or unweighted correlation differences do not preserve spectral exclusion. The source operator relevant to a proposed gravitational ultraviolet mechanism is an **additional independent interface**. [Read the quantified audit and counterexample](YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md).
+
+The following historic P0–P5 diagram is specifically a **Yang–Mills theorem dependency map**. P3 is a route-specific quasicrystalline mechanism, not a universal axiom. The 2+1D Penrose/square comparison is not itself a 3D continuum regulator.
+
 ```text
 P0 source, model, topology, Gauss sector, and normalization
   |--> P1 original-link operator/orientation and exact score identity
