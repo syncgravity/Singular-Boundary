@@ -1,8 +1,8 @@
 # P2 — Exact fusion multiplicity barrier and energy-weighted local commutator domain
 
-**Private audit — 2026-11-04.** This follows P-71/P-72 in the corrected original-link SU(2) straight-strip model. A complete expanded report, two executed independent scripts, logs, SHA-256 manifest and integrity-tested ZIP are preserved in **Library → The Singular Boundary → Proof Audits**, under \`P2_FUSION_COMPLEXITY_AND_WEIGHTED_DOMAIN_2026-11-04.md\` and \`p2_fusion_complexity_weighted_domain_2026-11-04.zip\`. These claims are **not** a full N≈m² physical inverse, interacting infinite-volume dynamics, uniform spectral gap, or 4D continuum Yang–Mills proof.
+**Private audit — 2026-11-04.** This independently cross-checks the already recorded P-73/P-74 (and follows P-71/P-72) in the corrected original-link SU(2) straight-strip model. A complete expanded report, two executed independent scripts, logs, SHA-256 manifest and integrity-tested ZIP are preserved in **Library → The Singular Boundary → Proof Audits**, under \`P2_FUSION_COMPLEXITY_AND_WEIGHTED_DOMAIN_2026-11-04.md\` and \`p2_fusion_complexity_weighted_domain_2026-11-04.zip\`. These claims are **not** a full N≈m² physical inverse, interacting infinite-volume dynamics, uniform spectral gap, or 4D continuum Yang–Mills proof.
 
-## P-73 — Exact integer SU(2) fusion dimensions quantify why full Schur inversion alone cannot scale
+## Independent P-73 complexity addendum — Exact integer SU(2) fusion dimensions quantify why full Schur inversion alone cannot scale
 
 For a genuine output tuple with one degree \ell=m±1 and N−1 fundamental degrees,
 \[
@@ -28,7 +28,7 @@ and the Fourier Hilbert dimension is \(\sum_L(L+1)d_L=(\ell+1)2^{N-1}\).
 
 The recurrence also passed N=100,m=10 without constructing Fourier matrices. Exact dimensions are **not** lower bounds for source-dependent compressed Krylov subspaces, nor evidence that each invariant coordinate must be evaluated. They demonstrate that **unrestricted full invariant-space inversion is itself intractable**. Local CG fusion avoids dense Fourier basis construction but must additionally exploit the short genuine corrected Poisson collar source, bounded-depth electric iteration, structured compression and Schatten-1 certificates. The P-67 sufficient q=O(log m) does not alone guarantee polynomial algorithmic complexity.
 
-## P-74 — A local SU(2) gauge-invariant Casimir projection has a uniformly bounded graph-weighted second commutator
+## Independent P-74 graph-domain regression — A local SU(2) gauge-invariant Casimir projection has a uniformly bounded graph-weighted second commutator
 
 Use the **actual corrected two-face interacting** Hamiltonian
 \[
