@@ -199,3 +199,10 @@ obj={'schema':'singular-boundary.knowledge-graph.v1','build_date':'2026-11-04 (A
 (ROOT/'knowledge-graph.json').write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 (ROOT/'knowledge-graph-data.js').write_text('window.SB_KNOWLEDGE_GRAPH='+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
 print('nodes',len(N),'edges',len(E),'by-kind', {k:sum(n['kind']==k for n in N) for k in sorted(set(n['kind'] for n in N))})
+
+# Source-faithful Penrose-vs-square hierarchy is a non-destructive postbuild layer.
+from reconcile_penrose_control import reconcile
+reconcile(ROOT)
+
+from add_mathematical_physics_bridge import extend
+extend(ROOT)
