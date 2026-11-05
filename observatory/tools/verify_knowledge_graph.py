@@ -44,8 +44,8 @@ def main():
   check(f['file'] in byfile,'missing file '+f['file']);x=byfile[f['file']]['asset'];check(x['sha256']==f['sha256'] and x['bytes']==f['bytes'],'asset mismatch');check(x['library_path']==f['library_path'],'Library locator mismatch');check(re.fullmatch(r'[0-9a-f]{64}',x['sha256'])is not None,'sha256 shape');check(x['git_lfs_status']=='pending','LFS not configured')
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
- # Physics ontology and model-comparison acceptance gates (v2.29 draft).
- check(g['version']=='v2.29-draft','unexpected draft version')
+ # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
+ check(g['version']=='v2.29','unexpected release version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')

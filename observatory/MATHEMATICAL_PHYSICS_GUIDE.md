@@ -49,4 +49,4 @@ A quasicrystal graph Laplacian has a spectral measure, an associated heat-kernel
 
 ## Source and review policy
 
-Each research claim links to source-pinned theorem/audit documents. All 26 archived original files remain in Library with exact SHA-256 identities. The atlas presents mathematical topics as nodes; original source file names and titles remain available under provenance, rather than used as explanatory node headings. No source records were deleted and no public deployment is authorized by the draft.
+Each research claim links to source-pinned theorem/audit documents. All 26 archived original files remain in Library with exact SHA-256 identities. The atlas presents mathematical topics as nodes; original source file names and titles remain available under provenance, rather than used as explanatory node headings. No source records were deleted; the v2.29 source merge is complete and no public deployment is authorized by that merge.
