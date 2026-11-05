@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-04 (America/Denver)",
-  "version": "v2.26-draft",
+  "version": "v2.27-draft",
   "scope": "Curated source-linked, research-status graph, NOT 740 independently reviewed proofs. Closure labels only for exact subresults and never gate completion.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-04-knowledge-graph",
+  "git_branch": "audit/2026-11-04-p0-heat-kernel-transfer",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -79,8 +79,8 @@
         },
         {
           "label": "Single source-derived electric, magnetic and temporal normalization",
-          "state": "open",
-          "note": "Cubic Kogut–Susskind is a reference, not yet derived in this proof from the same 4D action."
+          "state": "partial",
+          "note": "A heat-kernel temporal + spatial Wilson finite transfer-action candidate is now source-specified and checked. Isotropic Wilson universality and renormalized continuum compatibility remain open."
         },
         {
           "label": "Gauss-law reducing domains and physical embeddings",
@@ -2151,6 +2151,99 @@
       "importance": 2,
       "core": true,
       "route": null
+    },
+    {
+      "id": "R-P0-HK",
+      "title": "Finite cubic heat-kernel transfer action",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Explicit time-discrete temporal SU(2) heat kernels plus spatial Wilson weights induce the cubic Gauss-invariant Kogut–Susskind Hamiltonian at fixed spatial regulator.",
+      "detail": "Finite positive symmetric transfer, central heat kernel, original-link gauge covariance and fixed-h temporal Trotter limit; same-action finite candidate only. NOT isotropic Wilson universality, h→0 interacting OS reconstruction, or uniform gap.",
+      "checks": [
+        {
+          "label": "Finite temporal heat-kernel/spatial Wilson kernel and matching K+V",
+          "state": "partial",
+          "note": "Source-reproducible construction, independent review pending"
+        },
+        {
+          "label": "Uniform refinement h→0 and correct 4D continuum universality",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "P0 finite heat-kernel time-action certificate",
+          "path": "research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md",
+          "git_blob_sha": "9aa95ab6ee4110b4b208ad93df55fec9447201f2",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/9aa95ab6ee4110b4b208ad93df55fec9447201f2/research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md"
+        },
+        {
+          "title": "R3-IR-587 · finite cubic Gauss Hamiltonian",
+          "path": "research/theorems/R3_CUBICAL_SU2_GAUSS_HAMILTONIAN_REFERENCE_2026-10-31.md",
+          "git_blob_sha": "2dd4a29a3135b6e7fa983469200850b18ec26055",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/2dd4a29a3135b6e7fa983469200850b18ec26055/research/theorems/R3_CUBICAL_SU2_GAUSS_HAMILTONIAN_REFERENCE_2026-10-31.md"
+        },
+        {
+          "title": "R3-IR-590 · finite transfer positivity",
+          "path": "research/theorems/R3_CUBICAL_SU2_FINITE_TRANSFER_POSITIVITY_2026-10-31.md",
+          "git_blob_sha": "d8c89723c6a4eb5f040b6b4540c146e2aec0a7d4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/d8c89723c6a4eb5f040b6b4540c146e2aec0a7d4/research/theorems/R3_CUBICAL_SU2_FINITE_TRANSFER_POSITIVITY_2026-10-31.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "heat-kernel",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "I-SCALE-TELESCOPE",
+      "title": "Conditional renormalized-correlation telescope",
+      "kind": "interface",
+      "status": "conditional",
+      "stage": "P4",
+      "summary": "A common physical M>0 and summably small exponentially weighted one-step interaction errors would preserve a volume- and h-uniform spectral decay rate.",
+      "detail": "Requires a volume-uniform coarse-scale interacting decay bound, renormalized same-model F_h, and a summable error sup_R sup_t exp(Mt)|C_{j+1,R}(t)-C_{j,R}(t)|. This is a conditional triangle-inequality lemma; neither premise is proved and the estimate may be as difficult as the main gap problem.",
+      "checks": [
+        {
+          "label": "Base-scale gap uniformly in physical volume",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Summable gauge-invariant weighted one-step RG errors",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Dense nontrivial continuum OS observable family",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "P0 finite heat-kernel time-action certificate",
+          "path": "research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md",
+          "git_blob_sha": "9aa95ab6ee4110b4b208ad93df55fec9447201f2",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/9aa95ab6ee4110b4b208ad93df55fec9447201f2/research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md"
+        },
+        {
+          "title": "P0–P5 proof dependencies",
+          "path": "docs/research/PROOF_DEPENDENCIES.md",
+          "git_blob_sha": "eb258e0e6987ce56d8662695322e3473f77a4539",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/eb258e0e6987ce56d8662695322e3473f77a4539/docs/research/PROOF_DEPENDENCIES.md"
+        }
+      ],
+      "tags": [],
+      "importance": 4,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -2965,6 +3058,48 @@
       "kind": "discovery",
       "label": "",
       "status": "tracked"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-P0-HK",
+      "kind": "source-model",
+      "label": "same cubic original links",
+      "status": "tracked"
+    },
+    {
+      "from_id": "R-P0-HK",
+      "to_id": "P0",
+      "kind": "scoped-evidence",
+      "label": "finite temporal action, not a closed gate",
+      "status": "tracked"
+    },
+    {
+      "from_id": "R-P0-HK",
+      "to_id": "W-SCALING",
+      "kind": "remaining-work",
+      "label": "3D action/physical continuum universality still open",
+      "status": "open"
+    },
+    {
+      "from_id": "W-EMBED",
+      "to_id": "I-SCALE-TELESCOPE",
+      "kind": "proposed-bridge",
+      "label": "test one-step gauge-invariant interacting correlations",
+      "status": "open"
+    },
+    {
+      "from_id": "I-SCALE-TELESCOPE",
+      "to_id": "P4",
+      "kind": "conditional",
+      "label": "would preserve common physical-time decay if hypotheses proved",
+      "status": "conditional"
+    },
+    {
+      "from_id": "I-SCALE-TELESCOPE",
+      "to_id": "W-OS",
+      "kind": "requires",
+      "label": "OS and nontriviality remain independent",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -3023,6 +3158,10 @@
     "discovery": {
       "path": "observatory/PROOF_PATH_DISCOVERY_2026-11-04.md",
       "blob_sha": "60e9137a5dda438662a2bc77db240b6deb5f9e6c"
+    },
+    "hktransfer": {
+      "path": "research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md",
+      "blob_sha": "9aa95ab6ee4110b4b208ad93df55fec9447201f2"
     }
   },
   "library_manifest": "observatory/data-manifest.json"
