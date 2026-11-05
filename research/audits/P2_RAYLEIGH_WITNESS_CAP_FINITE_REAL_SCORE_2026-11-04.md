@@ -60,3 +60,7 @@ The companion archive contains the expanded complete proof; \`verify_dual_cap.py
 **Next analytic gate:** investigate uniform-in-N continuation or an infinite-volume Borel-ray estimate for the actual sign-sensitive score; local physical real-λ analyticity for each N does not supply either.
 
 **Scientific status: 4D continuum Yang–Mills existence and positive physical mass gap OPEN.**
+
+## Spectral-sector correction (2026-11-04, P-51 follow-up)
+
+**Clarification of the quoted \(\Delta_1(1)\approx3.113863811504\):** this is the one-face gap **restricted to SU(2) class functions**, which is also the one-face residual-Gauss-invariant physical sector. It is **not** the gap on unrestricted \(L^2(SU(2))\). The unrestricted Hilbert space decomposes into conjugation angular sectors \(\ell\ge0\); the \(\ell=1\) excited mode lies at approximately \(2.966772324652\), giving the unrestricted gap \(3.048714148028\) relative to the same ground energy \(-0.081941823376\). The class-sector first excitation is \(3.031921988128\), giving the previously reported \(3.113863811504\). The full angular-momentum Jacobi derivation and proof that \(\ell=1\) is the unrestricted first excitation at \(\lambda=1\) are recorded in [P2_HIGH_RANK_SCHATTEN_THERMODYNAMIC_ENERGY_2026-11-04.md](P2_HIGH_RANK_SCHATTEN_THERMODYNAMIC_ENERGY_2026-11-04.md). The earlier rigorous min–max lower bound \(\Delta_1(1)\ge1\) remains valid. These approximate decimals are not interval-certified.
