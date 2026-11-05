@@ -1,0 +1,288 @@
+{
+  "dissertation_tar": {
+    "bytes": 7004477,
+    "sha256": "c405acd6daa5a0a923429ab659b122b22231787d7a30e97db7f2974f278354d1",
+    "pdfs": [
+      "delivery/dissertation/._the_singular_boundary.pdf",
+      "delivery/dissertation/the_singular_boundary.pdf",
+      "delivery/experiments/ExperimentA_Niobium_LDOS.pdf",
+      "delivery/experiments/ExperimentB_HeatKernel_SpectralIdentity.pdf",
+      "delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf",
+      "delivery/papers/Paper_4/._Sharpe_Paper4_Conformal_Boundary_CC.pdf",
+      "delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf",
+      "delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf",
+      "delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf",
+      "delivery/papers/Paper_5/._Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf",
+      "delivery/papers/Paper_5/Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf"
+    ]
+  },
+  "archives": [
+    {
+      "geometry": "square",
+      "seed": 101,
+      "sha256_stage_zip": "b41aee48bf589ff28ce86d77b416528a0f6c7a602781a846c84e5cae125ae9d0",
+      "sha256_sweep_npz": "770af817fd89c0279b1e39e27582ecb3f7acc48f8ca514bce5b3ee22c4ec07a0",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "square",
+      "seed": 211,
+      "sha256_stage_zip": "9add4dd034a32f5f22536910f3baf5d73ebfc9a79cb63c9661644548842fe675",
+      "sha256_sweep_npz": "65d893482f234179c319138c5f2c6ca40bc405ab45f95143a377ce0f4a938e25",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "square",
+      "seed": 307,
+      "sha256_stage_zip": "1136d4e3a95ae55b0ac0f57a459708af95992527d4c147a1a704b9405a51efca",
+      "sha256_sweep_npz": "e81dd6674894210161649274ceb1f256d9a3638e394919d051b44846a388f0e0",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "square",
+      "seed": 419,
+      "sha256_stage_zip": "d737863b5f8316242b70810079a0a90e437dbdb73831f72855a6803d53dc9a41",
+      "sha256_sweep_npz": "38b8df95d87c614c463ee9fbc232fdc03ba321d6cab3cf7e5243b063c970098d",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "penrose",
+      "seed": 101,
+      "sha256_stage_zip": "db0bdb04d0073c153332aa6f687dcd7db835b3f3009d49f411f85dd36ff0217e",
+      "sha256_sweep_npz": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "penrose",
+      "seed": 211,
+      "sha256_stage_zip": "2e7cecb2bae8a2c9a03b86ad8511fe36fc760cca4fdac0968cd9aa4f7bd1dfad",
+      "sha256_sweep_npz": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "penrose",
+      "seed": 307,
+      "sha256_stage_zip": "773f443d7c74a4a1ec58d46393cf7349cf354c22e4cb00eef393f73ae649e0d0",
+      "sha256_sweep_npz": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    },
+    {
+      "geometry": "penrose",
+      "seed": 419,
+      "sha256_stage_zip": "19e45b4b8f081e838ec46deea852e3b9c01a5e9fd4550060d81ddce7b5a93b7c",
+      "sha256_sweep_npz": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "zip_crc_passed": true,
+      "checkpoint_count": 100,
+      "checkpoint_sweep_min_max": [
+        10020,
+        12000
+      ],
+      "checkpoint_direct_timeslice_shape": [
+        20,
+        4
+      ],
+      "checkpoint_conditional_shape": [
+        2,
+        9,
+        4,
+        4
+      ],
+      "sweep_dataset": {
+        "sweep": 10000,
+        "lag_count": 4,
+        "spatial_displacements_shape": [
+          600,
+          2
+        ],
+        "source_checkpoint_metadata_matches_stage26_10000": true
+      }
+    }
+  ],
+  "full_archive": {
+    "sha256": "6cfa12935428533cfeaff40a467705d632b19ede07b7f30e0bb9fb7a0cc68657",
+    "entries": 103,
+    "contains_restart": true,
+    "crc_passed": true
+  },
+  "whitney": {
+    "sha256": "d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf",
+    "matrix_shape": [
+      30,
+      30
+    ],
+    "edge_ids_shape": [
+      30
+    ],
+    "eigenvalues_shape": [
+      30
+    ]
+  }
+}
