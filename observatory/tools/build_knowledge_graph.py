@@ -24,9 +24,10 @@ S={
  'mpo':('research/audits/P2_SOURCE_MPO_RESIDUAL_CYLINDER_DIRICHLET_2026-11-04.md','5adce9a63bc04de02533ca41692caeaa8fbffcd0'),
  'bernstein':('research/audits/P2_BERNSTEIN_SCHATTEN_THERMODYNAMIC_LOCAL_MEASURES_2026-11-04.md','611b9d1370cf73f71fca3c9c623cbb6f0d42491f'),
  'quantum':('research/audits/P2_CENTRAL_BINOMIAL_SCHATTEN_LOCALLY_NORMAL_QUANTUM_2026-11-04.md','fbf5e6dc108d38c41cfaa522c26e4971f9a5b283'),
- 'discovery':('observatory/PROOF_PATH_DISCOVERY_2026-11-04.md','60e9137a5dda438662a2bc77db240b6deb5f9e6c')
+ 'discovery':('observatory/PROOF_PATH_DISCOVERY_2026-11-04.md','60e9137a5dda438662a2bc77db240b6deb5f9e6c'),
+ 'hktransfer':('research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md','9aa95ab6ee4110b4b208ad93df55fec9447201f2')
 }
-REF_LABELS={'dependencies':'P0–P5 proof dependencies','p0audit':'P0 source and acceptance audit','acceptance':'Historical record acceptance gate','cubegeom':'R3-IR-586 · exact cubic refinement','cubeham':'R3-IR-587 · finite cubic Gauss Hamiltonian','transfer':'R3-IR-590 · finite transfer positivity','prism':'R3-IR-562 · oriented Penrose prism candidate','curl':'3D periodic curl and Bianchi spectrum','regime':'3D asymptotic freedom regime audit','history':'Connected-history projection obstruction','mpo':'P-77/P-78 · original-link MPO and Dirichlet','bernstein':'Bernstein Schatten and thermodynamic measures','quantum':'Locally normal thermodynamic quantum state','discovery':'Source-based proof-path discovery'}
+REF_LABELS={'dependencies':'P0–P5 proof dependencies','p0audit':'P0 source and acceptance audit','acceptance':'Historical record acceptance gate','cubegeom':'R3-IR-586 · exact cubic refinement','cubeham':'R3-IR-587 · finite cubic Gauss Hamiltonian','transfer':'R3-IR-590 · finite transfer positivity','prism':'R3-IR-562 · oriented Penrose prism candidate','curl':'3D periodic curl and Bianchi spectrum','regime':'3D asymptotic freedom regime audit','history':'Connected-history projection obstruction','mpo':'P-77/P-78 · original-link MPO and Dirichlet','bernstein':'Bernstein Schatten and thermodynamic measures','quantum':'Locally normal thermodynamic quantum state','discovery':'Source-based proof-path discovery','hktransfer':'P0 finite heat-kernel time-action certificate'}
 def refs(*keys):
  return [{'title':REF_LABELS.get(k,k),'path':S[k][0],'git_blob_sha':S[k][1],'url':f'{REPO}/blob/{S[k][1]}/{S[k][0]}'} for k in keys]
 def prs(number,label):return [{'title':label,'url':f'{REPO}/pull/{number}','review_only':True}]
@@ -42,7 +43,7 @@ add('THEOREM','4D SU(2) Yang–Mills existence + positive mass gap','goal','open
 gates={
 'P0':('Regulator & source identity','Source-certified 3D spatial model, refinement and consistent action',[
  c('Genuine 3D geometry, oriented incidence and h→0 on fixed domain','met','R3-IR-586 for the CUBIC benchmark only.'),
- c('Single source-derived electric, magnetic and temporal normalization','open','Cubic Kogut–Susskind is a reference, not yet derived in this proof from the same 4D action.'),
+ c('Single source-derived electric, magnetic and temporal normalization','partial','A heat-kernel temporal + spatial Wilson finite transfer-action candidate is now source-specified and checked. Isotropic Wilson universality and renormalized continuum compatibility remain open.'),
  c('Gauss-law reducing domains and physical embeddings','partial','Finite cubic operator known; gauge-covariant cross-scale control unresolved.'),
  c('Specified g₀(h), physical units and source renormalization','open'),
  c('Historical coupled-ℤ⁵ ≡ chosen 3D regulator (if claimed)','blocked','Not established; equivalence optional for the separate cubic route.')]),
@@ -168,6 +169,23 @@ add('PUB-DISS','Dissertation → audited research monograph','publication','open
 link('D-DISS','PUB-DISS','provenance');link('P5','PUB-DISS','publication','final outcome only if proved')
 link('W-REVIEW','PUB-DISS','required');link('R-INDEX','PUB-DISS','discovery')
 
+# New finite P0 action candidate and quantified bridge from review (no continuum closure).
+add('R-P0-HK','Finite cubic heat-kernel transfer action','result','finite','P0',
+    summary='Explicit time-discrete temporal SU(2) heat kernels plus spatial Wilson weights induce the cubic Gauss-invariant Kogut–Susskind Hamiltonian at fixed spatial regulator.',
+    detail='Finite positive symmetric transfer, central heat kernel, original-link gauge covariance and fixed-h temporal Trotter limit; same-action finite candidate only. NOT isotropic Wilson universality, h→0 interacting OS reconstruction, or uniform gap.',
+    checks=[c('Finite temporal heat-kernel/spatial Wilson kernel and matching K+V','partial','Source-reproducible construction, independent review pending'),c('Uniform refinement h→0 and correct 4D continuum universality','open')],
+    sources=refs('hktransfer','cubeham','transfer'),importance=4,core=False,tags=['cubic','heat-kernel','finite'])
+link('M-CUBIC','R-P0-HK','source-model','same cubic original links')
+link('R-P0-HK','P0','scoped-evidence','finite temporal action, not a closed gate')
+link('R-P0-HK','W-SCALING','remaining-work','3D action/physical continuum universality still open','open')
+add('I-SCALE-TELESCOPE','Conditional renormalized-correlation telescope','interface','conditional','P4',
+    summary='A common physical M>0 and summably small exponentially weighted one-step interaction errors would preserve a volume- and h-uniform spectral decay rate.',
+    detail='Requires a volume-uniform coarse-scale interacting decay bound, renormalized same-model F_h, and a summable error sup_R sup_t exp(Mt)|C_{j+1,R}(t)-C_{j,R}(t)|. This is a conditional triangle-inequality lemma; neither premise is proved and the estimate may be as difficult as the main gap problem.',
+    checks=[c('Base-scale gap uniformly in physical volume','open'),c('Summable gauge-invariant weighted one-step RG errors','open'),c('Dense nontrivial continuum OS observable family','open')],sources=refs('hktransfer','dependencies'),importance=4,core=True)
+link('W-EMBED','I-SCALE-TELESCOPE','proposed-bridge','test one-step gauge-invariant interacting correlations','open')
+link('I-SCALE-TELESCOPE','P4','conditional','would preserve common physical-time decay if hypotheses proved','conditional')
+link('I-SCALE-TELESCOPE','W-OS','requires','OS and nontriviality remain independent','open')
+
 # Structural guards (source-qualified model, no gate closed by editing review notes)
 ids={n['id'] for n in N}
 assert all(e['from_id'] in ids and e['to_id'] in ids for e in E)
@@ -177,7 +195,14 @@ assert sum(n['kind']=='dataset' for n in N)==len(manifest['files'])
 # Specific model-only claim guards
 assert next(n for n in N if n['id']=='R-MPO')['stage']=='P2'
 assert next(n for n in N if n['id']=='M-Z5')['status']=='unresolved'
-obj={'schema':'singular-boundary.knowledge-graph.v1','build_date':'2026-11-04 (America/Denver)', 'version':'v2.26-draft','scope':'Curated source-linked, research-status graph, NOT 740 independently reviewed proofs. Closure labels only for exact subresults and never gate completion.', 'canon_status':'OPEN','catalog_baseline':'fd1c1c1c8db078f8ec9d591d182059bd1635b164','indexed_theorem_paths':740,'existing_proof_paths':78,'git_branch':'audit/2026-11-04-knowledge-graph', 'status_legend':{'open':'Not closed: missing mathematical/evidence conditions','finite':'Recorded finite-model result only; no continuum transfer','conditional':'Implication uses hypotheses not presently proved for the continuum theory','obstruction':'Demonstrated failure of a specified proposed shortcut','partial':'Some strictly scoped evidence but missing gate certificate','candidate':'Model or route proposed; identity/derivation incomplete','archived':'Original source files archived; integrity not mathematical validation','indexed':'Discovered/indexed only','unresolved':'Source-model identity unresolved'}, 'nodes':N,'edges':E,'sources_verified':{k:{'path':v[0],'blob_sha':v[1]} for k,v in S.items()},'library_manifest':'observatory/data-manifest.json'}
+obj={'schema':'singular-boundary.knowledge-graph.v1','build_date':'2026-11-04 (America/Denver)', 'version':'v2.27-draft','scope':'Curated source-linked, research-status graph, NOT 740 independently reviewed proofs. Closure labels only for exact subresults and never gate completion.', 'canon_status':'OPEN','catalog_baseline':'fd1c1c1c8db078f8ec9d591d182059bd1635b164','indexed_theorem_paths':740,'existing_proof_paths':78,'git_branch':'audit/2026-11-04-p0-heat-kernel-transfer', 'status_legend':{'open':'Not closed: missing mathematical/evidence conditions','finite':'Recorded finite-model result only; no continuum transfer','conditional':'Implication uses hypotheses not presently proved for the continuum theory','obstruction':'Demonstrated failure of a specified proposed shortcut','partial':'Some strictly scoped evidence but missing gate certificate','candidate':'Model or route proposed; identity/derivation incomplete','archived':'Original source files archived; integrity not mathematical validation','indexed':'Discovered/indexed only','unresolved':'Source-model identity unresolved'}, 'nodes':N,'edges':E,'sources_verified':{k:{'path':v[0],'blob_sha':v[1]} for k,v in S.items()},'library_manifest':'observatory/data-manifest.json'}
 (ROOT/'knowledge-graph.json').write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 (ROOT/'knowledge-graph-data.js').write_text('window.SB_KNOWLEDGE_GRAPH='+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
 print('nodes',len(N),'edges',len(E),'by-kind', {k:sum(n['kind']==k for n in N) for k in sorted(set(n['kind'] for n in N))})
+
+# Source-faithful Penrose-vs-square hierarchy is a non-destructive postbuild layer.
+from reconcile_penrose_control import reconcile
+reconcile(ROOT)
+
+from add_mathematical_physics_bridge import extend
+extend(ROOT)

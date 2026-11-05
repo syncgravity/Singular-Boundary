@@ -1,0 +1,55 @@
+{
+  "scope": "Finite SU2 heat-kernel and gauge action. Not a continuum YM theorem.",
+  "gauge_checks": [
+    {
+      "n": 1,
+      "vertices": 8,
+      "edges": 12,
+      "faces": 6,
+      "trials": 15,
+      "max_spatial_residual": 4.440892098500626e-16,
+      "max_temporal_residual": 7.771561172376096e-16,
+      "min_sampled_heat_kernel": 5.0457856051048856e-05
+    },
+    {
+      "n": 2,
+      "vertices": 27,
+      "edges": 54,
+      "faces": 36,
+      "trials": 15,
+      "max_spatial_residual": 7.771561172376096e-16,
+      "max_temporal_residual": 9.992007221626409e-16,
+      "min_sampled_heat_kernel": 5.258929957555654e-05
+    }
+  ],
+  "heat_fourier": {
+    "checks": [
+      {
+        "heat_time": 0.35,
+        "haar_integral": 0.9999999999999899,
+        "min_radial_density": 1.212488245459216e-09,
+        "max_character_eigenvalue_error": 1.021405182655144e-14
+      },
+      {
+        "heat_time": 0.7,
+        "haar_integral": 0.9999999999999963,
+        "min_radial_density": 0.00029750896246893423,
+        "max_character_eigenvalue_error": 4.3298697960381105e-15
+      },
+      {
+        "heat_time": 1.1,
+        "haar_integral": 0.9999999999999983,
+        "min_radial_density": 0.017440049245809674,
+        "max_character_eigenvalue_error": 2.6367796834847468e-15
+      }
+    ],
+    "worst_absolute_eigenvalue_error": 1.021405182655144e-14
+  },
+  "holonomy_refinement_obstruction": {
+    "coarse_casimir": 3.0,
+    "refined_casimir": 6.0,
+    "required_alpha_ratio": 2,
+    "requires_g2_half_equals_g2_quarter": true
+  },
+  "analytic_justification": "Peter-Weyl spectrum c_j=j(j+1), positive Haar heat kernel, central gauge covariance and symmetric Trotter convergence at fixed graph."
+}
