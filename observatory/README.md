@@ -1,48 +1,40 @@
-# Research Observatory v2.29-draft · mathematical-physics proof atlas
+# Research Observatory v2.29 — Mathematical Physics Proof Atlas
 
-Open `index.html` together with `catalog.js`, `audit.js`, and `proofpaths.js` in the same folder (works without a server). The **740-record catalog** is generated from the immutable source Git tree `fd1c1c1c8db078f8ec9d591d182059bd1635b164` and records paths, Git blob identifiers and source sizes. Only 12 selected theorem bodies have editorial annotations; all remaining records explicitly say `Indexed path and Git blob only`.
+**Source status:** integrated on the private `main` branch, November 5, 2026. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
 
-The site includes a P0–P5 dependency navigator, searchable 740-file theorem catalog, four candidate proof routes, exact missing implications, the supplied historical archive audit, and evidence controls.
+## Explore the proof
 
-**Do not publish publicly before privacy and source-publication review.** Source links refer to the private GitHub repository. No secrets or binary data are embedded. The continuum mass gap is open.
+- [Observatory overview](index.html) — the complete proof-program entry point, P0–P5 dependencies, routes, obstructions and source catalog.
+- [Interactive Proof Atlas](graph.html) — 101 curated mathematical-physics nodes and 189 typed edges; starts on the **Cubic → Quasicrystal** model-transfer view.
+- [Uniform interacting theorem integration](integration.html) — the conditional physical-time spectral-support bridge, common-regulator requirements and explicit continuum obligations.
+- [Mathematical-physics reader guide](MATHEMATICAL_PHYSICS_GUIDE.md) — precise meanings of models, results, obstacles, interfaces, review status, and the six cross-model T0–T5 conditions.
 
-See `HISTORICAL_DOUBLE_AUDIT_2026-11-04.md` for source-level findings and limitations.
+The **740-record theorem index** and **78 previously identified proof pathways** are historical discovery baselines, not independently accepted proof counts; they remain unchanged. The Atlas has **26 immutable original-file entries** with SHA-256 digests and Library paths, covering the Penrose and square ensembles, Whitney data, source papers and historical source records. The actual original binary/transcript bytes remain in **Library → The Singular Boundary → Data**, not in ordinary Git, until an independently verified Git LFS migration is configured.
 
-To replay the mounted archive checks: `python observatory/tools/verify_stage26.py /path/to/uploads` (NumPy required). The checker makes no changes to inputs. The original archives must be supplied separately; this repository does not automatically contain them.
+### Model boundaries
 
+The original quasicrystalline model (Fibonacci/Penrose/coupled ℤ⁵), its square 2D periodic comparison, and the later cubic 3D SU(2) reference are **not interchangeable**. Finite Gauss-invariant cubic estimates and positive transfer constructions are useful within their declared models but do not establish a weak-bare-coupling, nontrivial interacting 4D continuum mass gap. No 3D quasicrystal transfer theorem has been proved. The proposed quasicrystalline gravitational ultraviolet mechanism requires its own physically justified gravitational operator; it does not follow from a Yang–Mills mass gap, nor does a lattice spectral-zeta ratio prove it.
 
-## New P0–P5 theorem integration (private draft)
+The graph uses mathematical objects and open obligations as readable node names; source document titles, archive names and their hashes are preserved as **provenance**, not rebranded into new mathematical claims. Review flags are browser-local and exportable as JSON. Such notes never close a gate or alter the append-only historical claim ledger.
 
-[`integration.html`](integration.html) presents the quantified common-regulator theorem, conditional positive-time spectral-support lemma, six interactive gate interfaces, a geometric-versus-quantum-versus-double-uniform acceptance table, explicit Z5/prism/cubic model distinctions, and an incremental dissertation publication plan. This view is **proposed in a review branch only**; it is not a new certified theorem, not a change to the 740-path baseline catalog, and not deployed on GitHub Pages. Supporting drafts are in `docs/research/UNIFORM_INTERACTING_THEOREM_BRIDGE_2026-11-04.md` and `docs/research/DISSERTATION_EVOLUTION_AND_PUBLICATION_PLAN_2026-11-04.md` (both source paths relative to the repository root). The structural validator is `observatory/tools/verify_uniform_integration_contract.py` and checks presentation/contracts only, not mathematical truth.
+## Reproduce and audit
 
+Open `index.html` and `graph.html` with `catalog.js`, `proofpaths.js`, `audit.js`, `graph.css`, `graph-app.js` and `knowledge-graph-data.js` in one folder. The atlas uses no externally hosted script or stylesheet.
 
-## Proof Atlas · source-linked knowledge graph (proposed, not deployed)
+From the repository root:
 
-[`graph.html`](graph.html) opens the private interactive 78-node / 116-link curated P0–P5 knowledge graph. Click a gate for its **exact unclosed acceptance criteria**, then explore finite theorem records, candidate model identity, signed-current and infrared obligations, and **26 hashed archived files**. The six continuum gates are OPEN. The existing 740 indexed theorem paths and 78 legacy proof pathways remain a separate discovery snapshot; they are not certified by graph inclusion. Graph code and data are offline (`graph.css`, `graph-app.js`, `knowledge-graph-data.js`); human-reviewable text records are `knowledge-graph.json` and `data-manifest.json`. No original numerical arrays or transcripts enter Git.
+```bash
+python observatory/tools/build_knowledge_graph.py
+python observatory/tools/verify_knowledge_graph.py
+python observatory/tools/verify_knowledge_graph.py --data-dir /path/to/original-files
+python research/scripts/verify_cubic_penrose_gate_boundaries_2026_11_05.py
+node --check observatory/graph-app.js
+```
 
-Source generation: `python observatory/tools/build_knowledge_graph.py`. Structural, SHA, model-scope and status validator: `python observatory/tools/verify_knowledge_graph.py` (optional `--data-dir /path/to/uploads`). The mathematical/ethical acceptance protocol is [`KNOWLEDGE_GRAPH_CLOSURE_PROTOCOL_2026-11-04.md`](../docs/research/KNOWLEDGE_GRAPH_CLOSURE_PROTOCOL_2026-11-04.md). Source originals remain in **Library → The Singular Boundary → Data** pending user-configured Git LFS. Browser annotations are local-only and must be exported/imported as JSON for review; they cannot close the canonical gates.
+The optional `--data-dir` rechecks original file sizes and SHA-256 values; without those files, the validator checks the committed manifest and graph structure. The source-derived proof audits include [P0 model identity](../docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md), [cubic-to-quasicrystal transfer constraints](../docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md), [closure protocol](../docs/research/KNOWLEDGE_GRAPH_CLOSURE_PROTOCOL_2026-11-04.md), and [historical archive audit](HISTORICAL_DOUBLE_AUDIT_2026-11-04.md). **Structural tests and hashes do not verify mathematical truth.**
 
+## Publication boundary
 
-## P0 review increment (private, stacked draft)
+This private repository's [Pages workflow](../.github/workflows/pages.yml) has **only a manual `workflow_dispatch` trigger**. The source merge did **not** trigger publication; public release requires an explicit separate decision and privacy/source review. GitHub Pages would expose the curated static site even if this repository remains private. Do not publish historical source identifiers or research summaries without that review.
 
-The updated [`graph.html`](graph.html) now displays **80 curated nodes and 122 typed edges**. A *finite* P0 cubic heat-kernel transfer-action candidate and an explicitly **conditional** scale-telescope correlation criterion have been added, with both source and assumption labels. The selected temporal heat-kernel/space Wilson action has finite-time transfer positivity and the fixed-spatial-grid Kogut–Susskind limit; **it is not proved equivalent in the continuum to the isotropic 4D Wilson action**, and supplies no uniform interacting state, OS continuum theory or positive mass gap. All 6 gates remain **OPEN**. Rebuild and verify with the existing `observatory/tools/build_knowledge_graph.py` / `verify_knowledge_graph.py` plus `research/scripts/verify_heat_kernel_p0_2026_11_04.py`. The original 740 catalog and 78 historical proof paths are separate and unchanged.
-
-Audit: `research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md`; simulation JSON `docs/evidence/P0_HEAT_KERNEL_TRANSFER_CHECKS_2026-11-04.json`; no new raw binary data in Git.
-
-## 2026-11-05 · Penrose-first correction (draft, no deployment)
-
-The Observatory [Proof Atlas](graph.html) now distinguishes the **primary Penrose/Fibonacci/coupled-ℤ⁵ quantum-gravity hypothesis**, the **area-matched square 2D spatial control**, and the later cubic 3D SU(2) control. Quantum gravity and 4D Yang–Mills are **separate OPEN objectives**. The graph contains 91 curated nodes and 163 typed links, distinct from the unchanged 740 theorem-path catalog, 78 earlier proof pathways, and 26 original uploaded files.
-
-The archived Stage 26 runner/README and nested Stage 7 geometry code were recovered and inspected from the historical Git tree. The Stage 7 model pairs a Penrose model-set torus (scale 55) with a square 151×151 torus matched in **total physical area**, uses 20 temporal slices and reference beta 3.5, and is a 2+1D SU(2) scalar correlation campaign. The Stage 26 field named source_sha256 is the **Stage 9 checkpoint hash**, not a hash of executable Python code. Neither the recorded multihit arrays nor their descriptive averages reproduce Paper 2's spectral-zeta ratio, prove gravitational finiteness, or establish a mass gap.
-
-Reproducible data profiling: research/scripts/verify_penrose_square_pairing_2026_11_05.py. Graph builder applies a non-destructive postbuild hierarchy module observatory/tools/reconcile_penrose_control.py, using docs/evidence/P0_PENROSE_SQUARE_PAIRING_2026-11-05.json. Verify with python observatory/tools/verify_knowledge_graph.py --data-dir /path/to/uploaded/originals. Original binaries remain in Library pending LFS. No gate promotion or public deployment.
-
-[Read the governing audit](../docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md).
-
-## v2.29-draft · physics ontology and cube-to-quasicrystal bridge
-
-The interactive [Proof Atlas](graph.html) now opens on a *Cubic → Quasicrystal* lens with the proposed T0–T5 transfer requirements; the default evidence dossier shows the explicit weak-bare-coupling obstruction to existing finite-gap certificates. There are **101 curated mathematical-physics nodes, 189 typed links**, six Yang–Mills gates OPEN, and an independent quasicrystalline ultraviolet gravity objective OPEN. Nodes previously named for chapters or manuscripts are renamed for mathematical physics: spectral dimension, cut-and-project zeta, almost-complex structure, conformal spectral regularization, quasiperiodic cavity response. Original files and precise SHA-256 custody stay in immutable provenance; no source deletion or theorem acceptance is implied.
-
-See the [accessible mathematical-physics guide](MATHEMATICAL_PHYSICS_GUIDE.md), the [quantified cubic-to-quasicrystal transfer audit](../docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md), the [exact finite certificate verifier](../research/scripts/verify_cubic_penrose_gate_boundaries_2026_11_05.py), and the [graph ontology overlay](tools/add_mathematical_physics_bridge.py). The overlay executes after the previous source hierarchy in `tools/build_knowledge_graph.py`.
-
-**Verification:** `python observatory/tools/build_knowledge_graph.py`; `python observatory/tools/verify_knowledge_graph.py --data-dir /path/to/26/original/files`; `node --check observatory/graph-app.js`. Browser checks use a standalone inline build. **No public Pages, canonical main change, claim-ledger promotion, Git LFS migration, or continuum mass-gap theorem.**
+**Release provenance:** stacked changes were merged through [PR #57](https://github.com/syncgravity/singular-boundary/pull/57), [#58](https://github.com/syncgravity/singular-boundary/pull/58), [#59](https://github.com/syncgravity/singular-boundary/pull/59), [#60](https://github.com/syncgravity/singular-boundary/pull/60), and [#61](https://github.com/syncgravity/singular-boundary/pull/61), retaining their detailed scientific assumptions and archive history.
