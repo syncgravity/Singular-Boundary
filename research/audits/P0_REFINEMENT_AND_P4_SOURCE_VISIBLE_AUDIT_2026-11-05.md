@@ -1,6 +1,6 @@
 # The Singular Boundary — P0 refinement intertwining and P4 source-visible spectral-weight audit
 
-**Research continuation; prepared November 5, 2026 (America/Denver)**. This is a *new, independently checked conditional research note*, not a continuum Yang–Mills theorem or a certification of the historical Penrose regulator. Its source inputs are the supplied `Sharpe_dissertation_v10.7.tar.gz`, the eight Stage 26 compact archives and eight multihit sweep files, `global_whitney_11face.npz`, and the private repository's canonical P0 specification and P-53/P-55/P-78 theorems. Tests distinguish exact integer identities and symbolic proofs from numerical SU(2) regressions. The archive does not modify historical inputs.
+**Research continuation; prepared November 4, 2026 (America/Denver).** The artifact filenames use the UTC archive date November 5, 2026. This is a *new, independently checked conditional research note*, not a continuum Yang–Mills theorem or a certification of the historical Penrose regulator. Its source inputs are the supplied `Sharpe_dissertation_v10.7.tar.gz`, the eight Stage 26 compact archives and eight multihit sweep files, `global_whitney_11face.npz`, and the private repository's canonical P0 specification and P-53/P-55/P-78 theorems. Tests distinguish exact integer identities and symbolic proofs from numerical SU(2) regressions. The archive does not modify historical inputs.
 
 ## A. Source-identity gate: historical geometry is not the certified 3D SU(2) family
 
