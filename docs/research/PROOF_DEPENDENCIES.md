@@ -2,6 +2,14 @@
 
 The numbering **P0–P5** follows the dated [publication audit](../../research/audits/SINGULAR_BOUNDARY_PUBLICATION_PROOF_MAP_2026-11-01.md), with later records retained as additional evidence rather than erasing that audit.
 
+## 2026-11-05 source-faithful model hierarchy (draft correction)
+
+The **original dissertation goal** is a Penrose/Fibonacci/coupled-ℤ⁵ spectral quantum-gravity hypothesis, not merely an SU(2) mass-gap proof. Its original periodic comparison is the **square 2D spatial control**. Stage 7/26 experiments use area-matched Penrose/square **2+1D SU(2)** ensembles; cubic 3D is a later independent control, not an equivalent Penrose regulator.
+
+P0 requires separate model-indexed subcertificates: **P0-H** for historical Penrose/coupled-ℤ⁵ geometry and spectral operator, **P0-C** for square and cubic controls, and **P0-X** for the correctly normalized same-observable comparison. The P0–P5 diagram below applies **only to the separate Yang–Mills theorem objective**. Paper 2's reported spectral-zeta difference is not a result of Stage26 scalar Monte Carlo; neither is a gravitational finiteness theorem. P3 is Penrose-route-specific, while Git LFS is reproducibility infrastructure and not a mathematical prerequisite.
+
+[Read the detailed P0 hierarchy and evidence audit](P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md).
+
 ```text
 P0 source, model, topology, Gauss sector, and normalization
   |--> P1 original-link operator/orientation and exact score identity
