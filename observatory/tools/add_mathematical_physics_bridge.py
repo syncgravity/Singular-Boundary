@@ -12,7 +12,7 @@ def blob_sha(content: bytes)->str:
 
 def extend(root: Path):
     root=Path(root);path=root/'knowledge-graph.json';g=json.loads(path.read_text())
-    if g['version']=='v2.29-draft': return g
+    if g['version']=='v2.29': return g
     assert g['version']=='v2.28-draft',g['version']
     nodes=g['nodes'];edges=g['edges'];by={n['id']:n for n in nodes}
     rename={'D-DISS':'D-SPECTRAL-SOURCES','PUB-DISS':'PUB-THEOREM-REVIEW',
@@ -182,7 +182,7 @@ def extend(root: Path):
                     v[k]=re.sub(r'(?i)\bdissertation\b','source program',v[k]);v[k]=re.sub(r'(?i)\bPaper\s*([1-5])\b',lambda m:'spectral source study '+m.group(1),v[k])
         n['tags']=[x for x in n.get('tags',[]) if x.lower() not in ('dissertation','paper')]
     # Keep original file name EXACT in asset and manifest for provenance integrity.
-    g.update(version='v2.29-draft',build_date='2026-11-05',git_branch='audit/2026-11-05-mathematical-physics-bridge',
+    g.update(version='v2.29',build_date='2026-11-05',git_branch='main',
              scope='Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.',
              bridge_contract='T0–T5',user_facing_labels='physics concepts; source document identity restricted to provenance metadata')
     assert len(nodes)==len({x['id'] for x in nodes})
