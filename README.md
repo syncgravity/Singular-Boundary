@@ -6,6 +6,8 @@
 
 ## Research Observatory
 
+> **P0 finite-action extension, draft only:** Branch `audit/2026-11-04-p0-heat-kernel-transfer` proposes Observatory **v2.27-draft** (80 curated nodes, 122 typed edges): a finite cubic SU(2) temporal heat-kernel / spatial Wilson same-action transfer candidate and a conditional summable one-step RG-to-gap criterion. See [P0 audit](research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md) and the [Proof Atlas](observatory/graph.html). All P0–P5 continuum gates remain **OPEN**. No Git LFS binary migration, claim promotion, merger or public deployment was performed.
+
 > **Current stacked draft — not merged or deployed:** `audit/2026-11-04-knowledge-graph` proposes Observatory **v2.26-draft** with the [interactive Proof Atlas](observatory/graph.html) (78 curated nodes, 116 typed links, 26 individually hashed source files), closure criteria, and exportable review notes. All P0–P5 continuum gates remain **OPEN**; the older 740-path indexed catalog and 78 proof-path discovery baseline remain distinct and unchanged. No Git LFS upload or Pages deployment has been performed.
 
 > **Draft branch note — not merged or deployed:** `audit/2026-11-04-uniform-continuum-bridge` proposes Research Observatory **v2.25-draft**, with a [uniform theorem integration view](observatory/integration.html) and a [dissertation publication route](docs/research/DISSERTATION_EVOLUTION_AND_PUBLICATION_PLAN_2026-11-04.md). The six-gate continuum theorem remains open, the 740 indexed paths and 78 existing proof pathways are unchanged, and the main branch remains **v2.24** pending review.
