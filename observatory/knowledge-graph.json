@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-04 (America/Denver)",
-  "version": "v2.27-draft",
-  "scope": "Curated source-linked, research-status graph, NOT 740 independently reviewed proofs. Closure labels only for exact subresults and never gate completion.",
+  "build_date": "2026-11-05 (America/Denver)",
+  "version": "v2.28-draft",
+  "scope": "Two separate goals: original Penrose quantum-gravity hypothesis and SU(2) mass-gap objective. Square/cubic periodic controls are distinct; no model equivalence or continuum gap established.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-04-p0-heat-kernel-transfer",
+  "git_branch": "audit/2026-11-05-penrose-primary-control",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -22,11 +22,11 @@
   "nodes": [
     {
       "id": "THEOREM",
-      "title": "4D SU(2) Yang–Mills existence + positive mass gap",
+      "title": "YM goal · Nontrivial 4D SU(2) theory and mass gap",
       "kind": "goal",
       "status": "open",
       "stage": null,
-      "summary": "Target: a nontrivial OS-reconstructible four-dimensional continuum theory and a strictly positive physical spectral threshold.",
+      "summary": "Separate Clay-style Yang–Mills existence and mass-gap objective; not established by Penrose spectral suppression.",
       "detail": "Not proved. The graph distinguishes a new finite theorem or algorithm from a result uniform in both spatial volume and genuine 3D refinement.",
       "checks": [
         {
@@ -65,37 +65,42 @@
     },
     {
       "id": "P0",
-      "title": "P0 · Regulator & source identity",
+      "title": "P0 · Source-faithful model and controls",
       "kind": "gate",
       "status": "open",
       "stage": "P0",
-      "summary": "Source-certified 3D spatial model, refinement and consistent action",
-      "detail": "No gate is closed. Criterion states refer to precisely identified submodels and evidence—not an overall success percentage.",
+      "summary": "Two distinct mathematical tracks: Penrose spectral-gravity hypothesis and square/cubic control models, with explicit bridges required before transferring claims.",
+      "detail": "Cubic subcriteria cannot complete the Penrose P0. Model-indexed closure records are required; six YM gates and the separate quantum-gravity objective remain OPEN.",
       "checks": [
         {
-          "label": "Genuine 3D geometry, oriented incidence and h→0 on fixed domain",
-          "state": "met",
-          "note": "R3-IR-586 for the CUBIC benchmark only."
-        },
-        {
-          "label": "Single source-derived electric, magnetic and temporal normalization",
+          "label": "Penrose P3 2D graph and spectral-observable provenance",
           "state": "partial",
-          "note": "A heat-kernel temporal + spatial Wilson finite transfer-action candidate is now source-specified and checked. Isotropic Wilson universality and renormalized continuum compatibility remain open."
+          "note": "Historical Papers 1–4 define proposed operators; the Stage26 operator is not yet shown equivalent to Paper 2 spectral-zeta operator."
         },
         {
-          "label": "Gauss-law reducing domains and physical embeddings",
+          "label": "Square control paired on the SAME observable and normalization",
           "state": "partial",
-          "note": "Finite cubic operator known; gauge-covariant cross-scale control unresolved."
+          "note": "Stage7 source constructs an area-matched square control; 8 matched-label sweeps use lags [4,6,8,10] and 600 planar pairs/seed. Source_sha256 identifies Stage9 checkpoints, not Python code; full runtime/uncertainty remain open."
         },
         {
-          "label": "Specified g₀(h), physical units and source renormalization",
+          "label": "Penrose coupled-ℤ⁵ genuine 3D oriented refinement and physical action",
           "state": "open",
-          "note": ""
+          "note": "Paper 2 compact-third-coordinate identification is a proposal, not a source-certified interacting 3D mesh."
         },
         {
-          "label": "Historical coupled-ℤ⁵ ≡ chosen 3D regulator (if claimed)",
-          "state": "blocked",
-          "note": "Not established; equivalence optional for the separate cubic route."
+          "label": "Cubic 3D reference geometry and finite gauge transfer",
+          "state": "met",
+          "note": "R3-IR-586/587/590 and later heat-kernel audit, CONTROL ONLY; no Penrose model identity or continuum mass gap."
+        },
+        {
+          "label": "Verified cross-model spectral/measure/operator comparison",
+          "state": "open",
+          "note": "No Penrose↔square/cubic equivalence, universality, or spectral-measure theorem from data matching alone."
+        },
+        {
+          "label": "Physically correct gravitational operator and separate YM continuum targets",
+          "state": "open",
+          "note": "One-loop spectral-zeta ratios, a regularized spectral-triple value, and an interacting gravity/YM theorem are different obligations."
         }
       ],
       "sources": [
@@ -339,11 +344,11 @@
     },
     {
       "id": "M-CUBIC",
-      "title": "Cubic 3D benchmark",
+      "title": "Cubic 3D · quantum reference/control extension",
       "kind": "model",
       "status": "partial",
       "stage": "P0",
-      "summary": "Genuine dyadic fixed-domain geometric subdivision; finite SU(2) reference. No continuum interacting theorem.",
+      "summary": "Genuine dyadic cubic 3D refinement and finite SU(2) transfer results; an independent control/reference, not a substitute for Penrose or a proved continuum equivalent.",
       "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison.",
       "checks": [],
       "sources": [
@@ -370,11 +375,11 @@
     },
     {
       "id": "M-Z5",
-      "title": "Historical coupled ℤ⁵ Penrose",
+      "title": "Coupled ℤ⁵ · proposed (3+1)D Penrose extension",
       "kind": "model",
       "status": "unresolved",
       "stage": "P0",
-      "summary": "Dissertation/archives explore coupled ℤ⁵ geometry; a compatible genuine 3D SU(2) regulator family has not been source-certified.",
+      "summary": "Paper 2 proposes two extended Penrose spatial coordinates, compact third coordinate and imaginary-time interpretation. Source-certified interacting 3D refinement and dynamics remain OPEN.",
       "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison.",
       "checks": [],
       "sources": [
@@ -395,7 +400,7 @@
     },
     {
       "id": "M-PRISM",
-      "title": "Extruded Penrose prism",
+      "title": "Extruded prism · distinct candidate, not coupled ℤ⁵",
       "kind": "model",
       "status": "candidate",
       "stage": "P0",
@@ -1167,9 +1172,9 @@
       "title": "Git LFS custody migration",
       "kind": "work",
       "status": "open",
-      "stage": "P0",
+      "stage": null,
       "summary": "Move binary originals from Library into configured Git LFS once enabled; preserve exact hashes.",
-      "detail": "Acceptance test: Every LFS pointer rechecked against current sha256 manifest; no claim status changes.",
+      "detail": "Data-custody infrastructure only: Git LFS migration is NOT a mathematical P0 acceptance condition.",
       "checks": [
         {
           "label": "Every LFS pointer rechecked against current sha256 manifest; no claim status changes.",
@@ -2137,7 +2142,7 @@
       "kind": "publication",
       "status": "open",
       "stage": "P5",
-      "summary": "Evolve v10.7 with source separation, corrected operator results, explicit unproved chapters and independently publishable finite contributions.",
+      "summary": "Original Fibonacci/Penrose/coupled-ℤ⁵ quantum-gravity papers remain central; independent SU(2) continuum mass-gap research is a separate proof objective.",
       "detail": "",
       "checks": [],
       "sources": [
@@ -2242,6 +2247,611 @@
       ],
       "tags": [],
       "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "G-GRAV",
+      "title": "Primary dissertation goal · Quasicrystalline spectral quantum gravity",
+      "kind": "goal",
+      "status": "open",
+      "stage": null,
+      "summary": "Determine whether Fibonacci/Penrose and coupled ℤ⁵ spectral geometry yield a physically justified ultraviolet gravitational theory and consistent quantum dynamics.",
+      "detail": "Original dissertation aim. Neither finite spectral-zeta changes nor Stage26 planar correlations prove interacting gravity finiteness. Distinct from Yang–Mills mass gap.",
+      "checks": [
+        {
+          "label": "Reproduce spectral geometry and original periodic control under comparable operators",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Specify physically correct gravitational quantum operator and relevant measure",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Certify 3D spatial / 3+1D source geometry and dynamics",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Prove the claimed ultraviolet finiteness or precisely delimited renormalized result",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Demonstrate physical continuum consistency, not only a kinematic identification",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [],
+      "tags": [
+        "penrose",
+        "quantum-gravity",
+        "dissertation"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "M-PENROSE-2D",
+      "title": "Penrose P3 · original quasicrystalline spatial model",
+      "kind": "model",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Two-dimensional Penrose graph/tiling and spectral-hypothesis model. Exact 3D interacting regulator remains unproved.",
+      "detail": "Source Papers 1–4 and simulation archives do not automatically define the same operator. Distinguish graph Laplacian from gravitational fluctuation operator and from original-link SU(2) Hamiltonian.",
+      "checks": [],
+      "sources": [],
+      "tags": [
+        "primary-hypothesis",
+        "2D",
+        "penrose"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "M-SQUARE-2D",
+      "title": "Square lattice · area-matched periodic control",
+      "kind": "model",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Area-matched 2D periodic spatial control (square_torus 151×151 vs model-set torus scale 55) in the 2+1D Stage7/26 SU(2) campaign; NOT the primary dissertation theory.",
+      "detail": "Recovered Stage7 geometry code matches TOTAL PHYSICAL AREA; SU(2) couplings use calibrated anisotropic weights at reference beta 3.5. Identical sites, physical spectral operators and Monte Carlo uncertainty are NOT implied; Stage26 is not Paper 2 spectral zeta.",
+      "checks": [],
+      "sources": [],
+      "tags": [
+        "control",
+        "2D",
+        "square"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PAPER-1",
+      "title": "Original dissertation Paper 1 · PDF in v10.7",
+      "kind": "result",
+      "status": "indexed",
+      "stage": "P0",
+      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
+      "detail": "Tar member: delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf; original SHA-256 2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [
+        "original-source",
+        "paper"
+      ],
+      "importance": 3,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PAPER-2",
+      "title": "Original dissertation Paper 2 · PDF in v10.7",
+      "kind": "result",
+      "status": "indexed",
+      "stage": "P0",
+      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
+      "detail": "Tar member: delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf; original SHA-256 2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [
+        "original-source",
+        "paper"
+      ],
+      "importance": 3,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PAPER-3",
+      "title": "Original dissertation Paper 3 · PDF in v10.7",
+      "kind": "result",
+      "status": "indexed",
+      "stage": "P0",
+      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
+      "detail": "Tar member: delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf; original SHA-256 ece7f92a3f55e2c63fa3e7dd10e1bf8b9d0c0c5505ea6c19a490c05567f086d2; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [
+        "original-source",
+        "paper"
+      ],
+      "importance": 3,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PAPER-4",
+      "title": "Original dissertation Paper 4 · PDF in v10.7",
+      "kind": "result",
+      "status": "indexed",
+      "stage": "P0",
+      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
+      "detail": "Tar member: delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf; original SHA-256 871bf58f9d5adf66b2ad7d115f8031dd0c36efc18b147ae91caa48e6865d54ab; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [
+        "original-source",
+        "paper"
+      ],
+      "importance": 3,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PAPER-5",
+      "title": "Original dissertation Paper 5 · PDF in v10.7",
+      "kind": "result",
+      "status": "indexed",
+      "stage": "P0",
+      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
+      "detail": "Tar member: delivery/papers/Paper_5/Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf; original SHA-256 ab4b616939fa9fc8f78e87801cd0b754223a13b7b251c597351957ef97d2fd7e; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [
+        "original-source",
+        "paper"
+      ],
+      "importance": 3,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "I-PENROSE-SQUARE",
+      "title": "Penrose ↔ square · same-observable comparison gate",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Source-qualify the recovered Stage26 SU(2) 2+1D scalar observable versus the separate Paper 2 graph/spectral-zeta calculation, then compare Penrose/square control with correctly matched physics and independent error model.",
+      "detail": "Paper 2 spectral-zeta suppression (~16.7%) is not a result from the Stage26 sweep-10,000 multihit files. Four same-label seeds and 600 pairs are descriptive; independent uncertainty and spectral-operator identity remain open.",
+      "checks": [
+        {
+          "label": "Audit recovered Stage26 runner and nested modules against complete run inputs",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Source-qualify Paper 2 vs Stage26 operator/observable",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Match physical units, scale/volume, coupling and boundaries",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Establish sound sampling uncertainty and a falsifiable null comparison",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Only then test claimed universal spectral differences",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "W-ORIGINAL-SOURCES",
+      "title": "Recover original generators and exact spectral operators",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Stage26 runner/README have been located and read in historical Git archive. Next authenticate full dependencies/restart inputs, and separately recover Paper 1/2 graph spectral-zeta generators.",
+      "detail": "Stage26 source located: stage26_outer.py Git blob 95423cfc83ba4774e160ac1e3dadc1fa964eca25. Its source_sha256 is Stage9 input checkpoint hash, NOT code SHA. Archived run dependencies and Paper 1/2 spectral-zeta generator must be independently authenticated.",
+      "checks": [
+        {
+          "label": "Authenticate recovered runner with original Stage9 checkpoint hashes, dependency stack, estimator and replay",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "W-GRAV-OP",
+      "title": "Gravitational fluctuation operator and UV finiteness bridge",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Relate the quasicrystalline graph spectral object to a physically justified quantum gravitational operator and a precisely defined UV claim.",
+      "detail": "An observed finite lattice zeta ratio or finite spectral-triple regularized quantity is not a nonperturbative gravitational path-integral finiteness theorem.",
+      "checks": [
+        {
+          "label": "Construct physically justified interacting gravitational operator and domains",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Prove the correct continuum/cutoff claim in that operator",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026-11-05 independent model-identity audit",
+          "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
+          "review_only": true
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
+          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        },
+        {
+          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
+          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
+          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
       "core": true,
       "route": null
     }
@@ -2570,13 +3180,6 @@
       "status": "conditional"
     },
     {
-      "from_id": "M-CUBIC",
-      "to_id": "R-INDEX",
-      "kind": "study",
-      "label": "result on model",
-      "status": "tracked"
-    },
-    {
       "from_id": "R-INDEX",
       "to_id": "P0",
       "kind": "supports",
@@ -2670,13 +3273,6 @@
     {
       "from_id": "W-REVIEW",
       "to_id": "P5",
-      "kind": "blocks",
-      "label": "required work",
-      "status": "open"
-    },
-    {
-      "from_id": "W-LFS",
-      "to_id": "P0",
       "kind": "blocks",
       "label": "required work",
       "status": "open"
@@ -2801,13 +3397,6 @@
       "status": "tracked"
     },
     {
-      "from_id": "D-ARCHIVE",
-      "to_id": "M-Z5",
-      "kind": "evidence",
-      "label": "historical simulations; non-3D",
-      "status": "tracked"
-    },
-    {
       "from_id": "FILE-02",
       "to_id": "D-ARCHIVE",
       "kind": "member",
@@ -2861,13 +3450,6 @@
       "to_id": "D-SWEEPS",
       "kind": "member",
       "label": "hashed source file",
-      "status": "tracked"
-    },
-    {
-      "from_id": "D-SWEEPS",
-      "to_id": "M-Z5",
-      "kind": "evidence",
-      "label": "historical simulations; non-3D",
       "status": "tracked"
     },
     {
@@ -3100,6 +3682,321 @@
       "kind": "requires",
       "label": "OS and nontriviality remain independent",
       "status": "open"
+    },
+    {
+      "from_id": "G-GRAV",
+      "to_id": "PUB-DISS",
+      "kind": "primary-objective",
+      "label": "source-faithful publication program",
+      "status": "tracked"
+    },
+    {
+      "from_id": "W-LFS",
+      "to_id": "D-MANIFEST",
+      "kind": "custody-only",
+      "label": "archive migration does not block proof",
+      "status": "tracked"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "M-Z5",
+      "kind": "proposed-extension",
+      "label": "Paper 2 kinematic construction, no interacting equivalence",
+      "status": "open"
+    },
+    {
+      "from_id": "M-SQUARE-2D",
+      "to_id": "M-CUBIC",
+      "kind": "control-extension",
+      "label": "2D periodic control → independent 3D cubic benchmark, not model equivalence",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "P0",
+      "kind": "primary-model",
+      "label": "2D source geometry still requires 3D and operator bridge",
+      "status": "open"
+    },
+    {
+      "from_id": "M-SQUARE-2D",
+      "to_id": "P0",
+      "kind": "control",
+      "label": "not the target model",
+      "status": "tracked"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "G-GRAV",
+      "kind": "primary-hypothesis",
+      "label": "original spectral-geometry inquiry",
+      "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "G-GRAV",
+      "kind": "proposed-physics",
+      "label": "dynamics and UV operator not certified",
+      "status": "open"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "G-GRAV",
+      "kind": "historical-source",
+      "label": "the original objective",
+      "status": "tracked"
+    },
+    {
+      "from_id": "R-INDEX",
+      "to_id": "PUB-DISS",
+      "kind": "catalog",
+      "label": "theorem file counts do not certify claims",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-01",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-02",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-03",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-04",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-05",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-06",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-07",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-08",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-09",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-10",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-11",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-12",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-13",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-14",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-15",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-16",
+      "to_id": "M-SQUARE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "FILE-17",
+      "to_id": "M-PENROSE-2D",
+      "kind": "experiment-provenance",
+      "label": "2D source data; not a 3D action",
+      "status": "tracked"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "PAPER-1",
+      "kind": "contains",
+      "label": "PDF archived inside source tarball",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PAPER-1",
+      "to_id": "M-PENROSE-2D",
+      "kind": "source-context",
+      "label": "historical theory proposal, not identical Stage26 operator",
+      "status": "tracked"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "PAPER-2",
+      "kind": "contains",
+      "label": "PDF archived inside source tarball",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PAPER-2",
+      "to_id": "M-PENROSE-2D",
+      "kind": "source-context",
+      "label": "historical theory proposal, not identical Stage26 operator",
+      "status": "tracked"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "PAPER-3",
+      "kind": "contains",
+      "label": "PDF archived inside source tarball",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PAPER-3",
+      "to_id": "M-PENROSE-2D",
+      "kind": "source-context",
+      "label": "historical theory proposal, not identical Stage26 operator",
+      "status": "tracked"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "PAPER-4",
+      "kind": "contains",
+      "label": "PDF archived inside source tarball",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PAPER-4",
+      "to_id": "M-PENROSE-2D",
+      "kind": "source-context",
+      "label": "historical theory proposal, not identical Stage26 operator",
+      "status": "tracked"
+    },
+    {
+      "from_id": "D-DISS",
+      "to_id": "PAPER-5",
+      "kind": "contains",
+      "label": "PDF archived inside source tarball",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PAPER-5",
+      "to_id": "M-PENROSE-2D",
+      "kind": "source-context",
+      "label": "historical theory proposal, not identical Stage26 operator",
+      "status": "tracked"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "I-PENROSE-SQUARE",
+      "kind": "compare",
+      "label": "primary geometry",
+      "status": "tracked"
+    },
+    {
+      "from_id": "M-SQUARE-2D",
+      "to_id": "I-PENROSE-SQUARE",
+      "kind": "compare",
+      "label": "periodic control",
+      "status": "tracked"
+    },
+    {
+      "from_id": "I-PENROSE-SQUARE",
+      "to_id": "P0",
+      "kind": "required-comparison",
+      "label": "no spectral theorem inferred yet",
+      "status": "open"
+    },
+    {
+      "from_id": "W-ORIGINAL-SOURCES",
+      "to_id": "I-PENROSE-SQUARE",
+      "kind": "blocks",
+      "label": "generator and operator provenance missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-ORIGINAL-SOURCES",
+      "to_id": "P0",
+      "kind": "blocks",
+      "label": "authentic source linkage pending",
+      "status": "open"
+    },
+    {
+      "from_id": "W-GRAV-OP",
+      "to_id": "G-GRAV",
+      "kind": "blocks",
+      "label": "physical UV operator required",
+      "status": "open"
+    },
+    {
+      "from_id": "I-PENROSE-SQUARE",
+      "to_id": "G-GRAV",
+      "kind": "conditional-evidence",
+      "label": "spectral contrast alone does not prove gravitational finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "G-GRAV",
+      "to_id": "THEOREM",
+      "kind": "distinct-objectives",
+      "label": "no logical implication without theorem",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -3162,7 +4059,20 @@
     "hktransfer": {
       "path": "research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md",
       "blob_sha": "9aa95ab6ee4110b4b208ad93df55fec9447201f2"
+    },
+    "stage26runner": {
+      "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
+      "blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25"
     }
   },
-  "library_manifest": "observatory/data-manifest.json"
+  "library_manifest": "observatory/data-manifest.json",
+  "primary_hypothesis": "Penrose/Fibonacci/coupled Z5",
+  "control_models": [
+    "square 2D",
+    "cubic 3D"
+  ],
+  "dual_open_goals": [
+    "G-GRAV",
+    "THEOREM"
+  ]
 }
