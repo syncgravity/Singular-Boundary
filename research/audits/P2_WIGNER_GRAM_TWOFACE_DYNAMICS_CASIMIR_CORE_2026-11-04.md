@@ -17,6 +17,24 @@ Each local symmetric-spin matrix element has a finite binomial expansion with at
 
 **Independent tests:** nine Hopf-integral versus exact **direct total-Casimir spectral projector** calculations covering fundamental N=2,3,4 and the mixed tuples (1,2,1), (1,3,1), including cross-weight overlaps. Two tensor-only additional N=6,9 cases avoid constructing the 2^N Fourier matrix. Ordinary numerical tolerance 1e−9, not interval certification.
 
+### P-60 exact algebraic improvement — sparse Hopf monomial contraction
+
+The numerical quadrature is not needed for **pure magnetic weight-basis tensor factors**. For row l and column k of the local degree-n symmetric power, the coefficient polynomial is exactly
+\[
+D^{n/2}_{l,k}(g)=\sqrt{\frac{\binom nk}{\binom nl}}
+\sum_{s=\max(0,l-k)}^{\min(l,n-k)}
+(-1)^s\binom{n-k}{s}\binom{k}{l-s}
+z^{n-k-s}v^{k-l+s}\bar z^{l-s}\bar v^s .
+\]
+For the conjugate Wigner coefficient in (1), swap z with bar-z and v with bar-v. Each Hopf monomial has the **exact Haar moment**
+\[
+\boxed{\int z^a v^b\bar z^c\bar v^d\,dg
+=\begin{cases} a!b!/(a+b+1)!,&a=c,\ b=d,\\0,&\text{otherwise.}\end{cases}}
+\]
+Multiply these finite polynomials by a sparse dictionary indexed by four exponents and integrate term by term. **Every pure weight-basis tensor Gram overlap is exactly a rational number times the square root of a rational number**, without quadrature or an exponential Clebsch–Gordan basis. Since the total polynomial degree is S+L, there are at most \(\binom{S+L+3}{3}=O((S+L)^3)\) monomials; binomial/factorial coefficients and denominators have polynomial bit length. Thus the *individual basis-pair overlaps* are computable with polynomial-bit exact arithmetic in the total degree and number of tensor sites. This does not establish polynomial-bit exact singular values of arbitrary sums of such overlaps, adequate q-depth, or a full-inverse high-spin asymptotic.
+
+**Executed exact tests:** seven exact rational×radical Gram coefficients cross-checked against the independent small direct Casimir-projector values. Further, for the relevant joint degree geometry N=m², \(\ell=m+1\), \(S=N-1+\ell\), the maximal-total-spin overlap of normalized one-flip basis vectors on a fundamental face and on the high-spin face equals exactly \(\sqrt\ell/S\); this follows independently from the global spin-lowering identity. The sparse-monomial implementation verified the exact rational/radical pair for m=3,4,5,6,10,20, reaching N=400 with no dense Fourier matrix. **These are exact overlap-algorithm tests at the target spin geometry, NOT evaluations of the actual corrected Poisson source or its complete inverse.** The expanded Library archive includes \`verify_exact_hopf_monomial_gram.py\`, its log, and re-verified SHA-256 manifest.
+
 ## P-61 — Corrected electric cross-link already prevents point-norm continuity on full local B algebra for some rank-one observables
 
 The corrected open two-face electric Hamiltonian contains \(K_2=4(C_1+C_2)+2\sum_{a=1}^3R_1^aL_2^a\). Restrict to Peter–Weyl factors with face-1 right spin 1/2, face-2 left spin s (arbitrarily high), and fixed spectator indices, so the onsite Casimirs are scalars. On this sector the cross term is \(2\mathbf S_1\cdot\mathbf S_2\). Take the **one-face finite-rank** operator \(A=|\downarrow\rangle\langle\uparrow|\) in face-1 right spin, including a finite-rank projection on spectator indices, and embed it as A⊗I on two faces.
