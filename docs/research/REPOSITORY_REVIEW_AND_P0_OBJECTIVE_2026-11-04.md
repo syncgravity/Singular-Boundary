@@ -1,5 +1,7 @@
 # Repository-wide research state and next nonduplicative objective — November 4, 2026
 
+> **2026-11-05 source-faithful clarification:** This November 4 audit remains a dated evidence snapshot. The dissertation's primary hypothesis is Penrose/Fibonacci/coupled-ℤ⁵ spectral quantum gravity, compared against a square periodic control; cubic SU(2) is a later reference, NOT a replacement. The earlier choice of one regulator applies only to a particular YM proof route, not the whole dissertation. Current P0 classification is P0-H (Penrose historical source), P0-C (periodic controls), and P0-X (cross-model comparison). The gravity and Yang–Mills continuum goals remain independently OPEN. [See the updated audit](P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md). Earlier text remains preserved below.
+
 **Status:** repository-wide *path and Git-blob inventory* plus targeted content/dependency audit and executable next-objective specification. **Not** a line-by-line independent audit of all 2,150 file bodies or a proof of Yang–Mills existence and mass gap.
 
 ## 1. Pinned evidence and coverage
