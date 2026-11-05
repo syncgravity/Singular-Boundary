@@ -1,4 +1,4 @@
-# Research Observatory v2.28-draft · Penrose primary / periodic controls
+# Research Observatory v2.29-draft · mathematical-physics proof atlas
 
 Open `index.html` together with `catalog.js`, `audit.js`, and `proofpaths.js` in the same folder (works without a server). The **740-record catalog** is generated from the immutable source Git tree `fd1c1c1c8db078f8ec9d591d182059bd1635b164` and records paths, Git blob identifiers and source sizes. Only 12 selected theorem bodies have editorial annotations; all remaining records explicitly say `Indexed path and Git blob only`.
 
@@ -38,3 +38,11 @@ The archived Stage 26 runner/README and nested Stage 7 geometry code were recove
 Reproducible data profiling: research/scripts/verify_penrose_square_pairing_2026_11_05.py. Graph builder applies a non-destructive postbuild hierarchy module observatory/tools/reconcile_penrose_control.py, using docs/evidence/P0_PENROSE_SQUARE_PAIRING_2026-11-05.json. Verify with python observatory/tools/verify_knowledge_graph.py --data-dir /path/to/uploaded/originals. Original binaries remain in Library pending LFS. No gate promotion or public deployment.
 
 [Read the governing audit](../docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md).
+
+## v2.29-draft · physics ontology and cube-to-quasicrystal bridge
+
+The interactive [Proof Atlas](graph.html) now opens on a *Cubic → Quasicrystal* lens with the proposed T0–T5 transfer requirements; the default evidence dossier shows the explicit weak-bare-coupling obstruction to existing finite-gap certificates. There are **101 curated mathematical-physics nodes, 189 typed links**, six Yang–Mills gates OPEN, and an independent quasicrystalline ultraviolet gravity objective OPEN. Nodes previously named for chapters or manuscripts are renamed for mathematical physics: spectral dimension, cut-and-project zeta, almost-complex structure, conformal spectral regularization, quasiperiodic cavity response. Original files and precise SHA-256 custody stay in immutable provenance; no source deletion or theorem acceptance is implied.
+
+See the [accessible mathematical-physics guide](MATHEMATICAL_PHYSICS_GUIDE.md), the [quantified cubic-to-quasicrystal transfer audit](../docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md), the [exact finite certificate verifier](../research/scripts/verify_cubic_penrose_gate_boundaries_2026_11_05.py), and the [graph ontology overlay](tools/add_mathematical_physics_bridge.py). The overlay executes after the previous source hierarchy in `tools/build_knowledge_graph.py`.
+
+**Verification:** `python observatory/tools/build_knowledge_graph.py`; `python observatory/tools/verify_knowledge_graph.py --data-dir /path/to/26/original/files`; `node --check observatory/graph-app.js`. Browser checks use a standalone inline build. **No public Pages, canonical main change, claim-ledger promotion, Git LFS migration, or continuum mass-gap theorem.**

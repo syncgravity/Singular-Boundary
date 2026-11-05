@@ -203,3 +203,6 @@ print('nodes',len(N),'edges',len(E),'by-kind', {k:sum(n['kind']==k for n in N) f
 # Source-faithful Penrose-vs-square hierarchy is a non-destructive postbuild layer.
 from reconcile_penrose_control import reconcile
 reconcile(ROOT)
+
+from add_mathematical_physics_bridge import extend
+extend(ROOT)

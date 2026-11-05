@@ -10,7 +10,7 @@ for(const e of G.edges){neighbors.get(e.from_id).add(e.to_id);neighbors.get(e.to
 const tone={open:'OPEN',finite:'FINITE MODEL',conditional:'CONDITIONAL',obstruction:'OBSTRUCTION',partial:'PARTIAL',candidate:'CANDIDATE',archived:'ARCHIVED',indexed:'INDEXED ONLY',unresolved:'UNRESOLVED'};
 const watchStatuses=new Set(['open','obstruction','partial','candidate','unresolved','conditional']);
 const notesKey='singular-boundary.atlas.notes.v1';let annotations={};try{const x=JSON.parse(localStorage.getItem(notesKey)||'{}');if(x&&typeof x==='object'&&!Array.isArray(x))annotations=x}catch(_){annotations={}}
-let view='comparison',filter='all',query='',selected='P0',highlightedPath=[],positions=new Map(),viewNodes=[],viewEdges=[],svgWidth=900,svgHeight=680;
+let view='bridge',filter='all',query='',selected='I-UV-COUPLING',highlightedPath=[],positions=new Map(),viewNodes=[],viewEdges=[],svgWidth=900,svgHeight=680;
 let camera={x:0,y:0,k:1};let pointer=null;let scheduled=false;let noteTimer=null;
 const graph=$('graphCanvas'),cam=$('camera'),edgeLayer=$('edgeLayer'),nodeLayer=$('nodeLayer');
 function svg(tag,attrs={},text){const el=document.createElementNS(NS,tag);for(const [a,v] of Object.entries(attrs))el.setAttribute(a,String(v));if(text!==undefined)el.textContent=text;return el}
@@ -30,15 +30,15 @@ const special={
 'W-PENROSE-CURRENT':[950,1260],'W-IR':[1440,750],
 'W-DYNAMICS':[1600,1090],'W-OS':[1830,775],
 'W-REVIEW':[1990,1160],'W-LFS':[240,1440],
-'D-ARCHIVE':[80,1480],'D-SWEEPS':[350,1590],'D-DISS':[610,1540],
+'D-ARCHIVE':[80,1480],'D-SWEEPS':[350,1590],'D-SPECTRAL-SOURCES':[610,1540],
 'D-FULL':[610,1670],'D-WHITNEY':[80,1650],'D-CONVO':[890,1660],
-'D-MANIFEST':[1150,1670],'PUB-DISS':[2060,1320],
+'D-MANIFEST':[1150,1670],'PUB-THEOREM-REVIEW':[2060,1320],
 'G-GRAV':[2160,100],'M-PENROSE-2D':[120,420],'M-SQUARE-2D':[120,790],
 'I-PENROSE-SQUARE':[710,575],'W-ORIGINAL-SOURCES':[780,1140],'W-GRAV-OP':[1710,160],
-'PAPER-1':[390,50],'PAPER-2':[580,50],'PAPER-3':[780,50],'PAPER-4':[980,50]
+'S-SPECTRAL-DIMENSION':[390,50],'S-CUT-PROJECT-ZETA':[580,50],'S-COMPLEX-STRUCTURE':[780,50],'S-CONFORMAL-SPECTRAL':[980,50]
 };
 function basicPosition(n){if(gateXY[n.id])return gateXY[n.id];if(special[n.id])return special[n.id];if(n.kind==='interface'){let i=G.nodes.filter(x=>x.kind==='interface').findIndex(x=>x.id===n.id);return [950+i*200,1650]};if(n.kind==='dataset'){const i=G.nodes.filter(x=>x.kind==='dataset').findIndex(x=>x.id===n.id);return [120+(i%7)*235,1850+Math.floor(i/7)*130]};return [1350,1350]}
-function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],'D-SWEEPS':[155,515],'D-FULL':[155,930],'D-WHITNEY':[650,930],'D-DISS':[1150,930],'D-CONVO':[155,1235],'D-MANIFEST':[1370,160]};for(const [id,xy] of Object.entries(places))p.set(id,xy);p.set('P0',[1750,160]);p.set('M-Z5',[1500,430]);p.set('M-PRISM',[1600,760]);p.set('PUB-DISS',[1400,1210]);
+function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],'D-SWEEPS':[155,515],'D-FULL':[155,930],'D-WHITNEY':[650,930],'D-SPECTRAL-SOURCES':[1150,930],'D-CONVO':[155,1235],'D-MANIFEST':[1370,160]};for(const [id,xy] of Object.entries(places))p.set(id,xy);p.set('P0',[1750,160]);p.set('M-Z5',[1500,430]);p.set('M-PRISM',[1600,760]);p.set('PUB-DISS',[1400,1210]);
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
 const compareXY={
@@ -47,18 +47,28 @@ const compareXY={
 'M-Z5':[570,90],'M-CUBIC':[570,675],
 'I-PENROSE-SQUARE':[525,380],'P0':[955,380],
 'W-ORIGINAL-SOURCES':[940,700],'W-GRAV-OP':[965,85],
-'D-ARCHIVE':[130,1120],'D-SWEEPS':[480,1120],'D-DISS':[650,25],
-'PAPER-1':[280,30],'PAPER-2':[460,30],'PAPER-3':[650,90],'PAPER-4':[840,170],
+'D-ARCHIVE':[130,1120],'D-SWEEPS':[480,1120],'D-SPECTRAL-SOURCES':[650,25],
+'S-SPECTRAL-DIMENSION':[280,30],'S-CUT-PROJECT-ZETA':[460,30],'S-COMPLEX-STRUCTURE':[650,90],'S-CONFORMAL-SPECTRAL':[840,170],
 'W-Z5':[1150,720],'R-CUBE':[620,920],'R-P0-HK':[1230,1000]};
-function positionFor(n){if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
+const bridgeXY={
+'M-PENROSE-2D':[50,120],'M-Z5':[340,120],'I-QG-SPECTRAL-OP':[1280,120],'G-GRAV':[1610,120],
+'T0-QC-3D':[240,400],'T1-QC-ACTION':[535,400],'T2-OBSERVABLES':[840,400],
+'T3-TIME-COMPARE':[1140,400],'T4-OS-LIMIT':[1445,400],'T5-GAP-TRANSFER':[1750,400],
+'M-CUBIC':[60,740],'R-CUBE':[345,740],'R-CUBE-H':[640,740],'R-P0-HK':[930,740],
+'R-CUBIC-FINITE-GAP':[1220,740],'I-UV-COUPLING':[1520,740],'THEOREM':[1840,740],
+'R-WEAK':[1280,970],'R-LOW-ENERGY-COUNTER':[1610,970],
+'P0':[480,1040],'P2':[800,1040],'P4':[1100,1040],'P5':[1850,1020]
+};
+function positionFor(n){if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
 let dataPositionsCache=dataPositions();
 function matches(n){if(query){const x=[n.id,n.title,n.summary,n.detail,n.stage,...(n.tags||[]),n.asset?.filename||'',n.asset?.sha256||''].join(' ').toLowerCase();return x.includes(query)}return true}
 function visibleSet(){let list=G.nodes.filter(n=>{
+ if(view==='bridge')return Object.prototype.hasOwnProperty.call(bridgeXY,n.id);
  if(view==='comparison')return ['G-GRAV','THEOREM','M-PENROSE-2D','M-SQUARE-2D','M-Z5','M-CUBIC','I-PENROSE-SQUARE','P0','W-ORIGINAL-SOURCES','W-GRAV-OP'].includes(n.id);
  if(view==='spine')return n.kind==='gate'||n.kind==='goal'||n.kind==='model'||n.core&&(n.kind==='result'||n.kind==='work'||n.kind==='data_family'||n.kind==='publication');
  if(view==='evidence')return ['gate','goal','model','result','interface'].includes(n.kind);
  if(view==='work')return ['gate','goal','work','interface'].includes(n.kind)||n.kind==='result'&&n.status==='obstruction';
- if(view==='data')return ['dataset','data_family','manifest'].includes(n.kind)||['P0','M-Z5','M-PRISM','M-PENROSE-2D','M-SQUARE-2D','PUB-DISS'].includes(n.id);
+ if(view==='data')return ['dataset','data_family','manifest'].includes(n.kind)||['P0','M-Z5','M-PRISM','M-PENROSE-2D','M-SQUARE-2D','PUB-THEOREM-REVIEW'].includes(n.id);
  return true;
  });
  if(query){const matching=G.nodes.filter(matches),ids=new Set(matching.map(n=>n.id));for(const n of matching){for(const id of neighbors.get(n.id)){const x=nodeById.get(id);if(x.kind==='gate'||x.kind==='data_family'||x.kind==='model')ids.add(id)}}list=G.nodes.filter(n=>ids.has(n.id))}
@@ -69,7 +79,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
 function ensurePositions(){for(const n of G.nodes){if(!positions.has(n.id))positions.set(n.id,[...positionFor(n)])}}
 function setView(next){view=next;dataPositionsCache=dataPositions();positions=new Map();highlightedPath=[];
  document.querySelectorAll('.lens').forEach(x=>{const on=x.dataset.view===view;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});
- const headings={comparison:'PENROSE HYPOTHESIS · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
+ const headings={bridge:'CUBIC SU(2) → QUASICRYSTALLINE TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
  $('graphViewLabel').textContent=headings[view];applyGraph(true)}
 function setFilter(next){filter=next;document.querySelectorAll('.filter').forEach(x=>{const on=x.dataset.filter===filter;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});applyGraph(true)}
 function showError(s){const t=$('nodeLayer');t.replaceChildren();t.appendChild(svg('text',{x:100,y:130,fill:'#9fc0c8','font-size':18},s));edgeLayer.replaceChildren()}
@@ -140,7 +150,7 @@ $('importNotes').addEventListener('change',async e=>{const file=e.target.files?.
 $('exportGraph').addEventListener('click',()=>download('singular-boundary-knowledge-graph.json',G));
 window.addEventListener('resize',()=>{clearTimeout(window.__atlasResize);window.__atlasResize=setTimeout(fitGraph,90)});
 $('countNodes').textContent=G.nodes.length;$('countEdges').textContent=G.edges.length;$('countFiles').textContent=G.nodes.filter(n=>n.kind==='dataset').length;$('flagCount').textContent=Object.values(annotations).filter(n=>n.flag||n.note).length;
-renderGateStrip();ensurePositions();applyGraph(true);selectNode('I-PENROSE-SQUARE');
+renderGateStrip();ensurePositions();applyGraph(true);selectNode('I-UV-COUPLING');
 // Start at an inspectable reading scale; Fit view remains available for the entire atlas.
-requestAnimationFrame(()=>requestAnimationFrame(()=>{if(view==='comparison'&&!query&&filter==='all'){camera.k=.64;camera.x=svgWidth/2-650*camera.k;camera.y=svgHeight/2-375*camera.k;scheduleDraw()}else if(view==='spine'&&!query&&filter==='all'){camera.k=.71;camera.x=svgWidth/2-810*camera.k;camera.y=svgHeight/2-555*camera.k;scheduleDraw()}}));
+requestAnimationFrame(()=>requestAnimationFrame(()=>{if(view==='bridge'&&!query&&filter==='all'){camera.k=.6;camera.x=svgWidth/2-1100*camera.k;camera.y=svgHeight/2-550*camera.k;scheduleDraw()}else if(view==='comparison'&&!query&&filter==='all'){camera.k=.64;camera.x=svgWidth/2-650*camera.k;camera.y=svgHeight/2-375*camera.k;scheduleDraw()}else if(view==='spine'&&!query&&filter==='all'){camera.k=.71;camera.x=svgWidth/2-810*camera.k;camera.y=svgHeight/2-555*camera.k;scheduleDraw()}}));
 })();

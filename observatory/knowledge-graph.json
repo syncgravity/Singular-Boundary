@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-05 (America/Denver)",
-  "version": "v2.28-draft",
-  "scope": "Two separate goals: original Penrose quantum-gravity hypothesis and SU(2) mass-gap objective. Square/cubic periodic controls are distinct; no model equivalence or continuum gap established.",
+  "build_date": "2026-11-05",
+  "version": "v2.29-draft",
+  "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-05-penrose-primary-control",
+  "git_branch": "audit/2026-11-05-mathematical-physics-bridge",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -69,13 +69,13 @@
       "kind": "gate",
       "status": "open",
       "stage": "P0",
-      "summary": "Two distinct mathematical tracks: Penrose spectral-gravity hypothesis and square/cubic control models, with explicit bridges required before transferring claims.",
-      "detail": "Cubic subcriteria cannot complete the Penrose P0. Model-indexed closure records are required; six YM gates and the separate quantum-gravity objective remain OPEN.",
+      "summary": "Model-indexed P0 geometry and source identity: Penrose physical hypothesis, square/cubic controls and explicit action/observable comparison certificates.",
+      "detail": "No cubic finite result closes the quasicrystalline 3D regulator interface. Neither the YM nor quantum-gravity continuum objective is proved.",
       "checks": [
         {
           "label": "Penrose P3 2D graph and spectral-observable provenance",
           "state": "partial",
-          "note": "Historical Papers 1–4 define proposed operators; the Stage26 operator is not yet shown equivalent to Paper 2 spectral-zeta operator."
+          "note": "Different spectral operators were proposed on Penrose geometry; exact source- and operator-equivalence is still open."
         },
         {
           "label": "Square control paired on the SAME observable and normalization",
@@ -85,7 +85,7 @@
         {
           "label": "Penrose coupled-ℤ⁵ genuine 3D oriented refinement and physical action",
           "state": "open",
-          "note": "Paper 2 compact-third-coordinate identification is a proposal, not a source-certified interacting 3D mesh."
+          "note": "A compact complementary coordinate is only a proposed kinematic interpretation, not a genuine 3D refining gauge complex."
         },
         {
           "label": "Cubic 3D reference geometry and finite gauge transfer",
@@ -375,11 +375,11 @@
     },
     {
       "id": "M-Z5",
-      "title": "Coupled ℤ⁵ · proposed (3+1)D Penrose extension",
+      "title": "Coupled ℤ⁵ · proposed three-spatial-dimensional geometry",
       "kind": "model",
       "status": "unresolved",
       "stage": "P0",
-      "summary": "Paper 2 proposes two extended Penrose spatial coordinates, compact third coordinate and imaginary-time interpretation. Source-certified interacting 3D refinement and dynamics remain OPEN.",
+      "summary": "A five-integer-coordinate cut-and-project structure with a compact/complementary direction is proposed; no authenticated refining 3D SU(2) spatial model is yet established.",
       "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison.",
       "checks": [],
       "sources": [
@@ -1396,13 +1396,13 @@
       "route": null
     },
     {
-      "id": "D-DISS",
-      "title": "Dissertation v10.7 source bundle",
+      "id": "D-SPECTRAL-SOURCES",
+      "title": "Foundational aperiodic spectral-geometry sources",
       "kind": "data_family",
       "status": "archived",
       "stage": "P0",
-      "summary": "March 2026 scholarly and experiment materials; historical source, not November corrected theorem.",
-      "detail": "Every original file is available in Library; click a leaf to inspect SHA-256 and exact Library locator.",
+      "summary": "Archived source studies: graph spectral dimension, zeta functions, complex structure, boundary regularization and quasiperiodic response.",
+      "detail": "The original source archive is cryptographically identified in the evidence manifest. Titles here name mathematical objects, not chapters or authors.",
       "checks": [],
       "sources": [
         {
@@ -1909,16 +1909,17 @@
     },
     {
       "id": "FILE-19",
-      "title": "Sharpe_dissertation_v10.7.tar.gz",
+      "title": "Primary aperiodic spectral-geometry source archive",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "dissertation • 7,004,477 bytes",
-      "detail": "7,004,477 bytes · sha256 c405acd6daa5a0a923429ab659b122b22231787d7a30e97db7f2974f278354d1. Stored at /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Cryptographic identity does not certify numerical physics.",
+      "summary": "Five archived technical studies and supplementary research material, SHA-256 verified.",
+      "detail": "Original filename and immutable SHA-256 remain in asset metadata; this node is provenance rather than a theorem.",
       "checks": [],
       "sources": [],
       "tags": [
-        "dissertation"
+        "spectral-source",
+        "archive"
       ],
       "importance": 1,
       "core": false,
@@ -1935,12 +1936,12 @@
     },
     {
       "id": "FILE-20",
-      "title": "Branch · Branch · Branch · Branch · Resume 3D Proof Review.txt",
+      "title": "Research correspondence and corrections · source 1",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 3,354 bytes",
-      "detail": "3,354 bytes · sha256 4bfd327dd8f38a06d653bf41c7d4c9400a36b96d5560bd9ff323cf6b6e68dcb6. Stored at /The Singular Boundary/Data/Source Conversations/Branch · Branch · Branch · Branch · Resume 3D Proof Review.txt. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -1961,12 +1962,12 @@
     },
     {
       "id": "FILE-21",
-      "title": "Branch · Branch · Branch · Resume 3D Proof Review.md",
+      "title": "Research correspondence and corrections · source 2",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 818,687 bytes",
-      "detail": "818,687 bytes · sha256 8684c4cb776017ea734436207edd896aa89f37ab07cba24fe11aa041e8996e42. Stored at /The Singular Boundary/Data/Source Conversations/Branch · Branch · Branch · Resume 3D Proof Review.md. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -1987,12 +1988,12 @@
     },
     {
       "id": "FILE-22",
-      "title": "Branch · Branch · Repository review summary.md",
+      "title": "Research correspondence and corrections · source 3",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 244,297 bytes",
-      "detail": "244,297 bytes · sha256 9e4c9a2ac442b2796fcad48aeb957f5827e60436ae2f8a19fb4480cb07e13404. Stored at /The Singular Boundary/Data/Source Conversations/Branch · Branch · Repository review summary.md. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2013,12 +2014,12 @@
     },
     {
       "id": "FILE-23",
-      "title": "Branch · Read Conversation Content.txt",
+      "title": "Research correspondence and corrections · source 4",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 6,253 bytes",
-      "detail": "6,253 bytes · sha256 982ee1b4667e4b1099852408d00211881cc03c9ddc06618efc260485f220b601. Stored at /The Singular Boundary/Data/Source Conversations/Branch · Read Conversation Content.txt. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2039,12 +2040,12 @@
     },
     {
       "id": "FILE-24",
-      "title": "Branch · Resume 3D Proof Review.txt",
+      "title": "Research correspondence and corrections · source 5",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 3,642 bytes",
-      "detail": "3,642 bytes · sha256 de770b50e6ef3beb1152b4b9f3f9821cad4206fe287ee7e8447c5337282d8134. Stored at /The Singular Boundary/Data/Source Conversations/Branch · Resume 3D Proof Review.txt. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2065,12 +2066,12 @@
     },
     {
       "id": "FILE-25",
-      "title": "Restate Proof Objective Status.md",
+      "title": "Research correspondence and corrections · source 6",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 170,742 bytes",
-      "detail": "170,742 bytes · sha256 888f14e59c18b49bb259d48464f234f4e53f697dd9f37507cf79f879837b4f0a. Stored at /The Singular Boundary/Data/Source Conversations/Restate Proof Objective Status.md. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2091,12 +2092,12 @@
     },
     {
       "id": "FILE-26",
-      "title": "Resume 3D Proof Review.md",
+      "title": "Research correspondence and corrections · source 7",
       "kind": "dataset",
       "status": "archived",
       "stage": "P0",
-      "summary": "transcript • 621,097 bytes",
-      "detail": "621,097 bytes · sha256 630ca7cadd720a30aeb1f1b6f563bc42fef2326bedb04e6033e3f3c7c62ffe21. Stored at /The Singular Boundary/Data/Source Conversations/Resume 3D Proof Review.md. Cryptographic identity does not certify numerical physics.",
+      "summary": "Archived research-context record; no theorem follows without independent proposition-level proof.",
+      "detail": "Original filename, byte length, checksum and Library location are available as provenance metadata.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2137,13 +2138,13 @@
       "route": null
     },
     {
-      "id": "PUB-DISS",
-      "title": "Dissertation → audited research monograph",
-      "kind": "publication",
+      "id": "PUB-THEOREM-REVIEW",
+      "title": "Independent mathematical theorem synthesis",
+      "kind": "work",
       "status": "open",
       "stage": "P5",
-      "summary": "Original Fibonacci/Penrose/coupled-ℤ⁵ quantum-gravity papers remain central; independent SU(2) continuum mass-gap research is a separate proof objective.",
-      "detail": "",
+      "summary": "Integrate source-verified lemmas into a referee-checkable mathematical proof with each model and limit declared.",
+      "detail": "Publication readiness is an independent audit obligation, not a prerequisite inferred from the number of indexed source files.",
       "checks": [],
       "sources": [
         {
@@ -2163,7 +2164,7 @@
       "kind": "result",
       "status": "finite",
       "stage": "P0",
-      "summary": "Explicit time-discrete temporal SU(2) heat kernels plus spatial Wilson weights induce the cubic Gauss-invariant Kogut–Susskind Hamiltonian at fixed spatial regulator.",
+      "summary": "Fixed-grid cubic SU(2) temporal heat-kernel/spatial Wilson transfer; does not give a 4D continuum vacuum or universality theorem.",
       "detail": "Finite positive symmetric transfer, central heat kernel, original-link gauge covariance and fixed-h temporal Trotter limit; same-action finite candidate only. NOT isotropic Wilson universality, h→0 interacting OS reconstruction, or uniform gap.",
       "checks": [
         {
@@ -2252,12 +2253,12 @@
     },
     {
       "id": "G-GRAV",
-      "title": "Primary dissertation goal · Quasicrystalline spectral quantum gravity",
+      "title": "Quasicrystalline ultraviolet quantum-gravity problem",
       "kind": "goal",
       "status": "open",
       "stage": null,
-      "summary": "Determine whether Fibonacci/Penrose and coupled ℤ⁵ spectral geometry yield a physically justified ultraviolet gravitational theory and consistent quantum dynamics.",
-      "detail": "Original dissertation aim. Neither finite spectral-zeta changes nor Stage26 planar correlations prove interacting gravity finiteness. Distinct from Yang–Mills mass gap.",
+      "summary": "Does a physically correct cut-and-project spectral/gravitational operator yield a controlled ultraviolet interacting quantum-gravity theory?",
+      "detail": "Finite graph spectral measures or regularized zeta ratios cannot by themselves establish a gravitational functional integral or quantum dynamics.",
       "checks": [
         {
           "label": "Reproduce spectral geometry and original periodic control under comparable operators",
@@ -2288,8 +2289,8 @@
       "sources": [],
       "tags": [
         "penrose",
-        "quantum-gravity",
-        "dissertation"
+        "quasiperiodic",
+        "quantum-gravity"
       ],
       "importance": 5,
       "core": true,
@@ -2297,12 +2298,12 @@
     },
     {
       "id": "M-PENROSE-2D",
-      "title": "Penrose P3 · original quasicrystalline spatial model",
+      "title": "Penrose P3 quasicrystalline spatial graph",
       "kind": "model",
       "status": "partial",
       "stage": "P0",
       "summary": "Two-dimensional Penrose graph/tiling and spectral-hypothesis model. Exact 3D interacting regulator remains unproved.",
-      "detail": "Source Papers 1–4 and simulation archives do not automatically define the same operator. Distinguish graph Laplacian from gravitational fluctuation operator and from original-link SU(2) Hamiltonian.",
+      "detail": "Compare the graph Laplacian, spectral-zeta operator, physical SU(2) Wilson action and proposed gravity fluctuation operator as distinct operators until explicit identification is proved.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2320,8 +2321,8 @@
       "kind": "model",
       "status": "finite",
       "stage": "P0",
-      "summary": "Area-matched 2D periodic spatial control (square_torus 151×151 vs model-set torus scale 55) in the 2+1D Stage7/26 SU(2) campaign; NOT the primary dissertation theory.",
-      "detail": "Recovered Stage7 geometry code matches TOTAL PHYSICAL AREA; SU(2) couplings use calibrated anisotropic weights at reference beta 3.5. Identical sites, physical spectral operators and Monte Carlo uncertainty are NOT implied; Stage26 is not Paper 2 spectral zeta.",
+      "summary": "Area-matched periodic 2D spatial control: 151×151 square torus against the scale-55 Penrose model-set torus in 2+1D SU(2) Monte Carlo.",
+      "detail": "Total physical area was matched in the generator; graph spectra, local operators, independent random streams and continuum limits were not automatically matched.",
       "checks": [],
       "sources": [],
       "tags": [
@@ -2334,13 +2335,13 @@
       "route": null
     },
     {
-      "id": "PAPER-1",
-      "title": "Original dissertation Paper 1 · PDF in v10.7",
+      "id": "S-SPECTRAL-DIMENSION",
+      "title": "Spectral dimension flow on Fibonacci and Penrose graphs",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
-      "detail": "Tar member: delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf; original SHA-256 2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "summary": "Study heat-kernel return probabilities, local spectral measures and scale-dependent effective dimension on aperiodic graphs.",
+      "detail": "The graph Laplacian is not yet a demonstrated gravitational fluctuation operator. Computed spectral flow is finite-model evidence only.",
       "checks": [],
       "sources": [
         {
@@ -2348,60 +2349,25 @@
           "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "review_only": true
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         }
       ],
       "tags": [
-        "original-source",
-        "paper"
+        "spectral-physics",
+        "hypothesis",
+        "source-archive"
       ],
       "importance": 3,
       "core": true,
       "route": null
     },
     {
-      "id": "PAPER-2",
-      "title": "Original dissertation Paper 2 · PDF in v10.7",
+      "id": "S-CUT-PROJECT-ZETA",
+      "title": "Cut-and-project geometry, spectral zeta and complex dimensions",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
-      "detail": "Tar member: delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf; original SHA-256 2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "summary": "Compare spectral zeta functions of explicitly defined quasiperiodic and periodic operators; distinguish finite regularized ratios from ultraviolet finiteness.",
+      "detail": "An approximately 16.7% reported regularized contrast is not derived from the 2+1D SU(2) Stage26 correlators and does not prove gravitational finiteness.",
       "checks": [],
       "sources": [
         {
@@ -2409,60 +2375,25 @@
           "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "review_only": true
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         }
       ],
       "tags": [
-        "original-source",
-        "paper"
+        "spectral-physics",
+        "hypothesis",
+        "source-archive"
       ],
       "importance": 3,
       "core": true,
       "route": null
     },
     {
-      "id": "PAPER-3",
-      "title": "Original dissertation Paper 3 · PDF in v10.7",
+      "id": "S-COMPLEX-STRUCTURE",
+      "title": "Almost-complex structure J and complementary geometry",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
-      "detail": "Tar member: delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf; original SHA-256 ece7f92a3f55e2c63fa3e7dd10e1bf8b9d0c0c5505ea6c19a490c05567f086d2; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "summary": "Investigate J²=−I and real/imaginary decompositions of cut-and-project spaces as mathematically precise kinematic structures.",
+      "detail": "A decomposition or complex structure by itself supplies no interacting Lorentz-covariant dynamics.",
       "checks": [],
       "sources": [
         {
@@ -2470,60 +2401,25 @@
           "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "review_only": true
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         }
       ],
       "tags": [
-        "original-source",
-        "paper"
+        "spectral-physics",
+        "hypothesis",
+        "source-archive"
       ],
       "importance": 3,
       "core": true,
       "route": null
     },
     {
-      "id": "PAPER-4",
-      "title": "Original dissertation Paper 4 · PDF in v10.7",
+      "id": "S-CONFORMAL-SPECTRAL",
+      "title": "Conformal boundary, spectral regularization and vacuum energy",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
-      "detail": "Tar member: delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf; original SHA-256 871bf58f9d5adf66b2ad7d115f8031dd0c36efc18b147ae91caa48e6865d54ab; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "summary": "Test boundary geometry, spectral-triple regularization and cutoff dependence of quantum effective actions.",
+      "detail": "Finite zeta-regularized quantities do not imply finite gravitational path-integral measures or UV-complete dynamics.",
       "checks": [],
       "sources": [
         {
@@ -2531,60 +2427,25 @@
           "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "review_only": true
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         }
       ],
       "tags": [
-        "original-source",
-        "paper"
+        "spectral-physics",
+        "hypothesis",
+        "source-archive"
       ],
       "importance": 3,
       "core": true,
       "route": null
     },
     {
-      "id": "PAPER-5",
-      "title": "Original dissertation Paper 5 · PDF in v10.7",
+      "id": "S-FIBONACCI-CAVITY",
+      "title": "Fibonacci quasiperiodic cavity and field-response model",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Original historical source; read and verify its mathematical hypotheses before incorporating physical claims.",
-      "detail": "Tar member: delivery/papers/Paper_5/Sharpe_Paper5_Fibonacci_Cavity_Protofilament.pdf; original SHA-256 ab4b616939fa9fc8f78e87801cd0b754223a13b7b251c597351957ef97d2fd7e; Library: /The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz. Paper-level result is not a certified 4D theorem.",
+      "summary": "Source material proposes an additional quasiperiodic cavity/field-response mechanism; operator and physical scope require independent verification.",
+      "detail": "Indexed background, not a source-certified interacting gauge or gravitational theorem.",
       "checks": [],
       "sources": [
         {
@@ -2592,47 +2453,12 @@
           "path": "docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/audit/2026-11-05-penrose-primary-control/docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md",
           "review_only": true
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         }
       ],
       "tags": [
-        "original-source",
-        "paper"
+        "spectral-physics",
+        "hypothesis",
+        "source-archive"
       ],
       "importance": 3,
       "core": false,
@@ -2644,8 +2470,8 @@
       "kind": "interface",
       "status": "open",
       "stage": "P0",
-      "summary": "Source-qualify the recovered Stage26 SU(2) 2+1D scalar observable versus the separate Paper 2 graph/spectral-zeta calculation, then compare Penrose/square control with correctly matched physics and independent error model.",
-      "detail": "Paper 2 spectral-zeta suppression (~16.7%) is not a result from the Stage26 sweep-10,000 multihit files. Four same-label seeds and 600 pairs are descriptive; independent uncertainty and spectral-operator identity remain open.",
+      "summary": "Define the same physical observable and appropriately matched normalization on Penrose and square 2+1D SU(2) ensembles; separately compare graph spectral-zeta operators.",
+      "detail": "The reported zeta-ratio contrast belongs to a graph spectral calculation, not the Stage26 scalar Monte Carlo. Both require their own controls and uncertainty treatment.",
       "checks": [
         {
           "label": "Audit recovered Stage26 runner and nested modules against complete run inputs",
@@ -2653,7 +2479,7 @@
           "note": ""
         },
         {
-          "label": "Source-qualify Paper 2 vs Stage26 operator/observable",
+          "label": "Distinguish graph spectral-zeta from 2+1D Wilson-loop/scalar operators",
           "state": "open",
           "note": ""
         },
@@ -2728,8 +2554,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Stage26 runner/README have been located and read in historical Git archive. Next authenticate full dependencies/restart inputs, and separately recover Paper 1/2 graph spectral-zeta generators.",
-      "detail": "Stage26 source located: stage26_outer.py Git blob 95423cfc83ba4774e160ac1e3dadc1fa964eca25. Its source_sha256 is Stage9 input checkpoint hash, NOT code SHA. Archived run dependencies and Paper 1/2 spectral-zeta generator must be independently authenticated.",
+      "summary": "Authenticate the Stage26 SU(2) generator/dependency stack and independently identify the graph Laplacian and zeta-function calculation.",
+      "detail": "Archived Stage26 code is located; its source_sha256 is the input checkpoint checksum, not a code hash. The spectral-zeta and Yang–Mills observables are different.",
       "checks": [
         {
           "label": "Authenticate recovered runner with original Stage9 checkpoint hashes, dependency stack, estimator and replay",
@@ -2851,6 +2677,384 @@
         }
       ],
       "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "R-CUBIC-FINITE-GAP",
+      "title": "Finite cubic SU(2) Gauss-invariant strong-coupling gap",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P4",
+      "summary": "Complete finite physical Hilbert-space min–max gap certificate: Δ≥(3g₀²/2−2F/g₀²)/h; sufficient condition g₀⁴>4F/3.",
+      "detail": "F=3n²(n+1) on the open n³ box. The sufficient threshold demands g₀ grow with n and does not reach the asymptotically free g₀(h)→0 continuum regime.",
+      "checks": [
+        {
+          "label": "Exact finite Gauss-invariant electric minimum 3",
+          "state": "met",
+          "note": "R3-IR-589"
+        },
+        {
+          "label": "Uniform positive physical gap along g₀(h)→0",
+          "state": "open",
+          "note": "NOT implied by finite min–max bound"
+        }
+      ],
+      "sources": [
+        {
+          "title": "R3-IR-589 full finite cubic Gauss gap",
+          "path": "research/theorems/R3_CUBICAL_SU2_FULL_PHYSICAL_STRONG_COUPLING_GAP_2026-10-31.md",
+          "git_blob_sha": "44d749965dd28521697b8779de2743e3bcdbcf5d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/44d749965dd28521697b8779de2743e3bcdbcf5d/research/theorems/R3_CUBICAL_SU2_FULL_PHYSICAL_STRONG_COUPLING_GAP_2026-10-31.md"
+        },
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "finite",
+        "minmax"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "I-UV-COUPLING",
+      "title": "Weak-bare-coupling ultraviolet regime mismatch",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Known cubic finite/weak-interaction gap certificates require electric-dominated parameters, while asymptotic freedom approaches g₀(h)→0 and z=4/g₀⁴→∞.",
+      "detail": "Resolve with a new constructive large-z/renormalization mechanism. Failure of a sufficient strong-coupling estimate is NOT a no-gap theorem.",
+      "checks": [
+        {
+          "label": "Nonperturbative physical coupling trajectory g₀(h)",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Uniform interacting estimates along that trajectory",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Independent limits h→0, box size→∞ and physical t",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "renormalization",
+        "coupling"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T0-QC-3D",
+      "title": "T0 · Genuine refining quasicrystalline three-space",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Construct a 3D quasicrystalline cell family with ∂∂=0, fixed physical domain, h→0 and controlled geometry, explicitly related to the chosen cut-and-project model.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Oriented locally finite 3D incidence and topological modes",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nested or directed h→0 refinement with geometric control",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Source geometry and compact-coordinate identity demonstrated",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "Penrose",
+        "geometry"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T1-QC-ACTION",
+      "title": "T1 · Quasicrystalline Gauss-invariant SU(2) action",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P1",
+      "summary": "On the T0 geometry, derive electric and magnetic forms plus reflection-positive time transfer from one physically normalized lattice gauge action.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Gauge-covariant original-link electric form and domains",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Magnetic face coefficients and Bianchi/topological modes",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Positive time transfer and physical normalization",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "Penrose",
+        "action"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T2-OBSERVABLES",
+      "title": "T2 · Renormalized gauge-invariant observable dictionary",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Identify a dense common family of physically supported observables and matched cube/quasicrystal regulator representatives, including renormalization and vacuum centering.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Physical test support and renormalization definition",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Model-to-model observable map with units and symmetry",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontriviality/density conditions for continuum fields",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T3-TIME-COMPARE",
+      "title": "T3 · Interacting physical-time correlation comparison",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P4",
+      "summary": "Require an interacting correlation bound with a common exponential rate e^{−Mt}, uniform in h and volume; short-time or unweighted similarity does not preserve the gap.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Cubic interacting decay bound at true g₀(h)",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Quasicrystal/cube correlation difference ≤B_F e^{−Mt}",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Independence of h and spatial volume in physical units",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T4-OS-LIMIT",
+      "title": "T4 · Nontrivial 4D OS reconstruction on both models",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P5",
+      "summary": "Construct nontrivial reflection-positive continuum Schwinger functions and a common physical-time interpretation; prove density of gauge-invariant created states.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Convergence of renormalized Schwinger distributions",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "OS positivity, covariance, clustering and locality",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial vacuum sector and dense physical probes",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "T5-GAP-TRANSFER",
+      "title": "T5 · Physical spectral-gap transfer to quasicrystal",
+      "kind": "interface",
+      "status": "conditional",
+      "stage": "P5",
+      "summary": "If T0–T4 and a common positive physical-time decay rate hold, the spectral-measure Laplace lemma gives a quasicrystalline SU(2) mass-gap lower bound.",
+      "detail": "Conditional implication only; exponential weighted comparison is among the missing hard hypotheses. The gravitational ultraviolet problem remains independent.",
+      "checks": [
+        {
+          "label": "Complete T0–T4 hypotheses",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Common M>0 for a dense OS observable family",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "R-LOW-ENERGY-COUNTER",
+      "title": "Small correlation error can hide lower spectral energies",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P4",
+      "summary": "C_cube(t)=e^{−Mt} and C_qc(t)=(1−η)e^{−Mt}+ηe^{−mt} differ by at most η, yet C_qc has spectral weight at m<M.",
+      "detail": "Positive Laplace measures give an exact counterexample to transferring an infrared gap from tiny unweighted correlation error. This is a model-independent toy measure, not a Penrose gauge vacuum.",
+      "checks": [],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "counterexample",
+        "infrared"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "I-QG-SPECTRAL-OP",
+      "title": "Graph spectral zeta → physical gravitational operator",
+      "kind": "interface",
+      "status": "open",
+      "stage": null,
+      "summary": "Identify the quantum gravitational fluctuation operator and measure whose ultraviolet traces are claimed to be controlled by Penrose spectral geometry.",
+      "detail": "",
+      "checks": [
+        {
+          "label": "Prove relation of graph Laplacian and physical fluctuation operator",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Specify renormalized determinant/measure and cutoff",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Establish the exact UV integrability or finiteness claim",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cubic–quasicrystal operator and gap-transfer contract",
+          "path": "docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md",
+          "git_blob_sha": "0acb7b7c235c8ac4aa78eff7fc36163e467adcb7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0acb7b7c235c8ac4aa78eff7fc36163e467adcb7/docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "quantum-gravity"
+      ],
       "importance": 5,
       "core": true,
       "route": null
@@ -3376,7 +3580,7 @@
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
+      "from_id": "D-SPECTRAL-SOURCES",
       "to_id": "P0",
       "kind": "provenance",
       "label": "source evidence",
@@ -3531,7 +3735,7 @@
     },
     {
       "from_id": "FILE-19",
-      "to_id": "D-DISS",
+      "to_id": "D-SPECTRAL-SOURCES",
       "kind": "member",
       "label": "hashed source file",
       "status": "tracked"
@@ -3614,29 +3818,29 @@
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PUB-DISS",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "provenance",
       "label": "",
       "status": "tracked"
     },
     {
       "from_id": "P5",
-      "to_id": "PUB-DISS",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "publication",
       "label": "final outcome only if proved",
       "status": "tracked"
     },
     {
       "from_id": "W-REVIEW",
-      "to_id": "PUB-DISS",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "required",
       "label": "",
       "status": "tracked"
     },
     {
       "from_id": "R-INDEX",
-      "to_id": "PUB-DISS",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "discovery",
       "label": "",
       "status": "tracked"
@@ -3685,7 +3889,7 @@
     },
     {
       "from_id": "G-GRAV",
-      "to_id": "PUB-DISS",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "primary-objective",
       "label": "source-faithful publication program",
       "status": "tracked"
@@ -3740,7 +3944,7 @@
       "status": "open"
     },
     {
-      "from_id": "D-DISS",
+      "from_id": "D-SPECTRAL-SOURCES",
       "to_id": "G-GRAV",
       "kind": "historical-source",
       "label": "the original objective",
@@ -3748,7 +3952,7 @@
     },
     {
       "from_id": "R-INDEX",
-      "to_id": "PUB-DISS",
+      "to_id": "PUB-THEOREM-REVIEW",
       "kind": "catalog",
       "label": "theorem file counts do not certify claims",
       "status": "tracked"
@@ -3873,70 +4077,70 @@
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PAPER-1",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "S-SPECTRAL-DIMENSION",
       "kind": "contains",
       "label": "PDF archived inside source tarball",
       "status": "tracked"
     },
     {
-      "from_id": "PAPER-1",
+      "from_id": "S-SPECTRAL-DIMENSION",
       "to_id": "M-PENROSE-2D",
       "kind": "source-context",
       "label": "historical theory proposal, not identical Stage26 operator",
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PAPER-2",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "S-CUT-PROJECT-ZETA",
       "kind": "contains",
       "label": "PDF archived inside source tarball",
       "status": "tracked"
     },
     {
-      "from_id": "PAPER-2",
+      "from_id": "S-CUT-PROJECT-ZETA",
       "to_id": "M-PENROSE-2D",
       "kind": "source-context",
       "label": "historical theory proposal, not identical Stage26 operator",
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PAPER-3",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "S-COMPLEX-STRUCTURE",
       "kind": "contains",
       "label": "PDF archived inside source tarball",
       "status": "tracked"
     },
     {
-      "from_id": "PAPER-3",
+      "from_id": "S-COMPLEX-STRUCTURE",
       "to_id": "M-PENROSE-2D",
       "kind": "source-context",
       "label": "historical theory proposal, not identical Stage26 operator",
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PAPER-4",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "S-CONFORMAL-SPECTRAL",
       "kind": "contains",
       "label": "PDF archived inside source tarball",
       "status": "tracked"
     },
     {
-      "from_id": "PAPER-4",
+      "from_id": "S-CONFORMAL-SPECTRAL",
       "to_id": "M-PENROSE-2D",
       "kind": "source-context",
       "label": "historical theory proposal, not identical Stage26 operator",
       "status": "tracked"
     },
     {
-      "from_id": "D-DISS",
-      "to_id": "PAPER-5",
+      "from_id": "D-SPECTRAL-SOURCES",
+      "to_id": "S-FIBONACCI-CAVITY",
       "kind": "contains",
       "label": "PDF archived inside source tarball",
       "status": "tracked"
     },
     {
-      "from_id": "PAPER-5",
+      "from_id": "S-FIBONACCI-CAVITY",
       "to_id": "M-PENROSE-2D",
       "kind": "source-context",
       "label": "historical theory proposal, not identical Stage26 operator",
@@ -3996,6 +4200,188 @@
       "to_id": "THEOREM",
       "kind": "distinct-objectives",
       "label": "no logical implication without theorem",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-CUBIC-FINITE-GAP",
+      "kind": "proves-in-model",
+      "label": "finite sufficient inequality",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-FINITE-GAP",
+      "to_id": "I-UV-COUPLING",
+      "kind": "regime-mismatch",
+      "label": "g₀⁴>4F/3 incompatible with g₀→0",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WEAK",
+      "to_id": "I-UV-COUPLING",
+      "kind": "regime-mismatch",
+      "label": "small z does not approach z→∞",
+      "status": "open"
+    },
+    {
+      "from_id": "I-UV-COUPLING",
+      "to_id": "W-3D-ANALYTIC",
+      "kind": "required-work",
+      "label": "constructive large-z multiscale method",
+      "status": "open"
+    },
+    {
+      "from_id": "I-UV-COUPLING",
+      "to_id": "P2",
+      "kind": "blocks",
+      "label": "uniform interacting control not established",
+      "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "T0-QC-3D",
+      "kind": "needs-construction",
+      "label": "genuine source-faithful 3D family",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "T0-QC-3D",
+      "kind": "does-not-imply",
+      "label": "2D tiling not 3D spatial refinement",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CUBE",
+      "to_id": "T0-QC-3D",
+      "kind": "comparison-not-identity",
+      "label": "cubic cell refinement is a geometric control",
+      "status": "open"
+    },
+    {
+      "from_id": "T0-QC-3D",
+      "to_id": "T1-QC-ACTION",
+      "kind": "prerequisite",
+      "label": "requires physical 3D cell model",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CUBE-H",
+      "to_id": "T1-QC-ACTION",
+      "kind": "control-only",
+      "label": "not a Penrose Hamiltonian",
+      "status": "open"
+    },
+    {
+      "from_id": "R-P0-HK",
+      "to_id": "T1-QC-ACTION",
+      "kind": "control-only",
+      "label": "finite cubic transfer does not prove quasicrystal action",
+      "status": "open"
+    },
+    {
+      "from_id": "T1-QC-ACTION",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "prerequisite",
+      "label": "correct gauge-invariant operator algebra",
+      "status": "open"
+    },
+    {
+      "from_id": "I-PENROSE-SQUARE",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "source-calibration",
+      "label": "2+1D same-observable comparison is a separate test",
+      "status": "open"
+    },
+    {
+      "from_id": "T2-OBSERVABLES",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "prerequisite",
+      "label": "common renormalized probes",
+      "status": "open"
+    },
+    {
+      "from_id": "I-UV-COUPLING",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "blocks",
+      "label": "cubic physical decay itself unproved",
+      "status": "open"
+    },
+    {
+      "from_id": "T3-TIME-COMPARE",
+      "to_id": "T4-OS-LIMIT",
+      "kind": "required-not-sufficient",
+      "label": "OS and nontriviality independent",
+      "status": "open"
+    },
+    {
+      "from_id": "T4-OS-LIMIT",
+      "to_id": "T5-GAP-TRANSFER",
+      "kind": "required",
+      "label": "Hilbert space and dense probe family",
+      "status": "open"
+    },
+    {
+      "from_id": "T3-TIME-COMPARE",
+      "to_id": "T5-GAP-TRANSFER",
+      "kind": "conditional",
+      "label": "common physical decay",
+      "status": "open"
+    },
+    {
+      "from_id": "R-OSBRIDGE",
+      "to_id": "T5-GAP-TRANSFER",
+      "kind": "lemma",
+      "label": "spectral support from Laplace decay",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-LOW-ENERGY-COUNTER",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "warns",
+      "label": "unweighted correlation closeness insufficient",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "T5-GAP-TRANSFER",
+      "to_id": "THEOREM",
+      "kind": "would-imply",
+      "label": "quasicrystal YM mass gap if nontrivial 4D construction exists",
+      "status": "conditional"
+    },
+    {
+      "from_id": "S-SPECTRAL-DIMENSION",
+      "to_id": "I-QG-SPECTRAL-OP",
+      "kind": "model-hypothesis",
+      "label": "graph dimension is not physical gravity operator",
+      "status": "open"
+    },
+    {
+      "from_id": "S-CUT-PROJECT-ZETA",
+      "to_id": "I-QG-SPECTRAL-OP",
+      "kind": "candidate",
+      "label": "finite regularized zeta ≠ gravitational UV finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "I-QG-SPECTRAL-OP",
+      "to_id": "G-GRAV",
+      "kind": "blocks",
+      "label": "physical gravitational path-integral bridge open",
+      "status": "open"
+    },
+    {
+      "from_id": "T0-QC-3D",
+      "to_id": "G-GRAV",
+      "kind": "possible-input",
+      "label": "geometry alone not gravity dynamics",
+      "status": "open"
+    },
+    {
+      "from_id": "T5-GAP-TRANSFER",
+      "to_id": "G-GRAV",
+      "kind": "distinct-objectives",
+      "label": "YM gap never establishes gravity UV finiteness",
       "status": "open"
     }
   ],
@@ -4074,5 +4460,7 @@
   "dual_open_goals": [
     "G-GRAV",
     "THEOREM"
-  ]
+  ],
+  "bridge_contract": "T0–T5",
+  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata"
 }
