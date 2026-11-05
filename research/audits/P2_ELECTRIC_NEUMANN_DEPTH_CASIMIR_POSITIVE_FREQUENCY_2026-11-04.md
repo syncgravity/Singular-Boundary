@@ -1,0 +1,75 @@
+# P2 — Actual corrected-source Schur check, sector-specific Neumann depth, and protected positive-frequency thermodynamic kernels
+
+**Private audit dated 2026-11-04.** Restricted corrected original-link SU(2) finite open straight strip, balanced residual-Gauss high-spin physical source in one independent-face Peter–Weyl nuclear norm. Full proof derivation, 6 executable scripts (including standalone exact Hopf monomial module), logs and checksum manifest are in Library at \`/The Singular Boundary/Proof Audits/p2_neumann_depth_casimir_spectral_2026-11-04.zip\`; expanded full report \`P2_SECTOR_NEUMANN_DEPTH_AND_CASIMIR_SPECTRAL_KERNELS_2026-11-04.md\`. **No large-N≈m² actual physical Schur tensor assembly, necessary Neumann-depth lower bound, interacting infinite-volume automorphism group, uniform excitation gap, Borel/OS continuum construction or four-dimensional Yang–Mills mass gap.**
+
+## P-63: Certified sufficient actual-output electric inverse depth, and the first direct physical Schur bridge
+
+For even N≥4, high-spin m≥3, a separately gauge-invariant singleton magnetic insertion at j, and one of the disjoint CG output sectors l=m±1, set
+\[
+D_l=3(N-1)+l(l+2),\qquad K_{j,l}=D_l I+H_{j,l}.
+\]
+Its previously proved HS-superoperator contraction norm is **bounded above** (not necessarily equal) by
+\[
+\theta_{\mathrm{int},l}={3(N-3)+2\sqrt{3l(l+2)}\over2D_l},
+\qquad \theta_{\mathrm{end},l}={3(N-2)+\sqrt{3l(l+2)}\over2D_l}.
+\]
+Let θ*=maximum of the four sector/location upper bounds, θ*<1/2. The exact Fourier Hilbert dimension is d_l=2^(N−1)(l+1). The previous P-44 direct **physical Gauss-twirled** source theorem supplies \(\|Y_{j,l}\|_2\le(5/2)(m+2)\sqrt{(m+1)/(N+1)}\). For the actual full electric inverse \(X=K^{-1}Y\) and its q-term Neumann approximant \(X_{[q]}=D_l^{-1}\sum_{p=0}^q(-H/D_l)^pY\), geometric S₂ summation, then \(\|T\|_1\le\sqrt{d_l}\|T\|_2\), give
+\[
+\|X-X_{[q]}\|_1\le{\sqrt{d_l}\over D_l}{\theta_{j,l}^{q+1}\over1-\theta_{j,l}}\|Y_{j,l}\|_2.
+\]
+With exact first-moment PW sector weights \(w_l=(l+1)^2/[4(m+1)^3]\), summing **all N physical sites and both output sectors** yields the conservative complete inverse error envelope (history factor e^(−κ) omitted):
+\[
+\boxed{\Delta_q\le B_{N,m}2^{(N-1)/2}{\theta_*^{q+1}\over1-\theta_*},}
+\]
+\[
+\boxed{B_{N,m}={5N(m+2)\over2(3N+m^2-4)}
+\sqrt{{m+1\over N+1}}\,{m^{5/2}+(m+2)^{5/2}\over4(m+1)^3}.}
+\]
+This is **sufficient**, not a necessary Neumann depth, and may be much looser than a cancellation-sensitive trace-nuclear bound. With N=m²+O(1) even and fixed desired absolute error ε>0,
+\[
+\boxed{\theta_*\to3/8,\qquad q_{\mathrm{sufficient}}\sim{N\over 2\log_2(8/3)}\approx0.3533475263\,N.}
+\]
+For ε=10^-6 the explicit upper envelope yields q=20,22,30,53,163,594,2307,9124 at (m,N)=(3,10),(4,16),(6,36),(10,100),(20,400),(40,1600),(80,6400),(160,25600). These displayed integers are from ordinary floating-log rounding; any rigorous numerical *integer* certificate at a tight rounding boundary requires interval logs. The exact symbolic inequality remains proven. Fixed-q polynomial arithmetic for P-60 overlaps does **not** ensure an efficient full physical inverse when this conservative sufficient q grows linearly in N.
+
+**Genuine physical source bridge:** An independent N=2, m=3 **corrected original-link** Poisson source was built by original-link K, inner chi_3 insertion and exact CG projection, not arbitrary product-tensor selection. P-60 exact rational–radical projected Wigner Gram coefficients recover the true **Gauss-invariant** q=0 Schur trace norms. For output l=2 the total-spin sector traces are (5/4,−5/2) and \(\|Y\|_1=15/4=3.75\); for l=4 they are (7/2,−9/4) and \(\|Y\|_1=23/4=5.75\). Both agree with independently dense Gauss-twirled physical Fourier matrices. The actual full corrected electric inverse was separately solved on each small Fourier block; its measured nuclear q-remainder is below the sector-specific bound for q=0,1,4,8 in each channel. These **small-width ordinary-precision regressions** verify a direct connection from actual Poisson coefficients to P-60 Schur norms and the inverse tail, but do not compute N=m² physical response.
+
+## P-64: Subsequential positive-energy temporal correlations for protected Casimir observables
+
+Fix real λ and let ψ_(N,λ) be the true unique positive finite-strip ground eigenvector, E_N its energy (P-49). For each anchor J=1,…,N place it on translated interval I_(N,J)=[1−J,N−J]⊂ℤ and tensor the normalized constant Haar vector Ω outside, obtaining \(\Psi_{N,J}\) in the reference infinite tensor product. Define **only the decoupled anchored operator** \(h_{N,J}=H_{I_{N,J}}^{\mathrm{finite}}\otimes I_{\mathrm{outside}}-E_N\ge0\), not an infinite-strip interacting Hamiltonian. Each \(h_{N,J}\Psi_{N,J}=0\).
+
+Let 𝒞 be the countably generated norm-separable algebra of finite-support bounded joint spectral functions of the face Casimirs, closed in norm (P-62). For \(F=f(C_i:i\in W)\), \([K_{N,J},F]=0\) even across original-link electric face couplings, and
+\[
+\boxed{\|[h_{N,J},F]\|\le L_F:=2|\lambda|\,|W|\,\|F\|, \quad
+\|h_{N,J}F\Psi_{N,J}\|\le L_F.}
+\]
+For Borel B⊂[0,∞) define an averaged **matrix-positive** excitation spectral measure
+\[
+\boxed{\mu_N^{F,G}(B)={1\over N}\sum_{J=1}^N
+\langle F\Psi_{N,J},\mathbf1_B(h_{N,J})G\Psi_{N,J}\rangle.}
+\]
+Every finite matrix \((\mu_N^{F_a,F_b}(B))_{a,b}\) is positive semidefinite. Its diagonal excitation second moments satisfy
+\[
+\boxed{\int_0^\infty E^2\,d\mu_N^{F,F}(E)\le L_F^2, \qquad
+\mu_N^{F,F}([\Lambda,\infty))\le L_F^2/\Lambda^2.}
+\]
+Cross tails follow from positivity/Cauchy–Schwarz. Uniform spectral tightness and diagonal extraction on a countable norm-dense Casimir algebra therefore yield **one** subsequence N_k with positive matrix-valued weak spectral limits \(\mu_\infty^{F,G}\) supported in [0,∞). It can refine a P-55 locally normal thermodynamic quantum-state subsequence. The total spectral mass retains the actual limiting local state:
+\[
+\mu_\infty^{F,G}([0,\infty))=\omega_\infty(F^*G).
+\]
+The positive-frequency kernels
+\[
+\boxed{C_\infty^{F,G}(t)=\int_0^\infty e^{-itE}\,d\mu_\infty^{F,G}(E)}
+\]
+are continuous and positive-definite, and obey the strip-width-independent temporal modulus
+\[
+\boxed{|C_\infty^{F,G}(t)-C_\infty^{F,G}(0)|\le|t|\,\|F\|L_G.}
+\]
+A positive-frequency Hilbert-space spectral realization exists by the matrix-valued Kolmogorov/GNS construction; the identity vector has zero frequency. This gives a **protected positive-energy temporal correlation sector**, but **NOT** an automorphism group on the interacting infinite-volume spatial observable algebra. The finite anchors have *decoupled* Hamiltonians; multiplicative Heisenberg covariance, a common interacting generator/core, and nonzero uniform spectral gap all remain unproved. The kernel may support arbitrarily small positive excitation frequencies.
+
+**Executed checks:** one-face actual Gauss-invariant SU(2) Jacobi Hamiltonian at λ=0.25,1,2,4, Fourier cutoffs 12,24,48 and four Casimir spectral projectors each. The finite positive excitation spectral matrices, second moment \(\|hF\psi\|^2=\|[H,F]\psi\|^2\), and temporal Lipschitz estimates all pass; these do not establish thermodynamic dynamics or a gap.
+
+## Reproducibility and next gates
+
+The expanded Library archive includes \`verify_neumann_depth.py\`, \`verify_sector_contraction.py\`, \`verify_actual_q0_schur.py\`, \`verify_positive_energy_kernel.py\`, \`verify_casimir_spectral_measure.py\`, the exact Hopf tensor projector module, and all execution logs; SHA-256 and ZIP integrity checks pass.
+
+**Next physical:** build the actual corrected original-link tensor source at N≈m² for P-60, compute spin-aligned Gram traces at useful q, and substantially sharpen the conservative S₂→S₁ full-inverse remainder. **Next quantum:** prove the resulting positive-frequency kernels arise from one interacting infinite-volume automorphism group or suitable dynamical representation with a validated generator core, and determine whether a uniform gap exists. Signed Borel continuation, reflection positivity and 4D continuum mass gap remain **OPEN**.
