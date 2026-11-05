@@ -4,6 +4,14 @@
 
 > **Scientific status (November 4, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
+## Research identity — Penrose hypothesis, periodic controls, two open goals
+
+**Original dissertation hypothesis (primary):** Fibonacci / Penrose P3 spectral geometry and the coupled-ℤ⁵ hidden-domain proposal, investigated for possible consequences for ultraviolet gravitational quantities and quantum dynamics. **Experimental control:** the 2D square spatial lattice, area-matched in the archived Stage 7/26 **2+1D SU(2)** Monte Carlo campaign. **Later 3D control/reference:** cubic lattice, whose rigorous geometric refinement and finite SU(2) operator results do NOT replace or certify the coupled-ℤ⁵ physical model.
+
+A **separate** 4D SU(2) Yang–Mills existence and positive mass-gap objective is also pursued. Neither continuum goal follows from the other's finite numerical evidence or mathematical operator lemmas. The Stage 26 scalar data are NOT the Paper 2 spectral-zeta experiment. Both remain **OPEN**.
+
+[Read the 2026-11-05 source-corrected P0 hierarchy](docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md) · [Open the Penrose-first Proof Atlas](observatory/graph.html)
+
 ## Research Observatory
 
 > **P0 finite-action extension, draft only:** Branch `audit/2026-11-04-p0-heat-kernel-transfer` proposes Observatory **v2.27-draft** (80 curated nodes, 122 typed edges): a finite cubic SU(2) temporal heat-kernel / spatial Wilson same-action transfer candidate and a conditional summable one-step RG-to-gap criterion. See [P0 audit](research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md) and the [Proof Atlas](observatory/graph.html). All P0–P5 continuum gates remain **OPEN**. No Git LFS binary migration, claim promotion, merger or public deployment was performed.
