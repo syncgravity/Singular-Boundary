@@ -39,11 +39,11 @@ For each anchor with W+ wholly inside the N-strip, the finite ground-state varia
 \]
 At most s+2 of N anchors straddle the strip endpoints. Smooth finite rank makes all on-window second-order commutators bounded; the remaining neighbor-crossing commutators contain only a bounded operator times one external first-order generator. Since each such generator is form-bounded by \(\sqrt{C_i}\), the **total** finite-strip kinetic-energy estimate \(\sum_i\langle C_i\rangle_{\psi_N}\le N|\lambda|/2\), Cauchy–Schwarz, and O(s) exceptional anchors imply
 \[
-\boxed{\omega_N(A^*\delta(A))\ge -C_A(s+2)/N-C_{A,\lambda,W}/\sqrt N.}\tag{3}
+\boxed{\operatorname{Re}\omega_N(A^*\delta(A))\ge -C_A(s+2)/N-C_{A,\lambda,W}/\sqrt N.}\tag{3}
 \]
 The constants are finite and independent of N.
 
-Pass to the P-55 local trace-class limit: each \(\delta(A)\) has bounded smooth finite-window terms plus finite sums \(B_jR_j^a\) involving an adjacent **external** site and bounded B_j acting on W. As \(R_j^a\) commutes with its local Casimir \(C_j\) and \(|R_j^a|\lesssim C_j^{1/2}\), its high-Casimir part is controlled by \(C_j/\sqrt{\Lambda}\). Uniform local kinetic-energy bounds make these **first-order** tails uniformly negligible, while the spectrally cut-off operators are bounded and converge under local trace-norm convergence. Thus the limiting form exists and
+The same exceptional-anchor estimate for the single commutator delta(B)=[H,B] yields omega_infty(delta(B))=0 for every smooth finite-rank local B, establishing stationarity on this form core. In particular B=A* A is again smooth finite-rank, so omega_infty(delta(A* A))=0 and the Leibniz/adjoint identities force omega_infty(A*delta(A)) to be real. This corrects the finite-N inequality, whose exceptional anchor terms need not be real. Pass to the P-55 local trace-class limit: each \(\delta(A)\) has bounded smooth finite-window terms plus finite sums \(B_jR_j^a\) involving an adjacent **external** site and bounded B_j acting on W. As \(R_j^a\) commutes with its local Casimir \(C_j\) and \(|R_j^a|\lesssim C_j^{1/2}\), its high-Casimir part is controlled by \(C_j/\sqrt{\Lambda}\). Uniform local kinetic-energy bounds make these **first-order** tails uniformly negligible, while the spectrally cut-off operators are bounded and converge under local trace-norm convergence. Thus the limiting form exists and
 \[
 \boxed{\omega_\infty(A^*\delta(A))\ge0\quad\text{for every smooth finite-rank local }A.}\tag{4}
 \]
