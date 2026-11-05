@@ -12,6 +12,12 @@ A **separate** 4D SU(2) Yang–Mills existence and positive mass-gap objective i
 
 [Read the 2026-11-05 source-corrected P0 hierarchy](docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md) · [Open the Penrose-first Proof Atlas](observatory/graph.html)
 
+## Proof status and model-transfer boundary — November 5, 2026
+
+The mathematical-physics Proof Atlas **v2.29-draft** maps two distinct open problems: (i) existence and a strictly positive physical mass gap for nontrivial 4D SU(2) Yang–Mills, and (ii) a physically correct quasicrystalline spectral operator and ultraviolet quantum-gravity dynamics. The cubic 3D SU(2) regulator has exact geometry and finite physical results, **but does not have a proved weak-bare-coupling interacting continuum gap**. Its available sufficient strong-coupling bounds fail along g₀(h)→0. A Penrose extension requires separate physical 3D regulator, same-action operator, renormalized observables, uniformly controlled interacting correlations and nontrivial OS reconstruction.
+
+The [interactive physics atlas](observatory/graph.html) opens on the **Cubic → Quasicrystal** view; [reader guide](observatory/MATHEMATICAL_PHYSICS_GUIDE.md) and [explicit six-gate transfer audit](docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md) explain the necessary theorems. Explanatory graph node names use mathematical objects, **not source paper/document names**; historical files remain available as immutable provenance. All P0–P5 gates are **OPEN**. The 101 new curated nodes and 189 links do not recertify the 740 theorem-index paths or 78 prior proof pathways. This is a stacked private review branch only, not a merged canonical change or public deployment.
+
 ## Research Observatory
 
 > **P0 finite-action extension, draft only:** Branch `audit/2026-11-04-p0-heat-kernel-transfer` proposes Observatory **v2.27-draft** (80 curated nodes, 122 typed edges): a finite cubic SU(2) temporal heat-kernel / spatial Wilson same-action transfer candidate and a conditional summable one-step RG-to-gap criterion. See [P0 audit](research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md) and the [Proof Atlas](observatory/graph.html). All P0–P5 continuum gates remain **OPEN**. No Git LFS binary migration, claim promotion, merger or public deployment was performed.
