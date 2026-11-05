@@ -1,0 +1,269 @@
+{
+  "schema": "singular-boundary.dataset-manifest.v1",
+  "generated_at": "2026-11-04 (research date; ingestion UTC may be November 5)",
+  "scope": "Files attached in current Project context. Hashes checked against bytes, not physical derivation.",
+  "files": [
+    {
+      "file": "penrose_seed101_stage26.zip",
+      "bytes": 645269,
+      "sha256": "db0bdb04d0073c153332aa6f687dcd7db835b3f3009d49f411f85dd36ff0217e",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed101_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "penrose_seed211_stage26.zip",
+      "bytes": 652247,
+      "sha256": "2e7cecb2bae8a2c9a03b86ad8511fe36fc760cca4fdac0968cd9aa4f7bd1dfad",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed211_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "penrose_seed307_stage26.zip",
+      "bytes": 651680,
+      "sha256": "773f443d7c74a4a1ec58d46393cf7349cf354c22e4cb00eef393f73ae649e0d0",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed307_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "penrose_seed419_stage26.zip",
+      "bytes": 651945,
+      "sha256": "19e45b4b8f081e838ec46deea852e3b9c01a5e9fd4550060d81ddce7b5a93b7c",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed419_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "square_seed101_stage26.zip",
+      "bytes": 649489,
+      "sha256": "b41aee48bf589ff28ce86d77b416528a0f6c7a602781a846c84e5cae125ae9d0",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed101_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "square_seed211_stage26.zip",
+      "bytes": 655198,
+      "sha256": "9add4dd034a32f5f22536910f3baf5d73ebfc9a79cb63c9661644548842fe675",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed211_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "square_seed307_stage26.zip",
+      "bytes": 655673,
+      "sha256": "1136d4e3a95ae55b0ac0f57a459708af95992527d4c147a1a704b9405a51efca",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed307_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "square_seed419_stage26.zip",
+      "bytes": 650209,
+      "sha256": "d737863b5f8316242b70810079a0a90e437dbdb73831f72855a6803d53dc9a41",
+      "kind": "stage26",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed419_stage26.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem",
+      "zip_members": 102,
+      "zip_crc_ok": true
+    },
+    {
+      "file": "penrose_seed101_sweep10000_multihit.npz",
+      "bytes": 49382,
+      "sha256": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed101_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "penrose_seed211_sweep10000_multihit.npz",
+      "bytes": 49351,
+      "sha256": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed211_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "penrose_seed307_sweep10000_multihit.npz",
+      "bytes": 49380,
+      "sha256": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed307_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "penrose_seed419_sweep10000_multihit.npz",
+      "bytes": 49359,
+      "sha256": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed419_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "square_seed101_sweep10000_multihit.npz",
+      "bytes": 45438,
+      "sha256": "770af817fd89c0279b1e39e27582ecb3f7acc48f8ca514bce5b3ee22c4ec07a0",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed101_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "square_seed211_sweep10000_multihit.npz",
+      "bytes": 45454,
+      "sha256": "65d893482f234179c319138c5f2c6ca40bc405ab45f95143a377ce0f4a938e25",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed211_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "square_seed307_sweep10000_multihit.npz",
+      "bytes": 45466,
+      "sha256": "e81dd6674894210161649274ceb1f256d9a3638e394919d051b44846a388f0e0",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed307_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "square_seed419_sweep10000_multihit.npz",
+      "bytes": 45453,
+      "sha256": "38b8df95d87c614c463ee9fbc232fdc03ba321d6cab3cf7e5243b063c970098d",
+      "kind": "sweep10000",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/square_seed419_sweep10000_multihit.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "penrose_seed101_stage26_full.zip",
+      "bytes": 52884778,
+      "sha256": "6cfa12935428533cfeaff40a467705d632b19ede07b7f30e0bb9fb7a0cc68657",
+      "kind": "full_archive",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/penrose_seed101_stage26_full.zip",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "global_whitney_11face.npz",
+      "bytes": 8448,
+      "sha256": "d7bd716dcfa5ef640aabb824099ad614b4d64bfb781a3cbf4cc484bb8e902fbf",
+      "kind": "whitney",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/global_whitney_11face.npz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "Sharpe_dissertation_v10.7.tar.gz",
+      "bytes": 7004477,
+      "sha256": "c405acd6daa5a0a923429ab659b122b22231787d7a30e97db7f2974f278354d1",
+      "kind": "dissertation",
+      "library_path": "/The Singular Boundary/Data/Original Uploads/Sharpe_dissertation_v10.7.tar.gz",
+      "git_lfs_state": "not_configured",
+      "source_status": "uploaded-source; no cross-model theorem"
+    },
+    {
+      "file": "Branch · Branch · Branch · Branch · Resume 3D Proof Review.txt",
+      "bytes": 3354,
+      "sha256": "4bfd327dd8f38a06d653bf41c7d4c9400a36b96d5560bd9ff323cf6b6e68dcb6",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Branch · Branch · Branch · Branch · Resume 3D Proof Review.txt",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Branch · Branch · Branch · Resume 3D Proof Review.md",
+      "bytes": 818687,
+      "sha256": "8684c4cb776017ea734436207edd896aa89f37ab07cba24fe11aa041e8996e42",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Branch · Branch · Branch · Resume 3D Proof Review.md",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Branch · Branch · Repository review summary.md",
+      "bytes": 244297,
+      "sha256": "9e4c9a2ac442b2796fcad48aeb957f5827e60436ae2f8a19fb4480cb07e13404",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Branch · Branch · Repository review summary.md",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Branch · Read Conversation Content.txt",
+      "bytes": 6253,
+      "sha256": "982ee1b4667e4b1099852408d00211881cc03c9ddc06618efc260485f220b601",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Branch · Read Conversation Content.txt",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Branch · Resume 3D Proof Review.txt",
+      "bytes": 3642,
+      "sha256": "de770b50e6ef3beb1152b4b9f3f9821cad4206fe287ee7e8447c5337282d8134",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Branch · Resume 3D Proof Review.txt",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Restate Proof Objective Status.md",
+      "bytes": 170742,
+      "sha256": "888f14e59c18b49bb259d48464f234f4e53f697dd9f37507cf79f879837b4f0a",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Restate Proof Objective Status.md",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    },
+    {
+      "file": "Resume 3D Proof Review.md",
+      "bytes": 621097,
+      "sha256": "630ca7cadd720a30aeb1f1b6f563bc42fef2326bedb04e6033e3f3c7c62ffe21",
+      "kind": "transcript",
+      "library_path": "/The Singular Boundary/Data/Source Conversations/Resume 3D Proof Review.md",
+      "git_lfs_state": "not_configured",
+      "source_status": "historical transcript; not proof certification"
+    }
+  ],
+  "counts": {
+    "stage26": 8,
+    "sweep10000": 8,
+    "full_archive": 1,
+    "whitney": 1,
+    "dissertation": 1,
+    "transcript": 7
+  },
+  "sweep_checkpoints": {
+    "Stage26_compact": 800,
+    "per_zip": 100
+  }
+}

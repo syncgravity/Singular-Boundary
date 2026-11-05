@@ -4,9 +4,29 @@
 
 > **Scientific status (November 4, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
+## Research identity — Penrose hypothesis, periodic controls, two open goals
+
+**Original dissertation hypothesis (primary):** Fibonacci / Penrose P3 spectral geometry and the coupled-ℤ⁵ hidden-domain proposal, investigated for possible consequences for ultraviolet gravitational quantities and quantum dynamics. **Experimental control:** the 2D square spatial lattice, area-matched in the archived Stage 7/26 **2+1D SU(2)** Monte Carlo campaign. **Later 3D control/reference:** cubic lattice, whose rigorous geometric refinement and finite SU(2) operator results do NOT replace or certify the coupled-ℤ⁵ physical model.
+
+A **separate** 4D SU(2) Yang–Mills existence and positive mass-gap objective is also pursued. Neither continuum goal follows from the other's finite numerical evidence or mathematical operator lemmas. The Stage 26 scalar data are NOT the Paper 2 spectral-zeta experiment. Both remain **OPEN**.
+
+[Read the 2026-11-05 source-corrected P0 hierarchy](docs/research/P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md) · [Open the Penrose-first Proof Atlas](observatory/graph.html)
+
+## Proof status and model-transfer boundary — November 5, 2026
+
+The mathematical-physics Proof Atlas **v2.29-draft** maps two distinct open problems: (i) existence and a strictly positive physical mass gap for nontrivial 4D SU(2) Yang–Mills, and (ii) a physically correct quasicrystalline spectral operator and ultraviolet quantum-gravity dynamics. The cubic 3D SU(2) regulator has exact geometry and finite physical results, **but does not have a proved weak-bare-coupling interacting continuum gap**. Its available sufficient strong-coupling bounds fail along g₀(h)→0. A Penrose extension requires separate physical 3D regulator, same-action operator, renormalized observables, uniformly controlled interacting correlations and nontrivial OS reconstruction.
+
+The [interactive physics atlas](observatory/graph.html) opens on the **Cubic → Quasicrystal** view; [reader guide](observatory/MATHEMATICAL_PHYSICS_GUIDE.md) and [explicit six-gate transfer audit](docs/research/YM_CUBIC_PENROSE_TRANSFER_AND_INFRARED_GATES_2026-11-05.md) explain the necessary theorems. Explanatory graph node names use mathematical objects, **not source paper/document names**; historical files remain available as immutable provenance. All P0–P5 gates are **OPEN**. The 101 new curated nodes and 189 links do not recertify the 740 theorem-index paths or 78 prior proof pathways. This is a stacked private review branch only, not a merged canonical change or public deployment.
+
 ## Research Observatory
 
-**Research Observatory current source version: v2.24.** This private source tree contains 78 distinct proof pathways; its Observatory page header and footer share this version. GitHub Pages publication remains disabled/manual-only, and the 4D continuum Yang–Mills mass gap remains **OPEN**.
+> **P0 finite-action extension, draft only:** Branch `audit/2026-11-04-p0-heat-kernel-transfer` proposes Observatory **v2.27-draft** (80 curated nodes, 122 typed edges): a finite cubic SU(2) temporal heat-kernel / spatial Wilson same-action transfer candidate and a conditional summable one-step RG-to-gap criterion. See [P0 audit](research/audits/P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md) and the [Proof Atlas](observatory/graph.html). All P0–P5 continuum gates remain **OPEN**. No Git LFS binary migration, claim promotion, merger or public deployment was performed.
+
+> **Current stacked draft — not merged or deployed:** `audit/2026-11-04-knowledge-graph` proposes Observatory **v2.26-draft** with the [interactive Proof Atlas](observatory/graph.html) (78 curated nodes, 116 typed links, 26 individually hashed source files), closure criteria, and exportable review notes. All P0–P5 continuum gates remain **OPEN**; the older 740-path indexed catalog and 78 proof-path discovery baseline remain distinct and unchanged. No Git LFS upload or Pages deployment has been performed.
+
+> **Draft branch note — not merged or deployed:** `audit/2026-11-04-uniform-continuum-bridge` proposes Research Observatory **v2.25-draft**, with a [uniform theorem integration view](observatory/integration.html) and a [dissertation publication route](docs/research/DISSERTATION_EVOLUTION_AND_PUBLICATION_PLAN_2026-11-04.md). The six-gate continuum theorem remains open, the 740 indexed paths and 78 existing proof pathways are unchanged, and the main branch remains **v2.24** pending review.
+
+**Research Observatory main-branch source version: v2.24.** This private source tree contains 78 distinct proof pathways; its Observatory page header and footer share this version. GitHub Pages publication remains disabled/manual-only, and the 4D continuum Yang–Mills mass gap remains **OPEN**.
 
 **Current P2 error-certified gates:** [physical Gauss-invariant extensive Poisson response brackets and finite-window Borel/Laplace truncation errors](research/audits/P2_CERTIFIED_RESPONSE_BRACKETS_BOREL_LAPLACE_2026-11-04.md). The complete corrected original-link Schatten response is enclosed around a q-order electric Neumann approximation with a sector-dependent geometric error (contraction approaching 3/8 at N~m²). The approximate nuclear norm still needs a scalable computation or dual certificate. Fixed-history local score reconstruction has exact Borel Taylor and small-coupling Laplace-tail estimates, but the allowed coupling decays like L^-2. **No physical same-grade conclusion, global Borel summability, positive interacting continuum gap, or claimed mass-gap solution follows.**
 

@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "claim_scope": "Finite cubical sufficient bound; conditional comparison; NOT a Yang--Mills mass-gap theorem",
+  "physical_normalization": "h=1/n, alpha=g0\u00b2/(2h), beta=2/(g0\u00b2h), F=3 n\u00b2 (n+1), z=4/g0^4",
+  "bound": "Delta >= (3*g0\u00b2/2 -2*F/g0\u00b2)/h; sufficient positivity iff g0^4>4F/3",
+  "table": [
+    {
+      "n": 1,
+      "vertices": 8,
+      "edges": 12,
+      "faces": 6,
+      "cubes": 1,
+      "critical_g0_squared": 2.8284271247461903,
+      "critical_g0": 1.6817928305074292,
+      "exact_g0_fourth_threshold": "8"
+    },
+    {
+      "n": 2,
+      "vertices": 27,
+      "edges": 54,
+      "faces": 36,
+      "cubes": 8,
+      "critical_g0_squared": 6.928203230275509,
+      "critical_g0": 2.6321480259049848,
+      "exact_g0_fourth_threshold": "48"
+    },
+    {
+      "n": 4,
+      "vertices": 125,
+      "edges": 300,
+      "faces": 240,
+      "cubes": 64,
+      "critical_g0_squared": 17.88854381999832,
+      "critical_g0": 4.229485053762256,
+      "exact_g0_fourth_threshold": "320"
+    },
+    {
+      "n": 8,
+      "vertices": 729,
+      "edges": 1944,
+      "faces": 1728,
+      "cubes": 512,
+      "critical_g0_squared": 48.0,
+      "critical_g0": 6.928203230275509,
+      "exact_g0_fourth_threshold": "2304"
+    },
+    {
+      "n": 16,
+      "vertices": 4913,
+      "edges": 13872,
+      "faces": 13056,
+      "cubes": 4096,
+      "critical_g0_squared": 131.93938001976514,
+      "critical_g0": 11.486486844103602,
+      "exact_g0_fourth_threshold": "17408"
+    },
+    {
+      "n": 32,
+      "vertices": 35937,
+      "edges": 104544,
+      "faces": 101376,
+      "cubes": 32768,
+      "critical_g0_squared": 367.65200937843383,
+      "critical_g0": 19.17425381542744,
+      "exact_g0_fourth_threshold": "135168"
+    },
+    {
+      "n": 64,
+      "vertices": 274625,
+      "edges": 811200,
+      "faces": 798720,
+      "cubes": 262144,
+      "critical_g0_squared": 1031.9689917822143,
+      "critical_g0": 32.12427418296348,
+      "exact_g0_fourth_threshold": "1064960"
+    }
+  ],
+  "countermodel": {
+    "cubic_gap_M": 1.0,
+    "comparison_low_energy_m": 0.125,
+    "low_energy_weight_eta": 0.0001,
+    "uniform_unweighted_error_bound": 0.0001,
+    "comparison_spectrum": [
+      0.125,
+      1.0
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "cubic": 1.0,
+        "penrose_analogue": 1.0,
+        "absolute_difference": 0.0,
+        "renormalized_difference_at_M": 0.0
+      },
+      {
+        "t": 1,
+        "cubic": 0.36787944117144233,
+        "penrose_analogue": 0.3679309029175836,
+        "absolute_difference": 5.146174614129029e-05,
+        "renormalized_difference_at_M": 0.0001398875293967098
+      },
+      {
+        "t": 5,
+        "cubic": 0.006737946999085467,
+        "penrose_analogue": 0.006790799347237457,
+        "absolute_difference": 5.285234815198981e-05,
+        "renormalized_difference_at_M": 0.007843983955226135
+      },
+      {
+        "t": 10,
+        "cubic": 4.5399929762484854e-05,
+        "penrose_analogue": 7.404586945552762e-05,
+        "absolute_difference": 2.8645939693042767e-05,
+        "renormalized_difference_at_M": 0.6309688108089024
+      },
+      {
+        "t": 20,
+        "cubic": 2.061153622438558e-09,
+        "penrose_analogue": 8.210560809896956e-06,
+        "absolute_difference": 8.208499656274517e-06,
+        "renormalized_difference_at_M": 3982.4783397576234
+      },
+      {
+        "t": 100,
+        "cubic": 3.720075976020836e-44,
+        "penrose_analogue": 3.726653172078671e-10,
+        "absolute_difference": 3.726653172078671e-10,
+        "renormalized_difference_at_M": 1.0017680273468152e+34
+      }
+    ],
+    "conclusion": "Unweighted all-time error <=eta does NOT transfer the cubic gap M. Exponentially weighted errors are essential for this sufficient transfer route."
+  },
+  "checks": [
+    "exact cell Euler characteristic",
+    "symbolic face-count threshold",
+    "monotonic minimum g0 under refinement",
+    "positive Laplace spectral measures",
+    "arbitrarily small unweighted correlation error does not preserve larger gap"
+  ],
+  "notes": [
+    "This min-max inequality is already recorded in R3-IR-589.",
+    "Countermodel illustrates a missing estimate; it is not a construction of a Penrose Yang--Mills vacuum.",
+    "No finite numerical sample proves infinite-volume or continuum spectral support."
+  ]
+}
