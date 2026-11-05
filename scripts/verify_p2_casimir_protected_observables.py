@@ -18,7 +18,7 @@ C1=np.diag([.75,.75,2,2,2]);W1=np.zeros((5,5),complex)
 W1[1,2]=W1[2,1]=1
 for n in (1,2,4,8,16):
  I=np.eye(n+1)
- H=4*np.kron(C1,I)+n*(n+2)*np.eye(5*(n+1))
+ H=4*np.kron(C1,I).astype(complex)+n*(n+2)*np.eye(5*(n+1))
  for k in range(3):H+=2*np.kron(G1[k],gens(n)[k])
  P=np.kron(P1,I)
  assert np.linalg.norm(H@P-P@H)<1e-11
