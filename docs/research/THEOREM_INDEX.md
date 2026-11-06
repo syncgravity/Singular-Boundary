@@ -1,4 +1,6 @@
-# Complete theorem-record navigator
+# Historical theorem-record navigator — 740-file snapshot
+
+> **Current complete index:** [THEOREM_INDEX_CURRENT.md](THEOREM_INDEX_CURRENT.md) contains **754 of 754 tracked theorem Markdown paths** with their full Git blob hashes in the November 6, 2026 review branch. The **740-record navigator below is preserved as a dated historical snapshot**, not the live index. Discovery is not theorem certification.
 
 > **Merged repository update — November 4, 2026:** `main` now contains **740 theorem Markdown records**, including **202 original theorem files merged from the historic audit branch without changing their contents**. The 335-file category index below is retained as a historical baseline; the additional 405 files are linked in the appendix. This is a filename index, **not** mathematical certification. Conflicting historical claim IDs remain source-qualified and unresolved; see the claim identity crosswalk.
 
