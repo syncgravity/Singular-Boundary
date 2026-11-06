@@ -58,6 +58,7 @@ const bridgeXY={
 'R-CUBIC-FINITE-GAP':[1220,740],'I-UV-COUPLING':[1520,740],'THEOREM':[1840,740],
 'R-WEAK':[1280,970],'R-LOW-ENERGY-COUNTER':[1610,970],
 'R-CUBIC-3D-SHELL':[970,1180],'W-3D-WILSON-TIME':[1320,1210],
+'R-WILSON-EXP-SHELL':[1060,1370],'R-TEMPORAL-MEMORY':[1440,1370],
 'P0':[480,1040],'P2':[800,1040],'P4':[1100,1040],'P5':[1850,1020]
 };
 function positionFor(n){if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
