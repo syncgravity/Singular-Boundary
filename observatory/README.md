@@ -1,4 +1,15 @@
-# Research Observatory v2.40-draft — Mathematical Physics Proof Atlas
+# Research Observatory v2.41-draft — Mathematical Physics Proof Atlas
+
+## Branch retirement and research preservation
+
+The November 6 research consolidation was history-preserving. The **72 integrated historical branch refs** still visible in GitHub are cleanup candidates, **not** 72 unmerged mathematical theories. Three independent PRs (#55, #56, #74) and one independent homogeneous-flow branch remain **unmerged and protected**. [Branch lifecycle and full SHA ledger](../docs/research/BRANCH_LIFECYCLE_2026-11-06.md) describes the distinction. To retire verified integrated refs, run the manual GitHub Actions **Retire fully merged branch references** workflow, first in dry-run mode, then with an explicit deletion confirmation. It verifies live ancestry and protects open PRs; it never runs automatically or deletes independent research.
+
+## Current Observatory coverage · 2026-11-06
+
+**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.41-draft) has **139 curated mathematical-physics nodes and 314 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
+
+Run `python research/scripts/verify_theorem_index.py --repo .` and `python observatory/tools/sync_theorem_catalog.py --check` in the checked-out repository to validate the full source inventory and ensure the pages, static search catalog, and client Proof Atlas agree. These checks are enforced in the GitHub pull-request workflow. Adding a theorem requires updating the source-hashed registry, historical navigator appendices, and generated current/Observatory catalog; never infer certification from indexing.
+
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
@@ -16,7 +27,7 @@ See [exact 3D transverse-shell report](../research/theorems/R3_CUBIC_FIRST_TRANS
 - [Uniform interacting theorem integration](integration.html) — the conditional physical-time spectral-support bridge, common-regulator requirements and explicit continuum obligations.
 - [Mathematical-physics reader guide](MATHEMATICAL_PHYSICS_GUIDE.md) — precise meanings of models, results, obstacles, interfaces, review status, and the six cross-model T0–T5 conditions.
 
-The **740-record theorem index** and **78 previously identified proof pathways** are historical discovery baselines, not independently accepted proof counts; they remain unchanged. The Atlas has **26 immutable original-file entries** with SHA-256 digests and Library paths, covering the Penrose and square ensembles, Whitney data, source papers and historical source records. The actual original binary/transcript bytes remain in **Library → The Singular Boundary → Data**, not in ordinary Git, until an independently verified Git LFS migration is configured.
+The **740-record theorem baseline** and **78 previously identified proof pathways** remain separate historical discovery references. The **current searchable theorem source inventory contains 754 files**, not 740. None of these totals independently certifies any proof. The Atlas has **26 immutable original-file entries** with SHA-256 digests and Library paths, covering the Penrose and square ensembles, Whitney data, source papers and historical source records. The actual original binary/transcript bytes remain in **Library → The Singular Boundary → Data**, not in ordinary Git, until an independently verified Git LFS migration is configured.
 
 ### Model boundaries
 

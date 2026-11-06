@@ -1,0 +1,45 @@
+name: Retire fully merged branch references (manual approval)
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Dry run or retire fully merged branch refs"
+        type: choice
+        required: true
+        default: dry-run
+        options:
+          - dry-run
+          - retire
+      confirmation:
+        description: "For retire, type DELETE_MERGED_BRANCHES exactly"
+        type: string
+        required: false
+permissions:
+  contents: write
+  pull-requests: read
+jobs:
+  verified-branch-retirement:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify explicit authorization
+        shell: bash
+        run: |
+          if [[ "${{ inputs.operation }}" == retire && "${{ inputs.confirmation }}" != DELETE_MERGED_BRANCHES ]]; then
+            echo "Retire requires exact DELETE_MERGED_BRANCHES confirmation" >&2
+            exit 2
+          fi
+      - name: Check candidate branches without deletion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: bash scripts/safe_prune_merged_branches.sh --dry-run
+      - name: Retire only verified merged and non-open-PR branches
+        if: ${{ inputs.operation == 'retire' && inputs.confirmation == 'DELETE_MERGED_BRANCHES' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: printf 'DELETE\n' | bash scripts/safe_prune_merged_branches.sh --delete

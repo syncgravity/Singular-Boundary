@@ -250,3 +250,11 @@ attach_cartan_nonlinear_smoothing(ROOT)
 # All-configuration finite non-Abelian cubic plaquette influence; no physical continuum bound.
 from add_full_nonabelian_locality_graph import attach as attach_full_nonabelian_locality
 attach_full_nonabelian_locality(ROOT)
+
+# Keep current searchable theorem catalog and client Atlas metadata synchronized
+# with the canonical source-hashed registry after all source-qualified overlays.
+from sync_theorem_catalog import expected as theorem_catalog_outputs, check_nav as check_theorem_nav, LIVE as live_theorem_registry
+import json as theorem_json
+check_theorem_nav(theorem_json.loads(live_theorem_registry.read_text(encoding='utf-8')))
+for theorem_output_path, theorem_output_content in theorem_catalog_outputs()[0].items():
+    theorem_output_path.write_text(theorem_output_content,encoding='utf-8')

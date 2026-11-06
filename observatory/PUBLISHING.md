@@ -2,7 +2,7 @@
 
 Public URL after GitHub Pages activation: https://syncgravity.github.io/singular-boundary/
 
-This repository is **private**; GitHub Pages static deployments can nevertheless be **public** depending on account and plan. Only `observatory/` is uploaded by the workflow. The static site exposes 740 filenames, source Git hashes, 12 annotated summaries, nine typed implication records, historical audit summaries and repository URLs; it does **not** include private source bodies, uploaded binaries, or credentials. Private GitHub links require authenticated access.
+This repository is **private**; GitHub Pages static deployments can nevertheless be **public** depending on account and plan. Only `observatory/` is uploaded by the workflow. The static site exposes 754 source-linked theorem filenames (740 historical baseline plus 14 later sources), curated proof-status records, historical audit summaries and repository URLs; it does **not** include private source bodies, uploaded binaries, or credentials. Private GitHub links require authenticated access.
 
 1. Open **Settings → Pages** for `syncgravity/singular-boundary`.
 2. Under **Build and deployment**, choose **GitHub Actions**.
