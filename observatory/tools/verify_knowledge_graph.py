@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -165,6 +165,17 @@ def main():
   check(node['G-GRAV']['status']=='open','separate gravity UV objective remains open')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'no YM continuum gate promoted')
   check(any(x['from_id']=='R-PLANAR-CARTAN-EMBED' and x['to_id']=='W-FULL-NONABELIAN-PHYS-SMOOTHING' and x['status']=='open' for x in e),'Haar-null sector restriction must be explicit')
+ if g['version']=='v2.40-draft':
+  check(len(n)==139 and len(e)==313,'non-Abelian tube graph count')
+  check(node['R-SU2-NONABELIAN-TUBE']['status']=='finite','finite classical tube only')
+  check(node['R-SU2-TUBE-VACUUM-MEASURE']['status']=='finite','finite true vacuum probability only')
+  check(node['W-SU2-TYPICAL-FLOW']['status']=='open','typical nonabelian physical flow remains open')
+  check(node['W-FULL-NONABELIAN-PHYS-SMOOTHING']['status']=='open','true vacuum non-Abelian uniformity open')
+  check(g.get('current_theorem_paths')==754 and g.get('current_audit_paths')==62,'live theorem/audit index count')
+  check(g.get('indexed_theorem_paths')==740 and g.get('theorem_inventory')=='docs/research/THEOREM_INDEX_CURRENT.json','historic snapshot preservation and source index pointer')
+  check(node['G-GRAV']['status']=='open','gravity UV remains OPEN')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'P0-P5 continuum remain OPEN')
+  check(any(x['from_id']=='R-SU2-TUBE-VACUUM-MEASURE' and x['to_id']=='W-SU2-TYPICAL-FLOW' and x['status']=='open' for x in e),'nonuniform vacuum probability warning visible')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
