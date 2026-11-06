@@ -21,7 +21,7 @@ def attach(root:Path):
  assert len(g['nodes'])==139 and len(g['edges'])==313
  assert g['indexed_theorem_paths']==740 and sum(n['kind']=='dataset' for n in g['nodes'])==26
  assert all(n['status']=='open' for n in g['nodes'] if n['kind'] in ('gate','goal'))
- p.write_text(json.dumps(g,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')
+ p.write_text(json.dumps(g,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  (root/'knowledge-graph-data.js').write_text('window.SB_KNOWLEDGE_GRAPH='+json.dumps(g,ensure_ascii=False,separators=(',',':'))+';\\n',encoding='utf8')
  return g
 if __name__=='__main__':
