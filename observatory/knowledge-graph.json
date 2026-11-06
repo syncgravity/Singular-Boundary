@@ -7,7 +7,7 @@
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-full-nonabelian-locality-and-index",
+  "git_branch": "main",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -751,12 +751,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "740 theorem paths in frozen Observatory catalog",
+      "title": "754 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
-      "summary": "Discovery index only; most theorem bodies were not independently audited. No automatic mathematical edges inferred.",
-      "detail": "Evidence statement is restricted to the exact cited model, domain and quantifiers. A source-linked record is not a review-board certification.",
+      "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
+      "detail": "Current source count 754, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -770,6 +770,12 @@
           "path": "docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md",
           "git_blob_sha": "336554fd07a482782757845ee1d468a67b19f40b",
           "url": "https://github.com/syncgravity/singular-boundary/blob/336554fd07a482782757845ee1d468a67b19f40b/docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md"
+        },
+        {
+          "title": "Complete current theorem source registry",
+          "path": "docs/research/THEOREM_INDEX_LIVE.json",
+          "git_blob_sha": "3e8676510ff3b7643576b3f11d1423091733f891",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/3e8676510ff3b7643576b3f11d1423091733f891/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
