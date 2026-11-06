@@ -79,6 +79,20 @@ def expected():
     graph['complete_theorem_index']='docs/research/THEOREM_INDEX_LIVE.json'
     graph['theorem_index_status']='source-file-indexed; no proof certification inferred'
     graph['version']='v2.41-draft'
+    graph['git_branch']='main'
+    node=next((n for n in graph['nodes'] if n['id']=='R-INDEX'),None)
+    assert node is not None, 'Proof Atlas source-index node required'
+    node['title']='%d current indexed theorem source files (%d historical baseline)'%(cat['count'],live['baseline_historical_count'])
+    node['summary']='All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.'
+    node['detail']='Current source count %d, historical discovery baseline %d. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.'%(cat['count'],live['baseline_historical_count'])
+    import hashlib
+    raw=LIVE.read_bytes()
+    blob_sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\\0'+raw).hexdigest()
+    registry_path='docs/research/THEOREM_INDEX_LIVE.json'
+    registry_source={'title':'Complete current theorem source registry','path':registry_path,'git_blob_sha':blob_sha,
+      'url':'https://github.com/syncgravity/singular-boundary/blob/'+blob_sha+'/'+registry_path}
+    node['sources']=[src for src in node.get('sources',[]) if src.get('path')!=registry_path]+[registry_source]
+
     output={
         CAT:CAT_PREFIX+json.dumps(cat,ensure_ascii=False,separators=(',',':'))+';\n',
         CURRENT:current_markdown(cat,live),
