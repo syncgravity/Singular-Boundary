@@ -17,6 +17,12 @@ The original quasicrystalline model (Fibonacci/Penrose/coupled ℤ⁵), its squa
 
 The graph uses mathematical objects and open obligations as readable node names; source document titles, archive names and their hashes are preserved as **provenance**, not rebranded into new mathematical claims. Review flags are browser-local and exportable as JSON. Such notes never close a gate or alter the append-only historical claim ledger.
 
+## New P0/T2 result awaiting mathematical review (2026-11-05)
+
+The next finite-model source checkpoint combines [Haar holonomy-block magnetic loss](../research/theorems/R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md), [exact four-face Wilson-character recovery](../research/theorems/R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md) and [an isolated planar character-convolution law](../research/theorems/R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md). These establish why a one-face kinematic Haar compression discards magnetic information and why a four-face product retains coarse Wilson information at coefficient 1/8. The planar weight also generates higher representations, so the effective action does not remain a single-parameter fundamental Wilson weight.
+
+**Status:** exact finite / planar calculations, pending independent source review. The 101-node v2.29 Atlas, its 189 edges, and all six OPEN YM gates remain unchanged; this is a source-index update rather than a gate promotion or public deployment. Verifiers and source-pinned JSON are in `research/scripts/verify_{haar_block_compression,fine_plaquette_cluster,planar_character_block}_2026_11_05.py` and `docs/evidence/`. The full original-byte package and execution logs reside in Library → The Singular Boundary → Proof Audits → Cubic Haar Blocking 2026-11-05.
+
 ## Reproduce and audit
 
 Open `index.html` and `graph.html` with `catalog.js`, `proofpaths.js`, `audit.js`, `graph.css`, `graph-app.js` and `knowledge-graph-data.js` in one folder. The atlas uses no externally hosted script or stylesheet.
