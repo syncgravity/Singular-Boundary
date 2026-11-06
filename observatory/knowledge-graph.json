@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.31-draft",
+  "version": "v2.32-draft",
   "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-full-wilson-time-memory",
+  "git_branch": "audit/2026-11-06-two-scale-influence-kernel",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3233,6 +3233,150 @@
       "importance": 4,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-TWO-TIME-INFLUENCE",
+      "title": "Exact continuous and discrete SU(2) two-time influence kernel",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Full Wilson/Kogut–Susskind cubic P/Q decomposition yields exact non-Markovian Volterra evolution and a positive Feshbach self-energy; B*B=(beta² F/4)P holds on the full retained boundary space.",
+      "detail": "At each fixed 3D lattice, the eliminated Q sector has memory B*exp(-tD)B and resolvent B*(D+z)^-1 B, while symmetric positive transfer has an all-step convolution recurrence. Memory itself decays with bare electric rate, but full physical gap remains unproved.",
+      "checks": [
+        {
+          "label": "Gauge-invariant retained eight-link holonomy-product algebra",
+          "state": "met",
+          "note": "Coarse and refined spatial meshes use identical physical boundary products"
+        },
+        {
+          "label": "Sharp all-coarse-state offdiagonal magnetic coupling",
+          "state": "met",
+          "note": "SU2 Haar orthogonality across all cubical faces"
+        },
+        {
+          "label": "Exact Volterra, Feshbach and positive discrete transfer memory",
+          "state": "met",
+          "note": "Finite self-adjoint original-link Hamiltonian"
+        },
+        {
+          "label": "Renormalized physical-time infrared exclusion",
+          "state": "open",
+          "note": "Finite bare memory estimates do not control the full Schur complement"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact cubic SU2 non-Markovian P/Q influence and same-region dyadic comparison",
+          "path": "research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md",
+          "git_blob_sha": "fa21e892ba3ad4989564360195e45453c1ca98e0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/fa21e892ba3ad4989564360195e45453c1ca98e0/research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "finite-influence",
+        "physical-time"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-DYADIC-BARE-MEMORY",
+      "title": "Two genuine cubic refinements: bare influence growth and resolvent bounds",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "On the same 2h×2h×h spatial slab, 20 plaquettes at mesh h become 128 at h/2; eight original coarse boundary holonomies are retained via fine-link products. Bare zero-time memory ratio equals (128/5)[g0(h)/g0(h/2)]^4.",
+      "detail": "Sharp operator identity on the matched physical boundary space and interacting vacuum self-energy resolvent sandwich. Raw influence strength is not scale-invariant; this is NOT a renormalized divergence or a mass-gap counterexample.",
+      "checks": [
+        {
+          "label": "Exact 20/128 face and 33/170 edge geometry with equal physical region",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "All distinct face pair orthogonality; 190 and 8128 tests",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Analytic two-scale bare self-energy and full-Wilson finite resolvent bounds",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Small or summably weighted physical two-scale difference",
+          "state": "open",
+          "note": "Existing bare triangle inequality is not small along weak-bare-coupling refinement"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact cubic SU2 non-Markovian P/Q influence and same-region dyadic comparison",
+          "path": "research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md",
+          "git_blob_sha": "fa21e892ba3ad4989564360195e45453c1ca98e0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/fa21e892ba3ad4989564360195e45453c1ca98e0/research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "dyadic-refinement",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-RENORMALIZED-INFLUENCE",
+      "title": "Renormalized gauge-invariant influence/Schur complement across scales",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Replace bare Haar boundary projection with a physically normalized renormalized observable/effective-action dictionary and prove a summable interacting physical-time or low-energy resolvent comparison.",
+      "detail": "The exact finite memory and raw dyadic ratio form a compulsory regression criterion. The large bare coefficient must be treated with running couplings, counterterms, nonlinear recoupling, and vacuum-centering; no uniform physical estimate has been proved.",
+      "checks": [
+        {
+          "label": "Source-derived gauge-invariant observable map at fixed physical support",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Higher-spin and all-time influence channels under genuine spatial refinement",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Summable long-physical-time connected-correlation or resolvent discrepancy",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS reconstruction and dense spectral probes",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact cubic SU2 non-Markovian P/Q influence and same-region dyadic comparison",
+          "path": "research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md",
+          "git_blob_sha": "fa21e892ba3ad4989564360195e45453c1ca98e0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/fa21e892ba3ad4989564360195e45453c1ca98e0/research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "renormalization",
+        "SU2",
+        "influence-kernel",
+        "open"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -4634,6 +4778,62 @@
       "to_id": "T2-OBSERVABLES",
       "kind": "scoped-coarse-character-evidence",
       "label": "no renormalized continuum dictionary",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-TEMPORAL-MEMORY",
+      "to_id": "R-TWO-TIME-INFLUENCE",
+      "kind": "exact-extension",
+      "label": "two-step memory becomes an all-time kernel",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-TWO-TIME-INFLUENCE",
+      "to_id": "R-DYADIC-BARE-MEMORY",
+      "kind": "two-scale-comparison",
+      "label": "same eight physical boundary holonomies",
+      "status": "finite"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-DYADIC-BARE-MEMORY",
+      "kind": "source-model",
+      "label": "genuine 3D dyadic control",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-TWO-TIME-INFLUENCE",
+      "to_id": "W-RENORMALIZED-INFLUENCE",
+      "kind": "required-interface",
+      "label": "bare influence not yet physically renormalized",
+      "status": "open"
+    },
+    {
+      "from_id": "R-DYADIC-BARE-MEMORY",
+      "to_id": "W-RENORMALIZED-INFLUENCE",
+      "kind": "quantitative-warning",
+      "label": "bare coefficient growth requires scale-dependent control",
+      "status": "open"
+    },
+    {
+      "from_id": "W-RENORMALIZED-INFLUENCE",
+      "to_id": "W-3D-WILSON-TIME",
+      "kind": "next-mathematical-step",
+      "label": "full physical-time influence beyond one slab",
+      "status": "open"
+    },
+    {
+      "from_id": "W-RENORMALIZED-INFLUENCE",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-infrared-interface",
+      "label": "uniform physical-time connected comparison missing",
+      "status": "open"
+    },
+    {
+      "from_id": "R-TWO-TIME-INFLUENCE",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "scoped-evidence",
+      "label": "physical renormalized observable dictionary still open",
       "status": "finite"
     }
   ],
