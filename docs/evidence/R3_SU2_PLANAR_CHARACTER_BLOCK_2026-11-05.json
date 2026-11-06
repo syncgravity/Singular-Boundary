@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "Isolated 2D central SU(2) Wilson-character block, not 3D interacting time dynamics",
+  "blocking_formula": "a_n(t)^F / (n+1)^(F-1)",
+  "bessel_coefficient": "a_n(t)=I_n(2t)-I_(n+2)(2t)=(n+1) I_(n+1)(2t)/t",
+  "fundamental_F4_series": "-79*t**10/4320 + t**8/24 - t**6/12 + t**4/8",
+  "highest_weight2_F4_series": "-t**10/432 + t**8/432",
+  "checks": [
+    "5 exact Bessel recurrence identities",
+    "4 planar face counts",
+    "dyadic F4 t^4/8, -t^6/12, t^8/24",
+    "highest-weight 2 t^8/432",
+    "5 numerical positive coefficient checks"
+  ],
+  "samples": [
+    {
+      "t": "1/10",
+      "normalization_a0": 1.005008340281251,
+      "normalized_fundamental_coefficient": 1.2417081512018292e-05,
+      "normalized_label2_coefficient": 2.2918144293558756e-11
+    },
+    {
+      "t": "1/4",
+      "normalization_a0": 1.0315772215635852,
+      "normalized_fundamental_coefficient": 0.00046855497263205783,
+      "normalized_label2_coefficient": 3.3199419297499064e-08
+    },
+    {
+      "t": "1/2",
+      "normalization_a0": 1.13031820798497,
+      "normalized_fundamental_coefficient": 0.0066569702642045,
+      "normalized_label2_coefficient": 7.10195134519647e-06
+    },
+    {
+      "t": "1",
+      "normalization_a0": 1.590636854637329,
+      "normalized_fundamental_coefficient": 0.0703870455822297,
+      "normalized_label2_coefficient": 0.000959916327135009
+    },
+    {
+      "t": "2",
+      "normalization_a0": 4.879732576852225,
+      "normalized_fundamental_coefficient": 0.3750233903025538,
+      "normalized_label2_coefficient": 0.041019047301410684
+    }
+  ],
+  "gate_status": "P0,P2,P4,P5 and Penrose transfer remain OPEN"
+}
