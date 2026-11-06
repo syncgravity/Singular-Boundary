@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -99,6 +99,18 @@ def main():
   check(node['G-GRAV']['status']=='open','quantum gravity open')
   check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'no continuum gate closure')
   check(any(x['from_id']=='W-LOCAL-MARGINAL-UV' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'long-time comparison remains open')
+ if g['version']=='v2.35-draft':
+  check(len(n)==119 and len(e)==245,'local Wilson Fisher graph counts')
+  check(node['R-LOCAL-LINK-ENERGY']['status']=='finite','local no-gap energy certificate scoped')
+  check(node['R-LOCAL-WILSON-FISHER']['status']=='finite','volume-independent but not UV-uniform Fisher')
+  check(node['R-WILSON-THERMO-SUBSEQ']['status']=='finite','only subsequential fixed-h thermodynamic result')
+  check(node['W-UV-UNIFORM-LOCAL-WILSON']['status']=='open','weak-coupling renormalization remains open')
+  check(node['W-LOCAL-MARGINAL-UV']['checks'][0]['state']=='partial','local H1 but not uniform pointwise Harnack')
+  check(node['T2-OBSERVABLES']['status']=='open','no full T2 continuum closure')
+  check(node['I-WILSON-STATIC-TIME-NORM']['status']=='conditional','physical time alignment unproved')
+  check(node['G-GRAV']['status']=='open','gravity UV objective not proved')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'continuum theorem gates remain OPEN')
+  check(any(x['from_id']=='W-UV-UNIFORM-LOCAL-WILSON' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'all-time uniform influence missing')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
