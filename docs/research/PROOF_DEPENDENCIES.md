@@ -1,4 +1,8 @@
 # Proof dependencies and noncircular checkpoints
+## P0–P2 full Wilson exponential plus temporal blocking memory (2026-11-06; finite review)
+
+[Full 3D Wilson shell/time-memory proof](../../research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md) upgrades the prior truncated plaquette weight to **the complete Wilson exponential** on a 2×2×1 spatial cubical slab. Exactly four complementary five-face caps survive at the first transverse support; their SU(2) all-spin character kernel is explicit, with a uniform remainder bound for supports of eight or more. At arbitrary fixed bottom coupling the fifth shell Taylor coefficient is `(∂_b+4a₀'/a₀)Z_planar/16`, and the *same cap* has a seventh-order correction. The finite physical-time Kogut–Susskind heat-kernel transfer is positive, but its Haar-compressed two-step memory satisfies `PT²P−(PTP)²=PT(I−P)TP≥0`; on the 20-face test slab its vacuum leading coefficient is `ε²×5β_h²`. Thus no purely static/Markovian Haar-compressed spatial potential is an exact physical-time blocking rule. This **does not** prove a continuum divergence or positive mass gap; multiscale influence-kernel control and nontrivial 4D OS reconstruction remain OPEN. Source-independent checks are in [the executable verifier](../../research/scripts/verify_wilson_shell_time_2026_11_06.py). The source carries the exact model/coupling domains.
+
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
