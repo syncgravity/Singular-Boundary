@@ -246,3 +246,11 @@ attach_nonlinear_energy(ROOT)
 # Exact invariant Cartan-planar SU2 positive-physical-time nonlinear curvature Nash theorem.
 from add_cartan_nonlinear_smoothing_graph import attach as attach_cartan_nonlinear_smoothing
 attach_cartan_nonlinear_smoothing(ROOT)
+
+# Periodic genuinely noncommuting SU2 classical flow and finite Wilson-vacuum tube.
+from add_nonabelian_homogeneous_graph import attach as attach_nonabelian_homogeneous
+attach_nonabelian_homogeneous(ROOT)
+
+# Keep all theorem paths and exact blob identities discoverable after graph rebuild.
+from build_theorem_catalog import actual_files as theorem_files, write as write_theorem_index
+write_theorem_index(theorem_files())
