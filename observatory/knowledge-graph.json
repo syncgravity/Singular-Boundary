@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-06 (UTC)",
-  "version": "v2.36-draft",
-  "scope": "Finite gauge-equivariant spatial Wilson flow, covariance/Dirichlet test, heat noise no-go and exact SU2 Fisher-gap counterexample; continuum YM/Penrose/gravity remain OPEN.",
+  "build_date": "2026-11-05 (America/Denver)",
+  "version": "v2.37-draft",
+  "scope": "Exact flat-field 3D cubic fixed-physical-radius smoothing and periodic Fourier O(h²) control; nonlinear isolated SU2 plaquette rare-event countercheck. Full nonlinear interacting 4D gap and gravity still OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-wilson-spatial-flow-fisher-gap",
+  "git_branch": "audit/2026-11-05-physical-radius-linearized-cubic-flow",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4105,6 +4105,187 @@
       "importance": 5,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "title": "Flat-field SU(2) cubical curvature heat flow at fixed physical radius",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Exact linearization of spatial Wilson link-gradient flow gives F_h(tau)=exp[-tau d1 d1*/(4h²)]F_h(0). Its curvature heat smoothing bounds are uniform in mesh and open-box volume for every fixed tau>0.",
+      "detail": "Three independent su(2) colors and original-link oriented d1,d0 with d1d0=0. The quadratic curvature energy h³||F||² is linearized-gauge invariant; the result does not control nonlinear commutators, interacting-vacuum probability or quantum physical-time correlations.",
+      "checks": [
+        {
+          "label": "Flat-connection Wilson Hessian equals (d1*d1)/4",
+          "state": "met",
+          "note": "Exact finite Lie-algebra quadratic term"
+        },
+        {
+          "label": "Uniform h,R linearized physical-curvature smoothing",
+          "state": "met",
+          "note": "Spectral theorem for positive d1d1*/h²"
+        },
+        {
+          "label": "Nonlinear gauge-covariant physical-radius flow bound",
+          "state": "open",
+          "note": "Cannot inherit a linearized spectral estimate automatically"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact flat-field cubic physical flow and nonlinear isolated-plaquette countercheck",
+          "path": "research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md",
+          "git_blob_sha": "c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af/research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "linearized",
+        "finite",
+        "fixed-physical-flow"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-PERIODIC-FLOW-FOURIER",
+      "title": "Periodic cubic Fourier control: O(h²) physical-flow multiplier error",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For fixed nonzero transverse Fourier modes, lambda_h=4h^-2 sum_j sin²(pi k_j h), with zero-to-continuum discrepancy at most (4pi⁴h²/3)sum_j k_j⁴; physical heat multipliers converge at O(h²).",
+      "detail": "This is a separate periodic, flat-field, linearized reference. Zero/longitudinal gauge modes are not the transverse curvature branch. It is not a periodic-to-Penrose, interacting-cubic, or physical 4D quantum-field universality theorem.",
+      "checks": [
+        {
+          "label": "Exact periodic cubical curl/Hodge Fourier symbol",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Rigorous fixed-mode O(h²) eigen/multiplier errors",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Uniform nonlinear interacting measure over all modes",
+          "state": "open",
+          "note": "Modewise convergence is not Schwinger-function convergence"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact flat-field cubic physical flow and nonlinear isolated-plaquette countercheck",
+          "path": "research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md",
+          "git_blob_sha": "c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af/research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "periodic",
+        "Fourier",
+        "linearized",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "title": "Nonlinear isolated plaquette: normalized flowed trace escapes to ultraviolet",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P2",
+      "summary": "One exact SU2 four-link plaquette under Haar/free-electric vacuum has Var(x_s)~4sqrt2 epsilon^(3/2), Dirichlet~sqrt2 epsilon^(1/2)/4, epsilon=1-tanh(s); normalized first moment~alpha/(4epsilon), and positive-time correlations vanish as s grows.",
+      "detail": "Only an isolated four-link spatial gradient-flow control, not a fixed-physical-size loop, interacting cubic Wilson vacuum, or Yang–Mills counterexample. Shows that deterministic over-flow plus variance normalization can generate rare-event UV spectral escape despite unit variance.",
+      "checks": [
+        {
+          "label": "Exact nonlinear SU2 isolated-plaquette flow and Haar endpoint asymptotics",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Normalized Haar free-electric positive-time correlation collapses",
+          "state": "met",
+          "note": "Weak L²→0 and compact heat semigroup, not interacting vacuum"
+        },
+        {
+          "label": "Behavior of actual cubic Wilson ground state at fixed physical flow radius",
+          "state": "open",
+          "note": "Unknown"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact flat-field cubic physical flow and nonlinear isolated-plaquette countercheck",
+          "path": "research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md",
+          "git_blob_sha": "c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af/research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "nonlinear",
+        "Haar",
+        "counterexample",
+        "physical-time"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-NONLINEAR-PHYS-RADIUS",
+      "title": "Nonlinear fixed-physical-radius Wilson field and full interacting Schur criterion",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Upgrade the uniform flat-field 3D smoothing to physical 4D gauge-covariant flow and nontrivial true-vacuum covariance, then control complete interacting physical-time shorted forms across h→0 and spatial volume.",
+      "detail": "Required: source-defined 4D regulator, nonlinear curvature estimates stable at s=tau/h², gauge-covariant observable dictionary at fixed physical support, nonvanishing renormalized variance, and long-time/energy-dependent Schur and OS continuum limits. A tight UV spectral moment does not exclude infrared soft states.",
+      "checks": [
+        {
+          "label": "Full nonlinear gauge curvature/tangent estimate uniform at fixed physical radius",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nonzero renormalized true-vacuum covariance of fixed-support 4D flowed Wilson field",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Complete Schur / positive-time connected estimates uniform in h,R",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial OS and positive physical spectral gap independently",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact flat-field cubic physical flow and nonlinear isolated-plaquette countercheck",
+          "path": "research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md",
+          "git_blob_sha": "c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c7d2384ba72e4c8ad2f18a8b1b99f15c949cd1af/research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "renormalization",
+        "open",
+        "4D-flow",
+        "Schur"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -5927,6 +6108,111 @@
       "kind": "necessary-warning",
       "label": "Static UV regularity alone cannot provide spectral exclusion",
       "status": "obstruction"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "kind": "source-model",
+      "label": "Finite 3D open cubic linearized gauge-field control",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "kind": "exact-flat-linearization",
+      "label": "Physical flow heat semigroup on cubical cochains",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "to_id": "R-PERIODIC-FLOW-FOURIER",
+      "kind": "boundary-control-only",
+      "label": "Different periodic cubic reference; same flat linearization",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "to_id": "W-NONLINEAR-PHYS-RADIUS",
+      "kind": "open-nonlinear-extension",
+      "label": "Linear spectral smoothing does not bound interacting nonlinear flow",
+      "status": "open"
+    },
+    {
+      "from_id": "R-PERIODIC-FLOW-FOURIER",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "linear-control-only",
+      "label": "Per-mode UV control not a renormalized interacting field",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-PERIODIC-FLOW-FOURIER",
+      "to_id": "T0-QC-3D",
+      "kind": "distinct-model",
+      "label": "Periodic cubic symbols do not prove quasicrystalline three-space",
+      "status": "open"
+    },
+    {
+      "from_id": "R-GROUP-HEAT-WILSON-NOGO",
+      "to_id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "kind": "distinct-operations",
+      "label": "Deterministic field flow unlike group heat measurement smoothing",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "kind": "exact-one-plaquette-control",
+      "label": "Large lattice flow produces rare-event normalized spectral escape",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "to_id": "W-NONLINEAR-PHYS-RADIUS",
+      "kind": "non-uniformity-warning",
+      "label": "Nonlinear reference has no uniform normalized positive-time control",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "cannot-transfer",
+      "label": "Haar reference not the 3D interacting long-time theory",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "refines-open-criterion",
+      "label": "Need fixed-radius interacting covariance and full Schur dynamics",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "observable-dictionary-open",
+      "label": "No nontrivial 4D renormalized Wilson field",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "interacting-time-open",
+      "label": "Uniform connected physical-time bound missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "I-UV-COUPLING",
+      "kind": "constructive-UV-open",
+      "label": "No asymptotically free nonlinear interacting estimate",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "G-GRAV",
+      "kind": "distinct-scientific-goals",
+      "label": "YM smearing does not establish gravitational UV finiteness",
+      "status": "open"
     }
   ],
   "sources_verified": {
