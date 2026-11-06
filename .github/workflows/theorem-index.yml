@@ -1,0 +1,15 @@
+name: Theorem index completeness (private)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  theorem-file-coverage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm every theorem/audit source path and blob hash is indexed
+        run: python3 scripts/verify_theorem_inventory.py
