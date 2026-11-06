@@ -234,3 +234,7 @@ attach_local_fisher(ROOT)
 # Finite gauge-equivariant spatial Wilson flow, spectral Rayleigh test, and exact SU2 Fisher-gap obstruction.
 from add_spatial_flow_fisher_gap_graph import attach as attach_spatial_flow_fisher_gap
 attach_spatial_flow_fisher_gap(ROOT)
+
+# Exact flat-field cubic SU2 physical-radius curvature heat and isolated nonlinear Haar warning.
+from add_physical_radius_linear_flow_graph import attach as attach_physical_radius_linear_flow
+attach_physical_radius_linear_flow(ROOT)
