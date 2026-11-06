@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.34-draft",
-  "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
+  "version": "v2.35-draft",
+  "scope": "Exact finite-volume-independent local Wilson Fisher and fixed-h thermodynamic subsequence; UV-uniform interacting Yang–Mills gap and gravity remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-marginal-harnack-loop-sumrule",
+  "git_branch": "audit/2026-11-06-local-wilson-fisher-thermodynamic",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3660,13 +3660,13 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "Replace the global Ω Harnack estimate by a boundary-local volume-uniform estimate; construct a renormalized gauge-invariant loop and control the entire energy-dependent Schur form across refinements.",
-      "detail": "A bounded-source response estimate ||∂θ sqrtρ||≤sqrt Var(F)/Δ depends on the finite interacting gap Δ, so assuming it uniform to prove the same gap is circular. Seek a localized, source-independent estimate along the actual g₀(h) and R→∞.",
+      "summary": "A genuine volume-independent, gap-free SU2 Wilson H1/Fisher and trace-variance bound is now proved at fixed bare coupling; pointwise local Harnack, UV-uniform renormalized states and full physical-time Schur comparison remain OPEN.",
+      "detail": "A new source-qualified variational link-excision lemma removes all-volume E/F dependence at fixed g0 and supplies subsequential fixed-h local vacuum/spectral compactness. The bound still grows like g0^-4 and does not compare the complete time-dependent effective operator.",
       "checks": [
         {
           "label": "Volume-independent local conditional-marginal estimate without a gap assumption",
-          "state": "open",
-          "note": ""
+          "state": "partial",
+          "note": "The finite true-vacuum local Fisher and trace-variance estimates are independent of volume, but do not prove a uniform pointwise Harnack, adjacent-scale marginal ratio or g0→0 bound."
         },
         {
           "label": "Physical-time normalization for a nontrivial smeared Wilson observable",
@@ -3698,6 +3698,185 @@
         "renormalization",
         "open",
         "noncircular"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-LOCAL-LINK-ENERGY",
+      "title": "Gap-independent local SU(2) link kinetic energy bound",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For every finite original-link cubic SU(2) Wilson vacuum, alpha Σ_{e in S}∫|∇eΩ|²≤beta·#plaquettes touching S; one link has degree ≤4 independent of the box.",
+      "detail": "Exact variational one-link excision/partial Haar trial. No source response or spectral gap used. The estimate is volume-independent at fixed g0, but beta/alpha=4/g0^4 grows in the weak-coupling ultraviolet.",
+      "checks": [
+        {
+          "label": "Open 3D cubic boundary incidence degree ≤4",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Haar-link removal variational identity for the full interacting vacuum",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Uniform control as g0(h)→0",
+          "state": "open",
+          "note": "Upper bound scales as g0^-4"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gap-independent local Wilson vacuum Fisher and fixed-spacing thermodynamic subsequence",
+          "path": "research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md",
+          "git_blob_sha": "b6e7fc69c8f8f48fd74efaf95d1662bf73168a02",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b6e7fc69c8f8f48fd74efaf95d1662bf73168a02/research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite",
+        "local-energy",
+        "gap-free"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-LOCAL-WILSON-FISHER",
+      "title": "Volume-independent interacting Wilson-holonomy Fisher bound",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For any simple physical Wilson loop, ∫SU2 |∇sqrtρ_C|²≤16/g0^4 and Fisher(ρ_C)≤64/g0^4, independent of total volume and elementary contour length. Positive trace variance ≥π²/[64 CS³(1+16/g0^4)³].",
+      "detail": "The conditional Haar disintegration permits selecting any one original loop edge; its holonomy map is a bi-invariant SU2 isometry. Sobolev on fixed SU2 and exact Haar trace semicircle law give volume-uniform anti-concentration. No pointwise local Harnack or uniform weak-g0 limit is proved.",
+      "checks": [
+        {
+          "label": "True interacting-vacuum loop marginal H1/Fisher estimate",
+          "state": "met",
+          "note": "Volume-independent for each fixed g0"
+        },
+        {
+          "label": "Quantified trace variance lower bound from SU2 Sobolev",
+          "state": "met",
+          "note": "Fixed SU2 geometric constant CS"
+        },
+        {
+          "label": "Weak-bare-coupling pointwise marginal ratio bound",
+          "state": "open",
+          "note": "H1 does not imply L∞ pointwise control on SU2"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gap-independent local Wilson vacuum Fisher and fixed-spacing thermodynamic subsequence",
+          "path": "research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md",
+          "git_blob_sha": "b6e7fc69c8f8f48fd74efaf95d1662bf73168a02",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b6e7fc69c8f8f48fd74efaf95d1662bf73168a02/research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite",
+        "Fisher",
+        "local-variance"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-WILSON-THERMO-SUBSEQ",
+      "title": "Local Wilson state and spectral-measure subsequences at fixed mesh",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "At fixed h,g0 and fixed physical loop, interacting Wilson marginals have L1-convergent subsequences as box size tends to infinity, and normalized local spectral measures are tight with finite first moment.",
+      "detail": "Rellich compactness of sqrtρ in H1(SU2), volume-independent positive Wilson variance, and a uniform first-spectral-moment bound imply subsequential nontrivial local states and correlations. This does not prove unique thermodynamic vacuum, positive IR gap or h→0 existence.",
+      "checks": [
+        {
+          "label": "Thermodynamic subsequence of fixed-h Wilson marginal",
+          "state": "met",
+          "note": "Strong L1 from compact embedding"
+        },
+        {
+          "label": "Volume-uniform fixed-h local spectral first moment and tightness",
+          "state": "met",
+          "note": "High-energy tail ≤M_h,C/S"
+        },
+        {
+          "label": "Unique infinite-volume vacuum and uniform h→0 physical gap",
+          "state": "open",
+          "note": "Requires interacting scale-volume limits"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gap-independent local Wilson vacuum Fisher and fixed-spacing thermodynamic subsequence",
+          "path": "research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md",
+          "git_blob_sha": "b6e7fc69c8f8f48fd74efaf95d1662bf73168a02",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b6e7fc69c8f8f48fd74efaf95d1662bf73168a02/research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite",
+        "thermodynamic-subsequence"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "title": "Weak-coupling uniform local Wilson and Schur-form renormalization",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Turn the fixed-coupling volume-independent H1/Fisher bounds into renormalized estimates uniform along g0(h)→0, with stable gauge-invariant smeared observables and the entire interacting time-dependent Schur complement.",
+      "detail": "Locality removes the global E/F factor, but the proven g0^-4 Fisher bound and its variance consequence degrade in the asymptotically free regime; no physical IR spectral exclusion or Penrose action follows.",
+      "checks": [
+        {
+          "label": "Source-derived physical smearing or renormalization of fixed-size Wilson observable",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Scale-uniform interacting local marginal/score control without assuming a gap",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Complete interacting Schur/connected-time bound in physical units",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS reconstruction and dense physical spectral probes",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gap-independent local Wilson vacuum Fisher and fixed-spacing thermodynamic subsequence",
+          "path": "research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md",
+          "git_blob_sha": "b6e7fc69c8f8f48fd74efaf95d1662bf73168a02",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b6e7fc69c8f8f48fd74efaf95d1662bf73168a02/research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "renormalization",
+        "open"
       ],
       "importance": 5,
       "core": false,
@@ -5320,6 +5499,104 @@
       "to_id": "T2-OBSERVABLES",
       "kind": "renormalized-dictionary",
       "label": "marginal match alone insufficient for physical time",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-LOCAL-LINK-ENERGY",
+      "kind": "source-model",
+      "label": "full original-link cubical SU2 Wilson regulator",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "R-LOCAL-LINK-ENERGY",
+      "kind": "true-vacuum-input",
+      "label": "uses actual interacting positive ground state",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LOCAL-LINK-ENERGY",
+      "to_id": "R-LOCAL-WILSON-FISHER",
+      "kind": "conditional-isometry",
+      "label": "one local link controls whole physical-loop marginal",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-MARGINAL-HARNACK",
+      "to_id": "R-LOCAL-WILSON-FISHER",
+      "kind": "local-improvement",
+      "label": "replaces global volume-dependent bound by local H1, not local pointwise Harnack",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LOCAL-WILSON-FISHER",
+      "to_id": "R-WILSON-THERMO-SUBSEQ",
+      "kind": "compactness",
+      "label": "fixed-h Rellich and uniform variance",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "to_id": "R-WILSON-THERMO-SUBSEQ",
+      "kind": "short-time-bound",
+      "label": "uniform first moment at fixed h and physical contour",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LOCAL-WILSON-FISHER",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "finite-physical-observable",
+      "label": "local marginal not a continuum renormalized field",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-THERMO-SUBSEQ",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "insufficient-for-ir",
+      "label": "fixed-h subsequential spectral tightness excludes no soft energy",
+      "status": "open"
+    },
+    {
+      "from_id": "R-LOCAL-WILSON-FISHER",
+      "to_id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "kind": "weak-coupling-limit",
+      "label": "Fisher bound degrades as g0^-4",
+      "status": "open"
+    },
+    {
+      "from_id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "to_id": "P2",
+      "kind": "critical-interacting-obligation",
+      "label": "scale-uniform renormalization missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "to_id": "W-LOCAL-MARGINAL-UV",
+      "kind": "refines-source",
+      "label": "local bound exists but UV control open",
+      "status": "open"
+    },
+    {
+      "from_id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-physical-time",
+      "label": "complete Schur influence and decay missing",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WILSON-THERMO-SUBSEQ",
+      "to_id": "T4-OS-LIMIT",
+      "kind": "fixed-mesh-not-4d",
+      "label": "thermodynamic subsequence not a 4D continuum OS reconstruction",
+      "status": "open"
+    },
+    {
+      "from_id": "R-LOCAL-WILSON-FISHER",
+      "to_id": "I-UV-COUPLING",
+      "kind": "bare-g0-degradation",
+      "label": "bound scales as g0^-4 as g0→0",
       "status": "open"
     }
   ],
