@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.30-draft",
+  "version": "v2.31-draft",
   "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-cubic-transverse-shell",
+  "git_branch": "audit/2026-11-06-full-wilson-time-memory",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3112,23 +3112,23 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "Repeat the transverse-shell comparison with the full SU(2) Wilson exponential plus temporal heat-kernel transfer; establish real physical-time connected-correlation bounds.",
-      "detail": "The polynomial λ-character model demonstrates transverse channels but does not reproduce the physical weak-bare-coupling continuum. Retain spin intertwiners and define renormalized observables before comparing h→h/2.",
+      "summary": "Finite Wilson-exponential 3D shell and one/two-step temporal memory have now been derived. Required next: a gauge-invariant multiscale influence kernel and uniform interacting connected-time correlations.",
+      "detail": "Static exponential cap integration cannot be iterated as a Markovian coarse time transfer: P T² P-(P T P)²=PT(1-P)TP is positive. Retain full unresolved temporal memory, higher-spin channels and correctly renormalized physical observables.",
       "checks": [
         {
-          "label": "Full Wilson exponential character expansion and 3D shell integration",
-          "state": "open",
-          "note": ""
+          "label": "Full Wilson exponential spatial first-shell character analysis",
+          "state": "met",
+          "note": "Finite 2x2x1 result only"
         },
         {
-          "label": "Same-action time transfer, gauge-invariant probes and vacuum centering",
-          "state": "open",
-          "note": ""
+          "label": "Positive physical-time transfer and exact first memory term",
+          "state": "partial",
+          "note": "Finite original-link model; no two-scale bound"
         },
         {
-          "label": "Volume/refinement-uniform interacting physical-time comparison",
+          "label": "Uniform interacting physical-time transfer/correlations",
           "state": "open",
-          "note": ""
+          "note": "Continuum P2-P4 not closed"
         }
       ],
       "sources": [
@@ -3145,6 +3145,92 @@
         "finite-shell"
       ],
       "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-WILSON-EXP-SHELL",
+      "title": "Full Wilson-exponential 3D shell character cap",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Normalized full SU2 Wilson exponential on the 2x2x1 cubic slab: four exact five-face cap kernels, all-order bottom coupling, and a uniform explicit remainder from shell supports >=8.",
+      "detail": "The first shell Taylor coefficient is (d/db + 4a0'/a0)Z_planar/16. The same five-face support generates a seventh-order correction: its full series must be retained. Spatial Haar integration is not a closed physical-time transfer; this is a finite model calculation.",
+      "checks": [
+        {
+          "label": "Exact spin-n SU2 cap convolution",
+          "state": "met",
+          "note": "Coefficient (a_n(s)/a0(s))^5/(n+1)^4"
+        },
+        {
+          "label": "Uniform bound on higher shell supports",
+          "state": "met",
+          "note": "exp(8|b|) times sum k=8..16 C(16,k) [2(exp(2|s|)-1)]^k"
+        },
+        {
+          "label": "Weak-bare-coupling h->0 interacting bound",
+          "state": "open",
+          "note": "No scale/volume uniform estimate"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Full SU2 Wilson exponential, 3D cap and positive temporal memory",
+          "path": "research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md",
+          "git_blob_sha": "b77b6f704edc1fb95b3ecfdf056836426fb0145a",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b77b6f704edc1fb95b3ecfdf056836426fb0145a/research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "full-Wilson",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-TEMPORAL-MEMORY",
+      "title": "Positive two-step memory under spatial Haar compression",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "At fixed 3D cubic regulator, the full Wilson potential and heat-kernel transfer satisfy P T² P-(P T P)²=P T (1-P) T P>=0; on 1 the leading memory is epsilon² F beta_h²/4.",
+      "detail": "For 20 faces, F beta_h²/4=5 beta_h². Strict Jensen gives <1,T_eps 1>>exp(-eps F beta_h) for each eps>0. This is a finite temporal-blocking obstruction, not a physical continuum infrared gap or divergence theorem.",
+      "checks": [
+        {
+          "label": "Same-regulator full Wilson plus positive time transfer",
+          "state": "met",
+          "note": "Finite symmetric heat-kernel construction"
+        },
+        {
+          "label": "Exact positive two-step memory operator",
+          "state": "met",
+          "note": "P T Q T P=(Q T P)* (Q T P)"
+        },
+        {
+          "label": "Interacting multiscale influence-kernel estimates",
+          "state": "open",
+          "note": "Physical-time long-distance dynamics remain unproved"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Full SU2 Wilson exponential, 3D cap and positive temporal memory",
+          "path": "research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md",
+          "git_blob_sha": "b77b6f704edc1fb95b3ecfdf056836426fb0145a",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/b77b6f704edc1fb95b3ecfdf056836426fb0145a/research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "finite-time",
+        "renormalization"
+      ],
+      "importance": 4,
       "core": false,
       "route": null
     }
@@ -4506,6 +4592,48 @@
       "to_id": "T2-OBSERVABLES",
       "kind": "scoped-evidence",
       "label": "finite coarse character evidence, no continuum dictionary",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-3D-SHELL",
+      "to_id": "R-WILSON-EXP-SHELL",
+      "kind": "action-upgrade",
+      "label": "truncated character to full Wilson exponential (finite only)",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-EXP-SHELL",
+      "to_id": "R-TEMPORAL-MEMORY",
+      "kind": "same-regulator",
+      "label": "spatial Wilson action coupled to heat-kernel temporal transfer",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-P0-HK",
+      "to_id": "R-TEMPORAL-MEMORY",
+      "kind": "positive-physical-time",
+      "label": "source-qualified finite heat-kernel transfer",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-TEMPORAL-MEMORY",
+      "to_id": "W-3D-WILSON-TIME",
+      "kind": "unsolved-memory-control",
+      "label": "bound the two-time influence kernel across spatial refinements",
+      "status": "open"
+    },
+    {
+      "from_id": "W-3D-WILSON-TIME",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-interacting-infrared",
+      "label": "uniform physical-time connected correlations remain open",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WILSON-EXP-SHELL",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "scoped-coarse-character-evidence",
+      "label": "no renormalized continuum dictionary",
       "status": "finite"
     }
   ],
