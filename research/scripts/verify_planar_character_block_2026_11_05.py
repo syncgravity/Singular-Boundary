@@ -21,6 +21,8 @@ def main():
  assert c1.coeff(t,6)==-sp.Rational(1,12)
  assert c1.coeff(t,8)==sp.Rational(1,24)
  assert c2.coeff(t,8)==sp.Rational(1,432)
+ assert c1.coeff(t,4)**2/2==sp.Rational(1,128)
+ assert c2.coeff(t,8)!=c1.coeff(t,4)**2/2
  samples=[]
  for z in (sp.Rational(1,10),sp.Rational(1,4),sp.Rational(1,2),sp.Integer(1),sp.Integer(2)):
   a0=float(sp.N(coeffs[0].subs(t,z),25));
