@@ -246,3 +246,7 @@ attach_nonlinear_energy(ROOT)
 # Exact invariant Cartan-planar SU2 positive-physical-time nonlinear curvature Nash theorem.
 from add_cartan_nonlinear_smoothing_graph import attach as attach_cartan_nonlinear_smoothing
 attach_cartan_nonlinear_smoothing(ROOT)
+
+# All-configuration finite non-Abelian cubic plaquette influence; no physical continuum bound.
+from add_full_nonabelian_locality_graph import attach as attach_full_nonabelian_locality
+attach_full_nonabelian_locality(ROOT)
