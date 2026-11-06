@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.32-draft",
+  "version": "v2.33-draft",
   "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-two-scale-influence-kernel",
+  "git_branch": "audit/2026-11-06-vacuum-weighted-schur-form",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -2858,8 +2858,8 @@
       "checks": [
         {
           "label": "Physical test support and renormalization definition",
-          "state": "open",
-          "note": ""
+          "state": "partial",
+          "note": "Finite fixed-support interacting Wilson normalization exists; continuum renormalization, density and nontrivial limit remain open."
         },
         {
           "label": "Model-to-model observable map with units and symmetry",
@@ -3341,8 +3341,8 @@
       "checks": [
         {
           "label": "Source-derived gauge-invariant observable map at fixed physical support",
-          "state": "open",
-          "note": ""
+          "state": "partial",
+          "note": "Finite Ω²-weighted gauge-invariant GNS/normalized Wilson candidate constructed; unknown uniform vacuum marginal, scale map and continuum limit."
         },
         {
           "label": "Higher-spin and all-time influence channels under genuine spatial refinement",
@@ -3372,6 +3372,146 @@
         "renormalization",
         "SU2",
         "influence-kernel",
+        "open"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-VACUUM-WEIGHTED-BLOCK",
+      "title": "Interacting-vacuum SU(2) conditional observable and Schur form",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Each finite cubic Wilson Hamiltonian has a strictly positive gauge-invariant ground state. Ω²-weighted conditional expectation preserves the vacuum, defines an exact fixed-physical-support Wilson observable and induces a weighted coarse diffusion plus full variational Schur form.",
+      "detail": "Unlike bare Haar P/Q projection, true-vacuum offdiagonal mixing vanishes on 1; on other coarse excitations it is exactly four times a conditional variance of the vacuum logarithmic score. Coarse kinetic weight is a=mα; the entire time-dependent Schur form still requires renormalized scale comparison.",
+      "checks": [
+        {
+          "label": "Finite positive SU2 Wilson ground state and gauge covariance",
+          "state": "met",
+          "note": "Compact product-group ellipticity and positivity-improving semigroup"
+        },
+        {
+          "label": "Vacuum-weighted local cylinder algebra and normalized loop",
+          "state": "met",
+          "note": "Ω² conditional isometry, positive coarse marginal and finite positive variance"
+        },
+        {
+          "label": "Exact induced diffusion, conditional score variance and shorted form",
+          "state": "met",
+          "note": "All identities finite-regulator; unbounded block coupling treated at form level"
+        },
+        {
+          "label": "State density and full energy-dependent form uniform along h,R",
+          "state": "open",
+          "note": "Unknown interacting vacuum and physical-time renormalization"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite interacting-vacuum SU2 conditional projection and energy-dependent Schur form",
+          "path": "research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md",
+          "git_blob_sha": "06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae/research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "ground-state",
+        "finite",
+        "Schur-form"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-SU2-STATIC-TIME-COUNTER",
+      "title": "Exact SU(2) gauge-loop example: identical coarse law, distinct time dynamics",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "A one-vertex/two-loop SU2 gauge graph has the same coarse Haar character law and projected generator as a free coarse rotor, but a nonzero eliminated-sector memory and strictly different positive-time Wilson correlations.",
+      "detail": "Ground density exp(κχ(A)) with gauge-invariant character potential; the exact memory norm is α²κ² G(κ)/4, G(κ) a positive Bessel-character expression. This is NOT the cubic Wilson action; it falsifies inference from static matching or first-time derivatives to full dynamics.",
+      "checks": [
+        {
+          "label": "Finite gauge-invariant two-loop ground state",
+          "state": "met",
+          "note": "Ωκ=e^(κχ(A)/2)/sqrt(a0κ)"
+        },
+        {
+          "label": "Exact positive memory norm and strict time-correlation inequality",
+          "state": "met",
+          "note": "SU2 character/Bessel integration; independent finite numerical regression"
+        },
+        {
+          "label": "Extend to physical cubic Wilson ensemble",
+          "state": "open",
+          "note": "Toy graph is an obstruction to a shortcut, not a 3D result"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite interacting-vacuum SU2 conditional projection and energy-dependent Schur form",
+          "path": "research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md",
+          "git_blob_sha": "06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae/research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "counterexample",
+        "two-time",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-STATE-SCHUR-UNIFORM",
+      "title": "Renormalized interacting marginal and full Schur-form comparison",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Estimate the actual cubic vacuum marginals ρh,R, induced potentials vh,R, conditional logarithmic-score variance and full shorted forms at fixed physical support across h→h/2.",
+      "detail": "Static marginal or Markovian generator convergence cannot replace interacting long-time control. A valid gap-transfer estimate must include eliminated-sector memory and be uniform in mesh and spatial volume along physical running coupling.",
+      "checks": [
+        {
+          "label": "Uniform positivity/nontriviality of normalized physical Wilson variance",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "State-marginal, logarithmic-score and induced-potential control",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Physical-time or energy-dependent full Schur comparison with summable errors",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS continuum reconstruction and dense infrared probes",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite interacting-vacuum SU2 conditional projection and energy-dependent Schur form",
+          "path": "research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md",
+          "git_blob_sha": "06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/06e22ced09c9e6cdb9ebb091ef03a3c80f9492ae/research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "renormalization",
+        "Schur-form",
         "open"
       ],
       "importance": 5,
@@ -4835,6 +4975,76 @@
       "kind": "scoped-evidence",
       "label": "physical renormalized observable dictionary still open",
       "status": "finite"
+    },
+    {
+      "from_id": "R-TWO-TIME-INFLUENCE",
+      "to_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "kind": "projection-upgrade",
+      "label": "Bare Haar projection replaced by true-vacuum conditional law",
+      "status": "finite"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "kind": "finite-physical-model",
+      "label": "Same full Wilson original-link SU2 slab",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-DYADIC-BARE-MEMORY",
+      "to_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "kind": "projection-dependence",
+      "label": "Bare memory strength is not vacuum-dressed invariant",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "finite-observable-candidate",
+      "label": "Local Wilson normalization; continuum still open",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "R-SU2-STATIC-TIME-COUNTER",
+      "kind": "counterexample",
+      "label": "Static marginal and compressed generator do not fix time dynamics",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-SU2-STATIC-TIME-COUNTER",
+      "to_id": "W-STATE-SCHUR-UNIFORM",
+      "kind": "necessary-interface",
+      "label": "Must bound eliminated-sector time memory",
+      "status": "open"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "W-STATE-SCHUR-UNIFORM",
+      "kind": "required-uniformity",
+      "label": "Unknown marginal score and shorted form",
+      "status": "open"
+    },
+    {
+      "from_id": "W-STATE-SCHUR-UNIFORM",
+      "to_id": "W-RENORMALIZED-INFLUENCE",
+      "kind": "refines-open-task",
+      "label": "Vacuum/physical observable correction to bare influence",
+      "status": "open"
+    },
+    {
+      "from_id": "W-STATE-SCHUR-UNIFORM",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-infrared-obligation",
+      "label": "Physical long-time scale-uniform exclusion missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-STATE-SCHUR-UNIFORM",
+      "to_id": "P2",
+      "kind": "open-proof-obligation",
+      "label": "No uniform interacting weak-coupling estimates",
+      "status": "open"
     }
   ],
   "sources_verified": {
