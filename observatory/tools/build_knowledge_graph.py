@@ -246,3 +246,7 @@ attach_nonlinear_energy(ROOT)
 # Exact invariant Cartan-planar SU2 positive-physical-time nonlinear curvature Nash theorem.
 from add_cartan_nonlinear_smoothing_graph import attach as attach_cartan_nonlinear_smoothing
 attach_cartan_nonlinear_smoothing(ROOT)
+
+# Finite noncommuting positive-Haar/true-vacuum tubes around Cartan references; live source inventory.
+from add_nonabelian_tube_graph import attach as attach_nonabelian_tube
+attach_nonabelian_tube(ROOT)
