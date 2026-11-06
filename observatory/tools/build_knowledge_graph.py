@@ -226,3 +226,7 @@ attach_vacuum_rg(ROOT)
 # Quantitative finite Wilson marginal Harnack, fixed-loop sum rule and conditional dyadic time normalization.
 from add_marginal_harnack_graph import attach as attach_marginal_harnack
 attach_marginal_harnack(ROOT)
+
+# Gap-independent finite SU2 local Wilson Fisher bound and fixed-h thermodynamic subsequences.
+from add_local_fisher_graph import attach as attach_local_fisher
+attach_local_fisher(ROOT)
