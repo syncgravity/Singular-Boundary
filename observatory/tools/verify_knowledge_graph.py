@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -78,6 +78,8 @@ def main():
   check(node['W-RENORMALIZED-INFLUENCE']['status']=='open','renormalized influence must remain open')
   check(any(z['from_id']=='W-RENORMALIZED-INFLUENCE' and z['to_id']=='T3-TIME-COMPARE' and z['status']=='open' for z in e),'P2/P4 infrared obligation remains open')
   check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'continuum gates remain open')
+ if g['version'] in ('v2.33-draft','v2.34-draft'):
+  check(node['R-VACUUM-WEIGHTED-BLOCK']['status']=='finite','finite true-vacuum scope')
  if g['version']=='v2.33-draft':
   check(len(n)==111 and len(e)==218,'finite true-vacuum graph counts')
   check(node['R-VACUUM-WEIGHTED-BLOCK']['status']=='finite','finite dressed observable checkpoint')
@@ -87,6 +89,16 @@ def main():
   check(node['T2-OBSERVABLES']['status']=='open','T2 remains an open continuum interface')
   check(any(x['from_id']=='W-STATE-SCHUR-UNIFORM' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'physical-time gap remains open')
   check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'do not promote continuum')
+ if g['version']=='v2.34-draft':
+  check(len(n)==115 and len(e)==231,'finite marginal/sum-rule graph count')
+  check(node['R-WILSON-MARGINAL-HARNACK']['status']=='finite','true-vacuum Harnack finite only')
+  check(node['R-WILSON-FIXED-LOOP-MOMENT']['status']=='finite','physical loop sum rule')
+  check(node['I-WILSON-STATIC-TIME-NORM']['status']=='conditional','marginal-time matching unproved')
+  check(node['W-LOCAL-MARGINAL-UV']['status']=='open','local uniform UV marginal remains open')
+  check(node['W-STATE-SCHUR-UNIFORM']['status']=='open','full physical Schur form remains open')
+  check(node['G-GRAV']['status']=='open','quantum gravity open')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'no continuum gate closure')
+  check(any(x['from_id']=='W-LOCAL-MARGINAL-UV' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'long-time comparison remains open')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
