@@ -1,7 +1,7 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06",
-  "version": "v2.40-draft",
+  "version": "v2.41-draft",
   "scope": "Exact all-configuration finite noncommuting cubic SU2 plaquette influence and verified high-curvature local-max warning. The exp(3tau/h²) bound is non-uniform at physical radius; full covariant non-Abelian/quantum smoothing and P0–P5 remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
