@@ -1,4 +1,4 @@
-# Research Observatory v2.31-draft — Mathematical Physics Proof Atlas
+# Research Observatory v2.32-draft — Mathematical Physics Proof Atlas
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
@@ -7,12 +7,12 @@ The first full `2×2×1` cubic spatial slab about a four-face block has 20 plaqu
 
 See [exact 3D transverse-shell report](../research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md) and its [reproducible verifier](../research/scripts/verify_cubic_transverse_shell_2026_11_06.py). The 2²⁰ squarefree face configurations were enumerated independently; only 32 pass the Haar center-parity test, while all higher-order non-manifold channels were bounded without unjustified factorization. The next step is **the full Wilson exponential plus temporal heat-kernel transfer, with the nonabelian recoupling channels included**, not a claim of a continuum gap.
 
-**Source status:** v2.31-draft review branch stacked on PR #63; v2.29 remains integrated on the private `main` branch. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
+**Source status:** v2.32-draft review branch stacked on PR #63; v2.29 remains integrated on the private `main` branch. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
 
 ## Explore the proof
 
 - [Observatory overview](index.html) — the complete proof-program entry point, P0–P5 dependencies, routes, obstructions and source catalog.
-- [Interactive Proof Atlas](graph.html) — 105 curated mathematical-physics nodes and 200 typed edges; starts on the **Cubic → Quasicrystal** model-transfer view.
+- [Interactive Proof Atlas](graph.html) — 108 curated mathematical-physics nodes and 208 typed edges; starts on the **Cubic → Quasicrystal** model-transfer view.
 - [Uniform interacting theorem integration](integration.html) — the conditional physical-time spectral-support bridge, common-regulator requirements and explicit continuum obligations.
 - [Mathematical-physics reader guide](MATHEMATICAL_PHYSICS_GUIDE.md) — precise meanings of models, results, obstacles, interfaces, review status, and the six cross-model T0–T5 conditions.
 
@@ -56,4 +56,10 @@ This private repository's [Pages workflow](../.github/workflows/pages.yml) has *
 
 The 2×2×1 slab now uses the **normalized full Wilson exponential** rather than the positive truncated plaquette polynomial. Four five-face complementary caps generate an exact all-spin SU(2) character kernel; the first transverse coefficient is exact at arbitrary bottom coupling, and higher shell supports carry an explicit sup-norm bound. The cap kernel itself contains an order-seven Taylor correction—distinct from the fact that there are no new six/seven-face supports. On the same original-link finite cubic Hamiltonian, positive symmetric SU(2) heat-kernel transfer exhibits **strict positive vacuum memory** under spatial Haar projection, with leading two-time discrepancy ε²×(20 β_h²/4). This is a **finite** dynamical obstruction to Markovian projection, not a continuum mass-gap or positive physical-time infrared theorem.
 
-Sources: `research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md`, `research/scripts/verify_wilson_shell_time_2026_11_06.py`, `docs/evidence/R3_FULL_WILSON_3D_SHELL_TIME_MEMORY_2026-11-06.json`, `observatory/tools/add_wilson_time_graph.py`. The continuing **OPEN** gate is a renormalized multiscale two-time influence kernel and uniform interacting connected correlations. v2.31-draft contains **105 physics nodes / 200 typed edges**, 26 original file hashes; all six Yang–Mills gates remain OPEN. No merge into main or public Pages deployment has occurred.
+Sources: `research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md`, `research/scripts/verify_wilson_shell_time_2026_11_06.py`, `docs/evidence/R3_FULL_WILSON_3D_SHELL_TIME_MEMORY_2026-11-06.json`, `observatory/tools/add_wilson_time_graph.py`. The continuing **OPEN** gate is a renormalized multiscale two-time influence kernel and uniform interacting connected correlations. v2.32-draft contains **108 physics nodes / 208 typed edges**, 26 original file hashes; all six Yang–Mills gates remain OPEN. No merge into main or public Pages deployment has occurred.
+
+## Exact finite two-time influence across two cubic refinements · November 6, 2026
+
+The physical original-link Wilson/Kogut–Susskind Hamiltonian is decomposed into the retained eight-boundary-holonomy-product sector P and its complement Q. The interaction block B=QHP has the **exact all-coarse-state** identity `B*B=(beta_h² F_h/4)P`. This supports a rigorously positive non-Markovian Volterra memory `B*e^{-tQHQ}B` and an energy-dependent Feshbach self-energy, with explicit finite-resolvent upper and lower bounds; the positive symmetric transfer has an exact all-step discrete memory recurrence. On the **same physical 3D slab** a `2×2×1` mesh (20 faces, 33 edges) refines to `4×4×2` (128 faces, 170 edges), with matching eight coarse boundary products. The **bare zero-time influence ratio is `(128/5)[g0(h)/g0(h/2)]⁴`**. It is not a renormalized physical divergence or a spectrum result. The graph has 108 nodes and 208 links; all P0–P5 gates, Penrose transfer and physical quantum-gravity claims remain OPEN.
+
+Read the [full proof](../research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md), [reproducible verifier](../research/scripts/verify_two_scale_influence_2026_11_06.py), and [new model-specific graph overlay](tools/add_two_scale_influence_graph.py). Source bytes and verification archives are preserved in Library → The Singular Boundary → Proof Audits → Two-Scale Influence Kernel 2026-11-06. This is a stacked **draft**, not merged into canonical v2.29 main and not publicly deployed.
