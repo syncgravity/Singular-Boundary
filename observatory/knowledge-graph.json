@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.35-draft",
-  "scope": "Exact finite-volume-independent local Wilson Fisher and fixed-h thermodynamic subsequence; UV-uniform interacting Yang–Mills gap and gravity remain OPEN.",
+  "version": "v2.36-draft",
+  "scope": "Finite gauge-equivariant spatial Wilson flow, covariance/Dirichlet test, heat noise no-go and exact SU2 Fisher-gap counterexample; continuum YM/Penrose/gravity remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-local-wilson-fisher-thermodynamic",
+  "git_branch": "audit/2026-11-06-wilson-spatial-flow-fisher-gap",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3881,6 +3881,230 @@
       "importance": 5,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-SU2-FISHER-GAP-COUNTER",
+      "title": "SU(2) Fisher and Wilson variance do not imply a spectral gap",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P4",
+      "summary": "Exact smooth positive class-rotor countermodel: uniformly bounded Fisher H1≤3/4 and nonzero fundamental trace variance≥1, yet the positive weighted class-sector spectral gap ≤epsilon→0.",
+      "detail": "Density rho_e=(x²+epsilon²)/(1/4+epsilon²), x=tr(U)/2; an explicit smooth class potential gives a genuine positive SU2 rotor. This is NOT the cubic Wilson magnetic Hamiltonian, and is NOT a counterexample to YM mass gap.",
+      "checks": [
+        {
+          "label": "Analytic Haar SU2 trace moments, variance and Fisher bound",
+          "state": "met",
+          "note": "Exact class density"
+        },
+        {
+          "label": "Smooth positive finite class rotor with gap upper bound epsilon",
+          "state": "met",
+          "note": "Explicit Rayleigh test and ground-state potential"
+        },
+        {
+          "label": "Transfer low-gap example to cubic Wilson vacuum",
+          "state": "open",
+          "note": "No such transfer or claim; different potential"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-equivariant spatial Wilson flow, exact SU2 density gap counterexample and observable Rayleigh test",
+          "path": "research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "24c44fb008adafd4a5e7df420c37c726fd241f61",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/24c44fb008adafd4a5e7df420c37c726fd241f61/research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "class-rotor",
+        "counterexample",
+        "Fisher",
+        "infrared"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-GROUP-HEAT-WILSON-NOGO",
+      "title": "Single-holonomy heat smoothing leaves normalized fundamental Wilson trace unchanged",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "SU2 group heat convolution multiplies chi1 by e^(−3s/4); centering and variance normalization cancel the factor exactly at every finite s.",
+      "detail": "Convolution of the observed probability density can supply a uniform noise-smoothed law, but that is an auxiliary random readout and cannot replace the interacting physical-time Wilson observable.",
+      "checks": [
+        {
+          "label": "Exact Peter–Weyl character eigenvalue",
+          "state": "met",
+          "note": "Casimir chi1=3/4"
+        },
+        {
+          "label": "Normalized deterministic observable invariant under group heat smearing",
+          "state": "met",
+          "note": "Any interacting loop marginal with nonzero variance"
+        },
+        {
+          "label": "Physical gauge-field and time smoothing equivalence",
+          "state": "open",
+          "note": "Group readout heat smoothing is a different operation"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-equivariant spatial Wilson flow, exact SU2 density gap counterexample and observable Rayleigh test",
+          "path": "research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "24c44fb008adafd4a5e7df420c37c726fd241f61",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/24c44fb008adafd4a5e7df420c37c726fd241f61/research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "group-heat",
+        "no-go",
+        "normalization"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "title": "Finite gauge-equivariant spatial Wilson flow with factorial locality",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Full 3D original-link spatial Wilson-action gradient flow exists and is gauge-equivariant; ||Hess S||≤4, ||D Phi_s||≤e^(4s), and exterior influence decays by a Poisson factorial tail at fixed lattice flow time.",
+      "detail": "A true gauge-field observable, unlike independent heat noise. The bound is volume-independent for fixed s but is NOT uniform at fixed physical radius s=t_phys/h²; this is only 3D spatial flow, not 4D quantum Wilson flow.",
+      "checks": [
+        {
+          "label": "SU2 cubical 3D link incidence and exact gauge covariance",
+          "state": "met",
+          "note": "Finite open cubical complex"
+        },
+        {
+          "label": "Uniform-in-volume Hessian and Poisson-distance influence bound",
+          "state": "met",
+          "note": "Four distinct links per face; each link degree≤4"
+        },
+        {
+          "label": "Uniform bound at physical flow time s=t_phys/h²",
+          "state": "open",
+          "note": "Naive e^(4s) estimate degenerates"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-equivariant spatial Wilson flow, exact SU2 density gap counterexample and observable Rayleigh test",
+          "path": "research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "24c44fb008adafd4a5e7df420c37c726fd241f61",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/24c44fb008adafd4a5e7df420c37c726fd241f61/research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "Wilson-flow",
+        "quasilocal",
+        "finite"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "I-FLOWED-WILSON-DIRICHLET",
+      "title": "Physical-time spectral first moment as a covariance–Dirichlet matrix quotient",
+      "kind": "interface",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "For any finite smooth gauge-invariant flowed Wilson family, −C_a′(0)=alpha_h(aᵀG_h a)/(aᵀS_h a), with S interacting covariance and G electric-gradient Dirichlet matrix.",
+      "detail": "An h-uniform bound on this quotient would give UV first-moment tightness for the selected normalized states; it neither excludes soft energies nor establishes the interacting full Schur form or 4D OS theory.",
+      "checks": [
+        {
+          "label": "Finite ground-state-transform Dirichlet identity",
+          "state": "met",
+          "note": "Exact matrix quotient"
+        },
+        {
+          "label": "Uniform interacting covariance and Dirichlet comparison",
+          "state": "open",
+          "note": "Unknown true Wilson vacuum at weak bare coupling"
+        },
+        {
+          "label": "Physical time and nontrivial continuum field",
+          "state": "open",
+          "note": "Not supplied by initial-time tightness"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-equivariant spatial Wilson flow, exact SU2 density gap counterexample and observable Rayleigh test",
+          "path": "research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "24c44fb008adafd4a5e7df420c37c726fd241f61",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/24c44fb008adafd4a5e7df420c37c726fd241f61/research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "gauge-invariant",
+        "Dirichlet",
+        "physical-time",
+        "conditional"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-PHYSICAL-FLOWED-SCHUR",
+      "title": "Uniform physical-radius gauge-flowed Wilson fields and complete Schur dynamics",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Construct genuine physically normalized gauge-invariant flowed or smeared Wilson fields across h→h/2, with nonzero variance, uniform interacting covariance/Dirichlet bounds and full energy-dependent Schur/long-time estimates.",
+      "detail": "The finite 3D spatial flow is only a candidate. Physical flow time scales like t_phys/h², and current factorial locality and e^(8s) derivative bounds are not uniform; positive spectral exclusion and OS reconstruction remain open.",
+      "checks": [
+        {
+          "label": "Source-compatible 4D gauge-field flow and fixed physical support",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial renormalized interacted vacuum covariance and initial moments",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Complete shorted Schur form / connected long-physical-time comparison uniform in h,R",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS and quasicrystal transfer",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-equivariant spatial Wilson flow, exact SU2 density gap counterexample and observable Rayleigh test",
+          "path": "research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "24c44fb008adafd4a5e7df420c37c726fd241f61",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/24c44fb008adafd4a5e7df420c37c726fd241f61/research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "renormalization",
+        "physical-flow",
+        "open"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -5598,6 +5822,111 @@
       "kind": "bare-g0-degradation",
       "label": "bound scales as g0^-4 as g0→0",
       "status": "open"
+    },
+    {
+      "from_id": "R-LOCAL-WILSON-FISHER",
+      "to_id": "R-SU2-FISHER-GAP-COUNTER",
+      "kind": "logical-obstruction",
+      "label": "Even a uniform local Fisher bound need not imply a gap",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "R-SU2-FISHER-GAP-COUNTER",
+      "to_id": "P4",
+      "kind": "does-not-imply",
+      "label": "Positive local variance and static regularity cannot exclude low energy",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "to_id": "R-GROUP-HEAT-WILSON-NOGO",
+      "kind": "invariant-under-noise",
+      "label": "Group heat multiplier cancels in normalized Wilson first moment",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-GROUP-HEAT-WILSON-NOGO",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "different-operation",
+      "label": "Single-holonomy group heat noise does not construct physical gauge flow",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "kind": "source-model",
+      "label": "Finite full 3D spatial cubic Wilson functional",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "I-FLOWED-WILSON-DIRICHLET",
+      "kind": "candidate",
+      "label": "Gauge-equivariant flowed test observables exist at each finite regulator",
+      "status": "finite"
+    },
+    {
+      "from_id": "I-FLOWED-WILSON-DIRICHLET",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "open-uniform-test",
+      "label": "True covariance/Dirichlet estimates unknown along weak-bare-coupling refinements",
+      "status": "open"
+    },
+    {
+      "from_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "open-renormalized-bridge",
+      "label": "A physical observable dictionary and nontrivial continuum field are missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-long-time-dynamics",
+      "label": "Complete Schur and infrared time-correlation estimates remain open",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "T0-QC-3D",
+      "kind": "model-transfer-missing",
+      "label": "A real 3D quasicrystalline gauge-field flow needs its own geometry",
+      "status": "open"
+    },
+    {
+      "from_id": "R-GROUP-HEAT-WILSON-NOGO",
+      "to_id": "I-FLOWED-WILSON-DIRICHLET",
+      "kind": "scope-guard",
+      "label": "Noise scalar and full 3D flowed observable are different",
+      "status": "finite"
+    },
+    {
+      "from_id": "I-FLOWED-WILSON-DIRICHLET",
+      "to_id": "R-WILSON-THERMO-SUBSEQ",
+      "kind": "sufficient-for-uv-tightness",
+      "label": "Uniform first moment gives subsequential high-energy tightness, not IR gap",
+      "status": "conditional"
+    },
+    {
+      "from_id": "W-STATE-SCHUR-UNIFORM",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "source-obligation",
+      "label": "Physical vacuum shorted form is still required",
+      "status": "open"
+    },
+    {
+      "from_id": "I-UV-COUPLING",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "asymptotic-freedom-interface",
+      "label": "Current fixed lattice-flow-time bounds degenerate at fixed physical radius",
+      "status": "open"
+    },
+    {
+      "from_id": "R-SU2-FISHER-GAP-COUNTER",
+      "to_id": "W-UV-UNIFORM-LOCAL-WILSON",
+      "kind": "necessary-warning",
+      "label": "Static UV regularity alone cannot provide spectral exclusion",
+      "status": "obstruction"
     }
   ],
   "sources_verified": {
