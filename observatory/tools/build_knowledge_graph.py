@@ -242,3 +242,7 @@ attach_physical_radius_linear_flow(ROOT)
 # Full nonlinear classical SU2 spatial physical-action balance, true finite-vacuum variance and concentration warning.
 from add_nonlinear_energy_graph import attach as attach_nonlinear_energy
 attach_nonlinear_energy(ROOT)
+
+# Exact invariant Cartan-planar SU2 positive-physical-time nonlinear curvature Nash theorem.
+from add_cartan_nonlinear_smoothing_graph import attach as attach_cartan_nonlinear_smoothing
+attach_cartan_nonlinear_smoothing(ROOT)
