@@ -790,3 +790,24 @@ These original files were missing from the November 1 index, including files alr
 | [R3_WILSON_FRAME_DIMENSION_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_WILSON_FRAME_DIMENSION_OBSTRUCTION_2026-10-30.md) | `a5fb8a5c0f83` |
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7e` |
+
+## Current branch additions — 14 source-linked theorem records (November 6, 2026)
+
+**Historical baseline:** the 740 links above are retained intact. This appendix covers the additional tracked files in this review branch, including the new full non-Abelian result. Every tracked `research/theorems/*.md` path is linked exactly once. The [live machine-readable registry](THEOREM_INDEX_LIVE.json) records the source Git blob SHA and byte count for every file. An **indexed theorem is a source record, not a proof certification, peer review, or continuum gate closure**. Run `python research/scripts/verify_theorem_index.py --repo .` after checking out the branch; the pull-request index workflow rejects omissions and stale hashes.
+
+| Source theorem record | Source Git blob SHA prefix | Evidence classification |
+| --- | --- | --- |
+| [R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md](../../research/theorems/R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md) | `558bd6c2f71f` | Indexed source only; read theorem for scope |
+| [R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md](../../research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md) | `a7d5f05a6084` | Indexed source only; read theorem for scope |
+| [R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md](../../research/theorems/R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md) | `531462ee5b0e` | Indexed source only; read theorem for scope |
+| [R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md](../../research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md) | `e4fa23a49224` | Indexed source only; read theorem for scope |
+| [R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md](../../research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md) | `fa21e892ba3a` | Indexed source only; read theorem for scope |
+| [R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md](../../research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md) | `0252ebfd73b2` | Indexed source only; read theorem for scope |
+| [R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md](../../research/theorems/R3_FIXED_PHYSICAL_RADIUS_LINEARIZED_CUBIC_FLOW_2026-11-05.md) | `c7d2384ba72e` | Indexed source only; read theorem for scope |
+| [R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md](../../research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md) | `14c4d732a867` | Indexed source only; read theorem for scope |
+| [R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md](../../research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md) | `b77b6f704edc` | Indexed source only; read theorem for scope |
+| [R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md](../../research/theorems/R3_GAUGE_COVARIANT_SPATIAL_FLOW_AND_FISHER_GAP_OBSTRUCTION_2026-11-06.md) | `24c44fb008ad` | Indexed source only; read theorem for scope |
+| [R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md](../../research/theorems/R3_LOCAL_INTERACTING_SU2_FISHER_AND_THERMODYNAMIC_SUBSEQUENCE_2026-11-06.md) | `b6e7fc69c8f8` | Indexed source only; read theorem for scope |
+| [R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md](../../research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md) | `0e7b7e4a4525` | Indexed source only; read theorem for scope |
+| [R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md](../../research/theorems/R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md) | `f83c3bd226f9` | Indexed source only; read theorem for scope |
+| [R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md](../../research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md) | `06e22ced09c9` | Indexed source only; read theorem for scope |
