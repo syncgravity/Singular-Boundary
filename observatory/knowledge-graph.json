@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06",
-  "version": "v2.39-draft",
-  "scope": "Exact 3D SU2 Cartan-planar invariant nonlinear flow: conditional positive-time physical curvature Nash estimate from bounded classical energy and all-time O(h²) Maxwell L2 comparison. Restricted Haar-null commuting sector, no generic SU2 quantum or gravity theorem.",
+  "version": "v2.40-draft",
+  "scope": "Finite positive-Haar / true-interacting-vacuum probability of exponentially thin gauge-saturated non-Abelian neighborhoods of classical Cartan reference. Current 754 theorem / 62 audit source paths indexed only; continuum and Penrose/gravity gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-cartan-positive-time-cubic-smoothing",
+  "git_branch": "audit/2026-11-06-nonabelian-tube-complete-theorem-index",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4650,6 +4650,141 @@
       "importance": 5,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-SU2-NONABELIAN-TUBE",
+      "title": "Finite noncommuting SU(2) positive-flow-time neighborhood of Cartan reference",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "On a genuine open 3D cubic SU2 configuration, the full nonlinear Wilson flow preserves a quantified gauge-saturated open tube around a controlled Cartan reference: physical curvature proxy ≤ C_C(M,tau)+1 for each finite h, R and tau>0.",
+      "detail": "Full nonabelian finite-dimensional Hessian Lipschitz ≤ exp(4tau/h²), four-link holonomy telescoping, and gauge invariance. Tube radius delta=min(h²exp(-4tau/h²)/8,h/(32F)). This radius collapses exponentially as h→0; not generic interacting quantum regularity.",
+      "checks": [
+        {
+          "label": "Exact finite full-SU2 flow and gauge-saturated tube",
+          "state": "met",
+          "note": "No commutativity requirement on perturbations"
+        },
+        {
+          "label": "Positive-physical-time curvature-proxy bound on the tube",
+          "state": "met",
+          "note": "Inherited Cartan Nash reference plus full-SU2 Grönwall"
+        },
+        {
+          "label": "Uniform h,volume tube radius or typical field control",
+          "state": "open",
+          "note": "Certified radius ≤h²exp(-4tau/h²)/8"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-saturated non-Abelian Cartan-tube stability and interacting-vacuum measure",
+          "path": "research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md",
+          "git_blob_sha": "02959e4077fe55abd9e44e16dc036de24d3f7ea7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/02959e4077fe55abd9e44e16dc036de24d3f7ea7/research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "nonabelian",
+        "cubic",
+        "finite",
+        "classical"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-SU2-TUBE-VACUUM-MEASURE",
+      "title": "Strict finite interacting Wilson-vacuum probability of noncommuting tube",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Every finite 3D SU2 Wilson vacuum gives positive probability to a gauge-invariant open tube containing genuine noncommuting plaquette holonomies; lower bound m_h,R [p(delta/sqrt E)]^E, p(r)=(r−sin r)/(2pi).",
+      "detail": "Uses unique smooth strictly positive finite interacting ground state. The probability lower bound is explicit but nonuniform and very small along refinement; no typical-field estimate, renormalized covariance, or quantum physical-time control.",
+      "checks": [
+        {
+          "label": "True finite Wilson vacuum positivity and full Haar support",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Exact SU2 Haar ball volume and positive noncommuting based-plaquette event",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Uniform positive probability under h→0 and R→∞",
+          "state": "open",
+          "note": "m_h,R unknown; geometric product-ball lower bound collapses"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-saturated non-Abelian Cartan-tube stability and interacting-vacuum measure",
+          "path": "research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md",
+          "git_blob_sha": "02959e4077fe55abd9e44e16dc036de24d3f7ea7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/02959e4077fe55abd9e44e16dc036de24d3f7ea7/research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "quantum-vacuum",
+        "finite",
+        "noncommuting"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-SU2-TYPICAL-FLOW",
+      "title": "Typical non-Abelian positive-physical-radius curvature and Schur estimate",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Replace exponentially narrow finite Cartan-reference tubes by a genuine mesh/volume-uniform estimate for positive-probability, noncommuting SU2 configurations under the actual weak-coupling interacting vacuum.",
+      "detail": "Requires non-Abelian covariant curvature and commutator estimates beyond the scalar Nash equation; nontrivial 4D renormalized flowed-field covariance and a uniform full physical-time Schur/connected-correlation comparison. No P0–P5 or T0–T5 gate closed.",
+      "checks": [
+        {
+          "label": "Refinement-uniform non-Abelian curvature regularization on a non-vanishing true-vacuum event",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Source-grounded 4D nontrivial flowed SU2 covariance",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Full interacting energy-dependent Schur and connected physical-time estimates",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "OS reconstruction with common strictly positive infrared threshold",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite gauge-saturated non-Abelian Cartan-tube stability and interacting-vacuum measure",
+          "path": "research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md",
+          "git_blob_sha": "02959e4077fe55abd9e44e16dc036de24d3f7ea7",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/02959e4077fe55abd9e44e16dc036de24d3f7ea7/research/theorems/R3_FINITE_NONABELIAN_CARTAN_TUBE_POSITIVE_TIME_CERTIFICATE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "nonabelian",
+        "open",
+        "quantum-regularity"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -6766,6 +6901,83 @@
       "kind": "distinct-geometry",
       "label": "Cubic fixed Cartan result does not construct Penrose 3D gauge regulator",
       "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-SU2-NONABELIAN-TUBE",
+      "kind": "actual-3d-model",
+      "label": "Same original-link 3D cubic SU2 action and gauge group",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "to_id": "R-SU2-NONABELIAN-TUBE",
+      "kind": "finite-perturbative-extension",
+      "label": "Restricted reference controls nearby genuinely noncommuting fields at each fixed h",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "R-SU2-NONABELIAN-TUBE",
+      "kind": "full-nonlinear-equation",
+      "label": "Original-link full nonabelian gradient flow and physical energy",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-SU2-NONABELIAN-TUBE",
+      "to_id": "R-SU2-TUBE-VACUUM-MEASURE",
+      "kind": "positive-measure-interface",
+      "label": "Gauge-saturated open tube is not Haar-null at fixed h",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "R-SU2-TUBE-VACUUM-MEASURE",
+      "kind": "true-finite-vacuum",
+      "label": "Positive interacting density gives strictly positive finite probability",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-SU2-NONABELIAN-TUBE",
+      "to_id": "W-SU2-TYPICAL-FLOW",
+      "kind": "nonuniform-radius",
+      "label": "Hessian-Grönwall tube collapses exp(-4tau/h²)",
+      "status": "open"
+    },
+    {
+      "from_id": "R-SU2-TUBE-VACUUM-MEASURE",
+      "to_id": "W-SU2-TYPICAL-FLOW",
+      "kind": "nonuniform-probability",
+      "label": "Finite positive probability is not a typical-field continuum bound",
+      "status": "open"
+    },
+    {
+      "from_id": "W-SU2-TYPICAL-FLOW",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "refines-open-nonabelian-task",
+      "label": "Need genuine covariant commutator control and true-vacuum probability",
+      "status": "open"
+    },
+    {
+      "from_id": "W-SU2-TYPICAL-FLOW",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "missing-quantum-time",
+      "label": "No uniform energy-dependent physical-time Schur comparison",
+      "status": "open"
+    },
+    {
+      "from_id": "W-SU2-TYPICAL-FLOW",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "missing-renormalized-field",
+      "label": "No physical 4D nontrivial flowed covariance",
+      "status": "open"
+    },
+    {
+      "from_id": "R-SU2-TUBE-VACUUM-MEASURE",
+      "to_id": "P2",
+      "kind": "finite-only-no-closure",
+      "label": "Positive finite vacuum measure insufficient for all-scale interaction",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -6845,5 +7057,8 @@
     "THEOREM"
   ],
   "bridge_contract": "T0–T5",
-  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata"
+  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata",
+  "current_theorem_paths": 754,
+  "current_audit_paths": 62,
+  "theorem_inventory": "docs/research/THEOREM_INDEX_CURRENT.json"
 }
