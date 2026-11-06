@@ -62,6 +62,7 @@ const bridgeXY={
 'R-TWO-TIME-INFLUENCE':[1120,1530],'R-DYADIC-BARE-MEMORY':[1470,1530],'W-RENORMALIZED-INFLUENCE':[1800,1510],
 'R-VACUUM-WEIGHTED-BLOCK':[1030,1730],'R-SU2-STATIC-TIME-COUNTER':[1390,1740],'W-STATE-SCHUR-UNIFORM':[1760,1740],
 'R-WILSON-MARGINAL-HARNACK':[740,1940],'R-WILSON-FIXED-LOOP-MOMENT':[1090,1940],'I-WILSON-STATIC-TIME-NORM':[1450,1940],'W-LOCAL-MARGINAL-UV':[1800,1940],
+'R-LOCAL-LINK-ENERGY':[720,2130],'R-LOCAL-WILSON-FISHER':[1060,2130],'R-WILSON-THERMO-SUBSEQ':[1400,2130],'W-UV-UNIFORM-LOCAL-WILSON':[1780,2130],
 'P0':[480,1040],'P2':[800,1040],'P4':[1100,1040],'P5':[1850,1020]
 };
 function positionFor(n){if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
