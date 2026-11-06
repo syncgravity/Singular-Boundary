@@ -87,7 +87,7 @@ def expected():
     node['detail']='Current source count %d, historical discovery baseline %d. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.'%(cat['count'],live['baseline_historical_count'])
     import hashlib
     raw=LIVE.read_bytes()
-    blob_sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\\0'+raw).hexdigest()
+    blob_sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
     registry_path='docs/research/THEOREM_INDEX_LIVE.json'
     registry_source={'title':'Complete current theorem source registry','path':registry_path,'git_blob_sha':blob_sha,
       'url':'https://github.com/syncgravity/singular-boundary/blob/'+blob_sha+'/'+registry_path}
