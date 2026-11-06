@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06",
-  "version": "v2.38-draft",
-  "scope": "Exact nonlinear classical 3D Wilson physical-action dissipation, conditional small plaquette holonomies, curvature-energy atomic concentration, and strictly finite interacting-vacuum flowed variance. No physical nonlinear smoothing derivative, 4D YM gap or gravity UV proof.",
+  "version": "v2.39-draft",
+  "scope": "Exact 3D SU2 Cartan-planar invariant nonlinear flow: conditional positive-time physical curvature Nash estimate from bounded classical energy and all-time O(h²) Maxwell L2 comparison. Restricted Haar-null commuting sector, no generic SU2 quantum or gravity theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-nonlinear-cubic-physical-energy",
+  "git_branch": "audit/2026-11-06-cartan-positive-time-cubic-smoothing",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4464,6 +4464,192 @@
       "importance": 4,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-PLANAR-CARTAN-EMBED",
+      "title": "Exact invariant SU(2) Cartan-planar cubic nonlinear Wilson flow",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "The full 3D open cubic SU2 spatial Wilson gradient flow preserves a same-Cartan, z-independent xy-link configuration with identity vertical links; lifted curvature satisfies q_s=-(1/4)BB* sin(q).",
+      "detail": "A true finite-dimensional nonlinear invariant SU2 solution class with all xz/yz plaquettes identity. It is Abelian, and the fixed Cartan subset has zero Haar probability under the actual strictly positive finite Wilson vacuum. Not generic noncommutative cubic or 4D quantum Yang-Mills.",
+      "checks": [
+        {
+          "label": "Full 3D original-link force reduces exactly",
+          "state": "met",
+          "note": "Analytic 3D incidence; two independent full SU2 quaternion tests"
+        },
+        {
+          "label": "Non-winding flux lift |q(0)|<pi/2",
+          "state": "conditional",
+          "note": "Required to keep sine monotone"
+        },
+        {
+          "label": "True interacting Wilson-vacuum positive-probability estimate",
+          "state": "open",
+          "note": "Fixed commuting subgroup is Haar-null"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact finite nonlinear planar Cartan cubic physical-flow smoothing and Nash certificate",
+          "path": "research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md",
+          "git_blob_sha": "e4fa23a492245068b7f3115ede3dc2272a34115f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/e4fa23a492245068b7f3115ede3dc2272a34115f/research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "Cartan",
+        "finite",
+        "nonlinear"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "title": "Positive-physical-time nonlinear curvature smoothing from 3D action",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "On the invariant Cartan-planar cubic sector with an admissible flux lift, uniform initial 3D classical action M implies ||F_h(tau)||infinity <= (pi/2)sqrt(2 C_N M/(kappa tau)), tau>0, uniformly in h and spatial mesh, kappa bounded below for fine h.",
+      "detail": "Exact nonlinear positive-time curvature bound from the 2D Dirichlet Nash inequality and dynamically varying symmetric conductances c_e in [cos(delta),1]. Also H_h(tau)+kappa/4 int ||B*F_h||² <=H_h(0). No gap assumption, but it applies only to a Haar-null Abelian subset with an explicit admissibility condition.",
+      "checks": [
+        {
+          "label": "Uniform discrete Nash inequality on planar dual grid",
+          "state": "met",
+          "note": "Zero extension to Z²"
+        },
+        {
+          "label": "Nonlinear positive-time L2-to-Linfinity bound",
+          "state": "met",
+          "note": "Time-dependent conductances and duality"
+        },
+        {
+          "label": "Uniform bounded classical initial 3D energy and flux lift",
+          "state": "conditional",
+          "note": "Not established for actual interacting Wilson vacuum"
+        },
+        {
+          "label": "Full 3D noncommuting SU2 regularity at physical radius",
+          "state": "open",
+          "note": "Missing commutator and quantum-vacuum estimates"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact finite nonlinear planar Cartan cubic physical-flow smoothing and Nash certificate",
+          "path": "research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md",
+          "git_blob_sha": "e4fa23a492245068b7f3115ede3dc2272a34115f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/e4fa23a492245068b7f3115ede3dc2272a34115f/research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "conditional",
+        "nonlinear-smoothing",
+        "classical"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-CARTAN-ALLTIME-L2",
+      "title": "All-time O(h²) nonlinear-to-linear Cartan curvature comparison",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "Within the invariant admissible planar sector, ||F_nl(tau)-exp[-tau BB*/(4h²)]F_0||_(2,h) <= (1-cos(delta))/sqrt(2cos(delta)) ||F_0||_(2,h) for every tau>=0. Bounded initial 3D action gives delta=O(h) and O(h²) error.",
+      "detail": "A genuine all-time discrete nonlinear perturbation bound, including realizable initially concentrated curvatures. For bounded initial sup curvature K, a separate L-infinity bound tau h² K³/12 holds. No nonabelian curvature transport estimate or physical-time interacting Schur comparison follows.",
+      "checks": [
+        {
+          "label": "Exact relative scalar conductance bound",
+          "state": "met",
+          "note": "1-cos(delta) controls all edge coefficients"
+        },
+        {
+          "label": "Uniform all-time L2 error from energy/Young inequality",
+          "state": "met",
+          "note": "Independent concentrated defect and smooth numerical tests"
+        },
+        {
+          "label": "Actual 4D interacting nonabelian continuum observables",
+          "state": "open",
+          "note": "Abelian classical sector is Haar-null"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact finite nonlinear planar Cartan cubic physical-flow smoothing and Nash certificate",
+          "path": "research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md",
+          "git_blob_sha": "e4fa23a492245068b7f3115ede3dc2272a34115f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/e4fa23a492245068b7f3115ede3dc2272a34115f/research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "Cartan",
+        "conditional",
+        "O(h²)"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "title": "Full non-Abelian physical-radius curvature and quantum Schur estimates",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Transfer conditional nonlinear positive-time curvature smoothing beyond the fixed Cartan sector to generic, noncommuting SU2 cubic fields under hypotheses supported by the true weak-coupling Wilson vacuum; then establish renormalized covariance and physical-time Schur estimates.",
+      "detail": "Requires control of noncommutative Bianchi, covariant Laplacian and commutator terms, concentration/instantonic channels, probability under Omega_h² Haar rather than a Haar-null invariant subset, and nontrivial 4D OS reconstruction with dense infrared probes. No continuum gate closed.",
+      "checks": [
+        {
+          "label": "Noncommuting covariant curvature diffusion with h-uniform positive-time bounds",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Positive-probability true interacting Wilson-vacuum admissibility and renormalized moments",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Full energy-dependent Schur/connected long-time estimates uniform in h,R",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS Yang-Mills reconstruction and positive spectral gap",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact finite nonlinear planar Cartan cubic physical-flow smoothing and Nash certificate",
+          "path": "research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md",
+          "git_blob_sha": "e4fa23a492245068b7f3115ede3dc2272a34115f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/e4fa23a492245068b7f3115ede3dc2272a34115f/research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "nonabelian",
+        "open",
+        "4D"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -6481,6 +6667,104 @@
       "to_id": "G-GRAV",
       "kind": "distinct-goal",
       "label": "Classical cubic gauge flow does not establish gravitational UV theory",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-PLANAR-CARTAN-EMBED",
+      "kind": "exact-restricted-subsector",
+      "label": "Same original-link three-dimensional SU2 cubic action, commuting planar links only",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "R-PLANAR-CARTAN-EMBED",
+      "kind": "same-classical-flow",
+      "label": "Full nonlinear Wilson energy law restricts to exact Cartan planar invariant sector",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-PLANAR-CARTAN-EMBED",
+      "to_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "kind": "nonlinear-invariant-reduction",
+      "label": "Scalar graph sine diffusion and Dirichlet Nash smoothing",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-PLAQUETTE-HOLONOMY-ADMISSIBILITY",
+      "to_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "kind": "extra-admissibility",
+      "label": "Bounded energy plus no-winding Cartan lift yields uniform ellipticity",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-CUBIC-CURVATURE-ATOMIC",
+      "to_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "kind": "distinct-positive-time-result",
+      "label": "Initial concentration need not prevent positive-time smoothing in the restricted sector",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "to_id": "R-CARTAN-ALLTIME-L2",
+      "kind": "nonlinear-perturbation",
+      "label": "Flat Cartan heat used as comparison at identical physical flow time",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "to_id": "R-CARTAN-ALLTIME-L2",
+      "kind": "energy-to-comparison",
+      "label": "Bounded initial action yields h² relative nonlinear perturbation",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-CARTAN-ALLTIME-L2",
+      "to_id": "R-PERIODIC-FLOW-FOURIER",
+      "kind": "distinct-linear-controls",
+      "label": "Open planar Dirichlet vs periodic cubic transverse Fourier; no universality",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-PLANAR-CARTAN-EMBED",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "Haar-null-restriction",
+      "label": "Fixed maximal torus has zero true-Wilson-vacuum probability",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CARTAN-POSITIVE-FLOW-SMOOTH",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "missing-commutators",
+      "label": "Scalar uniformly elliptic diffusion not established for generic SU2",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CARTAN-ALLTIME-L2",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "missing-nonabelian-error",
+      "label": "O(h²) Abelian Maxwell comparison does not transfer interacting SU2",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "to_id": "W-NONLINEAR-PHYS-RADIUS",
+      "kind": "refines-open-regularity",
+      "label": "Nonlinear classical positive-time regularity in full nonabelian sector unproved",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "quantum-time-open",
+      "label": "Full physical time Schur/spectral exclusion remains open",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "to_id": "T0-QC-3D",
+      "kind": "distinct-geometry",
+      "label": "Cubic fixed Cartan result does not construct Penrose 3D gauge regulator",
       "status": "open"
     }
   ],
