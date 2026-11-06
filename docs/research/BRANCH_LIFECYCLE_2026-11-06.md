@@ -8,6 +8,8 @@ Research source records from PRs #63–#73 and #75 were merged with history pres
 
 **All mathematical claims remain source-qualified.** Complete indexing of 754 tracked theorem files never certifies a complete continuum Yang–Mills or gravitational proof.
 
+**Post-integration safety update:** PR #74 has been retargeted to `main` because its former Cartan base is already contained in `main`; it remains a **draft** with unresolved conflicts and is **not merged**. The retirement script now protects both `headRefName` **and** `baseRefName` for every currently open PR, so subsequent review stacks cannot lose a base branch accidentally. An open PR or non-ancestor branch must never be retired merely because an older ancestor PR was integrated.
+
 ## Research branches deliberately NOT retired
 
 | Branch | Treatment |
