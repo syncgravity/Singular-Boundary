@@ -18,7 +18,11 @@ def main():
  if (here/'knowledge-graph.json').exists():root=here
  else:root=here.parent
  g=json.loads((root/'knowledge-graph.json').read_text());m=json.loads((root/'data-manifest.json').read_text() if (root/'data-manifest.json').exists() else (root/'data_manifest.json').read_text())
- check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==740,'preserve source index snapshot');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
+ check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');# The historical 740 index remains a snapshot. The active inventory is exact per tracked file.
+ from build_theorem_catalog import actual_files as theorem_files, load_js_json as index_js, CAT as index_catalog, PREFIX as index_prefix
+ catalog=index_js(index_catalog,index_prefix)
+ check(g['indexed_theorem_paths']==len(theorem_files())==catalog['count']==len(catalog['records']),'complete source theorem inventory must agree')
+ check(g['existing_proof_paths']==78,'preserve prior 78 proof-path snapshot')
  n=g['nodes'];e=g['edges'];ids=[x['id'] for x in n];check(len(ids)==len(set(ids)),'duplicate ids');node={x['id']:x for x in n};check(len(g['nodes'])>=70,'node loss');check(len(g['edges'])>=100,'edge loss')
  for a in e:
   check(a['from_id'] in node and a['to_id'] in node,f'dangling edge {a}')
@@ -45,7 +49,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -165,6 +169,18 @@ def main():
   check(node['G-GRAV']['status']=='open','separate gravity UV objective remains open')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'no YM continuum gate promoted')
   check(any(x['from_id']=='R-PLANAR-CARTAN-EMBED' and x['to_id']=='W-FULL-NONABELIAN-PHYS-SMOOTHING' and x['status']=='open' for x in e),'Haar-null sector restriction must be explicit')
+ if g['version']=='v2.40-draft':
+  check(len(n)==140 and len(e)==316,'periodic nonabelian physical-flow graph counts')
+  check(node['R-NONABELIAN-HOMOGENEOUS']['status']=='finite','noncommuting homogeneous only')
+  check(node['R-NONABELIAN-PHYS-ODE']['status']=='conditional','physical-time homogeneous ODE only')
+  check(node['R-NONABELIAN-FINITE-VACUUM-TUBE']['status']=='finite','positive probability per finite regulator only')
+  check(node['W-NONABELIAN-TYPICAL-VACUUM']['status']=='open','uniform true-Wilson-vacuum bound remains OPEN')
+  check(node['W-FULL-NONABELIAN-PHYS-SMOOTHING']['status']=='open','generic nonabelian parabolic regularity remains OPEN')
+  check(node['T2-OBSERVABLES']['status']=='open','4D continuum observable remains OPEN')
+  check(node['T3-TIME-COMPARE']['status']=='open','quantum time correlations remain OPEN')
+  check(node['G-GRAV']['status']=='open','quantum gravity remains OPEN')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'all continuum gates OPEN')
+  check(any(x['from_id']=='R-NONABELIAN-FINITE-VACUUM-TUBE' and x['to_id']=='W-NONABELIAN-TYPICAL-VACUUM' and x['status']=='open' for x in e),'finite probability must not be promoted to uniform quantum claim')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
