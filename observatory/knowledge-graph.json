@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06",
-  "version": "v2.39-draft",
-  "scope": "Exact 3D SU2 Cartan-planar invariant nonlinear flow: conditional positive-time physical curvature Nash estimate from bounded classical energy and all-time O(h²) Maxwell L2 comparison. Restricted Haar-null commuting sector, no generic SU2 quantum or gravity theorem.",
+  "version": "v2.40-draft",
+  "scope": "Exact periodic noncommuting cubic SU2 homogeneous classical flow, positive physical-time curvature in invariant sector, finite open tube positive Wilson-vacuum measure only. Complete theorem-file discovery catalogue and CI coverage; all continuum gates remain open.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-cartan-positive-time-cubic-smoothing",
+  "git_branch": "audit/2026-11-06-nonabelian-homogeneous-and-theorem-index",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4650,6 +4650,187 @@
       "importance": 5,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-NONABELIAN-HOMOGENEOUS",
+      "title": "Noncommuting SU(2) homogeneous periodic cubic Wilson flow",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Full periodic 3D cubic original-link SU2 Wilson force preserves Ux=exp(theta T1), Uy=exp(theta T2), Uz=I, with nonzero xy commutator and exact theta_s=-2sin^3(theta/2)cos(theta/2).",
+      "detail": "Distinct periodic spatial control rather than the previous open cubic or Cartan planar model; n>=2, 3n^3 original links, 3n^3 faces. Strong symmetry and homogeneity, measure-zero manifold, no typical true-vacuum regularity.",
+      "checks": [
+        {
+          "label": "Full SU2 original-link quaternion force and nonzero commutator",
+          "state": "met",
+          "note": "9 independent periodic geometry/force cases"
+        },
+        {
+          "label": "Exact invariant homogeneous nonabelian ODE",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Generic noncommuting Wilson configurations",
+          "state": "open",
+          "note": "Homogeneity is not preserved by arbitrary perturbations"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact noncommuting periodic cubic SU2 Wilson flow and finite positive-vacuum tube",
+          "path": "research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md",
+          "git_blob_sha": "827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0/research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "periodic",
+        "SU2",
+        "nonabelian",
+        "classical"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-NONABELIAN-PHYS-ODE",
+      "title": "Positive-physical-time nonabelian homogeneous curvature and O(h²) limit",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "For 0<theta0<=pi/2, the full periodic homogeneous SU2 commutator plaquette has 2distance(U_p,I)/h²<=2pi/tau. With theta0=h a0, a_h converges at O(h²) to a0/sqrt(1+a0²tau/2).",
+      "detail": "Classical nonlinear physically scaled flow in a genuinely noncommuting but homogeneous invariant family, not an interacting OS/Schur quantum theorem. The upper bound remains valid for theta0 fixed and diverging bare initial action, only in this sector.",
+      "checks": [
+        {
+          "label": "Noncommuting curvature positive physical time bound",
+          "state": "met",
+          "note": "Exact z=sin²(theta/2) Riccati inequality"
+        },
+        {
+          "label": "Explicit O(h²) classical homogeneous continuum ODE error",
+          "state": "met",
+          "note": "tau h² a0^5 /16"
+        },
+        {
+          "label": "Arbitrary full 3D noncommuting initial configurations",
+          "state": "open",
+          "note": "No generic curvature/Nash estimate"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact noncommuting periodic cubic SU2 Wilson flow and finite positive-vacuum tube",
+          "path": "research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md",
+          "git_blob_sha": "827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0/research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "periodic",
+        "SU2",
+        "conditional",
+        "physical-flow"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-NONABELIAN-FINITE-VACUUM-TUBE",
+      "title": "Open noncommuting curvature-control tube of positive finite Wilson-vacuum probability",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Global Wilson Hessian <=4 and product plaquette geometry yield curvature difference <=4 exp(4tau/h²) d2(U,U*)/h². A radius r_h~h² exp(-4tau/h²) full-space tube satisfies the positive-time bound and has nonzero probability under the true finite strictly positive Wilson vacuum.",
+      "detail": "The finite Haar-ball lower probability is m_h[((u-sin u)/(2pi))^(3n^3)], u=r_h/sqrt(3n^3). The radius, Haar mass and unknown m_h deteriorate rapidly; this is not a uniform true-vacuum or typical-configurations theorem. The gauge-invariant good-curvature event contains the tube.",
+      "checks": [
+        {
+          "label": "Finite full-space open noncommuting tube around exact solution",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Strictly positive true finite Wilson-vacuum probability",
+          "state": "met",
+          "note": "Compact positive ground-state density and product Haar geometry"
+        },
+        {
+          "label": "Uniform positive probability on weak-coupling refinements",
+          "state": "open",
+          "note": "Haar tube shrinks exponentially in tau/h² and E grows"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact noncommuting periodic cubic SU2 Wilson flow and finite positive-vacuum tube",
+          "path": "research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md",
+          "git_blob_sha": "827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0/research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "finite-vacuum",
+        "noncommuting",
+        "open-neighborhood"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "title": "Non-Abelian physical-flow regularity on uniformly probable Wilson-vacuum sets",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Prove fixed-positive-physical-flow-time covariant curvature estimates for full 3D SU2 configurations on sets of uniformly positive probability under actual weak-coupling Wilson ground states, then compare full quantum-time Schur/connected correlations.",
+      "detail": "The exact homogeneous nonabelian ODE and exponentially shrinking finite open tube lack any h/volume-uniform probability bound. Need multi-scale noncommutative parabolic control and state-dependent estimates; 4D OS and gap remain independent.",
+      "checks": [
+        {
+          "label": "Noncommutative covariant-curvature smoothing on generic field sets",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Refinement/volume-uniform true-Wilson-vacuum probability and nonzero renormalized covariance",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Full interacting Schur / positive quantum-time decay uniform in h,R",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS reconstruction and positive gauge-invariant gap",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact noncommuting periodic cubic SU2 Wilson flow and finite positive-vacuum tube",
+          "path": "research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md",
+          "git_blob_sha": "827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/827fb2ff04d60ea7ae31c8f8bb9dee3e2b3116d0/research/theorems/R3_NONCOMMUTING_HOMOGENEOUS_CUBIC_SU2_FLOW_AND_POSITIVE_TUBE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "nonabelian",
+        "vacuum",
+        "open"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -6765,6 +6946,104 @@
       "to_id": "T0-QC-3D",
       "kind": "distinct-geometry",
       "label": "Cubic fixed Cartan result does not construct Penrose 3D gauge regulator",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-NONABELIAN-HOMOGENEOUS",
+      "kind": "distinct-boundary-control",
+      "label": "Periodic cubic control, not open cubical physical regulator",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONABELIAN-HOMOGENEOUS",
+      "to_id": "R-NONABELIAN-PHYS-ODE",
+      "kind": "exact-nonlinear-ODE",
+      "label": "True noncommuting plaquette homogeneous physical-time regularization",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-NONABELIAN-PHYS-ODE",
+      "to_id": "R-NONABELIAN-FINITE-VACUUM-TUBE",
+      "kind": "stable-open-neighborhood",
+      "label": "Finite Hessian Lipschitz control creates an open full-link tube",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "R-NONABELIAN-FINITE-VACUUM-TUBE",
+      "kind": "flow-stability",
+      "label": "Volume-independent Hessian bound but exponential physical-time loss",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONABELIAN-FINITE-VACUUM-TUBE",
+      "to_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "kind": "nonuniform-probability",
+      "label": "Strictly positive at each finite h, no uniform h,R mass",
+      "status": "open"
+    },
+    {
+      "from_id": "R-PLANAR-CARTAN-EMBED",
+      "to_id": "R-NONABELIAN-HOMOGENEOUS",
+      "kind": "distinct-invariant-sectors",
+      "label": "Cartan open planar vs noncommuting periodic homogeneous",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONABELIAN-PHYS-ODE",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "partial-nonabelian-control",
+      "label": "Homogeneous noncommuting ODE does not prove generic 3D regularity",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "refines-open-task",
+      "label": "Needs full covariant parabolic and genuine vacuum estimates",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "open-quantum-time",
+      "label": "Classical positive-time flow not quantum transfer/Schur",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "open-quantum-field",
+      "label": "Nontrivial 4D flowed observable covariance unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-IR-comparison",
+      "label": "Positive quantum-time interacting spectral exclusion unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONABELIAN-HOMOGENEOUS",
+      "to_id": "T0-QC-3D",
+      "kind": "distinct-geometry",
+      "label": "Periodic cubic noncommuting flow does not build genuine 3D Penrose",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONABELIAN-PHYS-ODE",
+      "to_id": "P2",
+      "kind": "scoped-finite-evidence",
+      "label": "Positive classical time in homogeneous sector only",
+      "status": "finite"
+    },
+    {
+      "from_id": "W-NONABELIAN-TYPICAL-VACUUM",
+      "to_id": "G-GRAV",
+      "kind": "independent-UV-question",
+      "label": "YM smoothing is not gravitational UV completion",
       "status": "open"
     }
   ],
