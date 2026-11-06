@@ -238,3 +238,7 @@ attach_spatial_flow_fisher_gap(ROOT)
 # Exact flat-field cubic SU2 physical-radius curvature heat and isolated nonlinear Haar warning.
 from add_physical_radius_linear_flow_graph import attach as attach_physical_radius_linear_flow
 attach_physical_radius_linear_flow(ROOT)
+
+# Full nonlinear classical SU2 spatial physical-action balance, true finite-vacuum variance and concentration warning.
+from add_nonlinear_energy_graph import attach as attach_nonlinear_energy
+attach_nonlinear_energy(ROOT)
