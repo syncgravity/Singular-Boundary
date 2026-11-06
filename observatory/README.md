@@ -1,4 +1,4 @@
-# Research Observatory v2.29 — Mathematical Physics Proof Atlas
+# Research Observatory v2.30-draft — Mathematical Physics Proof Atlas
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
@@ -12,7 +12,7 @@ See [exact 3D transverse-shell report](../research/theorems/R3_CUBIC_FIRST_TRANS
 ## Explore the proof
 
 - [Observatory overview](index.html) — the complete proof-program entry point, P0–P5 dependencies, routes, obstructions and source catalog.
-- [Interactive Proof Atlas](graph.html) — 101 curated mathematical-physics nodes and 189 typed edges; starts on the **Cubic → Quasicrystal** model-transfer view.
+- [Interactive Proof Atlas](graph.html) — 103 curated mathematical-physics nodes and 194 typed edges; starts on the **Cubic → Quasicrystal** model-transfer view.
 - [Uniform interacting theorem integration](integration.html) — the conditional physical-time spectral-support bridge, common-regulator requirements and explicit continuum obligations.
 - [Mathematical-physics reader guide](MATHEMATICAL_PHYSICS_GUIDE.md) — precise meanings of models, results, obstacles, interfaces, review status, and the six cross-model T0–T5 conditions.
 
