@@ -5,7 +5,7 @@
   "scope": "Exact periodic noncommuting cubic SU2 homogeneous classical flow, positive physical-time curvature in invariant sector, finite open tube positive Wilson-vacuum measure only. Complete theorem-file discovery catalogue and CI coverage; all continuum gates remain open.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 740,
+  "indexed_theorem_paths": 754,
   "existing_proof_paths": 78,
   "git_branch": "audit/2026-11-06-nonabelian-homogeneous-and-theorem-index",
   "status_legend": {
@@ -7124,5 +7124,6 @@
     "THEOREM"
   ],
   "bridge_contract": "T0–T5",
-  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata"
+  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata",
+  "complete_theorem_index": "docs/research/THEOREM_INDEX_CURRENT.md"
 }
