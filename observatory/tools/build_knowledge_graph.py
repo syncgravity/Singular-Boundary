@@ -206,3 +206,7 @@ reconcile(ROOT)
 
 from add_mathematical_physics_bridge import extend
 extend(ROOT)
+
+# Scoped three-dimensional finite magnetic shell: no theorem gate promotion.
+from add_transverse_shell_graph import attach
+attach(ROOT)
