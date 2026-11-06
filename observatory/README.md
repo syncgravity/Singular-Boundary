@@ -2,7 +2,7 @@
 
 ## Branch retirement and research preservation
 
-The November 6 research consolidation was history-preserving. The **72 integrated historical branch refs** still visible in GitHub are cleanup candidates, **not** 72 unmerged mathematical theories. Three independent PRs (#55, #56, #74) and one independent homogeneous-flow branch remain **unmerged and protected**. [Branch lifecycle and full SHA ledger](../docs/research/BRANCH_LIFECYCLE_2026-11-06.md) describes the distinction. To retire verified integrated refs, run the manual GitHub Actions **Retire fully merged branch references** workflow, first in dry-run mode, then with an explicit deletion confirmation. It verifies live ancestry and protects open PRs; it never runs automatically or deletes independent research.
+The November 6 research consolidation was history-preserving. The **72 integrated historical branch refs** still visible in GitHub are cleanup candidates, **not** 72 unmerged mathematical theories. Three independent PRs (#55, #56, #74) and one independent homogeneous-flow branch remain **unmerged and protected**. [Branch lifecycle and full SHA ledger](../docs/research/BRANCH_LIFECYCLE_2026-11-06.md) describes the distinction. To retire verified integrated refs, run the manual GitHub Actions **Retire fully merged branch references** workflow, first in dry-run mode, then with an explicit deletion confirmation. It verifies live ancestry and protects both heads and bases of open PRs; it never runs automatically or deletes independent research. PR #74 was retargeted to main for safe review and remains draft/unmerged.
 
 ## Current Observatory coverage · 2026-11-06
 
