@@ -7,7 +7,7 @@ The first full `2×2×1` cubic spatial slab about a four-face block has 20 plaqu
 
 See [exact 3D transverse-shell report](../research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md) and its [reproducible verifier](../research/scripts/verify_cubic_transverse_shell_2026_11_06.py). The 2²⁰ squarefree face configurations were enumerated independently; only 32 pass the Haar center-parity test, while all higher-order non-manifold channels were bounded without unjustified factorization. The next step is **the full Wilson exponential plus temporal heat-kernel transfer, with the nonabelian recoupling channels included**, not a claim of a continuum gap.
 
-**Source status:** integrated on the private `main` branch, November 5, 2026. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
+**Source status:** v2.30-draft review branch stacked on PR #63; v2.29 remains integrated on the private `main` branch. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
 
 ## Explore the proof
 
