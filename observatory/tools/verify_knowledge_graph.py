@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -139,6 +139,20 @@ def main():
   check(node['G-GRAV']['status']=='open','gravity UV objective remains OPEN')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'no continuum theorem gate promoted')
   check(any(x['from_id']=='W-NONLINEAR-PHYS-RADIUS' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'complete interacting physical-time interface missing')
+ if g['version']=='v2.38-draft':
+  check(len(n)==132 and len(e)==288,'nonlinear physical energy graph count')
+  check(node['R-NONLINEAR-PHYS-ACTION']['status']=='finite','nonlinear classical energy scoped')
+  check(node['R-PLAQUETTE-HOLONOMY-ADMISSIBILITY']['status']=='conditional','uniform initial energy hypothesis required')
+  check(node['R-CUBIC-CURVATURE-ATOMIC']['status']=='obstruction','curvature concentration at initial time')
+  check(node['R-FINITE-FLOWED-VACUUM']['status']=='finite','finite interacting-vacuum variance only')
+  check(node['W-NONLINEAR-PHYS-RADIUS']['status']=='open','nonlinear quantum physical-radius still OPEN')
+  check(node['W-NONLINEAR-PHYS-RADIUS']['checks'][0]['state']=='partial','classical energy is only a partial certificate')
+  check(node['W-PHYSICAL-FLOWED-SCHUR']['status']=='open','full interacting Schur comparisons remain OPEN')
+  check(node['T2-OBSERVABLES']['status']=='open','continuum observable still OPEN')
+  check(node['T3-TIME-COMPARE']['status']=='open','physical quantum-time bridge still OPEN')
+  check(node['G-GRAV']['status']=='open','gravity UV still OPEN')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'never promote P0-P5')
+  check(any(x['from_id']=='R-CUBIC-CURVATURE-ATOMIC' and x['to_id']=='W-NONLINEAR-PHYS-RADIUS' for x in e),'concentration warning is navigable')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
