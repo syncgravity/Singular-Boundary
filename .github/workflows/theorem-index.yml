@@ -1,0 +1,30 @@
+name: Theorem index coverage
+on:
+  push:
+    paths:
+      - 'research/theorems/**'
+      - 'observatory/catalog.js'
+      - 'observatory/knowledge-graph.json'
+      - 'observatory/knowledge-graph-data.js'
+      - 'observatory/tools/build_theorem_catalog.py'
+      - 'docs/research/THEOREM_INDEX_CURRENT.md'
+      - '.github/workflows/theorem-index.yml'
+  pull_request:
+    paths:
+      - 'research/theorems/**'
+      - 'observatory/catalog.js'
+      - 'observatory/knowledge-graph.json'
+      - 'observatory/knowledge-graph-data.js'
+      - 'observatory/tools/build_theorem_catalog.py'
+      - 'docs/research/THEOREM_INDEX_CURRENT.md'
+      - '.github/workflows/theorem-index.yml'
+permissions:
+  contents: read
+jobs:
+  verify-theorem-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the PR or branch
+        uses: actions/checkout@v4
+      - name: Verify every theorem path, full blob hash and graph inventory
+        run: python3 observatory/tools/build_theorem_catalog.py --check
