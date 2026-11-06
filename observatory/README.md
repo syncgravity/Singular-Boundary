@@ -1,5 +1,9 @@
 # Research Observatory v2.41-draft — Mathematical Physics Proof Atlas
 
+## Branch retirement and research preservation
+
+The November 6 research consolidation was history-preserving. The **72 integrated historical branch refs** still visible in GitHub are cleanup candidates, **not** 72 unmerged mathematical theories. Three independent PRs (#55, #56, #74) and one independent homogeneous-flow branch remain **unmerged and protected**. [Branch lifecycle and full SHA ledger](../docs/research/BRANCH_LIFECYCLE_2026-11-06.md) describes the distinction. To retire verified integrated refs, run the manual GitHub Actions **Retire fully merged branch references** workflow, first in dry-run mode, then with an explicit deletion confirmation. It verifies live ancestry and protects open PRs; it never runs automatically or deletes independent research.
+
 ## Current Observatory coverage · 2026-11-06
 
 **754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.41-draft) has **139 curated mathematical-physics nodes and 314 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
