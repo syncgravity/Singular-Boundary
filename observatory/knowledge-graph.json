@@ -5,7 +5,7 @@
   "scope": "Exact all-configuration finite noncommuting cubic SU2 plaquette influence and verified high-curvature local-max warning. The exp(3tau/h²) bound is non-uniform at physical radius; full covariant non-Abelian/quantum smoothing and P0–P5 remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 740,
+  "indexed_theorem_paths": 754,
   "existing_proof_paths": 78,
   "git_branch": "audit/2026-11-06-full-nonabelian-locality-and-index",
   "status_legend": {
@@ -7073,5 +7073,8 @@
     "THEOREM"
   ],
   "bridge_contract": "T0–T5",
-  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata"
+  "user_facing_labels": "physics concepts; source document identity restricted to provenance metadata",
+  "historical_indexed_theorem_paths": 740,
+  "complete_theorem_index": "docs/research/THEOREM_INDEX_LIVE.json",
+  "theorem_index_status": "source-file-indexed; no proof certification inferred"
 }
