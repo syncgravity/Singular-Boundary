@@ -56,18 +56,19 @@ def main():
  check(not any(x['from_id']=='R-CUBIC-FINITE-GAP' and x['to_id']=='THEOREM' for x in e),'no unlicensed direct finite gap to continuum')
  check(any(x['from_id']=='R-CUBIC-FINITE-GAP' and x['to_id']=='I-UV-COUPLING' for x in e),'strong coupling regime witness missing')
  check((root/'MATHEMATICAL_PHYSICS_GUIDE.md').is_file(),'reader guide missing')
- if g['version']=='v2.30-draft':
-  check(len(n)==103 and len(e)==194,'scoped finite shell graph count')
+ if g['version'] in ('v2.30-draft','v2.31-draft'):
   check(node['R-CUBIC-3D-SHELL']['status']=='finite','shell must remain finite')
   check(node['W-3D-WILSON-TIME']['status']=='open','full Wilson-time gate must remain open')
-  if g['version']=='v2.31-draft':
-   check(len(n)==105 and len(e)==200,'finite Wilson/time memory graph counts')
-   check(node['R-WILSON-EXP-SHELL']['status']=='finite','full Wilson cap scope')
-   check(node['R-TEMPORAL-MEMORY']['status']=='finite','finite-time memory scope')
-   check(node['W-3D-WILSON-TIME']['checks'][-1]['state']=='open','time RG remains open')
-   check(any(a['from_id']=='W-3D-WILSON-TIME' and a['to_id']=='T3-TIME-COMPARE' and a['status']=='open' for a in e),'interacting IR interface must remain open')
   check(any(z['from_id']=='W-3D-WILSON-TIME' and z['to_id']=='P2' and z['status']=='open' for z in e),'no physical-time shortcut')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'no gate closure')
+ if g['version']=='v2.30-draft':
+  check(len(n)==103 and len(e)==194,'scoped finite shell graph count')
+ if g['version']=='v2.31-draft':
+  check(len(n)==105 and len(e)==200,'finite Wilson/time memory graph counts')
+  check(node['R-WILSON-EXP-SHELL']['status']=='finite','full Wilson cap scope')
+  check(node['R-TEMPORAL-MEMORY']['status']=='finite','finite-time memory scope')
+  check(node['W-3D-WILSON-TIME']['checks'][-1]['state']=='open','time RG remains open')
+  check(any(a['from_id']=='W-3D-WILSON-TIME' and a['to_id']=='T3-TIME-COMPARE' and a['status']=='open' for a in e),'interacting IR interface must remain open')
  
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
