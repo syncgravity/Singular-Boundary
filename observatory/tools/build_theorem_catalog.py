@@ -9,7 +9,7 @@ Never infer mathematical validity from a filename or Git blob. The curated graph
 and claim ledger, not this file index, assess claims and proof obligations.
 """
 from __future__ import annotations
-import argparse, hashlib, json, re, sys
+import argparse, hashlib, json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -123,6 +123,8 @@ def write(actual):
     records=records_for(actual,cat)
     cat['count']=len(records);cat['records']=records
     cat['index_kind']='discovery_only'
+    branch=subprocess.run(['git','branch','--show-current'], cwd=ROOT, capture_output=True, text=True, check=False).stdout.strip()
+    if branch: cat['source_branch']=branch
     CAT.write_text(PREFIX+json.dumps(cat,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     INDEX.write_text(current_markdown(records),encoding='utf-8')
     if GRAPH.exists():
