@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06 (UTC)",
-  "version": "v2.33-draft",
+  "version": "v2.34-draft",
   "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-vacuum-weighted-schur-form",
+  "git_branch": "audit/2026-11-06-marginal-harnack-loop-sumrule",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3487,7 +3487,7 @@
         {
           "label": "State-marginal, logarithmic-score and induced-potential control",
           "state": "open",
-          "note": ""
+          "note": "An explicit global Harnack bound for ρ now exists, but grows with F/g₀⁴ and E; a local uniform score/Schur estimate remains OPEN."
         },
         {
           "label": "Physical-time or energy-dependent full Schur comparison with summable errors",
@@ -3513,6 +3513,191 @@
         "renormalization",
         "Schur-form",
         "open"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-WILSON-MARGINAL-HARNACK",
+      "title": "Finite interacting SU(2) vacuum marginal Harnack certificate",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For the genuine finite cubic Wilson vacuum Ω² dHaar, every coarse-loop marginal obeys exp(−2Λ)≤ρ≤exp(2Λ), Λ=64F/g₀⁴+E log(101/99). Positive Wilson variance is explicit.",
+      "detail": "The proof uses SU2 heat-kernel Peter–Weyl tails and Feynman–Kac positivity. Λ grows with the entire lattice and inverse bare coupling; this is NOT a uniform local-marginal or ultraviolet estimate.",
+      "checks": [
+        {
+          "label": "Finite SU2 heat-kernel uniform minorization at time αt=8",
+          "state": "met",
+          "note": "δ8<0.01 from explicit character-series bound"
+        },
+        {
+          "label": "Real interacting vacuum marginal pointwise bounds",
+          "state": "met",
+          "note": "Feynman–Kac; depends on all E and F"
+        },
+        {
+          "label": "Finite normalized Wilson loop variance certificate",
+          "state": "met",
+          "note": "Variance ≥exp(−2Λ)"
+        },
+        {
+          "label": "Volume/mesh independent local-marginal Harnack",
+          "state": "open",
+          "note": "Global bound grows as exp(O(F/g₀⁴))"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 vacuum marginal bound, fixed-physical Wilson moment and source-response circularity",
+          "path": "research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md",
+          "git_blob_sha": "0252ebfd73b2e9870717393be5fcd5114bb8cf0f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0252ebfd73b2e9870717393be5fcd5114bb8cf0f/research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite",
+        "ground-state",
+        "marginal"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "title": "Physical Wilson loop: exact first spectral moment on every cubic refinement",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P4",
+      "summary": "For a simple loop of L distinct original links, −C′(0)=α L Eρ(1−W²/4)/Varρ(W). On fixed physical perimeter ℓ, α L=g₀²ℓ/(2h²).",
+      "detail": "The formula is an ultraviolet spectral sum rule, not infrared exclusion. A positive spectral toy measure exhibits diverging first moment with a fixed positive gap.",
+      "checks": [
+        {
+          "label": "Original-link gradient/Casimir identity",
+          "state": "met",
+          "note": "|∇χfund|²=1−χfund²/4"
+        },
+        {
+          "label": "Same physical contour has twice as many fine edges",
+          "state": "met",
+          "note": "Unit-square perimeter 4: L=4n"
+        },
+        {
+          "label": "First moment controls the physical infrared mass gap",
+          "state": "open",
+          "note": "False in general: high-energy spectral tail counterexample"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 vacuum marginal bound, fixed-physical Wilson moment and source-response circularity",
+          "path": "research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md",
+          "git_blob_sha": "0252ebfd73b2e9870717393be5fcd5114bb8cf0f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0252ebfd73b2e9870717393be5fcd5114bb8cf0f/research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite",
+        "ultraviolet",
+        "moment"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "I-WILSON-STATIC-TIME-NORM",
+      "title": "Conditional two-scale marginal matching versus physical-time normalization",
+      "kind": "interface",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "If |log(ρf/ρc)|≤δ on the same physical loop, its unsmeared normalized first-moment ratio lies in k exp(±2δ), k=4 g₀(h/2)²/g₀(h)².",
+      "detail": "This is conditional on an unproved ratio bound. With slowly running bare coupling and δ small, the raw initial-slope ratio tends toward four; matching static laws does not supply a common physical-time renormalized observable.",
+      "checks": [
+        {
+          "label": "Source-certified common physical-loop holonomy dictionary",
+          "state": "met",
+          "note": "Fine holonomy is ordered product, not a new loop"
+        },
+        {
+          "label": "True interacting relative-marginal log ratio δ uniformly small",
+          "state": "open",
+          "note": "Not obtained for cubic Wilson ground states"
+        },
+        {
+          "label": "Renormalized/smeared physical-time loop observable",
+          "state": "open",
+          "note": "Raw first spectral moments need not converge"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 vacuum marginal bound, fixed-physical Wilson moment and source-response circularity",
+          "path": "research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md",
+          "git_blob_sha": "0252ebfd73b2e9870717393be5fcd5114bb8cf0f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0252ebfd73b2e9870717393be5fcd5114bb8cf0f/research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "comparison",
+        "conditional"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-LOCAL-MARGINAL-UV",
+      "title": "Noncircular local marginal and renormalized Wilson–Schur estimates",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Replace the global Ω Harnack estimate by a boundary-local volume-uniform estimate; construct a renormalized gauge-invariant loop and control the entire energy-dependent Schur form across refinements.",
+      "detail": "A bounded-source response estimate ||∂θ sqrtρ||≤sqrt Var(F)/Δ depends on the finite interacting gap Δ, so assuming it uniform to prove the same gap is circular. Seek a localized, source-independent estimate along the actual g₀(h) and R→∞.",
+      "checks": [
+        {
+          "label": "Volume-independent local conditional-marginal estimate without a gap assumption",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Physical-time normalization for a nontrivial smeared Wilson observable",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Uniform conditional-score variance and full shorted Schur comparison",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Nontrivial 4D OS continuum and dense physical probes",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 vacuum marginal bound, fixed-physical Wilson moment and source-response circularity",
+          "path": "research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md",
+          "git_blob_sha": "0252ebfd73b2e9870717393be5fcd5114bb8cf0f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0252ebfd73b2e9870717393be5fcd5114bb8cf0f/research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "renormalization",
+        "open",
+        "noncircular"
       ],
       "importance": 5,
       "core": false,
@@ -5044,6 +5229,97 @@
       "to_id": "P2",
       "kind": "open-proof-obligation",
       "label": "No uniform interacting weak-coupling estimates",
+      "status": "open"
+    },
+    {
+      "from_id": "R-VACUUM-WEIGHTED-BLOCK",
+      "to_id": "R-WILSON-MARGINAL-HARNACK",
+      "kind": "finite-quantification",
+      "label": "actual Ω² local marginal is bounded nonuniformly",
+      "status": "finite"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-WILSON-MARGINAL-HARNACK",
+      "kind": "source-model",
+      "label": "original-link 3D cubic SU2 Wilson",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-MARGINAL-HARNACK",
+      "to_id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "kind": "quantified-variance",
+      "label": "variance strictly positive at finite regulator",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "to_id": "I-WILSON-STATIC-TIME-NORM",
+      "kind": "conditional-two-scale",
+      "label": "factor four from diffusion and edge counts",
+      "status": "conditional"
+    },
+    {
+      "from_id": "I-WILSON-STATIC-TIME-NORM",
+      "to_id": "W-LOCAL-MARGINAL-UV",
+      "kind": "requires-renormalization",
+      "label": "raw Wilson first moment not physically time-matched",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WILSON-MARGINAL-HARNACK",
+      "to_id": "W-LOCAL-MARGINAL-UV",
+      "kind": "nonuniform-bound",
+      "label": "global exp(F/g₀⁴) loses volume/UV control",
+      "status": "open"
+    },
+    {
+      "from_id": "W-STATE-SCHUR-UNIFORM",
+      "to_id": "W-LOCAL-MARGINAL-UV",
+      "kind": "refines-open-gate",
+      "label": "noncircular local estimate still needed",
+      "status": "open"
+    },
+    {
+      "from_id": "W-LOCAL-MARGINAL-UV",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "open-physical-probe",
+      "label": "smearing/renormalization and density missing",
+      "status": "open"
+    },
+    {
+      "from_id": "W-LOCAL-MARGINAL-UV",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "open-dynamics",
+      "label": "complete Schur/long-time comparison missing",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WILSON-FIXED-LOOP-MOMENT",
+      "to_id": "P4",
+      "kind": "uv-not-ir",
+      "label": "high spectral first moment does not prove mass gap",
+      "status": "open"
+    },
+    {
+      "from_id": "W-LOCAL-MARGINAL-UV",
+      "to_id": "P2",
+      "kind": "missing-uniform-interaction",
+      "label": "physical continuum interacting estimates remain OPEN",
+      "status": "open"
+    },
+    {
+      "from_id": "R-WILSON-MARGINAL-HARNACK",
+      "to_id": "I-UV-COUPLING",
+      "kind": "weak-coupling-degradation",
+      "label": "Harnack constant grows as g₀^−4",
+      "status": "open"
+    },
+    {
+      "from_id": "I-WILSON-STATIC-TIME-NORM",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "renormalized-dictionary",
+      "label": "marginal match alone insufficient for physical time",
       "status": "open"
     }
   ],
