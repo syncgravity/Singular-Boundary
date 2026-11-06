@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "scope": "Finite noncommuting full 3D SU2 classical flow in exponentially thin positive-Haar tubes near an exactly invariant Cartan-planar reference; no uniform vacuum probability, quantum Schur or continuum theorem",
+  "reference": "PR73 full 3D original-link Cartan-planar SU2 reference",
+  "hessian_bound": 4.0,
+  "guaranteed_radius": "delta_h(tau)=min(h^2 exp(-4tau/h^2)/8, h/(32F)) in product SU2 geodesic norm",
+  "probability_lower": "nu_h(B_delta(U0)) >= min(Omega_h^2) [p(delta/sqrt(E))]^E > 0, p(r)=(r-sin r)/(2pi)",
+  "curvature_difference_bound": "max_p |2Im U_p(s)/h^2 - 2Im U0_p(s)/h^2| <= 8 exp(4s)d_2(U,U0)/h^2",
+  "tests": [
+    {
+      "n": 2,
+      "h": 0.5,
+      "E": 54,
+      "F": 36,
+      "tau": 0.006,
+      "amplitude": 0.002,
+      "initial_product_distance": 0.014696938456699065,
+      "evolved_product_distance": 0.014472768721069429,
+      "rigorous_evolved_distance_upper": 0.016177788219173175,
+      "actual_max_physical_curvature_vector_difference": 0.027102686594882523,
+      "rigorous_physical_curvature_difference_upper": 0.5176892230135416,
+      "exact_tube_radius": 0.00043402777777777775,
+      "tube_radius_flow": 0.02838950050214707,
+      "tube_radius_energy": 0.00043402777777777775,
+      "per_edge_subbox_radius": 5.906369943053573e-05,
+      "one_edge_Haar_ball_probability": 5.4655115598363e-15,
+      "log_Haar_lower_bound": -1773.3772082397015,
+      "max_holonomy_quaternion_difference": 0.003387840684841453,
+      "based_plaquette_noncommutativity": 6.145830295971514e-05,
+      "numerically_noncommuting": true,
+      "nfev_ref": 62,
+      "nfev_nonabelian": 62
+    },
+    {
+      "n": 2,
+      "h": 0.5,
+      "E": 54,
+      "F": 36,
+      "tau": 0.025,
+      "amplitude": 0.001,
+      "initial_product_distance": 0.0073484692283495336,
+      "evolved_product_distance": 0.006904373733073515,
+      "rigorous_evolved_distance_upper": 0.010962627884708722,
+      "actual_max_physical_curvature_vector_difference": 0.011669890779918328,
+      "rigorous_physical_curvature_difference_upper": 0.3508040923106791,
+      "exact_tube_radius": 0.00043402777777777775,
+      "tube_radius_flow": 0.02094750143861373,
+      "tube_radius_energy": 0.00043402777777777775,
+      "per_edge_subbox_radius": 5.906369943053573e-05,
+      "one_edge_Haar_ball_probability": 5.4655115598363e-15,
+      "log_Haar_lower_bound": -1773.3772082397015,
+      "max_holonomy_quaternion_difference": 0.001458906509194223,
+      "based_plaquette_noncommutativity": 2.450123928727977e-05,
+      "numerically_noncommuting": true,
+      "nfev_ref": 62,
+      "nfev_nonabelian": 62
+    },
+    {
+      "n": 3,
+      "h": 0.3333333333333333,
+      "E": 144,
+      "F": 108,
+      "tau": 0.012,
+      "amplitude": 0.0008,
+      "initial_product_distance": 0.0096,
+      "evolved_product_distance": 0.009015340213676778,
+      "rigorous_evolved_distance_upper": 0.01478721710554682,
+      "actual_max_physical_curvature_vector_difference": 0.02199641327707357,
+      "rigorous_physical_curvature_difference_upper": 1.0646796315993712,
+      "exact_tube_radius": 9.645061728395061e-05,
+      "tube_radius_flow": 0.009016796898404823,
+      "tube_radius_energy": 9.645061728395061e-05,
+      "per_edge_subbox_radius": 8.037551440329217e-06,
+      "one_edge_Haar_ball_probability": 1.3773368834540973e-17,
+      "log_Haar_lower_bound": -5590.626442672435,
+      "max_holonomy_quaternion_difference": 0.0012220231879495579,
+      "based_plaquette_noncommutativity": 2.171763036506541e-05,
+      "numerically_noncommuting": true,
+      "nfev_ref": 62,
+      "nfev_nonabelian": 62
+    },
+    {
+      "n": 3,
+      "h": 0.3333333333333333,
+      "E": 144,
+      "F": 108,
+      "tau": 0.035,
+      "amplitude": 0.0005,
+      "initial_product_distance": 0.006000000000000003,
+      "evolved_product_distance": 0.004917943738654171,
+      "rigorous_evolved_distance_upper": 0.021152528924192306,
+      "actual_max_physical_curvature_vector_difference": 0.010419634738976568,
+      "rigorous_physical_curvature_difference_upper": 1.522982082541846,
+      "exact_tube_radius": 9.645061728395061e-05,
+      "tube_radius_flow": 0.003939639256941254,
+      "tube_radius_energy": 9.645061728395061e-05,
+      "per_edge_subbox_radius": 8.037551440329217e-06,
+      "one_edge_Haar_ball_probability": 1.3773368834540973e-17,
+      "log_Haar_lower_bound": -5590.626442672435,
+      "max_holonomy_quaternion_difference": 0.0005788686208563643,
+      "based_plaquette_noncommutativity": 1.915664443376921e-05,
+      "numerically_noncommuting": true,
+      "nfev_ref": 86,
+      "nfev_nonabelian": 86
+    },
+    {
+      "n": 4,
+      "h": 0.25,
+      "E": 300,
+      "F": 240,
+      "tau": 0.008,
+      "amplitude": 0.0004,
+      "initial_product_distance": 0.0069282032302755096,
+      "evolved_product_distance": 0.006323078600028567,
+      "rigorous_evolved_distance_upper": 0.01156057387818847,
+      "actual_max_physical_curvature_vector_difference": 0.019469096661652575,
+      "rigorous_physical_curvature_difference_upper": 1.479753456408124,
+      "exact_tube_radius": 3.255208333333333e-05,
+      "tube_radius_flow": 0.004681998342543269,
+      "tube_radius_energy": 3.255208333333333e-05,
+      "per_edge_subbox_radius": 1.879395407518313e-06,
+      "one_edge_Haar_ball_probability": 1.7608540683952007e-19,
+      "log_Haar_lower_bound": -12954.99534282201,
+      "max_holonomy_quaternion_difference": 0.0006084093330313958,
+      "based_plaquette_noncommutativity": 1.1413991923070527e-05,
+      "numerically_noncommuting": true,
+      "nfev_ref": 62,
+      "nfev_nonabelian": 62
+    }
+  ],
+  "Haar_ball_volume_tests": [
+    {
+      "r": 0.001,
+      "Haar_ball_probability": 2.6525822522358065e-11
+    },
+    {
+      "r": 0.02,
+      "Haar_ball_probability": 2.1220234669773224e-07
+    },
+    {
+      "r": 0.2,
+      "Haar_ball_probability": 0.0002117825815861715
+    },
+    {
+      "r": 0.6,
+      "Haar_ball_probability": 0.005627325134683317
+    },
+    {
+      "r": 1.5,
+      "Haar_ball_probability": 0.07997615681042382
+    },
+    {
+      "r": 3.0,
+      "Haar_ball_probability": 0.45500488242379
+    },
+    {
+      "r": 6.283185307179586,
+      "Haar_ball_probability": 1.0
+    }
+  ],
+  "open": [
+    "No h/R uniform lower probability for the tube; tube is super-small as h decreases",
+    "No generic non-Abelian positive-radius regularity for typical Wilson vacuum configurations",
+    "No weak-coupling quantum expectation bound, renormalized covariance or complete Schur form",
+    "No 4D OS quantum Yang-Mills mass gap, Penrose transfer or gravity UV theorem"
+  ]
+}
