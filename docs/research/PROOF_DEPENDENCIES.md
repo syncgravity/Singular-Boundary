@@ -1,5 +1,12 @@
 # Proof dependencies and noncircular checkpoints
 
+
+## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
+
+The first full `2×2×1` cubic spatial slab about a four-face block has 20 plaquettes, including 12 transverse xz/yz faces. For the **positive truncated** SU(2) magnetic weight `1+λ tr U_p` (not the Wilson exponential or time-transfer action), exact Haar integration of 25 interior links gives `Z(U;λ)=P0(λ)+P1(λ)χ1(U)+E12`, with `P0=1+λ⁶/4+λ¹⁰/64`, `P1=λ⁴/8+λ⁸/32+λ¹⁰/128`, and an explicit finite sup-norm bound on `E12`. A single transverse cubical bulge supplies `λ⁸χ1/32`, the first shell correction; the full 16-face outer sphere supplies the **exact adjoint character coefficient** `λ¹⁶/16384`. This calculation checks actual **3D spatial** magnetic coupling, but is **not** a physical-time interacting correlation estimate, a 3D Wilson-exponential RG theorem, a refinement-uniform estimate, or a Penrose equivalence. It **closes no P0–P5 or T0–T5 gate**.
+
+See [exact 3D transverse-shell report](../../research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md) and its [reproducible verifier](../../research/scripts/verify_cubic_transverse_shell_2026_11_06.py). The 2²⁰ squarefree face configurations were enumerated independently; only 32 pass the Haar center-parity test, while all higher-order non-manifold channels were bounded without unjustified factorization. The next step is **the full Wilson exponential plus temporal heat-kernel transfer, with the nonabelian recoupling channels included**, not a claim of a continuum gap.
+
 The numbering **P0–P5** follows the dated [publication audit](../../research/audits/SINGULAR_BOUNDARY_PUBLICATION_PROOF_MAP_2026-11-01.md), with later records retained as additional evidence rather than erasing that audit.
 
 ## 2026-11-05 source-faithful model hierarchy (draft correction)
