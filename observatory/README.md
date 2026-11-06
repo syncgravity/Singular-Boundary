@@ -1,4 +1,4 @@
-# Research Observatory v2.39-draft — Mathematical Physics Proof Atlas
+# Research Observatory v2.40-draft — Mathematical Physics Proof Atlas
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
@@ -127,3 +127,15 @@ The nonlinear-to-linear physical curvature comparison is controlled for **all τ
 **Severe boundary:** the invariant Cartan planar subset is **Haar-null** in the full SU(2)^E configuration space and thus has zero probability under the true finite Wilson interacting ground state Ω² dHaar. It is not generic 3D non-Abelian dynamics, a physical 4D flowed field, renormalized quantum covariance, a complete physical-time Schur/long-time estimate, a Yang–Mills mass gap, source-faithful Penrose 3D regulator, or quantum-gravity UV finiteness. The full non-Abelian curvature/true-vacuum task has its own **OPEN** node.
 
 **Review Atlas v2.39-draft:** 136 source-linked mathematical-physics nodes, 302 typed edges, 26 original archive hashes unchanged, all P0–P5 / T0–T5 and gravity objectives OPEN. [Exact finite/conditional proof](../research/theorems/R3_EMBEDDED_CARTAN_NONLINEAR_POSITIVE_RADIUS_SMOOTHING_2026-11-06.md) · [reproducible full 3D SU2 and scalar checks](../research/scripts/verify_cartan_physical_flow.py) · [idempotent graph overlay](tools/add_cartan_nonlinear_smoothing_graph.py). Complete source/verification archive and SHA-256 manifest in Library → The Singular Boundary → Proof Audits → Cartan Nonlinear Physical Smoothing 2026-11-06. Stacked private review PR on #72; main remains integrated at v2.29; no Pages publication.
+
+## All-configuration non-Abelian SU(2) cubic original-link locality · 2026-11-06
+
+This checkpoint extends the finite cubic investigation **beyond the Haar-null commuting Cartan sector**. For every finite, potentially noncommuting SU(2) link configuration, the exact plaquette character gradient gives `||grad_e ell_p||² = ell_p(2-ell_p)/4`. Along the **full nonlinear classical spatial Wilson flow**, the defect amplitudes `a_p=sqrt(ell_p)` obey `D_s^+ a_p ≤ -(2-ell_p)a_p/2 + Σ_(q≠p) N_pq a_q/4`, where N counts genuinely shared original links. Consequently `a(s) ≤ exp(s A)a(0)` for `A=N_off/4`, with `||A||∞≤3`. Local graph distance d yields the finite influence tail `e^(3s)(3s)^d/d!`. No Abelian reduction or small-field assumption is used.
+
+**Physical-scale obstruction:** at fixed physical spatial flow time `tau=h²s`, this absolute-value estimate yields `exp(3tau/h²)`, not an h-uniform nonlinear curvature theorem. A fully recorded noncommuting finite cubic quaternion witness exhibits a **strict largest individual plaquette defect increasing** even as the total Wilson action decreases; this only refutes an *unconditional* maximum principle, not small-field regularity or Yang–Mills itself. The signed covariant discrete curvature/Bianchi estimate remains explicitly **OPEN**, as do the true interacting vacuum, complete quantum physical-time Schur, nontrivial 4D OS and positive physical gap.
+
+**Atlas v2.40-draft:** 139 physics nodes, 314 relationships, original 26 research-data source identities preserved. All six Yang–Mills continuum gates, Penrose transfer and gravitational UV remain OPEN. [Full theorem](../research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md) · [independent quaternion verifier](../research/scripts/verify_nonabelian_curvature_influence.py).
+
+**Theorem-index repair:** the historical 740 theorem Markdown paths were correctly linked, but 13 later theorem sources in the review stack were missing. This PR adds the new non-Abelian theorem and indexes **all 754 tracked research/theorems/*.md** exactly once in [the complete theorem navigator](../docs/research/THEOREM_INDEX.md) and [machine-readable live source registry](../docs/research/THEOREM_INDEX_LIVE.json), retaining exact Git blob hashes. A [mandatory PR source integrity check](../research/scripts/verify_theorem_index.py) detects missing, duplicated or modified source files; no theorem is certified merely because it is indexed.
+
+Private stacked review branch, no main merge, public Pages action, Git LFS migration or alteration of archived simulations.
