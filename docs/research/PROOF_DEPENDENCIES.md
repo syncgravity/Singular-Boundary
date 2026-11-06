@@ -10,6 +10,14 @@ P0 requires separate model-indexed subcertificates: **P0-H** for historical Penr
 
 [Read the detailed P0 hierarchy and evidence audit](P0_MODEL_HIERARCHY_PENROSE_CONTROL_AUDIT_2026-11-05.md).
 
+## P0/T2 exact two-scale SU(2) blocking results (2026-11-05; review draft)
+
+Three model-scoped original-link cubical calculations are now available: (1) the gauge-compatible holonomy-product cylinder injection has **scalar fine magnetic Hamiltonian compression** under product-Haar conditional expectation, and a nonzero bare operator leakage; (2) the **four** fundamental characters of one dyadically subdivided coarse face have joint conditional expectation equal to **one-eighth of the coarse fundamental Wilson character**, while every nonempty proper squarefree subset vanishes; (3) an **isolated planar SU(2) central-weight block** has the exact character expansion `Z_B(U)=Σ_n a_n(t)^F/(n+1)^(F−1) χ_n(U)`, with leading 2×2 fundamental coefficient `t^4/8` and independently generated higher representations.
+
+These are exact **kinematic / isolated planar** identities, NOT an interacting full-three-dimensional effective action or a physical-time correlation inequality. Transverse cubical plaquettes prevent the planar integral from factoring in the complete 3D model. Neither the P0 physical regulator-universality condition nor the P2 interacting, h- and R-uniform renormalization estimate is closed. The next test must include at least the first transverse plaquette shell and a physical-time transfer observable; quasicrystalline T0–T5 and the separate quantum-gravity operator remain OPEN.
+
+[Haar magnetic-loss theorem](../../research/theorems/R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md) · [four-plaquette recovery](../../research/theorems/R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md) · [exact isolated planar character blocking](../../research/theorems/R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md).
+
 ## 2026-11-05 ultraviolet and quasicrystal transfer contract (draft)
 
 **A finite cubic 3D SU(2) gap is not the 4D continuum mass gap.** R3-IR-589's full finite-Gauss-space sufficient estimate is Δ_h≥[3g₀²/2−2F/g₀²]/h with F=3n²(n+1), h=1/n. Its positive lower-bound criterion g₀⁴>4F/3 forces *large* bare coupling under refinement, whereas asymptotic freedom requires g₀(h)→0. The separate periodic weak-perturbation Yarotsky application applies for small z=4/g₀⁴, also outside the ultraviolet z→∞ trajectory. These are limitations of particular proof certificates—not counterexamples to the physical mass gap.
