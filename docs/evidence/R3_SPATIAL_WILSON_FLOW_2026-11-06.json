@@ -1,0 +1,246 @@
+{
+  "status": "PASS",
+  "scope": "FINITE 3D spatial SU2 and independent exact SU2 class density; no continuum Yang--Mills theorem",
+  "countermodel": [
+    {
+      "epsilon": 0.5,
+      "H1_sqrt_density": 0.1137287570313157,
+      "Fisher": 0.4549150281252628,
+      "gap_upper_rayleigh": 0.4045084971874737,
+      "exact_bound": 0.5,
+      "variance_of_test": 0.5,
+      "variance_fund_trace": 1.5,
+      "class_rotor_potential_barrier": 1.0,
+      "density_min": 0.5,
+      "density_max": 2.5
+    },
+    {
+      "epsilon": 0.2,
+      "H1_sqrt_density": 0.38703584178368994,
+      "Fisher": 1.5481433671347598,
+      "gap_upper_rayleigh": 0.19084391810021392,
+      "exact_bound": 0.2,
+      "variance_of_test": 0.8620689655172413,
+      "variance_fund_trace": 1.8620689655172413,
+      "class_rotor_potential_barrier": 6.249999999999999,
+      "density_min": 0.13793103448275862,
+      "density_max": 3.5862068965517238
+    },
+    {
+      "epsilon": 0.05,
+      "H1_sqrt_density": 0.6506309561609557,
+      "Fisher": 2.6025238246438227,
+      "gap_upper_rayleigh": 0.04982464868132035,
+      "exact_bound": 0.05,
+      "variance_of_test": 0.9900990099009901,
+      "variance_fund_trace": 1.9900990099009899,
+      "class_rotor_potential_barrier": 99.99999999999999,
+      "density_min": 0.009900990099009903,
+      "density_max": 3.9702970297029703
+    },
+    {
+      "epsilon": 0.01,
+      "H1_sqrt_density": 0.730005017917834,
+      "Fisher": 2.920020071671336,
+      "gap_upper_rayleigh": 0.009998519887503103,
+      "exact_bound": 0.01,
+      "variance_of_test": 0.9996001599360256,
+      "variance_fund_trace": 1.9996001599360256,
+      "class_rotor_potential_barrier": 2500.0,
+      "density_min": 0.0003998400639744103,
+      "density_max": 3.998800479808077
+    },
+    {
+      "epsilon": 0.002,
+      "H1_sqrt_density": 0.7460000400313352,
+      "Fisher": 2.984000160125341,
+      "gap_upper_rayleigh": 0.0019999880319640007,
+      "exact_bound": 0.002,
+      "variance_of_test": 0.9999840002559959,
+      "variance_fund_trace": 1.9999840002559959,
+      "class_rotor_potential_barrier": 62500.0,
+      "density_min": 1.5999744004095932e-05,
+      "density_max": 3.9999520007679874
+    }
+  ],
+  "heat_character_tests": [
+    {
+      "group_heat_time": 0.1,
+      "fundamental_multiplier": 0.927743486328553,
+      "expected_multiplier": 0.9277434863285529,
+      "adjoint_density_multiplier": 0.8187307530779818,
+      "smoothed_density_min": 0.18136076523639666,
+      "uniform_min_certificate": 0.18126924692201818,
+      "normalized_deterministic_wilson_error": 4.440892098500626e-16
+    },
+    {
+      "group_heat_time": 0.3,
+      "fundamental_multiplier": 0.7985162187593772,
+      "expected_multiplier": 0.7985162187593771,
+      "adjoint_density_multiplier": 0.5488116360940264,
+      "smoothed_density_min": 0.45124971046668094,
+      "uniform_min_certificate": 0.4511883639059736,
+      "normalized_deterministic_wilson_error": 4.440892098500626e-16
+    },
+    {
+      "group_heat_time": 1.2,
+      "fundamental_multiplier": 0.4065696597405992,
+      "expected_multiplier": 0.40656965974059917,
+      "adjoint_density_multiplier": 0.09071795328941251,
+      "smoothed_density_min": 0.9092921872288686,
+      "uniform_min_certificate": 0.9092820467105875,
+      "normalized_deterministic_wilson_error": 4.440892098500626e-16
+    }
+  ],
+  "Haar_loop_gram": {
+    "S": [
+      [
+        1.0,
+        -1.3660947373317356e-17
+      ],
+      [
+        -1.3660947373317356e-17,
+        1.0
+      ]
+    ],
+    "G_one_edge": [
+      [
+        0.75,
+        -8.917986385166901e-18
+      ],
+      [
+        -8.917986385166901e-18,
+        2.0
+      ]
+    ],
+    "G_four_link": [
+      [
+        3.0,
+        -3.5671945540667604e-17
+      ],
+      [
+        -3.5671945540667604e-17,
+        8.0
+      ]
+    ],
+    "generalized_eigenvalues_L4": [
+      3.0,
+      8.0
+    ]
+  },
+  "cubic_geometry": {
+    "vertices": 18,
+    "edges": 33,
+    "faces": 20,
+    "max_edge_face_degree": 4
+  },
+  "Hessian_random_checks": {
+    "count": 24,
+    "max_abs_directional_Hessian": 0.20868221718551977,
+    "analytic_uniform_bound": 4
+  },
+  "exact_single_face_flow": {
+    "initial_trace_over_two": -0.7066486530791256,
+    "flow_time": 0.2,
+    "final_trace_over_two": -0.5918593465543552,
+    "exact_formula": -0.5918170132567271,
+    "euler_error": 4.233329762814986e-05,
+    "gauge_action_error": 2.220446049250313e-16,
+    "gauge_force_error": 2.5926915977453087e-11
+  },
+  "flowed_single_face_haar": [
+    {
+      "lattice_flow_time": 0,
+      "mean": -1.4440217684791312e-17,
+      "variance": 1.0,
+      "dirichlet_4link": 3.0,
+      "normalized_first_moment_alpha1": 3.0
+    },
+    {
+      "lattice_flow_time": 0.1,
+      "mean": 0.1497504368016313,
+      "variance": 0.9925311544079509,
+      "dirichlet_4link": 2.990022872299726,
+      "normalized_first_moment_alpha1": 3.0125229409884744
+    },
+    {
+      "lattice_flow_time": 0.3,
+      "mean": 0.44335480306894093,
+      "variance": 0.9349629431705875,
+      "dirichlet_4link": 2.9118243520010045,
+      "normalized_first_moment_alpha1": 3.114374075753857
+    },
+    {
+      "lattice_flow_time": 0.8,
+      "mean": 1.084996993347314,
+      "variance": 0.6264283276878753,
+      "dirichlet_4link": 2.443395304408826,
+      "normalized_first_moment_alpha1": 3.900518537255988
+    },
+    {
+      "lattice_flow_time": 1.5,
+      "mean": 1.6492187559135854,
+      "variance": 0.21233361521477734,
+      "dirichlet_4link": 1.549086243205352,
+      "normalized_first_moment_alpha1": 7.295529921809307
+    }
+  ],
+  "quasilocal_Poisson_tail": [
+    {
+      "lattice_flow_time": 0.1,
+      "distance_in_plaquette_adjacency": 8,
+      "sensitivity_row_tail_upper_bound": 1.7006349682904222e-08
+    },
+    {
+      "lattice_flow_time": 0.1,
+      "distance_in_plaquette_adjacency": 16,
+      "sensitivity_row_tail_upper_bound": 2.10216675244555e-20
+    },
+    {
+      "lattice_flow_time": 0.1,
+      "distance_in_plaquette_adjacency": 32,
+      "sensitivity_row_tail_upper_bound": 7.096470387905964e-49
+    },
+    {
+      "lattice_flow_time": 0.5,
+      "distance_in_plaquette_adjacency": 8,
+      "sensitivity_row_tail_upper_bound": 0.008103717978269273
+    },
+    {
+      "lattice_flow_time": 0.5,
+      "distance_in_plaquette_adjacency": 16,
+      "sensitivity_row_tail_upper_bound": 3.546512515050386e-09
+    },
+    {
+      "lattice_flow_time": 0.5,
+      "distance_in_plaquette_adjacency": 32,
+      "sensitivity_row_tail_upper_bound": 1.7373511092915282e-26
+    },
+    {
+      "lattice_flow_time": 1.0,
+      "distance_in_plaquette_adjacency": 8,
+      "sensitivity_row_tail_upper_bound": 2.7918008267950323
+    },
+    {
+      "lattice_flow_time": 1.0,
+      "distance_in_plaquette_adjacency": 16,
+      "sensitivity_row_tail_upper_bound": 0.0002671274941376607
+    },
+    {
+      "lattice_flow_time": 1.0,
+      "distance_in_plaquette_adjacency": 32,
+      "sensitivity_row_tail_upper_bound": 7.973058486208919e-17
+    }
+  ],
+  "open_obligations": [
+    "No g0(h)-uniform interacting covariance/Dirichlet quotient",
+    "No physical radius t=h\u00b2s uniform spatial flowed observable",
+    "No full energy-dependent Schur/physical-time infrared comparison",
+    "No four-dimensional OS continuum or Yang--Mills mass gap",
+    "No source-certified 3D Penrose transfer or gravitational UV theorem"
+  ],
+  "test_only": [
+    "One-face flow and Haar class functions are exact finite controls, NOT interacting 3D vacuum data",
+    "Random Hessian/gauge covariance checks are consistency checks; analytic proofs are separate"
+  ]
+}
