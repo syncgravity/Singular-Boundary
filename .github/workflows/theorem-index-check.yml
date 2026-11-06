@@ -1,0 +1,27 @@
+name: Theorem source-index integrity
+on:
+  pull_request:
+    paths:
+      - 'research/theorems/**'
+      - 'docs/research/THEOREM_INDEX.md'
+      - 'docs/research/THEOREM_INDEX_LIVE.json'
+      - 'research/scripts/verify_theorem_index.py'
+      - '.github/workflows/theorem-index-check.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'research/theorems/**'
+      - 'docs/research/THEOREM_INDEX.md'
+      - 'docs/research/THEOREM_INDEX_LIVE.json'
+      - 'research/scripts/verify_theorem_index.py'
+permissions:
+  contents: read
+jobs:
+  index-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Verify complete theorem source inventory and Git blob hashes
+        run: python research/scripts/verify_theorem_index.py --repo .
