@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-06",
-  "version": "v2.39-draft",
-  "scope": "Exact 3D SU2 Cartan-planar invariant nonlinear flow: conditional positive-time physical curvature Nash estimate from bounded classical energy and all-time O(h²) Maxwell L2 comparison. Restricted Haar-null commuting sector, no generic SU2 quantum or gravity theorem.",
+  "version": "v2.40-draft",
+  "scope": "Exact all-configuration finite noncommuting cubic SU2 plaquette influence and verified high-curvature local-max warning. The exp(3tau/h²) bound is non-uniform at physical radius; full covariant non-Abelian/quantum smoothing and P0–P5 remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-06-cartan-positive-time-cubic-smoothing",
+  "git_branch": "audit/2026-11-06-full-nonabelian-locality-and-index",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4650,6 +4650,150 @@
       "importance": 5,
       "core": false,
       "route": null
+    },
+    {
+      "id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "title": "Exact all-configuration SU(2) cubic original-link plaquette influence",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For a_p=sqrt(1-Re U_p) in full finite cubic SU2 Wilson gradient flow, D_s^+a_p <= -(2-ell_p)a_p/2 + sum_{q ne p} N_pq a_q/4. Hence a(s)<=exp(s A)a(0), ||a(s)||inf<=exp(3s)||a0||inf.",
+      "detail": "N_pq counts actual shared physical links; A=N_off/4 with maximum row sum 3. Exact gauge invariant and genuinely noncommuting. At fixed physical tau=h²s, exp(3tau/h²) is NOT mesh-uniform curvature smoothing. The signed covariant cancellation needed to improve it remains OPEN.",
+      "checks": [
+        {
+          "label": "Exact one-link SU2 plaquette character derivative",
+          "state": "met",
+          "note": "||grad_e ell_p||²=ell_p(2−ell_p)/4"
+        },
+        {
+          "label": "Original-link shared incidence comparison and self-dissipation",
+          "state": "met",
+          "note": "True for arbitrary finite SU2 link configuration"
+        },
+        {
+          "label": "Uniform physical-time h->0 curvature bound",
+          "state": "open",
+          "note": "Absolute-value comparison grows exponentially in tau/h²"
+        },
+        {
+          "label": "Interacting Wilson-vacuum moment bound",
+          "state": "open",
+          "note": "Classical deterministic inequality only"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact all-configuration finite SU2 cubic plaquette-influence and nonlinear maximum countercheck",
+          "path": "research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "14c4d732a8678c7dc626f134cb17d26839eac75f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/14c4d732a8678c7dc626f134cb17d26839eac75f/research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "nonabelian",
+        "finite",
+        "classical",
+        "locality"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-FULL-NONABELIAN-MAX-COUNTER",
+      "title": "Noncommuting cubic example: largest local plaquette defect initially increases",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P2",
+      "summary": "An explicitly stored reproducible finite SU2 original-link quaternion witness has a strict largest plaquette defect ell_p≈1.9147924 with initial derivative≈+0.0577442, while total Wilson action decreases.",
+      "detail": "Verified numerical witness near a large class angle. This rules out an unconditional maximum principle for max_p ell_p, not a small-field theorem, physical-time quantum spectral estimate or a counterexample to Yang–Mills existence.",
+      "checks": [
+        {
+          "label": "Finite analytic-force exact-differential numerical witness",
+          "state": "met",
+          "note": "Seed and full quaternions preserved with strict margin"
+        },
+        {
+          "label": "Analytic symbolic exact-rational witness",
+          "state": "open",
+          "note": "Only numerical floating-point certificate with margin"
+        },
+        {
+          "label": "Near-flat noncommutative maximum principle obstruction",
+          "state": "open",
+          "note": "Not inferred from high-angle witness"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact all-configuration finite SU2 cubic plaquette-influence and nonlinear maximum countercheck",
+          "path": "research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "14c4d732a8678c7dc626f134cb17d26839eac75f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/14c4d732a8678c7dc626f134cb17d26839eac75f/research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "counterexample",
+        "numerical",
+        "finite"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "title": "Signed non-Abelian covariant curvature heat estimate through physical refinement",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Replace exp(3tau/h²) positive absolute-value locality by physical-scale covariant heat bounds retaining link transport, signed plaquette couplings, noncommutative Bianchi cancellations and interacting-vacuum state control.",
+      "detail": "Requires exact discrete non-Abelian curvature transport/covariant Bochner identity and appropriately gauge-invariant quantity under genuine SU2 fluctuations, plus a source-justified weak-coupling probability/renormalization estimate. No continuum or infrared Schur closure.",
+      "checks": [
+        {
+          "label": "Exact nonlinear discrete covariant curvature flow and Bianchi identity",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "h-uniform positive-physical-time non-Abelian regularity with quantified assumptions",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Conditions verified for true interacting Wilson vacuum and nonvanishing renormalized covariance",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Complete physical-time Schur, OS continuum and spectral gap",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Exact all-configuration finite SU2 cubic plaquette-influence and nonlinear maximum countercheck",
+          "path": "research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md",
+          "git_blob_sha": "14c4d732a8678c7dc626f134cb17d26839eac75f",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/14c4d732a8678c7dc626f134cb17d26839eac75f/research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "nonabelian",
+        "open",
+        "physical-time",
+        "Schur"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -6765,6 +6909,90 @@
       "to_id": "T0-QC-3D",
       "kind": "distinct-geometry",
       "label": "Cubic fixed Cartan result does not construct Penrose 3D gauge regulator",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "kind": "model",
+      "label": "Full 3D open original-link cubic SU2 configuration space",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "kind": "same-flow",
+      "label": "Exact nonlinear classical physical action and local defect rates",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-PLANAR-CARTAN-EMBED",
+      "to_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "kind": "strict-extension-in-fields",
+      "label": "All-configurations bound removes Cartan restriction but loses uniform physical-time smoothing",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "to_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "kind": "distinct-inference",
+      "label": "Linear physical heat structure cannot be inferred by absolute-link bounds",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "to_id": "R-FULL-NONABELIAN-MAX-COUNTER",
+      "kind": "local-maximum-warning",
+      "label": "Global Wilson action decay does not force individual face-monotonicity",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "to_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "kind": "nonuniform-physical-time",
+      "label": "exp(3tau/h²) fails uniform refinement control",
+      "status": "open"
+    },
+    {
+      "from_id": "R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "partial-noncommuting-control",
+      "label": "True nonabelian finite locality, not positive-time uniform smoothing",
+      "status": "open"
+    },
+    {
+      "from_id": "R-FULL-NONABELIAN-MAX-COUNTER",
+      "to_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "kind": "unconditional-max-principle-fails",
+      "label": "High-angle local max grows despite total action decay",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "to_id": "W-FULL-NONABELIAN-PHYS-SMOOTHING",
+      "kind": "refines-open-criterion",
+      "label": "Need covariant cancellations and true vacuum support",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "nontrivial-covariance-open",
+      "label": "Curvature transport does not supply renormalized interacting field",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "physical-time-open",
+      "label": "Spatial classical flow cannot bound quantum physical-time decay",
+      "status": "open"
+    },
+    {
+      "from_id": "W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT",
+      "to_id": "G-GRAV",
+      "kind": "separate-objective",
+      "label": "Nonabelian YM regularity does not establish gravitational UV operator",
       "status": "open"
     }
   ],
