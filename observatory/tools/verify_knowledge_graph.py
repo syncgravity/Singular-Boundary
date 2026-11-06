@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -60,6 +60,12 @@ def main():
   check(len(n)==103 and len(e)==194,'scoped finite shell graph count')
   check(node['R-CUBIC-3D-SHELL']['status']=='finite','shell must remain finite')
   check(node['W-3D-WILSON-TIME']['status']=='open','full Wilson-time gate must remain open')
+  if g['version']=='v2.31-draft':
+   check(len(n)==105 and len(e)==200,'finite Wilson/time memory graph counts')
+   check(node['R-WILSON-EXP-SHELL']['status']=='finite','full Wilson cap scope')
+   check(node['R-TEMPORAL-MEMORY']['status']=='finite','finite-time memory scope')
+   check(node['W-3D-WILSON-TIME']['checks'][-1]['state']=='open','time RG remains open')
+   check(any(a['from_id']=='W-3D-WILSON-TIME' and a['to_id']=='T3-TIME-COMPARE' and a['status']=='open' for a in e),'interacting IR interface must remain open')
   check(any(z['from_id']=='W-3D-WILSON-TIME' and z['to_id']=='P2' and z['status']=='open' for z in e),'no physical-time shortcut')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'no gate closure')
  
