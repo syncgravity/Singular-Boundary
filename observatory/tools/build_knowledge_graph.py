@@ -222,3 +222,7 @@ attach_two_scale_influence(ROOT)
 # True interacting-vacuum SU2 conditional blocking, finite Schur form and open scale target.
 from add_vacuum_weighted_block_graph import attach as attach_vacuum_rg
 attach_vacuum_rg(ROOT)
+
+# Quantitative finite Wilson marginal Harnack, fixed-loop sum rule and conditional dyadic time normalization.
+from add_marginal_harnack_graph import attach as attach_marginal_harnack
+attach_marginal_harnack(ROOT)
