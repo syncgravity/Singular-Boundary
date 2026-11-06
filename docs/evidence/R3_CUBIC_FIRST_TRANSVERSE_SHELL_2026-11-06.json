@@ -1,0 +1,1122 @@
+{
+  "volume": "2x2x1 open 3D cubical slab",
+  "vertices": 18,
+  "edges": 33,
+  "faces": 20,
+  "integrated_edges": 25,
+  "fixed_coarse_boundary_edges": 8,
+  "nullspace_rank": 15,
+  "nullspace_dimension": 5,
+  "allowed_2chains": {
+    "vacuum": 16,
+    "loop": 16
+  },
+  "area_histograms": {
+    "vacuum": {
+      "0": 1,
+      "6": 4,
+      "10": 4,
+      "12": 2,
+      "14": 4,
+      "16": 1
+    },
+    "loop": {
+      "4": 1,
+      "8": 4,
+      "10": 4,
+      "12": 7
+    }
+  },
+  "leading_embedded_surfaces": {
+    "planar": [
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ]
+        ],
+        "area": 4,
+        "internal_edges": 4,
+        "boundary_edges": 8,
+        "surface_vertices": 9,
+        "euler": 1,
+        "haar_coefficient": 0.125
+      }
+    ],
+    "bulge": [
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ]
+        ],
+        "area": 8,
+        "internal_edges": 12,
+        "boundary_edges": 8,
+        "surface_vertices": 13,
+        "euler": 1,
+        "haar_coefficient": 0.0078125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ]
+        ],
+        "area": 8,
+        "internal_edges": 12,
+        "boundary_edges": 8,
+        "surface_vertices": 13,
+        "euler": 1,
+        "haar_coefficient": 0.0078125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ]
+        ],
+        "area": 8,
+        "internal_edges": 12,
+        "boundary_edges": 8,
+        "surface_vertices": 13,
+        "euler": 1,
+        "haar_coefficient": 0.0078125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 8,
+        "internal_edges": 12,
+        "boundary_edges": 8,
+        "surface_vertices": 13,
+        "euler": 1,
+        "haar_coefficient": 0.0078125
+      }
+    ],
+    "bubble": [
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ]
+        ],
+        "area": 6,
+        "internal_edges": 12,
+        "boundary_edges": 0,
+        "surface_vertices": 8,
+        "euler": 2,
+        "haar_coefficient": 0.0625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ]
+        ],
+        "area": 6,
+        "internal_edges": 12,
+        "boundary_edges": 0,
+        "surface_vertices": 8,
+        "euler": 2,
+        "haar_coefficient": 0.0625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ]
+        ],
+        "area": 6,
+        "internal_edges": 12,
+        "boundary_edges": 0,
+        "surface_vertices": 8,
+        "euler": 2,
+        "haar_coefficient": 0.0625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 6,
+        "internal_edges": 12,
+        "boundary_edges": 0,
+        "surface_vertices": 8,
+        "euler": 2,
+        "haar_coefficient": 0.0625
+      }
+    ],
+    "double_adjacent_bulge": [
+      {
+        "face_labels": [
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 16,
+        "boundary_edges": 8,
+        "surface_vertices": 15,
+        "euler": 1,
+        "haar_coefficient": 0.001953125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 16,
+        "boundary_edges": 8,
+        "surface_vertices": 15,
+        "euler": 1,
+        "haar_coefficient": 0.001953125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 16,
+        "boundary_edges": 8,
+        "surface_vertices": 15,
+        "euler": 1,
+        "haar_coefficient": 0.001953125
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 16,
+        "boundary_edges": 8,
+        "surface_vertices": 15,
+        "euler": 1,
+        "haar_coefficient": 0.001953125
+      }
+    ],
+    "double_adjacent_bubble": [
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 20,
+        "boundary_edges": 0,
+        "surface_vertices": 12,
+        "euler": 2,
+        "haar_coefficient": 0.00390625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            0,
+            0,
+            1
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xz",
+            0,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            0,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 20,
+        "boundary_edges": 0,
+        "surface_vertices": 12,
+        "euler": 2,
+        "haar_coefficient": 0.00390625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            0,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            0,
+            1,
+            1
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            0,
+            1,
+            0
+          ],
+          [
+            "xz",
+            1,
+            1,
+            0
+          ],
+          [
+            "xz",
+            0,
+            2,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            0,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 20,
+        "boundary_edges": 0,
+        "surface_vertices": 12,
+        "euler": 2,
+        "haar_coefficient": 0.00390625
+      },
+      {
+        "face_labels": [
+          [
+            "xy",
+            1,
+            0,
+            0
+          ],
+          [
+            "xy",
+            1,
+            1,
+            0
+          ],
+          [
+            "xy",
+            1,
+            0,
+            1
+          ],
+          [
+            "xy",
+            1,
+            1,
+            1
+          ],
+          [
+            "xz",
+            1,
+            0,
+            0
+          ],
+          [
+            "xz",
+            1,
+            2,
+            0
+          ],
+          [
+            "yz",
+            1,
+            0,
+            0
+          ],
+          [
+            "yz",
+            1,
+            1,
+            0
+          ],
+          [
+            "yz",
+            2,
+            0,
+            0
+          ],
+          [
+            "yz",
+            2,
+            1,
+            0
+          ]
+        ],
+        "area": 10,
+        "internal_edges": 20,
+        "boundary_edges": 0,
+        "surface_vertices": 12,
+        "euler": 2,
+        "haar_coefficient": 0.00390625
+      }
+    ]
+  },
+  "strong_coupling_coefficients": {
+    "vacuum_degree_6": "1/4",
+    "fundamental_degree_4": "1/8",
+    "fundamental_transverse_degree_8": "1/32",
+    "fundamental_degree_10_adjacent_bulges": "1/128",
+    "vacuum_degree_10_adjacent_bubbles": "1/64",
+    "adjoint_degree_16_full_sphere": "1/16384"
+  },
+  "normalized_effective_weight": "Z(U;lambda) / integral_SU2 Z(U;lambda) dU",
+  "certified_truncation": "P0(lambda)+P1(lambda)*chi_1(U)+R_12(U;lambda), P0=1+lambda^6/4+lambda^10/64, P1=lambda^4/8+lambda^8/32+lambda^10/128",
+  "remainder_r12_uniform_bound": "9*(2*abs(lambda))^12+4*(2*abs(lambda))^14+(2*abs(lambda))^16",
+  "all_2power20_subsets_checked": true,
+  "positive_action_for_abs_lambda_less_than": 0.5,
+  "explicit_normalized_remainder_bound": [
+    {
+      "lambda": 0.001,
+      "crude_tail_from_degree_12": 3.6864065536065545e-32,
+      "vacuum_lower_bound": 0.9607509570263427,
+      "normalized_effective_weight_remainder_upper_bound": 7.674010682262455e-32,
+      "effective_normalized_fundamental_rational_approximation": 1.2500000000003127e-13,
+      "leading_shell_fundamental_increment": 3.1250000000000003e-26,
+      "adjoint_exact_unscaled_coefficient": 6.103515625000002e-53
+    },
+    {
+      "lambda": 0.01,
+      "crude_tail_from_degree_12": 3.687055425536001e-20,
+      "vacuum_lower_bound": 0.6676079717550942,
+      "normalized_effective_weight_remainder_upper_bound": 1.1045570412982972e-19,
+      "effective_normalized_fundamental_rational_approximation": 1.2500000031247658e-09,
+      "leading_shell_fundamental_increment": 3.1250000000000007e-18,
+      "adjoint_exact_unscaled_coefficient": 6.103515625000002e-37
+    },
+    {
+      "lambda": 0.025,
+      "crude_tail_from_degree_12": 2.1997085571289075e-15,
+      "vacuum_lower_bound": 0.3584859224085419,
+      "normalized_effective_weight_remainder_upper_bound": 1.2272217830800646e-14,
+      "effective_normalized_fundamental_rational_approximation": 4.8828129766136414e-08,
+      "leading_shell_fundamental_increment": 4.7683715820312525e-15,
+      "adjoint_exact_unscaled_coefficient": 1.4210854715202016e-30
+    },
+    {
+      "lambda": 0.05,
+      "crude_tail_from_degree_12": 9.040100000000005e-12,
+      "vacuum_lower_bound": 0.12157665459056935,
+      "normalized_effective_weight_remainder_upper_bound": 1.4871452242263592e-10,
+      "effective_normalized_fundamental_rational_approximation": 7.812512184143008e-07,
+      "leading_shell_fundamental_increment": 1.2207031250000006e-12,
+      "adjoint_exact_unscaled_coefficient": 9.313225746154793e-26
+    },
+    {
+      "lambda": 0.1,
+      "crude_tail_from_degree_12": 3.752591360000002e-08,
+      "vacuum_lower_bound": 0.011529215046068483,
+      "normalized_effective_weight_remainder_upper_bound": 6.509789701312855e-06,
+      "effective_normalized_fundamental_rational_approximation": 1.2500310156152931e-05,
+      "leading_shell_fundamental_increment": 3.1250000000000016e-10,
+      "adjoint_exact_unscaled_coefficient": 6.103515625000005e-21
+    },
+    {
+      "lambda": 0.2,
+      "crude_tail_from_degree_12": 0.0001621618589696001,
+      "vacuum_lower_bound": 3.6561584400629733e-05,
+      "normalized_effective_weight_remainder_upper_bound": 8.87238923497568,
+      "effective_normalized_fundamental_rational_approximation": 0.0002000775984383009,
+      "leading_shell_fundamental_increment": 8.000000000000004e-08,
+      "adjoint_exact_unscaled_coefficient": 4.0000000000000034e-16
+    }
+  ],
+  "proof_scope": "Exact 2x2x1 finite 3D spatial SU(2) Haar block with positive truncated plaquette weight; no physical-time transfer, no refinement-uniform claim."
+}

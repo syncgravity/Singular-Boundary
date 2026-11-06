@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "scope": "finite SU(2) conditional-vacuum blocking and analytic SU(2) two-link rotor counterexample; NOT a Wilson mass-gap theorem",
+  "source_normalization": {
+    "H": "alpha sum_e (-Delta_e) + V",
+    "casimir_fundamental": 0.75,
+    "fundamental_gradient_squared": "1-chi_1(U)**2/4",
+    "weighted_ground_state": "Omega>0, L=Omega**(-1)*(H-E0)*Omega"
+  },
+  "quaternion_identity_checks": {
+    "sample_quaternions": 100,
+    "finite_difference_gradient_max_abs_error": 4.1050318699831223e-10,
+    "finite_difference_laplacian_max_abs_error": 7.164077486798703e-08
+  },
+  "rotor_cases": [
+    {
+      "kappa": 0.0,
+      "weighted_grad_squared_bessel": 0.75,
+      "weighted_grad_squared_quadrature": 0.7500000000000002,
+      "a0_bessel": 1.0,
+      "a0_quadrature": 0.9999999999999999,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.0,
+      "two_link_influence_norm_squared_integrated": 0.0,
+      "fine_minus_coarse_second_derivative": 0.0,
+      "fine_minus_coarse_small_t_coefficient": 0.0,
+      "strict_positive_time_difference": false
+    },
+    {
+      "kappa": 0.2,
+      "weighted_grad_squared_bessel": 0.7450494723822646,
+      "weighted_grad_squared_quadrature": 0.7450494723822648,
+      "a0_bessel": 1.020133778667853,
+      "a0_quadrature": 1.0201337786678528,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.001862623680955662,
+      "two_link_influence_norm_squared_integrated": 0.001862623680955674,
+      "fine_minus_coarse_second_derivative": 0.001862623680955662,
+      "fine_minus_coarse_small_t_coefficient": 0.000931311840477831,
+      "strict_positive_time_difference": true
+    },
+    {
+      "kappa": 0.7,
+      "weighted_grad_squared_bessel": 0.6953875267412836,
+      "weighted_grad_squared_quadrature": 0.6953875267412836,
+      "a0_bessel": 1.2658456877347533,
+      "a0_quadrature": 1.2658456877347533,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.021296243006451807,
+      "two_link_influence_norm_squared_integrated": 0.021296243006451946,
+      "fine_minus_coarse_second_derivative": 0.021296243006451807,
+      "fine_minus_coarse_small_t_coefficient": 0.010648121503225904,
+      "strict_positive_time_difference": true
+    },
+    {
+      "kappa": 1.0,
+      "weighted_grad_squared_bessel": 0.6496911400834677,
+      "weighted_grad_squared_quadrature": 0.6496911400834676,
+      "a0_bessel": 1.590636854637329,
+      "a0_quadrature": 1.5906368546373293,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.04060569625521673,
+      "two_link_influence_norm_squared_integrated": 0.04060569625521699,
+      "fine_minus_coarse_second_derivative": 0.04060569625521673,
+      "fine_minus_coarse_small_t_coefficient": 0.020302848127608367,
+      "strict_positive_time_difference": true
+    },
+    {
+      "kappa": 1.5,
+      "weighted_grad_squared_bessel": 0.5679236493072665,
+      "weighted_grad_squared_quadrature": 0.5679236493072665,
+      "a0_bessel": 2.6355801449350738,
+      "a0_quadrature": 2.6355801449350733,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.07986426318383434,
+      "two_link_influence_norm_squared_integrated": 0.07986426318383483,
+      "fine_minus_coarse_second_derivative": 0.07986426318383434,
+      "fine_minus_coarse_small_t_coefficient": 0.03993213159191717,
+      "strict_positive_time_difference": true
+    },
+    {
+      "kappa": 2.5,
+      "weighted_grad_squared_bessel": 0.4316043488185877,
+      "weighted_grad_squared_quadrature": 0.4316043488185877,
+      "a0_bessel": 9.734256856980217,
+      "a0_quadrature": 9.734256856980213,
+      "vacuum_weighted_coarse_density": "Haar (exact, independent of kappa)",
+      "coarse_compressed_electric_coefficient": 1.0,
+      "fine_compressed_electric_coefficient": 1.0,
+      "first_positive_time_moment": 0.75,
+      "two_link_influence_norm_squared_predicted": 0.16859544875726082,
+      "two_link_influence_norm_squared_integrated": 0.16859544875726187,
+      "fine_minus_coarse_second_derivative": 0.16859544875726082,
+      "fine_minus_coarse_small_t_coefficient": 0.08429772437863041,
+      "strict_positive_time_difference": true
+    }
+  ],
+  "two_scale_boundary_diffusion": {
+    "geometry": "eight fixed physical coarse boundary holonomies, two fine links per product",
+    "coarse_link_count": 8,
+    "fine_boundary_link_count": 16,
+    "exact_kinetic_ratio": "4*(g0(h/2)/g0(h))**2",
+    "samples": [
+      {
+        "g_c": 1.0,
+        "g_f": 1.0,
+        "coarse_alpha": 1.0,
+        "refined_subdivided_alpha": 4.0,
+        "ratio": 4.0,
+        "asymptotic_free_weak_coupling_not_certified": true
+      },
+      {
+        "g_c": 1.0,
+        "g_f": 0.98,
+        "coarse_alpha": 1.0,
+        "refined_subdivided_alpha": 3.8415999999999997,
+        "ratio": 3.8415999999999997,
+        "asymptotic_free_weak_coupling_not_certified": true
+      },
+      {
+        "g_c": 1.0,
+        "g_f": 0.8,
+        "coarse_alpha": 1.0,
+        "refined_subdivided_alpha": 2.5600000000000005,
+        "ratio": 2.5600000000000005,
+        "asymptotic_free_weak_coupling_not_certified": true
+      },
+      {
+        "g_c": 1.0,
+        "g_f": 0.5,
+        "coarse_alpha": 1.0,
+        "refined_subdivided_alpha": 1.0,
+        "ratio": 1.0,
+        "asymptotic_free_weak_coupling_not_certified": true
+      },
+      {
+        "g_c": 1.0,
+        "g_f": 0.25,
+        "coarse_alpha": 1.0,
+        "refined_subdivided_alpha": 0.25,
+        "ratio": 0.25,
+        "asymptotic_free_weak_coupling_not_certified": true
+      }
+    ]
+  },
+  "finite_matrix_variational_Schur": [
+    {
+      "z": 0.05,
+      "resolvent_vs_variational_schur_abs_error": 1.1102230246251565e-16,
+      "minimum_schur_minus_z_eigenvalue": 0.0,
+      "vacuum_schur_value": 0.05
+    },
+    {
+      "z": 0.5,
+      "resolvent_vs_variational_schur_abs_error": 2.220446049250313e-16,
+      "minimum_schur_minus_z_eigenvalue": 0.0,
+      "vacuum_schur_value": 0.5
+    },
+    {
+      "z": 2.0,
+      "resolvent_vs_variational_schur_abs_error": 4.440892098500626e-16,
+      "minimum_schur_minus_z_eigenvalue": 0.0,
+      "vacuum_schur_value": 2.0
+    }
+  ],
+  "independent_haar_quaternion_MC": {
+    "sample_size": 150000,
+    "candidate_quaternions": 700000,
+    "kappa": 1.0,
+    "alpha": 0.5,
+    "observed_chi_mean": 0.0008035079463120012,
+    "observed_chi_second_moment": 1.000193747173152,
+    "observed_influence_norm_squared": 0.040549646624670026,
+    "exact_influence_norm_squared": 0.04060569625521673,
+    "abs_error": 5.6049630546707585e-05,
+    "warning": "Monte Carlo regression ONLY; analytic theorem uses SU2 Haar/Bessel identities."
+  },
+  "theorem_status": {
+    "finite_true_vacuum_projection": "exact conditional theorem",
+    "coarse_marginal_equals_full_time_dynamics": "FALSE, exact SU(2) rotor counterexample",
+    "uniform_long_time_interacting_comparison": "OPEN",
+    "genuine_three_dimensional_Penrose_refinement": "OPEN",
+    "four_dimensional_Yang_Mills_mass_gap": "OPEN",
+    "quantum_gravity_finiteness": "OPEN"
+  }
+}

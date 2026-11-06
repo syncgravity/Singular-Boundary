@@ -206,3 +206,47 @@ reconcile(ROOT)
 
 from add_mathematical_physics_bridge import extend
 extend(ROOT)
+
+# Scoped three-dimensional finite magnetic shell: no theorem gate promotion.
+from add_transverse_shell_graph import attach
+attach(ROOT)
+
+# Full Wilson-exponential shell and positive two-time-memory finite model.
+from add_wilson_time_graph import attach as attach_wilson_time
+attach_wilson_time(ROOT)
+
+# Matched finite cubic dyadic meshes: exact all-time P/Q influence plus spectral resolvent bounds.
+from add_two_scale_influence_graph import attach as attach_two_scale_influence
+attach_two_scale_influence(ROOT)
+
+# True interacting-vacuum SU2 conditional blocking, finite Schur form and open scale target.
+from add_vacuum_weighted_block_graph import attach as attach_vacuum_rg
+attach_vacuum_rg(ROOT)
+
+# Quantitative finite Wilson marginal Harnack, fixed-loop sum rule and conditional dyadic time normalization.
+from add_marginal_harnack_graph import attach as attach_marginal_harnack
+attach_marginal_harnack(ROOT)
+
+# Gap-independent finite SU2 local Wilson Fisher bound and fixed-h thermodynamic subsequences.
+from add_local_fisher_graph import attach as attach_local_fisher
+attach_local_fisher(ROOT)
+
+# Finite gauge-equivariant spatial Wilson flow, spectral Rayleigh test, and exact SU2 Fisher-gap obstruction.
+from add_spatial_flow_fisher_gap_graph import attach as attach_spatial_flow_fisher_gap
+attach_spatial_flow_fisher_gap(ROOT)
+
+# Exact flat-field cubic SU2 physical-radius curvature heat and isolated nonlinear Haar warning.
+from add_physical_radius_linear_flow_graph import attach as attach_physical_radius_linear_flow
+attach_physical_radius_linear_flow(ROOT)
+
+# Full nonlinear classical SU2 spatial physical-action balance, true finite-vacuum variance and concentration warning.
+from add_nonlinear_energy_graph import attach as attach_nonlinear_energy
+attach_nonlinear_energy(ROOT)
+
+# Exact invariant Cartan-planar SU2 positive-physical-time nonlinear curvature Nash theorem.
+from add_cartan_nonlinear_smoothing_graph import attach as attach_cartan_nonlinear_smoothing
+attach_cartan_nonlinear_smoothing(ROOT)
+
+# All-configuration finite non-Abelian cubic plaquette influence; no physical continuum bound.
+from add_full_nonabelian_locality_graph import attach as attach_full_nonabelian_locality
+attach_full_nonabelian_locality(ROOT)

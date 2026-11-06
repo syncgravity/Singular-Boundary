@@ -1,0 +1,511 @@
+{
+  "status": "PASS",
+  "scope": "finite 2x2x1 spatial Wilson-exponential slab and physical-time heat-kernel transfer, not 4D YM gap",
+  "geometry": {
+    "vertices": 18,
+    "edges": 33,
+    "faces": 20,
+    "coarse_bottom_fixed_edges": 8,
+    "integrated_edges": 25
+  },
+  "shell_support": {
+    "shell_faces": 16,
+    "nonbottom_integrated_edges": 21,
+    "surviving_shell_supports_by_cardinality": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 4,
+      "6": 0,
+      "7": 0,
+      "8": 4
+    },
+    "five_face_capping_disks": [
+      [
+        [
+          "xy",
+          0,
+          0,
+          1
+        ],
+        [
+          "xz",
+          0,
+          0,
+          0
+        ],
+        [
+          "xz",
+          0,
+          1,
+          0
+        ],
+        [
+          "yz",
+          0,
+          0,
+          0
+        ],
+        [
+          "yz",
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "xy",
+          0,
+          1,
+          1
+        ],
+        [
+          "xz",
+          0,
+          1,
+          0
+        ],
+        [
+          "xz",
+          0,
+          2,
+          0
+        ],
+        [
+          "yz",
+          0,
+          1,
+          0
+        ],
+        [
+          "yz",
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          "xy",
+          1,
+          0,
+          1
+        ],
+        [
+          "xz",
+          1,
+          0,
+          0
+        ],
+        [
+          "xz",
+          1,
+          1,
+          0
+        ],
+        [
+          "yz",
+          1,
+          0,
+          0
+        ],
+        [
+          "yz",
+          2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "xy",
+          1,
+          1,
+          1
+        ],
+        [
+          "xz",
+          1,
+          1,
+          0
+        ],
+        [
+          "xz",
+          1,
+          2,
+          0
+        ],
+        [
+          "yz",
+          1,
+          1,
+          0
+        ],
+        [
+          "yz",
+          2,
+          1,
+          0
+        ]
+      ]
+    ],
+    "method": "independent all-subsets edge-exposure count: any edge with a unique nontrivial centered shell factor integrates to zero"
+  },
+  "character_analysis": {
+    "harmonic_accuracy": 1.8201504487690013e-14,
+    "haar_checks": [
+      {
+        "beta": -0.7,
+        "a0": 1.2658456877347533,
+        "haar_total": 1.2658456877347537
+      },
+      {
+        "beta": -0.2,
+        "a0": 1.020133778667853,
+        "haar_total": 1.0201337786678528
+      },
+      {
+        "beta": 0.0,
+        "a0": 1.0,
+        "haar_total": 0.9999999999999999
+      },
+      {
+        "beta": 0.2,
+        "a0": 1.020133778667853,
+        "haar_total": 1.020133778667853
+      },
+      {
+        "beta": 0.6,
+        "a0": 1.1911299025877384,
+        "haar_total": 1.1911299025877384
+      },
+      {
+        "beta": 1.1,
+        "a0": 1.7400860459876233,
+        "haar_total": 1.7400860459876255
+      }
+    ],
+    "first_transverse_coefficient_checks": [
+      {
+        "beta": 0.0,
+        "cos_theta": -0.85,
+        "planar_kernel": 1.0,
+        "exact_fifth_shell_taylor": 0.0
+      },
+      {
+        "beta": 0.0,
+        "cos_theta": -0.25,
+        "planar_kernel": 1.0,
+        "exact_fifth_shell_taylor": 0.0
+      },
+      {
+        "beta": 0.0,
+        "cos_theta": 0.2,
+        "planar_kernel": 1.0,
+        "exact_fifth_shell_taylor": 0.0
+      },
+      {
+        "beta": 0.0,
+        "cos_theta": 0.76,
+        "planar_kernel": 1.0,
+        "exact_fifth_shell_taylor": 0.0
+      },
+      {
+        "beta": 0.12,
+        "cos_theta": -0.85,
+        "planar_kernel": 0.9999563561732662,
+        "exact_fifth_shell_taylor": 0.02983646212381331
+      },
+      {
+        "beta": 0.12,
+        "cos_theta": -0.25,
+        "planar_kernel": 0.999987163452249,
+        "exact_fifth_shell_taylor": 0.02990125882432204
+      },
+      {
+        "beta": 0.12,
+        "cos_theta": 0.2,
+        "planar_kernel": 1.0000102690969186,
+        "exact_fifth_shell_taylor": 0.029949857125118128
+      },
+      {
+        "beta": 0.12,
+        "cos_theta": 0.76,
+        "planar_kernel": 1.0000390230100336,
+        "exact_fifth_shell_taylor": 0.030010335938757998
+      },
+      {
+        "beta": 0.35,
+        "cos_theta": -0.85,
+        "planar_kernel": 0.9970573323090213,
+        "exact_fifth_shell_taylor": 0.08349529656309686
+      },
+      {
+        "beta": 0.35,
+        "cos_theta": -0.25,
+        "planar_kernel": 0.9991339060644348,
+        "exact_fifth_shell_taylor": 0.08509762635022358
+      },
+      {
+        "beta": 0.35,
+        "cos_theta": 0.2,
+        "planar_kernel": 1.0006922096829196,
+        "exact_fifth_shell_taylor": 0.0863006591554262
+      },
+      {
+        "beta": 0.35,
+        "cos_theta": 0.76,
+        "planar_kernel": 1.0026324775952455,
+        "exact_fifth_shell_taylor": 0.08779930595461864
+      },
+      {
+        "beta": 0.9,
+        "cos_theta": -0.85,
+        "planar_kernel": 0.9144112808896145,
+        "exact_fifth_shell_taylor": 0.16407772642404328
+      },
+      {
+        "beta": 0.9,
+        "cos_theta": -0.25,
+        "planar_kernel": 0.9742010434123207,
+        "exact_fifth_shell_taylor": 0.18879819080276616
+      },
+      {
+        "beta": 0.9,
+        "cos_theta": 0.2,
+        "planar_kernel": 1.0199469922191238,
+        "exact_fifth_shell_taylor": 0.20793712271360987
+      },
+      {
+        "beta": 0.9,
+        "cos_theta": 0.76,
+        "planar_kernel": 1.0779672048291487,
+        "exact_fifth_shell_taylor": 0.23248042263254173
+      },
+      {
+        "beta": 1.5,
+        "cos_theta": -0.85,
+        "planar_kernel": 0.6657139815193571,
+        "exact_fifth_shell_taylor": 0.1591422987276606
+      },
+      {
+        "beta": 1.5,
+        "cos_theta": -0.25,
+        "planar_kernel": 0.8883159870039308,
+        "exact_fifth_shell_taylor": 0.24056097511980934
+      },
+      {
+        "beta": 1.5,
+        "cos_theta": 0.2,
+        "planar_kernel": 1.0743361214364129,
+        "exact_fifth_shell_taylor": 0.3111311112415801
+      },
+      {
+        "beta": 1.5,
+        "cos_theta": 0.76,
+        "planar_kernel": 1.3299932651021875,
+        "exact_fifth_shell_taylor": 0.41118781893891065
+      }
+    ],
+    "exact_five_face_cap_checks": [
+      {
+        "gamma": 0.002,
+        "cos_theta": -0.7,
+        "kernel": -2.7999906666884446e-15,
+        "fundamental_gamma5_prediction": -2.8e-15
+      },
+      {
+        "gamma": 0.002,
+        "cos_theta": 0.0,
+        "kernel": -3.950597530924775e-31,
+        "fundamental_gamma5_prediction": 0.0
+      },
+      {
+        "gamma": 0.002,
+        "cos_theta": 0.6,
+        "kernel": 2.3999920000186674e-15,
+        "fundamental_gamma5_prediction": 2.4e-15
+      },
+      {
+        "gamma": 0.01,
+        "cos_theta": -0.7,
+        "kernel": -8.749270875862252e-12,
+        "fundamental_gamma5_prediction": -8.75e-12
+      },
+      {
+        "gamma": 0.01,
+        "cos_theta": 0.0,
+        "kernel": -3.8575424752421046e-24,
+        "fundamental_gamma5_prediction": 0.0
+      },
+      {
+        "gamma": 0.01,
+        "cos_theta": 0.6,
+        "kernel": 7.499375036458232e-12,
+        "fundamental_gamma5_prediction": 7.500000000000002e-12
+      },
+      {
+        "gamma": 0.04,
+        "cos_theta": -0.7,
+        "kernel": -8.948064470850823e-09,
+        "fundamental_gamma5_prediction": -8.96e-09
+      },
+      {
+        "gamma": 0.04,
+        "cos_theta": 0.0,
+        "kernel": -4.037351149761021e-18,
+        "fundamental_gamma5_prediction": 0.0
+      },
+      {
+        "gamma": 0.04,
+        "cos_theta": 0.6,
+        "kernel": 7.669769551542161e-09,
+        "fundamental_gamma5_prediction": 7.680000000000002e-09
+      },
+      {
+        "gamma": 0.12,
+        "cos_theta": -0.7,
+        "kernel": -2.151370329502135e-06,
+        "fundamental_gamma5_prediction": -2.1772799999999993e-06
+      },
+      {
+        "gamma": 0.12,
+        "cos_theta": 0.0,
+        "kernel": -2.3462596251054304e-13,
+        "fundamental_gamma5_prediction": 0.0
+      },
+      {
+        "gamma": 0.12,
+        "cos_theta": 0.6,
+        "kernel": 1.8440320073008977e-06,
+        "fundamental_gamma5_prediction": 1.8662399999999996e-06
+      }
+    ],
+    "controlled_shell_remainder_bounds": [
+      {
+        "beta": 0.0,
+        "gamma": 0.002,
+        "uniform_R8_bound": 2.2097864982675805e-13
+      },
+      {
+        "beta": 0.0,
+        "gamma": 0.008,
+        "uniform_R8_bound": 1.5529799306702963e-08
+      },
+      {
+        "beta": 0.0,
+        "gamma": 0.015,
+        "uniform_R8_bound": 2.5758191967496484e-06
+      },
+      {
+        "beta": 0.0,
+        "gamma": 0.04,
+        "uniform_R8_bound": 0.008902564803891965
+      },
+      {
+        "beta": 0.25,
+        "gamma": 0.002,
+        "uniform_R8_bound": 1.6328236402358671e-12
+      },
+      {
+        "beta": 0.25,
+        "gamma": 0.008,
+        "uniform_R8_bound": 1.1475055828236251e-07
+      },
+      {
+        "beta": 0.25,
+        "gamma": 0.015,
+        "uniform_R8_bound": 1.903287254548564e-05
+      },
+      {
+        "beta": 0.25,
+        "gamma": 0.04,
+        "uniform_R8_bound": 0.06578155076032327
+      },
+      {
+        "beta": 0.65,
+        "gamma": 0.002,
+        "uniform_R8_bound": 4.005729526064043e-11
+      },
+      {
+        "beta": 0.65,
+        "gamma": 0.008,
+        "uniform_R8_bound": 2.8151215361972152e-06
+      },
+      {
+        "beta": 0.65,
+        "gamma": 0.015,
+        "uniform_R8_bound": 0.00046692452045986
+      },
+      {
+        "beta": 0.65,
+        "gamma": 0.04,
+        "uniform_R8_bound": 1.6137878804403125
+      }
+    ]
+  },
+  "physical_time_memory": {
+    "finite_slab_faces": 20,
+    "physical_spatial_potential": "V=beta*sum_f(1-chi1(U_f)/2)",
+    "Haar_mean_V": 26.0,
+    "Haar_variance_V": 8.450000000000001,
+    "coarse_naive_time_semigroup_vs_fine_trotter_vacuum_t2_coefficient": 4.2250000000000005,
+    "two_step_markov_memory_t2_coefficient": 8.450000000000001,
+    "one_face_reference": [
+      {
+        "time": 0.015,
+        "exact_one_plaquette_return": 0.9807353697658068,
+        "naive": 0.9806888951886662,
+        "ratio_difference_over_t_squared": 0.20655367618033832,
+        "expected_as_t_to_zero": 0.21125000000000002,
+        "trotter_one_step_return": 0.9807353004705944,
+        "trotter_vs_naive_over_t_squared": 0.20624569745880056,
+        "two_step_memory_over_t_squared": 0.4027420455115542,
+        "expected_two_step_memory": 0.42250000000000004
+      },
+      {
+        "time": 0.025,
+        "exact_one_plaquette_return": 0.9681496279577626,
+        "naive": 0.968022449831306,
+        "ratio_difference_over_t_squared": 0.20348500233051678,
+        "expected_as_t_to_zero": 0.21125000000000002,
+        "trotter_one_step_return": 0.9681493131715673,
+        "trotter_vs_naive_over_t_squared": 0.20298134441798507,
+        "two_step_memory_over_t_squared": 0.3901320014451019,
+        "expected_two_step_memory": 0.42250000000000004
+      },
+      {
+        "time": 0.04,
+        "exact_one_plaquette_return": 0.9496472239245168,
+        "naive": 0.9493288668428895,
+        "ratio_difference_over_t_squared": 0.1989731760170671,
+        "expected_as_t_to_zero": 0.21125000000000002,
+        "trotter_one_step_return": 0.9496459706650834,
+        "trotter_vs_naive_over_t_squared": 0.19818988887115863,
+        "two_step_memory_over_t_squared": 0.3720181027942411,
+        "expected_two_step_memory": 0.42250000000000004
+      },
+      {
+        "time": 0.07,
+        "exact_one_plaquette_return": 0.9139500220937411,
+        "naive": 0.9130177108992658,
+        "ratio_difference_over_t_squared": 0.19026759070925378,
+        "expected_as_t_to_zero": 0.21125000000000002,
+        "trotter_one_step_return": 0.9139436754928644,
+        "trotter_vs_naive_over_t_squared": 0.18897236604053386,
+        "two_step_memory_over_t_squared": 0.3384824476662331,
+        "expected_two_step_memory": 0.42250000000000004
+      }
+    ],
+    "analytic_all_time_inequality": "<1,T_eps 1> >= <1,exp(-eps V/2) 1>^2 > exp(-eps beta F) for all eps>0",
+    "scope": "fixed spatial grid; asymptotic in temporal epsilon, no continuum uniformity"
+  },
+  "invalid_inferences": [
+    "finite first-shell correction does not imply uniform interacting RG",
+    "positive transfer does not close continuum OS reconstruction",
+    "strict two-time coarse transfer memory prevents naive Markovian identification",
+    "no source-qualified 3D Penrose action equivalence"
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "scope": "finite SU2 Wilson/vacuum Harnack and exact Wilson first-moment formula; NOT interacting continuum",
+  "status": "PASS",
+  "heat_kernel_time_s": 8,
+  "delta_8_upper": 0.009916022127575974,
+  "delta_8_less_than_one_hundredth": true,
+  "clean_heat_kernel_ratio_upper": "101/99",
+  "Harnack_log_bound": "Lambda=64F/g0^4 + E log(101/99), for g_squared=g0^2",
+  "marginal_pointwise_bounds": "exp(-2 Lambda) <= rho_X <= exp(2 Lambda)",
+  "Wilson_variance_bounds": "exp(-2 Lambda) <= Var_rho(W) <= exp(2 Lambda)",
+  "first_moment_bounds": "(3/4) alpha L exp(-4 Lambda) <= -C_f_prime(0) <= (3/4) alpha L exp(4 Lambda)",
+  "first_moment_exact": "alpha L E_rho(1-W^2/4) / Var_rho(W)",
+  "conditional_two_scale_transfer": "If |log(rho_f/rho_c)|<=delta on the same fixed loop, then k exp(-2delta)<=m1_f/m1_c<=k exp(2delta), k=4 g_f^2/g_c^2",
+  "necessary_marginal_mismatch": "If |log(m1_f/m1_c)|<=epsilon, then delta>=max(0,(abs(log(k))-epsilon)/2), k=4 g_f^2/g_c^2",
+  "cubic_meshes": [
+    {
+      "n": 1,
+      "E": 12,
+      "F": 6,
+      "vertices": 8,
+      "cubes": 1,
+      "h": 1.0,
+      "g_squared": 1.0,
+      "alpha": 0.5,
+      "beta": 2.0,
+      "Lambda": 384.23799233166295,
+      "loop_edge_count": 4,
+      "first_moment_Haar": 1.5,
+      "heat_kernel_delta_upper": 0.009916022127575974,
+      "log_density_ratio_bound": 768.4759846633259
+    },
+    {
+      "n": 2,
+      "E": 54,
+      "F": 36,
+      "vertices": 27,
+      "cubes": 8,
+      "h": 0.5,
+      "g_squared": 1.0,
+      "alpha": 1.0,
+      "beta": 4.0,
+      "Lambda": 2305.070965492483,
+      "loop_edge_count": 8,
+      "first_moment_Haar": 6.0,
+      "heat_kernel_delta_upper": 0.009916022127575974,
+      "log_density_ratio_bound": 4610.141930984966
+    },
+    {
+      "n": 4,
+      "E": 300,
+      "F": 240,
+      "vertices": 125,
+      "cubes": 64,
+      "h": 0.25,
+      "g_squared": 1.0,
+      "alpha": 2.0,
+      "beta": 8.0,
+      "Lambda": 15365.949808291574,
+      "loop_edge_count": 16,
+      "first_moment_Haar": 24.0,
+      "heat_kernel_delta_upper": 0.009916022127575974,
+      "log_density_ratio_bound": 30731.89961658315
+    },
+    {
+      "n": 8,
+      "E": 1944,
+      "F": 1728,
+      "vertices": 729,
+      "cubes": 512,
+      "h": 0.125,
+      "g_squared": 1.0,
+      "alpha": 4.0,
+      "beta": 16.0,
+      "Lambda": 110630.5547577294,
+      "loop_edge_count": 32,
+      "first_moment_Haar": 96.0,
+      "heat_kernel_delta_upper": 0.009916022127575974,
+      "log_density_ratio_bound": 221261.1095154588
+    },
+    {
+      "n": 16,
+      "E": 13872,
+      "F": 13056,
+      "vertices": 4913,
+      "cubes": 4096,
+      "h": 0.0625,
+      "g_squared": 1.0,
+      "alpha": 8.0,
+      "beta": 32.0,
+      "Lambda": 835859.1191354024,
+      "loop_edge_count": 64,
+      "first_moment_Haar": 384.0,
+      "heat_kernel_delta_upper": 0.009916022127575974,
+      "log_density_ratio_bound": 1671718.2382708048
+    }
+  ],
+  "haar_quaternion_regression": [
+    {
+      "links": 1,
+      "mean_W": -0.004182204882255418,
+      "var_W": 0.999573000753979,
+      "avg_su2_grad_squared": 0.750102377102086,
+      "haar_expected_first_moment_factor": 0.75
+    },
+    {
+      "links": 2,
+      "mean_W": -0.0029557978477106977,
+      "var_W": 0.9969401123023719,
+      "avg_su2_grad_squared": 0.7507627877391779,
+      "haar_expected_first_moment_factor": 0.75
+    },
+    {
+      "links": 4,
+      "mean_W": 0.0016055436699899165,
+      "var_W": 0.997518013390675,
+      "avg_su2_grad_squared": 0.7506198522097122,
+      "haar_expected_first_moment_factor": 0.75
+    },
+    {
+      "links": 8,
+      "mean_W": -0.005365438106024202,
+      "var_W": 0.9988600503357676,
+      "avg_su2_grad_squared": 0.7502777904345407,
+      "haar_expected_first_moment_factor": 0.75
+    },
+    {
+      "links": 16,
+      "mean_W": 0.000597524618392034,
+      "var_W": 0.9992489753036402,
+      "avg_su2_grad_squared": 0.7501876669151725,
+      "haar_expected_first_moment_factor": 0.75
+    }
+  ],
+  "four_state_response_regression_non_SU2": [
+    {
+      "theta": 0.0,
+      "coarse_hellinger_speed": 0.1500000000111687,
+      "spectral_susceptibility_bound": 0.36635877224382135,
+      "finite_gap": 1.9999999999999987,
+      "source_standard_deviation": 0.7327175444876423
+    },
+    {
+      "theta": 0.2,
+      "coarse_hellinger_speed": 0.13067584356947343,
+      "spectral_susceptibility_bound": 0.3363653246933034,
+      "finite_gap": 2.1306681122045417,
+      "source_standard_deviation": 0.7166828713753485
+    },
+    {
+      "theta": 1.0,
+      "coarse_hellinger_speed": 0.0888353211729706,
+      "spectral_susceptibility_bound": 0.24319320406905798,
+      "finite_gap": 2.6985696467252414,
+      "source_standard_deviation": 0.6562737987906173
+    },
+    {
+      "theta": 3.0,
+      "coarse_hellinger_speed": 0.08028362334854362,
+      "spectral_susceptibility_bound": 0.16018344983744967,
+      "finite_gap": 3.231001170533794,
+      "source_standard_deviation": 0.5175529139249412
+    }
+  ],
+  "relative_positive_SU2_class_marginal_regression": [
+    {
+      "kappa": 0.0,
+      "log_density_ratio_sup": 0.0,
+      "normalized_loop_q": 0.75,
+      "moment_ratio_two_scales": 4.0,
+      "rigorous_ratio_interval": [
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "kappa": 0.05,
+      "log_density_ratio_sup": 0.10124973969178606,
+      "normalized_loop_q": 0.7506249999674611,
+      "moment_ratio_two_scales": 4.003333333159793,
+      "rigorous_ratio_interval": [
+        3.266747631114483,
+        4.897837790592181
+      ]
+    },
+    {
+      "kappa": 0.2,
+      "log_density_ratio_sup": 0.41993377425276035,
+      "normalized_loop_q": 0.7599998675530085,
+      "moment_ratio_two_scales": 4.053332626949379,
+      "rigorous_ratio_interval": [
+        1.7270708316803693,
+        9.264240763323327
+      ]
+    },
+    {
+      "kappa": 0.5,
+      "log_density_ratio_sup": 1.122499193069114,
+      "normalized_loop_q": 0.8124687796260711,
+      "moment_ratio_two_scales": 4.33316682467238,
+      "rigorous_ratio_interval": [
+        0.42371084530436537,
+        37.76160128378747
+      ]
+    },
+    {
+      "kappa": 1.0,
+      "log_density_ratio_sup": 2.4641344735461597,
+      "normalized_loop_q": 0.9982379201556867,
+      "moment_ratio_two_scales": 5.323935574163662,
+      "rigorous_ratio_interval": [
+        0.028956094297649664,
+        552.5607091733606
+      ]
+    }
+  ],
+  "high_energy_spectral_counterexample": [
+    {
+      "h": 0.5,
+      "gap": 1.0,
+      "high_energy": 8.0,
+      "high_energy_weight": 0.5,
+      "first_moment": 4.5,
+      "correlation_at_t1": 0.18410745189967243
+    },
+    {
+      "h": 0.25,
+      "gap": 1.0,
+      "high_energy": 64.0,
+      "high_energy_weight": 0.25,
+      "first_moment": 16.75,
+      "correlation_at_t1": 0.27590958087858175
+    },
+    {
+      "h": 0.125,
+      "gap": 1.0,
+      "high_energy": 512.0,
+      "high_energy_weight": 0.125,
+      "first_moment": 64.875,
+      "correlation_at_t1": 0.32189451102501204
+    },
+    {
+      "h": 0.0625,
+      "gap": 1.0,
+      "high_energy": 4096.0,
+      "high_energy_weight": 0.0625,
+      "first_moment": 256.9375,
+      "correlation_at_t1": 0.34488697609822716
+    }
+  ],
+  "response_inequality": "||partial_theta sqrt(rho_theta)||_2 <= sqrt(Var_nu(F)) / Delta_theta <= n_faces / Delta_theta, source derivative at fixed kinetic alpha",
+  "limitations": [
+    "Explicit Harnack bound grows with number of links/faces and inverse g0^4; it gives no volume/UV uniform comparison.",
+    "Large normalized Wilson first moment is an ultraviolet diagnostic, not evidence of zero infrared mass gap.",
+    "The relative-marginal test uses admissible class densities, not solved interacting cubic Wilson vacua.",
+    "Finite source-response estimate uses inverse of finite spectral gap: using it to infer a uniform gap would be circular.",
+    "Four-state matrix regression is not an SU2 gauge field and is used only to test the general perturbation inequality.",
+    "No actual finite 3D interacting ground state Omega has been numerically solved."
+  ]
+}

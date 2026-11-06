@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite cubical geometry, coarse-cylinder Haar compression and bare SU2 original-link Hamiltonian; NOT interacting RG or a continuum mass gap.",
+  "SU2_haar_character_moments": {
+    "0": 1,
+    "1": 0,
+    "2": 1
+  },
+  "formulae": {
+    "electric_compression": "J* K_{h/2} J = 2 alpha_{h/2} sum_{coarse e} C_e",
+    "magnetic_compression": "J* V_{h/2} J = beta_{h/2} |F_{h/2}| I",
+    "bare_Hamiltonian_compression": "J* H_{h/2} J = 2 alpha_{h/2} sum C_e + beta_{h/2} |F_{h/2}| I",
+    "exact_off_cylinder_leakage_on_constant": "||(I-JJ*)H_{h/2}J1|| = beta_{h/2} sqrt(|F_{h/2}|)/2",
+    "scalar_shift_insensitive_compressed_coarse_mismatch": "inf_c ||(J*H_{h/2}J-H_h-cI)1|| = beta_h sqrt(|F_h|)/2",
+    "electric_matching_condition": "g0(h/2)^2 = g0(h)^2 /4",
+    "fixed_loop_free_electric_energy": "E_h(W_loop) = 3 g0(h)^2 perimeter/(8h^2) for elementary axis-aligned simple loops"
+  },
+  "geometry": [
+    {
+      "coarse_n": 1,
+      "coarse_edges": 12,
+      "coarse_faces": 6,
+      "refined_edges": 54,
+      "refined_faces": 36,
+      "skeleton_edges": 24,
+      "min_unused_edges_per_refined_face": 2,
+      "off_skeleton_edge_counts": {
+        "2": 24,
+        "4": 12
+      },
+      "coarse_fine_link_ratio": 2,
+      "expected_haar_compression_of_each_refined_wilson_character": 0,
+      "expected_refined_magnetic_leakage_squared_div_beta_squared": 9.0
+    },
+    {
+      "coarse_n": 2,
+      "coarse_edges": 54,
+      "coarse_faces": 36,
+      "refined_edges": 300,
+      "refined_faces": 240,
+      "skeleton_edges": 108,
+      "min_unused_edges_per_refined_face": 2,
+      "off_skeleton_edge_counts": {
+        "2": 144,
+        "4": 96
+      },
+      "coarse_fine_link_ratio": 2,
+      "expected_haar_compression_of_each_refined_wilson_character": 0,
+      "expected_refined_magnetic_leakage_squared_div_beta_squared": 60.0
+    },
+    {
+      "coarse_n": 3,
+      "coarse_edges": 144,
+      "coarse_faces": 108,
+      "refined_edges": 882,
+      "refined_faces": 756,
+      "skeleton_edges": 288,
+      "min_unused_edges_per_refined_face": 2,
+      "off_skeleton_edge_counts": {
+        "2": 432,
+        "4": 324
+      },
+      "coarse_fine_link_ratio": 2,
+      "expected_haar_compression_of_each_refined_wilson_character": 0,
+      "expected_refined_magnetic_leakage_squared_div_beta_squared": 189.0
+    },
+    {
+      "coarse_n": 4,
+      "coarse_edges": 300,
+      "coarse_faces": 240,
+      "refined_edges": 1944,
+      "refined_faces": 1728,
+      "skeleton_edges": 600,
+      "min_unused_edges_per_refined_face": 2,
+      "off_skeleton_edge_counts": {
+        "2": 960,
+        "4": 768
+      },
+      "coarse_fine_link_ratio": 2,
+      "expected_haar_compression_of_each_refined_wilson_character": 0,
+      "expected_refined_magnetic_leakage_squared_div_beta_squared": 432.0
+    },
+    {
+      "coarse_n": 8,
+      "coarse_edges": 1944,
+      "coarse_faces": 1728,
+      "refined_edges": 13872,
+      "refined_faces": 13056,
+      "skeleton_edges": 3888,
+      "min_unused_edges_per_refined_face": 2,
+      "off_skeleton_edge_counts": {
+        "2": 6912,
+        "4": 6144
+      },
+      "coarse_fine_link_ratio": 2,
+      "expected_haar_compression_of_each_refined_wilson_character": 0,
+      "expected_refined_magnetic_leakage_squared_div_beta_squared": 3264.0
+    }
+  ],
+  "conditional_Haar_regression": {
+    "samples": 3000,
+    "fixed_coarse_face_boundary_character": -0.4280468587783963,
+    "conditional_fine_face_character_means": [
+      0.015789922591411324,
+      0.0038613504038034125,
+      0.0019521728261602928,
+      0.007836166128840945
+    ],
+    "maximum_abs_conditional_mean": 0.015789922591411324,
+    "status": "stochastic regression (not theorem)"
+  },
+  "remaining_obligations": [
+    "Construct nontrivial face-aware, gauge-covariant blocking/renormalized observables with a specified interacting measure and action.",
+    "Derive uniform in h,R bounds for actual interacting physical-time correlations.",
+    "Construct a 4D nontrivial OS limit; do not treat the free-electric cylinder as a gauge-theory continuum.",
+    "Independent 3D quasicrystal refinement and transfer theorem."
+  ]
+}

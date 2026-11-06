@@ -1,0 +1,443 @@
+{
+  "status": "PASS",
+  "theorem_scope": "Finite original-link SU2 Wilson vacuum; volume-independent local H1/Fisher estimate at fixed g0; NOT uniform as g0 tends to zero",
+  "alpha": "g0^2/(2h)",
+  "beta": "2/(g0^2 h)",
+  "exact_local_variational_inequality": "alpha <Omega,C_e Omega> <= beta degree(e) <= 4 beta",
+  "marginal_single_holonomy": "int |grad sqrt(rho_U)|^2 <= degree(e) beta/alpha <=16/g0^4",
+  "Fisher_information_bound": "int rho |grad log rho|^2 <= 4 degree(e) beta/alpha <=64/g0^4",
+  "volume_independent_variance_bound": "Var_rho(trace_fundamental U)>=pi^2/[64 C_S^3 (1+16/g0^4)^3], with fixed SU2 Sobolev C_S >=1",
+  "thermodynamic_conclusion": "At fixed h,g0, the local sqrt-marginals are precompact in L2 and normalized local Wilson spectral measures have subsequential weak limits with finite first moments. No uniqueness, uniform weak coupling, OS or mass gap.",
+  "open_obligation": "Control the H1/marginal constants as g0(h)->0 and estimate the complete connected time-dependent Schur form",
+  "cubical_geometry": [
+    {
+      "n": 1,
+      "E": 12,
+      "F": 6,
+      "degree_counts": {
+        "2": 12,
+        "3": 0,
+        "4": 0
+      },
+      "sum_degree": 24,
+      "max_degree": 2
+    },
+    {
+      "n": 2,
+      "E": 54,
+      "F": 36,
+      "degree_counts": {
+        "2": 24,
+        "3": 24,
+        "4": 6
+      },
+      "sum_degree": 144,
+      "max_degree": 4
+    },
+    {
+      "n": 3,
+      "E": 144,
+      "F": 108,
+      "degree_counts": {
+        "2": 36,
+        "3": 72,
+        "4": 36
+      },
+      "sum_degree": 432,
+      "max_degree": 4
+    },
+    {
+      "n": 4,
+      "E": 300,
+      "F": 240,
+      "degree_counts": {
+        "2": 48,
+        "3": 144,
+        "4": 108
+      },
+      "sum_degree": 960,
+      "max_degree": 4
+    },
+    {
+      "n": 8,
+      "E": 1944,
+      "F": 1728,
+      "degree_counts": {
+        "2": 96,
+        "3": 672,
+        "4": 1176
+      },
+      "sum_degree": 6912,
+      "max_degree": 4
+    },
+    {
+      "n": 16,
+      "E": 13872,
+      "F": 13056,
+      "degree_counts": {
+        "2": 192,
+        "3": 2880,
+        "4": 10800
+      },
+      "sum_degree": 52224,
+      "max_degree": 4
+    },
+    {
+      "n": 32,
+      "E": 104544,
+      "F": 101376,
+      "degree_counts": {
+        "2": 384,
+        "3": 11904,
+        "4": 92256
+      },
+      "sum_degree": 405504,
+      "max_degree": 4
+    }
+  ],
+  "coupling_examples": [
+    {
+      "g0": 0.5,
+      "beta_div_alpha": 64.0,
+      "max_grad_energy_single_loop": 256.0,
+      "max_Fisher_information": 1024.0
+    },
+    {
+      "g0": 0.75,
+      "beta_div_alpha": 12.641975308641975,
+      "max_grad_energy_single_loop": 50.5679012345679,
+      "max_Fisher_information": 202.2716049382716
+    },
+    {
+      "g0": 1.0,
+      "beta_div_alpha": 4.0,
+      "max_grad_energy_single_loop": 16.0,
+      "max_Fisher_information": 64.0
+    },
+    {
+      "g0": 1.5,
+      "beta_div_alpha": 0.7901234567901234,
+      "max_grad_energy_single_loop": 3.1604938271604937,
+      "max_Fisher_information": 12.641975308641975
+    },
+    {
+      "g0": 2.0,
+      "beta_div_alpha": 0.25,
+      "max_grad_energy_single_loop": 1.0,
+      "max_Fisher_information": 4.0
+    },
+    {
+      "g0": 3.0,
+      "beta_div_alpha": 0.04938271604938271,
+      "max_grad_energy_single_loop": 0.19753086419753085,
+      "max_Fisher_information": 0.7901234567901234
+    }
+  ],
+  "independent_one_plaquette_character_regressions": [
+    {
+      "alpha": 1.0,
+      "beta": 0.05,
+      "beta_over_alpha": 0.05,
+      "lowest_energy": 0.04979167570853309,
+      "one_link_kinetic": 5.207655278330683e-05,
+      "local_grad_sqrt_rho_squared": 5.207655278330683e-05,
+      "local_upper_bound": 0.05,
+      "ratio_to_local_bound": 0.0010415310556661365,
+      "joint_kinetic_plus_local_magnetic": 0.04963544604965486,
+      "wilson_mean": 0.016665220125137516,
+      "wilson_variance": 0.999843781806991,
+      "minimum_approximate_positive_ground_wavefunction": 0.983377869637682,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 3.0003471974487748,
+      "correlator_first_moment_spectral": 3.000347197448775,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 0.9999999999999999,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.9704421774469484,
+          "tangent_lower": 0.9699965280255123
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.7407933768507633,
+          "tangent_lower": 0.6999652802551224
+        },
+        {
+          "t": 0.5,
+          "C_t": 0.22309534960814145,
+          "tangent_lower": -0.5001735987243876
+        },
+        {
+          "t": 1,
+          "C_t": 0.04977200092227259,
+          "tangent_lower": -2.000347197448775
+        },
+        {
+          "t": 2,
+          "C_t": 0.0024772792284400353,
+          "tangent_lower": -5.00069439489755
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 0.2,
+      "beta_over_alpha": 0.2,
+      "lowest_energy": 0.19666897777318162,
+      "one_link_kinetic": 0.0008316018545942674,
+      "local_grad_sqrt_rho_squared": 0.0008316018545942674,
+      "local_upper_bound": 0.2,
+      "ratio_to_local_bound": 0.004158009272971336,
+      "joint_kinetic_plus_local_magnetic": 0.19417417220875863,
+      "wilson_mean": 0.06657429645835658,
+      "wilson_variance": 0.9975081171678267,
+      "minimum_approximate_positive_ground_wavefunction": 0.9340991028005043,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 3.0055492223917777,
+      "correlator_first_moment_spectral": 3.005549222391777,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 0.9999999999999992,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.9703918945002293,
+          "tangent_lower": 0.9699445077760822
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.7404212313348694,
+          "tangent_lower": 0.6994450777608223
+        },
+        {
+          "t": 0.5,
+          "C_t": 0.22257438676575467,
+          "tangent_lower": -0.5027746111958884
+        },
+        {
+          "t": 1,
+          "C_t": 0.0495467656729869,
+          "tangent_lower": -2.005549222391777
+        },
+        {
+          "t": 2,
+          "C_t": 0.0024553118623420857,
+          "tangent_lower": -5.011098444783554
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "beta_over_alpha": 1.0,
+      "lowest_energy": 0.9180581766245607,
+      "one_link_kinetic": 0.019815991218449357,
+      "local_grad_sqrt_rho_squared": 0.019815991218449357,
+      "local_upper_bound": 1.0,
+      "ratio_to_local_bound": 0.019815991218449357,
+      "joint_kinetic_plus_local_magnetic": 0.8586102029689496,
+      "wilson_mean": 0.32241157649899943,
+      "wilson_variance": 0.9421978554481141,
+      "minimum_approximate_positive_ground_wavefunction": 0.6921299670306724,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 3.1350664861006803,
+      "correlator_first_moment_spectral": 3.135066486100679,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 0.9999999999999996,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.9691406940021506,
+          "tangent_lower": 0.9686493351389932
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.7312081373774304,
+          "tangent_lower": 0.6864933513899321
+        },
+        {
+          "t": 0.5,
+          "C_t": 0.20995960558114454,
+          "tangent_lower": -0.5675332430503395
+        },
+        {
+          "t": 1,
+          "C_t": 0.04424131542392218,
+          "tangent_lower": -2.135066486100679
+        },
+        {
+          "t": 2,
+          "C_t": 0.001965538408715767,
+          "tangent_lower": -5.270132972201358
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 4.0,
+      "beta_over_alpha": 4.0,
+      "lowest_energy": 2.902659557453904,
+      "one_link_kinetic": 0.19554735187812483,
+      "local_grad_sqrt_rho_squared": 0.19554735187812483,
+      "local_upper_bound": 4.0,
+      "ratio_to_local_bound": 0.04888683796953121,
+      "joint_kinetic_plus_local_magnetic": 2.316017501820108,
+      "wilson_mean": 0.9397649250290082,
+      "wilson_variance": 0.558981340667999,
+      "minimum_approximate_positive_ground_wavefunction": 0.19029851182226776,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 4.575931894185422,
+      "correlator_first_moment_spectral": 4.5759318941854215,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 1.0000000000000002,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.9553137306301984,
+          "tangent_lower": 0.9542406810581457
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.6352230906531405,
+          "tangent_lower": 0.5424068105814579
+        },
+        {
+          "t": 0.5,
+          "C_t": 0.10745515484543945,
+          "tangent_lower": -1.2879659470927107
+        },
+        {
+          "t": 1,
+          "C_t": 0.011913282075624953,
+          "tangent_lower": -3.5759318941854215
+        },
+        {
+          "t": 2,
+          "C_t": 0.0001472550930208319,
+          "tangent_lower": -8.151863788370843
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 20.0,
+      "beta_over_alpha": 20.0,
+      "lowest_energy": 8.161931278739628,
+      "one_link_kinetic": 0.8528896963229091,
+      "local_grad_sqrt_rho_squared": 0.8528896963229091,
+      "local_upper_bound": 20.0,
+      "ratio_to_local_bound": 0.04264448481614545,
+      "joint_kinetic_plus_local_magnetic": 5.603262189770736,
+      "wilson_mean": 1.5249627506552172,
+      "wilson_variance": 0.13508139422257637,
+      "minimum_approximate_positive_ground_wavefunction": 0.000893135273595913,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 11.396145440688779,
+      "correlator_first_moment_spectral": 11.396145440688786,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 1.0000000000000022,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.8923473691777393,
+          "tangent_lower": 0.8860385455931121
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.3214357697153402,
+          "tangent_lower": -0.13961454406887852
+        },
+        {
+          "t": 0.5,
+          "C_t": 0.0035256536724887887,
+          "tangent_lower": -4.698072720344393
+        },
+        {
+          "t": 1,
+          "C_t": 1.2584246543729129e-05,
+          "tangent_lower": -10.396145440688786
+        },
+        {
+          "t": 2,
+          "C_t": 1.603526714822145e-10,
+          "tangent_lower": -21.79229088137757
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 60.0,
+      "beta_over_alpha": 60.0,
+      "lowest_energy": 15.112359157738949,
+      "one_link_kinetic": 1.7232235803618947,
+      "local_grad_sqrt_rho_squared": 1.7232235803618947,
+      "local_upper_bound": 60.0,
+      "ratio_to_local_bound": 0.02872039300603158,
+      "joint_kinetic_plus_local_magnetic": 9.942688416654052,
+      "wilson_mean": 1.7260178387902614,
+      "wilson_variance": 0.047136985863546865,
+      "minimum_approximate_positive_ground_wavefunction": 2.3646169911017978e-07,
+      "basis_size": 85,
+      "correlator_first_moment_exact": 20.657354654220136,
+      "correlator_first_moment_spectral": 20.657354654220132,
+      "time_correlations": [
+        {
+          "t": 0,
+          "C_t": 1.0000000000000062,
+          "tangent_lower": 1.0
+        },
+        {
+          "t": 0.01,
+          "C_t": 0.8134146697144593,
+          "tangent_lower": 0.7934264534577986
+        },
+        {
+          "t": 0.1,
+          "C_t": 0.12718539330716025,
+          "tangent_lower": -1.0657354654220135
+        },
+        {
+          "t": 0.5,
+          "C_t": 3.3645346463145324e-05,
+          "tangent_lower": -9.328677327110066
+        },
+        {
+          "t": 1,
+          "C_t": 1.1357740071981806e-09,
+          "tangent_lower": -19.657354654220132
+        },
+        {
+          "t": 2,
+          "C_t": 1.2942731432291636e-18,
+          "tangent_lower": -40.314709308440264
+        }
+      ]
+    }
+  ],
+  "haar_fundamental_trace_moments": [
+    1.0000000000000002,
+    0.0,
+    0.9999999999999997,
+    1.9999999999999873
+  ],
+  "notes": [
+    "The 1-plaquette 2D rotor is an independent finite SU2 regression, not a 3D vacuum simulation.",
+    "C_S is the fixed geometric SU(2) H1->L6 Sobolev constant. No numerical value or sharpness is asserted.",
+    "No use is made of a finite-volume spectral-gap lower bound to establish the local energy estimate."
+  ]
+}
