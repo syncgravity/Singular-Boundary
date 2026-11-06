@@ -230,3 +230,7 @@ attach_marginal_harnack(ROOT)
 # Gap-independent finite SU2 local Wilson Fisher bound and fixed-h thermodynamic subsequences.
 from add_local_fisher_graph import attach as attach_local_fisher
 attach_local_fisher(ROOT)
+
+# Finite gauge-equivariant spatial Wilson flow, spectral Rayleigh test, and exact SU2 Fisher-gap obstruction.
+from add_spatial_flow_fisher_gap_graph import attach as attach_spatial_flow_fisher_gap
+attach_spatial_flow_fisher_gap(ROOT)
