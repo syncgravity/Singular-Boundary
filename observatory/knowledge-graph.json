@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-05",
-  "version": "v2.29",
+  "build_date": "2026-11-06 (UTC)",
+  "version": "v2.30-draft",
   "scope": "Mathematical physics atlas: cubic SU(2) finite results, open continuum infrared gates, explicit quasicrystal transfer conditions, and distinct ultraviolet gravity questions. No gap theorem.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "main",
+  "git_branch": "audit/2026-11-06-cubic-transverse-shell",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -3058,6 +3058,95 @@
       "importance": 5,
       "core": true,
       "route": null
+    },
+    {
+      "id": "R-CUBIC-3D-SHELL",
+      "title": "Finite 3D SU(2) transverse plaquette shell",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Exact positive truncated-plaquette 2×2×1 spatial slab: 20 faces and 25 integrated links; first transverse Wilson correction λ⁸χ₁/32, vacuum cube term λ⁶/4 and exact adjoint λ¹⁶/16384.",
+      "detail": "This is a finite spatial polynomial-weight character calculation, not the full Wilson exponential, heat-kernel physical-time dynamics, uniform interacting renormalization or a continuum mass gap. 2^20 face selections were exhaustively checked; remaining amplitudes bounded by an explicit sup-norm remainder.",
+      "checks": [
+        {
+          "label": "Parity geometry and finite SU(2) character factors",
+          "state": "met",
+          "note": "32 admissible subsets; embedded disk/sphere Schur coefficients and truncated-action positivity checked"
+        },
+        {
+          "label": "Uniform correction to normalized 3D block at fixed |λ|<1/2",
+          "state": "met",
+          "note": "Analytical finite-block sup-norm remainder bound"
+        },
+        {
+          "label": "Physical Wilson exponential and Euclidean-time interaction",
+          "state": "open",
+          "note": "Requires higher-spin recoupling and temporal heat-kernel transfer"
+        },
+        {
+          "label": "Uniform h→0 and box-size infrared estimate",
+          "state": "open",
+          "note": "Physical continuum problem remains open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite 3D cubical transverse-shell Haar/blocking audit",
+          "path": "research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md",
+          "git_blob_sha": "a7d5f05a60847042c9bc0702078a88789d22728d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/a7d5f05a60847042c9bc0702078a88789d22728d/research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "finite-shell"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "W-3D-WILSON-TIME",
+      "title": "3D Wilson exponential and physical-time block transfer",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Repeat the transverse-shell comparison with the full SU(2) Wilson exponential plus temporal heat-kernel transfer; establish real physical-time connected-correlation bounds.",
+      "detail": "The polynomial λ-character model demonstrates transverse channels but does not reproduce the physical weak-bare-coupling continuum. Retain spin intertwiners and define renormalized observables before comparing h→h/2.",
+      "checks": [
+        {
+          "label": "Full Wilson exponential character expansion and 3D shell integration",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Same-action time transfer, gauge-invariant probes and vacuum centering",
+          "state": "open",
+          "note": ""
+        },
+        {
+          "label": "Volume/refinement-uniform interacting physical-time comparison",
+          "state": "open",
+          "note": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite 3D cubical transverse-shell Haar/blocking audit",
+          "path": "research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md",
+          "git_blob_sha": "a7d5f05a60847042c9bc0702078a88789d22728d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/a7d5f05a60847042c9bc0702078a88789d22728d/research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "cubic",
+        "SU2",
+        "finite-shell"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -4383,6 +4472,41 @@
       "kind": "distinct-objectives",
       "label": "YM gap never establishes gravity UV finiteness",
       "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-CUBIC-3D-SHELL",
+      "kind": "finite-model-evidence",
+      "label": "spatial 3D cubical control only",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-P0-HK",
+      "to_id": "R-CUBIC-3D-SHELL",
+      "kind": "different-action",
+      "label": "temporal heat kernel vs polynomial spatial weight; not interchangeable",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CUBIC-3D-SHELL",
+      "to_id": "W-3D-WILSON-TIME",
+      "kind": "next-required-interface",
+      "label": "full 3D Wilson exponential and physical-time dynamics remain open",
+      "status": "open"
+    },
+    {
+      "from_id": "W-3D-WILSON-TIME",
+      "to_id": "P2",
+      "kind": "open-proof-obligation",
+      "label": "uniform interacting infrared bound not established",
+      "status": "open"
+    },
+    {
+      "from_id": "R-CUBIC-3D-SHELL",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "scoped-evidence",
+      "label": "finite coarse character evidence, no continuum dictionary",
+      "status": "finite"
     }
   ],
   "sources_verified": {
