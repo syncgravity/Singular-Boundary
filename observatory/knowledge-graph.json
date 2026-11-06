@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-05 (America/Denver)",
-  "version": "v2.37-draft",
-  "scope": "Exact flat-field 3D cubic fixed-physical-radius smoothing and periodic Fourier O(h²) control; nonlinear isolated SU2 plaquette rare-event countercheck. Full nonlinear interacting 4D gap and gravity still OPEN.",
+  "build_date": "2026-11-06",
+  "version": "v2.38-draft",
+  "scope": "Exact nonlinear classical 3D Wilson physical-action dissipation, conditional small plaquette holonomies, curvature-energy atomic concentration, and strictly finite interacting-vacuum flowed variance. No physical nonlinear smoothing derivative, 4D YM gap or gravity UV proof.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 740,
   "existing_proof_paths": 78,
-  "git_branch": "audit/2026-11-05-physical-radius-linearized-cubic-flow",
+  "git_branch": "audit/2026-11-06-nonlinear-cubic-physical-energy",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -4244,13 +4244,13 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "Upgrade the uniform flat-field 3D smoothing to physical 4D gauge-covariant flow and nontrivial true-vacuum covariance, then control complete interacting physical-time shorted forms across h→0 and spatial volume.",
-      "detail": "Required: source-defined 4D regulator, nonlinear curvature estimates stable at s=tau/h², gauge-covariant observable dictionary at fixed physical support, nonvanishing renormalized variance, and long-time/energy-dependent Schur and OS continuum limits. A tight UV spectral moment does not exclude infrared soft states.",
+      "summary": "A full nonlinear 3D classical physical-action balance is now exact under bounded initial energy, but gauge curvature derivative smoothing, physical interacting-vacuum covariance and 4D long-time Schur estimates remain OPEN.",
+      "detail": "Finite nonlinear Wilson flow preserves classical physical energy and integrated force; these estimates permit curvature concentration and have no proved uniform initial quantum-vacuum energy hypothesis. Next: genuine positive-physical-radius nonlinear smoothing beyond integrated force, and a renormalized nontrivial 4D interacting observable/Schur comparison.",
       "checks": [
         {
           "label": "Full nonlinear gauge curvature/tangent estimate uniform at fixed physical radius",
-          "state": "open",
-          "note": ""
+          "state": "partial",
+          "note": "Exact nonlinear physical-action dissipation and conditional small plaquette holonomy; no pointwise physical curvature derivative smoothing or 4D quantum estimate."
         },
         {
           "label": "Nonzero renormalized true-vacuum covariance of fixed-support 4D flowed Wilson field",
@@ -4284,6 +4284,184 @@
         "Schur"
       ],
       "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-NONLINEAR-PHYS-ACTION",
+      "title": "Full nonlinear SU(2) cubic spatial physical-action dissipation",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For finite 3D open cubic Wilson gradient flow, E_h=8S_h/h satisfies the exact nonperturbative energy/physical-flow-force balance E_h(tau)+8 integral_0^tau h^-3 ||grad S_h||² dt=E_h(0).",
+      "detail": "Gauge equivariant at every finite flow time. Conditional on a uniformly bounded total initial classical curvature energy, evolved energy and integrated force are uniform in mesh. This is NOT a pointwise nonlinear curvature smoothing, interacting-vacuum energy bound or 4D mass-gap result.",
+      "checks": [
+        {
+          "label": "Exact nonlinear product-SU2 Wilson action chain rule",
+          "state": "met",
+          "note": "No linearized or small-field assumption"
+        },
+        {
+          "label": "Finite gauge-equivariant flow at fixed physical tau",
+          "state": "met",
+          "note": "s=tau/h²; compact configuration manifold"
+        },
+        {
+          "label": "Uniform physical energy and integrated force under uniform classical initial E",
+          "state": "conditional",
+          "note": "The initial bound is a separate classical hypothesis"
+        },
+        {
+          "label": "Uniform true-vacuum quantum flowed covariance and Schur/IR",
+          "state": "open",
+          "note": "No interacting field-measure limit"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nonlinear 3D cubic SU2 physical-action dissipation and curvature concentration",
+          "path": "research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md",
+          "git_blob_sha": "0e7b7e4a4525a7fcf3d9ad2556de903102556172",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0e7b7e4a4525a7fcf3d9ad2556de903102556172/research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "nonlinear",
+        "classical",
+        "physical-flow"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-PLAQUETTE-HOLONOMY-ADMISSIBILITY",
+      "title": "Conditional small-plaquette holonomy and energy-measure compactness",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "If total classical E_h(0)≤M on a fixed physical box, every flowed plaquette angle obeys theta_p(tau)≤(pi/2)sqrt(Mh); positive face-energy measures have weak subsequences for each fixed physical tau.",
+      "detail": "Only an O(sqrt h) plaquette-angle bound, not the O(h²) curvature-angle scale, physical curvature derivative regularity, uniqueness or diffuse energy density. Local energy concentration is possible.",
+      "checks": [
+        {
+          "label": "Exact link-plaquette energy positivity and angle inequality",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Uniform classical initial total energy across h",
+          "state": "conditional",
+          "note": "Not established for quantum Wilson ground-state samples"
+        },
+        {
+          "label": "Continuous curvature-energy density and unique continuum limit",
+          "state": "open",
+          "note": "Positive Radon measures may be atomic"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nonlinear 3D cubic SU2 physical-action dissipation and curvature concentration",
+          "path": "research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md",
+          "git_blob_sha": "0e7b7e4a4525a7fcf3d9ad2556de903102556172",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0e7b7e4a4525a7fcf3d9ad2556de903102556172/research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "classical",
+        "curvature-measure"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-CUBIC-CURVATURE-ATOMIC",
+      "title": "One-link curvature concentration defeats pointwise nonlinear inference",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P2",
+      "summary": "A genuine SU(2) cubical configuration with one link exp(sqrt h T3) has E_h→4, plaquette curvature angle/h²=h^-3/2, and gauge-invariant face-energy measure converging to 4 delta at the spatial center.",
+      "detail": "Exact initial-flow-time nonlinear configuration respecting original-link incidence. It refutes the implication bounded physical classical action ⇒ diffuse energy measure / pointwise curvature. It does NOT refute positive-time nonlinear smoothing or a YM continuum mass gap.",
+      "checks": [
+        {
+          "label": "Four incident plaquettes of an interior edge",
+          "state": "met",
+          "note": "Bianchi/incidence satisfied by original SU2 links"
+        },
+        {
+          "label": "Energy bounded, principal-angle/h² diverges",
+          "state": "met",
+          "note": "E_h=32(1−cos(sqrt h/2))/h→4"
+        },
+        {
+          "label": "Curvature defect survives a fixed positive physical flow time",
+          "state": "open",
+          "note": "Not established; counterexample is at tau=0"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nonlinear 3D cubic SU2 physical-action dissipation and curvature concentration",
+          "path": "research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md",
+          "git_blob_sha": "0e7b7e4a4525a7fcf3d9ad2556de903102556172",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0e7b7e4a4525a7fcf3d9ad2556de903102556172/research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "counterexample",
+        "energy-concentration"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R-FINITE-FLOWED-VACUUM",
+      "title": "Finite true-Wilson-vacuum variance after nonlinear spatial flow",
+      "kind": "result",
+      "status": "finite",
+      "stage": "T2",
+      "summary": "For every fixed finite cubic regulator and finite physical flow time, the nonlinear flowed fundamental Wilson loop remains a nonconstant gauge-invariant function; strict positivity/full support of the interacting ground-state law gives strictly positive variance.",
+      "detail": "Finite-time spatial flow is a diffeomorphism; variance positivity follows with no quantitative h,R lower bound. Exact expectation-level nonlinear energy dissipation holds for the true finite vacuum but its initial raw physical energy is not known uniformly bounded.",
+      "checks": [
+        {
+          "label": "Nonconstant flowed Wilson loop under finite smooth diffeomorphism",
+          "state": "met",
+          "note": ""
+        },
+        {
+          "label": "Strict finite interacting-vacuum variance",
+          "state": "met",
+          "note": "Positive finite Wilson ground state has full Haar support"
+        },
+        {
+          "label": "Uniform nonzero renormalized covariance in physical continuum",
+          "state": "open",
+          "note": "Not proved: variance may vanish on refinement"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nonlinear 3D cubic SU2 physical-action dissipation and curvature concentration",
+          "path": "research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md",
+          "git_blob_sha": "0e7b7e4a4525a7fcf3d9ad2556de903102556172",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0e7b7e4a4525a7fcf3d9ad2556de903102556172/research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md"
+        }
+      ],
+      "tags": [
+        "SU2",
+        "cubic",
+        "finite-quantum-vacuum",
+        "observable"
+      ],
+      "importance": 4,
       "core": false,
       "route": null
     }
@@ -6212,6 +6390,97 @@
       "to_id": "G-GRAV",
       "kind": "distinct-scientific-goals",
       "label": "YM smearing does not establish gravitational UV finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "R-NONLINEAR-PHYS-ACTION",
+      "kind": "finite-3d-model",
+      "label": "Open original-link cubical SU2 spatial Wilson",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-CUBIC-SPATIAL-WILSON-FLOW",
+      "to_id": "R-NONLINEAR-PHYS-ACTION",
+      "kind": "nonlinear-physical-scale",
+      "label": "Exact classical Wilson gradient flow at tau=h²s",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-LINEAR-CUBIC-PHYSFLOW",
+      "to_id": "R-NONLINEAR-PHYS-ACTION",
+      "kind": "distinct-scopes",
+      "label": "Classical nonlinear energy balance is weaker than derivative smoothing",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "R-PLAQUETTE-HOLONOMY-ADMISSIBILITY",
+      "kind": "conditional-consequence",
+      "label": "Uniform initial classical energy implies small Wilson plaquettes",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R-PLAQUETTE-HOLONOMY-ADMISSIBILITY",
+      "to_id": "R-CUBIC-CURVATURE-ATOMIC",
+      "kind": "obstruction-to-inference",
+      "label": "Haar-invariant positive energy may concentrate at tau=0",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "R-CUBIC-CURVATURE-ATOMIC",
+      "to_id": "W-NONLINEAR-PHYS-RADIUS",
+      "kind": "regularity-still-open",
+      "label": "No pointwise field/curvature bounds from energy alone",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "W-NONLINEAR-PHYS-RADIUS",
+      "kind": "partial-classical-checkpoint",
+      "label": "Time-integrated force only; true vacuum assumptions unknown",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "R-FINITE-FLOWED-VACUUM",
+      "kind": "same-finite-flow",
+      "label": "Nonlinear gauge-equivariant diffeomorphism at finite regulator",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-FINITE-FLOWED-VACUUM",
+      "to_id": "T2-OBSERVABLES",
+      "kind": "finite-not-continuum",
+      "label": "Strict variance at fixed h does not imply nontrivial OS field",
+      "status": "finite"
+    },
+    {
+      "from_id": "R-FINITE-FLOWED-VACUUM",
+      "to_id": "W-PHYSICAL-FLOWED-SCHUR",
+      "kind": "uniformity-missing",
+      "label": "Actual interacting covariance and long-time Schur remain unproved",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONLINEAR-PLAQUETTE-FLOW-ESCAPE",
+      "to_id": "R-CUBIC-CURVATURE-ATOMIC",
+      "kind": "distinct-obstructions",
+      "label": "Over-flow variance vs initial curvature concentration",
+      "status": "obstruction"
+    },
+    {
+      "from_id": "W-NONLINEAR-PHYS-RADIUS",
+      "to_id": "T3-TIME-COMPARE",
+      "kind": "no-infrared-certificate",
+      "label": "Classical time integral not quantum physical-time decay",
+      "status": "open"
+    },
+    {
+      "from_id": "R-NONLINEAR-PHYS-ACTION",
+      "to_id": "G-GRAV",
+      "kind": "distinct-goal",
+      "label": "Classical cubic gauge flow does not establish gravitational UV theory",
       "status": "open"
     }
   ],
