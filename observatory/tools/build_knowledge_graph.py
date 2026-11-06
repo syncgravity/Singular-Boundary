@@ -214,3 +214,7 @@ attach(ROOT)
 # Full Wilson-exponential shell and positive two-time-memory finite model.
 from add_wilson_time_graph import attach as attach_wilson_time
 attach_wilson_time(ROOT)
+
+# Matched finite cubic dyadic meshes: exact all-time P/Q influence plus spectral resolvent bounds.
+from add_two_scale_influence_graph import attach as attach_two_scale_influence
+attach_two_scale_influence(ROOT)
