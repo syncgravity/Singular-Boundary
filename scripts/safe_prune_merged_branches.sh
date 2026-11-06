@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # The Singular Boundary: safe retired-branch cleanup. Dry-run by default.
-# Never deletes unmerged heads, the default branch, or independently open work.
+# Never deletes unmerged heads, the default branch, open PR heads/bases, or independent work.
 set -euo pipefail
 mode="${1:---dry-run}"
 case "$mode" in --dry-run|--delete) ;; *) echo "Usage: bash scripts/safe_prune_merged_branches.sh [--dry-run|--delete]" >&2; exit 2;; esac
@@ -23,7 +23,7 @@ git show-ref --verify --quiet "$main_ref" || { echo 'Cannot verify origin/main' 
 echo "main $(git rev-parse "$main_ref")"
 declare -A open_pr_branches=()
 if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
- while IFS= read -r name; do [[ -n "$name" ]] && open_pr_branches["$name"]=1; done < <(gh pr list --repo syncgravity/singular-boundary --state open --limit 500 --json headRefName --jq '.[].headRefName')
+ while IFS= read -r name; do [[ -n "$name" ]] && open_pr_branches["$name"]=1; done < <(gh pr list --repo syncgravity/singular-boundary --state open --limit 500 --json headRefName,baseRefName --jq '.[] | .headRefName, .baseRefName')
 elif [[ "$mode" == '--delete' ]]; then
  echo 'REFUSING deletion without authenticated gh PR status; install/login gh or run via GitHub Actions.' >&2
  exit 2
