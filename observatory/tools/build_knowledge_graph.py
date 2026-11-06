@@ -218,3 +218,7 @@ attach_wilson_time(ROOT)
 # Matched finite cubic dyadic meshes: exact all-time P/Q influence plus spectral resolvent bounds.
 from add_two_scale_influence_graph import attach as attach_two_scale_influence
 attach_two_scale_influence(ROOT)
+
+# True interacting-vacuum SU2 conditional blocking, finite Schur form and open scale target.
+from add_vacuum_weighted_block_graph import attach as attach_vacuum_rg
+attach_vacuum_rg(ROOT)
