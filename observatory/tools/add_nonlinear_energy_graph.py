@@ -8,7 +8,7 @@ import argparse,json
 from pathlib import Path
 
 SOURCE_PATH='research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md'
-SOURCE_SHA='119e7089f6e5ff724b865efb168676f0c441cb28'
+SOURCE_SHA='0e7b7e4a4525a7fcf3d9ad2556de903102556172'
 BRANCH='audit/2026-11-06-nonlinear-cubic-physical-energy'
 
 def attach(root:Path):
