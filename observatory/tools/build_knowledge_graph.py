@@ -210,3 +210,7 @@ extend(ROOT)
 # Scoped three-dimensional finite magnetic shell: no theorem gate promotion.
 from add_transverse_shell_graph import attach
 attach(ROOT)
+
+# Full Wilson-exponential shell and positive two-time-memory finite model.
+from add_wilson_time_graph import attach as attach_wilson_time
+attach_wilson_time(ROOT)
