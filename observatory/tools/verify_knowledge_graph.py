@@ -45,7 +45,7 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft'),'unexpected graph version')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
@@ -111,6 +111,21 @@ def main():
   check(node['G-GRAV']['status']=='open','gravity UV objective not proved')
   check(all(x['status']=='open' for x in n if x['kind'] in ('goal','gate')),'continuum theorem gates remain OPEN')
   check(any(x['from_id']=='W-UV-UNIFORM-LOCAL-WILSON' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'all-time uniform influence missing')
+ if g['version']=='v2.36-draft':
+  check(len(n)==124 and len(e)==260,'spatial Wilson flow graph counts')
+  check(node['R-SU2-FISHER-GAP-COUNTER']['status']=='obstruction','Fisher-gap obstruction scoped to class rotor')
+  check(node['R-GROUP-HEAT-WILSON-NOGO']['status']=='finite','normalized group heat no-go finite')
+  check(node['R-CUBIC-SPATIAL-WILSON-FLOW']['status']=='finite','finite 3D gauge flow only')
+  check(node['I-FLOWED-WILSON-DIRICHLET']['status']=='conditional','UV moment criterion conditional')
+  check(node['W-PHYSICAL-FLOWED-SCHUR']['status']=='open','physical flow/Schur theorem remains open')
+  check(node['R-LOCAL-WILSON-FISHER']['status']=='finite','prior finite local Fisher retained')
+  check(node['R-WILSON-THERMO-SUBSEQ']['status']=='finite','prior fixed-h thermodynamic scope')
+  check(node['W-UV-UNIFORM-LOCAL-WILSON']['status']=='open','weak-coupling uniformity still open')
+  check(node['T2-OBSERVABLES']['status']=='open','renormalized observable T2 still open')
+  check(node['T3-TIME-COMPARE']['status']=='open','physical-time T3 still open')
+  check(node['G-GRAV']['status']=='open','independent gravitational UV problem still open')
+  check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'no continuum theorem gate promotion')
+  check(any(x['from_id']=='W-PHYSICAL-FLOWED-SCHUR' and x['to_id']=='T3-TIME-COMPARE' and x['status']=='open' for x in e),'full physical-time Schur bridge missing')
  check(sum(f['kind']=='stage26' for f in m['files'])==8,'compact Stage26 eight');check(sum(f['kind']=='sweep10000' for f in m['files'])==8,'sweeps eight');check(sum(f['kind']=='transcript' for f in m['files'])==7,'transcripts seven');check(sum(f['kind']=='full_archive' for f in m['files'])==1,'full archive one')
  # All bundled runtime assets must be present, and no external script/CSS host is allowed.
  html=(root/'graph.html').read_text();js=(root/'graph-app.js').read_text();css=(root/'graph.css').read_text();script=(root/'knowledge-graph-data.js').read_text()
