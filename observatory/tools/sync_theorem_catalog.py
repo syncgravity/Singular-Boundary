@@ -56,6 +56,7 @@ def records():
     old['index_kind']='source-discovery-only'
     old['historical_baseline_count']=live['baseline_historical_count']
     old['complete_index']='docs/research/THEOREM_INDEX_LIVE.json'
+    old['source_commit']=live['source_commit']
     return old,live
 
 def current_markdown(catalog,live):
@@ -77,6 +78,7 @@ def expected():
     graph['historical_indexed_theorem_paths']=live['baseline_historical_count']
     graph['complete_theorem_index']='docs/research/THEOREM_INDEX_LIVE.json'
     graph['theorem_index_status']='source-file-indexed; no proof certification inferred'
+    graph['version']='v2.41-draft'
     output={
         CAT:CAT_PREFIX+json.dumps(cat,ensure_ascii=False,separators=(',',':'))+';\n',
         CURRENT:current_markdown(cat,live),
@@ -107,7 +109,18 @@ def main():
             path.parent.mkdir(parents=True,exist_ok=True)
             path.write_text(contents,encoding='utf-8')
     else:
-        wrong=[str(p.relative_to(ROOT)) for p,c in outputs.items() if not p.is_file() or p.read_text(encoding='utf-8')!=c]
+        wrong=[]
+        for p,c in outputs.items():
+            if not p.is_file():wrong.append(str(p.relative_to(ROOT)));continue
+            if p==CAT:
+                matches=parse_js(p,CAT_PREFIX)==cat
+            elif p==GRAPH:
+                matches=json.loads(p.read_text(encoding='utf-8'))==graph
+            elif p==GRAPH_JS:
+                matches=parse_js(p,GRAPH_PREFIX)==graph
+            else:
+                matches=p.read_text(encoding='utf-8')==c
+            if not matches:wrong.append(str(p.relative_to(ROOT)))
         if wrong:raise AssertionError('Stale Observatory theorem source inventory: '+', '.join(wrong))
     assert cat['count']==len(cat['records'])==graph['indexed_theorem_paths']
     assert graph['historical_indexed_theorem_paths']==live['baseline_historical_count']
