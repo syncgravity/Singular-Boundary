@@ -1,4 +1,4 @@
-# Research Observatory v2.33-draft — Mathematical Physics Proof Atlas
+# Research Observatory v2.34-draft — Mathematical Physics Proof Atlas
 
 
 ## Finite three-dimensional transverse-shell result · scope-limited (2026-11-06)
@@ -7,7 +7,7 @@ The first full `2×2×1` cubic spatial slab about a four-face block has 20 plaqu
 
 See [exact 3D transverse-shell report](../research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md) and its [reproducible verifier](../research/scripts/verify_cubic_transverse_shell_2026_11_06.py). The 2²⁰ squarefree face configurations were enumerated independently; only 32 pass the Haar center-parity test, while all higher-order non-manifold channels were bounded without unjustified factorization. The next step is **the full Wilson exponential plus temporal heat-kernel transfer, with the nonabelian recoupling channels included**, not a claim of a continuum gap.
 
-**Source status:** v2.33-draft review branch stacked on PR #63; v2.29 remains integrated on the private `main` branch. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
+**Source status:** v2.34-draft review branch stacked on PR #63; v2.29 remains integrated on the private `main` branch. **Mathematical status:** all P0–P5 continuum Yang–Mills gates and the independent quantum-gravity objective remain **OPEN**. Merging the site is not proof acceptance or permission to publish it publicly.
 
 ## Explore the proof
 
@@ -56,7 +56,7 @@ This private repository's [Pages workflow](../.github/workflows/pages.yml) has *
 
 The 2×2×1 slab now uses the **normalized full Wilson exponential** rather than the positive truncated plaquette polynomial. Four five-face complementary caps generate an exact all-spin SU(2) character kernel; the first transverse coefficient is exact at arbitrary bottom coupling, and higher shell supports carry an explicit sup-norm bound. The cap kernel itself contains an order-seven Taylor correction—distinct from the fact that there are no new six/seven-face supports. On the same original-link finite cubic Hamiltonian, positive symmetric SU(2) heat-kernel transfer exhibits **strict positive vacuum memory** under spatial Haar projection, with leading two-time discrepancy ε²×(20 β_h²/4). This is a **finite** dynamical obstruction to Markovian projection, not a continuum mass-gap or positive physical-time infrared theorem.
 
-Sources: `research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md`, `research/scripts/verify_wilson_shell_time_2026_11_06.py`, `docs/evidence/R3_FULL_WILSON_3D_SHELL_TIME_MEMORY_2026-11-06.json`, `observatory/tools/add_wilson_time_graph.py`. The continuing **OPEN** gate is a renormalized multiscale two-time influence kernel and uniform interacting connected correlations. v2.33-draft contains **108 physics nodes / 208 typed edges**, 26 original file hashes; all six Yang–Mills gates remain OPEN. No merge into main or public Pages deployment has occurred.
+Sources: `research/theorems/R3_FULL_WILSON_3D_SHELL_AND_TEMPORAL_MEMORY_2026-11-06.md`, `research/scripts/verify_wilson_shell_time_2026_11_06.py`, `docs/evidence/R3_FULL_WILSON_3D_SHELL_TIME_MEMORY_2026-11-06.json`, `observatory/tools/add_wilson_time_graph.py`. The continuing **OPEN** gate is a renormalized multiscale two-time influence kernel and uniform interacting connected correlations. v2.34-draft contains **108 physics nodes / 208 typed edges**, 26 original file hashes; all six Yang–Mills gates remain OPEN. No merge into main or public Pages deployment has occurred.
 
 ## Exact finite two-time influence across two cubic refinements · November 6, 2026
 
@@ -68,6 +68,16 @@ Read the [full proof](../research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADI
 
 A positive smooth finite SU(2) Wilson ground state Ω provides a **true-vacuum probability law** Ω² dHaar, whose conditional marginal ρ on the same eight coarse physical boundary holonomies defines an isometric, gauge-invariant local observable map. Unlike bare Haar projection, its P/Q mixing on the vacuum vanishes; on nonconstant coarse Wilson probes the exact off-diagonal strength is **four times the conditional variance of the ground-state logarithmic-score drift**. The projected generator is `-a ρ^-1 div(ρ grad)` with `a=α_h` or `2α_(h/2)`, and the complete energy-dependent effective operator is defined by a valid **variational shorted form**, not by silently applying the bounded-block Feshbach formula to an unbounded drift.
 
-An analytically solvable **SU(2) one-vertex/two-loop gauge graph** has identical coarse Haar law and compressed generator to a free coarse rotor, yet strictly different physical-time two-point correlations. The counterexample is **not** the cubic Wilson action and is not a mass-gap result. The finite model provides an exact observable-map **candidate** but no computable or uniform control of Ω, ρ, induced potentials, conditional-score variance, full Schur forms, or nontrivial 4D continuum. Status: **111 nodes / 218 typed edges**, all P0–P5 OPEN. Original 26 source archives remain unchanged in Library.
+An analytically solvable **SU(2) one-vertex/two-loop gauge graph** has identical coarse Haar law and compressed generator to a free coarse rotor, yet strictly different physical-time two-point correlations. The counterexample is **not** the cubic Wilson action and is not a mass-gap result. The finite model provides an exact observable-map **candidate** but no computable or uniform control of Ω, ρ, induced potentials, conditional-score variance, full Schur forms, or nontrivial 4D continuum. Status: **115 nodes / 231 typed edges**, all P0–P5 OPEN. Original 26 source archives remain unchanged in Library.
 
-[Finite interacting-vacuum theorem](../research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md) · [independent SU2 verifier](../research/scripts/verify_vacuum_weighted_block_2026_11_06.py) · [new model-scope overlay](tools/add_vacuum_weighted_block_graph.py). This v2.33-draft is stacked on PR #66, not merged or deployed.
+[Finite interacting-vacuum theorem](../research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md) · [independent SU2 verifier](../research/scripts/verify_vacuum_weighted_block_2026_11_06.py) · [new model-scope overlay](tools/add_vacuum_weighted_block_graph.py). This v2.34-draft is stacked on PR #66, not merged or deployed.
+
+## Exact finite Wilson marginal bounds and a physically fixed loop · November 6, 2026
+
+For the *actual* finite cubic interacting SU(2) Wilson ground state Ω, a direct Feynman–Kac + Peter–Weyl heat-kernel minorization gives the explicit true-vacuum marginal pointwise estimate **exp(−2Λ)≤ρ≤exp(2Λ)**, with **Λ=64F/g₀⁴+E log(101/99)**. Every finite fundamental Wilson loop consequently has positive variance bounded below. **This global estimate is drastically nonuniform in F,E and weak bare coupling** and is not an infrared theorem.
+
+For a non-self-intersecting loop of L original elementary links, the exact centered normalized first spectral moment is **−C′(0)=α L Eρ(1−W²/4)/Varρ(W)**. In the fixed physical unit square, L=4n on an n³ mesh. Assuming the **unproved** adjacent-scale marginal comparison |log(ρf/ρc)|≤δ, the raw first moment ratio lies in **4[g₀(h/2)²/g₀(h)²] exp(±2δ)**. A positive spectral counterexample shows diverging first moments can coexist with a strictly positive infrared gap, and a bounded-source Hellinger estimate explicitly depends on the finite spectral gap—hence using it to infer a uniform gap is circular.
+
+**Proposed Observatory v2.34-draft:** 115 curated physics nodes, 231 typed links, and the 26 original file hashes unchanged. The four new entries separate finite marginal control, finite Wilson sum rule, conditional time-normalization comparison, and an **OPEN** local/multiscale renormalization task. **All P0–P5 continuum gates and the gravitational objective remain OPEN.**
+
+[Finite theorem and proof](../research/theorems/R3_FINITE_WILSON_MARGINAL_HARNACK_AND_TWO_SCALE_SUM_RULE_2026-11-06.md) · [independent checker](../research/scripts/verify_marginal_harnack_2026_11_06.py) · [idempotent graph overlay](tools/add_marginal_harnack_graph.py). Source and SHA-256 evidence preserved in Library → The Singular Boundary → Proof Audits → Marginal Harnack and Wilson Sum Rule 2026-11-06. Review branch is stacked on PR #67, not merged or publicly deployed.
