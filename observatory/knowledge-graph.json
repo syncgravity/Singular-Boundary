@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.45-research",
-  "scope": "Paper 3 observer hypothesis sharpened: pure 13-step decagonal m10 mode has zero chiral T5−T8; a second harmonic yields exact K A²B sin(ψ−2φ); mirror decagon and true one-loop interacting SU2 quantum rotor provide non-Penrose nulls. A physical 3D double-spiral lift, source loops, uniform gauge covariance and continuum mass gap remain OPEN.",
+  "version": "v2.46-research",
+  "scope": "Source-faithful double Fibonacci spiral provenance (34:55), fixed-sum versus Z5 one-basis adjacency model-identity obstruction, provisional diagonal quotient C5/D5 calibration, and exact reflection-null theorem for interacting scalar Wilson probes. Authentic PF 3D generator, helical strands and mass gap OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Recover exact acceptance window, phasons, Z5 generator, coupled adjacency, weights and source hashes. Product decomposition, extruded prisms and Stage26 2D data are not interchangeable. Paper 3 helical observer/conway-worm subroute PF-H0..H6 is conditional and separately authenticated.",
+      "summary": "Priority: authenticate the source's contradictory-looking fixed-integer-sum and original-Z5 basis-neighbour descriptions, phason/window and actual original generator. The diagonal Z5 quotient is a candidate, not proved to be the implementation.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4836,6 +4836,12 @@
           "title": "Penrose spectral discrimination and Observatory mapping (research review)",
           "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -5150,7 +5156,7 @@
       "kind": "work",
       "stage": "P0",
       "status": "open",
-      "summary": "Recover the actual Fibonacci Conway worm families, double-spiral strand definition, acceptance window, phason and original observer generator. Paper 3 uses helical-observer nomenclature; two physical strands are not yet source-defined.",
+      "summary": "Dissertation Introduction/Chapter 2 §2.2 explicitly contains the 34:55 Fibonacci double-spiral claim. Recover its actual vertex/arm labeling and five Conway-worm families; no source-authenticated 3D two-strand helical lift yet.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -5164,6 +5170,12 @@
           "title": "Paper 3 helical observer primary-mechanism source audit",
           "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -5320,7 +5332,7 @@
       "kind": "work",
       "stage": "P2",
       "status": "open",
-      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain. Distinguish geometry using chiral unequal-lag three-point and physical/null controls, not bare two-point power. Require m10-only and mixed-harmonic phase nulls, mirror-decagon control and interacting SU2 one-loop arbitrary-loop false-positive before claiming source specificity.",
+      "summary": "Before concluding PF-specific handedness, control reflection-invariant interacting SU2 null: a parity-even unique vacuum and reflection-equivariant scalar loops give T5=T8. Require source-defined oriented observer/parity sector.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -5334,6 +5346,12 @@
           "title": "Paper 3 helical observer primary-mechanism source audit",
           "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -5388,7 +5406,7 @@
       "kind": "model",
       "stage": "P0",
       "status": "unresolved",
-      "summary": "Proposed specific Conway-worm/Fibonacci and J-complex-structure observer mechanism, not quasiperiodicity alone. The exact two-spiral configuration and physical 3D observer lift are research requirements, not yet constructed.",
+      "summary": "The dissertation explicitly discusses a 34-clockwise/55-counterclockwise Fibonacci double spiral in its phyllotaxis analogy and relates this to five Conway-worm families. An explicit Penrose vertex-to-arm map and a physical double-strand 3D observer are not supplied.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -5402,6 +5420,12 @@
           "title": "Paper 3 helical observer primary-mechanism source audit",
           "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -5649,6 +5673,176 @@
         "harmonic-triad",
         "helical-observer",
         "null-control"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-Z5-SLICE-OBSTRUCTION",
+      "title": "Strict Z5 fixed-sum slice forbids single-basis-neighbour edges",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "For s(m)=Σm_j=c, m→m±e_j changes s by ±1. Thus the source's fixed integer slice and one-basis-edge graph cannot both be literal simultaneous conditions.",
+      "detail": "Exact formal source-identity statement or deliberately provisional quotient experiment. Source-specific coupled-Z5 physical 3D SU2 and true helical observer remain OPEN.",
+      "checks": [
+        {
+          "label": "Original generator, physical metric, and 3D source-equality certificate",
+          "state": "open",
+          "note": "Toy centered decagon 231 vertices / 610 edges is not the original source's ~3.9 mean-degree Penrose computation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "source-fidelity",
+        "Conway-worm",
+        "observer"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-Z5-QUOTIENT-CANDIDATE",
+      "title": "Diagonal ℤ⁵ quotient retains both projections and five edge families",
+      "kind": "model",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Candidate ℤ⁵/ℤ(1,1,1,1,1)≈ℤ⁴ preserves z1,z2 and quotient-basis adjacency; canonical m4=0 representatives use four unit moves and (-1,-1,-1,-1). Not yet source-authenticated or physical 3D.",
+      "detail": "Exact formal source-identity statement or deliberately provisional quotient experiment. Source-specific coupled-Z5 physical 3D SU2 and true helical observer remain OPEN.",
+      "checks": [
+        {
+          "label": "Original generator, physical metric, and 3D source-equality certificate",
+          "state": "open",
+          "note": "Toy centered decagon 231 vertices / 610 edges is not the original source's ~3.9 mean-degree Penrose computation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "source-fidelity",
+        "Conway-worm",
+        "observer"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "title": "Dissertation source: phyllotactic Fibonacci 34:55 double spiral",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Original dissertation Introduction and Chapter 2 §2.2 explicitly discuss 34 clockwise and 55 counterclockwise arms and five Conway worm families; exact Penrose vertex-to-arm map and 3D helical strands are not provided. Corrects earlier overly broad no-source wording.",
+      "detail": "Exact formal source-identity statement or deliberately provisional quotient experiment. Source-specific coupled-Z5 physical 3D SU2 and true helical observer remain OPEN.",
+      "checks": [
+        {
+          "label": "Original generator, physical metric, and 3D source-equality certificate",
+          "state": "open",
+          "note": "Toy centered decagon 231 vertices / 610 edges is not the original source's ~3.9 mean-degree Penrose computation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "source-fidelity",
+        "Conway-worm",
+        "observer"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-DIHEDRAL-PARITY-NULL",
+      "title": "Reflection-invariant interacting gauge observer triple chirality vanishes",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "If real interacting Gauss SU2 H, unique Ω and gauge-invariant scalar probes are equivariant under a reflection P mapping W_j→W_-j, then T_a=T_-a, hence T5−T8=0. An oriented observer or parity-breaking source geometry must evade these assumptions.",
+      "detail": "Exact formal source-identity statement or deliberately provisional quotient experiment. Source-specific coupled-Z5 physical 3D SU2 and true helical observer remain OPEN.",
+      "checks": [
+        {
+          "label": "Original generator, physical metric, and 3D source-equality certificate",
+          "state": "open",
+          "note": "Toy centered decagon 231 vertices / 610 edges is not the original source's ~3.9 mean-degree Penrose computation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "source-fidelity",
+        "Conway-worm",
+        "observer"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-Z5-SOURCE-GENERATOR",
+      "title": "Recover original acceptance slices, phasons, five-link weights and Conway-worm arm assignments",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Reproduce the original 19,260-vertex finite graph and degree distribution from actual source code before attributing physical harmonic phases or a 3D SU2 observer to a surrogate quotient graph.",
+      "detail": "Exact formal source-identity statement or deliberately provisional quotient experiment. Source-specific coupled-Z5 physical 3D SU2 and true helical observer remain OPEN.",
+      "checks": [
+        {
+          "label": "Original generator, physical metric, and 3D source-equality certificate",
+          "state": "open",
+          "note": "Toy centered decagon 231 vertices / 610 edges is not the original source's ~3.9 mean-degree Penrose computation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
+          "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "source-fidelity",
+        "Conway-worm",
+        "observer"
       ],
       "importance": 4,
       "core": true,
@@ -8371,6 +8565,111 @@
       "label": "Lorentzian dynamics needs extra input",
       "kind": "specific-observer-test",
       "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-Z5-SLICE-OBSTRUCTION",
+      "label": "source slice versus basis step",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SLICE-OBSTRUCTION",
+      "to_id": "PF-Z5-QUOTIENT-CANDIDATE",
+      "label": "candidate mathematically consistent quotient",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-QUOTIENT-CANDIDATE",
+      "to_id": "PF-Z5-SOURCE-GENERATOR",
+      "label": "acceptance and adjacency need source match",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SOURCE-GENERATOR",
+      "to_id": "PF-G0",
+      "label": "original parameter recovery",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SOURCE-GENERATOR",
+      "to_id": "PF-G1",
+      "label": "physical 3D refining mesh absent",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SOURCE-GENERATOR",
+      "to_id": "PF-H0",
+      "label": "real worm/spiral generator needed",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "to_id": "PF-H0",
+      "label": "34:55 stated but strand extraction open",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "to_id": "PF-DOUBLE-SPIRAL",
+      "label": "correct original dissertation provenance",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H0",
+      "to_id": "PF-Z5-SOURCE-GENERATOR",
+      "label": "derive path membership before observers",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-QUOTIENT-CANDIDATE",
+      "to_id": "PF-DIHEDRAL-PARITY-NULL",
+      "label": "toy source-inspired reflection-symmetric graph",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DIHEDRAL-PARITY-NULL",
+      "to_id": "PF-CHIRAL-NULL",
+      "label": "chiral quantum probe parity null",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DIHEDRAL-PARITY-NULL",
+      "to_id": "PF-H5",
+      "label": "must test observer parity breaking",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SOURCE-GENERATOR",
+      "to_id": "PF-G3",
+      "label": "matching real physical spectral operator",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "to_id": "PF-H1",
+      "label": "3D strand lift not in source",
+      "kind": "source-fidelity-check",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "PF-DIHEDRAL-PARITY-NULL",
+      "label": "periodic reflection-symmetric control",
+      "kind": "source-fidelity-check",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -8507,6 +8806,16 @@
         "target": "Source-authenticated phase-coupled gauge-invariant harmonic triad after h/R refinement",
         "status": "open"
       }
+    },
+    "source_identity": {
+      "status": "open",
+      "double_spiral_source": "dissertation Introduction and Chapter 2 §2.2 (34:55 phyllotaxis)",
+      "original_generator": "unrecovered",
+      "strict_slice_basis_step": "incompatible under literal integer slice",
+      "diagonal_quotient": "conditional candidate",
+      "toy_graph": "231 vertices / 610 edges, not authenticated",
+      "parity_null": "PF-DIHEDRAL-PARITY-NULL",
+      "next_gate": "PF-Z5-SOURCE-GENERATOR"
     }
   }
 }

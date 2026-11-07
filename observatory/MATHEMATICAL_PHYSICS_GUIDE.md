@@ -2,6 +2,10 @@
 
 **All continuum mass-gap and quantum-gravity claims remain OPEN.** This guide is written to make the questions navigable without relying on the original source documents' chronology.
 
+## Source provenance: double-spiral 34:55 and exact Z5 model identity (2026-11-07)
+
+The dissertation **does name** the phyllotactic Fibonacci double spiral as 34 clockwise vs 55 counterclockwise arms in Chapter 2 §2.2, alongside five Conway-worm families. What is not sourced is a reproducible vertex/arm membership map on the coupled-Z5 graph or a unique 3D physical helical lift. Paper 2's fixed Σm_j=c and single-basis Z5 edge rule cannot both describe a strict integer slice; the diagonal quotient is only a candidate source interpretation. A source-inspired centered-decagon quotient toy (231 vertices, 610 edges) is exactly C5/reflection symmetric but is NOT the historical 3D/quantum model. A conditional parity theorem for true interacting Gauss SU2 proves T5=T8 when reflection maps each observer probe W_j to W_-j and preserves H and Ω. The missing source-defined winding handedness is part of PF-G0/H0, not an inferred mass gap. [See source audit](../research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md).
+
 ## Harmonic-phase criterion and non-Penrose quantum null (2026-11-07)
 
 The helical observer's source-proposed m=10 angular Fourier component alone has identically **zero** 13-step asymmetric three-point chirality. A secondary 2m component produces a signal proportional to sin(ψ−2φ), so the **relative harmonic phase** requires source authentication and matched observer-phase controls. Reflection-symmetric decagonal nearest-face controls cancel under phase pairing. A bona fide finite SU(2) one-loop magnetic rotor with arbitrary Wilson-power labels can produce nonzero Δ=+0.027312… without Penrose geometry. Therefore nonzero static chirality is a false-positive-prone diagnostic; a PF-specific h/R-uniform result remains OPEN. [Read the full proof and protocol](../research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md).
