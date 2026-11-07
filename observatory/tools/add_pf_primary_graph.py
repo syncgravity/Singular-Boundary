@@ -17,7 +17,7 @@ def attach(root: Path):
     nodes=g["nodes"];edges=g["edges"]
     by={n["id"]:n for n in nodes}
     if g.get("version")==overlay["version"]:
-        assert len(nodes)==148 and len(edges)==342
+        assert len(nodes)==overlay['expected_final_nodes'] and len(edges)==overlay['expected_final_edges']
         assert all(x["id"] in by for x in overlay["nodes"])
         return g
     assert g["version"] in ("v2.40-draft","v2.41-draft"),g["version"]
@@ -40,7 +40,7 @@ def attach(root: Path):
         present.add(key);edges.append(e)
     for key in ("version","build_date","scope","primary_hypothesis","pf_program"):
         g[key]=overlay[key]
-    assert len(nodes)==148 and len(edges)==342
+    assert len(nodes)==overlay['expected_final_nodes'] and len(edges)==overlay['expected_final_edges']
     assert {n["id"]:(n.get("asset",{}).get("filename"),n.get("asset",{}).get("sha256")) for n in nodes if n["kind"]=="dataset"}==old_source_files
     assert all(n["status"]=="open" for n in nodes if n["kind"] in ("gate","goal"))
     source.write_text(json.dumps(g,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

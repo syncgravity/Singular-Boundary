@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.42-research",
-  "scope": "Coupled-Z5 Penrose–Fibonacci restored as primary geometric proof investigation; cubic original-link SU(2) mathematical control. Source-faithful 3D regulator, matched spectra and h/R-uniform gauge-invariant geometric inequality remain OPEN. Scalar Laplacian spectral no-go separated from interacting quantum mass gap.",
+  "version": "v2.43-research",
+  "scope": "Paper 3 specific helical-observer/Conway-Fibonacci mechanism distinguished from generic quasiperiodicity and scalar spectral no-gap control. Kinematic f=10p yields 3:5:8 but physical 3D spiral lift, source double-strand definition, interacting SU2 observer covariance and continuum mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Recover exact acceptance window, phasons, Z5 generator, coupled adjacency, weights and source hashes. Product decomposition, extruded prisms and Stage26 2D data are not interchangeable.",
+      "summary": "Recover exact acceptance window, phasons, Z5 generator, coupled adjacency, weights and source hashes. Product decomposition, extruded prisms and Stage26 2D data are not interchangeable. Paper 3 helical observer/conway-worm subroute PF-H0..H6 is conditional and separately authenticated.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4928,7 +4928,7 @@
       "kind": "interface",
       "status": "open",
       "stage": "P2",
-      "summary": "Compare PF and cubic under matched physical domains, boundary conditions, operators, coupling, units and refinement. Distinguish scalar, Hodge/gauge-covariant and interacting spectra.",
+      "summary": "Compare PF and cubic under matched physical domains, boundary conditions, operators, coupling, units and refinement. Distinguish scalar, Hodge/gauge-covariant and interacting spectra. Paper 3 helical observer/conway-worm subroute PF-H0..H6 is conditional and separately authenticated.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4965,7 +4965,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P3",
-      "summary": "Find a PF-specific h- and R-uniform interacting covariance, signed non-Abelian curvature or spectral inequality and certify a meaningful contrast with cubic controls.",
+      "summary": "Find a PF-specific h- and R-uniform interacting covariance, signed non-Abelian curvature or spectral inequality and certify a meaningful contrast with cubic controls. Paper 3 helical observer/conway-worm subroute PF-H0..H6 is conditional and separately authenticated.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -5142,6 +5142,278 @@
       ],
       "importance": 4,
       "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-H0",
+      "title": "PF-H0 · Conway-worm / double-spiral source identity",
+      "kind": "work",
+      "stage": "P0",
+      "status": "open",
+      "summary": "Recover the actual Fibonacci Conway worm families, double-spiral strand definition, acceptance window, phason and original observer generator. Paper 3 uses helical-observer nomenclature; two physical strands are not yet source-defined.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-H1",
+      "title": "PF-H1 · Three-dimensional helical lift and physical clock",
+      "kind": "interface",
+      "stage": "P0",
+      "status": "open",
+      "summary": "The paper’s z₂=A exp(2πipτ) is a 2D circular orbit. A physical 3D helix needs a separate longitudinal coordinate, justified metric/clock and Lorentzian relation; p=du/dv cannot be inferred as constant from circle derivatives.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-H2",
+      "title": "PF-H2 · Rational pitch sampling and Fourier audit",
+      "kind": "work",
+      "stage": "P0",
+      "status": "open",
+      "summary": "The three pitches 3/13,5/13,8/13 are rational, yielding 13 distinct equally-spaced angular phases per integer-sampled period. Claims of irrational dense winding require new assumptions; compare actual sampling schedule.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-H3",
+      "title": "PF-H3 · Observer-conditioned 3:5:8 frequency signature",
+      "kind": "result",
+      "stage": "P0",
+      "status": "conditional",
+      "summary": "Paper 3 §7: m=10 angular structure sampled at p=3/13,5/13,8/13 gives f=10p and ratios 3:5:8 algebraically. This is kinematic, NOT interacting SU(2) mass eigenvalues or source-CV replication.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-H4",
+      "title": "PF-H4 · Gauge-invariant observer operator dictionary",
+      "kind": "interface",
+      "stage": "P1",
+      "status": "open",
+      "summary": "Separate static scalar angular sampling and Koopman frequencies from gauge-invariant parallel-transport observables, the interacting Gauss-invariant SU(2) Hamiltonian, and gravitational fluctuation spectra.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-H5",
+      "title": "PF-H5 · Matched double-spiral/cubic observer falsification",
+      "kind": "work",
+      "stage": "P2",
+      "status": "open",
+      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-H6",
+      "title": "PF-H6 · Dynamical and 3+1D continuum bridge",
+      "kind": "interface",
+      "stage": "P5",
+      "status": "open",
+      "summary": "Source Paper 3 Remark 6: kinematic sampling only. Prove genuine Lorentzian three-extended-space lift, gauge-field evolution and OS reconstruction before associating Fourier readout with physical excitation masses or gravity.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-DOUBLE-SPIRAL",
+      "title": "Fibonacci double spiral · observer mechanism hypothesis",
+      "kind": "model",
+      "stage": "P0",
+      "status": "unresolved",
+      "summary": "Proposed specific Conway-worm/Fibonacci and J-complex-structure observer mechanism, not quasiperiodicity alone. The exact two-spiral configuration and physical 3D observer lift are research requirements, not yet constructed.",
+      "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
+      "checks": [
+        {
+          "label": "Source-faithful geometry, physical operator and h/R quantifiers independently certified",
+          "state": "open",
+          "note": "Paper 3 kinematic ratios are not a quantum mass spectrum."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary-mechanism source audit",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-paper3-helical-observer-primary-hypothesis/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "observer",
+        "Conway-worm",
+        "helical"
+      ],
+      "importance": 4,
+      "core": true,
       "route": null
     }
   ],
@@ -7539,6 +7811,146 @@
       "label": "physical gap transfer",
       "kind": "required",
       "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-DOUBLE-SPIRAL",
+      "kind": "requires-research",
+      "label": "source projection and complementary geometry",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "PF-H0",
+      "kind": "requires-research",
+      "label": "original Conway-worm ancestry",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G0",
+      "to_id": "PF-H0",
+      "kind": "requires-research",
+      "label": "authenticate particular Fibonacci organization",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H0",
+      "to_id": "PF-DOUBLE-SPIRAL",
+      "kind": "requires-research",
+      "label": "spiral and helical nomenclature unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DOUBLE-SPIRAL",
+      "to_id": "PF-H1",
+      "kind": "requires-research",
+      "label": "3D helical lift required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H1",
+      "to_id": "PF-H2",
+      "kind": "requires-research",
+      "label": "sampling parametrization must be consistent",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H2",
+      "to_id": "PF-H3",
+      "kind": "requires-research",
+      "label": "rational-circle / Fourier calibration",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H3",
+      "to_id": "PF-H4",
+      "kind": "requires-research",
+      "label": "frequency is not Hamiltonian energy",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H4",
+      "to_id": "PF-H5",
+      "kind": "requires-research",
+      "label": "define observer-conditioned gauge-invariant covariance",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H5",
+      "to_id": "PF-H6",
+      "kind": "requires-research",
+      "label": "interaction and continuum required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H6",
+      "to_id": "PF-G5",
+      "kind": "requires-research",
+      "label": "does not imply YM mass gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H0",
+      "to_id": "PF-G0",
+      "kind": "requires-research",
+      "label": "source authentication gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H1",
+      "to_id": "PF-G1",
+      "kind": "requires-research",
+      "label": "spatial dimensional interpretation",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H4",
+      "to_id": "PF-G2",
+      "kind": "requires-research",
+      "label": "SU2 operator dictionary",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H5",
+      "to_id": "PF-G3",
+      "kind": "requires-research",
+      "label": "matched physical spectra",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H5",
+      "to_id": "PF-G4",
+      "kind": "requires-research",
+      "label": "uniform geometric advantage",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "PF-H5",
+      "kind": "requires-research",
+      "label": "periodic gauge control",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-LORENTZ-OPEN",
+      "to_id": "PF-H1",
+      "kind": "requires-research",
+      "label": "Lorentzian mapping unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H6",
+      "to_id": "G-GRAV",
+      "kind": "requires-research",
+      "label": "gravity UV separate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-SCALAR-NOGO",
+      "to_id": "PF-H4",
+      "kind": "requires-research",
+      "label": "scalar spectral control not helical quantum mass",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -7608,7 +8020,7 @@
     }
   },
   "library_manifest": "observatory/data-manifest.json",
-  "primary_hypothesis": "dissertation coupled-Z5 Penrose–Fibonacci, source fidelity required",
+  "primary_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "control_models": [
     "square 2D",
     "cubic 3D"
@@ -7640,6 +8052,29 @@
     ],
     "source": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
     "atlas_page": "penrose-program.html",
-    "approved_deployment": false
+    "approved_deployment": false,
+    "helical_observer": {
+      "status": "open",
+      "paper": "Paper 3 §7, Remark 6",
+      "source": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+      "geometry": "circle in z2; 3D helix and double strands unverified",
+      "pitches": [
+        "3/13",
+        "5/13",
+        "8/13"
+      ],
+      "kinematic_frequency_ratio": "3:5:8 conditional on m=10",
+      "stages": [
+        "PF-H0",
+        "PF-H1",
+        "PF-H2",
+        "PF-H3",
+        "PF-H4",
+        "PF-H5",
+        "PF-H6"
+      ],
+      "dynamical_mass_gap": "open",
+      "gravity_bridge": "open"
+    }
   }
 }

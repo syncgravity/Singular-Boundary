@@ -1,0 +1,22 @@
+# PF-G0/PF-G3 — Paper 3 helical observer and Fibonacci double-spiral primary-mechanism refinement
+**7 November 2026. Source interpretation and verification audit, not an interacting 3D SU(2) or mass-gap theorem. All P0–P5 / T0–T5 and gravity gates remain OPEN.**
+
+## Primary research statement
+> The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-ℤ⁵ projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.
+
+The "Fibonacci double spiral" is the user's specific research characterization; Paper 3 formally discusses the "helical observer" families, not a verified two-strand spiral decomposition. Do not silently identify them. Preserve the source's real C₅ decomposition into trivial, parallel and perpendicular spaces, original coupled-Z5 adjacency and acceptance window; cubic SU(2) stays a mathematical control, not an equivalent source model.
+
+## Paper 3 source and model identity
+Paper 3: `delivery/papers/Paper_3/Sharpe_Paper3_J_Operator_Hidden_Domain.pdf` from `Sharpe_dissertation_v10.7.tar.gz`, PDF SHA-256 `ece7f92a3f55e2c63fa3e7dd10e1bf8b9d0c0c5505ea6c19a490c05567f086d2`, §7 and Remarks 5–6. At constant amplitude: `z₂(τ)=A exp(2π i p τ)`; H1/H2/H3 use `p=3/13,5/13,8/13`; the quoted dominant decagonal mode `m=10` gives an observer-side **kinematic** frequency `f=10p`, with ratios 3:5:8. Reported empirical CV ~3–5% (helical) vs ~78% (bulk) across eight sizes is a source claim awaiting original-generator/data revalidation. The paper itself separates kinematic sampling from a field equation (Remark 6).
+
+## Required geometric verification — all OPEN except arithmetic
+- **PF-H0 source:** Recover Conway worm family and acceptance-window/observer data, the explicit double-spiral strand definition, phase/handedness and relation to both Z5 projections. Do not invent its representation.
+- **PF-H1 3D lift:** The complex (z₂(τ)) is a circle in two real coordinates, not a 3D helix. A real third coordinate (q(τ)), justified physical metric, observer clock and relation to (Im(z₂)=ict) must be given separately. Its circle derivative (du/dv=-\tan(2πpτ)) is not a constant pitch derivative ratio; the text's identification requires clarification. OPEN.
+- **PF-H2 rational dynamics:** For integer sampling, all three reduced pitches (a/13) give exactly 13 distinct angular phases before repeating; none is an irrational dense angular orbit. All 13 points are equally spaced up to permutation. The (m=10) orbit mean vanishes exactly, while the temporal frequency relation follows conditionally. Continuous-time motion remains periodic. Distinguish sample resolution and claimed nonlocking. OPEN source interpretation.
+- **PF-H3 kinematic frequencies:** If the asserted (m=10) spatial mode occurs, (f_i=10p_i) and (f_1:f_2:f_3=3:5:8) are algebraically correct. Neither a quantum Hamiltonian mass ratio nor a proof of the empirical mode prominence.
+- **PF-H4 operator dictionary:** Define an actual gauge-invariant observer-conditioned observable with parallel transport; separate a sampled scalar time series, its Koopman generator, full Gauss-invariant interacting SU(2) Hamiltonian and gravitational operator. OPEN.
+- **PF-H5 matched falsification:** Compare PF observer with cubic periodic observer and phase-shuffled/null sampling at matched physical metrics, clocks, couplings, refinements and error bars. Demonstrate a genuine h/R-uniform gauge-invariant covariance or curvature inequality. OPEN.
+- **PF-H6 physical continuum:** Derive bona fide 3-extended-spatial and Lorentzian construction, interacting field dynamics, reflection positivity and separate YM-mass-gap and gravity-UV claims. OPEN.
+
+## Verification and custody
+53 deterministic checks passed for rational circle periodicity, 13-phase coverage, decagonal Fourier averages, pitch-frequency ratios and constant radius; these are algebraic/calibration tests only. Complete full note, checker, checksums, source PDF SHA and ZIP in Library: `/The Singular Boundary/Proof Audits/PF_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.zip`. The Observable Proof Atlas must show this **specific geometric observer mechanism** as an open subroute under PF-G0 and PF-G3–G4, with 3D-lift and dynamical-operator obstructions clearly visible. Keep the earlier bounded-degree scalar Laplacian no-gap observation as a *distinct* negative control, not an objection to the helical-observer proposal.
