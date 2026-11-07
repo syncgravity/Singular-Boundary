@@ -10,7 +10,7 @@ for(const e of G.edges){neighbors.get(e.from_id).add(e.to_id);neighbors.get(e.to
 const tone={open:'OPEN',finite:'FINITE MODEL',conditional:'CONDITIONAL',obstruction:'OBSTRUCTION',partial:'PARTIAL',candidate:'CANDIDATE',archived:'ARCHIVED',indexed:'INDEXED ONLY',unresolved:'UNRESOLVED'};
 const watchStatuses=new Set(['open','obstruction','partial','candidate','unresolved','conditional']);
 const notesKey='singular-boundary.atlas.notes.v1';let annotations={};try{const x=JSON.parse(localStorage.getItem(notesKey)||'{}');if(x&&typeof x==='object'&&!Array.isArray(x))annotations=x}catch(_){annotations={}}
-let view='bridge',filter='all',query='',selected='I-UV-COUPLING',highlightedPath=[],positions=new Map(),viewNodes=[],viewEdges=[],svgWidth=900,svgHeight=680;
+let view='pf',filter='all',query='',selected='I-UV-COUPLING',highlightedPath=[],positions=new Map(),viewNodes=[],viewEdges=[],svgWidth=900,svgHeight=680;
 let camera={x:0,y:0,k:1};let pointer=null;let scheduled=false;let noteTimer=null;
 const graph=$('graphCanvas'),cam=$('camera'),edgeLayer=$('edgeLayer'),nodeLayer=$('nodeLayer');
 function svg(tag,attrs={},text){const el=document.createElementNS(NS,tag);for(const [a,v] of Object.entries(attrs))el.setAttribute(a,String(v));if(text!==undefined)el.textContent=text;return el}
@@ -41,6 +41,19 @@ function basicPosition(n){if(gateXY[n.id])return gateXY[n.id];if(special[n.id])r
 function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],'D-SWEEPS':[155,515],'D-FULL':[155,930],'D-WHITNEY':[650,930],'D-SPECTRAL-SOURCES':[1150,930],'D-CONVO':[155,1235],'D-MANIFEST':[1370,160]};for(const [id,xy] of Object.entries(places))p.set(id,xy);p.set('P0',[1750,160]);p.set('M-Z5',[1500,430]);p.set('M-PRISM',[1600,760]);p.set('PUB-DISS',[1400,1210]);
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
+const pfXY={
+'M-Z5':[100,130],'PF-G0':[370,130],'PF-G1':[640,130],'PF-G2':[910,130],
+'PF-G3':[1180,130],'PF-G4':[1450,130],'PF-G5':[1720,130],
+'M-PENROSE-2D':[90,430],'PF-LORENTZ-OPEN':[640,430],
+'PF-SCALAR-NOGO':[1180,430],'PF-GRAV-SEPARATE':[1730,430],
+'M-CUBIC':[100,730],'I-PENROSE-SQUARE':[640,730],
+'P0':[375,990],'P1':[645,990],'P2':[920,990],
+'P3':[1200,990],'P4':[1470,990],'P5':[1740,990],
+'G-GRAV':[1730,700],'THEOREM':[2050,990],
+'T0-QC-3D':[490,1270],'T1-QC-ACTION':[780,1270],
+'T2-OBSERVABLES':[1070,1270],'T3-TIME-COMPARE':[1360,1270],
+'T4-OS-LIMIT':[1650,1270],'T5-GAP-TRANSFER':[1950,1270]
+};
 const compareXY={
 'G-GRAV':[1250,180],'THEOREM':[1250,580],
 'M-PENROSE-2D':[130,175],'M-SQUARE-2D':[130,595],
@@ -70,10 +83,11 @@ const bridgeXY={
 'R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE':[790,3210],'R-FULL-NONABELIAN-MAX-COUNTER':[1240,3210],'W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT':[1930,3210],
 'P0':[480,1040],'P2':[800,1040],'P4':[1100,1040],'P5':[1850,1020]
 };
-function positionFor(n){if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
+function positionFor(n){if(view==='pf')return pfXY[n.id]||basicPosition(n);if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
 let dataPositionsCache=dataPositions();
 function matches(n){if(query){const x=[n.id,n.title,n.summary,n.detail,n.stage,...(n.tags||[]),n.asset?.filename||'',n.asset?.sha256||''].join(' ').toLowerCase();return x.includes(query)}return true}
 function visibleSet(){let list=G.nodes.filter(n=>{
+ if(view==='pf')return Object.prototype.hasOwnProperty.call(pfXY,n.id);
  if(view==='bridge')return Object.prototype.hasOwnProperty.call(bridgeXY,n.id);
  if(view==='comparison')return ['G-GRAV','THEOREM','M-PENROSE-2D','M-SQUARE-2D','M-Z5','M-CUBIC','I-PENROSE-SQUARE','P0','W-ORIGINAL-SOURCES','W-GRAV-OP'].includes(n.id);
  if(view==='spine')return n.kind==='gate'||n.kind==='goal'||n.kind==='model'||n.core&&(n.kind==='result'||n.kind==='work'||n.kind==='data_family'||n.kind==='publication');
@@ -90,7 +104,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
 function ensurePositions(){for(const n of G.nodes){if(!positions.has(n.id))positions.set(n.id,[...positionFor(n)])}}
 function setView(next){view=next;dataPositionsCache=dataPositions();positions=new Map();highlightedPath=[];
  document.querySelectorAll('.lens').forEach(x=>{const on=x.dataset.view===view;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});
- const headings={bridge:'CUBIC SU(2) → QUASICRYSTALLINE TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
+ const headings={pf:'COUPLED-Z5 PENROSE–FIBONACCI PRIMARY ROUTE · PF-G0–G5',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
  $('graphViewLabel').textContent=headings[view];applyGraph(true)}
 function setFilter(next){filter=next;document.querySelectorAll('.filter').forEach(x=>{const on=x.dataset.filter===filter;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});applyGraph(true)}
 function showError(s){const t=$('nodeLayer');t.replaceChildren();t.appendChild(svg('text',{x:100,y:130,fill:'#9fc0c8','font-size':18},s));edgeLayer.replaceChildren()}
@@ -161,7 +175,7 @@ $('importNotes').addEventListener('change',async e=>{const file=e.target.files?.
 $('exportGraph').addEventListener('click',()=>download('singular-boundary-knowledge-graph.json',G));
 window.addEventListener('resize',()=>{clearTimeout(window.__atlasResize);window.__atlasResize=setTimeout(fitGraph,90)});
 $('countNodes').textContent=G.nodes.length;$('countEdges').textContent=G.edges.length;$('countFiles').textContent=G.nodes.filter(n=>n.kind==='dataset').length;$('flagCount').textContent=Object.values(annotations).filter(n=>n.flag||n.note).length;
-renderGateStrip();ensurePositions();applyGraph(true);selectNode('I-UV-COUPLING');
+renderGateStrip();ensurePositions();applyGraph(true);selectNode('PF-G0');
 // Start at an inspectable reading scale; Fit view remains available for the entire atlas.
-requestAnimationFrame(()=>requestAnimationFrame(()=>{if(view==='bridge'&&!query&&filter==='all'){camera.k=.6;camera.x=svgWidth/2-1100*camera.k;camera.y=svgHeight/2-550*camera.k;scheduleDraw()}else if(view==='comparison'&&!query&&filter==='all'){camera.k=.64;camera.x=svgWidth/2-650*camera.k;camera.y=svgHeight/2-375*camera.k;scheduleDraw()}else if(view==='spine'&&!query&&filter==='all'){camera.k=.71;camera.x=svgWidth/2-810*camera.k;camera.y=svgHeight/2-555*camera.k;scheduleDraw()}}));
+requestAnimationFrame(()=>requestAnimationFrame(()=>{if(view==='pf'&&!query&&filter==='all'){camera.k=.58;camera.x=svgWidth/2-1000*camera.k;camera.y=svgHeight/2-640*camera.k;scheduleDraw()}else if(view==='bridge'&&!query&&filter==='all'){camera.k=.6;camera.x=svgWidth/2-1100*camera.k;camera.y=svgHeight/2-550*camera.k;scheduleDraw()}else if(view==='comparison'&&!query&&filter==='all'){camera.k=.64;camera.x=svgWidth/2-650*camera.k;camera.y=svgHeight/2-375*camera.k;scheduleDraw()}else if(view==='spine'&&!query&&filter==='all'){camera.k=.71;camera.x=svgWidth/2-810*camera.k;camera.y=svgHeight/2-555*camera.k;scheduleDraw()}}));
 })();
