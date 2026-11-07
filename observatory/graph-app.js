@@ -41,6 +41,19 @@ function basicPosition(n){if(gateXY[n.id])return gateXY[n.id];if(special[n.id])r
 function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],'D-SWEEPS':[155,515],'D-FULL':[155,930],'D-WHITNEY':[650,930],'D-SPECTRAL-SOURCES':[1150,930],'D-CONVO':[155,1235],'D-MANIFEST':[1370,160]};for(const [id,xy] of Object.entries(places))p.set(id,xy);p.set('P0',[1750,160]);p.set('M-Z5',[1500,430]);p.set('M-PRISM',[1600,760]);p.set('PUB-DISS',[1400,1210]);
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
+const ymXY={
+'P0':[80,130],'PF-G0':[360,130],'PF-C5-3D-QUOTIENT-RANK':[680,130],
+'PF-Z5-3PLUS2-CANDIDATE':[1060,130],'PF-CYCLOTOMIC-DELONE':[1440,130],
+'PF-G1':[1830,130],'P1':[2160,130],
+'PF-3D-CUBICAL-NONMANIFOLD':[750,450],
+'PF-VORONOI-HODGE-WEIGHTS':[1440,450],
+'YM-CELL-WILSON-LOCALITY':[300,700],'YM-GROUNDSTATE-DIRICHLET':[850,700],
+'YM-UNIFORM-GAUGE-POINCARE':[1440,700],
+'PF-G2':[1880,480],'PF-G3':[1880,700],'PF-G4':[2130,920],
+'P2':[400,1050],'P3':[800,1050],'P4':[1160,1050],'P5':[1560,1050],
+'PF-G5':[2020,1150],'M-CUBIC':[100,450],'THEOREM':[2260,1400],
+'PF-Z5-SOURCE-GENERATOR':[110,1400]
+};
 const conceptXY={
 'CON-HISTORY-PROVENANCE':[110,100],'CON-2D3D-PROBLEM':[440,100],
 'CON-Z5-PROJECTION':[100,370],'CON-DECAGON-WINDOW':[400,370],
@@ -112,10 +125,11 @@ const bridgeXY={
 'R-FULL-NONABELIAN-PLAQUETTE-INFLUENCE':[790,3210],'R-FULL-NONABELIAN-MAX-COUNTER':[1240,3210],'W-FULL-NONABELIAN-SIGNED-COVARIANT-HEAT':[1930,3210],
 'P0':[480,1040],'P2':[800,1040],'P4':[1100,1040],'P5':[1850,1020]
 };
-function positionFor(n){if(view==='concepts')return conceptXY[n.id]||basicPosition(n);if(view==='pf')return pfXY[n.id]||basicPosition(n);if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
+function positionFor(n){if(view==='ym')return ymXY[n.id]||basicPosition(n);if(view==='concepts')return conceptXY[n.id]||basicPosition(n);if(view==='pf')return pfXY[n.id]||basicPosition(n);if(view==='bridge')return bridgeXY[n.id]||basicPosition(n);if(view==='data')return dataPositionsCache.get(n.id)||basicPosition(n);if(view==='comparison')return compareXY[n.id]||basicPosition(n);return basicPosition(n)}
 let dataPositionsCache=dataPositions();
 function matches(n){if(query){const x=[n.id,n.title,n.summary,n.detail,n.stage,...(n.tags||[]),n.asset?.filename||'',n.asset?.sha256||''].join(' ').toLowerCase();return x.includes(query)}return true}
 function visibleSet(){let list=G.nodes.filter(n=>{
+ if(view==='ym')return Object.prototype.hasOwnProperty.call(ymXY,n.id);
  if(view==='concepts')return Object.prototype.hasOwnProperty.call(conceptXY,n.id);
  if(view==='pf')return Object.prototype.hasOwnProperty.call(pfXY,n.id);
  if(view==='bridge')return Object.prototype.hasOwnProperty.call(bridgeXY,n.id);
@@ -134,7 +148,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
 function ensurePositions(){for(const n of G.nodes){if(!positions.has(n.id))positions.set(n.id,[...positionFor(n)])}}
 function setView(next){view=next;dataPositionsCache=dataPositions();positions=new Map();highlightedPath=[];
  document.querySelectorAll('.lens').forEach(x=>{const on=x.dataset.view===view;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});
- const headings={concepts:'2D CONWAY WORMS → 3D OBSERVER → CONDITIONAL 34:55 EMERGENCE',pf:'COUPLED-Z5 / CONWAY–FIBONACCI / HELICAL OBSERVER · PF-G0–G5, H0–H6; QUANTUM COVARIANCE',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
+ const headings={ym:'YANG–MILLS EXISTENCE + GAP · PHYSICAL 3D REGULATOR → INTERACTING VACUUM PI → 4D OS',concepts:'2D CONWAY WORMS → 3D OBSERVER → CONDITIONAL 34:55 EMERGENCE',pf:'COUPLED-Z5 / CONWAY–FIBONACCI / HELICAL OBSERVER · PF-G0–G5, H0–H6; QUANTUM COVARIANCE',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
  $('graphViewLabel').textContent=headings[view];applyGraph(true)}
 function setFilter(next){filter=next;document.querySelectorAll('.filter').forEach(x=>{const on=x.dataset.filter===filter;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});applyGraph(true)}
 function showError(s){const t=$('nodeLayer');t.replaceChildren();t.appendChild(svg('text',{x:100,y:130,fill:'#9fc0c8','font-size':18},s));edgeLayer.replaceChildren()}
