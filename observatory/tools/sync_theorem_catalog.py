@@ -78,7 +78,7 @@ def expected():
     graph['historical_indexed_theorem_paths']=live['baseline_historical_count']
     graph['complete_theorem_index']='docs/research/THEOREM_INDEX_LIVE.json'
     graph['theorem_index_status']='source-file-indexed; no proof certification inferred'
-    graph['version']='v2.42-research' if graph.get('pf_program') else 'v2.41-draft'
+    graph['version']='v2.43-research' if graph.get('pf_program',{}).get('helical_observer') else ('v2.42-research' if graph.get('pf_program') else 'v2.41-draft')
     graph['git_branch']='main'
     node=next((n for n in graph['nodes'] if n['id']=='R-INDEX'),None)
     assert node is not None, 'Proof Atlas source-index node required'
