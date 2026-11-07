@@ -1,0 +1,581 @@
+{
+  "schema": "singular-boundary.pf-primary-overlay.v1",
+  "expected_base_nodes": 139,
+  "expected_base_edges": 314,
+  "version": "v2.42-research",
+  "build_date": "2026-11-07",
+  "scope": "Coupled-Z5 Penrose–Fibonacci restored as primary geometric proof investigation; cubic original-link SU(2) mathematical control. Source-faithful 3D regulator, matched spectra and h/R-uniform gauge-invariant geometric inequality remain OPEN. Scalar Laplacian spectral no-go separated from interacting quantum mass gap.",
+  "primary_hypothesis": "dissertation coupled-Z5 Penrose–Fibonacci, source fidelity required",
+  "pf_program": {
+    "status": "open",
+    "primary_model": "M-Z5",
+    "control_model": "M-CUBIC",
+    "stages": [
+      "PF-G0",
+      "PF-G1",
+      "PF-G2",
+      "PF-G3",
+      "PF-G4",
+      "PF-G5"
+    ],
+    "obstructions": [
+      "PF-SCALAR-NOGO",
+      "PF-LORENTZ-OPEN"
+    ],
+    "source": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+    "atlas_page": "penrose-program.html",
+    "approved_deployment": false
+  },
+  "patches": {
+    "M-Z5": {
+      "title": "Coupled ℤ⁵ · primary PF construction (physical 3D OPEN)",
+      "summary": "Source-faithful five-coordinate cut-and-project geometry is the primary research hypothesis; the original two extended plus proposed compact coordinate is NOT a certified 3-extended-spatial SU(2) regulator.",
+      "source_to_append": {
+        "title": "PF primary source-model restoration (merged PR #93)",
+        "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+        "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+      }
+    },
+    "P0": {
+      "summary": "Primary: authenticate coupled-ℤ⁵ Penrose–Fibonacci source model. Cubic SU(2) is the control, not an assumed equivalent. Three-dimensional physical refinement and operator identity remain OPEN.",
+      "source_to_append": {
+        "title": "PF primary source-model restoration (merged PR #93)",
+        "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+        "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "PF-G0",
+      "title": "PF-G0 · Authenticate coupled-Z5 source",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Recover exact acceptance window, phasons, Z5 generator, coupled adjacency, weights and source hashes. Product decomposition, extruded prisms and Stage26 2D data are not interchangeable.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-G1",
+      "title": "PF-G1 · Genuine physical 3D refinement",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Construct a fixed-physical-domain three-dimensional oriented cell family, chain identity ∂²=0, metric regularity and h→0. The compact perpendicular coordinate is not silently a third extended dimension.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-G2",
+      "title": "PF-G2 · SU(2) on source geometry",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "Specify original-link Gauss-invariant Hilbert space, Casimirs, Wilson face holonomies, boundary conditions and physical metric coefficients on the AUTHENTIC PF 3D complex.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-G3",
+      "title": "PF-G3 · Matched physical spectra and covariance",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Compare PF and cubic under matched physical domains, boundary conditions, operators, coupling, units and refinement. Distinguish scalar, Hodge/gauge-covariant and interacting spectra.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-G4",
+      "title": "PF-G4 · Refinement-uniform geometric inequality",
+      "kind": "work",
+      "status": "open",
+      "stage": "P3",
+      "summary": "Find a PF-specific h- and R-uniform interacting covariance, signed non-Abelian curvature or spectral inequality and certify a meaningful contrast with cubic controls.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-G5",
+      "title": "PF-G5 · Continuum mass-gap bridge",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P5",
+      "summary": "Construct nontrivial interacting 4D quantum Yang–Mills and prove a positive physical mass gap. Geometric gravity and Lorentzian validity remain distinct open obligations.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-SCALAR-NOGO",
+      "title": "Scalar graph Laplacian · quasiperiodicity alone gives no gap",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "Conditional bounded-degree, bounded-edge, two-macroscopic-slab theorem: λ1≤Dc_+a²/(2θ²δ²R²), regardless of periodic or aperiodic layout. This is NOT the interacting Yang–Mills gap.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-LORENTZ-OPEN",
+      "title": "Physical 3+1D and Lorentzian source identity",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "The source's 2 extended spatial + proposed compact complementary coordinate and v=ict argument do not certify a 3+1 Lorentzian coupled SU(2) regulator. Independent construction required.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PF-GRAV-SEPARATE",
+      "title": "Geometric gravity operator and UV bridge",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Keep gravitational fluctuation operator, Lorentzian dynamics, zeta regularization and ultraviolet finiteness separate from the YM spectral-gap claim.",
+      "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
+      "checks": [
+        {
+          "label": "Prove stated physical/model-specific obligation with source and regulator certificate",
+          "state": "open",
+          "note": "Not certified by finite scalar spectra or historical sweep data."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF primary source-model restoration (merged PR #93)",
+          "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Penrose spectral discrimination and Observatory mapping (research review)",
+          "path": "research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-pf-primary-observatory-atlas-map/research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    }
+  ],
+  "edges": [
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-G0",
+      "label": "primary model source",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G0",
+      "to_id": "PF-G1",
+      "label": "authenticated generator",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G1",
+      "to_id": "PF-G2",
+      "label": "oriented 3D Gauss action",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G2",
+      "to_id": "PF-G3",
+      "label": "matched physically normalized operators",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "PF-G4",
+      "label": "geometry-specific analytic advantage",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "PF-G5",
+      "label": "uniform interacting bridge",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G0",
+      "to_id": "P0",
+      "label": "source identity gate",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G1",
+      "to_id": "T0-QC-3D",
+      "label": "physical geometry",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G2",
+      "to_id": "T1-QC-ACTION",
+      "label": "interacting operator construction",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "T2-OBSERVABLES",
+      "label": "renormalized covariance comparison",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "P2",
+      "label": "physical finite models",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "P3",
+      "label": "non-Abelian geometric bounds",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "P4",
+      "label": "IR covariance support",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G5",
+      "to_id": "P5",
+      "label": "spectral transfer",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G5",
+      "to_id": "THEOREM",
+      "label": "mass gap remains open",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G1",
+      "to_id": "PF-LORENTZ-OPEN",
+      "label": "physical dimension not established",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-LORENTZ-OPEN",
+      "to_id": "G-GRAV",
+      "label": "separate Lorentzian obligation",
+      "kind": "blocks",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "PF-SCALAR-NOGO",
+      "label": "scalar spectrum cannot certify mass",
+      "kind": "counterexample",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-SCALAR-NOGO",
+      "to_id": "PF-G4",
+      "label": "requires interacting, gauge-invariant mechanism",
+      "kind": "distinguishes",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "PF-G3",
+      "label": "periodic SU2 control",
+      "kind": "comparison",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "PF-G0",
+      "label": "historical source geometry",
+      "kind": "provenance",
+      "status": "open"
+    },
+    {
+      "from_id": "I-PENROSE-SQUARE",
+      "to_id": "PF-G3",
+      "label": "2D comparisons not PF 3D spectrum",
+      "kind": "conditional",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-GRAV-SEPARATE",
+      "to_id": "G-GRAV",
+      "label": "independent UV objective",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G0",
+      "to_id": "PF-GRAV-SEPARATE",
+      "label": "source geometry common, proof distinct",
+      "kind": "conditional",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G2",
+      "to_id": "P1",
+      "label": "Gauss representation",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "T3-TIME-COMPARE",
+      "label": "time-covariance mechanism",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G5",
+      "to_id": "T4-OS-LIMIT",
+      "label": "OS construction",
+      "kind": "required",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G5",
+      "to_id": "T5-GAP-TRANSFER",
+      "label": "physical gap transfer",
+      "kind": "required",
+      "status": "open"
+    }
+  ]
+}
