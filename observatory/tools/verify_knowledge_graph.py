@@ -45,9 +45,9 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research'),'unexpected graph version')
- if g['version']=='v2.42-research':
-  check(len(n)==148 and len(e)==342,'PF-primary graph counts')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research'):
+  check(len(n)==(156 if g['version']=='v2.43-research' else 148) and len(e)==(362 if g['version']=='v2.43-research' else 342),'PF-primary graph counts')\n  if g['version']=='v2.43-research':\n   check(all('PF-H'+str(i) in node for i in range(7)),'Paper 3 helical observer path missing')\n   check(node['PF-H1']['status']=='open' and node['PF-H3']['status']=='conditional','geometry and frequencies properly scoped')
   check(g.get('pf_program',{}).get('stages')==['PF-G0','PF-G1','PF-G2','PF-G3','PF-G4','PF-G5'],'PF route metadata')
   check(all(node['PF-G'+str(i)]['status']=='open' for i in range(6)),'PF source-to-continuum gates open')
   check(node['PF-SCALAR-NOGO']['status']=='obstruction','scalar Laplacian limitation explicit')
