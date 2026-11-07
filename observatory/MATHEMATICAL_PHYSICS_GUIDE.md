@@ -2,6 +2,10 @@
 
 **All continuum mass-gap and quantum-gravity claims remain OPEN.** This guide is written to make the questions navigable without relying on the original source documents' chronology.
 
+## Paper 3 observer-specific mechanism (2026-11-07)
+
+The primary hypothesis is **not quasiperiodicity alone**. It couples the source-faithful ℤ⁵ projection, Conway-worm Fibonacci organization, complementary-space complex structure J, and the helical observer of Paper 3 §7. The open PF-H0–PF-H6 subpath asks for an exact double-spiral strand definition; a physical 3D and Lorentzian helical lift; verification that rational pitches 3/13,5/13,8/13 yield 13-site periodic angular samples rather than irrational winding; distinction of kinematic 3:5:8 sampled frequencies from Gauss-invariant quantum mass energies; and matched PF/cubic/null controls under refinement. Paper 3 Remark 6 acknowledges field dynamics remain open. See [observer audit](../research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md).
+
 ## New primary map: PF-G0–PF-G5 (2026-11-07)
 
 Start in the [Penrose–Fibonacci research map](penrose-program.html) or select the **Penrose–Fibonacci primary** lens in the [interactive Proof Atlas](graph.html). The intended dissertation coupled-ℤ⁵ construction is the primary **hypothesis**, while the cubic original-link SU(2) regulator is a **control** rather than a proof substitute. The six new PF gates are an OPEN source-to-continuum research path, not replacements for the six canonical P0–P5 or T0–T5 gates.
