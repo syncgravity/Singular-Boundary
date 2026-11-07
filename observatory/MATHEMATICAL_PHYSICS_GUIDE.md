@@ -2,6 +2,21 @@
 
 **All continuum mass-gap and quantum-gravity claims remain OPEN.** This guide is written to make the questions navigable without relying on the original source documents' chronology.
 
+## New primary map: PF-G0–PF-G5 (2026-11-07)
+
+Start in the [Penrose–Fibonacci research map](penrose-program.html) or select the **Penrose–Fibonacci primary** lens in the [interactive Proof Atlas](graph.html). The intended dissertation coupled-ℤ⁵ construction is the primary **hypothesis**, while the cubic original-link SU(2) regulator is a **control** rather than a proof substitute. The six new PF gates are an OPEN source-to-continuum research path, not replacements for the six canonical P0–P5 or T0–T5 gates.
+
+| Step | Required bridge | Status |
+|---|---|---|
+| PF-G0 | Restore acceptance window, coupled ℤ⁵ adjacency, metric and source generator | OPEN |
+| PF-G1 | Three extended physical spatial directions and genuine refining cell complex | OPEN |
+| PF-G2 | Physically normalized Gauss-invariant original-link SU(2) Hamiltonian | OPEN |
+| PF-G3 | Matched physical scalar, gauge-covariant and interacting spectra vs cubic | OPEN |
+| PF-G4 | h/R-uniform geometric inequality or gauge-invariant covariance advantage | OPEN |
+| PF-G5 | Interacting 4D continuum reconstruction and positive physical spectral gap | OPEN |
+
+**Negative control:** an embedded bounded-degree, bounded-edge scalar spatial graph with two macroscopic separated vertex populations has scalar counting-Laplacian first nonzero eigenvalue λ₁ ≤ C/R². This holds irrespective of aperiodicity under the stated hypotheses, and does not make any assertion about the quantum Yang–Mills mass gap. Source's v=ict and compact third-coordinate proposal are not certified Lorentzian 3+1D statements.
+
 ## Read the graph as a typed mathematical argument
 
 - **Model**: a specified space, lattice, gauge group, degrees of freedom and boundary convention. Penrose (2D) and cubic (3D) are different mathematical objects.

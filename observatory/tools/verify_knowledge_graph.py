@@ -45,7 +45,18 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft'),'unexpected graph version')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research'),'unexpected graph version')
+ if g['version']=='v2.42-research':
+  check(len(n)==148 and len(e)==342,'PF-primary graph counts')
+  check(g.get('pf_program',{}).get('stages')==['PF-G0','PF-G1','PF-G2','PF-G3','PF-G4','PF-G5'],'PF route metadata')
+  check(all(node['PF-G'+str(i)]['status']=='open' for i in range(6)),'PF source-to-continuum gates open')
+  check(node['PF-SCALAR-NOGO']['status']=='obstruction','scalar Laplacian limitation explicit')
+  check(node['PF-LORENTZ-OPEN']['status']=='open','spacetime dimensional identity open')
+  check(node['M-Z5']['status']=='unresolved' and node['M-CUBIC']['kind']=='model','model/control distinct')
+  check(g['pf_program'].get('approved_deployment') is False,'no Pages publication authorization')
+  check(all(any(z['from_id']=='PF-G'+str(i) and z['to_id']=='PF-G'+str(i+1) for z in e) for i in range(5)),'PF dependency chain intact')
+  check((root/'penrose-program.html').is_file(),'PF primary standalone map')
+  check('data-view="pf"' in (root/'graph.html').read_text(),'PF default Atlas lens')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
  check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')

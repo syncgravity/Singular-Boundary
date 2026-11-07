@@ -251,7 +251,7 @@ attach_cartan_nonlinear_smoothing(ROOT)
 from add_full_nonabelian_locality_graph import attach as attach_full_nonabelian_locality
 attach_full_nonabelian_locality(ROOT)
 
-# Keep current searchable theorem catalog and client Atlas metadata synchronized
+# Restore source-faithful coupled-Z5 Penrose–Fibonacci primary path reproducibly.\nfrom add_pf_primary_graph import attach as attach_pf_primary\nattach_pf_primary(ROOT)\n\n# Keep current searchable theorem catalog and client Atlas metadata synchronized
 # with the canonical source-hashed registry after all source-qualified overlays.
 from sync_theorem_catalog import expected as theorem_catalog_outputs, check_nav as check_theorem_nav, LIVE as live_theorem_registry
 import json as theorem_json
