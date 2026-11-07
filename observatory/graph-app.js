@@ -42,6 +42,9 @@ function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
 const pfXY={
+'PF-SINGLE-HARMONIC-NOGO':[530,855],'PF-HARMONIC-TRIAD':[970,855],
+'PF-HELICAL-LIFT-FREEDOM':[620,1110],'PF-SU2-ROTOR-NULL':[1590,855],
+
 'PF-Z13-ALIAS':[830,610],'PF-GAUGE-TWOPOINT':[1300,610],'PF-CHIRAL-NULL':[1710,610],
 
 'PF-DOUBLE-SPIRAL':[80,360],'PF-H0':[330,360],'PF-H1':[580,360],
