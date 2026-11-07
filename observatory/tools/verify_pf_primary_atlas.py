@@ -13,8 +13,8 @@ raw=(obs/"knowledge-graph-data.js").read_text(encoding="utf-8").strip()
 assert raw.startswith(prefix) and raw.endswith(";")
 graph=json.loads(raw[len(prefix):-1])
 nodes=graph["nodes"];edges=graph["edges"];ids=[n["id"] for n in nodes]
-assert len(nodes)==159,(len(nodes),159)
-assert len(edges)==374,(len(edges),374)
+assert len(nodes)==163,(len(nodes),163)
+assert len(edges)==388,(len(edges),388)
 assert len(ids)==len(set(ids))
 S=set(ids)
 assert all(e["from_id"] in S and e["to_id"] in S for e in edges)
@@ -25,7 +25,7 @@ assert graph["historical_indexed_theorem_paths"]==740
 assert graph["primary_hypothesis"].lower().find("coupled")>=0
 assert graph["pf_program"]["approved_deployment"] is False
 assert graph["pf_program"]["stages"]==[f"PF-G{i}" for i in range(6)]
-assert graph["pf_program"]["control_model"]=="M-CUBIC"\nassert graph["pf_program"]["helical_observer"]["next_test"]["id"]=="PF-CHIRAL-NULL"\nassert any(n["id"]=="PF-Z13-ALIAS" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-GAUGE-TWOPOINT" and n["status"]=="conditional" for n in nodes)\nassert graph["pf_program"]["helical_observer"]["stages"]==[f"PF-H{i}" for i in range(7)]\nassert all(next(n for n in nodes if n["id"]==f"PF-H{i}")["status"] in ("open","conditional") for i in range(7))
+assert graph["pf_program"]["control_model"]=="M-CUBIC"\nassert graph["pf_program"]["helical_observer"]["next_test"]["id"]=="PF-HARMONIC-TRIAD"\nassert any(n["id"]=="PF-SINGLE-HARMONIC-NOGO" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-SU2-ROTOR-NULL" and n["status"]=="finite" for n in nodes)\nassert any(n["id"]=="PF-Z13-ALIAS" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-GAUGE-TWOPOINT" and n["status"]=="conditional" for n in nodes)\nassert graph["pf_program"]["helical_observer"]["stages"]==[f"PF-H{i}" for i in range(7)]\nassert all(next(n for n in nodes if n["id"]==f"PF-H{i}")["status"] in ("open","conditional") for i in range(7))
 assert sum(n["kind"]=="dataset" for n in nodes)>=26
 assert all(next(n for n in nodes if n["id"]==f"PF-G{i}")["status"]=="open" for i in range(6))
 for a,b in zip(graph["pf_program"]["stages"],graph["pf_program"]["stages"][1:]):
@@ -42,4 +42,4 @@ for path in ["index.html","README.md","MATHEMATICAL_PHYSICS_GUIDE.md","integrati
     assert "PF-G0" in s,path
 assert "754" in (obs/"index.html").read_text()
 assert (root/"docs/research/THEOREM_INDEX_CURRENT.md").is_file()
-print("PASS PF primary Atlas: 159 nodes, 374 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")
+print("PASS PF primary Atlas: 163 nodes, 388 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")
