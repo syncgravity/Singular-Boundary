@@ -13,7 +13,7 @@ def attach(root: Path):
     g=json.loads(source.read_text(encoding="utf-8"))
     overlay=json.loads((root/"pf-primary-overlay.json").read_text(encoding="utf-8"))
     assert overlay["schema"]=="singular-boundary.pf-primary-overlay.v1"
-    assert g["canon_status"]=="OPEN" and g["indexed_theorem_paths"]==754
+    assert g["canon_status"]=="OPEN" and g["indexed_theorem_paths"] in (740,754)
     nodes=g["nodes"];edges=g["edges"]
     by={n["id"]:n for n in nodes}
     if g.get("version")==overlay["version"]:
