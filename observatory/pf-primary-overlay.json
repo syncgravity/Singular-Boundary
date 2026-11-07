@@ -2,9 +2,9 @@
   "schema": "singular-boundary.pf-primary-overlay.v1",
   "expected_base_nodes": 139,
   "expected_base_edges": 314,
-  "version": "v2.46-research",
+  "version": "v2.47-research",
   "build_date": "2026-11-07",
-  "scope": "Source-faithful double Fibonacci spiral provenance (34:55), fixed-sum versus Z5 one-basis adjacency model-identity obstruction, provisional diagonal quotient C5/D5 calibration, and exact reflection-null theorem for interacting scalar Wilson probes. Authentic PF 3D generator, helical strands and mass gap OPEN.",
+  "scope": "The observer's handedness requires a marked J/time orientation or genuinely source-defined asymmetric geometry: reflection-even unmarked arm enumeration cannot yield 34/55, and orientation-tagged interacting SU2 Wilson three-point correlators can be parity-even even when untagged chirality vanishes. The actual physical observer branch-selection law and 3D coupled-Z5 mass gap remain OPEN.",
   "primary_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "pf_program": {
     "status": "open",
@@ -69,6 +69,15 @@
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
       "next_gate": "PF-Z5-SOURCE-GENERATOR"
+    },
+    "orientation_selection": {
+      "status": "open",
+      "source": "research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+      "arm_imbalance": "21/89 conditional on 34 CW and 55 CCW counts",
+      "geometric_mark": "oriented J and observer clock",
+      "three_dimensional_torsion": "underdetermined",
+      "quantum_marked_null": "PF-OBSERVER-MARKED-GAUGE",
+      "physical_selection_gate": "PF-OBSERVER-SELECTION-LAW"
     }
   },
   "patches": {
@@ -436,7 +445,7 @@
       "kind": "work",
       "stage": "P0",
       "status": "open",
-      "summary": "Dissertation Introduction/Chapter 2 §2.2 explicitly contains the 34:55 Fibonacci double-spiral claim. Recover its actual vertex/arm labeling and five Conway-worm families; no source-authenticated 3D two-strand helical lift yet.",
+      "summary": "Dissertation Introduction/Chapter 2 §2.2 explicitly contains the 34:55 Fibonacci double-spiral claim. Recover its actual vertex/arm labeling and five Conway-worm families; no source-authenticated 3D two-strand helical lift yet. Need determine whether 34:55 is a source-defined arm mapping or a phyllotactic analogy, and whether the measured patch is reflection fixed.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -476,7 +485,7 @@
       "kind": "interface",
       "stage": "P0",
       "status": "open",
-      "summary": "The paper’s z₂=A exp(2πipτ) is a 2D circular orbit. A physical 3D helix needs a separate longitudinal coordinate, justified metric/clock and Lorentzian relation; p=du/dv cannot be inferred as constant from circle derivatives. Paper 3 projected complex circle has infinitely many 3D lifts with different curvature and torsion; no physical lift is source-certified.",
+      "summary": "The paper’s z₂=A exp(2πipτ) is a 2D circular orbit. A physical 3D helix needs a separate longitudinal coordinate, justified metric/clock and Lorentzian relation; p=du/dv cannot be inferred as constant from circle derivatives. Paper 3 projected complex circle has infinitely many 3D lifts with different curvature and torsion; no physical lift is source-certified. The continuous oriented J-circle has a chosen winding sign, but actual 3D torsion needs independent longitudinal slope.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -612,7 +621,7 @@
       "kind": "work",
       "stage": "P2",
       "status": "open",
-      "summary": "Before concluding PF-specific handedness, control reflection-invariant interacting SU2 null: a parity-even unique vacuum and reflection-equivariant scalar loops give T5=T8. Require source-defined oriented observer/parity sector.",
+      "summary": "Before concluding PF-specific handedness, control reflection-invariant interacting SU2 null: a parity-even unique vacuum and reflection-equivariant scalar loops give T5=T8. Require source-defined oriented observer/parity sector. An oriented observer-marked parity-even 〈ηΔ〉 can survive a parity-even vacuum; compare with mirror/cubic/phase nulls and source selection law.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -1123,6 +1132,142 @@
         "source-fidelity",
         "Conway-worm",
         "observer"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-ARM-MIRROR-NOGO",
+      "title": "Reflection-fixed unmarked patch requires equal oriented spiral-arm counts",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "If the finite patch is reflection-fixed and a deterministic reflection-equivariant arm algorithm pairs CW and CCW arms, the counts are exactly equal. Hence the source's phyllotaxis analogy 34:55 cannot be assigned to such an unmarked patch under those hypotheses. An asymmetry requires a patch, phason, boundary or observer mark.",
+      "detail": "Exact conditional symmetry statement or explicit open source/physical-law gate. No 3D coupled-Z5 physical SU2 model or continuum mass gap established.",
+      "checks": [
+        {
+          "label": "Source-faithful spiral labels, oriented physical observer and h/R-uniform gauge test",
+          "state": "open",
+          "note": "A chosen direction or marked correlation is not a derived selection law."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-based Fibonacci 34:55 handedness, J-reflection and observer-marked interacting SU2 parity audit",
+          "path": "research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-observer-marked-parity-34-55/research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "34:55",
+        "chirality",
+        "observer-parity"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-J-PROJECTED-ORIENTATION",
+      "title": "Oriented complementary complex structure J and signed planar observer winding",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Reflection conjugates J to −J. The chosen continuous Paper 3 circle z2=A exp(2πipt) has projected oriented winding Im(conj(z2)zdot2)=2πpA²; both positive/negative branches exist, and integer-step H3 aliases the sign. Planar winding does NOT fix 3D helical torsion.",
+      "detail": "Exact conditional symmetry statement or explicit open source/physical-law gate. No 3D coupled-Z5 physical SU2 model or continuum mass gap established.",
+      "checks": [
+        {
+          "label": "Source-faithful spiral labels, oriented physical observer and h/R-uniform gauge test",
+          "state": "open",
+          "note": "A chosen direction or marked correlation is not a derived selection law."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-based Fibonacci 34:55 handedness, J-reflection and observer-marked interacting SU2 parity audit",
+          "path": "research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-observer-marked-parity-34-55/research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "34:55",
+        "chirality",
+        "observer-parity"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-OBSERVER-MARKED-GAUGE",
+      "title": "Parity-even orientation-tagged interacting SU2 Wilson three-point channel",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "For a reflection-even finite interacting Gauss SU2 vacuum and mirrored closed-loop probes W_j^- =P W_-j^+ P^-1, the odd triple differences satisfy Δ_- = −Δ_+. Thus the untagged average is zero but the parity-even marked mean 〈ηΔ〉 can be nonzero without breaking vacuum parity. Not Penrose-specific.",
+      "detail": "Exact conditional symmetry statement or explicit open source/physical-law gate. No 3D coupled-Z5 physical SU2 model or continuum mass gap established.",
+      "checks": [
+        {
+          "label": "Source-faithful spiral labels, oriented physical observer and h/R-uniform gauge test",
+          "state": "open",
+          "note": "A chosen direction or marked correlation is not a derived selection law."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-based Fibonacci 34:55 handedness, J-reflection and observer-marked interacting SU2 parity audit",
+          "path": "research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-observer-marked-parity-34-55/research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "34:55",
+        "chirality",
+        "observer-parity"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-OBSERVER-SELECTION-LAW",
+      "title": "Physical selection law for Fibonacci double-spiral observer branch",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Recover source-authenticated 34/55 arm membership, marked observer J/time orientation, true 3D longitudinal lift and physical state/boundary conditions. No current proof establishes why nature chooses J vs −J or one helical branch, or that χ=21/89 is a genuine coupled-Z5 observable.",
+      "detail": "Exact conditional symmetry statement or explicit open source/physical-law gate. No 3D coupled-Z5 physical SU2 model or continuum mass gap established.",
+      "checks": [
+        {
+          "label": "Source-faithful spiral labels, oriented physical observer and h/R-uniform gauge test",
+          "state": "open",
+          "note": "A chosen direction or marked correlation is not a derived selection law."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source-based Fibonacci 34:55 handedness, J-reflection and observer-marked interacting SU2 parity audit",
+          "path": "research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-observer-marked-parity-34-55/research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "34:55",
+        "chirality",
+        "observer-parity"
       ],
       "importance": 4,
       "core": true,
@@ -1752,8 +1897,106 @@
       "label": "periodic reflection-symmetric control",
       "kind": "source-fidelity-check",
       "status": "open"
+    },
+    {
+      "from_id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "to_id": "PF-ARM-MIRROR-NOGO",
+      "label": "source phyllotaxis counts vs reflection-fixed patch",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DIHEDRAL-PARITY-NULL",
+      "to_id": "PF-ARM-MIRROR-NOGO",
+      "label": "unmarked mirror no-go",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-ARM-MIRROR-NOGO",
+      "to_id": "PF-OBSERVER-SELECTION-LAW",
+      "label": "require asymmetry/mark source",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H0",
+      "to_id": "PF-OBSERVER-SELECTION-LAW",
+      "label": "authenticate actual arms",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H1",
+      "to_id": "PF-J-PROJECTED-ORIENTATION",
+      "label": "physical observer clock and lift",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-J-PROJECTED-ORIENTATION",
+      "to_id": "PF-OBSERVER-SELECTION-LAW",
+      "label": "J orientation not physically selected",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-J-PROJECTED-ORIENTATION",
+      "to_id": "PF-OBSERVER-MARKED-GAUGE",
+      "label": "requires oriented observer labels",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-GAUGE-TWOPOINT",
+      "to_id": "PF-OBSERVER-MARKED-GAUGE",
+      "label": "symmetric two-point contrasted to marked odd three-point",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-DIHEDRAL-PARITY-NULL",
+      "to_id": "PF-OBSERVER-MARKED-GAUGE",
+      "label": "marked observable avoids unmarked null",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-OBSERVER-MARKED-GAUGE",
+      "to_id": "PF-H5",
+      "label": "paired parity and cubic controls",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-OBSERVER-SELECTION-LAW",
+      "to_id": "PF-G0",
+      "label": "source selection open",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-OBSERVER-SELECTION-LAW",
+      "to_id": "PF-G1",
+      "label": "real 3D lift open",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-OBSERVER-SELECTION-LAW",
+      "to_id": "PF-G4",
+      "label": "selection must improve uniform gauge bound",
+      "kind": "orientation-parity-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-OBSERVER-MARKED-GAUGE",
+      "to_id": "PF-H6",
+      "label": "dynamics remain open",
+      "kind": "orientation-parity-gate",
+      "status": "open"
     }
   ],
-  "expected_final_nodes": 168,
-  "expected_final_edges": 403
+  "expected_final_nodes": 172,
+  "expected_final_edges": 417
 }
