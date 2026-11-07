@@ -38,7 +38,7 @@ def attach(root: Path):
         key=(e["from_id"],e["to_id"],e["kind"])
         assert key not in present,key
         present.add(key);edges.append(e)
-    for key in ("version","build_date","scope","primary_hypothesis","pf_program","conceptual_program"):
+    for key in ("version","build_date","scope","primary_hypothesis","pf_program","conceptual_program","ym_proof_interface"):
         if key in overlay:g[key]=overlay[key]
     assert len(nodes)==overlay['expected_final_nodes'] and len(edges)==overlay['expected_final_edges']
     assert {n["id"]:(n.get("asset",{}).get("filename"),n.get("asset",{}).get("sha256")) for n in nodes if n["kind"]=="dataset"}==old_source_files
