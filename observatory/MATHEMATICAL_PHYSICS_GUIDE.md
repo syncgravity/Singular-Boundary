@@ -2,6 +2,10 @@
 
 **All continuum mass-gap and quantum-gravity claims remain OPEN.** This guide is written to make the questions navigable without relying on the original source documents' chronology.
 
+## Harmonic-phase criterion and non-Penrose quantum null (2026-11-07)
+
+The helical observer's source-proposed m=10 angular Fourier component alone has identically **zero** 13-step asymmetric three-point chirality. A secondary 2m component produces a signal proportional to sin(ψ−2φ), so the **relative harmonic phase** requires source authentication and matched observer-phase controls. Reflection-symmetric decagonal nearest-face controls cancel under phase pairing. A bona fide finite SU(2) one-loop magnetic rotor with arbitrary Wilson-power labels can produce nonzero Δ=+0.027312… without Penrose geometry. Therefore nonzero static chirality is a false-positive-prone diagnostic; a PF-specific h/R-uniform result remains OPEN. [Read the full proof and protocol](../research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md).
+
 ## Observer-conditioned finite SU2 covariance and sampling alias (2026-11-07)
 
 The Paper 3 continuous observer frequency ratio 3:5:8 assumes an actual physical continuous-time clock. **Integer-step a/13 sampling** aliases the m=10 frequencies to bins 4:2:2, and H2(5/13) and H3(8/13) are reverse traversals of the same 13-phase cycle. In the finite real interacting SU2 quantum control, a common uniform Wilson-loop phase family has identical H2/H3 symmetric Euclidean two-point covariance. This is an exact conditional operator theorem, not evidence that the Yang–Mills gap vanishes or that the helical mechanism is invalid. An orientation-sensitive asymmetric three-point statistic and matched PF/cubic phase-null controls are now the OPEN discriminator. See [source-qualified audit](../research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md).
