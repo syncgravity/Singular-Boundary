@@ -1,4 +1,14 @@
-# Research Observatory v2.41-draft — Mathematical Physics Proof Atlas
+# Research Observatory v2.42-research — Penrose–Fibonacci primary Proof Atlas
+
+## Current primary geometry program · 2026-11-07
+
+**Primary:** the dissertation's source-faithful coupled-ℤ⁵ Penrose–Fibonacci cut-and-project construction; **control:** the cubic original-link SU(2) reference. This is a research-priority change, not a proof of geometric universality or the mass gap. The original model's acceptance window, coupled adjacency, physical metric, and dimensional status must be authenticated before any 3D SU(2) spectral comparison.
+
+**[Open the Penrose–Fibonacci primary research map](penrose-program.html)** · **[Interactive Proof Atlas — PF primary lens](graph.html)** · [Source-model restoration](../research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md) · [New geometric spectral discrimination audit](../research/geometry/PF_SPECTRAL_DISCRIMINATION_OBSERVATORY_AUDIT_2026_11_07.md).
+
+The Atlas now distinguishes **PF-G0** authenticated coupled-Z5 source, **PF-G1** genuine 3D spatial refinement, **PF-G2** Gauss-invariant SU(2), **PF-G3** matched physical spectra/covariance, **PF-G4** refinement-uniform geometric advantage, and **PF-G5** interacting 4D continuum/mass-gap bridge. Separately the scalar-only spectral no-go and the unverified Lorentzian mapping remain visible; neither is a solved mass gap or gravity result.
+
+**Graph inventory:** 148 curated nodes, 342 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
 
 ## Branch retirement and research preservation
 
@@ -6,7 +16,7 @@ The November 6 research consolidation was history-preserving. The **72 integrate
 
 ## Current Observatory coverage · 2026-11-06
 
-**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.41-draft) has **139 curated mathematical-physics nodes and 314 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
+**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.42-research) has **148 curated mathematical-physics nodes and 342 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
 
 Run `python research/scripts/verify_theorem_index.py --repo .` and `python observatory/tools/sync_theorem_catalog.py --check` in the checked-out repository to validate the full source inventory and ensure the pages, static search catalog, and client Proof Atlas agree. These checks are enforced in the GitHub pull-request workflow. Adding a theorem requires updating the source-hashed registry, historical navigator appendices, and generated current/Observatory catalog; never infer certification from indexing.
 
