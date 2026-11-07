@@ -2,9 +2,9 @@
   "schema": "singular-boundary.pf-primary-overlay.v1",
   "expected_base_nodes": 139,
   "expected_base_edges": 314,
-  "version": "v2.44-research",
+  "version": "v2.45-research",
   "build_date": "2026-11-07",
-  "scope": "PF-specific helical observer hypothesis with exact 13-step H2/H3 alias, finite interacting SU2 quantum Euclidean two-point reciprocity, and unproved asymmetric-lag gauge-invariant chiral/null test. Primary physical coupled-Z5 3D regulator, 3D helix, mass-gap and gravity bridges remain OPEN.",
+  "scope": "Paper 3 observer hypothesis sharpened: pure 13-step decagonal m10 mode has zero chiral T5−T8; a second harmonic yields exact K A²B sin(ψ−2φ); mirror decagon and true one-loop interacting SU2 quantum rotor provide non-Penrose nulls. A physical 3D double-spiral lift, source loops, uniform gauge covariance and continuum mass gap remain OPEN.",
   "primary_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "pf_program": {
     "status": "open",
@@ -48,11 +48,16 @@
       "dynamical_mass_gap": "open",
       "gravity_bridge": "open",
       "next_test": {
-        "id": "PF-CHIRAL-NULL",
-        "alias": "PF-Z13-ALIAS",
-        "two_point_reciprocity": "PF-GAUGE-TWOPOINT",
-        "status": "open",
-        "source": "research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md"
+        "id": "PF-HARMONIC-TRIAD",
+        "source": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+        "controls": [
+          "PF-SINGLE-HARMONIC-NOGO",
+          "PF-HELICAL-LIFT-FREEDOM",
+          "PF-SU2-ROTOR-NULL",
+          "PF-CHIRAL-NULL"
+        ],
+        "target": "Source-authenticated phase-coupled gauge-invariant harmonic triad after h/R refinement",
+        "status": "open"
       }
     }
   },
@@ -449,7 +454,7 @@
       "kind": "interface",
       "stage": "P0",
       "status": "open",
-      "summary": "The paper’s z₂=A exp(2πipτ) is a 2D circular orbit. A physical 3D helix needs a separate longitudinal coordinate, justified metric/clock and Lorentzian relation; p=du/dv cannot be inferred as constant from circle derivatives.",
+      "summary": "The paper’s z₂=A exp(2πipτ) is a 2D circular orbit. A physical 3D helix needs a separate longitudinal coordinate, justified metric/clock and Lorentzian relation; p=du/dv cannot be inferred as constant from circle derivatives. Paper 3 projected complex circle has infinitely many 3D lifts with different curvature and torsion; no physical lift is source-certified.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -585,7 +590,7 @@
       "kind": "work",
       "stage": "P2",
       "status": "open",
-      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain. Distinguish geometry using chiral unequal-lag three-point and physical/null controls, not bare two-point power.",
+      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain. Distinguish geometry using chiral unequal-lag three-point and physical/null controls, not bare two-point power. Require m10-only and mixed-harmonic phase nulls, mirror-decagon control and interacting SU2 one-loop arbitrary-loop false-positive before claiming source specificity.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -778,6 +783,142 @@
         "gauge-covariance",
         "helical",
         "alias"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-SINGLE-HARMONIC-NOGO",
+      "title": "Single decagonal m=10 harmonic has zero 13-step chiral three-point",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "For any real F_j=μ+A cos(2π10j/13+φ), Δ=T5−T8 with offsets {0,a,3a} vanishes identically. The Paper 3 leading m=10 mode alone cannot produce static directional three-point chirality.",
+      "detail": "Exact finite conditional theorem or constructed non-Penrose null; source-authenticated 3D coupled-Z5 SU2 and physical continuum remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-faithful physical observer and h/R-uniform interacting covariance demonstrated",
+          "state": "open",
+          "note": "No physical source geometry, spectral gap or gravity-UV conclusion is implied."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 harmonic-triad and interacting SU2 rotor null audit (research review)",
+          "path": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-triad-quantum-null/research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "harmonic-triad",
+        "helical-observer",
+        "null-control"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-HARMONIC-TRIAD",
+      "title": "Exact 13-step two-harmonic relative-phase chirality identity",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Adding a second angular mode 2m produces Δ=K A²B sin(ψ−2φ), K≈−0.576285 for m=10,a=5. Requires relative harmonic phase, not only Fibonacci pitches; random non-Penrose phase fields can exhibit Δ≠0.",
+      "detail": "Exact finite conditional theorem or constructed non-Penrose null; source-authenticated 3D coupled-Z5 SU2 and physical continuum remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-faithful physical observer and h/R-uniform interacting covariance demonstrated",
+          "state": "open",
+          "note": "No physical source geometry, spectral gap or gravity-UV conclusion is implied."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 harmonic-triad and interacting SU2 rotor null audit (research review)",
+          "path": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-triad-quantum-null/research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "harmonic-triad",
+        "helical-observer",
+        "null-control"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-HELICAL-LIFT-FREEDOM",
+      "title": "Planar Paper 3 circle does not determine 3D helical curvature or torsion",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "All lifts X_v=(A cosωt,A sinωt,vt) share the same z2 circle and rational angular speed but differ in curvature κ=Aω²/(A²ω²+v²) and torsion τ=vω/(A²ω²+v²). A real clock, metric and double-strand lift remain OPEN.",
+      "detail": "Exact finite conditional theorem or constructed non-Penrose null; source-authenticated 3D coupled-Z5 SU2 and physical continuum remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-faithful physical observer and h/R-uniform interacting covariance demonstrated",
+          "state": "open",
+          "note": "No physical source geometry, spectral gap or gravity-UV conclusion is implied."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 harmonic-triad and interacting SU2 rotor null audit (research review)",
+          "path": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-triad-quantum-null/research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "harmonic-triad",
+        "helical-observer",
+        "null-control"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-SU2-ROTOR-NULL",
+      "title": "Interacting SU2 one-loop quantum rotor produces non-Penrose chiral null",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "Conjugation-invariant SU2 magnetic+electric rotor with actual positive finite ground state, and deliberately arbitrary 13 based-loop powers, yields Δ≈+0.02731236672014 while C5(t)=C8(t). Nonzero observer-label chirality alone cannot certify quasicrystalline geometry or an interacting mass gap.",
+      "detail": "Exact finite conditional theorem or constructed non-Penrose null; source-authenticated 3D coupled-Z5 SU2 and physical continuum remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-faithful physical observer and h/R-uniform interacting covariance demonstrated",
+          "state": "open",
+          "note": "No physical source geometry, spectral gap or gravity-UV conclusion is implied."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 harmonic-triad and interacting SU2 rotor null audit (research review)",
+          "path": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-triad-quantum-null/research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Paper-3",
+        "harmonic-triad",
+        "helical-observer",
+        "null-control"
       ],
       "importance": 4,
       "core": true,
@@ -1204,8 +1345,106 @@
       "label": "refinement-uniform geometry inequality still missing",
       "kind": "observer-discrimination",
       "status": "open"
+    },
+    {
+      "from_id": "PF-H3",
+      "to_id": "PF-SINGLE-HARMONIC-NOGO",
+      "label": "dominant m10 cannot generate static chirality",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-SINGLE-HARMONIC-NOGO",
+      "to_id": "PF-HARMONIC-TRIAD",
+      "label": "need angular harmonic phase coupling",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-HARMONIC-TRIAD",
+      "to_id": "PF-H5",
+      "label": "source-specific harmonic-phase falsification",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H0",
+      "to_id": "PF-HARMONIC-TRIAD",
+      "label": "recover actual Conway-worm harmonic phases",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H1",
+      "to_id": "PF-HELICAL-LIFT-FREEDOM",
+      "label": "physical 3D lift is not determined",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-LORENTZ-OPEN",
+      "to_id": "PF-HELICAL-LIFT-FREEDOM",
+      "label": "clock and spacetime geometry independent",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-HELICAL-LIFT-FREEDOM",
+      "to_id": "PF-H4",
+      "label": "gauge loops require actual 3D paths",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-HARMONIC-TRIAD",
+      "to_id": "PF-CHIRAL-NULL",
+      "label": "triad frequency null for ordered test",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-GAUGE-TWOPOINT",
+      "to_id": "PF-SU2-ROTOR-NULL",
+      "label": "two-point reciprocity coexists with nonzero three-point",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-SU2-ROTOR-NULL",
+      "to_id": "PF-H5",
+      "label": "non-Penrose interacting false positive requires null testing",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-CHIRAL-NULL",
+      "to_id": "PF-SU2-ROTOR-NULL",
+      "label": "arbitrary label order does not prove PF specificity",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "PF-HARMONIC-TRIAD",
+      "label": "physical harmonic phases must be matched",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "PF-HARMONIC-TRIAD",
+      "label": "unproved uniform geometric phase stability",
+      "kind": "specific-observer-test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H6",
+      "to_id": "PF-HELICAL-LIFT-FREEDOM",
+      "label": "Lorentzian dynamics needs extra input",
+      "kind": "specific-observer-test",
+      "status": "open"
     }
   ],
-  "expected_final_nodes": 159,
-  "expected_final_edges": 374
+  "expected_final_nodes": 163,
+  "expected_final_edges": 388
 }
