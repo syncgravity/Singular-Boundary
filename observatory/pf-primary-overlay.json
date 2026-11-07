@@ -2,9 +2,9 @@
   "schema": "singular-boundary.pf-primary-overlay.v1",
   "expected_base_nodes": 139,
   "expected_base_edges": 314,
-  "version": "v2.43-research",
+  "version": "v2.44-research",
   "build_date": "2026-11-07",
-  "scope": "Paper 3 specific helical-observer/Conway-Fibonacci mechanism distinguished from generic quasiperiodicity and scalar spectral no-gap control. Kinematic f=10p yields 3:5:8 but physical 3D spiral lift, source double-strand definition, interacting SU2 observer covariance and continuum mass gap remain OPEN.",
+  "scope": "PF-specific helical observer hypothesis with exact 13-step H2/H3 alias, finite interacting SU2 quantum Euclidean two-point reciprocity, and unproved asymmetric-lag gauge-invariant chiral/null test. Primary physical coupled-Z5 3D regulator, 3D helix, mass-gap and gravity bridges remain OPEN.",
   "primary_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "pf_program": {
     "status": "open",
@@ -46,7 +46,14 @@
         "PF-H6"
       ],
       "dynamical_mass_gap": "open",
-      "gravity_bridge": "open"
+      "gravity_bridge": "open",
+      "next_test": {
+        "id": "PF-CHIRAL-NULL",
+        "alias": "PF-Z13-ALIAS",
+        "two_point_reciprocity": "PF-GAUGE-TWOPOINT",
+        "status": "open",
+        "source": "research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md"
+      }
     }
   },
   "patches": {
@@ -476,7 +483,7 @@
       "kind": "work",
       "stage": "P0",
       "status": "open",
-      "summary": "The three pitches 3/13,5/13,8/13 are rational, yielding 13 distinct equally-spaced angular phases per integer-sampled period. Claims of irrational dense winding require new assumptions; compare actual sampling schedule.",
+      "summary": "The three pitches 3/13,5/13,8/13 are rational, yielding 13 distinct equally-spaced angular phases per integer-sampled period. Claims of irrational dense winding require new assumptions; compare actual sampling schedule. Exact 13-step alias and equal complete-period distribution now verified.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -510,7 +517,7 @@
       "kind": "result",
       "stage": "P0",
       "status": "conditional",
-      "summary": "Paper 3 §7: m=10 angular structure sampled at p=3/13,5/13,8/13 gives f=10p and ratios 3:5:8 algebraically. This is kinematic, NOT interacting SU(2) mass eigenvalues or source-CV replication.",
+      "summary": "Paper 3 §7: m=10 angular structure sampled at p=3/13,5/13,8/13 gives f=10p and ratios 3:5:8 algebraically. This is kinematic, NOT interacting SU(2) mass eigenvalues or source-CV replication. 3:5:8 needs a physical continuous/finer observer clock; 13-step folded bins are 4:2:2.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -544,7 +551,7 @@
       "kind": "interface",
       "stage": "P1",
       "status": "open",
-      "summary": "Separate static scalar angular sampling and Koopman frequencies from gauge-invariant parallel-transport observables, the interacting Gauss-invariant SU(2) Hamiltonian, and gravitational fluctuation spectra.",
+      "summary": "Separate static scalar angular sampling and Koopman frequencies from gauge-invariant parallel-transport observables, the interacting Gauss-invariant SU(2) Hamiltonian, and gravitational fluctuation spectra. Common-phase real SU2 Euclidean C5=C8 two-point reciprocity is an exact conditional constraint.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -578,7 +585,7 @@
       "kind": "work",
       "stage": "P2",
       "status": "open",
-      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain.",
+      "summary": "Compare genuine source-fidelity PF observer, cubic periodic observer and phase-shuffled/rational-sampling nulls at matched clock, metric, coupling, physical support and refinement; seek h/R-uniform gauge-invariant covariance gain. Distinguish geometry using chiral unequal-lag three-point and physical/null controls, not bare two-point power.",
       "detail": "Source-qualified research obligation; no physical 3D SU(2) spectral or mass-gap result is certified.",
       "checks": [
         {
@@ -669,6 +676,108 @@
         "observer",
         "Conway-worm",
         "helical"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-Z13-ALIAS",
+      "title": "Observer 13-step pitch alias and H2/H3 reversal",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "For real 13-phase sampling, all coprime pitches permute the same phase set; 8/13≡−5/13 mod one, so H2 and H3 have identical real Fourier powers and cyclic two-point correlations. m=10 folds to bins 4,2,2. This is not a refutation of continuous f=10p.",
+      "detail": "Conditional finite-regulator observer/quantum operator analysis. Source-authenticated coupled-Z5 3D geometry, true helical longitudinal lift, and physical mass gap remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-authenticated physical observer and h/R-uniform interacting gauge result",
+          "state": "open",
+          "note": "Only Z13 kinematic and real Euclidean reciprocity are mathematically established under stated assumptions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer covariance alias and Gauss-invariant SU2 conditional protocol (research review)",
+          "path": "research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-observer-gauge-covariance-alias/research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Paper-3",
+        "PF-primary",
+        "gauge-covariance",
+        "helical",
+        "alias"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-GAUGE-TWOPOINT",
+      "title": "Interacting SU2 helical Euclidean covariance reciprocity",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "For one common 13-loop family of gauge-invariant Wilson traces on any finite SU2 complex with a real selfadjoint interacting quantum Hamiltonian, uniform observer-phase cyclic Euclidean covariance C_a(r,t) is even under a→−a: C5=C8 for every t,r. Does not construct PF geometry or prove spectral gap.",
+      "detail": "Conditional finite-regulator observer/quantum operator analysis. Source-authenticated coupled-Z5 3D geometry, true helical longitudinal lift, and physical mass gap remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-authenticated physical observer and h/R-uniform interacting gauge result",
+          "state": "open",
+          "note": "Only Z13 kinematic and real Euclidean reciprocity are mathematically established under stated assumptions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer covariance alias and Gauss-invariant SU2 conditional protocol (research review)",
+          "path": "research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-observer-gauge-covariance-alias/research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Paper-3",
+        "PF-primary",
+        "gauge-covariance",
+        "helical",
+        "alias"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-CHIRAL-NULL",
+      "title": "Orientation-sensitive unequal-lag Wilson three-point null experiment",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Candidate T_a=mean_j ν[W_j W_(j+a) W_(j+3a)] may distinguish a=5 and 8 while ordinary symmetric two-point cannot. Test against matched cubic, phase-shuffled, reversed, clock and physical-scale nulls; a nonzero chiral statistic is not automatically PF-specific or a physical mass gap.",
+      "detail": "Conditional finite-regulator observer/quantum operator analysis. Source-authenticated coupled-Z5 3D geometry, true helical longitudinal lift, and physical mass gap remain OPEN.",
+      "checks": [
+        {
+          "label": "Source-authenticated physical observer and h/R-uniform interacting gauge result",
+          "state": "open",
+          "note": "Only Z13 kinematic and real Euclidean reciprocity are mathematically established under stated assumptions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer covariance alias and Gauss-invariant SU2 conditional protocol (research review)",
+          "path": "research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-helical-observer-gauge-covariance-alias/research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Paper-3",
+        "PF-primary",
+        "gauge-covariance",
+        "helical",
+        "alias"
       ],
       "importance": 4,
       "core": true,
@@ -1011,8 +1120,92 @@
       "kind": "requires-research",
       "label": "scalar spectral control not helical quantum mass",
       "status": "open"
+    },
+    {
+      "from_id": "PF-H2",
+      "to_id": "PF-Z13-ALIAS",
+      "label": "integer-step pitch hypothesis constraint",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H3",
+      "to_id": "PF-Z13-ALIAS",
+      "label": "continuous frequency differs from integer-sampled alias",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z13-ALIAS",
+      "to_id": "PF-H4",
+      "label": "symmetric frequency spectra insufficient",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z13-ALIAS",
+      "to_id": "PF-H5",
+      "label": "sampling-clock and phase-null required",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-H4",
+      "to_id": "PF-GAUGE-TWOPOINT",
+      "label": "gauge invariant quantum probe protocol",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-GAUGE-TWOPOINT",
+      "to_id": "PF-H5",
+      "label": "two-point chirality blind under phase uniformity",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "PF-GAUGE-TWOPOINT",
+      "label": "exact real interacting SU2 mathematical control",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-GAUGE-TWOPOINT",
+      "to_id": "PF-CHIRAL-NULL",
+      "label": "orientation-sensitive higher-order channel sought",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-CHIRAL-NULL",
+      "to_id": "PF-H5",
+      "label": "paired null experiment required",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-CHIRAL-NULL",
+      "to_id": "PF-H6",
+      "label": "three-point readout is not physical quantum mass gap",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "PF-GAUGE-TWOPOINT",
+      "label": "matched covariance spectra conditional",
+      "kind": "observer-discrimination",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G4",
+      "to_id": "PF-CHIRAL-NULL",
+      "label": "refinement-uniform geometry inequality still missing",
+      "kind": "observer-discrimination",
+      "status": "open"
     }
   ],
-  "expected_final_nodes": 156,
-  "expected_final_edges": 362
+  "expected_final_nodes": 159,
+  "expected_final_edges": 374
 }

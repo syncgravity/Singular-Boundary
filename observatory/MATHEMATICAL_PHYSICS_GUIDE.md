@@ -2,6 +2,10 @@
 
 **All continuum mass-gap and quantum-gravity claims remain OPEN.** This guide is written to make the questions navigable without relying on the original source documents' chronology.
 
+## Observer-conditioned finite SU2 covariance and sampling alias (2026-11-07)
+
+The Paper 3 continuous observer frequency ratio 3:5:8 assumes an actual physical continuous-time clock. **Integer-step a/13 sampling** aliases the m=10 frequencies to bins 4:2:2, and H2(5/13) and H3(8/13) are reverse traversals of the same 13-phase cycle. In the finite real interacting SU2 quantum control, a common uniform Wilson-loop phase family has identical H2/H3 symmetric Euclidean two-point covariance. This is an exact conditional operator theorem, not evidence that the Yang–Mills gap vanishes or that the helical mechanism is invalid. An orientation-sensitive asymmetric three-point statistic and matched PF/cubic phase-null controls are now the OPEN discriminator. See [source-qualified audit](../research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md).
+
 ## Paper 3 observer-specific mechanism (2026-11-07)
 
 The primary hypothesis is **not quasiperiodicity alone**. It couples the source-faithful ℤ⁵ projection, Conway-worm Fibonacci organization, complementary-space complex structure J, and the helical observer of Paper 3 §7. The open PF-H0–PF-H6 subpath asks for an exact double-spiral strand definition; a physical 3D and Lorentzian helical lift; verification that rational pitches 3/13,5/13,8/13 yield 13-site periodic angular samples rather than irrational winding; distinction of kinematic 3:5:8 sampled frequencies from Gauss-invariant quantum mass energies; and matched PF/cubic/null controls under refinement. Paper 3 Remark 6 acknowledges field dynamics remain open. See [observer audit](../research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md).
