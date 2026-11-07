@@ -31,6 +31,13 @@ for _ in range(1000):
     assert abs(Delta(f)-K*A*A*B*np.sin(psi-2*phi))<2e-12
     assert 0<f.min() and f.max()<2
     checks+=2
+for _ in range(100):
+    mu=1.;A=.2;B=.1;phi=rng.uniform(-np.pi,np.pi)
+    psi=rng.uniform(-np.pi,np.pi);chi=rng.uniform(-np.pi,np.pi)
+    original=mu+mode(10,A,phi)+mode(20,B,psi)
+    rotated=mu+mode(10,A,phi+10*chi)+mode(20,B,psi+20*chi)
+    assert abs(Delta(original)-Delta(rotated))<1e-12
+    checks+=1
 normals=2*np.pi*np.arange(10)/10
 def decagon(p):
     theta=2*np.pi*j/N+p
