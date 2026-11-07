@@ -42,6 +42,9 @@ function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
 const pfXY={
+'PF-ARM-MIRROR-NOGO':[280,1800],'PF-J-PROJECTED-ORIENTATION':[720,1800],
+'PF-OBSERVER-MARKED-GAUGE':[1320,1800],'PF-OBSERVER-SELECTION-LAW':[1800,1800],
+
 'PF-Z5-SLICE-OBSTRUCTION':[240,1370],'PF-Z5-QUOTIENT-CANDIDATE':[620,1370],
 'PF-Z5-SOURCE-GENERATOR':[960,1370],'PF-DOUBLE-SPIRAL-SOURCE':[380,1620],
 'PF-DIHEDRAL-PARITY-NULL':[1500,1370],
