@@ -42,8 +42,12 @@ function dataPositions(){const p=new Map(); const places={'D-ARCHIVE':[155,115],
 let j={};for(const n of G.nodes.filter(x=>x.kind==='dataset')){const group=n.tags[0];j[group]=(j[group]||0);let i=j[group]++;let x,y;if(group==='stage26'){x=110+(i%4)*270;y=265+Math.floor(i/4)*112}else if(group==='sweep10000'){x=110+(i%4)*270;y=670+Math.floor(i/4)*112}else if(group==='full_archive'){x=1100;y=1060}else if(group==='whitney'){x=620;y=1060}else if(group==='dissertation'){x=1370;y=1060}else{x=110+(i%4)*270;y=1370+Math.floor(i/4)*110}p.set(n.id,[x,y])}
 return p}
 const pfXY={
-'M-Z5':[100,130],'PF-G0':[370,130],'PF-G1':[640,130],'PF-G2':[910,130],
-'PF-G3':[1180,130],'PF-G4':[1450,130],'PF-G5':[1720,130],
+'PF-DOUBLE-SPIRAL':[80,360],'PF-H0':[330,360],'PF-H1':[580,360],
+'PF-H2':[830,360],'PF-H3':[1080,360],'PF-H4':[1330,360],
+'PF-H5':[1580,360],'PF-H6':[1830,360],
+
+'M-Z5':[100,130],'PF-G0':[370,90],'PF-G1':[640,90],'PF-G2':[910,90],
+'PF-G3':[1180,90],'PF-G4':[1450,90],'PF-G5':[1720,90],
 'M-PENROSE-2D':[90,430],'PF-LORENTZ-OPEN':[640,430],
 'PF-SCALAR-NOGO':[1180,430],'PF-GRAV-SEPARATE':[1730,430],
 'M-CUBIC':[100,730],'I-PENROSE-SQUARE':[640,730],
@@ -104,7 +108,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
 function ensurePositions(){for(const n of G.nodes){if(!positions.has(n.id))positions.set(n.id,[...positionFor(n)])}}
 function setView(next){view=next;dataPositionsCache=dataPositions();positions=new Map();highlightedPath=[];
  document.querySelectorAll('.lens').forEach(x=>{const on=x.dataset.view===view;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});
- const headings={pf:'COUPLED-Z5 PENROSE–FIBONACCI PRIMARY ROUTE · PF-G0–G5',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
+ const headings={pf:'COUPLED-Z5 / CONWAY–FIBONACCI / HELICAL OBSERVER · PF-G0–G5, H0–H6',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
  $('graphViewLabel').textContent=headings[view];applyGraph(true)}
 function setFilter(next){filter=next;document.querySelectorAll('.filter').forEach(x=>{const on=x.dataset.filter===filter;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});applyGraph(true)}
 function showError(s){const t=$('nodeLayer');t.replaceChildren();t.appendChild(svg('text',{x:100,y:130,fill:'#9fc0c8','font-size':18},s));edgeLayer.replaceChildren()}
