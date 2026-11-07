@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.47-research",
-  "scope": "The observer's handedness requires a marked J/time orientation or genuinely source-defined asymmetric geometry: reflection-even unmarked arm enumeration cannot yield 34/55, and orientation-tagged interacting SU2 Wilson three-point correlators can be parity-even even when untagged chirality vanishes. The actual physical observer branch-selection law and 3D coupled-Z5 mass gap remain OPEN.",
+  "version": "v2.48-concepts",
+  "scope": "Concept-first reconstruction of author's 2D Conway-worm to higher-dimensional helical observation problem, with 34:55 as a conditional consequence of irrational golden-angle radial organization; source/kinematic/independent toy/quantum claims separated. No authenticated 3D Z5 observer or mass gap.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -5983,6 +5983,550 @@
       "importance": 4,
       "core": true,
       "route": null
+    },
+    {
+      "id": "CON-2D3D-PROBLEM",
+      "title": "Conway-worm observation: planar chains to higher-dimensional observer",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "The author's recovered problem: extend how five planar Fibonacci/Conway-worm families are OBSERVED into a 3D mechanism; a literal 3D worm embedding is not a prerequisite.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "research-intent"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "CON-Z5-PROJECTION",
+      "title": "Coupled cyclotomic Z5 projections and physical/source quotient",
+      "kind": "model",
+      "status": "open",
+      "stage": "P0",
+      "summary": "z1,z2 are C5 projections of Z5. Authentic slice-versus-quotient, acceptance parameters and coupled generator still require source identity.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-definition"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-DECAGON-WINDOW",
+      "title": "Acceptance window and complementary hidden domain",
+      "kind": "model",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "A regular decagonal complementary-space W determines projection acceptance; exact physical shifts/window scale and phason must be recovered.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-definition"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-FIVE-BANDS",
+      "title": "Five neighbour-failure families and pair-overlap geometry",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Five b_j=1_{W}(z)1_{outside W}(z+e_j⊥) encode missing neighbours. Source reports q4/q2=φ/2 and degree partitions; definitions/numerical reproduction unverified.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-reported"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-CONWAY-FAMILIES",
+      "title": "Five two-dimensional Fibonacci/Conway-worm chain families",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Five planar Fibonacci path families motivate the observer mechanism; exact vertex-to-family labels and corresponding physical pathways remain absent.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-reported"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "CON-J-ORIENTATION",
+      "title": "Complementary-space complex structure J and reflection",
+      "kind": "interface",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "On an oriented 2-plane J²=−I and reflection sends J→−J. A chosen complex orientation is not by itself a physical branch-selection law.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "algebraic"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-3D-OBSERVER",
+      "title": "Observer trajectory, longitudinal lift, clock and metric",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Helical observer is a higher-dimensional observation METHOD, not necessarily a literal Conway worm. Projected constant-radius complex circle does not supply unique 3D spatial path.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "historical-hypothesis"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "CON-HELICAL-PITCH",
+      "title": "Finite Fibonacci-pitch sampling and temporal frequency claim",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "H1/H2/H3 pitches 3/13,5/13,8/13, m10→3:5:8 continuous kinematic sampling; one-step sampling repeats in 13 phases and aliases frequencies.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-reported"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-GOLDEN-PARASTICHY",
+      "title": "Golden-angle irrational rotation and signed Fibonacci neighbor offsets",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "For α=φ⁻², F_k α−F_{k−2}=(−1)^kφ⁻ᵏ. F9=34 and F10=55 have tiny opposite winding; radial annulus Delaunay reveals these offsets.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "independent-math"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-34-55-EMERGENCE",
+      "title": "34:55 spiral arms as a conditional consequence—not an input",
+      "kind": "interface",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Synthetic radial golden-angle annulus has Delaunay neighbor steps 34/55/89, while rational 8/13 shows 5/8/13. No authenticated Z5 worm→3D observer→arm derivation yet.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "reconstruction"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "CON-STATIC-FIELD",
+      "title": "Static hidden-domain scalar and reported observer CV",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Source Λ_eff related to perpendicular-window nearest-face/degree field; reports bulk CV~78% and constant-radius helix CV~3–5%. Original generator/units and exact field still unverified.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-reported"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-ORDERED-ENCOUNTERS",
+      "title": "Directed five-family failure-band event word",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Path γ defines time-ordered 5-bit events b_j(γ_t), enabling reflection-odd lagged family-transition statistics and symmetric/mirrored controls.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "proposed-test"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "CON-GAUGE-COVARIANCE",
+      "title": "Closed Wilson probes and genuine interacting observer covariance",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Stage-30 quotient-safe projected kernels and Stage-31 synthetic Wilson-loop evaluators are preserved historical prototypes. Actual per-anchor PF SU2 links and true interacting vacuum missing.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "historical-prototype"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-CONTINUUM-TRANSFER",
+      "title": "Physical 3D, Yang–Mills gap and gravitation proof obligations",
+      "kind": "work",
+      "status": "open",
+      "stage": "P5",
+      "summary": "Require a genuine refining three-extended-dimensional complex, matched gauge spectrum, h/R uniform covariance, interacting continuum reconstruction; gravity UV is separate.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "open-proof"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-HISTORY-PROVENANCE",
+      "title": "Historical reconstruction and evidence-tier governance",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Oct 26 summaries preserve the observation-method motivation and Stage30 projection. Missing complete conversation and original generator not recovered; distinguish sourced claims, algebra, toy results and proposals.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "research-record"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "CON-SPECTRAL-CLAIMS",
+      "title": "Spectral dimensional, zeta, boundary and cavity predictions",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Dissertation reports spectral-dimension reductions, ζ′(0) QC/periodic~0.646±0.006, and cavity observables. These are source claims; scalar spectra do not certify interacting YM mass gap or gravity.",
+      "detail": "Concept-first source/layer classification. See the conceptual Atlas and provenance for source assertion versus independently verified toy calculations. No certified physical 3D Z5 observer or quantum mass gap.",
+      "checks": [
+        {
+          "label": "Authenticate source, physical observer and continuum proof obligation",
+          "state": "open",
+          "note": "The original lost conversation is not verbatim recovered; no closed gap."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Conceptual 2D Conway→3D helical observation reconstruction, exact Fibonacci offsets and nulls",
+          "path": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-conceptual-3d-conway-helical-reconstruction/research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "conceptual-index",
+        "PF-primary",
+        "helical-observer",
+        "2026-11-07",
+        "source-reported"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
     }
   ],
   "edges": [
@@ -8904,6 +9448,251 @@
       "label": "dynamics remain open",
       "kind": "orientation-parity-gate",
       "status": "open"
+    },
+    {
+      "from_id": "CON-Z5-PROJECTION",
+      "to_id": "CON-DECAGON-WINDOW",
+      "label": "cut/project to hidden acceptance",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-DECAGON-WINDOW",
+      "to_id": "CON-FIVE-BANDS",
+      "label": "neighbour membership failure",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-FIVE-BANDS",
+      "to_id": "CON-ORDERED-ENCOUNTERS",
+      "label": "time-order hidden geometric events",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-FIVE-BANDS",
+      "to_id": "CON-STATIC-FIELD",
+      "label": "coordination and conformal scalar",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-CONWAY-FAMILIES",
+      "to_id": "CON-2D3D-PROBLEM",
+      "label": "planar worm generalization challenge",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-2D3D-PROBLEM",
+      "to_id": "CON-3D-OBSERVER",
+      "label": "observer lift replaces literal worm embedding",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-J-ORIENTATION",
+      "to_id": "CON-3D-OBSERVER",
+      "label": "projected orientation/clock",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-HELICAL-PITCH",
+      "to_id": "CON-3D-OBSERVER",
+      "label": "sampling schedule conditional",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-3D-OBSERVER",
+      "to_id": "CON-ORDERED-ENCOUNTERS",
+      "label": "directed failure-band word",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-HELICAL-PITCH",
+      "to_id": "CON-GOLDEN-PARASTICHY",
+      "label": "rational 13-cycle is insufficient",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-GOLDEN-PARASTICHY",
+      "to_id": "CON-34-55-EMERGENCE",
+      "label": "golden-angle scale-selected neighbour offsets",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-CONWAY-FAMILIES",
+      "to_id": "CON-34-55-EMERGENCE",
+      "label": "source worm→arm relation remains unproved",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-34-55-EMERGENCE",
+      "to_id": "CON-3D-OBSERVER",
+      "label": "needs source-derived radial/longitudinal sampling",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-ORDERED-ENCOUNTERS",
+      "to_id": "CON-GAUGE-COVARIANCE",
+      "label": "attach closed Wilson probes only after geometry",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-GAUGE-COVARIANCE",
+      "to_id": "CON-CONTINUUM-TRANSFER",
+      "label": "genuine interacting quantum and limits",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-SPECTRAL-CLAIMS",
+      "to_id": "CON-CONTINUUM-TRANSFER",
+      "label": "no scalar-to-YM inference",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-HISTORY-PROVENANCE",
+      "to_id": "CON-2D3D-PROBLEM",
+      "label": "author's recovered origin account",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-HISTORY-PROVENANCE",
+      "to_id": "CON-GAUGE-COVARIANCE",
+      "label": "Stage30 prototype, not original derivation",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-Z5-PROJECTION",
+      "to_id": "PF-Z5-SOURCE-GENERATOR",
+      "label": "original generator unrecovered",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-DECAGON-WINDOW",
+      "to_id": "PF-G0",
+      "label": "source geometry gate",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-CONWAY-FAMILIES",
+      "to_id": "PF-H0",
+      "label": "source worm labels gate",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-3D-OBSERVER",
+      "to_id": "PF-H1",
+      "label": "physical lift and clock gate",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-HELICAL-PITCH",
+      "to_id": "PF-Z13-ALIAS",
+      "label": "13-period sampling control",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-GOLDEN-PARASTICHY",
+      "to_id": "PF-HARMONIC-TRIAD",
+      "label": "different angular harmonic mechanism",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-34-55-EMERGENCE",
+      "to_id": "PF-DOUBLE-SPIRAL-SOURCE",
+      "label": "source analogy, not certified origin",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-ORDERED-ENCOUNTERS",
+      "to_id": "PF-H5",
+      "label": "orientation-sensitive ordered control",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-J-ORIENTATION",
+      "to_id": "PF-J-PROJECTED-ORIENTATION",
+      "label": "oriented frame is not selection",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-ORDERED-ENCOUNTERS",
+      "to_id": "PF-OBSERVER-MARKED-GAUGE",
+      "label": "observer-tagged gauge parity",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-GAUGE-COVARIANCE",
+      "to_id": "M-CUBIC",
+      "label": "original link SU2 control",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-CONTINUUM-TRANSFER",
+      "to_id": "P5",
+      "label": "canonical gap remains open",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-CONTINUUM-TRANSFER",
+      "to_id": "G-GRAV",
+      "label": "gravity distinct",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-34-55-EMERGENCE",
+      "to_id": "PF-OBSERVER-SELECTION-LAW",
+      "label": "no physical branch selection yet",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-STATIC-FIELD",
+      "to_id": "CON-ORDERED-ENCOUNTERS",
+      "label": "sample static field via ordered path",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-FIVE-BANDS",
+      "to_id": "CON-34-55-EMERGENCE",
+      "label": "unproved band-to-parastichy mechanism",
+      "kind": "conceptual-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "CON-2D3D-PROBLEM",
+      "to_id": "CON-HISTORY-PROVENANCE",
+      "label": "reconstruction versus quotation",
+      "kind": "conceptual-dependency",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -9060,5 +9849,34 @@
       "quantum_marked_null": "PF-OBSERVER-MARKED-GAUGE",
       "physical_selection_gate": "PF-OBSERVER-SELECTION-LAW"
     }
+  },
+  "conceptual_program": {
+    "status": "research-reconstruction",
+    "index": "observatory/concepts/helical-observer-concept-index.json",
+    "atlas_page": "conceptual-atlas.html",
+    "primary_concept": "CON-2D3D-PROBLEM",
+    "concept_ids": [
+      "CON-2D3D-PROBLEM",
+      "CON-Z5-PROJECTION",
+      "CON-DECAGON-WINDOW",
+      "CON-FIVE-BANDS",
+      "CON-CONWAY-FAMILIES",
+      "CON-J-ORIENTATION",
+      "CON-3D-OBSERVER",
+      "CON-HELICAL-PITCH",
+      "CON-GOLDEN-PARASTICHY",
+      "CON-34-55-EMERGENCE",
+      "CON-STATIC-FIELD",
+      "CON-ORDERED-ENCOUNTERS",
+      "CON-GAUGE-COVARIANCE",
+      "CON-CONTINUUM-TRANSFER",
+      "CON-HISTORY-PROVENANCE",
+      "CON-SPECTRAL-CLAIMS"
+    ],
+    "recoverable_conversation": "October 26 historical summaries only; original lost derivation not available",
+    "new_result": "golden angle 34/55 and rational H3 5/8/13 Delaunay control",
+    "source_model": "coupled Z5 source generator still unverified",
+    "all_mass_gap_gates": "OPEN",
+    "approved_deployment": false
   }
 }
