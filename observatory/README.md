@@ -1,4 +1,10 @@
-# Research Observatory v2.43-research — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.44-research — Penrose–Fibonacci primary Proof Atlas
+
+## New helical observer sampling/covariance discriminator · 2026-11-07
+
+The Paper 3 observer is now paired with a rigorous **finite and conditional** negative control: under 13 integer samples, H2=5/13 and H3=8/13=−5/13 mod one are reverse traversals with identical real power spectra. For the asserted m=10 decagonal mode, the **folded discrete** frequency magnitudes are 4:2:2, whereas the source's **continuous-time** kinematic frequencies are 3:5:8. A physical observer clock and the true source generator must resolve this difference.
+
+Under a common set of thirteen closed geometric Wilson-loop probes on any finite real coupled SU(2) quantum regulator, the genuine interacting ground-state Euclidean covariance obeys C₅(r,t)=C₈(r,t) by selfadjointness and uniform phase averaging. Observer sampling cannot generate new Hamiltonian excitation energies. The next **OPEN** experimental test is an asymmetric three-lag Wilson-loop correlation, with source-defined double-spiral geometry, cubic and phase-shuffled/reversed controls, and a genuine h/R-uniform covariance claim. [Full mathematical proof and protocol](../research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md). This is a complementary bridge to earlier cubic Gauss/true-vacuum/Fisher/weighted-flow audits, not an equivalence between cubic and coupled-Z5 geometry. All continuum proof gates remain OPEN.
 
 ## Paper 3 helical observer refinement · 2026-11-07
 
@@ -16,7 +22,7 @@
 
 The Atlas now distinguishes **PF-G0** authenticated coupled-Z5 source, **PF-G1** genuine 3D spatial refinement, **PF-G2** Gauss-invariant SU(2), **PF-G3** matched physical spectra/covariance, **PF-G4** refinement-uniform geometric advantage, and **PF-G5** interacting 4D continuum/mass-gap bridge. Separately the scalar-only spectral no-go and the unverified Lorentzian mapping remain visible; neither is a solved mass gap or gravity result.
 
-**Graph inventory:** 156 curated nodes, 362 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
+**Graph inventory:** 159 curated nodes, 374 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
 
 ## Branch retirement and research preservation
 
@@ -24,7 +30,7 @@ The November 6 research consolidation was history-preserving. The **72 integrate
 
 ## Current Observatory coverage · 2026-11-06
 
-**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.43-research) has **156 curated mathematical-physics nodes and 362 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
+**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.44-research) has **159 curated mathematical-physics nodes and 374 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
 
 Run `python research/scripts/verify_theorem_index.py --repo .` and `python observatory/tools/sync_theorem_catalog.py --check` in the checked-out repository to validate the full source inventory and ensure the pages, static search catalog, and client Proof Atlas agree. These checks are enforced in the GitHub pull-request workflow. Adding a theorem requires updating the source-hashed registry, historical navigator appendices, and generated current/Observatory catalog; never infer certification from indexing.
 
