@@ -13,8 +13,8 @@ raw=(obs/"knowledge-graph-data.js").read_text(encoding="utf-8").strip()
 assert raw.startswith(prefix) and raw.endswith(";")
 graph=json.loads(raw[len(prefix):-1])
 nodes=graph["nodes"];edges=graph["edges"];ids=[n["id"] for n in nodes]
-assert len(nodes)==188,(len(nodes),188)
-assert len(edges)==452,(len(edges),452)
+assert len(nodes)==196,(len(nodes),196)
+assert len(edges)==474,(len(edges),474)
 assert len(ids)==len(set(ids))
 S=set(ids)
 assert all(e["from_id"] in S and e["to_id"] in S for e in edges)
@@ -25,6 +25,12 @@ assert graph["historical_indexed_theorem_paths"]==740
 assert graph["primary_hypothesis"].lower().find("coupled")>=0
 assert graph["pf_program"]["approved_deployment"] is False
 assert graph["conceptual_program"]["approved_deployment"] is False
+assert graph["ym_proof_interface"]["approved_deployment"] is False
+assert graph["ym_proof_interface"]["primary_gap_gate"]=="YM-UNIFORM-GAUGE-POINCARE"
+assert graph["ym_proof_interface"]["physical_3d_source_authenticated"] is False
+assert graph["ym_proof_interface"]["uniform_quantum_gap_proved"] is False
+assert any(n["id"]=="YM-GROUNDSTATE-DIRICHLET" and n["status"]=="finite" for n in nodes)
+assert any(n["id"]=="PF-CYCLOTOMIC-DELONE" and n["status"]=="conditional" for n in nodes)
 assert len(graph["conceptual_program"]["concept_ids"])==16
 assert graph["conceptual_program"]["primary_concept"]=="CON-2D3D-PROBLEM"
 assert all(any(n["id"]==cid for n in nodes) for cid in graph["conceptual_program"]["concept_ids"])
@@ -59,4 +65,4 @@ for path in ["index.html","README.md","MATHEMATICAL_PHYSICS_GUIDE.md","integrati
     assert "PF-G0" in s,path
 assert "754" in (obs/"index.html").read_text()
 assert (root/"docs/research/THEOREM_INDEX_CURRENT.md").is_file()
-print("PASS PF primary Atlas: 188 nodes, 452 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")
+print("PASS PF primary Atlas: 196 nodes, 474 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")

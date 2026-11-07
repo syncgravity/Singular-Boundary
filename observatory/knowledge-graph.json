@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.48-concepts",
-  "scope": "Concept-first reconstruction of author's 2D Conway-worm to higher-dimensional helical observation problem, with 34:55 as a conditional consequence of irrational golden-angle radial organization; source/kinematic/independent toy/quantum claims separated. No authenticated 3D Z5 observer or mass gap.",
+  "version": "v2.49-ym-proof",
+  "scope": "Yang–Mills mathematical proof priority: exact finite interacting-vacuum Poincaré criterion, arbitrary-incidence nonlinear Wilson locality, C5 3+2 quotient rank obstruction, and arithmetic Delone/Voronoi 3D candidate with explicit axial-period/source limits. All physical continuum existence/mass gap gates remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -6527,6 +6527,278 @@
       "importance": 4,
       "core": false,
       "route": null
+    },
+    {
+      "id": "YM-CELL-WILSON-LOCALITY",
+      "title": "Arbitrary-cell SU2 incidence-weighted Wilson-flow transfer",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For simple polygonal face holonomies with local weighted incidence A*, face sides≤M, and adjacent face centers at distance≤κh, nonlinear SU2 Wilson flow obeys weighted locality rate ≤A*M κ²L²h²exp(2Lκh). The cubic case recovers the earlier 32 coefficient. Classical spatial flow ONLY.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "YM-GROUNDSTATE-DIRICHLET",
+      "title": "Exact interacting SU2 ground-state Dirichlet-form identity",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P2",
+      "summary": "For true positive coupled Gauss SU2 vacuum Ω and H=Σα_e(-Δ_e)+V, the ground-state transform gives ⟨fΩ,(H−E0)fΩ⟩=Σα_e∫|∇_e f|²Ω²dHaar for all gauge-invariant f. No independence or scalar graph substitution.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "YM-UNIFORM-GAUGE-POINCARE",
+      "title": "Uniform interacting-vacuum gauge-invariant Poincaré inequality",
+      "kind": "work",
+      "status": "open",
+      "stage": "P3",
+      "summary": "Exactly equivalent at each finite regulator to a physical Hamiltonian gap: Varν(f)≤m*⁻¹Σα_e∫|∇_e f|²dν for ALL Gauss-invariant f, uniformly in h,R. Neither scalar graph spectra nor classical Wilson-flow locality establish it. Continuum OS theory also OPEN.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-C5-3D-QUOTIENT-RANK",
+      "title": "No C5-invariant real 3D subspace in diagonal Z5 quotient",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "The diagonal quotient carries two inequivalent real 2D C5 irreducibles, no invariant 3-plane. Retaining the trivial diagonal direction gives the exact alternative Ephys=1+2 and Einternal=2.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-Z5-3PLUS2-CANDIDATE",
+      "title": "Full-Z5 3+2 C5-equivariant physical projection and axial period",
+      "kind": "model",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "Use unquotiented Z5, physical trivial axial+parallel 2D, perpendicular 2D internal. Each basis link has physical length √(3/5), but d=(1,1,1,1,1) creates exact axial translation √5: coupled links yet not fully 3D aperiodic. Not source generator.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-3D-CUBICAL-NONMANIFOLD",
+      "title": "Naive projected Z5 cubical three-skeleton is non-manifold",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "Illustrative centered-decagon 903-site patch yields 2620 edges, 2810 square faces, 1360 elementary cubes; 1700 faces belong to >2 cubes (max six). ∂²=0 holds but projection is not a face-to-face physical 3D manifold cell complex.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-CYCLOTOMIC-DELONE",
+      "title": "Cyclotomic norm and rounding construct uniform 3D Delone/Voronoi cells",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "For C5 3+2 full-Z5 cut-project window W containing disk √5/2 and bounded radius Rw, site separation δ≥min(1/√5,1/(5Rw)) and covering radius≤√5/2. Scaled Voronoi cells have h-uniform in/out radius and bounded incidence. Axial direction periodic, source model unverified.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-VORONOI-HODGE-WEIGHTS",
+      "title": "Physical Voronoi SU2 action weights and Hodge/OS transfer",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "Voronoi 1-skeleton links are NOT original one-basis Z5 links. Need source-equivalence or declared new regulator, validated physical 3D cell/face Hodge weights, α_e and β_p normalization, and genuine quantum vacuum gauge Poincaré plus 4D OS continuum.",
+      "detail": "Research audit candidate / finite theorem under specified conditions. Does NOT close any original P0–P5/PF mass-gap or gravity continuum obligation.",
+      "checks": [
+        {
+          "label": "Source-authenticated PF physical SU2 regulator and uniform 4D continuum spectral proof",
+          "state": "open",
+          "note": "Finite geometric and rotor checks are not a nontrivial continuum Yang–Mills construction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finite SU2 incidence and exact interacting vacuum Poincaré; C5 3+2 Delone/Voronoi candidate",
+          "path": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-ym-incidence-and-poincare-proof-interface/research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "Yang-Mills",
+        "mass-gap",
+        "PF-primary",
+        "SU2",
+        "geometric-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -9693,6 +9965,160 @@
       "label": "reconstruction versus quotation",
       "kind": "conceptual-dependency",
       "status": "open"
+    },
+    {
+      "from_id": "PF-C5-3D-QUOTIENT-RANK",
+      "to_id": "PF-Z5-3PLUS2-CANDIDATE",
+      "label": "retain diagonal to make 3D invariant physical space",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-3PLUS2-CANDIDATE",
+      "to_id": "PF-3D-CUBICAL-NONMANIFOLD",
+      "label": "projected higher cells overlap",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-3PLUS2-CANDIDATE",
+      "to_id": "PF-CYCLOTOMIC-DELONE",
+      "label": "arithmetic 3+2 model set",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-CYCLOTOMIC-DELONE",
+      "to_id": "PF-VORONOI-HODGE-WEIGHTS",
+      "label": "geometric cellulation, quantum weights unresolved",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-3D-CUBICAL-NONMANIFOLD",
+      "to_id": "PF-CYCLOTOMIC-DELONE",
+      "label": "replace projected cubic cells with Voronoi dual",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-CYCLOTOMIC-DELONE",
+      "to_id": "PF-G1",
+      "label": "source-authenticated physical 3D refinement still open",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-Z5-SOURCE-GENERATOR",
+      "to_id": "PF-VORONOI-HODGE-WEIGHTS",
+      "label": "match actual original generator or distinguish candidate",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-VORONOI-HODGE-WEIGHTS",
+      "to_id": "PF-G2",
+      "label": "physically normalized original-link or Voronoi-link SU2",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-VORONOI-HODGE-WEIGHTS",
+      "to_id": "YM-CELL-WILSON-LOCALITY",
+      "label": "uniform face incidence and weights",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "YM-CELL-WILSON-LOCALITY",
+      "label": "existing cubic local-flow proof special case",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-CELL-WILSON-LOCALITY",
+      "to_id": "PF-G4",
+      "label": "classical locality not yet a quantum covariance inequality",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-GROUNDSTATE-DIRICHLET",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "label": "uniform all-test-function inequality necessary",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "M-CUBIC",
+      "to_id": "YM-GROUNDSTATE-DIRICHLET",
+      "label": "true cubic quantum vacuum control",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G2",
+      "to_id": "YM-GROUNDSTATE-DIRICHLET",
+      "label": "any finite Gauss original-link SU2 regulator",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-G3",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "label": "physical interacting spectral target",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "to_id": "P5",
+      "label": "requires distinct nontrivial continuum/OS reconstruction",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "to_id": "PF-G5",
+      "label": "finite-to-continuum spectral transfer still open",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-C5-3D-QUOTIENT-RANK",
+      "to_id": "PF-G0",
+      "label": "source physical dimension classification",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-3D-CUBICAL-NONMANIFOLD",
+      "to_id": "PF-G1",
+      "label": "non-overlapping three-cells required",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-VORONOI-HODGE-WEIGHTS",
+      "to_id": "P1",
+      "label": "Gauss, Hamiltonian and couplings needed",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-CELL-WILSON-LOCALITY",
+      "to_id": "P2",
+      "label": "flow doesn't imply positive-time vacuum tightness",
+      "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "YM-GROUNDSTATE-DIRICHLET",
+      "to_id": "P3",
+      "label": "quantum gap iff vacuum functional inequality",
+      "kind": "ym-proof-interface",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -9877,6 +10303,20 @@
     "new_result": "golden angle 34/55 and rational H3 5/8/13 Delaunay control",
     "source_model": "coupled Z5 source generator still unverified",
     "all_mass_gap_gates": "OPEN",
+    "approved_deployment": false
+  },
+  "ym_proof_interface": {
+    "status": "open",
+    "audit": "research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md",
+    "primary_gap_gate": "YM-UNIFORM-GAUGE-POINCARE",
+    "p0_geometry": "PF-C5-3D-QUOTIENT-RANK",
+    "p1_candidate": "PF-CYCLOTOMIC-DELONE",
+    "p1_remaining": "PF-VORONOI-HODGE-WEIGHTS",
+    "locality_control": "YM-CELL-WILSON-LOCALITY",
+    "finite_groundstate_transform": "YM-GROUNDSTATE-DIRICHLET",
+    "physical_3d_source_authenticated": false,
+    "uniform_quantum_gap_proved": false,
+    "nontrivial_4d_os_constructed": false,
     "approved_deployment": false
   }
 }

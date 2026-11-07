@@ -1,4 +1,10 @@
-# Research Observatory v2.48-concepts — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.49-ym-proof — Penrose–Fibonacci primary Proof Atlas
+
+## Yang–Mills proof interface: 3D regulator and interacting-vacuum Poincaré (2026-11-07)
+
+Priority is now **Yang–Mills 4D existence and physical mass gap**, not further 34:55 handedness forensics. The exact finite SU2 ground-state transform makes the all-test-function **Gauss-invariant weighted Poincaré inequality** the central finite-regulator gap condition: Var_{Ω²Haar}(f) ≤ m*⁻¹ Σα_e∫|∇_e f|² Ω² dHaar, with physical units uniform in h and R. Nonlinear SU2 weighted Wilson-flow locality extends from cubic incidence to any oriented polygonal 2-skeleton with bounded face sides M, weighted incidence A*, and face-center metric κh, but classical spatial locality is **not** the missing quantum gap inequality.
+
+A new exact C5 rank obstruction shows the diagonal-Z5 quotient (2+2) has no invariant 3D real physical subspace. The unquotiented 1+2 physical /2 internal split supplies a **new** C5-equivariant 3D *candidate* with one exact axial period; it is not fully 3D aperiodic. A 903-site toy projected 5D cubical three-skeleton has 1,700 square faces incident to >2 three-cubes and is not an ordinary 3D manifold mesh. Replacing the projected cells by **physical Voronoi cells** works geometrically for a compact C5 window containing an internal disk >√5/2: the cyclotomic norm gives δ≥min(1/√5,1/(5Rw)), nearest-integer rounding gives covering ≤√5/2, so the h-scaled Delone/Voronoi cells have uniform cell in/out-radii and local incidence. Genuine source identity, physical Hodge/face weights, nontrivial interacting Yang–Mills vacuum and OS continuum remain open. Full proof and Python controls: [Yang–Mills existence and mass-gap audit](../research/geometry/PF_YM_INCIDENCE_VORONOI_QUANTUM_POINCARE_2026_11_07.md) · [focused Yang–Mills proof map](yang-mills-proof.html). In the interactive Atlas choose **Yang–Mills proof gates**; 196 curated nodes / 474 edges with historical 188/452 and 754 source-index paths preserved, no gate promotions or Pages deployment.
 
 ## Concept-first historical reconstruction: 2D Conway → 3D observer → candidate 34:55 emergence (2026-11-07)
 
@@ -52,7 +58,7 @@ Under a common set of thirteen closed geometric Wilson-loop probes on any finite
 
 The Atlas now distinguishes **PF-G0** authenticated coupled-Z5 source, **PF-G1** genuine 3D spatial refinement, **PF-G2** Gauss-invariant SU(2), **PF-G3** matched physical spectra/covariance, **PF-G4** refinement-uniform geometric advantage, and **PF-G5** interacting 4D continuum/mass-gap bridge. Separately the scalar-only spectral no-go and the unverified Lorentzian mapping remain visible; neither is a solved mass gap or gravity result.
 
-**Graph inventory:** 188 curated nodes, 452 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
+**Graph inventory:** 196 curated nodes, 474 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
 
 ## Branch retirement and research preservation
 
@@ -60,7 +66,7 @@ The November 6 research consolidation was history-preserving. The **72 integrate
 
 ## Current Observatory coverage · 2026-11-06
 
-**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.48-concepts) has **188 curated mathematical-physics nodes and 452 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
+**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.49-ym-proof) has **196 curated mathematical-physics nodes and 474 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
 
 Run `python research/scripts/verify_theorem_index.py --repo .` and `python observatory/tools/sync_theorem_catalog.py --check` in the checked-out repository to validate the full source inventory and ensure the pages, static search catalog, and client Proof Atlas agree. These checks are enforced in the GitHub pull-request workflow. Adding a theorem requires updating the source-hashed registry, historical navigator appendices, and generated current/Observatory catalog; never infer certification from indexing.
 
