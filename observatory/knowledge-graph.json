@@ -5612,7 +5612,7 @@
     },
     {
       "id": "PF-HELICAL-LIFT-FREEDOM",
-      "title": "Planar Paper 3 circle does not determine 3D helical curvature or torsion",
+      "title": "Projected complex circle does not determine physical 3D helical curvature or torsion",
       "kind": "result",
       "status": "obstruction",
       "stage": "P0",
@@ -5748,7 +5748,7 @@
     },
     {
       "id": "PF-DOUBLE-SPIRAL-SOURCE",
-      "title": "Dissertation source: phyllotactic Fibonacci 34:55 double spiral",
+      "title": "Phyllotactic Fibonacci 34:55 double-spiral motif and source provenance",
       "kind": "result",
       "status": "conditional",
       "stage": "P0",
