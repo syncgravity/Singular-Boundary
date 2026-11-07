@@ -1,0 +1,158 @@
+{
+  "schema": "singular-boundary.concept-index.v1",
+  "version": "2026-11-07-reconstruction",
+  "purpose": "Index physical and mathematical concepts before document/section citations; preserve evidence level and operator identity.",
+  "governing_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
+  "historical_intent": "Extension of 2D Conway-worm observation to a 3D helical observer; 34:55 sought as consequence; full conversation unavailable.",
+  "concepts": [
+    {
+      "id": "CON-2D3D-PROBLEM",
+      "title": "Conway-worm observation: planar chains to higher-dimensional observer",
+      "evidence": "research-intent",
+      "status": "open",
+      "claim": "The author's recovered problem: extend how five planar Fibonacci/Conway-worm families are OBSERVED into a 3D mechanism; a literal 3D worm embedding is not a prerequisite.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-Z5-PROJECTION",
+      "title": "Coupled cyclotomic Z5 projections and physical/source quotient",
+      "evidence": "source-definition",
+      "status": "open",
+      "claim": "z1,z2 are C5 projections of Z5. Authentic slice-versus-quotient, acceptance parameters and coupled generator still require source identity.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-DECAGON-WINDOW",
+      "title": "Acceptance window and complementary hidden domain",
+      "evidence": "source-definition",
+      "status": "conditional",
+      "claim": "A regular decagonal complementary-space W determines projection acceptance; exact physical shifts/window scale and phason must be recovered.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-FIVE-BANDS",
+      "title": "Five neighbour-failure families and pair-overlap geometry",
+      "evidence": "source-reported",
+      "status": "conditional",
+      "claim": "Five b_j=1_{W}(z)1_{outside W}(z+e_j⊥) encode missing neighbours. Source reports q4/q2=φ/2 and degree partitions; definitions/numerical reproduction unverified.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-CONWAY-FAMILIES",
+      "title": "Five two-dimensional Fibonacci/Conway-worm chain families",
+      "evidence": "source-reported",
+      "status": "conditional",
+      "claim": "Five planar Fibonacci path families motivate the observer mechanism; exact vertex-to-family labels and corresponding physical pathways remain absent.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-J-ORIENTATION",
+      "title": "Complementary-space complex structure J and reflection",
+      "evidence": "algebraic",
+      "status": "finite",
+      "claim": "On an oriented 2-plane J²=−I and reflection sends J→−J. A chosen complex orientation is not by itself a physical branch-selection law.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-3D-OBSERVER",
+      "title": "Observer trajectory, longitudinal lift, clock and metric",
+      "evidence": "historical-hypothesis",
+      "status": "open",
+      "claim": "Helical observer is a higher-dimensional observation METHOD, not necessarily a literal Conway worm. Projected constant-radius complex circle does not supply unique 3D spatial path.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-HELICAL-PITCH",
+      "title": "Finite Fibonacci-pitch sampling and temporal frequency claim",
+      "evidence": "source-reported",
+      "status": "conditional",
+      "claim": "H1/H2/H3 pitches 3/13,5/13,8/13, m10→3:5:8 continuous kinematic sampling; one-step sampling repeats in 13 phases and aliases frequencies.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-GOLDEN-PARASTICHY",
+      "title": "Golden-angle irrational rotation and signed Fibonacci neighbor offsets",
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "For α=φ⁻², F_k α−F_{k−2}=(−1)^kφ⁻ᵏ. F9=34 and F10=55 have tiny opposite winding; radial annulus Delaunay reveals these offsets.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-34-55-EMERGENCE",
+      "title": "34:55 spiral arms as a conditional consequence—not an input",
+      "evidence": "reconstruction",
+      "status": "conditional",
+      "claim": "Synthetic radial golden-angle annulus has Delaunay neighbor steps 34/55/89, while rational 8/13 shows 5/8/13. No authenticated Z5 worm→3D observer→arm derivation yet.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-STATIC-FIELD",
+      "title": "Static hidden-domain scalar and reported observer CV",
+      "evidence": "source-reported",
+      "status": "conditional",
+      "claim": "Source Λ_eff related to perpendicular-window nearest-face/degree field; reports bulk CV~78% and constant-radius helix CV~3–5%. Original generator/units and exact field still unverified.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-ORDERED-ENCOUNTERS",
+      "title": "Directed five-family failure-band event word",
+      "evidence": "proposed-test",
+      "status": "open",
+      "claim": "Path γ defines time-ordered 5-bit events b_j(γ_t), enabling reflection-odd lagged family-transition statistics and symmetric/mirrored controls.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-GAUGE-COVARIANCE",
+      "title": "Closed Wilson probes and genuine interacting observer covariance",
+      "evidence": "historical-prototype",
+      "status": "open",
+      "claim": "Stage-30 quotient-safe projected kernels and Stage-31 synthetic Wilson-loop evaluators are preserved historical prototypes. Actual per-anchor PF SU2 links and true interacting vacuum missing.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-CONTINUUM-TRANSFER",
+      "title": "Physical 3D, Yang–Mills gap and gravitation proof obligations",
+      "evidence": "open-proof",
+      "status": "open",
+      "claim": "Require a genuine refining three-extended-dimensional complex, matched gauge spectrum, h/R uniform covariance, interacting continuum reconstruction; gravity UV is separate.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-HISTORY-PROVENANCE",
+      "title": "Historical reconstruction and evidence-tier governance",
+      "evidence": "research-record",
+      "status": "open",
+      "claim": "Oct 26 summaries preserve the observation-method motivation and Stage30 projection. Missing complete conversation and original generator not recovered; distinguish sourced claims, algebra, toy results and proposals.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-SPECTRAL-CLAIMS",
+      "title": "Spectral dimensional, zeta, boundary and cavity predictions",
+      "evidence": "source-reported",
+      "status": "conditional",
+      "claim": "Dissertation reports spectral-dimension reductions, ζ′(0) QC/periodic~0.646±0.006, and cavity observables. These are source claims; scalar spectra do not certify interacting YM mass gap or gravity.",
+      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    }
+  ],
+  "independent_controls": {
+    "annulus": "point indices 400–800 of N=1600",
+    "golden_angle": [
+      34,
+      55,
+      89
+    ],
+    "irrational_opposite": [
+      34,
+      55,
+      89
+    ],
+    "rational_8_13": [
+      5,
+      8,
+      13
+    ],
+    "phase_shuffled": "no coherent Fibonacci hierarchy",
+    "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
+  },
+  "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN"
+}

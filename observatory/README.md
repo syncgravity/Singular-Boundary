@@ -1,4 +1,14 @@
-# Research Observatory v2.47-research — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.48-concepts — Penrose–Fibonacci primary Proof Atlas
+
+## Concept-first historical reconstruction: 2D Conway → 3D observer → candidate 34:55 emergence (2026-11-07)
+
+The user's recovered original research problem was **how to extend the observation of planar Conway-worm Fibonacci chains to 3D**; the helical observer was the methodological novelty, and **34:55 arm counts were sought as a consequence**, not a premise. The dissertation presents 34:55 phyllotaxis in its opening analogy but does not supply a graph-verified 3D derivation. Earlier 26 October Stage30 historical records identify a quotient-safe higher-dimensional observer kernel and closed-loop Wilson functional; the complete missing conversation and original generator were not recovered.
+
+A **new, independently controlled reconstruction** demonstrates one possible consequence: for golden-angle radial points, the exact identity F_k φ⁻²−F_(k−2)=(−1)^kφ⁻ᵏ generates opposite signed 34/55 index steps. In a Delaunay annulus [400,800) with N=1600 the dominant steps are 34,55,89, whereas *literal rational H3 pitch 8/13* produces 5,8,13. This is a geometric toy showing **how** an emergent Fibonacci arm-count mechanism could work, not confirmation that the source's coupled-Z5 3D observer generates it. The golden-angle radial construction differs from Paper 3's constant-radius circle and requires a physical longitudinal lift and an additional rule.
+
+The **[concept-first Observatory Atlas](conceptual-atlas.html)** and [machine-readable concept registry](concepts/helical-observer-concept-index.json) index statements by mechanism and evidence status, not by document sections. The main Proof Atlas now has a dedicated default **Conway → helical** lens, with existing PF and cubic controls preserved. A candidate five-family directed failure-band word and reflection-odd encounter statistic are defined as new **OPEN tests**; source band normalizations, exact worm labels and genuine interacting PF SU2 remain unavailable. The J-operator and conformal-boundary manuscripts give differing nominal band widths (~0.062 R_W vs ~0.098 R_W), which must be explicitly reconciled before any physical claim.
+
+The independent audit, 37 phyllotaxis tests and 4,001 symbolic parity tests are in [the full conceptual reconstruction](../research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md). **All proof and physical continuum gates remain OPEN.**
 
 ## Actual Fibonacci observer handedness · physical orientation selection still OPEN (2026-11-07)
 
@@ -42,7 +52,7 @@ Under a common set of thirteen closed geometric Wilson-loop probes on any finite
 
 The Atlas now distinguishes **PF-G0** authenticated coupled-Z5 source, **PF-G1** genuine 3D spatial refinement, **PF-G2** Gauss-invariant SU(2), **PF-G3** matched physical spectra/covariance, **PF-G4** refinement-uniform geometric advantage, and **PF-G5** interacting 4D continuum/mass-gap bridge. Separately the scalar-only spectral no-go and the unverified Lorentzian mapping remain visible; neither is a solved mass gap or gravity result.
 
-**Graph inventory:** 172 curated nodes, 417 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
+**Graph inventory:** 188 curated nodes, 452 typed relationships (historical 139/314 nodes/edges retained). **Theorem source inventory:** still 754 indexed paths, of which 740 are the historical baseline; indexing is not certification. **All P0–P5 and T0–T5 continuum gates remain OPEN.** No public deployment was triggered.
 
 ## Branch retirement and research preservation
 
@@ -50,7 +60,7 @@ The November 6 research consolidation was history-preserving. The **72 integrate
 
 ## Current Observatory coverage · 2026-11-06
 
-**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.47-research) has **172 curated mathematical-physics nodes and 417 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
+**754 of 754** tracked source theorems are now indexed in the [live searchable Observatory](index.html), the [complete current theorem navigator](../docs/research/THEOREM_INDEX_CURRENT.md), and the [Git-blob-hashed source registry](../docs/research/THEOREM_INDEX_LIVE.json). The **740-record** count is the November 4 **historical discovery baseline**, not the current source count. The Observatory Proof Atlas (v2.48-concepts) has **188 curated mathematical-physics nodes and 452 typed edges**: these are not 754 independently accepted results. All six P0–P5 continuum gates, all Penrose transfer obligations, and the separate gravitational UV goal remain **OPEN**.
 
 Run `python research/scripts/verify_theorem_index.py --repo .` and `python observatory/tools/sync_theorem_catalog.py --check` in the checked-out repository to validate the full source inventory and ensure the pages, static search catalog, and client Proof Atlas agree. These checks are enforced in the GitHub pull-request workflow. Adding a theorem requires updating the source-hashed registry, historical navigator appendices, and generated current/Observatory catalog; never infer certification from indexing.
 

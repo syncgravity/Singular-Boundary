@@ -45,9 +45,39 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research'),'unexpected graph version')
- if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research'):
-  check(len(n)==(172 if g['version']=='v2.47-research' else (168 if g['version']=='v2.46-research' else (163 if g['version']=='v2.45-research' else (159 if g['version']=='v2.44-research' else (156 if g['version']=='v2.43-research' else 148))))) and len(e)==(417 if g['version']=='v2.47-research' else (403 if g['version']=='v2.46-research' else (388 if g['version']=='v2.45-research' else (374 if g['version']=='v2.44-research' else (362 if g['version']=='v2.43-research' else 342))))),'PF-primary graph counts')\n  if g['version']=='v2.47-research':\n   check(node['PF-ARM-MIRROR-NOGO']['status']=='conditional','no symmetric-patch 34:55 intrinsic selector')\n   check(node['PF-J-PROJECTED-ORIENTATION']['status']=='conditional','chosen J is not dynamical selection')\n   check(node['PF-OBSERVER-MARKED-GAUGE']['status']=='conditional','marked interacting gauge parity theorem')\n   check(node['PF-OBSERVER-SELECTION-LAW']['status']=='open','actual physical handedness selection remains OPEN')\n  if g['version'] in ('v2.46-research','v2.47-research'):\n   check(node['PF-Z5-SLICE-OBSTRUCTION']['status']=='obstruction','strict fixed-sum/basis-edge conflict visible')\n   check(node['PF-Z5-QUOTIENT-CANDIDATE']['status']=='conditional','diagonal quotient is a candidate only')\n   check(node['PF-DOUBLE-SPIRAL-SOURCE']['status']=='conditional','34:55 dissertation source not physical 3D graph proof')\n   check(node['PF-DIHEDRAL-PARITY-NULL']['status']=='conditional','parity conditional null retained')\n   check(node['PF-Z5-SOURCE-GENERATOR']['status']=='open','original generator remains OPEN')\n  if g['version'] in ('v2.45-research','v2.46-research','v2.47-research'):\n   check(node['PF-SINGLE-HARMONIC-NOGO']['status']=='obstruction','m10 alone cannot yield chirality')\n   check(node['PF-HARMONIC-TRIAD']['status']=='finite','two-harmonic identity finite only')\n   check(node['PF-SU2-ROTOR-NULL']['status']=='finite','non-Penrose quantum false-positive recorded')\n   check(node['PF-HELICAL-LIFT-FREEDOM']['status']=='obstruction','physical helix not specified by circle')\n  if g['version'] in ('v2.44-research','v2.45-research','v2.46-research','v2.47-research'):\n   check(node['PF-Z13-ALIAS']['status']=='obstruction','sampling alias caveat visible')\n   check(node['PF-GAUGE-TWOPOINT']['status']=='conditional','true interacting SU2 two-point scope conditional')\n   check(node['PF-CHIRAL-NULL']['status']=='open','chiral falsification still open')\n  if g['version'] in ('v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research'):\n   check(all('PF-H'+str(i) in node for i in range(7)),'Paper 3 helical observer path missing')\n   check(node['PF-H1']['status']=='open' and node['PF-H3']['status']=='conditional','geometry and frequencies properly scoped')
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts'):
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452)}
+  check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
+  if g['version']=='v2.48-concepts':
+   check(len(g.get('conceptual_program',{}).get('concept_ids',[]))==16,'16 conceptual nodes')
+   check(g['conceptual_program']['primary_concept']=='CON-2D3D-PROBLEM','historical 2D→3D observation question')
+   check(node['CON-34-55-EMERGENCE']['status']=='conditional','synthetic 34:55 not source-certified')
+   check(node['CON-3D-OBSERVER']['status']=='open','physical 3D observer OPEN')
+   check((root/'conceptual-atlas.html').is_file(),'concept-first atlas exists')
+  if g['version'] in ('v2.47-research','v2.48-concepts'):
+   check(node['PF-ARM-MIRROR-NOGO']['status']=='conditional','no symmetric-patch 34:55 intrinsic selector')
+   check(node['PF-J-PROJECTED-ORIENTATION']['status']=='conditional','chosen J is not dynamical selection')
+   check(node['PF-OBSERVER-MARKED-GAUGE']['status']=='conditional','marked interacting gauge parity theorem')
+   check(node['PF-OBSERVER-SELECTION-LAW']['status']=='open','actual physical handedness selection remains OPEN')
+  if g['version'] in ('v2.46-research','v2.47-research','v2.48-concepts'):
+   check(node['PF-Z5-SLICE-OBSTRUCTION']['status']=='obstruction','strict fixed-sum/basis-edge conflict visible')
+   check(node['PF-Z5-QUOTIENT-CANDIDATE']['status']=='conditional','diagonal quotient is a candidate only')
+   check(node['PF-DOUBLE-SPIRAL-SOURCE']['status']=='conditional','34:55 dissertation source not physical 3D graph proof')
+   check(node['PF-DIHEDRAL-PARITY-NULL']['status']=='conditional','parity conditional null retained')
+   check(node['PF-Z5-SOURCE-GENERATOR']['status']=='open','original generator remains OPEN')
+  if g['version'] in ('v2.45-research','v2.46-research','v2.47-research','v2.48-concepts'):
+   check(node['PF-SINGLE-HARMONIC-NOGO']['status']=='obstruction','m10 alone cannot yield chirality')
+   check(node['PF-HARMONIC-TRIAD']['status']=='finite','two-harmonic identity finite only')
+   check(node['PF-SU2-ROTOR-NULL']['status']=='finite','non-Penrose quantum false-positive recorded')
+   check(node['PF-HELICAL-LIFT-FREEDOM']['status']=='obstruction','physical helix not specified by circle')
+  if g['version'] in ('v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts'):
+   check(node['PF-Z13-ALIAS']['status']=='obstruction','sampling alias caveat visible')
+   check(node['PF-GAUGE-TWOPOINT']['status']=='conditional','true interacting SU2 two-point scope conditional')
+   check(node['PF-CHIRAL-NULL']['status']=='open','chiral falsification still open')
+  if g['version'] in ('v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts'):
+   check(all('PF-H'+str(i) in node for i in range(7)),'Paper 3 helical observer path missing')
+   check(node['PF-H1']['status']=='open' and node['PF-H3']['status']=='conditional','geometry and frequencies properly scoped')
   check(g.get('pf_program',{}).get('stages')==['PF-G0','PF-G1','PF-G2','PF-G3','PF-G4','PF-G5'],'PF route metadata')
   check(all(node['PF-G'+str(i)]['status']=='open' for i in range(6)),'PF source-to-continuum gates open')
   check(node['PF-SCALAR-NOGO']['status']=='obstruction','scalar Laplacian limitation explicit')

@@ -13,8 +13,8 @@ raw=(obs/"knowledge-graph-data.js").read_text(encoding="utf-8").strip()
 assert raw.startswith(prefix) and raw.endswith(";")
 graph=json.loads(raw[len(prefix):-1])
 nodes=graph["nodes"];edges=graph["edges"];ids=[n["id"] for n in nodes]
-assert len(nodes)==172,(len(nodes),172)
-assert len(edges)==417,(len(edges),417)
+assert len(nodes)==188,(len(nodes),188)
+assert len(edges)==452,(len(edges),452)
 assert len(ids)==len(set(ids))
 S=set(ids)
 assert all(e["from_id"] in S and e["to_id"] in S for e in edges)
@@ -24,8 +24,24 @@ assert graph["indexed_theorem_paths"]==754
 assert graph["historical_indexed_theorem_paths"]==740
 assert graph["primary_hypothesis"].lower().find("coupled")>=0
 assert graph["pf_program"]["approved_deployment"] is False
+assert graph["conceptual_program"]["approved_deployment"] is False
+assert len(graph["conceptual_program"]["concept_ids"])==16
+assert graph["conceptual_program"]["primary_concept"]=="CON-2D3D-PROBLEM"
+assert all(any(n["id"]==cid for n in nodes) for cid in graph["conceptual_program"]["concept_ids"])
 assert graph["pf_program"]["stages"]==[f"PF-G{i}" for i in range(6)]
-assert graph["pf_program"]["control_model"]=="M-CUBIC"\nassert graph["pf_program"]["helical_observer"]["next_test"]["id"]=="PF-HARMONIC-TRIAD"\nassert graph["pf_program"]["source_identity"]["next_gate"]=="PF-Z5-SOURCE-GENERATOR"\nassert graph["pf_program"]["orientation_selection"]["physical_selection_gate"]=="PF-OBSERVER-SELECTION-LAW"\nassert any(n["id"]=="PF-OBSERVER-MARKED-GAUGE" and n["status"]=="conditional" for n in nodes)\nassert any(n["id"]=="PF-Z5-SLICE-OBSTRUCTION" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-DOUBLE-SPIRAL-SOURCE" and n["status"]=="conditional" for n in nodes)\nassert any(n["id"]=="PF-SINGLE-HARMONIC-NOGO" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-SU2-ROTOR-NULL" and n["status"]=="finite" for n in nodes)\nassert any(n["id"]=="PF-Z13-ALIAS" and n["status"]=="obstruction" for n in nodes)\nassert any(n["id"]=="PF-GAUGE-TWOPOINT" and n["status"]=="conditional" for n in nodes)\nassert graph["pf_program"]["helical_observer"]["stages"]==[f"PF-H{i}" for i in range(7)]\nassert all(next(n for n in nodes if n["id"]==f"PF-H{i}")["status"] in ("open","conditional") for i in range(7))
+assert graph["pf_program"]["control_model"]=="M-CUBIC"
+assert graph["pf_program"]["helical_observer"]["next_test"]["id"]=="PF-HARMONIC-TRIAD"
+assert graph["pf_program"]["source_identity"]["next_gate"]=="PF-Z5-SOURCE-GENERATOR"
+assert graph["pf_program"]["orientation_selection"]["physical_selection_gate"]=="PF-OBSERVER-SELECTION-LAW"
+assert any(n["id"]=="PF-OBSERVER-MARKED-GAUGE" and n["status"]=="conditional" for n in nodes)
+assert any(n["id"]=="PF-Z5-SLICE-OBSTRUCTION" and n["status"]=="obstruction" for n in nodes)
+assert any(n["id"]=="PF-DOUBLE-SPIRAL-SOURCE" and n["status"]=="conditional" for n in nodes)
+assert any(n["id"]=="PF-SINGLE-HARMONIC-NOGO" and n["status"]=="obstruction" for n in nodes)
+assert any(n["id"]=="PF-SU2-ROTOR-NULL" and n["status"]=="finite" for n in nodes)
+assert any(n["id"]=="PF-Z13-ALIAS" and n["status"]=="obstruction" for n in nodes)
+assert any(n["id"]=="PF-GAUGE-TWOPOINT" and n["status"]=="conditional" for n in nodes)
+assert graph["pf_program"]["helical_observer"]["stages"]==[f"PF-H{i}" for i in range(7)]
+assert all(next(n for n in nodes if n["id"]==f"PF-H{i}")["status"] in ("open","conditional") for i in range(7))
 assert sum(n["kind"]=="dataset" for n in nodes)>=26
 assert all(next(n for n in nodes if n["id"]==f"PF-G{i}")["status"]=="open" for i in range(6))
 for a,b in zip(graph["pf_program"]["stages"],graph["pf_program"]["stages"][1:]):
@@ -33,13 +49,14 @@ for a,b in zip(graph["pf_program"]["stages"],graph["pf_program"]["stages"][1:]):
 for t in ["penrose-program.html","data-view=\"pf\"","data-view=\"bridge\""]:
     assert t in (obs/"graph.html").read_text(encoding="utf-8") if t!="penrose-program.html" else (obs/"penrose-program.html").is_file()
 app=(obs/"graph-app.js").read_text(encoding="utf-8")
-assert "let view='pf'" in app
-assert "selectNode('PF-G0')" in app
+assert "let view='concepts'" in app
+assert "selectNode('CON-2D3D-PROBLEM')" in app
 assert "PF-G0" in app and "PF-G5" in app
+assert "CON-34-55-EMERGENCE" in app
 for path in ["index.html","README.md","MATHEMATICAL_PHYSICS_GUIDE.md","integration.html"]:
     s=(obs/path).read_text(encoding="utf-8")
     assert "penrose-program.html" in s,path
     assert "PF-G0" in s,path
 assert "754" in (obs/"index.html").read_text()
 assert (root/"docs/research/THEOREM_INDEX_CURRENT.md").is_file()
-print("PASS PF primary Atlas: 172 nodes, 417 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")
+print("PASS PF primary Atlas: 188 nodes, 452 edges, 754 indexed paths; 6 canonical YM gates OPEN; PF-G0..G5 routed")
