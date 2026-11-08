@@ -1,27 +1,27 @@
 {
   "date": "2026-11-07",
-  "revision": 2,
-  "supersedes": "PF_I2_PENTAGRID_GENERATOR_SOURCE_AUDIT_2026_11_07.zip (revision 1; incorrectly presupposed extra Paper2 bonds)",
+  "revision": 3,
+  "supersedes": "PF-I2 revision 2, adding nearest-basis equality counts to evidence JSON; original source claims otherwise unchanged.",
   "source_tar": "Sharpe_dissertation_v10.7.tar.gz",
   "paper1_pdf_sha256": "7c0585fa990bb2a762c869665287835bbdb6e07edeb55e9adfe54fe84f9eddea",
   "paper2_pdf_sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
   "certification": "Paper1 P3 source-equation reconstruction and conditional same-accepted-vertex nearest-neighbour equality; Paper2 graph identity/numerical generator unverified",
   "files": {
     "PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md": {
-      "sha256": "8948fb052c09c528e288d674a1f77f8a84f48871f360bf9ef65c693c22521b89",
-      "bytes": 11955
+      "bytes": 11955,
+      "sha256": "8948fb052c09c528e288d674a1f77f8a84f48871f360bf9ef65c693c22521b89"
     },
     "verify_pf_i2_pentagrid.py": {
-      "sha256": "a5aa6085ad53dcbcf4525d43d97cc737684d3bf0d7bca352f1719c4d39137a84",
-      "bytes": 11709
+      "bytes": 11868,
+      "sha256": "5cf1ca9a0e1dc16fab673634f819129d52319a4c198b4a17979b7d892f6d5baf"
     },
     "PF_I2_PENTAGRID_EVIDENCE_2026_11_07.json": {
-      "sha256": "9294119fe92239587a7615fd83027308f47d12b8b1765fbd1b2ba8553591c85a",
-      "bytes": 1848
+      "bytes": 1960,
+      "sha256": "50c65b739da78d0e2ab09fc1901e605ccdef6fb1001ac778e7f496765f3d0c6f"
     },
     "PF_I2_LARGER_PATCH_CONTROL_2026_11_07.json": {
-      "sha256": "5d43d743a751164f2191e761209d6bf89b5234d465f9ed6ffd73b6d6aa3ac3e3",
-      "bytes": 1424
+      "bytes": 1537,
+      "sha256": "c90858637944e7a85c7416ef4bfd5ee09bce0384aaf2e8c64946aa3458ab5f16"
     }
   }
 }
