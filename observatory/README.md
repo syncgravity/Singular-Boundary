@@ -1,4 +1,8 @@
-# Research Observatory v2.60-pf-i7-supplemental — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.61-unpublished-source-reference — Penrose–Fibonacci primary Proof Atlas
+
+## Unpublished dissertation — working reference, not proof authority (2026-11-07)
+
+The author has confirmed that the dissertation material is **unpublished, provisional and voluminous**. It is to be **extracted and referenced**, not installed as a canonical final derivation. An SHA-256 pinned **eight-PDF** corpus register (23-page March 2026 synthesis, five technical draft PDFs, two experimental designs), **24 source-qualified claims**, **11 source-identified open questions**, page-segmented text and a content-first intake protocol have been independently extracted and privately saved in Library: `/The Singular Boundary/Reference Corpus/Unpublished Dissertation — March 2026`. The repository stores **status and hashes only** for this checkpoint; unpublished verbatim draft text and source-claim tables have not been committed publicly. **Source assertion, computational source implementation, independent mathematical verification and active proof status must remain distinct**. Original manuscript numbering has no evidentiary ordering significance. Observatory **v2.61-unpublished-source-reference**, 227 nodes / 552 links / 754 historical theorem-source paths unchanged; all continuum proof gates **OPEN**.
 
 ## PF-I7 supplementary author-source and Z6 audit (2026-11-07)
 
