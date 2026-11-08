@@ -1,0 +1,1088 @@
+{
+  "conditional_gluing_comparison": {
+    "OS_physical_theory_proved": false,
+    "Yang_Mills_gap_proved": false,
+    "antisymmetric_character_test_Q_cross_swap": -2.847663067739003,
+    "antisymmetric_character_test_Q_matched": 2.847663067739003,
+    "cross_swapped_seam_kernel_min_eigenvalue": -79.66629458314354,
+    "doubled_side_interacting_matched_seam_min_eigenvalue": 0.16493212032690652,
+    "exact_continuous_Haar_antisymmetric_character_Q_matched": 1.0572246085319947,
+    "exact_continuous_Haar_antisymmetric_character_Q_swap": -1.0572246085319947,
+    "lambda_auxiliary_local_side_commutator": 0.4,
+    "reason": "Tensor heat kernel H_t\u2297H_t is positive; right composition by permutation swap has negative eigenvalue on antisymmetric character \u03c7(U1)-\u03c7(U2); conjugation by positive within-side commutator weights preserves positivity of matched seam.",
+    "sample_quaternions": 5,
+    "seed": 20261108,
+    "source_global_theta_supplied": false,
+    "t_auxiliary": 0.85,
+    "tensor_states": 25,
+    "two_face_matched_seam_kernel_min_eigenvalue": 0.17132321535800585
+  },
+  "date": "2026-11-08",
+  "family_type_graph": {
+    "conclusion": "No global binary assignment to the ten rhombus direction-types can make every transverse family pair cross the two classes.",
+    "exhibited_odd_family_cycle": [
+      "0-4",
+      "2-3",
+      "0-1",
+      "3-4",
+      "1-2"
+    ],
+    "explicit_three_coloring": {
+      "0-1": 0,
+      "0-2": 0,
+      "0-3": 0,
+      "0-4": 0,
+      "1-2": 1,
+      "1-3": 1,
+      "1-4": 1,
+      "2-3": 2,
+      "2-4": 2,
+      "3-4": 2
+    },
+    "family_graph_chromatic_number_exactly": 3,
+    "family_transverse_type_edges": 15,
+    "has_type_triangles": false,
+    "known_graph": "Kneser KG(5,2), Petersen graph",
+    "non_bipartite": true,
+    "type_degrees": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "types": [
+      "0-1",
+      "0-2",
+      "0-3",
+      "0-4",
+      "1-2",
+      "1-3",
+      "1-4",
+      "2-3",
+      "2-4",
+      "3-4"
+    ]
+  },
+  "global_physical_OS_positive": false,
+  "open_gates": [
+    "No global source-derived reflection or time",
+    "No source-selected heat time or seam matching",
+    "No proof of nontrivial four-dimensional interacting continuum Yang-Mills",
+    "No uniform physical mass-gap lower bound"
+  ],
+  "physical_Yang_Mills_gap_proved": false,
+  "schema": "singular-boundary.pf-i13.global-gluing-conditional.v1",
+  "source_derived_2plus2_action": false,
+  "source_derived_temporal_evolution": false,
+  "source_scope": "Unpublished exact source finite rhombus geometry, not an assumed physical cubic time.",
+  "three_source_or_eight_source_tests": [
+    {
+      "Ngrid": 7,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 1468,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 207,
+          "2": 568,
+          "3": 559,
+          "4": 216
+        },
+        "original_vertices": 1550,
+        "reflected_height_histogram": {
+          "1": 216,
+          "2": 559,
+          "3": 568,
+          "4": 207
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 1550,
+        "reflected_vertices_accepted_under_same_gamma": 1422,
+        "source_Ngrid": 7,
+        "source_faces": 1468
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.6178322837255552,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 908,
+          "A to B": 929,
+          "B to A": 935,
+          "B to B": 245
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 3017,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 1864,
+        "source_hopping_types_unchanged": 1153
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          5,
+          56,
+          0,
+          57,
+          55
+        ],
+        "faces": 1468,
+        "isolated_face_count": 0,
+        "max_component_face_count": 1468,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          56,
+          5,
+          55,
+          57
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 7,
+        "source_face_SHA256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 3093
+      }
+    },
+    {
+      "Ngrid": 10,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 2886,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 424,
+          "2": 1098,
+          "3": 1105,
+          "4": 415
+        },
+        "original_vertices": 3042,
+        "reflected_height_histogram": {
+          "1": 415,
+          "2": 1105,
+          "3": 1098,
+          "4": 424
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 3042,
+        "reflected_vertices_accepted_under_same_gamma": 2732,
+        "source_Ngrid": 10,
+        "source_faces": 2886
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.653281592711321,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 1710,
+          "A to B": 1934,
+          "B to A": 1938,
+          "B to B": 345
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 5927,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 3872,
+        "source_hopping_types_unchanged": 2055
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          16,
+          6,
+          15,
+          8,
+          13
+        ],
+        "faces": 2886,
+        "isolated_face_count": 0,
+        "max_component_face_count": 2886,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          2,
+          76,
+          7,
+          75,
+          77
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 10,
+        "source_face_SHA256": "ead8334adc6ceed6b86a588a0779505619b806f80772dc8171202ff7a3a10c8f",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "8bd4ed73f684b2c82f48f8fffc5454850565bd66a67643ad555bc58bf75e0fee",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 6157
+      }
+    },
+    {
+      "Ngrid": 12,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 4145,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 611,
+          "2": 1546,
+          "3": 1575,
+          "4": 592
+        },
+        "original_vertices": 4324,
+        "reflected_height_histogram": {
+          "1": 592,
+          "2": 1575,
+          "3": 1546,
+          "4": 611
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 4324,
+        "reflected_vertices_accepted_under_same_gamma": 3852,
+        "source_Ngrid": 12,
+        "source_faces": 4145
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.6503306565895135,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 2542,
+          "A to B": 2758,
+          "B to A": 2749,
+          "B to B": 419
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 8468,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 5507,
+        "source_hopping_types_unchanged": 2961
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          15,
+          18,
+          12,
+          0,
+          17,
+          22,
+          24
+        ],
+        "faces": 4145,
+        "isolated_face_count": 0,
+        "max_component_face_count": 4145,
+        "odd_cycle_length": 7,
+        "physical_five_cycle_face_indices": [
+          1,
+          39,
+          40,
+          30,
+          42
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 12,
+        "source_face_SHA256": "43df6235aa1b87207c8ff518a0d088617b6aae87c173aa1d7b774264d376129a",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "3f48224921356ce8e92adbc1e035ca417fcabf7ed55c7977ae20b310dd22e464",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 8890
+      }
+    },
+    {
+      "Ngrid": 15,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 6800,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 980,
+          "2": 2499,
+          "3": 2566,
+          "4": 935
+        },
+        "original_vertices": 6980,
+        "reflected_height_histogram": {
+          "1": 935,
+          "2": 2566,
+          "3": 2499,
+          "4": 980
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 6980,
+        "reflected_vertices_accepted_under_same_gamma": 6262,
+        "source_Ngrid": 15,
+        "source_faces": 6800
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.6939545685463386,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 3712,
+          "A to B": 4786,
+          "B to A": 4776,
+          "B to B": 505
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 13779,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 9562,
+        "source_hopping_types_unchanged": 4217
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 7,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          1,
+          4,
+          0,
+          7,
+          6
+        ],
+        "faces": 6800,
+        "isolated_face_count": 0,
+        "max_component_face_count": 6788,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          4,
+          1,
+          6,
+          7
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "source_Ngrid": 15,
+        "source_face_SHA256": "d8e2bfb1cff40caf9b76ec239543b5b667b7e5f98dda6bf41b2696cd931e1b42",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "55d1ad6896d5f90cfb81ebd9ae0113fe50ff7657ec14cd2ea58ef765ed015efd",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 14559
+      }
+    },
+    {
+      "Ngrid": 18,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 9646,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 1405,
+          "2": 3551,
+          "3": 3646,
+          "4": 1348
+        },
+        "original_vertices": 9950,
+        "reflected_height_histogram": {
+          "1": 1348,
+          "2": 3646,
+          "3": 3551,
+          "4": 1405
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 9950,
+        "reflected_vertices_accepted_under_same_gamma": 9026,
+        "source_Ngrid": 18,
+        "source_faces": 9646
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.7033124074924718,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 5198,
+          "A to B": 6890,
+          "B to A": 6890,
+          "B to B": 615
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 19593,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 13780,
+        "source_hopping_types_unchanged": 5813
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 11,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          29,
+          31,
+          0,
+          32,
+          22
+        ],
+        "faces": 9646,
+        "isolated_face_count": 0,
+        "max_component_face_count": 9626,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          31,
+          29,
+          22,
+          32
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 18,
+        "source_face_SHA256": "8c2e52fd9111cc182c114f3fe60d4e14b082c5e46c4cf77fa46e2b256c782ec4",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "29d3aa4617b3ef8baa8a5254f553f9af1f69157b9e6b3bbc169c3b02882e3672",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 20749
+      }
+    },
+    {
+      "Ngrid": 20,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 11879,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 1710,
+          "2": 4372,
+          "3": 4481,
+          "4": 1644
+        },
+        "original_vertices": 12207,
+        "reflected_height_histogram": {
+          "1": 1644,
+          "2": 4481,
+          "3": 4372,
+          "4": 1710
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 12207,
+        "reflected_vertices_accepted_under_same_gamma": 10969,
+        "source_Ngrid": 20,
+        "source_faces": 11879
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.713710514299946,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 6200,
+          "A to B": 8596,
+          "B to A": 8598,
+          "B to B": 697
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 24091,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 17194,
+        "source_hopping_types_unchanged": 6897
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 17,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          58,
+          65,
+          0,
+          66,
+          5
+        ],
+        "faces": 11879,
+        "isolated_face_count": 16,
+        "max_component_face_count": 11863,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          65,
+          58,
+          5,
+          66
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 20,
+        "source_face_SHA256": "eb0024d1daabf38a7bceda63d7a03e3089979a26ae944ee3e3cf1b191675d21e",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "662aafd944365ddd3ef492a3d110f108d6c2d77b062b54d0e96a9f6cd53c701a",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 25590
+      }
+    },
+    {
+      "Ngrid": 23,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 16138,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 2302,
+          "2": 5888,
+          "3": 6022,
+          "4": 2223
+        },
+        "original_vertices": 16435,
+        "reflected_height_histogram": {
+          "1": 2223,
+          "2": 6022,
+          "3": 5888,
+          "4": 2302
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 16435,
+        "reflected_vertices_accepted_under_same_gamma": 14782,
+        "source_Ngrid": 23,
+        "source_faces": 16138
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.7115892210422933,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 8602,
+          "A to B": 11592,
+          "B to A": 11593,
+          "B to B": 795
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 32582,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 23185,
+        "source_hopping_types_unchanged": 9397
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 43,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          106,
+          113,
+          0,
+          114,
+          2
+        ],
+        "faces": 16138,
+        "isolated_face_count": 40,
+        "max_component_face_count": 16094,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          113,
+          106,
+          2,
+          114
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 23,
+        "source_face_SHA256": "48e2f89aaa75f993af2e0b869088cc3634d676f9cb234a3cc1d66c58d511c518",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "5c349932d1caa8549c362ea0d1c21e1d8d58ad548a74e353d1caf984ca6fe644",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 34897
+      }
+    },
+    {
+      "Ngrid": 25,
+      "canonical_phason_reflection": {
+        "all_reflected_faces_accepted_under_minus_gamma": 18874,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 2693,
+          "2": 6908,
+          "3": 7057,
+          "4": 2602
+        },
+        "original_vertices": 19260,
+        "reflected_height_histogram": {
+          "1": 2602,
+          "2": 7057,
+          "3": 6908,
+          "4": 2693
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 19260,
+        "reflected_vertices_accepted_under_same_gamma": 17308,
+        "source_Ngrid": 25,
+        "source_faces": 18874
+      },
+      "source_scalar_hopping_reflection": {
+        "changed_fraction": 0.7171137156191825,
+        "fixed_gamma_weighted_physical_time_proved": false,
+        "hopping_type_pair_histogram": {
+          "A to A": 9930,
+          "A to B": 13673,
+          "B to A": 13677,
+          "B to B": 859
+        },
+        "interpretation": "The fixed source PF-I10 A/B hopping word is NOT theta-invariant under the geometric phason inversion. A reflected weighted operator would also need a transformed background word. This says nothing about unspecified physical SU(2) Wilson face couplings.",
+        "original_source_edges": 38139,
+        "reflection_reverses_Fibonacci_word_index_as_k_to_minus_k": true,
+        "source_hopping_types_changed_after_geometric_inversion": 27350,
+        "source_hopping_types_unchanged": 10789
+      },
+      "transverse_pair_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 29,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          46,
+          52,
+          0,
+          56,
+          2
+        ],
+        "faces": 18874,
+        "isolated_face_count": 16,
+        "max_component_face_count": 18834,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          52,
+          46,
+          2,
+          56
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "source_Ngrid": 25,
+        "source_face_SHA256": "f91ef4a44e4dfe5b69bb13baf8248198cc547953814317e53ae602097d880704",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "508fdd906d94e469ad71c0153bacac250b807e99c6c8d925e45e0d74e38b3836",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 40853
+      }
+    }
+  ]
+}

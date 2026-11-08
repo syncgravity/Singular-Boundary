@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-08",
+  "files": {
+    "PF_I13_ALL_EIGHT_SOURCE_EVIDENCE.json": {
+      "bytes": 34024,
+      "privacy": "derived",
+      "sha256": "ec7b0e6a1f971eaa1f4d4e6922a0b8a6445e97e7ad115146aca36f5865017120"
+    },
+    "PF_I13_COMPLETED_WINDOW_CONTROL.json": {
+      "bytes": 25774,
+      "privacy": "derived",
+      "sha256": "05f98dbf1291292ca3e9f56221333206ce25232410c652e295f34cb594604fac"
+    },
+    "PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md": {
+      "bytes": 16702,
+      "privacy": "derived",
+      "sha256": "af0ed9e8f8000eb2329a651fffe4b7ae995d4d294759078c78af4a5a4c964a5c"
+    },
+    "PF_I13_PUBLIC_SOURCE_AND_KERNEL_RESULTS.json": {
+      "bytes": 10697,
+      "privacy": "derived",
+      "sha256": "1082f735c33b7ab38183e11872697fad6012306bae272bd686175cf7747f5472"
+    },
+    "PF_I13_PUBLIC_TEST_LOG.txt": {
+      "bytes": 2889,
+      "privacy": "derived",
+      "sha256": "62783f57fc93390a53cb6c85155833d88f857607a60b68f03ce0ddd1ac9c27e8"
+    },
+    "PF_I13_TEST_LOG.txt": {
+      "bytes": 2601,
+      "privacy": "derived",
+      "sha256": "2f94dfb4ccbde4852c40978a350df06ce6a76331b837a22662ce60b34da90350"
+    },
+    "README_REPLAY.md": {
+      "bytes": 2671,
+      "privacy": "derived",
+      "sha256": "d9ece894e11f759f4bc06002fd2a3ace2cf50e10694b6fdbd2d552e99c25479b"
+    },
+    "source/PF_I11_COMPLETED_WINDOW_CORE_CONTROL.json": {
+      "bytes": 13777,
+      "privacy": "private_original_or_dependency",
+      "sha256": "caf47c8b26414658a779f78e0188084f0bfa215c5fadc5612a5f474db28f2ea8"
+    },
+    "source/PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
+      "bytes": 12645,
+      "privacy": "private_original_or_dependency",
+      "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038"
+    },
+    "source/Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex": {
+      "bytes": 46990,
+      "privacy": "private_original_or_dependency",
+      "sha256": "385836d32a4be990ae6f1e16dff32591cb5b4c8ec4d6d9f35dd8eedf85825c2e"
+    },
+    "source/paper6_extend_local.py": {
+      "bytes": 19349,
+      "privacy": "private_original_or_dependency",
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da"
+    },
+    "source/private_snapshots/PF_I11_original_source_20.npz": {
+      "bytes": 355294,
+      "privacy": "private_original_or_dependency",
+      "sha256": "be1b282971845b39618098613b3b1bc2ccf72ff4c070681b5827675dee2a11c3"
+    },
+    "source/private_snapshots/PF_I11_original_source_25.npz": {
+      "bytes": 563048,
+      "privacy": "private_original_or_dependency",
+      "sha256": "b7fe8f008ebc00b4878fbfe76bf4b2bcfe94e85dce145c7368c97d900d329493"
+    },
+    "source/private_snapshots/PF_I11_original_source_7.npz": {
+      "bytes": 41394,
+      "privacy": "private_original_or_dependency",
+      "sha256": "465b4f9f4b98ee6644be164f5525f28671c5dc6f77382be96c24b59fa22c2c95"
+    },
+    "source/verify_pf_i11_intrinsic_su2.py": {
+      "bytes": 18081,
+      "privacy": "private_original_or_dependency",
+      "sha256": "f655bae6defa9993d6b414c74cfa5b24039ff7a80e47c1924123412ada55653d"
+    },
+    "source/verify_pf_i12_conditional_heat_gluing.py": {
+      "bytes": 2414,
+      "privacy": "private_original_or_dependency",
+      "sha256": "8d4ef99c2542b2cb5398200663b1261e73d111de191a8860d1bda4c517d9a6e0"
+    },
+    "source/verify_pf_i12_two_sector_coupling.py": {
+      "bytes": 12342,
+      "privacy": "private_original_or_dependency",
+      "sha256": "bc19afe664a451b325dc812549ad5fbf49648e8390f70e46551a4eb92c8afd95"
+    },
+    "source/verify_pf_i9_source_cut_project_bridge.py": {
+      "bytes": 17023,
+      "privacy": "private_original_or_dependency",
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b"
+    },
+    "test_pf_i13_global_gluing.py": {
+      "bytes": 6485,
+      "privacy": "derived",
+      "sha256": "11fe136961fd92fd59ed9ce9099d37a1415273f022446a59afa0378a0023e98f"
+    },
+    "verify_pf_i13_completed_core.py": {
+      "bytes": 2695,
+      "privacy": "derived",
+      "sha256": "0c125c3ef751af0d2c0cbd7664be5c686f4f63b5c9d846705e07213394bdf8d5"
+    },
+    "verify_pf_i13_global_gluing.py": {
+      "bytes": 15047,
+      "privacy": "derived",
+      "sha256": "df82948b5dfd3dd4adfd70afdd569b2a7743cd2a312a947904c44f3c10a4e03a"
+    }
+  },
+  "full_private_tests_pass": 20,
+  "original_source_private_paths": [
+    "source/paper6_extend_local.py",
+    "source/Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex",
+    "source/verify_pf_i11_intrinsic_su2.py",
+    "source/verify_pf_i12_two_sector_coupling.py",
+    "source/verify_pf_i9_source_cut_project_bridge.py",
+    "source/verify_pf_i12_conditional_heat_gluing.py",
+    "source/PF_I11_COMPLETED_WINDOW_CORE_CONTROL.json",
+    "source/PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json",
+    "source/private_snapshots/PF_I11_original_source_7.npz",
+    "source/private_snapshots/PF_I11_original_source_20.npz",
+    "source/private_snapshots/PF_I11_original_source_25.npz"
+  ],
+  "private_source_SHA256_expected": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "public_source_absent_expected_skips": 6,
+  "public_source_independent_tests_pass": 14,
+  "schema": "singular-boundary.pf-i13-global-gluing.v1",
+  "status": "finite conditional theorems; source physical time/global OS/continuum Yang Mills gap OPEN"
+}

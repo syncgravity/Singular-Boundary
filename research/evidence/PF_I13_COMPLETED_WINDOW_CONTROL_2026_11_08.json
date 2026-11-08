@@ -1,0 +1,904 @@
+{
+  "physical_mass_gap_proved": false,
+  "results": [
+    {
+      "Ngrid": 7,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          3,
+          34,
+          0,
+          40,
+          42
+        ],
+        "faces": 1330,
+        "isolated_face_count": 0,
+        "max_component_face_count": 1330,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          34,
+          3,
+          42,
+          40
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 7,
+        "source_face_SHA256": "005605e2253ce7e04fe5ed6f5d512b1c19f54ca3d6ecacaca12c6dc5a86467b4",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "bb9aa7fca99bea4e32e2014190588e43d1913a179ecd1c2cccb25854d6cc4114",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 2785
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 1330,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 191,
+          "2": 529,
+          "3": 514,
+          "4": 198
+        },
+        "original_vertices": 1432,
+        "reflected_height_histogram": {
+          "1": 198,
+          "2": 514,
+          "3": 529,
+          "4": 191
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 1432,
+        "reflected_vertices_accepted_under_same_gamma": 1316,
+        "source_Ngrid": 7,
+        "source_faces": 1330
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 10,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          12,
+          4,
+          11,
+          6,
+          9
+        ],
+        "faces": 2846,
+        "isolated_face_count": 0,
+        "max_component_face_count": 2846,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          2,
+          68,
+          5,
+          67,
+          69
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 10,
+        "source_face_SHA256": "9679a961c0b7611916b29f74b1c75605ec2bdf57e89e42fa8720268c3f6b2a37",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "a928bb0e90d4505ee4ec90e40dab5ac6b85d344a26a45a8d76138f78c1879f8f",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 6057
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 2846,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 424,
+          "2": 1094,
+          "3": 1099,
+          "4": 415
+        },
+        "original_vertices": 3032,
+        "reflected_height_histogram": {
+          "1": 415,
+          "2": 1099,
+          "3": 1094,
+          "4": 424
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 3032,
+        "reflected_vertices_accepted_under_same_gamma": 2722,
+        "source_Ngrid": 10,
+        "source_faces": 2846
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 12,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          37,
+          36,
+          0,
+          39,
+          27
+        ],
+        "faces": 4089,
+        "isolated_face_count": 0,
+        "max_component_face_count": 4089,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          36,
+          37,
+          27,
+          39
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 12,
+        "source_face_SHA256": "88d9eed8c6bf67a2f089ff588c8a52798d993fd3a73ce36be22717d4867c84ff",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "2a23a29c95f7ee8c7ea1361393c36271235696cde9ebafe4a072ce5ad512e9c8",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 8770
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 4089,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 611,
+          "2": 1532,
+          "3": 1561,
+          "4": 590
+        },
+        "original_vertices": 4294,
+        "reflected_height_histogram": {
+          "1": 590,
+          "2": 1561,
+          "3": 1532,
+          "4": 611
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 4294,
+        "reflected_vertices_accepted_under_same_gamma": 3838,
+        "source_Ngrid": 12,
+        "source_faces": 4089
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 15,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          42,
+          45,
+          44,
+          0,
+          50,
+          49,
+          149
+        ],
+        "faces": 6586,
+        "isolated_face_count": 0,
+        "max_component_face_count": 6586,
+        "odd_cycle_length": 7,
+        "physical_five_cycle_face_indices": [
+          1,
+          57,
+          2,
+          56,
+          59
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 15,
+        "source_face_SHA256": "6adb82ad99b786405ce71605b9f4b37c0ac618e221c08b61b08275333656a4f5",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "3e28462fd7d074fe17ede0b931627116e75ccd44bd432336f4fa4691ce2dad99",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 14153
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 6586,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 962,
+          "2": 2431,
+          "3": 2498,
+          "4": 921
+        },
+        "original_vertices": 6812,
+        "reflected_height_histogram": {
+          "1": 921,
+          "2": 2498,
+          "3": 2431,
+          "4": 962
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 6812,
+        "reflected_vertices_accepted_under_same_gamma": 6090,
+        "source_Ngrid": 15,
+        "source_faces": 6586
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 18,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 11,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          29,
+          31,
+          0,
+          32,
+          22
+        ],
+        "faces": 9604,
+        "isolated_face_count": 0,
+        "max_component_face_count": 9584,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          31,
+          29,
+          22,
+          32
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 18,
+        "source_face_SHA256": "f78a15eaa68c243b6967ae220ab76abc937c8846064e79d327d65c3465979f2f",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "44fe1838e6266ae81c633cf44a36173895a5017e93dbdf90c6a4f9d59eea6ccd",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 20669
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 9604,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 1405,
+          "2": 3533,
+          "3": 3626,
+          "4": 1348
+        },
+        "original_vertices": 9912,
+        "reflected_height_histogram": {
+          "1": 1348,
+          "2": 3626,
+          "3": 3533,
+          "4": 1405
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 9912,
+        "reflected_vertices_accepted_under_same_gamma": 8978,
+        "source_Ngrid": 18,
+        "source_faces": 9604
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 20,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          53,
+          60,
+          0,
+          61,
+          5
+        ],
+        "faces": 11844,
+        "isolated_face_count": 0,
+        "max_component_face_count": 11844,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          60,
+          53,
+          5,
+          61
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 20,
+        "source_face_SHA256": "7a33bdf13d3b056c6b4c408dadafa656737a55c136fbbe49363c99efbb29ac0d",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "1450c71647c1d479601e26b22f7b50a40688451bfb2a95f4decaab5bc3d186e6",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 25585
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 11844,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 1712,
+          "2": 4354,
+          "3": 4461,
+          "4": 1645
+        },
+        "original_vertices": 12172,
+        "reflected_height_histogram": {
+          "1": 1645,
+          "2": 4461,
+          "3": 4354,
+          "4": 1712
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 12172,
+        "reflected_vertices_accepted_under_same_gamma": 10918,
+        "source_Ngrid": 20,
+        "source_faces": 11844
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 23,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 1,
+        "explicit_odd_cycle_face_families": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          72,
+          73,
+          0,
+          74,
+          62
+        ],
+        "faces": 15787,
+        "isolated_face_count": 0,
+        "max_component_face_count": 15787,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          73,
+          72,
+          62,
+          74
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "source_Ngrid": 23,
+        "source_face_SHA256": "d2fc588cf757f9d7f939396187c7b734091c102010b615932a357827e528b939",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "cbe0fc50579a81507de8eca4c8c77d8f26ab6492798300c9ffc6a1b430eb0c03",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 34307
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 15787,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 2289,
+          "2": 5775,
+          "3": 5908,
+          "4": 2210
+        },
+        "original_vertices": 16182,
+        "reflected_height_histogram": {
+          "1": 2210,
+          "2": 5908,
+          "3": 5775,
+          "4": 2289
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 16182,
+        "reflected_vertices_accepted_under_same_gamma": 14566,
+        "source_Ngrid": 23,
+        "source_faces": 15787
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    },
+    {
+      "Ngrid": 25,
+      "face_graph": {
+        "actual_face_pair_graph_bipartite": false,
+        "all_15_disjoint_family_pair_types_observed": true,
+        "chromatic_number_exactly_three": true,
+        "components_including_isolated_faces": 13,
+        "explicit_odd_cycle_face_families": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "explicit_odd_cycle_face_indices": [
+          42,
+          48,
+          0,
+          52,
+          2
+        ],
+        "faces": 18880,
+        "isolated_face_count": 0,
+        "max_component_face_count": 18856,
+        "odd_cycle_length": 5,
+        "physical_five_cycle_face_indices": [
+          0,
+          48,
+          42,
+          2,
+          52
+        ],
+        "physical_five_cycle_family_types": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "source_Ngrid": 25,
+        "source_face_SHA256": "70d579e59ae2bfc61b707302a3a198f86566ac5b063d5b0a8a54ee3b6cbf94bb",
+        "source_population_preserved": true,
+        "source_vertex_SHA256": "a90d25cd1c99cc421a8fa6e1bfb289d84822fe4751fb923918ad548f3cb85fd1",
+        "three_family_color_classes_provide_proper_coloring": true,
+        "transverse_pair_edges": 40973
+      },
+      "phason_inversion": {
+        "all_reflected_faces_accepted_under_minus_gamma": 18880,
+        "finite_crop_reflection_not_claimed": true,
+        "fixed_phason_internal_shift_norm": 0.1899767342953463,
+        "fixed_phason_internal_shift_vector": [
+          0.14647529218568678,
+          -0.12097995020929
+        ],
+        "fixed_phason_involution_valid_for_all_original_vertices": false,
+        "height_translation_by_ones_denied": "sum(m+1_5)=h+5 outside h in {1,2,3,4}",
+        "inversion_theta": "(m,gamma) -> (1-m,-gamma), h -> 5-h, Eparallel/Eperp -> minus",
+        "no_authorized_physical_time_from_height_or_phason_involution": true,
+        "on_nontrivial_4d_two_sector_space_inversion_is_minus_identity_with_det_plus_one": true,
+        "on_nontrivial_4d_two_sector_space_no_C5_commuting_real_involution_has_one_negative_eigenvector": true,
+        "original_source_height_histogram": {
+          "1": 2711,
+          "2": 6890,
+          "3": 7037,
+          "4": 2618
+        },
+        "original_vertices": 19256,
+        "reflected_height_histogram": {
+          "1": 2618,
+          "2": 7037,
+          "3": 6890,
+          "4": 2711
+        },
+        "reflected_vertices_accepted_under_minus_gamma": 19256,
+        "reflected_vertices_accepted_under_same_gamma": 17292,
+        "source_Ngrid": 25,
+        "source_faces": 18880
+      },
+      "selection": "independent full-window incident-star core, not original finite source selection",
+      "source_reference_SHA_match": true
+    }
+  ],
+  "scope": "separate source full-window corrected-core controls only"
+}
