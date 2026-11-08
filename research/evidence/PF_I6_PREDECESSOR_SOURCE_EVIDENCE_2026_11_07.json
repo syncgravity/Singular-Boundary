@@ -1,0 +1,499 @@
+{
+  "archive_name": "Archive(1).zip",
+  "archive_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+  "direct_cut_project_matched_central_disks": [
+    {
+      "R": 3,
+      "direct_window_edges": 55,
+      "direct_window_vertices": 36,
+      "identical": true,
+      "source_edges": 55,
+      "source_vertices": 36
+    },
+    {
+      "R": 5,
+      "direct_window_edges": 175,
+      "direct_window_vertices": 96,
+      "identical": true,
+      "source_edges": 175,
+      "source_vertices": 96
+    },
+    {
+      "R": 7,
+      "direct_window_edges": 345,
+      "direct_window_vertices": 186,
+      "identical": true,
+      "source_edges": 345,
+      "source_vertices": 186
+    },
+    {
+      "R": 9,
+      "direct_window_edges": 555,
+      "direct_window_vertices": 296,
+      "identical": true,
+      "source_edges": 555,
+      "source_vertices": 296
+    }
+  ],
+  "draft_python_count": 9,
+  "files_sha256": {
+    "paper1.pdf": "a6afe544146711ebaeef65c09f7711a80b99e99b958aec9a25fbfe61def0d526",
+    "paper1_compute.py": "876104b01aa385f66fec99ae23a1c88b2c87907e96d372fc213bb93d6457a48b",
+    "paper2.pdf": "5971445e733db26464a6ea5056e3b71d01d075546ea510f09fb8dd34d3aba263",
+    "paper2_computation.py": "7849cc2dcda14393ce0d3399194a5732d51be3cb8789ef462f37734c8cd72a64",
+    "paper2_compute.py": "a8e73bb783471bed28dc062856c69101a26945ad516a8c9c06af755adcea5510",
+    "paper3.pdf": "9d883e07004e06887671c04d83c65be52b274691c99e9dad9328e633260a175a",
+    "paper3_compute.py": "f253f4036dfb6a7ef24a8d009813f23cd1e2c6876a498873f9b711c605a0733c",
+    "paper3_coupled_compute.py": "ad074fc4fbbbb5dca8dfe3756747234732dea5ea893541f922e54f36f2b56d9d",
+    "paper3_coupled_summary.json": "6a553d30ba63b9ee725a7c1430709ec0ebce800de4c18ef57d095caa9927c5cd",
+    "paper4.pdf": "50fbe6da8d6e0c83d9346d73806643b09a63f4a2ffb464cee9f446e2f4cfb30f",
+    "paper5.pdf": "9ec26715091c1c09a27ef805031c5730dbb3267db59dd0010664345758ea89cf",
+    "paper5_appendix.pdf": "07f16f659656a185078fd19b1b0d915fb1b1d0be55a920769cb361a72df0f52e",
+    "paper5_compute.py": "85416b0ec4303207a207b821ba6c976f2c3ef19673cae73d50ede12811f5fb44",
+    "paper6.pdf": "27d78024501a317f4ecf59faad6c577f16853c04da9b12b531b216650b7f61b6",
+    "paper6_convergence_compute.py": "a758befa9bbbe27ad8925e6823083efbec08832686e1d9a00f712f458c3e9d87",
+    "paper6_convergence_results.md": "fe2d72f91d72227f5f6ec69b769e46ca7e93fe9e044043e6d45f490b864d661c",
+    "paper6_figures.py": "63315de666d593f965de269054a891df26471c744dca014ffa7ed4bbc7a1ca46",
+    "paper7.pdf": "14fc592f00dfe57b5b84d70bd3b238c9625d623585ad7a6e36f4147502089f57",
+    "paper8.pdf": "2932b41e8a36f3c3dcbbfebfe3612767b2f4bf3a64b0672746ce0ab6a60420be",
+    "zeta_prime_validation.py": "fc154343342233685b03b71462e2c82d1c29602f22c2064187708d2f85f95b56",
+    "zeta_prime_validation_results.md": "982fbf420d75b46ab9b90a8a3f723565870852d7c4388d91fd49ab633c273652"
+  },
+  "gamma": [
+    -0.4207319701594539,
+    -0.27446760021748134,
+    0.3358983848622447,
+    0.41036598507972605,
+    -0.05106479956503551
+  ],
+  "gamma_sum": 0.0,
+  "missing_tile_edges_restored_at_larger_grid": [
+    {
+      "N_grid": 10,
+      "extension_to": 12,
+      "extra_edges": 62,
+      "restored_as_tile_edges": 62
+    },
+    {
+      "N_grid": 12,
+      "extension_to": 14,
+      "extra_edges": 85,
+      "restored_as_tile_edges": 85
+    }
+  ],
+  "note": "Source code tests only; not independent reproduction of original all-eight-size eigenspectra or continuum gauge/gravity claims.",
+  "paired_graphs": [
+    {
+      "N_grid": 3,
+      "additional_edge_weight_sum": 0.0,
+      "basis_components": 1,
+      "basis_edge_count": 405,
+      "extra_basis_edges": 0,
+      "extra_basis_label_pairs": [],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 0.0,
+      "n_interior": 226,
+      "n_raw_vertices": 836,
+      "n_tiles": 490,
+      "tile_components": 1,
+      "tile_degree_histogram": {
+        "1": 20,
+        "2": 20,
+        "3": 90,
+        "4": 25,
+        "5": 51,
+        "6": 15,
+        "7": 5
+      },
+      "tile_edge_count": 405
+    },
+    {
+      "N_grid": 4,
+      "additional_edge_weight_sum": 0.0,
+      "basis_components": 1,
+      "basis_edge_count": 915,
+      "extra_basis_edges": 0,
+      "extra_basis_label_pairs": [],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 0.0,
+      "n_interior": 486,
+      "n_raw_vertices": 1406,
+      "n_tiles": 810,
+      "tile_components": 1,
+      "tile_degree_histogram": {
+        "2": 30,
+        "3": 260,
+        "4": 55,
+        "5": 101,
+        "6": 15,
+        "7": 25
+      },
+      "tile_edge_count": 915
+    },
+    {
+      "N_grid": 5,
+      "additional_edge_weight_sum": 0.0,
+      "basis_components": 1,
+      "basis_edge_count": 1515,
+      "extra_basis_edges": 0,
+      "extra_basis_label_pairs": [],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 0.0,
+      "n_interior": 796,
+      "n_raw_vertices": 2176,
+      "n_tiles": 1210,
+      "tile_components": 1,
+      "tile_degree_histogram": {
+        "1": 20,
+        "2": 40,
+        "3": 370,
+        "4": 105,
+        "5": 201,
+        "6": 25,
+        "7": 35
+      },
+      "tile_edge_count": 1515
+    },
+    {
+      "N_grid": 7,
+      "additional_edge_weight_sum": 0.0,
+      "basis_components": 1,
+      "basis_edge_count": 3017,
+      "extra_basis_edges": 0,
+      "extra_basis_label_pairs": [],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 0.0,
+      "n_interior": 1550,
+      "n_raw_vertices": 3962,
+      "n_tiles": 2250,
+      "tile_components": 1,
+      "tile_degree_histogram": {
+        "1": 6,
+        "2": 60,
+        "3": 768,
+        "4": 168,
+        "5": 421,
+        "6": 62,
+        "7": 65
+      },
+      "tile_edge_count": 3017
+    },
+    {
+      "N_grid": 10,
+      "additional_edge_weight_sum": 41.60487837125351,
+      "basis_components": 1,
+      "basis_edge_count": 5927,
+      "extra_basis_edges": 62,
+      "extra_basis_label_pairs": [
+        [
+          [
+            -9,
+            -7,
+            5,
+            12,
+            2
+          ],
+          [
+            -9,
+            -7,
+            5,
+            11,
+            2
+          ]
+        ],
+        [
+          [
+            -10,
+            -3,
+            9,
+            9,
+            -3
+          ],
+          [
+            -11,
+            -3,
+            9,
+            9,
+            -3
+          ]
+        ],
+        [
+          [
+            -8,
+            -8,
+            4,
+            12,
+            4
+          ],
+          [
+            -8,
+            -8,
+            4,
+            11,
+            4
+          ]
+        ],
+        [
+          [
+            -9,
+            -8,
+            4,
+            11,
+            3
+          ],
+          [
+            -9,
+            -8,
+            4,
+            12,
+            3
+          ]
+        ],
+        [
+          [
+            -9,
+            2,
+            11,
+            5,
+            -7
+          ],
+          [
+            -9,
+            2,
+            12,
+            5,
+            -7
+          ]
+        ],
+        [
+          [
+            -9,
+            3,
+            11,
+            4,
+            -8
+          ],
+          [
+            -9,
+            3,
+            12,
+            4,
+            -8
+          ]
+        ],
+        [
+          [
+            -8,
+            4,
+            11,
+            4,
+            -8
+          ],
+          [
+            -8,
+            4,
+            12,
+            4,
+            -8
+          ]
+        ],
+        [
+          [
+            -7,
+            5,
+            12,
+            2,
+            -9
+          ],
+          [
+            -7,
+            5,
+            11,
+            2,
+            -9
+          ]
+        ]
+      ],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 83.20975674250703,
+      "n_interior": 3042,
+      "n_raw_vertices": 7839,
+      "n_tiles": 4410,
+      "tile_components": 51,
+      "tile_degree_histogram": {
+        "0": 44,
+        "1": 12,
+        "2": 86,
+        "3": 1508,
+        "4": 327,
+        "5": 815,
+        "6": 111,
+        "7": 139
+      },
+      "tile_edge_count": 5865
+    },
+    {
+      "N_grid": 12,
+      "additional_edge_weight_sum": 62.132742416253926,
+      "basis_components": 1,
+      "basis_edge_count": 8468,
+      "extra_basis_edges": 85,
+      "extra_basis_label_pairs": [
+        [
+          [
+            -12,
+            -6,
+            9,
+            12,
+            -1
+          ],
+          [
+            -13,
+            -6,
+            9,
+            12,
+            -1
+          ]
+        ],
+        [
+          [
+            -12,
+            -3,
+            11,
+            10,
+            -4
+          ],
+          [
+            -13,
+            -3,
+            11,
+            10,
+            -4
+          ]
+        ],
+        [
+          [
+            -12,
+            -1,
+            12,
+            9,
+            -6
+          ],
+          [
+            -13,
+            -1,
+            12,
+            9,
+            -6
+          ]
+        ],
+        [
+          [
+            -11,
+            -9,
+            5,
+            13,
+            4
+          ],
+          [
+            -11,
+            -9,
+            5,
+            14,
+            4
+          ]
+        ],
+        [
+          [
+            -10,
+            -10,
+            5,
+            13,
+            4
+          ],
+          [
+            -10,
+            -10,
+            5,
+            14,
+            4
+          ]
+        ],
+        [
+          [
+            -11,
+            4,
+            13,
+            5,
+            -9
+          ],
+          [
+            -11,
+            4,
+            14,
+            5,
+            -9
+          ]
+        ],
+        [
+          [
+            -10,
+            4,
+            14,
+            5,
+            -10
+          ],
+          [
+            -10,
+            4,
+            13,
+            5,
+            -10
+          ]
+        ],
+        [
+          [
+            -10,
+            -10,
+            4,
+            13,
+            5
+          ],
+          [
+            -10,
+            -10,
+            4,
+            14,
+            5
+          ]
+        ]
+      ],
+      "extra_tile_edges": 0,
+      "laplacian_trace_increase_from_additional_edges": 124.26548483250785,
+      "n_interior": 4324,
+      "n_raw_vertices": 11018,
+      "n_tiles": 6250,
+      "tile_components": 46,
+      "tile_degree_histogram": {
+        "0": 26,
+        "1": 44,
+        "2": 128,
+        "3": 2156,
+        "4": 427,
+        "5": 1171,
+        "6": 169,
+        "7": 203
+      },
+      "tile_edge_count": 8383
+    }
+  ],
+  "paper3_and_paper6_generated_same_labels": true,
+  "paper_pdfs_count": 9,
+  "source_comparator_size_rule": "N_periodic=floor(sqrt(N_int))^2; triangular t_avg=(1+phi^-2)/2",
+  "source_function_interpretation": {
+    "coupled_graph": "on identical indexed vertices, all +/- one-basis Z5 neighbours, same Fibonacci weight and D=sumW",
+    "tile_graph": "graph edges from de Bruijn pentagrid rhombi"
+  },
+  "source_zero_mode_threshold": "lambda>1e-10 before computing source reported zeta ratios",
+  "summaries_count": 3
+}
