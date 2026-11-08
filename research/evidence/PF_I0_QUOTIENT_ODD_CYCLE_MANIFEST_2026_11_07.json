@@ -1,0 +1,18 @@
+{
+  "claim_type": "conditional-graph-theorem-source-fidelity-test",
+  "date": "2026-11-07",
+  "files": {
+    "PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md": {
+      "bytes": 11518,
+      "sha256": "0250c7c3aadcffec3fe81d9bd48864557120ef4ae13046a8f66f9c5851c686ba"
+    },
+    "pf_i0_quotient_cycles_evidence.json": {
+      "bytes": 1335,
+      "sha256": "92d515c2e3ced123e23942327af1595fb0fd286b21c7b02768c9c72d287454d6"
+    },
+    "verify_pf_i0_quotient_cycles.py": {
+      "bytes": 9019,
+      "sha256": "35a03b5ce0b5e1cff9f1c4d73e132e7dbbb65c603087994867158507864369d7"
+    }
+  }
+}
