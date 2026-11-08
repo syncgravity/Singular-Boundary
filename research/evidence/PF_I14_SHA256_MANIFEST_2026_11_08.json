@@ -1,0 +1,121 @@
+{
+  "completed_core_controls_Ngrid": [
+    7,
+    25
+  ],
+  "date": "2026-11-08",
+  "files": {
+    "PF_I14_ALL_PRIVATE_TEST_LOG.txt": {
+      "bytes": 2248,
+      "sha256": "c7aca87fc64e860371a00e9fb0227f24046e1c647b31ab3808c848e51832254d"
+    },
+    "PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md": {
+      "bytes": 18836,
+      "sha256": "54f62b38751093fb0143ccad71ee9b3c7cbad5df268a7e1d68c4ef76d8651224"
+    },
+    "PF_I14_PUBLIC_SOURCE_COVARIANCE_RESULTS_2026_11_08.json": {
+      "bytes": 12683,
+      "sha256": "80ec8cf50541f771aeba67bd2614424fa33cd85640ae708472b75141461946de"
+    },
+    "PF_I14_PUBLIC_TEST_LOG.txt": {
+      "bytes": 2527,
+      "sha256": "c7fef95c038bbadda8d04b65bdf765192e691efa92370ec3f0172235187038e4"
+    },
+    "README_REPLAY.md": {
+      "bytes": 3521,
+      "sha256": "295c7d1cd79b7c36be46fdd8b8952561a4f23ed96f65b196ea41aa119ac6ad9f"
+    },
+    "build_pf_i14_public_evidence.py": {
+      "bytes": 3600,
+      "sha256": "bd8c66fd20779460c1bc02077a807d305c43cbd5d26c3cb167f7ec838cd26413"
+    },
+    "evidence/PF_I14_EIGHT_SIZE_SOURCE_COVARIANCE.json": {
+      "bytes": 17049,
+      "sha256": "6d2c7661d2c1ed0d6ebab7cead36f7c08db232cc182e663ef81e436efe18eced"
+    },
+    "evidence/PF_I14_GAUGE_PROJECTED_FINITE_SEAM.json": {
+      "bytes": 1365,
+      "sha256": "4280a53f1c7aee644e3d3f75d3cf06e31d8258a0bfcc7892abb03ab1eafcb880"
+    },
+    "evidence/PF_I14_TWO_COMPLETED_CORE_COVARIANCE.json": {
+      "bytes": 4124,
+      "sha256": "c256a8b4711ec9662c548a7872b752074f0c6c2cce84a8e4d619d8d87fb71ff0"
+    },
+    "source/PF_I11_COMPLETED_WINDOW_CORE_CONTROL.json": {
+      "bytes": 13777,
+      "sha256": "caf47c8b26414658a779f78e0188084f0bfa215c5fadc5612a5f474db28f2ea8"
+    },
+    "source/PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
+      "bytes": 12645,
+      "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038"
+    },
+    "source/paper6_extend_local.py": {
+      "bytes": 19349,
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da"
+    },
+    "source/private_snapshots/PF_I11_original_source_20.npz": {
+      "bytes": 355294,
+      "sha256": "be1b282971845b39618098613b3b1bc2ccf72ff4c070681b5827675dee2a11c3"
+    },
+    "source/private_snapshots/PF_I11_original_source_25.npz": {
+      "bytes": 563048,
+      "sha256": "b7fe8f008ebc00b4878fbfe76bf4b2bcfe94e85dce145c7368c97d900d329493"
+    },
+    "source/private_snapshots/PF_I11_original_source_7.npz": {
+      "bytes": 41394,
+      "sha256": "465b4f9f4b98ee6644be164f5525f28671c5dc6f77382be96c24b59fa22c2c95"
+    },
+    "source/verify_pf_i11_intrinsic_su2.py": {
+      "bytes": 18081,
+      "sha256": "f655bae6defa9993d6b414c74cfa5b24039ff7a80e47c1924123412ada55653d"
+    },
+    "source/verify_pf_i12_conditional_heat_gluing.py": {
+      "bytes": 2414,
+      "sha256": "8d4ef99c2542b2cb5398200663b1261e73d111de191a8860d1bda4c517d9a6e0"
+    },
+    "source/verify_pf_i12_two_sector_coupling.py": {
+      "bytes": 12342,
+      "sha256": "bc19afe664a451b325dc812549ad5fbf49648e8390f70e46551a4eb92c8afd95"
+    },
+    "source/verify_pf_i9_source_cut_project_bridge.py": {
+      "bytes": 17023,
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b"
+    },
+    "test_pf_i14_decorated_hull.py": {
+      "bytes": 6632,
+      "sha256": "3ac006597423458b63f93144ef03442f2c018c7f0c6c3de7041d582ba0eeaf01"
+    },
+    "test_pf_i14_gauge_projected_gluing.py": {
+      "bytes": 1991,
+      "sha256": "6bd1729784c3ae153f174e29bf2c11955683133bf1e7010030376d6276b11b61"
+    },
+    "verify_pf_i14_completed_core.py": {
+      "bytes": 2451,
+      "sha256": "85aac719306982be0c783e18b69565b6d9c0766b74ba892e41edb4238aac7cc3"
+    },
+    "verify_pf_i14_decorated_hull.py": {
+      "bytes": 20029,
+      "sha256": "79ac99cc425908b1b03861a9d9765b2bb5aec1b76a8015e2e02211317c078ce4"
+    },
+    "verify_pf_i14_gauge_projected_gluing.py": {
+      "bytes": 5687,
+      "sha256": "7c81d69a2a2d32c3658616f3741cbc82de93fe9161e5f94019a3e3acf349ed7d"
+    }
+  },
+  "objective": "PF-I14",
+  "original_author_source_private": true,
+  "private_original_author_source_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "scope": "finite source-decorated Z5 hull and auxiliary gauge-projected link transfer; physical time/continuum YM gap OPEN",
+  "source_original_Ngrid": [
+    7,
+    10,
+    12,
+    15,
+    18,
+    20,
+    23,
+    25
+  ],
+  "tests_private": "16 tests passed",
+  "tests_public": "12 passed, four expected source-dependent skips"
+}

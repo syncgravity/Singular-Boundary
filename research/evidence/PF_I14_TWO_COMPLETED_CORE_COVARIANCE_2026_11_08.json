@@ -1,0 +1,82 @@
+{
+  "physical_time_or_mass_gap_proved": false,
+  "results": {
+    "25": {
+      "E": 38135,
+      "F": 18880,
+      "PF_I11_completed_reference_SHA256_verified": true,
+      "V": 19256,
+      "Wilson_face_action_absolute_difference": 0.0,
+      "Wilson_face_action_mirrored": 14704.216945183569,
+      "Wilson_face_action_original": 14704.216945183569,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "4d9a1d84982eed4578cd3cec55dfd1c2d86376d693369d2f5ad22e8b33064b0f",
+      "mirrored_vertex_SHA256": "aab825250d4354e8145782631ab4b71236e5f1d92b3ba40d30c04fb28a69f82d",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 30872.158448415175,
+        "source_pair_action": 30872.15844841518,
+        "transverse_pair_count": 40973
+      },
+      "original_source_not_replaced": true,
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 27372,
+      "selection": "complete-window incident-face core; differs from original source selected vertices",
+      "singular_lower_lower_level_histogram": {
+        "-1": 865,
+        "0": 865
+      },
+      "singular_lower_lower_mismatch_edges": 1730,
+      "source_Ngrid": 25,
+      "source_face_SHA256": "70d579e59ae2bfc61b707302a3a198f86566ac5b063d5b0a8a54ee3b6cbf94bb",
+      "source_vertex_SHA256": "a90d25cd1c99cc421a8fa6e1bfb289d84822fe4751fb923918ad548f3cb85fd1",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 57839.54042904192,
+      "weighted_laplacian_energy_original": 57839.54042904221
+    },
+    "7": {
+      "E": 2761,
+      "F": 1330,
+      "PF_I11_completed_reference_SHA256_verified": true,
+      "V": 1432,
+      "Wilson_face_action_absolute_difference": 0.0,
+      "Wilson_face_action_mirrored": 1043.1322372732234,
+      "Wilson_face_action_original": 1043.1322372732234,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "e242a61ec7fc56e230b24bbb235a18794ef12195dc7cac8f4d68b8fe500f2c18",
+      "mirrored_vertex_SHA256": "dab19d8ba2105b881c535bce6970d747d76a874b571e3df28500ac230d6b5ed5",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 2041.8488592634685,
+        "source_pair_action": 2041.8488592634685,
+        "transverse_pair_count": 2785
+      },
+      "original_source_not_replaced": true,
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 1666,
+      "selection": "complete-window incident-face core; differs from original source selected vertices",
+      "singular_lower_lower_level_histogram": {
+        "-1": 235,
+        "0": 235
+      },
+      "singular_lower_lower_mismatch_edges": 470,
+      "source_Ngrid": 7,
+      "source_face_SHA256": "005605e2253ce7e04fe5ed6f5d512b1c19f54ca3d6ecacaca12c6dc5a86467b4",
+      "source_vertex_SHA256": "bb9aa7fca99bea4e32e2014190588e43d1913a179ecd1c2cccb25854d6cc4114",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 4115.297911652873,
+      "weighted_laplacian_energy_original": 4115.297911652878
+    }
+  },
+  "scope": "completed-window controls ONLY; source original retained separately"
+}

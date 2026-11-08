@@ -1,0 +1,304 @@
+{
+  "all_eight_original_source_rows": [
+    {
+      "Ngrid": 7,
+      "PF_I11_face_digest": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+      "PF_I11_vertex_digest": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+      "Wilson_action_absolute_difference": 4.547473508864641e-13,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 1864,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 3017,
+      "original_rhombi": 1468,
+      "original_vertices": 1550,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 488,
+      "transverse_pairs": 3093,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 243,
+        "0": 245
+      }
+    },
+    {
+      "Ngrid": 10,
+      "PF_I11_face_digest": "ead8334adc6ceed6b86a588a0779505619b806f80772dc8171202ff7a3a10c8f",
+      "PF_I11_vertex_digest": "8bd4ed73f684b2c82f48f8fffc5454850565bd66a67643ad555bc58bf75e0fee",
+      "Wilson_action_absolute_difference": 0.0,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 3872,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 5927,
+      "original_rhombi": 2886,
+      "original_vertices": 3042,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 690,
+      "transverse_pairs": 6157,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 345,
+        "0": 345
+      }
+    },
+    {
+      "Ngrid": 12,
+      "PF_I11_face_digest": "43df6235aa1b87207c8ff518a0d088617b6aae87c173aa1d7b774264d376129a",
+      "PF_I11_vertex_digest": "3f48224921356ce8e92adbc1e035ca417fcabf7ed55c7977ae20b310dd22e464",
+      "Wilson_action_absolute_difference": 4.547473508864641e-13,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 5507,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 8468,
+      "original_rhombi": 4145,
+      "original_vertices": 4324,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 830,
+      "transverse_pairs": 8890,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 411,
+        "0": 419
+      }
+    },
+    {
+      "Ngrid": 15,
+      "PF_I11_face_digest": "d8e2bfb1cff40caf9b76ec239543b5b667b7e5f98dda6bf41b2696cd931e1b42",
+      "PF_I11_vertex_digest": "55d1ad6896d5f90cfb81ebd9ae0113fe50ff7657ec14cd2ea58ef765ed015efd",
+      "Wilson_action_absolute_difference": 0.0,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 9562,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 13779,
+      "original_rhombi": 6800,
+      "original_vertices": 6980,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 1030,
+      "transverse_pairs": 14559,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 525,
+        "0": 505
+      }
+    },
+    {
+      "Ngrid": 18,
+      "PF_I11_face_digest": "8c2e52fd9111cc182c114f3fe60d4e14b082c5e46c4cf77fa46e2b256c782ec4",
+      "PF_I11_vertex_digest": "29d3aa4617b3ef8baa8a5254f553f9af1f69157b9e6b3bbc169c3b02882e3672",
+      "Wilson_action_absolute_difference": 0.0,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 13780,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 19593,
+      "original_rhombi": 9646,
+      "original_vertices": 9950,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 1240,
+      "transverse_pairs": 20749,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 625,
+        "0": 615
+      }
+    },
+    {
+      "Ngrid": 20,
+      "PF_I11_face_digest": "eb0024d1daabf38a7bceda63d7a03e3089979a26ae944ee3e3cf1b191675d21e",
+      "PF_I11_vertex_digest": "662aafd944365ddd3ef492a3d110f108d6c2d77b062b54d0e96a9f6cd53c701a",
+      "Wilson_action_absolute_difference": 1.8189894035458565e-12,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 17194,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 24091,
+      "original_rhombi": 11879,
+      "original_vertices": 12207,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 1391,
+      "transverse_pairs": 25590,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 694,
+        "0": 697
+      }
+    },
+    {
+      "Ngrid": 23,
+      "PF_I11_face_digest": "48e2f89aaa75f993af2e0b869088cc3634d676f9cb234a3cc1d66c58d511c518",
+      "PF_I11_vertex_digest": "5c349932d1caa8549c362ea0d1c21e1d8d58ad548a74e353d1caf984ca6fe644",
+      "Wilson_action_absolute_difference": 1.8189894035458565e-12,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 23185,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 32582,
+      "original_rhombi": 16138,
+      "original_vertices": 16435,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 1600,
+      "transverse_pairs": 34897,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 805,
+        "0": 795
+      }
+    },
+    {
+      "Ngrid": 25,
+      "PF_I11_face_digest": "f91ef4a44e4dfe5b69bb13baf8248198cc547953814317e53ae602097d880704",
+      "PF_I11_vertex_digest": "508fdd906d94e469ad71c0153bacac250b807e99c6c8d925e45e0d74e38b3836",
+      "Wilson_action_absolute_difference": 3.637978807091713e-12,
+      "correct_phase_and_upper_convention_mismatch": 0,
+      "fixed_source_same_word_mismatch": 27350,
+      "local_gauge_action_intertwines": true,
+      "original_basis_edges": 38139,
+      "original_rhombi": 18874,
+      "original_vertices": 19260,
+      "paired_commutator_max_absolute_difference": 4.440892098500626e-16,
+      "reflected_incidence_faces_exact": true,
+      "reflected_phase_but_wrong_lower_convention_mismatch": 1714,
+      "transverse_pairs": 40853,
+      "weighted_laplacian_vertex_permutation_equivalence": true,
+      "wrong_lower_affected_levels": {
+        "-1": 855,
+        "0": 859
+      }
+    }
+  ],
+  "auxiliary_actual_link_gauge_projected_heat_seam": {
+    "actual_source_link_variables": 8,
+    "actual_source_vertices_in_local_patch": 7,
+    "beta_auxiliary": 0.3,
+    "difference_under_independent_half_gauge": 959650.2189923788,
+    "finite_auxiliary_simple_top_eigen_analytic_condition": "strictly positive heat kernel, w>0, compact operator => simple isolated Perron eigenvalue on gauge invariant sector; NOT uniform or physical mass gap",
+    "gauge_projector_Monte_Carlo_samples": 9,
+    "global_analytic_gauge_projection": "T=P_G M_w (tensor_e H_t_e) M_w P_G is PSD, compact for finite E; P_G projects SU2^V local gauge invariants",
+    "global_original_source_OS_positive_proved": false,
+    "lambda_auxiliary": 0.4,
+    "local_pair_face_families": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "local_pair_source_face_indices": [
+      0,
+      56
+    ],
+    "physical_continuum_gap_proved": false,
+    "sample_configs": 10,
+    "source_Ngrid": 7,
+    "source_face_sha256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+    "source_physical_t_derived": false,
+    "source_vertex_sha256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+    "t_auxiliary": 0.85,
+    "two_sided_finite_gauge_averaged_heat_Gram_min_eigen": 6462.1658957232485,
+    "unprojected_link_heat_seam_independent_gauge_change_detected": true,
+    "unprojected_weighted_link_heat_Gram_min_eigen": 58154.45652231207
+  },
+  "date": "2026-11-08",
+  "decorated_reflection_covariance_of_mathematical_extended_hull_proved": true,
+  "exact_sturmian_reversal": {
+    "algebraic_identity": "s_lower(rho,k)=s_upper(-rho-alpha,-k), all k in Z",
+    "exact_floor_ceil_q_sqrt5_implementation": true,
+    "new_Physical_phason_claimed": false,
+    "reflected_phase_involution_squared_identity": true,
+    "reflected_source_phase": "rho=-alpha upper on all 5 directions",
+    "singular_reflected_lower_word_mismatch_levels_source_index": [
+      -1,
+      0
+    ],
+    "source_original_phase": "rho=0 lower on all 5 directions",
+    "symmetric_same_word_mismatch_count_in_test_range": 15278,
+    "tested_levels_per_word": 20001,
+    "validated_integer_source_cases": 200010
+  },
+  "gauge_projected_link_heat_transfer_positive_conditionally": true,
+  "height_preserving_group_action": {
+    "checked_phases_and_levels": 10005,
+    "exact_group_relation": "R T_a R = T_{-a}; T_a T_b = T_{a+b}",
+    "five_separate_word_phase_coordinates_necessary_for_full_Lambda0_covariance": true,
+    "no_physical_time_derived": true,
+    "reflection_action": "(m,gamma,rho_j,eta_j)->(1-m,-gamma,-rho_j-alpha,swap(eta_j))",
+    "single_shared_phase_fails_nontrivial_Lambda0_translation": true,
+    "translation_action": "(m,gamma,rho_j,eta_j)->(m+a,gamma-a,rho_j-a_j*alpha,eta_j)",
+    "translation_group": "Lambda0 = {a in Z5: sum(a)=0}",
+    "translation_height_preserving": true
+  },
+  "milestone": "PF-I14",
+  "nontrivial_interacting_continuum_mass_gap_proved": false,
+  "original_YM_global_OS_reflection_positive_proved": false,
+  "original_source_script_private_SHA256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "scope": "exact mathematical extension of unpublished source hopping and finite paired-hull gauge covariance; NOT physical time/OS/continuum proof",
+  "separate_two_completed_window_controls": [
+    {
+      "Ngrid": 7,
+      "PF_I11_completed_SHA_matches": true,
+      "completed_original_population_not_interchanged": true,
+      "completed_window_edges": 2761,
+      "completed_window_rhombi": 1330,
+      "completed_window_vertices": 1432,
+      "correct_decorated_reflection_mismatch": 0,
+      "fixed_source_same_word_mismatch": 1666,
+      "phase_shift_without_upper_mismatch": 470
+    },
+    {
+      "Ngrid": 25,
+      "PF_I11_completed_SHA_matches": true,
+      "completed_original_population_not_interchanged": true,
+      "completed_window_edges": 38135,
+      "completed_window_rhombi": 18880,
+      "completed_window_vertices": 19256,
+      "correct_decorated_reflection_mismatch": 0,
+      "fixed_source_same_word_mismatch": 27372,
+      "phase_shift_without_upper_mismatch": 1730
+    }
+  ],
+  "source_authorized_Fibonacci_phason_dynamics_proved": false,
+  "source_height_preserving_translation_tests": {
+    "25": {
+      "all_accepted_face_labels_transport_under_gamma_minus_a": true,
+      "all_edge_and_face_Fibonacci_couplings_transport": true,
+      "phase_transport_must_be_independent_by_family_for_nontrivial_a": true,
+      "source_Ngrid": 25,
+      "source_edges": 38139,
+      "source_faces": 18874,
+      "source_vertices": 19260,
+      "translated_Wilson_action_absolute_difference": 0.0,
+      "translation_a": [
+        2,
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    "7": {
+      "all_accepted_face_labels_transport_under_gamma_minus_a": true,
+      "all_edge_and_face_Fibonacci_couplings_transport": true,
+      "phase_transport_must_be_independent_by_family_for_nontrivial_a": true,
+      "source_Ngrid": 7,
+      "source_edges": 3017,
+      "source_faces": 1468,
+      "source_vertices": 1550,
+      "translated_Wilson_action_absolute_difference": 0.0,
+      "translation_a": [
+        2,
+        -1,
+        0,
+        -1,
+        0
+      ]
+    }
+  },
+  "source_original_chosen_hopping_fixed_under_geometric_inversion": false,
+  "source_physical_time_proved": false
+}

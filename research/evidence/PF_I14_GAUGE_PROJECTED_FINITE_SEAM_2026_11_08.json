@@ -1,0 +1,35 @@
+{
+  "actual_source_link_variables": 8,
+  "actual_source_vertices_in_local_patch": 7,
+  "beta_auxiliary": 0.3,
+  "difference_under_independent_half_gauge": 959650.2189923788,
+  "finite_auxiliary_simple_top_eigen_analytic_condition": "strictly positive heat kernel, w>0, compact operator => simple isolated Perron eigenvalue on gauge invariant sector; NOT uniform or physical mass gap",
+  "gauge_projector_Monte_Carlo_samples": 9,
+  "global_analytic_gauge_projection": "T=P_G M_w (tensor_e H_t_e) M_w P_G is PSD, compact for finite E; P_G projects SU2^V local gauge invariants",
+  "global_original_source_OS_positive_proved": false,
+  "lambda_auxiliary": 0.4,
+  "local_pair_face_families": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "local_pair_source_face_indices": [
+    0,
+    56
+  ],
+  "physical_continuum_gap_proved": false,
+  "sample_configs": 10,
+  "source_Ngrid": 7,
+  "source_face_sha256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+  "source_physical_t_derived": false,
+  "source_vertex_sha256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+  "t_auxiliary": 0.85,
+  "two_sided_finite_gauge_averaged_heat_Gram_min_eigen": 6462.1658957232485,
+  "unprojected_link_heat_seam_independent_gauge_change_detected": true,
+  "unprojected_weighted_link_heat_Gram_min_eigen": 58154.45652231207
+}

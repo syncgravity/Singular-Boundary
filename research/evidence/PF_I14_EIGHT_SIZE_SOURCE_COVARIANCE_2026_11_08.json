@@ -1,0 +1,353 @@
+{
+  "all_source_PF_I11_reference_SHA256_verified": true,
+  "continuum_Yang_Mills_mass_gap_proved": false,
+  "gate": "PF-I14",
+  "global_OS_positive_original_YM_proved": false,
+  "physical_reflection_time_proved": false,
+  "result_kind": "exact algebraic Sturmian hull reflection + finite source gauge covariance",
+  "semidirect_group_certificate": {
+    "checked_phases_and_levels": 10005,
+    "exact_group_relation": "R T_a R = T_{-a}; T_a T_b = T_{a+b}",
+    "five_separate_word_phase_coordinates_necessary_for_full_Lambda0_covariance": true,
+    "no_physical_time_derived": true,
+    "reflection_action": "(m,gamma,rho_j,eta_j)->(1-m,-gamma,-rho_j-alpha,swap(eta_j))",
+    "single_shared_phase_fails_nontrivial_Lambda0_translation": true,
+    "translation_action": "(m,gamma,rho_j,eta_j)->(m+a,gamma-a,rho_j-a_j*alpha,eta_j)",
+    "translation_group": "Lambda0 = {a in Z5: sum(a)=0}",
+    "translation_height_preserving": true
+  },
+  "source_finite": {
+    "10": {
+      "E": 5927,
+      "F": 2886,
+      "V": 3042,
+      "Wilson_face_action_absolute_difference": 0.0,
+      "Wilson_face_action_mirrored": 2250.0157981321545,
+      "Wilson_face_action_original": 2250.0157981321545,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "e3992a87b94abe18e99f1101c4efd3f56df6d7b93dd9e7fd2e9f5b6c02b3fa51",
+      "mirrored_vertex_SHA256": "ce3d9ad948217cc0b38a844615b50bfbe15e7b11e073aa18f9717d0660fc06b1",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 4594.626843623062,
+        "source_pair_action": 4594.626843623062,
+        "transverse_pair_count": 6157
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 3872,
+      "singular_lower_lower_level_histogram": {
+        "-1": 345,
+        "0": 345
+      },
+      "singular_lower_lower_mismatch_edges": 690,
+      "source_Ngrid": 10,
+      "source_face_SHA256": "ead8334adc6ceed6b86a588a0779505619b806f80772dc8171202ff7a3a10c8f",
+      "source_vertex_SHA256": "8bd4ed73f684b2c82f48f8fffc5454850565bd66a67643ad555bc58bf75e0fee",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 9149.5203067484,
+      "weighted_laplacian_energy_original": 9149.520306748438
+    },
+    "12": {
+      "E": 8468,
+      "F": 4145,
+      "V": 4324,
+      "Wilson_face_action_absolute_difference": 4.547473508864641e-13,
+      "Wilson_face_action_mirrored": 3225.5645737721456,
+      "Wilson_face_action_original": 3225.564573772145,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "2873e7c7c2ca228a3c566cc39061f234de128256386cdcedc15582d13c5fef35",
+      "mirrored_vertex_SHA256": "3813192c23cf2236da56086163b24aee18aa28e44a7a89815b114a8bcb785ac6",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 6643.746698455976,
+        "source_pair_action": 6643.746698455976,
+        "transverse_pair_count": 8890
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 5507,
+      "singular_lower_lower_level_histogram": {
+        "-1": 411,
+        "0": 419
+      },
+      "singular_lower_lower_mismatch_edges": 830,
+      "source_Ngrid": 12,
+      "source_face_SHA256": "43df6235aa1b87207c8ff518a0d088617b6aae87c173aa1d7b774264d376129a",
+      "source_vertex_SHA256": "3f48224921356ce8e92adbc1e035ca417fcabf7ed55c7977ae20b310dd22e464",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 13163.216439021639,
+      "weighted_laplacian_energy_original": 13163.216439021584
+    },
+    "15": {
+      "E": 13779,
+      "F": 6800,
+      "V": 6980,
+      "Wilson_face_action_absolute_difference": 0.0,
+      "Wilson_face_action_mirrored": 5325.050286890575,
+      "Wilson_face_action_original": 5325.050286890575,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "69e122a1412df94373fbf1f8325ecc562629d3bcca1920a9cdd52b15f9b11341",
+      "mirrored_vertex_SHA256": "0de0d52cd284ca676548d6170cca5717f7dd14aea65709141bfd355efc7bfc6e",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 10945.366499737827,
+        "source_pair_action": 10945.366499737827,
+        "transverse_pair_count": 14559
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 9562,
+      "singular_lower_lower_level_histogram": {
+        "-1": 525,
+        "0": 505
+      },
+      "singular_lower_lower_mismatch_edges": 1030,
+      "source_Ngrid": 15,
+      "source_face_SHA256": "d8e2bfb1cff40caf9b76ec239543b5b667b7e5f98dda6bf41b2696cd931e1b42",
+      "source_vertex_SHA256": "55d1ad6896d5f90cfb81ebd9ae0113fe50ff7657ec14cd2ea58ef765ed015efd",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 21096.084080971737,
+      "weighted_laplacian_energy_original": 21096.084080971836
+    },
+    "18": {
+      "E": 19593,
+      "F": 9646,
+      "V": 9950,
+      "Wilson_face_action_absolute_difference": 0.0,
+      "Wilson_face_action_mirrored": 7533.511860076964,
+      "Wilson_face_action_original": 7533.511860076964,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "aa3f78836ae413f8524da38458334696eadae8268a8985906cf6a31e05625a9e",
+      "mirrored_vertex_SHA256": "f8d70a2785a547f11e3805ae75ca704f1a1a59e04283c51026f533d047507f8d",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 15431.496229770708,
+        "source_pair_action": 15431.496229770708,
+        "transverse_pair_count": 20749
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 13780,
+      "singular_lower_lower_level_histogram": {
+        "-1": 625,
+        "0": 615
+      },
+      "singular_lower_lower_mismatch_edges": 1240,
+      "source_Ngrid": 18,
+      "source_face_SHA256": "8c2e52fd9111cc182c114f3fe60d4e14b082c5e46c4cf77fa46e2b256c782ec4",
+      "source_vertex_SHA256": "29d3aa4617b3ef8baa8a5254f553f9af1f69157b9e6b3bbc169c3b02882e3672",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 30196.104194109783,
+      "weighted_laplacian_energy_original": 30196.104194109477
+    },
+    "20": {
+      "E": 24091,
+      "F": 11879,
+      "V": 12207,
+      "Wilson_face_action_absolute_difference": 1.8189894035458565e-12,
+      "Wilson_face_action_mirrored": 9214.099845379178,
+      "Wilson_face_action_original": 9214.099845379176,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "63b6b0140d95e18fea5a997a73c659fbc7b3815c2e6fc21bb289fc7dae7bad41",
+      "mirrored_vertex_SHA256": "50c8d405e86de5602588dfa400bdc2683c00907f4ce15a808a20d024e7c7b6a0",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 19245.44051521033,
+        "source_pair_action": 19245.440515210328,
+        "transverse_pair_count": 25590
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 17194,
+      "singular_lower_lower_level_histogram": {
+        "-1": 694,
+        "0": 697
+      },
+      "singular_lower_lower_mismatch_edges": 1391,
+      "source_Ngrid": 20,
+      "source_face_SHA256": "eb0024d1daabf38a7bceda63d7a03e3089979a26ae944ee3e3cf1b191675d21e",
+      "source_vertex_SHA256": "662aafd944365ddd3ef492a3d110f108d6c2d77b062b54d0e96a9f6cd53c701a",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 37566.89387370761,
+      "weighted_laplacian_energy_original": 37566.89387370735
+    },
+    "23": {
+      "E": 32582,
+      "F": 16138,
+      "V": 16435,
+      "Wilson_face_action_absolute_difference": 1.8189894035458565e-12,
+      "Wilson_face_action_mirrored": 12618.977200658379,
+      "Wilson_face_action_original": 12618.977200658377,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "56e0de6e9c2ce648a04676a4aa26922eca72677215add50c397fa47a88c8bf11",
+      "mirrored_vertex_SHA256": "9e4b3429a8c150530ef4264925e18519a6393a6c17b41b767aaef3e6d8f996e7",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 26465.28981242441,
+        "source_pair_action": 26465.28981242441,
+        "transverse_pair_count": 34897
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 23185,
+      "singular_lower_lower_level_histogram": {
+        "-1": 805,
+        "0": 795
+      },
+      "singular_lower_lower_mismatch_edges": 1600,
+      "source_Ngrid": 23,
+      "source_face_SHA256": "48e2f89aaa75f993af2e0b869088cc3634d676f9cb234a3cc1d66c58d511c518",
+      "source_vertex_SHA256": "5c349932d1caa8549c362ea0d1c21e1d8d58ad548a74e353d1caf984ca6fe644",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 50218.507834906704,
+      "weighted_laplacian_energy_original": 50218.50783490711
+    },
+    "25": {
+      "E": 38139,
+      "F": 18874,
+      "V": 19260,
+      "Wilson_face_action_absolute_difference": 3.637978807091713e-12,
+      "Wilson_face_action_mirrored": 14818.434806493822,
+      "Wilson_face_action_original": 14818.434806493819,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "b1715f33d82384b7955b12a078b35c90b6925aee84ceae5d7a2f23ce67d0e2d8",
+      "mirrored_vertex_SHA256": "cafe45a6e082bb1fa047bb493cd36e8d669c7b494de14694a0ce86dd801d3303",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 30395.325390854778,
+        "source_pair_action": 30395.325390854778,
+        "transverse_pair_count": 40853
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 27350,
+      "singular_lower_lower_level_histogram": {
+        "-1": 855,
+        "0": 859
+      },
+      "singular_lower_lower_mismatch_edges": 1714,
+      "source_Ngrid": 25,
+      "source_face_SHA256": "f91ef4a44e4dfe5b69bb13baf8248198cc547953814317e53ae602097d880704",
+      "source_vertex_SHA256": "508fdd906d94e469ad71c0153bacac250b807e99c6c8d925e45e0d74e38b3836",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 58334.09129397683,
+      "weighted_laplacian_energy_original": 58334.091293977166
+    },
+    "7": {
+      "E": 3017,
+      "F": 1468,
+      "V": 1550,
+      "Wilson_face_action_absolute_difference": 4.547473508864641e-13,
+      "Wilson_face_action_mirrored": 1158.1306657794173,
+      "Wilson_face_action_original": 1158.1306657794178,
+      "all_reflected_source_faces_match_exactly": true,
+      "continuum_Yang_Mills_mass_gap_proved": false,
+      "decorated_reflection_restricts_to_same_original_fixed_hopping_background": false,
+      "edge_hopping_type_mismatches_under_decorated_theta": 0,
+      "face_weight_mismatches_under_decorated_theta": 0,
+      "gauge_action_intertwines_exact_source_vertex_map": true,
+      "mirrored_face_SHA256": "927394fa05092b017f42ec5b4ed144472f5fa9fb86facd457b21c97e2f5b8548",
+      "mirrored_vertex_SHA256": "a7c2b7fd1a3906cf01596b1ece2418b0449bb9c154ae2861a9ac187f0df3df54",
+      "nonabelian_two_face_action": {
+        "pair_penalty_max_absolute_discrepancy": 4.440892098500626e-16,
+        "reflected_pair_action": 2305.443739195827,
+        "source_pair_action": 2305.443739195827,
+        "transverse_pair_count": 3093
+      },
+      "reflection_positive_physical_transfer_from_covariance_proved": false,
+      "same_fixed_hopping_word_mismatch_count": 1864,
+      "singular_lower_lower_level_histogram": {
+        "-1": 243,
+        "0": 245
+      },
+      "singular_lower_lower_mismatch_edges": 488,
+      "source_Ngrid": 7,
+      "source_face_SHA256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+      "source_vertex_SHA256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+      "source_weighted_operator_unitarily_equivalent_by_vertex_permutation": true,
+      "weighted_laplacian_energy_mirrored": 4510.920828986064,
+      "weighted_laplacian_energy_original": 4510.920828986072
+    }
+  },
+  "source_original_hopping_not_canonically_reflection_invariant_without_decorated_background": true,
+  "source_translations": {
+    "25": {
+      "all_accepted_face_labels_transport_under_gamma_minus_a": true,
+      "all_edge_and_face_Fibonacci_couplings_transport": true,
+      "phase_transport_must_be_independent_by_family_for_nontrivial_a": true,
+      "source_Ngrid": 25,
+      "source_edges": 38139,
+      "source_faces": 18874,
+      "source_vertices": 19260,
+      "translated_Wilson_action_absolute_difference": 0.0,
+      "translation_a": [
+        2,
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    "7": {
+      "all_accepted_face_labels_transport_under_gamma_minus_a": true,
+      "all_edge_and_face_Fibonacci_couplings_transport": true,
+      "phase_transport_must_be_independent_by_family_for_nontrivial_a": true,
+      "source_Ngrid": 7,
+      "source_edges": 3017,
+      "source_faces": 1468,
+      "source_vertices": 1550,
+      "translated_Wilson_action_absolute_difference": 0.0,
+      "translation_a": [
+        2,
+        -1,
+        0,
+        -1,
+        0
+      ]
+    }
+  },
+  "sturmian_certificate": {
+    "algebraic_identity": "s_lower(rho,k)=s_upper(-rho-alpha,-k), all k in Z",
+    "exact_floor_ceil_q_sqrt5_implementation": true,
+    "new_Physical_phason_claimed": false,
+    "reflected_phase_involution_squared_identity": true,
+    "reflected_source_phase": "rho=-alpha upper on all 5 directions",
+    "singular_reflected_lower_word_mismatch_levels_source_index": [
+      -1,
+      0
+    ],
+    "source_original_phase": "rho=0 lower on all 5 directions",
+    "symmetric_same_word_mismatch_count_in_test_range": 15278,
+    "tested_levels_per_word": 20001,
+    "validated_integer_source_cases": 200010
+  }
+}
