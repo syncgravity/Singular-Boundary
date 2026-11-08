@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.53-pf-i2-edge-identity",
-  "scope": "PF-I2 corrected published P3 source reconstruction: four integer-sum layers, Fibonacci level-dependent hopping and exact same-accepted-vertex basis-edge equivalence; Paper2 cross-direction may use existing P3 interfamily edges rather than extra bonds. Paper2 original generator, diagonal and zeta normalization remain OPEN. No YM/gravity continuum theorem promoted.",
+  "version": "v2.54-pf-i3",
+  "scope": "PF-I3 exact negative integer graph-zeta trace formulas and Paper2 normalization exclusion under specified benchmark; distinct source-required logdet versus zeta(-1/2) implication; independently reproducible 186/616 P3 controlled checks. Original Paper2 numerical coupled operator and physics remain OPEN, all continuum gates intact.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Source Paper1 P3 pentagrid equations, 4 original sum layers, and Fibonacci level hopping now reconstructed (PF-I2), but source Paper2's additional coupled Z5 bonds, D−W diagonal/mass, original Ngrid vertex selection, phason windows and full numerical generator remain unverified.",
+      "summary": "Source Paper1 P3 equations and 4 sum layers established, but Paper2 exact coupled Ngrid/Nint generator, D diagonal, m² and periodic control remain OPEN. PF-I3 adds exact zeta(-1)/(-2) trace diagnostics, a conditional normalization exclusion, and logdet versus zeta(-1/2) logical boundary; none is original spectral-zeta reproduction.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4849,6 +4849,13 @@
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7143,6 +7150,152 @@
         "source-fidelity",
         "conditional-equivalence",
         "cross-family-coupling",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "title": "Finite graph zeta at s=-1,-2 and s=0: exact operator moment fingerprints",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "For finite L=D-W zero-diagonal weighted adjacency, zeta_{L,m}(-1)=m²+Tr D/N and zeta(-2)=m⁴+2m²TrD/N+(sum_v D_v²+2sum_e w_e²)/N; full regulated zeta(0)=1. Weighted-strength and ordinary-count diagonal imply different fingerprints, so Paper2's R(-1) is a direct normalization test, not spectral-gap evidence.",
+      "detail": "PF-I3 source-equation verifier evaluated 186/616 P3 patches with N-matched triangular and square controls, two D conventions, three normalization choices and strict trace identities. 12 local regression tests and exact byte-for-byte replay of full Library evidence. The original Paper2 numerical generator remains unrecovered.",
+      "checks": [
+        {
+          "label": "Independently verify exact trace identities and identify Paper2 original D and m²",
+          "state": "open",
+          "note": "The trace identities themselves are proved; Paper2 source matrix normalization is not."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "spectral-moment",
+        "operator-normalization",
+        "finite-theorem",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-PAPER2-RMINUS1-NORMALIZATION-EXCLUSION",
+      "title": "Conditional Paper2 R(-1) benchmark conflict under unit triangular weights",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "With Paper2-reported mean coordination 3.9 QC vs 6 triangular, unit triangular control conductance, printed P3 weights ≤1 and Paper1 m²=1e-4, both ordinary-count QC D and weighted QC D predict R(-1)≤~0.65001, unlike reported 0.7371. Source parameters and comparator strength unverified, so this excludes only that simultaneous normalization hypothesis.",
+      "detail": "Source value R(-1)=0.7371. At fixed count QC and m²=1e-4, matching requires effective triangular conductance ~0.88184 rather than1; forcing unit triangle instead would require m²~1.98783. A single calibrated triangle conductance on independently reconstructed 186/616 P3 patches predicts R(-1/2)~0.8357, demonstrating one source ratio does not uniquely certify a coupled operator.",
+      "checks": [
+        {
+          "label": "Obtain actual Paper2 numerical triangular/square comparator and hopping/physical scale",
+          "state": "open",
+          "note": "Conditional formula not proof of errors in original numerical results."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "periodic-control",
+        "normalization-no-go",
+        "source-specified-assumptions",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+      "title": "Negative-half spectral moment does not imply one-loop log determinant",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "Paper2 Eq21–22 defines one-loop logdet through −ζ'(0), whereas the reported 16.7% at ζ(-1/2) concerns mean sqrt eigenvalues. Positive spectra (1,9) and (4,4) have identical ζ(-1/2)=2 but distinct mean logdet log3 and log4. Hence 16.7% zeta moment difference does not by itself imply 16.7% one-loop effective action suppression.",
+      "detail": "This is a logical nonimplication for finite positive spectra, not disproof of source spectral numbers or of a separate physical vacuum-energy observable. An interacting gravitational fluctuation operator, renormalization prescription and continuum limit remain necessary.",
+      "checks": [
+        {
+          "label": "Compute source-matched −ζ'(0) and specify the physical fluctuation operator/counterterms",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "spectral-zeta",
+        "gravity-uv-separate",
+        "logical-obstruction",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "title": "Open: exact Paper2 graph and comparator from two independent spectral moments",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Reconstruct Paper2 accepted Ngrid/Nint vertices, original-basis connectivity, Fibonacci weight rule, D diagonal and m², triangular/square reference, physical/volume normalization. Reproduce s=-1 exact graph trace FIRST, then s=-1/2, -2 and −ζ'(0) on identical matrices. Small reconstructed samples and one-point conductance calibration do not certify original 8-size data.",
+      "detail": "Preserve separately Paper1 P3 authentic published equations, provisional quotient PF-I0, topology PF-I1, and Paper2 generator still missing. Full evidence JSON and executable archive stored in user Library, summary on GitHub. OS/YM continuum and gravity gates OPEN.",
+      "checks": [
+        {
+          "label": "Recover actual 8-size source adjacency, weight/degree diagonal and mass from original code or sufficient data",
+          "state": "open"
+        },
+        {
+          "label": "Reproduce original R(-1) trace identity with source comparator and validate −1/2,−2 concurrently",
+          "state": "open"
+        },
+        {
+          "label": "Determine whether ζ(-1/2) is intended as vacuum energy rather than logdet and prove bridge if claimed",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-identity",
+        "coupled-Z5",
+        "spectrum-reproduction",
         "2026-11-07"
       ],
       "importance": 5,
@@ -10629,6 +10782,76 @@
       "kind": "conditional-not-closure",
       "label": "finite adjacency identity does not authenticate Paper2 numerical graph",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "kind": "source-model-test",
+      "label": "reconstructed P3 input to finite spectral trace diagnostics",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I2-DEGREE-NORMALIZATION",
+      "to_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "kind": "resolves-formula-not-source",
+      "label": "moment determines consequences of both D definitions without selecting source D",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "to_id": "PF-I3-PAPER2-RMINUS1-NORMALIZATION-EXCLUSION",
+      "kind": "conditional-exclusion",
+      "label": "reported degree and unit triangular normalization cannot yield R(-1)=0.7371",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-RMINUS1-NORMALIZATION-EXCLUSION",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "requires-source-recovery",
+      "label": "source comparator weight and m² needed to test conditional mismatch",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "blocks-gate",
+      "label": "do not fit one zeta value without reproducing trace and matrix operator",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+      "to_id": "PF-GRAV-SEPARATE",
+      "kind": "does-not-imply",
+      "label": "reported square-root zeta is not a determinant or continuum gravity proof",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "coupled graph and source normalization still unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "conditional-source-interface",
+      "label": "same original-basis adjacency only if vertex sets coincide",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "source-dependency",
+      "label": "same 20 phason configurations and accepted graph not authenticated",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "requires-correct-observable",
+      "label": "must distinguish zeta(-1/2) from zeta prime(0)",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10774,7 +10997,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "next_gate": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -10824,7 +11047,24 @@
         "laplace_degree_diagonal": "PF-I2-DEGREE-NORMALIZATION",
         "mass_parameter": "unrecovered",
         "paper2_zeta_ratio_reproduced": false,
-        "same_vertex_equivalence": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE"
+        "same_vertex_equivalence": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+        "trace_moment_gate": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+        "original_8size_reproduced": false
+      },
+      "paper2_spectral_moment_audit": {
+        "status": "partial",
+        "report": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+        "exact_trace_node": "PF-I3-EXACT-TRACE-MOMENTS",
+        "conditional_benchmark_node": "PF-I3-PAPER2-RMINUS1-NORMALIZATION-EXCLUSION",
+        "one_loop_nonimplication": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+        "reproduction_gate": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+        "paper2_ratio_minus_half": 0.8332,
+        "paper2_ratio_minus_one": 0.7371,
+        "conditional_unit_triangle_ratio_minus_one": 0.6500058332361128,
+        "one_parameter_calibration_not_source_reproduction": true,
+        "full_research_evidence_library": "/The Singular Boundary/Proof Audits/PF I3 Spectral Operator 2026-11-07/",
+        "original_generator_recovered": false,
+        "continuum_mass_gap_proved": false
       }
     },
     "orientation_selection": {
@@ -10846,7 +11086,8 @@
       "status": "partial",
       "four_layer_p3_result": "PF-I2-FOUR-SUM-LAYERS",
       "coupled_operator_gate": "PF-I2-COUPLED-BOND-DICTIONARY",
-      "preimposed_3d": false
+      "preimposed_3d": false,
+      "spectral_trace_audit": "PF-I3-EXACT-TRACE-MOMENTS"
     }
   },
   "conceptual_program": {
