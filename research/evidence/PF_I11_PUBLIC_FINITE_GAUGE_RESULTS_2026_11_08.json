@@ -1,0 +1,270 @@
+{
+  "SU2_Wilson_partition_exact": "exp(-2 sum kappa_f) <= Z <= 1 for kappa_f >= 0, normalized Haar",
+  "all_16_full_plaquette_Haar_density_identical_at_beta_0p71": true,
+  "auxiliary_transfer_tests": [
+    {
+      "auxiliary_gap": 0.3430028993301693,
+      "beta": 0.71,
+      "electric_scale": 0.1,
+      "min_transfer_eigenvalue": 0.7370879297234939
+    },
+    {
+      "auxiliary_gap": 0.6643798633028618,
+      "beta": 0.71,
+      "electric_scale": 0.5,
+      "min_transfer_eigenvalue": 0.3542578291774819
+    },
+    {
+      "auxiliary_gap": 0.9488849202462731,
+      "beta": 0.71,
+      "electric_scale": 1.0,
+      "min_transfer_eigenvalue": 0.1382303945486736
+    },
+    {
+      "auxiliary_gap": 1.612196445847281,
+      "beta": 0.71,
+      "electric_scale": 2.0,
+      "min_transfer_eigenvalue": 0.020923224332120034
+    },
+    {
+      "auxiliary_gap": 0.07499999999998708,
+      "beta": 0,
+      "electric_scale": 0.1,
+      "min_transfer_eigenvalue": 0.8277865066947767
+    },
+    {
+      "auxiliary_gap": 0.3749999999999918,
+      "beta": 0,
+      "electric_scale": 0.5,
+      "min_transfer_eigenvalue": 0.3886795709017734
+    },
+    {
+      "auxiliary_gap": 0.7499999999999879,
+      "beta": 0,
+      "electric_scale": 1.0,
+      "min_transfer_eigenvalue": 0.1510718088363788
+    }
+  ],
+  "continuum_positive_physical_mass_gap_proved": false,
+  "date": "2026-11-08",
+  "distinct_plaquette_trace_connected_covariance_exact": 0.0,
+  "exact_all_face_Haar_factorization_verified_on_16_complexes": true,
+  "finite_one_face_beta_0p71": {
+    "Z": 0.5232815078495338,
+    "beta": 0.71,
+    "mean_halftrace": 0.17388540600159913
+  },
+  "four_dimensional_interacting_YM_exists_proved": false,
+  "independent_face_rule": "three-free-coordinate strict internal triangular acceptance; all corners accepted",
+  "log_partition_per_face_uniform_beta_0p71": -0.6476357037985244,
+  "notes": "Every source rhombus face peels with a free edge; therefore pure plaquette Wilson Haar partition and all distinct face character moments factorize. Two-complex face peeling is an explicit strong deformation retract; the free group ranks are finite source-selection dependent. The auxiliary positive transfer imports a kinetic scale and is not intrinsic physical time.",
+  "original_source_preserved_privately": true,
+  "original_source_selection": "author 35% tile-center/one-pass incident tile rule",
+  "physical_time_or_OS_reflection_proved": false,
+  "private_tests_passed": 27,
+  "public_no_original_script_tests_passed": 19,
+  "public_source_skips": 8,
+  "rows": [
+    {
+      "Ngrid": 7,
+      "collapse_pair_sha256": "8a85b3ab06f0515b465bbdadade1262dc0b344ddd076d558bbdc3dcd1abb7dc8",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 2761,
+      "completed_window_core_F": 1330,
+      "completed_window_core_V": 1432,
+      "completed_window_labels_sha256": "bb9aa7fca99bea4e32e2014190588e43d1913a179ecd1c2cccb25854d6cc4114",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 3017,
+      "original_F_direct_window_rhombi": 1468,
+      "original_V": 1550,
+      "original_components": 1,
+      "original_face_labels_sha256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+      "original_labels_sha256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+      "original_pi1_free_rank": 0,
+      "original_su2_extra_classical_flat_directions": 0,
+      "source_edge_zero_face_incidence": 6
+    },
+    {
+      "Ngrid": 10,
+      "collapse_pair_sha256": "d6e1a2bcee19beecf065757deab73652cb7136b58f415b3c27d1fd1aa6deb197",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 5877,
+      "completed_window_core_F": 2846,
+      "completed_window_core_V": 3032,
+      "completed_window_labels_sha256": "a928bb0e90d4505ee4ec90e40dab5ac6b85d344a26a45a8d76138f78c1879f8f",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 5927,
+      "original_F_direct_window_rhombi": 2886,
+      "original_V": 3042,
+      "original_components": 1,
+      "original_face_labels_sha256": "ead8334adc6ceed6b86a588a0779505619b806f80772dc8171202ff7a3a10c8f",
+      "original_labels_sha256": "8bd4ed73f684b2c82f48f8fffc5454850565bd66a67643ad555bc58bf75e0fee",
+      "original_pi1_free_rank": 0,
+      "original_su2_extra_classical_flat_directions": 0,
+      "source_edge_zero_face_incidence": 44
+    },
+    {
+      "Ngrid": 12,
+      "collapse_pair_sha256": "43304900c6c3d15ab4e603c5e1d06fdde5df80d940f08ef1eb6e7be7f131ac40",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 8382,
+      "completed_window_core_F": 4089,
+      "completed_window_core_V": 4294,
+      "completed_window_labels_sha256": "2a23a29c95f7ee8c7ea1361393c36271235696cde9ebafe4a072ce5ad512e9c8",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 8468,
+      "original_F_direct_window_rhombi": 4145,
+      "original_V": 4324,
+      "original_components": 1,
+      "original_face_labels_sha256": "43df6235aa1b87207c8ff518a0d088617b6aae87c173aa1d7b774264d376129a",
+      "original_labels_sha256": "3f48224921356ce8e92adbc1e035ca417fcabf7ed55c7977ae20b310dd22e464",
+      "original_pi1_free_rank": 0,
+      "original_su2_extra_classical_flat_directions": 0,
+      "source_edge_zero_face_incidence": 34
+    },
+    {
+      "Ngrid": 15,
+      "collapse_pair_sha256": "0b60ce3545a4e3ae3b1b9d3f59cd700ca513ec72d54a39b916e795c69bcd0bf9",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 13397,
+      "completed_window_core_F": 6586,
+      "completed_window_core_V": 6812,
+      "completed_window_labels_sha256": "3e28462fd7d074fe17ede0b931627116e75ccd44bd432336f4fa4691ce2dad99",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 13779,
+      "original_F_direct_window_rhombi": 6800,
+      "original_V": 6980,
+      "original_components": 1,
+      "original_face_labels_sha256": "d8e2bfb1cff40caf9b76ec239543b5b667b7e5f98dda6bf41b2696cd931e1b42",
+      "original_labels_sha256": "55d1ad6896d5f90cfb81ebd9ae0113fe50ff7657ec14cd2ea58ef765ed015efd",
+      "original_pi1_free_rank": 0,
+      "original_su2_extra_classical_flat_directions": 0,
+      "source_edge_zero_face_incidence": 14
+    },
+    {
+      "Ngrid": 18,
+      "collapse_pair_sha256": "bea4d5ea6d72a081313730413f55261cffd442b8e5775673e0dfaf4a992d82f0",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 19515,
+      "completed_window_core_F": 9604,
+      "completed_window_core_V": 9912,
+      "completed_window_labels_sha256": "44fe1838e6266ae81c633cf44a36173895a5017e93dbdf90c6a4f9d59eea6ccd",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 19593,
+      "original_F_direct_window_rhombi": 9646,
+      "original_V": 9950,
+      "original_components": 3,
+      "original_face_labels_sha256": "8c2e52fd9111cc182c114f3fe60d4e14b082c5e46c4cf77fa46e2b256c782ec4",
+      "original_labels_sha256": "29d3aa4617b3ef8baa8a5254f553f9af1f69157b9e6b3bbc169c3b02882e3672",
+      "original_pi1_free_rank": 0,
+      "original_su2_extra_classical_flat_directions": 0,
+      "source_edge_zero_face_incidence": 100
+    },
+    {
+      "Ngrid": 20,
+      "collapse_pair_sha256": "eec2c5e7b32751b0e54aac5ff9a7f31d1b7b2374137f7d3efdb74f012bd82a77",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 24015,
+      "completed_window_core_F": 11844,
+      "completed_window_core_V": 12172,
+      "completed_window_labels_sha256": "1450c71647c1d479601e26b22f7b50a40688451bfb2a95f4decaab5bc3d186e6",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": {
+        "first_two_fundamental_loop_halftraces": [
+          0.7583618759905082,
+          0.891568288195329
+        ],
+        "flat_action_beta1": 0.0,
+        "max_identity_holonomy_error": 0.0,
+        "nonabelian_commutator_halftrace": 0.8257061558671013
+      },
+      "original_E": 24091,
+      "original_F_direct_window_rhombi": 11879,
+      "original_V": 12207,
+      "original_components": 1,
+      "original_face_labels_sha256": "eb0024d1daabf38a7bceda63d7a03e3089979a26ae944ee3e3cf1b191675d21e",
+      "original_labels_sha256": "662aafd944365ddd3ef492a3d110f108d6c2d77b062b54d0e96a9f6cd53c701a",
+      "original_pi1_free_rank": 6,
+      "original_su2_extra_classical_flat_directions": 18,
+      "source_edge_zero_face_incidence": 56
+    },
+    {
+      "Ngrid": 23,
+      "collapse_pair_sha256": "2ce34c6c1ddfcac971a8a9286d18f2375702d24fdf98f65ecc84760c79ae021c",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 11,
+      "completed_window_core_E": 31958,
+      "completed_window_core_F": 15787,
+      "completed_window_core_V": 16182,
+      "completed_window_labels_sha256": "cbe0fc50579a81507de8eca4c8c77d8f26ab6492798300c9ffc6a1b430eb0c03",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": null,
+      "original_E": 32582,
+      "original_F_direct_window_rhombi": 16138,
+      "original_V": 16435,
+      "original_components": 1,
+      "original_face_labels_sha256": "48e2f89aaa75f993af2e0b869088cc3634d676f9cb234a3cc1d66c58d511c518",
+      "original_labels_sha256": "5c349932d1caa8549c362ea0d1c21e1d8d58ad548a74e353d1caf984ca6fe644",
+      "original_pi1_free_rank": 10,
+      "original_su2_extra_classical_flat_directions": 30,
+      "source_edge_zero_face_incidence": 1
+    },
+    {
+      "Ngrid": 25,
+      "collapse_pair_sha256": "f9fd565d7d272f5b5e785de69b94cc5a5f78e26817e0c49b36b4c54a17d3c97d",
+      "completed_core_is_separate_population": true,
+      "completed_window_components": 1,
+      "completed_window_core_E": 38135,
+      "completed_window_core_F": 18880,
+      "completed_window_core_V": 19256,
+      "completed_window_labels_sha256": "a90d25cd1c99cc421a8fa6e1bfb289d84822fe4751fb923918ad548f3cb85fd1",
+      "completed_window_pi1_free_rank": 0,
+      "flat_nonabelian_witness": {
+        "first_two_fundamental_loop_halftraces": [
+          0.7583618759905082,
+          0.891568288195329
+        ],
+        "flat_action_beta1": 0.0,
+        "max_identity_holonomy_error": 0.0,
+        "nonabelian_commutator_halftrace": 0.8257061558671013
+      },
+      "original_E": 38139,
+      "original_F_direct_window_rhombi": 18874,
+      "original_V": 19260,
+      "original_components": 5,
+      "original_face_labels_sha256": "f91ef4a44e4dfe5b69bb13baf8248198cc547953814317e53ae602097d880704",
+      "original_labels_sha256": "508fdd906d94e469ad71c0153bacac250b807e99c6c8d925e45e0d74e38b3836",
+      "original_pi1_free_rank": 10,
+      "original_su2_extra_classical_flat_directions": 30,
+      "source_edge_zero_face_incidence": 66
+    }
+  ],
+  "simple_D5_source_spatial_index_tests": [
+    {
+      "Ngrid": 7,
+      "weighted_face_automorphisms": 1
+    },
+    {
+      "Ngrid": 12,
+      "weighted_face_automorphisms": 1
+    },
+    {
+      "Ngrid": 25,
+      "weighted_face_automorphisms": 0
+    }
+  ],
+  "source_original_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "status": "PF-I11 finite accepted-rhombus Wilson SU2 and source-selection topological certificate; no physical time/mass gap",
+  "two_square_independent_haar_mc_standardized_partition_deviation": 0.31207055348963714
+}

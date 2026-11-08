@@ -1,0 +1,302 @@
+{
+  "results": [
+    {
+      "Ngrid": 7,
+      "all_nonidentity_permutations": [
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 298,
+          "number_vertices_not_in_image": 124,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 157,
+          "number_vertices_not_in_image": 68,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 157,
+          "number_vertices_not_in_image": 68,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 298,
+          "number_vertices_not_in_image": 124,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 157,
+          "number_vertices_not_in_image": 68,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 0
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 298,
+          "number_vertices_not_in_image": 124,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 0,
+          "number_vertices_not_in_image": 0,
+          "preserves_Fibonacci_edge_weights": true,
+          "preserves_accepted_rhombus_faces_exact": true,
+          "preserves_source_edges_exact": true,
+          "preserves_source_vertices_exact": true,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 298,
+          "number_vertices_not_in_image": 124,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 157,
+          "number_vertices_not_in_image": 68,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        }
+      ],
+      "exact_restricted_D5_weighted_face_symmetries": 1,
+      "interpretation": "A D5 spatial index permutation is not by itself a temporal/reflection-positivity involution. Missing symmetries in one finite selected source graph do not exclude other phases, translations, or emergent-time structures.",
+      "n_faces": 1468,
+      "n_vertices": 1550
+    },
+    {
+      "Ngrid": 12,
+      "all_nonidentity_permutations": [
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 1079,
+          "number_vertices_not_in_image": 432,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 658,
+          "number_vertices_not_in_image": 262,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 658,
+          "number_vertices_not_in_image": 262,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 1079,
+          "number_vertices_not_in_image": 432,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 658,
+          "number_vertices_not_in_image": 262,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 0
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 1079,
+          "number_vertices_not_in_image": 432,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 0,
+          "number_vertices_not_in_image": 0,
+          "preserves_Fibonacci_edge_weights": true,
+          "preserves_accepted_rhombus_faces_exact": true,
+          "preserves_source_edges_exact": true,
+          "preserves_source_vertices_exact": true,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 1079,
+          "number_vertices_not_in_image": 432,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 658,
+          "number_vertices_not_in_image": 262,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        }
+      ],
+      "exact_restricted_D5_weighted_face_symmetries": 1,
+      "interpretation": "A D5 spatial index permutation is not by itself a temporal/reflection-positivity involution. Missing symmetries in one finite selected source graph do not exclude other phases, translations, or emergent-time structures.",
+      "n_faces": 4145,
+      "n_vertices": 4324
+    },
+    {
+      "Ngrid": 25,
+      "all_nonidentity_permutations": [
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 5159,
+          "number_vertices_not_in_image": 1886,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 3290,
+          "number_vertices_not_in_image": 1184,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 3290,
+          "number_vertices_not_in_image": 1184,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": false,
+          "number_faces_not_in_image": 5159,
+          "number_vertices_not_in_image": 1886,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 3594,
+          "number_vertices_not_in_image": 1298,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 0
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 4865,
+          "number_vertices_not_in_image": 1780,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 1
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 515,
+          "number_vertices_not_in_image": 190,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 2
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 5157,
+          "number_vertices_not_in_image": 1892,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 3
+        },
+        {
+          "is_spatial_index_reflection": true,
+          "number_faces_not_in_image": 2821,
+          "number_vertices_not_in_image": 1000,
+          "preserves_Fibonacci_edge_weights": false,
+          "preserves_accepted_rhombus_faces_exact": false,
+          "preserves_source_edges_exact": false,
+          "preserves_source_vertices_exact": false,
+          "shift_k": 4
+        }
+      ],
+      "exact_restricted_D5_weighted_face_symmetries": 0,
+      "interpretation": "A D5 spatial index permutation is not by itself a temporal/reflection-positivity involution. Missing symmetries in one finite selected source graph do not exclude other phases, translations, or emergent-time structures.",
+      "n_faces": 18874,
+      "n_vertices": 19260
+    }
+  ],
+  "scope": "Restricted ordinary D5 index maps of each original source finite weighted 2-complex. Not physical time."
+}

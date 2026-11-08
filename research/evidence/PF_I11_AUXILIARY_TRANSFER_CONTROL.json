@@ -1,0 +1,117 @@
+{
+  "rows": [
+    {
+      "auxiliary_gap": 0.3430028993301693,
+      "beta": 0.71,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 0.1,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 0.92069636275966,
+      "min_transfer_eigenvalue": 0.7370879297234939,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        0.9704980653447,
+        0.9313629595888554
+      ]
+    },
+    {
+      "auxiliary_gap": 0.6643798633028618,
+      "beta": 0.71,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 0.5,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 0.92069636275966,
+      "min_transfer_eigenvalue": 0.3542578291774819,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        0.9457613668489614,
+        0.8732873890257314
+      ]
+    },
+    {
+      "auxiliary_gap": 0.9488849202462731,
+      "beta": 0.71,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 1.0,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 0.92069636275966,
+      "min_transfer_eigenvalue": 0.1382303945486736,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        0.9350143405715228,
+        0.8343856255517227
+      ]
+    },
+    {
+      "auxiliary_gap": 1.612196445847281,
+      "beta": 0.71,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 2.0,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 0.92069636275966,
+      "min_transfer_eigenvalue": 0.020923224332120034,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        0.9273551857111,
+        0.7642332738186819
+      ]
+    },
+    {
+      "auxiliary_gap": 0.07499999999998708,
+      "beta": 0,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 0.1,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 1.0000000000000215,
+      "min_transfer_eigenvalue": 0.8277865066947767,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        1.0000000000000528,
+        0.9910403787729376
+      ]
+    },
+    {
+      "auxiliary_gap": 0.3749999999999918,
+      "beta": 0,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 0.5,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 1.0000000000000215,
+      "min_transfer_eigenvalue": 0.3886795709017734,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        1.0000000000000528,
+        0.9559974818331514
+      ]
+    },
+    {
+      "auxiliary_gap": 0.7499999999999879,
+      "beta": 0,
+      "characters": 8,
+      "dt": 0.12,
+      "electric_scale": 1.0,
+      "max_character_Haar_orthogonality_error": 2.708944180085382e-14,
+      "min_symmetric_mult_matrix_eigenvalue": 1.0000000000000215,
+      "min_transfer_eigenvalue": 0.1510718088363788,
+      "nquad": 400,
+      "scope": "Auxiliary positive finite transfer only. No intrinsic time/reflection on source Z5 proven; no volume-uniform interacting gap.",
+      "two_top_eigenvalues": [
+        1.0000000000000528,
+        0.9139311852712778
+      ]
+    }
+  ],
+  "scope": "auxiliary finite transfer only, not physical temporal reconstruction"
+}

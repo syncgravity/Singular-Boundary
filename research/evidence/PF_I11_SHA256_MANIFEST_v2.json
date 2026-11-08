@@ -1,0 +1,124 @@
+{
+  "checkpoint": "PF-I11",
+  "date": "2026-11-08",
+  "files": {
+    "PF_I11_ALL_PRIVATE_TEST_LOG.txt": {
+      "sha256": "8f9efcf499054bb0ab7190175229e2bab21624733713813ac55cf11d871364fc",
+      "size_bytes": 4058
+    },
+    "PF_I11_ALL_PUBLIC_TEST_LOG.txt": {
+      "sha256": "2283abfe0546cc125235911349e28edcfae01a7813cddef66a70c89148b6d02d",
+      "size_bytes": 4813
+    },
+    "PF_I11_AUXILIARY_TRANSFER_CONTROL.json": {
+      "sha256": "8945d819508e3ff266c05f56530b9fb913ea63eadf7c90310d1e011fe4497aee",
+      "size_bytes": 4239
+    },
+    "PF_I11_AUX_TRANSFER_LOG.txt": {
+      "sha256": "6ea4a6a77cdb98e755b17b46ece9520c0d3a75bbdbad089f2be27fefdbddf40c",
+      "size_bytes": 847
+    },
+    "PF_I11_COMPLETED_CORE_LOG.txt": {
+      "sha256": "09858cdc6dc79746e32bf4e77e108f3fd6185912c310ed1a4268d83c8a1b0e10",
+      "size_bytes": 1502
+    },
+    "PF_I11_COMPLETED_WINDOW_CORE_CONTROL.json": {
+      "sha256": "caf47c8b26414658a779f78e0188084f0bfa215c5fadc5612a5f474db28f2ea8",
+      "size_bytes": 13777
+    },
+    "PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
+      "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038",
+      "size_bytes": 12645
+    },
+    "PF_I11_EXACT_FACE_HAAR_FACTORIZATION.json": {
+      "sha256": "880c015fdbe3f066bca60b2007cc234dee31bcfcc2fba6f041d3f6e3aedbd98c",
+      "size_bytes": 8377
+    },
+    "PF_I11_FACTORIZATION_TEST_LOG.txt": {
+      "sha256": "70568fbd852047c38b4235beb01a4b391602bb8858402d3d573b9dbc0bf839a4",
+      "size_bytes": 770
+    },
+    "PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md": {
+      "sha256": "feb9c5be38211aa3f6438a887225706d0a52ce6eda4bfaef5211cd7f474c56e4",
+      "size_bytes": 23519
+    },
+    "PF_I11_PUBLIC_FINITE_GAUGE_RESULTS_2026_11_08.json": {
+      "sha256": "1cd0fe927cdb41d2b0729c2138febcba437c868a1e181f8e76a2877d6589e271",
+      "size_bytes": 11708
+    },
+    "PF_I11_RUN_LOG.txt": {
+      "sha256": "705dc1258c9f2bf6abc0f5626c75b2a356c01625e4efe28359a4234367efdeed",
+      "size_bytes": 1228
+    },
+    "PF_I11_SIMPLE_D5_REFLECTION_CANDIDATES.json": {
+      "sha256": "e7d7131b822c10e34e7c8beb1a9bdf148a1cc7029f1f800cb2b499898173bc46",
+      "size_bytes": 12114
+    },
+    "README_REPLAY.md": {
+      "sha256": "0681b3163aa8defa3a76b8e77a74207ced77c465d2e9a63f9f505bd67b12d6fc",
+      "size_bytes": 3398
+    },
+    "assemble_pf_i11_evidence.py": {
+      "sha256": "f5dfac1ca30325c8336340ee4c882d12e1adddbff6e1b04f8d0bdb2e7dd4c02e",
+      "size_bytes": 4674
+    },
+    "paper6_extend_local.py": {
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+      "size_bytes": 19349
+    },
+    "private_snapshots/PF_I11_original_source_20.npz": {
+      "sha256": "be1b282971845b39618098613b3b1bc2ccf72ff4c070681b5827675dee2a11c3",
+      "size_bytes": 355294
+    },
+    "private_snapshots/PF_I11_original_source_25.npz": {
+      "sha256": "b7fe8f008ebc00b4878fbfe76bf4b2bcfe94e85dce145c7368c97d900d329493",
+      "size_bytes": 563048
+    },
+    "private_snapshots/PF_I11_original_source_7.npz": {
+      "sha256": "465b4f9f4b98ee6644be164f5525f28671c5dc6f77382be96c24b59fa22c2c95",
+      "size_bytes": 41394
+    },
+    "test_pf_i11_auxiliary_transfer.py": {
+      "sha256": "ea075ca74d7d10c9cc177041611c2b0c8bb1a5383c7201c4c895cbdea5f96156",
+      "size_bytes": 1110
+    },
+    "test_pf_i11_intrinsic_su2.py": {
+      "sha256": "d789b8effcdd1adfb4b3320efa859c29fbd6ef5e4a9be0bed6f4174cc7e05ca7",
+      "size_bytes": 9691
+    },
+    "test_pf_i11_plaquette_factorization.py": {
+      "sha256": "4ece6503021bfbc39923d3b9ff98dd6e85659f75c37baf0a3c716ffe41b515a7",
+      "size_bytes": 1901
+    },
+    "verify_pf_i11_auxiliary_transfer.py": {
+      "sha256": "3f3cbd64010fafbf32056450290d19382c25ba21529c4d8d21d1eccdafda41d7",
+      "size_bytes": 2411
+    },
+    "verify_pf_i11_completed_core.py": {
+      "sha256": "02e72bcdbb1ac407b9f6ad8212a0f93e401682d1839cf229f22cb7561b791d75",
+      "size_bytes": 2907
+    },
+    "verify_pf_i11_intrinsic_su2.py": {
+      "sha256": "f655bae6defa9993d6b414c74cfa5b24039ff7a80e47c1924123412ada55653d",
+      "size_bytes": 18081
+    },
+    "verify_pf_i11_plaquette_factorization.py": {
+      "sha256": "186e8e96303d521e1d95b0ed17326bf2f596b4f356b9de96eae777428c2abc69",
+      "size_bytes": 4676
+    },
+    "verify_pf_i11_reflection_candidates.py": {
+      "sha256": "e2d669f086c5869cae3c61b9e80409953fe78ef6b649a541487ac5c0cf76539d",
+      "size_bytes": 3206
+    },
+    "verify_pf_i9_source_cut_project_bridge.py": {
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b",
+      "size_bytes": 17023
+    }
+  },
+  "physical_time_or_continuum_Yang_Mills_gap_proved": false,
+  "public_derived_test_count": 19,
+  "source_SHA256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "source_full_2complex_test_count": 27,
+  "source_publication_status": "unpublished; private library only",
+  "supersedes_v1_by_adding_exact_full_plaquette_Haar_factorization": true
+}
