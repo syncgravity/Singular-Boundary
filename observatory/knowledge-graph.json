@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.49-ym-proof",
-  "scope": "Yang–Mills mathematical proof priority: exact finite interacting-vacuum Poincaré criterion, arbitrary-incidence nonlinear Wilson locality, C5 3+2 quotient rank obstruction, and arithmetic Delone/Voronoi 3D candidate with explicit axial-period/source limits. All physical continuum existence/mass gap gates remain OPEN.",
+  "version": "v2.50-pf-i0",
+  "scope": "PF-I0 intrinsic coupled-Z5 source identity first: conditional quotient odd-cycle versus Penrose P3 rhombus-edge incompatibility; original generator, hopping weights, geometric dynamics and all physical mass-gap/gravity proof gates remain OPEN. Historical YM 3D candidates retained as distinct controls.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -6799,6 +6799,83 @@
       "importance": 5,
       "core": true,
       "route": null
+    },
+    {
+      "id": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "title": "Conditional Z5 diagonal quotient: five-edge odd-cycle and Wilson witness",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "The quotient by the all-ones vector has five generators with one primitive length-five relation. Every odd closed nearest-basis walk has length at least five; accepted windows can preserve pentagonal loops, unlike the planar rhombus-edge graph. This is a conditional quotient-model theorem, not authenticated Paper 2 adjacency.",
+      "detail": "Exact integer/C5 proof and deterministic 3,961-assertion script; illustrative W radius 1.65 gives 241 vertices, 650 edges, 1,260 five-cycles; C5 covariance and SU2 Wilson trace verified. No original source generator or mass-gap gate certified.",
+      "checks": [
+        {
+          "label": "Match original Paper 2 integer-sum/quotient convention and accepted nearest-neighbour edge list",
+          "state": "open",
+          "note": "Source PDF is ambiguous; numerical witness uses illustrative window and is NOT original reproduction."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I0 conditional quotient-odd-cycle source identity theorem and finite SU2 witness",
+          "path": "research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
+          "git_blob_sha": "d2d7a93ddd6c197fed511dfc6c21c30e1c23fb3a",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-identity",
+        "coupled-Z5",
+        "finite-conditional",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "title": "Open identity test: coupled Z5 graph versus ordinary Penrose P3 rhombus edges",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Any accepted quotient graph with a five-cycle is non-bipartite, whereas a planar rhombus-edge tiling graph is bipartite. Recover authentic source generator, phason, weights, accepted edge list and cycle spectrum before claiming these are one operator.",
+      "detail": "Source-defined coupling could involve an augmented graph; distinguish literal fixed-sum (no one-step edges), full Z5 (diagonal projection duplicates), and quotient (odd cycles). Test Fibonacci hopping C5 covariance with the real implementation. Do not impose a three-dimensional spatial regulator at intrinsic source-audit stage.",
+      "checks": [
+        {
+          "label": "Locate and execute the original Paper 2 coupled-operator generator or fully source-authenticate its rules",
+          "state": "open"
+        },
+        {
+          "label": "Compare graph odd-cycle parity and edge weights against authentic P3 tile-edge data",
+          "state": "open"
+        },
+        {
+          "label": "Reproduce same normalized scalar spectral observable on source graph versus periodic control",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I0 conditional quotient-odd-cycle source identity theorem and finite SU2 witness",
+          "path": "research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
+          "git_blob_sha": "d2d7a93ddd6c197fed511dfc6c21c30e1c23fb3a",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-fidelity",
+        "operator-comparison",
+        "P0",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -10119,6 +10196,41 @@
       "label": "quantum gap iff vacuum functional inequality",
       "kind": "ym-proof-interface",
       "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "kind": "conditional-geometry",
+      "label": "five-generator quotient candidate, not source identity",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "to_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "kind": "does-not-imply",
+      "label": "odd-cycle witness prohibits naive rhombus-edge equivalence",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "to_id": "PF-G0",
+      "kind": "source-fidelity-check",
+      "label": "source graph identity and hopping weights remain unverified",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "kind": "requires-comparison",
+      "label": "verify P3 rhombus edge graph versus augmented quotient graph",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "to_id": "P0",
+      "kind": "conditional-result",
+      "label": "finite graph structure only; continuum gate OPEN",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10264,7 +10376,16 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-Z5-SOURCE-GENERATOR"
+      "next_gate": "PF-Z5-SOURCE-GENERATOR",
+      "new_conditional_cycle_witness": {
+        "status": "conditional",
+        "vertex_count": 241,
+        "edge_count": 650,
+        "five_cycles": 1260,
+        "parameters": "span6, |z1|<=5, centered decagon radius1.65 (illustrative)",
+        "report": "research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md"
+      },
+      "operator_identity_bridge": "PF-I0-RHOMBUS-OPERATOR-BRIDGE"
     },
     "orientation_selection": {
       "status": "open",
@@ -10274,6 +10395,12 @@
       "three_dimensional_torsion": "underdetermined",
       "quantum_marked_null": "PF-OBSERVER-MARKED-GAUGE",
       "physical_selection_gate": "PF-OBSERVER-SELECTION-LAW"
+    },
+    "intrinsic_quotient_source_gate": {
+      "status": "open",
+      "result": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "identity": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "preimposed_3d": false
     }
   },
   "conceptual_program": {
@@ -10317,6 +10444,7 @@
     "physical_3d_source_authenticated": false,
     "uniform_quantum_gap_proved": false,
     "nontrivial_4d_os_constructed": false,
-    "approved_deployment": false
+    "approved_deployment": false,
+    "intrinsic_source_operator_audit": "PF-I0-RHOMBUS-OPERATOR-BRIDGE"
   }
 }
