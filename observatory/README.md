@@ -1,4 +1,10 @@
-# Research Observatory v2.49-ym-proof — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.50-pf-i0 — Penrose–Fibonacci primary Proof Atlas
+
+## New primary PF-I0 source-identity test: quotient cycles versus P3 rhombus edges (2026-11-07)
+
+**Source identity precedes physical regulator choices.** The dissertation's strict fixed-sum wording and one-basis-step adjacency cannot both describe an induced graph: strict slice gives zero such edges; full Z5 yields repeated four-dimensional projected points; quotient by the diagonal admits five-step odd cycles. The conditional quotient's minimum odd-cycle length is five, proved by exact integer group relations. An accepted toy window shows 241 vertices / 650 edges / 1,260 five-cycles, whereas a planar Penrose P3 rhombus-edge graph is bipartite. Therefore source-authenticate whether the reported coupled Laplacian is a distinct **augmented** graph rather than silently identifying it with the rhombus tiling skeleton. A direction-only nonconstant hopping assignment also fails C5 equivariance; source-defined *position-dependent* Fibonacci hopping may preserve it, but its rule remains unrecovered.
+
+[Conditional theorem and exact limitations](../research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md) · [Standard-library verifier](../research/scripts/verify_pf_i0_quotient_cycles.py) · [JSON evidence](../research/evidence/PF_I0_QUOTIENT_ODD_CYCLE_EVIDENCE_2026_11_07.json). **Observatory v2.50-pf-i0: 198 nodes, 479 edges, 754 historical theorem source paths.** PF-G0, all P0–P5, PF-G0–G5, T0–T5 and gravity proof gates remain OPEN. Historical 3D Delone/Voronoi work remains an auxiliary/control candidate, **not a prerequisite imposed on the intrinsic coupled 2+2 operator**. No public deployment.
 
 ## Yang–Mills proof interface: 3D regulator and interacting-vacuum Poincaré (2026-11-07)
 
