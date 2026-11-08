@@ -1,0 +1,54 @@
+{
+  "D_definition_in_paper1": "D described as degree matrix, weighted vs ordinary degree not disambiguated in source",
+  "Euler_V_minus_E_plus_F": 1,
+  "all_edges_original_basis_steps": true,
+  "assertions_passed": 3037,
+  "claimed_source": "Paper1 \u00a7\u00a76.1,7.1 equations (12)-(14), plus Paper2 \u00a78.2 cross-reference",
+  "continuum_YM_gap_proved": false,
+  "edge_count": 345,
+  "edge_types": {
+    "A": 205,
+    "B": 140
+  },
+  "finite_weighted_Laplacian": {
+    "count_degree_D_minus_weighted_W": {
+      "heat_trace_per_site_t1": 0.08195265024002966,
+      "minimum_eigenvalue": 0.49931477237959326,
+      "trace_L": 690.0,
+      "zeta_minus_half_mass_squared_one": 2.125534212777196
+    },
+    "heat_trace_per_site_t1": 0.1930899440468702,
+    "spectral_gap_finite_scalar": 0.038342397954513364,
+    "trace_L": 516.9504831500294,
+    "trace_L_squared": 2087.3694365678784,
+    "weighted_degree_D_minus_W_zeta_minus_half_mass_squared_one": 1.8835993913241647
+  },
+  "graph_bipartite_by_integer_sum": true,
+  "grid_level_limit": 11,
+  "mean_degree": 3.7096774193548385,
+  "no_crossing_finite_patch": true,
+  "no_triple_intersections_in_search": true,
+  "observed_A_to_B_ratio": 1.4642857142857142,
+  "offsets": [
+    -0.4207319701594539,
+    -0.27446760021748134,
+    0.3358983848622447,
+    0.41036598507972605,
+    -0.05106479956503557
+  ],
+  "original_paper2_coupled_generator_authenticated": false,
+  "original_paper2_zeta_numbers_reproduced": false,
+  "pentagonal_cycles": 0,
+  "provenance_status": "published mathematical rules reconstructed; NOT original numerical generator",
+  "radius_projected": 6.5,
+  "rhombus_count": 160,
+  "su2_original_link_wilson_gauge_checks": 150,
+  "su2_wilson_max_gauge_error": 4.613190423717512e-16,
+  "sum_layers": {
+    "1": 25,
+    "2": 69,
+    "3": 64,
+    "4": 28
+  },
+  "vertex_count": 186
+}
