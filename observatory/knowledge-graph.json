@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.57-pf-i5-source-code",
-  "scope": "PF-I5 explicit code provenance correction: original 7–8 publication scripts not located or read; PF-I2 numerical generator de Bruijn, not direct accepted Z5 window; later PhaseIII direct cut-project passes six matched finite tests but does not prove original-source identity. All YM/gravity and PF-G0 proof gates remain OPEN.",
+  "version": "v2.58-pf-i6-predecessor-sources",
+  "scope": "PF-I6 predecessor source discovery and exact matched cut-project audit. Archive(1).zip supplies eight precursor PDFs and nine Python scripts. Source-native four-slice direct C&P matches matched pentagrid central patches; larger finite grid tile-vs-basis discrepancies are crop omissions, not independent z2 gauge dynamics. Historical PF-I5 missing-source assertion superseded for predecessors. Merged-final identity and all physical/continuum proof gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "BLOCKED ON ORIGINAL SOURCE CODE. Author identifies about 7–8 publication scripts and a cut-and-project implementation; NONE has yet been authenticated/read. Paper1/2 printed de Bruijn wording and Paper3 cut-project window do not fix executable geometry. Later PhaseIII direct four-window model is a distinct finite research reconstruction; PF-I2 grid-crossing numerics are not original source data. Paper2/4 matrices, modes, D, mass and comparator still OPEN.",
+      "summary": "PF-I6: eight original predecessor PDFs + nine computation scripts recovered. Source gamma/direct C&P window reconstruction matches four central P3 patches exactly; original tile versus basis Laplacians differ only by finite enumeration crop links (62 at Ng10,85 at Ng12) all restored at larger grid; source D=sumW, one-pass interior and comparator/mode filters recovered for drafts. Merged-final coupled operator/physical dynamics and full eigendata still OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4870,6 +4870,13 @@
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7074,7 +7081,7 @@
       "status": "open",
       "stage": "P0",
       "summary": "Paper1 says D is degree matrix and W is weighted adjacency without defining D. On same 186-site P3 patch L_weighted has exact zero mode and first positive scalar eigenvalue .03834; D_unweighted−W has bottom eigenvalue .49931, with different heat and zeta. Must recover source diagonal before zeta replication.",
-      "detail": "The two interpretations are inequivalent operators; neither tiny-graph scalar eigenvalue implies YM gap. Both source variants are calculated and saved in evidence. Reconstruct exact source published operator and its mass parameter m before claims of matching Paper2 ratio.",
+      "detail": "The two interpretations are inequivalent operators; neither tiny-graph scalar eigenvalue implies YM gap. Both source variants are calculated and saved in evidence. Reconstruct exact source published operator and its mass parameter m before claims of matching Paper2 ratio. PF-I6: predecessor original Python definitively uses D=diag(sum W); this narrows earlier ambiguity for those scripts, NOT automatically merged final bytes. Same-operator per-source eigenspectrum and comparator remain OPEN.",
       "checks": [
         {
           "label": "Recover original source code or source statement defining D and mass m² for numerical zeta",
@@ -7476,7 +7483,7 @@
       "status": "finite",
       "stage": "P0",
       "summary": "Paper1 §7.2 specifies 35% max tile distance then all retained neighbors must be interior. On a finite connected graph every nonempty fully neighbor-closed subset is the whole graph, so a proper interior cannot be produced by iterated closure. Source does not state implementation. Independent P3 controls: 186/345 graph yields 28 candidate/14 one-pass core, 616/1185 yields96/68; both final cores connected but not neighbor-closed.",
-      "detail": "Finite graph-theoretic path proof, exact. BFS interpretation of 'tile distance' is illustrative, not original source implementation and not reproduction of Ngrid/Nint.",
+      "detail": "Finite graph-theoretic path proof, exact. BFS interpretation of 'tile distance' is illustrative, not original source implementation and not reproduction of Ngrid/Nint. PF-I6: predecessor source selects vertices via a one-pass 'all incident tile IDs are interior' test relative to the preexisting pentagrid enumeration. It does not require iterated neighbor-closure on the retained graph.",
       "checks": [
         {
           "label": "Recover source original 35%-of-maximum tile distance and neighbor filtering order/ambient graph",
@@ -7614,23 +7621,24 @@
     },
     {
       "id": "PF-I5-PUBLICATION-CODE-IDENTITY",
-      "title": "OPEN: read original seven/eight publication scripts, not reconstructed de Bruijn code",
+      "title": "PARTIAL: nine predecessor scripts found; merged-final source-code/physical operator bridge remains OPEN",
       "kind": "work",
-      "status": "open",
+      "status": "partial",
       "stage": "P0",
-      "summary": "Original author-identified seven/eight publication scripts have not been located/read. Dissertation tar includes PDFs but no source scripts. PF-I2 generate() explicitly enumerates de Bruijn grid-line crossings with different offsets and cutoff, not source cut-and-project window selection. Paper1 §6.1 and Paper2 §2.1 explicitly mention de Bruijn while Paper3 §4.1 describes a decagonal window; actual original program must resolve their finite operator implementation.",
+      "summary": "Author uploaded exact Archive(1).zip containing eight predecessor papers and nine computation scripts. They were inventoried and geometry functions executed; no longer claim these predecessor scripts are unavailable. Final merged-paper numerical operator and all-size outcomes remain unverified; source-faithful C&P vs pentagrid requires matched gamma/cut and differs under finite crop.",
       "detail": "Do not claim complete source-code comprehension; require original source files/hashes and independent same-operator replay. Later PhaseIII direct-window code is an auxiliary research implementation, not the 7–8 original publication scripts. PF-I2–PF-I4 numerical samples are illustrative finite controls only.",
       "checks": [
         {
-          "label": "Obtain original publication script files or immutable source commit containing all 7–8 scripts",
+          "label": "Locate the eight predecessor draft compute programs and associate to papers",
+          "state": "met",
+          "note": "Nine predecessor scripts recovered and hash pinned in Archive(1).zip (PF-I6)."
+        },
+        {
+          "label": "Verify final merged-publication model and read every original file line-by-line and verify exact cut/project acceptance, phasons, graph, d, mass, modes, controls",
           "state": "open"
         },
         {
-          "label": "Read every original file line-by-line and verify exact cut/project acceptance, phasons, graph, D, mass, modes, controls",
-          "state": "open"
-        },
-        {
-          "label": "Reproduce original Paper2/Paper4 per-size matrices and spectral/determinant values",
+          "label": "Verify final merged-publication model and reproduce original paper2/paper4 per-size matrices and spectral/determinant values",
           "state": "open"
         }
       ],
@@ -7640,6 +7648,13 @@
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7683,6 +7698,158 @@
         "cut-and-project",
         "conditional-equivalence",
         "not-publication-source",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "title": "Eight earlier papers and nine author-supplied compute scripts recovered with exact SHA256",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "New Archive(1).zip SHA256 bdc3792b... has 8 manuscript PDFs + Paper5 appendix, 9 Python scripts, 2 Markdown and 1 JSON results summary. Original predecessor source functions, 35% one-pass tile-incidence interior selection, D=sum weighted W, Fibonacci family/level and triangular floor-sqrt comparator now located. Supersedes PF-I5 claim of unavailable original predecessor code, but DOES NOT authenticate the later merged-final dissertation matrices or complete all eigenruns.",
+      "detail": "9 scripts syntactically parsed, version/execution dependencies inventoried; relevant geometry functions executed directly from original AST without top-level main plotting/external data. Machine artifact lists SHA256 of all 21 archive substantive files. Original ZIP durably in Library / The Singular Boundary/Source/Predecessor Eight Papers 2026-11-07.",
+      "checks": [
+        {
+          "label": "Recover exact final merged-dissertation numerical source version and reconcile predecessor revision provenance",
+          "state": "open"
+        },
+        {
+          "label": "Independently rerun all eight-size large eigenvalue datasets and cross-paper normalized spectral observables",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "predecessor-scripts",
+        "original-source",
+        "sha256",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+      "title": "Matched source gamma: direct Z5 cut/project equals draft pentagrid central P3 patches",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "With original generic gamma sum0, h=sum K in 1..4, four hypersimplex internal acceptance windows W_h, independent integer-basis/window BFS exactly reproduces author draft pentagrid vertices and edges at R=3,5,7,9: (36,55),(96,175),(186,345),(296,555). Direct method does not use grid intersections. Valid for regular central finite patches; full source cutoff/hull/physics unproved.",
+      "detail": "Exact algebraic window relation using fractional coordinate f_j=K_j-r·E_j+gamma_j; source AST verifies matched integer labels. This clarifies PF-I2: de Bruijn numerical constructor can describe same local cut/project graph under matched offsets, while arbitrary crop equivalence is false.",
+      "checks": [
+        {
+          "label": "Prove general regular infinite model-set equivalence including boundary singularities, phason measure and all source cutoffs",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "cut-and-project",
+        "matched-geometry",
+        "source-gamma",
+        "finite-verification",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "title": "Exact predecessor code Lbasis−Ltile positive edge sum; extra links are finite grid-crop omissions",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "On identical original multindices, predecessor L_tile uses enumerated rhombus faces and L_basis uses all accepted Z5 +/- basis neighbors with identical Fibonacci weights and D=sumW. E_tile⊆E_basis and Lbasis−Ltile=sum_{extra e}w_e b_e b_e^T >=0. Ng7 N1550:3017 vs3017; Ng10 N3042:5865 vs5927 (62 extra, tile graph 51 components); Ng12 N4324:8383 vs8468 (85 extra, tile graph 46 components). Basis graphs connected. Every extra at Ng10/12 becomes a tile edge when grid range enlarged by 2.",
+      "detail": "Source numeric differences reflect finite pentagrid intersection crop under tested variants. New source C&P adjacency is not an independent coupled z2 dynamics or interacting YM operator. Original eight-size eigenvalues were NOT rerun; formal infinite-limit spectral implications still open. Source comparator is floor sqrt N and zero filter lambda>1e-10.",
+      "checks": [
+        {
+          "label": "Repeat source eigen computations with boundary-complete model and common comparator/mode normalization across 8 sizes",
+          "state": "open"
+        },
+        {
+          "label": "Separate genuine two-plane operator effects from a mere relabeling of the same P3 accepted graph",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "exact-finite-operator",
+        "crop-correction",
+        "coupled-Z5",
+        "spectral-normalization",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "title": "OPEN: source-version bridge from eight predecessor scripts to merged-final physical operators",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Earlier scripts explicitly establish P3 integer-label adjacency, weighted strength D, 35% one-pass tiles, six/one dual graph variants and observed finite-crop defects. The merged final dissertation may incorporate revised C&P assumptions and 4D physical claims not proved by these predecessor computations. Authenticate final operator revisions and rerun source-matched modes/periodic comparator before PF-G0 closure.",
+      "detail": "Eight predecessor papers ≠ eight final merged dissertation papers, not necessarily source-state identical. Nine scripts cover paper1/2/3/5/6 and zeta validation; Paper4/7/8 have no separate named compute script in this ZIP. Remainder includes missing external /home/claude data. Different experimental Stage26 SU2 work remains separate.",
+      "checks": [
+        {
+          "label": "Construct crosswalk of merged-paper equation versions against original predecessor functions/parameters",
+          "state": "open"
+        },
+        {
+          "label": "Recompute full per-size zeta(-1), zeta(-1/2), zeta-prime(0) on one certified original source operator and comparator",
+          "state": "open"
+        },
+        {
+          "label": "Reconstruct any *new* source-native two-plane gauge/temporal coupling beyond the P3 finite scalar basis graph",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
+          "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "model-fidelity",
+        "unresolved-source-version",
+        "PF-G0",
         "2026-11-07"
       ],
       "importance": 5,
@@ -11414,6 +11581,76 @@
       "kind": "source-identity-prerequisite",
       "label": "exact original generator needed for Paper2/Paper4 finite matrices",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "to_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "kind": "superseded-for-predecessor",
+      "label": "author supplied nine actual scripts for earlier eight papers; merged final not authenticated",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "to_id": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+      "kind": "source-derived-verification",
+      "label": "same gamma local direct cutproject equals original draft pentagrid",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "to_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "kind": "source-derived-verification",
+      "label": "published draft tile-vs-basis mismatch localized to finite crop",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+      "to_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "kind": "source-model-clarification",
+      "label": "direct matched windows prove local P3 identity, not arbitrary quotient five cycles",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "to_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "kind": "finite-cutoff-qualification",
+      "label": "subset relation true, equality fails at Ng10/12 due missing tile faces",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "numerical-normalization-correction",
+      "label": "different finite connected components and comparator N change spectral zeta",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "to_id": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+      "kind": "source-countermodel",
+      "label": "source tile graph can be disconnected; source basis graph connected",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "to_id": "PF-I4-INTERIOR-CLOSURE-LEMMA",
+      "kind": "source-resolution",
+      "label": "one-pass all incident tile criterion confirmed in predecessor code",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "actual merged paper operator versus predecessor source version remains open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "to_id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "kind": "needs-boundary-fix",
+      "label": "test corrected source full window before physical interpretation",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -11559,7 +11796,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "next_gate": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -11662,14 +11899,33 @@
         "library_archive": "/The Singular Boundary/Proof Audits/PF I4 Source Selection and Mode Audit 2026-11-07/"
       },
       "source_script_provenance": {
-        "status": "open",
-        "original_publication_scripts_identified": false,
+        "status": "partial",
+        "original_publication_scripts_identified": true,
         "original_scripts_reviewed_in_full": false,
         "original_dissertation_tar_contains_executable_scripts": false,
         "earlier_PF_I2_method": "de Bruijn dual-pentagrid intersection enumeration, NOT direct accepted-window graph",
         "later_direct_cut_project": "Archive 4.zip / Phase_III_Cut_and_Project_Recomputed.zip, six unit tests PASS under its own parameters",
         "original_model_identity_gate": "PF-I5-PUBLICATION-CODE-IDENTITY",
-        "report": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md"
+        "report": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+        "predecessor_scripts_found": true,
+        "predecessor_scripts_count": 9,
+        "predecessor_eight_papers_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+        "final_merged_numerical_operator_identified": false,
+        "conditional_matched_window_test": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+        "crop_correction": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE"
+      },
+      "predecessor_publication_source_audit": {
+        "status": "partial",
+        "bundle_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+        "script_count": 9,
+        "paper_count": 8,
+        "pdfs_with_appendix": 9,
+        "report": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+        "source_report_node": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+        "model_cut_project_node": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+        "finite_crop_node": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+        "final_source_gate": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+        "continuum_mass_gap_proved": false
       }
     },
     "orientation_selection": {
