@@ -1,0 +1,56 @@
+[
+  {
+    "Ngrid": 7,
+    "direct_points_at_second_collar": 2606,
+    "fields_verified": [
+      "direct_35pct_full_star_interior_count",
+      "direct_window_selected_tile_faces",
+      "source_original_vertex_SHA256",
+      "source_original_coupled_edge_SHA256",
+      "corrected_direct_vertex_SHA256",
+      "corrected_direct_all_edges_SHA256",
+      "source_coupled_extra_over_truncated_tiles",
+      "source_interior_false_positive_count_vs_complete_window",
+      "source_interior_false_negative_count_vs_complete_window"
+    ],
+    "first_collar": 4,
+    "same_selected_core_and_edge_hashes": true,
+    "second_collar": 6
+  },
+  {
+    "Ngrid": 12,
+    "direct_points_at_second_collar": 6196,
+    "fields_verified": [
+      "direct_35pct_full_star_interior_count",
+      "direct_window_selected_tile_faces",
+      "source_original_vertex_SHA256",
+      "source_original_coupled_edge_SHA256",
+      "corrected_direct_vertex_SHA256",
+      "corrected_direct_all_edges_SHA256",
+      "source_coupled_extra_over_truncated_tiles",
+      "source_interior_false_positive_count_vs_complete_window",
+      "source_interior_false_negative_count_vs_complete_window"
+    ],
+    "first_collar": 4,
+    "same_selected_core_and_edge_hashes": true,
+    "second_collar": 6
+  },
+  {
+    "Ngrid": 25,
+    "direct_points_at_second_collar": 22950,
+    "fields_verified": [
+      "direct_35pct_full_star_interior_count",
+      "direct_window_selected_tile_faces",
+      "source_original_vertex_SHA256",
+      "source_original_coupled_edge_SHA256",
+      "corrected_direct_vertex_SHA256",
+      "corrected_direct_all_edges_SHA256",
+      "source_coupled_extra_over_truncated_tiles",
+      "source_interior_false_positive_count_vs_complete_window",
+      "source_interior_false_negative_count_vs_complete_window"
+    ],
+    "first_collar": 4,
+    "same_selected_core_and_edge_hashes": true,
+    "second_collar": 6
+  }
+]
