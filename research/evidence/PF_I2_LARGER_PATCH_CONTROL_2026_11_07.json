@@ -1,0 +1,45 @@
+{
+  "D_definition_in_paper1": "D described as degree matrix, weighted vs ordinary degree not disambiguated in source",
+  "Euler_V_minus_E_plus_F": 1,
+  "all_edges_original_basis_steps": true,
+  "assertions_passed": 10120,
+  "claimed_source": "Paper1 \u00a7\u00a76.1,7.1 equations (12)-(14), plus Paper2 \u00a78.2 cross-reference",
+  "continuum_YM_gap_proved": false,
+  "edge_count": 1185,
+  "edge_types": {
+    "A": 766,
+    "B": 419
+  },
+  "finite_weighted_Laplacian": {
+    "trace_L": 1852.0875174275882,
+    "trace_L_squared": 7968.2321883637
+  },
+  "graph_bipartite_by_integer_sum": true,
+  "grid_level_limit": 12,
+  "mean_degree": 3.8474025974025974,
+  "no_crossing_finite_patch": true,
+  "no_triple_intersections_in_search": true,
+  "observed_A_to_B_ratio": 1.828162291169451,
+  "offsets": [
+    -0.4207319701594539,
+    -0.27446760021748134,
+    0.3358983848622447,
+    0.41036598507972605,
+    -0.05106479956503557
+  ],
+  "original_paper2_coupled_generator_authenticated": false,
+  "original_paper2_zeta_numbers_reproduced": false,
+  "pentagonal_cycles": 0,
+  "provenance_status": "published mathematical rules reconstructed; NOT original numerical generator",
+  "radius_projected": 12.0,
+  "rhombus_count": 570,
+  "su2_original_link_wilson_gauge_checks": 150,
+  "su2_wilson_max_gauge_error": 4.742874840267547e-16,
+  "sum_layers": {
+    "1": 83,
+    "2": 226,
+    "3": 217,
+    "4": 90
+  },
+  "vertex_count": 616
+}
