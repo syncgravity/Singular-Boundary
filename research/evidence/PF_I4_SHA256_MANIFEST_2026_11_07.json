@@ -1,21 +1,20 @@
 {
-  "archive_source": "user supplied Sharpe_dissertation_v10.7.tar.gz; large PDF originals omitted from artifact and remain user-owned",
   "date": "2026-11-07",
   "files": {
     "PF_I4_PDF_BYTE_PROVENANCE_COMPARISON.json": {
-      "sha256": "ab0dbc8305f2df2ac598bdf0b23273f1334f2fcdb0a69d058b3f092168c0c50f",
-      "size_bytes": 1059
+      "sha256": "c74b76f9ea0b1f55bc119bed8275faba1f5c1acdb5c029fe2c95013e1b3e4c82",
+      "size_bytes": 1326
     },
     "PF_I4_SOURCE_CORE_EVIDENCE.json": {
-      "sha256": "bbfff0c21493f8d7afb9f9090935613ffa83fabc18d25638be2f46ec662817df",
-      "size_bytes": 6701
+      "sha256": "c97e7025ff7ab69530e5e724df17192f12a6d31c4912fbe555881336147f4c3d",
+      "size_bytes": 6985
     },
     "PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md": {
-      "sha256": "0c26c4e0a602ba39278127c898f3d282001fbd3dd504ae4405d0c0825b3f1197",
-      "size_bytes": 12454
+      "sha256": "9bf29610d644e47b1a23904d99434bad86a98cb70be8ae870dcc0bf49665e61c",
+      "size_bytes": 12620
     },
     "PF_I4_TEST_LOG.txt": {
-      "sha256": "7aa0c743e13a76866413b30d0b8a07f7e2cad059a055f01dbe6a2fb6aaae08e6",
+      "sha256": "bc8888c38be9ca3a4467c24cbd2dd08dfe6c51950216ef8ed78be60d7652a73d",
       "size_bytes": 1570
     },
     "test_pf_i4_source_selection.py": {
@@ -27,10 +26,10 @@
       "size_bytes": 11868
     },
     "verify_pf_i4_source_selection.py": {
-      "sha256": "82a9b4edff4deedbea0d7580c2927278d07e8b273fee4b7308a5f603f90264b6",
-      "size_bytes": 10441
+      "sha256": "8fd4ae3aa50e91d2235e21c129073bc26f144a96f1ac06c9e0be4430ba5f3df4",
+      "size_bytes": 10713
     }
   },
-  "research_type": "conditional finite graph/source consistency; Yang-Mills and gravity gates OPEN",
-  "tests": "9 passing, coupled P3 generated 186 and 616 site controls; not original source computation"
+  "research_type": "conditional source consistency; all continuum proof gates OPEN",
+  "version": "v2 correct all PF-I2/I3 historical PDF digest citations"
 }
