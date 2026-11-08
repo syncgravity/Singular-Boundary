@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.52-pf-i2",
-  "scope": "PF-I2 authentic Paper1 pentagrid graph and level-dependent Fibonacci hopping recovered from published equations; four original-index sum layers prove P3 graph bipartite, superseding naive quotient identification. Paper2 extra coupled bonds, D−W diagonal/m² and original Ngrid selection remain OPEN. All YM/grav continuum gates OPEN.",
+  "version": "v2.53-pf-i2-edge-identity",
+  "scope": "PF-I2 corrected published P3 source reconstruction: four integer-sum layers, Fibonacci level-dependent hopping and exact same-accepted-vertex basis-edge equivalence; Paper2 cross-direction may use existing P3 interfamily edges rather than extra bonds. Paper2 original generator, diagonal and zeta normalization remain OPEN. No YM/gravity continuum theorem promoted.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4847,7 +4847,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -6875,7 +6875,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -6975,8 +6975,8 @@
       "kind": "result",
       "status": "partial",
       "stage": "P0",
-      "summary": "Paper 1 §§6.1–7.1 gives exact gamma_j offsets, K_j(r)=ceil(r·e_j−gamma_j), original-basis edge adjacency, rhombus corners, and t(j,k) depending on Fibonacci floor(k/phi). Independent source-equation implementation builds 186-vertex/345-edge/160-face patch and 616-vertex/1185-edge/570-face patch. This does NOT recover original Paper 2 coupled graph or reported spectral-zeta ratio.",
-      "detail": "Published mathematical definitions are source-authenticated, executable is independently reconstructed (not original archived code). 3,037 and 10,120 finite checks including 150 random SU2 Wilson gauge tests per sample. Grid center cutoffs are new test parameters; not original Ngrid procedure.",
+      "summary": "Paper1 §§6.1–7.1 gives exact gamma_j offsets, K_j(r)=ceil(r·e_j−gamma_j), original-basis edge adjacency, rhombus corners, and t(j,k) depending on Fibonacci floor(k/phi). Source-equation implementation constructs patches 186/345/160 and 616/1185/570 with 3,382 and 11,305 checks, respectively. Same-accepted-vertex basis-neighbour adjacency equals P3. Original Paper2 numerical graph still unidentified.",
+      "detail": "Published mathematical definitions are source-authenticated, executable is independently reconstructed (not original archived code). 3,382 and 11,305 finite checks including 150 random SU2 Wilson gauge tests per sample. Grid center cutoffs are new test parameters; not original Ngrid procedure.",
       "checks": [
         {
           "label": "Recover original numerical code and Ngrid/window/normalization choices underlying source Paper2 coupled Z5 zeta",
@@ -6988,7 +6988,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7023,7 +7023,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7057,7 +7057,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7075,15 +7075,15 @@
     },
     {
       "id": "PF-I2-COUPLED-BOND-DICTIONARY",
-      "title": "Open Paper 2 coupled extra-bond dictionary and P3-to-Z5 operator comparison",
+      "title": "Open Paper 2 'cross-direction' interpretation, accepted graph identity and normalizations",
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Paper2 §8.2 says all original-Z5 nearest neighbours plus cross-direction bonds; Paper1 reconstructs P3 rhombus edges only. Need explicit accepted original-index edge lists for coupling, weights on additional edges, phason and boundary/physical comparators, and identical scalar spectral observable before claiming coupled model fidelity.",
-      "detail": "The P3 four-layer theorem settles the source P3 graph ambiguity but does not certify Paper2 augmentation or zeta suppression. Original standalone scripts absent from dissertation tar; Stage7/26 model-set SU2 Monte Carlo is different experiment.",
+      "summary": "Paper2 §8.2 may call existing P3 inter-family nearest-basis edges 'cross-direction bonds', or may use a genuinely different accepted graph. If it uses identical P3 labels and original-basis rule, graph adjacency is exactly P3 (PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE). Recover actual Paper2 accepted vertices, weighting and source code before asserting any extra bonds.",
+      "detail": "Do NOT assume extra bonds exist. PF-I2 source code on two independent finite P3 patches verifies all nearest-basis neighbours are already rhombus edges (345/345 and 1185/1185). Coupled relative to tensor-product u-QC need not add adjacency edges; physical operator comparison remains unproved.",
       "checks": [
         {
-          "label": "Resolve all supplementary coupled bonds relative to source P3 (endpoints and weight rule)",
+          "label": "Determine if Paper2 'cross-direction' means existing P3 inter-family connectivity or a distinct accepted graph",
           "state": "open"
         },
         {
@@ -7099,7 +7099,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7109,6 +7109,40 @@
         "coupled-Z5",
         "adjacency",
         "missing-generator",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "title": "Exact conditional P3 equivalence: all nearest-basis edges add no new bonds on same accepted labels",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Paper1 defines accepted P3 edges as all pairs m,n on its accepted vertex set differing by ±e_j. If Paper2's phrase 'all Z5 nearest neighbours' uses the same accepted vertex set and criterion, its adjacency is IDENTICAL to P3 (cross-direction may mean inter-family coupling). Independently reconstructed 186- and 616-site P3 patches contain zero extra nearest-basis pairs beyond rhombus edges. A different coupled graph requires different accepted vertices/edge rules, not presumed additional bonds.",
+      "detail": "Conditional equality by definition, not a claim that Paper2 original code used the same vertex set. Source code checker enumerates all basis-neighbour pairs separately from rhombus-edge generation: exact 345/345 and 1185/1185. P3 source hopping rules recovered; scalar diagonal and Paper2 model identity remain open.",
+      "checks": [
+        {
+          "label": "Recover numerical Paper2 accepted vertex set and compare its basis adjacency to Paper1 P3",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I2 revised Paper1 pentagrid original definitions, four-layer and same-vertex edge equivalence",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-fidelity",
+        "conditional-equivalence",
+        "cross-family-coupling",
         "2026-11-07"
       ],
       "importance": 5,
@@ -10574,6 +10608,27 @@
       "kind": "requires-matching",
       "label": "Paper2 selection and phason must map to one accepted graph",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "kind": "implies-under-same-vertex-set",
+      "label": "all accepted nearest-basis pairs already P3 edges",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "to_id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "kind": "source-model-test",
+      "label": "test same P3 adjacency before hypothesizing separate coupled bonds",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "to_id": "PF-G0",
+      "kind": "conditional-not-closure",
+      "label": "finite adjacency identity does not authenticate Paper2 numerical graph",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10756,14 +10811,20 @@
         "source_equation_reproduction": "PF-I2-P3-PENTAGRID-PUBLISHED",
         "finite_sample": "186 vertices / 345 edges / 160 rhombi",
         "large_sample": "616 vertices /1185 edges /570 rhombi",
-        "original_numerical_code": "unrecovered"
+        "original_numerical_code": "unrecovered",
+        "finite_tests": [
+          3382,
+          11305
+        ],
+        "same_vertex_basis_edge_equivalence": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE"
       },
       "paper2_coupled_operator": {
         "status": "open",
-        "additional_bonds": "PF-I2-COUPLED-BOND-DICTIONARY",
+        "additional_bonds": "unproven; do NOT presume extra links: cross-direction can mean existing P3 inter-family edges",
         "laplace_degree_diagonal": "PF-I2-DEGREE-NORMALIZATION",
         "mass_parameter": "unrecovered",
-        "paper2_zeta_ratio_reproduced": false
+        "paper2_zeta_ratio_reproduced": false,
+        "same_vertex_equivalence": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE"
       }
     },
     "orientation_selection": {
