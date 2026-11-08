@@ -1,4 +1,12 @@
-# Research Observatory v2.54-pf-i3 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.55-pf-i3-paper4 — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I3 Paper 4 cross-source correction · true relative logdet and mode counts (2026-11-07)
+
+**Source correction, without overwriting older claims:** Paper 4 §§2–3 independently **reports** \(\zeta'_{QC}(0)/\zeta'_{Per}(0)=0.646\pm0.006\) over eight sizes, compared with Paper2 \(\zeta(-1/2)\) ratio \(0.8332\pm0.0018\). The original numerical eigenvalues/code are unavailable, so this is source-reported, **not independently reproduced**. Paper4 Eq.(2) simplifies exactly to \(\Gamma_{\rm rel}(m^2)=\frac1{2N}\sum_{\lambda>0}\log(1+\lambda/m^2)\), a determinant normalized relative to the squared mass. For any finite strictly positive spectra, QC/periodic relative Gamma tends to 1 at small \(m^2\) and to the mean-eigenvalue/trace ratio at large \(m^2\); those endpoint properties are universal algebra, **not** a new geometric physical RG or mass-gap theorem.
+
+**Independent finite-model false-positive control:** Reconstructed P3 samples with 186 and 616 vertices, one zero mode removed from each connected graph, and triangular comparison weight set **only** by Paper2's reported \(R(-1)=0.7371\), produce ratios at Paper4's \(m^2=(10^{-4},10^{-2},1,100)\) of (0.959475,0.927654,0.817501,0.739106) and (0.959957,0.928987,0.819697,0.739167). These approximate Paper4's (0.959,0.927,0.816,0.739) with max error under 0.004 **without fitting the four values**. It does not reproduce or certify the original source. Paper4's separate \(\zeta'(0)\) size table also changes N by [0,0,0,1,3,1,1,5] compared with Paper2 Nint; source asserts zero-mode removal but supplies no per-size zero-mode proof. This is a mandatory PF-G0 source-selection/mode-filter obligation.
+
+[Revised exact theorem and source provenance](../research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md) · [Paper4 relative determinant executable](../research/scripts/verify_pf_i3_relative_logdet.py) · [new 7 tests](../research/tests/test_pf_i3_relative_logdet.py) · [numerical/metadata evidence](../research/evidence/PF_I3_PAPER4_RELATIVE_LOGDET_EVIDENCE_2026_11_07.json). The source-bound revision and 19-test, byte-for-byte-replayed package are durably preserved in Library alongside the v1 evidence. **Observatory v2.55-pf-i3-paper4: 212 nodes / 515 edges / 754 indexed theorem sources; P0–P5 and PF-G0–G5 all OPEN, historical T5 conditional, no new branches or Pages deployment.**
 
 ## PF-I3 · Exact Paper2 spectral trace test and one-loop interpretation (2026-11-07)
 
