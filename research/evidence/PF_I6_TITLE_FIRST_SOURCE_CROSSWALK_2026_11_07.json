@@ -1,0 +1,332 @@
+{
+  "provenance": "User supplied Archive(1).zip",
+  "zip_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+  "method": "content-title and parsed-function source crosswalk, NO chronological or causal inference from filenames",
+  "manuscripts": [
+    {
+      "archival_filename": "paper1.pdf",
+      "content_title": "Spectral Dimension Flow and Gravitational Finiteness on the Fibonacci Lattice",
+      "sha256": "a6afe544146711ebaeef65c09f7711a80b99e99b958aec9a25fbfe61def0d526",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper2.pdf",
+      "content_title": "Spectral Dimension Flow on the Penrose Tiling: From Two-Dimensional Quasicrystalline Structure to the Kaluza-Klein Bridge",
+      "sha256": "5971445e733db26464a6ea5056e3b71d01d075546ea510f09fb8dd34d3aba263",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper3.pdf",
+      "content_title": "The Gravitational Path Integral on the Penrose Lattice: From Z5 to Minkowski’s World via Lapidus Complex Dimensions",
+      "sha256": "9d883e07004e06887671c04d83c65be52b274691c99e9dad9328e633260a175a",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper4.pdf",
+      "content_title": "The Complex Structure of Quasicrystalline Spacetime: The J-Operator and the Hidden Domain",
+      "sha256": "50fbe6da8d6e0c83d9346d73806643b09a63f4a2ffb464cee9f446e2f4cfb30f",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper5.pdf",
+      "content_title": "Spectral Identity on the Penrose Lattice: The Heat Kernel as Locational Observable and the Constitutive Hypothesis of Position",
+      "sha256": "9ec26715091c1c09a27ef805031c5730dbb3267db59dd0010664345758ea89cf",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper5_appendix.pdf",
+      "content_title": "Appendix to Paper 5: Experimental Design for Detection of Quasicrystalline Spectral Signatures",
+      "sha256": "07f16f659656a185078fd19b1b0d915fb1b1d0be55a920769cb361a72df0f52e",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper6.pdf",
+      "content_title": "The Conformal Boundary of Quasicrystalline Spacetime: Λ as a Function on Perpendicular Space",
+      "sha256": "27d78024501a317f4ecf59faad6c577f16853c04da9b12b531b216650b7f61b6",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper7.pdf",
+      "content_title": "The Analytic Structure of Spectral Suppression on the Penrose Lattice: Failure Bands, the Complementary Pair Identity, and the Cosmological Constant",
+      "sha256": "14fc592f00dfe57b5b84d70bd3b238c9625d623585ad7a6e36f4147502089f57",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    },
+    {
+      "archival_filename": "paper8.pdf",
+      "content_title": "The Walker’s Path: Neural Coherence, Synchronicity, and Failure Correction on the Quasicrystalline Lattice",
+      "sha256": "2932b41e8a36f3c3dcbbfebfe3612767b2f4bf3a64b0672746ce0ab6a60420be",
+      "archival_number_is_order": false,
+      "matches_titlepage_text": true
+    }
+  ],
+  "programs": [
+    {
+      "archival_filename": "paper1_compute.py",
+      "sha256": "876104b01aa385f66fec99ae23a1c88b2c87907e96d372fc213bb93d6457a48b",
+      "code_role_by_inspection": "Fibonacci-chain Hamiltonian and regular/Fibonacci Laplacians; heat-kernel spectral-flow diagnostics",
+      "defined_functions": [
+        "fibonacci_hamiltonian",
+        "regular_hamiltonian",
+        "fibonacci_laplacian",
+        "regular_laplacian"
+      ],
+      "self_reported_header": [
+        "Paper 1 v2 -- Corrected Analysis",
+        "=================================",
+        "",
+        "CRITICAL CORRECTION (v2): Graph Laplacian for spectral dimension",
+        "---------------------------------------------------------------",
+        "The original v1 code computed the heat kernel using adjacency eigenvalues E_k:",
+        "    P(sigma) = (1/N) sum exp(-sigma * E_k^2)   [INCORRECT]"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper2_computation.py",
+      "sha256": "7849cc2dcda14393ce0d3399194a5732d51be3cb8789ef462f37734c8cd72a64",
+      "code_role_by_inspection": "Robinson-triangle subdivision, Delaunay/filter graph and spectral computation (one implementation)",
+      "defined_functions": [
+        "subdivide",
+        "generate_penrose",
+        "extract_graph",
+        "restrict_interior",
+        "penrose_hamiltonian",
+        "regular_2d_hamiltonian",
+        "get_spectrum",
+        "main"
+      ],
+      "self_reported_header": [
+        "Paper 2 — Penrose Tiling Spectral Analysis",
+        "=============================================",
+        "2D extension of the Fibonacci lattice mechanism.",
+        "",
+        "Generates Penrose P3 tiling via Robinson triangle subdivision,",
+        "extracts the vertex graph, builds tight-binding Hamiltonian,",
+        "and performs the same spectral analysis as Paper 1 but in 2D."
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper2_compute.py",
+      "sha256": "a8e73bb783471bed28dc062856c69101a26945ad516a8c9c06af755adcea5510",
+      "code_role_by_inspection": "de Bruijn pentagrid P3 tiles, Fibonacci hopping, Conway-worm and spectral-dimension calculations (distinct implementation)",
+      "defined_functions": [
+        "make_generic_gamma",
+        "fibonacci_hopping",
+        "build_penrose_laplacian",
+        "build_regular_laplacian",
+        "compute_spectral_dimension",
+        "extract_conway_worms",
+        "analyze_worm_fibonacci",
+        "verify_substitution_invariant",
+        "run_full_pipeline"
+      ],
+      "self_reported_header": [
+        "Paper 2 — Definitive Computation Pipeline",
+        "==========================================",
+        "",
+        "Complete, validated computation chain for:",
+        "  1. Penrose P3 rhombus tiling (corrected de Bruijn, generic gamma)",
+        "  2. Graph Laplacian spectral analysis (Fibonacci-modulated hopping)",
+        "  3. Conway worm decomposition (embedded 1D Fibonacci chains)"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper3_compute.py",
+      "sha256": "f253f4036dfb6a7ef24a8d009813f23cd1e2c6876a498873f9b711c605a0733c",
+      "code_role_by_inspection": "P3 integer labels, scalar Laplacian and Z5 coordinate/compact-direction and spectral-zeta diagnostics",
+      "defined_functions": [
+        "make_generic_gamma",
+        "make_gamma_from_perp",
+        "build_penrose_tiling",
+        "fibonacci_hopping",
+        "build_penrose_laplacian",
+        "build_regular_laplacian",
+        "compute_spectral_dimension",
+        "fibonacci_laplacian_1d",
+        "regular_laplacian_1d",
+        "extract_z5_coordinates",
+        "analyze_compact_direction",
+        "compute_spectral_zeta",
+        "verify_4d_isotropy",
+        "compute_oneloop_ratio",
+        "run_size",
+        "run_config_space_sampling",
+        "analyze_spectral_gaps"
+      ],
+      "self_reported_header": [
+        "Paper 3 v3 — Full Z⁵ Lattice Computation",
+        "=========================================",
+        "",
+        "Recomputes ALL numerical results for Paper 3 using the validated",
+        "Paper 2 infrastructure:",
+        "  - Generic gamma offsets (no triple intersections)",
+        "  - Graph Laplacian (not adjacency)"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper3_coupled_compute.py",
+      "sha256": "ad074fc4fbbbb5dca8dfe3756747234732dea5ea893541f922e54f36f2b56d9d",
+      "code_role_by_inspection": "P3 indexed vertices and all accepted original-basis nearest neighbors; coupled-named scalar Laplacian, comparator and zeta ratios",
+      "defined_functions": [
+        "make_generic_gamma",
+        "build_penrose_tiling",
+        "select_interior_vertices",
+        "fibonacci_hopping",
+        "build_coupled_z5_laplacian",
+        "build_periodic_laplacian",
+        "extract_z5_coordinates",
+        "analyze_compact_direction",
+        "compute_oneloop_ratio",
+        "compute_spectral_dimension",
+        "main"
+      ],
+      "self_reported_header": [
+        "Paper 3 — Recompute with Coupled Z⁵ Laplacian",
+        "===============================================",
+        "",
+        "Uses Paper 6's coupled Z⁵ Laplacian construction for ALL Paper 3 results.",
+        "Computes missing sizes 7, 10, 12; loads existing 15-25 from Paper 6 data.",
+        "Recomputes: one-loop ratios, γ(s) scaling exponents, s*, d_eff, 3D product."
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper5_compute.py",
+      "sha256": "85416b0ec4303207a207b821ba6c976f2c3ef19673cae73d50ede12811f5fb44",
+      "code_role_by_inspection": "position-resolved heat kernel/identity/phason and spectral-temperature computations",
+      "defined_functions": [
+        "make_gamma",
+        "build_tiling",
+        "fibonacci_hopping",
+        "build_laplacian",
+        "find",
+        "union"
+      ],
+      "self_reported_header": [
+        "Paper 5 v5: Spectral Identity and Heat Kernel Analysis",
+        "",
+        "Validates all numerical claims in paper5_v5.tex:",
+        "1. Spectral identity theorem: γ⊥ → {λk} injective mod D5",
+        "2. Heat kernel: K_QC/K_per ratios and size stability",
+        "3. Specific heat: 47% signal at β=0.5",
+        "4. Discriminating power across T²"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper6_convergence_compute.py",
+      "sha256": "a758befa9bbbe27ad8925e6823083efbec08832686e1d9a00f712f458c3e9d87",
+      "code_role_by_inspection": "finite P3/basis incidence, scalar zeta and conformal/gradient diagnostics across cutoffs",
+      "defined_functions": [
+        "make_generic_gamma",
+        "build_penrose_tiling",
+        "select_interior_vertices",
+        "fibonacci_hopping",
+        "extract_z5_coordinates",
+        "build_coupled_z5_laplacian",
+        "build_periodic_laplacian",
+        "compute_oneloop_ratio",
+        "compute_zeta_ratios",
+        "compute_seeley_dewitt",
+        "compute_conformal_boundary",
+        "compute_c5_lyapunov",
+        "compute_spectral_dimension",
+        "run_size",
+        "build_2d_penrose_laplacian",
+        "make_gamma_from_perp",
+        "make_gamma_from_perp"
+      ],
+      "self_reported_header": [
+        "Paper 6 Recomputation — Local Extension Script",
+        "================================================",
+        "",
+        "Self-contained script for running the corrected Paper 6 computation",
+        "at larger N_grid sizes locally. Includes both corrected C₅ analyses.",
+        "",
+        "Expected resources:"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "paper6_figures.py",
+      "sha256": "63315de666d593f965de269054a891df26471c744dca014ffa7ed4bbc7a1ca46",
+      "code_role_by_inspection": "finite-graph observables, corrected mass-relative log determinant and figures",
+      "defined_functions": [
+        "make_generic_gamma",
+        "build_penrose_tiling",
+        "select_interior_vertices",
+        "fibonacci_hopping",
+        "extract_z5_coordinates",
+        "build_coupled_z5_laplacian",
+        "build_periodic_laplacian",
+        "one_loop_correct",
+        "zeta_s",
+        "zeta_prime_0",
+        "compute_NaNa_graph"
+      ],
+      "self_reported_header": [
+        "Paper 6 — CORRECTED Figure Generation (v2)",
+        "============================================",
+        "Fixes:",
+        "  1. One-loop formula: Γ = +½ mean(log(1+λ/m²)), not -½ mean(log)",
+        "  2. N_aN^a = |∇Ω|² via graph finite differences, not Ω²",
+        "  3. Uses paper6_extend_local.py validated infrastructure throughout"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    },
+    {
+      "archival_filename": "zeta_prime_validation.py",
+      "sha256": "fc154343342233685b03b71462e2c82d1c29602f22c2064187708d2f85f95b56",
+      "code_role_by_inspection": "zeta-prime/relative determinant validation and comparison of multiple finite model operators",
+      "defined_functions": [
+        "make_generic_gamma",
+        "build_penrose_tiling",
+        "fibonacci_hopping",
+        "build_penrose_laplacian",
+        "build_regular_laplacian",
+        "build_coupled_z5_laplacian",
+        "build_periodic_3d",
+        "compute_zeta_residues",
+        "build_z5_lattice"
+      ],
+      "self_reported_header": [
+        "ζ'(0) Validation Computation",
+        "=============================",
+        "",
+        "Recomputes ζ(0) and ζ'(0) from scratch using the VALIDATED Paper 3 v3",
+        "infrastructure:",
+        "  - Generic gamma offsets (no triple intersections)",
+        "  - Graph Laplacian (D - W)"
+      ],
+      "archival_number_is_order": false,
+      "matching_number_implies_manuscript_dependency": false
+    }
+  ],
+  "interpretation_rules": [
+    "Manuscript archival file numbers are storage identifiers only; do not infer order, revision, or substantive dependence from their suffixes.",
+    "Script filename numbers are likewise not proof of manuscript ownership, execution order, or model consistency.",
+    "Where a source file itself documents reliance on another dataset or code version, record that as source-reported only, then verify import, invocation or input provenance.",
+    "Geometry and numerical equivalence must be validated from mathematical definitions, inputs, actual integer vertex/edge/operator arrays, and output hashes.",
+    "The reported finite PF-I6 matched central window checks are about their recorded functions and inputs, independent of any paper-name order.",
+    "Any printed in-text references such as Paper N are historical text and must not substitute for source-content identity."
+  ]
+}
