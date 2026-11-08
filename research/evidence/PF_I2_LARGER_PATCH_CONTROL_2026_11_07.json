@@ -2,7 +2,7 @@
   "D_definition_in_paper1": "D described as degree matrix, weighted vs ordinary degree not disambiguated in source",
   "Euler_V_minus_E_plus_F": 1,
   "all_edges_original_basis_steps": true,
-  "assertions_passed": 10120,
+  "assertions_passed": 11305,
   "claimed_source": "Paper1 \u00a7\u00a76.1,7.1 equations (12)-(14), plus Paper2 \u00a78.2 cross-reference",
   "continuum_YM_gap_proved": false,
   "edge_count": 1185,
