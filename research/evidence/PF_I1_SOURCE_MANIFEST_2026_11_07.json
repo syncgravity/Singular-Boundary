@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "files": {
+    "PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md": {
+      "sha256": "3f314c98e53af87ed8950b77d563dd2533ef678e80032a2541c4f811e6d2c382",
+      "size_bytes": 11019
+    },
+    "PF_I1_INTERNAL_TOPOLOGY_EVIDENCE_2026_11_07.json": {
+      "sha256": "9b7baabcf4e9881aa36486ed86fa6558864a8d46b90d59d9becfa3de52240f21",
+      "size_bytes": 5825
+    },
+    "verify_pf_i1_internal_topology.py": {
+      "sha256": "6049cb49a5f68114f9467d3666cc1527f2d1e54fe038f1e2d1e0ea15e2a220eb",
+      "size_bytes": 6614
+    }
+  },
+  "known_open_gates": [
+    "PF-G0",
+    "P0-P5",
+    "PF-G0-PF-G5",
+    "T0-T5",
+    "gravity/UV"
+  ],
+  "original_graph_generator_authenticated": false,
+  "scope": "exact source-formulation correction; no mass gap certification",
+  "source_pdf_sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
+  "title": "PF-I1 dense internal Z5 source topology audit"
+}
