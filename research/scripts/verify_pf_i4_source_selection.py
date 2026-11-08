@@ -184,7 +184,8 @@ def produce(source_tar=None):
     return {
       'status':'exact conditional exclusion + independent finite P3 controls, NOT source Paper2/Paper4 reproduction',
       'paper_source_sha256':originals,
-      'source_provenance_correction':'Processed PDF copies from the earlier PF-I2/I3 workspace have different SHA256 from original tar members. All rendered pages at 1.2x and all extracted text were verified identical in this audit; do not mislabel processed copy hashes as original archive bytes.',
+      'source_provenance_correction':'Three available processed/native PDF pairs have identical rendered pages and extracted text but differ in bytes. PF-I2 Paper1 also cites unlocated digest 7c0585fa..., and PF-I3 Paper4 cites unlocated digest 03152f9c...; do not claim those specific unlocated PDFs have been content-verified. See PF-I4 provenance comparison.',
+      'unlocated_historical_pdf_digests':{'PF_I2_Paper1':'7c0585fa990bb2a762c869665287835bbdb6e07edeb55e9adfe54fe84f9eddea','PF_I3_Paper4':'03152f9c17f78b3a6f6f752f230f80eb63d70df440bb96209e1137137185e734'},
       'paper1_interior_selection_printed':'Sec7.2: tile distance within 35% maximum, then all neighbors of each interior vertex also interior. No one-pass / iterative implementation stated.',
       'interior_closure_theorem':'In a connected finite graph, a nonempty neighbor-closed vertex subset equals the whole graph; otherwise boundary removal can only be one-pass or use a different ambient adjacency.',
       'paper4_degree_consistency':paper4_degree_arithmetic(),
