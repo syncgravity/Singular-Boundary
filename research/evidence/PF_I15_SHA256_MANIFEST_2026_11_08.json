@@ -11,8 +11,8 @@
       "size_bytes": 2166
     },
     "PF_I15_PUBLIC_FINITE_TIME_AND_ELECTRIC_RESULTS_2026_11_08.json": {
-      "sha256": "7e1e6a4b39879d6ed0ed23ca685f7ab53bb79f3a7c699ee6f73bb81acdada3f5",
-      "size_bytes": 18812
+      "sha256": "7b3d6f42152bc462cf4b5ad980fafe44409162e1933e4d2516ec8305a6fd26d3",
+      "size_bytes": 18857
     },
     "PF_I15_PUBLIC_TEST_LOG.txt": {
       "sha256": "c06708fba2cd02cc373e192913af05c2c406389d5b9d38aecc1f0d766c948335",
@@ -27,12 +27,12 @@
       "size_bytes": 3180
     },
     "build_pf_i15_private_package.py": {
-      "sha256": "c39e48838574761e7eaa792da51b82a5978e2ead9d9e9b1eebd133a145603617",
-      "size_bytes": 3146
+      "sha256": "7dbc6d80ba7d585cc82d2d8684a5b954db10fc4fec2cc03a4a26438a7972d53f",
+      "size_bytes": 3262
     },
     "build_pf_i15_public_evidence.py": {
-      "sha256": "44b0b1c57bf8bad4d8c14d54bcecd96734b4dd42672f56c8c74f0d7e088fa738",
-      "size_bytes": 1661
+      "sha256": "d02dfe8baacaec2b17422be31d60b2ac100ada290b10210c4f00f109aa11baeb",
+      "size_bytes": 1705
     },
     "source/PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
       "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038",
@@ -79,6 +79,7 @@
   "public_source_aggregate_allowed": true,
   "public_tests_pass": 13,
   "public_tests_private_skip": 1,
+  "revision": "v2 public evidence explicitly says exact gap derived analytically, NOT full spectrum diagonalized",
   "source_may_be_pushed_to_public_GitHub": false,
   "source_original_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
   "source_unpublished_original_in_private_archive": true,

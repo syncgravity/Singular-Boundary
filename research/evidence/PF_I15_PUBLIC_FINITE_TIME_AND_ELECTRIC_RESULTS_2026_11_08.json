@@ -355,6 +355,8 @@
     "source_graph_girth": 4,
     "upper_witness": "fundamental j=1/2 Wilson character on minimum-weight simple cycle, all other edges j=0"
   },
+  "finite_source_electric_gap_derived_analytically": true,
+  "full_electric_spectrum_numerically_diagonalized": false,
   "global_Yang_Mills_interacting_uniform_mass_gap_proved": false,
   "one_genuine_rhombus_Wilson_quantum_control": {
     "character_basis_matrix": "diag(4 epsilon j(j+1)+kappa) - (kappa/2)*(nearest-character offdiagonals)",
@@ -392,7 +394,6 @@
       }
     }
   },
-  "original_source_numeric_spectra_reproduced_under_selected_H_el": true,
   "physical_time_derived": false,
   "source_script_replayed_at_all_eight_sizes": true,
   "source_script_sha256_for_provenance_only": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",

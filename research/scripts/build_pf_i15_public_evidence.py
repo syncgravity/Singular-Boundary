@@ -23,7 +23,8 @@ pub={
   'one_genuine_rhombus_Wilson_quantum_control':j['finite_one_rhombus_interacting_quantum_control'],
   'global_Yang_Mills_interacting_uniform_mass_gap_proved':False,
   'physical_time_derived':False,
-  'original_source_numeric_spectra_reproduced_under_selected_H_el':True
+  'finite_source_electric_gap_derived_analytically':True,
+  'full_electric_spectrum_numerically_diagonalized':False
 }
 out=Path('PF_I15_PUBLIC_FINITE_TIME_AND_ELECTRIC_RESULTS_2026_11_08.json')
 out.write_text(json.dumps(pub,sort_keys=True,indent=2)+'\n')
