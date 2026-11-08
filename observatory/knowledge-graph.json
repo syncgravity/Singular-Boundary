@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.62-pf-i9-cut-project-source",
-  "scope": "PF-I9 exact intrinsic four hypersimplex window/face-triangle theorems and eight-size original source operator identity: capped grid tile lists omit genuine rhombi; complete-window P3 edges equal original source coupled basis edges (same source labels and Fibonacci weights); source R(-1) mean0.737056709 reproduces 0.7371 with tavg triangular comparator. Original vs complete cores distinct, full spectra and interacting YM/gravity proof gates OPEN. Unpublished dissertation reference retained privately.",
+  "version": "v2.63-pf-i10-source-spectral",
+  "scope": "PF-I10 source eight-size scalar spectral reproduction: R(-1/2)0.833184687, zeta prime ratio0.646357740, four mass-relative determinant ratios source-matched; first3 exact dense eigenlists, last5 SLQ with stochastic SE and size25 Lanczos convergence. Exact missing-rhombus source tile-vs-basis PSD edge theorem and same-graph Fibonacci/uniform factorization; 18 private source tests pass. Original source private Library. All interacting Yang–Mills, physical temporal, continuum gap and gravitational UV proof gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PARTIAL finite operator milestone PF-I9: intrinsic Z5 four-slice C&P has source-matched generic cell/face criterion; eight original finite coupled source graph edge sets match COMPLETE cut-project tile edge dictionaries on same label sets, and exact source triangular comparator reproduces R(-1)=0.7370567 (published 0.7371). Source P3 finite tile truncation misses faces and has different original cores; full R(-1/2), zeta prime, SU2 interacting 4D continuum/mass gap remain OPEN.",
+      "summary": "PF-I9 four-slice geometry and finite source graph identity PLUS PF-I10 exact 3-size/SLQ 5-size scalar spectroscopy now reproduce published source R(-1/2)=0.8332, zeta prime≈0.646 and four mass-relative determinant ratios. Original tile-cap missing-rhombus PSD effect and zero-mode-selection reversal proved. Still OPEN: rigorous large-n spectral envelopes, physical SU2 gauge action/reflection/time, interacting continuum Yang–Mills existence and positive gap.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4884,6 +4884,13 @@
           "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -7855,7 +7862,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I9 establishes four-height-window and face-triangle source geometry, equal completed tiling-versus-basis edge dictionaries on eight published-size original retained label sets, and reproduces source R(-1). Still OPEN for original published full R(-1/2)/zeta prime, 4D SU2 gauge action and interacting continuum/physical mass gap. Separate source/complete cropping populations must be preserved.",
+      "summary": "Source-coupled finite scalar operator now identified: PF-I9 source accepted cut-project graph and PF-I10 actual weighted D/periodic control reconstruct exact source 3-size and stochastic 5-size sqrt/zeta-prime/mass-flow. Other original manuscript branches, nonlinear physical gauge action and continuum existence remain unverified.",
       "detail": "Eight predecessor papers ≠ eight final merged dissertation papers, not necessarily source-state identical. Nine scripts cover paper1/2/3/5/6 and zeta validation; Paper4/7/8 have no separate named compute script in this ZIP. Remainder includes missing external /home/claude data. Different experimental Stage26 SU2 work remains separate. PF-I6 USER CORRECTION: Do not infer manuscript chronology or script associations from raw paper-numbered filenames. Tie all comparisons to manuscript content titles, full bytes, functions and inputs, output/operator hashes.",
       "checks": [
         {
@@ -7891,6 +7898,13 @@
           "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -8272,7 +8286,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I9 certifies finite cut-project four-slice window and complete-face/basis-edge identity on same source labels, and source exact R(-1) trace. It does not independently compute full 8-size R(-1/2), zeta prime, physical gauge operator, Osterwalder-Schrader transfer, thermodynamic/continuum existence, or a positive physical gap. Need maintain source truncated and corrected-window populations distinctly.",
+      "summary": "Finite source scalar spectral component is now reproduced by PF-I10: R(-1/2) eight-size arithmetic mean0.833184687 and zeta prime mean0.64635774, 3 exact eigenspectra plus5 SLQ; four mass-relative Gamma flow points reproduced. Still OPEN for deterministic five-large spectral errors and, crucially, physical interacting SU2/gauge continuum time/evolution and mass gap.",
       "detail": "The absence of a source-unique extra basis interaction after completion limits interpretations of finite coupled-only edges, not the possibility of an SU2 gauge theory on the intrinsic accepted graph. Negative-control cubic/periodic geometries are not imposed physical regulators; dissertation remains unpublished reference.",
       "checks": [
         {
@@ -8295,6 +8309,13 @@
           "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -8303,6 +8324,225 @@
         "source-spectral",
         "interacting-YM",
         "continuum-gap"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "title": "Source weighted Z5 scalar spectrum: 3 exact, 5 SLQ; R(-1/2) mean 0.833185",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Source original 35%-tile-selected Z5 weighted-strength Laplacians and actual finite triangular tavg control give R(-1/2) over eight sizes mean 0.833184686957 (3 dense eigenspectra N=1550/3042/4324; 5 stochastic Lanczos with first-trace control, N up to19260). Source reported 0.8332 reproduced at printed precision without fitting. Source zero eigenvalues excluded by connected-component count. Not an interacting SU2 gap.",
+      "detail": "Source original unpublished script SHA256 86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da held privately in Library; Github derived report, exact matrix generator, 18 regression tests and source numerical summaries. Conditional probe error of mean ≈2.22e-5 does not capture deterministic quadrature, thermodynamic, or physical errors.",
+      "checks": [
+        {
+          "label": "Replace five stochastic spectral estimates with independently certified deterministic bounds or exact source mode lists",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "original-source",
+        "Z5",
+        "spectral-zeta",
+        "finite-scalar",
+        "partial-reproduction",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I10-SOURCE-ZETA-PRIME-MASS-FLOW",
+      "title": "Source zeta prime and relative determinant mass flow independently reproduced as finite scalar functionals",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Source original positive-mode zeta'(0) ratio mean0.6463577401; mass-relative logdet ratio means [0.9587136627,0.9268268460,0.8157962578,0.7388769749] at squared masses [1e-4,1e-2,1,100], matching unpublished source rounded ratios. 3 exact eigenspectra, 5 SLQ. Relative determinant is not negative-half zeta and is not established as gravitational one-loop action.",
+      "detail": "Source paper numbering non-semantic; separate -zeta prime finite statistic, with zero mode subtraction on original graph populations. Convergence depth160 versus240 at Ngrid25 changed zeta-prime ratio ≈3.40e-5. Neither UV renormalization nor OS/continuum measure established.",
+      "checks": [
+        {
+          "label": "Obtain explicit gauge/gravity physical fluctuation operator, counterterms and independent continuum limit estimates if interpreting these as an effective action",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "relative-determinant",
+        "zeta-prime",
+        "finite-numerics",
+        "not-gravity-proof",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I10-SOURCE-TILE-VS-BASIS-PSD",
+      "title": "Exact source-capped tile Laplacian is PSD-dominated by completed basis-edge operator",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "On identical original retained vertices Lbasis−Ltile=Σ omitted_e w_e (δ_u−δ_v)(δ_u−δ_v)^T ⪰0, so full regulated sqrt/log spectral traces increase on completing missing rhombi. At grid25, tile graph 37073 E/111 components versus coupled basis38139 E/5 components. At grid10, tile positive-only sqrt ratio0.835271 exceeds basis0.830349 despite full-mode ratio tile0.821624 below basis0.830351, because zero-mode exclusions differ.",
+      "detail": "Eight sizes source-specific exact edge counts and nonnegative difference weights verified. Positive-only renormalization can reverse full eigenvalue monotonicity when nullities differ. Does not add physical nearest-neighbour interactions to the completed source tiling.",
+      "checks": [
+        {
+          "label": "Quantify the gauge Wilson action response to source-capped versus completed rhombus faces at fixed source labels",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "exact-PSD",
+        "finite-source-cutoff",
+        "zero-modes",
+        "rhombus-completion",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I10-SAME-GRAPH-HOPPING-DECOMPOSITION",
+      "title": "Same-graph Fibonacci hopping raises, rather than lowers, the finite source sqrt spectral moment",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "At m²=1e-4 the exact per-size factorization Zfib/Zperiodic=(Zfib/Zuniform same graph)(Zuniform same graph/Zperiodic) gives eight-size means ≈1.03899 and0.80193, with total R(-1/2)=0.833185. Fibonacci weights raise this specific source scalar functional relative to uniform tavg on SAME accepted source coupled graph; the smaller-than-one ratio enters the graph/reference comparator. Arithmetic means of factors are not asserted to multiply.",
+      "detail": "The identity is algebraic; the numerical factorization is confirmed on 3 exact and 5 SLQ systems. It is not a physical causal attribution, only a finite scalar normalization/control result. Negative-control periodic graph does not prescribe physical dimensionality.",
+      "checks": [
+        {
+          "label": "Determine whether any effect persists under source-matched gauge-invariant interacting observables and uniform scale estimates",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Fibonacci-hopping",
+        "same-graph-negative-control",
+        "finite-factorization",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I10-SLQ-VALIDATION-CONDITIONAL-SE",
+      "title": "Five largest PF-I10 scalar eigenvalue functionals use SLQ, not rigorous spectral envelopes",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Three smallest exact dense eigenvalue lists validate stochastic trace evaluation. Larger 5 estimates use 256 probes×180 Lanczos steps for grid15/18/20 and128×160 for grid23/25 with first-moment control variates. On grid25 fixed-probe step160→240 changes sqrt ratio6.16e-8, logderivative ratio3.40e-5. Probe SE is conditional, and deterministic quadrature/uniform size errors remain OPEN.",
+      "detail": "Canonical evidence JSON excludes wall-clock nondeterminism, and archive SHA/readback verified. Source original sparse matrices all 8 privately preserved in Library. Exact source eigenlists for five largest not produced.",
+      "checks": [
+        {
+          "label": "Develop deterministic spectral trace approximation bounds using source L spectrum enclosures and independent numerical method",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "numerical-rigor",
+        "SLQ",
+        "randomized-trace",
+        "conditional-error",
+        "source-provenance",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "title": "OPEN next: intrinsic source SU(2) Wilson action, reflection-positive dynamics and continuum gap",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "Now that PF-I9 source cut-project face/edge and PF-I10 finite scalar spectra are source-authenticated, the next distinct physical gate is defining gauge-invariant SU2 link and rhombus plaquette actions on the intrinsic accepted Z5 2+2+1 cut-project complex, addressing face-completion and boundary/phason choices; then establish a reflection-positive or other physically justified temporal construction and uniform interacting thermodynamic/continuum spectral gap without cubic spacetime assumptions.",
+      "detail": "Source-reference dissertation unpublished. Scalar spectra do NOT define non-Abelian quantum Yang–Mills measure/physical Hilbert space or mass gap. Need explicit gauge field variables, Wilson loops, covariance, OS-compatible reflection or constructive alternative, volume/time scaling and uniform estimates; never infer all from R(-1/2).",
+      "checks": [
+        {
+          "label": "Identify exact source link holonomy and face Wilson action respecting local SU(2) gauge covariance on cut-project faces",
+          "state": "open"
+        },
+        {
+          "label": "Determine a valid intrinsic temporal/reflection or transfer construction instead of assuming cubic 3+1 geometry",
+          "state": "open"
+        },
+        {
+          "label": "Derive a uniform interacting gauge-invariant mass-gap lower bound and nontrivial continuum measure, or a falsifying obstruction",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I10 source-faithful eight-size finite scalar spectra and cutoff-PSD audit",
+          "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "interacting-SU2",
+        "gauge-invariance",
+        "reflection-positivity",
+        "continuum-existence",
+        "mass-gap",
+        "2026-11-08"
       ],
       "importance": 5,
       "core": true,
@@ -12271,6 +12511,97 @@
       "kind": "geometry-foundation",
       "label": "exact finite intrinsic graph edge rules needed for gauge complex",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "to_id": "PF-I10-SOURCE-TILE-VS-BASIS-PSD",
+      "kind": "finite-source-provenance",
+      "label": "completed rhombus edge supports explain positive edge-difference operator",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "to_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "kind": "source-moment-validation",
+      "label": "exact -1 trace selects same actual source weighted comparator before -1/2",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+      "to_id": "PF-I10-SOURCE-ZETA-PRIME-MASS-FLOW",
+      "kind": "source-functional-clarification",
+      "label": "reproduce independently existing zeta prime rather than equating it to sqrt moment",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "to_id": "PF-I10-SOURCE-ZETA-PRIME-MASS-FLOW",
+      "kind": "same-operators",
+      "label": "two separate scalar functionals on same source matrices",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "to_id": "PF-I10-SAME-GRAPH-HOPPING-DECOMPOSITION",
+      "kind": "same-graph-control",
+      "label": "Fibonacci vs uniform on identical graph before periodic comparator",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I10-SLQ-VALIDATION-CONDITIONAL-SE",
+      "to_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "kind": "qualification",
+      "label": "largest five are stochastic estimates, not exact eigenspectra",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I10-SLQ-VALIDATION-CONDITIONAL-SE",
+      "to_id": "PF-I10-SOURCE-ZETA-PRIME-MASS-FLOW",
+      "kind": "qualification",
+      "label": "finite logdet estimates not rigorously bounded continuum actions",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-TILE-VS-BASIS-PSD",
+      "to_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "kind": "boundary-dependency",
+      "label": "define plaquettes and Wilson action on actual completed source geometry, preserve original finite crop controls",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I10-SAME-GRAPH-HOPPING-DECOMPOSITION",
+      "to_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "kind": "does-not-imply",
+      "label": "scalar factorization does not isolate gauge-field dynamics",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "to_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "kind": "necessary-not-sufficient",
+      "label": "finite scalar spectroscopy does not prove interacting mass gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "source field/operator and continuum physical proof still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "interacting gauge action and temporal/reflection structure not proven",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-ZETA-PRIME-MASS-FLOW",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "finite scalar mass-relative determinants are not one-loop gravity UV theorem",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -12416,7 +12747,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+      "next_gate": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -12627,6 +12958,51 @@
         "source_code_private_library": "/The Singular Boundary/Proof Audits/PF I9 Source-faithful Cut and Project 2026-11-07",
         "new_source_publication_claims_made": false,
         "full_interacting_YM_mass_gap_proved": false
+      },
+      "pf_i10_source_spectra": {
+        "status": "finite_source_scalar_reproduced_three_exact_five_SLQ",
+        "report": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+        "original_source_SHA256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+        "operator": "source weighted D-W on original retained Z5 labels",
+        "negative_control": "finite source zigzag triangular tavg, not physical spacetime",
+        "Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "R_negative_half_mean": 0.8331846869573367,
+        "zeta_prime_ratio_mean": 0.6463577401075136,
+        "relative_logdet_mass_ratios": {
+          "1": 0.8157962578134776,
+          "100": 0.738876974872875,
+          "1e-4": 0.9587136627121045,
+          "1e-2": 0.9268268459706861
+        },
+        "exact_full_eigenspectra_sizes": [
+          7,
+          10,
+          12
+        ],
+        "SLQ_estimated_sizes": [
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "stochastic_quadrature_not_uniform_rigorous_error": true,
+        "cutoff_PSD_theorem": "PF-I10-SOURCE-TILE-VS-BASIS-PSD",
+        "same_graph_hopping_factor": "PF-I10-SAME-GRAPH-HOPPING-DECOMPOSITION",
+        "source_public_spectral_evidence": "research/evidence/PF_I10_EIGHT_SIZE_SPECTRAL_SUMMARY_2026_11_08.json",
+        "private_library_archive": "/The Singular Boundary/Proof Audits/PF I10 Source Spectral Reproduction 2026-11-08/",
+        "next_interacting_gate": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+        "Yang_Mills_physical_gap_proved": false,
+        "gravitational_UV_finiteness_proved": false
       }
     },
     "orientation_selection": {
