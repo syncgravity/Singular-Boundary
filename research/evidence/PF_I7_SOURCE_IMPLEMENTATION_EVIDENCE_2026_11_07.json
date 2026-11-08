@@ -1,0 +1,194 @@
+{
+  "archived_z6_spectral_checks": {
+    "data": [
+      {
+        "N_range": 8,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.692405569690202,
+        "max_retained_periodic_eigenvalue": 8.150528017710823,
+        "recomputed_periodic_peak_ds_restoring_zero": 3.1951592470251877,
+        "reported_and_recomputed_R_minus_half": 0.7167774389915126,
+        "reported_periodic_peak_ds_excluding_zero": 9.329742972196248,
+        "retained_positive_modes_QC": 1737,
+        "retained_positive_modes_periodic": 1727
+      },
+      {
+        "N_range": 9,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.692547383340172,
+        "max_retained_periodic_eigenvalue": 8.171323805502936,
+        "reported_and_recomputed_R_minus_half": 0.751241209480667,
+        "retained_positive_modes_QC": 2457,
+        "retained_positive_modes_periodic": 2196
+      },
+      {
+        "N_range": 10,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.6925494661252936,
+        "max_retained_periodic_eigenvalue": 8.20119824835017,
+        "reported_and_recomputed_R_minus_half": 0.7174809988769818,
+        "retained_positive_modes_QC": 3297,
+        "retained_positive_modes_periodic": 3374
+      },
+      {
+        "N_range": 11,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.692549466385023,
+        "max_retained_periodic_eigenvalue": 8.212133799305303,
+        "reported_and_recomputed_R_minus_half": 0.7316694760158318,
+        "retained_positive_modes_QC": 4421,
+        "retained_positive_modes_periodic": 4095
+      },
+      {
+        "N_range": 12,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.692549466408475,
+        "max_retained_periodic_eigenvalue": 8.228810560585693,
+        "reported_and_recomputed_R_minus_half": 0.735989782087332,
+        "retained_positive_modes_QC": 5911,
+        "retained_positive_modes_periodic": 5831
+      },
+      {
+        "N_range": 13,
+        "last_two_sizes_use_only_lowest_2999_modes": false,
+        "max_retained_QC_eigenvalue": 7.6925494664085186,
+        "max_retained_periodic_eigenvalue": 8.240753182981809,
+        "reported_and_recomputed_R_minus_half": 0.722724215721259,
+        "retained_positive_modes_QC": 7441,
+        "retained_positive_modes_periodic": 7999
+      },
+      {
+        "N_range": 14,
+        "last_two_sizes_use_only_lowest_2999_modes": true,
+        "max_retained_QC_eigenvalue": 1.099147106288038,
+        "max_retained_periodic_eigenvalue": 3.0981621917851148,
+        "reported_and_recomputed_R_minus_half": 0.5253167219571383,
+        "retained_positive_modes_QC": 2999,
+        "retained_positive_modes_periodic": 2999
+      },
+      {
+        "N_range": 15,
+        "last_two_sizes_use_only_lowest_2999_modes": true,
+        "max_retained_QC_eigenvalue": 0.866472960896979,
+        "max_retained_periodic_eigenvalue": 2.763932022500255,
+        "reported_and_recomputed_R_minus_half": 0.5032720730728445,
+        "retained_positive_modes_QC": 2999,
+        "retained_positive_modes_periodic": 2999
+      }
+    ],
+    "delta_gamma_minus_half": 0.0009256399608689788,
+    "important_caveat": "Script removes degree-zero isolated vertices but does NOT test global connectivity. More than one zero mode could remain on QC, so only periodic control zero-mode reconstruction is definitive.",
+    "sigma_reported_by_code": 0.0065162922496861415,
+    "sizes_used_for_gamma": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "verdict_as_written": "FINITE RENORMALIZATION (same as 2D): The QC lattice suppresses the one-loop action by a constant factor but does not change the scaling rate.",
+    "z6_original_scaling_finiteness_flag": false
+  },
+  "gravitational_uv_finiteness_proved": false,
+  "original_unprovided_auxiliary_scripts_still_needed": true,
+  "scope": "finite source-implementation audit; not continuum proof",
+  "source_code_determines_geometry_not_filename": true,
+  "sources": {
+    "p3_tiler": {
+      "sha256": "6c58e6d172c3ece8cc78b90b5679f233a728f155824827f649907daf2a5777b4"
+    },
+    "z5_coupled": {
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da"
+    },
+    "z6_eigenvalue_archive": {
+      "sha256": "ea69c8aca94b43ab3feec8751f269a4969a2a805787cb52ab397792b8c97c8f8"
+    },
+    "z6_window": {
+      "sha256": "cd278939c71f37d84842f1eb325b3e22f62f0c4ddeb652eede95c7120d48fd5d"
+    }
+  },
+  "two_dimensional_source_comparison": [
+    {
+      "N_grid": 7,
+      "coupled_basis_edge_count": 3017,
+      "coupled_extra_edges": 0,
+      "coupled_extra_edges_by_family": {},
+      "coupled_missing_tile_edges": 0,
+      "generated_vertices": 3962,
+      "interior_vertices": 1550,
+      "max_abs_matrix_difference": 0.0,
+      "mean_unweighted_basis_coordination": 3.8929032258064518,
+      "mean_weighted_strength": 2.9518966364840313,
+      "periodic_reference_not_exact_same_N": true,
+      "periodic_reference_vertices": 1521,
+      "tile_edge_count": 3017
+    },
+    {
+      "N_grid": 10,
+      "coupled_basis_edge_count": 5927,
+      "coupled_extra_edges": 62,
+      "coupled_extra_edges_by_family": {
+        "0": 12,
+        "1": 10,
+        "2": 12,
+        "3": 14,
+        "4": 14
+      },
+      "coupled_missing_tile_edges": 0,
+      "generated_vertices": 7839,
+      "interior_vertices": 3042,
+      "max_abs_matrix_difference": 1.0,
+      "mean_unweighted_basis_coordination": 3.8967784352399737,
+      "mean_weighted_strength": 2.969117951140033,
+      "periodic_reference_not_exact_same_N": true,
+      "periodic_reference_vertices": 3025,
+      "tile_edge_count": 5865
+    },
+    {
+      "N_grid": 12,
+      "coupled_basis_edge_count": 8468,
+      "coupled_extra_edges": 85,
+      "coupled_extra_edges_by_family": {
+        "0": 21,
+        "1": 19,
+        "2": 21,
+        "3": 12,
+        "4": 12
+      },
+      "coupled_missing_tile_edges": 0,
+      "generated_vertices": 11018,
+      "interior_vertices": 4324,
+      "max_abs_matrix_difference": 1.0,
+      "mean_unweighted_basis_coordination": 3.9167437557816838,
+      "mean_weighted_strength": 3.01113243461625,
+      "periodic_reference_not_exact_same_N": true,
+      "periodic_reference_vertices": 4225,
+      "tile_edge_count": 8383
+    }
+  ],
+  "ym_mass_gap_proved": false,
+  "z6_window_shape": {
+    "claimed_rhombic_triacontahedron_facets": 30,
+    "halfspace_boundaries": 12,
+    "implementation": "intersection of six axial slabs, 12 planar pentagonal facets",
+    "polytope_facets": 12,
+    "polytope_vertices": 20,
+    "source_window_30_face_claim_matches_implemented_12_face_polytope": false,
+    "vertices_on_each_facet": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "window_R_calibrated_multiplier": 1.15
+  }
+}
