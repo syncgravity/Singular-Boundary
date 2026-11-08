@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.67-pf-i14-decorated-hull",
-  "scope": "PF-I14 exact lower/upper mechanical Fibonacci word reversal (including singular rho0), height-zero Lambda0⋊Z2 decorated phason hull and covariance of source Z5 weighted Laplacian, SU2 Wilson face and transverse commutator actions at all eight original sizes and two complete-window controls; gauge-projected positive auxiliary SU2 link heat transfer. The source does not specify extra word phases as physical, real time/reflection, or continuum gap. All P0–P5/PF-G0–G5 and gravity gates OPEN.",
+  "version": "v2.68-pf-i15-electric-dynamics",
+  "scope": "PF-I15 source Z5 accepted rhombus SU2 spin-network exact finite pure-electric Δ=(3/4)least weighted cycle, eight-source girth4 Δ=3epsilon and optional source scalar weight Δ=3phi^-2; bounded Wilson/commutator auxiliary Hamiltonian has simple finite ground and strictly positive finite gap, with explicit kappa=.71 one-rhombus Jacobi gap3.058085713. Restricted C5 additive clock no-go, J helix explicitly kinematic, nonunique invariant auxiliary phase measures and extensive magnetic norm bound obstruction. No source physical time, original global OS, interacting continuum Yang–Mills gap or gravity UV proved.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I14 proves exact finite reflected cut-project decorated-hull covariance of Fibonacci scalar words, source weighted Laplacians and SU2 Wilson/commutator source actions; conditional gauge-projected SU2 link heat transfer on actual source edges. These are finite/auxiliary math, not source-defined physical time or global original-theory OS structure. PF-I15 physical phason/time/gauge continuum and uniform mass gap remain OPEN.",
+      "summary": "PF-I15 finite electric spin-network gap formula is exact on source accepted rhombi (uniform Δ=3epsilon and optional weighted Δ=3phi^-2), with nonzero one-rhombus Wilson quantum control and positive finite auxiliary Hamiltonian theorem. Neither source time J/helical observer nor phase hull covariance selects a physical kinetic generator, invariant vacuum or uniform interacting continuum bound; PF-I16 OPEN. PF-I9..PF-I14 finite geometry/spectral/hull results remain retained.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4919,6 +4919,13 @@
           "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
           "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -9572,7 +9579,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I14 gives an exact mathematically enlarged decorated Z5 hull with covariance of source Fibonacci scalar words, SU2 Wilson and transverse face interactions, plus a conditional positive heat transfer on original graph links. Still unknown whether added phase/upper-lower boundary data have physical status, what defines source time/reflection/energy, which gauge-invariant positive-time algebra is justified and whether any interacting continuum limit/gap is uniform. Do not impose a cubic 3+1 structure or infer physical gap from finite auxiliary transfer.",
+      "summary": "PF-I15 exactly derives SU2 pure-electric spin-network cycle gap Δ=(3/4)min_cycle Σepsilon_e on genuine source Z5 accepted edges; eight original source girth4 graphs give Δ=3epsilon, or 3phi^-2 if one externally chooses the source scalar Fibonacci weights as kinetic coefficients. An auxiliary one-plaquette kappa0.71 Wilson quantum model gives gap3.0580857 and finite interacting gauge Hamiltonians have simple vacuum and finite gap. BUT C5 additive clock is trivial, J helix remains source-kinematic, phase-invariant measures and electric/heat scales are nonunique, and global extensive perturbation bound fails uniformly; physical source dynamics and continuum positive gap still OPEN, next PF-I16.",
       "detail": "The source dissertation is unpublished reference. Require source-defined phason dynamics, kinetic coupling and finite-volume exhaustion, nonfactorizing gauge-invariant correlators, reflection positivity or constructive alternative and physically normalized uniform positive mass gap.",
       "checks": [
         {
@@ -9595,6 +9602,13 @@
           "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -9603,6 +9617,328 @@
         "physical-time",
         "interacting-YM",
         "continuum-existence",
+        "mass-gap-open"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-C5-INVARIANT-ADDITIVE-CLOCK-NOSELECTION",
+      "title": "No nonzero C5-invariant additive real time on height-zero source translations",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For Lambda0={a in Z5:sum a=0} cyclic source sigma, any additive real tau with tau(sigma a)=tau(a) obeys 5tau(a)=tau(sum_r sigma^r a)=0, so tau=0. On full R5, any invariant linear scalar is c sum m_j, bounded h=1..4 in source accepted graph. Accepted z2 perpendicular coordinate bounded in window, J exponentiation unitary rotation not positive selfadjoint heat. The draft's explicit helix remark says field equation/dynamics not supplied. No nonlinear, chosen-axis, dihedral, winding-lift or hull-time no-go is claimed.",
+      "detail": "Restricted source structure theorem and draft-level kinematic/dynamic distinction. Does not disprove emergent physical temporal structure.",
+      "checks": [
+        {
+          "label": "Derive a non-additive or symmetry-selected source physical time law and positive-time gauge observable algebra",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "C5",
+        "time-nonselection",
+        "source-J",
+        "height-zero",
+        "exact-restricted-no-go",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-DECORATED-PHASE-MEASURE-NONUNIQUENESS",
+      "title": "PF-I14 auxiliary five-phase hull has multiple invariant probability measures",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For auxiliary rho in T5, zero-height shifts rho->rho-alpha a preserve s=sum rho mod1; decorated R maps s->-s-5alpha. Dense irrational translations on T4 s-fibers permit conditional Haar, but any reflection-symmetric s marginal is invariant. Full Haar on T5 and 1/2 Haar on s=0 plus 1/2 Haar on s=-5alpha are distinct invariant measures, separated by Fourier observable magnitude≈0.960144597. This proves decoration symmetry alone cannot uniquely select a probability law, NOT that physical source gauge-hull vacuum is nonunique.",
+      "detail": "Exact Kronecker fiber measure construction on mathematical Sturmian decoration only; independent fair lower/upper flags give reflection-symmetric decoration. Not physical Gibbs or vacuum measures.",
+      "checks": [
+        {
+          "label": "Specify source physical phase/gauge-field measure or justified superselection and prove invariance/ergodicity",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "decorated-hull",
+        "invariant-measure",
+        "physical-vacuum-open",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "title": "Exact gauge-invariant SU2 pure-electric gap equals 3/4 times least weighted graph cycle",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For any finite simple SU2 link graph with at least one cycle, electric H=sum_e epsilon_e C_e (epsilon_e>0) on L2(SU2^E)^SU2^V has exact first excitation Δ=(3/4) min_simple_cycles Σ_e epsilon_e. Peter-Weyl spin support invariant intertwiners cannot have degree1 occupied vertices, so must contain a cycle; fundamental Wilson character on minimum cycle saturates. Forest-only gauge Hilbert is one-dimensional so no nontrivial gap. This Hamiltonian is an EXTERNAL kinetic choice.",
+      "detail": "Exact representation-theoretic finite theorem, with no cubic spacetime input. It is a pure-electric reference only and not a non-Abelian interacting continuum Yang-Mills mass-gap theorem.",
+      "checks": [
+        {
+          "label": "Derive physical electric Casimir coefficient / generator from original source geometric/dynamical axioms",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "SU2",
+        "spin-networks",
+        "exact-finite-gap",
+        "cycle-girth",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-SOURCE-EIGHT-SIZE-FIBONACCI-ELECTRIC-GAPS",
+      "title": "All eight source cut-project graphs: exact electric Δ=3 or 3phi^-2 under two distinct auxiliary kinetic choices",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Source original unchanged Ngrid7,10,12,15,18,20,23,25 graphs have bipartite height parity, no triangles, and genuine four-edge rhombi, hence girth4 and uniform-coefficient pure electric gap Δ=3epsilon. All eight original graphs have genuine all-weak and all-strong source Fibonacci-hopping rhombi; if epsilon_e=w_e the exact gap=3phi^-2=1.14589803375, while epsilon_e=1 or w_e^-1 gives3. Eight original vertex/face SHA fingerprints independently replayed; no completed-window substitution.",
+      "detail": "All-weak four-edge face counts [223,428,581,984,1410,1782,2328,2732]; original accepted V up to19260. Source scalar hopping w_e is NOT independently authenticated as the physical electric coefficient, so multiple admissible reference spectra demonstrate normalization ambiguity.",
+      "checks": [
+        {
+          "label": "Source-derive which kinetic couplings if any are physically meaningful and how they scale with cutoff",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-verified",
+        "Fibonacci-hopping",
+        "SU2-electric-gap",
+        "noncanonical-scale",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-FINITE-INTERACTING-WILSON-GROUND-SIMPLE",
+      "title": "Any finite source rhombus SU2 electric plus bounded Wilson/commutator Hamiltonian has simple positive finite gap",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "For externally fixed all-link epsilon>0 and finite nonnegative plaquette and transverse commutator couplings, H=epsilon sum_e C_e+V on L2(SU2^E)^gauge is selfadjoint with compact resolvent. Product-group elliptic heat and Feynman-Kac positivity improving imply a unique gauge-invariant ground state and a strictly positive first finite excitation. No estimate uniform in volume or source-selected physical time/energy follows.",
+      "detail": "Exact conditional finite Schrödinger / positivity-improving spectral theorem (bounded continuous invariant potential), NOT physical Yang-Mills existence or proof of continuum mass gap.",
+      "checks": [
+        {
+          "label": "Prove uniform interacting lower bound independent of source volume and intrinsic regulator",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "finite-interacting-gauge",
+        "Feynman-Kac",
+        "positive-heat",
+        "not-continuum-gap",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-SINGLE-RHOMBUS-INTERACTING-JACOBI",
+      "title": "Exact single-rhombus nonzero Wilson quantum Hamiltonian reduces to Jacobi characters",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Gauge-fixed one genuine source rhombus has class-character χ_j basis with H_jj'= (4epsilon*j(j+1)+kappa)δjj' -(kappa/2)δ_|j-j'|=1/2. For chosen epsilon1,kappa0.71 first finite interacting gap3.05808571253086; truncations8/12/20/40 agree to >=9 decimals, and independent 600-node SU2 Haar class-angle quadrature verifies magnetic matrix at ~2e-14. This is a one-plaquette quantum control, not multi-plaquette interacting continuum proof.",
+      "detail": "Actual source rhombus type, no cubic physical assumption. Character fusion proof and independent angular integration. External epsilon/kappa energy/time chosen.",
+      "checks": [
+        {
+          "label": "Derive nonfactorizing many-rhombus continuum dynamics and controlled connected Wilson correlations",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Wilson",
+        "finite-quantum",
+        "SU2-character",
+        "Jacobi-matrix",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-EXTENSIVE-MAGNETIC-BOUND-OBSTRUCTION",
+      "title": "Naive finite Wilson minmax gap bound 3epsilon - sum kappa_f becomes nonuniform",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P1",
+      "summary": "For source finite H=epsilon sum_e C_e+Σ_f kappa_f(1-halfTr U_f) with kappa_f>=0, minmax gives E1>=3epsilon and constant Haar trial yields E0<=Σ_f kappa_f, so Δ>=3epsilon-Σ_f kappa_f. Uniform source fixed positive face coupling makes this bound vacuous as F grows (at epsilon1,kappa=.001, grid7 bound1.532, grid25 bound−15.874). Does NOT prove actual gap vanishes; rules out this global extensive norm/variational estimate as a uniform closure.",
+      "detail": "Source F counts exact 1468..18874. Requires a local all-volume functional inequality, cluster estimate or other uniform interacting mechanism, and independently fixed physical scale.",
+      "checks": [
+        {
+          "label": "Replace extensive total-potential estimate by local uniform bound for original rhombus Wilson/linked-sector dynamics",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "uniform-gap-obstruction",
+        "minmax",
+        "extensive-magnetic-potential",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-KINETIC-TIMESTEP-UNDERDETERMINATION",
+      "title": "Finite positive link-heat transfer cannot determine source physical energy/time normalization",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "For pure electric source H_el=epsilon_N sum C_e, exact gap=3epsilon_N; as externally unconstrained epsilon_N→0 the dimensionful gap in chosen reference units tends0. At fixed epsilon1 transfer T_t=exp(-t H_el) has dimensionless step gap1-e^-3t; choosing auxiliary t_N=1/N makes this tend0, despite energy gap3 if divided by known time step. Neither source geometry nor PF-I14 heat positivity selects epsilon_N,t_N or a physical clock.",
+      "detail": "Under-determination of normalization is not a source-theory gaplessness claim. Distinguish energy Δ from per-step transfer eigenvalue separation.",
+      "checks": [
+        {
+          "label": "Establish source-derived unit conversion and time parameter before claiming a positive physical mass value",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "physical-time",
+        "energy-unit",
+        "transfer-gap",
+        "conditional-limits",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "title": "OPEN next: derive source physical kinetic/time and local uniform interacting continuum mass gap",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "PF-I15 proves a volume-uniform pure-electric SU2 reference gap and a finite nonzero Wilson quantum control, but source C5/additive time and J helix do not supply physical time; auxiliary decorated-phase symmetries admit multiple invariant measures; epsilon and heat step remain arbitrary. Need source-derived physical generator/energy scale and phase or hull measure, global positive-time gauge algebra/reflection or constructive alternative, then local uniform nonfactorizing Wilson dynamics and nontrivial continuum measure with positive physical mass gap. Do not introduce cubic 3+1 as prerequisite.",
+      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap.",
+      "checks": [
+        {
+          "label": "Derive/falsify physical time and energy scale from source 2+2+1/J/helical or explicit competing postulates",
+          "state": "open"
+        },
+        {
+          "label": "Select and verify a source hull/gauge measure with a justified positive-time observable algebra and evolution",
+          "state": "open"
+        },
+        {
+          "label": "Prove uniform local interacting connected-correlator or functional inequality with nontrivial continuum existence and positive physical gap",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I15 intrinsic source electric spin-network gap, finite Wilson Jacobi control and clock/measure nonselection audit",
+          "path": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "next-proof-objective",
+        "physical-time",
+        "source-kinetic",
+        "interacting-continuum",
         "mass-gap-open"
       ],
       "importance": 5,
@@ -14104,6 +14440,139 @@
       "kind": "does-not-imply",
       "label": "Finiteness of auxiliary heat operator not a gravity UV theorem",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "to_id": "PF-I15-DECORATED-PHASE-MEASURE-NONUNIQUENESS",
+      "kind": "measure-selection-obstruction",
+      "label": "Extended phase symmetries admit nonunique invariant marginal on sum phases",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I13-C5-COMMUTING-SINGLE-AXIS-REFLECTION-OBSTRUCTION",
+      "to_id": "PF-I15-C5-INVARIANT-ADDITIVE-CLOCK-NOSELECTION",
+      "kind": "related-restricted-no-go",
+      "label": "No C5 additive scalar time on Lambda0, not no emergent axis",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I15-C5-INVARIANT-ADDITIVE-CLOCK-NOSELECTION",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "time-selection-open",
+      "label": "Original draft's helical sampling lacks dynamical equation",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-DECORATED-PHASE-MEASURE-NONUNIQUENESS",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "phase-measure-open",
+      "label": "Physical invariant phase/gauge measure requires extra principle",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "to_id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "kind": "genuine-face-cycle",
+      "label": "Accepted source rhombi establish simple four-edge cycles",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "to_id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "kind": "link-gauge-Hilbert",
+      "label": "Source SU2 link variables and local gauge action",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "to_id": "PF-I15-SOURCE-EIGHT-SIZE-FIBONACCI-ELECTRIC-GAPS",
+      "kind": "source-application",
+      "label": "Height parity, rhombi and weak face witnesses yield exact source gap",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I14-EXACT-FIBONACCI-MECHANICAL-WORD-REVERSAL",
+      "to_id": "PF-I15-SOURCE-EIGHT-SIZE-FIBONACCI-ELECTRIC-GAPS",
+      "kind": "source-scalar-hopping-reference",
+      "label": "Scalar hopping provides alternative auxiliary electric coefficient only",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "to_id": "PF-I15-FINITE-INTERACTING-WILSON-GROUND-SIMPLE",
+      "kind": "conditional-Hamiltonian",
+      "label": "Add bounded gauge-invariant Wilson/commutator potential to elliptic Casimir",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I15-FINITE-INTERACTING-WILSON-GROUND-SIMPLE",
+      "to_id": "PF-I15-SINGLE-RHOMBUS-INTERACTING-JACOBI",
+      "kind": "exact-local-control",
+      "label": "Class characters solve one genuine source rhombus quantum Hamiltonian",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+      "to_id": "PF-I15-EXTENSIVE-MAGNETIC-BOUND-OBSTRUCTION",
+      "kind": "minmax-bound-input",
+      "label": "Uniform pure electric E1>=3epsilon does not cancel total potential",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I15-EXTENSIVE-MAGNETIC-BOUND-OBSTRUCTION",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "local-bound-required",
+      "label": "Extensive global norm bound vacuous with F→infinity",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+      "to_id": "PF-I15-KINETIC-TIMESTEP-UNDERDETERMINATION",
+      "kind": "physical-scale-missing",
+      "label": "Auxiliary positive transfer and finite gap have free heat/energy normalization",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I15-KINETIC-TIMESTEP-UNDERDETERMINATION",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "scale-required",
+      "label": "Prove a source physical kinetic coefficient and time unit",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-SOURCE-EIGHT-SIZE-FIBONACCI-ELECTRIC-GAPS",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "finite-reference-only",
+      "label": "Electric-only reference uniformity cannot imply interacting continuum",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "partial-finite-milestone",
+      "label": "Exact pure electric and finite Wilson controls completed, source physical time still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "Physical original source Yang-Mills existence and gap still OPEN",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "Source physical-time gauge Hamiltonian not derived",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "Finite electric gap does not establish gravitational UV finiteness",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -14249,7 +14718,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "next_gate": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -14735,6 +15204,61 @@
         "physical_time_source_derived": false,
         "original_source_global_OS_proved": false,
         "interacting_Yang_Mills_continuum_mass_gap_proved": false
+      },
+      "pf_i15_electric_dynamics": {
+        "status": "exact_finite_reference_electric_gap_and_auxiliary_Wilson_dynamics_not_physical_continuum",
+        "report": "research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
+        "C5_additive_time_obstruction": "PF-I15-C5-INVARIANT-ADDITIVE-CLOCK-NOSELECTION",
+        "auxiliary_phase_measure_nonunique": "PF-I15-DECORATED-PHASE-MEASURE-NONUNIQUENESS",
+        "general_SU2_spinnetwork_gap": "PF-I15-EXACT-WEIGHTED-SPINNETWORK-MIN-CYCLE-GAP",
+        "source_8size_electric_gap": "PF-I15-SOURCE-EIGHT-SIZE-FIBONACCI-ELECTRIC-GAPS",
+        "finite_interacting_aux_Hamiltonian": "PF-I15-FINITE-INTERACTING-WILSON-GROUND-SIMPLE",
+        "single_rhombus_Jacobi": "PF-I15-SINGLE-RHOMBUS-INTERACTING-JACOBI",
+        "extensive_mag_bound_obstruction": "PF-I15-EXTENSIVE-MAGNETIC-BOUND-OBSTRUCTION",
+        "energy_time_scale_notselected": "PF-I15-KINETIC-TIMESTEP-UNDERDETERMINATION",
+        "next_gate": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+        "source_Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "source_original_weak_rhombus_counts": [
+          223,
+          428,
+          581,
+          984,
+          1410,
+          1782,
+          2328,
+          2732
+        ],
+        "source_original_strong_rhombus_counts": [
+          543,
+          1096,
+          1626,
+          2576,
+          3680,
+          4487,
+          6204,
+          7234
+        ],
+        "exact_reference_uniform_electric_gap_for_epsilon_1": 3,
+        "exact_reference_source_scalar_weighted_electric_gap": 1.1458980337503155,
+        "one_rhombus_chosen_kappa_0p71_quantum_gap": 3.0580857125308603,
+        "full_electric_spectra_numerically_diagonalized_at_8_sizes": false,
+        "private_test_passes": 14,
+        "public_test_passes": 13,
+        "public_private_source_skips": 1,
+        "private_library_archive": "/The Singular Boundary/Proof Audits/PF I15 Intrinsic Electric Dynamics 2026-11-08/",
+        "verified_private_v2_archive_sha256": "3e9441407fe944c2d84720fb4a4e52844beec9ce41475135f90361c83440d510",
+        "source_time_physical": false,
+        "interacting_continuum_gap_proved": false,
+        "gravitational_UV_proved": false
       }
     },
     "orientation_selection": {
