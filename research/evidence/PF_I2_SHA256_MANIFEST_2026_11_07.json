@@ -1,24 +1,26 @@
 {
   "date": "2026-11-07",
+  "revision": 2,
+  "supersedes": "PF_I2_PENTAGRID_GENERATOR_SOURCE_AUDIT_2026_11_07.zip (revision 1; incorrectly presupposed extra Paper2 bonds)",
   "source_tar": "Sharpe_dissertation_v10.7.tar.gz",
   "paper1_pdf_sha256": "7c0585fa990bb2a762c869665287835bbdb6e07edeb55e9adfe54fe84f9eddea",
   "paper2_pdf_sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
-  "certification": "published Paper1 P3 definitions mathematically reconstructed; original Paper2 coupled computation remains unrecovered",
+  "certification": "Paper1 P3 source-equation reconstruction and conditional same-accepted-vertex nearest-neighbour equality; Paper2 graph identity/numerical generator unverified",
   "files": {
     "PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md": {
-      "sha256": "9984ee955b2618b078dc8f82e78305607be0b0ad6898fcd614ada5143da4eac5",
-      "bytes": 10085
+      "sha256": "8948fb052c09c528e288d674a1f77f8a84f48871f360bf9ef65c693c22521b89",
+      "bytes": 11955
     },
     "verify_pf_i2_pentagrid.py": {
-      "sha256": "3f822dd28d69c629d9b742f0cf5903b1ab56d8a0c65ac6c73f4f9f771e861dee",
-      "bytes": 11064
+      "sha256": "a5aa6085ad53dcbcf4525d43d97cc737684d3bf0d7bca352f1719c4d39137a84",
+      "bytes": 11709
     },
     "PF_I2_PENTAGRID_EVIDENCE_2026_11_07.json": {
-      "sha256": "d17f5e114ba5745c7ee3e7072c9610fa3b34e4357b64cf5433fd4e88650d5255",
+      "sha256": "9294119fe92239587a7615fd83027308f47d12b8b1765fbd1b2ba8553591c85a",
       "bytes": 1848
     },
     "PF_I2_LARGER_PATCH_CONTROL_2026_11_07.json": {
-      "sha256": "f5e49af0adca846d8656520bfb8c0a66cebc2397a76d271115eaf9caf7ebf9fe",
+      "sha256": "5d43d743a751164f2191e761209d6bf89b5234d465f9ed6ffd73b6d6aa3ac3e3",
       "bytes": 1424
     }
   }
