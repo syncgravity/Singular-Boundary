@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.65-pf-i12-transverse-coupling",
-  "scope": "PF-I12 intrinsic C5 2+2 four-form, eight-size transverse source/corrected rhombus pair support; finite conditional non-Abelian SU2 commutator action with exact nonfactorizing covariance derivative -1/192 at Haar, conditional pair-exchange reflection positivity obstruction; separate positive SU2 heat-kernel two-face gluing with auxiliary t; four equivariant J choices/no real invariant time axis. All physical source uniqueness, four-volume, global OS and continuum gap gates OPEN.",
+  "version": "v2.66-pf-i13-global-gluing",
+  "scope": "PF-I13 exact source finite global support: all original/completed transverse rhombus pair graphs are Petersen-type chromatic3 with actual 5-cycles, no universal alternating two-color split; canonical hull involution (m,gamma)->(1-m,-gamma) complements height/face triangles but not fixed phason or source Fibonacci scalar hopping; no C5-equivariant single-axis involution on nontrivial 4D sector. Auxiliary matched doubled heat seam allows positive within-half nonabelian interactions, whereas swapped seam has exact negative witness -2exp(-3t/4). Original physical time/global OS/continuum YM gap OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Finite source PFI9/10/11 milestones remain valid. PF-I12 adds intrinsic 2+2 fourform and exact conditional gauge-invariant cross-plaquette correlations on source Z5 rhombi, but no source-derived unique interaction, C5-selected real time, global OS-positive 4D gauge measure, continuum physical gap. PF-I12 commutator kernel fails a natural exchange-reflection; conditional pair heat kernel is positive but auxiliary. PF-G0 OPEN.",
+      "summary": "PF-I9 geometry, PF-I10 finite scalar spectra, PF-I11 finite Wilson factorization, PF-I12 local nonfactorizing two-face conditional coupling and PF-I13 source Petersen/phase-inversion and global seam tests established. PF-I13 rules out universal alternating two-color transverse face gluing and shows a source phason-hull not fixed-phase inversion; two-face heat positivity alone does not imply global OS. Source physical time/dynamics, gauge background coupling, continuum interacting Yang–Mills and positive mass gap remain OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4905,6 +4905,13 @@
           "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
           "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -9073,7 +9080,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I12 demonstrates local transverse 4-form pair support and a conditional nonfactorizing SU2 action, but commutator action fails a naive swap reflection and a positive heat-kernel gluing requires auxiliary t. The C5 2+2 decomposition alone admits four J signs and does not select physical time or four-volume. Next must derive a unique physical source interaction and full reflection-positive or alternative constructive dynamics, plus nontrivial continuum measure and uniform gap, without cubic spacetime.",
+      "summary": "PF-I13 exact finite obstructions and conditional controls established: all 8 source/8 completed transverse face graphs nonbipartite chromatic3 with physical 5-cycles; canonical complement exchanges phasons rather than fixed generic gamma and source scalar hopping weights change; no C5-commuting single-axis linear time reflection. A mathematically global positive doubled SU2 heat seam exists if correctly matched, but crossed seam has exact negative character witness. Physical source reflection, gauge seam, evolution and physical gap remain OPEN; advance PF-I14.",
       "detail": "Do not promote a conditional pair kernel to OS positivity of the entire cut-project model. Need explicitly identify how two nontrivial sectors become dynamical fields rather than projections of the same edges, fix volume/scale, phason/boundary exhaustion, gauge constraints, and then prove physical continuum existence/mass gap.",
       "checks": [
         {
@@ -9096,6 +9103,13 @@
           "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -9105,6 +9119,259 @@
         "temporal-structure",
         "global-OS",
         "continuum-gap"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-PETERSEN-THREE-CHROMATIC-OBSTRUCTION",
+      "title": "Exact transverse direction-pair Petersen graph and nonbipartite source face networks",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Unordered rhombus directions among 5 bases form 10 type nodes; disjoint-pair transversality gives 15 Petersen (Kneser KG(5,2)) edges, girth5, chromatic3. All 8 original source and all 8 separately completed window-core face-interaction graphs have explicit physical five-face cycles and proper source-family three-coloring, hence chromatic number exactly3. A universal binary assignment with every transverse link crossing classes is impossible; no general OS/time no-go claimed.",
+      "detail": "Source original and completed PF-I11 vertex/face SHA independently checked. This is a combinatorial coloring obstruction, not a proof of three physical sectors or a rejection of 2+2 representation geometry.",
+      "checks": [
+        {
+          "label": "Construct and verify another source-derived temporal/reflection assignment allowing some transverse pairs within a side",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Petersen",
+        "C5",
+        "finite-graph-theorem",
+        "gluing-color",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+      "title": "Exact cut-project phason-paired complement involution; not fixed generic phase",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For four source hypersimplex windows Wh with W_{5-h}=-Wh, theta(m,gamma)=(1_5-m,-gamma) maps every generic accepted Z5 label and cube-square rhombus to another accepted label/face and flips h→5-h, lower square h→3-h. All eight source and eight completed source-check face and label sets satisfy transformed windows. Holding gamma fixed instead rejects 128/1550 reflected original labels at grid7 and 1952/19260 at grid25. Geometric action is -I4 (det+1), central inversion not certified physical time reflection.",
+      "detail": "Same finite crop is NOT asserted invariant. Fixed-phase internal shift 2Pperp gamma=(.1464752922,-.1209799502). Height restricted to {1,2,3,4} and 1_5 shifts by 5 so no unbounded height translation. An actual physical reflection on source hull, gauge fields and operators needs independent construction.",
+      "checks": [
+        {
+          "label": "Find source-compatible phason-hull involution of finite/infinite gauge operator and volume observables",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "phason-hull",
+        "acceptance-window",
+        "finite-reflection-map",
+        "physical-time-open",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-FIBONACCI-HOPPING-REFLECTION-ASYMMETRY",
+      "title": "Canonical geometric complement does not preserve fixed PF-I10 Fibonacci A/B scalar hopping",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Under theta:m→1_5-m each occupied basis edge with original lower integer level k maps to lower level -k. Source A/B Fibonacci hopping t(k) differs from t(-k) for [1864,3872,5507,9562,13780,17194,23185,27350] actual original source edges across eight sizes, including27350/38139 at grid25. Hence a symmetric weighted scalar operator would require an explicit background-word transformation; this is NOT a theorem about unspecified physical SU2 face couplings.",
+      "detail": "Original source finite source edge sets preserved and the A/B family level rule matched PF-I9/PF-I10. Geometric hull theta alone cannot be claimed reflection of original fixed scalar weighted D-W operator.",
+      "checks": [
+        {
+          "label": "Derive source-reflected Fibonacci hopping, link/gauge couplings and phason-induced operator covariance",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Fibonacci-hopping",
+        "operator-background",
+        "reflection-covariance",
+        "finite-obstruction",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-C5-COMMUTING-SINGLE-AXIS-REFLECTION-OBSTRUCTION",
+      "title": "No C5-commuting single-negative-axis linear involution on Eparallel+Eperp",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Real commuting endomorphisms of inequivalent real C5 planes are C⊕C. A real-linear C5-commuting involution R²=I therefore has only R=(±I2)⊕(±I2), with -1 eigenspace dimension0,2,2 or4, never1. Thus a full C5-equivariant codimension-one hyperplane time reflection is not intrinsic to bare nontrivial 2+2 representation. This does NOT rule out dihedral, phason-hull, nonlinear, axis-choice or symmetry-breaking dynamics.",
+      "detail": "Height h is a 1D trivial C5 sector but accepted source labels have h=1..4; no unbounded translation along (1,1,1,1,1). Does not assume cubic physical spacetime or prove absence of emergent physical time.",
+      "checks": [
+        {
+          "label": "Identify a physically justified temporal/reflection or alternative positive dynamics consistent with source 2+2+1 structure, possibly reducing C5",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "representation-theory",
+        "C5",
+        "time-obstruction",
+        "conditional-hyperplane",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-CONDITIONAL-GLOBAL-MATCHED-HEAT-GLUING",
+      "title": "Exact finite positive doubled SU2 heat seam with nonlinear within-half gauge interactions",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "For externally reflected and seam-matched SU2^n half configurations, K(A,B)=w(A)w(B) prod_i K_ti(A_i B_i^-1), with any finite positive mirrored w=e^-Splus including within-half PF-I12 commutator interactions, is PSD since K=M_w (tensor_i heat_semigroup_i) M_w. 25-state test at t=.85 and side lambda=.4 has minimum Gram eigenvalue .16493212>0. Needs global source reflection/seam gauge-frame alignment/physical t; not OS theorem of original cut-project system.",
+      "detail": "Heat kernel factorization and complete matched seam yield mathematically positive finite doubled model. Neither the physical time nor a uniform continuum gap is determined by source. Pairwise or mismatched cross links cannot be used to assert positivity.",
+      "checks": [
+        {
+          "label": "Derive the mirrored plus/minus field algebras and seam pairing from the actual source cut-project gauge geometry",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "conditional-OS",
+        "heat-kernel",
+        "SU2",
+        "finite-positive-construction",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-SWAPPED-HEAT-SEAM-EXACT-NEGATIVE-WITNESS",
+      "title": "Exact global heat-seam counterexample: positive pair kernels fail after crossing swap",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Two-face Kswap((A1,A2),(B1,B2))=Kt(A1B2^-1)Kt(A2B1^-1) equals (Ht⊗Ht)P_swap; for F=chi_1/2(A1)-chi_1/2(A2), quadratic form equals -2exp(-3t/4)<0 under Haar for every t>0. At t=.85 exact value -1.0572246085 vs matched positive +1.0572246085. Thus pairwise heat positivity alone does not ensure positive global gluing for a fixed chosen reflection; another reflection incorporating swap may change result.",
+      "detail": "Deterministic five-quaternion tensor Gram numerical negative min eigenvalue -79.66629; auxiliary examples are mathematical, not source physical cross-seam wiring. This exact witness requires specifying the reflection, which is not derived.",
+      "checks": [
+        {
+          "label": "Require verified source seam reflection and complete cross-interface kernel, never infer global positivity from two-face kernels",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "reflection-positivity",
+        "global-gluing",
+        "exact-negative-witness",
+        "SU2",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "title": "OPEN: source phason-hull gauge reflection with covariant backgrounds and global positive dynamics",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "PF-I13 proves Petersen nonbipartite transverse support; canonical complement exchanges phasons gamma↔-gamma, with fixed source Fibonacci scalar hopping not theta-invariant; no C5-commuting single-axis hyperplane reflection. A conditional doubled SU2 heat seam can be globally positive when matched, but swap seam is negative. Next must derive physical source-hull time/involution, covariant gauge/link background, matched source face seam and positive observable algebra or alternative dynamical Hilbert space, then seek uniform interacting continuum mass gap, without cubic physical geometry assumptions.",
+      "detail": "Physical source 2+2 representation and rho_gamma gauge model must fix phason measures, time/evolution, coupling coefficient, large-volume completion/exhaustion, and gauge-covariant observable gluing. Finite auxiliary proofs do not provide unique temporal or mass scale.",
+      "checks": [
+        {
+          "label": "Specify physically justified source-hull phason reflection/involution and explicit action on original gauge edges/rhombi/hopping background",
+          "state": "open"
+        },
+        {
+          "label": "Prove global source gauge-invariant reflection positivity or a valid alternative physical Hilbert-space and evolution prescription",
+          "state": "open"
+        },
+        {
+          "label": "Establish nontrivial interacting Yang–Mills continuum and a uniform positive physical mass gap independent of finite-volume selection",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I13 source global two-sector Petersen, phason inversion and SU2 seam-gluing audit",
+          "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "next-proof-objective",
+        "phason-hull",
+        "global-OS",
+        "physical-dynamics",
+        "interacting-gap-open"
       ],
       "importance": 5,
       "core": true,
@@ -13374,6 +13641,125 @@
       "kind": "does-not-imply",
       "label": "no gravitational UV theorem from finite conditional SU2 correlations",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+      "to_id": "PF-I13-PETERSEN-THREE-CHROMATIC-OBSTRUCTION",
+      "kind": "exact-support-topology",
+      "label": "Source actual eight-size pair graphs contain physical five-cycles",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-C5-INTRINSIC-FOURFORM",
+      "to_id": "PF-I13-PETERSEN-THREE-CHROMATIC-OBSTRUCTION",
+      "kind": "family-combinatorics",
+      "label": "Four distinct basis family indices pick disjoint pair types",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-HYPERSIMPLEX-FOUR-LAYER-CELL-IDENTITY",
+      "to_id": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+      "kind": "exact-hull-complement",
+      "label": "Four windows invert as W5-h=-Wh",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "to_id": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+      "kind": "face-complement",
+      "label": "Triangle face windows transform lower height h→3-h",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "to_id": "PF-I13-FIBONACCI-HOPPING-REFLECTION-ASYMMETRY",
+      "kind": "source-operator-scope",
+      "label": "Fixed source word t(k) differs from reflected t(-k)",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-C5-J-NONUNIQUE-NO-TIME",
+      "to_id": "PF-I13-C5-COMMUTING-SINGLE-AXIS-REFLECTION-OBSTRUCTION",
+      "kind": "symmetry-extension",
+      "label": "Only even-number of negative axes for commuting real involutions",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-HEAT-KERNEL-CONDITIONAL-POSITIVE-GLUING",
+      "to_id": "PF-I13-CONDITIONAL-GLOBAL-MATCHED-HEAT-GLUING",
+      "kind": "conditional-global-extension",
+      "label": "Matched tensor heat seams with mirrored intra-side couplings are positive",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I13-CONDITIONAL-GLOBAL-MATCHED-HEAT-GLUING",
+      "to_id": "PF-I13-SWAPPED-HEAT-SEAM-EXACT-NEGATIVE-WITNESS",
+      "kind": "counterexample-to-assembly",
+      "label": "Swapped crossing pairings destroy positivity for fixed reflection",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I13-PETERSEN-THREE-CHROMATIC-OBSTRUCTION",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "blocks-naive-coloring",
+      "label": "No universal alternating transverse two-class split",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "conditional-candidate",
+      "label": "Need phason-hull dynamics not fixed-phase inversion",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-FIBONACCI-HOPPING-REFLECTION-ASYMMETRY",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "background-covariance-required",
+      "label": "Source scalar Fibonacci word transforms under complement",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-C5-COMMUTING-SINGLE-AXIS-REFLECTION-OBSTRUCTION",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "temporal-selection-required",
+      "label": "No fully C5 commuting one-axis linear reflection",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-SWAPPED-HEAT-SEAM-EXACT-NEGATIVE-WITNESS",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "global-matching-required",
+      "label": "Paired positive heat kernels insufficient for unverified seam",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "to_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "kind": "partial-gate-advance",
+      "label": "PF-I13 finite obstructions proved; physical source time still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "Physical global gauge path positivity and uniform gap OPEN",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "Source-defined physical dynamical time/Hilbert-space still OPEN",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "No gravitational UV theorem follows",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -13519,7 +13905,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "next_gate": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -13875,6 +14261,68 @@
         "public_no_source_tests_passed": 19,
         "public_expected_private_source_skips": 7,
         "physical_Yang_Mills_mass_gap_proved": false
+      },
+      "pf_i13_global_gluing": {
+        "status": "finite_exact_obstruction_and_conditional_positive_control",
+        "report": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+        "Petersen_graph_node": "PF-I13-PETERSEN-THREE-CHROMATIC-OBSTRUCTION",
+        "phason_hull_involution": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+        "Fibonacci_hopping_asymmetry": "PF-I13-FIBONACCI-HOPPING-REFLECTION-ASYMMETRY",
+        "C5_reflection_gate": "PF-I13-C5-COMMUTING-SINGLE-AXIS-REFLECTION-OBSTRUCTION",
+        "matched_seam_positive": "PF-I13-CONDITIONAL-GLOBAL-MATCHED-HEAT-GLUING",
+        "swapped_seam_negative": "PF-I13-SWAPPED-HEAT-SEAM-EXACT-NEGATIVE-WITNESS",
+        "next_physical_gate": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+        "source_original_Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "source_original_bipartite": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "completed_core_bipartite": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "all_have_physical_five_face_cycles": true,
+        "source_hopping_type_changes_under_theta": [
+          1864,
+          3872,
+          5507,
+          9562,
+          13780,
+          17194,
+          23185,
+          27350
+        ],
+        "auxiliary_t": 0.85,
+        "auxiliary_lambda": 0.4,
+        "exact_swap_negative_character_form": "-2 exp(-3t/4)",
+        "private_library_path": "/The Singular Boundary/Proof Audits/PF I13 Global Two Sector Gluing 2026-11-08/",
+        "full_private_tests_pass": 20,
+        "public_tests_pass": 14,
+        "public_expected_source_skips": 6,
+        "global_original_source_OS_proved": false,
+        "physical_time_proved": false,
+        "interacting_continuum_mass_gap_proved": false
       }
     },
     "orientation_selection": {
