@@ -9,6 +9,7 @@ The user's original `Sharpe_dissertation_v10.7.tar.gz` contains:
 
 - `delivery/papers/Paper_1/Sharpe_Paper1_Spectral_Dimension_Flow.pdf`, SHA-256 `42da2082f86858f75771a06ef7767bbea59bf53bd2d27e20357b7a3d62cedf4e`;
 - `delivery/papers/Paper_2/Sharpe_Paper2_Z5_Minkowski_Lapidus.pdf`, SHA-256 `5f010279d4cea5ea5db4abac3834759c2cf15e2cb084d56b7beefa0b1d98263f`.
+- `delivery/papers/Paper_4/Sharpe_Paper4_Conformal_Boundary_CC.pdf`, SHA-256 `03152f9c17f78b3a6f6f752f230f80eb63d70df440bb96209e1137137185e734`; Paper 4 already reports both `ζ′(0)` and mass-dependent relative determinant ratios, independently investigated in §8 below.
 
 Paper 1 §§6.1, 7.1 supplies pentagrid offsets, accepted integer labels, original-basis edges and level-dependent Fibonacci hopping, reconstructed as the **P3 source-equation model** in [PF-I2](PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md). Paper 1 §7.4 explicitly describes an infrared regulator `m²=10⁻⁴`. The numerical code and exact patch selection used for the published results are *not* contained in the dissertation tar.
 
@@ -107,7 +108,7 @@ The source-authentication obligation PF-G0 is now sharpened to a **finite parame
 2. Establish whether Paper 2 uses the already interlinked Paper 1 P3 rhombus-edge graph or a distinct accepted graph; publish precise original-index vertex and edge sets and all hopping levels.
 3. Establish `D` by determining whether \(L\mathbf1=0\) and whether \(\operatorname{Tr}L=2\sum_e w_e\) or `2|E|` on the published numerical matrix. Require a **mass-parameter citation** for Paper 2, not an unlabelled import from Paper 1.
 4. Identify the actual periodic comparator (triangular/square, finite domain/boundary and conductance) and **first reproduce the exact \(s=-1\) trace identity** before checking \(s=-1/2,-2\) or complex dimensions.
-5. Evaluate both the normalized square-root moment and the correctly specified \(\zeta'(0)\)/logdet on the same matrices before claiming a one-loop effective-action percentage. Require an actual field/geometry fluctuation operator before claiming gravitational UV or continuum physical inference.
+5. **Independently reproduce the already reported Paper 4 `ζ′(0)` and mass-relative determinant results** on source-matched matrices, alongside Paper 2 `ζ(-1/2)`; do not mistake the absence of original code for the absence of a published calculation. Require an actual field/geometry fluctuation operator before claiming gravitational UV or continuum physical inference.
 6. Once the exact scalar source comparison is reproducible, separately investigate its transfer to gauge-invariant interacting quantum dynamics and spectral exclusion; cubic and square remain controls.
 
 ## 7. Evidence protocol and execution
@@ -118,3 +119,65 @@ The source-authentication obligation PF-G0 is now sharpened to a **finite parame
 - Source originals and full digest-pinned evidence package are preserved in Library `/The Singular Boundary/Proof Audits/PF I3 Spectral Operator 2026-11-07/`. The original PDFs are not re-committed or overwritten.
 
 **The previous PF-I0/I1/I2 source corrections and their original files remain preserved without erasure.** The Observatory should add exact-result nodes and leave PF-G0, P0–P5, PF-G0–G5, T0–T5, OS, and gravity proof goals **OPEN**. No Git branch proliferation or public Observatory deployment is required.
+
+## 8. Cross-paper correction: Paper 4 already evaluates \(\zeta'(0)\) and a relative determinant
+
+**This section supersedes any suggestion above that the author did not calculate a logarithmic determinant channel.** Paper 4 §§2–3 reports \(\zeta'_{QC}(0)/\zeta'_{Per}(0)=0.646\pm0.006\) across eight system sizes; this is explicitly different from Paper 2's \(R(-1/2)=0.8332\pm0.0018\). The original numerical source and eigenvalues underlying the claimed \(0.646\) are not in the supplied dissertation archive, and this review **does not independently certify** those values.
+
+Paper 4 Eq.(1) defines \(\zeta_m(s)=N^{-1}\sum_k(\lambda_k+m^2)^{-s}\), Eq.(2) defines
+
+\[
+\Gamma_{\mathrm{Paper4}}(m^2)=-\frac12\zeta_m'(0)-\frac12\zeta_m(0)\log m^2.
+\]
+
+### Exact theorem PF-I3.D: Paper 4's expression is a relative log determinant
+
+For finite strictly positive retained eigenvalues \(\lambda_k>0\) (paper: zero modes removed), \(m^2>0\), and \(\zeta_m(0)=1\), the equation simplifies **exactly** to
+
+\[
+\boxed{\Gamma_{\mathrm{Paper4}}(m^2)=\frac1{2N}\sum_{k=1}^N\log\left(1+\frac{\lambda_k}{m^2}\right).}
+\]
+
+It is a **mass-relative** determinant per retained mode: \(\frac1{2N}\log\det(I+L/m^2)\). This resolves the apparent extra \(-\frac12\log m^2\) term in Paper 4 as a normalization relative to the mass reference; it is not simply the unnormalized absolute \(\frac1{2N}\log\det(L+m^2 I)\). Thus the previous PF-I3.C theorem remains true: the square-root moment \(\zeta(-1/2)\) cannot determine either determinant.
+
+For two finite positive retained spectra \(Q\) and \(P\), with their means computed on each own retained set,
+
+\[
+\lim_{m^2\to0}\frac{\Gamma_Q(m^2)}{\Gamma_P(m^2)}=1,
+\quad
+\lim_{m^2\to\infty}\frac{\Gamma_Q(m^2)}{\Gamma_P(m^2)}=
+\frac{N_Q^{-1}\operatorname{Tr}L_Q}{N_P^{-1}\operatorname{Tr}L_P},
+\]
+
+provided both have strictly positive means and no unreconciled zero-mode fraction. **Proof:** as \(m^2\to0\), \(\log(1+\lambda/m^2)=-\log m^2+\log\lambda+o(1)\), so the common divergent term dominates both per-mode means. As \(m^2\to\infty\), \(\log(1+\lambda/m^2)=\lambda/m^2+O(m^{-4})\), hence the ratio approaches the first trace moment ratio. **QED.** The endpoint behavior is a generic mathematical property of *any* positive pair of finite graph spectra, not an independent proof of an interacting quantum field, renormalization-group flow or geometrically unique universality mechanism. These limits do **not** assert the ratio is monotone for arbitrary spectra.
+
+Paper 4 §10.1 reports \(\Gamma_{QC}/\Gamma_{Per}\) of **0.959**, **0.927**, **0.816**, and **0.739** at squared mass \(10^{-4}\), \(10^{-2}\), \(1\), and \(100\), respectively. The stated limiting behavior toward 1 (small mass) and roughly the first trace-moment ratio (large mass) is explained by the identity above without requiring Penrose-specific spectral properties. The ratio at finite intermediate mass still depends on the whole spectrum and can contain authentic geometric information; the endpoint statement alone cannot distinguish it.
+
+### A one-calibration control reproduces the reported mass flow without original code
+
+Using **only** the PF-I2 published-equation P3 weighted-strength Laplacian on the earlier 186/616-vertex *illustrative* patches, and the respective equal-N triangular site patches, choose a **single** periodic edge conductance from Paper 2's \(R(-1)=0.7371\) by the exact trace formula, and **exclude one zero mode from each connected graph**, as Paper 4 says its calculation does. No Paper 4 mass-flow datum is fitted. The following independently calculated comparison results:
+
+| Squared mass \(m^2\) | Paper 4 reported ratio | PF-I3 control, 186 vertices | PF-I3 control, 616 vertices |
+|---|---:|---:|---:|
+| \(10^{-4}\) | 0.959 | 0.959475 | 0.959957 |
+| \(10^{-2}\) | 0.927 | 0.927654 | 0.928987 |
+| \(1\) | 0.816 | 0.817501 | 0.819697 |
+| \(100\) | 0.739 | 0.739106 | 0.739167 |
+
+Maximum absolute difference from the four source-rounded values is ~**0.00151** (186 vertices) and **0.00370** (616 vertices). The 616-site control's independently computed \(\zeta'(0)\) ratio at the borrowed mass \(10^{-4}\) is **0.6540**, near but not equal to Paper 4's reported eight-size mean \(0.646\pm0.006\); the 186-site control gives **0.6262**. **None of these constitute reproduction of the unpublished original Paper 4 experiment.** They demonstrate non-uniqueness: a finite ordinary P3 graph and a one-parameter periodic normalization can mimic the reported relative-determinant flow very closely, without certifying the proposed coupled-Z5 geometric or interacting Yang–Mills mechanism. A confirmed source-specific mechanism must therefore be identified by more discriminating, physically normalized observables.
+
+### Exact source-table mode-count discrepancy: PF-I3.E
+
+Paper 2 Eq.(23) and Paper 4 §7.2 print the same full eight-size \(N_{int}\) array:
+
+`[1550, 3042, 4324, 6980, 9950, 12207, 16435, 19260]`.
+
+But Paper 4 §3's separate \(\zeta'(0)\) extension uses:
+
+`[1550, 3042, 4324, 6979, 9947, 12206, 16434, 19255]`.
+
+The pairwise differences are **[0, 0, 0, 1, 3, 1, 1, 5]**; the largest discrepancy is five retained sites or modes. Paper 4 §2 says zero modes are removed, so mode exclusion is a possible explanation, but the paper does **not** supply an eigenvalue list, connectivity/zero-mode count or filtering rule establishing that these differences are precisely zero modes. This must remain an **OPEN source-provenance issue**, especially because normalized \(\zeta(0)=1\) is applied with N taken to be the retained mode count.
+
+The original Paper 4 numerical result is **present in the source**; what remains absent is the executable generator/weights/mode-selection and an independent reproduction. Nothing in this addendum certifies its reported 35% \(\zeta'(0)\) ratio, its asserted one-loop gravitational finiteness, the paper's spectral-triple continuation or a Yang–Mills mass gap.
+
+**New reproducibility files:** `research/scripts/verify_pf_i3_relative_logdet.py`, `research/tests/test_pf_i3_relative_logdet.py` and `research/evidence/PF_I3_PAPER4_RELATIVE_LOGDET_EVIDENCE_2026_11_07.json`. A 7-test local suite checks Eq.(2), asymptotic endpoints, source-table deltas and the four mass-flow finite calculations; together with the original PF-I3 suite there are **19 passing tests**. Source-original PDFs remain unchanged; the enlarged v2 archive is preserved separately in Library, with both research snapshots retained.
