@@ -1,0 +1,322 @@
+{
+  "N25_160_vs_240_same_seed": {
+    "log": {
+      "absolute_difference": 3.3963104399403754e-05,
+      "lanczos_160": 0.6514329353186636,
+      "lanczos_240": 0.6513989722142642,
+      "same_source_random_seed_probes": true
+    },
+    "relative_log": {
+      "absolute_difference": 3.654373096573238e-06,
+      "lanczos_160": 0.9589394640040351,
+      "lanczos_240": 0.9589358096309385,
+      "same_source_random_seed_probes": true
+    },
+    "sqrt": {
+      "absolute_difference": 6.163088273059003e-08,
+      "lanczos_160": 0.8335955777498469,
+      "lanczos_240": 0.8335955161189642,
+      "same_source_random_seed_probes": true
+    }
+  },
+  "finite_negative_control": "source zigzag triangular with q=floor(sqrt source N), tavg=(1+phi^-2)/2",
+  "gamma_mass_flow": {
+    "0.0001": {
+      "arithmetic_mean": 0.9587136627121045,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.7446075232156874e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0006281636097792392
+    },
+    "0.01": {
+      "arithmetic_mean": 0.9268268459706861,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 2.8337542521714988e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0011067700887700553
+    },
+    "1.0": {
+      "arithmetic_mean": 0.8157962578134776,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 3.0338418878672057e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0022480816375688175
+    },
+    "100.0": {
+      "arithmetic_mean": 0.738876974872875,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.4571076163225926e-06,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0026763055353758148
+    }
+  },
+  "mass2": 0.0001,
+  "means": {
+    "log": {
+      "arithmetic_mean": 0.6463577401075136,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 0.00012914122812773097,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.006575250394050997
+    },
+    "relative_log": {
+      "arithmetic_mean": 0.9587136627121045,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.7446075232156874e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0006281636097792392
+    },
+    "sqrt": {
+      "arithmetic_mean": 0.8331846869573367,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 2.218242574705634e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0019395991389310697
+    }
+  },
+  "methods": {
+    "Ngrid_15_18_20": "SLQ 256 probes, 180 Lanczos steps, trace control",
+    "Ngrid_23_25": "SLQ 128 probes, 160 Lanczos steps, trace control",
+    "Ngrid_7_10_12": "complete exact eigvalsh"
+  },
+  "mode_filter": "retained lambda>1e-10, remove components exactly for SLQ",
+  "rows": [
+    {
+      "Ngrid": 7,
+      "R_minus_half": 0.8338194850588261,
+      "R_minus_half_conditional_probe_SE": 0.0,
+      "gamma_by_m2": {
+        "0.0001": 0.9589841328890424,
+        "0.01": 0.9271838759353054,
+        "1.0": 0.816258396487471,
+        "100.0": 0.73886357016734
+      },
+      "method": "exact_dense_eigvalsh",
+      "n": 1550,
+      "n_periodic": 1521,
+      "n_source_edges": 3017,
+      "relative_gamma_m2_1e_minus4": 0.9589841328890424,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0,
+      "zeta_prime_ratio": 0.6421389315926979
+    },
+    {
+      "Ngrid": 10,
+      "R_minus_half": 0.8303487155220399,
+      "R_minus_half_conditional_probe_SE": 0.0,
+      "gamma_by_m2": {
+        "0.0001": 0.957683664565908,
+        "0.01": 0.9249668384429105,
+        "1.0": 0.812197558327449,
+        "100.0": 0.7356336998523235
+      },
+      "method": "exact_dense_eigvalsh",
+      "n": 3042,
+      "n_periodic": 3025,
+      "n_source_edges": 5927,
+      "relative_gamma_m2_1e_minus4": 0.957683664565908,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0,
+      "zeta_prime_ratio": 0.6347803745941311
+    },
+    {
+      "Ngrid": 12,
+      "R_minus_half": 0.8354604886394673,
+      "R_minus_half_conditional_probe_SE": 0.0,
+      "gamma_by_m2": {
+        "0.0001": 0.9591528406829221,
+        "0.01": 0.9275924113485723,
+        "1.0": 0.8180121903790005,
+        "100.0": 0.7431410576702545
+      },
+      "method": "exact_dense_eigvalsh",
+      "n": 4324,
+      "n_periodic": 4225,
+      "n_source_edges": 8468,
+      "relative_gamma_m2_1e_minus4": 0.9591528406829221,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0,
+      "zeta_prime_ratio": 0.648920768203252
+    },
+    {
+      "Ngrid": 15,
+      "R_minus_half": 0.8345895584373622,
+      "R_minus_half_conditional_probe_SE": 8.79005275907707e-05,
+      "gamma_by_m2": {
+        "0.0001": 0.9592142858856605,
+        "0.01": 0.9277211476124865,
+        "1.0": 0.817570867213575,
+        "100.0": 0.7403719853960308
+      },
+      "method": "stochastic_Lanczos_trace_control",
+      "n": 6980,
+      "n_periodic": 6889,
+      "n_source_edges": 13779,
+      "relative_gamma_m2_1e_minus4": 0.9592142858856605,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0005006864357237932,
+      "zeta_prime_ratio": 0.6513500020718132
+    },
+    {
+      "Ngrid": 18,
+      "R_minus_half": 0.8314295489799044,
+      "R_minus_half_conditional_probe_SE": 7.523617651119349e-05,
+      "gamma_by_m2": {
+        "0.0001": 0.9580940692950283,
+        "0.01": 0.9257718937727877,
+        "1.0": 0.813855933915276,
+        "100.0": 0.7368500087519623
+      },
+      "method": "stochastic_Lanczos_trace_control",
+      "n": 9950,
+      "n_periodic": 9801,
+      "n_source_edges": 19593,
+      "relative_gamma_m2_1e_minus4": 0.9580940692950283,
+      "source_components": 3,
+      "zeta_prime_conditional_probe_SE": 0.0004492668565698174,
+      "zeta_prime_ratio": 0.6427303137741991
+    },
+    {
+      "Ngrid": 20,
+      "R_minus_half": 0.831183516383095,
+      "R_minus_half_conditional_probe_SE": 6.736525603127783e-05,
+      "gamma_by_m2": {
+        "0.0001": 0.9582175548311076,
+        "0.01": 0.9260098309878927,
+        "1.0": 0.8137667219667954,
+        "100.0": 0.7357307454069496
+      },
+      "method": "stochastic_Lanczos_trace_control",
+      "n": 12207,
+      "n_periodic": 12100,
+      "n_source_edges": 24091,
+      "relative_gamma_m2_1e_minus4": 0.9582175548311076,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0003989391259045653,
+      "zeta_prime_ratio": 0.644400660589599
+    },
+    {
+      "Ngrid": 23,
+      "R_minus_half": 0.835050604888152,
+      "R_minus_half_conditional_probe_SE": 8.789766191110979e-05,
+      "gamma_by_m2": {
+        "0.0001": 0.9594232895431316,
+        "0.01": 0.9281029733004131,
+        "1.0": 0.8181953478865921,
+        "100.0": 0.7411145627393381
+      },
+      "method": "stochastic_Lanczos_trace_control",
+      "n": 16435,
+      "n_periodic": 16384,
+      "n_source_edges": 32582,
+      "relative_gamma_m2_1e_minus4": 0.9594232895431316,
+      "source_components": 1,
+      "zeta_prime_conditional_probe_SE": 0.0004976873465124081,
+      "zeta_prime_ratio": 0.6551079347157525
+    },
+    {
+      "Ngrid": 25,
+      "R_minus_half": 0.8335955777498469,
+      "R_minus_half_conditional_probe_SE": 7.642498984727489e-05,
+      "gamma_by_m2": {
+        "0.0001": 0.9589394640040351,
+        "0.01": 0.9272657963651202,
+        "1.0": 0.8165130463316614,
+        "100.0": 0.7393101689988008
+      },
+      "method": "stochastic_Lanczos_trace_control",
+      "n": 19260,
+      "n_periodic": 19044,
+      "n_source_edges": 38139,
+      "relative_gamma_m2_1e_minus4": 0.9589394640040351,
+      "source_components": 5,
+      "zeta_prime_conditional_probe_SE": 0.0004560531755877733,
+      "zeta_prime_ratio": 0.6514329353186636
+    }
+  ],
+  "safety_scope": {
+    "gravity_finiteness_proved": false,
+    "interacting_continuum_YM_exists": false,
+    "no_imposed_cubic_physical_geometry": true,
+    "positive_physical_mass_gap_proved": false
+  },
+  "same_graph_fibonacci_over_uniform": {
+    "log": 1.0597644235328296,
+    "relative_log": 1.004460680685551,
+    "sqrt": 1.0390217720405506
+  },
+  "schema": "singular-boundary.PF-I10-public-spectral-source-fingerprint.v1",
+  "source_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "source_status": "unpublished original source; private bytes in Library, SHA verified",
+  "tile_vs_basis": {
+    "10": {
+      "components_coupled": 1,
+      "components_tile": 51,
+      "coupled_edges": 5927,
+      "source_coupled_minus_tile_edges": 62,
+      "tile_edges": 5865,
+      "trace_Delta_L_over_N": 0.027353634695104188
+    },
+    "12": {
+      "components_coupled": 1,
+      "components_tile": 46,
+      "coupled_edges": 8468,
+      "source_coupled_minus_tile_edges": 85,
+      "tile_edges": 8383,
+      "trace_Delta_L_over_N": 0.028738548758674324
+    },
+    "15": {
+      "components_coupled": 1,
+      "components_tile": 11,
+      "coupled_edges": 13779,
+      "source_coupled_minus_tile_edges": 290,
+      "tile_edges": 13489,
+      "trace_Delta_L_over_N": 0.05741692596884391
+    },
+    "18": {
+      "components_coupled": 3,
+      "components_tile": 101,
+      "coupled_edges": 19593,
+      "source_coupled_minus_tile_edges": 444,
+      "tile_edges": 19149,
+      "trace_Delta_L_over_N": 0.061543401107291146
+    },
+    "20": {
+      "components_coupled": 1,
+      "components_tile": 74,
+      "coupled_edges": 24091,
+      "source_coupled_minus_tile_edges": 593,
+      "tile_edges": 23498,
+      "trace_Delta_L_over_N": 0.07467788228025286
+    },
+    "23": {
+      "components_coupled": 1,
+      "components_tile": 46,
+      "coupled_edges": 32582,
+      "source_coupled_minus_tile_edges": 889,
+      "tile_edges": 31693,
+      "trace_Delta_L_over_N": 0.08847886765409523
+    },
+    "25": {
+      "components_coupled": 5,
+      "components_tile": 111,
+      "coupled_edges": 38139,
+      "source_coupled_minus_tile_edges": 1066,
+      "tile_edges": 37073,
+      "trace_Delta_L_over_N": 0.07610380893705158
+    },
+    "7": {
+      "components_coupled": 1,
+      "components_tile": 1,
+      "coupled_edges": 3017,
+      "source_coupled_minus_tile_edges": 0,
+      "tile_edges": 3017,
+      "trace_Delta_L_over_N": 0.0
+    }
+  },
+  "uniform_same_graph_over_periodic": {
+    "log": 0.6099075245828984,
+    "relative_log": 0.9544562079438981,
+    "sqrt": 0.8018947751392433
+  }
+}
