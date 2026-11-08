@@ -1,0 +1,61 @@
+{
+  "date_america_denver": "2026-11-07",
+  "files": {
+    "PF_I9_COLLAR_STABILITY.json": {
+      "sha256": "da49870570d532038fbcf11c64f93ac52f0a04316eedcfde6e37ba84c0164ee6",
+      "size_bytes": 1902
+    },
+    "PF_I9_COMPLETE_WINDOW_SOURCE_COMPARISON.json": {
+      "sha256": "ec40d90e68a7eb47f41e2374cc8e26ab3f1705ce382ab5b940e59ce6c4b5a46f",
+      "size_bytes": 52794
+    },
+    "PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md": {
+      "sha256": "008c9a707072375e4a7fdbb8658f6306ed30c81c79fd2965b24949fb5b0c40a1",
+      "size_bytes": 20419
+    },
+    "PF_I9_RUN_LOG.txt": {
+      "sha256": "70f4c0ef84c7850fe340dfe0195099f75d7735848003c0272c7fedab80e398b8",
+      "size_bytes": 1862
+    },
+    "PF_I9_SOURCE_NEGATIVE_ONE_TRACE.json": {
+      "sha256": "9a1f65dd22d6871b5ea081d0f62c59e09ec3992b9f6afc8b67a51ba8bc0daf2a",
+      "size_bytes": 12774
+    },
+    "PF_I9_TEST_LOG.txt": {
+      "sha256": "2aaf74e53eb61eb942953a0d3823446a8865eaa576ac718a48e8cbaad2c454da",
+      "size_bytes": 2000
+    },
+    "PF_I9_TRACE_LOG.txt": {
+      "sha256": "ca5aa81f2770c9d37c025638916abd41bc70239390b56d9cc3ca69e6da85cc22",
+      "size_bytes": 132
+    },
+    "paper6_extend_local.py": {
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+      "size_bytes": 19349
+    },
+    "test_pf_i9_bridge.py": {
+      "sha256": "a7d2fe4a73eb2824a4d0326d2c4430a87f8ac243ddff71fa3a67b0028b453684",
+      "size_bytes": 7189
+    },
+    "verify_collar_stability.py": {
+      "sha256": "3243338d64362bf418b57ffdfc221dc661c88237efa3b35442c349bfc18bb4ae",
+      "size_bytes": 1308
+    },
+    "verify_pf_i9_negative_one_trace.py": {
+      "sha256": "dec667f8e889e1418254218db394b6e997246935730a81e08c748d5f862c4096",
+      "size_bytes": 3785
+    },
+    "verify_source_cut_project_bridge.py": {
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b",
+      "size_bytes": 17023
+    }
+  },
+  "full_independent_replay": "v1 full eight-size replay matches after ignoring only wall-clock time fields; v2 eliminates these",
+  "published_R_minus_one_four_decimal": 0.7371,
+  "reproduced_mean_R_minus_one": 0.7370567093342758,
+  "revision_note": "v2 removes nondeterministic timing fields from complete evidence, preserving exact repeated eight-size generator output",
+  "schema": "singular-boundary-pf-i9-source-cut-project-bridge.v2",
+  "scope": "four-slice cut-and-project finite source identity, exact R(-1) trace; no physical Yang-Mills continuum gap",
+  "source_code_privacy": "Unpublished author script included in private Library ZIP ONLY, never in public GitHub",
+  "test_count": 15
+}
