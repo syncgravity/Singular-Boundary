@@ -1,5 +1,7 @@
 # PF-I2 — Source-defined pentagrid P3 generator, four-layer theorem, and spectral-operator normalization gate
 
+> **PF-I4 SOURCE-PROVENANCE ERRATUM (2026-11-07; previous theorem retained).** The original `Sharpe_dissertation_v10.7.tar.gz` **native** Paper 1 PDF member has SHA-256 `2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5`, not the older `7c0585fa990bb2a762c869665287835bbdb6e07edeb55e9adfe54fe84f9eddea` quoted below. The backing PDF for that latter identifier was not located. Source equations and graph definitions were re-checked directly against the native tar Paper 1 and are unchanged. Native Paper 2 SHA-256 `2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7` is correctly cited below. Full exact source tables, provenance, and limitations: [PF-I4](PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md). This erratum corrects **byte-source attribution**, not a continuum proof gate.
+
 **Date:** 2026-11-07 (America/Denver)  
 **Research model:** Paper 1 §§6.1–7.2 P3 rhombus vertex graph, with cross-reference to Paper 2 §§7.4, 8.2.  
 **Status:** Exact finite/infinite combinatorial implications of the *published definitions*; executable independently reconstructed finite samples. This is **NOT** recovery of the unpublished Paper 1/2 numerical source code, and it does **NOT** authenticate whether Paper 2's *coupled* Z5 graph is the same accepted P3 edge graph or an altered graph, nor its reported 0.8332 ratio. The Yang–Mills and gravity gates remain **OPEN**.
