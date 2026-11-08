@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-07",
+  "source_archive": "Archive(1).zip",
+  "source_archive_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+  "files": {
+    "PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md": {
+      "sha256": "ec477f990997ca0dabd1bee82ef3e320211e2b0f479b693abd4ff59d8d4e3110",
+      "bytes": 13547
+    },
+    "verify_pf_i6_predecessor_scripts.py": {
+      "sha256": "a40a1b7fe9e2d10ad6b2957fe496f17edc2dc1c4462f2b5ac3e117249bc24463",
+      "bytes": 8843
+    },
+    "PF_I6_PREDECESSOR_SOURCE_EVIDENCE.json": {
+      "sha256": "8a684ae352c1871241001071dbfd1aebe981dd846af8a6674577e195edc05dc9",
+      "bytes": 11296
+    }
+  }
+}
