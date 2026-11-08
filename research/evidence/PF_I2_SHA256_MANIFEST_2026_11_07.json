@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-07",
+  "source_tar": "Sharpe_dissertation_v10.7.tar.gz",
+  "paper1_pdf_sha256": "7c0585fa990bb2a762c869665287835bbdb6e07edeb55e9adfe54fe84f9eddea",
+  "paper2_pdf_sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
+  "certification": "published Paper1 P3 definitions mathematically reconstructed; original Paper2 coupled computation remains unrecovered",
+  "files": {
+    "PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md": {
+      "sha256": "9984ee955b2618b078dc8f82e78305607be0b0ad6898fcd614ada5143da4eac5",
+      "bytes": 10085
+    },
+    "verify_pf_i2_pentagrid.py": {
+      "sha256": "3f822dd28d69c629d9b742f0cf5903b1ab56d8a0c65ac6c73f4f9f771e861dee",
+      "bytes": 11064
+    },
+    "PF_I2_PENTAGRID_EVIDENCE_2026_11_07.json": {
+      "sha256": "d17f5e114ba5745c7ee3e7072c9610fa3b34e4357b64cf5433fd4e88650d5255",
+      "bytes": 1848
+    },
+    "PF_I2_LARGER_PATCH_CONTROL_2026_11_07.json": {
+      "sha256": "f5e49af0adca846d8656520bfb8c0a66cebc2397a76d271115eaf9caf7ebf9fe",
+      "bytes": 1424
+    }
+  }
+}
