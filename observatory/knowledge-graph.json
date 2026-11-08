@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.58-pf-i6-predecessor-sources",
-  "scope": "PF-I6 predecessor source discovery and exact matched cut-project audit. Archive(1).zip supplies eight precursor PDFs and nine Python scripts. Source-native four-slice direct C&P matches matched pentagrid central patches; larger finite grid tile-vs-basis discrepancies are crop omissions, not independent z2 gauge dynamics. Historical PF-I5 missing-source assertion superseded for predecessors. Merged-final identity and all physical/continuum proof gates OPEN.",
+  "version": "v2.59-pf-i6-title-first",
+  "scope": "User-specified title-first provenance: ignore raw paper file numbering for scientific chronology, algorithm sequence and script ownership. Eight predecessor manuscripts and nine scripts identified from source text/code/sha256; verified finite C&P and crop comparisons unchanged. Physical continuum and merged-final operator gates remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4868,14 +4868,14 @@
         {
           "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "git_blob_sha": "60d1e0e881e290b24d32d7dfeba229d02ac465ac",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         },
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7023,7 +7023,7 @@
         {
           "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "git_blob_sha": "60d1e0e881e290b24d32d7dfeba229d02ac465ac",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7646,14 +7646,14 @@
         {
           "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "git_blob_sha": "60d1e0e881e290b24d32d7dfeba229d02ac465ac",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         },
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7688,7 +7688,7 @@
         {
           "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
           "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "git_blob_sha": "60d1e0e881e290b24d32d7dfeba229d02ac465ac",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7710,7 +7710,7 @@
       "kind": "result",
       "status": "partial",
       "stage": "P0",
-      "summary": "New Archive(1).zip SHA256 bdc3792b... has 8 manuscript PDFs + Paper5 appendix, 9 Python scripts, 2 Markdown and 1 JSON results summary. Original predecessor source functions, 35% one-pass tile-incidence interior selection, D=sum weighted W, Fibonacci family/level and triangular floor-sqrt comparator now located. Supersedes PF-I5 claim of unavailable original predecessor code, but DOES NOT authenticate the later merged-final dissertation matrices or complete all eigenruns.",
+      "summary": "Author-supplied Archive(1).zip contains eight predecessor manuscript PDFs, one appendix, nine Python source programs, two Markdown result summaries and JSON handoff; raw numbered filenames are ONLY LOCATORS (do not infer chronological sequence or ownership). Scripts' implemented algorithms and manuscript CONTENT TITLES are independently SHA256 indexed in PF-I6-TITLE-FIRST-CONTENT-IDENTITY. Some finite source functions executed; full merged-final eigendata/operator remain unverified.",
       "detail": "9 scripts syntactically parsed, version/execution dependencies inventoried; relevant geometry functions executed directly from original AST without top-level main plotting/external data. Machine artifact lists SHA256 of all 21 archive substantive files. Original ZIP durably in Library / The Singular Boundary/Source/Predecessor Eight Papers 2026-11-07.",
       "checks": [
         {
@@ -7726,8 +7726,15 @@
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I6 source titles and script function crosswalk: archival numbering has no scientific ordering",
+          "path": "research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+          "git_blob_sha": "fabf173c4d2b89e4d226e47d4806ec8dbcf08116",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7760,7 +7767,7 @@
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7798,7 +7805,7 @@
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7821,7 +7828,7 @@
       "status": "open",
       "stage": "P0",
       "summary": "Earlier scripts explicitly establish P3 integer-label adjacency, weighted strength D, 35% one-pass tiles, six/one dual graph variants and observed finite-crop defects. The merged final dissertation may incorporate revised C&P assumptions and 4D physical claims not proved by these predecessor computations. Authenticate final operator revisions and rerun source-matched modes/periodic comparator before PF-G0 closure.",
-      "detail": "Eight predecessor papers ≠ eight final merged dissertation papers, not necessarily source-state identical. Nine scripts cover paper1/2/3/5/6 and zeta validation; Paper4/7/8 have no separate named compute script in this ZIP. Remainder includes missing external /home/claude data. Different experimental Stage26 SU2 work remains separate.",
+      "detail": "Eight predecessor papers ≠ eight final merged dissertation papers, not necessarily source-state identical. Nine scripts cover paper1/2/3/5/6 and zeta validation; Paper4/7/8 have no separate named compute script in this ZIP. Remainder includes missing external /home/claude data. Different experimental Stage26 SU2 work remains separate. PF-I6 USER CORRECTION: Do not infer manuscript chronology or script associations from raw paper-numbered filenames. Tie all comparisons to manuscript content titles, full bytes, functions and inputs, output/operator hashes.",
       "checks": [
         {
           "label": "Construct crosswalk of merged-paper equation versions against original predecessor functions/parameters",
@@ -7840,8 +7847,15 @@
         {
           "title": "PF-I6 eight predecessor drafts, original script provenance, matched cut-project and crop spectral audit",
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
-          "git_blob_sha": "b22709d16d98ad352e67591826ae6541af107fe4",
+          "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I6 source titles and script function crosswalk: archival numbering has no scientific ordering",
+          "path": "research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+          "git_blob_sha": "fabf173c4d2b89e4d226e47d4806ec8dbcf08116",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7850,6 +7864,45 @@
         "model-fidelity",
         "unresolved-source-version",
         "PF-G0",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+      "title": "Archive manuscript numbering is non-semantic; use content titles and source-function identities",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "User correction: raw predecessor draft names paper1..paper8 and paperN_compute are ARCHIVAL LOCATORS, NOT scientific chronology or source-code assignment. Nine full manuscript/appendix PDF titles and nine Python script function inventories are SHA256 indexed independently from original Archive(1).zip. Associations between manuscript claims and numerical operators require source-defined code/IO, actual graph matrices and outputs, not matching suffix numbers.",
+      "detail": "Title-first JSON stores exact raw-member hash, extracted first-page manuscript title, script function identifiers and source header notes. PF-I6/PF-I5 theorem records have explicit provenance errata; earlier computed 36/96/186/296 central patch matches and finite edge-crop results refer to direct source functions, independent of filename ordering. Final merged operator/large eigendata remain open.",
+      "checks": [
+        {
+          "label": "Prove cross-manuscript computational dependencies through actual imports, data hashes or named function calls rather than file-number matching",
+          "state": "open"
+        },
+        {
+          "label": "Identify exact manuscript revision history separately from unsigned ZIP filenames where needed",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I6 source titles and script function crosswalk: archival numbering has no scientific ordering",
+          "path": "research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+          "git_blob_sha": "fabf173c4d2b89e4d226e47d4806ec8dbcf08116",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "source-identity",
+        "title-first",
+        "archival-numbering",
+        "hash-provenance",
+        "cut-project",
         "2026-11-07"
       ],
       "importance": 5,
@@ -11651,6 +11704,27 @@
       "kind": "needs-boundary-fix",
       "label": "test corrected source full window before physical interpretation",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+      "to_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "kind": "corrects-provenance",
+      "label": "manuscript title/hash and script code behavior replace filename-number indexing",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+      "to_id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "kind": "requires-evidence",
+      "label": "source operator mapping independent of numerical paper labels",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+      "to_id": "PF-G0",
+      "kind": "blocks-unsupported-inference",
+      "label": "numbering cannot certify source model or physical continuum",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -11912,7 +11986,8 @@
         "predecessor_eight_papers_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
         "final_merged_numerical_operator_identified": false,
         "conditional_matched_window_test": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
-        "crop_correction": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE"
+        "crop_correction": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+        "filename_numbering_is_archival_only": true
       },
       "predecessor_publication_source_audit": {
         "status": "partial",
@@ -11925,7 +12000,10 @@
         "model_cut_project_node": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
         "finite_crop_node": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
         "final_source_gate": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
-        "continuum_mass_gap_proved": false
+        "continuum_mass_gap_proved": false,
+        "title_first_crosswalk": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+        "filename_numbering_scientifically_meaningful": false,
+        "content_title_and_script_code_only": true
       }
     },
     "orientation_selection": {
