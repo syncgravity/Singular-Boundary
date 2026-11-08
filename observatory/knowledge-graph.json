@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.66-pf-i13-global-gluing",
-  "scope": "PF-I13 exact source finite global support: all original/completed transverse rhombus pair graphs are Petersen-type chromatic3 with actual 5-cycles, no universal alternating two-color split; canonical hull involution (m,gamma)->(1-m,-gamma) complements height/face triangles but not fixed phason or source Fibonacci scalar hopping; no C5-equivariant single-axis involution on nontrivial 4D sector. Auxiliary matched doubled heat seam allows positive within-half nonabelian interactions, whereas swapped seam has exact negative witness -2exp(-3t/4). Original physical time/global OS/continuum YM gap OPEN.",
+  "version": "v2.67-pf-i14-decorated-hull",
+  "scope": "PF-I14 exact lower/upper mechanical Fibonacci word reversal (including singular rho0), height-zero Lambda0⋊Z2 decorated phason hull and covariance of source Z5 weighted Laplacian, SU2 Wilson face and transverse commutator actions at all eight original sizes and two complete-window controls; gauge-projected positive auxiliary SU2 link heat transfer. The source does not specify extra word phases as physical, real time/reflection, or continuum gap. All P0–P5/PF-G0–G5 and gravity gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I9 geometry, PF-I10 finite scalar spectra, PF-I11 finite Wilson factorization, PF-I12 local nonfactorizing two-face conditional coupling and PF-I13 source Petersen/phase-inversion and global seam tests established. PF-I13 rules out universal alternating two-color transverse face gluing and shows a source phason-hull not fixed-phase inversion; two-face heat positivity alone does not imply global OS. Source physical time/dynamics, gauge background coupling, continuum interacting Yang–Mills and positive mass gap remain OPEN.",
+      "summary": "PF-I14 proves exact finite reflected cut-project decorated-hull covariance of Fibonacci scalar words, source weighted Laplacians and SU2 Wilson/commutator source actions; conditional gauge-projected SU2 link heat transfer on actual source edges. These are finite/auxiliary math, not source-defined physical time or global original-theory OS structure. PF-I15 physical phason/time/gauge continuum and uniform mass gap remain OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4912,6 +4912,13 @@
           "path": "research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
           "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -9340,7 +9347,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I13 proves Petersen nonbipartite transverse support; canonical complement exchanges phasons gamma↔-gamma, with fixed source Fibonacci scalar hopping not theta-invariant; no C5-commuting single-axis hyperplane reflection. A conditional doubled SU2 heat seam can be globally positive when matched, but swap seam is negative. Next must derive physical source-hull time/involution, covariant gauge/link background, matched source face seam and positive observable algebra or alternative dynamical Hilbert space, then seek uniform interacting continuum mass gap, without cubic physical geometry assumptions.",
+      "summary": "PF-I14 resolves PF-I13 fixed Fibonacci word mismatch by enlarging to five phase and lower/upper-coded decorated hull, exact semidirect Z5 height-zero relabeling and reflected SU2 Wilson/commutator covariance across eight original and two completed cores. Positive projected heat link transfer exists only with auxiliary t and doubled matched fibers. Source physical status of decorations/time/reflection/continuum gap remains OPEN; next PF-I15.",
       "detail": "Physical source 2+2 representation and rho_gamma gauge model must fix phason measures, time/evolution, coupling coefficient, large-volume completion/exhaustion, and gauge-covariant observable gluing. Finite auxiliary proofs do not provide unique temporal or mass scale.",
       "checks": [
         {
@@ -9363,6 +9370,13 @@
           "git_blob_sha": "a41427ac6401e3fa321fa916914449e98a7b2998",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I13_GLOBAL_TWO_SECTOR_GLUE_REFLECTION_AND_SOURCE_OBSTRUCTIONS_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -9372,6 +9386,224 @@
         "global-OS",
         "physical-dynamics",
         "interacting-gap-open"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-EXACT-FIBONACCI-MECHANICAL-WORD-REVERSAL",
+      "title": "Exact lower/upper Fibonacci mechanical-word duality at singular source phase",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For irrational alpha=phi^-1, source Fibonacci lower word s_down,rho(k)=floor((k+1)alpha+rho)-floor(k alpha+rho), exact identity s_down,rho(k)=s_up,-rho-alpha(-k) holds for all integer k including discontinuities. Source rho=0 lower must reflect to rho'=-alpha UPPER; merely changing rho but keeping lower causes precisely levels -1,0 to fail; keeping original word changes 27350/38139 grid25 edges.",
+      "detail": "Algebraic floor/ceiling proof and rational Q(sqrt5) exact integer arithmetic checked across 200010 indices. The upper word/phase extension is mathematical completion, not author-source physical degrees of freedom.",
+      "checks": [
+        {
+          "label": "Identify a physical principle selecting or weighting the extended word phase and boundary convention",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Fibonacci",
+        "exact-identity",
+        "mechanical-word",
+        "reflection-boundary",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "title": "Height-zero Z5 relabelings and phason-word reflection form exact Lambda0 ⋊ Z2 action",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "On auxiliary decorated data (m,gamma,rho_j,eta_j) with sum gamma=0, T_a:(m+a,gamma-a,rho_j-a_j alpha,eta_j) for sum a_j=0 preserves height and windows/word; R:(1-m,-gamma,-rho_j-alpha,swap eta_j) is involution with RT_aR=T_-a. Five phases close under all translations, shared single phase does not except a=0. Finite physical crops must move with relabeling.",
+      "detail": "Exact group identities on labeled accepted source geometry; this does not identify Lambda0 with physical spacetime translations or prove source introduced five independent phason excitations.",
+      "checks": [
+        {
+          "label": "Derive or falsify actual physics of additional phase coordinates and any source-invariant phason measure",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "phason-hull",
+        "group-action",
+        "semidirect-product",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "title": "All original source cuts: decorated inversion intertwines Fibonacci Laplacians and SU2 gauge rhombi",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "PF-I14 source original grid7,10,12,15,18,20,23,25 reconstructed with original PF-I11 integer vertex/edge/face fingerprints; decorated R maps each to its reflected selected image preserving exact hopping family/weights, L_R=P_R L P_R^-1, SU2 link gauge transformations, Wilson holonomy traces and PF-I12 shared-basepoint transverse commutator terms with explicitly transported couplings. Word mismatches all zero vs fixed-word [1864,3872,5507,9562,13780,17194,23185,27350].",
+      "detail": "The finite reflected image must be transported as such, not independently recropped around a fixed origin. No source-approved SU2 coupling law is inferred from optional scalar Fibonacci-derived test couplings.",
+      "checks": [
+        {
+          "label": "Establish a physically meaningful reflected source-hull gauge action and covariance of regulator/exhaustion, not just finite isomorphism",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-operator",
+        "SU2",
+        "gauge-covariance",
+        "finite-hull",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-COMPLETED-CORE-COVARIANCE-CONTROL",
+      "title": "Completed-window core source controls at Ngrid7 and25 pass decorated reflection separately",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Independent full-acceptance-window incident-star controls at source grid7 and25 retain distinct vertex populations from original source cuts, and separately satisfy exact reflected labels, edge weights, rhombus face selection and PF-I11 checksum matching under decorated mechanical-word phase/boundary transport.",
+      "detail": "Only two completed-core controls tested; do not replace author original source retained vertex sets or promote to a uniform infinite-volume covariance estimate.",
+      "checks": [
+        {
+          "label": "Extend regulator/reflection covariance to a source-defined invariant family of finite-volume exhaustions",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "completed-window",
+        "boundary-control",
+        "finite-regulator",
+        "2026-11-08"
+      ],
+      "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+      "title": "Conditional positive projected SU2 link heat transfer on actual accepted source edges",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "For finite source SU2 link Hilbert space and orthogonal local-gauge projector P_G, positive multiplication M_w=e^-Splus with mirrored gauge-invariant within-half terms and product SU2 link heat semigroup H_t (all t_e>0), T=P_G M_w H_t M_w P_G is positive by quadratic-form factorization. Actual-source-link finite small-subsystem checks and positive Gram test pass. Compact positive heat yields isolated leading eigenvalue for each fixed finite test with auxiliary t, not source physical energy/gap.",
+      "detail": "The heat time and doubled matched-phason field space are externally chosen; this is an auxiliary fiber construction, not original-source OS reflection positivity or uniform 4D interacting gap.",
+      "checks": [
+        {
+          "label": "Derive source selected physical time generator, heat parameters and global reflected positive-time observable algebra",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "SU2",
+        "gauge-projector",
+        "heat-kernel",
+        "conditional-transfer",
+        "not-physical-gap",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "title": "OPEN next: source-intrinsic positive time, phason dynamics and uniform interacting mass-gap estimates",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "PF-I14 gives an exact mathematically enlarged decorated Z5 hull with covariance of source Fibonacci scalar words, SU2 Wilson and transverse face interactions, plus a conditional positive heat transfer on original graph links. Still unknown whether added phase/upper-lower boundary data have physical status, what defines source time/reflection/energy, which gauge-invariant positive-time algebra is justified and whether any interacting continuum limit/gap is uniform. Do not impose a cubic 3+1 structure or infer physical gap from finite auxiliary transfer.",
+      "detail": "The source dissertation is unpublished reference. Require source-defined phason dynamics, kinetic coupling and finite-volume exhaustion, nonfactorizing gauge-invariant correlators, reflection positivity or constructive alternative and physically normalized uniform positive mass gap.",
+      "checks": [
+        {
+          "label": "Derive/falsify physical meaning and source-invariant measure for reflected decorated hull phases",
+          "state": "open"
+        },
+        {
+          "label": "Construct source-defined time/reflection or alternative gauge-invariant physical Hilbert space with fixed kinetic normalization",
+          "state": "open"
+        },
+        {
+          "label": "Prove interacting Yang-Mills continuum existence and uniform nonzero physical mass gap (not finite auxiliary eigenvalue isolation)",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I14 exact decorated Fibonacci phason hull, source SU2 gauge covariance and conditional gauge-projected link heat transfer",
+          "path": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "git_blob_sha": "f2359c5f59881b0740fe893e289d9fa00acc6a92",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "next-proof-gate",
+        "physical-time",
+        "interacting-YM",
+        "continuum-existence",
+        "mass-gap-open"
       ],
       "importance": 5,
       "core": true,
@@ -13760,6 +13992,118 @@
       "kind": "does-not-imply",
       "label": "No gravitational UV theorem follows",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I13-FIBONACCI-HOPPING-REFLECTION-ASYMMETRY",
+      "to_id": "PF-I14-EXACT-FIBONACCI-MECHANICAL-WORD-REVERSAL",
+      "kind": "reconciles-by-decoration",
+      "label": "PF-I13 fixed-word mismatch is resolved only on reflected upper-word decorated hull, not fixed source rho",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I13-HEIGHT-PHASON-HULL-INVERSION",
+      "to_id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "kind": "extends",
+      "label": "Add word phase/upper-lower boundary data and height-zero integer relabelings",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I14-EXACT-FIBONACCI-MECHANICAL-WORD-REVERSAL",
+      "to_id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "kind": "enables",
+      "label": "Exact word reversal and phase transport realize involutive action",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "to_id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "kind": "operator-covariance",
+      "label": "Exact finite reflected image matches original labels/weights, gauge holonomy action",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "to_id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "kind": "intrinsic-rhombi",
+      "label": "Actual accepted source face triangles are reflected, not artificial cubic faces",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+      "to_id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "kind": "transverse-holonomies",
+      "label": "Shared-basepoint four-family face pairs transform under source hull",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "to_id": "PF-I14-COMPLETED-CORE-COVARIANCE-CONTROL",
+      "kind": "independent-source-control",
+      "label": "Separate completed-window populations pass at two grid sizes",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I13-CONDITIONAL-GLOBAL-MATCHED-HEAT-GLUING",
+      "to_id": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+      "kind": "actual-link-extension",
+      "label": "Gauge-projected link heat replaces independent fictitious faces in auxiliary doubled model",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+      "to_id": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+      "kind": "source-gauge-input",
+      "label": "Covariant Wilson/commutator weights on original source link space",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I14-COMPLETED-CORE-COVARIANCE-CONTROL",
+      "to_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "kind": "volume-exhaustion-open",
+      "label": "Two finite controls insufficient to justify uniform source regulator",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+      "to_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "kind": "not-physical-time",
+      "label": "Auxiliary chosen link heat parameters do not fix physical energy or continuum uniform gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+      "to_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "kind": "physical-hull-gate",
+      "label": "Added word phases not source physical degrees yet",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "to_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "kind": "partial-completion",
+      "label": "Mathematical hull covariance and conditional transfer established; physical source dynamics remains open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "Source-defined global positive physical dynamics/continuum gap still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "Physical temporal/reflection and gauge-Hilbert-space construction still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "Finiteness of auxiliary heat operator not a gravity UV theorem",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -13905,7 +14249,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I14-SOURCE-PHASON-HULL-REFLECTION-COVARIANCE",
+      "next_gate": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -14323,6 +14667,74 @@
         "global_original_source_OS_proved": false,
         "physical_time_proved": false,
         "interacting_continuum_mass_gap_proved": false
+      },
+      "pf_i14_decorated_hull": {
+        "status": "finite_exact_decorated_source_covariance_and_conditional_link_transfer",
+        "report": "research/geometry/PF_I14_DECORATED_HULL_REFLECTION_GAUGE_COVARIANCE_AND_CONDITIONAL_TRANSFER_2026_11_08.md",
+        "Fibonacci_word_involution": "PF-I14-EXACT-FIBONACCI-MECHANICAL-WORD-REVERSAL",
+        "semidirect_group_action": "PF-I14-DECORATED-HULL-SEMIDIRECT-ACTION",
+        "source_SU2_covariance": "PF-I14-SOURCE-WEIGHTED-AND-SU2-FINITE-COVARIANCE",
+        "completed_core_controls": "PF-I14-COMPLETED-CORE-COVARIANCE-CONTROL",
+        "auxiliary_gauge_projected_link_transfer": "PF-I14-GAUGE-PROJECTED-LINK-HEAT-POSITIVITY",
+        "next_physical_gate": "PF-I15-INTRINSIC-POSITIVE-TIME-AND-UNIFORM-DYNAMICS",
+        "Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "original_source_retained_edges": [
+          3017,
+          5927,
+          8468,
+          13779,
+          19593,
+          24091,
+          32582,
+          38139
+        ],
+        "fixed_word_hopping_type_mismatches": [
+          1864,
+          3872,
+          5507,
+          9562,
+          13780,
+          17194,
+          23185,
+          27350
+        ],
+        "phase_only_wrong_lower_boundary_mismatches": [
+          488,
+          690,
+          830,
+          1030,
+          1240,
+          1391,
+          1600,
+          1714
+        ],
+        "fully_reflected_decorated_word_mismatches": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_private_test_passes": 16,
+        "public_test_passes": 12,
+        "public_private_source_skips": 4,
+        "private_archive_location": "/The Singular Boundary/Proof Audits/PF I14 Decorated Hull Reflection and Gauge Link Transfer 2026-11-08/",
+        "archive_sha256": "9709f2b0e92fbfce8d466a30ffe37e9a6d31e1013c615be91997b7c50265de7e",
+        "physical_time_source_derived": false,
+        "original_source_global_OS_proved": false,
+        "interacting_Yang_Mills_continuum_mass_gap_proved": false
       }
     },
     "orientation_selection": {
