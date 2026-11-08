@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.50-pf-i0",
-  "scope": "PF-I0 intrinsic coupled-Z5 source identity first: conditional quotient odd-cycle versus Penrose P3 rhombus-edge incompatibility; original generator, hopping weights, geometric dynamics and all physical mass-gap/gravity proof gates remain OPEN. Historical YM 3D candidates retained as distinct controls.",
+  "version": "v2.51-pf-i1",
+  "scope": "PF-I1 source topology correction: dense internal projection invalidates Paper2 displayed T2 quotient; exact joint T4 ambient lattice, not a certified tiling hull; original generator, phason measure, coupled gauge dynamics and all mass-gap/gravity continuum gates remain OPEN. Original cubic SU2 remains separate control.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -6876,6 +6876,84 @@
       "importance": 5,
       "core": true,
       "route": null
+    },
+    {
+      "id": "PF-I1-DENSE-INTERNAL-TOPOLOGY",
+      "title": "Exact Z5 internal Fourier image is dense: Paper 2 T2 identification fails",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "For z2(m)=sum m_j*zeta^(2j), the additive image is Z[zeta_5] containing Z[phi]+zeta^2 Z[phi] and is dense in C. Its quotient has indiscrete topology, not T2; the fixed-sum zero sublattice still projects densely. The joint (z1,z2) image modulo diagonal is instead a rank-4 lattice with covolume 5sqrt(5)/4 and a real T4 quotient. This is a precise correction to Paper2 §3 Eq.(9), not a claim about the accepted tiling hull.",
+      "detail": "Self-contained arithmetic/topological proof and 6,425 deterministic exact/high-precision checks. Recovered original paper PDF SHA256 and complete provenance. T2 source claim requires reconstruction; no continuum or mass-gap certificate.",
+      "checks": [
+        {
+          "label": "Independent review the dense-subgroup topology proof and joint Gram determinant",
+          "state": "open",
+          "note": "An exact formal proof is provided; source-matched physical interpretation remains unverified."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I1 exact dense internal Z5 Fourier image; Paper 2 T2 source correction",
+          "path": "research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md",
+          "git_blob_sha": "4e7fc80ab348802e6f7420d44f236de853b2d9f9",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-correction",
+        "phason",
+        "topology",
+        "coupled-Z5",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "title": "Open: actual Penrose phason/hull measure and 20-configuration sampling domain",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "The displayed R2_perp / projection(Z5) is not T2. Recover the actual source's phason sampling rule, window boundary, acceptance conventions, and the precise translation-hull/torus parametrization before interpreting configuration-space CV=0.124% or integrating physical observables.",
+      "detail": "The joint Fourier lattice yields a real T4 as a superspace quotient, not necessarily the tiling hull or physical spacetime. Paper3 constant J descends as a tangent complex structure, but the point-rotation e^(pi J/2) does not preserve the lattice automatically. The original Paper2 graph-zeta code is not in dissertation tar (PDFs only).",
+      "checks": [
+        {
+          "label": "Recover source generator and the 20 phason configurations from original Paper2 calculation",
+          "state": "open"
+        },
+        {
+          "label": "Specify authentic hull and a well-defined invariant/probability measure; compare its domain with source sampling",
+          "state": "open"
+        },
+        {
+          "label": "Recompute source-matched spectral-zeta ratio with original graph/hopping and periodic controls",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I1 exact dense internal Z5 Fourier image; Paper 2 T2 source correction",
+          "path": "research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md",
+          "git_blob_sha": "4e7fc80ab348802e6f7420d44f236de853b2d9f9",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-identity",
+        "phason",
+        "configuration",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -10231,6 +10309,48 @@
       "kind": "conditional-result",
       "label": "finite graph structure only; continuum gate OPEN",
       "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-I1-DENSE-INTERNAL-TOPOLOGY",
+      "kind": "source-topology",
+      "label": "projected Z5 internal image is dense",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I1-DENSE-INTERNAL-TOPOLOGY",
+      "to_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "kind": "does-not-imply",
+      "label": "joint T4 does not by itself specify tiling hull or phason measure",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "to_id": "PF-G0",
+      "kind": "source-fidelity-check",
+      "label": "correct original T2 claim and recover actual acceptance and phase rule",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "to_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "kind": "requires-comparison",
+      "label": "both topology and graph edge rule must match the same original generator",
+      "status": "open"
+    },
+    {
+      "from_id": "S-COMPLEX-STRUCTURE",
+      "to_id": "PF-I1-DENSE-INTERNAL-TOPOLOGY",
+      "kind": "mathematical-distinction",
+      "label": "local J tensor is valid; global i-rotation need not preserve Fourier lattice",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "to_id": "PF-GRAV-SEPARATE",
+      "kind": "necessary-source-interface",
+      "label": "configuration probability measure must be defined for gravitational averaging claims",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10385,7 +10505,19 @@
         "parameters": "span6, |z1|<=5, centered decagon radius1.65 (illustrative)",
         "report": "research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md"
       },
-      "operator_identity_bridge": "PF-I0-RHOMBUS-OPERATOR-BRIDGE"
+      "operator_identity_bridge": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "internal_topology": {
+        "status": "obstruction",
+        "claim": "z2(Z5) dense C; literal C/z2(Z5) is not topological T2",
+        "corrected_joint_ambient": "C2 / Lambda_F is real T4",
+        "joint_lattice_covolume": "5sqrt(5)/4",
+        "report": "research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md"
+      },
+      "phason_hull_bridge": {
+        "status": "open",
+        "node": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+        "source_phason_sample_unverified": true
+      }
     },
     "orientation_selection": {
       "status": "open",
