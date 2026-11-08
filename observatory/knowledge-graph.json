@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.59-pf-i6-title-first",
-  "scope": "User-specified title-first provenance: ignore raw paper file numbering for scientific chronology, algorithm sequence and script ownership. Eight predecessor manuscripts and nine scripts identified from source text/code/sha256; verified finite C&P and crop comparisons unchanged. Physical continuum and merged-final operator gates remain OPEN.",
+  "version": "v2.60-pf-i7-supplemental",
+  "scope": "PF-I7 uploaded additional author-source scripts and figures: one exact duplicate of 9 previously registered predecessors, four distinct variants; direct source 2D Ngrid7/10/12 count and basis-edge checks replayed (already recorded PF-I6); new Z6 six-slab window 12 faces not triacontahedron30, and archived Z6 2999-mode truncation/zero-mode heat-trace issue. All 4D SU2/gravity gates remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -7908,6 +7908,123 @@
       "importance": 5,
       "core": true,
       "route": null
+    },
+    {
+      "id": "PF-I7-SUPPLEMENTARY-SCRIPT-PROVENANCE",
+      "title": "Five supplementary source scripts crosslinked to nine previously recovered predecessor scripts",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Five additional user-uploaded Python sources parsed and all syntactically compile; zeta_prime_validation.py SHA256 fc154343... duplicates an indexed PF-I6 predecessor source, while four uploaded scripts have distinct hashes. Figures and draft .tex located by implemented roles, not filename number. Full original user bytes preserved in Library with a source SHA manifest and 12 passing regression checks.",
+      "detail": "Known 9-script predecessor archive and source-gamma direct four-window P3 finite-disk equivalence are preserved as PF-I6. Source figure-generating code and final merged 3D physical regulator remain distinct, unverified; full large-N spectral replay not done.",
+      "checks": [
+        {
+          "label": "Locate and authenticate exact figure-generation code for J/holomorphic and 2D 19,260-vertex panels",
+          "state": "open"
+        },
+        {
+          "label": "Reconcile source/merged final code and all eight-size finite graph/eigenvalue generations",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I7 supplementary implementation, source plot and Z6 acceptance-window audit",
+          "path": "research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "git_blob_sha": "2b289d7e0520a292ded5ad28181be693d53407f0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-provenance",
+        "title-first",
+        "supplementary-files",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I7-Z6-WINDOW-FACET-OBSTRUCTION",
+      "title": "Z6 3D window implementation is a 12-pentagonal-face dodecahedron, not rhombic triacontahedron",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "In uploaded Z6 icosahedral script, the claimed 30-face triacontahedron_test actually intersects six slabs |r·e_j|<R, giving exactly 12 pentagonal facets and 20 vertices under source basis. Thus the archived 3D quasicrystalline spectra do not arise from the claimed 30-rhombus window. Cubic lattice is an explicit negative control only.",
+      "detail": "Independent scipy HalfspaceIntersection verified 12 planar pentagonal faces with five vertices each, 20 polytope vertices. Density multiplier 1.15 not certified as canonical window scaling. Does not determine physical spacetime dimensionality or invalidate source's 2D Z5 cut-and-project program.",
+      "checks": [
+        {
+          "label": "Replace with source-author-approved canonical rhombic triacontahedron/other W and regenerate all Z6 graphs and spectra",
+          "state": "open"
+        },
+        {
+          "label": "Authenticate Z6 physical/perpendicular basis, acceptance-boundary and window scale before continuum inferences",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I7 supplementary implementation, source plot and Z6 acceptance-window audit",
+          "path": "research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "git_blob_sha": "2b289d7e0520a292ded5ad28181be693d53407f0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z6",
+        "icosahedron",
+        "acceptance-window",
+        "finite-geometric-discrepancy",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I7-Z6-HEAT-SPECTRAL-TRUNCATION",
+      "title": "Archived Z6 spectral source has omitted zero-mode heat plateau and 14/15 partial-mode truncation",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Original Z6 archive n_range 8–13 positive-mode spectra reproduce stored zeta(-1/2) ratios; its own Δγ(-1/2)=+0.00092564 with source-calculated uncertainty0.0065163 and finiteness=false. n_range14/15 contain ONLY 2999 lowest positive modes each due eigsh(k=3000), not full spectrum. On connected periodic cubic control, restore the omitted zero mode in finite heat trace: peak d_s at n_range8 changes from recorded 9.32974 to 3.19516.",
+      "detail": "No universal gamma or continuum UV result from these finite regressions. Z6 script strips only isolated vertices, not all components, so QC zero-mode count cannot be inferred as one without connectivity audit. Periodic control is not intended physical cubic lattice. Full file hashes and replay evidence in PF-I7 Library.",
+      "checks": [
+        {
+          "label": "Recompute full-spectrum/Z6 corrected-window samples with connected-component nullity checked",
+          "state": "open"
+        },
+        {
+          "label": "Use complete heat trace (including kernel modes) for finite spectral dimension; do not mix truncated and full spectra",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I7 supplementary implementation, source plot and Z6 acceptance-window audit",
+          "path": "research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "git_blob_sha": "2b289d7e0520a292ded5ad28181be693d53407f0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z6",
+        "scalar-spectral-measure",
+        "negative-control",
+        "zero-mode",
+        "truncated-spectrum",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -11725,6 +11842,55 @@
       "kind": "blocks-unsupported-inference",
       "label": "numbering cannot certify source model or physical continuum",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
+      "to_id": "PF-I7-SUPPLEMENTARY-SCRIPT-PROVENANCE",
+      "kind": "provenance-update",
+      "label": "one byte-identical validator among five uploaded scripts; do not infer manuscript chronology from draft filenames",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I6-PREDECESSOR-SCRIPTS-RECOVERED",
+      "to_id": "PF-I7-SUPPLEMENTARY-SCRIPT-PROVENANCE",
+      "kind": "supplementary-code",
+      "label": "nine known predecessor scripts retained; four additional distinct script variants and one duplicate supplied",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I7-SUPPLEMENTARY-SCRIPT-PROVENANCE",
+      "to_id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "kind": "source-provenance-dependent",
+      "label": "merged final physical operator not authenticated by additional figures or numerical variants",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I7-Z6-WINDOW-FACET-OBSTRUCTION",
+      "to_id": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "kind": "source-scope-boundary",
+      "label": "3D Z6 negative-control implementation distinct from Z5 physical regulator source",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I7-Z6-HEAT-SPECTRAL-TRUNCATION",
+      "to_id": "PF-I7-Z6-WINDOW-FACET-OBSTRUCTION",
+      "kind": "depends-on-window",
+      "label": "3D source spectra must be regenerated after window source correction",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I7-Z6-WINDOW-FACET-OBSTRUCTION",
+      "to_id": "PF-GRAV-SEPARATE",
+      "kind": "does-not-prove",
+      "label": "finite incorrect 12-faced window cannot establish gravitational finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I7-Z6-HEAT-SPECTRAL-TRUNCATION",
+      "to_id": "PF-GRAV-SEPARATE",
+      "kind": "does-not-prove",
+      "label": "positive-mode zeta moment ratio and truncation do not prove continuum one-loop UV finiteness",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -12004,6 +12170,19 @@
         "title_first_crosswalk": "PF-I6-TITLE-FIRST-CONTENT-IDENTITY",
         "filename_numbering_scientifically_meaningful": false,
         "content_title_and_script_code_only": true
+      },
+      "pf_i7_supplementary_sources": {
+        "status": "partial",
+        "report": "research/geometry/PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md",
+        "new_upload_script_count": 5,
+        "previous_registered_scripts": 9,
+        "byte_identical_prior_script_count": 1,
+        "new_distinct_script_hash_count": 4,
+        "same_source_geometry_gates_preserved": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+        "z6_window_node": "PF-I7-Z6-WINDOW-FACET-OBSTRUCTION",
+        "z6_heat_node": "PF-I7-Z6-HEAT-SPECTRAL-TRUNCATION",
+        "library_archive": "/The Singular Boundary/Proof Audits/PF I7 Supplementary Source and 3D Window 2026-11-07/",
+        "original_3d_gauge_mass_gap_proved": false
       }
     },
     "orientation_selection": {
