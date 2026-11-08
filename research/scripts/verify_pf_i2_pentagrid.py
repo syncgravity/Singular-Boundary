@@ -153,6 +153,19 @@ def verify(q, spectrum=True):
         for k in adjacency[stack.pop()]:
             if k not in seen:seen.add(k);stack.append(k)
     assert len(seen)==n
+    # Conditional source-equivalence audit: among the same selected P3 labels,
+    # adding every allowed ±e_j nearest-basis pair makes NO extra bond.
+    # This tests a literal Paper2 §8.2 reading against the genuine P3 graph,
+    # not against a different acceptance-window or extra-vertex generator.
+    all_basis={}
+    selected=set(verts)
+    for a in selected:
+        for direction in range(5):
+            b=list(a);b[direction]+=1;b=tuple(b)
+            if b in selected:
+                all_basis[(a,b)]=direction
+                assertions+=1
+    assert set(all_basis)==set(ev), (len(all_basis),len(ev),len(set(all_basis)-set(ev)))
     # Verify no edge crossings (except actual shared endpoints), if shapely exists.
     # This is an auxiliary finite geometric consistency test.
     coords=np.asarray(verts,dtype=float)@D
