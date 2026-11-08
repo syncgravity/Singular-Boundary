@@ -1,4 +1,12 @@
-# Research Observatory v2.51-pf-i1 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.52-pf-i2 — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I2 · Recovered Paper 1 P3 pentagrid and four sum layers (2026-11-07)
+
+**Material original-source progress:** Paper1 §§6.1–7.1 Eqs.(12)–(14) define five grid normals \(e_j\), offsets \(\gamma_j=\operatorname{frac}(j\sqrt2+j^2\sqrt3)-\text{mean}\), vertex labels \(K_j=\lceil r\cdot e_j-\gamma_j\rceil\), original basis edges, rhombus squares, and the Fibonacci hopping **by family and level**, \(t(j,k)=1\) when \(\lfloor(k+1)/\varphi\rfloor\ne\lfloor k/\varphi\rfloor\), otherwise \(\varphi^{-2}\). An exact theorem shows \(\sum K_j\in\{1,2,3,4\}\) for generic cells, plus no duplicate projected labels and graph bipartiteness. The ordinary Penrose P3 graph **does not** inherit artificial diagonal-quotient pentagonal cycles from PF-I0; the paper's multiple original-index sum layers resolve that graph ambiguity without imposing a spatial 3D regulator.
+
+A reproducible source-equation P3 generator gave 186 vertices / 345 original edges / 160 rhombi (3,037 passing checks) and 616 / 1,185 / 570 (10,120 passing checks), all with finite Wilson SU2 gauge-invariance tests. **Not the source's numerical generator:** paper's exact Ngrid selection and Paper2 additional *coupled-Z5* bonds remain OPEN. Another precise issue: Paper1 calls \(L=D-W\) a graph Laplacian, but its diagonal D is not explicitly distinguished as weighted or ordinary degree. On the *same* 186-vertex patch these yield minimum eigenvalues ~0 and 0.499315, respectively; do not silently select a model or claim the reported 0.8332 zeta ratio reproduced.
+
+[Complete source-equation theorem and operator-normalization audit](../research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md) · [reproducible generator, spectrum, Wilson verifier](../research/scripts/verify_pf_i2_pentagrid.py) · [finite spectral evidence](../research/evidence/PF_I2_PENTAGRID_EVIDENCE_2026_11_07.json) · [large patch control](../research/evidence/PF_I2_LARGER_PATCH_CONTROL_2026_11_07.json). **Observatory v2.52-pf-i2:** 204 nodes, 494 relationships, 754 indexed historical theorem sources. All P0–P5 and PF-G0–G5 continuum gates OPEN; historical T5 remains conditional. Source Paper2 coupled graph and mass/degree normalization remain blocking. No public release or new branches.
 
 ## PF-I1 exact source-topology correction: dense internal projection is NOT a T² quotient (2026-11-07)
 
