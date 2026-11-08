@@ -235,6 +235,8 @@ def verify(q, spectrum=True):
         "edge_types":dict(edge_types),"observed_A_to_B_ratio":edge_types['A']/max(1,edge_types['B']),
         "mean_degree":2*m/n,"all_edges_original_basis_steps":True,
         "graph_bipartite_by_integer_sum":True,"pentagonal_cycles":0,
+        "all_basis_neighbor_pairs_on_same_selected_P3_vertices":len(all_basis),
+        "additional_basis_edges_beyond_P3_rhombi":len(set(all_basis)-set(ev)),
         "no_crossing_finite_patch":no_cross,
         "finite_weighted_Laplacian":moments,
         "su2_original_link_wilson_gauge_checks":wilson_checks,
