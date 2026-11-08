@@ -1,0 +1,14 @@
+{
+  "continuum_YM_mass_gap_proved": false,
+  "exact_Z_two_face_under_Haar": 1.0,
+  "exact_fundamental_halftrace_connected_correlation": 0.13215307606649934,
+  "full_Z5_global_OS_reflection_proved": false,
+  "kernel_hermitian_symmetry_error": 0.0,
+  "kernel_min_SPD_Gram_eigenvalue": 0.08168310683763458,
+  "lambda_or_heat_time_not_source_selected": true,
+  "one_pair_heat_reflection_Peter_Weyl": "nonnegative expansion d_j exp(-t*j(j+1)), giving positive definite kernel K_t(A B^-1)",
+  "pair_exchange_reflection_conditional_not_source_time": true,
+  "sample_count": 16,
+  "seed": 622,
+  "t_auxiliary": 0.85
+}

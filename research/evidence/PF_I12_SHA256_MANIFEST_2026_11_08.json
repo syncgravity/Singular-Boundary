@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-08",
+  "files": {
+    "PF_I11_COMPLETED_WINDOW_CORE_CONTROL.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "caf47c8b26414658a779f78e0188084f0bfa215c5fadc5612a5f474db28f2ea8",
+      "size_bytes": 13777
+    },
+    "PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038",
+      "size_bytes": 12645
+    },
+    "PF_I12_COMPLETED_CORE_CONTROL.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "e5fd464759c8fb92fa16762eaf44ddd370536cb3607bafbcef84846a1309296d",
+      "size_bytes": 3290
+    },
+    "PF_I12_COMPLETED_RUN_LOG.txt": {
+      "private_source_or_snapshot": false,
+      "sha256": "ad9af45518d69859f1e88306e67e1694be6787b424bc91fc82aeddc2e633f5fa",
+      "size_bytes": 59
+    },
+    "PF_I12_CONDITIONAL_HEAT_KERNEL_CONTROL.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "e48071f3696a4bebdafbbea970a3bf38a47aa73a0825ba8c6f14357a712436e4",
+      "size_bytes": 610
+    },
+    "PF_I12_EIGHT_SIZE_TRANSVERSE_EVIDENCE.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "ce2fcd7cf9d349dac2d847b00f58d00757a4f1c2eec087e39bfde875c9ad4690",
+      "size_bytes": 12186
+    },
+    "PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md": {
+      "private_source_or_snapshot": false,
+      "sha256": "80f8468562e8c48bfe697481212f60cf43e957523d27ca9661d8c37884445c34",
+      "size_bytes": 17504
+    },
+    "PF_I12_PUBLIC_SOURCE_TRANSVERSE_RESULTS_2026_11_08.json": {
+      "private_source_or_snapshot": false,
+      "sha256": "24db8acf519613197cb7e20ba7cf629076e710bf2e48bee7094ef2e64b1a283f",
+      "size_bytes": 4792
+    },
+    "PF_I12_PUBLIC_TEST_LOG.txt": {
+      "private_source_or_snapshot": false,
+      "sha256": "fd5469d91ee4132d7ab162ddf10600518c00d40c8b3640ebb9be5050fbba1f5f",
+      "size_bytes": 4196
+    },
+    "PF_I12_RUN_LOG.txt": {
+      "private_source_or_snapshot": false,
+      "sha256": "c102ba70b979aefd5af929a99846e44af2098c6e84e87896e67ef84ff05e479e",
+      "size_bytes": 404
+    },
+    "PF_I12_TEST_LOG.txt": {
+      "private_source_or_snapshot": false,
+      "sha256": "62f80f0141f158108468dcbd0012b68048a2bdbc216cebdfc1aa225e0f613e71",
+      "size_bytes": 3632
+    },
+    "README_REPLAY.md": {
+      "private_source_or_snapshot": false,
+      "sha256": "f8323728d86d53702f33079d0830eba3472ecd1f49a82547cbadb7522020361c",
+      "size_bytes": 3755
+    },
+    "Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex": {
+      "private_source_or_snapshot": true,
+      "sha256": "385836d32a4be990ae6f1e16dff32591cb5b4c8ec4d6d9f35dd8eedf85825c2e",
+      "size_bytes": 46990
+    },
+    "paper6_extend_local.py": {
+      "private_source_or_snapshot": true,
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+      "size_bytes": 19349
+    },
+    "private_snapshots/PF_I11_original_source_20.npz": {
+      "private_source_or_snapshot": true,
+      "sha256": "be1b282971845b39618098613b3b1bc2ccf72ff4c070681b5827675dee2a11c3",
+      "size_bytes": 355294
+    },
+    "private_snapshots/PF_I11_original_source_25.npz": {
+      "private_source_or_snapshot": true,
+      "sha256": "b7fe8f008ebc00b4878fbfe76bf4b2bcfe94e85dce145c7368c97d900d329493",
+      "size_bytes": 563048
+    },
+    "private_snapshots/PF_I11_original_source_7.npz": {
+      "private_source_or_snapshot": true,
+      "sha256": "465b4f9f4b98ee6644be164f5525f28671c5dc6f77382be96c24b59fa22c2c95",
+      "size_bytes": 41394
+    },
+    "test_pf_i12_two_sector_coupling.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "10406f42fd64283cb9d35d6b2b442e2a4c565101affb238f879b388013160a79",
+      "size_bytes": 8930
+    },
+    "verify_pf_i11_intrinsic_su2.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "f655bae6defa9993d6b414c74cfa5b24039ff7a80e47c1924123412ada55653d",
+      "size_bytes": 18081
+    },
+    "verify_pf_i12_completed_core.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "9f4090e65b37e0c92081b1cce1d72051cdb84ae997e39e483aaac9bc08e6abab",
+      "size_bytes": 2811
+    },
+    "verify_pf_i12_conditional_heat_gluing.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "8d4ef99c2542b2cb5398200663b1261e73d111de191a8860d1bda4c517d9a6e0",
+      "size_bytes": 2414
+    },
+    "verify_pf_i12_two_sector_coupling.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "bc19afe664a451b325dc812549ad5fbf49648e8390f70e46551a4eb92c8afd95",
+      "size_bytes": 12342
+    },
+    "verify_pf_i9_source_cut_project_bridge.py": {
+      "private_source_or_snapshot": false,
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b",
+      "size_bytes": 17023
+    }
+  },
+  "original_source_populations": 8,
+  "original_source_transverse_pair_min_max": [
+    3093,
+    40853
+  ],
+  "physical_mass_gap_proved": false,
+  "private_unpublished_material": true,
+  "regression_tests_private_passed": 26,
+  "regression_tests_public_passed": 19,
+  "regression_tests_public_source_skipped": 7,
+  "schema": "singular-boundary.pf-i12.research-audit-archive.v1",
+  "separate_completed_populations": 8,
+  "source_J_time_postulate_is_an_assumption": true,
+  "source_fingerprint_prior_gate": "PF-I11",
+  "source_hash_original": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "status": "exact finite mathematics plus explicitly conditional dynamics; global OS/physical four-dimensional Yang Mills continuum gap OPEN"
+}

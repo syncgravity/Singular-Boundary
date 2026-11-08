@@ -1,0 +1,119 @@
+{
+  "C5_equivariant_complex_structure_count": 4,
+  "conditional_interaction_unique_from_original_unpublished_postulates": false,
+  "date": "2026-11-08",
+  "exchange_commutator_negative_covariance_derivative_at_Haar": -0.005208333333333333,
+  "exchange_reflection_OS_quadratic_at_beta0_lambda0p4": -0.0012633524337991586,
+  "finite_covariance_at_beta0_lambda0p4": -0.0022468809345877055,
+  "finite_covariance_at_beta0p71_lambda0p4": -0.002485513945571824,
+  "four_dimensional_Yang_Mills_mass_gap_proved": false,
+  "geometry_fourvolume": 2.7950849718747373,
+  "global_reflection_positive_interacting_measure_proved": false,
+  "no_C5_invariant_real_time_axis_in_Eperp": true,
+  "positive_pair_heat_kernel_t0p85": {
+    "continuum_YM_mass_gap_proved": false,
+    "exact_Z_two_face_under_Haar": 1.0,
+    "exact_fundamental_halftrace_connected_correlation": 0.13215307606649934,
+    "full_Z5_global_OS_reflection_proved": false,
+    "kernel_hermitian_symmetry_error": 0.0,
+    "kernel_min_SPD_Gram_eigenvalue": 0.08168310683763458,
+    "lambda_or_heat_time_not_source_selected": true,
+    "one_pair_heat_reflection_Peter_Weyl": "nonnegative expansion d_j exp(-t*j(j+1)), giving positive definite kernel K_t(A B^-1)",
+    "pair_exchange_reflection_conditional_not_source_time": true,
+    "sample_count": 16,
+    "seed": 622,
+    "t_auxiliary": 0.85
+  },
+  "rows": [
+    {
+      "Ngrid": 7,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 1330,
+      "separate_completed_core_transverse_pairs": 2785,
+      "separate_completed_core_vertices": 1432,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 1468,
+      "source_original_transverse_pairs": 3093,
+      "source_original_vertices": 1550
+    },
+    {
+      "Ngrid": 10,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 2846,
+      "separate_completed_core_transverse_pairs": 6057,
+      "separate_completed_core_vertices": 3032,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 2886,
+      "source_original_transverse_pairs": 6157,
+      "source_original_vertices": 3042
+    },
+    {
+      "Ngrid": 12,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 4089,
+      "separate_completed_core_transverse_pairs": 8770,
+      "separate_completed_core_vertices": 4294,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 4145,
+      "source_original_transverse_pairs": 8890,
+      "source_original_vertices": 4324
+    },
+    {
+      "Ngrid": 15,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 6586,
+      "separate_completed_core_transverse_pairs": 14153,
+      "separate_completed_core_vertices": 6812,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 6800,
+      "source_original_transverse_pairs": 14559,
+      "source_original_vertices": 6980
+    },
+    {
+      "Ngrid": 18,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 9604,
+      "separate_completed_core_transverse_pairs": 20669,
+      "separate_completed_core_vertices": 9912,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 9646,
+      "source_original_transverse_pairs": 20749,
+      "source_original_vertices": 9950
+    },
+    {
+      "Ngrid": 20,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 11844,
+      "separate_completed_core_transverse_pairs": 25585,
+      "separate_completed_core_vertices": 12172,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 11879,
+      "source_original_transverse_pairs": 25590,
+      "source_original_vertices": 12207
+    },
+    {
+      "Ngrid": 23,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 15787,
+      "separate_completed_core_transverse_pairs": 34307,
+      "separate_completed_core_vertices": 16182,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 16138,
+      "source_original_transverse_pairs": 34897,
+      "source_original_vertices": 16435
+    },
+    {
+      "Ngrid": 25,
+      "completed_core_fingerprint_verified": true,
+      "separate_completed_core_rhombi": 18880,
+      "separate_completed_core_transverse_pairs": 40973,
+      "separate_completed_core_vertices": 19256,
+      "source_fingerprint_verified": true,
+      "source_original_rhombi": 18874,
+      "source_original_transverse_pairs": 40853,
+      "source_original_vertices": 19260
+    }
+  ],
+  "schema": "singular-boundary.pf-i12.public-research-evidence.v1",
+  "status": "exact intrinsic fourform and conditional finite gauge pair model; source physical time and 4D YM continuum gap OPEN"
+}

@@ -1,0 +1,93 @@
+{
+  "results": [
+    {
+      "Ngrid": 7,
+      "beta0_exact_first_order_logZ_lambda_derivative": -2088.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 2761,
+      "faces": 1330,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 1550,
+      "transverse_pairs_shared_vertex_four_families": 2785,
+      "vertices": 1432
+    },
+    {
+      "Ngrid": 10,
+      "beta0_exact_first_order_logZ_lambda_derivative": -4542.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 5877,
+      "faces": 2846,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 3042,
+      "transverse_pairs_shared_vertex_four_families": 6057,
+      "vertices": 3032
+    },
+    {
+      "Ngrid": 12,
+      "beta0_exact_first_order_logZ_lambda_derivative": -6577.5,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 8382,
+      "faces": 4089,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 4324,
+      "transverse_pairs_shared_vertex_four_families": 8770,
+      "vertices": 4294
+    },
+    {
+      "Ngrid": 15,
+      "beta0_exact_first_order_logZ_lambda_derivative": -10614.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 13397,
+      "faces": 6586,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 6980,
+      "transverse_pairs_shared_vertex_four_families": 14153,
+      "vertices": 6812
+    },
+    {
+      "Ngrid": 18,
+      "beta0_exact_first_order_logZ_lambda_derivative": -15501.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 19515,
+      "faces": 9604,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 9950,
+      "transverse_pairs_shared_vertex_four_families": 20669,
+      "vertices": 9912
+    },
+    {
+      "Ngrid": 20,
+      "beta0_exact_first_order_logZ_lambda_derivative": -19188.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 24015,
+      "faces": 11844,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 12207,
+      "transverse_pairs_shared_vertex_four_families": 25585,
+      "vertices": 12172
+    },
+    {
+      "Ngrid": 23,
+      "beta0_exact_first_order_logZ_lambda_derivative": -25730.25,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 31958,
+      "faces": 15787,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 16435,
+      "transverse_pairs_shared_vertex_four_families": 34307,
+      "vertices": 16182
+    },
+    {
+      "Ngrid": 25,
+      "beta0_exact_first_order_logZ_lambda_derivative": -30729.75,
+      "completed_source_face_SHA256_verified": true,
+      "edges": 38135,
+      "faces": 18880,
+      "population": "completed_window_core, not published source retained core",
+      "source_original_count": 19260,
+      "transverse_pairs_shared_vertex_four_families": 40973,
+      "vertices": 19256
+    }
+  ],
+  "scope": "separate full-window collar source control; no physical time or continuum proof"
+}
