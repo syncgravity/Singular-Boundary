@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.63-pf-i10-source-spectral",
-  "scope": "PF-I10 source eight-size scalar spectral reproduction: R(-1/2)0.833184687, zeta prime ratio0.646357740, four mass-relative determinant ratios source-matched; first3 exact dense eigenlists, last5 SLQ with stochastic SE and size25 Lanczos convergence. Exact missing-rhombus source tile-vs-basis PSD edge theorem and same-graph Fibonacci/uniform factorization; 18 private source tests pass. Original source private Library. All interacting Yang–Mills, physical temporal, continuum gap and gravitational UV proof gates OPEN.",
+  "version": "v2.64-pf-i11-wilson-factorization",
+  "scope": "PF-I11 intrinsic finite SU2 Wilson/Haar measure on source accepted Z5 rhombi: gauge invariance, 16 explicit free-face collapses, finite source boundary-dependent rank6/10/10 flat noncommuting holonomy sectors, exact Haar product partition and uncorrelated distinct single-rhombus trace observables. Source temporal/reflection/physical scale and nonfactorizing interacting 2+2 continuum gap remain OPEN, no physical cubic imposed.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I9 four-slice geometry and finite source graph identity PLUS PF-I10 exact 3-size/SLQ 5-size scalar spectroscopy now reproduce published source R(-1/2)=0.8332, zeta prime≈0.646 and four mass-relative determinant ratios. Original tile-cap missing-rhombus PSD effect and zero-mode-selection reversal proved. Still OPEN: rigorous large-n spectral envelopes, physical SU2 gauge action/reflection/time, interacting continuum Yang–Mills existence and positive gap.",
+      "summary": "Finite PF-I9 cut-project face/edge source, PF-I10 scalar spectra and PF-I11 source SU2 finite rhombus Wilson measure and collapse/Haar factorization are independently verified. PF-I11 shows plaquette-only finite model has independent distinct face traces, and original boundary-only classical flat loops absent in completed-window cores. Nontrivial two-sector coupling, temporal reflection, physical Hilbert space and uniform continuum gap remain OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4891,6 +4891,13 @@
           "path": "research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
           "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -8510,7 +8517,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "Now that PF-I9 source cut-project face/edge and PF-I10 finite scalar spectra are source-authenticated, the next distinct physical gate is defining gauge-invariant SU2 link and rhombus plaquette actions on the intrinsic accepted Z5 2+2+1 cut-project complex, addressing face-completion and boundary/phason choices; then establish a reflection-positive or other physically justified temporal construction and uniform interacting thermodynamic/continuum spectral gap without cubic spacetime assumptions.",
+      "summary": "PF-I11 FINITE SU2 milestone achieved: gauge-invariant Haar measure, complete free-face collapses all original/corrected source complexes, flat noncommuting Wilson sectors on original r>0 cores and exact product over all plaquette partition factors. But physical coupled 2+2 interaction, source-derived time/reflection positivity, nontrivial 4D continuum and physical mass gap remain OPEN. Next PF-I12.",
       "detail": "Source-reference dissertation unpublished. Scalar spectra do NOT define non-Abelian quantum Yang–Mills measure/physical Hilbert space or mass gap. Need explicit gauge field variables, Wilson loops, covariance, OS-compatible reflection or constructive alternative, volume/time scaling and uniform estimates; never infer all from R(-1/2).",
       "checks": [
         {
@@ -8533,6 +8540,13 @@
           "git_blob_sha": "8b7f8051cc1f8839a744635a55824c75276e5b0e",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I10_SOURCE_SPECTRAL_AND_CUTOFF_OPERATOR_CERTIFICATE_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -8540,6 +8554,258 @@
         "interacting-SU2",
         "gauge-invariance",
         "reflection-positivity",
+        "continuum-existence",
+        "mass-gap",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "title": "Intrinsic accepted Z5 rhombi support exact finite gauge-invariant SU2 Wilson/Haar measure",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "On original retained cut-project Z5 labels, assign SU2 holonomies to actual basis edges and independent triangular-window-confirmed rhombi, not arbitrary 4-cycle faces. For nonnegative kappa_f, S=sum kappa_f(1-halfTr U_f) is locally SU2-gauge invariant, and exp(-2sum kappa)<=Z<=1 with normalized Haar; exact finite analyticity does not establish interacting 4D QFT.",
+      "detail": "Source 8 original retained systems, separately complete-window controls; no cubic physical spacetime or arbitrary 3+1. Original unpublished source and private raw 7/20/25 snapshots in Library. Test one plaquette beta0.71: Haar Z=0.5232815078495338, mean trace0.17388540600159913.",
+      "checks": [
+        {
+          "label": "Derive a physically selected face coupling/volume from intrinsic two-sector construction, not an arbitrary beta",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "finite-SU2",
+        "gauge-invariance",
+        "Wilson-plaquette",
+        "Haar",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-EIGHT-SIZE-FREE-COLLAPSE-TO-GRAPH",
+      "title": "Exact eight original and eight completed-window cut-project complexes free-face collapse to graphs",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Source K2 rhombus faces free-face collapse to graphs, so H2=0 and pi1=free group rank E-F-V+c. Original source eight-size r=[0,0,0,0,0,6,10,10], completed-window separately selected cores all r=0 (grid23 11 components). Verified face-edge collapse sequence for all 16 finite complexes, no floating point homology assumption.",
+      "detail": "Source retained original labels never replaced by completed-window core labels. At Ngrid25 original V19260 E38139 F18874 c5 r10; completed core V19256 c1 r0. Some original cycles are therefore finite-selection artifacts; no infinite-hull topological sector theorem.",
+      "checks": [
+        {
+          "label": "Find source-justified exhaustion with stable boundary/collar topology and an appropriate physical gauge sector",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "finite-homotopy",
+        "free-collapse",
+        "topology",
+        "boundary-selection",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-FLAT-NONCOMMUTING-HOLONOMY-WITNESS",
+      "title": "Gauge-inequivalent non-Abelian classical flat sectors on original large source 2-complex",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Original source Ngrid20,23,25 have free pi1 ranks6,10,10; Ngrid20/25 explicitly constructed flat SU2 links with every rhombus U_f=identity, distinct noncommuting fundamental holonomies A=exp(k*0.71),B=exp(i*0.47), commutator half-trace0.825706155867 instead of1. Linearized non-gauge flat directions 3r=[18,30,30]. Completed-window cores r0.",
+      "detail": "This is a classical finite gauge-potential degeneracy, not a quantum gaplessness theorem. Physical kinetic transfer could lift/mix sectors; source-proved intrinsic time absent.",
+      "checks": [
+        {
+          "label": "Determine whether source-only loops survive an intrinsic infinite-volume/collar exhaustion or disappear as finite selection artifacts",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "flat-connections",
+        "noncommuting-SU2",
+        "finite-topology",
+        "not-quantum-gap",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "title": "Complete source rhombus Wilson plaquette-only measure factorizes exactly over faces",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Free-face collapse and left/right Haar invariance give Z_K=prod_f[e^-kappa_f 2 I1(kappa_f)/kappa_f] for all 8 source and 8 completed complexes; distinct single-rhombus trace observables independent (zero covariance). At uniform kappa=0.71, log Z/F=-0.6476357037985244 across all 16. 27 private regression tests pass. True non-Abelian finite Wilson action but no correlated distinct single-plaquette observables.",
+      "detail": "The proof integrates each face's free edge sequentially; residual cycle graph Haar links contribute1. Factorization applies to fixed couplings and plaquette-only action on collapsible complexes, not to unspecified cross-sector couplings, 4D Yang-Mills or a source-approved dynamics. A two-face independent seeded Haar Monte Carlo supports but does not replace exact theorem.",
+      "checks": [
+        {
+          "label": "Identify source-justified coupled-sector plaquette terms or additional intrinsic higher-dimensional cells breaking factorization while retaining gauge invariance",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "exact-partition",
+        "independent-plaquettes",
+        "finite-no-go-for-this-measure",
+        "nonabelian",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-REFLECTION-TIME-NOT-DERIVED",
+      "title": "Physical reflection/time is not fixed by static Z5 rhombi or literal D5 index permutations",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "Four-height Z5 finite rhombus source provides no source-selected temporal reflection, OS-positive path measure, or physical transfer generator. A restricted nine nonidentity literal D5 index-permutation scan finds one exact weighted face automorphism at source grid7/12 but none at25; this does not rule out translated/phason/emergent-time options.",
+      "detail": "No imposed cubic 3+1 and no invented four-dimensional measure. Need explicitly identify a genuine involution and reflection-positive functional or another constructive physical time concept appropriate to the intrinsic two sectors.",
+      "checks": [
+        {
+          "label": "Derive/refute source-intrinsic time and reflection preserving the infinite cut-project gauge action and suitable field algebra",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "temporal-structure",
+        "OS-reflection",
+        "physical-geometry",
+        "open-gate",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I11-AUXILIARY-TRANSFER-ONLY",
+      "title": "Conditional SU2 Casimir heat-transfer positivity does not establish a physical mass gap",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "If one externally adds gauge invariant SU2 electric Casimir C, a separate scale epsilon>0 and tau>0, T=exp(-tau S/2)exp(-tau epsilon C)exp(-tau S/2) is positive symmetric and finite transfer examples have positive gaps. Neither scale nor time interpretation is determined by source cut-project rhombi; gap can be scaled by chosen epsilon.",
+      "detail": "Mathematical operator positivity is generic conditional transfer construction, not proof of nontrivial 4D Yang-Mills existence, physical time, source-determined beta flow, or continuum positive mass gap.",
+      "checks": [
+        {
+          "label": "Replace auxiliary time/kinetic input with derived source physical evolution and test uniform interacting continuum estimates",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "finite-transfer",
+        "conditional-gap",
+        "not-physical-gap",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "title": "OPEN next: derive source-intrinsic 2+2 coupled interacting gauge dynamics beyond factorized plaquettes",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "PF-I11 exact finite Wilson measure collapses to independent single-face plaquette observables on original and completed cores. The next obligation is a mathematically source-justified coupling of two nontrivial Z5 sectors (or higher cells), preserving SU2 local gauge symmetry, specifying physical geometry/time and reflection positivity or a justified alternative, and proving nontrivial interacting infinite/continuum measure plus positive physical mass gap. No cubic spacetime prescription.",
+      "detail": "Scalar PF-I10 spectra and classical finite Wilson degeneracies cannot supply a dynamical interacting mass gap. Require explicit source derivation, no arbitrary coupling introduced solely to force success; test boundary/exhaustion, gauge-invariant Wilson-loop correlations, source-defined volume/scale and uniform bounds.",
+      "checks": [
+        {
+          "label": "Derive a definite two-sector gauge-invariant coupling/action from source physical postulates, not arbitrary nonlocal link terms",
+          "state": "open"
+        },
+        {
+          "label": "Prove source-intrinsic reflection positivity/dynamics or alternative physical Hilbert-space construction",
+          "state": "open"
+        },
+        {
+          "label": "Establish a nontrivial infinite-volume continuum Yang-Mills measure and gap uniform in intrinsic regulator",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I11 intrinsic source SU2 Wilson complex, collapse and exact finite Haar-factorization certificate",
+          "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "2plus2",
+        "coupled-sectors",
+        "interaction-beyond-factorization",
         "continuum-existence",
         "mass-gap",
         "2026-11-08"
@@ -12602,6 +12868,111 @@
       "kind": "does-not-imply",
       "label": "finite scalar mass-relative determinants are not one-loop gravity UV theorem",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "to_id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "kind": "geometric-input",
+      "label": "Only accepted actual rhombus faces define Wilson plaquettes",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "to_id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "kind": "source-geometry",
+      "label": "Recovered original source basis edge operator respected",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "to_id": "PF-I11-EIGHT-SIZE-FREE-COLLAPSE-TO-GRAPH",
+      "kind": "finite-topology",
+      "label": "Source gauge complex supports explicit cellular collapse certificates",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-EIGHT-SIZE-FREE-COLLAPSE-TO-GRAPH",
+      "to_id": "PF-I11-FLAT-NONCOMMUTING-HOLONOMY-WITNESS",
+      "kind": "constructive-witness",
+      "label": "Residual graph chords yield noncommuting flat source-only Wilson sectors",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-EIGHT-SIZE-FREE-COLLAPSE-TO-GRAPH",
+      "to_id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "kind": "enables-Haar-integration",
+      "label": "Each face has a free edge in collapse order; exact product partition",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+      "to_id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "kind": "exact-gauge-measure-evaluation",
+      "label": "Nonlinear finite action has independent face traces in this model",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I11-FLAT-NONCOMMUTING-HOLONOMY-WITNESS",
+      "to_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "kind": "selection-dependency",
+      "label": "Finite source-only flat moduli do not establish persistent physical sector",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "to_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "kind": "obstruction-to-inference",
+      "label": "No connected single-face trace correlation under this plaquette-only action",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-REFLECTION-TIME-NOT-DERIVED",
+      "to_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "kind": "dynamics-dependency",
+      "label": "Physical temporal/reflection structure not determined by finite 2-complex",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-AUXILIARY-TRANSFER-ONLY",
+      "to_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "kind": "does-not-imply",
+      "label": "Generic positive transfer with arbitrary Casimir scale is not physical mass gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "to_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "kind": "finite-part-resolved",
+      "label": "Finite gauge theory exists; nonfactorizing interaction/time/gap open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "Source continuum Yang-Mills and mass-gap proof remain open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "Physical Gauss-sector time/Hamiltonian not derived",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "to_id": "PF-I10-SOURCE-EIGHT-SIZE-SCALAR-SPECTRA",
+      "kind": "distinct-observable",
+      "label": "Finite nonlinear Wilson plaquette measure is not scalar spectral zeta",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "Finite SU2 rhombus Wilson theory does not prove gravity UV",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -12747,7 +13118,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
+      "next_gate": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -13003,6 +13374,54 @@
         "next_interacting_gate": "PF-I11-INTRINSIC-SU2-INTERACTING-GAP-GATE",
         "Yang_Mills_physical_gap_proved": false,
         "gravitational_UV_finiteness_proved": false
+      },
+      "pf_i11_intrinsic_su2": {
+        "status": "finite_source_gauge_measure_exact_nontrivial_continuum_open",
+        "report": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+        "gauge_measure_node": "PF-I11-SOURCE-INTRINSIC-FINITE-WILSON-MEASURE",
+        "collapses": "PF-I11-EIGHT-SIZE-FREE-COLLAPSE-TO-GRAPH",
+        "flat_holonomy": "PF-I11-FLAT-NONCOMMUTING-HOLONOMY-WITNESS",
+        "exact_plaquette_partition": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+        "reflection_open": "PF-I11-REFLECTION-TIME-NOT-DERIVED",
+        "auxiliary_nonphysical_transfer": "PF-I11-AUXILIARY-TRANSFER-ONLY",
+        "next_interacting_gate": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+        "original_source_Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "original_source_first_homology_free_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          10,
+          10
+        ],
+        "completed_core_first_homology_free_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "partition_per_face_log_uniform_kappa_0p71": -0.6476357037985244,
+        "exact_partition_formula": "Z=product_f exp(-kappa_f)*2*I1(kappa_f)/kappa_f for fixed nonnegative face couplings",
+        "private_library_archive": "/The Singular Boundary/Proof Audits/PF I11 Intrinsic SU2 Wilson and Finite Topology 2026-11-08/",
+        "private_source_test_pass_count": 27,
+        "public_tests_pass_count": 19,
+        "public_tests_source_skips": 8,
+        "physical_continuum_mass_gap_proved": false
       }
     },
     "orientation_selection": {
