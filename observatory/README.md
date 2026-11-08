@@ -1,4 +1,14 @@
-# Research Observatory v2.53-pf-i2-edge-identity — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.54-pf-i3 — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I3 · Exact Paper2 spectral trace test and one-loop interpretation (2026-11-07)
+
+**Exact finite scalar operator facts:** For \(L=D-W\) with symmetric zero-diagonal weighted adjacency and mass \(m^2>0\), \(\zeta_{L,m}(-1)=m^2+\operatorname{Tr}D/N\); \(\zeta_{L,m}(-2)=m^4+2m^2\operatorname{Tr}D/N+(\sum_v D_v^2+2\sum_e w_e^2)/N\); and full-mode \(\zeta(0)=1\). The formulas distinguish ordinary vertex degree from weighted edge strength without an eigensolver. Paper2's reported \(R(-1)=0.7371\), Penrose degree ~3.9 and triangular degree six are incompatible **under the combined assumptions** of unit-weight triangular edges and Paper1 \(m^2=10^{-4}\): those conventional Penrose D choices instead give \(R(-1)\lesssim0.6500\). The original Paper2 comparator strengths and mass are not authenticated; this is a *conditional normalization exclusion*, not a claim of flawed original data.
+
+New finite scalar controls on independently reconstructed 186/616-site P3 patches and equal-N triangular/square disks give weighted P3/triangular \(R(-1/2)=0.695/0.707\), while count-degree-minus-weighted-adjacency produces \(0.831/0.822\), but does not simultaneously match \(R(-1)\). Calibrating just one triangular conductance to source \(R(-1)=0.7371\) in the weighted P3 test predicts \(R(-1/2)\approx0.8357\) on both sizes, not the original experiment. This demonstrates source-model **non-identifiability from one spectral ratio** and the need to recover the actual D, mass, cutoff, hopping and comparator.
+
+Paper2 Eq.(21) states a one-loop \(\log\det\) and Eq.(22) invokes \(\zeta'(0)\), while the quoted 16.7% suppression is evaluated at \(\zeta(-1/2)\), a *different* spectral functional. A two-mode exact counterexample proves the percentage cannot be transferred without a separate physical theorem. Do not infer interacting gauge spectral gaps or gravitational UV finiteness from the finite scalar moment.
+
+[Full theorem/source audit](../research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md) · [Executable](../research/scripts/verify_pf_i3_spectral_moments.py) · [12 tests](../research/tests/test_pf_i3_spectral_moments.py) · [compact evidence](../research/evidence/PF_I3_SPECTRAL_MOMENT_SUMMARY_2026_11_07.json). Full machine evidence and byte-for-byte replay package in Library. **Observatory v2.54-pf-i3: 209 nodes, 507 edges, 754 historical theorem paths.** P0–P5, PF-G0–G5, OS and gravity gates remain OPEN; historical T5 transfer remains conditional. No new branch or public Pages deployment.
 
 ## PF-I2 · Recovered Paper 1 P3 pentagrid and four sum layers (2026-11-07)
 
