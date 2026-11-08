@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.60-pf-i7-supplemental",
-  "scope": "PF-I7 uploaded additional author-source scripts and figures: one exact duplicate of 9 previously registered predecessors, four distinct variants; direct source 2D Ngrid7/10/12 count and basis-edge checks replayed (already recorded PF-I6); new Z6 six-slab window 12 faces not triacontahedron30, and archived Z6 2999-mode truncation/zero-mode heat-trace issue. All 4D SU2/gravity gates remain OPEN.",
+  "version": "v2.61-unpublished-source-reference",
+  "scope": "Unpublished dissertation extracts are a private historical reference corpus, NOT the authoritative final proof. No source claim promoted. Earlier PF-I6/PF-I7 implementation audits and all P0–P5/PF-G0–G5 proof statuses unchanged.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -12183,6 +12183,23 @@
         "z6_heat_node": "PF-I7-Z6-HEAT-SPECTRAL-TRUNCATION",
         "library_archive": "/The Singular Boundary/Proof Audits/PF I7 Supplementary Source and 3D Window 2026-11-07/",
         "original_3d_gauge_mass_gap_proved": false
+      },
+      "unpublished_reference_corpus": {
+        "status": "reference_only",
+        "publication_status": "unpublished",
+        "synthesis_draft_date": "2026-03-08",
+        "synthesis_native_pdf_sha256": "138cee2b22cbd68e23767c5db9b9fcc27c040ca13bc1b5deb96c9ba99ae0868a",
+        "source_tar_sha256": "c405acd6daa5a0a923429ab659b122b22231787d7a30e97db7f2974f278354d1",
+        "source_pdf_count": 8,
+        "synthesis_pdf_pages": 23,
+        "indexed_source_claims": 24,
+        "open_questions_in_source": 11,
+        "independent_proof_certification_from_extraction": false,
+        "archive_location": "Library / The Singular Boundary / Reference Corpus / Unpublished Dissertation — March 2026",
+        "raw_verbatim_extraction_committed_to_git": false,
+        "source_assignment_rule": "content, hash, actual mathematical implementation; not draft filename number",
+        "research_policy": "Keep historical draft claims separate from verified mathematics, executable evidence, and ongoing proof obligations.",
+        "next_source_ingest": "hash register additional user-supplied files and map to existing claims/hypotheses"
       }
     },
     "orientation_selection": {
