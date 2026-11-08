@@ -1,4 +1,10 @@
-# Research Observatory v2.50-pf-i0 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.51-pf-i1 — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I1 exact source-topology correction: dense internal projection is NOT a T² quotient (2026-11-07)
+
+Paper 2 §3 Eq.(9) explicitly identifies \(\mathbb R^2_\perp/\pi_\perp(\mathbb Z^5)\cong T^2\). Under its own Fourier definitions, \(z_2(\mathbb Z^5)=\mathbb Z[\zeta_5]\) contains \(\mathbb Z[\varphi]+\zeta^2\mathbb Z[\varphi]\), **dense** in \(\mathbb C\); the literal quotient has indiscrete topology, and a strict fixed-sum slice still projects densely. The **joint** Fourier image \(\Lambda_F\subset\mathbb C^2\) is instead a discrete rank-four lattice: exact Gram determinant 125/16, covolume 5√5/4, and \(\mathbb C^2/\Lambda_F\cong T^4\) as an *ambient real* torus. This does not automatically identify the Penrose tiling hull, phason probability space, physical geometry, or Wick-rotation dynamics.
+
+The 20-configuration sampling interpretation, original Paper2 coupled graph generator/hopping, and its reported ζ-ratio are **NOT** authenticated by this topology theorem; the original bundle contains PDFs only, while Stage7/26 generators are different 2+1D Monte Carlo experiments. [Proof and source limitations](../research/geometry/PF_I1_DENSE_INTERNAL_PROJECTION_AND_TORUS_CORRECTION_2026_11_07.md) · [6,425-check exact arithmetic verifier](../research/scripts/verify_pf_i1_internal_topology.py) · [evidence](../research/evidence/PF_I1_INTERNAL_TOPOLOGY_EVIDENCE_2026_11_07.json). **Observatory v2.51-pf-i1: 200 nodes, 485 typed edges; 754 historical theorem source paths unchanged.** All P0–P5/PF-G0–G5 continuum gates remain OPEN. The older T5 transfer item remains conditional, not closed; no page deployment or branch creation.
 
 ## New primary PF-I0 source-identity test: quotient cycles versus P3 rhombus edges (2026-11-07)
 
