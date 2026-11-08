@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.64-pf-i11-wilson-factorization",
-  "scope": "PF-I11 intrinsic finite SU2 Wilson/Haar measure on source accepted Z5 rhombi: gauge invariance, 16 explicit free-face collapses, finite source boundary-dependent rank6/10/10 flat noncommuting holonomy sectors, exact Haar product partition and uncorrelated distinct single-rhombus trace observables. Source temporal/reflection/physical scale and nonfactorizing interacting 2+2 continuum gap remain OPEN, no physical cubic imposed.",
+  "version": "v2.65-pf-i12-transverse-coupling",
+  "scope": "PF-I12 intrinsic C5 2+2 four-form, eight-size transverse source/corrected rhombus pair support; finite conditional non-Abelian SU2 commutator action with exact nonfactorizing covariance derivative -1/192 at Haar, conditional pair-exchange reflection positivity obstruction; separate positive SU2 heat-kernel two-face gluing with auxiliary t; four equivariant J choices/no real invariant time axis. All physical source uniqueness, four-volume, global OS and continuum gap gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Finite PF-I9 cut-project face/edge source, PF-I10 scalar spectra and PF-I11 source SU2 finite rhombus Wilson measure and collapse/Haar factorization are independently verified. PF-I11 shows plaquette-only finite model has independent distinct face traces, and original boundary-only classical flat loops absent in completed-window cores. Nontrivial two-sector coupling, temporal reflection, physical Hilbert space and uniform continuum gap remain OPEN.",
+      "summary": "Finite source PFI9/10/11 milestones remain valid. PF-I12 adds intrinsic 2+2 fourform and exact conditional gauge-invariant cross-plaquette correlations on source Z5 rhombi, but no source-derived unique interaction, C5-selected real time, global OS-positive 4D gauge measure, continuum physical gap. PF-I12 commutator kernel fails a natural exchange-reflection; conditional pair heat kernel is positive but auxiliary. PF-G0 OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4898,6 +4898,13 @@
           "path": "research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
           "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
           "review_only": true
         }
       ],
@@ -8776,7 +8783,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I11 exact finite Wilson measure collapses to independent single-face plaquette observables on original and completed cores. The next obligation is a mathematically source-justified coupling of two nontrivial Z5 sectors (or higher cells), preserving SU2 local gauge symmetry, specifying physical geometry/time and reflection positivity or a justified alternative, and proving nontrivial interacting infinite/continuum measure plus positive physical mass gap. No cubic spacetime prescription.",
+      "summary": "PF-I12 finite mathematics PARTIAL: C5 2+2 four-form and eight-size source transverse pair support established, conditional non-Abelian commutator coupling gives exact negative connected derivative -1/192 at Haar, but fails a natural pair-swap reflection test; a heat-kernel positive pair exchange exists only with auxiliary t. Four equivariant J choices and no C5-invariant real time axis. Unique source-derived action, global OS/time, physical volume, nontrivial continuum and gap OPEN; PF-I13 next.",
       "detail": "Scalar PF-I10 spectra and classical finite Wilson degeneracies cannot supply a dynamical interacting mass gap. Require explicit source derivation, no arbitrary coupling introduced solely to force success; test boundary/exhaustion, gauge-invariant Wilson-loop correlations, source-defined volume/scale and uniform bounds.",
       "checks": [
         {
@@ -8799,6 +8806,13 @@
           "git_blob_sha": "4be63add32b9a6f5b20ac0dd04be7d5b9eff0a77",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I11_INTRINSIC_SU2_WILSON_COMPLEX_AND_TOPOLOGICAL_OBSTRUCTION_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
         }
       ],
       "tags": [
@@ -8809,6 +8823,288 @@
         "continuum-existence",
         "mass-gap",
         "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-C5-INTRINSIC-FOURFORM",
+      "title": "Exact Z5 2+2 four-volume minors independent of four chosen directions",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "Intrinsic 4x5 projection V4 with C5 frequency1/2 planes obeys V4 V4^T=(5/2)I4, kernel1_5; any four distinct columns have abs determinant5sqrt5/4. This is a C5-compatible algebraic four-form on Eparallel+Eperp, not a derived physical four-volume or a 4D cell complex. Full four-direction coordinate unit cubes cannot have all16 accepted vertices with source height1..4.",
+      "detail": "Direct Fourier/cofactor proof; 26 source/private test suite; 8 original source and 8 independently completed controls. All accepted source faces remain genuine rhombi in a finite 2-complex.",
+      "checks": [
+        {
+          "label": "Derive an actual physical four-dimensional measure/cell gluing or determine whether such a measure is absent under the source field postulates",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "C5",
+        "intrinsic-2plus2",
+        "finite-fourform",
+        "not-physical-volume",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+      "title": "Eight original and eight completed Z5 rhombus cores admit intrinsic transverse vertex-sharing pairs",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For rhombus pairs sharing one source vertex and four distinct edge-family indices, original Ngrid7,10,12,15,18,20,23,25 counts [3093,6157,8890,14559,20749,25590,34897,40853]. Independent full-window cores [2785,6057,8770,14153,20669,25585,34307,40973]. All 8 source fingerprints matched PF-I11 original faces and labels, all 8 completed matched PF-I11 separate window-core fingerprints.",
+      "detail": "Pairwise determinant magnitude always5sqrt5/4 and each pair has unique base vertex; original and completed populations not conflated. Pair support alone is not a dynamical two-sector interaction.",
+      "checks": [
+        {
+          "label": "Prove phason-uniform and exhaustion-stable density of transverse pairs with exact source acceptance windows",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-finite-geometry",
+        "cut-project",
+        "transverse-pairs",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+      "title": "Conditional gauge-invariant SU2 transverse two-face commutator action",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "NEW candidate (not unpublished source action): S=beta sum_f(1-halfTr U_f)+lambda sum_(f,g,v in transverse) (1-halfTr[U_f^v,U_g^v]), beta/lambda>=0. Shared-vertex based plaquettes transform by common SU2 conjugation; Q commutator penalty in[0,2], so Haar partition positive bounded. On source Ngrid7 random gauge transformations leave action invariant; noncommuting links cost positive action. Coupling strength not derived.",
+      "detail": "This action senses genuine non-Abelian commutators but does not introduce independent physical sector fields or source-approved four-volume/time; source original graph selection and rhombus basepoints are preserved.",
+      "checks": [
+        {
+          "label": "Derive, uniquely select, or reject the actual inter-sector gauge coupling from original field/source postulates",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "conditional-model",
+        "nonabelian",
+        "SU2-gauge-invariance",
+        "not-physical-action",
+        "2026-11-08"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-EXACT-CONNECTED-PAIR-COVARIANCE",
+      "title": "Exact source-supported conditional SU2 nonfactorization derivative -1/192 at Haar",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For a selected pair, Q=1-halfTr[A,B]=2(1-X²)(1-Y²)(1-c²), c uniform[-1,1] under independent Haar faces. At lambda0 derivative Cov_lambda(X_f²,X_g²)=-(4/3) Var_beta_f(X²)Var_beta_g(Y²)<0 for any finite baseline beta. At beta0 Var(X²)=1/16, so exact derivative=-1/192. Two-face quadrature gives Cov=-0.00224688093 at beta0/lambda.4; at beta.71/lambda.4, -0.00248551395.",
+      "detail": "PF-I11 free-face collapse makes all face holonomies independently Haar at baseline; other pair terms cancel at first order for a fixed chosen pair. Baseline beta0 first logZ lambda derivative on original finite K equals -(3/4)*number of transverse pairs. Exact conditional finite interaction, not interacting physical continuum theorem.",
+      "checks": [
+        {
+          "label": "Investigate nontrivial gauge-invariant continuum correlations after a source-derived global field action and physical volume scaling",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "exact-covariance",
+        "nonfactorization",
+        "finite-su2",
+        "conditional-action"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-NAIVE-EXCHANGE-REFLECTION-OBSTRUCTION",
+      "title": "Chosen commutator gluing fails the two-face exchange-reflection positivity test",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P1",
+      "summary": "For hypothetical exchange reflection A<->B and test F(A)=X(A)^2-E_beta(X²), quadratic form integral F(A)F(B)exp[-lambda Q(A,B)] dmu_beta(A)dmu_beta(B) has at lambda0 derivative -(4/3)Var_beta(X²)^2<0 (at beta0 -1/192); hence not positive for sufficiently small positive lambda. At beta0/lambda.4 actual negative unnormalized test -0.00126335243. No general no-go for all reflections or Z5 physical time.",
+      "detail": "This obstructs only the stated pair-exchange reflection for the conditional commutator candidate; full aperiodic OS construction and physical involution not supplied by source.",
+      "checks": [
+        {
+          "label": "Identify a source-selected global involution or alternate reflection-compatible interaction overcoming this conditional counterexample",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "conditional-OS-obstruction",
+        "reflection-positivity",
+        "nonabelian"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-HEAT-KERNEL-CONDITIONAL-POSITIVE-GLUING",
+      "title": "Exact conditional SU2 heat-kernel pair exchange is positive and correlating",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P1",
+      "summary": "Standard SU2 Peter-Weyl heat kernel K_t(AB^-1)=sum_j (2j+1)exp[-t j(j+1)]chi_j(AB^-1), t>0, is a positive-definite two-face exchange kernel, gauge-invariant under common basepoint conjugation, with exact Haar normalized correlator E[halfTr A halfTr B]=exp(-3t/4)/4>0. Test t=.85 gives0.1321530761, positive 16-sample Gram minimum0.0816831. t and exchange reflection externally selected; full source OS positivity NOT proven.",
+      "detail": "This constructive conditional positive pair gluing contrasts with chosen commutator kernel's reflection failure. Positivity of individual pair kernels does not establish a global reflection-positive aperiodic action.",
+      "checks": [
+        {
+          "label": "Derive the heat/gluing parameter and global reflection from source two-sector geometry, or show no compatible exhaustion exists",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Peter-Weyl",
+        "conditional-positivity",
+        "SU2-heat-kernel",
+        "not-source-time"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I12-C5-J-NONUNIQUE-NO-TIME",
+      "title": "C5 equivariance alone permits four complex structures and no invariant real time axis",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "E_parallel and E_perp are inequivalent real 2D C5 modules, End_C5(E1+E2)=C+C; real equivariant J satisfying J²=-1 has four choices (+/-Jparallel)+(+/-Jperp). Source (+,+) choice is a valid complex structure but not uniquely forced by bare C5 decomposition. Generator rotates Eperp by144°, with no invariant real line, hence no C5-canonical real time axis or proven Wick/OS reflection from J alone.",
+      "detail": "Does not deny a time axis could arise through additional physical data, symmetry breaking, phason flow, or another constructive mechanism. Explicit mathematical qualification of unpublished draft's claim 'J follows uniquely'.",
+      "checks": [
+        {
+          "label": "Supply source physical postulate or construction selecting complex orientation, real time/OS reflection, and physical Hilbert-space energy",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "C5-commutant",
+        "J-operator",
+        "Wick-time-not-proven",
+        "exact-representation-theorem"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "title": "OPEN next: intrinsic global reflection/physical temporal dynamics and source-derived coupling",
+      "kind": "work",
+      "status": "open",
+      "stage": "P1",
+      "summary": "PF-I12 demonstrates local transverse 4-form pair support and a conditional nonfactorizing SU2 action, but commutator action fails a naive swap reflection and a positive heat-kernel gluing requires auxiliary t. The C5 2+2 decomposition alone admits four J signs and does not select physical time or four-volume. Next must derive a unique physical source interaction and full reflection-positive or alternative constructive dynamics, plus nontrivial continuum measure and uniform gap, without cubic spacetime.",
+      "detail": "Do not promote a conditional pair kernel to OS positivity of the entire cut-project model. Need explicitly identify how two nontrivial sectors become dynamical fields rather than projections of the same edges, fix volume/scale, phason/boundary exhaustion, gauge constraints, and then prove physical continuum existence/mass gap.",
+      "checks": [
+        {
+          "label": "Source-derive or falsify an actual physical inter-sector interaction and geometry measure respecting original cut-and-project data",
+          "state": "open"
+        },
+        {
+          "label": "Construct a global source-compatible reflection/positive Hilbert-space time or alternative dynamics, not auxiliary pair exchange",
+          "state": "open"
+        },
+        {
+          "label": "Prove a nontrivial gauge-invariant interacting continuum measure and a strictly positive source-defined physical mass gap",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I12 intrinsic transverse rhombus coupling and conditional reflection audit",
+          "path": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "git_blob_sha": "6a4571d28a2d2ebf3c98653096fc0d1914716e3d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "next-proof-objective",
+        "intrinsic-2plus2",
+        "temporal-structure",
+        "global-OS",
+        "continuum-gap"
       ],
       "importance": 5,
       "core": true,
@@ -12973,6 +13269,111 @@
       "kind": "does-not-imply",
       "label": "Finite SU2 rhombus Wilson theory does not prove gravity UV",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I11-EXACT-PLAQUETTE-HAAR-FACTORIZATION",
+      "to_id": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+      "kind": "minimal-counterexample",
+      "label": "face-local factorization can be broken by shared-vertex transverse pair interaction",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I12-C5-INTRINSIC-FOURFORM",
+      "to_id": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+      "kind": "geometric-support",
+      "label": "four distinct basis families give constant nonzero four-form determinant",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+      "to_id": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+      "kind": "finite-pair-support",
+      "label": "source-approved rhombus bases only; interaction function optional",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+      "to_id": "PF-I12-EXACT-CONNECTED-PAIR-COVARIANCE",
+      "kind": "analytic-finite-theorem",
+      "label": "derivative -4/3 VarX² VarY²; at Haar -1/192",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+      "to_id": "PF-I12-NAIVE-EXCHANGE-REFLECTION-OBSTRUCTION",
+      "kind": "conditional-obstruction",
+      "label": "same commutator choice violates pair-exchange kernel positivity",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I12-NAIVE-EXCHANGE-REFLECTION-OBSTRUCTION",
+      "to_id": "PF-I12-HEAT-KERNEL-CONDITIONAL-POSITIVE-GLUING",
+      "kind": "not-general-no-go",
+      "label": "heat convolution has positive character coefficients; auxiliary only",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I12-C5-J-NONUNIQUE-NO-TIME",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "unresolved-time-choice",
+      "label": "no invariant real temporal axis in Eperp from C5 alone",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-HEAT-KERNEL-CONDITIONAL-POSITIVE-GLUING",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "requires-global-reflection",
+      "label": "positive pair kernel not global time or OS on tiling",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-NAIVE-EXCHANGE-REFLECTION-OBSTRUCTION",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "blocks-naive-kernel",
+      "label": "physical reflection/gluing must pass actual positive form test",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-C5-INTRINSIC-FOURFORM",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "volume-dependency",
+      "label": "algebraic four-form not physical local 4volume or 4cells",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-EXACT-CONNECTED-PAIR-COVARIANCE",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "necessary-not-sufficient",
+      "label": "finite coupled correlation not continuum spectral gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "to_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "kind": "finite-conditional-milestone",
+      "label": "finite coupling possible, source physical derivation not complete",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "physical interacting continuum source and mass gap still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "to_id": "P1",
+      "kind": "blocks",
+      "label": "physical time/positive Gauss-sector Hamiltonian still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "no gravitational UV theorem from finite conditional SU2 correlations",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -13118,7 +13519,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I12-INTRINSIC-TWO-SECTOR-COUPLING-GATE",
+      "next_gate": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -13422,6 +13823,58 @@
         "public_tests_pass_count": 19,
         "public_tests_source_skips": 8,
         "physical_continuum_mass_gap_proved": false
+      },
+      "pf_i12_intrinsic_two_sector_audit": {
+        "status": "finite_conditional_coupling_plus_reflection_obstruction_source_physical_time_open",
+        "report": "research/geometry/PF_I12_INTRINSIC_TRANSVERSE_SU2_COUPLING_AND_REFLECTION_AUDIT_2026_11_08.md",
+        "source_fourform_node": "PF-I12-C5-INTRINSIC-FOURFORM",
+        "source_transverse_pairs_node": "PF-I12-EIGHT-SIZE-TRANSVERSE-PAIR-SUPPORT",
+        "conditional_su2_action": "PF-I12-CANDIDATE-SU2-COMMUTATOR-COUPLING",
+        "connected_covariance": "PF-I12-EXACT-CONNECTED-PAIR-COVARIANCE",
+        "naive_reflection_obstruction": "PF-I12-NAIVE-EXCHANGE-REFLECTION-OBSTRUCTION",
+        "positive_conditional_heat_gluing": "PF-I12-HEAT-KERNEL-CONDITIONAL-POSITIVE-GLUING",
+        "complex_structure_time_gate": "PF-I12-C5-J-NONUNIQUE-NO-TIME",
+        "next_global_physical_gate": "PF-I13-GLOBAL-TWO-SECTOR-TIME-GLUING-AND-GAP",
+        "source_Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "original_pair_counts": [
+          3093,
+          6157,
+          8890,
+          14559,
+          20749,
+          25590,
+          34897,
+          40853
+        ],
+        "completed_window_pair_counts": [
+          2785,
+          6057,
+          8770,
+          14153,
+          20669,
+          25585,
+          34307,
+          40973
+        ],
+        "exact_family_4volume": "5*sqrt(5)/4",
+        "naive_pair_exchange_commutator_covariance_derivative_Haar": -0.005208333333333333,
+        "candidate_interaction_unique_source_derived": false,
+        "source_physical_time_or_global_reflection_derived": false,
+        "global_OS_positive_interacting_measure_proved": false,
+        "private_library_archive": "/The Singular Boundary/Proof Audits/PF I12 Intrinsic Two Sector Coupling 2026-11-08",
+        "private_source_tests_passed": 26,
+        "public_no_source_tests_passed": 19,
+        "public_expected_private_source_skips": 7,
+        "physical_Yang_Mills_mass_gap_proved": false
       }
     },
     "orientation_selection": {
