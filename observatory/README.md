@@ -1,4 +1,12 @@
-# Research Observatory v2.56-pf-i4 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.58-pf-i6-predecessor-sources — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I6 original predecessor scripts recovered; exact source-offset direct cut/project bridge (2026-11-07)
+
+Eight predecessor manuscripts, a Paper 5 appendix, **nine Python computation scripts**, two Markdown results and a JSON handoff are now hash-authenticated in user-supplied Archive(1).zip, Library / The Singular Boundary / Source / Predecessor Eight Papers 2026-11-07. Earlier PF-I5 statements that original predecessor scripts are missing are superseded; merged final-source version identity remains OPEN. Early Paper 2 source uses Robinson triangles/Delaunay, then corrected code uses pentagrid five-integer labels; Paper 3/6 inherit these labels. The new independent direct **four-window acceptance** test with the author's actual gamma (sum zero) exactly matches central P3 vertex/edge graphs at radii 3,5,7,9: (36,55), (96,175), (186,345), (296,555). This verifies local cut/project compatibility without asserting global finite-crop equivalence.
+
+On identical source labels, tile adjacency E_tile is a subset of all accepted basis adjacency E_basis and L_basis-L_tile is an exact positive sum of omitted weighted edge Dirichlet forms. At Ng7 N1550 they coincide (3017 edges); at Ng10 N3042 they differ 5865 vs 5927 edges and at Ng12 N4324 8383 vs 8468. All 62 and 85 missing source tile links reappear under Ng+2 grid expansion. Tile-graph components 1/51/46 vs one for basis graph. This finite-crop defect affects source eigenvalue filtering and cannot be promoted to an independent two-plane interacting quantum mechanism. The recovered draft code uses D=sum W (weighted strength), 35% one-pass incident-tile selection, positive-mode threshold lambda>1e-10 and triangular comparator size floor(sqrt(N_int)) squared, not exact N matching. Large eight-size eigenspectra and merged-final operator remain unverified.
+
+[Full mathematical PF-I6 source audit](../research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md) · [archive-driven verifier](../research/scripts/verify_pf_i6_predecessor_scripts.py) · [all original source hashes and reproducibility evidence](../research/evidence/PF_I6_PREDECESSOR_SOURCE_EVIDENCE_2026_11_07.json). **Observatory v2.58-pf-i6-predecessor-sources: 223 nodes, 542 relationships, 754 indexed historical theorem paths.** P0–P5/PF-G0–G5 and gravitational gates OPEN; historical T5 conditional. Original predecessor bundle preserved solely in Library, no new branch or Pages deployment.
 
 ## PF-I4 source graph and mode certification · exact conditional exclusions (2026-11-07)
 
