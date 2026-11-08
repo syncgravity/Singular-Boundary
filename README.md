@@ -4,6 +4,10 @@
 
 > **Scientific status (November 5, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
+## Current PF-I0 checkpoint · coupled-Z5 source/operator identity (2026-11-07)
+
+The [conditional quotient odd-cycle theorem](research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md) distinguishes three incompatible literal readings of the source's fixed-sum and nearest-basis-edge rules: an edgeless fixed-sum slice, the full Z5 graph with projected diagonal duplicates, and a diagonal quotient with genuine five-edge cycles. A planar Penrose P3 rhombus-edge graph is bipartite, so an accepted quotient graph with pentagonal cycles is **not automatically the same graph**. The conditional quotient test is verified by [reproducible code](research/scripts/verify_pf_i0_quotient_cycles.py) and [finite evidence](research/evidence/PF_I0_QUOTIENT_ODD_CYCLE_EVIDENCE_2026_11_07.json), but the original coupled generator, phason, Fibonacci edge weights, P3 operator relationship, and continuum physics all remain **OPEN**. See [Observatory v2.50 PF-I0](observatory/README.md); original cubic results are scoped controls, not required geometry for the intrinsic source audit.
+
 ## Research identity — Penrose hypothesis, periodic controls, two open goals
 
 **Original dissertation hypothesis (primary):** Fibonacci / Penrose P3 spectral geometry and the coupled-ℤ⁵ hidden-domain proposal, investigated for possible consequences for ultraviolet gravitational quantities and quantum dynamics. **Experimental control:** the 2D square spatial lattice, area-matched in the archived Stage 7/26 **2+1D SU(2)** Monte Carlo campaign. **Later 3D control/reference:** cubic lattice, whose rigorous geometric refinement and finite SU(2) operator results do NOT replace or certify the coupled-ℤ⁵ physical model.
