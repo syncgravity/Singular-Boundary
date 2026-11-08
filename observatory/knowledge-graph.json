@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.51-pf-i1",
-  "scope": "PF-I1 source topology correction: dense internal projection invalidates Paper2 displayed T2 quotient; exact joint T4 ambient lattice, not a certified tiling hull; original generator, phason measure, coupled gauge dynamics and all mass-gap/gravity continuum gates remain OPEN. Original cubic SU2 remains separate control.",
+  "version": "v2.52-pf-i2",
+  "scope": "PF-I2 authentic Paper1 pentagrid graph and level-dependent Fibonacci hopping recovered from published equations; four original-index sum layers prove P3 graph bipartite, superseding naive quotient identification. Paper2 extra coupled bonds, D−W diagonal/m² and original Ngrid selection remain OPEN. All YM/grav continuum gates OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Priority: authenticate the source's contradictory-looking fixed-integer-sum and original-Z5 basis-neighbour descriptions, phason/window and actual original generator. The diagonal Z5 quotient is a candidate, not proved to be the implementation.",
+      "summary": "Source Paper1 P3 pentagrid equations, 4 original sum layers, and Fibonacci level hopping now reconstructed (PF-I2), but source Paper2's additional coupled Z5 bonds, D−W diagonal/mass, original Ngrid vertex selection, phason windows and full numerical generator remain unverified.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4842,6 +4842,13 @@
           "title": "Source-authenticated PDF audit: dissertation 34:55 double spiral and fixed-sum/basis-step incompatibility",
           "path": "research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/research/2026-11-07-z5-quotient-double-spiral-source-fidelity/research/geometry/PF_G0_QUOTIENT_DOUBLE_SPIRAL_SOURCE_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -6841,7 +6848,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Any accepted quotient graph with a five-cycle is non-bipartite, whereas a planar rhombus-edge tiling graph is bipartite. Recover authentic source generator, phason, weights, accepted edge list and cycle spectrum before claiming these are one operator.",
+      "summary": "Paper1 source P3 graph identity is now clarified by exact 4-sum-layer ceiling theorem (PF-I2): no quotient pentagonal cycles on genuine rhombus-edge graph. Remains OPEN for Paper2's possible *augmented* coupled Z5 operator and original zeta numerical generator.",
       "detail": "Source-defined coupling could involve an augmented graph; distinguish literal fixed-sum (no one-step edges), full Z5 (diagonal projection duplicates), and quotient (odd cycles). Test Fibonacci hopping C5 covariance with the real implementation. Do not impose a three-dimensional spatial regulator at intrinsic source-audit stage.",
       "checks": [
         {
@@ -6863,6 +6870,13 @@
           "path": "research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
           "git_blob_sha": "d2d7a93ddd6c197fed511dfc6c21c30e1c23fb3a",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I0_INTRINSIC_QUOTIENT_CYCLE_SOURCE_INTERFACE_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -6949,6 +6963,152 @@
         "source-identity",
         "phason",
         "configuration",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "title": "Paper 1 published P3 pentagrid edges and Fibonacci level hopping reconstructed",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Paper 1 §§6.1–7.1 gives exact gamma_j offsets, K_j(r)=ceil(r·e_j−gamma_j), original-basis edge adjacency, rhombus corners, and t(j,k) depending on Fibonacci floor(k/phi). Independent source-equation implementation builds 186-vertex/345-edge/160-face patch and 616-vertex/1185-edge/570-face patch. This does NOT recover original Paper 2 coupled graph or reported spectral-zeta ratio.",
+      "detail": "Published mathematical definitions are source-authenticated, executable is independently reconstructed (not original archived code). 3,037 and 10,120 finite checks including 150 random SU2 Wilson gauge tests per sample. Grid center cutoffs are new test parameters; not original Ngrid procedure.",
+      "checks": [
+        {
+          "label": "Recover original numerical code and Ngrid/window/normalization choices underlying source Paper2 coupled Z5 zeta",
+          "state": "open",
+          "note": "Paper1 P3 reconstructed from printed formulas; coupled operator remains unidentified."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "P3",
+        "pentagrid",
+        "source-equations",
+        "Fibonacci-hopping",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I2-FOUR-SUM-LAYERS",
+      "title": "Exact pentagrid four sum layers and parity forbid quotient-generated odd cycles",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "With sum gamma_j=0 and generic five-grid cells, original Z5 integer labels have S(K) in {1,2,3,4}; rhombus lower corners have S in {1,2}. z1 is injective on these labels and every original-basis edge flips parity, so genuine P3 graph has no odd cycle. PF-I0 quotient five-cycles arise from different adjacency/identification, not from the source P3 graph.",
+      "detail": "All-order exact combinatorial theorem from published Paper1 equations. Does not assert whether Paper2 coupled operator explicitly augments P3 edges.",
+      "checks": [
+        {
+          "label": "Independent review of ceiling-sum proof and compatibility with original numerical graph conventions",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "mathematical-theorem",
+        "source-fidelity",
+        "graph-parity",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I2-DEGREE-NORMALIZATION",
+      "title": "Open L=D−W normalization ambiguity: weighted strength versus ordinary degree",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Paper1 says D is degree matrix and W is weighted adjacency without defining D. On same 186-site P3 patch L_weighted has exact zero mode and first positive scalar eigenvalue .03834; D_unweighted−W has bottom eigenvalue .49931, with different heat and zeta. Must recover source diagonal before zeta replication.",
+      "detail": "The two interpretations are inequivalent operators; neither tiny-graph scalar eigenvalue implies YM gap. Both source variants are calculated and saved in evidence. Reconstruct exact source published operator and its mass parameter m before claims of matching Paper2 ratio.",
+      "checks": [
+        {
+          "label": "Recover original source code or source statement defining D and mass m² for numerical zeta",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "spectral-normalization",
+        "operator-identity",
+        "proof-obligation",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "title": "Open Paper 2 coupled extra-bond dictionary and P3-to-Z5 operator comparison",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Paper2 §8.2 says all original-Z5 nearest neighbours plus cross-direction bonds; Paper1 reconstructs P3 rhombus edges only. Need explicit accepted original-index edge lists for coupling, weights on additional edges, phason and boundary/physical comparators, and identical scalar spectral observable before claiming coupled model fidelity.",
+      "detail": "The P3 four-layer theorem settles the source P3 graph ambiguity but does not certify Paper2 augmentation or zeta suppression. Original standalone scripts absent from dissertation tar; Stage7/26 model-set SU2 Monte Carlo is different experiment.",
+      "checks": [
+        {
+          "label": "Resolve all supplementary coupled bonds relative to source P3 (endpoints and weight rule)",
+          "state": "open"
+        },
+        {
+          "label": "Resolve finite Ngrid=25→Nint19260 vertex construction, Laplacian D and m²",
+          "state": "open"
+        },
+        {
+          "label": "Produce matched source-derived spectral zeta reference with uncertainty from missing choices",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
+          "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "git_blob_sha": "14748de29e0304ccab5703b673e7c37905f3f688",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "coupled-Z5",
+        "adjacency",
+        "missing-generator",
         "2026-11-07"
       ],
       "importance": 5,
@@ -10351,6 +10511,69 @@
       "kind": "necessary-source-interface",
       "label": "configuration probability measure must be defined for gravitational averaging claims",
       "status": "open"
+    },
+    {
+      "from_id": "M-Z5",
+      "to_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "kind": "source-specified",
+      "label": "paper1 pentagrid projection and local Fibonacci hopping",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I2-FOUR-SUM-LAYERS",
+      "kind": "proves",
+      "label": "ceiling-sum rule forces 4 original sum layers",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I2-FOUR-SUM-LAYERS",
+      "to_id": "PF-I0-QUOTIENT-ODD-CYCLE",
+      "kind": "does-not-imply",
+      "label": "P3 graph parity excludes quotient toy pentagonal cycles",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I2-DEGREE-NORMALIZATION",
+      "kind": "requires-clarification",
+      "label": "published L=D−W diagonal not explicit",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "kind": "necessary-not-sufficient",
+      "label": "P3 authentic edges known, coupled extra bonds not specified",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-FOUR-SUM-LAYERS",
+      "to_id": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "kind": "source-resolution",
+      "label": "resolves P3 vertex-sheet ambiguity but not Paper2 augmented operator",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "coupled source operator cannot be certified without extra-edge dictionary",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-DEGREE-NORMALIZATION",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "scalar spectral operator diagonal must be disambiguated",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
+      "to_id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "kind": "requires-matching",
+      "label": "Paper2 selection and phason must map to one accepted graph",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10491,12 +10714,12 @@
     "source_identity": {
       "status": "open",
       "double_spiral_source": "dissertation Introduction and Chapter 2 §2.2 (34:55 phyllotaxis)",
-      "original_generator": "unrecovered",
+      "original_generator": "Paper1 equations reconstructed; Paper2 coupled graph numerical generator remains unrecovered",
       "strict_slice_basis_step": "incompatible under literal integer slice",
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-Z5-SOURCE-GENERATOR",
+      "next_gate": "PF-I2-COUPLED-BOND-DICTIONARY",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -10517,6 +10740,30 @@
         "status": "open",
         "node": "PF-I1-PHASON-HULL-CONFIGURATION-BRIDGE",
         "source_phason_sample_unverified": true
+      },
+      "paper1_pentagrid": {
+        "status": "partial",
+        "source": "Paper1 §§6.1–7.1 Eqs12–14",
+        "offsets": "gamma_j = frac(j sqrt2+j^2 sqrt3) minus mean",
+        "labels": "K_j(r)=ceil(r·e_j−gamma_j)",
+        "sum_layers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "fib_hopping": "A when floor((k+1)/phi)!=floor(k/phi), else B; tA=1,tB=phi^-2",
+        "source_equation_reproduction": "PF-I2-P3-PENTAGRID-PUBLISHED",
+        "finite_sample": "186 vertices / 345 edges / 160 rhombi",
+        "large_sample": "616 vertices /1185 edges /570 rhombi",
+        "original_numerical_code": "unrecovered"
+      },
+      "paper2_coupled_operator": {
+        "status": "open",
+        "additional_bonds": "PF-I2-COUPLED-BOND-DICTIONARY",
+        "laplace_degree_diagonal": "PF-I2-DEGREE-NORMALIZATION",
+        "mass_parameter": "unrecovered",
+        "paper2_zeta_ratio_reproduced": false
       }
     },
     "orientation_selection": {
@@ -10532,6 +10779,12 @@
       "status": "open",
       "result": "PF-I0-QUOTIENT-ODD-CYCLE",
       "identity": "PF-I0-RHOMBUS-OPERATOR-BRIDGE",
+      "preimposed_3d": false
+    },
+    "intrinsic_source_operator_progress": {
+      "status": "partial",
+      "four_layer_p3_result": "PF-I2-FOUR-SUM-LAYERS",
+      "coupled_operator_gate": "PF-I2-COUPLED-BOND-DICTIONARY",
       "preimposed_3d": false
     }
   },
