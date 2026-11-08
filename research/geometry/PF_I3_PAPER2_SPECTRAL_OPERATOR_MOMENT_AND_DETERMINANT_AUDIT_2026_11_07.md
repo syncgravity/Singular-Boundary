@@ -1,5 +1,7 @@
 # PF-I3 — Paper 2 spectral-operator trace and determinant audit
 
+> **PF-I4 SOURCE-PROVENANCE ERRATUM (2026-11-07; original record preserved below).** The archive-native PDFs inside `Sharpe_dissertation_v10.7.tar.gz` have SHA-256 **Paper 1** `2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5`, **Paper 2** `2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7`, **Paper 4** `871bf58f9d5adf66b2ad7d115f8031dd0c36efc18b147ae91caa48e6865d54ab`. Earlier Paper 1/2 hashes in §1 refer to processed copies verified page-equivalent; the §1 Paper 4 hash `03152...` has **not** been traced to its backing PDF, although a different mounted Paper 4 copy with SHA `741660...` matches all original pages in text and rendered pixels. See [PF-I4 source-byte and mode-count certificate](PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md). Do not describe unlocated historical hashes as archive-native or page-equivalent. No spectral ratio or continuum claim is promoted by this erratum.
+
 **Date:** 2026-11-07 (America/Denver)  
 **Research status:** exact finite scalar operator identities, conditional source-compatibility test, and independent illustrative P3/periodic controls. **NOT** independent reproduction of the unpublished Paper 2 numerical generator, its reported `Ngrid=25, Nint=19260` spectrum, a geometric/time reconstruction, a Yang–Mills interacting vacuum or gap, or gravitational UV finiteness. **PF-G0, P0–P5, PF-G0–G5, T0–T5 and gravitational proof gates remain OPEN** (the legacy T5 transfer record remains conditional).
 
