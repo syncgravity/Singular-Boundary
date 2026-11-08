@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-07",
+  "filename_policy": "Names only locate raw bytes; source-role identities determined by function bodies, numeric outputs and SHA256",
+  "files": {
+    "PF_I6_REGRESSION_TEST_LOG.txt": {
+      "bytes": 1645,
+      "kind": "audit",
+      "sha256": "f34359e00c1305e702c6904640e7978c737043fc7f682830441b4ae87507037c"
+    },
+    "PF_I6_SOURCE_IMPLEMENTATION_EVIDENCE.json": {
+      "bytes": 6972,
+      "kind": "audit",
+      "sha256": "78fe5fee2ece4c9336cf90aa7bdd7164150319576ebf4a0b32776d3f243d08b1"
+    },
+    "PF_I6_VERIFICATION_LOG.txt": {
+      "bytes": 263,
+      "kind": "audit",
+      "sha256": "2015d417b4b8aa179eeb9f322ea8be1c28c44bda76de4b03287a343b4b6378f0"
+    },
+    "PF_I7_SUPPLEMENTARY_IMPLEMENTATION_AND_3D_WINDOW_AUDIT_2026_11_07.md": {
+      "bytes": 16340,
+      "kind": "audit",
+      "sha256": "60c4ee000a2a40008702ba5e75cfafc565201a90b62d38356c6c11b98850d631"
+    },
+    "README_finiteness.md": {
+      "bytes": 5615,
+      "kind": "author_source",
+      "sha256": "820c739434dc070161cc609757d717b03415b69fcf7d91b737fb7c17dbba4814"
+    },
+    "Sharpe_Paper2_Z5_Minkowski_Lapidus.tex": {
+      "bytes": 82682,
+      "kind": "author_source",
+      "sha256": "712bb920cf1db5e7c975e8c871d290f6b9fe47dea3e5ff60adad093b53009f15"
+    },
+    "Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex": {
+      "bytes": 46990,
+      "kind": "author_source",
+      "sha256": "385836d32a4be990ae6f1e16dff32591cb5b4c8ec4d6d9f35dd8eedf85825c2e"
+    },
+    "conversation_spectral_zeta_helical_observer.md": {
+      "bytes": 42119,
+      "kind": "author_source",
+      "sha256": "b136f257909f153a297aa64d32d54d1fe83e2b83447cc4dee392c10d3851a950"
+    },
+    "fig2_complete_argument.png": {
+      "bytes": 126063,
+      "kind": "author_source",
+      "sha256": "3286278b2434e4c51f7f716c854fe7e8a751dbd463a53cb09b65d56ba99bcda4"
+    },
+    "fig_holomorphic_structure.png": {
+      "bytes": 128881,
+      "kind": "author_source",
+      "sha256": "dd5c36690e0fac47166ae7510ac4dab7a4866f86e062765f62f6e60e82abf152"
+    },
+    "fig_paper4_J_operator.png": {
+      "bytes": 459007,
+      "kind": "author_source",
+      "sha256": "6eaa39e53c8e4e546d45e6dc023b2fc5d2bd318169d2ead5d89c3d2bafb6c007"
+    },
+    "fig_paper4_oscillations.png": {
+      "bytes": 528604,
+      "kind": "author_source",
+      "sha256": "060dc400ece7b96a775592488ca5ad9f7ecc29b4023c3a910e3eb33498a6f986"
+    },
+    "lapidus_derivation_final(1).py": {
+      "bytes": 20863,
+      "kind": "author_source",
+      "sha256": "b3cae5902a3e79cc2f5e2169bcca0cd3c07ef24f64ab877cba6ebc16e1cd16df"
+    },
+    "paper1_v3.tex": {
+      "bytes": 36416,
+      "kind": "author_source",
+      "sha256": "e5de3a44e54d997dce47a52635e7c1cc9cdd718b51ea279244f118180957523a"
+    },
+    "paper2_v21.tex": {
+      "bytes": 39893,
+      "kind": "author_source",
+      "sha256": "ccb329c7ef1bfbbf727eddf739f53c2c12b3192e45bfb4bed6282677373d4344"
+    },
+    "paper3_v3.tex": {
+      "bytes": 40785,
+      "kind": "author_source",
+      "sha256": "51ee320a9685d8c582187c8bb6ccac3c68984a10eef31cd3a0a53cf9a3ebf597"
+    },
+    "paper3_v3_extend(1).py": {
+      "bytes": 21910,
+      "kind": "author_source",
+      "sha256": "6c58e6d172c3ece8cc78b90b5679f233a728f155824827f649907daf2a5777b4"
+    },
+    "paper67_data.tar.gz": {
+      "bytes": 279263,
+      "kind": "author_source",
+      "sha256": "ea69c8aca94b43ab3feec8751f269a4969a2a805787cb52ab397792b8c97c8f8"
+    },
+    "paper67_icosahedral_finiteness_v2.py": {
+      "bytes": 25646,
+      "kind": "author_source",
+      "sha256": "cd278939c71f37d84842f1eb325b3e22f62f0c4ddeb652eede95c7120d48fd5d"
+    },
+    "paper6_extend_local.py": {
+      "bytes": 19349,
+      "kind": "author_source",
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da"
+    },
+    "test_pf_i6_source_implementations.py": {
+      "bytes": 2129,
+      "kind": "audit",
+      "sha256": "2df474d6490505bf6c997a8969fd8b21b035c667c5cc2fde4d5a6e220187b490"
+    },
+    "verify_pf_i6_uploaded_source_models.py": {
+      "bytes": 8789,
+      "kind": "audit",
+      "sha256": "7efe100f6df7101619176eafe38666fcaed923a48d4be089dd5d2b44351123e3"
+    },
+    "zeta_prime_validation.py": {
+      "bytes": 22298,
+      "kind": "author_source",
+      "sha256": "fc154343342233685b03b71462e2c82d1c29602f22c2064187708d2f85f95b56"
+    },
+    "zeta_prime_validation_results.md": {
+      "bytes": 4267,
+      "kind": "author_source",
+      "sha256": "982fbf420d75b46ab9b90a8a3f723565870852d7c4388d91fd49ab633c273652"
+    }
+  },
+  "prior_registry": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+  "schema": "singular-boundary-pf-i7-supplementary-source-v1",
+  "source_note": "Nine predecessor scripts previously preserved; five supplementary scripts in this upload, one exact duplicate of predecessor validator SHA fc154343..., four distinct. Uploaded source files retained unchanged; no physical continuum proof."
+}
