@@ -1,0 +1,67 @@
+{
+  "checks_passed": 3961,
+  "exact_invariants": {
+    "c5_order": 5,
+    "five_step_closed_signed_words": 240,
+    "quotient_rank": 4,
+    "relation": "sum(v_0,...,v_4)=0",
+    "shortest_possible_odd_cycle_length": 5
+  },
+  "gauge_test": {
+    "max_halftrace_difference": 1.1102230246251565e-16,
+    "original_wilson_halftrace": -0.5610358317309236
+  },
+  "hopping_test": {
+    "family_0_weight": 2.618033988749895,
+    "family_1_weight": 1.0,
+    "rotational_invariance_of_family_only_nonconstant_weights": false
+  },
+  "illustrative_graph": {
+    "bipartite": false,
+    "edges": 650,
+    "five_cycle_witness": [
+      [
+        -3,
+        -4,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -4,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -3,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -3,
+        -2,
+        0
+      ],
+      [
+        -2,
+        -3,
+        -1,
+        0
+      ]
+    ],
+    "five_cycles": 1260,
+    "mean_degree": 5.394190871369295,
+    "vertices": 241
+  },
+  "mass_gap_certified": false,
+  "parameters": {
+    "physical_radius": 5.0,
+    "span": 6,
+    "window_orientation_radians": 0.0,
+    "window_radius": 1.65
+  },
+  "scope": "conditional quotient test; illustrative regular decagon, NOT Paper 2 source generator",
+  "source_parameters_authenticated": false
+}
