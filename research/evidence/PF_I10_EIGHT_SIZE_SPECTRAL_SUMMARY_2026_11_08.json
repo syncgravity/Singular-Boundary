@@ -1,0 +1,1046 @@
+{
+  "N25_160_to_240_step_fixed_probe_convergence": {
+    "0.0001": {
+      "log": {
+        "absolute_difference": 3.3963104399403754e-05,
+        "lanczos_160": 0.6514329353186636,
+        "lanczos_240": 0.6513989722142642,
+        "same_source_random_seed_probes": true
+      },
+      "relative_log": {
+        "absolute_difference": 3.654373096573238e-06,
+        "lanczos_160": 0.9589394640040351,
+        "lanczos_240": 0.9589358096309385,
+        "same_source_random_seed_probes": true
+      },
+      "sqrt": {
+        "absolute_difference": 6.163088273059003e-08,
+        "lanczos_160": 0.8335955777498469,
+        "lanczos_240": 0.8335955161189642,
+        "same_source_random_seed_probes": true
+      }
+    },
+    "0.01": {
+      "log": {
+        "absolute_difference": 1.0913492332065289e-13,
+        "lanczos_160": 0.6563843305679932,
+        "lanczos_240": 0.656384330567884,
+        "same_source_random_seed_probes": true
+      },
+      "relative_log": {
+        "absolute_difference": 2.2870594307278225e-14,
+        "lanczos_160": 0.9272657963651202,
+        "lanczos_240": 0.9272657963650973,
+        "same_source_random_seed_probes": true
+      },
+      "sqrt": {
+        "absolute_difference": 4.440892098500626e-16,
+        "lanczos_160": 0.8342673343471697,
+        "lanczos_240": 0.8342673343471693,
+        "same_source_random_seed_probes": true
+      }
+    },
+    "1.0": {
+      "log": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "lanczos_160": 0.8165130463316614,
+        "lanczos_240": 0.8165130463316613,
+        "same_source_random_seed_probes": true
+      },
+      "relative_log": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "lanczos_160": 0.8165130463316614,
+        "lanczos_240": 0.8165130463316613,
+        "same_source_random_seed_probes": true
+      },
+      "sqrt": {
+        "absolute_difference": 2.220446049250313e-16,
+        "lanczos_160": 0.87677858306931,
+        "lanczos_240": 0.8767785830693098,
+        "same_source_random_seed_probes": true
+      }
+    },
+    "100.0": {
+      "log": {
+        "absolute_difference": 0.0,
+        "lanczos_160": 0.997749282244709,
+        "lanczos_240": 0.997749282244709,
+        "same_source_random_seed_probes": true
+      },
+      "relative_log": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "lanczos_160": 0.7393101689988008,
+        "lanczos_240": 0.7393101689988006,
+        "same_source_random_seed_probes": true
+      },
+      "sqrt": {
+        "absolute_difference": 0.0,
+        "lanczos_160": 0.9947979106055628,
+        "lanczos_240": 0.9947979106055628,
+        "same_source_random_seed_probes": true
+      }
+    }
+  },
+  "all_spectra_original_source_retained_vertices": true,
+  "comparison": "source finite zigzag triangular periodic, q=floor(sqrt N), tavg=(1+phi^-2)/2",
+  "completed_window_recomputed_core_used_in_spectra": false,
+  "coupled_basis_graph_equals_completed_tile_edges_on_same_original_retained_labels": true,
+  "eight_size_relative_logdet_mass_flow": {
+    "0.0001": {
+      "arithmetic_mean": 0.9587136627121045,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.7446075232156874e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0006281636097792392
+    },
+    "0.01": {
+      "arithmetic_mean": 0.9268268459706861,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 2.8337542521714988e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0011067700887700553
+    },
+    "1.0": {
+      "arithmetic_mean": 0.8157962578134776,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 3.0338418878672057e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0022480816375688175
+    },
+    "100.0": {
+      "arithmetic_mean": 0.738876974872875,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.4571076163225926e-06,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0026763055353758148
+    }
+  },
+  "eight_size_same_graph_fibonacci_uniform_mean": {
+    "log": 1.0597644235328296,
+    "relative_log": 1.004460680685551,
+    "sqrt": 1.0390217720405506
+  },
+  "eight_size_spectral_means": {
+    "log": {
+      "arithmetic_mean": 0.6463577401075136,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 0.00012914122812773097,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.006575250394050997
+    },
+    "relative_log": {
+      "arithmetic_mean": 0.9587136627121045,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 1.7446075232156874e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0006281636097792392
+    },
+    "sqrt": {
+      "arithmetic_mean": 0.8331846869573367,
+      "conditional_standard_error_of_mean_from_independent_probes_only": 2.218242574705634e-05,
+      "n_exact": 3,
+      "n_stochastic": 5,
+      "sample_standard_deviation_across_eight_sizes": 0.0019395991389310697
+    }
+  },
+  "eight_size_uniform_topology_vs_periodic_mean": {
+    "log": 0.6099075245828984,
+    "relative_log": 0.9544562079438981,
+    "sqrt": 0.8018947751392433
+  },
+  "limitations": [
+    "Stochastic trace samples and SE do not give deterministic quadrature or thermodynamic error bounds",
+    "m2=1e-4 fixed; paper source and manuscript number not assumed authoritative",
+    "physical-dimensional Yang-Mills operator and gauge measure not constructed",
+    "eight-size arithmetic means are not continuum limits"
+  ],
+  "mass_squared_values": [
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "original_tile_cutoff_components_from_exact_source": {
+    "10": {
+      "components_coupled": 1,
+      "components_tile": 51,
+      "coupled_edges": 5927,
+      "source_coupled_minus_tile_edges": 62,
+      "tile_edges": 5865,
+      "trace_Delta_L_over_N": 0.027353634695104188
+    },
+    "12": {
+      "components_coupled": 1,
+      "components_tile": 46,
+      "coupled_edges": 8468,
+      "source_coupled_minus_tile_edges": 85,
+      "tile_edges": 8383,
+      "trace_Delta_L_over_N": 0.028738548758674324
+    },
+    "15": {
+      "components_coupled": 1,
+      "components_tile": 11,
+      "coupled_edges": 13779,
+      "source_coupled_minus_tile_edges": 290,
+      "tile_edges": 13489,
+      "trace_Delta_L_over_N": 0.05741692596884391
+    },
+    "18": {
+      "components_coupled": 3,
+      "components_tile": 101,
+      "coupled_edges": 19593,
+      "source_coupled_minus_tile_edges": 444,
+      "tile_edges": 19149,
+      "trace_Delta_L_over_N": 0.061543401107291146
+    },
+    "20": {
+      "components_coupled": 1,
+      "components_tile": 74,
+      "coupled_edges": 24091,
+      "source_coupled_minus_tile_edges": 593,
+      "tile_edges": 23498,
+      "trace_Delta_L_over_N": 0.07467788228025286
+    },
+    "23": {
+      "components_coupled": 1,
+      "components_tile": 46,
+      "coupled_edges": 32582,
+      "source_coupled_minus_tile_edges": 889,
+      "tile_edges": 31693,
+      "trace_Delta_L_over_N": 0.08847886765409523
+    },
+    "25": {
+      "components_coupled": 5,
+      "components_tile": 111,
+      "coupled_edges": 38139,
+      "source_coupled_minus_tile_edges": 1066,
+      "tile_edges": 37073,
+      "trace_Delta_L_over_N": 0.07610380893705158
+    },
+    "7": {
+      "components_coupled": 1,
+      "components_tile": 1,
+      "coupled_edges": 3017,
+      "source_coupled_minus_tile_edges": 0,
+      "tile_edges": 3017,
+      "trace_Delta_L_over_N": 0.0
+    }
+  },
+  "proof_gates": {
+    "continuum_positive_mass_gap": false,
+    "finite_scalar_source_spectral_reproduction": "three_exact_plus_five_stochastic",
+    "gravitational_UV_finiteness": false,
+    "interacting_4D_SU2_Yang_Mills_existence": false
+  },
+  "rows": [
+    {
+      "Ngrid": 7,
+      "QC_components": 1,
+      "original_truncated_tile_graph": {
+        "Ngrid": 7,
+        "SLQ_probe_SE_sqrt": 0.00027147279857240035,
+        "exact_full_ratio_sqrt": 0.8338302510003897,
+        "exact_positive_ratio_sqrt": 0.8338194850588261,
+        "source_tile_Gamma_R": 0.9589473343914892,
+        "source_tile_N": 1550,
+        "source_tile_components": 1,
+        "source_tile_edges": 3017,
+        "source_tile_full_sqrt_R": 0.8337339077140554,
+        "source_tile_positive_sqrt_R": 0.833723142677226,
+        "source_tile_zeta_prime_R": 0.6420883380013593
+      },
+      "periodic_edges": 4408,
+      "periodic_vertices": 1521,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 3017,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.6421389315926979
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9589841328890424
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8338194850588261
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.6475560145200641
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9271838759353054
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8345139380869429
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.816258396487471
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.816258396487471
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8777581846573185
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9977983397290761
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.73886357016734
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9949103925394559
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7370471668077205,
+      "spectral_method": "exact_dense_eigvalsh",
+      "uniform_same_graph_ratio": {
+        "log": 1.0503307971730211,
+        "relative_log": 1.0036911596613634,
+        "sqrt": 1.0353627498910711
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6113682787565813,
+        "relative_log": 0.9554573871235403,
+        "sqrt": 0.8053404327580366
+      },
+      "vertices": 1550
+    },
+    {
+      "Ngrid": 10,
+      "QC_components": 1,
+      "original_truncated_tile_graph": {
+        "Ngrid": 10,
+        "SLQ_probe_SE_sqrt": 0.000205398337342619,
+        "exact_full_ratio_sqrt": 0.8216237034078921,
+        "exact_positive_ratio_sqrt": 0.8352707161713102,
+        "source_tile_Gamma_R": 0.9594389661835563,
+        "source_tile_N": 3042,
+        "source_tile_components": 51,
+        "source_tile_edges": 5865,
+        "source_tile_full_sqrt_R": 0.8216860611101952,
+        "source_tile_positive_sqrt_R": 0.8353341065529603,
+        "source_tile_zeta_prime_R": 0.6497765649428499
+      },
+      "periodic_edges": 8856,
+      "periodic_vertices": 3025,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 5927,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.6347803745941311
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.957683664565908
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8303487155220399
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.640318855274657
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9249668384429105
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.831058799131327
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.812197558327449
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.812197558327449
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8752410513698863
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9977496198404572
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.7356336998523235
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9947988516550107
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7338744240206474,
+      "spectral_method": "exact_dense_eigvalsh",
+      "uniform_same_graph_ratio": {
+        "log": 1.056620424106349,
+        "relative_log": 1.0041323818515444,
+        "sqrt": 1.0378356682960561
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6007648159281088,
+        "relative_log": 0.9537424366297317,
+        "sqrt": 0.8000772577852586
+      },
+      "vertices": 3042
+    },
+    {
+      "Ngrid": 12,
+      "QC_components": 1,
+      "original_truncated_tile_graph": {
+        "Ngrid": 12,
+        "SLQ_probe_SE_sqrt": 0.00016104231344939192,
+        "exact_full_ratio_sqrt": 0.8278595852143805,
+        "exact_positive_ratio_sqrt": 0.8365090234752673,
+        "source_tile_Gamma_R": 0.9593606459695206,
+        "source_tile_N": 4324,
+        "source_tile_components": 46,
+        "source_tile_edges": 8383,
+        "source_tile_full_sqrt_R": 0.8275709785935726,
+        "source_tile_positive_sqrt_R": 0.8362173867139111,
+        "source_tile_zeta_prime_R": 0.6508315407853686
+      },
+      "periodic_edges": 12416,
+      "periodic_vertices": 4225,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 8468,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.648920768203252
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9591528406829221
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8354604886394673
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.6541784747463196
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9275924113485723
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8361407419475901
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8180121903790005
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.8180121903790005
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.878715713481962
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9978056174017909
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.7431410576702545
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 0.0,
+            "ratio_positive_modes": 0.9949284991381936
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7414489140530175,
+      "spectral_method": "exact_dense_eigvalsh",
+      "uniform_same_graph_ratio": {
+        "log": 1.0714577226507096,
+        "relative_log": 1.0052774075040678,
+        "sqrt": 1.0429692254439993
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6056429054408871,
+        "relative_log": 0.9541175734410811,
+        "sqrt": 0.801040402974312
+      },
+      "vertices": 4324
+    },
+    {
+      "Ngrid": 15,
+      "QC_components": 1,
+      "periodic_edges": 20336,
+      "periodic_vertices": 6889,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 13779,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0005006864357237932,
+            "ratio_positive_modes": 0.6513500020718132
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 6.84639283125938e-05,
+            "ratio_positive_modes": 0.9592142858856605
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 8.79005275907707e-05,
+            "ratio_positive_modes": 0.8345895584373622
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00046084778325850196,
+            "ratio_positive_modes": 0.6564510886342876
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00011145626310093957,
+            "ratio_positive_modes": 0.9277211476124865
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 8.643383116265008e-05,
+            "ratio_positive_modes": 0.8352633942204383
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00012094444047976006,
+            "ratio_positive_modes": 0.817570867213575
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00012094444047975998,
+            "ratio_positive_modes": 0.817570867213575
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 3.9062858148732264e-05,
+            "ratio_positive_modes": 0.877683985266046
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 5.61108640687813e-08,
+            "ratio_positive_modes": 0.997772354975345
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 5.824065045594509e-06,
+            "ratio_positive_modes": 0.7403719853960308
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 6.489380629356372e-08,
+            "ratio_positive_modes": 0.9948508105336341
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7385631241846186,
+      "spectral_method": "stochastic_Lanczos_trace_control",
+      "uniform_same_graph_ratio": {
+        "log": 1.0597660191961193,
+        "relative_log": 1.0044999890891195,
+        "sqrt": 1.0390610148414385
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6146168024578592,
+        "relative_log": 0.9549171690439497,
+        "sqrt": 0.8032151591836223
+      },
+      "vertices": 6980
+    },
+    {
+      "Ngrid": 18,
+      "QC_components": 3,
+      "periodic_edges": 29008,
+      "periodic_vertices": 9801,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 19593,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0004492668565698174,
+            "ratio_positive_modes": 0.6427303137741991
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 5.933697552149597e-05,
+            "ratio_positive_modes": 0.9580940692950283
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 7.523617651119349e-05,
+            "ratio_positive_modes": 0.8314295489799044
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00040578084825995187,
+            "ratio_positive_modes": 0.6480173977742482
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 9.538321803238653e-05,
+            "ratio_positive_modes": 0.9257718937727877
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 7.387257735084225e-05,
+            "ratio_positive_modes": 0.832122761183512
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00010284818580151401,
+            "ratio_positive_modes": 0.813855933915276
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00010284818580151369,
+            "ratio_positive_modes": 0.813855933915276
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 3.347963634975845e-05,
+            "ratio_positive_modes": 0.8755369132184634
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 4.946122800437309e-08,
+            "ratio_positive_modes": 0.9977364428417639
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 5.217511091261896e-06,
+            "ratio_positive_modes": 0.7368500087519623
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 5.724146203603521e-08,
+            "ratio_positive_modes": 0.9947684000221106
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7349239170845261,
+      "spectral_method": "stochastic_Lanczos_trace_control",
+      "uniform_same_graph_ratio": {
+        "log": 1.05878773465396,
+        "relative_log": 1.0043881286147422,
+        "sqrt": 1.038847495756944
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6070435959330984,
+        "relative_log": 0.9539081974380135,
+        "sqrt": 0.8003384061431394
+      },
+      "vertices": 9950
+    },
+    {
+      "Ngrid": 20,
+      "QC_components": 1,
+      "periodic_edges": 35861,
+      "periodic_vertices": 12100,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 256,
+      "slq_steps": 180,
+      "source_basis_edges": 24091,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0003989391259045653,
+            "ratio_positive_modes": 0.644400660589599
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 5.401727820866406e-05,
+            "ratio_positive_modes": 0.9582175548311076
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 6.736525603127783e-05,
+            "ratio_positive_modes": 0.831183516383095
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00036115592807510694,
+            "ratio_positive_modes": 0.6496603014312118
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 8.68841939625217e-05,
+            "ratio_positive_modes": 0.9260098309878927
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 6.614209095248746e-05,
+            "ratio_positive_modes": 0.8318715116361484
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 9.206931621761084e-05,
+            "ratio_positive_modes": 0.8137667219667954
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 9.206931621761115e-05,
+            "ratio_positive_modes": 0.8137667219667954
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 2.972857509709869e-05,
+            "ratio_positive_modes": 0.8751572720086197
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 4.271788753832678e-08,
+            "ratio_positive_modes": 0.997723831173711
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 4.4205026444643605e-06,
+            "ratio_positive_modes": 0.7357307454069496
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 4.939991474841059e-08,
+            "ratio_positive_modes": 0.9947389190815763
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7339065310015135,
+      "spectral_method": "stochastic_Lanczos_trace_control",
+      "uniform_same_graph_ratio": {
+        "log": 1.056454293579801,
+        "relative_log": 1.004240418514635,
+        "sqrt": 1.0377952624103899
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6099654897572938,
+        "relative_log": 0.9541714684700706,
+        "sqrt": 0.8009128066865354
+      },
+      "vertices": 12207
+    },
+    {
+      "Ngrid": 23,
+      "QC_components": 1,
+      "periodic_edges": 48641,
+      "periodic_vertices": 16384,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 128,
+      "slq_steps": 160,
+      "source_basis_edges": 32582,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0004976873465124081,
+            "ratio_positive_modes": 0.6551079347157525
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 6.696554732762056e-05,
+            "ratio_positive_modes": 0.9594232895431316
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 8.789766191110979e-05,
+            "ratio_positive_modes": 0.835050604888152
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0004644489005592124,
+            "ratio_positive_modes": 0.6599823648336246
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00011042005784361848,
+            "ratio_positive_modes": 0.9281029733004131
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 8.640367031007618e-05,
+            "ratio_positive_modes": 0.8357136489605562
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0001207020724196372,
+            "ratio_positive_modes": 0.8181953478865921
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00012070207241963736,
+            "ratio_positive_modes": 0.8181953478865921
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 3.867848098008734e-05,
+            "ratio_positive_modes": 0.8777906740017969
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 5.376614459197819e-08,
+            "ratio_positive_modes": 0.9977665134201681
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 5.609248419799459e-06,
+            "ratio_positive_modes": 0.7411145627393381
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 6.215761595473762e-08,
+            "ratio_positive_modes": 0.9948375377353691
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7393211323100446,
+      "spectral_method": "stochastic_Lanczos_trace_control",
+      "uniform_same_graph_ratio": {
+        "log": 1.0630643829320485,
+        "relative_log": 1.0047884554986724,
+        "sqrt": 1.040394580673247
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.616244834493366,
+        "relative_log": 0.9548510278882273,
+        "sqrt": 0.8026287529754187
+      },
+      "vertices": 16435
+    },
+    {
+      "Ngrid": 25,
+      "QC_components": 5,
+      "original_truncated_tile_graph": {
+        "Ngrid": 25,
+        "SLQ_probe_SE_sqrt": 7.964733480633323e-05,
+        "source_tile_Gamma_R": 0.9556282476775578,
+        "source_tile_N": 19260,
+        "source_tile_components": 111,
+        "source_tile_edges": 37073,
+        "source_tile_full_sqrt_R": 0.8191335394522556,
+        "source_tile_positive_sqrt_R": 0.8238091358028596,
+        "source_tile_zeta_prime_R": 0.6232563021517663
+      },
+      "periodic_edges": 56581,
+      "periodic_vertices": 19044,
+      "periodic_weight": 0.6909830056250525,
+      "slq_probes": 128,
+      "slq_steps": 160,
+      "source_basis_edges": 38139,
+      "source_weighted_spectra": {
+        "0.0001": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.0004560531755877733,
+            "ratio_positive_modes": 0.6514329353186636
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 6.220094538186991e-05,
+            "ratio_positive_modes": 0.9589394640040351
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 7.642498984727489e-05,
+            "ratio_positive_modes": 0.8335955777498469
+          }
+        },
+        "0.01": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00041728515285315964,
+            "ratio_positive_modes": 0.6563843305679932
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00010065353959764918,
+            "ratio_positive_modes": 0.9272657963651202
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 7.49682390519205e-05,
+            "ratio_positive_modes": 0.8342673343471697
+          }
+        },
+        "1.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 0.00010322694397732735,
+            "ratio_positive_modes": 0.8165130463316614
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 0.00010322694397732706,
+            "ratio_positive_modes": 0.8165130463316614
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 3.3117801510828534e-05,
+            "ratio_positive_modes": 0.87677858306931
+          }
+        },
+        "100.0": {
+          "log": {
+            "comparison": "zeta_prime",
+            "conditional_probe_standard_error": 4.785306085622235e-08,
+            "ratio_positive_modes": 0.997749282244709
+          },
+          "relative_log": {
+            "comparison": "relative_logdet",
+            "conditional_probe_standard_error": 4.871933871411218e-06,
+            "ratio_positive_modes": 0.7393101689988008
+          },
+          "sqrt": {
+            "comparison": "sqrt",
+            "conditional_probe_standard_error": 5.533682409900871e-08,
+            "ratio_positive_modes": 0.9947979106055628
+          }
+        }
+      },
+      "source_zeta_negative_one_trace": 0.7373684652126601,
+      "spectral_method": "stochastic_Lanczos_trace_control",
+      "uniform_same_graph_ratio": {
+        "log": 1.0616340139706273,
+        "relative_log": 1.0046675047502625,
+        "sqrt": 1.0399081790112592
+      },
+      "uniform_to_periodic_ratio": {
+        "log": 0.6136134738959929,
+        "relative_log": 0.95448440351657,
+        "sqrt": 0.8016049826076246
+      },
+      "vertices": 19260
+    }
+  ],
+  "schema": "singular-boundary.pf-i10.source-spectra.v1",
+  "scope": "finite scalar source cut-project; first 3 exact and last 5 stochastic, no gauge gap",
+  "source_claims_provisional_unpublished": {
+    "R_s_minus_half_eight_size_mean": 0.8332,
+    "relative_logdet_mass_flow": [
+      0.959,
+      0.927,
+      0.816,
+      0.739
+    ],
+    "zeta_prime_mean_approx": 0.646
+  },
+  "source_operator": "L=D_weight-W, original source Fibonacci t_j(level)",
+  "source_script_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "zero_filter": "eigenvalues > 1e-10; in stochastic calculations subtract exactly c zero modes using component count before normalizing"
+}
