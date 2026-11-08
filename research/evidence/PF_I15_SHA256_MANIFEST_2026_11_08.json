@@ -1,0 +1,86 @@
+{
+  "checkpoint": "PF-I15",
+  "date": "2026-11-08",
+  "files": {
+    "PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md": {
+      "sha256": "196e74310a1936652c3c6f74430e1754c608fcc4602015f03f6f400e1ca42b39",
+      "size_bytes": 18127
+    },
+    "PF_I15_PRIVATE_TEST_LOG.txt": {
+      "sha256": "f03b7d886c688051b6e8f79f45c7906854e8e138c3968d6842847a84ff6e7062",
+      "size_bytes": 2166
+    },
+    "PF_I15_PUBLIC_FINITE_TIME_AND_ELECTRIC_RESULTS_2026_11_08.json": {
+      "sha256": "7e1e6a4b39879d6ed0ed23ca685f7ab53bb79f3a7c699ee6f73bb81acdada3f5",
+      "size_bytes": 18812
+    },
+    "PF_I15_PUBLIC_TEST_LOG.txt": {
+      "sha256": "c06708fba2cd02cc373e192913af05c2c406389d5b9d38aecc1f0d766c948335",
+      "size_bytes": 2220
+    },
+    "PF_I15_SOURCE_EIGHT_SIZE_ELECTRIC_GAP_EVIDENCE.json": {
+      "sha256": "06d07d1d53b827b2069c732d05782ec330f75fe88e3ceeb061363bd2efdde188",
+      "size_bytes": 19507
+    },
+    "README_REPLAY.md": {
+      "sha256": "9a796fdeed8eed726a5cd350ab82e73030628f8fc7042d1981310f22d0a1fc7b",
+      "size_bytes": 3180
+    },
+    "build_pf_i15_private_package.py": {
+      "sha256": "c39e48838574761e7eaa792da51b82a5978e2ead9d9e9b1eebd133a145603617",
+      "size_bytes": 3146
+    },
+    "build_pf_i15_public_evidence.py": {
+      "sha256": "44b0b1c57bf8bad4d8c14d54bcecd96734b4dd42672f56c8c74f0d7e088fa738",
+      "size_bytes": 1661
+    },
+    "source/PF_I11_EIGHT_SIZE_SOURCE_GAUGE_COMPLEX.json": {
+      "sha256": "b16c10f9216a622230c459747fe49d46a4fe387a74cdd6290d482fbc58dae038",
+      "size_bytes": 12645
+    },
+    "source/Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex": {
+      "sha256": "385836d32a4be990ae6f1e16dff32591cb5b4c8ec4d6d9f35dd8eedf85825c2e",
+      "size_bytes": 46990
+    },
+    "source/paper6_extend_local.py": {
+      "sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+      "size_bytes": 19349
+    },
+    "source/verify_pf_i11_intrinsic_su2.py": {
+      "sha256": "f655bae6defa9993d6b414c74cfa5b24039ff7a80e47c1924123412ada55653d",
+      "size_bytes": 18081
+    },
+    "source/verify_pf_i12_conditional_heat_gluing.py": {
+      "sha256": "8d4ef99c2542b2cb5398200663b1261e73d111de191a8860d1bda4c517d9a6e0",
+      "size_bytes": 2414
+    },
+    "source/verify_pf_i12_two_sector_coupling.py": {
+      "sha256": "bc19afe664a451b325dc812549ad5fbf49648e8390f70e46551a4eb92c8afd95",
+      "size_bytes": 12342
+    },
+    "source/verify_pf_i9_source_cut_project_bridge.py": {
+      "sha256": "9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b",
+      "size_bytes": 17023
+    },
+    "test_pf_i15_intrinsic_time_and_electric_gap.py": {
+      "sha256": "ce97f4637b28d23ab44af17f84e423e12706839cd4c49186182ea6a57022c1e8",
+      "size_bytes": 5009
+    },
+    "verify_pf_i14_decorated_hull.py": {
+      "sha256": "79ac99cc425908b1b03861a9d9765b2bb5aec1b76a8015e2e02211317c078ce4",
+      "size_bytes": 20029
+    },
+    "verify_pf_i15_intrinsic_time_and_electric_gap.py": {
+      "sha256": "b914dc5dbc54dfbfe98fd13e43cc2aea6c07bd4cf403ecdadc09237f7d5d37ce",
+      "size_bytes": 14709
+    }
+  },
+  "full_private_tests": 14,
+  "public_source_aggregate_allowed": true,
+  "public_tests_pass": 13,
+  "public_tests_private_skip": 1,
+  "source_may_be_pushed_to_public_GitHub": false,
+  "source_original_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+  "source_unpublished_original_in_private_archive": true,
+  "status": "source-verified exact finite electric theorem and auxiliary positive finite Wilson dynamics; original Yang\u2013Mills continuum gap OPEN"
+}

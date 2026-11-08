@@ -1,0 +1,403 @@
+{
+  "C5_additive_clock": {
+    "C5_clock_no_go_scope": "only invariant ADDITIVE real clocks on source Lambda0 and constant-height trival direction; nonlinear/dihedral/hull/lifted time not excluded",
+    "J_squared_negative_identity": true,
+    "Lambda0_invariant_additive_real_clock_is_zero": true,
+    "exponential_J_is_nontrivial_orthogonal_rotation_not_positive_selfadjoint_heat": true,
+    "height_clock_bounded_on_accepted_source": true,
+    "invariant_scalar_linear_maps_on_R5": "tau(m)=c*sum_j m_j only",
+    "kinematic_helix_not_source_field_evolution": true,
+    "physical_time_from_geometry_proved": false,
+    "proof": "5*tau(a)=tau(sum_{r=0}^4 sigma^r a)=tau(0)=0 for a in Lambda0",
+    "source_accepted_heights": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_draft_explicitly_says_no_field_dynamics": "Sharpe_Paper4_J_Operator_Hidden_Domain_Revised.tex, remark Algebraic versus dynamical content",
+    "z2_perpendicular_accepted_window_bounded": true
+  },
+  "auxiliary_decorated_hull_measure_nonuniqueness": {
+    "R_action_on_label": "s->-s-5alpha (mod 1)",
+    "R_phase_involution": "rho->-rho-alpha 1_5",
+    "T_a_translation": "rho->rho-alpha a, sum(a)=0",
+    "conserved_translation_label": "s=sum_j rho_j (mod 1)",
+    "dense_zero_sum_Kronecker_orbits_in_each_s_fiber": true,
+    "example_A": "full Haar on T5 times uniform independent lower/upper flags",
+    "example_A_fourier_E_exp_2pi_i_sum_rho": [
+      0.0,
+      0.0
+    ],
+    "example_B": "half Haar on sum phase s=0 and half Haar on reflected sum phase s=-5alpha (mod1), with uniform independent flags",
+    "example_B_fourier_E_exp_2pi_i_sum_rho": [
+      0.9218776474061992,
+      -0.26836402631316053
+    ],
+    "example_B_fourier_modulus": 0.9601445971343062,
+    "invariant_measure_class": "choose any probability marginal on s symmetric under s->-s-5alpha, and use Haar conditional on each T4 sum fiber; global simultaneous lower/upper flip handled by independent symmetric flag measure",
+    "phase_space": "T5 of five independent auxiliary Fibonacci word phases; not physical gauge configuration",
+    "physical_hull_invariant_probability_selected": false,
+    "two_symmetry_invariant_measures_distinct": true,
+    "unique_physical_vacuum_selected": false
+  },
+  "checkpoint": "PF-I15",
+  "exact_electric_spin_network_gap": {
+    "Hilbert_space": "L2(SU2^E,product-Haar)^{SU2^V}",
+    "edge_eigenvalues": "epsilon_e*j_e*(j_e+1), j_e in {0,1/2,1,...}",
+    "exact_uniform_pure_electric_gap": 3.0,
+    "gauge_constraint": "nontrivial spin at a degree-one occupied support vertex has no SU2 invariant intertwiner",
+    "lower_bound": "any nonzero spin network has supported simple cycle; all occupied nonzero links have Casimir >=3/4",
+    "nontrivial_support_has_cycle": true,
+    "operator": "H_el=sum_{e in E} epsilon_e*(-Delta_SU2)_e, epsilon_e>0",
+    "physical_mass_gap_proved": false,
+    "source_contains_verified_true_four_edge_rhombi": true,
+    "source_edges_connect_heights_plus_or_minus_1": true,
+    "source_graph_bipartite_by_height_parity": true,
+    "source_graph_girth": 4,
+    "upper_witness": "fundamental j=1/2 Wilson character on minimum-weight simple cycle, all other edges j=0"
+  },
+  "finite_one_rhombus_interacting_quantum_control": {
+    "character_basis_matrix": "diag(4 epsilon j(j+1)+kappa) - (kappa/2)*(nearest-character offdiagonals)",
+    "continuum_YM_gap_proved": false,
+    "epsilon_auxiliary": 1,
+    "independent_class_Haar_integral": {
+      "Haar_orthogonality_max_error": 1.9984014443252818e-14,
+      "Wilson_potential_matrix_max_error": 1.4210854715202004e-14,
+      "nchars": 6,
+      "quadrature_nodes": 600
+    },
+    "kappa_auxiliary": 0.71,
+    "model": "SU2 on one actual source rhombus: H=epsilon*sum_4 C_e + kappa*(1-halfTr U_f)",
+    "stable_gap_at_kappa": 3.0580857125308603,
+    "truncation_checks": {
+      "12": {
+        "first_energy": 3.72643777338503,
+        "gap": 3.0580857125308603,
+        "vacuum_energy": 0.6683520608541698
+      },
+      "20": {
+        "first_energy": 3.72643777338503,
+        "gap": 3.0580857125308603,
+        "vacuum_energy": 0.6683520608541698
+      },
+      "40": {
+        "first_energy": 3.72643777338503,
+        "gap": 3.0580857125308603,
+        "vacuum_energy": 0.6683520608541698
+      },
+      "8": {
+        "first_energy": 3.72643777338503,
+        "gap": 3.0580857125308603,
+        "vacuum_energy": 0.6683520608541698
+      }
+    }
+  },
+  "no_physical_YM_gap_proved": true,
+  "original_source_8size_replay": {
+    "physical_mass_gap_proved": false,
+    "results": [
+      {
+        "Ngrid": 7,
+        "all_strong_four_edge_rhombi": 543,
+        "all_weak_four_edge_rhombi": 223,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 1468,
+          "N_vertices": 1550,
+          "auxiliary_heat_t_equals_1_over_N": 0.0006451612903225806,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": 1.532,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 1.532,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9980663879701055,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.0019336120298945113
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 207,
+          "2": 568,
+          "3": 559,
+          "4": 216
+        },
+        "source_edges": 3017,
+        "source_faces_sha256": "f7377b08244aa5e733d7717aec91e3b312b606d281846d664517002e41d2f433",
+        "source_plaquettes": 1468,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "0028375ef2fb8e148eb2dc8f12240de2442c2328c6b3e1e6ec3af79f7f71b9e6",
+        "source_vertices": 1550,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 10,
+        "all_strong_four_edge_rhombi": 1096,
+        "all_weak_four_edge_rhombi": 428,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 2886,
+          "N_vertices": 3042,
+          "auxiliary_heat_t_equals_1_over_N": 0.0003287310979618672,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": 0.11399999999999988,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.11399999999999988,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9990142928349021,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.0009857071650979316
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 424,
+          "2": 1098,
+          "3": 1105,
+          "4": 415
+        },
+        "source_edges": 5927,
+        "source_faces_sha256": "ead8334adc6ceed6b86a588a0779505619b806f80772dc8171202ff7a3a10c8f",
+        "source_plaquettes": 2886,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "8bd4ed73f684b2c82f48f8fffc5454850565bd66a67643ad555bc58bf75e0fee",
+        "source_vertices": 3042,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 12,
+        "all_strong_four_edge_rhombi": 1626,
+        "all_weak_four_edge_rhombi": 581,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 4145,
+          "N_vertices": 4324,
+          "auxiliary_heat_t_equals_1_over_N": 0.00023126734505087883,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -1.1450000000000005,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9993064385898275,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.0006935614101725631
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 611,
+          "2": 1546,
+          "3": 1575,
+          "4": 592
+        },
+        "source_edges": 8468,
+        "source_faces_sha256": "43df6235aa1b87207c8ff518a0d088617b6aae87c173aa1d7b774264d376129a",
+        "source_plaquettes": 4145,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "3f48224921356ce8e92adbc1e035ca417fcabf7ed55c7977ae20b310dd22e464",
+        "source_vertices": 4324,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 15,
+        "all_strong_four_edge_rhombi": 2576,
+        "all_weak_four_edge_rhombi": 984,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 6800,
+          "N_vertices": 6980,
+          "auxiliary_heat_t_equals_1_over_N": 0.00014326647564469913,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -3.8,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9995702929236084,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.00042970707639161155
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 980,
+          "2": 2499,
+          "3": 2566,
+          "4": 935
+        },
+        "source_edges": 13779,
+        "source_faces_sha256": "d8e2bfb1cff40caf9b76ec239543b5b667b7e5f98dda6bf41b2696cd931e1b42",
+        "source_plaquettes": 6800,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "55d1ad6896d5f90cfb81ebd9ae0113fe50ff7657ec14cd2ea58ef765ed015efd",
+        "source_vertices": 6980,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 18,
+        "all_strong_four_edge_rhombi": 3680,
+        "all_weak_four_edge_rhombi": 1410,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 9646,
+          "N_vertices": 9950,
+          "auxiliary_heat_t_equals_1_over_N": 0.00010050251256281407,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -6.646000000000001,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9996985379111414,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.0003014620888586371
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 1405,
+          "2": 3551,
+          "3": 3646,
+          "4": 1348
+        },
+        "source_edges": 19593,
+        "source_faces_sha256": "8c2e52fd9111cc182c114f3fe60d4e14b082c5e46c4cf77fa46e2b256c782ec4",
+        "source_plaquettes": 9646,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "29d3aa4617b3ef8baa8a5254f553f9af1f69157b9e6b3bbc169c3b02882e3672",
+        "source_vertices": 9950,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 20,
+        "all_strong_four_edge_rhombi": 4487,
+        "all_weak_four_edge_rhombi": 1782,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 11879,
+          "N_vertices": 12207,
+          "auxiliary_heat_t_equals_1_over_N": 8.192020971573687e-05,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -8.879,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9997542695675224,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.00024573043247755935
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 1710,
+          "2": 4372,
+          "3": 4481,
+          "4": 1644
+        },
+        "source_edges": 24091,
+        "source_faces_sha256": "eb0024d1daabf38a7bceda63d7a03e3089979a26ae944ee3e3cf1b191675d21e",
+        "source_plaquettes": 11879,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "662aafd944365ddd3ef492a3d110f108d6c2d77b062b54d0e96a9f6cd53c701a",
+        "source_vertices": 12207,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 23,
+        "all_strong_four_edge_rhombi": 6204,
+        "all_weak_four_edge_rhombi": 2328,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 16138,
+          "N_vertices": 16435,
+          "auxiliary_heat_t_equals_1_over_N": 6.0845756008518406e-05,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -13.138000000000002,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9998174793908879,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.00018252060911208573
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 2302,
+          "2": 5888,
+          "3": 6022,
+          "4": 2223
+        },
+        "source_edges": 32582,
+        "source_faces_sha256": "48e2f89aaa75f993af2e0b869088cc3634d676f9cb234a3cc1d66c58d511c518",
+        "source_plaquettes": 16138,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "5c349932d1caa8549c362ea0d1c21e1d8d58ad548a74e353d1caf984ca6fe644",
+        "source_vertices": 16435,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      },
+      {
+        "Ngrid": 25,
+        "all_strong_four_edge_rhombi": 7234,
+        "all_weak_four_edge_rhombi": 2732,
+        "bipartite_parity_rule_verified": true,
+        "electric_epsilon_equals_inverse_scalar_Fibonacci_weights_gap": 3.0,
+        "electric_epsilon_equals_source_scalar_Fibonacci_weights_gap": 1.1458980337503155,
+        "exact_formula_general": "Delta_{sum_e epsilon_e C_e}=(3/4)*min_simple_cycle_sum_e epsilon_e for epsilon_e>0",
+        "extensive_interaction_bound_example": {
+          "N_faces": 18874,
+          "N_vertices": 19260,
+          "auxiliary_heat_t_equals_1_over_N": 5.1921079958463136e-05,
+          "bound_is_uniform_in_unbounded_F": false,
+          "finite_interacting_minmax_lower_bound_3_minus_kappa_F": -15.873999999999999,
+          "kappa_auxiliary_fixed_per_face": 0.001,
+          "nonnegative_interacting_gap_lower_bound_from_this_test": 0.0,
+          "physical_energy_unit_derived": false,
+          "pure_electric_energy_gap_dividing_by_assumed_step": 3.0,
+          "pure_electric_lambda_1_equals_exp_negative_3t": 0.9998442488905882,
+          "pure_electric_per_step_transfer_gap_1_minus_lambda1": 0.00015575110941177611
+        },
+        "girth_exact": 4,
+        "height_histogram": {
+          "1": 2693,
+          "2": 6908,
+          "3": 7057,
+          "4": 2602
+        },
+        "source_edges": 38139,
+        "source_faces_sha256": "f91ef4a44e4dfe5b69bb13baf8248198cc547953814317e53ae602097d880704",
+        "source_plaquettes": 18874,
+        "source_scalar_weak_weight": 0.38196601125010515,
+        "source_vertex_sha256": "508fdd906d94e469ad71c0153bacac250b807e99c6c8d925e45e0d74e38b3836",
+        "source_vertices": 19260,
+        "source_weight_as_electric_coefficient_is_auxiliary": true,
+        "uniform_epsilon_1_gap": 3.0
+      }
+    ],
+    "source_data_kind": "original retained Z5 cut-project graph, no substituted cubic/periodic geometry",
+    "source_script_sha256": "86ce0bf4e0688899a2f1c9dba980cb6d996c3fef59889807ee8376d6e62369da",
+    "verified_PF_I11_source_geometry": true
+  },
+  "source_reference": "unpublished March 2026 dissertation and J paper: kinematic helix explicitly not a field equation",
+  "status": "exact finite electric theorem + physical time nonselection and illustrative nonzero-plaquette quantum control; NOT continuum proof"
+}
