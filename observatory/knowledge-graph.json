@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.56-pf-i4",
-  "scope": "PF-I4 exact source consistency: Paper4 printed degree histogram incompatible with printed mean under one population; Paper1 35% neighbor-selection closure requires explicit one-pass semantics; Paper2/4 mode-count differences cannot solely be weighted zero modes on same connected graphs; original tar PDF hash errata. All PF-G0 and continuum gates OPEN. Original Paper2/4 numerical generator unrecovered.",
+  "version": "v2.57-pf-i5-source-code",
+  "scope": "PF-I5 explicit code provenance correction: original 7–8 publication scripts not located or read; PF-I2 numerical generator de Bruijn, not direct accepted Z5 window; later PhaseIII direct cut-project passes six matched finite tests but does not prove original-source identity. All YM/gravity and PF-G0 proof gates remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I4 adds precise source-fidelity obstructions: Paper4 published degree partition inconsistent with reported mean for one unweighted population, Paper1 35%-core neighbor condition not iteratively satisfiable on connected proper finite subset, and Paper2/4 mode-count deltas not all standard zero-mode deletions on identical graphs. Original eight-size coupled generator, D, mass, comparator and filter remain OPEN.",
+      "summary": "BLOCKED ON ORIGINAL SOURCE CODE. Author identifies about 7–8 publication scripts and a cut-and-project implementation; NONE has yet been authenticated/read. Paper1/2 printed de Bruijn wording and Paper3 cut-project window do not fix executable geometry. Later PhaseIII direct four-window model is a distinct finite research reconstruction; PF-I2 grid-crossing numerics are not original source data. Paper2/4 matrices, modes, D, mass and comparator still OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4863,6 +4863,13 @@
           "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
           "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
+          "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -6989,8 +6996,8 @@
       "kind": "result",
       "status": "partial",
       "stage": "P0",
-      "summary": "Paper1 §§6.1–7.1 gives exact gamma_j offsets, K_j(r)=ceil(r·e_j−gamma_j), original-basis edge adjacency, rhombus corners, and t(j,k) depending on Fibonacci floor(k/phi). Source-equation implementation constructs patches 186/345/160 and 616/1185/570 with 3,382 and 11,305 checks, respectively. Same-accepted-vertex basis-neighbour adjacency equals P3. Original Paper2 numerical graph still unidentified.",
-      "detail": "Published mathematical definitions are source-authenticated, executable is independently reconstructed (not original archived code). 3,382 and 11,305 finite checks including 150 random SU2 Wilson gauge tests per sample. Grid center cutoffs are new test parameters; not original Ngrid procedure.",
+      "summary": "Only the printed Paper1 pentagrid formulas are independently reconstructed. PF-I2 actual generate() uses de Bruijn grid intersections with user-independent artificial offsets/crop; original 7–8 publication cut-and-project scripts NOT located or reviewed. Finite P3 186/616 graph results are ILLUSTRATIVE CONTROLS, not source-code reproduction.",
+      "detail": "Published mathematical definitions are source-authenticated, executable is independently reconstructed (not original archived code). 3,382 and 11,305 finite checks including 150 random SU2 Wilson gauge tests per sample. Grid center cutoffs are new test parameters; not original Ngrid procedure. PF-I5 SOURCE-IDENTITY ERRATUM: user has stated original geometry is cut-and-project, not de Bruijn; do NOT equate PF-I2 verifier with author numerical script.",
       "checks": [
         {
           "label": "Recover original numerical code and Ngrid/window/normalization choices underlying source Paper2 coupled Z5 zeta",
@@ -7004,6 +7011,13 @@
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
+          "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7592,6 +7606,83 @@
         "PF-G0",
         "source-reproduction",
         "missing-dataset",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "title": "OPEN: read original seven/eight publication scripts, not reconstructed de Bruijn code",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Original author-identified seven/eight publication scripts have not been located/read. Dissertation tar includes PDFs but no source scripts. PF-I2 generate() explicitly enumerates de Bruijn grid-line crossings with different offsets and cutoff, not source cut-and-project window selection. Paper1 §6.1 and Paper2 §2.1 explicitly mention de Bruijn while Paper3 §4.1 describes a decagonal window; actual original program must resolve their finite operator implementation.",
+      "detail": "Do not claim complete source-code comprehension; require original source files/hashes and independent same-operator replay. Later PhaseIII direct-window code is an auxiliary research implementation, not the 7–8 original publication scripts. PF-I2–PF-I4 numerical samples are illustrative finite controls only.",
+      "checks": [
+        {
+          "label": "Obtain original publication script files or immutable source commit containing all 7–8 scripts",
+          "state": "open"
+        },
+        {
+          "label": "Read every original file line-by-line and verify exact cut/project acceptance, phasons, graph, D, mass, modes, controls",
+          "state": "open"
+        },
+        {
+          "label": "Reproduce original Paper2/Paper4 per-size matrices and spectral/determinant values",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
+          "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-provenance",
+        "original-scripts",
+        "cut-and-project",
+        "proof-blocker",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I5-LATER-DIRECT-WINDOW-CROSSCHECK",
+      "title": "Later PhaseIII direct cut-project: matched-pentagrid finite face identity, NOT source publication code",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Archive4 PhaseIII direct_cut_project.py selects Z5 vertices using four hypersimplex-slice perpendicular windows and constructs basis-neighbour squares; test_direct.py passed all six unit tests, including identical face label sets with independently audited pentagrid at matched offsets and disk crop. Different gamma/selection from PF-I2 and original publication scripts not located.",
+      "detail": "Library Archive4 bundle SHA256 b9c228..., source script SHA256 2eea2d...; PhaseIII README explicitly calls phase2/legacy_phase2 unverified. Cross-method agreement within later implementation is useful but not original Paper2 spectral generator verification.",
+      "checks": [
+        {
+          "label": "Match source-original cut-project window and phason/boundary rules to PhaseIII four-slice model",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I5 publication-script provenance and cut-and-project implementation boundary",
+          "path": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "839a4dce1fc3464e8d07db3384c38b827f5ab6ae",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "finite-geometry",
+        "cut-and-project",
+        "conditional-equivalence",
+        "not-publication-source",
         "2026-11-07"
       ],
       "importance": 5,
@@ -11288,6 +11379,41 @@
       "kind": "does-not-imply",
       "label": "finite graph degree/mode checks not gravitational UV proof",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "kind": "source-not-authenticated",
+      "label": "printed P3 equations not evidence original numerical cut-project generator was read",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I5-LATER-DIRECT-WINDOW-CROSSCHECK",
+      "to_id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "kind": "does-not-imply",
+      "label": "later PhaseIII matched finite face geometry not original publication code identity",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "original author scripts not located; source-model authenticity remains OPEN",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I5-LATER-DIRECT-WINDOW-CROSSCHECK",
+      "to_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "kind": "narrow-control",
+      "label": "only after matching offsets/windows/finite crop; current PF-I2 parameters differ",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I5-PUBLICATION-CODE-IDENTITY",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "source-identity-prerequisite",
+      "label": "exact original generator needed for Paper2/Paper4 finite matrices",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -11433,7 +11559,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "next_gate": "PF-I5-PUBLICATION-CODE-IDENTITY",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -11534,6 +11660,16 @@
         "original_source_generator_found": false,
         "continuum_mass_gap_proved": false,
         "library_archive": "/The Singular Boundary/Proof Audits/PF I4 Source Selection and Mode Audit 2026-11-07/"
+      },
+      "source_script_provenance": {
+        "status": "open",
+        "original_publication_scripts_identified": false,
+        "original_scripts_reviewed_in_full": false,
+        "original_dissertation_tar_contains_executable_scripts": false,
+        "earlier_PF_I2_method": "de Bruijn dual-pentagrid intersection enumeration, NOT direct accepted-window graph",
+        "later_direct_cut_project": "Archive 4.zip / Phase_III_Cut_and_Project_Recomputed.zip, six unit tests PASS under its own parameters",
+        "original_model_identity_gate": "PF-I5-PUBLICATION-CODE-IDENTITY",
+        "report": "research/geometry/PF_I5_ORIGINAL_SCRIPT_PROVENANCE_AND_CUT_PROJECT_AUDIT_2026_11_07.md"
       }
     },
     "orientation_selection": {
