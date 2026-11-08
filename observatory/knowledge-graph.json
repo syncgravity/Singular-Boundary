@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.55-pf-i3-paper4",
-  "scope": "PF-I3 cross-paper Paper2/Paper4 mathematical audit: exact spectral trace, generic mass-relative logdet endpoint, and source mode-count inconsistencies; ordinary P3 one-scale control mimics four Paper4 mass-flow ratios. Source executable and physical continuum remain OPEN; cubic controls distinct.",
+  "version": "v2.56-pf-i4",
+  "scope": "PF-I4 exact source consistency: Paper4 printed degree histogram incompatible with printed mean under one population; Paper1 35% neighbor-selection closure requires explicit one-pass semantics; Paper2/4 mode-count differences cannot solely be weighted zero modes on same connected graphs; original tar PDF hash errata. All PF-G0 and continuum gates OPEN. Original Paper2/4 numerical generator unrecovered.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Paper1 P3 source generator reconstructed, but Paper2/Paper4 exact coupled source graph, eigenvalue zero-mode filters, diagonal D, physical mass/reference normalization remain OPEN. PF-I3 demonstrates exact zeta(-1) trace and Paper4 mass-relative determinant endpoints; finite P3 controls mimic reported moment/flow with one comparator calibration, but do not certify the source or continuum physics.",
+      "summary": "PF-I4 adds precise source-fidelity obstructions: Paper4 published degree partition inconsistent with reported mean for one unweighted population, Paper1 35%-core neighbor condition not iteratively satisfiable on connected proper finite subset, and Paper2/4 mode-count deltas not all standard zero-mode deletions on identical graphs. Original eight-size coupled generator, D, mass, comparator and filter remain OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4847,15 +4847,22 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         },
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -6882,7 +6889,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -6995,7 +7002,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7030,7 +7037,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7064,7 +7071,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7106,7 +7113,7 @@
         {
           "title": "PF-I2 Paper 1 pentagrid original definitions, four-layer theorem, source Fibonacci hopping and two Laplacian conventions",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7140,7 +7147,7 @@
         {
           "title": "PF-I2 revised Paper1 pentagrid original definitions, four-layer and same-vertex edge equivalence",
           "path": "research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
-          "git_blob_sha": "011d59ae50b34b23d8c6bac29dfc792f9e4357ea",
+          "git_blob_sha": "3c3187631e523c30895400d92f14b8f0949f4f62",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md",
           "review_only": true
         }
@@ -7175,7 +7182,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7210,7 +7217,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7244,7 +7251,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7290,7 +7297,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7324,7 +7331,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7359,7 +7366,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7382,7 +7389,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Paper2 §8.2 full Nint and Paper4 §7.2 use [1550,3042,4324,6980,9950,12207,16435,19260], but Paper4 §3 zeta-prime N gives [1550,3042,4324,6979,9947,12206,16434,19255]. Differences [0,0,0,1,3,1,1,5]. Paper4 says zero modes removed, but lacks actual mode-filter proof; do not equate differences with zero modes automatically.",
+      "summary": "Reported Paper2/Paper4 retained-mode differences [0,0,0,1,3,1,1,5] cannot all be zero-mode removal from identical nonempty positive weighted-degree source graphs: nullity at least 1, exactly 1 if connected. Exact 35%-neighbor algorithm, operator D and source eigenmode selection unverified; PF-I4 supplies conditional exclusion, not a corrected source table.",
       "detail": "Resolve denominator N, zero-mode spectrum, connected components, eigensolver threshold and whether graph vertex selection changed before reproducing Paper4 zeta-prime ratio 0.646±0.006 or mass flow.",
       "checks": [
         {
@@ -7398,7 +7405,7 @@
         {
           "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7408,6 +7415,183 @@
         "source-identification",
         "zero-modes",
         "paper-crosscheck",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I4-DEGREE-DISTRIBUTION-EXCLUSION",
+      "title": "Paper4 published degree percentages force mean >=3.771, not reported 3.748",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "Paper4 §6.1–6.2: fractions 28.6% degree3,65.9% degree4,5% degree5,remainder0.5% degree>=6 yield mean>=3.774; rounded to 0.1 percentage point still >=3.771, incompatible with cited mean3.748 on same unweighted vertex population. Paper4's D=0.786 likewise implies mean3.706776 when D=sqrt(mean/6).",
+      "detail": "Exact rational inequality with source native PDF. Conditional on all numbers referring to one population and unweighted degree; differing populations or strength weighting could resolve it. Original eigenvalues not reproduced and no physical gate closed.",
+      "checks": [
+        {
+          "label": "Recover actual source histogram and diagonal D with common selection/normalization",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "paper4",
+        "degree-normalization",
+        "conditional-falsification",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I4-INTERIOR-CLOSURE-LEMMA",
+      "title": "Published 35% neighbor-complete finite interior must specify one-pass or alternate ambient graph",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Paper1 §7.2 specifies 35% max tile distance then all retained neighbors must be interior. On a finite connected graph every nonempty fully neighbor-closed subset is the whole graph, so a proper interior cannot be produced by iterated closure. Source does not state implementation. Independent P3 controls: 186/345 graph yields 28 candidate/14 one-pass core, 616/1185 yields96/68; both final cores connected but not neighbor-closed.",
+      "detail": "Finite graph-theoretic path proof, exact. BFS interpretation of 'tile distance' is illustrative, not original source implementation and not reproduction of Ngrid/Nint.",
+      "checks": [
+        {
+          "label": "Recover source original 35%-of-maximum tile distance and neighbor filtering order/ambient graph",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "paper1",
+        "boundary-selection",
+        "finite-theorem",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+      "title": "Paper2/Paper4 retained-N deltas cannot all be weighted-Laplacian zero-mode deletion on same graphs",
+      "kind": "result",
+      "status": "obstruction",
+      "stage": "P0",
+      "summary": "Paper2 full Nint versus Paper4 §3 N differ by [0,0,0,1,3,1,1,5]. For standard positive weighted-degree L, nullity equals number connected components, so every nonempty graph has >=1 zero mode and a connected graph exactly1. The deltas cannot all be deletion of every zero mode on identical source graphs; a count-degree-minus-weighted operator with some weak edges can instead be positive definite.",
+      "detail": "Exact quadratic-form identity proves zero-nullity rules; finite P3 samples connected and give nullity1 with weighted strength D but0 with ordinary count D and weights<=1. Does NOT assert whether source retained-mode count differences are misprints, different N selections, eigenvalue thresholds, or distinct graphs.",
+      "checks": [
+        {
+          "label": "Recover per-size actual Paper4 N and zero-mode filtering thresholds and original input matrices",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "zero-modes",
+        "source-ncounts",
+        "operator-diagonal",
+        "conditional-obstruction"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I4-PDF-NATIVE-BYTE-PROVENANCE",
+      "title": "Original dissertation PDF byte-digest erratum and unlocated historical source ids",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Tar-native PDF SHA256 Paper1=2b114...,Paper2=2bfc...,Paper4=871bf...; three currently mounted processed PDFs have pixel-identical renders and extracted text but different bytes. PF-I2 cited Paper1 SHA 7c058... unlocated; PF-I3 cited Paper4 SHA03152... unlocated. Preserve original record with explicit errata rather than silently treating processed hash as native source.",
+      "detail": "PDFs were rendered per-page at 1.2x and all text compared; provenance evidence JSON and a pinned source archive validation script. Cannot claim content equivalence to *unlocated* hashes.",
+      "checks": [
+        {
+          "label": "Recover and independently byte-verify old PF-I2 Paper1 and PF-I3 Paper4 cited PDF source objects, if available",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "source-integrity",
+        "historical-erratum",
+        "proof-provenance",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "title": "Open: obtain archived Paper2/4 finite matrices, exact selection and retained-mode rule",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "A source-authenticated eight-size operator record needs integer labels, 35% core order, actual coupled versus tile P3 vertices and edges, D and Fibonacci level weights, periodic comparator and mass, eigensolver zero-mode exclusions, graph components, and exact zeta trace fingerprint. No original Paper2/4 graph-zeta executable or full sparse matrices yet located.",
+      "detail": "Current main Git tree surveyed 3315 entries/697 Python scripts by filename; later PhaseIII cutproject and Stage7/26 code are different simulations and not source-certified Paper2 generator. Source-controlled P3 test retains 186/616 finite samples and 9 tests. Gate remains OPEN, no source spectral reproduction.",
+      "checks": [
+        {
+          "label": "Recover source original Ngrid graphs/edge lists or original executable and calculate TrL/N and component count per size",
+          "state": "open"
+        },
+        {
+          "label": "Reproduce Paper2 R(-1),R(-1/2) and Paper4 zeta-prime/Gamma on the same source matrices",
+          "state": "open"
+        },
+        {
+          "label": "Reconcile printed degree histogram, D and 0/1/3/5 retained-mode deltas with source bytes",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I4 exact source-selection, degree-frequency, zero-mode and provenance certificate",
+          "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-G0",
+        "source-reproduction",
+        "missing-dataset",
         "2026-11-07"
       ],
       "importance": 5,
@@ -11020,6 +11204,90 @@
       "kind": "negative-control",
       "label": "near match to published ratios does not certify Z5-specific mechanism",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "to_id": "PF-I4-INTERIOR-CLOSURE-LEMMA",
+      "kind": "source-selection-audit",
+      "label": "Paper1 35% neighbor requirement needs one-pass/ambient interpretation",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I4-INTERIOR-CLOSURE-LEMMA",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "requires-source-method",
+      "label": "original Ngrid selection and boundary application unknown",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-DEGREE-DISTRIBUTION-EXCLUSION",
+      "to_id": "PF-I2-DEGREE-NORMALIZATION",
+      "kind": "source-data-incompatibility",
+      "label": "reported count-degree histogram cannot certify same mean D",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-DEGREE-DISTRIBUTION-EXCLUSION",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "blocks",
+      "label": "need source population and exact degree histogram",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+      "to_id": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "kind": "strengthens-conditional-obstruction",
+      "label": "mode-count deltas not uniformly weighted zero-mode removal",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "requires-source-filter",
+      "label": "eigenvalue zero-mode list and D convention needed",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-PDF-NATIVE-BYTE-PROVENANCE",
+      "to_id": "PF-I2-P3-PENTAGRID-PUBLISHED",
+      "kind": "corrects-provenance",
+      "label": "original native Paper1 PDF hash, historical cited hash unlocated",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I4-PDF-NATIVE-BYTE-PROVENANCE",
+      "to_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "kind": "corrects-provenance",
+      "label": "native Papers1/2/4 source bytes distinguished from processed copies",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "requires-evidence",
+      "label": "source scalar spectral moments still need actual matrices",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I2-COUPLED-BOND-DICTIONARY",
+      "to_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "kind": "requires-operator-identity",
+      "label": "same-P3 vs distinct coupled graph unverified",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "source generator and mode identity required for P0 fidelity",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I4-SOURCE-MATRIX-CONTRACT",
+      "to_id": "G-GRAV",
+      "kind": "does-not-imply",
+      "label": "finite graph degree/mode checks not gravitational UV proof",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -11165,7 +11433,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "next_gate": "PF-I4-SOURCE-MATRIX-CONTRACT",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -11254,6 +11522,18 @@
           "full_control_evidence": "research/evidence/PF_I3_PAPER4_RELATIVE_LOGDET_EVIDENCE_2026_11_07.json",
           "continuum_mass_gap_proved": false
         }
+      },
+      "paper2_paper4_matrix_source_selection_audit": {
+        "status": "partial",
+        "report": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+        "degree_bound": "PF-I4-DEGREE-DISTRIBUTION-EXCLUSION",
+        "neighbor_selection": "PF-I4-INTERIOR-CLOSURE-LEMMA",
+        "mode_count": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+        "source_pdf_provenance": "PF-I4-PDF-NATIVE-BYTE-PROVENANCE",
+        "actual_source_matrix_gate": "PF-I4-SOURCE-MATRIX-CONTRACT",
+        "original_source_generator_found": false,
+        "continuum_mass_gap_proved": false,
+        "library_archive": "/The Singular Boundary/Proof Audits/PF I4 Source Selection and Mode Audit 2026-11-07/"
       }
     },
     "orientation_selection": {
