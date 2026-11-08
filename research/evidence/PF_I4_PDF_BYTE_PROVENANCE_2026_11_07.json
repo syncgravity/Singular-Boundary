@@ -1,0 +1,26 @@
+{
+  "paper1": {
+    "native_sha256": "2b11426161c32c41a36fd816e3fcd668c7f1b44ee9cf73be1a62638fe6d46be5",
+    "pdf_page_count": 24,
+    "prior_mounted_copy_sha256": "42da2082f86858f75771a06ef7767bbea59bf53bd2d27e20357b7a3d62cedf4e",
+    "rendered_all_pages_pixel_identical_1p2x": true,
+    "text_all_pages_identical": true,
+    "unmatched_pages": []
+  },
+  "paper2": {
+    "native_sha256": "2bfc52c29140149d483b8e1b980143b05a43d21fe0e2098516efb1615b7e50e7",
+    "pdf_page_count": 24,
+    "prior_mounted_copy_sha256": "5f010279d4cea5ea5db4abac3834759c2cf15e2cb084d56b7beefa0b1d98263f",
+    "rendered_all_pages_pixel_identical_1p2x": true,
+    "text_all_pages_identical": true,
+    "unmatched_pages": []
+  },
+  "paper4": {
+    "native_sha256": "871bf58f9d5adf66b2ad7d115f8031dd0c36efc18b147ae91caa48e6865d54ab",
+    "pdf_page_count": 22,
+    "prior_mounted_copy_sha256": "741660e2654a6891c95b25ef689faa16915c32356f537c14d0402fc32ee1ede5",
+    "rendered_all_pages_pixel_identical_1p2x": true,
+    "text_all_pages_identical": true,
+    "unmatched_pages": []
+  }
+}
