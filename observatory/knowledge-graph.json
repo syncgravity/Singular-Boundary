@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.61-unpublished-source-reference",
-  "scope": "Unpublished dissertation extracts are a private historical reference corpus, NOT the authoritative final proof. No source claim promoted. Earlier PF-I6/PF-I7 implementation audits and all P0–P5/PF-G0–G5 proof statuses unchanged.",
+  "version": "v2.62-pf-i9-cut-project-source",
+  "scope": "PF-I9 exact intrinsic four hypersimplex window/face-triangle theorems and eight-size original source operator identity: capped grid tile lists omit genuine rhombi; complete-window P3 edges equal original source coupled basis edges (same source labels and Fibonacci weights); source R(-1) mean0.737056709 reproduces 0.7371 with tavg triangular comparator. Original vs complete cores distinct, full spectra and interacting YM/gravity proof gates OPEN. Unpublished dissertation reference retained privately.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "PF-I6: eight original predecessor PDFs + nine computation scripts recovered. Source gamma/direct C&P window reconstruction matches four central P3 patches exactly; original tile versus basis Laplacians differ only by finite enumeration crop links (62 at Ng10,85 at Ng12) all restored at larger grid; source D=sumW, one-pass interior and comparator/mode filters recovered for drafts. Merged-final coupled operator/physical dynamics and full eigendata still OPEN.",
+      "summary": "PARTIAL finite operator milestone PF-I9: intrinsic Z5 four-slice C&P has source-matched generic cell/face criterion; eight original finite coupled source graph edge sets match COMPLETE cut-project tile edge dictionaries on same label sets, and exact source triangular comparator reproduces R(-1)=0.7370567 (published 0.7371). Source P3 finite tile truncation misses faces and has different original cores; full R(-1/2), zeta prime, SU2 interacting 4D continuum/mass gap remain OPEN.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4877,6 +4877,13 @@
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7225,7 +7232,7 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P0",
-      "summary": "With Paper2-reported mean coordination 3.9 QC vs 6 triangular, unit triangular control conductance, printed P3 weights ≤1 and Paper1 m²=1e-4, both ordinary-count QC D and weighted QC D predict R(-1)≤~0.65001, unlike reported 0.7371. Source parameters and comparator strength unverified, so this excludes only that simultaneous normalization hypothesis.",
+      "summary": "Conditional unit-conductance periodic comparator predicts R(-1)≈0.65, but recovered author source actually uses finite triangular tavg=(1+phi^-2)/2. The source eight-size weighted trace now reproduces R(-1)=0.7370567 without fitting (PF-I9). Previous result remains a valid conditional negative-control exclusion, NOT an unresolved incompatibility of source results.",
       "detail": "Source value R(-1)=0.7371. At fixed count QC and m²=1e-4, matching requires effective triangular conductance ~0.88184 rather than1; forcing unit triangle instead would require m²~1.98783. A single calibrated triangle conductance on independently reconstructed 186/616 P3 patches predicts R(-1/2)~0.8357, demonstrating one source ratio does not uniquely certify a coupled operator.",
       "checks": [
         {
@@ -7240,6 +7247,13 @@
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "git_blob_sha": "1411543dd01e15214c13cbf84de5a1c7dedde7b8",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7516,7 +7530,7 @@
       "kind": "result",
       "status": "obstruction",
       "stage": "P0",
-      "summary": "Paper2 full Nint versus Paper4 §3 N differ by [0,0,0,1,3,1,1,5]. For standard positive weighted-degree L, nullity equals number connected components, so every nonempty graph has >=1 zero mode and a connected graph exactly1. The deltas cannot all be deletion of every zero mode on identical source graphs; a count-degree-minus-weighted operator with some weak edges can instead be positive definite.",
+      "summary": "Published Nint differences [0,0,0,1,3,1,1,5] are not uniform zero-mode removals across all sizes. Original recovered source coupled graph component counts are [1,1,1,1,3,1,1,5], EXACTLY explaining last five differences as possible positive-mode exclusions; first three counts remain convention-dependent (PF-I9).",
       "detail": "Exact quadratic-form identity proves zero-nullity rules; finite P3 samples connected and give nullity1 with weighted strength D but0 with ordinary count D and weights<=1. Does NOT assert whether source retained-mode count differences are misprints, different N selections, eigenvalue thresholds, or distinct graphs.",
       "checks": [
         {
@@ -7530,6 +7544,13 @@
           "path": "research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
           "git_blob_sha": "f1c583b53d6f708dcc6a0de303074df6a73e2ce3",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7789,7 +7810,7 @@
       "kind": "result",
       "status": "finite",
       "stage": "P0",
-      "summary": "On identical original multindices, predecessor L_tile uses enumerated rhombus faces and L_basis uses all accepted Z5 +/- basis neighbors with identical Fibonacci weights and D=sumW. E_tile⊆E_basis and Lbasis−Ltile=sum_{extra e}w_e b_e b_e^T >=0. Ng7 N1550:3017 vs3017; Ng10 N3042:5865 vs5927 (62 extra, tile graph 51 components); Ng12 N4324:8383 vs8468 (85 extra, tile graph 46 components). Basis graphs connected. Every extra at Ng10/12 becomes a tile edge when grid range enlarged by 2.",
+      "summary": "Finite author source L_tile and L_basis really differ on identical retained vertex IDs (62/85 extra bonds at grid10/12; up to1066 at grid25), but PF-I9 cut-project completion proves ALL basis-only source edges are genuine rhombus edges omitted by capped [-Ngrid,Ngrid] tile enumeration. The finite source matrices remain distinct; this is not evidence of intrinsically extra nearest-basis interactions.",
       "detail": "Source numeric differences reflect finite pentagrid intersection crop under tested variants. New source C&P adjacency is not an independent coupled z2 dynamics or interacting YM operator. Original eight-size eigenvalues were NOT rerun; formal infinite-limit spectral implications still open. Source comparator is floor sqrt N and zero filter lambda>1e-10.",
       "checks": [
         {
@@ -7807,6 +7828,13 @@
           "path": "research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
           "git_blob_sha": "aa5fd6cedb79feeeeeebc1fec412e6cc4a2ca431",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -7827,7 +7855,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Earlier scripts explicitly establish P3 integer-label adjacency, weighted strength D, 35% one-pass tiles, six/one dual graph variants and observed finite-crop defects. The merged final dissertation may incorporate revised C&P assumptions and 4D physical claims not proved by these predecessor computations. Authenticate final operator revisions and rerun source-matched modes/periodic comparator before PF-G0 closure.",
+      "summary": "PF-I9 establishes four-height-window and face-triangle source geometry, equal completed tiling-versus-basis edge dictionaries on eight published-size original retained label sets, and reproduces source R(-1). Still OPEN for original published full R(-1/2)/zeta prime, 4D SU2 gauge action and interacting continuum/physical mass gap. Separate source/complete cropping populations must be preserved.",
       "detail": "Eight predecessor papers ≠ eight final merged dissertation papers, not necessarily source-state identical. Nine scripts cover paper1/2/3/5/6 and zeta validation; Paper4/7/8 have no separate named compute script in this ZIP. Remainder includes missing external /home/claude data. Different experimental Stage26 SU2 work remains separate. PF-I6 USER CORRECTION: Do not infer manuscript chronology or script associations from raw paper-numbered filenames. Tie all comparisons to manuscript content titles, full bytes, functions and inputs, output/operator hashes.",
       "checks": [
         {
@@ -7856,6 +7884,13 @@
           "path": "research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
           "git_blob_sha": "fabf173c4d2b89e4d226e47d4806ec8dbcf08116",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md",
+          "review_only": true
+        },
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
           "review_only": true
         }
       ],
@@ -8021,6 +8056,253 @@
         "zero-mode",
         "truncated-spectrum",
         "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-HYPERSIMPLEX-FOUR-LAYER-CELL-IDENTITY",
+      "title": "Exact Z5 cut-project generic cell labels equal four hypersimplex window slices",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "For source gamma sum0, generic source pentagrid K_j=ceil(x·e_j−gamma_j) iff sum K=h∈{1,2,3,4} and Pperp(K+gamma) belongs to relint W_h where W_h is projected five-unit-cube hypersimplex of height h. Uses intrinsic 2+2+1 linear algebra, no imposed cubic/3+1 geometry.",
+      "detail": "Necessity by u=K+gamma−Eparallel x in (0,1)^5; converse by relative-interior surjectivity under perpendicular projection and rank-2+2+1 orthogonal decomposition. Original source offsets independently checked; 15 tests and eight-size finite comparison stored in Library.",
+      "checks": [
+        {
+          "label": "Complete source-matched scalar spectral and SU2 interacting continuum transfer",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "cut-and-project",
+        "exact-theorem",
+        "four-height-windows",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "title": "Exact face-admission triangles for genuine Z5 cut-and-project rhombi",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "For family pair j,k and lower cube corner sum h=1 or2, genuine rhombus iff Pperp(K+gamma) lies in strict projection of three remaining cube coordinates with sum h; a 2D triangular face window. Independent window/BFS generator tests these triangles, without calling original grid-line intersections.",
+      "detail": "Source authors' four per-vertex height windows alone do not encode the finite face crop. Two-fixed-coordinate cube face stratum gives exact necessity/sufficiency of acceptance triangle for generic phase. All source selected faces are admitted in full independent window construction at eight sizes.",
+      "checks": [
+        {
+          "label": "Analyze genericity/degenerate phases and uniform infinite face completion without relying on finite BFS",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "Z5",
+        "face-admission",
+        "exact-theorem",
+        "cut-and-project"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-TRUNCATED-GRID-MISSING-RHOMBI",
+      "title": "Eight source finite tile enumerations miss rhombi whose family line level exceeds Ngrid",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Under original gamma, source center/35%-tile-center cut and Ngrid=7..25, direct-window construction finds missing genuine selected rhombi counts [28,210,234,430,730,842,1199,1522], all with at least one crossing family level outside source [-Ngrid,Ngrid]. Source's one-pass selected vertex set differs from completed-window full incident-star selection; source 19260 vs completed 19256 at Ngrid25 (74 removed,70 added). No original source data overwritten.",
+      "detail": "BFS collar radius cutoff+4 and +6 give identical selected geometry and canonical integer-edge hashes at grids 7,12,25. At Ngrid20/23/25 the source's capped tiler additionally omits 3/30/26 accepted labels even in a strict smaller central disk. Finite source implementations remain real distinct matrices; this is source-truncation diagnosis, not a replacement of unpublished data.",
+      "checks": [
+        {
+          "label": "Recompute original source finite spectra and independent completed-window spectra under matched physical normalization",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-code",
+        "finite-boundary",
+        "missing-rhombi",
+        "noncubic"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "title": "Exact on same original source vertices: all coupled basis neighbours are complete P3 rhombus edges",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Every original source coupled-only edge [0,62,85,290,444,593,889,1066] at Ngrid[7,10,12,15,18,20,23,25] has a verified omitted-rhombus witness in direct-window geometry. For unchanged retained source labels, completed P3 tile edge list equals all five-basis-neighbour coupled edge list including source family, Fibonacci level and hopping type; at 19260 sites both have 38139 edges. The original incomplete tile-edge matrices DIFFER and remain preserved.",
+      "detail": "Convex common-strip argument proves accepted original basis-neighbour cells adjacent in complete generic tiling. Source independent edge dictionaries and direct face filters have equal canonical SHA256 for all eight sizes. Distinct finite source-operator spectra may reflect line-range omissions rather than a new physical edge mechanism.",
+      "checks": [
+        {
+          "label": "Identify whether any additional source physical coupling survives replacing finite tile cutoff by complete accepted-window face list",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "operator-support-identity",
+        "source-reproduction",
+        "Fibonacci-hopping",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "title": "Source eight-size R(-1)=0.7371 reproduced exactly by weighted trace and actual triangular comparator",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "The author's coupled matrix uses D_w=sum weighted edges; periodic comparator has floor(sqrt N)^2 sites, triangular zigzag edges each at tavg=(1+phi^-2)/2, NOT unit conductance. Exact trace formula and source edge dictionaries yield mean R(-1;m²=1e-4)=0.7370567093342758 (prints 0.7371) across Ngrid7,10,12,15,18,20,23,25, no fitting or eigen solver. m²=0 or zero-mode filtered mean also round to same 4 decimals so source ratio alone cannot distinguish regulator/filter.",
+      "detail": "Finite periodic edge count (q−1)(3q−1), q=floor sqrt N. Source matrix periodic conductance and trace independently checked n=1550 and3042; source coupled dense matrix at n=1550 checked. Exact numeric evidence and 15 regression tests. Does NOT reproduce R(-1/2), zeta prime/determinant or YM mass gap.",
+      "checks": [
+        {
+          "label": "Reproduce original source R(-1/2), zeta prime, and relative determinant on exact weighted source and source periodic graphs",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "zeta-moment",
+        "exact-numerical-reproduction",
+        "triangular-negative-control",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-SOURCE-CONNECTED-COMPONENTS-RECONCILIATION",
+      "title": "Source weighted-Laplacian components explain last five published retained-mode deltas",
+      "kind": "result",
+      "status": "partial",
+      "stage": "P0",
+      "summary": "Connected components of original source coupled weighted graphs over Ngrid[7,10,12,15,18,20,23,25] are [1,1,1,1,3,1,1,5]. Draft Nint minus zeta-prime reported counts [0,0,0,1,3,1,1,5] match EXACTLY for last 5 rows; 18 has component sizes(9946,2,2), 25 has(19252,2,2,2,2). First3 source tables still have difference0 despite one zero mode each. Conditional high-size zero-mode explanation, not uniform verified original denominator convention.",
+      "detail": "Nullity=# components follows exact weighted quadratic form with all hopping positive. No eigensolver needed. Some corrected full-star cores can have disconnected tiny components too (size23, 11). Requires original zeta-prime table generation/filters to explain first3 rows.",
+      "checks": [
+        {
+          "label": "Recover original manuscript zeta-prime table and eigenvalue denominator code for sizes7,10,12 to reconcile reporting convention",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-mode-counts",
+        "spectral-kernel",
+        "partial-reconciliation",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+      "title": "OPEN: source-matched full spectral, SU2-interacting and continuum bridge after finite geometry identity",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "PF-I9 certifies finite cut-project four-slice window and complete-face/basis-edge identity on same source labels, and source exact R(-1) trace. It does not independently compute full 8-size R(-1/2), zeta prime, physical gauge operator, Osterwalder-Schrader transfer, thermodynamic/continuum existence, or a positive physical gap. Need maintain source truncated and corrected-window populations distinctly.",
+      "detail": "The absence of a source-unique extra basis interaction after completion limits interpretations of finite coupled-only edges, not the possibility of an SU2 gauge theory on the intrinsic accepted graph. Negative-control cubic/periodic geometries are not imposed physical regulators; dissertation remains unpublished reference.",
+      "checks": [
+        {
+          "label": "Compute source-identical sparse R(-1/2) and zeta prime without importing new normalization",
+          "state": "open"
+        },
+        {
+          "label": "Compare original truncated versus completed-window gauge complexes and physical Wilson observables under same link action",
+          "state": "open"
+        },
+        {
+          "label": "Advance a nontrivial reflection-positive interacting continuum limit and independent physical mass gap",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I9 intrinsic four-slice C&P, finite source edge completion and exact R(-1) reproduction",
+          "path": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "git_blob_sha": "7d5f982477002be92d5450f6213878428492d797",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "proof-obligation",
+        "source-spectral",
+        "interacting-YM",
+        "continuum-gap"
       ],
       "importance": 5,
       "core": true,
@@ -11891,6 +12173,104 @@
       "kind": "does-not-prove",
       "label": "positive-mode zeta moment ratio and truncation do not prove continuum one-loop UV finiteness",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I9-HYPERSIMPLEX-FOUR-LAYER-CELL-IDENTITY",
+      "to_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "kind": "supports",
+      "label": "four-slice accepted vertices then two-fixed-coordinate face window",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+      "to_id": "PF-I9-TRUNCATED-GRID-MISSING-RHOMBI",
+      "kind": "proves-selection-correction",
+      "label": "window completed faces not all in capped source grid range",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-TRUNCATED-GRID-MISSING-RHOMBI",
+      "to_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "kind": "explains-source-discrepancy",
+      "label": "all basis-only source edges witnessed by omitted genuine rhombi",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I2-SAME-VERTEX-BASIS-EQUIVALENCE",
+      "to_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "kind": "source-conditioned-closure",
+      "label": "conditional infinite-edge theorem now checked on eight source accepted sets after face completion",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I6-FINITE-CROP-LAPLACIAN-DIFFERENCE",
+      "to_id": "PF-I9-TRUNCATED-GRID-MISSING-RHOMBI",
+      "kind": "explanation",
+      "label": "finite source matrices differ due missing source line-range faces, not new basis rule",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I6-SOURCE-GAMMA-DIRECT-WINDOW",
+      "to_id": "PF-I9-HYPERSIMPLEX-FOUR-LAYER-CELL-IDENTITY",
+      "kind": "source-matched-generalization",
+      "label": "four projected hypersimplex layer condition with original gamma sum0",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "to_id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "kind": "exact-moment-input",
+      "label": "source coupled original basis edge weights and periodic tavg determine TrL",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "to_id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "kind": "source-normalization-resolution",
+      "label": "actual tavg triangular conductance removes earlier unit-control mismatch",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-RMINUS1-NORMALIZATION-EXCLUSION",
+      "to_id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "kind": "corrects-source-assumption",
+      "label": "unit edge conditional exclusion remains valid but source periodic edge conductance differs",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I4-NULLITY-MODE-COUNT-EXCLUSION",
+      "to_id": "PF-I9-SOURCE-CONNECTED-COMPONENTS-RECONCILIATION",
+      "kind": "partially-reconciles",
+      "label": "higher-size N differences are exact source nullities, lower three still convention mismatch",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "to_id": "PF-I9-SOURCE-CONNECTED-COMPONENTS-RECONCILIATION",
+      "kind": "source-evidence",
+      "label": "last five count differences equal source graph component counts",
+      "status": "partial"
+    },
+    {
+      "from_id": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "full source spectral/gauge continuum model still open",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+      "to_id": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+      "kind": "necessary-not-sufficient",
+      "label": "scalar trace first moment does not prove spectral gap",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+      "to_id": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+      "kind": "geometry-foundation",
+      "label": "exact finite intrinsic graph edge rules needed for gauge complex",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -12036,7 +12416,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I6-MERGED-FINAL-OPERATOR-BRIDGE",
+      "next_gate": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -12200,6 +12580,53 @@
         "source_assignment_rule": "content, hash, actual mathematical implementation; not draft filename number",
         "research_policy": "Keep historical draft claims separate from verified mathematics, executable evidence, and ongoing proof obligations.",
         "next_source_ingest": "hash register additional user-supplied files and map to existing claims/hypotheses"
+      },
+      "pf_i9_exact_source_cut_project_bridge": {
+        "status": "partial_finite_operators",
+        "report": "research/geometry/PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md",
+        "four_layer_theorem": "PF-I9-HYPERSIMPLEX-FOUR-LAYER-CELL-IDENTITY",
+        "face_window_theorem": "PF-I9-CUBE-FACE-TRIANGLE-IDENTITY",
+        "source_missing_faces": "PF-I9-TRUNCATED-GRID-MISSING-RHOMBI",
+        "same_source_label_completed_edge_identity": "PF-I9-COUPLED-EQUALS-COMPLETE-TILE-EDGES",
+        "source_zeta_minus_one": "PF-I9-SOURCE-RMINUS1-NO-FIT-REPRODUCTION",
+        "source_nullity_explanation": "PF-I9-SOURCE-CONNECTED-COMPONENTS-RECONCILIATION",
+        "full_spectral_interacting_gate": "PF-I9-SOURCE-SPECTRAL-AND-INTERACTING-BRIDGE",
+        "Ngrid": [
+          7,
+          10,
+          12,
+          15,
+          18,
+          20,
+          23,
+          25
+        ],
+        "source_retained_counts": [
+          1550,
+          3042,
+          4324,
+          6980,
+          9950,
+          12207,
+          16435,
+          19260
+        ],
+        "extra_coupled_edges_missing_from_truncated_tiles": [
+          0,
+          62,
+          85,
+          290,
+          444,
+          593,
+          889,
+          1066
+        ],
+        "all_extra_coupled_edges_are_completed_cut_project_rhombus_edges": true,
+        "source_weighted_R_minus_one_mean_mass2_1e_minus4": 0.7370567093342758,
+        "periodic_reference": "finite triangular q=floor(sqrt N_QC), conductance tavg=(1+phi^-2)/2",
+        "source_code_private_library": "/The Singular Boundary/Proof Audits/PF I9 Source-faithful Cut and Project 2026-11-07",
+        "new_source_publication_claims_made": false,
+        "full_interacting_YM_mass_gap_proved": false
       }
     },
     "orientation_selection": {
