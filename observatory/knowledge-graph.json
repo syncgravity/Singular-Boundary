@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-07",
-  "version": "v2.54-pf-i3",
-  "scope": "PF-I3 exact negative integer graph-zeta trace formulas and Paper2 normalization exclusion under specified benchmark; distinct source-required logdet versus zeta(-1/2) implication; independently reproducible 186/616 P3 controlled checks. Original Paper2 numerical coupled operator and physics remain OPEN, all continuum gates intact.",
+  "version": "v2.55-pf-i3-paper4",
+  "scope": "PF-I3 cross-paper Paper2/Paper4 mathematical audit: exact spectral trace, generic mass-relative logdet endpoint, and source mode-count inconsistencies; ordinary P3 one-scale control mimics four Paper4 mass-flow ratios. Source executable and physical continuum remain OPEN; cubic controls distinct.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 754,
@@ -4817,7 +4817,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Source Paper1 P3 equations and 4 sum layers established, but Paper2 exact coupled Ngrid/Nint generator, D diagonal, m² and periodic control remain OPEN. PF-I3 adds exact zeta(-1)/(-2) trace diagnostics, a conditional normalization exclusion, and logdet versus zeta(-1/2) logical boundary; none is original spectral-zeta reproduction.",
+      "summary": "Paper1 P3 source generator reconstructed, but Paper2/Paper4 exact coupled source graph, eigenvalue zero-mode filters, diagonal D, physical mass/reference normalization remain OPEN. PF-I3 demonstrates exact zeta(-1) trace and Paper4 mass-relative determinant endpoints; finite P3 controls mimic reported moment/flow with one comparator calibration, but do not certify the source or continuum physics.",
       "detail": "Research review only. Specify a source-faithful physical operator, h/R quantifiers and exact tests before certifying this step.",
       "checks": [
         {
@@ -4852,9 +4852,9 @@
           "review_only": true
         },
         {
-          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7173,9 +7173,9 @@
       ],
       "sources": [
         {
-          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7208,9 +7208,9 @@
       ],
       "sources": [
         {
-          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7232,7 +7232,7 @@
       "kind": "result",
       "status": "obstruction",
       "stage": "P0",
-      "summary": "Paper2 Eq21–22 defines one-loop logdet through −ζ'(0), whereas the reported 16.7% at ζ(-1/2) concerns mean sqrt eigenvalues. Positive spectra (1,9) and (4,4) have identical ζ(-1/2)=2 but distinct mean logdet log3 and log4. Hence 16.7% zeta moment difference does not by itself imply 16.7% one-loop effective action suppression.",
+      "summary": "Paper2 §8.1 one-loop logdet through zeta'(0) is distinct from reported 16.7% at zeta(-1/2). Paper4 independently reports zeta'(0) QC/Per ~0.646±0.006 and relative determinant Gamma(m²). A two-mode exact counterexample shows one square-root moment cannot fix the logdet; physical gravity bridge remains open.",
       "detail": "This is a logical nonimplication for finite positive spectra, not disproof of source spectral numbers or of a separate physical vacuum-energy observable. An interacting gravitational fluctuation operator, renormalization prescription and continuum limit remain necessary.",
       "checks": [
         {
@@ -7242,9 +7242,9 @@
       ],
       "sources": [
         {
-          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7266,7 +7266,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P0",
-      "summary": "Reconstruct Paper2 accepted Ngrid/Nint vertices, original-basis connectivity, Fibonacci weight rule, D diagonal and m², triangular/square reference, physical/volume normalization. Reproduce s=-1 exact graph trace FIRST, then s=-1/2, -2 and −ζ'(0) on identical matrices. Small reconstructed samples and one-point conductance calibration do not certify original 8-size data.",
+      "summary": "Recover Paper2 AND Paper4 authentic coupled graph, mass, D, comparator, and zero-mode filtering. Paper4 already reports a distinct zeta'(0) ratio 0.646±0.006 and mass-relative Gamma ratios; source-mode count discrepancies up to 5 and one-scale P3 control nonuniqueness mean source authentication remains OPEN.",
       "detail": "Preserve separately Paper1 P3 authentic published equations, provisional quotient PF-I0, topology PF-I1, and Paper2 generator still missing. Full evidence JSON and executable archive stored in user Library, summary on GitHub. OS/YM continuum and gravity gates OPEN.",
       "checks": [
         {
@@ -7280,13 +7280,17 @@
         {
           "label": "Determine whether ζ(-1/2) is intended as vacuum energy rather than logdet and prove bridge if claimed",
           "state": "open"
+        },
+        {
+          "label": "Reconcile Paper4 published retained N values and independently reproduce already-reported zeta'(0) / relative Gamma results",
+          "state": "open"
         }
       ],
       "sources": [
         {
-          "title": "PF-I3 Paper 2 negative integer zeta moments, normalization and one-loop determinant audit",
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
           "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
-          "git_blob_sha": "ed4fae7e55c25b18237f281524a7f72f1b7e880c",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
           "review_only": true
         }
@@ -7296,6 +7300,114 @@
         "source-identity",
         "coupled-Z5",
         "spectrum-reproduction",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+      "title": "Exact Paper4 gamma-mass flow identity: generic relative logdet endpoints",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "Paper4 Eq.(2) with zeta_m(s)=mean(lambda+m²)^(-s) equals Gamma_rel(m²)=0.5 mean log(1+lambda/m²). With retained positive modes, the ratio of any two such finite models tends 1 as m²→0 and to the first trace-moment ratio as m²→∞. The endpoints are generic, not an independent signature of Penrose geometry or an RG proof.",
+      "detail": "Paper4 already reports zeta prime ratio 0.646±0.006 over eight sizes, unlike 0.8332 at s=-1/2. The logdet equals a mass-relative rather than unnormalized absolute determinant. Finite positive eigenmode assumption explicit; source zero-mode handling not authenticated. Exact proof in revised PF-I3 §8 and regression checks.",
+      "checks": [
+        {
+          "label": "Identify actual Paper4 normalized determinant, eigenmode selection and physical counterterm convention",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "zeta-prime",
+        "relative-determinant",
+        "finite-theorem",
+        "Paper4",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-PAPER4-ONE-SCALE-CONTROL",
+      "title": "Paper4 mass-flow ratios mimicked by one-calibrated ordinary P3 control",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "On reconstructed P3 186 and 616-site source-equation patches, a single triangular bond-scale fitted to Paper2 R(-1)=0.7371 gives Paper4 reported relative Gamma ratios (0.959,0.927,0.816,0.739) within absolute 0.00151 and 0.00370 respectively, with no Paper4 ratio fitted. This is nonuniqueness/sensitivity evidence, not source reproduction.",
+      "detail": "Both finite connected graphs have one zero mode removed before Paper4 Gamma_rel. Candidate P3 at 616 also gives zeta'(0) ratio ~0.654 at borrowed Paper1 m²=1e-4 versus source 0.646±0.006; small model gives ~0.626. Original graph/coupling normalization unrecovered, physical continuum inference OPEN.",
+      "checks": [
+        {
+          "label": "Independent source-matched reproduction of Paper4 four mass-flow ratios without calibrating to earlier source ratio",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "negative-control",
+        "source-sensitivity",
+        "finite-calibration",
+        "Paper4",
+        "2026-11-07"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "title": "Open: Paper2 Nint versus Paper4 zeta-prime retained-mode discrepancies",
+      "kind": "work",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Paper2 §8.2 full Nint and Paper4 §7.2 use [1550,3042,4324,6980,9950,12207,16435,19260], but Paper4 §3 zeta-prime N gives [1550,3042,4324,6979,9947,12206,16434,19255]. Differences [0,0,0,1,3,1,1,5]. Paper4 says zero modes removed, but lacks actual mode-filter proof; do not equate differences with zero modes automatically.",
+      "detail": "Resolve denominator N, zero-mode spectrum, connected components, eigensolver threshold and whether graph vertex selection changed before reproducing Paper4 zeta-prime ratio 0.646±0.006 or mass flow.",
+      "checks": [
+        {
+          "label": "Recover per-size full adjacency and eigenvalue/zero-mode filters for both published tables",
+          "state": "open"
+        },
+        {
+          "label": "Verify whether count differences are omitted zero modes or distinct graph vertex selections",
+          "state": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I3 revised Paper2/Paper4 source-moment, determinant, and mode-count audit",
+          "path": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "git_blob_sha": "98037a05e6ee9e544140b074b2618bbee0766b07",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "source-identification",
+        "zero-modes",
+        "paper-crosscheck",
         "2026-11-07"
       ],
       "importance": 5,
@@ -10852,6 +10964,62 @@
       "kind": "requires-correct-observable",
       "label": "must distinguish zeta(-1/2) from zeta prime(0)",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I3-ZETA-LOGDET-NONIMPLICATION",
+      "to_id": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+      "kind": "source-correction",
+      "label": "Paper4 independently reports zeta prime and mass-normalized logdet; not implied by zeta(-1/2)",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I3-EXACT-TRACE-MOMENTS",
+      "to_id": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+      "kind": "analytic-endpoint",
+      "label": "large m² mass-relative determinant ratio approaches first moment",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+      "to_id": "PF-I3-PAPER4-ONE-SCALE-CONTROL",
+      "kind": "conditional-control",
+      "label": "finite ordinary P3 with one comparator scale mimics source mass flow",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I3-PAPER4-ONE-SCALE-CONTROL",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "does-not-imply",
+      "label": "similar flow does not identify original coupled generator or mode filtering",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "to_id": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "kind": "required-source-reconciliation",
+      "label": "original count and zero-mode discrepancy before source normalization",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+      "to_id": "PF-G0",
+      "kind": "blocks",
+      "label": "source true accepted graph/mode selection remains unresolved",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+      "to_id": "PF-GRAV-SEPARATE",
+      "kind": "does-not-imply",
+      "label": "generic relative determinant flow does not prove gravitational UV finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I3-PAPER4-ONE-SCALE-CONTROL",
+      "to_id": "M-Z5",
+      "kind": "negative-control",
+      "label": "near match to published ratios does not certify Z5-specific mechanism",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -10997,7 +11165,7 @@
       "diagonal_quotient": "conditional candidate",
       "toy_graph": "231 vertices / 610 edges, not authenticated",
       "parity_null": "PF-DIHEDRAL-PARITY-NULL",
-      "next_gate": "PF-I3-PAPER2-MOMENT-REPRODUCTION-GATE",
+      "next_gate": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
       "new_conditional_cycle_witness": {
         "status": "conditional",
         "vertex_count": 241,
@@ -11064,7 +11232,28 @@
         "one_parameter_calibration_not_source_reproduction": true,
         "full_research_evidence_library": "/The Singular Boundary/Proof Audits/PF I3 Spectral Operator 2026-11-07/",
         "original_generator_recovered": false,
-        "continuum_mass_gap_proved": false
+        "continuum_mass_gap_proved": false,
+        "paper4_source_update": {
+          "status": "partial",
+          "report": "research/geometry/PF_I3_PAPER2_SPECTRAL_OPERATOR_MOMENT_AND_DETERMINANT_AUDIT_2026_11_07.md",
+          "original_Paper4_zeta_prime_8size_ratio": "0.646 +/- 0.006 (reported, not reproduced)",
+          "relative_determinant_node": "PF-I3-PAPER4-RELATIVE-LOGDET-ENDPOINTS",
+          "single_scale_source_control": "PF-I3-PAPER4-ONE-SCALE-CONTROL",
+          "mode_count_gate": "PF-I3-PAPER2-PAPER4-MODE-COUNT-GATE",
+          "source_Nint_difference": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            1,
+            1,
+            5
+          ],
+          "mode_count_explanation_authenticated": false,
+          "full_control_evidence": "research/evidence/PF_I3_PAPER4_RELATIVE_LOGDET_EVIDENCE_2026_11_07.json",
+          "continuum_mass_gap_proved": false
+        }
       }
     },
     "orientation_selection": {
