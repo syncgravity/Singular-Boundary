@@ -1,5 +1,7 @@
 # PF-I5 — Publication-script provenance and cut-and-project implementation audit
 
+> **PF-I6 TITLE-FIRST ARCHIVAL ERRATUM (2026-11-07):** The author's eight predecessor manuscripts and nine associated scripts have now been recovered in `Archive(1).zip`. Their numbered filenames are archival locators only and must not define chronology, script ownership, or scientific dependency. Refer to [PF-I6 source report](PF_I6_EIGHT_PREDECESSOR_CODE_GEOMETRY_AUDIT_2026_11_07.md) and [content-title/hash crosswalk](PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md). Historical “original scripts unavailable” claims below reflect the earlier state **before** the newly supplied archive, not the current source status.
+
 **Date:** 2026-11-07 (America/Denver)  
 **Research status:** implementation-origin correction, NOT recovery of original publication code, NOT closure of PF-G0 or any other continuum proof gate.  
 **Authoritative requirement:** The original direct cut-and-project scripts and their complete parameters must determine the graph/operator, not a newly written de Bruijn surrogate.
