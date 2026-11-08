@@ -1,0 +1,36 @@
+{
+  "archive_source": "user supplied Sharpe_dissertation_v10.7.tar.gz; large PDF originals omitted from artifact and remain user-owned",
+  "date": "2026-11-07",
+  "files": {
+    "PF_I4_PDF_BYTE_PROVENANCE_COMPARISON.json": {
+      "sha256": "ab0dbc8305f2df2ac598bdf0b23273f1334f2fcdb0a69d058b3f092168c0c50f",
+      "size_bytes": 1059
+    },
+    "PF_I4_SOURCE_CORE_EVIDENCE.json": {
+      "sha256": "bbfff0c21493f8d7afb9f9090935613ffa83fabc18d25638be2f46ec662817df",
+      "size_bytes": 6701
+    },
+    "PF_I4_SOURCE_GRAPH_SELECTION_AND_MODE_CERTIFICATE_2026_11_07.md": {
+      "sha256": "0c26c4e0a602ba39278127c898f3d282001fbd3dd504ae4405d0c0825b3f1197",
+      "size_bytes": 12454
+    },
+    "PF_I4_TEST_LOG.txt": {
+      "sha256": "7aa0c743e13a76866413b30d0b8a07f7e2cad059a055f01dbe6a2fb6aaae08e6",
+      "size_bytes": 1570
+    },
+    "test_pf_i4_source_selection.py": {
+      "sha256": "bbf0cc025666e30f5954e4d5231234b51ef371db0865bfd5dcea428037bb4149",
+      "size_bytes": 2705
+    },
+    "verify_pf_i2_pentagrid.py": {
+      "sha256": "5cf1ca9a0e1dc16fab673634f819129d52319a4c198b4a17979b7d892f6d5baf",
+      "size_bytes": 11868
+    },
+    "verify_pf_i4_source_selection.py": {
+      "sha256": "82a9b4edff4deedbea0d7580c2927278d07e8b273fee4b7308a5f603f90264b6",
+      "size_bytes": 10441
+    }
+  },
+  "research_type": "conditional finite graph/source consistency; Yang-Mills and gravity gates OPEN",
+  "tests": "9 passing, coupled P3 generated 186 and 616 site controls; not original source computation"
+}
