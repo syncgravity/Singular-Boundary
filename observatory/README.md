@@ -1,4 +1,8 @@
-# Research Observatory v2.58-pf-i6-predecessor-sources — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.59-pf-i6-title-first — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I6 source-provenance correction: filenames are not a manuscript sequence (2026-11-07)
+
+**Author instruction:** disregard paper filename numbering. All paper-number and script-number suffixes in ZIP names and historical source ledgers are **raw archive locators only**. The source registry now indexes each manuscript by its **printed content title**, original SHA-256, and each program by its **parsed function behavior**, dependencies and verified numerical outputs. Do not imply one manuscript precedes another, corresponds to similarly numbered scripts, or supersedes another merely because of its filename. Internal draft claims about chronology are recorded as source claims, not verified sequencing. The PF-I6 C&P and finite-crop results are about directly compared source-defined operators, independent of names or numbering. [Content-title first provenance and full archive member crosswalk](../research/geometry/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.md) · [machine-readable crosswalk](../research/evidence/PF_I6_TITLE_FIRST_SOURCE_CROSSWALK_2026_11_07.json). **Observatory v2.59-pf-i6-title-first: 224 nodes / 545 relationships / 754 historical theorem sources. PF-G0 and all continuum proof gates OPEN.**
 
 ## PF-I6 original predecessor scripts recovered; exact source-offset direct cut/project bridge (2026-11-07)
 
