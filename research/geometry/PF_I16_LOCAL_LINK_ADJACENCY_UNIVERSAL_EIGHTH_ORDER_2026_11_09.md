@@ -41,14 +41,14 @@ Thus the two classes cannot be unitarily equivalent *as parameterized quantum Ha
 
 ## Fixed-order source-incidence envelope
 
-Across the eight previously authenticated original source crops, at most **two accepted faces** meet any original link. So the central face has at most four overlap neighbors and at most six unordered exterior-neighbor pairs. The topology-*discriminating* eighth-order contribution
+Across the eight previously authenticated original source crops, at most **two accepted faces** meet any original link. So the central face has at most four overlap neighbors, but **only two opposite-edge pairs**, and at most one exterior neighbor per edge. Therefore an opposite-class topology contribution can occur at most twice per central face. In the Ngrid=7 enumeration, 1,378 central faces anchor two opposite-class chains, 30 anchor one, and 60 anchor none. The topology-*discriminating* eighth-order contribution
 \[
 \mathfrak T_8=\delta\sum_{\substack{\text{qualified three-face chains }C\\J(C)=0}}
 b_{f_1}^2b_{f_2}^4b_{f_3}^2
 \]
 counting each unordered exterior pair once, satisfies for \(|b_f|\le b_0\)
 \[
-\boxed{|\mathfrak T_8|\le6|F|\delta b_0^8.}
+\boxed{|\mathfrak T_8|\le2|F|\delta b_0^8.}
 \]
 This bounds **only this particular component** of the eighth-order connected energy, not all order-eight terms, other motif classes, or higher orders. Couplings on other faces are set to zero when extracting each multivariate coefficient. No finite-coupling factorization or gap follows.
 
