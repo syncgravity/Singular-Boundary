@@ -813,3 +813,10 @@ These original files were missing from the November 1 index, including files alr
 | [R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md](../../research/theorems/R3_NONLINEAR_CUBIC_PHYSICAL_ENERGY_DISSIPATION_2026-11-06.md) | `0e7b7e4a4525` | Indexed source only; read theorem for scope |
 | [R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md](../../research/theorems/R3_SU2_PLANAR_BLOCK_CHARACTER_TRANSFER_2026-11-05.md) | `f83c3bd226f9` | Indexed source only; read theorem for scope |
 | [R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md](../../research/theorems/R3_VACUUM_WEIGHTED_OBSERVABLE_MAP_AND_SCHUR_FORM_2026-11-06.md) | `06e22ced09c9` | Indexed source only; read theorem for scope |
+
+
+## Current branch additions — 2026-11-09
+
+| Record | Date | Source |
+|---|---|---|
+| PF-I16 exact seven-class four-face eighth-order coefficient | 2026-11-09 | [PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md](../../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md) |
