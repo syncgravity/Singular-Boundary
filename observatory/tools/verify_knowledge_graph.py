@@ -47,7 +47,7 @@ def main():
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
  check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'),'unexpected graph version')
  if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474):(278,663)}
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
   if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
