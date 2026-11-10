@@ -363,3 +363,6 @@ This checkpoint extends the finite cubic investigation **beyond the Haar-null co
 **Theorem-index repair:** the historical 740 theorem Markdown paths were correctly linked, but 13 later theorem sources in the review stack were missing. This PR adds the new non-Abelian theorem and indexes **all 754 tracked research/theorems/*.md** exactly once in [the complete theorem navigator](../docs/research/THEOREM_INDEX.md) and [machine-readable live source registry](../docs/research/THEOREM_INDEX_LIVE.json), retaining exact Git blob hashes. A [mandatory PR source integrity check](../research/scripts/verify_theorem_index.py) detects missing, duplicated or modified source files; no theorem is certified merely because it is indexed.
 
 Private stacked review branch, no main merge, public Pages action, Git LFS migration or alteration of archived simulations.
+
+
+The source navigator, searchable catalog, graph JSON, and browser payload are kept synchronized by the repository's generated Observatory integrity check.
