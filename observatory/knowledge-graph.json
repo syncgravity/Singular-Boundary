@@ -1,11 +1,11 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-07",
-  "version": "v2.68-pf-i15-electric-dynamics",
-  "scope": "PF-I15 source Z5 accepted rhombus SU2 spin-network exact finite pure-electric Δ=(3/4)least weighted cycle, eight-source girth4 Δ=3epsilon and optional source scalar weight Δ=3phi^-2; bounded Wilson/commutator auxiliary Hamiltonian has simple finite ground and strictly positive finite gap, with explicit kappa=.71 one-rhombus Jacobi gap3.058085713. Restricted C5 additive clock no-go, J helix explicitly kinematic, nonunique invariant auxiliary phase measures and extensive magnetic norm bound obstruction. No source physical time, original global OS, interacting continuum Yang–Mills gap or gravity UV proved.",
+  "build_date": "2026-11-09",
+  "version": "v2.69-pf-i16-four-face-c2222",
+  "scope": "PF-I15 source Z5 accepted rhombus SU2 spin-network exact finite pure-electric Δ=(3/4)least weighted cycle, eight-source girth4 Δ=3epsilon and optional source scalar weight Δ=3phi^-2; bounded Wilson/commutator auxiliary Hamiltonian has simple finite ground and strictly positive finite gap, with explicit kappa=.71 one-rhombus Jacobi gap3.058085713. Restricted C5 additive clock no-go, J helix explicitly kinematic, nonunique invariant auxiliary phase measures and extensive magnetic norm bound obstruction. No source physical time, original global OS, interacting continuum Yang–Mills gap or gravity UV proved. PF-I16 adds exact eighth-order fully four-face-connected SU(2) auxiliary ground-energy coefficients for all seven authenticated Ngrid7 four-face graph classes, with independent 50-sector and 16-subset Möbius extraction; physical time, uniform cluster and continuum mass-gap claims remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 754,
+  "indexed_theorem_paths": 755,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -761,12 +761,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "754 current indexed theorem source files (740 historical baseline)",
+      "title": "755 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 754, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 755, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -784,8 +784,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "3e8676510ff3b7643576b3f11d1423091733f891",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/3e8676510ff3b7643576b3f11d1423091733f891/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "4baca3ebb97937162cd1da6a02c2a809176df8f0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/4baca3ebb97937162cd1da6a02c2a809176df8f0/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
@@ -9908,8 +9908,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I15 proves a volume-uniform pure-electric SU2 reference gap and a finite nonzero Wilson quantum control, but source C5/additive time and J helix do not supply physical time; auxiliary decorated-phase symmetries admit multiple invariant measures; epsilon and heat step remain arbitrary. Need source-derived physical generator/energy scale and phase or hull measure, global positive-time gauge algebra/reflection or constructive alternative, then local uniform nonfactorizing Wilson dynamics and nontrivial continuum measure with positive physical mass gap. Do not introduce cubic 3+1 as prerequisite.",
-      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap.",
+      "summary": "PF-I16 now has exact finite four-face eighth-order coefficients for all seven authenticated Ngrid7 graph classes, with dual rational extraction and original-link Poisson checks. This supplies fixed-order local data only; source physical kinetic/time, uniform connected-cluster summability, interacting continuum existence and positive physical mass gap remain OPEN.",
+      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap. New finite-order input: exact C2222 on all seven four-face classes and the Ngrid7 fully four-face-connected aggregate. This does not prove uniform coefficient summability, convergence, or a spectral gap.",
       "checks": [
         {
           "label": "Derive/falsify physical time and energy scale from source 2+2+1/J/helical or explicit competing postulates",
@@ -9940,6 +9940,58 @@
         "source-kinetic",
         "interacting-continuum",
         "mass-gap-open"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222",
+      "title": "Exact eighth-order four-face coefficient on all seven source graph classes",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "For the seven authenticated Ngrid7 connected four-face source classes, C2222=[b1²b2²b3²b4²]E0(b) is an exact negative rational in every class, with four distinct values. The 18,900-support weighted sum is −1952625908098133263/7365901893304119459840 for the fully four-face-connected b⁸ contribution only.",
+      "detail": "Finite auxiliary SU(2) Gauss-invariant Hamiltonian with unit original-link electric Casimir and zero couplings on all other faces. Direct 50-sector Rayleigh contraction and independent 16-subset Möbius extraction agree fraction-for-fraction on all seven classes. All 343 original-link Poisson identities (49 per class) pass as exact rational polynomial identities modulo quaternion sphere constraints; alternative spanning-tree gauges for a tree and four-cycle representative agree. This is a fixed-order finite-source result, not the full eighth-order energy (which also contains repeated one-, two- and three-face terms), not an all-orders cluster expansion, and not a physical mass-gap theorem.",
+      "checks": [
+        {
+          "label": "Seven exact rational class coefficients and independent 16-subset Möbius extraction",
+          "state": "finite",
+          "note": "All seven direct and Möbius fractions agree exactly."
+        },
+        {
+          "label": "Original-link SU(2) Poisson recurrence identities",
+          "state": "finite",
+          "note": "343 exact rational identities verified; 49 per class."
+        },
+        {
+          "label": "Uniform connected-cluster coefficient summability as source size grows",
+          "state": "open",
+          "note": "No volume-independent A,B majorant established."
+        },
+        {
+          "label": "Source-derived physical time/kinetic normalization and interacting continuum gap",
+          "state": "open",
+          "note": "Not implied by finite auxiliary coefficients."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 exact seven-class four-face C2222 theorem and rational certificates",
+          "path": "research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md",
+          "git_blob_sha": "aad1c5bdfb96608bd0dacdafb36facda23316262",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "SU2",
+        "connected-four-face",
+        "eighth-order",
+        "exact-rational",
+        "finite-model"
       ],
       "importance": 5,
       "core": true,
@@ -14572,6 +14624,20 @@
       "to_id": "G-GRAV",
       "kind": "does-not-imply",
       "label": "Finite electric gap does not establish gravitational UV finiteness",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I15-FINITE-INTERACTING-WILSON-GROUND-SIMPLE",
+      "to_id": "PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222",
+      "kind": "higher-order-finite-response",
+      "label": "Extends finite source SU(2) Wilson analysis to exact four-face eighth-order coefficients",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "finite-order-input-not-gap",
+      "label": "Fixed-order connected coefficient data; uniform cluster summability and physical gap remain open",
       "status": "open"
     }
   ],

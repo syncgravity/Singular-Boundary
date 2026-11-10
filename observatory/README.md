@@ -1,4 +1,31 @@
-# Research Observatory v2.68-pf-i15-electric-dynamics — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.69-pf-i16-four-face-c2222 — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I16 · Exact four-face eighth-order SU(2) quantum coefficients (2026-11-09)
+
+**New finite-source theorem:** For the seven authenticated connected four-face graph classes in the original Penrose–Fibonacci Ngrid=7 accepted source, the fully four-face-linked ground-energy coefficient
+\[
+C_{2222}(S)=[b_1^2b_2^2b_3^2b_4^2]E_0(\mathbf b)
+\]
+is an exact negative rational in every class, with **four distinct values** across the seven classes. The class multiplicities are 6,582; 4,402; 2,800; 2,711; 1,140; 1,140; and 125 (18,900 supports total). The exact coefficients, in class order, are:
+- Classes 0, 2, 3, 4: \(-41237423/10320517413273600\).
+- Triangle plus pendant: \(-2515530950587/56185369132754534400\).
+- Class 5: \(-396656887/61923104479641600\).
+- Genuine four-cycle: \(-133080011/2125507018752000\).
+
+The weighted sum of only the fully four-face-connected eighth-order terms is
+\[
+-\frac{1952625908098133263}{7365901893304119459840}b^8.
+\]
+This is **not** the complete eighth-order ground-energy coefficient: repeated one-, two- and three-face terms also contribute.
+
+**Exact checks:** direct 50-sector Rayleigh contraction and independent 16-subset Möbius extraction agree fraction-for-fraction on all seven classes. All 343 original-link SU(2) Poisson identities pass as exact rational polynomial identities modulo the quaternion sphere constraints; two alternative spanning-tree gauges reproduce the tree and four-cycle representatives. This is a finite auxiliary Hamiltonian result with unit original-link electric Casimir and zero couplings on all other faces.
+
+**Scope discipline:** no uniform connected-cluster summability, source-derived physical kinetic/time normalization, interacting continuum construction, or four-dimensional Yang–Mills mass gap is established. Those gates remain OPEN. The full theorem source is [PF-I16 exact seven-class four-face C2222](../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md); the reproducible 56-file verification archive is preserved in Library at `/The Singular Boundary/Proof Audits/PF_I16_EXACT_FOUR_FACE_C2222_2026_11_09.zip` (SHA-256 `ef4bfbcc47fccffa5900d91f7314af0ca40c30ea25da28ea052ccf031d1f9ddc`).
+
+**Observatory v2.69-pf-i16-four-face-c2222: 278 curated nodes / 663 typed relationships / 755 indexed theorem-source paths.** The historical 740-record baseline remains intact. P0–P5 and PF-G0–G5 remain OPEN; this finite-order theorem is not a proof-gate closure.
+
+---
+
 
 ## PF-I15 · Exact source SU(2) electric spin-network gap and the open physical-time/uniform-interaction obligation (2026-11-08)
 
@@ -6,7 +33,7 @@
 
 **Nonzero finite Wilson quantum model:** For an auxiliary positive link Casimir plus bounded source Wilson and PF-I12 commutator potentials, elliptic compact heat/Feynman–Kac positivity gives a simple finite ground and a strictly positive **finite** gap. A one-source-rhombus character/Jacobi Hamiltonian at chosen \\(\\varepsilon=1,\\kappa=0.71\\) has gap **3.058085712531**, independently checked by SU(2) character Haar quadrature (not a 4D continuum spectrum). A global minmax bound **\\(\\Delta\\ge3\\varepsilon-\\sum_f\\kappa_f\\)** becomes vacuous as source faces grow at fixed per-face coupling; it **does not imply the actual gap collapses**. Source \\(J^2=-I\\) exponentiation and a prescribed helical observer provide an algebraic/kinematic path, with **no source field equation** in the revised J draft. Every \\(C_5\\)-invariant additive clock on \\(\\Lambda_0\\) vanishes; this excludes neither a nonlinear nor a chosen-axis physical time. PF-I14 auxiliary phase-hull symmetries also allow multiple invariant distributions, so a physical vacuum/phase law is not uniquely selected.
 
-[Full PF-I15 proof](../research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md) · [source-private optional eight-size replay](../research/scripts/verify_pf_i15_intrinsic_time_and_electric_gap.py) · [14-test suite](../research/tests/test_pf_i15_intrinsic_time_and_electric_gap.py) · [public derived data](../research/evidence/PF_I15_PUBLIC_FINITE_TIME_AND_ELECTRIC_RESULTS_2026_11_08.json) · [manifest](../research/evidence/PF_I15_SHA256_MANIFEST_2026_11_08.json). Full 19-file v2 ZIP, including unpublished source/J manuscript and all 18 internal checksum entries, is **private in Library**, with clean reproducibility verified. **Observatory v2.68-pf-i15-electric-dynamics: 277 nodes / 661 edges / 754 historical theorem-source paths. P0–P5 and PF-G0–G5 remain OPEN.** Next **PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP**: source-derived kinetic/time, invariant physical gauge/hull measure and **local uniform interacting** continuum existence/gap estimate, no assumed cubic 3+1.
+[Full PF-I15 proof](../research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md) · [source-private optional eight-size replay](../research/scripts/verify_pf_i15_intrinsic_time_and_electric_gap.py) · [14-test suite](../research/tests/test_pf_i15_intrinsic_time_and_electric_gap.py) · [public derived data](../research/evidence/PF_I15_PUBLIC_FINITE_TIME_AND_ELECTRIC_RESULTS_2026_11_08.json) · [manifest](../research/evidence/PF_I15_SHA256_MANIFEST_2026_11_08.json). Full 19-file v2 ZIP, including unpublished source/J manuscript and all 18 internal checksum entries, is **private in Library**, with clean reproducibility verified. **Historical PF-I15 snapshot v2.68-pf-i15-electric-dynamics: 277 nodes / 661 edges / 754 theorem-source paths. P0–P5 and PF-G0–G5 remain OPEN.** Next **PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP**: source-derived kinetic/time, invariant physical gauge/hull measure and **local uniform interacting** continuum existence/gap estimate, no assumed cubic 3+1.
 
 ## PF-I14 · Exact decorated Fibonacci hull and source SU(2) link positivity (2026-11-08)
 
@@ -336,3 +363,6 @@ This checkpoint extends the finite cubic investigation **beyond the Haar-null co
 **Theorem-index repair:** the historical 740 theorem Markdown paths were correctly linked, but 13 later theorem sources in the review stack were missing. This PR adds the new non-Abelian theorem and indexes **all 754 tracked research/theorems/*.md** exactly once in [the complete theorem navigator](../docs/research/THEOREM_INDEX.md) and [machine-readable live source registry](../docs/research/THEOREM_INDEX_LIVE.json), retaining exact Git blob hashes. A [mandatory PR source integrity check](../research/scripts/verify_theorem_index.py) detects missing, duplicated or modified source files; no theorem is certified merely because it is indexed.
 
 Private stacked review branch, no main merge, public Pages action, Git LFS migration or alteration of archived simulations.
+
+
+The source navigator, searchable catalog, graph JSON, and browser payload are kept synchronized by the repository's generated Observatory integrity check.

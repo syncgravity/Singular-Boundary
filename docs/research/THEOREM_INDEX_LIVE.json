@@ -1,10 +1,10 @@
 {
   "schema": "singular-boundary-theorem-index-v1",
-  "scope": "All tracked research/theorems/*.md source paths in the Git review branch; indexing is not mathematical certification.",
-  "generated_utc_date": "2026-11-06",
-  "source_commit": "8e1d117f63a0c4f8a29b3016b776c965dbe01b08",
+  "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
+  "generated_utc_date": "2026-11-09",
+  "source_commit": "02943779954021740758a38d727dfa530d8f8830",
   "baseline_historical_count": 740,
-  "count": 754,
+  "count": 755,
   "theorems": [
     {
       "path": "research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md",
@@ -31,6 +31,13 @@
       "path": "research/theorems/CONDITIONAL_HAAR_INCOMPLETE_CAGE_CI1_CI2_2026-10-30.md",
       "git_blob_sha": "b973513e8b9435f0e11f5cf101b8f1cdfd9c0907",
       "bytes": 4677,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md",
+      "git_blob_sha": "aad1c5bdfb96608bd0dacdafb36facda23316262",
+      "bytes": 6260,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },

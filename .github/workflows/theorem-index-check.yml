@@ -45,9 +45,11 @@ jobs:
           fetch-depth: 1
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
-      - name: Verify searchable Observatory, current source navigator and Proof Atlas
-        run: |
-          python observatory/tools/sync_theorem_catalog.py --check
-          python observatory/tools/verify_knowledge_graph.py
-          node --check observatory/graph-app.js
-          bash -n scripts/safe_prune_merged_branches.sh
+      - name: Verify generated theorem catalog and current navigator
+        run: python observatory/tools/sync_theorem_catalog.py --check
+      - name: Verify curated Proof Atlas graph
+        run: python observatory/tools/verify_knowledge_graph.py
+      - name: Syntax-check Proof Atlas application
+        run: node --check observatory/graph-app.js
+      - name: Syntax-check branch maintenance script
+        run: bash -n scripts/safe_prune_merged_branches.sh
