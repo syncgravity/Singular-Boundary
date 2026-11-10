@@ -47,7 +47,7 @@ def main():
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
  check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'),'unexpected graph version')
  if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663)}
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474):(278,663)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
   if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
@@ -59,33 +59,33 @@ def main():
    check(node['PF-VORONOI-HODGE-WEIGHTS']['status']=='open','metric action and Hodge source validation still open')
    check(g['ym_proof_interface'].get('nontrivial_4d_os_constructed') is False,'4D OS continuum remains OPEN')
    check((root/'yang-mills-proof.html').is_file(),'YM proof-map page')
-  if g['version'] in ('v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.48-concepts','v2.49-ym-proof'):
    check(len(g.get('conceptual_program',{}).get('concept_ids',[]))==16,'16 conceptual nodes')
    check(g['conceptual_program']['primary_concept']=='CON-2D3D-PROBLEM','historical 2D→3D observation question')
    check(node['CON-34-55-EMERGENCE']['status']=='conditional','synthetic 34:55 not source-certified')
    check(node['CON-3D-OBSERVER']['status']=='open','physical 3D observer OPEN')
    check((root/'conceptual-atlas.html').is_file(),'concept-first atlas exists')
-  if g['version'] in ('v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.47-research','v2.48-concepts','v2.49-ym-proof'):
    check(node['PF-ARM-MIRROR-NOGO']['status']=='conditional','no symmetric-patch 34:55 intrinsic selector')
    check(node['PF-J-PROJECTED-ORIENTATION']['status']=='conditional','chosen J is not dynamical selection')
    check(node['PF-OBSERVER-MARKED-GAUGE']['status']=='conditional','marked interacting gauge parity theorem')
    check(node['PF-OBSERVER-SELECTION-LAW']['status']=='open','actual physical handedness selection remains OPEN')
-  if g['version'] in ('v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof'):
    check(node['PF-Z5-SLICE-OBSTRUCTION']['status']=='obstruction','strict fixed-sum/basis-edge conflict visible')
    check(node['PF-Z5-QUOTIENT-CANDIDATE']['status']=='conditional','diagonal quotient is a candidate only')
    check(node['PF-DOUBLE-SPIRAL-SOURCE']['status']=='conditional','34:55 dissertation source not physical 3D graph proof')
    check(node['PF-DIHEDRAL-PARITY-NULL']['status']=='conditional','parity conditional null retained')
    check(node['PF-Z5-SOURCE-GENERATOR']['status']=='open','original generator remains OPEN')
-  if g['version'] in ('v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof'):
    check(node['PF-SINGLE-HARMONIC-NOGO']['status']=='obstruction','m10 alone cannot yield chirality')
    check(node['PF-HARMONIC-TRIAD']['status']=='finite','two-harmonic identity finite only')
    check(node['PF-SU2-ROTOR-NULL']['status']=='finite','non-Penrose quantum false-positive recorded')
    check(node['PF-HELICAL-LIFT-FREEDOM']['status']=='obstruction','physical helix not specified by circle')
-  if g['version'] in ('v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof'):
    check(node['PF-Z13-ALIAS']['status']=='obstruction','sampling alias caveat visible')
    check(node['PF-GAUGE-TWOPOINT']['status']=='conditional','true interacting SU2 two-point scope conditional')
    check(node['PF-CHIRAL-NULL']['status']=='open','chiral falsification still open')
-  if g['version'] in ('v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof'):
    check(all('PF-H'+str(i) in node for i in range(7)),'Paper 3 helical observer path missing')
    check(node['PF-H1']['status']=='open' and node['PF-H3']['status']=='conditional','geometry and frequencies properly scoped')
   check(g.get('pf_program',{}).get('stages')==['PF-G0','PF-G1','PF-G2','PF-G3','PF-G4','PF-G5'],'PF route metadata')
