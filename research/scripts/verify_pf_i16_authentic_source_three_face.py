@@ -31,7 +31,7 @@ def replay(N):
         for nj in range(-N,N+1):
             for nk in range(-N,N+1):
                 bj=nj+gamma[j];bk=nk+gamma[k]
-                point=np.array([(bj*b[1]-bk*a[1])/det,(a[0]*bk-bj*a[1])/det])
+                point=np.array([(bj*b[1]-bk*a[1])/det,(a[0]*bk-bj*b[0])/det])
                 base=[0]*5
                 for f in range(5):
                     if f not in (j,k):
