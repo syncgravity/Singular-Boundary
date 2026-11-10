@@ -7,7 +7,7 @@
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 755,
   "existing_proof_paths": 78,
-  "git_branch": "audit/pf-i16-observatory-2026-11-09",
+  "git_branch": "main",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -761,12 +761,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "754 current indexed theorem source files (740 historical baseline)",
+      "title": "755 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 754, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 755, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -784,8 +784,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "3e8676510ff3b7643576b3f11d1423091733f891",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/3e8676510ff3b7643576b3f11d1423091733f891/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "4baca3ebb97937162cd1da6a02c2a809176df8f0",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/4baca3ebb97937162cd1da6a02c2a809176df8f0/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
