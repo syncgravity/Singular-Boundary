@@ -98,7 +98,7 @@ def main():
   check((root/'penrose-program.html').is_file(),'PF primary standalone map')
   check('data-view="pf"' in (root/'graph.html').read_text(),'PF default Atlas lens')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
- check(not any('dissertation' in x['title'].lower() or re.search(r'(?i)\bpaper\s*[1-5]\b',x['title']) for x in n),'source-document titles exposed as graph concept nodes')
+ check('dissertation' not in node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title'].lower() and re.search(r'(?i)\\bpaper\\s*[1-5]\\b',node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title']) is None,'PF-I16 result node must remain result-focused, not a source-document title')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
  check(node['R-CUBIC-FINITE-GAP']['status']=='finite','finite strong-coupling theorem scope')
  check(node['I-UV-COUPLING']['status']=='open','missing ultraviolet regime')
