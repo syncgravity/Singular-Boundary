@@ -1,5 +1,10 @@
 name: Research Observatory · GitHub Pages
 on:
+  push:
+    branches: [main]
+    paths:
+      - "observatory/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,10 +24,21 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload curated static Observatory only
+      - name: Assemble public site artifact
+        run: |
+          set -euo pipefail
+          mkdir -p _site/concepts
+          cp observatory/*.html observatory/*.js observatory/*.css observatory/*.json _site/
+          rm -f _site/data-manifest.json
+          cp observatory/.nojekyll _site/.nojekyll
+          cp observatory/MATHEMATICAL_PHYSICS_GUIDE.md _site/
+          cp observatory/HISTORICAL_DOUBLE_AUDIT_2026-11-04.md _site/
+          cp observatory/PROOF_PATH_DISCOVERY_2026-11-04.md _site/
+          cp observatory/concepts/helical-observer-concept-index.json _site/concepts/
+      - name: Upload curated public Observatory
         uses: actions/upload-pages-artifact@v3
         with:
-          path: observatory
+          path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
