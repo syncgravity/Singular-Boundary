@@ -1,6 +1,6 @@
 # Current complete theorem source navigator
 
-**Current source files:** **754** indexed paths in this checkout. **Historical baseline:** 740 records.
+**Current source files:** **755** indexed paths in this checkout. **Historical baseline:** 740 records.
 This is source discovery, not independent proof certification or closure of any P0–P5 / Penrose / gravitational goal.
 
 [Historical navigator and later appendices](THEOREM_INDEX.md) · [Source-hashed canonical registry](THEOREM_INDEX_LIVE.json) · [Curated Proof Atlas](../../observatory/graph.html)
@@ -762,5 +762,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b044c18ac9da37078a8b558eb7046` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7ea0169881ed16689fb2d7cdf4e056` |
 
-**Coverage: 754 / 754 source files indexed.**
+| [PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md](../../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md) | `aad1c5bdfb96608bd0dacdafb36facda23316262` |
+
+**Coverage: 755 / 755 source files indexed.**
 All scientific statuses must be established separately from the source file.
