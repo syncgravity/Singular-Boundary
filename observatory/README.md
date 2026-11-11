@@ -1,4 +1,24 @@
-# Research Observatory v2.69-pf-i16-four-face-c2222 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.72-pf-i16-pointwise-kato-bochner — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I16 · Pointwise derivative-flow bridge and fourth-order frontier (2026-11-10)
+
+The auxiliary finite-graph PF-I16 route now has six distinct evidence layers:
+
+1. **Finite-source coefficient theorem:** seven authenticated connected four-face classes have exact negative rational \(C_{2,2,2,2}\) coefficients; the 18,900-support weighted sum is only the fully four-face-connected contribution, not the full eighth-order energy.
+2. **Universal combinatorial control:** the five-direction inventory gives \(d_e\le8\), face-overlap degree \(D\le28\), and rooted connected-support count \(784^{k-1}\). The stronger \(D\le4\) is observed only on eight finite crops.
+3. **Exact local dressing:** isolated-face ground-state conjugation is an exact finite-graph identity. The shared-link residual vanishes on singly incident links and has support at most 25 links.
+4. **Refined rotor and holonomy Hessian:** the weighted-mean identity gives \(\|\nabla^2s\|\le\frac43\beta+\frac{20}{3}\beta^2\). A working four-factor left/right-trivialized mixed-Hessian calculation supplies the refined diagonal/off-diagonal face blocks; its standalone sign/trivialization/regularization audit remains open.
+5. **Pointwise Kato–Bochner and Duhamel:** the product vector Bochner equation, linkwise Kato inequality and scalar maximum principle yield a cooperative comparison system. Under the refined face blocks, the weighted derivative-flow estimate has kernel prefactor one and \(\lambda=\frac{a_0}{2}-\frac{53312}{3}b_0-\frac{389120}{3}\frac{b_0^2}{a_0}\). At \(b_0/a_0\le1/40000\), \(\lambda\ge26087a_0/468750\).
+6. **Third-order resolvent:** the exact six-permutation coefficient now has the revised conditional bound \(3.25\times10^{16}b_0^6/a_0^5\) under the same smallness condition. It has no established spatial tree-decay factor.
+
+**Kernel audit:** the degree-24 link-overlap graph gives row and column sums at most 13 for \(K(e,g)=25^{-d(e,g)}\). Convolution requires spatial-exponent loss; it does not preserve the same exponent. The finite-support oscillation consequence has prefactor \(26\pi\), with no total-volume factor.
+
+**Next proof obligation:** write the pointwise Kato–Bochner argument as a self-contained lemma and independently audit the four-factor signs, trivializations, metric scaling and regularization. Then proceed to fourth-order partition cancellation and spatial tree bounds. No uniform cluster convergence, source physical kinetic/time normalization, continuum reconstruction or Yang–Mills mass gap is established.
+
+[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Refined rotor/residual estimate](../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) · [Pointwise Kato–Bochner and derivative flow](../research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md) · [Updated third-order resolvent](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [760-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
+
+**Observatory v2.72-pf-i16-pointwise-kato-bochner: 284 curated nodes / 675 typed relationships / 760 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
+---
 
 ## PF-I16 · Exact four-face eighth-order SU(2) quantum coefficients (2026-11-09)
 
@@ -22,7 +42,7 @@ This is **not** the complete eighth-order ground-energy coefficient: repeated on
 
 **Scope discipline:** no uniform connected-cluster summability, source-derived physical kinetic/time normalization, interacting continuum construction, or four-dimensional Yang–Mills mass gap is established. Those gates remain OPEN. The full theorem source is [PF-I16 exact seven-class four-face C2222](../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md); the reproducible 56-file verification archive is preserved in Library at `/The Singular Boundary/Proof Audits/PF_I16_EXACT_FOUR_FACE_C2222_2026_11_09.zip` (SHA-256 `ef4bfbcc47fccffa5900d91f7314af0ca40c30ea25da28ea052ccf031d1f9ddc`).
 
-**Observatory v2.69-pf-i16-four-face-c2222: 278 curated nodes / 663 typed relationships / 755 indexed theorem-source paths.** The historical 740-record baseline remains intact. P0–P5 and PF-G0–G5 remain OPEN; this finite-order theorem is not a proof-gate closure.
+**Observatory v2.69-pf-i16-four-face-c2222: 282 curated nodes / 670 typed relationships / 758 indexed theorem-source paths.** The historical 740-record baseline remains intact. P0–P5 and PF-G0–G5 remain OPEN; this finite-order theorem is not a proof-gate closure.
 
 ---
 

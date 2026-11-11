@@ -1,10 +1,10 @@
 {
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
-  "generated_utc_date": "2026-11-09",
-  "source_commit": "02943779954021740758a38d727dfa530d8f8830",
+  "generated_utc_date": "2026-11-10",
+  "source_commit": "7461e4c4e5577109b4c3ef9dacb615f15c23b76d",
   "baseline_historical_count": 740,
-  "count": 755,
+  "count": 760,
   "theorems": [
     {
       "path": "research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md",
@@ -35,9 +35,44 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md",
+      "git_blob_sha": "8285ff968642992cf3e5ce8a59c6ae90b60da435",
+      "bytes": 4072,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
+      "git_blob_sha": "174371a911abd78053983527464ba56a2d05a4da",
+      "bytes": 4995,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md",
       "git_blob_sha": "aad1c5bdfb96608bd0dacdafb36facda23316262",
       "bytes": 6260,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md",
+      "git_blob_sha": "63350c256de4103da4ec7c90c53b9f7a2ba9f38d",
+      "bytes": 3581,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
+      "git_blob_sha": "fa34e3f59d28bd30446d809ebb4402e246e83114",
+      "bytes": 9634,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
+      "git_blob_sha": "c46b4c17f0969efc7da5e7171ca92558a7666c17",
+      "bytes": 8897,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },

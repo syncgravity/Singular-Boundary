@@ -1,5 +1,31 @@
 # Proof dependencies and noncircular checkpoints
 
+## PF-I16 · Auxiliary dressed-locality ladder (2026-11-10; no canonical gate closure)
+
+The Penrose–Fibonacci groundwork now supports a more detailed **sub-proof route** inside the existing P0–P5 / PF-G0–G5 architecture. It does not replace those gates and does not close any of them.
+
+1. **Finite source interaction data — established at fixed scope.** PF-I16's exact seven-class \(C_{2,2,2,2}\) result remains the fully four-face-connected eighth-order contribution only; it is not the complete eighth-order energy.
+2. **Universal incidence and support counting — established combinatorially.** The safe source-uniform inventory is \(d_e\le8\), giving face-overlap degree \(D\le28\) and rooted connected support count \(784^{k-1}\). The sharper \(D\le4\) is observed on eight finite crops only.
+3. **Single-face dressing — exact finite-graph identity.** The ground-state conjugation leaves a residual supported only at shared links (at most 25 links per residual term under \(d_e\le8\)). Uniform derivative/Hessian and Poincaré estimates are separate analytic obligations.
+4. **Third-order mixed coefficient — exact algebra, conditional norm bound.** The centered reduced-resolvent coefficient has a six-permutation formula. The exact identity is established algebraically, but the previously stated numerical prefactor and old curvature/derivative thresholds have not been rederived after the refined rotor/residual estimates; treat them as historical working calculations, not current consequences. No spatial spanning-tree decay is proved.
+5. **Refined isolated-rotor Hessian and residual derivatives — conditional working estimate.** The exact weighted-mean identity gives \(\|\nabla^2s_f\|_{\rm op}\le\frac43\beta_f+\frac{20}{3}\beta_f^2\), assuming the inherited \(\|s_f'\|_\infty\le\beta_f\). Under the stated product-holonomy mixed-Hessian estimate, the working face blocks are \(H_{ee}^{(f)}\le\frac{32}{3}b_0+\frac{320}{3}b_0^2/a_0\) and \(H_{eg}^{(f)}\le\frac{44}{3}b_0+\frac{320}{3}b_0^2/a_0\). For \(b_0/a_0\le1/40000\), the residual bounds are \(\|R_e\|_\infty\le1040b_0^2/a_0\), component derivative \(\le8450b_0^2/\sqrt{a_0}\), support \(\ell^2\) derivative \(\le42250b_0^2/\sqrt{a_0}\), and support \(\ell^1\) derivative \(\le211250b_0^2/\sqrt{a_0}\). These are conditional on the product-holonomy mixed covariant derivative/orientation estimate, which remains the immediate geometric verification target. The earlier third-order numerical bound and its old curvature/decay thresholds have not been rederived with these constants.
+
+5. **Fourth-order partition cancellation — next open lemma.** Expand the exact recursion and prove each disconnected set-partition cancellation. Do not infer this from third order.
+6. **All-orders connected activity — open.** Need a volume-independent activity majorant and spatial tree bound. The existing fixed-support Cauchy envelope grows like \(k^{2k}\), so it is not absorbed by the exponential support count.
+7. **Physical transfer and continuum — still open.** Source-derived kinetic/time normalization, physical gauge/hull measure, genuine refining 3D regulator, interacting continuum reconstruction and a strictly positive physical mass gap remain unproved.
+
+### Effect on the canonical gates
+
+- **P0 / PF-G0–G1:** source/operator identity and a physically valid, genuinely refining three-dimensional regulator remain open. The accepted-rhombus incidence result is useful geometry, not a completed 3D cellulation certificate.
+- **P1 / PF-G2:** the auxiliary SU(2) finite-graph identities do not supply source-derived physical kinetic coefficients, time, or the complete physical Gauss-sector Hamiltonian.
+- **P2 / PF-G3–G4:** dressing and third order sharpen a local interacting route, but fourth-order cancellation, all-orders summability and refinement-uniform estimates remain open.
+- **P3–P5 / PF-G5:** physical vacuum/current, reconstructed infrared spectrum, nontrivial four-dimensional continuum theory and positive physical mass gap remain open.
+
+The PF-I16 refined-rotor record is [here](../../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md). The PF-I16 ladder is therefore an internal refinement of the research plan, not a relaxation or renaming of the acceptance criteria. See the [PF-I16 theorem records](../../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md), [dressing identity](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md), and [third-order coefficient note](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md).
+
+---
+
+
 ## P2 / T2 · Original-link full non-Abelian plaquette-influence theorem (2026-11-06; finite classical)
 
 [Full proof and numerical scope](../../research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md). Unlike the positive-physical-time **Cartan-planar** nonlinear theorem, this result applies to **all finite 3D cubic original-link SU(2) configurations, including noncommuting fields**. With `ell_p=1-Re U_p`, `a_p=sqrt(ell_p)`, and `N_pq=# shared original links`, the exact one-link derivative `||grad_e ell_p||²=ell_p(2-ell_p)/4` gives `D_s^+ a_p <= -(2-ell_p)a_p/2 + Σ_(q ne p)N_pq a_q/4`. Original-link incidence implies `A=N_off/4` has row norm ≤3, so the **finite nonlinear** comparison is `a(s)<=exp(sA)a(0)` and `||a(s)||infinity<=exp(3s)||a0||infinity`, with explicit factorial graph-distance influence tails. A reproducible finite SU(2) quaternion example also has an **increasing strict largest local plaquette defect** while total action decays. This refutes an unconditional *plaquette maximum principle* but not a near-flat or physical-time covariant smoothing theorem.
@@ -129,3 +155,23 @@ An attempted majorant must state the support/interval constant, derivative losse
 ## P3–P5 remain logically separate
 
 [Penrose signed current](../../research/problems/R3-IR.md), [physical-time and infrared obligations](../../research/problems/R3-IR.md), [continuum R2](../../research/problems/R2.md), and [separate historical prism geometry](../../research/problems/R3-PRISM.md). Explicit source-to-Hamiltonian equivalence is a P0 prerequisite, not an inference from numerical agreement.
+
+
+## PF-I16 pointwise Kato–Bochner and derivative-flow checkpoint (2026-11-10)
+
+The finite-product vector Bochner equation for
+\[
+\mathscr G=\Delta_{\widetilde g}-2\nabla_{\nabla\Phi},
+\qquad
+\widetilde g=\bigoplus_e a_e^{-1}g_e
+\]
+has Bakry–Émery endomorphism \(\operatorname{Ric}^{\sharp}+2(\nabla^2\Phi)^\sharp\). Since the product connection preserves link tangent blocks and \(\operatorname{Ric}^{\sharp}|_{T_e}=(a_e/2)I\), Kato's inequality followed by the finite-product scalar maximum principle gives a componentwise cooperative upper-Dini inequality. The refined face blocks yield the weighted comparison matrix and the conditional derivative-flow estimate with kernel prefactor one:
+\[
+\|D_eP_tf\|_\infty\le e^{-\lambda t}
+\sum_g25^{-d(e,g)}\|D_gf\|_\infty,\quad
+\lambda=\frac{a_0}{2}-\frac{53312}{3}b_0
+-\frac{389120}{3}\frac{b_0^2}{a_0}.
+\]
+At \(b_0/a_0\le1/40000\), \(\lambda\ge26087a_0/468750>0.0556522a_0\). The kernel has row and column sums at most 13, while convolution requires spatial-exponent loss. For a finite-link-supported observable, the resulting oscillation bound is \(26\pi e^{-\lambda t}\sum_{g\in S}\|D_gf\|_\infty\).
+
+See [the pointwise Kato–Bochner theorem record](../../research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md). This closes the componentwise Kato/Duhamel bridge **conditional on** the refined face-Hessian blocks, which in turn retain the isolated-rotor gradient and four-factor group-product hypotheses. The standalone sign/trivialization/regularization audit remains next. All P0–P5 and PF-G0–G5 gates remain OPEN; no physical-time normalization, continuum reconstruction, all-orders summability or Yang–Mills mass gap is claimed.

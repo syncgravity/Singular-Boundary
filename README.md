@@ -2,7 +2,18 @@
 
 **A source-preserving research program investigating Penrose/quasicrystalline geometry, physical SU(2) lattice gauge theory, and the Yang–Mills existence and mass-gap problem.**
 
-> **Scientific status (November 5, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
+> **Scientific status (November 10, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
+
+## PF-I16 · Dressed local interaction: exact identities and open summability (2026-11-10)
+
+The current Penrose–Fibonacci auxiliary quantum route now records four additional theorem-level inputs beyond the exact seven-class four-face coefficient calculation:
+
+- [Connected-support incidence correction](research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md): universal \(d_e\le8\), overlap degree \(D\le28\), and rooted connected-support count \(784^{k-1}\). The sharper \(D\le4\) is finite-crop evidence only; the activity majorant is still missing.
+- [Exact single-face dressing and shared-link residual](research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md): exact finite-graph conjugation, with residual zero on singly incident links and support at most 25 links. Uniform derivative and stability bounds remain conditional.
+- [Refined isolated-rotor Hessian and shared-link residual derivatives](research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md): exact weighted-mean cancellation gives the radial bound \(\frac43\beta+\frac{20}{3}\beta^2\); pulled-back blocks and residual derivative bounds remain conditional on the unverified four-factor group-multiplication mixed-Hessian/orientation estimate. The old third-order numerical bound has not been rederived.
+- [Centered dressed-resolvent third-order coefficient](research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md): exact six-permutation third-order formula. Its prior source-volume-uniform numerical bound is historical and has not been rederived using the refined rotor/residual constants; no spatial spanning-tree decay is proved.
+
+The immediate PF-I16 task is independent certification of the four-factor group-multiplication mixed covariant derivative and orientation conversions used by the refined rotor-Hessian estimate; the previous third-order numerical bound must then be recalculated. The finite-source results sharpen the auxiliary local-interaction route, but **do not close** any P0–P5 or PF-G0–G5 gate. Uniform all-orders cluster summability, source-derived physical kinetic/time, a genuine refining 3D physical regulator, interacting continuum reconstruction and a positive physical mass gap remain open. The [Observatory Proof Atlas](observatory/graph.html) now tracks 283 curated nodes and 672 typed relationships; the current theorem-source index contains 759 paths, with the 740 historical baseline retained. Indexing is not certification.
 
 ## PF-I15 · Source-intrinsic SU(2) electric reference gap, nonzero Wilson control and physical-time nonselection (2026-11-08)
 
@@ -259,7 +270,7 @@ The [shared-link two-face calculation](research/audits/NESTED_PW_COEFFICIENTWISE
 
 ## Historical integrity
 
-On November 4, 2026, all ten former non-main historical branch heads were integrated into `main`; the canonical theorem index covers **740 files**. This is a verified **Git ancestry** statement, not proof that all theorem bodies or historical original bytes were independently certified. Historical duplicate claim IDs and original-source custody are still subject to the [acceptance gate](docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md). [Branch consolidation report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md).
+On November 4, 2026, all ten former non-main historical branch heads were integrated into `main`; the historical theorem baseline remains **740 files**; the current source-hashed registry covers **760 tracked theorem paths**. This is a verified **Git ancestry** statement, not proof that all theorem bodies or historical original bytes were independently certified. Historical duplicate claim IDs and original-source custody are still subject to the [acceptance gate](docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md). [Branch consolidation report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md).
 
 The uploaded Stage 26 data checks validate selected recorded hashes and source linkages, not Monte Carlo physics, a true 3D refinement, or a continuum Yang–Mills theorem.
 

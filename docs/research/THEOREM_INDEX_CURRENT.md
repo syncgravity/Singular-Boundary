@@ -1,6 +1,6 @@
 # Current complete theorem source navigator
 
-**Current source files:** **755** indexed paths in this checkout. **Historical baseline:** 740 records.
+**Current source files:** **760** indexed paths in this checkout. **Historical baseline:** 740 records.
 This is source discovery, not independent proof certification or closure of any P0–P5 / Penrose / gravitational goal.
 
 [Historical navigator and later appendices](THEOREM_INDEX.md) · [Source-hashed canonical registry](THEOREM_INDEX_LIVE.json) · [Curated Proof Atlas](../../observatory/graph.html)
@@ -11,7 +11,12 @@ This is source discovery, not independent proof certification or closure of any 
 | [COMPLETED_CAGE_FINITE_VOLUME_CAP_POSITIVITY_2026-10-30.md](../../research/theorems/COMPLETED_CAGE_FINITE_VOLUME_CAP_POSITIVITY_2026-10-30.md) | `ed02902884ea3cef4696fb40ee86d0a59f431e62` |
 | [COMPLETED_CAGE_SHARP_SIGNED_CURRENT_CAP_BOUND_2026-10-30.md](../../research/theorems/COMPLETED_CAGE_SHARP_SIGNED_CURRENT_CAP_BOUND_2026-10-30.md) | `62a4054e06f2e725b9c864406cd04cd68f0cf330` |
 | [CONDITIONAL_HAAR_INCOMPLETE_CAGE_CI1_CI2_2026-10-30.md](../../research/theorems/CONDITIONAL_HAAR_INCOMPLETE_CAGE_CI1_CI2_2026-10-30.md) | `b973513e8b9435f0e11f5cf101b8f1cdfd9c0907` |
+| [PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md](../../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) | `8285ff968642992cf3e5ce8a59c6ae90b60da435` |
+| [PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) | `174371a911abd78053983527464ba56a2d05a4da` |
 | [PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md](../../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md) | `aad1c5bdfb96608bd0dacdafb36facda23316262` |
+| [PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) | `63350c256de4103da4ec7c90c53b9f7a2ba9f38d` |
+| [PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md](../../research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md) | `fa34e3f59d28bd30446d809ebb4402e246e83114` |
+| [PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md](../../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) | `c46b4c17f0969efc7da5e7171ca92558a7666c17` |
 | [R3_ACTUAL_M5_GAUGE_ONLY_INTERTWINER_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ACTUAL_M5_GAUGE_ONLY_INTERTWINER_OBSTRUCTION_2026-10-30.md) | `2e5b1cdfaaa3164e8bc97bef962e79aaf50c10c4` |
 | [R3_ACTUAL_M5_ORIGINAL_WHITNEY_TWO_TREE_WILSON_FORM_2026-10-30.md](../../research/theorems/R3_ACTUAL_M5_ORIGINAL_WHITNEY_TWO_TREE_WILSON_FORM_2026-10-30.md) | `203334d19b62c573f8fe3a9a7f3e3f0259232623` |
 | [R3_AMBIENT_HEAT_KERNEL_RELATIVE_HAAR_CAP_2026-10-30.md](../../research/theorems/R3_AMBIENT_HEAT_KERNEL_RELATIVE_HAAR_CAP_2026-10-30.md) | `c2468fe3cb9008d97177f3f79c238ba0588bec80` |
@@ -763,5 +768,5 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b044c18ac9da37078a8b558eb7046` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7ea0169881ed16689fb2d7cdf4e056` |
 
-**Coverage: 755 / 755 source files indexed.**
+**Coverage: 760 / 760 source files indexed.**
 All scientific statuses must be established separately from the source file.
