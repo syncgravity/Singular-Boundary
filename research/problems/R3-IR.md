@@ -48,3 +48,16 @@ A finite-strip H²-source derivative resolvent corollary is recorded separately;
 **Audit result:** no missing factor of two, sign, or index-order term was found in the combined differential inequality under the explicit hypotheses. With \(C_H<0.0304266282264\), \(C_3<0.049941326676\), \(C_R<0.060153181039\), and \(C_G=C_3+C_R<0.110094507715\), the conservative quadratic form has \(\lambda_{\min}>0.0699034\).
 
 **Residual dependencies:** the ordered plaquette connection-correction certificate, scalar fixed-point derivative bounds on the full plaquette range, straight-strip incidence assumptions, conditional one-link Poincaré input, weighted Bakry–Émery certificate, and metric/sign convention must remain explicit. This is a conditional finite-strip reference semigroup proposition only. The provisional three-sector calculation remains paused; no theorem/claim ID is promoted, and no nonlinear fixed point, volume-uniform residual response, physical-coupling gap, or continuum mass gap follows.
+
+
+## Local geometry and strip-incidence source audit (2026-11-11)
+
+[Local geometric certificates and straight-strip incidence audit](../audits/R3_IR_LOCAL_GEOMETRY_SOURCE_AND_INCIDENCE_AUDIT_2026-11-11.md) resolves the remaining local source dependencies for the conditional full-Hessian estimate on the specified finite open straight SU(2) strip. It reconstructs the ordered connection-correction formula for \(\nabla\operatorname{Hess}p_f\), establishes the \(3/4\) entrywise bound without slot symmetry, strengthens the scalar derivative tail by a positive majorant uniform for \(|g|\le10^{-3}\), and proves the all-\(N\) incidence counts \(24,288\) from \(E(f_m)=\{v_m,v_{m+1},t_m,b_m\}\). The one-output \(6/5\) transfer is then explicit.
+
+The independent exact verifier and log are:
+- [verifier](../audits/verify_R3_IR_local_geometry_source_audit_2026-11-11.py)
+- [execution log](../audits/R3_IR_LOCAL_GEOMETRY_SOURCE_AUDIT_2026-11-11.log)
+
+**Updated local constants:** \(C_3<0.049941305\), \(C_H<0.030426617\), \(C_R<0.060153182\), \(C_G<0.110094486\), and \(\lambda_{\min}(Q)>0.0699034\).
+
+**Status:** ordered local geometry, scalar derivative enclosure, SU(2) metric/curvature normalization, and straight-strip incidence now pass source-level review for this model. The weighted Bochner and conditional trace-Poincaré inputs remain imported from their named certificates; the common-measure and smooth-core extension is recorded above. The result remains a conditional finite-strip reference semigroup proposition. No theorem/claim ID is promoted; no interacting or continuum claim follows.
