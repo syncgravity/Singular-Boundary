@@ -12,6 +12,16 @@
 6. [Yang–Mills proof interface](../../observatory/yang-mills-proof.html) — legacy interface; defer to the spectral-inequality page for the canonical dependency spine.
 7. [Branch lifecycle and retirement protocol](BRANCH_LIFECYCLE_2026-11-11.md) — live branch snapshot, safe-retirement rules and action procedure.
 
+## Consolidation outcome · 2026-11-11 (supersedes the earlier snapshot below)
+
+The initial 12 open PRs have been reduced to **one open PR: #107**. Eight research PRs (#55, #56, #79–#84) were merged as separate commits into this integration branch. Three overlapping snapshot PRs (#74, #103, #106) were closed unmerged only after their exact branch-head SHAs and complete changed-path inventories were recorded in [the consolidation archive](CONSOLIDATION_ARCHIVE_2026-11-11.md). Their branch refs remain intact; no unmerged research branch was deleted. The old 12-PR list and 108-ref count below are a historical baseline, not the current PR state.
+
+The generated theorem catalog and both graph serializations were rebuilt from the Git-blob-verified live registry after the PF-I16 source hash/byte-count correction. The source index itself passed its verifier in the prior CI run; that run then failed because four generated Observatory outputs were stale. The rebuild has now been committed to this branch. A fresh workflow result must still be checked; do not report CI as passing until it is observed.
+
+The Observatory handoff now includes a helical-observer scope audit: Paper 3's 3:5:8 is kinematic sampling, exact Z13 aliasing and H2/H3 two-point reciprocity are controls, and the observer remains a probe rather than a Hamiltonian/time generator. Its source-authenticated 3D lift, clock/metric and matched interacting-vacuum covariance remain open.
+
+The canonical mathematical target is unchanged: a source-compatible, interacting-vacuum, refinement- and volume-uniform gauge-invariant Poincaré inequality, followed by infrared exclusion and nontrivial 4D continuum reconstruction. S0–S5 remain OPEN; no mass-gap proof is claimed.
+
 ## Canonical mathematical objective
 
 The single central missing result is the source-compatible, interacting, refinement- and physical-volume-uniform Poincaré inequality for all admissible gauge-invariant functions in the actual physical interacting vacuum:
