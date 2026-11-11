@@ -1,4 +1,14 @@
-# Research Observatory v2.72-pf-i16-pointwise-kato-bochner — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.73-r3-ir-trace-gradient — source-linked Proof Atlas
+
+
+## R3_IR · Conditional weighted trace–gradient block (2026-11-10; separate strip route)
+
+The finite open SU(2) strip now has a source-linked conditional calculation for the diagonal pure-trace Hessian sector. The one-link weighted Poincaré estimate gives \(c_{\rm tr}\approx0.2575101\) and gradient leakage \(\ell\approx0.00248474\), with the nonzero conditional mean retained. The exact product-manifold commutator includes both Ricci contributions before the drift factor.
+
+The trace equation still contains the local Hessian row constant \(A_2\), ordered weighted third-derivative operator \(A_{3,w}\), and trace-free/mixed Hessian coupling \(T_wK_w\). These have not been evaluated, and the full coupled \(3\times3\) positivity test remains open. The diagonal two-variable skeleton rate is not a full Hessian contraction theorem. See the [R3_IR theorem record](../research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md), [R3_IR work ledger](../research/problems/R3-IR.md), and [Proof Atlas](graph.html).
+
+PF-I16 remains a separate auxiliary Penrose route and is not part of this R3_IR result.
+
 
 ## PF-I16 · Pointwise derivative-flow bridge and fourth-order frontier (2026-11-10)
 
@@ -15,9 +25,9 @@ The auxiliary finite-graph PF-I16 route now has six distinct evidence layers:
 
 **Next proof obligation:** write the pointwise Kato–Bochner argument as a self-contained lemma and independently audit the four-factor signs, trivializations, metric scaling and regularization. Then proceed to fourth-order partition cancellation and spatial tree bounds. No uniform cluster convergence, source physical kinetic/time normalization, continuum reconstruction or Yang–Mills mass gap is established.
 
-[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Refined rotor/residual estimate](../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) · [Pointwise Kato–Bochner and derivative flow](../research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md) · [Updated third-order resolvent](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [760-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
+[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Refined rotor/residual estimate](../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) · [Pointwise Kato–Bochner and derivative flow](../research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md) · [Updated third-order resolvent](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [761-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
 
-**Observatory v2.72-pf-i16-pointwise-kato-bochner: 284 curated nodes / 675 typed relationships / 760 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
+**Observatory v2.73-r3-ir-trace-gradient: 285 curated nodes / 678 typed relationships / 761 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
 ---
 
 ## PF-I16 · Exact four-face eighth-order SU(2) quantum coefficients (2026-11-09)
