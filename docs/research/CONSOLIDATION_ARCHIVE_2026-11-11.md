@@ -2,7 +2,7 @@
 
 **Canonical open integration PR:** [#107 — Establish one source-compatible spectral-inequality proof spine](https://github.com/syncgravity/Singular-Boundary/pull/107)
 
-This ledger records the disposition of the 12-PR cleanup. It distinguishes merged content from explicitly archived branch histories. Closing a PR does not delete its branch. No unmerged branch is deleted or force-moved by this consolidation.
+This ledger records the preservation inventory from the initial 12-PR cleanup. Current disposition: four PRs remain open (#74, #103, #106, #107). It distinguishes merged content from explicitly archived branch histories. Closing a PR does not delete its branch. No unmerged branch is deleted or force-moved by this consolidation.
 
 ## Merged into the #107 integration branch
 
@@ -19,15 +19,15 @@ The following research contributions were reviewed for scope and merged as separ
 
 These are subordinate evidence and obstruction lanes. Their original PR discussions and commits remain in Git history. No theorem IDs or canonical proof-gate statuses were promoted.
 
-## Explicitly archived, then closed unmerged
+## Three reopened PRs requiring resolution
 
-These three PRs overlap the current Observatory/catalog/handoff files. Their original branches are retained unchanged, and their complete changed-path inventories are recorded below. The branch heads are immutable provenance anchors; do not delete these refs as part of routine merged-branch pruning. Their Observatory snapshots are historical alternatives, not the current canonical graph.
+These three PRs were temporarily closed during the first cleanup pass, then reopened at the user's direction because their work still requires resolution. The exact original branch heads and complete changed-path inventories are recorded below as preservation/provenance data. They are ACTIVE PRs, not archived work. Resolve overlap with the current Observatory/catalog/handoff without discarding unique sources, verifiers, logs or publishing configuration.
 
 ### [#106 — R3-IR finite-strip full-Hessian audit](https://github.com/syncgravity/Singular-Boundary/pull/106)
 
 - Branch: `audit/r3-ir-h2-trace-to-k-2026-11-10`
 - Preserved head: [`12995f4e34e0a7125da881f0ec655da243e33c3e`](https://github.com/syncgravity/Singular-Boundary/commit/12995f4e34e0a7125da881f0ec655da243e33c3e)
-- Disposition: **archived branch, PR closed unmerged** because its generated Observatory/index snapshot conflicts with the newer #107 canonical interface. The finite-strip research remains available at the exact branch head; it is not merged into the PF source-native model and is not a continuum gap result.
+- Disposition: **reopened and active; resolution required** because its generated Observatory/index snapshot conflicts with the newer #107 canonical interface. The finite-strip research remains available at the exact branch head; it is not merged into the PF source-native model and is not a continuum gap result.
 - Changed paths:
   - `README.md`
   - `docs/research/THEOREM_INDEX.md`
@@ -62,7 +62,7 @@ These three PRs overlap the current Observatory/catalog/handoff files. Their ori
 
 - Branch: `audit/2026-11-06-nonabelian-tube-complete-theorem-index`
 - Preserved head: [`447dcea7c54175bf46962de0222ceba519659796`](https://github.com/syncgravity/Singular-Boundary/commit/447dcea7c54175bf46962de0222ceba519659796)
-- Disposition: **archived branch, PR closed unmerged** because its theorem-index, graph and Observatory files represent an earlier, conflicting snapshot. Its finite non-Abelian tube theorem is finite-regulator positive probability only; its lower probability certificate is not uniform in refinement or volume.
+- Disposition: **reopened and active; resolution required** because its theorem-index, graph and Observatory files represent an earlier, conflicting snapshot. Its finite non-Abelian tube theorem is finite-regulator positive probability only; its lower probability certificate is not uniform in refinement or volume.
 - Changed paths:
   - `.github/workflows/theorem-index.yml`
   - `docs/evidence/R3_NONABELIAN_CARTAN_TUBE_2026-11-06.json`
@@ -88,7 +88,7 @@ These three PRs overlap the current Observatory/catalog/handoff files. Their ori
 
 - Branch: `pages-public-ready`
 - Preserved head: [`53c608a3f3884066568525374c32b4fc2986f866`](https://github.com/syncgravity/Singular-Boundary/commit/53c608a3f3884066568525374c32b4fc2986f866)
-- Disposition: **archived branch, PR closed unmerged**. Publishing configuration is kept separate from mathematical integration and no Pages activation/public deployment is authorized by this cleanup.
+- Disposition: **reopened and active; resolution required**. Publishing configuration is kept separate from mathematical integration and no Pages activation/public deployment is authorized by this cleanup.
 - Changed paths:
   - `.github/workflows/pages.yml`
   - `observatory/PUBLISHING.md`
