@@ -1,4 +1,21 @@
-# Research Observatory v2.69-pf-i16-four-face-c2222 — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.70-pf-i16-dressed-locality — Penrose–Fibonacci primary Proof Atlas
+
+## PF-I16 · Dressed local interaction and the fourth-order cancellation frontier (2026-11-10)
+
+The PF-I16 route now has four distinct levels of evidence:
+
+1. **Finite-source coefficient theorem:** the seven authenticated connected four-face classes have exact negative rational \(C_{2,2,2,2}\) coefficients; the 18,900-support weighted sum is only the fully four-face-connected contribution, not the full eighth-order energy.
+2. **Universal combinatorial control:** the five-direction inventory gives \(d_e\le8\), face-overlap degree \(D\le28\), and rooted connected-support count \(784^{k-1}\). The stronger \(D\le4\) is observed only on eight finite crops.
+3. **Exact local dressing:** isolated-face ground-state conjugation is an exact finite-graph identity. The shared-link residual vanishes on singly incident links and has support at most 25 links. Uniform derivative/curvature estimates remain a separate analytic condition.
+4. **Third-order resolvent:** the centered third-order coefficient has an exact six-permutation formula. The displayed source-volume-uniform numerical bound is conditional on the current curvature/derivative/semigroup estimates and has no spatial tree-decay factor.
+
+**Next:** explicitly expand fourth order and prove every disconnected set-partition cancellation; only then pursue spatial tree bounds and all-orders activity. No uniform cluster convergence, physical kinetic/time normalization, continuum reconstruction, or Yang–Mills mass gap is established.
+
+[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Third-order resolvent record](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [758-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
+
+**Observatory v2.70-pf-i16-dressed-locality: 282 curated nodes / 670 typed relationships / 758 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
+
+---
 
 ## PF-I16 · Exact four-face eighth-order SU(2) quantum coefficients (2026-11-09)
 
@@ -22,7 +39,7 @@ This is **not** the complete eighth-order ground-energy coefficient: repeated on
 
 **Scope discipline:** no uniform connected-cluster summability, source-derived physical kinetic/time normalization, interacting continuum construction, or four-dimensional Yang–Mills mass gap is established. Those gates remain OPEN. The full theorem source is [PF-I16 exact seven-class four-face C2222](../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md); the reproducible 56-file verification archive is preserved in Library at `/The Singular Boundary/Proof Audits/PF_I16_EXACT_FOUR_FACE_C2222_2026_11_09.zip` (SHA-256 `ef4bfbcc47fccffa5900d91f7314af0ca40c30ea25da28ea052ccf031d1f9ddc`).
 
-**Observatory v2.69-pf-i16-four-face-c2222: 278 curated nodes / 663 typed relationships / 755 indexed theorem-source paths.** The historical 740-record baseline remains intact. P0–P5 and PF-G0–G5 remain OPEN; this finite-order theorem is not a proof-gate closure.
+**Observatory v2.69-pf-i16-four-face-c2222: 282 curated nodes / 670 typed relationships / 758 indexed theorem-source paths.** The historical 740-record baseline remains intact. P0–P5 and PF-G0–G5 remain OPEN; this finite-order theorem is not a proof-gate closure.
 
 ---
 
