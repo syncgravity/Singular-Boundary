@@ -16,7 +16,7 @@ The intake commit `826470c384aa0aa0147cb5ba17c474cea15059db` was pushed to `main
 
 - `ASSET_INDEX.csv` and `ORIGIN.csv` are not present in the local project trees inspected for this intake. The missing index has not been reconstructed or substituted.
 - The original `global_whitney_11face.npz` bytes were not found or materialized. The expected hash and known calculation references are recorded in `RESEARCH_ASSET_REGISTRY.csv`; the repository reconstruction script is not a byte-for-byte substitute.
-- Two PF-I16 continuation transcripts are available in the local intake workspace and their source-byte sizes and SHA-256 hashes have been checked: `Branch · Branch · Continue PF116 Objective (1).md` (82,975 bytes; `fd99b9b9ee8e1ce0b33caa6a34ae310c34f9b7a9f184d32d886a0855a611fa6f`) and `(3).md` (76,242 bytes; `4caba95b1f594ff5fc6eba4c5aa33baf5ff843d0bddcc80915649f8597ae56a4`). Their full source bytes are not yet committed in this repository; do not treat the theorem-record summary as a substitute for those originals.
+- The two `Branch · Branch · Continue PF116 Objective` transcripts are preserved as Git text sources under `sources/originals/session-2026-11-11/`. Their original sizes and hashes were verified before import; commit and fresh-checkout readback status is tracked in `sources/source-manifests/PF_I16_CONTINUATION_SOURCE_REGISTER_2026-11-11.csv`.
 - The cage-cut theorem record is present on `main` at `research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md`. The separate archival source conversation remains unrecovered.
 
 ## Remote verification
