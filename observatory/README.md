@@ -1,19 +1,20 @@
-# Research Observatory v2.70-pf-i16-dressed-locality — Penrose–Fibonacci primary Proof Atlas
+# Research Observatory v2.71-pf-i16-refined-rotor — Penrose–Fibonacci primary Proof Atlas
 
 ## PF-I16 · Dressed local interaction and the fourth-order cancellation frontier (2026-11-10)
 
-The PF-I16 route now has four distinct levels of evidence:
+The PF-I16 route now has five distinct levels of evidence:
 
 1. **Finite-source coefficient theorem:** the seven authenticated connected four-face classes have exact negative rational \(C_{2,2,2,2}\) coefficients; the 18,900-support weighted sum is only the fully four-face-connected contribution, not the full eighth-order energy.
 2. **Universal combinatorial control:** the five-direction inventory gives \(d_e\le8\), face-overlap degree \(D\le28\), and rooted connected-support count \(784^{k-1}\). The stronger \(D\le4\) is observed only on eight finite crops.
 3. **Exact local dressing:** isolated-face ground-state conjugation is an exact finite-graph identity. The shared-link residual vanishes on singly incident links and has support at most 25 links. Uniform derivative/curvature estimates remain a separate analytic condition.
-4. **Third-order resolvent:** the centered third-order coefficient has an exact six-permutation formula. The displayed source-volume-uniform numerical bound is conditional on the current curvature/derivative/semigroup estimates and has no spatial tree-decay factor.
+4. **Refined isolated-rotor Hessian and residual derivatives:** an exact weighted-mean identity sharpens the radial Hessian bound to \(\frac43\beta+\frac{20}{3}\beta^2\). The pulled-back face blocks and residual derivative constants remain conditional on the four-factor group-multiplication mixed-Hessian/orientation estimate. The previous third-order numerical bound has not been rederived with the revised constants.
+5. **Third-order resolvent:** the centered third-order coefficient has an exact six-permutation formula. Its prior numerical prefactor and old curvature/derivative thresholds are historical working estimates, not revalidated consequences under the refined constants; it has no established spatial tree-decay factor.
 
-**Next:** explicitly expand fourth order and prove every disconnected set-partition cancellation; only then pursue spatial tree bounds and all-orders activity. No uniform cluster convergence, physical kinetic/time normalization, continuum reconstruction, or Yang–Mills mass gap is established.
+**Immediate geometric dependency:** independently certify the four-factor group-multiplication mixed covariant derivative and orientation/trivialization conversions used by the refined face-Hessian blocks. Then recalculate the third-order constants before proceeding with fourth-order partition cancellation and spatial tree bounds. No uniform cluster convergence, physical kinetic/time normalization, continuum reconstruction, or Yang–Mills mass gap is established.
 
-[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Third-order resolvent record](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [758-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
+[Incidence correction](../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) · [Exact dressing identity](../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) · [Refined rotor/residual estimate](../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) · [Third-order resolvent record](../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) · [Interactive Proof Atlas](graph.html) · [759-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md)
 
-**Observatory v2.70-pf-i16-dressed-locality: 282 curated nodes / 670 typed relationships / 758 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
+**Observatory v2.71-pf-i16-refined-rotor: 283 curated nodes / 672 typed relationships / 759 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
 
 ---
 
