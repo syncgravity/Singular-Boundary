@@ -108,3 +108,20 @@ Expanding this formula and proving cancellation of disconnected partition terms 
 **Conditional/working estimates:** \(\kappa\), \(\lambda\), residual derivative constants and the displayed numerical third-order bound.
 
 **Open:** spatially decaying third-order tree bound; fourth-order partition cancellation; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap.
+
+
+## Subsequent PF-I16 constant correction (2026-11-10)
+
+A later isolated-rotor calculation derived the exact weighted-mean identity
+\[
+\lambda=-\frac{\int_0^\pi\sin^2\theta\,s'(\theta)^2\,d\theta}
+{\int_0^\pi\sin^2\theta\,d\theta}
+\]
+and the sharper conditional radial Hessian bound
+\[
+\|\nabla^2s_f\|_{\rm op}\le\frac43\beta_f+\frac{20}{3}\beta_f^2.
+\]
+The corresponding working face-block and shared-link residual derivative estimates are recorded in
+[PF-I16 refined rotor Hessian and residual derivatives](PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md).
+
+**Important:** the numerical third-order prefactor and the earlier \(\kappa,\lambda\) thresholds stated in this record have **not** been recalculated using those revised constants. They remain historical conditional calculations, not current consequences of the refined estimates. The product-holonomy mixed covariant derivative and orientation/trivialization conversions are also awaiting independent geometric certification. Do not use the earlier numerical third-order bound as a currently revalidated estimate.
