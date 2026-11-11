@@ -16218,11 +16218,11 @@
       {
         "number": 107,
         "branch": "architecture/source-compatible-spectral-spine-2026-11-11",
-        "head_sha": "4e1f5d0bbd359471a8cf005c47bea965540939b7",
         "base": "main",
         "state": "open",
         "mergeable": true,
-        "role": "canonical proof-spine integration"
+        "role": "canonical proof-spine integration",
+        "head_sha_policy": "self-updating integration branch; resolve current SHA from the live PR"
       }
     ]
   }
