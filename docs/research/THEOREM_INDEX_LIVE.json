@@ -2,7 +2,7 @@
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
   "generated_utc_date": "2026-11-10",
-  "source_commit": "cc82b786b12b349c513b1fa9dd1a66bc31cf3261",
+  "source_commit": "7461e4c4e5577109b4c3ef9dacb615f15c23b76d",
   "baseline_historical_count": 740,
   "count": 759,
   "theorems": [
@@ -43,8 +43,8 @@
     },
     {
       "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-      "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
-      "bytes": 4322,
+      "git_blob_sha": "85aaeba5ea26e9caaceaceee21aa508b581f6294",
+      "bytes": 5411,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
