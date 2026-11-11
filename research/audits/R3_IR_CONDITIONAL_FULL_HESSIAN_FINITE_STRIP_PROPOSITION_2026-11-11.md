@@ -238,7 +238,7 @@ Each link has at most six distinct neighboring links across at most two incident
 \boxed{
 \|2(AH+HA)\|_{w,2}
 \le C_H\|H\|_{w,2},\qquad
-C_H=2(49.2+42)h<0.030426617.
+C_H=2(49.2+42)h<0.030426692.
 }
 \tag{3.3}
 \]
