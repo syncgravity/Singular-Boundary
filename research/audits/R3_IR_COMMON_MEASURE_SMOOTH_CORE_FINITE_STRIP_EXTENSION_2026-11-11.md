@@ -83,12 +83,12 @@ Decompose the Hessian orthogonally, in the same weighted Hilbert space, into its
 H_w^2=T_w^2+K_w^2,\qquad
 T_w^2=\frac13\sum_e w_e\|\Delta_ef_t\|_2^2.
 \]
-The product SU(2) curvature estimate gives damping at least 1 on the mixed and diagonal trace-free sector K_w, while the pure diagonal trace has no direct curvature damping. The conditional one-link Poincaré estimate supplies
+The product SU(2) curvature estimate gives damping at least 1 on the mixed and diagonal trace-free sector K_w, while the pure diagonal trace has no direct curvature damping. The conditional one-link Poincaré estimate supplies a lower bound on the trace-sector part of the tensor Dirichlet form:
 \[
-\frac{d}{dt}T_w^2
-\le -2c_{\rm tr}T_w^2+2\ell G_w^2
+\sum_e w_e\|\nabla H_{ee}^{\rm tr}\|_{L^2(\mu_g)}^2
+\ge c_{\rm tr}T_w^2-\ell G_w^2.
 \]
-for the coercive part, with the same μ_g, where
+Thus, when this component is inserted into the full Hessian energy identity through its negative Dirichlet term, it contributes \(-2c_{\rm tr}T_w^2+2\ell G_w^2\). This is **not** asserted as a closed differential inequality for \(T_w\) by itself; the trace projection need not evolve invariantly. The constants, in the same μ_g, are
 \[
 c_{\rm tr}=\frac34e^{-49\pi/144}
 =0.2575101249909138\ldots,\qquad
