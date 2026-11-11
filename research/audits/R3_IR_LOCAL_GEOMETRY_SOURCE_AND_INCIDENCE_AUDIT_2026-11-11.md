@@ -72,7 +72,22 @@ Dividing by the coefficient weight \(2^n(n+1)^6\), the exact global maxima for \
 \[
 \frac1{64},\quad\frac1{64},\quad\frac2{729},\quad\frac{24}{15625}.
 \]
-For \(k=1\) the ratio decreases from \(n=1\); for \(k=2\) it decreases from \(n=2\); for \(k=3\), \(r_3(4)/r_3(3)=16384/15625>1\) and it decreases from \(n=4\). These tail statements follow from the exact ratio-difference polynomials; after the shifts \(n-1,n-2,n-4\), respectively, all coefficients are positive. Thus the derivative envelope is global in character degree, not a finite cutoff check.
+For a transparent global-tail check, put \(C_k(n)=U_n^{(k)}(1)\) and
+\[
+D_k(n)=2C_k(n)(n+2)^6-C_k(n+1)(n+1)^6.
+\]
+Then \(D_k(n)>0\) is exactly the condition \(r_k(n+1)<r_k(n)\), where \(r_k(n)=C_k(n)/(2^n(n+1)^6)\). For \(k=1,2,3\), the exact factorizations are
+\[
+\begin{aligned}
+D_1(n)&=\frac{(n+1)(n+2)}3
+\big(n^7+15n^6+87n^5+255n^4+405n^3+333n^2+109n-3\big),\\
+D_2(n)&=\frac{n(n+1)(n+2)(n+3)}{15}
+\big(n^7+12n^6+57n^5+120n^4+65n^3-162n^2-281n-132\big),\\
+D_3(n)&=\frac{n(n-1)(n+1)(n+2)(n+3)(n+4)}{105}
+\big(n^7+9n^6+27n^5-15n^4-275n^3-657n^2-671n-261\big).
+\end{aligned}
+\]
+The bracket in \(D_1\) is positive for \(n\ge1\); the brackets in \(D_2,D_3\), after the shifts \(n=x+2\) and \(n=x+4\), respectively, have strictly positive polynomial coefficients. Thus \(r_1\) decreases from \(n=1\), \(r_2\) from \(n=2\), and \(r_3\) from \(n=4\); moreover \(r_3(4)/r_3(3)=16384/15625>1\). Together with the trivial \(k=0\) monotonicity, this proves the global maxima above, not a finite cutoff check. The exact shifted coefficient lists are retained in the independent verifier.
 
 The reproducible artifacts and source checksums are recorded in [the SHA-256 manifest](R3_IR_LOCAL_GEOMETRY_SOURCE_AUDIT_2026-11-11_SHA256.txt).
 
