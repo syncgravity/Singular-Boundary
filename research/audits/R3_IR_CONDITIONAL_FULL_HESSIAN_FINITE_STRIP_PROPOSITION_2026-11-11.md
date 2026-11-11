@@ -299,7 +299,7 @@ Adding (2.1) and (4.1) gives
 where
 \[
 a=c-\ell=0.0891819307400046\ldots,\qquad
-b=c_{\mathrm{tr}}-C_H>0.2270835083.
+b=c_{\mathrm{tr}}-C_H>0.2270835082.
 \]
 For \(x=(G_w,H_w)^\top\),
 \[
