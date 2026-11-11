@@ -761,12 +761,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "758 current indexed theorem source files (740 historical baseline)",
+      "title": "759 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 758, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 759, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
