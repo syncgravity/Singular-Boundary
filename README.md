@@ -2,7 +2,17 @@
 
 **A source-preserving research program investigating Penrose/quasicrystalline geometry, physical SU(2) lattice gauge theory, and the Yang–Mills existence and mass-gap problem.**
 
-> **Scientific status (November 5, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
+> **Scientific status (November 10, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
+
+## PF-I16 · Dressed local interaction: exact identities and open summability (2026-11-10)
+
+The current Penrose–Fibonacci auxiliary quantum route now records three additional theorem-level inputs beyond the exact seven-class four-face coefficient calculation:
+
+- [Connected-support incidence correction](research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md): universal \(d_e\le8\), overlap degree \(D\le28\), and rooted connected-support count \(784^{k-1}\). The sharper \(D\le4\) is finite-crop evidence only; the activity majorant is still missing.
+- [Exact single-face dressing and shared-link residual](research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md): exact finite-graph conjugation, with residual zero on singly incident links and support at most 25 links. Uniform derivative and stability bounds remain conditional.
+- [Centered dressed-resolvent third-order coefficient](research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md): exact six-permutation third-order formula and a conditional source-volume-uniform numerical bound. No spatial spanning-tree decay is proved.
+
+The next PF-I16 task is the explicit fourth-order partition-cancellation calculation. The finite-source results sharpen the auxiliary local-interaction route, but **do not close** any P0–P5 or PF-G0–G5 gate. Uniform all-orders cluster summability, source-derived physical kinetic/time, a genuine refining 3D physical regulator, interacting continuum reconstruction and a positive physical mass gap remain open. The [Observatory Proof Atlas](observatory/graph.html) now tracks 282 curated nodes and 670 typed relationships; the current theorem-source index contains 758 paths, with the 740 historical baseline retained. Indexing is not certification.
 
 ## PF-I15 · Source-intrinsic SU(2) electric reference gap, nonzero Wilson control and physical-time nonselection (2026-11-08)
 
