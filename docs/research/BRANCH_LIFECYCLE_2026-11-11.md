@@ -63,3 +63,8 @@ The one open PR is [#107](https://github.com/syncgravity/Singular-Boundary/pull/
 
 **Retirement rule:** do not delete the three archived branch refs (#74/#103/#106) or any other non-ancestor research branch. After #107 is merged to main, use the SHA-checked retirement workflow in dry-run mode and review its exact eligible/withheld list before any branch retirement. The 107 non-main branch count from the original snapshot has not been reduced by this PR cleanup.
 
+
+
+## Current four-PR state · 2026-11-11
+
+The active review set is four PRs: #74, #103, #106, #107. #74/#103/#106 have been reopened; no head branch was rewritten or deleted. See [FOUR_PR_REVIEW_BOARD_2026-11-11.md](FOUR_PR_REVIEW_BOARD_2026-11-11.md) and the Observatory graph v2.74. The old "one open PR" disposition above is historical and superseded. Resolve all four in parallel with one canonical Observatory map; never close unresolved PRs as a branch-count shortcut.
