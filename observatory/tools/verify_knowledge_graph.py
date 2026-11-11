@@ -109,7 +109,7 @@ def main():
   check(node['PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES']['status']=='conditional','refined rotor estimates remain conditional')
   check(any(z['from_id']=='PF-I16-EXACT-DRESSING-RESIDUAL' and z['to_id']=='PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES' for z in e),'refined rotor dependency edge missing')
   check(g['pf_i16_dressed_locality']['third_order']['prior_numeric_bound_revalidated'] is False,'prior third-order bound not silently promoted')
-check('dissertation' not in node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title'].lower() and re.search(r'(?i)\\bpaper\\s*[1-5]\\b',node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title']) is None,'PF-I16 result node must remain result-focused, not a source-document title')
+ check('dissertation' not in node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title'].lower() and re.search(r'(?i)\\bpaper\\s*[1-5]\\b',node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title']) is None,'PF-I16 result node must remain result-focused, not a source-document title')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
  check(node['R-CUBIC-FINITE-GAP']['status']=='finite','finite strong-coupling theorem scope')
  check(node['I-UV-COUPLING']['status']=='open','missing ultraviolet regime')
