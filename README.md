@@ -292,3 +292,8 @@ The uploaded Stage 26 data checks validate selected recorded hashes and source l
 7. Deploy only the curated `observatory/` directory to Pages; never upload the private repository source tree or archival binaries as a website artifact.
 
 **Research objective:** a coherent, independently checkable sequence of implications to a nontrivial continuum SU(2) Yang–Mills theory with a strictly positive physical mass gap.
+
+
+## R3_IR · H2 trace-to-K calculation entered for audit (2026-11-10)
+
+A new [provisional trace-to-K calculation and audit](research/theorems/R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md) records the one-output-weight convention and a candidate \(C_{TK}<0.007845234\) trace coupling. The previously obtained third-dressing forcing coefficient is \(0.049941328\). The added ordered-curvature estimate and combined coefficient \(0.050230172\) remain provisional pending an index-level SU(2) curvature audit; the trace-to-K incidence count also requires independent verification. The resulting Schur calculation is therefore diagnostic only. K-to-K drift and curvature terms remain unbounded, and no full Hessian contraction, interacting spectral gap, continuum reconstruction or Yang–Mills mass gap is claimed. [R3_IR work ledger](research/problems/R3-IR.md).
