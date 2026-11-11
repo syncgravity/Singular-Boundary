@@ -39,3 +39,12 @@ G_w(t)^2+H_w(t)^2\le e^{-2\lambda_{\rm cand}t}
 A finite-strip H²-source derivative resolvent corollary is recorded separately; no strip-length-uniform scalar gap is inferred.
 
 **Status:** common-measure and smooth-core compatibility are closed for the conditional finite-strip reference estimate. The coefficient chain remains conditional; no theorem/claim ID is promoted. The provisional three-sector calculation remains paused. No nonlinear fixed point, volume-uniform residual response, physical-coupling gap, 3D transfer, or continuum mass gap follows.
+
+
+## Adversarial full-Hessian energy inequality audit (2026-11-11)
+
+[Adversarial audit](../audits/R3_IR_ADVERSARIAL_FULL_HESSIAN_ENERGY_INEQUALITY_AUDIT_2026-11-11.md) independently rederives the ordered drift Hessian identity with the stated covector commutator convention; checks the SU(2) mixed/trace-free curvature damping; verifies that the conditional trace Poincaré estimate enters as a lower bound on a parallel component of the full tensor Dirichlet form (not as a closed trace-sector evolution); and recomputes the one-output Schur, symmetrized Codazzi, and \(2\times2\) energy constants.
+
+**Audit result:** no missing factor of two, sign, or index-order term was found in the combined differential inequality under the explicit hypotheses. With \(C_H<0.0304266282264\), \(C_3<0.049941326676\), \(C_R<0.060153181039\), and \(C_G=C_3+C_R<0.110094507715\), the conservative quadratic form has \(\lambda_{\min}>0.0699034\).
+
+**Residual dependencies:** the ordered plaquette connection-correction certificate, scalar fixed-point derivative bounds on the full plaquette range, straight-strip incidence assumptions, conditional one-link Poincaré input, weighted Bakry–Émery certificate, and metric/sign convention must remain explicit. This is a conditional finite-strip reference semigroup proposition only. The provisional three-sector calculation remains paused; no theorem/claim ID is promoted, and no nonlinear fixed point, volume-uniform residual response, physical-coupling gap, or continuum mass gap follows.
