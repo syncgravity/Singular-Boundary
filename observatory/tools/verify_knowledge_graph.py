@@ -18,7 +18,7 @@ def main():
  if (here/'knowledge-graph.json').exists():root=here
  else:root=here.parent
  g=json.loads((root/'knowledge-graph.json').read_text());m=json.loads((root/'data-manifest.json').read_text() if (root/'data-manifest.json').exists() else (root/'data_manifest.json').read_text())
- check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==755,'current theorem paths must match source registry');check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
+ check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==759,'current theorem paths must match source registry');check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
  n=g['nodes'];e=g['edges'];ids=[x['id'] for x in n];check(len(ids)==len(set(ids)),'duplicate ids');node={x['id']:x for x in n};check(len(g['nodes'])>=70,'node loss');check(len(g['edges'])>=100,'edge loss')
  for a in e:
   check(a['from_id'] in node and a['to_id'] in node,f'dangling edge {a}')
@@ -45,11 +45,11 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'),'unexpected graph version')
- if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663)}
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner'):
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670),'v2.71-pf-i16-refined-rotor':(283,672),'v2.72-pf-i16-pointwise-kato-bochner':(284,675)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
-  if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
    check(node['YM-UNIFORM-GAUGE-POINCARE']['status']=='open','uniform physical quantum mass gap OPEN')
    check(node['YM-GROUNDSTATE-DIRICHLET']['status']=='finite','finite true-vacuum identity')
@@ -98,6 +98,23 @@ def main():
   check((root/'penrose-program.html').is_file(),'PF primary standalone map')
   check('data-view="pf"' in (root/'graph.html').read_text(),'PF default Atlas lens')
  check(all(x in node for x in ('S-SPECTRAL-DIMENSION','S-CUT-PROJECT-ZETA','S-COMPLEX-STRUCTURE','S-CONFORMAL-SPECTRAL','S-FIBONACCI-CAVITY')),'physics concept nodes')
+ if g['version'] in ('v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor'):
+  check(node['PF-I16-INCIDENCE-UNIFORM-COUNT']['status']=='finite','universal connected-support count recorded as combinatorial only')
+  check(node['PF-I16-EXACT-DRESSING-RESIDUAL']['status']=='finite','exact finite dressing identity recorded')
+  check(node['PF-I16-THIRD-ORDER-DRESSED-RESOLVENT']['status']=='conditional','third-order analytic bound remains conditional')
+  check(node['PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION']['status']=='open','fourth-order cancellation remains open')
+  check(any(z['from_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['to_id']=='PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION' and z['status']=='open' for z in e),'fourth-order next-step edge missing')
+  check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
+ if g['version'] in ('v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner'):
+  check(node['PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES']['status']=='conditional','refined rotor estimates remain conditional')
+  check(any(z['from_id']=='PF-I16-EXACT-DRESSING-RESIDUAL' and z['to_id']=='PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES' for z in e),'refined rotor dependency edge missing')
+  check(g['pf_i16_dressed_locality']['third_order']['prior_numeric_bound_revalidated'] is False,'prior third-order bound not silently promoted')
+ if g['version']=='v2.72-pf-i16-pointwise-kato-bochner':
+  check(node['PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW']['status']=='conditional','pointwise Kato-Bochner derivative flow remains conditional')
+  check(any(z['from_id']=='PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES' and z['to_id']=='PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW' and z['status']=='conditional' for z in e),'Kato-Bochner dependency edge missing')
+  check(any(z['from_id']=='PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW' and z['to_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['status']=='conditional' for z in e),'derivative-flow resolvent edge missing')
+  check(g['pf_i16_dressed_locality']['derivative_flow']['pointwise_componentwise_kato_bocher_derived'] is True,'componentwise Kato-Bochner bridge missing')
+  check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
  check('dissertation' not in node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title'].lower() and re.search(r'(?i)\\bpaper\\s*[1-5]\\b',node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title']) is None,'PF-I16 result node must remain result-focused, not a source-document title')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
  check(node['R-CUBIC-FINITE-GAP']['status']=='finite','finite strong-coupling theorem scope')
