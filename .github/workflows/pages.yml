@@ -1,5 +1,10 @@
 name: Research Observatory · GitHub Pages
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'observatory/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
   contents: read

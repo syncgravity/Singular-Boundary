@@ -1,6 +1,6 @@
 # Current complete theorem source navigator
 
-**Current source files:** **760** indexed paths in this checkout. **Historical baseline:** 740 records.
+**Current source files:** **761** indexed paths in this checkout. **Historical baseline:** 740 records.
 This is source discovery, not independent proof certification or closure of any P0–P5 / Penrose / gravitational goal.
 
 [Historical navigator and later appendices](THEOREM_INDEX.md) · [Source-hashed canonical registry](THEOREM_INDEX_LIVE.json) · [Curated Proof Atlas](../../observatory/graph.html)
@@ -142,6 +142,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_IR_CONDITIONAL_ENVIRONMENT_FLUX_LIFT_2026-10-30.md](../../research/theorems/R3_IR_CONDITIONAL_ENVIRONMENT_FLUX_LIFT_2026-10-30.md) | `1a14b77cd9e010836c870c2d4c6a18da108341fc` |
 | [R3_IR_CONDITIONAL_PREFIX_FOUNDATION_AUDIT_2026-11-02.md](../../research/theorems/R3_IR_CONDITIONAL_PREFIX_FOUNDATION_AUDIT_2026-11-02.md) | `3e353be7512f72b8186943f154cc0aa0d115c94e` |
 | [R3_IR_CONDITIONAL_SU2_POINCARE_COERCIVITY_2026-10-30.md](../../research/theorems/R3_IR_CONDITIONAL_SU2_POINCARE_COERCIVITY_2026-10-30.md) | `7d713120b7088e6dbf20a8df35781028cbfd479e` |
+| [R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md](../../research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) | `77ff4da00ee2db8063c0390aa48fe53642d26bf9` |
 | [R3_IR_CONDITIONAL_WILSON_FORCE_PROJECTION_2026-10-31.md](../../research/theorems/R3_IR_CONDITIONAL_WILSON_FORCE_PROJECTION_2026-10-31.md) | `2694692a0d28c66efc56fb3197fae758b0f0079a` |
 | [R3_IR_CONNECTED_ACTIVITY_PARITY_CONVERGENCE_GATE_2026-10-31.md](../../research/theorems/R3_IR_CONNECTED_ACTIVITY_PARITY_CONVERGENCE_GATE_2026-10-31.md) | `d693a6c1461ffcdfe7235ba3e7624c6ded5c9864` |
 | [R3_IR_CONNECTED_BULK_CORNER_SEWING_SELECTION_2026-10-29.md](../../research/theorems/R3_IR_CONNECTED_BULK_CORNER_SEWING_SELECTION_2026-10-29.md) | `0382e7dca5088986253aacbaaba57aeb775f31d5` |
@@ -768,5 +769,5 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b044c18ac9da37078a8b558eb7046` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7ea0169881ed16689fb2d7cdf4e056` |
 
-**Coverage: 760 / 760 source files indexed.**
+**Coverage: 761 / 761 source files indexed.**
 All scientific statuses must be established separately from the source file.

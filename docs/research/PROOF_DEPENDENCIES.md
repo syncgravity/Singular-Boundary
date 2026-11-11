@@ -1,5 +1,19 @@
 # Proof dependencies and noncircular checkpoints
 
+## R3_IR · Conditional weighted trace–gradient block on the finite open SU(2) strip (2026-11-10)
+
+This is a separate R3_IR strip calculation, not part of PF-I16. The conditional one-link Poincaré estimate gives \(c_{\rm tr}=\frac34e^{-49\pi/144}\approx0.2575101\) and leakage \(\ell\approx0.00248474\), including the nonzero conditional-mean correction. The exact trace commutator for \(L=\Delta+2\nabla S_g\cdot\nabla\) is
+
+\[
+C_e=4\sum_d H^S_{ed}:H_{ed}+2\sum_d\langle\nabla_d\Delta_eS_g,\nabla_df\rangle+4\operatorname{Ric}_e(\nabla_eS_g,\nabla_ef),
+\]
+
+so on radius-two SU(2) its Ricci term is \(+2\langle\nabla_eS_g,\nabla_ef\rangle\). The weighted trace equation contains the unevaluated \(A_2\), \(A_{3,w}\), and \(T_wK_w\) terms. The two-variable coercive skeleton rate \(c-\ell\approx0.0891819\) is not a full semigroup contraction.
+
+The next required work is local plaquette evaluation of \(A_2\), an ordered covariant operator bound for \(A_{3,w}\), and a trace-free/mixed Hessian estimate for \(K_w\), followed by a full \(3\times3\) positivity check. No interacting \(\lambda=1\) gap or 3D/continuum transfer is claimed. See [the conditional theorem record](../../research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md).
+
+---
+
 ## PF-I16 · Auxiliary dressed-locality ladder (2026-11-10; no canonical gate closure)
 
 The Penrose–Fibonacci groundwork now supports a more detailed **sub-proof route** inside the existing P0–P5 / PF-G0–G5 architecture. It does not replace those gates and does not close any of them.

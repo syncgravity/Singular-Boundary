@@ -1,11 +1,11 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-10",
-  "version": "v2.72-pf-i16-pointwise-kato-bochner",
-  "scope": "PF-I16 exact four-face finite-source coefficients, universal incidence count, exact single-face dressing/shared-link residual, refined rotor Hessian, working four-factor mixed-holonomy Hessian, pointwise componentwise Kato–Bochner comparison and conditional Duhamel derivative-flow locality. Third-order coefficient has been recalculated conditionally. Fourth-order cancellation, spatial tree decay, all-orders summability, source physical time, continuum reconstruction and Yang–Mills mass gap remain OPEN.",
+  "version": "v2.73-r3-ir-trace-gradient",
+  "scope": "R3_IR finite open SU(2) strip: conditional weighted one-link Poincare trace damping, exact product-manifold trace commutator, and an unevaluated A2/A3 plus trace-free/mixed Hessian closure criterion. PF-I16 remains a separate auxiliary Penrose route. Full weighted Hessian contraction, physical 3D transfer, continuum reconstruction and Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 760,
+  "indexed_theorem_paths": 761,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -7810,12 +7810,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "760 current indexed theorem source files (740 historical baseline)",
+      "title": "761 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 760, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 761, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -7833,8 +7833,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "517199c3a05900a898a2fd8871d162e23fcbbade",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/517199c3a05900a898a2fd8871d162e23fcbbade/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "63dd4a470b28499feb2306b9d6c5cf48d3fb6842",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/63dd4a470b28499feb2306b9d6c5cf48d3fb6842/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
@@ -10344,6 +10344,55 @@
         "geometric-proof"
       ],
       "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "R3-IR-TRACE-GRADIENT",
+      "title": "R3-IR · conditional weighted trace–gradient Bochner block",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "Finite open SU(2) strip: conditional one-link Poincare gives c_tr≈0.257510 and gradient leakage ℓ≈0.00248474; exact trace commutator exposes weighted A2/A3 contractions and trace-free/mixed Hessian coupling. Full closure remains open.",
+      "detail": "The product-manifold trace commutator includes two Ricci contributions before the drift factor. The diagnostic two-variable threshold is not a full closure because A2, A3,w and K_w evolution are unevaluated. This R3_IR result is distinct from PF-I16 and transfers neither to 3D nor to the continuum.",
+      "checks": [
+        {
+          "label": "Evaluate the local plaquette Hessian row bound A2 uniformly",
+          "state": "open",
+          "note": "Requires explicit strip plaquette derivative contractions and overlap summation."
+        },
+        {
+          "label": "Bound the ordered weighted third-derivative contraction A3,w",
+          "state": "open",
+          "note": "Requires the ordered covariant ∇d Δe S_g operator norm in the same spatial weights."
+        },
+        {
+          "label": "Derive trace-free and mixed Hessian dissipation for K_w",
+          "state": "open",
+          "note": "The trace equation contains a T_w K_w coupling that cannot be discarded."
+        },
+        {
+          "label": "Verify positive definiteness of the full coupled 3×3 matrix",
+          "state": "open",
+          "note": "Must include all drift, curvature, and spatial-weight commutators."
+        }
+      ],
+      "sources": [
+        {
+          "title": "R3-IR conditional weighted trace–gradient Bochner block",
+          "path": "research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md",
+          "git_blob_sha": "77ff4da00ee2db8063c0390aa48fe53642d26bf9",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/77ff4da00ee2db8063c0390aa48fe53642d26bf9/research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md"
+        }
+      ],
+      "tags": [
+        "R3_IR",
+        "finite-open-strip",
+        "conditional",
+        "trace-gradient",
+        "Hessian"
+      ],
+      "importance": 4,
       "core": true,
       "route": null
     }
@@ -15072,6 +15121,27 @@
       "to_id": "PF-G5",
       "label": "finite-to-continuum spectral transfer still open",
       "kind": "ym-proof-interface",
+      "status": "open"
+    },
+    {
+      "from_id": "M-STRIP",
+      "to_id": "R3-IR-TRACE-GRADIENT",
+      "kind": "study",
+      "label": "conditional trace-gradient Bochner block",
+      "status": "conditional"
+    },
+    {
+      "from_id": "P2",
+      "to_id": "R3-IR-TRACE-GRADIENT",
+      "kind": "conditional-result",
+      "label": "finite strip Hessian input; not a uniform 3D interaction theorem",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R3-IR-TRACE-GRADIENT",
+      "to_id": "W-3D-ANALYTIC",
+      "kind": "next-mathematical-step",
+      "label": "uniform transfer and full interacting closure remain open",
       "status": "open"
     }
   ],
