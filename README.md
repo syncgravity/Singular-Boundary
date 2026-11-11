@@ -7,6 +7,10 @@
 
 
 
+## Research continuity entry point
+
+For a new research session, begin with the [Research Observatory](observatory/index.html) and [repository handoff](docs/research/REPOSITORY_HANDOFF_2026-11-11.md). The handoff indexes the canonical proof spine, source-native primary map, open PR snapshot, historical branch inventory and safe branch-retirement procedure.
+
 ## Canonical Yang–Mills proof spine · source-compatible interacting spectral inequality (2026-11-11)
 
 **The single central missing result is now the organizing target.** The proof architecture is one source-authenticated chain:
