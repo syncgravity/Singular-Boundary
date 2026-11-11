@@ -182,27 +182,6 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md",
-      "git_blob_sha": "558bd6c2f71f9ec005929a0e5f8245e2aca6adf8",
-      "bytes": 8894,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md",
-      "git_blob_sha": "a7d5f05a60847042c9bc0702078a88789d22728d",
-      "bytes": 14370,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md",
-      "git_blob_sha": "531462ee5b0e53efefcfa3237a7822d5dfcb9853",
-      "bytes": 12873,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
       "path": "research/theorems/R3_CUBICAL_SU2_FINITE_TRANSFER_POSITIVITY_2026-10-31.md",
       "git_blob_sha": "d8c89723c6a4eb5f040b6b4540c146e2aec0a7d4",
       "bytes": 1219,
@@ -220,6 +199,27 @@
       "path": "research/theorems/R3_CUBICAL_SU2_GAUSS_HAMILTONIAN_REFERENCE_2026-10-31.md",
       "git_blob_sha": "2dd4a29a3135b6e7fa983469200850b18ec26055",
       "bytes": 1734,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_CUBIC_FACE_BLOCK_HAAR_RECOVERY_2026-11-05.md",
+      "git_blob_sha": "558bd6c2f71f9ec005929a0e5f8245e2aca6adf8",
+      "bytes": 8894,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_CUBIC_FIRST_TRANSVERSE_SHELL_CHARACTER_BLOCK_2026-11-06.md",
+      "git_blob_sha": "a7d5f05a60847042c9bc0702078a88789d22728d",
+      "bytes": 14370,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_CUBIC_HAAR_BLOCK_MAGNETIC_LEAKAGE_2026-11-05.md",
+      "git_blob_sha": "531462ee5b0e53efefcfa3237a7822d5dfcb9853",
+      "bytes": 12873,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -336,16 +336,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_FIBER_ELLIPTIC_CROSS_FLUX_OBSTRUCTION_2026-10-30.md",
-      "git_blob_sha": "7ef791dcc368706fd3c64ac912bd519cf8957eee",
-      "bytes": 1660,
+      "path": "research/theorems/R3_FIBERWISE_HAAR_LOCAL_ELECTRIC_COMPARISON_2026-10-30.md",
+      "git_blob_sha": "26c932b2ab3e005350ce73ea4fe72f6d5e305ab3",
+      "bytes": 2777,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_FIBERWISE_HAAR_LOCAL_ELECTRIC_COMPARISON_2026-10-30.md",
-      "git_blob_sha": "26c932b2ab3e005350ce73ea4fe72f6d5e305ab3",
-      "bytes": 2777,
+      "path": "research/theorems/R3_FIBER_ELLIPTIC_CROSS_FLUX_OBSTRUCTION_2026-10-30.md",
+      "git_blob_sha": "7ef791dcc368706fd3c64ac912bd519cf8957eee",
+      "bytes": 1660,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -770,6 +770,20 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_IR_CENTERED_DEFECT_OPERATOR_INDEPENDENT_AUDIT_2026-11-02.md",
+      "git_blob_sha": "321f599afec7b5bf6e07dd4e737d006f62d0bc14",
+      "bytes": 1330,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_CENTERED_PRODUCT_DEFECT_SPACETIME_2026-11-02.md",
+      "git_blob_sha": "089d9532e3789793c7a116e36134fba7b81c2042",
+      "bytes": 672,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_IR_CENTER_DEPLETION_EIGENEQUATION_OBSTRUCTION_2026-10-31.md",
       "git_blob_sha": "f476e2bca65f9319ada73794f2244887a7c1cc69",
       "bytes": 1725,
@@ -829,20 +843,6 @@
       "path": "research/theorems/R3_IR_CENTER_SYMMETRIC_SPIN_ONE_CAP_CERTIFICATE_2026-10-30.md",
       "git_blob_sha": "aed1df16a5f90a928825a64ea87f3e883ebb54bb",
       "bytes": 2458,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_CENTERED_DEFECT_OPERATOR_INDEPENDENT_AUDIT_2026-11-02.md",
-      "git_blob_sha": "321f599afec7b5bf6e07dd4e737d006f62d0bc14",
-      "bytes": 1330,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_CENTERED_PRODUCT_DEFECT_SPACETIME_2026-11-02.md",
-      "git_blob_sha": "089d9532e3789793c7a116e36134fba7b81c2042",
-      "bytes": 672,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -1050,6 +1050,13 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_IR_CROSSING_NESTED_DECOMPOSITION_2026-11-03.md",
+      "git_blob_sha": "233b3829951d02cc64ee192f7a65cb3e485b3799",
+      "bytes": 3932,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_IR_CROSS_BOND_RESOLVENT_GRAM_LOCALITY_2026-11-02.md",
       "git_blob_sha": "220e131e93095abdb2255ca3443cbef4c8e5e1bc",
       "bytes": 1081,
@@ -1067,13 +1074,6 @@
       "path": "research/theorems/R3_IR_CROSS_OPERATOR_CONSISTENCY_2026-11-01.md",
       "git_blob_sha": "23181f5168f60f905e3b438689156226d13ff74c",
       "bytes": 2004,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_CROSSING_NESTED_DECOMPOSITION_2026-11-03.md",
-      "git_blob_sha": "233b3829951d02cc64ee192f7a65cb3e485b3799",
-      "bytes": 3932,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -1736,27 +1736,6 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_FOUR_NEIGHBOR_PHYSICAL_RESOLVENT_RESPONSE_BOUND_2026-10-30.md",
-      "git_blob_sha": "4daf1444446690c3f7eecd534cfbc61ab6de6038",
-      "bytes": 5127,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_FOUR_NEIGHBOR_SPIN_SELECTION_AND_MIXED_RESPONSE_2026-10-29.md",
-      "git_blob_sha": "0ef8e0966b0c2521db226cf37bf9ae7503eb6edb",
-      "bytes": 2826,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_FOUR_SOURCE_HIERARCHY_AND_INTERACTING_RHOMBUS_2026-10-28.md",
-      "git_blob_sha": "d5c1cd7c5a6e10df5744c6679c575be2041cee9d",
-      "bytes": 12945,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
       "path": "research/theorems/R3_IR_FOURFACE_CONNECTED_S4_EXACT_2026-11-01.md",
       "git_blob_sha": "2287a110cb9d365e237052e4ed3cbc30654a5d1b",
       "bytes": 1230,
@@ -1967,6 +1946,27 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_IR_FOUR_NEIGHBOR_PHYSICAL_RESOLVENT_RESPONSE_BOUND_2026-10-30.md",
+      "git_blob_sha": "4daf1444446690c3f7eecd534cfbc61ab6de6038",
+      "bytes": 5127,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_FOUR_NEIGHBOR_SPIN_SELECTION_AND_MIXED_RESPONSE_2026-10-29.md",
+      "git_blob_sha": "0ef8e0966b0c2521db226cf37bf9ae7503eb6edb",
+      "bytes": 2826,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_FOUR_SOURCE_HIERARCHY_AND_INTERACTING_RHOMBUS_2026-10-28.md",
+      "git_blob_sha": "d5c1cd7c5a6e10df5744c6679c575be2041cee9d",
+      "bytes": 12945,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_IR_FREE_LOCAL_RESOLVENT_2026-11-01.md",
       "git_blob_sha": "2747d96cb911ebc11f9aa6e411e34b4c0bc49926",
       "bytes": 811,
@@ -2079,16 +2079,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_GAUSS_TWIST_AND_STRONG_FIELD_OSCILLATOR_2026-10-28.md",
-      "git_blob_sha": "f65dbef103520cbf6278879bd0c94369bf302cc1",
-      "bytes": 8987,
+      "path": "research/theorems/R3_IR_GAUSSIAN_VARIANCE_GATE_2026-10-28.md",
+      "git_blob_sha": "fce0690c4d011fbb17d0da35de646b2f8a40eb5e",
+      "bytes": 1334,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_GAUSSIAN_VARIANCE_GATE_2026-10-28.md",
-      "git_blob_sha": "fce0690c4d011fbb17d0da35de646b2f8a40eb5e",
-      "bytes": 1334,
+      "path": "research/theorems/R3_IR_GAUSS_TWIST_AND_STRONG_FIELD_OSCILLATOR_2026-10-28.md",
+      "git_blob_sha": "f65dbef103520cbf6278879bd0c94369bf302cc1",
+      "bytes": 8987,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -2317,6 +2317,13 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_IR_LOCALIZED_FIBER_ENERGY_CANCELLATION_2026-10-31.md",
+      "git_blob_sha": "29688ce6bd89b79e2130a5272858032b61446982",
+      "bytes": 3834,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_IR_LOCAL_AMPLITUDE_FLUCTUATION_2026-11-02.md",
       "git_blob_sha": "e71a5e9fbaa042a1dd4de54255023aa87f7ab865",
       "bytes": 1434,
@@ -2418,13 +2425,6 @@
       "path": "research/theorems/R3_IR_LOCAL_WILSON_RESPONSE_FSUM_2026-10-31.md",
       "git_blob_sha": "05f1a24e505a1c95cbee21fe2ca69944d6c451a7",
       "bytes": 4047,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_LOCALIZED_FIBER_ENERGY_CANCELLATION_2026-10-31.md",
-      "git_blob_sha": "29688ce6bd89b79e2130a5272858032b61446982",
-      "bytes": 3834,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -2667,13 +2667,6 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_ON_SHELL_RESPONSE_GATE_2026-10-31.md",
-      "git_blob_sha": "c448e0fe3c851f6ca61ac245300fc7d02455d689",
-      "bytes": 2847,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
       "path": "research/theorems/R3_IR_ONE_LINK_FOURFACE_MIXED_COVARIANCE_EXACT_2026-10-31.md",
       "git_blob_sha": "cfa0e577be7898b7a140f3ca1bd8b1e943bcb14a",
       "bytes": 2015,
@@ -2698,6 +2691,13 @@
       "path": "research/theorems/R3_IR_ONE_SIDED_SPECTATOR_EXACT_RESPONSE_2026-10-31.md",
       "git_blob_sha": "e9c9ff81522f48ca718ba3d058f831b9472284b3",
       "bytes": 1436,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_ON_SHELL_RESPONSE_GATE_2026-10-31.md",
+      "git_blob_sha": "c448e0fe3c851f6ca61ac245300fc7d02455d689",
+      "bytes": 2847,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -3213,16 +3213,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_ROOT_INDEPENDENT_FACE_WARD_2026-10-31.md",
-      "git_blob_sha": "8975ae21913d2b4a8c33beaaeef58e7463720cab",
-      "bytes": 4707,
+      "path": "research/theorems/R3_IR_ROOTED_INTERVAL_CONVOLUTION_2026-11-01.md",
+      "git_blob_sha": "7d389b56009f1760d496b417f8834c56f40e72f7",
+      "bytes": 943,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_ROOTED_INTERVAL_CONVOLUTION_2026-11-01.md",
-      "git_blob_sha": "7d389b56009f1760d496b417f8834c56f40e72f7",
-      "bytes": 943,
+      "path": "research/theorems/R3_IR_ROOT_INDEPENDENT_FACE_WARD_2026-10-31.md",
+      "git_blob_sha": "8975ae21913d2b4a8c33beaaeef58e7463720cab",
+      "bytes": 4707,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -3458,16 +3458,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_SPATIAL_WEIGHTED_GRADIENT_2026-11-02.md",
-      "git_blob_sha": "7925e3113d9461f082b5e60e3a819b7730790479",
-      "bytes": 1652,
+      "path": "research/theorems/R3_IR_SPATIALLY_WEIGHTED_DRESSED_H1_H3_CANCELLATION_2026-11-02.md",
+      "git_blob_sha": "1c626b12ff9bfe0d42b4950a9158b6fe04fd230a",
+      "bytes": 1306,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_IR_SPATIALLY_WEIGHTED_DRESSED_H1_H3_CANCELLATION_2026-11-02.md",
-      "git_blob_sha": "1c626b12ff9bfe0d42b4950a9158b6fe04fd230a",
-      "bytes": 1306,
+      "path": "research/theorems/R3_IR_SPATIAL_WEIGHTED_GRADIENT_2026-11-02.md",
+      "git_blob_sha": "7925e3113d9461f082b5e60e3a819b7730790479",
+      "bytes": 1652,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -3640,6 +3640,55 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_IR_THREEFACE_CONNECTED_FOURTH_ORDER_SCORE_2026-11-01.md",
+      "git_blob_sha": "972e8e0b8882cf5496b8bae81aacc754127d626d",
+      "bytes": 1177,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_ADJACENT_EIGENMODES_2026-11-01.md",
+      "git_blob_sha": "4ffc08eb0552f419d14b61439798a40c2e308bb2",
+      "bytes": 981,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_ENERGY_CORRECTION_2026-11-01.md",
+      "git_blob_sha": "e8a7bfc307e01286cb6fd3eb2d47c8106f40685a",
+      "bytes": 917,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_PARTIAL_EIGEN_INVERSION_2026-11-01.md",
+      "git_blob_sha": "dbfc3b8c2a803e564888ffb5e0581fa1eab8f401",
+      "bytes": 973,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_QUARTIC_PROJECTIONS_2026-11-01.md",
+      "git_blob_sha": "9d36904e6a92197ac0fcff52558197195bc0265d",
+      "bytes": 851,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_FULL_FOURTH_ORDER_POISSON_2026-11-01.md",
+      "git_blob_sha": "c9efe555dfb07242a34191d670f62fad14216f65",
+      "bytes": 1069,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_THREEFACE_LOWER_ORDER_REAUDIT_2026-11-01.md",
+      "git_blob_sha": "f1e10cfd42863bffc394e6fbbbf41013324fc927",
+      "bytes": 1082,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_IR_THREE_FACE_ADJOINT_GALERKIN_ENRICHMENT_2026-10-31.md",
       "git_blob_sha": "000d0117e7446b89f685420ed68bc2dc6e4e5c99",
       "bytes": 603,
@@ -3748,55 +3797,6 @@
       "path": "research/theorems/R3_IR_THREE_TIME_CAP_NEIGHBOR_BRIDGE_2026-10-30.md",
       "git_blob_sha": "463f6265b2117ec32cca9c9e27f21a1f61c7254b",
       "bytes": 4066,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_CONNECTED_FOURTH_ORDER_SCORE_2026-11-01.md",
-      "git_blob_sha": "972e8e0b8882cf5496b8bae81aacc754127d626d",
-      "bytes": 1177,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_ADJACENT_EIGENMODES_2026-11-01.md",
-      "git_blob_sha": "4ffc08eb0552f419d14b61439798a40c2e308bb2",
-      "bytes": 981,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_ENERGY_CORRECTION_2026-11-01.md",
-      "git_blob_sha": "e8a7bfc307e01286cb6fd3eb2d47c8106f40685a",
-      "bytes": 917,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_PARTIAL_EIGEN_INVERSION_2026-11-01.md",
-      "git_blob_sha": "dbfc3b8c2a803e564888ffb5e0581fa1eab8f401",
-      "bytes": 973,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_FOURTH_ORDER_QUARTIC_PROJECTIONS_2026-11-01.md",
-      "git_blob_sha": "9d36904e6a92197ac0fcff52558197195bc0265d",
-      "bytes": 851,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_FULL_FOURTH_ORDER_POISSON_2026-11-01.md",
-      "git_blob_sha": "c9efe555dfb07242a34191d670f62fad14216f65",
-      "bytes": 1069,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_IR_THREEFACE_LOWER_ORDER_REAUDIT_2026-11-01.md",
-      "git_blob_sha": "f1e10cfd42863bffc394e6fbbbf41013324fc927",
-      "bytes": 1082,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4228,6 +4228,20 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_LOCALIZED_CAP_Q_RESPONSE_2026-10-30.md",
+      "git_blob_sha": "b70aefdee50952ca3385625d6db45cd6463eb8d3",
+      "bytes": 2520,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_LOCALIZED_Q_DUAL_RESOLVENT_NONLOCAL_TAIL_2026-10-30.md",
+      "git_blob_sha": "1cc8e2b5fd5396f4cb4600efe0e330813f872e40",
+      "bytes": 2122,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_LOCAL_CONDITIONAL_AND_SU2_CAPACITY_OBSTRUCTION_2026-10-30.md",
       "git_blob_sha": "254ed0bdda6af9b4a1936ab5c2f1445c80d5e7ee",
       "bytes": 4218,
@@ -4294,20 +4308,6 @@
       "path": "research/theorems/R3_LOCAL_WILSON_POISSON_RESPONSE_2026-10-30.md",
       "git_blob_sha": "2e8ca8a6ec0cef95acf7d53b73680cc26c646c3b",
       "bytes": 3567,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_LOCALIZED_CAP_Q_RESPONSE_2026-10-30.md",
-      "git_blob_sha": "b70aefdee50952ca3385625d6db45cd6463eb8d3",
-      "bytes": 2520,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_LOCALIZED_Q_DUAL_RESOLVENT_NONLOCAL_TAIL_2026-10-30.md",
-      "git_blob_sha": "1cc8e2b5fd5396f4cb4600efe0e330813f872e40",
-      "bytes": 2122,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4389,16 +4389,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_M5_D_SPIN1_EXACT_ELECTRIC_AND_FINITE_GAP_2026-10-31.md",
-      "git_blob_sha": "70ee1879f8085aa35bd9b31bbd9793b44fc64fed",
-      "bytes": 2553,
+      "path": "research/theorems/R3_M5_DIRECT_DELETED_FACE_PROTECTED_LINK_CAP_2026-10-30.md",
+      "git_blob_sha": "f49488c80edae4413e384082b16889b9a2de6a4c",
+      "bytes": 3003,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_M5_DIRECT_DELETED_FACE_PROTECTED_LINK_CAP_2026-10-30.md",
-      "git_blob_sha": "f49488c80edae4413e384082b16889b9a2de6a4c",
-      "bytes": 3003,
+      "path": "research/theorems/R3_M5_D_SPIN1_EXACT_ELECTRIC_AND_FINITE_GAP_2026-10-31.md",
+      "git_blob_sha": "70ee1879f8085aa35bd9b31bbd9793b44fc64fed",
+      "bytes": 2553,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4522,13 +4522,6 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_M5_ROOT_TREE_TRANSPORT_EXPOSURE_AUDIT_2026-10-30.md",
-      "git_blob_sha": "164f7cac6c6f4d3ed3e1e866f91b5c0d2dd3b297",
-      "bytes": 2674,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
       "path": "research/theorems/R3_M5_ROOTED_ELECTRIC_CONTRACTED_DIVERGENCE_CANCELLATION_2026-10-31.md",
       "git_blob_sha": "bcd9bba54f2614af1fb782adf4bb6ded811d3b07",
       "bytes": 3013,
@@ -4543,9 +4536,30 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/R3_M5_ROOT_TREE_TRANSPORT_EXPOSURE_AUDIT_2026-10-30.md",
+      "git_blob_sha": "164f7cac6c6f4d3ed3e1e866f91b5c0d2dd3b297",
+      "bytes": 2674,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/R3_M5_SECOND_RING_MINIMAL_CONNECTOR_2026-10-30.md",
       "git_blob_sha": "b0ebd79e748d605727a54cdb13f603d1a7e02f8f",
       "bytes": 2393,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_M5_SEVENTEEN_STATE_TRIPLE_PARITY_HAAR_CERTIFICATE_2026-10-31.md",
+      "git_blob_sha": "06de886fbf06894e924f0712bc2b7d2118b761c8",
+      "bytes": 3872,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_M5_SEVENTEEN_STATE_TRIPLE_TRACE_CHANNEL_2026-10-31.md",
+      "git_blob_sha": "443707aa36cd57591bad16bb6aa2da9205435f60",
+      "bytes": 2317,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4588,20 +4602,6 @@
       "path": "research/theorems/R3_M5_SEVEN_TREE_EXACT_Q_CANCELLATION_2026-10-30.md",
       "git_blob_sha": "29988499b1079fef5387646cca45379a0fb0f2f9",
       "bytes": 2675,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_M5_SEVENTEEN_STATE_TRIPLE_PARITY_HAAR_CERTIFICATE_2026-10-31.md",
-      "git_blob_sha": "06de886fbf06894e924f0712bc2b7d2118b761c8",
-      "bytes": 3872,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
-      "path": "research/theorems/R3_M5_SEVENTEEN_STATE_TRIPLE_TRACE_CHANNEL_2026-10-31.md",
-      "git_blob_sha": "443707aa36cd57591bad16bb6aa2da9205435f60",
-      "bytes": 2317,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4865,13 +4865,6 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md",
-      "git_blob_sha": "262c7a9b7cde58d05bf4cde2a76b5ee8619ba32b",
-      "bytes": 5117,
-      "indexing_status": "source-file-indexed",
-      "certification": "not-inferred"
-    },
-    {
       "path": "research/theorems/R3_PRISM3D_ACTION_NORMALIZED_MAGNETIC_COEFFICIENT_AUDIT_2026-10-31.md",
       "git_blob_sha": "a596cf5290bb53beeedebd3b645719fd3d7eac14",
       "bytes": 4426,
@@ -4889,6 +4882,13 @@
       "path": "research/theorems/R3_PRISM3D_GAUGE_COVARIANCE_GAUSS_DOMAIN_2026-10-31.md",
       "git_blob_sha": "6f2fc916e955f52306b46f9f4a05b352559518a3",
       "bytes": 4310,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_PRISM_FINITE_BLOCK_FRUSTRATION_GAP_2026-10-28.md",
+      "git_blob_sha": "262c7a9b7cde58d05bf4cde2a76b5ee8619ba32b",
+      "bytes": 5117,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -4914,16 +4914,16 @@
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_Q_SOURCE_SPECTRAL_DISTRIBUTION_2026-10-30.md",
-      "git_blob_sha": "67ec8e9b4f0995e22c65bde1122a6255c6be03d4",
-      "bytes": 2719,
+      "path": "research/theorems/R3_Q14_PEELING_AND_POINTWISE_LEAKAGE_NO_GO_2026-10-28.md",
+      "git_blob_sha": "d78cc4aab2a25c6b9b5b790947406dc00382133e",
+      "bytes": 5261,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
-      "path": "research/theorems/R3_Q14_PEELING_AND_POINTWISE_LEAKAGE_NO_GO_2026-10-28.md",
-      "git_blob_sha": "d78cc4aab2a25c6b9b5b790947406dc00382133e",
-      "bytes": 5261,
+      "path": "research/theorems/R3_Q_SOURCE_SPECTRAL_DISTRIBUTION_2026-10-30.md",
+      "git_blob_sha": "67ec8e9b4f0995e22c65bde1122a6255c6be03d4",
+      "bytes": 2719,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
