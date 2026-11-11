@@ -94,7 +94,7 @@ This is a conditional finite-source-volume-uniform bound under the listed curvat
 
 The former \(1.527\times10^{16}\) prefactor, \(\kappa=a_0/2-2976b_0\), \(\lambda=a_0/2-46752b_0\), and \(b_0/a_0<1/93504\) threshold are historical estimates and are superseded for this working route.
 
-## 4. Fourth order and all orders remain open
+## 4. Fourth-order algebra versus spatial connectedness
 
 The next exact recursion is
 \[
@@ -108,7 +108,9 @@ and
 E_{ijkl}=-\sum_{m\in\{i,j,k,l\}}
 \nu_\Phi(r_m u_{\{i,j,k,l\}\setminus\{m\}}).
 \]
-Expanding this formula and proving cancellation of disconnected partition terms is the next task. It must not be assumed from the third-order formula. Even a fourth-order cancellation theorem would still need a uniform connected-tree bound, all-orders convergence, physical normalization, and a continuum gap argument.
+The supplied intake summary for `Branch · Branch · Continue PF116 Objective (1).md` reports an expansion into 36 terms in three pair-partition channels, with exact cancellation for genuinely independent subsystem decompositions, including the \(2+2\) split. It also reports a cut-interpolation identity for measuring the failure of factorization when subsystems are coupled. The transcript itself was not present in the inspected local project trees, so these details are handoff-reported and await source-byte recovery and independent audit.
+
+This algebraic cancellation does not establish spatial connectedness on the connected Penrose graph. The cut-interpolation identity is a proposed route for coupled subsystems, not a spatial tree theorem. The fourth-order spatial connected-support/tree estimate therefore remains open. Even that estimate would still need to be joined to all-orders convergence, physical normalization, and a continuum gap argument.
 
 ## 5. Proof ledger
 
@@ -116,6 +118,6 @@ Expanding this formula and proving cancellation of disconnected partition terms 
 
 **Conditional/working estimates:** refined rotor Hessian and four-factor mixed-holonomy blocks; pointwise componentwise Kato–Bochner comparison; weighted Duhamel derivative flow; dressed curvature/Poincaré; residual derivative and sup-resolvent estimates; revised third-order numerical bound.
 
-**Open:** standalone sign/trivialization/regularization audit of the four-factor calculation; spatially decaying third-order tree bound; fourth-order partition cancellation; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap.
+**Open:** standalone sign/trivialization/regularization audit of the four-factor calculation; spatially decaying third-order tree bound; fourth-order spatial connected-support/tree estimate for coupled Penrose subsystems; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap. The reported fourth-order algebraic cancellation for independent decompositions still awaits recovery of its transcript source.
 
 The previous third-order numerical prefactor and thresholds are superseded, not silently retained. No spatial tree decay or all-orders conclusion is claimed.
