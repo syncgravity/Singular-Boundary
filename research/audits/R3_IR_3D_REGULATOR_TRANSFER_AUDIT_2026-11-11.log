@@ -1,0 +1,7 @@
+r=4 rational Gershgorin lower > 0.446086804693893; diagnostic lambda 0.480013737207
+r=8: B=0.001334112 c=0.4935925257152 c_tr_lower=0.737421229714286 ell_upper=1.779854828544e-06
+C3_upper=0.2018354688 CH_upper=0.4387849152 CR_upper=0.001000584 CG_upper=0.2028360528
+a_lower=0.493590745860371 b_lower=0.298636314514286 Gershgorin_lambda_lower=0.197218288114286
+high_precision_diagnostic_lambda=0.256303920162
+PASS: conservative rational r=8 full-Hessian energy bound remains positive
+Scope: finite illustrative projected-Z5 2-skeleton with an assigned product SU(2) reference action only. No 3D manifold, refinement, physical Hamiltonian, or continuum theorem is certified.
