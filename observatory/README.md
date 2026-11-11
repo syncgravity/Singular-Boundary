@@ -1,4 +1,4 @@
-# Research Observatory v2.73-r3-ir-trace-gradient — source-linked Proof Atlas
+# Research Observatory v2.74-r3-ir-h2-trace-to-k-audit — source-linked Proof Atlas
 
 
 ## Penrose–Fibonacci versus the square control
@@ -402,3 +402,12 @@ Private stacked review branch, no main merge, public Pages action, Git LFS migra
 
 
 The source navigator, searchable catalog, graph JSON, and browser payload are kept synchronized by the repository's generated Observatory integrity check.
+
+
+## R3_IR · H2 trace-to-K calculation entered for audit (2026-11-10)
+
+The one-output-weight convention distinguishes the input-gradient link weight from the single weighted output-Hessian link index; the second Hessian link index remains an internal block coordinate. A provisional Schur calculation gives candidate \(C_{TK}<0.007845234\), alongside the previously recorded third-dressing forcing coefficient \(0.049941328\). The proposed curvature addition \(0.000288844\) and combined forcing coefficient \(0.050230172\) are **not certified**: the exact ordered SU(2) curvature contraction, trace-free projection and incidence count remain under audit. The resulting three-sector positivity calculation is conditional on those candidate constants and omits K-to-K terms. It is not a full Hessian contraction or a gap theorem.
+
+[Provisional calculation/audit](../research/theorems/R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md) · [R3_IR work ledger](../research/problems/R3-IR.md) · [762-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md).
+
+**Observatory v2.74-r3-ir-h2-trace-to-k-audit: 285 curated nodes / 679 typed relationships / 762 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
