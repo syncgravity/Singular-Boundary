@@ -1,8 +1,8 @@
-# Consolidation archive and final audit · 2026-11-11
+# Preservation ledger from initial consolidation · current four-PR review state · 2026-11-11
 
 **Canonical open integration PR:** [#107 — Establish one source-compatible spectral-inequality proof spine](https://github.com/syncgravity/Singular-Boundary/pull/107)
 
-This ledger records the preservation inventory from the initial 12-PR cleanup. Current disposition: four PRs remain open (#74, #103, #106, #107). No PR in this section is currently closed or archived. It distinguishes merged content from explicitly archived branch histories. Closing a PR does not delete its branch. No unmerged branch is deleted or force-moved by this consolidation.
+This ledger preserves the source inventory from the initial 12-PR cleanup. Current disposition: four PRs remain open (#74, #103, #106, #107). The three records below describe a temporary closure that was reversed; they are active PRs, not archived work. The ledger is retained only for provenance. No unmerged branch is deleted or force-moved.
 
 ## Merged into the #107 integration branch
 
