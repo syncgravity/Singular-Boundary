@@ -2,12 +2,12 @@
 
 **Date:** 2026-11-11  
 **Status:** independent index/support and norm-arithmetic audit; conditional finite-strip candidate only.  
-**Target:** draft PR #106, branch \`audit/r3-ir-h2-trace-to-k-2026-11-10\`.  
+**Target:** draft PR #106, branch audit/r3-ir-h2-trace-to-k-2026-11-10.  
 **Scope:** finite straight open SU(2) strip with radius-two bi-invariant metric, \(|g|\le 10^{-3}\). No transfer to PF-I16, Penrose, a 3D regulator, or continuum Yang–Mills is asserted.
 
 ## 1. Ordered third-dressing tensor
 
-The archived source \`R3_IR_ORDERED_PLAQUETTE_THIRD_TENSOR_CERTIFICATE_2026-11-02.md\` defines the ordered tensor by
+The archived source R3_IR_ORDERED_PLAQUETTE_THIRD_TENSOR_CERTIFICATE_2026-11-02.md defines the ordered tensor by
 \[
 (\nabla_X\operatorname{Hess}S_g)(Y,Z),
 \]
@@ -79,9 +79,9 @@ C_3\le2\cdot\tfrac65\sqrt{24\cdot288}\,T_g
 The factor \(2\) is the drift coefficient in the generator. This verifies the required ordered-index transfer, conditional on the archived local component bounds and the stated original-link face incidence.
 
 The source certificate’s SHA-256 manifest records:
-- certificate: \`c986ee9fcfb8c4b39a70ed42a0e4490550bb4696050742f11d02d938b9248774\`;
-- verifier: \`c4aa3f64513949bb3149af03746638ae78312855ef1c02a6a53d5ab4abe67cba\`;
-- verifier log: \`3721391fc4b42f80d62a86977d41544e6160eed9554397438babfc55bbe8c383\`.
+- certificate: c986ee9fcfb8c4b39a70ed42a0e4490550bb4696050742f11d02d938b9248774;
+- verifier: c4aa3f64513949bb3149af03746638ae78312855ef1c02a6a53d5ab4abe67cba;
+- verifier log: 3721391fc4b42f80d62a86977d41544e6160eed9554397438babfc55bbe8c383.
 
 The verifier’s stated role is to reconstruct the six scalar fixed-point iterations, certify the scalar remainder and third derivative, and check the graph-overlap Schur coefficients. The quaternion insertion and connection estimates are analytic inputs, not numerical consequences of that script.
 
