@@ -37,13 +37,13 @@ H_w(t)^2=\sum_{e,d\in E}w_e
 \]
 Only the first Hessian link index is weighted.
 
-Assume the imported weighted Bochner and conditional one-link trace–Poincaré certificates hold in the common measure \(\mu_g\), with the precise finite-strip hypotheses stated in §2 below. Assume also the local ordered plaquette, strip-incidence, Hessian-dressing, and SU(2) curvature/Codazzi bounds recorded in §3 below. Then, for every \(f\in H^2(M_E)\) and every \(t\ge0\),
+Assume the coefficient-specific scalar derivative enclosure and the local geometric hypotheses recorded in §§2–3 below. The weighted Bochner and conditional one-link trace–Poincaré inequalities are derived there with sharpened constants from the same global scalar certificate. Then, for every \(f\in H^2(M_E)\) and every \(t\ge0\),
 \[
 \boxed{
 G_w(t)^2+H_w(t)^2
 \le e^{-2\lambda_*t}
 \bigl(G_w(0)^2+H_w(0)^2\bigr),
-\qquad \lambda_*>0.0699034.
+\qquad \lambda_*>0.4955484.
 }
 \tag{1.1}
 \]
@@ -256,10 +256,10 @@ The symmetrized Codazzi contraction on each link is
 (V_e\cdot v_e)I-\frac12(v_eV_e^\top+V_e v_e^\top)
 \right].
 \]
-Its exact Frobenius factor is at most \(\sqrt2\). With \(B=49/576\) and the factor two in (1.3),
+Its exact Frobenius factor is at most \(\sqrt2\). With the sharpened score bound \(B_*=0.000333528\) and the factor two in (1.3),
 \[
-C_R\le2\kappa\sqrt2B
-=\frac{49\sqrt2}{1152}<0.060153182.
+C_{R,*}\le2\kappa\sqrt2B_*
+=\frac{\sqrt2}{2}B_*<0.000235840.
 \tag{3.5}
 \]
 Thus
@@ -279,21 +279,21 @@ Pair (1.3) with \(2H\). Use (1.4), (3.4), the trace Dirichlet lower bound (2.2),
 \[
 \frac{d}{dt}H_w^2
 \le-2K_w^2-2c_{\mathrm{tr},*}T_w^2
-+2\ell G_w^2+2C_HH_w^2+2C_GG_wH_w.
++2\ell_* G_w^2+2C_HH_w^2+2C_{G,*}G_wH_w.
 \tag{4.1}
 \]
 No invariance of the trace projection is used: the trace Poincaré inequality enters only as a lower bound on part of the full tensor Dirichlet form.
 
-Since \(0<c_{\mathrm{tr}}<1\),
+Since \(0<c_{\mathrm{tr},*}<1\),
 \[
-K_w^2+c_{\mathrm{tr}}T_w^2
-\ge c_{\mathrm{tr}}(K_w^2+T_w^2)
-=c_{\mathrm{tr}}H_w^2.
+K_w^2+c_{\mathrm{tr},*}T_w^2
+\ge c_{\mathrm{tr},*}(K_w^2+T_w^2)
+=c_{\mathrm{tr},*}H_w^2.
 \]
 Adding (2.1) and (4.1) gives
 \[
 \frac{d}{dt}(G_w^2+H_w^2)
-\le-2aG_w^2-2bH_w^2+2C_GG_wH_w,
+\le-2a_*G_w^2-2b_*H_w^2+2C_{G,*}G_wH_w,
 \tag{4.2}
 \]
 where
@@ -348,7 +348,7 @@ This is an \(H^2\)-source consequence only. It is not an H¹-source Hessian reso
 
 The proposition is conditional on the following source records:
 
-1. [Weighted Bochner L4 foundational audit](../theorems/R3_IR_WEIGHTED_BOCHNER_L4_FOUNDATION_AUDIT_2026-11-02.md) — \(c_*>0.4983981314\) weighted gradient input.
+1. [Weighted Bochner L4 foundational audit](../theorems/R3_IR_WEIGHTED_BOCHNER_L4_FOUNDATION_AUDIT_2026-11-02.md) — pointwise weighted Bakry–Émery identity and block-Schur structure; sharpened coefficient derived in §2 using the scalar enclosure.
 2. [Conditional weighted trace–gradient Bochner block](../theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) — conditional one-link Poincaré input, \(c_{\mathrm{tr}}\), \(\ell\), and local score bound.
 3. [Ordered plaquette third-tensor certificate](../theorems/R3_IR_ORDERED_PLAQUETTE_THIRD_TENSOR_CERTIFICATE_2026-11-02.md) — original ordered-tensor source.
 4. [SU(2) covariant Hessian/metric audit](../theorems/R3_IR_SU2_COVARIANT_HESSIAN_METRIC_AUDIT_2026-11-02.md) — radius-two metric and curvature source.
@@ -357,9 +357,7 @@ The proposition is conditional on the following source records:
 7. [Adversarial full-Hessian energy audit](R3_IR_ADVERSARIAL_FULL_HESSIAN_ENERGY_INEQUALITY_AUDIT_2026-11-11.md) — independent ordered-index, curvature, energy, and quadratic-form check.
 8. [Common-measure and smooth-core audit](R3_IR_COMMON_MEASURE_SMOOTH_CORE_FINITE_STRIP_EXTENSION_2026-11-11.md) — measure compatibility, tensor integration by parts, and semigroup-domain extension.
 
-**Established within the stated source chain:** local ordered component and incidence bounds, one-output Schur transfer, Hessian-dressing block estimate, SU(2) curvature/Codazzi coefficient, common-measure compatibility, smooth-core extension, and positive \(2\times2\) energy margin.
-
-**Imported analytic hypotheses:** weighted Bochner and conditional one-link trace–Poincaré inequalities, with the exact hypotheses and finite-strip scope in their source certificates.
+**Established within the stated source chain:** local ordered component and incidence bounds, one-output Schur transfer, Hessian-dressing block estimate, SU(2) curvature/Codazzi coefficient, sharpened weighted Bochner inequality, sharpened conditional one-link trace–Poincaré inequality, common-measure compatibility, smooth-core extension, and positive \(2\times2\) energy margin. The scalar derivative enclosure remains a certified upstream dependency.
 
 **Not established:** nonlinear interacting fixed point; pointwise interacting Hessian bound; volume-uniform residual response; physical-coupling (\(\lambda=1\)) spectral gap; all-orders or 3D transfer theorem; continuum limit or continuum Yang–Mills mass gap; PF-I16 or Penrose conclusion.
 
@@ -370,14 +368,14 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 | Quantity | Conservative bound / value |
 |---|---:|
 | Coupling range | \(|g|\le10^{-3}\) |
-| \(B\) | \(49/576\) |
+| (B_*=\|\nabla_eS_g\|_\infty) | \(<0.000333528\) |
 | \(T_g\) | \(<0.000250291891\) |
 | \(C_3\) | \(<0.049941305\) |
 | \(h\) | \(<0.000166812592\) |
 | \(C_H\) | \(<0.030426617\) |
 | \(C_{R,*}\) | \(<0.000235840\) |
 | \(C_{G,*}=C_3+C_{R,*}\) | \(<0.050177167\) |
-| \(c\) | \(11/120\) |
+| \(c_*) | \(>0.4983981314\) |
 | \(c_{\mathrm{tr}}\) | \(0.2575101249909138\ldots\) |
 | \(\ell\) | \(0.0024847359266621\ldots\) |
 | \(a=c-\ell\) | \(0.0891819307400046\ldots\) |
