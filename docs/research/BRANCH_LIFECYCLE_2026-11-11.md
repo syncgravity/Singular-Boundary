@@ -53,3 +53,13 @@ The connector used for this repository update has no branch-delete or workflow-d
 ## Invariant
 
 The repository's proof continuity is provided by the Observatory, source dossiers, immutable commit history and this handoff—not by retaining every redundant branch name. Conversely, the Observatory must link to the source records and preserve evidence status; it cannot replace missing source content with a narrative summary.
+
+
+## Final consolidation outcome · 2026-11-11
+
+The initial 12 open PRs are now **one open PR (#107)**. Eight PRs (#55, #56, #79–#84) were merged into the #107 integration branch. Three PRs (#74, #103, #106) were closed unmerged after explicit archive/index records captured their exact head SHAs and every changed path in [CONSOLIDATION_ARCHIVE_2026-11-11.md](CONSOLIDATION_ARCHIVE_2026-11-11.md). Their branch refs remain intact. No branch was deleted, and the original 108-ref count is not asserted as a live recount; it is the earlier snapshot until a fresh branch enumeration is performed.
+
+The one open PR is [#107](https://github.com/syncgravity/Singular-Boundary/pull/107), head `044071399af59cda2ab5bc9cf82bb5afbdd0628b`. The theorem-source integrity workflow run 166 passed all steps: source inventory/hash verification, generated catalog/current navigator check, Proof Atlas graph check, application syntax check, and branch-maintenance script syntax check.
+
+**Retirement rule:** do not delete the three archived branch refs (#74/#103/#106) or any other non-ancestor research branch. After #107 is merged to main, use the SHA-checked retirement workflow in dry-run mode and review its exact eligible/withheld list before any branch retirement. The 107 non-main branch count from the original snapshot has not been reduced by this PR cleanup.
+
