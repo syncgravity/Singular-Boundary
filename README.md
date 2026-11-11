@@ -5,6 +5,42 @@
 > **Scientific status (November 10, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
 
+
+
+## Canonical Yang–Mills proof spine · source-compatible interacting spectral inequality (2026-11-11)
+
+**The single central missing result is now the organizing target.** The proof architecture is one source-authenticated chain:
+
+\[
+\text{coupled-}\mathbb Z^5\text{ source and }2+2
+\to \text{physical SU(2) dynamics}
+\to \text{actual interacting vacuum}
+\to \text{uniform gauge-invariant Poincaré inequality}
+\to \text{4D continuum reconstruction and }m_*>0.
+\]
+
+For the source-derived physical finite regulator indexed by refinement \(h\) and physical volume \(R\), with true Gauss-invariant ground state \(\Omega_{h,R}\), measure \(d\nu_{h,R}=|\Omega_{h,R}|^2dU\), and physically normalized electric coefficients \(\alpha_{e,h,R}\), the target is
+
+\[
+\operatorname{Var}_{\nu_{h,R}}(f)\le \frac{1}{m_*}
+\sum_e\alpha_{e,h,R}\int|\nabla_e f|^2\,d\nu_{h,R},\qquad m_*>0,
+\]
+
+for every admissible gauge-invariant \(f\), with the same positive physical \(m_*\) independent of both \(h\) and \(R\). Coefficients, derivative metric, time normalization, gauge constraint, and vacuum must come from the same authenticated source-native Hamiltonian. A finite-volume gap or auxiliary comparison measure is not this theorem.
+
+The exact finite ground-state transform is the common interface, not a proof of uniformity:
+\[
+\langle f\Omega,(H-E_0)f\Omega\rangle
+=\sum_e\alpha_e\int|\nabla_e f|^2d\nu.
+\]
+No route may import another route's constants unless equality of source, generator, measure, metric, physical time and coupling is proved.
+
+**Canonical gates:** S0 source geometry/refinement and physical metric; S1 source-derived SU(2) Hamiltonian, Gauss law, electric normalization, magnetic interaction, time/clock and positive/reflection-positive transfer; S2 true interacting finite-volume vacuum and common measure; S3 the all-gauge-invariant inequality above uniformly in \(h,R\); S4 physical spectral/correlation exclusion and low-frequency control; S5 nontrivial local/covariant/reflection-positive 4D continuum Schwinger functions, OS reconstruction and persistence of \(m_*>0\). S0–S5 remain OPEN.
+
+**Analytical lanes are subordinate evidence, not competing proof spines.** PF-I16 is the primary source-native local-interaction lane; four-factor mixed-Hessian/orientation certification, recomputed third order, fourth-order partition cancellation, spatial tree decay and an all-orders activity majorant remain prerequisites. The signed radial-current/completed-cage lane targets the same S3 coercivity but lacks the interacting SU(2), refinement-uniform current estimate. Original-link Peter–Weyl/Borel–Volterra has exact finite fusion and conditional local-history bounds, but its strip radius shrinks with width and no global positive-ray reconstruction is established. R3-IR full-Hessian is a conditional finite product-strip reference-semigroup result, not a source-native physical vacuum estimate. Prism/Whitney and cubic Wilson-flow lanes remain distinct-regulator controls/obstructions; they enter the canonical chain only after an explicit source/operator/metric/time equivalence theorem. F-sum and positive spectral-weight estimates do not alone exclude arbitrarily low-frequency support.
+
+Read the full [central spectral-inequality program](docs/research/SOURCE_COMPATIBLE_SPECTRAL_INEQUALITY_PROGRAM_2026-11-11.md) and its [Observatory interface](observatory/spectral-inequality.html). Historical branches, theorem records, archives and claim IDs are preserved. No theorem status is promoted by this architecture change.
+
 ## R3_IR · Conditional weighted trace–gradient Bochner block (2026-11-10)
 
 The finite open SU(2) strip now has a conditional weighted trace-block calculation: one-link Holley–Stroock comparison gives \(c_{\rm tr}=\frac34e^{-49\pi/144}\approx0.2575101\), with the nonzero conditional-mean correction and gradient leakage \(\ell\approx0.00248474\). The exact product-manifold trace commutator is recorded with both Ricci contributions. Its weighted remainder is controlled by as-yet unevaluated local constants \(A_2\), \(A_{3,w}\), and a trace-free/mixed Hessian energy \(K_w\).
