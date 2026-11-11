@@ -59,7 +59,7 @@ G_w(t)^2+H_w(t)^2
 \]
 No estimate in terms of the initial \(L^2\)-norm alone at \(s=0\) is asserted.
 
-This is a **conditional finite-strip reference semigroup proposition**. The analytic Bochner and conditional trace–Poincaré inputs remain hypotheses imported from their source certificates. This proposition is not a physical-coupling gap, a volume-uniform interacting estimate, a 3D transfer result, or a continuum Yang–Mills mass-gap theorem.
+This is a **conditional finite-strip reference semigroup proposition**. The weighted Bochner and conditional trace–Poincaré inequalities are derived from the certified coefficient-specific scalar derivative enclosure and the stated strip geometry. The scalar enclosure remains an upstream isolated-dressing dependency. This proposition is not a physical-coupling gap, a volume-uniform interacting estimate, a 3D transfer result, or a continuum Yang–Mills mass-gap theorem.
 
 ## 1. Geometry, generator, and exact ordered Hessian identity
 
@@ -112,9 +112,9 @@ The weighted tensor integration-by-parts identity is
 \]
 The drift cancels the weighted-divergence correction of the rough Laplacian. The deterministic weights \(w_e\) are parallel for the product connection, so the identity applies componentwise in the one-output weighted pairing.
 
-## 2. Explicit analytic hypotheses imported from source certificates
+## 2. Sharpened analytic inequalities derived from the scalar certificate
 
-The proposition assumes the following two analytic inputs, with no strengthening beyond their source statements.
+The two inequalities below are derived from the global positive-majorant coefficient enclosure and exact finite-strip incidence; they are not imported with the former coarse score envelope.
 
 ### (A1) Weighted gradient Bochner inequality
 
@@ -222,7 +222,7 @@ The Schur estimate and one-output weight transfer are
 Including the factor two in (1.3),
 \[
 \boxed{C_3\le2\frac65\sqrt{24\cdot288}\,T_g
-<0.049941305.}
+<0.049941327.}
 \tag{3.2}
 \]
 
@@ -369,10 +369,10 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 |---|---:|
 | Coupling range | \(|g|\le10^{-3}\) |
 | (B_*=\|\nabla_eS_g\|_\infty) | \(<0.000333528\) |
-| \(T_g\) | \(<0.000250291891\) |
-| \(C_3\) | \(<0.049941305\) |
-| \(h\) | \(<0.000166812592\) |
-| \(C_H\) | \(<0.030426617\) |
+| \(T_g\) | \(<0.000250292\) |
+| \(C_3\) | \(<0.049941327\) |
+| \(h\) | \(<0.000166813\) |
+| \(C_H\) | \(<0.030426692\) |
 | \(C_{R,*}\) | \(<0.000235840\) |
 | \(C_{G,*}=C_3+C_{R,*}\) | \(<0.050177167\) |
 | \(c_*) | \(>0.4983981314\) |
