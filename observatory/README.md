@@ -1,4 +1,4 @@
-# Research Observatory v2.73-r3-ir-trace-gradient — source-linked Proof Atlas
+# Research Observatory v2.74-four-pr-review-board — source-linked Proof Atlas
 
 
 ## Penrose–Fibonacci versus the square control
@@ -402,3 +402,8 @@ Private stacked review branch, no main merge, public Pages action, Git LFS migra
 
 
 The source navigator, searchable catalog, graph JSON, and browser payload are kept synchronized by the repository's generated Observatory integrity check.
+
+
+## Live four-PR review board · 2026-11-11
+
+Four PRs remain open and are tracked as first-class nodes in the v2.74 Proof Atlas: #107 canonical S0–S5 integration; #106 independent R3-IR finite-strip full-Hessian analysis; #74 finite non-Abelian tube theorem and verifier; #103 Observatory publishing workflow reconciliation. #74, #103 and #106 have unresolved mergeability conflicts. No unresolved PR is closed to reduce counts. The Yang–Mills mass-gap proof remains OPEN: source-native physical dynamics, the refinement-/volume-uniform interacting gauge-invariant Poincaré inequality, infrared exclusion and nontrivial 4D OS reconstruction remain outstanding.
