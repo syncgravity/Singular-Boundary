@@ -349,7 +349,7 @@ This is an \(H^2\)-source consequence only. It is not an H¹-source Hessian reso
 The proposition is conditional on the following source records:
 
 1. [Weighted Bochner L4 foundational audit](../theorems/R3_IR_WEIGHTED_BOCHNER_L4_FOUNDATION_AUDIT_2026-11-02.md) — pointwise weighted Bakry–Émery identity and block-Schur structure; sharpened coefficient derived in §2 using the scalar enclosure.
-2. [Conditional weighted trace–gradient Bochner block](../theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) — conditional one-link Poincaré input, \(c_{\mathrm{tr}}\), \(\ell\), and local score bound.
+2. [Conditional weighted trace–gradient Bochner block](../theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) — conditional-disintegration and Holley–Stroock method; sharpened constants are derived in the 2026-11-11 analytic-input audit.
 3. [Ordered plaquette third-tensor certificate](../theorems/R3_IR_ORDERED_PLAQUETTE_THIRD_TENSOR_CERTIFICATE_2026-11-02.md) — original ordered-tensor source.
 4. [SU(2) covariant Hessian/metric audit](../theorems/R3_IR_SU2_COVARIANT_HESSIAN_METRIC_AUDIT_2026-11-02.md) — radius-two metric and curvature source.
 5. [Isolated dressing and projective-drift certificate](../theorems/R3_IR_CERTIFIED_DRESSING_AND_PROJECTIVE_DRIFT_2026-11-02.md) — isolated analytic branch.
@@ -376,10 +376,10 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 | \(C_{R,*}\) | \(<0.000235840\) |
 | \(C_{G,*}=C_3+C_{R,*}\) | \(<0.050177167\) |
 | \(c_*) | \(>0.4983981314\) |
-| \(c_{\mathrm{tr}}\) | \(0.2575101249909138\ldots\) |
-| \(\ell\) | \(0.0024847359266621\ldots\) |
-| \(a=c-\ell\) | \(0.0891819307400046\ldots\) |
-| \(b=c_{\mathrm{tr}}-C_H\) | \(>0.2270835082\) |
+| \(c_{\mathrm{tr},*}\) | \(0.746863150886429\ldots\) |
+| \(\ell_*\) | \(<1.108\times10^{-7}\) |
+| \(a_*=c_* -\ell_*\) | \(>0.4983980206\) |
+| \(b_*=c_{\mathrm{tr},*}-C_H\) | \(>0.7164364596\) |
 | \(\lambda_{\min}(Q_*)\) | \(>0.4955484\) |
 
 
