@@ -118,25 +118,26 @@ The proposition assumes the following two analytic inputs, with no strengthening
 
 ### (A1) Weighted gradient Bochner inequality
 
-The isolated-dressing scalar branch obeys
+The global positive-majorant coefficient enclosure gives
 \[
-q_g:=\|s_g'\|_\infty+\|s_g''\|_\infty\le\frac{49}{576}.
+\|s_g'\|_\infty<0.000333528,\qquad
+\|s_g''\|_\infty<1.94619\times10^{-7},\qquad
+q_*:=\|s_g'\|_\infty+\|s_g''\|_\infty<0.000333722619.
 \]
 Each link is incident to at most two four-link faces, and
 \(\|\nabla p_f\|_\infty\le1/2\). The weighted Hessian block row and column sums in the Bochner certificate are at most
 \[
-8\left(\frac{q_g}{4}\right)\frac65\le\frac{49}{240}.
+8\left(\frac{q_*}{4}\right)\frac65=\frac{12}{5}q_*<0.000800934286.
 \]
 With \(\operatorname{Ric}=1/2\), the pointwise weighted Bakry–Émery estimate gives
 \[
 \Gamma_{2,w}(h)\ge
-\left(\frac12-2\frac{49}{240}\right)\Gamma_w(h)
-=\frac{11}{120}\Gamma_w(h).
+\left(\frac12-\frac{24}{5}q_*\right)\Gamma_w(h)
+=c_*\Gamma_w(h),\qquad c_*>0.4983981314.
 \]
 After integration against \(\mu_g\),
 \[
-\boxed{\frac{d}{dt}G_w(t)^2\le-2cG_w(t)^2,\qquad
-c=\frac{11}{120}.}
+\boxed{\frac{d}{dt}G_w(t)^2\le-2c_*G_w(t)^2.}
 \tag{2.1}
 \]
 
@@ -147,27 +148,26 @@ The conditional law obtained by freezing all links except \(U_e\) is the disinte
 d\mu_g(U_e\mid U_{\ne e})
 =Z_e^{-1}e^{2S_g(U_e,U_{\ne e})}\,dU_e.
 \]
-The local score bound is
+The sharper score bound follows from at most two incident faces and \(\|\nabla_ep_f\|\le1/2\):
 \[
-\|\nabla_eS_g\|_\infty\le B,\qquad B=\frac{49}{576}.
+\|\nabla_eS_g\|_\infty\le B_*:=0.000333528.
 \]
-The conditional log-density oscillation is at most \(49\pi/144\). Holley–Stroock comparison with the first nonzero Haar eigenvalue \(3/4\), followed by the exact conditional-mean correction, gives
+The conditional log-density oscillation is at most \(4\pi B_*\). Holley–Stroock comparison with the first nonzero Haar eigenvalue \(3/4\), followed by the exact conditional-mean correction, gives
 \[
 \|\nabla_eH_{ee}^{\mathrm{tr}}\|_2^2
-\ge c_{\mathrm{tr}}\|H_{ee}^{\mathrm{tr}}\|_2^2
--\ell\|\nabla_ef_t\|_2^2,
+\ge c_{\mathrm{tr},*}\|H_{ee}^{\mathrm{tr}}\|_2^2
+-\ell_*\|\nabla_ef_t\|_2^2,
 \tag{2.2}
 \]
 where
 \[
 H_{ee}^{\mathrm{tr}}=\frac{\Delta_ef_t}{3}g_e,\qquad
-c_{\mathrm{tr}}=\frac34e^{-49\pi/144}
-=0.2575101249909138\ldots,
+c_{\mathrm{tr},*}=\frac34e^{-4\pi B_*}
+=0.746863150886429\ldots,
 \]
 \[
-\ell=\frac{4c_{\mathrm{tr}}}{3}
-\left(\frac{49}{576}\right)^2
-=0.0024847359266621\ldots.
+\ell_*=\frac{4c_{\mathrm{tr},*}}{3}B_*^2
+=1.1077566544723305\times10^{-7}.
 \tag{2.3}
 \]
 Multiplication by deterministic \(w_e\) and summation are permitted. This is a lower bound on a parallel component of the **full tensor Dirichlet form**; it is not a closed evolution equation for the trace sector.
@@ -264,7 +264,7 @@ C_R\le2\kappa\sqrt2B
 \]
 Thus
 \[
-C_G=C_3+C_R<0.110094486.
+C_{G,*}=C_3+C_{R,*}<0.050177167.
 \tag{3.6}
 \]
 
@@ -278,7 +278,7 @@ T_w^2=\frac13\sum_e w_e\|\Delta_ef_t\|_2^2.
 Pair (1.3) with \(2H\). Use (1.4), (3.4), the trace Dirichlet lower bound (2.2), and the forcing estimates (3.2)–(3.6). This yields
 \[
 \frac{d}{dt}H_w^2
-\le-2K_w^2-2c_{\mathrm{tr}}T_w^2
+\le-2K_w^2-2c_{\mathrm{tr},*}T_w^2
 +2\ell G_w^2+2C_HH_w^2+2C_GG_wH_w.
 \tag{4.1}
 \]
@@ -298,20 +298,20 @@ Adding (2.1) and (4.1) gives
 \]
 where
 \[
-a=c-\ell=0.0891819307400046\ldots,\qquad
-b=c_{\mathrm{tr}}-C_H>0.2270835082.
+a_*=c_* -\ell_*>0.4983980206,\qquad
+b_*=c_{\mathrm{tr},*}-C_H>0.7164364596.
 \]
 For \(x=(G_w,H_w)^\top\),
 \[
 E'(t)\le-2x^\top Qx,\qquad
-Q=\begin{pmatrix}a&-C_G/2\\-C_G/2&b\end{pmatrix}.
+Q_* =\begin{pmatrix}a_*&-C_{G,*}/2\\-C_{G,*}/2&b_*\end{pmatrix}.
 \tag{4.3}
 \]
 With the conservative constants above,
 \[
-\lambda_{\min}(Q)
-=\frac{a+b-\sqrt{(a-b)^2+C_G^2}}2
->0.0699034.
+\lambda_{\min}(Q_*)
+=\frac{a_*+b_*-\sqrt{(a_*-b_*)^2+C_{G,*}^2}}2
+>0.4955484.
 \tag{4.4}
 \]
 Gronwall gives (1.1) for smooth initial data. The margin is the least eigenvalue of the displayed symmetric matrix, not merely a determinant test.
@@ -348,7 +348,7 @@ This is an \(H^2\)-source consequence only. It is not an H¹-source Hessian reso
 
 The proposition is conditional on the following source records:
 
-1. [Weighted Bochner L4 foundational audit](../theorems/R3_IR_WEIGHTED_BOCHNER_L4_FOUNDATION_AUDIT_2026-11-02.md) — \(c=11/120\) weighted gradient input.
+1. [Weighted Bochner L4 foundational audit](../theorems/R3_IR_WEIGHTED_BOCHNER_L4_FOUNDATION_AUDIT_2026-11-02.md) — \(c_*>0.4983981314\) weighted gradient input.
 2. [Conditional weighted trace–gradient Bochner block](../theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) — conditional one-link Poincaré input, \(c_{\mathrm{tr}}\), \(\ell\), and local score bound.
 3. [Ordered plaquette third-tensor certificate](../theorems/R3_IR_ORDERED_PLAQUETTE_THIRD_TENSOR_CERTIFICATE_2026-11-02.md) — original ordered-tensor source.
 4. [SU(2) covariant Hessian/metric audit](../theorems/R3_IR_SU2_COVARIANT_HESSIAN_METRIC_AUDIT_2026-11-02.md) — radius-two metric and curvature source.
@@ -375,11 +375,16 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 | \(C_3\) | \(<0.049941305\) |
 | \(h\) | \(<0.000166812592\) |
 | \(C_H\) | \(<0.030426617\) |
-| \(C_R\) | \(<0.060153182\) |
-| \(C_G=C_3+C_R\) | \(<0.110094486\) |
+| \(C_{R,*}\) | \(<0.000235840\) |
+| \(C_{G,*}=C_3+C_{R,*}\) | \(<0.050177167\) |
 | \(c\) | \(11/120\) |
 | \(c_{\mathrm{tr}}\) | \(0.2575101249909138\ldots\) |
 | \(\ell\) | \(0.0024847359266621\ldots\) |
 | \(a=c-\ell\) | \(0.0891819307400046\ldots\) |
 | \(b=c_{\mathrm{tr}}-C_H\) | \(>0.2270835082\) |
-| \(\lambda_{\min}(Q)\) | \(>0.0699034\) |
+| \(\lambda_{\min}(Q_*)\) | \(>0.4955484\) |
+
+
+## 8. Sharpened analytic-input source audit
+
+The coarse imported (49/576) envelope has been replaced by the coefficient-specific global derivative bounds. See [sharpened weighted Bochner and conditional trace–Poincaré audit](R3_IR_SHARP_WEIGHTED_BOCHNER_AND_TRACE_POINCARE_2026-11-11.md), its [arithmetic verifier](verify_R3_IR_sharp_weighted_analytic_inputs_2026-11-11.py), and [execution log](R3_IR_SHARP_WEIGHTED_ANALYTIC_INPUTS_2026-11-11.log). The resulting conservative rate is \(\lambda_*>0.4955484\). The scalar positive-majorant enclosure remains an explicit dependency; the two analytic inequalities themselves are now derived from it rather than imported with the coarse envelope.
