@@ -1,6 +1,12 @@
 # Research Observatory v2.73-r3-ir-trace-gradient — source-linked Proof Atlas
 
 
+## Penrose–Fibonacci versus the square control
+
+The Proof Atlas comparison lens now places the primary coupled-ℤ⁵ / Penrose–Fibonacci hypothesis beside the historical area-matched square-lattice 2+1D SU(2) control. It links the eight Stage 26 archives and eight sweep-10,000 multihit files to their model nodes, then follows the current PF-I16 finite and conditional results into the still-open PF-G0–G5 and P0–P5 gates. Select any node to open its descriptive evidence dossier; source links, assumptions, status, and archived-file hashes are shown there.
+
+The historical Stage 26 comparison uses 20 temporal slices, reference coupling 3.5, four seeds (101, 211, 307, 419), and matched total physical area as specified by the recovered runner. The sweep-10,000 NPZ records each contain direct and multihit arrays of shape 4×600 at lags 4, 6, 8, and 10. These are archived observations, not a statistical demonstration of Penrose superiority. The square control's graph spectra, local operators, random streams, and continuum limits were not automatically matched. The current PF-I16 SU(2) results are separate finite-graph mathematical work; they do not inherit a conclusion from Stage 26 and do not close the physical continuum gates.
+
 ## R3_IR · Conditional weighted trace–gradient block (2026-11-10; separate strip route)
 
 The finite open SU(2) strip now has a source-linked conditional calculation for the diagonal pure-trace Hessian sector. The one-link weighted Poincaré estimate gives \(c_{\rm tr}\approx0.2575101\) and gradient leakage \(\ell\approx0.00248474\), with the nonzero conditional mean retained. The exact product-manifold commutator includes both Ricci contributions before the drift factor.
