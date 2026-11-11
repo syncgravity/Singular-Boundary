@@ -4,7 +4,7 @@
 
 | PR | Title / role | Base | Head branch | Exact head SHA | Mergeability |
 |---|---|---|---|---|---|
-| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | Canonical source-compatible spectral-inequality proof spine and Observatory integration | main | `architecture/source-compatible-spectral-spine-2026-11-11` | `4e1f5d0bbd359471a8cf005c47bea965540939b7` | mergeable |
+| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | Canonical source-compatible spectral-inequality proof spine and Observatory integration | main | `architecture/source-compatible-spectral-spine-2026-11-11` | live branch head (self-updating) | mergeable |
 | [#106](https://github.com/syncgravity/Singular-Boundary/pull/106) | R3-IR finite-strip full-Hessian analysis | #107 branch | `audit/r3-ir-h2-trace-to-k-2026-11-10` | `12995f4e34e0a7125da881f0ec655da243e33c3e` | not mergeable; reconcile overlapping generated files |
 | [#74](https://github.com/syncgravity/Singular-Boundary/pull/74) | Finite non-Abelian SU(2) positive-probability tube and theorem-index work | main | `audit/2026-11-06-nonabelian-tube-complete-theorem-index` | `447dcea7c54175bf46962de0222ceba519659796` | not mergeable; reconcile theorem index / graph snapshots |
 | [#103](https://github.com/syncgravity/Singular-Boundary/pull/103) | Observatory publishing preparation | main | `pages-public-ready` | `53c608a3f3884066568525374c32b4fc2986f866` | not mergeable; reconcile publication target and workflow |
