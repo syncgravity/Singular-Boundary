@@ -91,3 +91,16 @@ The accompanying [arithmetic verifier](../audits/verify_R3_IR_sharp_weighted_ana
 **Scope boundary:** this is a conditional finite-dimensional product-link reference-measure extension. It is not a 3D transfer theorem or a result for a regulator until its action, link variables, plaquette supports, incidence, metric, and boundary identifications are checked against the model-class hypotheses.
 
 **Research decision:** the provisional trace-to-\(K\) three-sector calculation is not appropriate as the next step for the current reference-semigroup objective. The sharpened trace coercivity and full-Hessian curvature decomposition already close the one-output energy with a large positive margin. Keep the three-sector record dormant as a cross-check; reopen only for a different norm, non-product geometry, loss of bounded incidence, or an interacting estimate not covered by this argument. No theorem/claim ID is promoted.
+
+
+## 3D regulator transfer audit and degree-eight finite-complex extension (2026-11-11)
+
+[Model-transfer audit](../audits/R3_IR_3D_REGULATOR_TRANSFER_AUDIT_2026-11-11.md) compares the current bounded-incidence reference estimate against the historical coupled-Z5 dissertation geometry, the extruded-prism candidate, the illustrative 3+2 projected cubical 2-skeleton, the Voronoi proposal, and the cubic reference.
+
+For the finite illustrative projected-Z5 **2-skeleton**, the source geometry has four-link square faces and maximum link-face incidence r=8. A separate rational verifier gives the conditional product-link reference energy bound
+\[
+\lambda_{\min}(Q_8)>0.1972.
+\]
+The finite geometry has 1,700 square faces incident to more than two selected cubes (maximum six), so its selected 3-cells are not a manifold cellulation. It is not a source-authenticated regulator or a refinement family.
+
+The transfer audit also records why the current product-metric theorem does not automatically apply to the dense-Whitney prism electric form or the polygonal-face Voronoi model. The historical dissertation's coupled-Z5 split is kept distinct from the later illustrative 3+2 split. No theorem/claim ID is promoted; P0 physical regulator certification remains open.
