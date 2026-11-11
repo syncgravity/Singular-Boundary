@@ -1,0 +1,9 @@
+=== independent arithmetic verifier: sharpened weighted analytic inputs ===
+PASS: rational scalar derivative ceilings and q envelope
+S1 = 0.000333528 S2 = 1.94619e-07 q = 0.000333722619
+weighted Bochner row/column = 0.0008009342856 c_* = 0.4983981314288
+conditional score B_* = 0.000333528 oscillation <= 0.004191236458265986
+c_tr,* = 0.746863150886429 ell_* = 1.1077566544723305e-07
+C3 <= 0.04994132667586899 CH <= 0.0304266912 CR,* <= 0.0002358399105155868 CG,* <= 0.050177166586384575
+a_* = 0.49839802065313454 b_* = 0.716436459686429 lambda_min(Q_*) = 0.4955484454338127
+PASS: sharpened common-measure finite-strip energy matrix is positive
