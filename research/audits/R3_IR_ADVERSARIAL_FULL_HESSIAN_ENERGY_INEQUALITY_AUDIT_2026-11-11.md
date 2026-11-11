@@ -273,3 +273,10 @@ These are explicit dependencies; this audit does not replace their source certif
 - The provisional trace-to-\(K\) three-sector calculation remains paused and is not used.
 
 **Decision:** the combined full-Hessian differential inequality passes the adversarial algebra/index audit under the enumerated local hypotheses. The result may be stated as a *conditional finite-strip reference semigroup proposition* after the source certificates are attached and the strip hypotheses are made explicit. Keep PR #106 draft; do not promote a theorem or claim ID.
+
+
+## Source-level dependency closure addendum (2026-11-11)
+
+The dependencies listed in §7 have now been checked against their original source artifacts in [the local geometry and strip-incidence audit](R3_IR_LOCAL_GEOMETRY_SOURCE_AND_INCIDENCE_AUDIT_2026-11-11.md). In particular, the ordered \(3/4\) plaquette component bound is expanded with all three connection corrections; the scalar \(s_g'''\) tail is bounded by a positive majorant uniformly for \(|g|\le10^{-3}\); and the exact straight-strip face supports establish the row/column incidence counts for every finite strip length. The radius-two metric and curvature conventions agree with the analytic quaternion source.
+
+The independent verifier gives the slightly sharpened values \(C_3<0.049941305\), \(C_H<0.030426617\), \(C_R<0.060153182\), and \(\lambda_{\min}>0.0699034\). Thus the local coefficient and incidence dependencies are no longer left open for the stated finite straight-strip model. The weighted Bochner and conditional trace-Poincaré inequalities remain explicit imported source hypotheses, as does the finite-strip reference scope. No theorem or claim ID is promoted.
