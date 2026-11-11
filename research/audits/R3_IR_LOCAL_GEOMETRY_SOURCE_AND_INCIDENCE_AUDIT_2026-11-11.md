@@ -74,6 +74,8 @@ Dividing by the coefficient weight \(2^n(n+1)^6\), the exact global maxima for \
 \]
 For \(k=1\) the ratio decreases from \(n=1\); for \(k=2\) it decreases from \(n=2\); for \(k=3\), \(r_3(4)/r_3(3)=16384/15625>1\) and it decreases from \(n=4\). These tail statements follow from the exact ratio-difference polynomials; after the shifts \(n-1,n-2,n-4\), respectively, all coefficients are positive. Thus the derivative envelope is global in character degree, not a finite cutoff check.
 
+The reproducible artifacts and source checksums are recorded in [the SHA-256 manifest](R3_IR_LOCAL_GEOMETRY_SOURCE_AUDIT_2026-11-11_SHA256.txt).
+
 The resulting uniform bounds are
 \[
 \begin{aligned}
