@@ -1,11 +1,11 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-09",
-  "version": "v2.69-pf-i16-four-face-c2222",
-  "scope": "PF-I15 source Z5 accepted rhombus SU2 spin-network exact finite pure-electric Δ=(3/4)least weighted cycle, eight-source girth4 Δ=3epsilon and optional source scalar weight Δ=3phi^-2; bounded Wilson/commutator auxiliary Hamiltonian has simple finite ground and strictly positive finite gap, with explicit kappa=.71 one-rhombus Jacobi gap3.058085713. Restricted C5 additive clock no-go, J helix explicitly kinematic, nonunique invariant auxiliary phase measures and extensive magnetic norm bound obstruction. No source physical time, original global OS, interacting continuum Yang–Mills gap or gravity UV proved. PF-I16 adds exact eighth-order fully four-face-connected SU(2) auxiliary ground-energy coefficients for all seven authenticated Ngrid7 four-face graph classes, with independent 50-sector and 16-subset Möbius extraction; physical time, uniform cluster and continuum mass-gap claims remain OPEN.",
+  "build_date": "2026-11-10",
+  "version": "v2.70-pf-i16-dressed-locality",
+  "scope": "PF-I16 exact four-face C2222 finite-source coefficients, corrected universal connected-support incidence count, exact single-face dressing/shared-link residual identity, and centered dressed-resolvent third-order formula. The third-order numerical bound remains conditional on working curvature/derivative/semigroup estimates; fourth-order partition cancellation, all-orders summability, source physical time, continuum reconstruction and the Yang–Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 755,
+  "indexed_theorem_paths": 758,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -761,12 +761,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "755 current indexed theorem source files (740 historical baseline)",
+      "title": "758 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 755, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 758, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -784,8 +784,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "4baca3ebb97937162cd1da6a02c2a809176df8f0",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/4baca3ebb97937162cd1da6a02c2a809176df8f0/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "2cbb0172b02fe08d4fce6f039df15e3eca73c618",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
@@ -9908,8 +9908,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I16 now has exact finite four-face eighth-order coefficients for all seven authenticated Ngrid7 graph classes, with dual rational extraction and original-link Poisson checks. This supplies fixed-order local data only; source physical kinetic/time, uniform connected-cluster summability, interacting continuum existence and positive physical mass gap remain OPEN.",
-      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap. New finite-order input: exact C2222 on all seven four-face classes and the Ngrid7 fully four-face-connected aggregate. This does not prove uniform coefficient summability, convergence, or a spectral gap.",
+      "summary": "PF-I16 now includes exact four-face C2222 data, a universal connected-support count D≤28 / 784^(k−1), exact single-face dressing with shared-link residual, and a third-order dressed-resolvent identity with a conditional source-volume-uniform numerical bound. Fourth-order partition cancellation, spatial tree decay, all-orders activity, source physical kinetic/time, interacting continuum existence and physical mass gap remain OPEN.",
+      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap. New finite-order input: exact C2222 on all seven four-face classes and the Ngrid7 fully four-face-connected aggregate. This does not prove uniform coefficient summability, convergence, or a spectral gap. The new incidence/dressing/third-order records sharpen the auxiliary local-interaction route but close none of the physical gates. The degree-four incidence claim remains finite-crop only; the third-order numerical bound depends on working analytic estimates awaiting standalone verification.",
       "checks": [
         {
           "label": "Derive/falsify physical time and energy scale from source 2+2+1/J/helical or explicit competing postulates",
@@ -9922,6 +9922,11 @@
         {
           "label": "Prove uniform local interacting connected-correlator or functional inequality with nontrivial continuum existence and positive physical gap",
           "state": "open"
+        },
+        {
+          "label": "Fourth-order partition cancellation and spatial connectedness",
+          "state": "open",
+          "note": "PF-I16 exact next recursion recorded; disconnected partition cancellation not yet proved."
         }
       ],
       "sources": [
@@ -9931,6 +9936,24 @@
           "git_blob_sha": "e5632711a63b2541a7e5875f66772b6fd095e374",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_I15_INTRINSIC_CLOCK_ELECTRIC_GAP_AND_POSITIVE_DYNAMICS_2026_11_08.md",
           "review_only": true
+        },
+        {
+          "title": "PF-I16 connected-support incidence correction",
+          "path": "research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md",
+          "git_blob_sha": "8285ff968642992cf3e5ce8a59c6ae90b60da435",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md"
+        },
+        {
+          "title": "PF-I16 exact single-face dressing and shared-link residual",
+          "path": "research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md",
+          "git_blob_sha": "63350c256de4103da4ec7c90c53b9f7a2ba9f38d",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md"
+        },
+        {
+          "title": "PF-I16 centered dressed-resolvent third-order coefficient",
+          "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
+          "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
         }
       ],
       "tags": [
@@ -9992,6 +10015,202 @@
         "eighth-order",
         "exact-rational",
         "finite-model"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-INCIDENCE-UNIFORM-COUNT",
+      "title": "Universal accepted-face incidence and connected-support count",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P0",
+      "summary": "The elementary five-direction inventory gives d_e≤8, hence face-overlap degree D≤28 and rooted connected supports N_f(k)≤784^(k−1). Eight tested crops show the sharper d_e≤2 / D≤4, but this is not a universal theorem.",
+      "detail": "The count is combinatorial and applies to the authentic accepted-rhombus face-overlap graph. It supplies only a conditional summability threshold q<1/784 if a separate activity estimate |ζ_G(S)|≤Aq^|S| is proved. The fixed-support Cauchy envelope still grows like k^(2k) and is not absorbed. No all-orders cluster convergence follows.",
+      "checks": [
+        {
+          "label": "Universal d_e≤8 incidence and D≤28 face-overlap bound",
+          "state": "finite",
+          "note": "From the five-direction elementary inventory."
+        },
+        {
+          "label": "Rooted connected-support bound 784^(k−1)",
+          "state": "finite",
+          "note": "Deterministic depth-first spanning-tree encoding."
+        },
+        {
+          "label": "Promote degree-four crop observation to all source regions",
+          "state": "open",
+          "note": "Eight finite crops only."
+        },
+        {
+          "label": "Volume-independent exact-support activity majorant",
+          "state": "open",
+          "note": "Required before cluster summability."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 connected-support incidence correction",
+          "path": "research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md",
+          "git_blob_sha": "8285ff968642992cf3e5ce8a59c6ae90b60da435",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md"
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "incidence",
+        "connected-support",
+        "combinatorial-bound"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-EXACT-DRESSING-RESIDUAL",
+      "title": "Exact isolated-face dressing leaves a shared-link residual",
+      "kind": "result",
+      "status": "finite",
+      "stage": "P1",
+      "summary": "An exact finite-graph ground-state conjugation writes H as a dressed diffusion plus isolated-face energies and a residual R_e supported only on shared links; d_e≤8 gives residual support ≤25 links.",
+      "detail": "For d_e=1, R_e=0 exactly. A uniform residual norm bound needs the isolated-face derivative estimate; the sharper rotor constant and derivative/Hessian estimates are working analytic estimates, not independently certified by the exact identity. Locality alone does not control the extensive residual sum.",
+      "checks": [
+        {
+          "label": "Exact finite-graph conjugation identity",
+          "state": "finite",
+          "note": "Algebraic identity under the stated operator setup."
+        },
+        {
+          "label": "Residual support ≤25 links and overlap degree ≤800",
+          "state": "finite",
+          "note": "Uses universal d_e≤8."
+        },
+        {
+          "label": "Uniform isolated-face derivative/Hessian estimates",
+          "state": "partial",
+          "note": "Working rotor derivation; standalone verifier pending."
+        },
+        {
+          "label": "Uniform Poincare/stability under extensive residual",
+          "state": "open",
+          "note": "Requires local interacting cancellation/stability."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 exact single-face dressing and shared-link residual",
+          "path": "research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md",
+          "git_blob_sha": "63350c256de4103da4ec7c90c53b9f7a2ba9f38d",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md"
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "dressing",
+        "shared-link-residual",
+        "locality"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "title": "Centered dressed-resolvent third-order mixed coefficient",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "The exact third-order coefficient is a six-permutation reduced-resolvent expression. A source-volume-uniform numerical bound follows conditionally from the current curvature, derivative and semigroup estimates; no spatial spanning-tree decay is yet proved.",
+      "detail": "For distinct labels i,j,k, E_ijk=−Σ_{σ∈S3}ν[r_{σ1}G(r_{σ2}G r_{σ3})]. Under κ=a0/2−2976b0, λ=a0/2−46752b0, b0/a0<1/93504 and the stated derivative constants, |E_ijk|≤1.527×10^16 b0^6/(a0^3 κ λ). This bound is conditional on working analytic estimates and is not an all-orders theorem.",
+      "checks": [
+        {
+          "label": "Centered finite-label recursion and six-term third-order identity",
+          "state": "finite",
+          "note": "Exact formal perturbation algebra."
+        },
+        {
+          "label": "Curvature/Poincare and weighted derivative-semigroup estimates",
+          "state": "partial",
+          "note": "Working analytic derivation; independent verifier pending."
+        },
+        {
+          "label": "Spatially decaying connected tree bound",
+          "state": "open",
+          "note": "No exponential separation factor established."
+        },
+        {
+          "label": "Fourth-order partition cancellation",
+          "state": "open",
+          "note": "Next proof obligation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 centered dressed-resolvent third-order coefficient",
+          "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
+          "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "resolvent",
+        "third-order",
+        "conditional-bound"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "title": "OPEN next: fourth-order partition cancellation and spatial connectedness",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Expand the exact fourth-order recursion, group by set partitions, and prove cancellation of disconnected contributions before seeking a spatial spanning-tree bound.",
+      "detail": "The third-order identity does not establish fourth-order cancellation. For four distinct residual labels, u_ijk=G[Σ_i r_i u_jk+Σ_{i<j}E_ij u_k] and E_ijkl=−Σ_m ν(r_m u_{I\\{m}}). The next step is an explicit expansion and exact cancellation audit. All-orders summability and the physical continuum gap remain separate.",
+      "checks": [
+        {
+          "label": "Expand fourth-order recursion with exact coefficients",
+          "state": "open",
+          "note": "No cancellation assumed."
+        },
+        {
+          "label": "Identify/cancel every disconnected set-partition contribution",
+          "state": "open",
+          "note": "Must be shown term by term."
+        },
+        {
+          "label": "Retain spatial decay in connected remainder",
+          "state": "open",
+          "note": "Needed for tree-graph control."
+        },
+        {
+          "label": "Derive all-orders activity bound",
+          "state": "open",
+          "note": "Not implied by any fixed order."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 centered dressed-resolvent third-order coefficient",
+          "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
+          "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "fourth-order",
+        "partition-cancellation",
+        "open-proof"
       ],
       "importance": 5,
       "core": true,
@@ -14639,6 +14858,55 @@
       "kind": "finite-order-input-not-gap",
       "label": "Fixed-order connected coefficient data; uniform cluster summability and physical gap remain open",
       "status": "open"
+    },
+    {
+      "from_id": "PF-G0",
+      "to_id": "PF-I16-INCIDENCE-UNIFORM-COUNT",
+      "kind": "source-geometry",
+      "label": "universal face-incidence input; crop refinement remains open",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I16-INCIDENCE-UNIFORM-COUNT",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "conditional",
+      "label": "support count is useful only with a volume-uniform activity majorant",
+      "status": "open"
+    },
+    {
+      "from_id": "P1",
+      "to_id": "PF-I16-EXACT-DRESSING-RESIDUAL",
+      "kind": "finite-model-evidence",
+      "label": "exact finite-graph conjugation; physical operator normalization remains open",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I16-EXACT-DRESSING-RESIDUAL",
+      "to_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "kind": "dependency",
+      "label": "dressed diffusion and shared-link residual define the perturbation",
+      "status": "conditional"
+    },
+    {
+      "from_id": "P2",
+      "to_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "kind": "conditional",
+      "label": "third-order local coefficient estimate; no all-orders activity bound",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "to_id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "kind": "next-mathematical-step",
+      "label": "derive fourth-order partition cancellations explicitly",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "to_id": "PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP",
+      "kind": "required",
+      "label": "all-orders connected control still required before physical gap",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -15393,5 +15661,43 @@
     "nontrivial_4d_os_constructed": false,
     "approved_deployment": false,
     "intrinsic_source_operator_audit": "PF-I0-RHOMBUS-OPERATOR-BRIDGE"
+  },
+  "pf_i16_dressed_locality": {
+    "status": "partial_finite_and_conditional",
+    "incidence": {
+      "universal_link_face_degree_max": 8,
+      "face_overlap_degree_max": 28,
+      "rooted_connected_support_bound": "784^(k-1)",
+      "finite_crop_stronger_degree": 4,
+      "finite_crop_sizes": [
+        7,
+        10,
+        12,
+        15,
+        18,
+        20,
+        23,
+        25
+      ],
+      "uniform_degree_four_proved": false
+    },
+    "dressing": {
+      "exact_finite_graph_identity": true,
+      "residual_support_max_links": 25,
+      "residual_overlap_degree_max": 800,
+      "uniform_rotor_derivative_estimate": "working derivation; independent verifier pending"
+    },
+    "third_order": {
+      "exact_six_permutation_identity": true,
+      "conditional_uniform_bound": "1.527e16*b0^6/(a0^3*kappa*lambda)",
+      "kappa": "a0/2-2976*b0",
+      "lambda": "a0/2-46752*b0",
+      "smallness": "b0/a0<1/93504",
+      "spatial_tree_decay_proved": false
+    },
+    "next": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+    "all_orders_summability": false,
+    "source_physical_time": false,
+    "continuum_mass_gap": false
   }
 }
