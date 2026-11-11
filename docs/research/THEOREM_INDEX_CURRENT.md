@@ -767,5 +767,5 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b044c18ac9da37078a8b558eb7046` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7ea0169881ed16689fb2d7cdf4e056` |
 
-**Coverage: 758 / 758 source files indexed.**
+**Coverage: 759 / 759 source files indexed.**
 All scientific statuses must be established separately from the source file.
