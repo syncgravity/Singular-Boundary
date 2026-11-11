@@ -1,6 +1,6 @@
 === independent ordered/weighted/incidence verifier ===
 PASS: exact six-step positive majorant for all |g|<=1/1000 and global derivative envelope
-contraction L = 0.021500104166666666 weighted residual tail = 4.425920625979772e-24
+contraction L = 0.021500104166666666 ball bound = 0.022360002083333334 weighted residual tail = 4.425920625979772e-24
 sup u derivatives (1,2,3) = 0.0003334166863471078 8.335000544081058e-08 1.6669445572269302e-11
 sup s derivatives (1,2,3) = 0.00033352787273214124 1.9461864253698763e-07 1.7430530859029717e-10
 ordered plaquette component T_g = 0.00025029189031917226
@@ -12,7 +12,7 @@ C_R = 0.060153181038438946 C_G = 0.11009448582944525
 c_tr, ell, a, b = 0.2575101249909138 0.0024847359266621017 0.08918193074000456 0.22708350838764282
 lambda_min = 0.06990341472728209
 PASS: exact strip incidence N=1..100, 3N+1 links, <=2 faces/link
-PASS: global derivative envelope maxima = ['1/64', '1/64', '2/729', '24/15625']
+PASS: global derivative-envelope maxima = ['1/64', '1/64', '2/729', '24/15625']
 
 === archived SU2 metric finite-difference corroborator ===
 PASS mixed SU2 quaternion normalized metric finite-difference checks, 90 cases × 16 Hessian blocks
