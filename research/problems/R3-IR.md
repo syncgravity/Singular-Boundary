@@ -10,3 +10,10 @@ Primary starting points: `sources/historical-notes/R3_THEOREM_OBSTRUCTION_AND_MU
 [Theorem record](../theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) records the conditional one-link weighted Poincaré estimate, the exact product-manifold trace commutator, and the resulting weighted trace-energy inequality. The diagonal coercive skeleton has \(c=11/120\), \(c_{\rm tr}=\frac34e^{-49\pi/144}\approx0.2575101\), and leakage \(\ell=4c_{\rm tr}(49/576)^2/3\approx0.00248474\). It does not close the full trace evolution: the remainder contains \(A_2\), \(A_{3,w}\), and \(T_wK_w\), with \(K_w\) the trace-free/mixed Hessian sector.
 
 **Next obligations:** evaluate the local plaquette row bound \(A_2\); bound the ordered weighted third-derivative contraction \(A_{3,w}\); derive the trace-free/mixed Hessian evolution; and verify the full coupled \(3\times3\) quadratic form. This remains a finite open-strip result and is not PF-I16, a 3D transfer theorem, or a continuum gap result.
+
+
+## H2-weighted trace-to-K calculation and audit (2026-11-10)
+
+[Provisional calculation and audit](../theorems/R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md) records the one-output-weight convention, the candidate trace-to-K Hessian block coefficient \(C_{TK}^{\rm cand}<0.007845234\), and the previously derived third-dressing forcing coefficient \(0.049941328\). The additional ordered-curvature estimate \(0.000288844\), its proposed combined forcing coefficient \(0.050230172\), and the Schur diagnostic are explicitly **provisional**, pending exact curvature-contraction and ordered-index incidence audits. They are not promoted to certified constants.
+
+**Next obligations:** independently verify the trace-to-K Schur row/column counts; derive the ordered SU(2) curvature contraction with its exact symmetrization and trace-free projection; bound the K-to-K Hessian-of-dressing and curvature terms; then test the complete coupled energy form. The displayed three-sector diagnostic is not a full Hessian contraction theorem.
