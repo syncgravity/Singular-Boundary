@@ -43,8 +43,8 @@
     },
     {
       "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-      "git_blob_sha": "85aaeba5ea26e9caaceaceee21aa508b581f6294",
-      "bytes": 5411,
+      "git_blob_sha": "174371a911abd78053983527464ba56a2d05a4da",
+      "bytes": 4995,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -71,8 +71,8 @@
     },
     {
       "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-      "git_blob_sha": "0140cf7d5ba882774861750d0cc685368faf548f",
-      "bytes": 7744,
+      "git_blob_sha": "c46b4c17f0969efc7da5e7171ca92558a7666c17",
+      "bytes": 8897,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },

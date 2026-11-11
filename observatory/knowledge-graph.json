@@ -5267,8 +5267,8 @@
         {
           "title": "PF-I16 refined isolated-rotor Hessian and shared-link residual derivatives",
           "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-          "git_blob_sha": "0140cf7d5ba882774861750d0cc685368faf548f",
-          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md"
+          "git_blob_sha": "c46b4c17f0969efc7da5e7171ca92558a7666c17",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md"
         },
         {
           "title": "PF-I16 pointwise Kato–Bochner comparison and derivative-flow locality",
@@ -5394,8 +5394,8 @@
         {
           "title": "PF-I16 centered dressed-resolvent third-order coefficient",
           "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-          "git_blob_sha": "85aaeba5ea26e9caaceaceee21aa508b581f6294",
-          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+          "git_blob_sha": "174371a911abd78053983527464ba56a2d05a4da",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
         }
       ],
       "tags": [
@@ -7833,8 +7833,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "9e2f97d41a434b7e240bfe47298c07c29e155b8c",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/9e2f97d41a434b7e240bfe47298c07c29e155b8c/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "517199c3a05900a898a2fd8871d162e23fcbbade",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/517199c3a05900a898a2fd8871d162e23fcbbade/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
