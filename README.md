@@ -4,6 +4,13 @@
 
 > **Scientific status (November 10, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
+
+## R3_IR · Conditional weighted trace–gradient Bochner block (2026-11-10)
+
+The finite open SU(2) strip now has a conditional weighted trace-block calculation: one-link Holley–Stroock comparison gives \(c_{\rm tr}=\frac34e^{-49\pi/144}\approx0.2575101\), with the nonzero conditional-mean correction and gradient leakage \(\ell\approx0.00248474\). The exact product-manifold trace commutator is recorded with both Ricci contributions. Its weighted remainder is controlled by as-yet unevaluated local constants \(A_2\), \(A_{3,w}\), and a trace-free/mixed Hessian energy \(K_w\).
+
+The two-variable coercive skeleton has rate \(c-\ell\approx0.0891819\), but this is **not** the full trace evolution: a \(T_wK_w\) term remains. The local plaquette evaluation, ordered third-derivative bound, and full \(3\times3\) positivity test remain open. This R3_IR strip work is separate from PF-I16 and does not close any canonical proof gate. [Conditional theorem record](research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) · [R3_IR work ledger](research/problems/R3-IR.md) · [Proof Atlas](observatory/graph.html).
+
 ## PF-I16 · Dressed local interaction: exact identities and open summability (2026-11-10)
 
 The current Penrose–Fibonacci auxiliary quantum route now records four additional theorem-level inputs beyond the exact seven-class four-face coefficient calculation:
