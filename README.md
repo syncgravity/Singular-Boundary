@@ -270,7 +270,7 @@ The [shared-link two-face calculation](research/audits/NESTED_PW_COEFFICIENTWISE
 
 ## Historical integrity
 
-On November 4, 2026, all ten former non-main historical branch heads were integrated into `main`; the canonical theorem index covers **740 files**. This is a verified **Git ancestry** statement, not proof that all theorem bodies or historical original bytes were independently certified. Historical duplicate claim IDs and original-source custody are still subject to the [acceptance gate](docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md). [Branch consolidation report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md).
+On November 4, 2026, all ten former non-main historical branch heads were integrated into `main`; the historical theorem baseline remains **740 files**; the current source-hashed registry covers **760 tracked theorem paths**. This is a verified **Git ancestry** statement, not proof that all theorem bodies or historical original bytes were independently certified. Historical duplicate claim IDs and original-source custody are still subject to the [acceptance gate](docs/research/HISTORICAL_RECORD_ACCEPTANCE_GATE_2026-11-01.md). [Branch consolidation report](docs/research/BRANCH_CONSOLIDATION_COMPLETED_2026-11-04.md).
 
 The uploaded Stage 26 data checks validate selected recorded hashes and source linkages, not Monte Carlo physics, a true 3D refinement, or a continuum Yang–Mills theorem.
 
