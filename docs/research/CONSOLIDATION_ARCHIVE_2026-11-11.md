@@ -2,7 +2,7 @@
 
 **Canonical open integration PR:** [#107 — Establish one source-compatible spectral-inequality proof spine](https://github.com/syncgravity/Singular-Boundary/pull/107)
 
-This ledger records the preservation inventory from the initial 12-PR cleanup. Current disposition: four PRs remain open (#74, #103, #106, #107). It distinguishes merged content from explicitly archived branch histories. Closing a PR does not delete its branch. No unmerged branch is deleted or force-moved by this consolidation.
+This ledger records the preservation inventory from the initial 12-PR cleanup. Current disposition: four PRs remain open (#74, #103, #106, #107). No PR in this section is currently closed or archived. It distinguishes merged content from explicitly archived branch histories. Closing a PR does not delete its branch. No unmerged branch is deleted or force-moved by this consolidation.
 
 ## Merged into the #107 integration branch
 
