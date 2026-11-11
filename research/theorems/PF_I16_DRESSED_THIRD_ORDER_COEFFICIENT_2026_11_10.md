@@ -110,7 +110,7 @@ E_{ijkl}=-\sum_{m\in\{i,j,k,l\}}
 \]
 The supplied intake summary for `Branch · Branch · Continue PF116 Objective (1).md` reports an expansion into 36 terms in three pair-partition channels, with exact cancellation for genuinely independent subsystem decompositions, including the \(2+2\) split. It also reports a cut-interpolation identity for measuring the failure of factorization when subsystems are coupled. The transcript itself was not present in the inspected local project trees, so these details are handoff-reported and await source-byte recovery and independent audit.
 
-This algebraic cancellation does not establish spatial connectedness on the connected Penrose graph. The cut-interpolation identity is a proposed route for coupled subsystems, not a spatial tree theorem. The fourth-order spatial connected-support/tree estimate therefore remains open. Even that estimate would still need to be joined to all-orders convergence, physical normalization, and a continuum gap argument.
+This algebraic cancellation does not establish spatial connectedness on the connected Penrose graph. The cut-interpolation identity is an exact algebraic diagnostic reported by the transcript for coupled subsystems, not a spatial tree theorem. The fourth-order spatial connected-support/tree estimate therefore remains open. Even that estimate would still need to be joined to all-orders convergence, physical normalization, and a continuum gap argument.
 
 ## 5. Proof ledger
 
@@ -118,6 +118,6 @@ This algebraic cancellation does not establish spatial connectedness on the conn
 
 **Conditional/working estimates:** refined rotor Hessian and four-factor mixed-holonomy blocks; pointwise componentwise Kato–Bochner comparison; weighted Duhamel derivative flow; dressed curvature/Poincaré; residual derivative and sup-resolvent estimates; revised third-order numerical bound.
 
-**Open:** standalone sign/trivialization/regularization audit of the four-factor calculation; spatially decaying third-order tree bound; fourth-order spatial connected-support/tree estimate for coupled Penrose subsystems; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap. The reported fourth-order algebraic cancellation for independent decompositions still awaits recovery of its transcript source.
+**Open:** standalone sign/trivialization/regularization audit of the four-factor calculation; spatially decaying third-order tree bound; fourth-order spatial connected-support/tree estimate for coupled Penrose subsystems; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap. The fourth-order algebraic cancellation for independent decompositions is transcript-reported, with the original transcript's size and SHA-256 recorded above; full-byte repository import and independent audit remain pending.
 
 The previous third-order numerical prefactor and thresholds are superseded, not silently retained. No spatial tree decay or all-orders conclusion is claimed.
