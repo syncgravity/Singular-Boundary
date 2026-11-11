@@ -75,3 +75,19 @@ G_w(t)^2+H_w(t)^2
 for \(H^2\) initial data on each finite open straight strip, and by positive-time smoothing for \(L^2\) data away from time zero. The rate is independent of strip length under the stated uniform local hypotheses; norm-equivalence constants need not be.
 
 **Status:** a consolidated conditional proposition, not a promoted theorem or claim. The weighted Bochner and conditional one-link trace–Poincaré estimates remain imported analytic hypotheses. No nonlinear interacting fixed point, pointwise interacting Hessian bound, volume-uniform residual response, physical-coupling gap, 3D transfer, continuum limit, or continuum mass gap follows. The provisional three-sector trace-to-K calculation remains paused; PR #106 stays draft and main remains unchanged.
+
+## Sharpened weighted Bochner and conditional trace–Poincaré inputs (2026-11-11)
+
+[Sharpened analytic-input audit](../audits/R3_IR_SHARP_WEIGHTED_BOCHNER_AND_TRACE_POINCARE_2026-11-11.md) reuses the global positive-majorant derivative enclosure from the local-geometry audit to replace the coarse score envelope \(49/576\) by \(B_*<0.000333528\), and \(q_* = \|s_g'\|_\infty+\|s_g''\|_\infty<0.000333722619\). It rederives, rather than imports, the two analytic inputs:
+- weighted Bochner rate \(c_*>0.4983981314\);
+- conditional one-link trace Poincaré \(c_{\rm tr,*}>0.7468631508\), with leakage \(\ell_*<1.108\times10^{-7}\).
+
+The accompanying [arithmetic verifier](../audits/verify_R3_IR_sharp_weighted_analytic_inputs_2026-11-11.py) and [log](../audits/R3_IR_SHARP_WEIGHTED_ANALYTIC_INPUTS_2026-11-11.log) check the propagated constants. Keeping the already-audited local Hessian and third-tensor terms, the full-Hessian energy matrix has \(\lambda_{\min}>0.4955484\). The consolidated proposition has been updated accordingly.
+
+## Bounded-incidence extension and three-sector decision (2026-11-11)
+
+[Bounded-incidence extension audit](../audits/R3_IR_BOUNDED_INCIDENCE_ANALYTIC_EXTENSION_2026-11-11.md) derives degree-\(r\) versions of the weighted Bochner and conditional one-link inequalities for finite product-SU(2) four-link plaquette complexes. With the conservative degree-four incidence bounds (the maximum link-face incidence of an open 3D cubic plaquette complex), the full-Hessian energy matrix remains positive with \(\lambda_{\min}>0.4800\). The [verifier](../audits/verify_R3_IR_bounded_incidence_extension_2026-11-11.py) and [log](../audits/R3_IR_BOUNDED_INCIDENCE_EXTENSION_2026-11-11.log) reproduce both degree two and degree four.
+
+**Scope boundary:** this is a conditional finite-dimensional product-link reference-measure extension. It is not a 3D transfer theorem or a result for a regulator until its action, link variables, plaquette supports, incidence, metric, and boundary identifications are checked against the model-class hypotheses.
+
+**Research decision:** the provisional trace-to-\(K\) three-sector calculation is not appropriate as the next step for the current reference-semigroup objective. The sharpened trace coercivity and full-Hessian curvature decomposition already close the one-output energy with a large positive margin. Keep the three-sector record dormant as a cross-check; reopen only for a different norm, non-product geometry, loss of bounded incidence, or an interacting estimate not covered by this argument. No theorem/claim ID is promoted.
