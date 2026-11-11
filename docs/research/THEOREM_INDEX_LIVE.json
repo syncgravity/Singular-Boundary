@@ -2,9 +2,9 @@
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
   "generated_utc_date": "2026-11-10",
-  "source_commit": "7461e4c4e5577109b4c3ef9dacb615f15c23b76d",
+  "source_commit": "2e21ad079b9e7655708082d4e5907ddc13e88481",
   "baseline_historical_count": 740,
-  "count": 760,
+  "count": 761,
   "theorems": [
     {
       "path": "research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md",
@@ -948,6 +948,13 @@
       "path": "research/theorems/R3_IR_CONDITIONAL_SU2_POINCARE_COERCIVITY_2026-10-30.md",
       "git_blob_sha": "7d713120b7088e6dbf20a8df35781028cbfd479e",
       "bytes": 2278,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md",
+      "git_blob_sha": "77ff4da00ee2db8063c0390aa48fe53642d26bf9",
+      "bytes": 9100,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
