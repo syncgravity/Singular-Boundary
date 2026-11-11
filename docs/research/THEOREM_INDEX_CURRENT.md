@@ -1,6 +1,6 @@
 # Current complete theorem source navigator
 
-**Current source files:** **755** indexed paths in this checkout. **Historical baseline:** 740 records.
+**Current source files:** **758** indexed paths in this checkout. **Historical baseline:** 740 records.
 This is source discovery, not independent proof certification or closure of any P0–P5 / Penrose / gravitational goal.
 
 [Historical navigator and later appendices](THEOREM_INDEX.md) · [Source-hashed canonical registry](THEOREM_INDEX_LIVE.json) · [Curated Proof Atlas](../../observatory/graph.html)
@@ -45,7 +45,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_EQUAL_COUPLING_SIGN_ORBIT_NONHAAR_2026-10-30.md](../../research/theorems/R3_EQUAL_COUPLING_SIGN_ORBIT_NONHAAR_2026-10-30.md) | `0ffbe6aeac9d420da326dd347cee381a255d85c3` |
 | [R3_EXACT_DELETION_TRIAL_IDENTITY_2026-10-30.md](../../research/theorems/R3_EXACT_DELETION_TRIAL_IDENTITY_2026-10-30.md) | `8111d1666b5555a0f26a65f7b5dd1a2b477aefef` |
 | [R3_EXACT_EXPONENTIAL_TILT_DELETION_2026-10-30.md](../../research/theorems/R3_EXACT_EXPONENTIAL_TILT_DELETION_2026-10-30.md) | `169e3ba72988ca9078fe5fef402af4a0af54b773` |
-| [R3_EXACT_INTERACTING_RADIAL_REDUCTION_2026-10-30.md](../../research/theorems/R3_EXACT_INTERACTING_RADIAL_REDUCTION_2026-10-30.md) | `f150fb3108b76dd8d755d9f6292bd72103ea3d63` |
+| [R3_EXACT_INTERACTING_RADIAL_REDUCTION_2026-10-30.md](../../research/theorems/R3_EXACT_INTERACTING_RADIAL_REDUCTION_2026-10-30.md) | `f150fb3108b76dd8d758d9f6292bd72103ea3d63` |
 | [R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md](../../research/theorems/R3_EXACT_TWO_TIME_INFLUENCE_AND_DYADIC_SCALING_2026-11-06.md) | `fa21e892ba3ad4989564360195e45453c1ca98e0` |
 | [R3_EXPLICIT_FINITE_OPEN_DISK_CENTER_CAP_2026-10-30.md](../../research/theorems/R3_EXPLICIT_FINITE_OPEN_DISK_CENTER_CAP_2026-10-30.md) | `8f3ece873c108e780871cdf68ba7b4f80c349077` |
 | [R3_EXPLICIT_RETAINED_PLAQUETTE_IMS_COST_2026-10-30.md](../../research/theorems/R3_EXPLICIT_RETAINED_PLAQUETTE_IMS_COST_2026-10-30.md) | `d8c927ce435a3ee8bcf621949bccb843516daa06` |
@@ -159,7 +159,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_IR_CROSS_OPERATOR_CONSISTENCY_2026-11-01.md](../../research/theorems/R3_IR_CROSS_OPERATOR_CONSISTENCY_2026-11-01.md) | `23181f5168f60f905e3b438689156226d13ff74c` |
 | [R3_IR_CUBIC_3D_WEAK_COUPLING_GEOMETRY_AUDIT_2026-11-03.md](../../research/theorems/R3_IR_CUBIC_3D_WEAK_COUPLING_GEOMETRY_AUDIT_2026-11-03.md) | `78f2bf1ba5a039e76776454b5b3ffcbe38e9c525` |
 | [R3_IR_CUBIC_SHARED_LINK_EXACT_COVARIANCE_2026-11-01.md](../../research/theorems/R3_IR_CUBIC_SHARED_LINK_EXACT_COVARIANCE_2026-11-01.md) | `4617f04393edf01f9031bd02f06c10e013d5d4ae` |
-| [R3_IR_CURVATURE_WEIGHTED_FSUM_2026-10-28.md](../../research/theorems/R3_IR_CURVATURE_WEIGHTED_FSUM_2026-10-28.md) | `4e4dd0e8bb73f7550d6a0f8d61c1b24b68368e4a` |
+| [R3_IR_CURVATURE_WEIGHTED_FSUM_2026-10-28.md](../../research/theorems/R3_IR_CURVATURE_WEIGHTED_FSUM_2026-10-28.md) | `4e4dd0e8bb73f7580d6a0f8d61c1b24b68368e4a` |
 | [R3_IR_CUT_ALLORDER_WEIGHTED_MAJORANT_2026-11-02.md](../../research/theorems/R3_IR_CUT_ALLORDER_WEIGHTED_MAJORANT_2026-11-02.md) | `15e6433f46e4fb239ab6159dec2f72de55d37963` |
 | [R3_IR_CUT_ANALYTIC_ENDPOINT_2026-11-02.md](../../research/theorems/R3_IR_CUT_ANALYTIC_ENDPOINT_2026-11-02.md) | `8b1e51a5550ae62a46f5931bd7c9b9db04e79986` |
 | [R3_IR_CUT_AVERAGED_GRADIENT_EXPLICIT_2026-11-02.md](../../research/theorems/R3_IR_CUT_AVERAGED_GRADIENT_EXPLICIT_2026-11-02.md) | `06d6827beba39441e6bb56cd43f08b8d4f2d7a22` |
@@ -351,7 +351,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_IR_LOCAL_WILSON_HARNACK_2026-10-31.md](../../research/theorems/R3_IR_LOCAL_WILSON_HARNACK_2026-10-31.md) | `8a146fab65d3b277f7d93bd688912fe8da5cb1fd` |
 | [R3_IR_LOCAL_WILSON_RESPONSE_FSUM_2026-10-31.md](../../research/theorems/R3_IR_LOCAL_WILSON_RESPONSE_FSUM_2026-10-31.md) | `05f1a24e505a1c95cbee21fe2ca69944d6c451a7` |
 | [R3_IR_M55_EXACT_ELECTRIC_COMMUTATOR_2026-10-31.md](../../research/theorems/R3_IR_M55_EXACT_ELECTRIC_COMMUTATOR_2026-10-31.md) | `9f6f9e3c97e8e86169f8de672e452ffb4f7c2903` |
-| [R3_IR_M55_FULL_PATH_JACOBIAN_2026-10-31.md](../../research/theorems/R3_IR_M55_FULL_PATH_JACOBIAN_2026-10-31.md) | `808b62ca69bcbb39c3548cfd4854e7554a5f0683` |
+| [R3_IR_M55_FULL_PATH_JACOBIAN_2026-10-31.md](../../research/theorems/R3_IR_M55_FULL_PATH_JACOBIAN_2026-10-31.md) | `808b62ca69bcbb39c3548cfd4854e7584a5f0683` |
 | [R3_IR_MANY_FACE_STRONG_FIELD_AND_SIGNED_GAUSSIAN_DYNAMICS_2026-10-28.md](../../research/theorems/R3_IR_MANY_FACE_STRONG_FIELD_AND_SIGNED_GAUSSIAN_DYNAMICS_2026-10-28.md) | `831ca728eb2ad459696e7648df3ecd6cfc2de9a4` |
 | [R3_IR_MATRIX_PW_PROJECTIVE_EDGE_2026-11-01.md](../../research/theorems/R3_IR_MATRIX_PW_PROJECTIVE_EDGE_2026-11-01.md) | `d3dcff24f45d8ce47378e61735bd20aa8cc20575` |
 | [R3_IR_MESOSCOPIC_INTERIOR_CURVATURE_2026-10-28.md](../../research/theorems/R3_IR_MESOSCOPIC_INTERIOR_CURVATURE_2026-10-28.md) | `fb32335fa3b50c8d71cf2f22915db2e4e1068e03` |
@@ -401,7 +401,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_IR_OUTER_LOOP_WORD_SCALING_2026-10-31.md](../../research/theorems/R3_IR_OUTER_LOOP_WORD_SCALING_2026-10-31.md) | `6a9e121ce0d1203eb8a5ce66ded011caed4bed70` |
 | [R3_IR_OVERLAP_DOMINO_COVARIANCE_COEFFICIENT_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_DOMINO_COVARIANCE_COEFFICIENT_2026-10-31.md) | `c857d00b87eb98282f47aa5a7b1e64e72169c976` |
 | [R3_IR_OVERLAP_REPEATED_FACE_SECTOR_PATH_BOUND_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_REPEATED_FACE_SECTOR_PATH_BOUND_2026-10-31.md) | `da61497b75b5d3af32710cfff0028b850b0bd876` |
-| [R3_IR_OVERLAP_SHARED_FACE_ENERGY_NORMALIZATION_GATE_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_SHARED_FACE_ENERGY_NORMALIZATION_GATE_2026-10-31.md) | `ee8d4fffed2c727da86faac6cda37559bd59c59a` |
+| [R3_IR_OVERLAP_SHARED_FACE_ENERGY_NORMALIZATION_GATE_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_SHARED_FACE_ENERGY_NORMALIZATION_GATE_2026-10-31.md) | `ee8d4fffed2c727da86faac6cda37589bd59c59a` |
 | [R3_IR_OVERLAP_SHARED_FACE_EXACT_RATIONAL_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_SHARED_FACE_EXACT_RATIONAL_2026-10-31.md) | `a4d39c3e81750d52e00c1a2a807205a62fec6599` |
 | [R3_IR_OVERLAP_SPARSE_FOURTH_MONOMIALS_2026-10-31.md](../../research/theorems/R3_IR_OVERLAP_SPARSE_FOURTH_MONOMIALS_2026-10-31.md) | `93f2389431bddd21ff585d3efa8f5211bb1154ce` |
 | [R3_IR_PARABOLIC_HESSIAN_CONCENTRATION_HEAT_MODE_2026-11-02.md](../../research/theorems/R3_IR_PARABOLIC_HESSIAN_CONCENTRATION_HEAT_MODE_2026-11-02.md) | `74675921bb5f950aa1cb9344e6234c418724c6dc` |
@@ -541,7 +541,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_IR_THREE_FACE_FULL_WIGNER_L1_POISSON_2026-11-02.md](../../research/theorems/R3_IR_THREE_FACE_FULL_WIGNER_L1_POISSON_2026-11-02.md) | `3d85c2122b4ab595740fb1afcac2fd43eb3d7267` |
 | [R3_IR_THREE_FACE_MIXED30_GALERKIN_2026-10-31.md](../../research/theorems/R3_IR_THREE_FACE_MIXED30_GALERKIN_2026-10-31.md) | `3addda708ba9be682ffc2f6f56f5b642b079b2ee` |
 | [R3_IR_THREE_FACE_ORIENTATION_FORM_AUDIT_2026-11-02.md](../../research/theorems/R3_IR_THREE_FACE_ORIENTATION_FORM_AUDIT_2026-11-02.md) | `7fa77dbbf6b78dc34f43d5317c95d124faef1bdc` |
-| [R3_IR_THREE_FACE_QUADRATIC_QUARTIC_COUPLING_2026-11-01.md](../../research/theorems/R3_IR_THREE_FACE_QUADRATIC_QUARTIC_COUPLING_2026-11-01.md) | `907e58e8f9a354b08d60ccd0755008fa224cfdd6` |
+| [R3_IR_THREE_FACE_QUADRATIC_QUARTIC_COUPLING_2026-11-01.md](../../research/theorems/R3_IR_THREE_FACE_QUADRATIC_QUARTIC_COUPLING_2026-11-01.md) | `907e58e8f9a354b08d60ccd0758008fa224cfdd6` |
 | [R3_IR_THREE_PLAQUETTE_TEN_LINK_GAUSS_OPERATOR_AND_NONLOCAL_OBSTRUCTION_2026-11-02.md](../../research/theorems/R3_IR_THREE_PLAQUETTE_TEN_LINK_GAUSS_OPERATOR_AND_NONLOCAL_OBSTRUCTION_2026-11-02.md) | `b1cf5331643fdee7fe6e5d134253e22a9f861d29` |
 | [R3_IR_THREE_PRIORITY_AUDIT_2026-10-28.md](../../research/theorems/R3_IR_THREE_PRIORITY_AUDIT_2026-10-28.md) | `e356c1f17f4126e9f864ebbae1a459e4a772c241` |
 | [R3_IR_THREE_SOURCE_ENERGY_WINDOW_2026-10-28.md](../../research/theorems/R3_IR_THREE_SOURCE_ENERGY_WINDOW_2026-10-28.md) | `fa0733260c79d7f958558905112a59b7111ff681` |
@@ -763,5 +763,16 @@ This is source discovery, not independent proof certification or closure of any 
 | [R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ZERO_LOCAL_COUPLING_PARITY_CENTER_MASS_OBSTRUCTION_2026-10-30.md) | `be62cb17423b044c18ac9da37078a8b558eb7046` |
 | [R3_ZERO_SHIFT_INVERSE_CERT.md](../../research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md) | `b5199ac83f7ea0169881ed16689fb2d7cdf4e056` |
 
-**Coverage: 755 / 755 source files indexed.**
+**Coverage: 758 / 758 source files indexed.**
 All scientific statuses must be established separately from the source file.
+
+
+## PF-I16 dressed-locality additions — 2026-11-10
+
+| Record | Status | Source |
+|---|---|---|
+| Connected-support incidence correction: universal degree 28 / count 784^(k−1); degree-four remains finite-crop only | Combinatorial bound; cluster activity OPEN | [PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md](../../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) |
+| Exact single-face dressing and shared-link residual identity | Exact finite-graph identity; uniform estimates conditional | [PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) |
+| Centered dressed-resolvent third-order mixed coefficient | Exact recursion; numerical bound conditional on working analytic estimates | [PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) |
+
+**Coverage: 758 / 758 source files indexed.** Indexing remains source discovery, not mathematical certification.
