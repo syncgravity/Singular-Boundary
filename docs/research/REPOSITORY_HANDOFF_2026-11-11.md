@@ -12,9 +12,22 @@
 6. [Yang–Mills proof interface](../../observatory/yang-mills-proof.html) — legacy interface; defer to the spectral-inequality page for the canonical dependency spine.
 7. [Branch lifecycle and retirement protocol](BRANCH_LIFECYCLE_2026-11-11.md) — live branch snapshot, safe-retirement rules and action procedure.
 
-## Consolidation outcome · 2026-11-11 (supersedes the earlier snapshot below)
+## Live four-PR review board · 2026-11-11
 
-The initial 12 open PRs have been reduced to **one open PR: #107**. Eight research PRs (#55, #56, #79–#84) were merged as separate commits into this integration branch. Three overlapping snapshot PRs (#74, #103, #106) were closed unmerged only after their exact branch-head SHAs and complete changed-path inventories were recorded in [the consolidation archive](CONSOLIDATION_ARCHIVE_2026-11-11.md). Their branch refs remain intact; no unmerged research branch was deleted. The old 12-PR list and 108-ref count below are a historical baseline, not the current PR state.
+There are **four open PRs**, tracked together in the [Observatory graph v2.74](../../observatory/graph.html) and [standalone review board](FOUR_PR_REVIEW_BOARD_2026-11-11.md). #74, #103 and #106 were reopened after the user clarified that unresolved contributions should remain active rather than archived/closed. The prior archive file records the temporary closure and preservation inventory only; it is not the current disposition.
+
+| PR | Branch / base | Role | Current mergeability |
+|---|---|---|---|
+| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | `architecture/source-compatible-spectral-spine-2026-11-11` → `main` | Canonical S0–S5 integration | Mergeable |
+| [#106](https://github.com/syncgravity/Singular-Boundary/pull/106) | `audit/r3-ir-h2-trace-to-k-2026-11-10` → #107 branch | R3-IR finite-strip full-Hessian analysis | Conflict / not mergeable |
+| [#74](https://github.com/syncgravity/Singular-Boundary/pull/74) | `audit/2026-11-06-nonabelian-tube-complete-theorem-index` → `main` | Finite non-Abelian tube and theorem-index work | Conflict / not mergeable |
+| [#103](https://github.com/syncgravity/Singular-Boundary/pull/103) | `pages-public-ready` → `main` | Observatory publishing configuration | Conflict / not mergeable |
+
+Do not close these PRs as a cleanup shortcut. Resolve each unique content and its overlapping generated artifacts. Do not merge Pages activation into the private research repository. The public delivery target is the Tau-hosted Fly mount at `https://qualion.org/yang-mills`.
+
+## Prior consolidation tranche · 2026-11-11 (historical)
+
+At the time of this earlier snapshot, the initial 12 open PRs had been reduced to one. Per the subsequent instruction, #74, #103 and #106 have been reopened; the current target is four active PRs. Eight research PRs (#55, #56, #79–#84) were merged as separate commits into this integration branch. The temporary closures were reversed. Their exact branch-head SHAs and complete changed-path inventories remain recorded in [the preservation ledger](CONSOLIDATION_ARCHIVE_2026-11-11.md); their branch refs remain intact. The old 12-PR list and 108-ref count below are historical baselines, not current live counts.
 
 The generated theorem catalog and both graph serializations were rebuilt from the Git-blob-verified live registry after the PF-I16 source hash/byte-count correction. The source index itself passed its verifier in the prior CI run; that run then failed because four generated Observatory outputs were stale. The rebuild has now been committed to this branch. A fresh workflow result must still be checked; do not report CI as passing until it is observed.
 
