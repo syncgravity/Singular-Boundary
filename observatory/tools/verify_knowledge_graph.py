@@ -105,7 +105,7 @@ def main():
   check(node['PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION']['status']=='open','fourth-order cancellation remains open')
   check(any(z['from_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['to_id']=='PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION' and z['status']=='open' for z in e),'fourth-order next-step edge missing')
   check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
- if g['version'] in ('v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner'):
+ if g['version'] in ('v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient'):
   check(node['PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES']['status']=='conditional','refined rotor estimates remain conditional')
   check(any(z['from_id']=='PF-I16-EXACT-DRESSING-RESIDUAL' and z['to_id']=='PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES' for z in e),'refined rotor dependency edge missing')
   check(g['pf_i16_dressed_locality']['third_order']['prior_numeric_bound_revalidated'] is False,'prior third-order bound not silently promoted')
