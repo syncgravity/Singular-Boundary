@@ -1,6 +1,6 @@
 # Complete theorem-record navigator
 
-> **Current inventory — November 10, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **758 of 758** tracked theorem files; these 740 baseline links and 18 later entries are retained below. Indexing is source discovery, not proof certification.
+> **Current inventory — November 10, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **759 of 759** tracked theorem files; these 740 baseline links and 18 later entries are retained below. Indexing is source discovery, not proof certification.
 
 > **Historical baseline — November 4, 2026:** `main` then contained **740 theorem Markdown records**, including **202 original theorem files merged from the historic audit branch without changing their contents**. The 335-file category index below is retained as a historical baseline; the additional 405 files are linked in the appendix. This is a filename index, **not** mathematical certification. Conflicting historical claim IDs remain source-qualified and unresolved; see the claim identity crosswalk.
 
@@ -829,3 +829,4 @@ These original files were missing from the November 1 index, including files alr
 | Connected-support incidence correction | 2026-11-10 | [PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md](../../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md) |
 | Exact single-face dressing and shared-link residual | 2026-11-10 | [PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) |
 | Centered dressed-resolvent third-order coefficient | 2026-11-10 | [PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) |
+| Refined isolated-rotor Hessian and shared-link residual derivatives | 2026-11-10 | [PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md](../../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) |
