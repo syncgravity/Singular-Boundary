@@ -370,7 +370,7 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 | Quantity | Conservative bound / value |
 |---|---:|
 | Coupling range | \(|g|\le10^{-3}\) |
-| (B_*=\|\nabla_eS_g\|_\infty) | \(<0.000333528\) |
+| \\(B_*=\|\nabla_eS_g\|_\infty) | \(<0.000333528\) |
 | \(T_g\) | \(<0.000250292\) |
 | \(C_3\) | \(<0.049941327\) |
 | \(h\) | \(<0.000166813\) |
