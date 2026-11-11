@@ -97,14 +97,27 @@ const pfXY={
 'T4-OS-LIMIT':[1650,1270],'T5-GAP-TRANSFER':[1950,1270]
 };
 const compareXY={
-'G-GRAV':[1250,180],'THEOREM':[1250,580],
-'M-PENROSE-2D':[130,175],'M-SQUARE-2D':[130,595],
-'M-Z5':[570,90],'M-CUBIC':[570,675],
-'I-PENROSE-SQUARE':[525,380],'P0':[955,380],
-'W-ORIGINAL-SOURCES':[940,700],'W-GRAV-OP':[965,85],
-'D-ARCHIVE':[130,1120],'D-SWEEPS':[480,1120],'D-SPECTRAL-SOURCES':[650,25],
-'S-SPECTRAL-DIMENSION':[280,30],'S-CUT-PROJECT-ZETA':[460,30],'S-COMPLEX-STRUCTURE':[650,90],'S-CONFORMAL-SPECTRAL':[840,170],
-'W-Z5':[1150,720],'R-CUBE':[620,920],'R-P0-HK':[1230,1000]};
+'M-Z5':[100,160],'M-PENROSE-2D':[100,400],'M-SQUARE-2D':[100,760],'M-CUBIC':[100,1100],
+'I-PENROSE-SQUARE':[470,560],'D-ARCHIVE':[470,190],'D-SWEEPS':[470,930],'D-FULL':[470,1300],
+'FILE-01':[850,190],'FILE-02':[850,370],'FILE-03':[850,550],'FILE-04':[850,730],
+'FILE-05':[1080,190],'FILE-06':[1080,370],'FILE-07':[1080,550],'FILE-08':[1080,730],
+'FILE-09':[1390,190],'FILE-10':[1390,370],'FILE-11':[1390,550],'FILE-12':[1390,730],
+'FILE-13':[1620,190],'FILE-14':[1620,370],'FILE-15':[1620,550],'FILE-16':[1620,730],
+'FILE-17':[470,1510],
+'PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222':[2020,160],
+'PF-I16-INCIDENCE-UNIFORM-COUNT':[2020,370],
+'PF-I16-EXACT-DRESSING-RESIDUAL':[2020,580],
+'PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES':[2020,790],
+'PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW':[2020,1000],
+'PF-I16-THIRD-ORDER-DRESSED-RESOLVENT':[2020,1210],
+'PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION':[2020,1420],
+'PF-I16-SOURCE-PHYSICAL-KINETIC-AND-LOCAL-UNIFORM-GAP':[2020,1630],
+'PF-G0':[2460,160],'PF-G1':[2460,370],'PF-G2':[2460,580],
+'PF-G3':[2460,790],'PF-G4':[2460,1000],'PF-G5':[2460,1210],
+'P0':[2900,160],'P1':[2900,370],'P2':[2900,580],
+'P3':[2900,790],'P4':[2900,1000],'P5':[2900,1210],
+'G-GRAV':[3300,160],'THEOREM':[3300,580]
+};
 const bridgeXY={
 'M-PENROSE-2D':[50,120],'M-Z5':[340,120],'I-QG-SPECTRAL-OP':[1280,120],'G-GRAV':[1610,120],
 'T0-QC-3D':[240,400],'T1-QC-ACTION':[535,400],'T2-OBSERVABLES':[840,400],
@@ -133,7 +146,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
  if(view==='concepts')return Object.prototype.hasOwnProperty.call(conceptXY,n.id);
  if(view==='pf')return Object.prototype.hasOwnProperty.call(pfXY,n.id);
  if(view==='bridge')return Object.prototype.hasOwnProperty.call(bridgeXY,n.id);
- if(view==='comparison')return ['G-GRAV','THEOREM','M-PENROSE-2D','M-SQUARE-2D','M-Z5','M-CUBIC','I-PENROSE-SQUARE','P0','W-ORIGINAL-SOURCES','W-GRAV-OP'].includes(n.id);
+ if(view==='comparison')return Object.prototype.hasOwnProperty.call(compareXY,n.id);
  if(view==='spine')return n.kind==='gate'||n.kind==='goal'||n.kind==='model'||n.core&&(n.kind==='result'||n.kind==='work'||n.kind==='data_family'||n.kind==='publication');
  if(view==='evidence')return ['gate','goal','model','result','interface'].includes(n.kind);
  if(view==='work')return ['gate','goal','work','interface'].includes(n.kind)||n.kind==='result'&&n.status==='obstruction';
@@ -148,7 +161,7 @@ function visibleSet(){let list=G.nodes.filter(n=>{
 function ensurePositions(){for(const n of G.nodes){if(!positions.has(n.id))positions.set(n.id,[...positionFor(n)])}}
 function setView(next){view=next;dataPositionsCache=dataPositions();positions=new Map();highlightedPath=[];
  document.querySelectorAll('.lens').forEach(x=>{const on=x.dataset.view===view;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});
- const headings={ym:'YANG–MILLS EXISTENCE + GAP · PHYSICAL 3D REGULATOR → INTERACTING VACUUM PI → 4D OS',concepts:'2D CONWAY WORMS → 3D OBSERVER → CONDITIONAL 34:55 EMERGENCE',pf:'COUPLED-Z5 / CONWAY–FIBONACCI / HELICAL OBSERVER · PF-G0–G5, H0–H6; QUANTUM COVARIANCE',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE GEOMETRY · PERIODIC CONTROLS',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
+ const headings={ym:'YANG–MILLS EXISTENCE + GAP · PHYSICAL 3D REGULATOR → INTERACTING VACUUM PI → 4D OS',concepts:'2D CONWAY WORMS → 3D OBSERVER → CONDITIONAL 34:55 EMERGENCE',pf:'COUPLED-Z5 / CONWAY–FIBONACCI / HELICAL OBSERVER · PF-G0–G5, H0–H6; QUANTUM COVARIANCE',bridge:'CUBIC SU(2) CONTROL → GEOMETRIC TRANSFER · T0–T5',comparison:'PENROSE–FIBONACCI HYPOTHESIS vs AREA-MATCHED SQUARE CONTROL · ARCHIVED RUNS → PF-I16 → OPEN GATES',spine:'THE PROOF SPINE',evidence:'RECORDED EVIDENCE',work:'UNRESOLVED PROOF WORK',data:'ARCHIVED DATA + CUSTODY',all:'ALL CURATED RELATIONSHIPS'};
  $('graphViewLabel').textContent=headings[view];applyGraph(true)}
 function setFilter(next){filter=next;document.querySelectorAll('.filter').forEach(x=>{const on=x.dataset.filter===filter;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});applyGraph(true)}
 function showError(s){const t=$('nodeLayer');t.replaceChildren();t.appendChild(svg('text',{x:100,y:130,fill:'#9fc0c8','font-size':18},s));edgeLayer.replaceChildren()}
