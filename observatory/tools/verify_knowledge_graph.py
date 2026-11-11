@@ -18,7 +18,7 @@ def main():
  if (here/'knowledge-graph.json').exists():root=here
  else:root=here.parent
  g=json.loads((root/'knowledge-graph.json').read_text());m=json.loads((root/'data-manifest.json').read_text() if (root/'data-manifest.json').exists() else (root/'data_manifest.json').read_text())
- check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==755,'current theorem paths must match source registry');check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
+ check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==758,'current theorem paths must match source registry');check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
  n=g['nodes'];e=g['edges'];ids=[x['id'] for x in n];check(len(ids)==len(set(ids)),'duplicate ids');node={x['id']:x for x in n};check(len(g['nodes'])>=70,'node loss');check(len(g['edges'])>=100,'edge loss')
  for a in e:
   check(a['from_id'] in node and a['to_id'] in node,f'dangling edge {a}')
@@ -45,11 +45,11 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'),'unexpected graph version')
- if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663)}
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality'):
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
-  if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222'):
+  if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
    check(node['YM-UNIFORM-GAUGE-POINCARE']['status']=='open','uniform physical quantum mass gap OPEN')
    check(node['YM-GROUNDSTATE-DIRICHLET']['status']=='finite','finite true-vacuum identity')
