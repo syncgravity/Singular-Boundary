@@ -1,5 +1,29 @@
 # Proof dependencies and noncircular checkpoints
 
+## PF-I16 · Auxiliary dressed-locality ladder (2026-11-10; no canonical gate closure)
+
+The Penrose–Fibonacci groundwork now supports a more detailed **sub-proof route** inside the existing P0–P5 / PF-G0–G5 architecture. It does not replace those gates and does not close any of them.
+
+1. **Finite source interaction data — established at fixed scope.** PF-I16's exact seven-class \(C_{2,2,2,2}\) result remains the fully four-face-connected eighth-order contribution only; it is not the complete eighth-order energy.
+2. **Universal incidence and support counting — established combinatorially.** The safe source-uniform inventory is \(d_e\le8\), giving face-overlap degree \(D\le28\) and rooted connected support count \(784^{k-1}\). The sharper \(D\le4\) is observed on eight finite crops only.
+3. **Single-face dressing — exact finite-graph identity.** The ground-state conjugation leaves a residual supported only at shared links (at most 25 links per residual term under \(d_e\le8\)). Uniform derivative/Hessian and Poincaré estimates are separate analytic obligations.
+4. **Third-order mixed coefficient — exact algebra, conditional norm bound.** The centered reduced-resolvent coefficient has a six-permutation formula. A volume-uniform numerical bound is conditional on the working curvature, derivative and semigroup estimates; it does not contain spatial spanning-tree decay.
+5. **Fourth-order partition cancellation — next open lemma.** Expand the exact recursion and prove each disconnected set-partition cancellation. Do not infer this from third order.
+6. **All-orders connected activity — open.** Need a volume-independent activity majorant and spatial tree bound. The existing fixed-support Cauchy envelope grows like \(k^{2k}\), so it is not absorbed by the exponential support count.
+7. **Physical transfer and continuum — still open.** Source-derived kinetic/time normalization, physical gauge/hull measure, genuine refining 3D regulator, interacting continuum reconstruction and a strictly positive physical mass gap remain unproved.
+
+### Effect on the canonical gates
+
+- **P0 / PF-G0–G1:** source/operator identity and a physically valid, genuinely refining three-dimensional regulator remain open. The accepted-rhombus incidence result is useful geometry, not a completed 3D cellulation certificate.
+- **P1 / PF-G2:** the auxiliary SU(2) finite-graph identities do not supply source-derived physical kinetic coefficients, time, or the complete physical Gauss-sector Hamiltonian.
+- **P2 / PF-G3–G4:** dressing and third order sharpen a local interacting route, but fourth-order cancellation, all-orders summability and refinement-uniform estimates remain open.
+- **P3–P5 / PF-G5:** physical vacuum/current, reconstructed infrared spectrum, nontrivial four-dimensional continuum theory and positive physical mass gap remain open.
+
+The PF-I16 ladder is therefore an internal refinement of the research plan, not a relaxation or renaming of the acceptance criteria. See the [PF-I16 theorem records](../../research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md), [dressing identity](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md), and [third-order coefficient note](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md).
+
+---
+
+
 ## P2 / T2 · Original-link full non-Abelian plaquette-influence theorem (2026-11-06; finite classical)
 
 [Full proof and numerical scope](../../research/theorems/R3_FULL_NONABELIAN_CUBIC_PLAQUETTE_INFLUENCE_AND_MAXIMUM_OBSTRUCTION_2026-11-06.md). Unlike the positive-physical-time **Cartan-planar** nonlinear theorem, this result applies to **all finite 3D cubic original-link SU(2) configurations, including noncommuting fields**. With `ell_p=1-Re U_p`, `a_p=sqrt(ell_p)`, and `N_pq=# shared original links`, the exact one-link derivative `||grad_e ell_p||²=ell_p(2-ell_p)/4` gives `D_s^+ a_p <= -(2-ell_p)a_p/2 + Σ_(q ne p)N_pq a_q/4`. Original-link incidence implies `A=N_off/4` has row norm ≤3, so the **finite nonlinear** comparison is `a(s)<=exp(sA)a(0)` and `||a(s)||infinity<=exp(3s)||a0||infinity`, with explicit factorial graph-distance influence tails. A reproducible finite SU(2) quaternion example also has an **increasing strict largest local plaquette defect** while total action decays. This refutes an unconditional *plaquette maximum principle* but not a near-flat or physical-time covariant smoothing theorem.
