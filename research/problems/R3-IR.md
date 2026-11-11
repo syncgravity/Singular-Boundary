@@ -24,3 +24,18 @@ Primary starting points: `sources/historical-notes/R3_THEOREM_OBSTRUCTION_AND_MU
 [Transcript reconciliation and full-Hessian energy audit](../audits/R3_IR_FULL_HESSIAN_ENERGY_BYPASS_AUDIT_2026-11-10.md) identifies a possible alternative to the provisional trace-to-K Schur route. It combines the existing weighted gradient rate, conditional trace Poincare estimate, product-curvature damping of the mixed/trace-free Hessian, a local block-Schur bound for \(A=\nabla^2S_g\), and the archived ordered third-dressing tensor estimate. Under the stated operator identities and a still-to-be-verified Codazzi curvature contraction, the candidate (2\times2) energy form has (a\approx0.08918193), (b\approx0.22708350), (C_G\le0.16615103), and positive diagnostic eigenvalue \(\lambda\approx0.05017091\).
 
 **Status:** candidate only. The full covariant Hessian evolution, weighted Schur sums, ordered tensor weight transfer, and SU(2) curvature contraction must be independently checked in the exact frame and common weighted norm. If verified, this would bypass the separate trace-to-K block calculation for the reference semigroup; it would not prove nonlinear fixed-point closure, pointwise interacting Hessian control, the physical spin-network all-orders recurrence, or any continuum gap. Keep PR #106 in draft review and do not promote a theorem or claim ID.
+
+
+## Common-measure and smooth-core extension (2026-11-11)
+
+[Common-measure and smooth-core audit](../audits/R3_IR_COMMON_MEASURE_SMOOTH_CORE_FINITE_STRIP_EXTENSION_2026-11-11.md) checks that the conditional one-link laws disintegrate the same Gibbs measure μ_g that symmetrizes L=Δ+2∇S_g·∇; the weighted gradient Bochner, trace/Poincaré, and ordered Hessian estimates can therefore be combined in one L²(μ_g) space. It records the weighted tensor integration-by-parts cancellation, the compact-manifold Friedrichs realization with C∞ core and D(L)=H², and the extension from smooth data to H² initial data (and positive-time smoothing from L²).
+
+**Conditional consequence:** assuming the ordered evolution and local coefficient certificates in the 2026-11-11 full-Hessian audit, the one-output weighted energy satisfies
+\[
+G_w(t)^2+H_w(t)^2\le e^{-2\lambda_{\rm cand}t}
+\big(G_w(0)^2+H_w(0)^2\big),\qquad
+\lambda_{\rm cand}>0.0699034.
+\]
+A finite-strip H²-source derivative resolvent corollary is recorded separately; no strip-length-uniform scalar gap is inferred.
+
+**Status:** common-measure and smooth-core compatibility are closed for the conditional finite-strip reference estimate. The coefficient chain remains conditional; no theorem/claim ID is promoted. The provisional three-sector calculation remains paused. No nonlinear fixed point, volume-uniform residual response, physical-coupling gap, 3D transfer, or continuum mass gap follows.
