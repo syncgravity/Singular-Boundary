@@ -1,6 +1,6 @@
 # Complete theorem-record navigator
 
-> **Current inventory — November 10, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **761 of 761** tracked theorem files; these 740 baseline links and 19 later entries are retained below. Indexing is source discovery, not proof certification.
+> **Current inventory — November 10, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **762 of 762** tracked theorem files; these 740 baseline links and 19 later entries are retained below. Indexing is source discovery, not proof certification.
 
 > **Historical baseline — November 4, 2026:** `main` then contained **740 theorem Markdown records**, including **202 original theorem files merged from the historic audit branch without changing their contents**. The 335-file category index below is retained as a historical baseline; the additional 405 files are linked in the appendix. This is a filename index, **not** mathematical certification. Conflicting historical claim IDs remain source-qualified and unresolved; see the claim identity crosswalk.
 
@@ -838,3 +838,10 @@ These original files were missing from the November 1 index, including files alr
 | Record | Date | Source |
 |---|---|---|
 | Conditional weighted trace–gradient Bochner block on the finite open SU(2) strip | 2026-11-10 | [R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md](../../research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) |
+
+
+## R3_IR current branch additions — 2026-11-10
+
+| Record | Date | Source |
+|---|---|---|
+| H2-weighted trace-to-K coupling calculation and audit (provisional) | 2026-11-10 | [R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md](../../research/theorems/R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md) |
