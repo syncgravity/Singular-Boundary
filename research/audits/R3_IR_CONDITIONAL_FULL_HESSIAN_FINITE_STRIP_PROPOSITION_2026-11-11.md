@@ -356,6 +356,8 @@ The proposition is conditional on the following source records:
 6. [Local geometry and strip-incidence source audit](R3_IR_LOCAL_GEOMETRY_SOURCE_AND_INCIDENCE_AUDIT_2026-11-11.md) — ordered connection corrections, positive-majorant global tail, exact incidence, and recomputed local constants.
 7. [Adversarial full-Hessian energy audit](R3_IR_ADVERSARIAL_FULL_HESSIAN_ENERGY_INEQUALITY_AUDIT_2026-11-11.md) — independent ordered-index, curvature, energy, and quadratic-form check.
 8. [Common-measure and smooth-core audit](R3_IR_COMMON_MEASURE_SMOOTH_CORE_FINITE_STRIP_EXTENSION_2026-11-11.md) — measure compatibility, tensor integration by parts, and semigroup-domain extension.
+9. [Sharpened weighted Bochner and trace–Poincaré audit](R3_IR_SHARP_WEIGHTED_BOCHNER_AND_TRACE_POINCARE_2026-11-11.md) — coefficient-specific score and Hessian envelopes, sharpened analytic inequalities, and arithmetic verifier.
+10. [Bounded-incidence extension audit](R3_IR_BOUNDED_INCIDENCE_ANALYTIC_EXTENSION_2026-11-11.md) — degree-(r) extension and explicit degree-four finite-complex check.
 
 **Established within the stated source chain:** local ordered component and incidence bounds, one-output Schur transfer, Hessian-dressing block estimate, SU(2) curvature/Codazzi coefficient, sharpened weighted Bochner inequality, sharpened conditional one-link trace–Poincaré inequality, common-measure compatibility, smooth-core extension, and positive \(2\times2\) energy margin. The scalar derivative enclosure remains a certified upstream dependency.
 
