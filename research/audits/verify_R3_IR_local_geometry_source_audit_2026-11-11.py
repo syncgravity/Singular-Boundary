@@ -103,6 +103,7 @@ assert T < F("0.000250292")
 row = 24*T
 col = 288*T
 K_unweighted = sqrt(float(row*col))
+assert row*col < F("0.02081")**2
 assert K_unweighted < 0.02081
 
 # ---------------------------------------------------------------------------
@@ -126,7 +127,9 @@ for N in range(1, 101):
 # sqrt(w_e/w_k)<=rho=6/5 by the distance triangle inequality.
 rho = F(6,5)
 C3 = 2*float(rho)*K_unweighted
-assert C3 < 0.049941326676
+C3_upper = F("0.049941326676")
+assert 4*rho*rho*row*col < C3_upper*C3_upper
+assert C3 < float(C3_upper)
 
 # ---------------------------------------------------------------------------
 # 5. Hessian-of-dressing A block and SU(2) Codazzi forcing.
@@ -147,7 +150,9 @@ assert float(CH) < 0.030426628227
 # kappa=1/4, |V_e|<=B=49/576; evolution contributes factor 2.
 Bscore = F(49,576)
 CR = 49*sqrt(2)/1152
-assert CR < 0.060153181039
+CR_upper = F("0.060153181039")
+assert F(49*49*2, 1152*1152) < CR_upper*CR_upper
+assert CR < float(CR_upper)
 
 # ---------------------------------------------------------------------------
 # 6. Combined energy margin, using same constants as the prior audit.
