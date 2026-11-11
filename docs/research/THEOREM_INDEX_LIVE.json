@@ -1,10 +1,10 @@
 {
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
-  "generated_utc_date": "2026-11-09",
-  "source_commit": "02943779954021740758a38d727dfa530d8f8830",
+  "generated_utc_date": "2026-11-10",
+  "source_commit": "780242f828821f1cdccd7c152fb3e836873895da",
   "baseline_historical_count": 740,
-  "count": 755,
+  "count": 758,
   "theorems": [
     {
       "path": "research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md",
@@ -5288,6 +5288,27 @@
       "path": "research/theorems/R3_ZERO_SHIFT_INVERSE_CERT.md",
       "git_blob_sha": "b5199ac83f7ea0169881ed16689fb2d7cdf4e056",
       "bytes": 365,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md",
+      "git_blob_sha": "8285ff968642992cf3e5ce8a59c6ae90b60da435",
+      "bytes": 4061,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md",
+      "git_blob_sha": "63350c256de4103da4ec7c90c53b9f7a2ba9f38d",
+      "bytes": 3576,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
+      "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
+      "bytes": 4319,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     }
