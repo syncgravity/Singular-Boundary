@@ -61,3 +61,17 @@ The independent exact verifier and log are:
 **Updated local constants:** \(C_3<0.049941305\), \(C_H<0.030426617\), \(C_R<0.060153182\), \(C_G<0.110094486\), and \(\lambda_{\min}(Q)>0.0699034\).
 
 **Status:** ordered local geometry, scalar derivative enclosure, SU(2) metric/curvature normalization, and straight-strip incidence now pass source-level review for this model. The weighted Bochner and conditional trace-Poincaré inputs remain imported from their named certificates; the common-measure and smooth-core extension is recorded above. The result remains a conditional finite-strip reference semigroup proposition. No theorem/claim ID is promoted; no interacting or continuum claim follows.
+
+## Consolidated conditional full-Hessian finite-strip proposition (2026-11-11)
+
+[Conditional full-Hessian finite-strip semigroup proposition](../audits/R3_IR_CONDITIONAL_FULL_HESSIAN_FINITE_STRIP_PROPOSITION_2026-11-11.md) consolidates the finite open straight SU(2) strip assumptions, exact ordered Hessian evolution, common Gibbs measure, imported weighted Bochner and conditional trace–Poincaré hypotheses, local third-tensor and Hessian-dressing constants, curvature/Codazzi forcing, quadratic-form margin, and smooth-core/semigroup extension.
+
+**Conditional conclusion:** for the isolated dressing regime \(|g|\le10^{-3}\), the one-output weighted derivative energy obeys
+\[
+G_w(t)^2+H_w(t)^2
+\le e^{-2\lambda_*t}\bigl(G_w(0)^2+H_w(0)^2\bigr),
+\qquad \lambda_*>0.0699034,
+\]
+for \(H^2\) initial data on each finite open straight strip, and by positive-time smoothing for \(L^2\) data away from time zero. The rate is independent of strip length under the stated uniform local hypotheses; norm-equivalence constants need not be.
+
+**Status:** a consolidated conditional proposition, not a promoted theorem or claim. The weighted Bochner and conditional one-link trace–Poincaré estimates remain imported analytic hypotheses. No nonlinear interacting fixed point, pointwise interacting Hessian bound, volume-uniform residual response, physical-coupling gap, 3D transfer, continuum limit, or continuum mass gap follows. The provisional three-sector trace-to-K calculation remains paused; PR #106 stays draft and main remains unchanged.
