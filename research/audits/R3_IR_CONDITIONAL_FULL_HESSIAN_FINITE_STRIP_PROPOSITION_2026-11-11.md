@@ -381,5 +381,5 @@ The provisional trace-to-\(K\) three-sector calculation remains paused and is no
 | \(c_{\mathrm{tr}}\) | \(0.2575101249909138\ldots\) |
 | \(\ell\) | \(0.0024847359266621\ldots\) |
 | \(a=c-\ell\) | \(0.0891819307400046\ldots\) |
-| \(b=c_{\mathrm{tr}}-C_H\) | \(>0.2270835083\) |
+| \(b=c_{\mathrm{tr}}-C_H\) | \(>0.2270835082\) |
 | \(\lambda_{\min}(Q)\) | \(>0.0699034\) |
