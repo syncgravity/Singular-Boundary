@@ -1,6 +1,6 @@
 # Current complete theorem source navigator
 
-**Current source files:** **758** indexed paths in this checkout. **Historical baseline:** 740 records.
+**Current source files:** **759** indexed paths in this checkout. **Historical baseline:** 740 records.
 This is source discovery, not independent proof certification or closure of any P0–P5 / Penrose / gravitational goal.
 
 [Historical navigator and later appendices](THEOREM_INDEX.md) · [Source-hashed canonical registry](THEOREM_INDEX_LIVE.json) · [Curated Proof Atlas](../../observatory/graph.html)
@@ -15,6 +15,7 @@ This is source discovery, not independent proof certification or closure of any 
 | [PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md](../../research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md) | `c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856` |
 | [PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md](../../research/theorems/PF_I16_EXACT_SEVEN_CLASS_FOUR_FACE_C2222_2026-11-09.md) | `aad1c5bdfb96608bd0dacdafb36facda23316262` |
 | [PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md](../../research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md) | `63350c256de4103da4ec7c90c53b9f7a2ba9f38d` |
+| [PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md](../../research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md) | `0140cf7d5ba882774861750d0cc685368faf548f` |
 | [R3_ACTUAL_M5_GAUGE_ONLY_INTERTWINER_OBSTRUCTION_2026-10-30.md](../../research/theorems/R3_ACTUAL_M5_GAUGE_ONLY_INTERTWINER_OBSTRUCTION_2026-10-30.md) | `2e5b1cdfaaa3164e8bc97bef962e79aaf50c10c4` |
 | [R3_ACTUAL_M5_ORIGINAL_WHITNEY_TWO_TREE_WILSON_FORM_2026-10-30.md](../../research/theorems/R3_ACTUAL_M5_ORIGINAL_WHITNEY_TWO_TREE_WILSON_FORM_2026-10-30.md) | `203334d19b62c573f8fe3a9a7f3e3f0259232623` |
 | [R3_AMBIENT_HEAT_KERNEL_RELATIVE_HAAR_CAP_2026-10-30.md](../../research/theorems/R3_AMBIENT_HEAT_KERNEL_RELATIVE_HAAR_CAP_2026-10-30.md) | `c2468fe3cb9008d97177f3f79c238ba0588bec80` |
