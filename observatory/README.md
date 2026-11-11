@@ -410,4 +410,4 @@ The one-output-weight convention distinguishes the input-gradient link weight fr
 
 [Provisional calculation/audit](../research/theorems/R3_IR_H2_WEIGHTED_TRACE_TO_K_COUPLING_AUDIT_2026-11-10.md) · [R3_IR work ledger](../research/problems/R3-IR.md) · [762-path theorem index](../docs/research/THEOREM_INDEX_CURRENT.md).
 
-**Observatory v2.74-r3-ir-h2-trace-to-k-audit: 285 curated nodes / 679 typed relationships / 762 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
+**Observatory v2.74-r3-ir-h2-trace-to-k-audit: 286 curated nodes / 679 typed relationships / 762 indexed theorem-source paths.** Historical 740 baseline retained. P0–P5 and PF-G0–G5 remain OPEN.
