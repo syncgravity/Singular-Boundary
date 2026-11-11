@@ -1,11 +1,11 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-10",
-  "version": "v2.70-pf-i16-dressed-locality",
-  "scope": "PF-I16 exact four-face C2222 finite-source coefficients, corrected universal connected-support incidence count, exact single-face dressing/shared-link residual identity, and centered dressed-resolvent third-order formula. The third-order numerical bound remains conditional on working curvature/derivative/semigroup estimates; fourth-order partition cancellation, all-orders summability, source physical time, continuum reconstruction and the Yang–Mills mass gap remain OPEN.",
+  "version": "v2.71-pf-i16-refined-rotor",
+  "scope": "PF-I16 exact four-face C2222 finite-source coefficients, universal connected-support incidence count, exact single-face dressing/shared-link residual, refined isolated-rotor Hessian and conditional residual derivative estimates. Product-holonomy mixed covariant derivative/orientation certification remains pending; prior third-order numerical bound is not revalidated under revised constants. Fourth-order cancellation, all-orders summability, source physical time, continuum reconstruction and Yang–Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 758,
+  "indexed_theorem_paths": 759,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -10124,8 +10124,8 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "The exact third-order coefficient is a six-permutation reduced-resolvent expression. A source-volume-uniform numerical bound follows conditionally from the current curvature, derivative and semigroup estimates; no spatial spanning-tree decay is yet proved.",
-      "detail": "For distinct labels i,j,k, E_ijk=−Σ_{σ∈S3}ν[r_{σ1}G(r_{σ2}G r_{σ3})]. Under κ=a0/2−2976b0, λ=a0/2−46752b0, b0/a0<1/93504 and the stated derivative constants, |E_ijk|≤1.527×10^16 b0^6/(a0^3 κ λ). This bound is conditional on working analytic estimates and is not an all-orders theorem.",
+      "summary": "The exact third-order coefficient is a six-permutation reduced-resolvent expression. Its previously stated numerical bound and old curvature/derivative thresholds have not been rederived after the refined rotor/residual estimates; no current updated third-order numerical bound or spatial tree decay is claimed.",
+      "detail": "For distinct labels i,j,k, E_ijk=−Σ_{σ∈S3}ν[r_{σ1}G(r_{σ2}G r_{σ3})]. Under κ=a0/2−2976b0, λ=a0/2−46752b0, b0/a0<1/93504 and the stated derivative constants, |E_ijk|≤1.527×10^16 b0^6/(a0^3 κ λ). This bound is conditional on working analytic estimates and is not an all-orders theorem. The old numerical prefactor and kappa/lambda thresholds are retained only as historical working calculations and are not revalidated under the refined rotor Hessian and residual derivative constants.",
       "checks": [
         {
           "label": "Centered finite-label recursion and six-term third-order identity",
@@ -10211,6 +10211,61 @@
         "fourth-order",
         "partition-cancellation",
         "open-proof"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES",
+      "title": "Refined isolated-rotor Hessian and shared-link residual derivatives",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "An exact weighted-mean identity sharpens the isolated radial rotor Hessian to (4/3)β+(20/3)β². Under a still-unverified four-factor group-multiplication mixed-Hessian/orientation estimate, this yields conditional face-block, curvature, derivative-flow and shared-link residual derivative bounds.",
+      "detail": "The radial estimate assumes the inherited ||s'||∞≤β bound. Working face blocks are H_ee≤(32/3)b0+(320/3)b0²/a0 and H_eg≤(44/3)b0+(320/3)b0²/a0. For b0/a0≤1/40000, the working derivative-flow lower bound at μ=log25 is a0/2−(53312/3)b0−(389120/3)b0²/a0; the residual bounds are ||R_e||∞≤1040b0²/a0, component derivative ≤8450b0²/√a0, support ℓ² derivative ≤42250b0²/√a0 and support ℓ¹ derivative ≤211250b0²/√a0. The mixed covariant derivative of the four-factor face-holonomy map and its orientation/trivialization conversions remain to be independently certified. The earlier third-order numerical bound has not been rederived with these constants.",
+      "checks": [
+        {
+          "label": "Exact weighted-mean identity and radial Hessian estimate",
+          "state": "conditional",
+          "note": "Explicit one-face calculation assuming the inherited first-derivative bound."
+        },
+        {
+          "label": "Four-factor group-multiplication mixed covariant derivative and orientation conversions",
+          "state": "open",
+          "note": "Immediate geometric certification target."
+        },
+        {
+          "label": "Face Hessian blocks and derivative-flow comparison",
+          "state": "conditional",
+          "note": "Depend on the mixed-holonomy geometric estimate and inherited Bochner/Kato comparison."
+        },
+        {
+          "label": "Shared-link residual derivative bounds",
+          "state": "conditional",
+          "note": "Depend on the pulled-back Hessian block convention and mixed-holonomy estimate."
+        },
+        {
+          "label": "Updated third-order coefficient bound",
+          "state": "open",
+          "note": "Prior numerical prefactor and old thresholds have not been recalculated."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 refined isolated-rotor Hessian and shared-link residual derivatives",
+          "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
+          "git_blob_sha": "0140cf7d5ba882774861750d0cc685368faf548f",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md"
+        }
+      ],
+      "tags": [
+        "PF-primary",
+        "PF-I16",
+        "isolated-rotor",
+        "Hessian",
+        "shared-link-residual",
+        "conditional-estimate"
       ],
       "importance": 5,
       "core": true,
@@ -14907,6 +14962,20 @@
       "kind": "required",
       "label": "all-orders connected control still required before physical gap",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I16-EXACT-DRESSING-RESIDUAL",
+      "to_id": "PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES",
+      "kind": "refined-analytic-estimate",
+      "label": "refines radial Hessian and residual derivative bounds; mixed holonomy geometry pending",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES",
+      "to_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "kind": "updated-input-required",
+      "label": "rederive third-order numerical bound with revised curvature and residual derivatives",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -15685,7 +15754,7 @@
       "exact_finite_graph_identity": true,
       "residual_support_max_links": 25,
       "residual_overlap_degree_max": 800,
-      "uniform_rotor_derivative_estimate": "working derivation; independent verifier pending"
+      "uniform_rotor_derivative_estimate": "refined radial bound (4/3 beta + 20/3 beta^2), conditional on inherited gradient bound; product-holonomy mixed Hessian/orientation verification pending"
     },
     "third_order": {
       "exact_six_permutation_identity": true,
@@ -15693,11 +15762,29 @@
       "kappa": "a0/2-2976*b0",
       "lambda": "a0/2-46752*b0",
       "smallness": "b0/a0<1/93504",
-      "spatial_tree_decay_proved": false
+      "spatial_tree_decay_proved": false,
+      "prior_numeric_bound_revalidated": false,
+      "note": "The prior third-order numerical coefficient bound, kappa/lambda formulas and b0/a0<1/93504 threshold are historical working estimates; they have not been rederived using the refined rotor/residual constants. Do not treat them as current consequences."
     },
     "next": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
     "all_orders_summability": false,
     "source_physical_time": false,
-    "continuum_mass_gap": false
+    "continuum_mass_gap": false,
+    "refined_rotor_residual_derivatives": {
+      "source": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
+      "status": "conditional_working_estimate",
+      "radial_hessian_bound": "(4/3)*beta + (20/3)*beta^2",
+      "face_diagonal_block": "(32/3)*b0 + (320/3)*b0^2/a0",
+      "face_off_diagonal_block": "(44/3)*b0 + (320/3)*b0^2/a0",
+      "curvature_lower_bound": "a0/2 - (2624/3)*b0 - (20480/3)*b0^2/a0",
+      "derivative_flow_lower_bound_mu_log25": "a0/2 - (53312/3)*b0 - (389120/3)*b0^2/a0",
+      "sufficient_smallness": "b0/a0 <= 1/40000",
+      "residual_sup_norm": "1040*b0^2/a0",
+      "residual_component_derivative": "8450*b0^2/sqrt(a0)",
+      "residual_support_l2_derivative": "42250*b0^2/sqrt(a0)",
+      "residual_support_l1_derivative": "211250*b0^2/sqrt(a0)",
+      "support_links_max": 25,
+      "outstanding": "standalone certification of four-factor group-multiplication mixed covariant derivative and orientation/trivialization conversions"
+    }
   }
 }
