@@ -12,7 +12,8 @@ from collections import Counter
 # Uniform positive majorant for every |g| <= 1/1000.
 b0, R = F(1, 1000), F(1, 25)
 L = b0 * (F(129, 6) + 2 * R / 768)
-assert L < 1
+map_ball_bound = b0 * (F(129, 6) * (1 + R) + R*R/768)
+assert L < 1 and map_ball_bound < R
 
 def positive_majorant_map(v):
     out = {}
@@ -32,8 +33,12 @@ v = {}
 for _ in range(6):
     v = positive_majorant_map(v)
 res = positive_majorant_map(v)
-err = weighted_norm({n: res.get(n, F(0)) - v.get(n, F(0))
-                     for n in set(res) | set(v)}) / (1 - L)
+residual = {n: res.get(n, F(0)) - v.get(n, F(0))
+            for n in set(res) | set(v)}
+assert all(a >= 0 for a in v.values())
+assert all(a >= 0 for a in residual.values())
+assert weighted_norm(v) < R and weighted_norm(res) < R
+err = weighted_norm(residual) / (1 - L)
 
 def endpoint_derivative(n, k):
     if k == 0: return F(n + 1)
@@ -59,7 +64,7 @@ P3_x = [F(1,105), F(2,3), F(449,21), F(14544,35), F(81802,15),
 assert all(x > 0 for x in P1_x + P2_x + P3_x)
 assert F(16384, 15625) > 1  # r_3(4)/r_3(3)
 
-# These positive shifted polynomials prove the ratio tails globally:
+# Positive shifted polynomials prove the ratio tails globally:
 # k=1 from n=1, k=2 from n=2, k=3 from n=4.
 for k, last_initial in [(0, 1), (1, 1), (2, 2), (3, 4)]:
     for n in range(1, last_initial + 1):
@@ -70,6 +75,7 @@ assert endpoint_derivative(3, 3) / (2**3 * 4**6) < maxima[3]
 U = [sum(abs(a) * endpoint_derivative(n, k) for n, a in v.items()) + err
      for k in range(4)]
 A, B, C, D = U
+assert A < 1
 s1 = B / (1 - A)
 s2 = C / (1 - A) + s1*s1
 s3 = D / (1 - A) + 3*C*B/(1 - A)**2 + 2*s1**3
@@ -103,7 +109,11 @@ assert C3 < 0.049941326676
 
 # Conservative Hessian-of-dressing block envelope and weighted actions.
 h = s2/F(4) + s1/F(2)
-CH = F(912, 5) * h  # 2*(49.2+42)h = 182.4h
+A_weighted = 6*h*(1 + 6*F(6,5))
+A_unweighted = 42*h
+CH = 2*(A_weighted + A_unweighted)
+assert A_weighted == F(246,5)*h and A_unweighted == 42*h
+assert CH == F(912,5)*h
 assert float(h) < 0.00016681265475
 assert float(CH) < 0.030426628227
 
@@ -121,7 +131,8 @@ assert CG < 0.110094508039
 assert lam > 0.0699034
 
 print("PASS: six-step positive majorant, uniform for |g|<=1e-3")
-print("contraction L =", float(L), "tail =", float(err))
+print("contraction L =", float(L), "ball bound =", float(map_ball_bound),
+      "tail =", float(err))
 print("sup u' u'' u''' =", *(float(x) for x in U[1:]))
 print("sup s' s'' s''' =", float(s1), float(s2), float(s3))
 print("ordered face component T_g =", float(T))
