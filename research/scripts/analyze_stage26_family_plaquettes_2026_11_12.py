@@ -117,6 +117,7 @@ def run(stage26_zip, geometry_zip, phase_max=1000):
             "geometry_reconstruction_zip_sha256": geometry_hash,
             "stage26_restart": restart_name,
             "restart_source_sha256": source_sha,
+            "restart_sweeps": restart_sweeps,
             "graph_hash": ns["h"],
             "source_array_sha256": ns["arrayhash"],
             "geometry": {"vertices": V, "spatial_edges": E, "spatial_faces": F, "nt": nt,
