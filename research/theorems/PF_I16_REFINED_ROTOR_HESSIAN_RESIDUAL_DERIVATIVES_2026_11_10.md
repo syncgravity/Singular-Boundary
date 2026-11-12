@@ -111,7 +111,7 @@ Using \((\nabla_{\dot H}W)_{\rm left}=D_{\dot H}w+\frac12[\eta,w]\), the working
 0,&i=j.
 \end{cases}
 \]
-The same-factor term vanishes by the isometric left/right translation form of a one-factor variation. In the radius-two basis \(e_a=(\mathbf i,\mathbf j,\mathbf k)/2\), \([e_a,e_b]=\epsilon_{abc}e_c\), so \(\|[X,Y]\|\le\|X\|\|Y\|\) and each distinct-factor mixed term has norm at most \(\frac12\|X_i\|\|Y_j\|\). This records the working derivation and its orientation conversion; the fully self-contained independent sign/trivialization audit remains open.
+The same-factor term vanishes by the isometric left/right translation form of a one-factor variation. The ordered suffix derivative, inverse-link conversion, and all 16 orientation words have since received an independent quaternion finite-difference audit (3,840 ordered-pair checks); see [the 2026-11-11 sign audit](../audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md) and its deterministic verifier. This closes the group-product sign/trivialization sub-obligation, but not the inherited rotor-gradient hypothesis or the downstream analytic estimates. In the radius-two basis \(e_a=(\mathbf i,\mathbf j,\mathbf k)/2\), \([e_a,e_b]=\epsilon_{abc}e_c\), so \(\|[X,Y]\|\le\|X\|\|Y\|\) and each distinct-factor mixed term has norm at most \(\frac12\|X_i\|\|Y_j\|\). This records the working derivation and its orientation conversion; the fully self-contained independent sign/trivialization audit remains open.
 
 In the pulled-back metric \(\widetilde g=\bigoplus_e a_e^{-1}g_e\), the resulting working per-face block bounds are
 \[
