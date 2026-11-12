@@ -5,7 +5,7 @@
   "scope": "R3_IR finite open SU(2) strip: conditional weighted one-link Poincare trace damping, exact product-manifold trace commutator, and an unevaluated A2/A3 plus trace-free/mixed Hessian closure criterion. PF-I16 remains a separate auxiliary Penrose route. Full weighted Hessian contraction, physical 3D transfer, continuum reconstruction and Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 761,
+  "indexed_theorem_paths": 762,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -7810,12 +7810,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "761 current indexed theorem source files (740 historical baseline)",
+      "title": "762 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 761, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 762, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -7833,8 +7833,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "63dd4a470b28499feb2306b9d6c5cf48d3fb6842",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/63dd4a470b28499feb2306b9d6c5cf48d3fb6842/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "ce03354fbb7917d9096c3c734cfa3d7100dcc6dd",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/ce03354fbb7917d9096c3c734cfa3d7100dcc6dd/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
