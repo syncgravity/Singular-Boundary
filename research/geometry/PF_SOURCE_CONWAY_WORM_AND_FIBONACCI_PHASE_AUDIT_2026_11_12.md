@@ -210,6 +210,36 @@ Scope is deliberately narrow: one restart configuration at sweep 12000 and its 2
 
 Reproduce this result with research/scripts/analyze_stage26_family_plaquettes_2026_11_12.py and inspect research/evidence/PF_STAGE26_FAMILY_PLAQUETTE_OPERATOR_2026_11_12.json.
 
+### Reconstructed M55 worm strips and boundary Wilson loops
+
+The M55 source generator gives every rhombus face its two basis-direction labels (a,b). For each family j, connect two faces when they share an edge of direction j. Every face in that family has two such edges, so the local dual graph has degree at most two. Cropping the periodic M55 cell by a disk of radius 40 (strictly inside its 42.9127 inradius) turns the components into finite worm segments. Retaining segments of at least 10 tiles gives:
+
+| Family j | Segments | Mean tiles/segment | Mean L/S | Segments within 15% of φ |
+|---:|---:|---:|---:|---:|
+| 0 | 50 | 122.88 | 1.61825 | 50/50 |
+| 1 | 50 | 123.78 | 1.61790 | 50/50 |
+| 2 | 51 | 121.41 | 1.63720 | 51/51 |
+| 3 | 51 | 121.14 | 1.63353 | 51/51 |
+| 4 | 50 | 123.78 | 1.61237 | 50/50 |
+
+This is a topological worm extraction from the M55 incidence, not the earlier line-index heuristic. For each segment, sum its oriented face boundaries. Shared interior edges cancel, leaving one simple closed boundary loop of length exactly \(2L+2\). The resulting reconstructed catalogue has 252 closed spatial Wilson loops, lengths 22–314. Its canonical SHA-256 is 5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857; the downloadable pretty-printed JSON file has SHA-256 1220d3ba0b2b69d0cbba7767133889adfc30d28e5752038bc63377ef1930cb66.
+
+These loops have now been evaluated on the actual Stage 26 seed-101 restart at sweep 12000. The script applies the family phase weights to the mean defect of the worm-strip boundary loops in each family. It also applies independent random SU(2) gauge transformations at every vertex and timeslice: the maximum change in all spatial plaquette traces is \(1.44\times10^{-15}\), and the maximum change in any worm-loop defect is \(7.77\times10^{-15}\).
+
+| Family j | Mean worm-boundary defect | Slice SD |
+|---:|---:|---:|
+| 0 | 0.98900353 | 0.07667630 |
+| 1 | 0.99381754 | 0.07080612 |
+| 2 | 0.99011248 | 0.04072105 |
+| 3 | 1.01603838 | 0.07317351 |
+| 4 | 0.98760378 | 0.06054185 |
+
+The full-family control is 0.99531514 (slice SD 0.02790160). The mean second-harmonic amplitude is 0.08429661, or 8.469% of the full control. Its circular phase spread over the 20 slices is 2.074 radians. This is a measurable family contrast, but its phase is not stable across these slices. It does not establish a physical handedness or a selection law.
+
+This is the first source-geometry-derived, gauge-invariant long-loop family observable in the current record. It is still one restart configuration and 20 periodic slices, not an ensemble correlator. It is not a mass-gap estimate. The 34:55 parastichy count remains the Delaunay arm count of the golden-angle observer trajectory; it is **not** the number of M55 worm segments, which are 50–51 per family in this crop.
+
+Reproduce the extraction, loop construction, Stage 26 evaluation and gauge-covariance check with research/scripts/analyze_stage26_worm_boundary_loops_2026_11_12.py. Its path-catalogue output is generated with --catalogue-output; the summary evidence is research/evidence/PF_STAGE26_M55_WORM_BOUNDARY_LOOPS_2026_11_12.json.
+
 ### Remaining long-loop data gap
 
 The family plaquette observable is now available because the reconstructed incidence identifies each spatial face and its two basis directions. Longer Wilson loops anchored along individual Conway worms require more: an ordered edge path, anchor, worm/line ID, and family assignment for every loop. The multihit NPZ candidate_path_indices are only indices; their path catalogue is not present in those NPZs.
