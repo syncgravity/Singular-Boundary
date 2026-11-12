@@ -254,5 +254,5 @@ The principal data limitation is now ensemble coverage. The Stage 26 full ZIP ha
 4. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Fix n at source and sink for ordinary stationary spectroscopy.
 5. Preserve the nested outer-chain and inner-multihit error structure, autocorrelation, effective sample size, matched-pair identity and cost diagnostics.
 
-The separate synthetic SU(2) loop verifier (450 deterministic checks) validates the gauge covariance of the proposed family contraction. The Stage 26 plaquette script validates the actual restart link/face incidence and computes the first family-labelled plaquette diagnostic. Neither supplies the missing long-worm Wilson-loop correlator or a Yang–Mills mass-gap result.
+The separate synthetic SU(2) loop verifier (450 deterministic checks) validates the generic family contraction. The Stage 26 worm-boundary script constructs 252 source-geometry worm-strip loops, verifies their gauge covariance on the actual restart, and computes their family-conditioned defects. These are finite one-configuration measurements, not an ensemble correlator or a Yang–Mills mass-gap result.
 
