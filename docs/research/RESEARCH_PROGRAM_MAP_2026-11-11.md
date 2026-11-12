@@ -51,6 +51,7 @@ Primary source dossiers:
 - [Harmonic-triad chirality and interacting-null audit](../../research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md)
 - [Observer-marked handedness/parity audit](../../research/geometry/PF_OBSERVER_MARKED_HANDEDNESS_PARITY_AUDIT_2026_11_07.md)
 - [Covariance and Z13 alias audit](../../research/geometry/PF_HELICAL_OBSERVER_COVARIANCE_ALIAS_2026_11_07.md)
+- [Z5 real-structure and helical-observer source audit](Z5_REAL_STRUCTURE_AND_HELICAL_OBSERVER_SOURCE_AUDIT_2026-11-11.md) — reconciles the real-slice/C5 obstruction with the kinematic observer record.
 
 **Research intent preserved:** the proposed mechanism concerns the interaction of the coupled-ℤ⁵ projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and a helical observer. The historical reconstruction says the observer was intended as an extension of the *observation method* from planar Conway-worm chains; 34 clockwise and 55 counterclockwise arms were sought as a consequence, not imposed as a definition. It is explicitly a reconstruction of the author's intent, not a recovered verbatim transcript or an authenticated source-generated 34:55 theorem.
 
@@ -66,7 +67,7 @@ Do not summarize this work as “uninvestigated” or as “proved physical heli
 
 ### C. Source-native finite SU(2) theory and PF-I11–PF-I16
 
-The PF-I11–PF-I15 sequence is recorded in the README and linked geometry/theorem dossiers. In order, it develops:
+The [PF-I16 branch reconciliation review](PF_I16_BRANCH_RECONCILIATION_2026-11-11.md) records the contribution classes and current proof frontier. The [PF-I16 branch preservation ledger](PF_I16_BRANCH_PRESERVATION_LEDGER_2026-11-11.md) records all 48 candidate source paths and original blob hashes; 46 files were copied and two were already in main.\n\nThe PF-I11–PF-I15 sequence is recorded in the README and linked geometry/theorem dossiers. In order, it develops:
 
 - PF-I11: finite source-rhombus Wilson/Haar theory and exact plaquette-only factorization.
 - PF-I12: transverse non-Abelian-sensitive interaction and a failure of a naive exchange-reflection positivity test.
