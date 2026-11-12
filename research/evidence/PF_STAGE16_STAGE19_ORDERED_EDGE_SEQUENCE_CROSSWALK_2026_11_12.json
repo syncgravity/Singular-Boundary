@@ -1,0 +1,601 @@
+{
+  "schema": "stage16-stage19-ordered-edge-sequence-crosswalk.v1",
+  "date": "2026-11-12",
+  "stage16": {
+    "script": "ym_stage16/stage16_matched_paths.py",
+    "generator": "sparse_paths(P,max_steps=10,n_anchors=180,per_length=100)",
+    "candidate_rows": 1000,
+    "selected_rows": 600,
+    "id_range": [
+      197,
+      999
+    ]
+  },
+  "stage19": {
+    "catalogue": "data/raw/stage19/penrose_complete_catalogue.npz",
+    "sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "roots": 22808
+  },
+  "validation": {
+    "reconstructed_m55_graph_hash_matches": true,
+    "all_600_stage26_endpoints_match": true,
+    "four_seed_geometry_and_candidate_ids_identical": true
+  },
+  "method": "For every Stage19 rooted loop, enumerate all cyclic contiguous segments up to ten edges. Compare exact ordered (edge_id,orientation_sign) sequences with each selected Stage16 candidate. Reverse matches reverse edge order and negate every orientation sign.",
+  "results": {
+    "exact_complete_loop_matches": 0,
+    "exact_contiguous_subpath_candidates": 36,
+    "unmatched_candidates": 564,
+    "match_rate": 0.06,
+    "distinct_catalogue_root_occurrences": 56,
+    "match_lengths": {
+      "2": 1,
+      "3": 25,
+      "4": 4,
+      "5": 5,
+      "7": 1
+    },
+    "multiplicity": {
+      "1": 25,
+      "2": 5,
+      "3": 5,
+      "6": 1
+    }
+  },
+  "matches": [
+    {
+      "candidate_path_index": 197,
+      "edge_count": 2,
+      "occurrences": [
+        {
+          "catalogue_row": 4721,
+          "root": 4721,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 277,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 3125,
+          "root": 3125,
+          "loop_start_offset": 12,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 3514,
+          "root": 3514,
+          "loop_start_offset": 12,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 239,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 5412,
+          "root": 5412,
+          "loop_start_offset": 3,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 274,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 14203,
+          "root": 14203,
+          "loop_start_offset": 6,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 14612,
+          "root": 14612,
+          "loop_start_offset": 12,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 276,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 22362,
+          "root": 22362,
+          "loop_start_offset": 5,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 272,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 5714,
+          "root": 5714,
+          "loop_start_offset": 2,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 6170,
+          "root": 6170,
+          "loop_start_offset": 10,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 6177,
+          "root": 6177,
+          "loop_start_offset": 8,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 6178,
+          "root": 6178,
+          "loop_start_offset": 8,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 6181,
+          "root": 6181,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 6190,
+          "root": 6190,
+          "loop_start_offset": 18,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 270,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 22356,
+          "root": 22356,
+          "loop_start_offset": 4,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 269,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 18420,
+          "root": 18420,
+          "loop_start_offset": 8,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 268,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 14569,
+          "root": 14569,
+          "loop_start_offset": 5,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 267,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 11132,
+          "root": 11132,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 11530,
+          "root": 11530,
+          "loop_start_offset": 11,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 11534,
+          "root": 11534,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 265,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 3109,
+          "root": 3109,
+          "loop_start_offset": 4,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 3110,
+          "root": 3110,
+          "loop_start_offset": 4,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 263,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 14083,
+          "root": 14083,
+          "loop_start_offset": 5,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 258,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 17896,
+          "root": 17896,
+          "loop_start_offset": 4,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 18297,
+          "root": 18297,
+          "loop_start_offset": 12,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 257,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 15423,
+          "root": 15423,
+          "loop_start_offset": 6,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 16242,
+          "root": 16242,
+          "loop_start_offset": 9,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 16246,
+          "root": 16246,
+          "loop_start_offset": 9,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 255,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 13563,
+          "root": 13563,
+          "loop_start_offset": 1,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 254,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 11919,
+          "root": 11919,
+          "loop_start_offset": 4,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 253,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 10307,
+          "root": 10307,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 10314,
+          "root": 10314,
+          "loop_start_offset": 10,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 10754,
+          "root": 10754,
+          "loop_start_offset": 10,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 248,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 3106,
+          "root": 3106,
+          "loop_start_offset": 3,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 252,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 8798,
+          "root": 8798,
+          "loop_start_offset": 8,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 249,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 4773,
+          "root": 4773,
+          "loop_start_offset": 8,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 285,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 19627,
+          "root": 19627,
+          "loop_start_offset": 1,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 20040,
+          "root": 20040,
+          "loop_start_offset": 1,
+          "orientation": "reverse"
+        },
+        {
+          "catalogue_row": 20041,
+          "root": 20041,
+          "loop_start_offset": 1,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 296,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 4,
+          "root": 4,
+          "loop_start_offset": 0,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 283,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 5019,
+          "root": 5019,
+          "loop_start_offset": 17,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 290,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 11775,
+          "root": 11775,
+          "loop_start_offset": 8,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 294,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 9371,
+          "root": 9371,
+          "loop_start_offset": 9,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 293,
+      "edge_count": 3,
+      "occurrences": [
+        {
+          "catalogue_row": 4254,
+          "root": 4254,
+          "loop_start_offset": 5,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 366,
+      "edge_count": 4,
+      "occurrences": [
+        {
+          "catalogue_row": 19989,
+          "root": 19989,
+          "loop_start_offset": 6,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 375,
+      "edge_count": 4,
+      "occurrences": [
+        {
+          "catalogue_row": 17508,
+          "root": 17508,
+          "loop_start_offset": 13,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 17516,
+          "root": 17516,
+          "loop_start_offset": 15,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 17938,
+          "root": 17938,
+          "loop_start_offset": 15,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 431,
+      "edge_count": 5,
+      "occurrences": [
+        {
+          "catalogue_row": 2688,
+          "root": 2688,
+          "loop_start_offset": 14,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 384,
+      "edge_count": 4,
+      "occurrences": [
+        {
+          "catalogue_row": 3633,
+          "root": 3633,
+          "loop_start_offset": 13,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 428,
+      "edge_count": 5,
+      "occurrences": [
+        {
+          "catalogue_row": 6563,
+          "root": 6563,
+          "loop_start_offset": 5,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 394,
+      "edge_count": 4,
+      "occurrences": [
+        {
+          "catalogue_row": 9614,
+          "root": 9614,
+          "loop_start_offset": 10,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 421,
+      "edge_count": 5,
+      "occurrences": [
+        {
+          "catalogue_row": 11656,
+          "root": 11656,
+          "loop_start_offset": 13,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 473,
+      "edge_count": 5,
+      "occurrences": [
+        {
+          "catalogue_row": 6751,
+          "root": 6751,
+          "loop_start_offset": 7,
+          "orientation": "forward"
+        },
+        {
+          "catalogue_row": 7198,
+          "root": 7198,
+          "loop_start_offset": 5,
+          "orientation": "forward"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 494,
+      "edge_count": 5,
+      "occurrences": [
+        {
+          "catalogue_row": 1782,
+          "root": 1782,
+          "loop_start_offset": 13,
+          "orientation": "reverse"
+        }
+      ]
+    },
+    {
+      "candidate_path_index": 698,
+      "edge_count": 7,
+      "occurrences": [
+        {
+          "catalogue_row": 18670,
+          "root": 18670,
+          "loop_start_offset": 12,
+          "orientation": "reverse"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Stage16 candidate_path_indices are not Stage19 root indices. Only 36/600 selected candidate paths are exact contiguous subpaths of any Stage19 rooted loop, with 56 root-row occurrences. No selected candidate path is itself an entire Stage19 loop. The other 564 candidates have no exact contiguous match in either orientation. Subpath matches establish edge-sequence overlap only; they do not establish root-anchor identity or a physical observer correspondence."
+}
