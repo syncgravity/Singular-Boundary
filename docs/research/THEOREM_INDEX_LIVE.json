@@ -64,15 +64,15 @@
     },
     {
       "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
-      "git_blob_sha": "fa34e3f59d28bd30446d809ebb4402e246e83114",
-      "bytes": 9634,
+      "git_blob_sha": "c0b53f43f78431f4c80673fefc1244e283952f06",
+      "bytes": 11071,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-      "git_blob_sha": "c46b4c17f0969efc7da5e7171ca92558a7666c17",
-      "bytes": 8897,
+      "git_blob_sha": "f58e3ca61ed69f9b5a00ffdeb113b63c6134a078",
+      "bytes": 11121,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
