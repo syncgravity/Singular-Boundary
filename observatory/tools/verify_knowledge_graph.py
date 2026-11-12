@@ -18,7 +18,15 @@ def main():
  if (here/'knowledge-graph.json').exists():root=here
  else:root=here.parent
  g=json.loads((root/'knowledge-graph.json').read_text());m=json.loads((root/'data-manifest.json').read_text() if (root/'data-manifest.json').exists() else (root/'data_manifest.json').read_text())
- check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open');check(g['indexed_theorem_paths']==761,'current theorem paths must match source registry');check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
+ check(g['schema']=='singular-boundary.knowledge-graph.v1','graph schema');check(g['canon_status']=='OPEN','canonical status must remain open')
+ repo_root=root.parent
+ registry=json.loads((repo_root/'docs/research/THEOREM_INDEX_LIVE.json').read_text())
+ check(registry.get('schema')=='singular-boundary-theorem-index-v1','source registry schema')
+ registry_paths=[x['path'] for x in registry['theorems']]
+ actual_paths=sorted(str(p.relative_to(repo_root)) for p in (repo_root/'research/theorems').rglob('*.md'))
+ check(registry_paths==actual_paths,'current theorem paths must match source registry')
+ check(g['indexed_theorem_paths']==registry['count']==len(registry_paths),'graph theorem count must match source registry')
+ check(g['historical_indexed_theorem_paths']==740,'preserve 740 historical source baseline');check(g['complete_theorem_index']=='docs/research/THEOREM_INDEX_LIVE.json','complete source-registry reference');check(g['existing_proof_paths']==78,'do not silently recount previous proof paths')
  n=g['nodes'];e=g['edges'];ids=[x['id'] for x in n];check(len(ids)==len(set(ids)),'duplicate ids');node={x['id']:x for x in n};check(len(g['nodes'])>=70,'node loss');check(len(g['edges'])>=100,'edge loss')
  for a in e:
   check(a['from_id'] in node and a['to_id'] in node,f'dangling edge {a}')
