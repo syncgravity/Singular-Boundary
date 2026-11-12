@@ -138,3 +138,51 @@ The count itself is not the remaining obstacle. The next objective is to make th
 
 
 **Family-frame verifier:** `research/scripts/verify_pf_family_frame_lift_2026_11_12.py` passes 12 deterministic algebraic and geometric checks. Its machine-readable output is preserved in `research/evidence/PF_FAMILY_FRAME_3D_LIFT_2026_11_12.json`. The 74-check Delaunay verifier separately establishes the finite 34:55 chain counts.
+
+
+## 8. Gauge-invariant family observer operator and the Stage 26 data gate
+
+The family frame can be coupled to actual gauge-invariant observables without treating the observer clock as Yang–Mills transfer time. For each family j, let A_j be a source-defined set of anchors and γ_{j,x} a closed spatial Wilson loop at anchor x. Define the family defect
+\[
+D_{\gamma_{j,x}}(U)=1-\frac12\operatorname{Tr}\operatorname{Hol}_{\gamma_{j,x}}(U)\in[0,2],
+\qquad
+F_j(\tau)=\frac1{|A_j|}\sum_{x\in A_j}D_{\gamma_{j,x}}(U(\tau)).
+\]
+Use the unit-normalized signed family weights
+\[
+u_j(n)=\sqrt{\frac25}\cos\left(\frac{4\pi j}{5}-2\pi\rho n\right),
+\qquad \sum_j u_j(n)^2=1,\quad \sum_j u_j(n)=0.
+\]
+Then the observer-conditioned operator is
+\[
+\boxed{O_n(\tau)=\sum_{j=0}^4u_j(n)F_j(\tau),}
+\]
+with a separate full-family control
+\[
+O_{\rm full}(\tau)=\frac15\sum_{j=0}^4F_j(\tau).
+\]
+Because each F_j is an average of closed Wilson-loop traces, O_n is real and gauge invariant. The signed coefficients are a specified real second-harmonic family projection, not positive spatial weights. Since 0≤F_j≤2 and ||u(n)||₂=1, Cauchy–Schwarz gives |O_n|≤2√5. Cyclic relabeling of the five families together with θ→θ+4π/5 leaves the contraction invariant.
+
+For spectroscopy, fix n at source and sink and vary the physical Euclidean transfer separation τ:
+\[
+C_n(\tau)=\langle O_n(\tau)O_n(0)\rangle_c.
+\]
+The observer phase label n and observer clock t_n=nT are not the Euclidean transfer time τ. Sweeping n together with τ would define a nonstationary, phase-conditioned correlator and must be analyzed as such; it must not be silently fit as an ordinary stationary spectral correlator.
+
+### Uploaded Stage 26 data inventory
+
+The uploaded four Penrose multihit NPZs contain direct/multihit arrays of shape (4,600), lags, matched-pair and candidate-path indices, r, dx, source/target indices, and seed/geometry/checkpoint metadata. They do not contain five worm-family labels, anchor-to-family assignments, ordered closed-loop edge paths, or per-anchor Wilson holonomies.
+
+The Stage 26 full ZIP contains outer snapshots with aggregate direct-timeslice, direct-product, conditional, conditional-onepoint and pair-count arrays. Its restart archive contains a links array of shape (1,368,480,4) and a plaquette_trace array of shape (1,368,480), plus run metadata. It does not contain the geometry/path catalogue needed to reconstruct the proposed family loops. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not a family-loop catalogue.
+
+Therefore O_n cannot be evaluated retrospectively from the uploaded aggregate files alone. The restart links could in principle support recomputation if the exact graph incidence, oriented edge map, family-labelled anchors and closed-loop paths are recovered; those are not present in the Stage 26 ZIP. No family-resolved Yang–Mills result is claimed.
+
+### Minimum data contract for the next run
+
+1. Freeze a geometry/path manifest: geometry hash, family j, worm/line ID, anchor ID, ordered oriented edge IDs, loop closure check, and loop length.
+2. For every outer configuration and transfer slice, retain per-anchor closed-loop holonomies or defects, with family labels intact. Retain raw links plus the exact incidence/path manifest if loops are to be recomputed later.
+3. Store F_j(τ), O_n(τ) for predeclared observer phases, and O_full(τ) as a control; do not aggregate away the family and anchor labels before forming these operators.
+4. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Predeclare phase origin, radial/anchor window, normalization, comparison phases and null controls.
+5. Preserve the nested error structure: outer-configuration chain bootstrap, inner multihit uncertainty, matched-pair identity, and autocorrelation/cost diagnostics.
+
+The synthetic SU(2) loop verifier (450 deterministic checks) confirms local gauge invariance of the closed-loop family contraction and its C5 covariance. It does not use Stage 26 links and is only an operator-design test. See research/scripts/verify_pf_family_observer_operator_2026_11_12.py and research/evidence/PF_FAMILY_OBSERVER_OPERATOR_2026_11_12.json.
