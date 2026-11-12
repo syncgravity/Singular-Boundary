@@ -90,7 +90,7 @@ Consequently, under \(b_0/a_0\le1/40000\),
 \[
 \boxed{|E_{ijk}|\le3.25\times10^{16}\frac{b_0^6}{a_0^5}.}
 \]
-This is a conditional finite-source-volume-uniform bound under the listed curvature, derivative-flow, residual and resolvent estimates. It has **no exponential spatial spanning-tree factor** and does not establish decay with the separation of \(S_i,S_j,S_k\).
+This is a historical conditional calculation, not a currently certified bound: its curvature, derivative-flow and residual inputs depend on the isolated-rotor estimate \(\|s_f'\|_\infty\le\beta_f\), which is contradicted by the radial equation's linear response \(\|s_\beta'\|_\infty/\beta\to4/3\). See [the perturbative obstruction](../audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md). The exact six-permutation identity remains valid. The numerical prefactor must be recomputed after the analytic inputs are repaired. It has **no exponential spatial spanning-tree factor** and does not establish decay with the separation of \(S_i,S_j,S_k\).
 
 The former \(1.527\times10^{16}\) prefactor, \(\kappa=a_0/2-2976b_0\), \(\lambda=a_0/2-46752b_0\), and \(b_0/a_0<1/93504\) threshold are historical estimates and are superseded for this working route.
 
