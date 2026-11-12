@@ -1,0 +1,27 @@
+{
+  "status": "PASS_450_NORMALIZED_FAMILY_OPERATOR_AND_SU2_GAUGE_CHECKS",
+  "rho": 0.38196601125010515,
+  "weights": "u_j(n)=sqrt(2/5)*cos(4*pi*j/5 - 2*pi*rho*n)",
+  "algebra": {
+    "l2_norm_squared": 1,
+    "family_sum": 0,
+    "z1_projection": 0,
+    "z2_projection": "sqrt(5/2)*exp(2*pi*i*rho*n)",
+    "c5_covariance": "theta -> theta+4*pi/5 cyclically relabels the five families"
+  },
+  "synthetic_closed_su2_loop_test": {
+    "seed": 419,
+    "families": 5,
+    "loops_per_family": 4,
+    "gauge_transformation": "U_ij -> g_i U_ij g_j^dagger",
+    "maximum_family_defect_change": 1e-11,
+    "maximum_observer_operator_change": 1e-11,
+    "observable_bound": "|O_n| <= 2*sqrt(5) when each family defect is in [0,2]"
+  },
+  "caveats": [
+    "This is a synthetic gauge-covariance test, not an evaluation on Stage 26 gauge configurations.",
+    "Each family observable must be an average of closed Wilson-loop defects with source-authenticated family and anchor labels.",
+    "The observer phase index n is distinct from Euclidean transfer time.",
+    "Stage 26 archives currently contain aggregate arrays and a restart link array, but no source-authenticated family loop catalogue."
+  ]
+}
