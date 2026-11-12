@@ -296,3 +296,28 @@ The sequence comparison enumerated every cyclic contiguous Stage 19 loop segment
 The 36 matching candidate paths have edge lengths 2 (1), 3 (25), 4 (4), 5 (5), and 7 (1). Some candidates occur in more than one Stage 19 rooted loop; therefore a match is not a unique root assignment. The full occurrence list, including catalogue row/root, cyclic start offset and orientation, is recorded in `research/evidence/PF_STAGE16_STAGE19_ORDERED_EDGE_SEQUENCE_CROSSWALK_2026_11_12.json`.
 
 **Interpretation:** Stage 26's `candidate_path_indices` are conclusively Stage 16 candidate-array row IDs, not Stage 19 root indices. There is exact edge-sequence overlap for 36 candidates, but no complete-loop identity for any of the 600. For the other 564 candidates, the Stage 19 complete catalogue contains no exact contiguous match under the tested cyclic/orientation conventions. The 56 occurrences do not establish a physical observer map, nor do they identify a unique root anchor for each candidate. This resolves the indexing/provenance question without forcing a correspondence that the data do not support.
+
+
+## 11. Stage 16–Stage 19–M55 worm-boundary exact subpath bridge
+
+The 36 Stage 16 candidates recovered through the exact Stage 19 crosswalk were reconstructed as ordered edge/sign sequences. For each candidate, all of its listed Stage 19 occurrences independently reconstruct the same candidate sequence. Those 36 sequences were then tested against every cyclic contiguous segment of each of the 252 M55 source-geometry worm-boundary Wilson loops, at the candidate's exact length, with both loop orientations tested.
+
+Nine of the 36 candidates occur as exact three-edge subpaths of the M55 worm-boundary loops. The nine matches span all five worm families: family counts are 1, 2, 1, 4, 1, against family catalogue sizes 50, 50, 51, 51, 50. Six matches have the same traversal orientation and three are reversed. The other 27 candidates in this already-recoverable subset have no exact worm-boundary subpath match.
+
+| Stage 16 candidate | Stage 19 root rows | Worm family | Segment ID | Offset | Orientation |
+|---:|---|---:|---:|---:|---|
+| 274 | 14203, 14612 | 0 | 31 | 219 | reverse |
+| 263 | 14083 | 1 | 54 | 99 | same |
+| 239 | 5412 | 1 | 87 | 6 | reverse |
+| 258 | 17896, 18297 | 2 | 144 | 150 | reverse |
+| 265 | 3109, 3110 | 3 | 151 | 26 | same |
+| 254 | 11919 | 3 | 166 | 163 | same |
+| 267 | 11132, 11530, 11534 | 3 | 169 | 197 | same |
+| 253 | 10307, 10314, 10754 | 3 | 171 | 220 | same |
+| 255 | 13563 | 4 | 247 | 46 | same |
+
+This is an exact finite combinatorial bridge between the three catalogues. It is not a unique root-to-worm assignment: several Stage 16 candidates have multiple Stage 19 root-row occurrences, and the nine worm hits are not a one-to-one family map. The family-3 count is four of 51 segments, while the other families have one or two matches among approximately 50; this is not evidence of strong family concentration. The nine matches are all length three, so this result alone does not establish a long-range observer trajectory, a directed Conway-worm path, or the physical three-dimensional lift.
+
+The test covers only the 36 Stage 16 candidates that already have exact Stage 19 subpath matches. It does not cover the 564 candidates with no Stage 19 match because their exact ordered path sequences are not available in the crosswalk evidence. Thus the observed 9/36 rate must not be reported as a rate over all 600 candidates.
+
+The detailed machine-readable evidence is `research/evidence/PF_STAGE16_STAGE19_M55_WORM_BOUNDARY_CROSSWALK_2026_11_12.json`. The local full report is SHA-256 `a62af0920e7c7ebd7c455dea49846442f7490e046a34d40cd32748ecd8ccb294`; the source worm catalogue is SHA-256 `1220d3ba0b2b69d0cbba7767133889adfc30d28e5752038bc63377ef1930cb66`.
