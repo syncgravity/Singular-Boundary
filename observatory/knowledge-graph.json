@@ -1,7 +1,7 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-10",
-  "version": "v2.73-r3-ir-trace-gradient",
+  "build_date": "2026-11-11",
+  "version": "v2.74-four-pr-review-board",
   "scope": "R3_IR finite open SU(2) strip: conditional weighted one-link Poincare trace damping, exact product-manifold trace commutator, and an unevaluated A2/A3 plus trace-free/mixed Hessian closure criterion. PF-I16 remains a separate auxiliary Penrose route. Full weighted Hessian contraction, physical 3D transfer, continuum reconstruction and Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
@@ -7833,8 +7833,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "63dd4a470b28499feb2306b9d6c5cf48d3fb6842",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/63dd4a470b28499feb2306b9d6c5cf48d3fb6842/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "0f3820d2b540358940945c60515428c89e926057",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/0f3820d2b540358940945c60515428c89e926057/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
@@ -10393,6 +10393,158 @@
         "Hessian"
       ],
       "importance": 4,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PR-74",
+      "title": "PR #74 · finite non-Abelian SU(2) positive-probability tube",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Active review lane: finite-regulator non-Abelian tube probability certificate and its source/verifier. Probability is positive at each specified finite regulator but is not uniform in refinement or volume.",
+      "detail": "Pull request reopened for resolution. Base main; head audit/2026-11-06-nonabelian-tube-complete-theorem-index at 447dcea7c54175bf46962de0222ceba519659796. GitHub currently reports mergeable=false. Resolve generated theorem-index/graph conflicts without dropping the finite tube theorem, verifier, source evidence or provenance. This is not a uniform interacting-vacuum Poincare estimate.",
+      "checks": [
+        {
+          "label": "Resolve Observatory/index conflicts against canonical four-PR map",
+          "state": "open",
+          "note": "Preserve both source histories and regenerate derived files from the canonical registry."
+        },
+        {
+          "label": "Audit finite tube assumptions and probability dependence",
+          "state": "open",
+          "note": "No refinement-/volume-uniform lower bound is established."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PR #74 · finite non-Abelian tube and theorem index",
+          "url": "https://github.com/syncgravity/Singular-Boundary/pull/74",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "pull-request",
+        "active-review",
+        "nonabelian-tube",
+        "finite-regulator",
+        "verifier"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PR-103",
+      "title": "PR #103 · Observatory publishing preparation",
+      "kind": "publication",
+      "status": "open",
+      "stage": "P0",
+      "summary": "Active publishing/configuration lane for the Observatory. Keep publishing mechanics separate from mathematical theorem certification and do not activate Pages for this private repository.",
+      "detail": "Pull request reopened for resolution. Base main; head pages-public-ready at 53c608a3f3884066568525374c32b4fc2986f866. GitHub currently reports mergeable=false. Reconcile workflow and publishing documentation with the canonical app-mounted deployment in Tau. GitHub Pages is not the chosen delivery target.",
+      "checks": [
+        {
+          "label": "Reconcile publishing workflow and docs with private-repository deployment",
+          "state": "open",
+          "note": "The chosen host is Tau/Fly at https://qualion.org/yang-mills, not GitHub Pages."
+        },
+        {
+          "label": "Ensure no public Pages activation or source exposure",
+          "state": "open",
+          "note": "Preserve private research source boundaries."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PR #103 · public GitHub Pages preparation",
+          "url": "https://github.com/syncgravity/Singular-Boundary/pull/103",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "pull-request",
+        "active-review",
+        "observatory",
+        "publishing",
+        "private-repository"
+      ],
+      "importance": 4,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PR-106",
+      "title": "PR #106 · R3-IR finite-strip full-Hessian analysis",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "Active independent mathematical review lane: exact ordered full-Hessian evolution and conditional one-output weighted gradient–Hessian contraction on a finite product SU(2) strip.",
+      "detail": "Pull request reopened for resolution. Base architecture/source-compatible-spectral-spine-2026-11-11; head audit/r3-ir-h2-trace-to-k-2026-11-10 at 12995f4e34e0a7125da881f0ec655da243e33c3e. GitHub currently reports mergeable=false. Preserve as a distinct finite-strip model; do not conflate with PF-I16 or the physical continuum Hamiltonian. Conditional lambda_min >0.4955484 is not a continuum gap.",
+      "checks": [
+        {
+          "label": "Resolve source/index/Observatory overlap with #107",
+          "state": "open",
+          "note": "Retain every unique finite-strip derivation, audit, verifier and log."
+        },
+        {
+          "label": "Complete finite-strip independent mathematical review",
+          "state": "open",
+          "note": "No transfer to PF source-native regulator or continuum YM without equivalence."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PR #106 · R3-IR H2 full-Hessian analysis",
+          "url": "https://github.com/syncgravity/Singular-Boundary/pull/106",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "pull-request",
+        "active-review",
+        "R3-IR",
+        "finite-strip",
+        "full-Hessian"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "PR-107",
+      "title": "PR #107 · canonical source-compatible proof spine and Observatory integration",
+      "kind": "work",
+      "status": "open",
+      "stage": "P3",
+      "summary": "Primary integration lane: S0–S5 dependency spine, generated Observatory registry/graph, handoff self-maintenance, and eight merged finite-model evidence contributions.",
+      "detail": "Open integration PR; base main; head architecture/source-compatible-spectral-spine-2026-11-11. It does not claim the Yang–Mills mass gap. The other three active PRs remain separately tracked; #74/#103/#106 must be resolved or explicitly reconciled before this integration is final.",
+      "checks": [
+        {
+          "label": "Maintain the canonical S0–S5 proof spine and four-PR tracker",
+          "state": "open",
+          "note": "No theorem promotion by indexing; no model mixing without equivalence."
+        },
+        {
+          "label": "Integrate reviewed unique content from #74/#103/#106",
+          "state": "open",
+          "note": "Do not merge conflicting generated graph/index snapshots blindly."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PR #107 · canonical integration",
+          "url": "https://github.com/syncgravity/Singular-Boundary/pull/107",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "pull-request",
+        "active-review",
+        "canonical-integration",
+        "S0-S5",
+        "observatory"
+      ],
+      "importance": 5,
       "core": true,
       "route": null
     }
@@ -15143,6 +15295,69 @@
       "kind": "next-mathematical-step",
       "label": "uniform transfer and full interacting closure remain open",
       "status": "open"
+    },
+    {
+      "from_id": "PR-74",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "kind": "evidence-lane",
+      "label": "finite-regulator tube positivity; no uniform interacting inequality",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-74",
+      "to_id": "R-INDEX",
+      "kind": "source-index-review",
+      "label": "reconcile theorem index and verifier without overwriting canonical registry",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-103",
+      "to_id": "R-INDEX",
+      "kind": "observatory-publishing",
+      "label": "publishing workflow must follow the canonical source registry and private source boundary",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-106",
+      "to_id": "R3-IR-TRACE-GRADIENT",
+      "kind": "same-program-distinct-result",
+      "label": "finite-strip full-Hessian route; not the trace-gradient route or PF physical model",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PR-106",
+      "to_id": "W-3D-ANALYTIC",
+      "kind": "transfer-obligation",
+      "label": "no 3D or continuum transfer established",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-107",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "kind": "canonical-proof-target",
+      "label": "organizes the unresolved source-compatible uniform inequality",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-107",
+      "to_id": "PR-74",
+      "kind": "parallel-review",
+      "label": "track and reconcile finite tube source without model conflation",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-107",
+      "to_id": "PR-103",
+      "kind": "parallel-review",
+      "label": "coordinate Observatory delivery and publication boundaries",
+      "status": "open"
+    },
+    {
+      "from_id": "PR-107",
+      "to_id": "PR-106",
+      "kind": "parallel-review",
+      "label": "preserve finite-strip derivations and resolve overlapping generated artifacts",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -15967,5 +16182,48 @@
       "finite_support_oscillation_prefactor": "26*pi",
       "all_orders_summability": false
     }
+  },
+  "pr_tracker": {
+    "repository": "syncgravity/Singular-Boundary",
+    "open_count": 4,
+    "canonical_pr": 107,
+    "active_prs": [
+      {
+        "number": 74,
+        "branch": "audit/2026-11-06-nonabelian-tube-complete-theorem-index",
+        "head_sha": "447dcea7c54175bf46962de0222ceba519659796",
+        "base": "main",
+        "state": "open",
+        "mergeable": false,
+        "role": "finite non-Abelian tube theorem/index conflict"
+      },
+      {
+        "number": 103,
+        "branch": "pages-public-ready",
+        "head_sha": "53c608a3f3884066568525374c32b4fc2986f866",
+        "base": "main",
+        "state": "open",
+        "mergeable": false,
+        "role": "Observatory publishing workflow; Pages not selected"
+      },
+      {
+        "number": 106,
+        "branch": "audit/r3-ir-h2-trace-to-k-2026-11-10",
+        "head_sha": "12995f4e34e0a7125da881f0ec655da243e33c3e",
+        "base": "architecture/source-compatible-spectral-spine-2026-11-11",
+        "state": "open",
+        "mergeable": false,
+        "role": "independent finite-strip full-Hessian research"
+      },
+      {
+        "number": 107,
+        "branch": "architecture/source-compatible-spectral-spine-2026-11-11",
+        "base": "main",
+        "state": "open",
+        "mergeable": true,
+        "role": "canonical proof-spine integration",
+        "head_sha_policy": "self-updating integration branch; resolve current SHA from the live PR"
+      }
+    ]
   }
 }
