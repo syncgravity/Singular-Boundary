@@ -9,7 +9,7 @@
 
 The PF-I16 branch is divergent from `main`: 53 commits ahead and 138 behind, with 46 branch-only files (26 research reports, 17 scripts, and 3 later theorem/verification files; exact path inventory is the compare result). A merge of its historical commit chain would pull in a stale ancestor history and risk reintroducing old generated files and superseded statements. The safe operation is content-level reconciliation onto the current architecture branch, preserving every distinct report and verifier while correcting superseded claims.
 
-The branch is scientifically material and must not be discarded. Its work is on the authentic five-direction accepted [0m\(\mathbb Z^5\) Penrose–Fibonacci rhombus complex and original-link SU(2) variables, with explicitly chosen auxiliary electric and magnetic coefficients. It is not a source-derived physical Hamiltonian or time normalization.
+The branch is scientifically material and must not be discarded. Its work is on the authentic five-direction accepted \(\mathbb Z^5\) Penrose–Fibonacci rhombus complex and original-link SU(2) variables, with explicitly chosen auxiliary electric and magnetic coefficients. It is not a source-derived physical Hamiltonian or time normalization.
 
 ## 2. Contributions that survive the review
 
