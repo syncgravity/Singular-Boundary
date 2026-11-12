@@ -205,3 +205,19 @@ These residual derivative bounds inherit the mixed-holonomy geometric condition 
 - The fourth-order spatial tree estimate remains conditional on the corrected derivative flow, residual estimates, and path-block covariance/cumulant argument.
 - No all-orders activity summability, physical kinetic/time normalization, genuine refining physical three-dimensional regulator, continuum reconstruction, or Yang–Mills mass gap is established.
 - All P0–P5 and PF-G0–G5 gates remain OPEN.
+
+
+## 6. 2026-11-11 correction: the inherited first-derivative constant
+
+The earlier inherited input \(\|s_f'\|_\infty\le\beta_f\) is false for the radial equation in Section 2: its exact zero-coupling linear response is \(-\frac43\beta_f\sin\theta+o(\beta_f)\). The corrected global maximum-principle bound is \(\|s_f'\|_\infty\le2\beta_f\), and the corrected radial Hessian bound is
+\[
+\|\nabla^2s_f\|_{\rm op}\le\frac43\beta_f+\frac{80}{3}\beta_f^2.
+\]
+The resulting provisional pullback blocks are
+\[
+h_d\le\frac{32}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0},\qquad
+h_o\le\frac{56}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0}.
+\]
+The shared-link residual magnitude is at most \(4160b_0^2/a_0\). At \(b_0/a_0\le1/50000\), the corresponding row estimates give \(\kappa_{\rm BE}>0.4786a_0\) and \(\lambda_{\log25}>0.0483a_0\), conditional on the remaining product-Hessian and Bochner comparisons. Corrected residual derivative estimates are recorded in [the perturbative obstruction and repair audit](../audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md).
+
+The Section 3–4 numerical blocks and residual derivative constants above are historical and superseded by these corrected values. The third-order numerical prefactor must be recomputed. The exact group-product sign audit remains valid; no all-orders, physical-time, continuum, or mass-gap conclusion follows.
