@@ -16,11 +16,7 @@ d_e\le8,\qquad a_e\ge a_0>0,\qquad |b_f|\le b_0,\qquad A_f\ge a_0/2.
 \]
 The last inequality follows from the four boundary links and \(d_e\le8\).
 
-The isolated-face ground-state logarithm is radial on the radius-two \(S^3\simeq\mathrm{SU}(2)\). Its first derivative estimate
-\[
-\|s_f'\|_\infty\le\beta_f
-\]
-is taken as an inherited hypothesis from the isolated-rotor maximum-principle argument. No commuting-link approximation is used.
+The isolated-face ground-state logarithm is radial on the radius-two \(S^3\simeq\mathrm{SU}(2)\). The previously inherited first-derivative estimate \(\|s_f'\|_\infty\le\beta_f\) is now contradicted by the linear response of the radial equation: \(\|s_\beta'\|_\infty/\beta\to4/3\) as \(\beta\downarrow0\). See [the 2026-11-11 perturbative obstruction](../audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md). Accordingly, every Hessian, residual-derivative and derivative-flow constant below that uses \(\|s_f'\|_\infty\le\beta_f\) is provisional and must be recomputed from a corrected bound. No commuting-link approximation is used.
 
 ## 2. Exact weighted-mean cancellation in the radial equation
 
