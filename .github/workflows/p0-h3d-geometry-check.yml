@@ -1,0 +1,33 @@
+name: P0-H3D exact Delone/Voronoi certificate
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'research/audits/P0_H3D_EXACT_DELINE_VORONOI_CERTIFICATE_2026-11-11.md'
+      - 'research/verification/verify_p0_h3d_exact_voronoi.py'
+      - 'research/verification/requirements-p0-h3d.txt'
+      - '.github/workflows/p0-h3d-geometry-check.yml'
+  pull_request:
+    paths:
+      - 'research/audits/P0_H3D_EXACT_DELINE_VORONOI_CERTIFICATE_2026-11-11.md'
+      - 'research/verification/verify_p0_h3d_exact_voronoi.py'
+      - 'research/verification/requirements-p0-h3d.txt'
+      - '.github/workflows/p0-h3d-geometry-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-geometry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: research/verification/requirements-p0-h3d.txt
+      - name: Install pinned geometry verifier dependencies
+        run: python -m pip install -r research/verification/requirements-p0-h3d.txt
+      - name: Verify exact displacement, phase, incidence and Delone bounds
+        run: python research/verification/verify_p0_h3d_exact_voronoi.py
