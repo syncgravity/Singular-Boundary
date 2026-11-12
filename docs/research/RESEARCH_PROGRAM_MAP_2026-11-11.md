@@ -82,6 +82,17 @@ The PF-I11–PF-I16 finite results are substantive mathematical contributions. T
 
 ### D. R3-IR and cubic/other regulator lanes
 
+The [PR #107 preservation ledger](PR107_BRANCH_PRESERVATION_LEDGER_2026-11-11.md) records the finite-model audits brought into `main`. Key source records include:
+
+- [P0 refinement / P4 source-visible audit](../../research/audits/P0_REFINEMENT_AND_P4_SOURCE_VISIBLE_AUDIT_2026-11-05.md)
+- [P2 quantitative local f-sum](../../research/audits/P2_QUANTITATIVE_LOCAL_FSUM_2026-11-04.md)
+- [Coupled cubic quantum-vacuum link deletion](../../research/audits/R3_COUPLED_CUBIC_QUANTUM_VACUUM_LINK_DELETION_2026-11-06.md)
+- [Cubic vacuum-to-flow averaged curvature](../../research/audits/R3_COUPLED_CUBIC_VACUUM_TO_FLOW_AVERAGED_CURVATURE_2026-11-06.md)
+- [Vacuum-flow entropy and averaged force](../../research/audits/R3_COUPLED_VACUUM_FLOW_ENTROPY_AND_AVERAGED_FORCE_2026-11-06.md)
+- [One-plaquette Gibbs/action-transfer audit](../../research/audits/R3_ONE_PLAQUETTE_GIBBS_CLASSICAL_ACTION_TRANSFER_AUDIT_2026-11-06.md)
+- [Quantum one-face vacuum regularity/cap audit](../../research/audits/R3_QUANTUM_ONE_FACE_VACUUM_REGULARITY_AND_CAP_AUDIT_2026-11-06.md)
+- [Signed center-Hessian flow instability](../../research/audits/R3_SIGNED_CENTER_HESSIAN_FLOW_INSTABILITY_2026-11-06.md)
+
 R3-IR, cubic SU(2), prism, and related audits are separate model lanes. They can provide conditional comparison estimates, finite reference results, obstructions, and verifier techniques. They must not be relabelled as the Penrose-source physical regulator without a proved equivalence map.
 
 The PR review board and individual theorem dossiers define each lane's scope. In particular, an R3-IR finite-strip Hessian estimate is not automatically a PF-I16 source-native vacuum estimate.
