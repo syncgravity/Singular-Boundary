@@ -4,7 +4,7 @@
 
 > **Scientific status (November 11, 2026): OPEN.** No nontrivial four-dimensional continuum Yang–Mills construction or positive physical mass-gap theorem has been established. Exact finite-graph results, conditional inequalities, numerical archives, and proposed proof paths must be read within their stated assumptions.
 
-> **Research navigation:** Start with the [Research Program Map](docs/research/RESEARCH_PROGRAM_MAP_2026-11-11.md) for the repository layout, helical-observer source dossier, PF-I11–PF-I16 sequence, separate R3-IR lane, evidence vocabulary, and source-of-truth rules. The [Research Observatory](observatory/index.html) and [repository handoff](docs/research/REPOSITORY_HANDOFF_2026-11-11.md) provide the interactive and operational views.
+> **Research navigation:** Start with the [Research Program Map](docs/research/RESEARCH_PROGRAM_MAP_2026-11-11.md) for the repository layout, helical-observer source dossier, PF-I11–PF-I16 sequence, separate R3-IR lane, evidence vocabulary, and source-of-truth rules. For the named helical-observer records and mandatory tree-first discovery/read protocol, use the [Helical Observer Source Register](sources/source-manifests/HELICAL_OBSERVER_SOURCE_REGISTER_2026-11-11.md). The [Research Observatory](observatory/index.html) and [repository handoff](docs/research/REPOSITORY_HANDOFF_2026-11-11.md) provide the interactive and operational views.
 
 
 ## Current source corrections · November 11, 2026
