@@ -267,3 +267,14 @@ The principal data limitation is now ensemble coverage. The Stage 26 full ZIP ha
 
 The separate synthetic SU(2) loop verifier (450 deterministic checks) validates the generic family contraction. The Stage 26 worm-boundary script constructs 252 source-geometry worm-strip loops, verifies their gauge covariance on the actual restart, and computes their family-conditioned defects. These are finite one-configuration measurements, not an ensemble correlator or a Yang–Mills mass-gap result.
 
+
+
+## 9. Stage 19 complete catalogue versus Stage 16 matched-path indices
+
+The user has now placed `data/raw/stage19/penrose_complete_catalogue.npz` on repository `main`. Its Git LFS pointer resolves to object SHA-256 `d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d`, size 1,963,431 bytes. The companion source manifest `penrose_complete_catalogue.json` identifies it as the Stage 19 full-anchor strict auxiliary catalogue: 22,808 roots, zero missing roots, one selected loop per root, graph hash `f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21`. Its row identity is the Stage 19 root/anchor index, not automatically the Stage 16 matched-path index.
+
+The four Stage 26 multihit arrays' `candidate_path_indices` are independently identified by the archived Stage 16 source. `ym_stage16/stage16_matched_paths.py::write_catalog` constructs the sparse candidate arrays using `stage7_large_torus.pair()` and `sparse_paths(..., max_steps=10, n_anchors=180, per_length=100)`; `select_matched` stores the selected `penrose_path_index`. The archived `MATCHED_PATH_SCREEN.json` contains exactly 600 distinct Penrose path indices, minimum 197 and maximum 999, matching the four multihit files' 600 unique candidate IDs exactly as a range and cardinality. These IDs are row indices into the Stage 16 sparse candidate-path catalogue, not Stage 19 root IDs.
+
+Therefore the Stage 19 NPZ cannot be indexed directly by `candidate_path_indices`. A valid crosswalk must be made by reconstructing the deterministic Stage 16 candidate path array and matching each selected row's ordered `(edge_id, orientation_sign)` sequence against the Stage 19 catalogue rows, with explicit checks for duplicate sequences, orientation reversal, periodic winding and root-anchor identity. The graph hash match is necessary but not sufficient for row identity.
+
+**Access limitation for this audit run:** GitHub exposes the NPZ as a Git LFS pointer and manifest through the repository connector; its binary payload is not available to the current analysis runtime. Thus the manifest and source-level index semantics are verified, but no claim is made here that the edge-sequence crosswalk has been computed. Next execution gate: obtain the exact LFS payload or run a repository-side verifier with LFS enabled, regenerate the Stage 16 sparse candidate arrays, and emit a 600-row crosswalk with exact-match status and mismatch diagnostics.
