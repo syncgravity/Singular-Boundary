@@ -181,6 +181,18 @@ def run(stage26_zip,geometry_zip,radius=40.0,min_faces=10,phase_max=1000,check_g
                 restart_sweeps=np.asarray(a["sweeps"]).tolist() if "sweeps" in a.files else None
         if restart_sha!=RESTART_SOURCE_SHA: raise ValueError("Restart source hash mismatch")
         assert links.shape==(nt*(E+V),4) and stored.shape==(nt*(F+E),)
+        # Reconstruct every stored normalized plaquette trace from the source fi/sg incidence.
+        fi_all=np.asarray(ns["fi"]); sg_all=np.asarray(ns["sg"])
+        q_all=np.zeros((len(fi_all),4)); q_all[:,0]=1
+        for k in range(4):
+            uu=links[fi_all[:,k]].copy()
+            neg=sg_all[:,k]<0
+            if np.any(neg): uu[neg]=qconj_batch(uu[neg])
+            q_all=qmul_batch(q_all,uu)
+        incidence_error=np.abs(q_all[:,0]-stored)
+        max_incidence_error=float(incidence_error.max())
+        if max_incidence_error>1e-12:
+            raise AssertionError("full spacetime link/face reconstruction mismatch")
         loops=[]
         for sid,seg in enumerate(segments):
             loop=boundary_loop(seg,edges,fidx,fsg); loops.append(loop)
@@ -228,11 +240,16 @@ def run(stage26_zip,geometry_zip,radius=40.0,min_faces=10,phase_max=1000,check_g
         phase_spread=float(np.sqrt(-2*np.log(abs(np.mean(np.exp(1j*phase_angles))))))
         inradius=min(abs(cross2(ns["Qpar"]@ns["t1"],ns["Qpar"]@ns["t2"]))/np.linalg.norm(ns["Qpar"]@ns["t1"]),
                      abs(cross2(ns["Qpar"]@ns["t1"],ns["Qpar"]@ns["t2"]))/np.linalg.norm(ns["Qpar"]@ns["t2"]))/2
+        if radius>=inradius:
+            raise ValueError("disk crop must remain inside the M55 fundamental-cell inradius")
         result={
             "status":"PASS_M55_WORM_BOUNDARY_LOOP_EXTRACTION_AND_STAGE26_EVALUATION",
             "stage26_archive_sha256":STAGE26_SHA,"geometry_archive_sha256":GEOM_SHA,
             "graph_hash":ns["h"],"source_array_sha256":ns["arrayhash"],
             "restart_source_sha256":restart_sha,"restart_sweeps":restart_sweeps,
+            "exact_incidence_validation":{"reconstructed_spacetime_faces":int(len(fi_all)),
+                "max_abs_normalized_trace_error":max_incidence_error,
+                "count_error_over_1e_12":int(np.count_nonzero(incidence_error>1e-12))},
             "crop":{"radius":radius,"fundamental_cell_inradius":float(inradius),
                     "min_faces":min_faces,"active_faces":int(mask.sum())},
             "worm_segments":{"total":len(segments),"family_summary":family_summary,
