@@ -2,7 +2,7 @@
 
 **Branch:** `architecture/source-compatible-spectral-spine-2026-11-11`  
 **Destination:** `main`  
-**Comparison snapshot:** 2026-11-11, 81 commits ahead / 89 behind, 41 changed paths. This is a dated comparison, not a live branch status.
+**Comparison snapshot:** 2026-11-11, 81 commits ahead / 93 behind, 41 changed paths. This is a dated comparison, not a live branch status.
 
 ## Disposition
 
