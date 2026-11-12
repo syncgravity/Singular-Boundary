@@ -169,20 +169,60 @@ C_n(\tau)=\langle O_n(\tau)O_n(0)\rangle_c.
 \]
 The observer phase label n and observer clock t_n=nT are not the Euclidean transfer time τ. Sweeping n together with τ would define a nonstationary, phase-conditioned correlator and must be analyzed as such; it must not be silently fit as an ordinary stationary spectral correlator.
 
-### Uploaded Stage 26 data inventory
+### Uploaded Stage 26 data inventory and reconstructed incidence
 
-The uploaded four Penrose multihit NPZs contain direct/multihit arrays of shape (4,600), lags, matched-pair and candidate-path indices, r, dx, source/target indices, and seed/geometry/checkpoint metadata. They do not contain five worm-family labels, anchor-to-family assignments, ordered closed-loop edge paths, or per-anchor Wilson holonomies.
+The four Penrose multihit NPZs contain direct/multihit arrays of shape (4,600), lags, matched-pair and candidate-path indices, r, dx, source/target indices, and seed/geometry/checkpoint metadata. They do not contain the ordered path geometry or family labels needed to interpret candidate path IDs as worm-family Wilson loops.
 
-The Stage 26 full ZIP contains outer snapshots with aggregate direct-timeslice, direct-product, conditional, conditional-onepoint and pair-count arrays. Its restart archive contains a links array of shape (1,368,480,4) and a plaquette_trace array of shape (1,368,480), plus run metadata. It does not contain the geometry/path catalogue needed to reconstruct the proposed family loops. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not a family-loop catalogue.
+The Stage 26 full ZIP contains aggregate outer snapshots and a restart archive with links of shape (1,368,480,4) and normalized plaquette_trace of shape (1,368,480). The restart alone does not include the incidence map. A separate user-supplied STAGE26_M55_GEOMETRY_RECONSTRUCTION_2026-10-31.zip provides the archived M55 reconstruction source, spatial face incidence, and full spacetime fi/sg incidence arrays. Its reconstructed graph hash matches the archived Stage7 graph hash; its source-array hash is fee7afad5b4b464537782b508402401502984947ac5caf5163a87dad8ae33e2e. The complete measurement-catalogue NPZ byte match remains unverified.
 
-Therefore O_n cannot be evaluated retrospectively from the uploaded aggregate files alone. The restart links could in principle support recomputation if the exact graph incidence, oriented edge map, family-labelled anchors and closed-loop paths are recovered; those are not present in the Stage 26 ZIP. No family-resolved Yang–Mills result is claimed.
+Crucially, the reconstructed incidence is now validated against the actual restart links: multiplying the four oriented SU(2) link quaternions for **all 1,368,480 spacetime faces** reproduces the stored normalized plaquette_trace with maximum absolute error 5.56×10⁻¹⁶ and zero entries above 10⁻¹². The first 22,808 spatial faces per timeslice are in the source generator's face order. Their two basis-direction labels (a,b) provide exact five-family *plaquette* labels; each face belongs to two directional families.
+
+### Actual Stage 26 family-plaquette diagnostic
+
+For each family j, define the spatial plaquette defect at timeslice t by
+\[
+F_j^{\mathrm{plaq}}(t)=\operatorname{mean}_{f:\,j\in\{a_f,b_f\}}
+\left(1-\frac12\operatorname{Tr}U_f(t)\right).
+\]
+This is a family-labelled, gauge-invariant closed-loop observable computed from the actual Stage 26 restart configuration, not a synthetic SU(2) test.
+
+| Family j | Mean defect over 20 slices | Slice standard deviation | Number of faces |
+|---:|---:|---:|---:|
+| 0 | 0.32968420 | 0.00266265 | 9,072 |
+| 1 | 0.33234256 | 0.00351840 | 9,152 |
+| 2 | 0.33236883 | 0.00313631 | 9,120 |
+| 3 | 0.33194860 | 0.00275874 | 9,120 |
+| 4 | 0.33212504 | 0.00261038 | 9,152 |
+
+The full-family control has mean 0.33169385 and slice standard deviation 0.00214334. The second-harmonic family amplitude
+\[
+A(t)=\sqrt{\frac25}\left|\sum_{j=0}^4F_j^{\mathrm{plaq}}(t)\omega^{2j}\right|
+\]
+has mean 0.00287180, maximum 0.00551889, and mean amplitude equal to 0.866% of the full-family control. Its phase circular spread over the 20 slices is 1.212 radians. Thus this one restart shows a small family-direction plaquette contrast, but not a stable phase-selection law.
+
+For observer phases n=0,…,1000, the computed
+\[
+O_n^{\mathrm{plaq}}(t)=\sum_j u_j(n)F_j^{\mathrm{plaq}}(t)
+\]
+ranges from −0.00551889 to +0.00551888. Its dependence on n is exactly the single second-harmonic projection, with maximum algebraic identity error 5.3×10⁻¹⁴. This does **not** mean the 34:55 arm counts have been measured in the gauge field: those counts are the Delaunay parastichy structure of the observer trajectory, while this is a phase-conditioned family-plaquette diagnostic.
+
+Scope is deliberately narrow: one restart configuration at sweep 10080 and its 20 periodic spatial slices. The slices are not an independent ensemble. This is not a transfer-matrix correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate.
+
+Reproduce this result with research/scripts/analyze_stage26_family_plaquettes_2026_11_12.py and inspect research/evidence/PF_STAGE26_FAMILY_PLAQUETTE_OPERATOR_2026_11_12.json.
+
+### Remaining long-loop data gap
+
+The family plaquette observable is now available because the reconstructed incidence identifies each spatial face and its two basis directions. Longer Wilson loops anchored along individual Conway worms require more: an ordered edge path, anchor, worm/line ID, and family assignment for every loop. The multihit NPZ candidate_path_indices are only indices; their path catalogue is not present in those NPZs.
+
+A Project file named penrose_complete_catalogue.npz (about 1.96 MB) appears in the Project file index, but the current file-access route did not expose its raw bytes. Its contents and hash have therefore not been verified. It may be the missing measurement catalogue; do not treat it as confirmed until inspected. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not the full worm-loop catalogue.
 
 ### Minimum data contract for the next run
 
-1. Freeze a geometry/path manifest: geometry hash, family j, worm/line ID, anchor ID, ordered oriented edge IDs, loop closure check, and loop length.
-2. For every outer configuration and transfer slice, retain per-anchor closed-loop holonomies or defects, with family labels intact. Retain raw links plus the exact incidence/path manifest if loops are to be recomputed later.
-3. Store F_j(τ), O_n(τ) for predeclared observer phases, and O_full(τ) as a control; do not aggregate away the family and anchor labels before forming these operators.
-4. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Predeclare phase origin, radial/anchor window, normalization, comparison phases and null controls.
-5. Preserve the nested error structure: outer-configuration chain bootstrap, inner multihit uncertainty, matched-pair identity, and autocorrelation/cost diagnostics.
+1. Inspect and hash penrose_complete_catalogue.npz, if it is the intended Stage 26 path catalogue. Verify that its graph/catalogue hashes and edge ordering match the restart and reconstructed incidence.
+2. If it does not contain the required paths, freeze a manifest with geometry hash, family j, worm/line ID, anchor ID, ordered oriented edge IDs, loop closure check, and loop length.
+3. For every outer configuration and transfer slice, retain per-anchor longer-loop holonomies or defects, with family labels intact. Retain raw links plus the exact incidence/path manifest if loops are to be recomputed.
+4. Store F_j(τ), O_n(τ) for predeclared observer phases, and O_full(τ) as a control; do not aggregate away family and anchor labels before forming these operators.
+5. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Preserve the nested outer-chain and inner-multihit error structure.
 
-The synthetic SU(2) loop verifier (450 deterministic checks) confirms local gauge invariance of the closed-loop family contraction and its C5 covariance. It does not use Stage 26 links and is only an operator-design test. See research/scripts/verify_pf_family_observer_operator_2026_11_12.py and research/evidence/PF_FAMILY_OBSERVER_OPERATOR_2026_11_12.json.
+The separate synthetic SU(2) loop verifier (450 deterministic checks) validates the gauge covariance of the proposed family contraction. The Stage 26 plaquette script validates the actual restart link/face incidence and computes the first family-labelled plaquette diagnostic. Neither supplies the missing long-worm Wilson-loop correlator or a Yang–Mills mass-gap result.
+
