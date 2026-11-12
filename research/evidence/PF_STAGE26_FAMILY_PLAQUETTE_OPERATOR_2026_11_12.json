@@ -1,0 +1,85 @@
+{
+  "status": "PASS_STAGE26_FULL_PLAQUETTE_RECONSTRUCTION_AND_FAMILY_OPERATOR",
+  "stage26_zip_sha256": "6cfa12935428533cfeaff40a467705d632b19ede07b7f30e0bb9fb7a0cc68657",
+  "geometry_reconstruction_zip_sha256": "d7a3fa153e69dae0129a6f0771d8241b78a0145cbc4939ea16b0a02ea74e7d60",
+  "restart_source_sha256": "275243c7da74941db5bdd882dbb7f44ce02c915503033f040841b75f80409638",
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "source_array_sha256": "fee7afad5b4b464537782b508402401502984947ac5caf5163a87dad8ae33e2e",
+  "geometry": {
+    "vertices": 22808,
+    "spatial_edges": 45616,
+    "spatial_faces": 22808,
+    "timeslices": 20,
+    "spacetime_links": 1368480,
+    "spacetime_faces": 1368480
+  },
+  "exact_incidence_validation": {
+    "reconstructed_faces": 1368480,
+    "max_abs_normalized_trace_error": 5.551115123125783e-16,
+    "count_error_over_1e_12": 0,
+    "link_face_index_shapes_match": true
+  },
+  "family_labels": {
+    "definition": "Each spatial rhombus face is assigned its two basis-direction indices (a,b) from the M55 source generator.",
+    "face_type_counts": {
+      "thick": 14096,
+      "thin": 8712
+    },
+    "faces_per_family": [
+      9072,
+      9152,
+      9120,
+      9120,
+      9152
+    ]
+  },
+  "single_restart_spatial_plaquette_diagnostic": {
+    "timeslices": 20,
+    "family_defect_mean_over_slices": [
+      0.32968419717631114,
+      0.33234256340934537,
+      0.332368832549479,
+      0.33194860050322006,
+      0.3321250395997285
+    ],
+    "family_defect_std_over_slices": [
+      0.0026626479550644114,
+      0.0035183964465978846,
+      0.003136306197321549,
+      0.002758737838102902,
+      0.0026103821611687815
+    ],
+    "full_family_control_mean": 0.33169384664761686,
+    "full_family_control_std": 0.0021433375466419517,
+    "second_harmonic_amplitude_mean": 0.0028718049417657482,
+    "second_harmonic_amplitude_std": 0.0012946647105135025,
+    "second_harmonic_amplitude_min": 0.00024273591766803143,
+    "second_harmonic_amplitude_max": 0.005518892568036789,
+    "second_harmonic_phase_circular_mean_rad": 3.0953034788600293,
+    "second_harmonic_phase_circular_spread_rad": 1.211624583938813,
+    "relative_second_harmonic_amplitude_to_full_control": 0.008657998846800076,
+    "observer_phase_indices_tested": [
+      0,
+      1000
+    ],
+    "O_n_global_min": -0.0055188925583717074,
+    "O_n_global_max": 0.005518877167808886,
+    "O_n_first_13_slice_means": [
+      -0.001641860504211402,
+      0.0010945360517397827,
+      0.000027706863236110606,
+      -0.0011353964090587447,
+      0.001646705089407494,
+      -0.00129306175954575,
+      0.00026022190843701554,
+      0.0009093026861945417,
+      -0.0016012049115427668,
+      0.0014520546522010474,
+      -0.0005401949080609926,
+      -0.0006554088255999313,
+      0.0015067510488914722
+    ],
+    "family_operator_harmonic_identity_max_error": 5.28431465252055e-14
+  },
+  "scope": "One restart configuration at sweep 10080 and its 20 spatial slices. This is a family-labelled plaquette diagnostic, not an ensemble correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate. The reconstructed graph hash matches the archived Stage7 graph hash; byte identity with the separate complete measurement catalogue remains unverified."
+}
