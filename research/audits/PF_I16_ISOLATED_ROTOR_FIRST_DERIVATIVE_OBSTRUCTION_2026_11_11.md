@@ -84,3 +84,78 @@ q_1'+2\cot\theta\,q_1+4\cos\theta=0
 This is an analytic perturbative obstruction, not a numerical approximation to the full rotor. It does not prove that the dressed PF-I16 route fails; it proves that its currently recorded first-derivative input and dependent constants have not been justified by the stated radial equation.
 
 **Proof status:** local dressing identity — exact finite graph; four-factor mixed derivative signs — independently audited; isolated-rotor first-derivative input — contradicted as stated; downstream analytic PF-I16 constants — require rederivation; all-orders activity, physical normalization, continuum and mass gap — open.
+
+
+## 6. Corrected radial estimate derived from the same ODE
+
+The obstruction does not leave the rotor without a usable bound. The same ODE gives a simple global estimate for every \(\beta\ge0\), assuming the smooth regular ground-state branch recorded above.
+
+At either pole, smooth radiality gives \(q(0)=q(\pi)=0\). Differentiate the radial equation:
+\[
+q''+2\cot\theta\,q'-2\csc^2\theta\,q
+=-8qq'+4\beta\sin\theta.
+\]
+At an interior positive maximum of \(q\), \(q'=0\) and \(q''\le0\), whereas the equation gives
+\[
+q''=2\csc^2\theta\,q+4\beta\sin\theta>0,
+\]
+a contradiction. Thus \(q\le0\). At an interior negative minimum, \(q'=0\) and \(q''\ge0\), so
+\[
+q\ge-2\beta\sin^3\theta\ge-2\beta.
+\]
+Consequently
+\[
+\boxed{-2\beta\le q_\beta(\theta)\le0,\qquad
+\|s_\beta'\|_\infty\le2\beta.}
+\]
+For negative coupling, the transformation \(\theta\mapsto\pi-\theta\) gives the same absolute bound.
+
+This bound is consistent with, but not sharp at, the linear-response coefficient \(4/3\).
+
+The weighted-mean identity gives \(-4\beta^2\le\lambda_\beta\le0\). Hence for \(h=q^2+\lambda_\beta\), \(\|h\|_\infty\le4\beta^2\). Repeating the endpoint-integral argument with this corrected bound gives
+\[
+\left|\frac{\cot\theta}{\sin^2\theta}J(\theta)\right|
+\le\frac{4}{3}\beta^2.
+\]
+The radial and tangential Hessian eigenvalues therefore satisfy
+\[
+\|s_\beta''\|_\infty
+\le\frac43\beta+\frac{80}{3}\beta^2,\qquad
+\left\|\frac14\cot\theta\,q_\beta\right\|_\infty
+\le\frac13\beta+\frac43\beta^2.
+\]
+Thus the corrected operator bound is
+\[
+\boxed{\|\nabla^2s_\beta\|_{\rm op}
+\le\frac43\beta+\frac{80}{3}\beta^2.}
+\]
+
+For the PF-I16 allocation \(A_f\ge a_0/2\), \(\beta_f\le2b_0/a_0\), and \(a_e\le8A_f\), the corresponding *provisional corrected* face blocks are
+\[
+h_d\le\frac{32}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0},
+\qquad
+h_o\le\frac{56}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0}.
+\]
+Here the off-diagonal mixed term uses \(\|\nabla s_f\|\le2\beta_f\), not \(\beta_f\). The unweighted curvature row bound becomes
+\[
+\kappa_{\rm BE}\ge\frac{a_0}{2}
+-\frac{3200}{3}b_0-\frac{81920}{3}\frac{b_0^2}{a_0},
+\]
+and the \(\mu=\log25\) derivative-flow comparison gives
+\[
+\lambda_{\log25}\ge\frac{a_0}{2}
+-\frac{67712}{3}b_0
+-\frac{1556480}{3}\frac{b_0^2}{a_0}.
+\]
+In particular \(b_0/a_0\le1/50000\) gives \(\kappa_{\rm BE}>0.4786a_0\) and \(\lambda_{\log25}>0.0483a_0\), **conditional on the remaining product-Hessian, Bochner and comparison arguments**.
+
+The shared-link residual magnitude bound increases by a factor four to \(4160b_0^2/a_0\). The derivative estimates also change; under the same \(1/50000\) ratio, the direct substitution in the recorded residual derivative inequality gives the provisional bounds
+\[
+\|D_hR_e\|\le21514\frac{b_0^2}{\sqrt{a_0}},\quad
+\Big(\sum_h\|D_hR_e\|^2\Big)^{1/2}
+\le107570\frac{b_0^2}{\sqrt{a_0}},\quad
+\sum_h\|D_hR_e\|\le537850\frac{b_0^2}{\sqrt{a_0}}.
+\]
+These are corrected algebraic consequences of the stated block/metric bounds, not an independent certification of the full PF-I16 derivative-flow theorem. The third-order numerical prefactor must be recomputed from these corrected residual and semigroup constants; its previous value remains withdrawn.
+
+**Net result:** the false \(\beta\) first-derivative input has been replaced by a proved \(2\beta\) bound and a corrected radial Hessian estimate. The linear response shows that the leading coefficient \(4/3\) cannot be reduced to \(1\). The local analytic route survives, but its downstream constants and the all-orders activity problem remain open.
