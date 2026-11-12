@@ -255,3 +255,18 @@ Neither estimate carries a total-volume factor.
 - The comparison-matrix estimate is not an all-orders connected-activity bound. The convolution estimate explicitly loses spatial exponent.
 - The finite-graph estimate does not establish a source-derived physical kinetic/time normalization, a genuinely refining physical three-dimensional regulator, continuum reconstruction, or a Yang–Mills mass gap.
 - All canonical P0–P5 and Penrose PF-G0–G5 gates remain OPEN.
+
+
+## 7. 2026-11-11 rotor-input correction
+
+The original face blocks (2.3)–(2.4), comparison constant (4.2), and decay rate (4.3) used the false inherited estimate \(\|s_f'\|_\infty\le\beta_f\). The radial equation instead gives the exact linear response \(\|s_\beta'\|_\infty/\beta\to4/3\), and the corrected maximum-principle bound is \(\|s_\beta'\|_\infty\le2\beta\). With the corrected radial Hessian bound, the provisional face blocks become
+\[
+h_d\le\frac{32}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0},\qquad
+h_o\le\frac{56}{3}b_0+\frac{1280}{3}\frac{b_0^2}{a_0}.
+\]
+Consequently the weighted comparison at \(\mu=\log25\) is
+\[
+\lambda_{\log25}\ge\frac{a_0}{2}
+-\frac{67712}{3}b_0-\frac{1556480}{3}\frac{b_0^2}{a_0}.
+\]
+For \(b_0/a_0\le1/50000\), this lower bound exceeds \(0.0483a_0\). These corrected constants remain conditional on the finite-product Bochner/Kato comparison and the face-map metric calculations. The old numerical rate and \(1/40000\) threshold are superseded, not certified.
