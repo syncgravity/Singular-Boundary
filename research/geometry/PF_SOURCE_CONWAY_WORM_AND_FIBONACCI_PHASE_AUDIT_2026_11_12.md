@@ -130,8 +130,8 @@ The direct tile-centre test above shows that the observer phase \(\theta_n\) is 
 The count itself is not the remaining obstacle. The next objective is to make the observer index and phase source-native:
 
 1. Preserve the five source worm families using the common physical crop and keep frequency-ratio evidence separate from exact substitution-word evidence.
-2. Treat ρ=|λ₋/λ₊| as the candidate phase increment, and test it through the historical five-family observer frame rather than through arg(z₂) of tile centres.
-3. Define how one observer tick advances along or between actual worm segments; do not insert the integer n by hand.
+2. Use the explicit C5 family frame w_j(n)=√n cos(4πj/5−2πρn), whose Fourier projection is pure Z₂, as the candidate observer state. Keep the conversion of ρ into a turn fraction identified as an observer postulate.
+3. Recover or define the source-native rule that advances the observer tick n along or between actual worm encounters; do not insert the integer n by hand. The historical Stage-30 implementation remains to be authenticated.
 4. Verify that the source-defined traversal induces the same 34/55 Delaunay parastichy graph under held-out cutoffs and mirrored/rational controls.
 
 **Status:** finite 34:55 count — ESTABLISHED for the golden-angle construction; source Fibonacci contraction ratio — ESTABLISHED; common-crop worm frequency ratio — REPRODUCED; exact source Fibonacci words — PARTIAL; internal arg(z₂) as observer phase — REJECTED by this test; observer phase-to-worm traversal and source-native 3D metric/clock — OPEN.
