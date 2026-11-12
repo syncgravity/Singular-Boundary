@@ -1977,8 +1977,8 @@
       "kind": "model",
       "status": "unresolved",
       "stage": "P0",
-      "summary": "Source-faithful five-coordinate cut-and-project geometry is the primary research hypothesis; the original two extended plus proposed compact coordinate is NOT a certified 3-extended-spatial SU(2) regulator.",
-      "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison.",
+      "summary": "The original coupled-Z5 Penrose 2D cut-and-project geometry is the primary hypothesis. Paper 2's claimed compact perpendicular torus is obstructed: the projected lattice subgroup is dense. The alternative H-3D projected-window construction changes the acceptance rule and breaks C5; it is not the original model. Physical 3D SU(2) regulator remains OPEN.",
+      "detail": "Do not transfer the H-3D Voronoi diagnostic to the original Penrose acceptance set. The alternative has a finite 7,383-cell Voronoi sample but still lacks exact source-equivalent refinement, incidence/Hodge data and physical SU(2) dynamics.",
       "checks": [],
       "sources": [
         {
@@ -1991,6 +1991,24 @@
           "title": "PF primary source-model restoration (merged PR #93)",
           "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Exact P0-H perpendicular quotient density obstruction",
+          "path": "research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md",
+          "git_blob_sha": "b62350a3b1226134bf9d37c9e2039382d1aee363",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md"
+        },
+        {
+          "title": "Alternative H-3D finite Voronoi cellulation diagnostic",
+          "path": "research/audits/P0_H3D_VORONOI_CELLULATION_DIAGNOSTIC_2026-11-11.md",
+          "git_blob_sha": "5c39f27a2fb7cc447aea1c637fb119aac58c13cf",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/P0_H3D_VORONOI_CELLULATION_DIAGNOSTIC_2026-11-11.md"
+        },
+        {
+          "title": "H-3D Voronoi sample verifier",
+          "path": "research/verification/verify_p0_h3d_voronoi_sample.py",
+          "git_blob_sha": "995e189045e9e58467e5a7c3135c2734a45f344f",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_p0_h3d_voronoi_sample.py"
         }
       ],
       "tags": [
@@ -2007,8 +2025,8 @@
       "kind": "gate",
       "status": "open",
       "stage": "P0",
-      "summary": "Primary: authenticate coupled-ℤ⁵ Penrose–Fibonacci source model. Cubic SU(2) is the control, not an assumed equivalent. Three-dimensional physical refinement and operator identity remain OPEN.",
-      "detail": "No cubic finite result closes the quasicrystalline 3D regulator interface. Neither the YM nor quantum-gravity continuum objective is proved.",
+      "summary": "Primary: authenticate coupled-ℤ⁵ Penrose–Fibonacci source model. The Paper 2 perpendicular-torus quotient is obstructed by a dense projected subgroup; a separate projected-window 3D candidate changes the source and is not canonical. Cubic SU(2) remains control only.",
+      "detail": "The original 2D Penrose model set remains a valid source geometry, but the claimed compact perpendicular torus is not a Hausdorff quotient. The H-3D projected-window candidate has a finite buffered Voronoi diagnostic; it changes the acceptance rule and breaks C5. Neither construction yet supplies the canonical source-compatible 3D gauge cellulation, physical action, or continuum mass gap.",
       "checks": [
         {
           "label": "Penrose P3 2D graph and spectral-observable provenance",
@@ -2023,7 +2041,7 @@
         {
           "label": "Penrose coupled-ℤ⁵ genuine 3D oriented refinement and physical action",
           "state": "open",
-          "note": "A compact complementary coordinate is only a proposed kinematic interpretation, not a genuine 3D refining gauge complex."
+          "note": "The claimed R2_perp / pi_perp(Z5) torus is false: the projected subgroup is dense even on the sum-zero lattice. H-3D projected-window point set is a distinct candidate (7,383 finite Voronoi core cells), not the original Penrose regulator; exact cell incidences, boundary maps and physical action remain OPEN."
         },
         {
           "label": "Cubic 3D reference geometry and finite gauge transfer",
@@ -2058,6 +2076,24 @@
           "title": "PF primary source-model restoration (merged PR #93)",
           "path": "research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md",
           "url": "https://github.com/syncgravity/singular-boundary/blob/main/research/geometry/PF_PRIMARY_GEOMETRY_RESTORATION_2026_11_06.md"
+        },
+        {
+          "title": "Exact P0-H perpendicular quotient density obstruction",
+          "path": "research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md",
+          "git_blob_sha": "b62350a3b1226134bf9d37c9e2039382d1aee363",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md"
+        },
+        {
+          "title": "Alternative H-3D finite Voronoi cellulation diagnostic",
+          "path": "research/audits/P0_H3D_VORONOI_CELLULATION_DIAGNOSTIC_2026-11-11.md",
+          "git_blob_sha": "5c39f27a2fb7cc447aea1c637fb119aac58c13cf",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/P0_H3D_VORONOI_CELLULATION_DIAGNOSTIC_2026-11-11.md"
+        },
+        {
+          "title": "H-3D Voronoi sample verifier",
+          "path": "research/verification/verify_p0_h3d_voronoi_sample.py",
+          "git_blob_sha": "995e189045e9e58467e5a7c3135c2734a45f344f",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_p0_h3d_voronoi_sample.py"
         }
       ],
       "tags": [],
