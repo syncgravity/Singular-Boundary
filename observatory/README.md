@@ -1,4 +1,17 @@
-# Research Observatory v2.73-r3-ir-trace-gradient — source-linked Proof Atlas
+# Research Observatory — source-linked proof and evidence map
+
+## Current source corrections · 2026-11-11
+
+The current research state supersedes older dated summaries below where they conflict:
+
+- **P0-H geometry:** Paper 2's quotient \(\mathbb R^2_\perp/\pi_\perp(\mathbb Z^5)\cong\mathbb T^2\) is obstructed. The perpendicular integer image is dense, including on the sum-zero lattice; the quotient is non-Hausdorff. The claimed compact-torus / KK inference is not a valid 3D regulator certificate. A distinct 3D cut-and-project candidate is recorded, but it changes the window, breaks \(C_5\), and supplies no SU(2) dynamics. [Exact audit](../research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md).
+- **PF-I16 rotor correction:** the inherited \(\|s'_\beta\|_\infty\le\beta\) estimate is false for the recorded radial ODE. The corrected global bound is \(\|s'_\beta\|_\infty\le2\beta\), with \(\|\nabla^2s_\beta\|_{\rm op}\le\frac43\beta+\frac{80}{3}\beta^2\). Corrected face blocks and derivative-flow margins are conditional; the old \(1/40000\) threshold and third-order prefactor are withdrawn pending rederivation. [Obstruction and repair](../research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md).
+- **Four-factor geometry:** the left/right-trivialized mixed covariant derivative signs passed the independent 16-orientation / 3,840 ordered-pair audit. This closes that algebraic sign sub-obligation only. [Audit](../research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md).
+- **Navigation integrity:** run \`python observatory/tools/verify_local_links.py\` to check every local \`href\` / \`src\` and HTML fragment. The GitHub Pages deploy workflow was removed because Pages is disabled and is not the selected deployment target; the replacement workflow checks local Observatory links instead.
+
+P0–P5 and PF-G0–G5 remain OPEN. These corrections do not establish a physical 3D regulator, all-orders interacting-vacuum control, continuum reconstruction, or a Yang–Mills mass gap.
+
+---
 
 
 ## Penrose–Fibonacci versus the square control
