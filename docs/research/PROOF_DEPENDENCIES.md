@@ -1,5 +1,14 @@
 # Proof dependencies and noncircular checkpoints
 
+## PF-I16 · 2026-11-11 derivative-input correction
+
+The four-factor SU(2) group-product mixed covariant derivative has passed an independent quaternion audit over all 16 orientation words and 3,840 ordered-pair cases; see [the sign/trivialization audit](../../research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md) and [its verifier](../../research/verification/verify_pf_i16_four_factor_mixed_derivative.py).
+
+A more consequential correction blocks the current refined-rotor ladder: the inherited first-derivative estimate \(\|s_\beta'\|_\infty\le\beta\) is incompatible with the radial equation recorded in the refined-rotor theorem. Analytic perturbation at zero coupling gives \(q_\beta=s_\beta'=-\frac43\beta\sin\theta+o(\beta)\) uniformly, hence \(\|s_\beta'\|_\infty/\beta\to4/3\). See [the perturbative obstruction audit](../../research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md). Consequently the inherited Hessian blocks, derivative-flow rate, \(1/40000\) threshold, residual derivative constants, and third-order numerical prefactor are not currently certified and must be rederived. The exact dressing identity, incidence count \(784^{k-1}\), and exact centered third-order recursion remain distinct valid finite identities. No canonical proof gate is closed.
+
+---
+
+
 ## R3_IR · Conditional weighted trace–gradient block on the finite open SU(2) strip (2026-11-10)
 
 This is a separate R3_IR strip calculation, not part of PF-I16. The conditional one-link Poincaré estimate gives \(c_{\rm tr}=\frac34e^{-49\pi/144}\approx0.2575101\) and leakage \(\ell\approx0.00248474\), including the nonzero conditional-mean correction. The exact trace commutator for \(L=\Delta+2\nabla S_g\cdot\nabla\) is
