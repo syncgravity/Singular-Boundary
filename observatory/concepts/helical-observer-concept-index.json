@@ -42,7 +42,7 @@
       "title": "Five two-dimensional Fibonacci/Conway-worm chain families",
       "evidence": "source-code-audit",
       "status": "conditional",
-      "claim": "The authenticated predecessor paper2_compute.py defines five pentagrid worm families. Its un-cropped extract_conway_worms output is not the claimed Fibonacci interior sequence (N_grid=15: 155 worms, L/S=1, zero ratio matches). A common physical disk crop reproduces near-φ frequency (70/75 long segments within 15%) and edge-connected tile chains, but exact Fibonacci word structure is only partial (23/75 strict proxy passes). Source-to-observer index remains OPEN.",
+      "claim": "The authenticated predecessor paper2_compute.py defines five pentagrid worm families. Its un-cropped extract_conway_worms output is not the claimed Fibonacci interior sequence (N_grid=15: 155 worms, L/S=1, zero ratio matches). A common physical disk crop restores near-φ frequency and edge-connected chains, but strict Fibonacci-word proxy passes only 23/75. Independently, the reconstructed M55 Stage26 incidence yields 252 topological worm segments across five families; all retained segments have L/S within 15% of φ. Exact word structure and the 34:55 observer mapping remain distinct/open.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     },
     {
@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "The source-motivated family observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. A normalized signed family operator O_n(τ)=Σ_j u_j(n)F_j(τ) is defined conditionally on source-labelled closed Wilson loops. The observer phase n is distinct from Yang–Mills transfer time τ. h,T, source-native family loops and physical interpretation remain OPEN. A Stage 26 family-labelled spatial-plaquette diagnostic now provides an actual gauge-field family contrast (mean second-harmonic amplitude 0.002872, 0.866% of full plaquette control) on one restart configuration; this is not an ensemble or mass-gap result.",
+      "claim": "The source-motivated family observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. A normalized signed family operator O_n(τ)=Σ_j u_j(n)F_j(τ) is defined conditionally on source-labelled closed Wilson loops. The observer phase n is distinct from Yang–Mills transfer time τ. h,T, source-native family loops and physical interpretation remain OPEN. A Stage 26 family-labelled spatial-plaquette diagnostic now provides an actual gauge-field family contrast (mean second-harmonic amplitude 0.002872, 0.866% of full plaquette control) on one restart configuration; this is not an ensemble or mass-gap result. A source-derived M55 topological worm extraction now supplies 252 closed strip-boundary Wilson loops and a measured family-phase response on one Stage26 restart; the response has broad phase spread and is not a selection law.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -170,7 +170,7 @@
       "title": "Gauge-invariant family-weighted observer operator",
       "evidence": "proposed-test",
       "status": "conditional",
-      "claim": "The normalized signed family projection O_n(τ)=Σ_j u_j(n)F_j(τ) is gauge invariant when each F_j is an average of closed Wilson-loop defects. The plaquette-level version has now been computed from the Stage 26 seed-101 restart: reconstructed M55 incidence reproduces all 1,368,480 stored normalized plaquette traces to max error 5.56e−16, and the five family plaquette averages are available. This is one restart configuration/20 slices only; longer worm-loop anchors/catalogue and ensemble correlators remain open.",
+      "claim": "The normalized signed family projection O_n(τ)=Σ_j u_j(n)F_j(τ) is gauge invariant when each F_j is an average of closed Wilson-loop defects. Stage 26 now has a reconstructed M55 worm-strip boundary catalogue (252 loops) and actual one-restart family-conditioned Wilson-loop defects; random local SU(2) gauge transformations preserve them to <8e−15. The mean second-harmonic amplitude is 8.469% of the full-family control, but its phase spread across 20 slices is 2.074 rad. One restart only: no ensemble correlator or mass-gap inference.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     },
     {
@@ -179,6 +179,14 @@
       "evidence": "source-code-audit",
       "status": "finite",
       "claim": "The M55 Stage 26 reconstruction supplies source face family pairs (a,b) and spacetime fi/sg incidence. Quaternion multiplication of the restart links through all 1,368,480 oriented faces reproduces stored normalized plaquette_trace with max absolute error 5.56e−16. Five family spatial plaquette defect means over 20 slices are [0.32968420, 0.33234256, 0.33236883, 0.33194860, 0.33212504]; mean second-harmonic amplitude 0.00287180, 0.866% of full-family control. Single restart only: no ensemble, long-worm Wilson loops or mass-gap inference. Full measurement-catalogue NPZ byte match remains unverified.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE26-M55-WORM-BOUNDARY",
+      "title": "M55 worm-strip boundary Wilson loops on Stage 26 links",
+      "evidence": "source-code-audit",
+      "status": "finite",
+      "claim": "From the M55 source generator, faces carry basis-direction pairs (a,b); family-j worms are face components joined across shared j-edges. A radius-40 disk crop inside the 42.9127 cell inradius yields 252 finite segments (50,50,51,51,50), all with L/S within 15% of φ. The oriented boundary of each strip is a single closed loop of length 2L+2. On the seed-101 Stage26 restart at sweep 12000, all loops are gauge invariant under random local SU(2) transformations to max defect change 7.77e−15. Mean second-harmonic amplitude 0.08430 (8.469% of full-family control), phase circular spread 2.074 rad across 20 slices. Single restart only; no ensemble correlator or mass-gap inference. Reconstructed catalogue hash 5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857; original complete measurement catalogue identity remains unverified.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
@@ -203,5 +211,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: Stage26 M55 incidence exactly reconstructs all restart plaquette traces; five family-labelled spatial plaquette averages and C5 observer contrast measured on one restart configuration. Long-worm Wilson-loop catalogue remains unverified."
+  "last_update": "2026-11-12: M55 source-derived worm segments and closed strip-boundary Wilson loops reconstructed; 252 loops evaluated on Stage26 sweep-12000 restart with gauge covariance verified. Single-configuration phase response broad; 34:55 Delaunay parastichy count remains distinct from worm counts."
 }
