@@ -7833,8 +7833,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "ce03354fbb7917d9096c3c734cfa3d7100dcc6dd",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/ce03354fbb7917d9096c3c734cfa3d7100dcc6dd/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "4ab43ad233cb970c74fce760901816940eba2377",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/4ab43ad233cb970c74fce760901816940eba2377/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
