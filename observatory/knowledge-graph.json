@@ -7,7 +7,7 @@
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 761,
   "existing_proof_paths": 78,
-  "git_branch": "architecture/source-compatible-spectral-spine-2026-11-11",
+  "git_branch": "main",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -7834,7 +7834,7 @@
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
           "git_blob_sha": "0f3820d2b540358940945c60515428c89e926057",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/0f3820d2b540358940945c60515428c89e926057/docs/research/THEOREM_INDEX_LIVE.json"
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/architecture/source-compatible-spectral-spine-2026-11-11/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
