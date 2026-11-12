@@ -19,7 +19,7 @@ The repository front page now links the [Research Program Map](RESEARCH_PROGRAM_
 
 The two latest review records are also preserved on `main`: [PF-I16 branch reconciliation](PF_I16_BRANCH_RECONCILIATION_2026-11-11.md) and [Z5 real-structure/helical-observer source audit](Z5_REAL_STRUCTURE_AND_HELICAL_OBSERVER_SOURCE_AUDIT_2026-11-11.md). The theorem registry, historical navigator, current navigator, catalog and both Proof Atlas graph serializations are synchronized at **762 theorem-source paths**, **285 curated nodes**, and **678 typed relationships**. These counts establish inventory/navigation only, not mathematical certification. A fresh CI run has not yet been observed.
 
-The branch and PR counts below are dated historical snapshots, not live state. Check GitHub before any merge or retirement action.
+The PR #107 content-level reconciliation and remaining retrieval items are recorded in the [PR #107 preservation ledger](PR107_BRANCH_PRESERVATION_LEDGER_2026-11-11.md); seven branch-listed scripts remain unfetched and are not claimed as imported. The branch and PR counts below are dated historical snapshots, not live state. Check GitHub before any merge or retirement action.
 
 ## Live four-PR review board · 2026-11-11
 
