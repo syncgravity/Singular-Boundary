@@ -5,7 +5,8 @@
     "stage19_graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
     "stage16_stage19_local_report_sha256": "a0b798be862bd7deb0fd9d70255ec86c6af1871fb2cd188ecb751ee520e934d4",
     "worm_catalogue": "PF_STAGE26_M55_WORM_BOUNDARY_CATALOGUE_R40_2026_11_12.json",
-    "worm_catalogue_sha256": "PLACEHOLDER_LOCAL_HASH"
+    "worm_catalogue_sha256": "1220d3ba0b2b69d0cbba7767133889adfc30d28e5752038bc63377ef1930cb66",
+    "local_full_report_sha256": "a62af0920e7c7ebd7c455dea49846442f7490e046a34d40cd32748ecd8ccb294"
   },
   "method": {
     "candidate_sequences": "Reconstructed the ordered (edge_id, sign) sequence of each of the 36 Stage16 candidates having an exact Stage19 contiguous-loop match. Every Stage19 occurrence listed for a candidate was required to reconstruct the same candidate sequence.",
