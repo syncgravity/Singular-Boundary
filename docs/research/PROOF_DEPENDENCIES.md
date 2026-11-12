@@ -1,5 +1,13 @@
 # Proof dependencies and noncircular checkpoints
 
+## P0-H · Perpendicular quotient density obstruction (2026-11-11)
+
+Paper 2's identification \(\mathbb R^2_\perp/\pi_\perp(\mathbb Z^5)\cong\mathbb T^2\) is false as written. Four explicit sum-zero lattice vectors show that the perpendicular image contains dense subgroups on both real and imaginary axes, using irrational generator ratios \(\varphi^{-1}\) and \(\varphi\). Thus \(\pi_\perp(\mathbb Z^5)\) is dense, not a period lattice; the quotient is non-Hausdorff and cannot be the claimed flat torus. This blocks the stated compactification / KK inference, not the real \(C_5\) decomposition or the 2D Penrose model set.
+
+A distinct 3D cut-and-project candidate is specified by \(E_{\rm phys}=V_{72^\circ}\oplus\mathbb R e_u\) and \(E_{\rm int}=\mathbb R e_v\), but it changes the acceptance rule, breaks \(C_5\), and supplies no SU(2) dynamics. It is not the original Penrose set and is not yet the canonical regulator. **P0-H remains OPEN.** See the [full exact audit](../../research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md) and [standard-library verifier](../../research/verification/verify_p0_coupled_z5_internal_quotient.py).
+
+---
+
 ## PF-I16 · 2026-11-11 derivative-input correction
 
 The four-factor SU(2) group-product mixed covariant derivative has passed an independent quaternion audit over all 16 orientation words and 3,840 ordered-pair cases; see [the sign/trivialization audit](../../research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md) and [its verifier](../../research/verification/verify_pf_i16_four_factor_mixed_derivative.py).
