@@ -1,0 +1,53 @@
+{
+  "status": "PASS_12_FAMILY_FRAME_AND_3D_LIFT_CHECKS",
+  "source_matrix": {
+    "M1": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "eigenvalues": [
+      1.618033988749895,
+      -0.6180339887498948
+    ],
+    "rho_abs_stable_over_unstable": 0.3819660112501051,
+    "phi_minus_2": 0.38196601125010515
+  },
+  "family_weights": "w_j(n)=sqrt(n)*cos(4*pi*j/5 - 2*pi*rho*n), j=0..4",
+  "exact_fourier_sums": {
+    "s": "0",
+    "z1": "0",
+    "z2": "(5/2)*sqrt(n)*exp(2*pi*i*rho*n)",
+    "orthonormal_Z2": "sqrt(5/2)*sqrt(n)*exp(2*pi*i*rho*n)"
+  },
+  "c5_covariance": "theta -> theta+4*pi/5 cyclically relabels family weights",
+  "observer_space": "R_s direct-sum C_Z2",
+  "metric": "dell^2=ds^2+dX^2+dY^2",
+  "longitudinal": {
+    "s_n": "h*n",
+    "h": 0.7
+  },
+  "clock": {
+    "t_n": "n*T",
+    "T": 0.2
+  },
+  "longitudinal_speed": 3.5,
+  "equal_area_increment": 7.853981633974,
+  "max_relative_projection_error": 1.8e-12,
+  "fibonacci_residuals": {
+    "lag34_radians": -0.08265918256042,
+    "lag55_radians": 0.05108618430459,
+    "opposite_signs": true
+  },
+  "caveats": [
+    "The source supplies rho as the magnitude of the substitution eigenvalue ratio; using it as a fraction of a full turn is an observer phase-lift postulate.",
+    "The radial sqrt(n) law, longitudinal h*n, clock n*T and product metric are declared model data.",
+    "The observer uses R plus Z2 and does not map Z2 linearly into source physical Z1.",
+    "The exact 34:55 Delaunay residue-chain counts are verified separately by verify_pf_conceptual_parastichy_2026_11_07.py."
+  ]
+}
