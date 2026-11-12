@@ -45,6 +45,12 @@ This identity is the common bridge, not uniformity. A finite positive gap does n
 | S4 — infrared | Physical low-frequency exclusion, correlation/transfer control and thermodynamic persistence | Positive physical gap survives infinite volume | OPEN |
 | S5 — continuum | Tightness, nontriviality, locality, covariance, reflection positivity, OS reconstruction and gap persistence | Nontrivial 4D continuum YM with positive reconstructed gap | OPEN |
 
+### S0-H source-geometry finding — 2026-11-11
+
+The claimed perpendicular configuration-space torus in Paper 2 §3.3 is not a valid quotient: \(\pi_\perp(\mathbb Z^5)\) is dense in \(\mathbb R^2\), including on the sum-zero rank-four lattice. Its quotient is non-Hausdorff, not \(\mathbb T^2\). The compact \(u\)-coordinate / KK interpretation therefore cannot be used as the source certificate for a physical compact spatial direction. The exact four-vector proof and verifier are recorded in [the P0-H quotient audit](../../research/audits/P0_COUPLED_Z5_INTERNAL_QUOTIENT_DENSITY_AUDIT_2026-11-11.md).
+
+A possible 3D cut-and-project reinterpretation \(E_{\rm phys}=V_{72^\circ}\oplus\mathbb R e_u\), \(E_{\rm int}=\mathbb R e_v\) is mathematically distinct: it projects the decagonal window to one internal dimension, changes the accepted point set, breaks \(C_5\), and treats \(u\) as extended space rather than a compact circle. It is only a candidate geometry. It still requires finite-region cellulations, boundary/refinement maps, incidence and Hodge data, and a compatible source-derived SU(2) action. **S0 remains OPEN.**
+
 The sequence is a dependency order. A result can discharge a sub-obligation at another gate, but cannot bypass prerequisites.
 
 ## 3. Analytical lanes: different mechanisms for the same target
