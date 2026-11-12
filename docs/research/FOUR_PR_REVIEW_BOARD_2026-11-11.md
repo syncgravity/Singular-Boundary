@@ -4,7 +4,7 @@
 
 | PR | Title / role | Base | Head branch | Exact head SHA | Mergeability |
 |---|---|---|---|---|---|
-| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | Canonical source-compatible spectral-inequality proof spine and Observatory integration | main | `architecture/source-compatible-spectral-spine-2026-11-11` | live branch head (self-updating) | mergeable |
+| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | Canonical source-compatible spectral-inequality proof spine and Observatory integration | main | `architecture/source-compatible-spectral-spine-2026-11-11` | live branch head (self-updating) | **revalidation required** — latest compare is diverged (81 ahead / 93 behind); no mergeability claim until current PR checks and path reconciliation pass |
 | [#106](https://github.com/syncgravity/Singular-Boundary/pull/106) | R3-IR finite-strip full-Hessian analysis | #107 branch | `audit/r3-ir-h2-trace-to-k-2026-11-10` | `12995f4e34e0a7125da881f0ec655da243e33c3e` | not mergeable; reconcile overlapping generated files |
 | [#74](https://github.com/syncgravity/Singular-Boundary/pull/74) | Finite non-Abelian SU(2) positive-probability tube and theorem-index work | main | `audit/2026-11-06-nonabelian-tube-complete-theorem-index` | `447dcea7c54175bf46962de0222ceba519659796` | not mergeable; reconcile theorem index / graph snapshots |
 | [#103](https://github.com/syncgravity/Singular-Boundary/pull/103) | Observatory publishing preparation | main | `pages-public-ready` | `53c608a3f3884066568525374c32b4fc2986f866` | not mergeable; reconcile publication target and workflow |
@@ -21,3 +21,8 @@
 ## Current mathematical boundary
 
 S0–S5 remain OPEN. The finite non-Abelian tube probability is not uniform in refinement/volume. The R3-IR full-Hessian contraction is conditional on its finite strip and does not prove the source-native PF continuum gap. Publishing readiness is not proof status.
+
+
+## Mainline reconciliation update · 2026-11-11
+
+The main branch now contains the research map, handoff records, PF-I16 preservation corpus, P0/P2/R3 audit reports, canonical spectral-inequality page, and synchronized 762-path theorem index. PR #107 remains open, but its head is now **81 commits ahead and 93 behind** main in the latest compare snapshot. The compare is divergent; do not treat the older "mergeable" label as current. The remaining 41 changed paths must be reconciled against the files already brought into main. Seven script paths listed in the branch comparison could not be fetched by the connector and are recorded as unresolved in [the PR #107 preservation ledger](PR107_BRANCH_PRESERVATION_LEDGER_2026-11-11.md).
