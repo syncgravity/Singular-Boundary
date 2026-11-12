@@ -1,0 +1,134 @@
+{
+  "status": "PASS_M55_WORM_BOUNDARY_LOOP_EXTRACTION_AND_STAGE26_EVALUATION",
+  "stage26_archive_sha256": "6cfa12935428533cfeaff40a467705d632b19ede07b7f30e0bb9fb7a0cc68657",
+  "geometry_archive_sha256": "d7a3fa153e69dae0129a6f0771d8241b78a0145cbc4939ea16b0a02ea74e7d60",
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "source_array_sha256": "fee7afad5b4b464537782b508402401502984947ac5caf5163a87dad8ae33e2e",
+  "restart_source_sha256": "275243c7da74941db5bdd882dbb7f44ce02c915503033f040841b75f80409638",
+  "restart_sweeps": [
+    12000
+  ],
+  "geometry": {
+    "vertices": 22808,
+    "spatial_edges": 45616,
+    "spatial_faces": 22808,
+    "timeslices": 20,
+    "spacetime_links": 1368480,
+    "spacetime_faces": 1368480
+  },
+  "exact_incidence_validation": {
+    "reconstructed_spacetime_faces": 1368480,
+    "max_abs_normalized_trace_error": 5.551115123125783e-16,
+    "count_error_over_1e_12": 0
+  },
+  "crop": {
+    "radius": 40,
+    "fundamental_cell_inradius": 42.91270208225067,
+    "active_faces": 15466,
+    "min_faces_per_worm_segment": 10
+  },
+  "worm_segments": {
+    "total": 252,
+    "all_boundary_loops_closed": true,
+    "all_boundary_loop_lengths_equal_2L_plus_2": true,
+    "loop_length_min": 22,
+    "loop_length_max": 314,
+    "path_catalogue_sha256": "5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857",
+    "path_catalogue_file": "PF_STAGE26_M55_WORM_BOUNDARY_CATALOGUE_R40_2026_11_12.json",
+    "path_catalogue_file_sha256": "1220d3ba0b2b69d0cbba7767133889adfc30d28e5752038bc63377ef1930cb66",
+    "path_catalogue_file_bytes": 3538824,
+    "family_summary": [
+      {
+        "family": 0,
+        "segments": 50,
+        "mean_tile_count": 122.88,
+        "mean_L_over_S": 1.618248522845701,
+        "within_15_percent_phi": 50,
+        "mean_loop_length": 247.76,
+        "family_worm_defect_mean": 0.9890035328278023,
+        "family_worm_defect_std": 0.07667629781889528
+      },
+      {
+        "family": 1,
+        "segments": 50,
+        "mean_tile_count": 123.78,
+        "mean_L_over_S": 1.6178953059696508,
+        "within_15_percent_phi": 50,
+        "mean_loop_length": 249.56,
+        "family_worm_defect_mean": 0.9938175406979642,
+        "family_worm_defect_std": 0.07080611676682279
+      },
+      {
+        "family": 2,
+        "segments": 51,
+        "mean_tile_count": 121.41176470588235,
+        "mean_L_over_S": 1.6372017226781412,
+        "within_15_percent_phi": 51,
+        "mean_loop_length": 244.8235294117647,
+        "family_worm_defect_mean": 0.9901124795417109,
+        "family_worm_defect_std": 0.04072104818169775
+      },
+      {
+        "family": 3,
+        "segments": 51,
+        "mean_tile_count": 121.13725490196079,
+        "mean_L_over_S": 1.633528218187659,
+        "within_15_percent_phi": 51,
+        "mean_loop_length": 244.27450980392157,
+        "family_worm_defect_mean": 1.016038384766959,
+        "family_worm_defect_std": 0.07317350566265686
+      },
+      {
+        "family": 4,
+        "segments": 50,
+        "mean_tile_count": 123.78,
+        "mean_L_over_S": 1.6123701866781246,
+        "within_15_percent_phi": 50,
+        "mean_loop_length": 249.56,
+        "family_worm_defect_mean": 0.9876037758666956,
+        "family_worm_defect_std": 0.0605418451709936
+      }
+    ]
+  },
+  "stage26_worm_boundary_wilson_diagnostic": {
+    "timeslices": 20,
+    "family_defect_mean_over_slices": [
+      0.9890035328278023,
+      0.9938175406979642,
+      0.9901124795417108,
+      1.016038384766959,
+      0.9876037758666957
+    ],
+    "family_defect_std_over_slices": [
+      0.07667629781889528,
+      0.07080611676682279,
+      0.04072104818169775,
+      0.07317350566265686,
+      0.0605418451709936
+    ],
+    "full_family_control_mean": 0.9953151427402261,
+    "full_family_control_std": 0.027901595733719375,
+    "second_harmonic_amplitude_mean": 0.08429660667754647,
+    "second_harmonic_amplitude_std": 0.03933712137201238,
+    "second_harmonic_amplitude_min": 0.028048885116493158,
+    "second_harmonic_amplitude_max": 0.17524973133419736,
+    "second_harmonic_phase_circular_mean_rad": 1.0249131918042282,
+    "second_harmonic_phase_circular_spread_rad": 2.0741503516996858,
+    "relative_amplitude_to_full_control": 0.08469338308816185,
+    "O_n_global_min": -0.17524966376616366,
+    "O_n_global_max": 0.1752495533779391
+  },
+  "gauge_covariance_check": {
+    "performed": true,
+    "max_spatial_plaquette_trace_change": 1.4432899320127035e-15,
+    "max_worm_loop_defect_change": 7.771561172376096e-15
+  },
+  "interpretation": [
+    "The five worm families are reconstructed topologically: adjacent rhombi share an edge of basis direction j; each radius-40 component is a finite worm segment.",
+    "The boundary of each worm-strip union is a single closed spatial Wilson loop of length 2L+2.",
+    "Every retained segment in all five families has L/S within 15 percent of phi.",
+    "The 34:55 parastichy count is not the number of M55 worms; it remains the separate Delaunay arm count of the golden-angle observer trajectory.",
+    "The second-harmonic family phase is not stable across the 20 slices (circular spread about 2.07 rad); one restart cannot establish a physical selection law."
+  ],
+  "scope": "One Stage26 seed-101 restart at sweep 12000 and its 20 periodic slices. This is a reconstructed M55 worm-boundary Wilson-loop diagnostic, not an ensemble correlator or mass-gap estimate. The original complete measurement-catalogue byte identity remains unverified."
+}
