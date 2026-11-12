@@ -81,6 +81,6 @@
     ],
     "matching_method": "Exact cyclic contiguous ordered (edge_id,orientation_sign) sequence matching for candidate lengths 1–10 against every Stage19 rooted loop; both orientations tested.",
     "detailed_crosswalk": "research/evidence/PF_STAGE16_STAGE19_ORDERED_EDGE_SEQUENCE_CROSSWALK_2026_11_12.json",
-    "local_full_report_sha256": ""
+    "local_full_report_sha256": "a0b798be862bd7deb0fd9d70255ec86c6af1871fb2cd188ecb751ee520e934d4"
   }
 }
