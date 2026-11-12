@@ -240,6 +240,17 @@ This is the first source-geometry-derived, gauge-invariant long-loop family obse
 
 Reproduce the extraction, loop construction, Stage 26 evaluation and gauge-covariance check with research/scripts/analyze_stage26_worm_boundary_loops_2026_11_12.py. Its path-catalogue output is generated with --catalogue-output; the summary evidence is research/evidence/PF_STAGE26_M55_WORM_BOUNDARY_LOOPS_2026_11_12.json.
 
+### Cross-seed multihit endpoint verification
+
+The four uploaded Penrose multihit files (seeds 101, 211, 307, 419) share byte-identical source, target, dx, r, candidate_path_indices and matched_pair_indices arrays. Each contains 600 matched endpoint pairs with vertex IDs in [0,22807]. Reconstructing the M55 physical coordinates from the same source geometry and reducing source-to-target displacements by the two torus period vectors gives:
+- maximum dx reconstruction error \(2.51\times10^{-14}\);
+- mean dx reconstruction error \(6.12\times10^{-15}\);
+- maximum error in \(r=\|dx\|\) of \(8.89\times10^{-16}\).
+
+The minimum-image shift histogram is 549 zero shifts and 51 period-crossing corrections. Candidate path IDs are 600 unique values in [197,999]. This verifies that all four seed datasets use the same M55 endpoint geometry and sampling frame. It does **not** recover the ordered edge sequence for any candidate path: the path IDs remain opaque until the complete measurement catalogue is inspected.
+
+Reproduce with research/scripts/verify_stage26_multihit_pair_geometry_2026_11_12.py. Evidence for all four seeds is in research/evidence/PF_STAGE26_MULTIHIT_M55_ENDPOINT_GEOMETRY_2026_11_12.json.
+
 ### Remaining provenance and ensemble gap
 
 A reconstructed path catalogue is now available and has been evaluated. The remaining catalogue question is historical identity: a Project file named penrose_complete_catalogue.npz (about 1.96 MB) appears in the Project index, but the current file-access route did not expose its raw bytes. Its contents and hash remain unverified. It may be the original measurement catalogue; compare it against the reconstructed M55 worm-boundary catalogue if its bytes can be made available. The multihit NPZ candidate_path_indices are still only indices, and their mapping to the reconstructed worm loops has not been established. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not the full worm-loop catalogue.
