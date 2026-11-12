@@ -123,3 +123,8 @@ This algebraic cancellation does not establish spatial connectedness on the conn
 **Open:** standalone sign/trivialization/regularization audit of the four-factor calculation; spatially decaying third-order tree bound; fourth-order spatial connected-support/tree estimate for coupled Penrose subsystems; all-orders connected activity majorant; source physical kinetic/time; nontrivial interacting continuum existence and positive physical mass gap. The fourth-order algebraic cancellation for independent decompositions is transcript-reported, with the original transcript's size and SHA-256 recorded above; full-byte repository import and independent audit remain pending.
 
 The previous third-order numerical prefactor and thresholds are superseded, not silently retained. No spatial tree decay or all-orders conclusion is claimed.
+
+
+## 6. 2026-11-11 dependency correction
+
+The exact centered six-permutation third-order identity in Section 2 remains valid. The numerical estimate in Section 3 is withdrawn because its rotor derivative, Hessian, residual and derivative-flow inputs used the contradicted \(\|s_f'\|_\infty\le\beta_f\) estimate. A corrected rotor bound and provisional replacement block constants are now derived in [the 2026-11-11 audit](../audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md). The third-order numerical prefactor must be recomputed from those corrected inputs; neither the old nor a naively rescaled prefactor is currently certified.
