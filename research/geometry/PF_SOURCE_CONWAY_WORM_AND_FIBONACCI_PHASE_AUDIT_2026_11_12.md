@@ -206,7 +206,7 @@ O_n^{\mathrm{plaq}}(t)=\sum_j u_j(n)F_j^{\mathrm{plaq}}(t)
 \]
 ranges from −0.00551889 to +0.00551888. Its dependence on n is exactly the single second-harmonic projection, with maximum algebraic identity error 5.3×10⁻¹⁴. This does **not** mean the 34:55 arm counts have been measured in the gauge field: those counts are the Delaunay parastichy structure of the observer trajectory, while this is a phase-conditioned family-plaquette diagnostic.
 
-Scope is deliberately narrow: one restart configuration at sweep 10080 and its 20 periodic spatial slices. The slices are not an independent ensemble. This is not a transfer-matrix correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate.
+Scope is deliberately narrow: one restart configuration at sweep 12000 and its 20 periodic spatial slices. The slices are not an independent ensemble. This is not a transfer-matrix correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate.
 
 Reproduce this result with research/scripts/analyze_stage26_family_plaquettes_2026_11_12.py and inspect research/evidence/PF_STAGE26_FAMILY_PLAQUETTE_OPERATOR_2026_11_12.json.
 
