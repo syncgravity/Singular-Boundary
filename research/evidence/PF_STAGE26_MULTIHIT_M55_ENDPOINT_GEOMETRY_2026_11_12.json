@@ -1,0 +1,63 @@
+{
+  "status": "PASS_STAGE26_MULTIHIT_ENDPOINT_GEOMETRY_ALL_FOUR_SEEDS",
+  "geometry_zip_sha256": "d7a3fa153e69dae0129a6f0771d8241b78a0145cbc4939ea16b0a02ea74e7d60",
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "source_array_sha256": "fee7afad5b4b464537782b508402401502984947ac5caf5163a87dad8ae33e2e",
+  "geometry": "penrose",
+  "sweep": 10000,
+  "vertex_count": 22808,
+  "pair_count_per_seed": 600,
+  "source_target_index_range": [
+    0,
+    22807
+  ],
+  "minimum_image_period_search_radius": 2,
+  "maximum_dx_reconstruction_error": 2.5035959997664762e-14,
+  "mean_dx_reconstruction_error": 6.11679874296098e-15,
+  "maximum_r_norm_error": 8.881784197001252e-16,
+  "minimum_image_shift_histogram": {
+    "(-1, -1)": 1,
+    "(-1, 0)": 8,
+    "(0, -1)": 24,
+    "(0, 0)": 549,
+    "(0, 1)": 8,
+    "(1, 0)": 10
+  },
+  "candidate_path_indices": {
+    "unique_count": 600,
+    "min": 197,
+    "max": 999
+  },
+  "matched_pair_indices_canonical": true,
+  "seed_archives": [
+    {
+      "seed": 101,
+      "sha256": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "status": "PASS"
+    },
+    {
+      "seed": 211,
+      "sha256": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "status": "PASS"
+    },
+    {
+      "seed": 307,
+      "sha256": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "status": "PASS"
+    },
+    {
+      "seed": 419,
+      "sha256": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "status": "PASS"
+    }
+  ],
+  "cross_seed_identity": {
+    "source_arrays_identical": true,
+    "target_arrays_identical": true,
+    "dx_arrays_identical": true,
+    "r_arrays_identical": true,
+    "candidate_path_indices_identical": true,
+    "matched_pair_indices_identical": true
+  },
+  "interpretation": "All four seed files use the same 600 matched endpoint pairs and candidate path IDs. For every pair, dx equals the M55 torus minimum-image displacement of the indexed source/target vertices to 2.51e-14, and r equals ||dx|| to 8.89e-16. This authenticates the endpoint geometry and common sampling frame, but candidate path IDs (197..999) remain opaque without the complete measurement catalogue."
+}
