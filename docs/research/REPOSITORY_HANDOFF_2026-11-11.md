@@ -27,7 +27,7 @@ There are **four open PRs**, tracked together in the [Observatory graph v2.74](.
 
 | PR | Branch / base | Role | Current mergeability |
 |---|---|---|---|
-| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | `architecture/source-compatible-spectral-spine-2026-11-11` → `main` | Canonical S0–S5 integration | Mergeable |
+| [#107](https://github.com/syncgravity/Singular-Boundary/pull/107) | `architecture/source-compatible-spectral-spine-2026-11-11` → `main` | Canonical S0–S5 integration | Revalidation required; latest compare diverged 81 ahead / 93 behind |
 | [#106](https://github.com/syncgravity/Singular-Boundary/pull/106) | `audit/r3-ir-h2-trace-to-k-2026-11-10` → #107 branch | R3-IR finite-strip full-Hessian analysis | Conflict / not mergeable |
 | [#74](https://github.com/syncgravity/Singular-Boundary/pull/74) | `audit/2026-11-06-nonabelian-tube-complete-theorem-index` → `main` | Finite non-Abelian tube and theorem-index work | Conflict / not mergeable |
 | [#103](https://github.com/syncgravity/Singular-Boundary/pull/103) | `pages-public-ready` → `main` | Observatory publishing configuration | Conflict / not mergeable |
