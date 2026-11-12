@@ -240,19 +240,19 @@ This is the first source-geometry-derived, gauge-invariant long-loop family obse
 
 Reproduce the extraction, loop construction, Stage 26 evaluation and gauge-covariance check with research/scripts/analyze_stage26_worm_boundary_loops_2026_11_12.py. Its path-catalogue output is generated with --catalogue-output; the summary evidence is research/evidence/PF_STAGE26_M55_WORM_BOUNDARY_LOOPS_2026_11_12.json.
 
-### Remaining long-loop data gap
+### Remaining provenance and ensemble gap
 
-The family plaquette observable is now available because the reconstructed incidence identifies each spatial face and its two basis directions. Longer Wilson loops anchored along individual Conway worms require more: an ordered edge path, anchor, worm/line ID, and family assignment for every loop. The multihit NPZ candidate_path_indices are only indices; their path catalogue is not present in those NPZs.
+A reconstructed path catalogue is now available and has been evaluated. The remaining catalogue question is historical identity: a Project file named penrose_complete_catalogue.npz (about 1.96 MB) appears in the Project index, but the current file-access route did not expose its raw bytes. Its contents and hash remain unverified. It may be the original measurement catalogue; compare it against the reconstructed M55 worm-boundary catalogue if its bytes can be made available. The multihit NPZ candidate_path_indices are still only indices, and their mapping to the reconstructed worm loops has not been established. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not the full worm-loop catalogue.
 
-A Project file named penrose_complete_catalogue.npz (about 1.96 MB) appears in the Project file index, but the current file-access route did not expose its raw bytes. Its contents and hash have therefore not been verified. It may be the missing measurement catalogue; do not treat it as confirmed until inspected. The separate global_whitney_11face NPZ contains a 30×30 matrix, edge IDs and eigenvalues, not the full worm-loop catalogue.
+The principal data limitation is now ensemble coverage. The Stage 26 full ZIP has one restart configuration at sweep 12000 and aggregate outer snapshots, not raw link configurations for every outer sample. The 20 timeslices of the restart are not an independent Monte Carlo ensemble. Therefore the measured family worm-loop operator is a single-configuration diagnostic, not a transfer-matrix correlator or a spectral estimate.
 
 ### Minimum data contract for the next run
 
-1. Inspect and hash penrose_complete_catalogue.npz, if it is the intended Stage 26 path catalogue. Verify that its graph/catalogue hashes and edge ordering match the restart and reconstructed incidence.
-2. If it does not contain the required paths, freeze a manifest with geometry hash, family j, worm/line ID, anchor ID, ordered oriented edge IDs, loop closure check, and loop length.
-3. For every outer configuration and transfer slice, retain per-anchor longer-loop holonomies or defects, with family labels intact. Retain raw links plus the exact incidence/path manifest if loops are to be recomputed.
-4. Store F_j(τ), O_n(τ) for predeclared observer phases, and O_full(τ) as a control; do not aggregate away family and anchor labels before forming these operators.
-5. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Preserve the nested outer-chain and inner-multihit error structure.
+1. If available, inspect and hash penrose_complete_catalogue.npz and compare its path ordering against the reconstructed M55 catalogue. If not, retain the reconstructed catalogue hash as the explicit path definition.
+2. For multiple outer configurations, retain raw link configurations or per-loop holonomies/defects for every reconstructed worm-boundary loop, with family, segment ID, anchor, loop length and path-catalogue hash.
+3. Store F_j(τ), O_n(τ) for predeclared observer phases, and O_full(τ) as a control; do not aggregate away family and loop identity before forming these operators.
+4. Keep observer phase n, observer clock t_n, and Euclidean transfer separation τ as distinct fields. Fix n at source and sink for ordinary stationary spectroscopy.
+5. Preserve the nested outer-chain and inner-multihit error structure, autocorrelation, effective sample size, matched-pair identity and cost diagnostics.
 
 The separate synthetic SU(2) loop verifier (450 deterministic checks) validates the gauge covariance of the proposed family contraction. The Stage 26 plaquette script validates the actual restart link/face incidence and computes the first family-labelled plaquette diagnostic. Neither supplies the missing long-worm Wilson-loop correlator or a Yang–Mills mass-gap result.
 
