@@ -278,3 +278,21 @@ The four Stage 26 multihit arrays' `candidate_path_indices` are independently id
 Therefore the Stage 19 NPZ cannot be indexed directly by `candidate_path_indices`. A valid crosswalk must be made by reconstructing the deterministic Stage 16 candidate path array and matching each selected row's ordered `(edge_id, orientation_sign)` sequence against the Stage 19 catalogue rows, with explicit checks for duplicate sequences, orientation reversal, periodic winding and root-anchor identity. The graph hash match is necessary but not sufficient for row identity.
 
 **Access limitation for this audit run:** GitHub exposes the NPZ as a Git LFS pointer and manifest through the repository connector; its binary payload is not available to the current analysis runtime. Thus the manifest and source-level index semantics are verified, but no claim is made here that the edge-sequence crosswalk has been computed. Next execution gate: obtain the exact LFS payload or run a repository-side verifier with LFS enabled, regenerate the Stage 16 sparse candidate arrays, and emit a 600-row crosswalk with exact-match status and mismatch diagnostics.
+
+## 10. Exact Stage 16–Stage 19 ordered edge-sequence crosswalk
+
+The Stage 19 binary catalogue was supplied directly and decoded. I reconstructed the M55 rational model-set torus from the archived `penrose_causal_study.py` and `stage2_rational_torus.py` construction, then regenerated the deterministic Stage 16 sparse candidate-path array using the archived `sparse_paths` algorithm with `max_steps=10,n_anchors=180,per_length=100`. The reconstructed graph hash is exactly `f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21`, matching Stage 19. All 600 selected Stage 26 candidate paths are contiguous graph paths, and their reconstructed endpoints match the Stage 26 source/target arrays exactly.
+
+The sequence comparison enumerated every cyclic contiguous Stage 19 loop segment up to ten edges and compared the exact ordered `(edge_id,orientation_sign)` sequence, testing both forward traversal and reversed traversal with all signs negated.
+
+| Crosswalk result | Count |
+|---|---:|
+| Selected Stage 16 candidates | 600 |
+| Exact complete Stage 19 loop matches | 0 |
+| Candidates found as exact contiguous Stage 19 subpaths | 36 (6.0%) |
+| Candidates with no exact subpath match in either orientation | 564 (94.0%) |
+| Distinct Stage 19 root-row occurrences among matches | 56 |
+
+The 36 matching candidate paths have edge lengths 2 (1), 3 (25), 4 (4), 5 (5), and 7 (1). Some candidates occur in more than one Stage 19 rooted loop; therefore a match is not a unique root assignment. The full occurrence list, including catalogue row/root, cyclic start offset and orientation, is recorded in `research/evidence/PF_STAGE16_STAGE19_ORDERED_EDGE_SEQUENCE_CROSSWALK_2026_11_12.json`.
+
+**Interpretation:** Stage 26's `candidate_path_indices` are conclusively Stage 16 candidate-array row IDs, not Stage 19 root indices. There is exact edge-sequence overlap for 36 candidates, but no complete-loop identity for any of the 600. For the other 564 candidates, the Stage 19 complete catalogue contains no exact contiguous match under the tested cyclic/orientation conventions. The 56 occurrences do not establish a physical observer map, nor do they identify a unique root anchor for each candidate. This resolves the indexing/provenance question without forcing a correspondence that the data do not support.
