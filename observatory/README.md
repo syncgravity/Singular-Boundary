@@ -1,13 +1,5 @@
 # Research Observatory — source-linked proof and evidence map
 
-## Helical observer correction · 2026-11-12
-
-The finite **34:55 parastichy count is established for the radial golden-angle/Delaunay construction**; it is not an exact-return claim about a five-step \u2124⁵ walk. In the N=1,600 construction, every possible lag-34 and lag-55 pair in array-index annulus [400,800) is a Delaunay edge, giving exactly 34 and 55 residue-class path components. The strengthened verifier passes 74 deterministic checks. An explicit synthetic 3D lift \(\Gamma_n=(\sqrt n\cos 2\pi n\alpha,\sqrt n\sin 2\pi n\alpha,hn)\), with independent clock \(t_n=nT\), makes these into discrete radially expanding helical strands. The longitudinal scale, clock and metric are model declarations, not source-derived physical constants.
-
-The mapping from this finite golden-angle construction to the authentic coupled-\u2124⁵ / five Conway-worm generator remains OPEN. The separate exploratory fivefold directed-walk statistics previously reported without a reproducible run are withdrawn and must not be used. See the [exact chain-count correction](../research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md), [74-check verifier](../research/scripts/verify_pf_conceptual_parastichy_2026_11_07.py), and [conceptual atlas](conceptual-atlas.html).
-
----
-
 ## Current source corrections · 2026-11-11
 
 The current research state supersedes older dated summaries below where they conflict:
