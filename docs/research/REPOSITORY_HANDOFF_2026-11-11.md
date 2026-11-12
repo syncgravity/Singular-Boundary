@@ -4,13 +4,22 @@
 
 ## Start here
 
-1. [Observatory home](../../observatory/index.html) — navigational entry point.
-2. [Canonical spectral-inequality interface](../../observatory/spectral-inequality.html) — one theorem target and six dependency gates.
-3. [Canonical proof-program specification](SOURCE_COMPATIBLE_SPECTRAL_INEQUALITY_PROGRAM_2026-11-11.md) — exact statement, route boundaries, equivalence rules and work order.
-4. [Proof Atlas](../../observatory/graph.html) — source-linked theorem/evidence graph.
-5. [Penrose–Fibonacci primary map](../../observatory/penrose-program.html) — source-native coupled-Z5 / 2+2 program.
-6. [Yang–Mills proof interface](../../observatory/yang-mills-proof.html) — legacy interface; defer to the spectral-inequality page for the canonical dependency spine.
-7. [Branch lifecycle and retirement protocol](BRANCH_LIFECYCLE_2026-11-11.md) — live branch snapshot, safe-retirement rules and action procedure.
+1. [Research program map](RESEARCH_PROGRAM_MAP_2026-11-11.md) — repository layout, primary source dossiers, PF-I16 sequence, evidence vocabulary and maintenance rules.
+2. [Observatory home](../../observatory/index.html) — navigational entry point.
+3. [Canonical spectral-inequality interface](../../observatory/spectral-inequality.html) — one theorem target and six dependency gates.
+4. [Canonical proof-program specification](SOURCE_COMPATIBLE_SPECTRAL_INEQUALITY_PROGRAM_2026-11-11.md) — exact statement, route boundaries, equivalence rules and work order.
+5. [Proof Atlas](../../observatory/graph.html) — source-linked theorem/evidence graph.
+6. [Penrose–Fibonacci primary map](../../observatory/penrose-program.html) — source-native coupled-Z5 / 2+2 program.
+7. [Yang–Mills proof interface](../../observatory/yang-mills-proof.html) — legacy interface; defer to the spectral-inequality page for the canonical dependency spine.
+8. [Branch lifecycle and retirement protocol](BRANCH_LIFECYCLE_2026-11-11.md) — live branch snapshot, safe-retirement rules and action procedure.
+
+## Mainline preservation update · 2026-11-11
+
+The repository front page now links the [Research Program Map](RESEARCH_PROGRAM_MAP_2026-11-11.md). The PF-I16 divergent branch was not merged wholesale: its 48 candidate paths were reconciled, with 46 source files copied to their original paths on `main` and two theorem dossiers confirmed already present. The original branch remains intact. See the [PF-I16 preservation ledger](PF_I16_BRANCH_PRESERVATION_LEDGER_2026-11-11.md).
+
+The two latest review records are also preserved on `main`: [PF-I16 branch reconciliation](PF_I16_BRANCH_RECONCILIATION_2026-11-11.md) and [Z5 real-structure/helical-observer source audit](Z5_REAL_STRUCTURE_AND_HELICAL_OBSERVER_SOURCE_AUDIT_2026-11-11.md). The theorem registry, historical navigator, current navigator, catalog and both Proof Atlas graph serializations are synchronized at **762 theorem-source paths**, **285 curated nodes**, and **678 typed relationships**. These counts establish inventory/navigation only, not mathematical certification. A fresh CI run has not yet been observed.
+
+The branch and PR counts below are dated historical snapshots, not live state. Check GitHub before any merge or retirement action.
 
 ## Live four-PR review board · 2026-11-11
 
