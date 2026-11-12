@@ -78,7 +78,7 @@ def original_worm_summary(tiling, ns):
 
 def tile_edge_set(tile):
     v = tile["vertices"]
-    return {tuple(sorted((v[i], v[(i + 1) % 4])) for i in range(4)}
+    return {tuple(sorted((v[i], v[(i + 1) % 4]))) for i in range(4)}
 
 def physical_disk_worms(tiling, radius, ns):
     E_NORMALS = ns["E_NORMALS"]
