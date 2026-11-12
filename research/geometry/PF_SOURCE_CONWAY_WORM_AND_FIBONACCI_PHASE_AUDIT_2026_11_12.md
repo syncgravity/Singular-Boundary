@@ -135,3 +135,6 @@ The count itself is not the remaining obstacle. The next objective is to make th
 4. Verify that the source-defined traversal induces the same 34/55 Delaunay parastichy graph under held-out cutoffs and mirrored/rational controls.
 
 **Status:** finite 34:55 count — ESTABLISHED for the golden-angle construction; source Fibonacci contraction ratio — ESTABLISHED; common-crop worm frequency ratio — REPRODUCED; exact source Fibonacci words — PARTIAL; internal arg(z₂) as observer phase — REJECTED by this test; observer phase-to-worm traversal and source-native 3D metric/clock — OPEN.
+
+
+**Family-frame verifier:** `research/scripts/verify_pf_family_frame_lift_2026_11_12.py` passes 12 deterministic algebraic and geometric checks. Its machine-readable output is preserved in `research/evidence/PF_FAMILY_FRAME_3D_LIFT_2026_11_12.json`. The 74-check Delaunay verifier separately establishes the finite 34:55 chain counts.
