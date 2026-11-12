@@ -81,5 +81,8 @@
     ],
     "family_operator_harmonic_identity_max_error": 5.28431465252055e-14
   },
-  "scope": "One restart configuration at sweep 10080 and its 20 spatial slices. This is a family-labelled plaquette diagnostic, not an ensemble correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate. The reconstructed graph hash matches the archived Stage7 graph hash; byte identity with the separate complete measurement catalogue remains unverified."
+  "scope": "One restart configuration at sweep 12000 and its 20 spatial slices. This is a family-labelled plaquette diagnostic, not an ensemble correlator, not a long-worm Wilson-loop measurement, and not a mass-gap estimate. The reconstructed graph hash matches the archived Stage7 graph hash; byte identity with the separate complete measurement catalogue remains unverified.",
+  "restart_sweeps": [
+    12000
+  ]
 }
