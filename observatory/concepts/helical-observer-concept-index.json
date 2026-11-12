@@ -186,7 +186,15 @@
       "title": "M55 worm-strip boundary Wilson loops on Stage 26 links",
       "evidence": "source-code-audit",
       "status": "finite",
-      "claim": "From the M55 source generator, faces carry basis-direction pairs (a,b); family-j worms are face components joined across shared j-edges. A radius-40 disk crop inside the 42.9127 cell inradius yields 252 finite segments (50,50,51,51,50), all with L/S within 15% of φ. The oriented boundary of each strip is a single closed loop of length 2L+2. On the seed-101 Stage26 restart at sweep 12000, all loops are gauge invariant under random local SU(2) transformations to max defect change 7.77e−15. Mean second-harmonic amplitude 0.08430 (8.469% of full-family control), phase circular spread 2.074 rad across 20 slices. Single restart only; no ensemble correlator or mass-gap inference. Reconstructed catalogue hash 5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857; original complete measurement catalogue identity remains unverified.",
+      "claim": "From the M55 source generator, faces carry basis-direction pairs (a,b); family-j worms are face components joined across shared j-edges. A radius-40 disk crop inside the 42.9127 cell inradius yields 252 finite segments (50,50,51,51,50), all with L/S within 15% of φ. The oriented boundary of each strip is a single closed loop of length 2L+2. On the seed-101 Stage26 restart at sweep 12000, all loops are gauge invariant under random local SU(2) transformations to max defect change 7.77e−15. Mean second-harmonic amplitude 0.08430 (8.469% of full-family control), phase circular spread 2.074 rad across 20 slices. Single restart only; no ensemble correlator or mass-gap inference. Reconstructed catalogue hash 5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857; original complete measurement catalogue identity remains unverified. The four seed multihit files also share identical 600 source/target/dx/r/path-index records; M55 torus minimum-image displacement matches dx to 2.51e−14 and r to 8.89e−16. Candidate path IDs 197–999 remain opaque pending the complete catalogue.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE26-MULTIHIT-ENDPOINT-GEOMETRY",
+      "title": "Four-seed M55 multihit endpoint geometry",
+      "evidence": "source-code-audit",
+      "status": "finite",
+      "claim": "All four uploaded Penrose multihit NPZs (seeds 101,211,307,419) have byte-identical source, target, dx, r, candidate_path_indices and matched_pair_indices arrays: 600 matched pairs on the 22,808-vertex M55 graph. The two-period minimum-image reconstruction gives max dx error 2.51e−14 and max |r−||dx|||| 8.89e−16. The candidate path IDs are 600 unique values in [197,999], but their ordered edge paths remain opaque without the complete measurement catalogue.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
@@ -211,5 +219,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: M55 source-derived worm segments and closed strip-boundary Wilson loops reconstructed; 252 loops evaluated on Stage26 sweep-12000 restart with gauge covariance verified. Single-configuration phase response broad; 34:55 Delaunay parastichy count remains distinct from worm counts."
+  "last_update": "2026-11-12: Stage26 M55 worm-strip Wilson loops and four-seed multihit endpoint geometry verified; path IDs still require original catalogue for edge-sequence recovery."
 }
