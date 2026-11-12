@@ -1,6 +1,6 @@
 {
   "schema": "singular-boundary.concept-index.v1",
-  "version": "2026-11-07-reconstruction",
+  "version": "2026-11-12-parastichy-lift-correction",
   "purpose": "Index physical and mathematical concepts before document/section citations; preserve evidence level and operator identity.",
   "governing_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "historical_intent": "Extension of 2D Conway-worm observation to a 3D helical observer; 34:55 sought as consequence; full conversation unavailable.",
@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "Helical observer is a higher-dimensional observation METHOD, not necessarily a literal Conway worm. Projected constant-radius complex circle does not supply unique 3D spatial path.",
+      "claim": "The Paper 3 constant-radius internal circle still does not determine a source physical 3D path, clock or metric. A separate finite synthetic lift Γ_n=(√n cos(2παn),√n sin(2παn),hn), t_n=nT, with product Euclidean metric lifts the golden-angle parastichy chains to discrete radially expanding helices; h and T are declared model data, not source-derived physical constants.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -74,16 +74,16 @@
       "title": "Golden-angle irrational rotation and signed Fibonacci neighbor offsets",
       "evidence": "independent-math",
       "status": "finite",
-      "claim": "For α=φ⁻², F_k α−F_{k−2}=(−1)^kφ⁻ᵏ. F9=34 and F10=55 have tiny opposite winding; radial annulus Delaunay reveals these offsets.",
+      "claim": "For α=φ⁻², the exact identity F_kα−F_{k−2}=(−1)^kφ⁻ᵏ gives opposite signed residual turns at F9=34 and F10=55. In the N=1600 radial golden-angle Delaunay construction, every lag-34 and lag-55 pair in annulus [400,800) is an edge; the lag graphs split into exactly 34 and 55 residue-class chains. Verified by the 74-check script. Synthetic construction, not source-Z5 authentication.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
       "id": "CON-34-55-EMERGENCE",
       "title": "34:55 spiral arms as a conditional consequence—not an input",
-      "evidence": "reconstruction",
-      "status": "conditional",
-      "claim": "Synthetic radial golden-angle annulus has Delaunay neighbor steps 34/55/89, while rational 8/13 shows 5/8/13. No authenticated Z5 worm→3D observer→arm derivation yet.",
-      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "The finite synthetic radial golden-angle/Delaunay construction establishes exactly 34 and 55 residue-class parastichy chains in array-index annulus [400,800), with 89 as the third lag; the 34/55 angular residuals have opposite signs. The count is resolved for this construction. Its mapping to the authentic coupled-Z5 Conway-worm generator and source physical observer remains OPEN.",
+      "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
     },
     {
       "id": "CON-STATIC-FIELD",
@@ -132,6 +132,14 @@
       "status": "conditional",
       "claim": "Dissertation reports spectral-dimension reductions, ζ′(0) QC/periodic~0.646±0.006, and cavity observables. These are source claims; scalar spectra do not certify interacting YM mass gap or gravity.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-GOLDEN-3D-LIFT",
+      "title": "Radially expanding 3D lift of golden-angle parastichy chains",
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "The explicit lift Γ_n=(√n cos(2παn),√n sin(2παn),hn), with t_n=nT and product Euclidean metric, turns each exact lag-k residue chain into a discrete radially expanding 3D helix with angular residual 2π(−1)^kφ⁻ᵏ and longitudinal increment hk. This is a synthetic finite construction; h,T and source equivalence remain open.",
+      "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
     }
   ],
   "independent_controls": {
@@ -154,5 +162,6 @@
     "phase_shuffled": "no coherent Fibonacci hierarchy",
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
-  "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN"
+  "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
+  "last_update": "2026-11-12: exact finite 34:55 residue-chain count and explicit 3D lift added; source-to-Conway-worm bridge remains open."
 }
