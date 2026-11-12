@@ -40,10 +40,10 @@
     {
       "id": "CON-CONWAY-FAMILIES",
       "title": "Five two-dimensional Fibonacci/Conway-worm chain families",
-      "evidence": "source-reported",
+      "evidence": "source-code-audit",
       "status": "conditional",
-      "claim": "Five planar Fibonacci path families motivate the observer mechanism; exact vertex-to-family labels and corresponding physical pathways remain absent.",
-      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+      "claim": "The authenticated predecessor paper2_compute.py defines five pentagrid worm families. Its un-cropped extract_conway_worms output is not the claimed Fibonacci interior sequence (N_grid=15: 155 worms, L/S=1, zero ratio matches). A common physical disk crop reproduces near-φ frequency (70/75 long segments within 15%) and edge-connected tile chains, but exact Fibonacci word structure is only partial (23/75 strict proxy passes). Source-to-observer index remains OPEN.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     },
     {
       "id": "CON-J-ORIENTATION",
@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "The Paper 3 constant-radius internal circle still does not determine a source physical 3D path, clock or metric. A separate finite synthetic lift Γ_n=(√n cos(2παn),√n sin(2παn),hn), t_n=nT, with product Euclidean metric lifts the golden-angle parastichy chains to discrete radially expanding helices; h and T are declared model data, not source-derived physical constants.",
+      "claim": "The Paper 3 constant-radius internal circle does not determine a source physical 3D path, clock or metric. A finite synthetic lift Γ_n=(√n cos(2πnρ),√n sin(2πnρ),hn), t_n=nT, with product Euclidean metric lifts golden-angle parastichy chains to discrete radially expanding helices. The predecessor Fibonacci matrix gives ρ=|λ₋/λ₊|=φ⁻²; using ρ as a turn fraction Δθ/(2π) is an additional observer phase-lift rule. h,T and source-native tick traversal remain OPEN.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -138,8 +138,24 @@
       "title": "Radially expanding 3D lift of golden-angle parastichy chains",
       "evidence": "independent-math",
       "status": "finite",
-      "claim": "The explicit lift Γ_n=(√n cos(2παn),√n sin(2παn),hn), with t_n=nT and product Euclidean metric, turns each exact lag-k residue chain into a discrete radially expanding 3D helix with angular residual 2π(−1)^kφ⁻ᵏ and longitudinal increment hk. This is a synthetic finite construction; h,T and source equivalence remain open.",
+      "claim": "The explicit lift Γ_n=(√n cos(2πnα),√n sin(2πnα),hn), with t_n=nT and product Euclidean metric, turns each exact lag-k residue chain into a discrete radially expanding 3D helix. The predecessor source Fibonacci matrix has |λ₋/λ₊|=φ⁻², motivating α=φ⁻²; interpreting this contraction ratio as a turn fraction is an added observer rule, while h,T remain declared model data.",
       "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
+    },
+    {
+      "id": "CON-SOURCE-WORM-CROP",
+      "title": "Source Conway-worm extraction and common physical crop",
+      "evidence": "source-code-audit",
+      "status": "conditional",
+      "claim": "The authenticated predecessor source extractor groups by pentagrid family and grid index but does not crop a common physical interior: its N_grid=15 run gives 155 worms of 124 tiles each, mean L/S=1 and zero φ-ratio matches. A common radius-20 crop at N_grid=25 is stable against N_grid=21, gives 82 edge-connected worm segments, and 70/75 long segments within 15% of φ. Strict Fibonacci-word proxy passes only 23/75; exact word structure and 34:55 observer mapping remain OPEN.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FIBONACCI-PHASE-LIFT",
+      "title": "Fibonacci substitution contraction as observer phase increment",
+      "evidence": "independent-math",
+      "status": "conditional",
+      "claim": "The predecessor source matrix M1=[[1,1],[1,0]] has eigenvalues φ and −φ⁻¹, so |λ₋/λ₊|=φ⁻² exactly. The candidate phase-lift rule Δθ=2π|λ₋/λ₊| yields the golden-angle observer and the finite 34:55 parastichy count. The scalar-to-angular interpretation is an added observer postulate, not a rule stated in paper2_compute.py. The naive identification arg(z₂(tile centre)) is not supported by 2,977 tested worm increments.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
   "independent_controls": {
@@ -163,5 +179,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: exact finite 34:55 residue-chain count and explicit 3D lift added; source-to-Conway-worm bridge remains open."
+  "last_update": "2026-11-12: exact 34:55 finite parastichy count and radial 3D lift verified; source worm extraction audited; φ⁻² phase candidate linked to Fibonacci substitution matrix; source-native observer tick remains open."
 }
