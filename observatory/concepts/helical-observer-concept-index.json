@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "The Paper 3 constant-radius internal circle does not determine a source physical 3D path, clock or metric. A finite synthetic lift Γ_n=(√n cos(2πnρ),√n sin(2πnρ),hn), t_n=nT, with product Euclidean metric lifts golden-angle parastichy chains to discrete radially expanding helices. The predecessor Fibonacci matrix gives ρ=|λ₋/λ₊|=φ⁻²; using ρ as a turn fraction Δθ/(2π) is an additional observer phase-lift rule. h,T and source-native tick traversal remain OPEN.",
+      "claim": "A source-motivated family-level observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its fivefold Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is declared as R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. This is a genuine discrete radially expanding 3D observer curve without mapping Z₂ to physical Z₁. The turn-fraction interpretation, equal-area radial law, h,T, and source-native tick-to-worm traversal remain model postulates/open.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -138,7 +138,7 @@
       "title": "Radially expanding 3D lift of golden-angle parastichy chains",
       "evidence": "independent-math",
       "status": "finite",
-      "claim": "The explicit lift Γ_n=(√n cos(2πnα),√n sin(2πnα),hn), with t_n=nT and product Euclidean metric, turns each exact lag-k residue chain into a discrete radially expanding 3D helix. The predecessor source Fibonacci matrix has |λ₋/λ₊|=φ⁻², motivating α=φ⁻²; interpreting this contraction ratio as a turn fraction is an added observer rule, while h,T remain declared model data.",
+      "claim": "The exact family frame w_j(n)=√n cos(4πj/5−2πnφ⁻²) has only the Z₂ Fourier component: z₂=(5/2)√n exp(2πinφ⁻²), with s=z₁=0. In observer space R_s⊕C_Z₂, Γ_n=(hn,Re Z₂,Im Z₂), t_n=nT and product Euclidean metric gives a radially expanding 3D helix. Its Delaunay parastichy chains have exact finite counts 34 and 55 in the verified annulus. The scalar-to-turn rule and physical interpretation remain conditional.",
       "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
     },
     {
@@ -154,7 +154,15 @@
       "title": "Fibonacci substitution contraction as observer phase increment",
       "evidence": "independent-math",
       "status": "conditional",
-      "claim": "The predecessor source matrix M1=[[1,1],[1,0]] has eigenvalues φ and −φ⁻¹, so |λ₋/λ₊|=φ⁻² exactly. The candidate phase-lift rule Δθ=2π|λ₋/λ₊| yields the golden-angle observer and the finite 34:55 parastichy count. The scalar-to-angular interpretation is an added observer postulate, not a rule stated in paper2_compute.py. The naive identification arg(z₂(tile centre)) is not supported by 2,977 tested worm increments.",
+      "claim": "The predecessor source matrix M1=[[1,1],[1,0]] has eigenvalues φ and −φ⁻¹, so |λ₋/λ₊|=φ⁻² exactly. The candidate observer rule Δθ=2π|λ₋/λ₊| gives the golden-angle phase. The five-family frame w_j(n)=√n cos(4πj/5−θ_n) then projects exactly to z₂=(5/2)√n exp(iθ_n), with no z₁ or trivial component. The matrix ratio is source-grounded; interpreting it as a turn fraction and adding the radial/longitudinal rules are observer postulates.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FIVE-FAMILY-OBSERVER-FRAME",
+      "title": "C5 five-family weights as a pure Z2 observer frame",
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "For w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, the exact five-point Fourier sums give s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). A cyclic family relabeling is θ→θ+4π/5. This provides a C5-equivariant family-level observer state in the source Z₂ representation without a forbidden linear Z₂→Z₁ map. Its use as a physical observer requires the separately declared R⊕Z₂ metric, clock and longitudinal coordinate.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
@@ -179,5 +187,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: exact 34:55 finite parastichy count and radial 3D lift verified; source worm extraction audited; φ⁻² phase candidate linked to Fibonacci substitution matrix; source-native observer tick remains open."
+  "last_update": "2026-11-12: C5 five-family observer frame and R⊕Z₂ radial 3D lift formalized; source worm crop and phase audit recorded; source-native tick traversal remains open."
 }
