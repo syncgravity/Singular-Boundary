@@ -2,12 +2,12 @@
 
 **Review date:** 2026-11-11  
 **Reviewed source branch:** `audit/pf-i16-local-interacting-vacuum-2026-11-08`  
-**Integration destination:** `architecture/source-compatible-spectral-spine-2026-11-11`  
-**Status:** research contribution and proof limitations identified; source files remain to be imported and independently replayed before the integration PR is merged. This note is not a theorem certification.
+**Integration destination:** `main` (content-level preservation; source branch retained)  
+**Status:** 46 branch-only files copied to their original paths; two theorem dossiers were already present in `main`. Source-level mathematical review is recorded here; the verifiers have not all been rerun from a clean environment. This note is not a theorem certification.
 
 ## 1. Why the branch is not merged wholesale
 
-The PF-I16 branch is divergent from `main`: 53 commits ahead and 138 behind, with 46 branch-only files (26 research reports, 17 scripts, and 3 later theorem/verification files; exact path inventory is the compare result). A merge of its historical commit chain would pull in a stale ancestor history and risk reintroducing old generated files and superseded statements. The safe operation is content-level reconciliation onto the current architecture branch, preserving every distinct report and verifier while correcting superseded claims.
+The PF-I16 branch is divergent from `main`: 53 commits ahead and 140 behind at the final comparison, with 48 candidate paths: 26 geometry dossiers, 16 scripts, three theorem dossiers, and three verification scripts. Two theorem dossiers were already present in `main`; the remaining 46 files were copied at their original paths. A merge of its historical commit chain would pull in a stale ancestor history and risk reintroducing old generated files and superseded statements. The safe operation is content-level reconciliation onto the current architecture branch, preserving every distinct report and verifier while correcting superseded claims.
 
 The branch is scientifically material and must not be discarded. Its work is on the authentic five-direction accepted \(\mathbb Z^5\) Penrose–Fibonacci rhombus complex and original-link SU(2) variables, with explicitly chosen auxiliary electric and magnetic coefficients. It is not a source-derived physical Hamiltonian or time normalization.
 
@@ -64,7 +64,7 @@ A global Kato norm of the extensive residual is not an acceptable substitute. Th
 
 ## 5. Reproducibility and source qualifications
 
-The branch contains 17 executable Python verifiers across `research/scripts/` and `research/verification/`. Their reports describe exact rational / symbolic identities, finite enumerations, and numerical corroborations. The present review has inspected the source reports and their declared verification scope; it has **not yet rerun all 17 scripts from a clean environment**. The private original generator `paper6_extend_local.py` remains outside the public repository; PF-I9's recovered copy is hash-pinned in the prior source audit, but a hash is not source publication or independent re-execution.
+The preserved branch corpus contains 19 executable Python checks: 16 scripts under `research/scripts/` and three verification scripts under `research/verification/`. Their reports describe exact rational / symbolic identities, finite enumerations, and numerical corroborations. The present review has inspected the source reports and their declared verification scope; it has **not yet rerun all 19 scripts from a clean environment**. The private original generator `paper6_extend_local.py` remains outside the public repository; PF-I9's recovered copy is hash-pinned in the prior source audit, but a hash is not source publication or independent re-execution.
 
 No source file in this branch should be described as independently source-certified beyond the exact crop and provenance scope its own report states. No finite coefficient, local estimate, or conditional reference bound closes the physical refinement, interacting-vacuum, uniform Poincaré, infrared, or continuum gate.
 
@@ -89,4 +89,4 @@ The branch-only content consists of the following reports and executable checks 
 - `research/scripts/verify_pf_i16_*.py`
 - `research/verification/verify_pf_i16_*.py`
 
-The complete exact file list remains available from the Git comparison of the named source branch against main; no file is to be dropped merely because it is a verifier, a negative result, or a finite auxiliary calculation.
+The complete exact file list and original source-branch blob hashes are recorded in [PF_I16_BRANCH_PRESERVATION_LEDGER_2026-11-11.md](PF_I16_BRANCH_PRESERVATION_LEDGER_2026-11-11.md). All 46 previously absent files are now present in `main`; no file was dropped merely because it is a verifier, a negative result, or a finite auxiliary calculation. The original source branch remains intact.
