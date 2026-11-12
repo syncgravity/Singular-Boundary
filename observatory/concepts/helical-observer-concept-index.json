@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "A source-motivated family-level observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its fivefold Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is declared as R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. This is a genuine discrete radially expanding 3D observer curve without mapping Z₂ to physical Z₁. The turn-fraction interpretation, equal-area radial law, h,T, and source-native tick-to-worm traversal remain model postulates/open.",
+      "claim": "The source-motivated family observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. A normalized signed family operator O_n(τ)=Σ_j u_j(n)F_j(τ) is defined conditionally on source-labelled closed Wilson loops. The observer phase n is distinct from Yang–Mills transfer time τ. h,T, source-native family loops and physical interpretation remain OPEN.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -164,6 +164,14 @@
       "status": "finite",
       "claim": "For w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, the exact five-point Fourier sums give s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). A cyclic family relabeling is θ→θ+4π/5. This provides a C5-equivariant family-level observer state in the source Z₂ representation without a forbidden linear Z₂→Z₁ map. Its use as a physical observer requires the separately declared R⊕Z₂ metric, clock and longitudinal coordinate.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FAMILY-WILSON-OPERATOR",
+      "title": "Gauge-invariant family-weighted observer operator",
+      "evidence": "proposed-test",
+      "status": "conditional",
+      "claim": "Given source-defined closed Wilson loops γ_{j,x} for each worm family, define F_j(τ)=mean_x[1−½Tr Hol_{γ_{j,x}}(U(τ))] and u_j(n)=√(2/5)cos(4πj/5−2πρn). Then O_n(τ)=Σ_j u_j(n)F_j(τ) is real, gauge invariant, unit-normalized in family coefficient space, and C5-covariant; retain O_full=⅕ΣF_j as control. The observer phase n is not Euclidean transfer time τ. Existing Stage 26 aggregates lack family/anchor loop labels and path catalog, so this operator is not yet measured.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
   "independent_controls": {
@@ -187,5 +195,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: C5 five-family observer frame and R⊕Z₂ radial 3D lift formalized; source worm crop and phase audit recorded; source-native tick traversal remains open."
+  "last_update": "2026-11-12: finite 34:55 parastichy count, C5 family-frame R⊕Z₂ observer lift, source worm crop audit, and conditional gauge-invariant family operator/data contract added. Stage 26 data do not yet support family-resolved evaluation."
 }
