@@ -1,6 +1,6 @@
 {
   "schema": "singular-boundary.concept-index.v1",
-  "version": "2026-11-12-stage19-catalogue-index-correction",
+  "version": "2026-11-12-stage16-stage19-sequence-crosswalk",
   "purpose": "Index physical and mathematical concepts before document/section citations; preserve evidence level and operator identity.",
   "governing_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "historical_intent": "Extension of 2D Conway-worm observation to a 3D helical observer; 34:55 sought as consequence; full conversation unavailable.",
@@ -194,7 +194,7 @@
       "title": "Four-seed M55 multihit endpoint geometry",
       "evidence": "source-code-audit",
       "status": "finite",
-      "claim": "All four uploaded Penrose multihit NPZs (seeds 101,211,307,419) have identical 600 source/target/dx/r/candidate_path_indices/matched_pair_indices records on the 22,808-vertex M55 graph; torus minimum-image displacement matches dx to 2.51e−14 and r to 8.89e−16. Candidate IDs 197–999 are Stage16 sparse candidate-path row indices (write_catalog: max_steps=10,n_anchors=180,per_length=100), not Stage19 root indices. The Stage19 complete catalogue is now present on main as a Git LFS object with 22,808 complete roots and graph hash f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21. Exact ordered-edge/sign crosswalk remains pending because the LFS binary payload was not available to this runtime; graph hash alone does not establish row identity.",
+      "claim": "All four uploaded Penrose multihit NPZs (seeds 101,211,307,419) have identical 600 source/target/dx/r/candidate_path_indices/matched_pair_indices records on the 22,808-vertex M55 graph; torus minimum-image displacement matches dx to 2.51e−14 and r to 8.89e−16. Candidate IDs 197–999 are Stage16 sparse candidate-path row indices, not Stage19 root indices. The Stage19 complete catalogue has 22,808 roots and graph hash f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21. Exact ordered edge/sign crosswalk: 36/600 candidates (6%) occur as contiguous subpaths of Stage19 rooted loops, with 56 root-row occurrences; zero candidates are complete Stage19 loops and 564 have no exact subpath match in either orientation. Thus there is no direct row-index or complete-loop identity, and the partial overlaps do not yet define a unique root-anchor or observer correspondence.",
       "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     }
   ],
@@ -219,5 +219,5 @@
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
   "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
-  "last_update": "2026-11-12: Stage19 complete catalogue LFS manifest authenticated; Stage16 candidate-path IDs distinguished from Stage19 root indices; exact edge-sequence crosswalk pending."
+  "last_update": "2026-11-12: computed exact Stage16–Stage19 cyclic oriented edge-sequence crosswalk: 36/600 contiguous subpath matches, 56 root occurrences, zero complete-loop matches; Stage16 IDs remain distinct from Stage19 root indices."
 }
