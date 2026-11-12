@@ -78,23 +78,52 @@ Along the 75 long, physically cropped worm sequences there are 2,977 unwrapped a
 
 Thus the simplest proposed identification θ=arg(z₂) is not the golden-angle phase. This does not rule out the historical Stage-30 observer frame, whose phase parameter is an independent observer variable; it rules out identifying that phase naively with the tile-centre internal argument.
 
-## 6. Explicit 3D observer candidate
+## 6. Five-family frame and explicit 3D observer lift
 
-Combining the source-motivated contraction ratio with the independently specified radial and longitudinal rules gives
+Let
 \[
-\Gamma_n=\left(\sqrt n\cos(2\pi n\rho),\,
-\sqrt n\sin(2\pi n\rho),\,hn\right),
-\qquad t_n=nT,
+\rho=\varphi^{-2},\qquad \theta_n=2\pi\rho n,
 \]
-with h,T>0 independent and product Euclidean metric dℓ²=dx²+dy²+ds².
+and define the five family weights
+\[
+w_j(n)=\sqrt n\cos\left(\frac{4\pi j}{5}-\theta_n\right),
+\qquad j=0,\ldots,4.
+\]
+These weights are not an arbitrary five-vector: they lie exactly in the source's second-harmonic C5 representation. With \(\omega=e^{2\pi i/5}\), direct finite Fourier summation gives
+\[
+s(w(n))=\frac1{\sqrt5}\sum_jw_j(n)=0,\qquad
+z_1(w(n))=\sum_jw_j(n)\omega^j=0,
+\]
+\[
+\boxed{z_2(w(n))=\sum_jw_j(n)\omega^{2j}
+=\frac52\sqrt n\,e^{i\theta_n}.}
+\]
+For the orthonormal Fourier coordinate \(Z_2=\sqrt{2/5}\,z_2\),
+\[
+Z_2(n)=\sqrt{\frac52}\sqrt n\,e^{i\theta_n}.
+\]
+A cyclic relabeling of the five families is exactly the phase shift \(\theta\mapsto\theta+4\pi/5\); the family frame is C5-equivariant.
 
-The radial rule gives equal area per index increment because πr_n²=πn. The longitudinal coordinate is strictly increasing, s_n=hn, and each lag-k parastichy chain has axial advance hk and clock advance kT. For k=34,55, the angular residuals are opposite:
+This gives a direct observer-space lift without trying to map the internal plane linearly into the source physical \(z_1\) plane. Define the observer space
+\[
+\mathcal O=\mathbb R_s\oplus\mathbb C_{Z_2}
+\]
+with product Euclidean metric \(d\ell^2=ds^2+dX^2+dY^2\), independent longitudinal coordinate \(s_n=hn\), and clock \(t_n=nT\), where \(h,T>0\) are declared model scales. Then
+\[
+\boxed{\Gamma_n=(hn,\Re Z_2(n),\Im Z_2(n)).}
+\]
+This is a genuine discrete, radially expanding 3D observer curve in the declared observer space. It is not a literal embedding of the worms and does not identify \(Z_2\) with source physical \(Z_1\); the earlier no-equivariant-linear-map result is therefore not contradicted.
+
+The radial law is \(r_n\propto\sqrt n\), so the transverse area per observer tick is constant. This is a new equal-area sampling rule; Paper 3's constant-radius circle does not contain it. The phase fraction is motivated by the source substitution contraction, while interpreting it as a full-turn fraction, choosing the radial law, and specifying \(h,T\) are explicit observer postulates.
+
+The 34 and 55 Delaunay parastichy families are neighbour-chain families in the transverse \(Z_2\) projection. Their 3D lifts have longitudinal advances \(34h\) and \(55h\), clock advances \(34T\) and \(55T\), and opposite angular residuals:
 \[
 2\pi(34\rho-F_7)=-2\pi\varphi^{-9},\qquad
 2\pi(55\rho-F_8)=+2\pi\varphi^{-10}.
 \]
+They are not exact returns of a five-basis-step Z5 walk.
 
-This is a genuine discrete, radially expanding 3D helical lift of the finite parastichy construction. It is not a constant-radius circular helix. The scale h, clock step T, and scalar-to-angle phase-lift rule are explicit model choices pending source derivation.
+The direct tile-centre test above shows that the observer phase \(\theta_n\) is not simply \(\arg z_2\) of individual worm tile centres. It is a family-level observer phase. A source-native rule connecting each observer tick to actual worm encounters remains the next open derivation.
 
 ## 7. Resolution path
 
