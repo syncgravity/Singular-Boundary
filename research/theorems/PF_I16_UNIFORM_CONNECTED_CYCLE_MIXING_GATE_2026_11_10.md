@@ -8,17 +8,17 @@
 
 For a finite source complex G=(V,E,F), consider H_G(b)=K_G−Σ_f b_f p_f, K_G=Σ_e a_e C_e, p_f=Tr(U_boundary f)/2, with a_e≥a0>0, 0≤b_f≤b0, and C_e chi_1/2=(3/4)chi_1/2. The centered convention removes the irrelevant scalar in Σ_f b_f(1−p_f).
 
-Available finite-source results: (1) independent face-center sign duality makes the centered ground-energy germ even separately in every b_f; (2) disconnected face-overlap support has zero exact-support coefficient, so a coefficient on k distinct faces has degree at least 2k; (3) each elementary source edge belongs to at most two accepted rhombi and each rhombus has four edges, hence face-overlap maximum degree is at most four; (4) pure-electric vacuum is unique with local excitation scale at least 3a0/4, while each centered face perturbation has norm at most b0 and acts on four link factors; (5) the one-link information estimate is volume-independent but averaged, not Dobrushin, conditional essential-supremum, approximate tensorization, or fiber Poincare.
+Available finite-source results: (1) independent face-center sign duality makes the centered ground-energy germ even separately in every b_f; (2) disconnected face-overlap support has zero exact-support coefficient, so a coefficient on k distinct faces has degree at least 2k; (3) the universal five-direction inventory gives at most eight candidate rhombi per original link, while the eight audited crops have at most two observed accepted-face incidences per link; only the latter finite-crop fact yields face-overlap degree at most four; (4) pure-electric vacuum is unique with local excitation scale at least 3a0/4, while each centered face perturbation has norm at most b0 and acts on four link factors; (5) the one-link information estimate is volume-independent but averaged, not Dobrushin, conditional essential-supremum, approximate tensorization, or fiber Poincare.
 
 ## 2. Exact combinatorial lemma: connected-support growth
 
-For the eight tested crops only, the face-overlap graph has observed maximum degree four. The source-uniform inventory instead gives maximum degree 28; use that value for a universal count. Fix a root face f. For every connected vertex set S containing f with |S|=k, choose a deterministic spanning tree and perform depth-first traversal from f. The closed walk has length 2(k−1), visits exactly S, and has at most four choices at every step. Distinct sets have distinct visited-vertex sets. Therefore
+For the eight tested crops only, the face-overlap graph has observed maximum degree four. The source-uniform inventory instead gives maximum degree 28; use that value for a universal count. Fix a root face f. For every connected vertex set S containing f with |S|=k, choose a deterministic spanning tree and perform depth-first traversal from f. The closed walk has length 2(k−1), visits exactly S, and has at most 28 choices at every step for the source-uniform bound (four on the eight audited crops only). Distinct sets have distinct visited-vertex sets. Therefore
 
     # {S containing f : |S|=k, S connected} ≤ 28^(2(k−1)) = 784^(k−1) for the source-uniform count (16^(k−1) on the eight tested crops only).
 
 Counting rooted pairs, each unrooted support having k roots, gives
 
-    # {S : |S|=k, S connected} ≤ |F| 16^(k−1) / k.
+    # {S : |S|=k, S connected} ≤ |F| 784^(k−1) / k for the source-uniform bound.
 
 This is purely combinatorial and independent of source volume. The accompanying exact-rational checker verifies the first values and geometric-majorant arithmetic.
 
@@ -30,7 +30,7 @@ The desired source-volume-uniform theorem is |zeta_G(S;b)| ≤ A q^|S| for every
 
 Combining the rooted count with this estimate gives, for each root face f,
 
-    Σ_{S connected, S contains f} |zeta_G(S;b)| ≤ A Σ_{k≥1} 784^(k−1) q^k = A q/(1−784q), provided 16q<1.
+    Σ_{S connected, S contains f} |zeta_G(S;b)| ≤ A Σ_{k≥1} 784^(k−1) q^k = A q/(1−784q), provided 784q<1.
 
 Thus the combinatorial part of cluster summability is complete conditional on the activity estimate. A bound only on the first coefficient c(S)=[product over f in S of b_f^2] E0 would control only the leading term; it would not control higher powers on the same support or the full activity.
 
