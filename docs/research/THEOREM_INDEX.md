@@ -838,3 +838,8 @@ These original files were missing from the November 1 index, including files alr
 | Record | Date | Source |
 |---|---|---|
 | Conditional weighted trace–gradient Bochner block on the finite open SU(2) strip | 2026-11-10 | [R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md](../../research/theorems/R3_IR_CONDITIONAL_WEIGHTED_TRACE_GRADIENT_BOCHNER_BLOCK_2026-11-10.md) |
+
+
+## Current branch additions · 2026-11-11
+
+- [PF_I16_UNIFORM_CONNECTED_CYCLE_MIXING_GATE_2026_11_10.md](../../research/theorems/PF_I16_UNIFORM_CONNECTED_CYCLE_MIXING_GATE_2026_11_10.md) — preserved PF-I16 conditional cluster gate; degree-four count explicitly superseded by the source-uniform incidence correction.
