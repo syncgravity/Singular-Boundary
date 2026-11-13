@@ -419,4 +419,4 @@ Thus \(C_{\rm time}=2\), and the previously proposed numerical condition is sati
 \]
 See [the updated projection/tree proof and verifier](PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) and [the finite-order audit](../verification/verify_pf_i16_projection_tree_profiles.py).
 
-**The quantum connected-resolvent/tree theorem remains OPEN.** The new result closes the projection-coefficient multiplicity subgate only. A uniform Feynman–Kac/ground-energy linked-cluster expansion, the full time-ordered reduced-resolvent bound, and its application to the actual conjugated rotor Hamiltonian still require proof.
+**The quantum connected-resolvent/tree theorem remains OPEN.** The new result also gives the all-orders reference-process temporal cumulant tree bound and fixed-order time-integral estimate (7.6)–(7.7). What remains open is the uniform-in-volume, all-orders Feynman–Kac/ground-energy linked-cluster expansion and its application to the actual conjugated rotor Hamiltonian.
