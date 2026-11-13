@@ -15977,6 +15977,13 @@
       "kind": "subgate-of",
       "label": "Joint space-time cumulant control is the remaining core of the quantum connected-resolvent/tree theorem",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I16-TWO-CUT-CONNECTED-RESOLVENT-IDENTITY",
+      "to_id": "PF-I16-JOINT-SPACETIME-CLUSTER-TREE",
+      "kind": "local-insertion-and-response-input",
+      "label": "Exact two-cut identity and bounded face/pair insertions feed the joint space-time cumulant tree gate",
+      "status": "open"
     }
   ],
   "sources_verified": {
