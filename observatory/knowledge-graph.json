@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.98-pf-i16-shared-port-profile-obstruction",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. Shared-port endpoint fusion is proved locally; a five-vertex non-endpoint witness example refutes exact temporal-profile-preserving joint completion. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v2.99-pf-i16-one-link-wdg",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, exact one-link continuous-time weighted-dependency cumulant bound with factorial envelope, and explicit all-orders joint-cluster frontier. Shared-port endpoint fusion is local; a five-vertex non-endpoint witness example refutes exact temporal-profile-preserving joint completion. Degree-eight tensor lift, actual insertion projective norms, quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -10907,8 +10907,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3. The complete third-order dressed coefficient and fourth-order cut-interpolation coefficient have conditional spatial MST bounds. The graph-uniform quantum connected-resolvent theorem, all-orders joint space-time/support bound, uniform Feynman–Kac/KP convergence, and actual interacting-vacuum gap remain OPEN.",
-      "detail": "The exact finite two-cut identity, local insertion norms, and per-link activity arithmetic are available. The temporal reference-process cumulant tree is all-orders exact after the port-completion injection, but this does not combine support incidence and temporal decay in a single tree. A direct m=4 support-sensitive reference cumulant tree is open; the full fourth-order coefficient is nevertheless controlled conditionally by the separate cut-interpolation theorem. Multiplying separate spatial and temporal tree sums gives a superexponential majorant. The actual quantum linked-cluster theorem must establish joint edgewise decay and exponential-in-order constants, then prove uniform convergence of the Feynman–Kac/ground-energy expansion.",
+      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and the continuous-time one-link weighted-dependency estimate is now exact with C_r≤(2e)^r r!. The all-orders joint support/time estimate is still OPEN because the degree-eight product lift and actual face/pair insertion projective tensor norms are not controlled. The graph-uniform quantum connected-resolvent theorem, uniform Feynman–Kac/KP convergence, and actual interacting-vacuum gap remain OPEN.",
+      "detail": "The exact finite two-cut identity, local insertion norms, per-link activity arithmetic, and all-orders temporal projection injection are available. Section 12 of the joint space-time frontier proves a one-link continuous-time Boolean-cumulant factorization and an explicit factorial classical-cumulant envelope. This makes the Féray weighted-dependency graph route more concrete but does not yet lift it to the actual local insertions: degree-eight product constants and projective tensor norms remain open. The exact-profile spatial completion route has a non-endpoint obstruction. The actual quantum linked-cluster theorem must establish a joint support/time bound with acceptable order growth, then prove uniform convergence of the Feynman–Kac/ground-energy expansion.",
       "checks": [
         {
           "label": "All-orders temporal projection-to-tree injection",
@@ -10981,6 +10981,11 @@
           "title": "PF-I16 fourth-order cut-interpolation tree bound",
           "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "Féray, Weighted dependency graphs (2018), Markov-chain Boolean/classical cumulant method and product stability",
+          "path": "https://arxiv.org/abs/1605.03836",
+          "url": "https://arxiv.org/abs/1605.03836"
         }
       ],
       "tags": [
@@ -11059,8 +11064,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. The two-channel split skeleton is conditional and its naive distinct-port hypothesis is refuted. A local shared-port fusion works when the spatial witness is an endpoint of the temporal parent edge. But a five-vertex example C1=(0,2), C2=(1,4,7), with sole spatial witness (2,7), proves that no spanning tree can contain that witness and preserve the exact temporal cut profile. Thus exact-profile completion cannot handle arbitrary spatial witnesses; a weighted dependency-graph/quasi-factorization route is now preferred. The full bounded-fiber map remains open.",
-      "detail": "Keep four claims distinct: (i) all-orders temporal projection multiplicity is closed by the profile-preserving port injection; (ii) reference-process support-sensitive cumulant trees are proved for m=2,3; (iii) the full four-source coefficient has a conditional spatial MST bound via cut interpolation, with eta_4=(1/24)log(25/23), conditional on the corrected derivative-flow/pullback hypotheses; (iv) the direct all-orders joint space-time tree is still open. The simple product of separate spatial and temporal tree sums is superexponential. Section 10 records the conditional two-channel split-completion and the failure of universal distinct-port selection. Section 11 proves local fusion when the shared spatial witness is one endpoint of the actual temporal parent-chain edge. Section 11.2 gives a stronger non-endpoint obstruction: for C1=(0,2), C2=(1,4,7), the only spatial witness (2,7) crosses two cuts whose exact temporal profile is one, but those cuts induce different bipartitions, so no tree can contain (2,7) and preserve the full profile. This refutes exact-profile shared-port completion in that source-compatible example, not all weighted joint estimates or all possible bounded-fiber maps. The preferred route is now a Féray-style weighted dependency graph, with product-cumulant quasi-factorization and explicit order-growth constants still to prove.",
+      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. Exact-profile completion for arbitrary spatial witnesses is refuted by a five-vertex example; endpoint fusion works only in the special endpoint case. A continuous-time one-link weighted-dependency estimate is now proved under the reference L2 semigroup gap, with C_r≤(2e)^r r!. The candidate shared-support/time-decay bond is therefore justified for elementary tensor insertions at the one-link level. Degree-eight product constants and actual face/pair insertion projective norms remain open, as does the all-orders joint tree/KP theorem.",
+      "detail": "Keep the established claims distinct: all-orders temporal projection multiplicity is closed with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; the full four-source coefficient has a conditional spatial MST bound under derivative-flow/pullback hypotheses; and the direct all-orders joint space-time tree remains open. The exact-profile two-channel completion is not universal: Section 11.2 gives a source-compatible five-vertex obstruction. Section 12 now proves the continuous-time one-link Boolean-cumulant identity and classical cumulant bound C_r≤(2e)^r r!, yielding the maximum-spanning-tree factor exp(−Δ_0 time-span). This supports the Féray-style weighted-dependency route. Still open are the degree-eight product-cumulant constants with adequate order growth, the projective tensor norm of actual PF-I16 face/pair insertions, and the all-orders joint space-time/KP application.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -11116,6 +11121,21 @@
           "label": "Weighted dependency-graph quasi-factorization route",
           "state": "open",
           "note": "Preferred next route; prove product-cumulant quasi-factorization for local path observables and explicit exponential-in-order constants."
+        },
+        {
+          "label": "Continuous-time one-link weighted-dependency estimate",
+          "state": "exact",
+          "note": "Under the stationary reversible L2 gap, Boolean cumulants factor through every time gap and the classical cumulant obeys C_r≤(2e)^r r! times the maximum temporal spanning-tree product."
+        },
+        {
+          "label": "Degree-eight product lift with usable order growth",
+          "state": "open",
+          "note": "Product stability applies formally, but explicit D_8,r growth from the Leonov–Shiryaev product-cumulant expansion remains to be controlled."
+        },
+        {
+          "label": "Projective tensor norm of actual face/pair insertions",
+          "state": "open",
+          "note": "Actual PF-I16 insertions are not yet represented with an absolutely summable projective coefficient norm compatible with local activities."
         }
       ],
       "sources": [
@@ -11148,6 +11168,11 @@
           "title": "Finite verifier for shared-port exact-profile obstruction",
           "path": "research/verification/verify_pf_i16_shared_port_profile_obstruction.py",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_shared_port_profile_obstruction.py"
+        },
+        {
+          "title": "Féray, Weighted dependency graphs (2018), Markov-chain Boolean/classical cumulant method and product stability",
+          "path": "https://arxiv.org/abs/1605.03836",
+          "url": "https://arxiv.org/abs/1605.03836"
         }
       ],
       "tags": [
