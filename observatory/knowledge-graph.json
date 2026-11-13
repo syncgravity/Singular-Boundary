@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-10",
-  "version": "v2.73-r3-ir-trace-gradient",
-  "scope": "R3_IR finite open SU(2) strip: conditional weighted one-link Poincare trace damping, exact product-manifold trace commutator, and an unevaluated A2/A3 plus trace-free/mixed Hessian closure criterion. PF-I16 remains a separate auxiliary Penrose route. Full weighted Hessian contraction, physical 3D transfer, continuum reconstruction and Yang-Mills mass gap remain OPEN.",
+  "build_date": "2026-11-13",
+  "version": "v2.90-pf-i16-port-injection",
+  "scope": "PF-I16 exact finite-source coefficients, corrected conditional derivative flow, conditional third- and fourth-order spatial tree estimates, and an exact all-orders temporal projection-to-tree port injection with C_time=2. The quantum time-ordered connected-resolvent/tree inequality, uniform all-orders activity, source physical kinetic/time, interacting continuum existence and Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -17,7 +17,8 @@
     "candidate": "Model or route proposed; identity/derivation incomplete",
     "archived": "Original source files archived; integrity not mathematical validation",
     "indexed": "Discovered/indexed only",
-    "unresolved": "Source-model identity unresolved"
+    "unresolved": "Source-model identity unresolved",
+    "exact": "Exact all-orders mathematical statement in its explicitly stated combinatorial model; no physical transfer is implied."
   },
   "nodes": [
     {
@@ -5103,40 +5104,55 @@
     },
     {
       "id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
-      "title": "OPEN next: fourth-order partition cancellation and spatial connectedness",
-      "kind": "work",
-      "status": "open",
+      "title": "Finite: exact fourth-order partition algebra and independent-factorization cancellation",
+      "kind": "result",
+      "status": "finite",
       "stage": "P2",
-      "summary": "Expand the exact fourth-order recursion, group by set partitions, and prove cancellation of disconnected contributions before seeking a spatial spanning-tree bound.",
-      "detail": "The third-order identity does not establish fourth-order cancellation. For four distinct residual labels, u_ijk=G[Σ_i r_i u_jk+Σ_{i<j}E_ij u_k] and E_ijkl=−Σ_m ν(r_m u_{I\\{m}}). The next step is an explicit expansion and exact cancellation audit. All-orders summability and the physical continuum gap remain separate.",
+      "summary": "The exact fourth-order recursion expands into 24 nested-resolvent and 12 pair-energy monomials, grouped into three pair partitions. Under genuine tensor-product subsystem factorization, the full mixed fourth-order energy coefficient vanishes for 1+3, 2+2, 1+1+2 and 1+1+1+1 splits. Spatial tree decay on the connected PF-I16 graph remains open.",
+      "detail": "With A_i=Gr_i, Q_ij=r_iA_j+r_jA_i, B_ij=GQ_ij and E_ij=−π(Q_ij), the exact coefficient is E_ijkl=−2Σ_{ {ij|kl} }[π(Q_ijGQ_kl)+E_ijπ(A_kA_l)+E_klπ(A_iA_j)]. Each pair channel has eight nested terms and four pair-energy terms. Exact cancellation under independent subsystems follows from additivity of the ground energy E(t)=Σ_α E_α(t_{I_α}); it is not implied by disjoint supports on a connected graph. Taking absolute values channel-by-channel can destroy the cancellation. The full spatial four-support tree estimate is a separate open gate.",
       "checks": [
         {
-          "label": "Expand fourth-order recursion with exact coefficients",
-          "state": "open",
-          "note": "No cancellation assumed."
+          "label": "Centered fourth-order coefficient recursion",
+          "state": "finite",
+          "note": "Exact squarefree perturbation recursion through order four."
         },
         {
-          "label": "Identify/cancel every disconnected set-partition contribution",
-          "state": "open",
-          "note": "Must be shown term by term."
+          "label": "36-term expansion and three pair-partition identity",
+          "state": "finite",
+          "note": "24 nested-resolvent monomials plus 12 pair-energy monomials; all three channels retained."
         },
         {
-          "label": "Retain spatial decay in connected remainder",
-          "state": "open",
-          "note": "Needed for tree-graph control."
+          "label": "Independent-subsystem factorization cancellation",
+          "state": "finite",
+          "note": "Ground-energy additivity proves vanishing for 1+3, 2+2, 1+1+2 and 1+1+1+1 splits."
         },
         {
-          "label": "Derive all-orders activity bound",
+          "label": "Spatial connectedness on the connected PF-I16 graph",
           "state": "open",
-          "note": "Not implied by any fixed order."
+          "note": "Disjoint or distant supports do not imply independent subsystems."
+        },
+        {
+          "label": "All-orders connected activity and physical continuum gap",
+          "state": "open",
+          "note": "Not implied by finite fourth-order algebra."
         }
       ],
       "sources": [
         {
-          "title": "PF-I16 centered dressed-resolvent third-order coefficient",
-          "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-          "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
-          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+          "title": "PF-I16 exact fourth-order partition algebra and factorization cancellation",
+          "path": "research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 fourth-order algebra verifier",
+          "path": "research/verification/verify_pf_i16_fourth_order_partition_algebra.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_fourth_order_partition_algebra.py"
+        },
+        {
+          "title": "Preserved PF116 continuation source (fourth-order derivation history)",
+          "path": "sources/originals/session-2026-11-11/Branch · Branch · Continue PF116 Objective (1).md",
+          "git_blob_sha": "f1687cc7fb75e7b2b31139d48462932b7d68e761",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/sources/originals/session-2026-11-11/Branch%20%C2%B7%20Branch%20%C2%B7%20Continue%20PF116%20Objective%20(1).md"
         }
       ],
       "tags": [
@@ -5205,23 +5221,23 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "On each finite product graph, the vector Bochner equation, linkwise Kato projection and scalar maximum principle give a cooperative componentwise differential inequality. The refined face blocks then yield a weighted Duhamel derivative-flow bound with prefactor one, kernel row/column sums ≤13 and finite-support oscillation prefactor 26π.",
-      "detail": "For G=Δ−2∇_{∇Φ}, the gradient equation has Bakry–Émery endomorphism Ric♯+2(Hess Φ)♯. Product Ricci gives diagonal damping a0/2. The comparison matrix has ||A||_{log25}≤(53312/3)b0+(389120/3)b0²/a0, so λ=a0/2−||A||_{log25}; b0/a0≤1/40000 gives λ≥26087a0/468750. The estimate is conditional on the refined face-Hessian blocks and inherited isolated-rotor gradient bound. The four-factor sign/trivialization/regularization audit remains open; no continuum or physical-time claim follows.",
+      "summary": "With the corrected reversible drift LΦ=−Δ−2∇_{∇Φ}, the Bakry–Émery tensor is Ric♯−2(Hess Φ)♯. Under the corrected rotor blocks and finite-product Kato comparison, the weighted Duhamel derivative-flow estimate holds conditionally with μ=log25 and threshold b0/a0≤1/50000.",
+      "detail": "The exact ground-state transform fixes dνΦ∝e^{2Φ}dU and the Markov generator −LΦ=Δ+2∇_{∇Φ}. The corrected comparison rate is λ≥(188981/3906250)a0 at b0/a0≤1/50000, with λ≥a0/2−(67712/3)b0−(1556480/3)b0²/a0. Conditional pointwise flow: ||D_eP_tf||∞≤e^(−λt)Σ_g e^(−(log25)d(e,g))||D_gf||∞, hence the corresponding centered-resolvent gradient estimate. The remaining face-map metric/pullback and finite-product Kato–Bochner comparison hypotheses remain conditional. The four-factor orientation/mixed-derivative signs have a separate independent audit; no physical-time or continuum result follows.",
       "checks": [
         {
-          "label": "Finite-product vector Bochner identity and Bakry–Émery sign",
-          "state": "conditional",
-          "note": "Uses generator Δ−2∇_{∇Φ} and product metric scaling."
+          "label": "Exact reversible drift and corrected Bakry–Émery sign",
+          "state": "finite",
+          "note": "Ground-state conjugation gives LΦ=−Δ−2∇_{∇Φ}; the tensor is Ric♯−2(Hess Φ)♯."
         },
         {
-          "label": "Componentwise Kato inequality and configuration-supremum maximum principle",
+          "label": "Componentwise Kato inequality and finite-product maximum principle",
           "state": "conditional",
-          "note": "Pointwise/Dini argument; no integrated Bochner shortcut."
+          "note": "Derived for each finite product under the corrected geometric and comparison inputs."
         },
         {
-          "label": "Weighted comparison matrix and Duhamel derivative-flow bound",
+          "label": "Corrected weighted comparison matrix and Duhamel derivative flow",
           "state": "conditional",
-          "note": "Kernel prefactor exactly one under the refined face-block bounds."
+          "note": "λ≥(188981/3906250)a0 for b0/a0≤1/50000; kernel prefactor one."
         },
         {
           "label": "Kernel row/column sums and finite-support oscillation",
@@ -5229,9 +5245,14 @@
           "note": "Degree-24 shell count gives kernel sums ≤13 and oscillation factor 26π."
         },
         {
-          "label": "Standalone four-factor sign/trivialization/regularization audit",
-          "state": "open",
-          "note": "Next formal certification step."
+          "label": "Four-factor orientation and mixed-covariant-derivative audit",
+          "state": "finite",
+          "note": "Independent audit recorded for all orientation words and ordered distinct-factor pairs."
+        },
+        {
+          "label": "Face-map metric/pullback and Kato–Bochner comparison hypotheses",
+          "state": "conditional",
+          "note": "Still required before the derivative-flow estimate is unconditional."
         },
         {
           "label": "Physical-time normalization, continuum reconstruction and mass gap",
@@ -5241,10 +5262,14 @@
       ],
       "sources": [
         {
-          "title": "PF-I16 pointwise Kato–Bochner comparison and derivative-flow locality",
-          "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
-          "git_blob_sha": "fa34e3f59d28bd30446d809ebb4402e246e83114",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md"
+          "title": "PF-I16 corrected reversible flow and two-point resolvent decay",
+          "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 four-factor mixed covariant derivative audit",
+          "path": "research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md"
         }
       ],
       "tags": [
@@ -5265,52 +5290,50 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "The exact weighted-mean identity sharpens the isolated radial rotor Hessian to (4/3)β+(20/3)β². A working four-factor left/right-trivialized mixed-Hessian derivation now feeds refined face blocks; pointwise Kato–Bochner and Duhamel comparison close conditionally on these blocks and the inherited rotor gradient estimate.",
-      "detail": "Working face blocks are H_ee≤(32/3)b0+(320/3)b0²/a0 and H_eg≤(44/3)b0+(320/3)b0²/a0. The finite-product vector Bochner/Kato argument gives λ=a0/2−(53312/3)b0−(389120/3)b0²/a0 at μ=log25, with kernel prefactor one. For b0/a0≤1/40000, λ≥26087a0/468750. The four-factor orientation conversion and mixed covariant derivative are derived in the linked records, but a self-contained independent sign/trivialization/regularization audit remains open. No physical-time or continuum result follows.",
+      "summary": "The corrected radial rotor bounds are ||s′||∞≤2β and ||∇²s||op≤(4/3)β+(80/3)β². They yield corrected provisional face blocks and residual derivatives; the downstream finite-product Kato–Bochner and derivative-flow implications remain conditional.",
+      "detail": "Corrected blocks: h_d≤(32/3)b0+(1280/3)b0²/a0 and h_o≤(56/3)b0+(1280/3)b0²/a0. At b0/a0≤1/50000, κ≥(1869749/3906250)a0 and λ_log25≥(188981/3906250)a0, conditional on face-map metric/pullback and finite-product Kato–Bochner comparison. Corrected shared-link residual bounds: ||R_e||∞≤4160b0²/a0; component derivative ≤21514b0²/√a0; support L2 derivative ≤107570b0²/√a0; support L1 derivative ≤537850b0²/√a0. The four-factor mixed derivative signs are audited; the geometric comparison remains conditional.",
       "checks": [
         {
-          "label": "Exact weighted-mean identity and radial Hessian estimate",
-          "state": "conditional",
-          "note": "Explicit one-face calculation assuming the inherited first-derivative bound."
+          "label": "Corrected radial first-derivative and Hessian estimates",
+          "state": "finite",
+          "note": "Maximum-principle bound ||s′||∞≤2β and Hessian bound (4/3)β+(80/3)β² from the radial ODE."
         },
         {
-          "label": "Four-factor group-multiplication mixed covariant derivative and orientation conversions",
-          "state": "conditional",
-          "note": "Working left/right-trivialized derivation recorded; standalone sign/trivialization audit remains."
+          "label": "Four-factor group-product orientation and mixed derivative signs",
+          "state": "finite",
+          "note": "Independent quaternion finite-difference audit recorded for all 16 orientation words and ordered distinct-factor pairs."
         },
         {
-          "label": "Pointwise componentwise Kato–Bochner and Duhamel derivative-flow comparison",
+          "label": "Corrected face Hessian blocks and curvature comparison",
           "state": "conditional",
-          "note": "Finite-product argument closes under the refined face-Hessian blocks."
+          "note": "Depends on the face-map metric/pullback and finite-product Bochner/Kato comparison."
         },
         {
-          "label": "Face Hessian blocks and derivative-flow comparison",
+          "label": "Corrected shared-link residual derivatives",
           "state": "conditional",
-          "note": "Depend on the inherited rotor gradient estimate and four-factor mixed-holonomy calculation."
+          "note": "Uses the corrected face blocks and the same finite-product geometric hypotheses."
         },
         {
-          "label": "Shared-link residual derivative bounds",
+          "label": "Pointwise derivative-flow implication",
           "state": "conditional",
-          "note": "Depend on the pulled-back Hessian block convention and mixed-holonomy estimate."
-        },
-        {
-          "label": "Updated third-order coefficient bound",
-          "state": "conditional",
-          "note": "Recalculated with the refined curvature and derivative-flow constants; see updated third-order record."
+          "note": "Corrected λ lower bound and μ=log25 comparison; not physical-time normalization."
         }
       ],
       "sources": [
         {
-          "title": "PF-I16 refined isolated-rotor Hessian and shared-link residual derivatives",
-          "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-          "git_blob_sha": "c46b4c17f0969efc7da5e7171ca92558a7666c17",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md"
+          "title": "PF-I16 isolated-rotor first-derivative obstruction and corrected estimates",
+          "path": "research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md"
         },
         {
-          "title": "PF-I16 pointwise Kato–Bochner comparison and derivative-flow locality",
-          "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
-          "git_blob_sha": "fa34e3f59d28bd30446d809ebb4402e246e83114",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md"
+          "title": "PF-I16 corrected reversible flow and two-point resolvent decay",
+          "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 four-factor mixed covariant derivative audit",
+          "path": "research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/PF_I16_FOUR_FACTOR_MIXED_COVARIANT_DERIVATIVE_AUDIT_2026_11_11.md"
         }
       ],
       "tags": [
@@ -5331,9 +5354,14 @@
       "kind": "work",
       "status": "open",
       "stage": "P1",
-      "summary": "PF-I16 now includes exact four-face C2222 data, a universal connected-support count D≤28 / 784^(k−1), exact single-face dressing with shared-link residual, and a third-order dressed-resolvent identity with a conditional source-volume-uniform numerical bound. Fourth-order partition cancellation, spatial tree decay, all-orders activity, source physical kinetic/time, interacting continuum existence and physical mass gap remain OPEN.",
-      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap. New finite-order input: exact C2222 on all seven four-face classes and the Ngrid7 fully four-face-connected aggregate. This does not prove uniform coefficient summability, convergence, or a spectral gap. The new incidence/dressing/third-order records sharpen the auxiliary local-interaction route but close none of the physical gates. The degree-four incidence claim remains finite-crop only; the third-order numerical bound depends on working analytic estimates awaiting standalone verification.",
+      "summary": "PF-I16 now has a conditional Dobrushin–Föllmer tree bound for the complete third-order coefficient, exact finite fourth-order partition algebra, and a conditional four-support cut-interpolation tree bound with exponent η₄=(1/24)log(25/23). All-orders coefficient growth/activity summability, source physical kinetic/time, interacting continuum existence and physical mass gap remain OPEN.",
+      "detail": "The original dissertation is unpublished reference, not proof authority; PF-I12 commutator failed naive reflection and PF-I13/14 conditional heat seams are not physical OS. A finite volume-independent electric reference number is not a continuum Yang-Mills mass gap. The new third- and fourth-order spatial tree estimates are conditional on the corrected pointwise derivative-flow, face-map metric/pullback and finite-product Kato–Bochner hypotheses; they apply to the dressed reference measure and do not establish mixing of the true interacting Wilson vacuum. Exact fourth-order factorization cancellation applies only to genuinely independent tensor-product subsystems, not merely disjoint supports on a connected graph. Uniform growth across all orders and every physical gate remain open.",
       "checks": [
+        {
+          "label": "Uniform growth of connected coefficient constants and all-orders activity summability",
+          "state": "open",
+          "note": "Third- and fourth-order tree estimates do not control C_n as n→∞ or establish a convergence radius."
+        },
         {
           "label": "Derive/falsify physical time and energy scale from source 2+2+1/J/helical or explicit competing postulates",
           "state": "open"
@@ -5347,9 +5375,8 @@
           "state": "open"
         },
         {
-          "label": "Fourth-order partition cancellation and spatial connectedness",
-          "state": "open",
-          "note": "PF-I16 exact next recursion recorded; disconnected partition cancellation not yet proved."
+          "label": "Actual interacting Wilson-vacuum mixing and transfer from dressed reference measure",
+          "state": "open"
         }
       ],
       "sources": [
@@ -5377,6 +5404,16 @@
           "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
           "git_blob_sha": "c57e8bd2c9f2a0c49e80eb9ec38a9af3571e4856",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+        },
+        {
+          "title": "PF-I16 Dobrushin third-order tree bound",
+          "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 fourth-order cut interpolation and conditional tree bound",
+          "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md"
         }
       ],
       "tags": [
@@ -5393,32 +5430,42 @@
     },
     {
       "id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
-      "title": "Centered dressed-resolvent third-order mixed coefficient",
+      "title": "Third-order dressed resolvent: pair arms and boundary-cumulant reduction",
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "The exact third-order coefficient is a six-permutation reduced-resolvent expression. Under the refined conditional curvature, derivative-flow and residual estimates, the recalculated bound is |E_ijk|≤3.25×10^16 b0^6/a0^5 when b0/a0≤1/40000; no spatial tree decay is established.",
-      "detail": "For distinct labels i,j,k, E_ijk=−Σ_{σ∈S3}ν[r_{σ1}G(r_{σ2}Gr_{σ3})]. The refined working bounds are κ=a0/2−(2624/3)b0−(20480/3)b0²/a0 and λ=a0/2−(53312/3)b0−(389120/3)b0²/a0. The six-term estimate is |E_ijk|≤274185600000000π b0^6/(a0³κλ), hence ≤3.25×10^16 b0^6/a0^5 at b0/a0≤1/40000. This remains conditional on the rotor/Hessian, Kato–Bochner, Poincaré and sup-resolvent estimates; it has no spatial tree factor and is not an all-orders theorem.",
+      "summary": "The complete six-permutation third-order coefficient has a conditional, volume-independent MST tree bound. The direct identity T_ijk=νΦ[(Gr_i)r_j(Gr_k)] makes each ordered term a third cumulant; a Dobrushin–Föllmer estimate for the dressed reference measure and the PF-I16 derivative-flow profiles yield exponent η=(1/8)log(25/23).",
+      "detail": "Under b0/a0≤1/50000, β_*≤1/25000 and the face-incidence bound, the dressed νΦ measure has weighted Dobrushin influence norm ||C||_{log25}<264/875<1 and covariance resolvent kernel D_ez≤(875/611)e^{−(log25)d(e,z)}. Combining the Föllmer covariance inequality with the PF-I16 resolvent-gradient profile and the verified P2/P3 convolutions gives |T_ijk|≤λ^(−2)e^{−ηℓ_MST}[6591 B_j M_i M_k+58976 M_1M_2M_3], η=(1/8)log(25/23). Summing the six terms gives |E_123|≤λ^(−2)e^{−ηℓ_MST}[13182Σ_j B_jM_iM_k+353856M_1M_2M_3]. This remains conditional on the corrected pointwise derivative-flow and face-pullback/Kato–Bochner hypotheses, including compatibility of the link-derivative normalization with the radius-two link oscillation used in the amplitude estimate. The Dobrushin estimate applies to νΦ, not the actual interacting Wilson-vacuum measure. No all-orders summability, physical-time theorem or mass gap follows.",
       "checks": [
         {
           "label": "Centered finite-label recursion and six-term third-order identity",
           "state": "finite",
-          "note": "Exact formal perturbation algebra."
+          "note": "Exact formal perturbation algebra and self-adjointness identity T_ijk=νΦ[(Gr_i)r_j(Gr_k)]."
         },
         {
-          "label": "Refined curvature/Poincare and weighted derivative-semigroup estimates",
+          "label": "Corrected PF-I16 derivative-flow and local oscillation profiles",
           "state": "conditional",
-          "note": "Finite-graph Kato–Bochner/Duhamel comparison derived under the refined face-block hypotheses."
+          "note": "Uses the corrected λ, μ=log25 derivative-flow estimate and ||Gr_i||∞≤26πM_i/λ."
         },
         {
-          "label": "Revised six-term numerical third-order bound",
+          "label": "Dobrushin influence contraction for the dressed reference measure",
           "state": "conditional",
-          "note": "Recalculated with κ and λ from the refined rotor Hessian route."
+          "note": "At b0/a0≤1/50000, weighted influence norm <264/875; Föllmer covariance kernel bounded by (875/611)e^(−μd)."
         },
         {
-          "label": "Spatially decaying connected tree bound",
+          "label": "Pair convolution and three-cumulant tree estimate",
+          "state": "conditional",
+          "note": "Uses verified C1<25.511 and C1C2<465.933; MST exponent η=(1/8)log(25/23)."
+        },
+        {
+          "label": "Complete six-permutation spatial tree bound",
+          "state": "conditional",
+          "note": "|E_123|≤λ^(−2)e^(−ηℓ_MST)[13182Σ_j B_jM_iM_k+353856M_1M_2M_3]."
+        },
+        {
+          "label": "All-orders activity summability and interacting-vacuum mixing",
           "state": "open",
-          "note": "No exponential separation factor established."
+          "note": "Not implied by the finite-volume dressed-reference Dobrushin estimate."
         },
         {
           "label": "Fourth-order partition cancellation",
@@ -5428,10 +5475,19 @@
       ],
       "sources": [
         {
-          "title": "PF-I16 centered dressed-resolvent third-order coefficient",
-          "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-          "git_blob_sha": "174371a911abd78053983527464ba56a2d05a4da",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/audit/pf-i16-observatory-2026-11-09/research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md"
+          "title": "PF-I16 Dobrushin third-order tree bound",
+          "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 Dobrushin tree arithmetic verifier",
+          "path": "research/verification/verify_pf_i16_dobrushin_tree_cumulant.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_dobrushin_tree_cumulant.py"
+        },
+        {
+          "title": "PF-I16 corrected reversible flow and two-point resolvent decay",
+          "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md"
         }
       ],
       "tags": [
@@ -10431,6 +10487,565 @@
       "importance": 4,
       "core": true,
       "route": null
+    },
+    {
+      "id": "PF-I16-CONDITIONAL-RESOLVENT-AMPLITUDE",
+      "title": "Conditional resolvent-amplitude fluctuation gate closed under pointwise flow",
+      "kind": "theorem",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "For any residual support X=S_j with |X|≤25, the fluctuation Gr_k−E[Gr_k|F_{X^c}] has a uniform L∞ (hence L4) bound (50π/λ)M_k exp(−(log25)d(X,S_k)). This closes the conditional-fluctuation subgate under the corrected PF-I16 derivative-flow hypotheses.",
+      "detail": "Proof: the geodesic diameter of each radius-two SU(2) link is 2π; coordinatewise oscillation on X is at most 2πΣ_{e∈X}||D_eGr_k||∞. Apply the pointwise componentwise derivative-flow estimate ||D_eGr_k||∞≤λ⁻¹Σ_{b∈S_k}e^(−(log25)d(e,b))A_{k,b}. Conditional expectation lies in the range of Gr_k over the fiber, giving the claimed L∞ estimate for all p. No conditional Poincaré inequality is needed. This is conditional on the derivative-flow theorem and its refined face-Hessian/rotor inputs; it is not an unconditional PF-I16 theorem or a physical spectral-gap result.",
+      "checks": [
+        {
+          "label": "Conditional oscillation estimate for all 1≤p≤∞",
+          "state": "conditional",
+          "note": "Derived from pointwise derivative flow and |S_j|≤25; C_amp=50π/λ, η=log25."
+        },
+        {
+          "label": "Conditional mean/boundary contribution",
+          "state": "open",
+          "note": "The conditional mean is boundary-local but generally nonzero; it must be retained."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 conditional amplitude from pointwise flow",
+          "path": "research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "conditional-amplitude",
+        "resolvent",
+        "pointwise-derivative-flow",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-THREE-SUPPORT-BOUNDARY-CUMULANT",
+      "title": "OPEN alternate route: conditional boundary-cumulant tree estimate",
+      "kind": "interface",
+      "status": "open",
+      "stage": "P2",
+      "summary": "The q_j,m_i,m_k cumulant subroute remains unproved. It is no longer a blocker for the complete third-order coefficient: the direct centered triple (Gr_i,r_j,Gr_k) has a conditional Dobrushin–Föllmer tree bound under νΦ.",
+      "detail": "The conditional decomposition still gives q_j=E[r_j|F_{S_j^c}] and m_l=E[Gr_l|F_{S_j^c}], with q_j boundary-local and generally nonzero. No spatial tree estimate for cum_3(q_j,m_i,m_k) is claimed here. The total six-permutation coefficient is instead controlled directly by T_ijk=νΦ[(Gr_i)r_j(Gr_k)], using the Dobrushin influence matrix for νΦ and the resolvent derivative profiles. Keep this node OPEN as an alternate decomposition; it is bypassed, not proved or deleted.",
+      "checks": [
+        {
+          "label": "Boundary-local conditional mean and derivative profile",
+          "state": "conditional",
+          "note": "Exact finite-product identities; bounds depend on the corrected PF-I16 derivative-flow and isolated-face derivative hypotheses."
+        },
+        {
+          "label": "Connected spatial tree inequality for cum_3(q_j,m_i,m_k)",
+          "state": "open",
+          "note": "Not established; this alternate conditional decomposition is bypassed for the full third-order coefficient."
+        },
+        {
+          "label": "History-aware six-permutation cancellation within this decomposition",
+          "state": "open",
+          "note": "Not needed by the direct per-ordering Dobrushin route; retain this obligation if the boundary decomposition is pursued."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 conditional amplitude and cumulant reduction",
+          "path": "research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 three-support pair-arm and tree obstruction",
+          "path": "research/theorems/PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 Dobrushin third-order tree bound (alternative direct route)",
+          "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "third-cumulant",
+        "connected-tree",
+        "open",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-DOBRUSHIN-THIRD-ORDER-TREE",
+      "title": "Conditional Dobrushin–Föllmer tree bound for the full third-order coefficient",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "Under b0/a0≤1/50000, the dressed reference measure νΦ has weighted Dobrushin influence norm <264/875. Combined with the Föllmer covariance inequality and PF-I16 pointwise derivative flow, each ordered term T_ijk=νΦ[(Gr_i)r_j(Gr_k)] has an MST tree bound with η=(1/8)log(25/23); the complete six-permutation coefficient inherits the explicit bound.",
+      "detail": "The Dobrushin estimate is derived from ||D_zs_f(H_f)||∞≤2β_f, β_*≤2b0/a0≤1/25000, at most eight faces per link, and three other links per face. It applies only to the finite-volume dressed reference measure νΦ. The ordered tree bound is |T_ijk|≤λ^(−2)e^(−ηℓ_MST)[6591 B_jM_iM_k+58976M_1M_2M_3]; summing gives |E_123|≤λ^(−2)e^(−ηℓ_MST)[13182Σ_jB_jM_iM_k+353856M_1M_2M_3]. This remains conditional on the corrected derivative-flow and face-pullback/Kato–Bochner hypotheses, including compatibility of the link-derivative normalization with the radius-two link oscillation and weighted product metric. It does not establish mixing of the true interacting Wilson-vacuum measure, all-orders activity summability, physical time, continuum reconstruction or a mass gap. The separate q_j,m_i,m_k boundary-cumulant route remains open but is bypassed for the full third-order coefficient.",
+      "checks": [
+        {
+          "label": "Dobrushin influence matrix and weighted contraction",
+          "state": "conditional",
+          "note": "||C||_{log25}≤600tanh(4πβ_*)<264/875 under b0/a0≤1/50000."
+        },
+        {
+          "label": "Föllmer covariance inequality on the finite product",
+          "state": "finite",
+          "note": "Applied with D=(I−C)^(−1) and full link oscillations."
+        },
+        {
+          "label": "Pair convolution bounds P2 and P3",
+          "state": "finite",
+          "note": "Uses the independently recorded conservative constants C1<25.511 and C1C2<465.933."
+        },
+        {
+          "label": "Ordered third-cumulant MST tree estimate",
+          "state": "conditional",
+          "note": "Exponent η=(1/8)log(25/23); volume-independent prefactor."
+        },
+        {
+          "label": "Six-permutation tree estimate",
+          "state": "conditional",
+          "note": "Explicit constants 13182 and 353856 in the recorded formula."
+        },
+        {
+          "label": "True interacting-vacuum Dobrushin mixing, all-orders convergence and physical gap",
+          "state": "open",
+          "note": "Not implied by the dressed-reference estimate."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 Dobrushin third-order tree bound",
+          "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 Dobrushin tree arithmetic verifier",
+          "path": "research/verification/verify_pf_i16_dobrushin_tree_cumulant.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_dobrushin_tree_cumulant.py"
+        },
+        {
+          "title": "PF-I16 corrected reversible flow and two-point resolvent decay",
+          "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "Dobrushin",
+        "Föllmer",
+        "third-order",
+        "connected-tree",
+        "conditional",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-FOUR-SUPPORT-SPATIAL-TREE",
+      "title": "CONDITIONAL: four-support cut-interpolation tree bound for the full fourth-order coefficient",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "The full fourth-order coefficient has a conditional volume-independent MST tree bound. A cut interpolation removes cross-face interactions, the exact Hellmann–Feynman response reduces to π_s[g Γ(W,g)]/π_s(g²), and weighted derivative profiles control the cross-cut layer. The exponent is η₄=(1/24)log(25/23).",
+      "detail": "For a longest MST edge L, remove it to partition the four source labels; all cross distances are at least L. Let A_r be the union of radius-r neighborhoods of one side, r=floor(L/2), and interpolate Φ_s=Φ_A+Φ_B+sΦ_×. At s=0 the operator and measure factorize, so E_1234(0)=0. With W=2Φ_×, the exact response is E_s'(t)=−π_s[g_s Γ(W,g_s)]/π_s(g_s²). A triangular weighted derivative-profile recursion through |K|≤4, plus the scalar inverse-normalization recursion, bounds the cross-cut response by C exp(−γR), R≥L/2−3/2. Since ℓ_MST≤3L, |E_1234|≤C_1234 exp(−η₄ℓ_MST), η₄=(1/24)log(25/23). This remains conditional on uniform corrected derivative flow along Φ_s and compatibility of the face-map, weighted product metric, carré-du-champ and radius-two link derivative norms. The complete pair-partition cancellation is retained; no channelwise absolute-value bound is used.",
+      "checks": [
+        {
+          "label": "Exact cut-interpolation Hellmann–Feynman identity",
+          "state": "finite",
+          "note": "Derived from the Rayleigh quotient, eigenvalue equation, carré-du-champ identity and reversibility."
+        },
+        {
+          "label": "Uniform corrected derivative flow along Φ_s",
+          "state": "conditional",
+          "note": "Cross-face scaling by s≤1 does not increase the face-Hessian majorants; the Kato–Bochner comparison remains conditional."
+        },
+        {
+          "label": "Weighted derivative-profile recursion through fourth order",
+          "state": "conditional",
+          "note": "Uses S_gamma<18.264, local residual derivative sums, and centered coefficient recursion."
+        },
+        {
+          "label": "Cross-cut boundary separation and MST conversion",
+          "state": "finite",
+          "note": "R=max(0,floor(L/2)−1)≥L/2−3/2 and ℓ_MST≤3L."
+        },
+        {
+          "label": "Full four-support spatial tree estimate",
+          "state": "conditional",
+          "note": "|E_1234|≤C_1234 exp(−η₄ℓ_MST), η₄=(1/24)log(25/23)."
+        },
+        {
+          "label": "All-orders coefficient growth and activity summability",
+          "state": "open",
+          "note": "A fixed fourth-order tree bound does not establish a nonzero convergence radius."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 fourth-order cut interpolation and conditional tree bound",
+          "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 fourth-order cut-tree arithmetic verifier",
+          "path": "research/verification/verify_pf_i16_fourth_order_cut_tree.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_fourth_order_cut_tree.py"
+        },
+        {
+          "title": "PF-I16 exact fourth-order partition algebra",
+          "path": "research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 corrected reversible flow and two-point resolvent decay",
+          "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "fourth-order",
+        "four-support",
+        "connected-tree",
+        "open",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
+      "title": "OPEN: multi-cut forest expansion and uniform all-orders connected activity",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "The exact all-orders temporal projection-to-tree coefficient assignment is now closed with C_time=2. The multi-cut mixed-derivative estimate, uniform quantum connected-resolvent/tree theorem, connected-support activity summability, source physical kinetic/time, and continuum gap remain OPEN.",
+      "detail": "The exact multi-cut interpolation still reduces the n-source coefficient to the full mixed derivative over n−1 tree cuts. The conjugated rotor representation now has an exact two-cut reduced-resolvent identity: E_ab=<B_ab>−<B_a R B_b>−<B_b R B_a>, with R=Q(H−E)^{-1}Q. Taking two source coefficients expresses it as a third connected response with B_ab plus a fourth connected response with B_a,B_b and the two source observables. The first and second cut insertions are bounded local multiplication families, with support≤8 links. Corrected along-interpolation one-face/pair interaction bounds give per-link weighted activity κ_H<0.022695 at a=1/8; first-cut root sum κ_a<0.022863; second-cut contact root sum κ_ab<0.023199. The candidate path count q_path=8e κ_H<0.494. This is a local weighted-sum and combinatorial estimate only: it does not control time-ordered reduced-resolvent integrals or prove the quantum polymer expansion. The missing theorem is a graph-uniform connected-resolvent tree inequality with exact disconnected cancellation, temporal/resolvent control for unbounded rotor kinetic energies, and one edgewise spatial decay factor per tree edge. Higher mixed alpha_f² derivatives have at most 2^m coefficient growth for m distinct cuts. The previous one-cut, Dobrushin and fourth-order conditional results remain conditional; no all-orders activity radius or physical gap follows. The Feynman–Kac representation now reduces the missing quantum estimate to a temporal cumulant tree inequality for independent product SU(2) Brownian paths; disjoint local-support families cancel exactly, and each tree time integral is bounded by T(2/Δ₀)^(m−1). The explicit temporal constant C_time and the resulting KP activity criterion remain open. The independent product-path cumulants have now been computed explicitly through order four; the remaining temporal lemma is the arbitrary-order bound needed after expanding the background interaction insertions. The arbitrary-order projection-partition count is now bounded by (2.5)^m times the labeled spanning-tree count; the weighted assignment of each surviving term to a temporal tree remains open. If achieved with C_time≤2.5, the proposed KP activity condition passes with 2C_timeκ_H<0.113475<1/8.",
+      "checks": [
+        {
+          "label": "Exact multi-cut interpolation and factorization on each coordinate hyperplane",
+          "state": "finite",
+          "note": "The product face coefficient Π_{a∈C_f}s_a removes every interaction crossing a cut when its parameter is zero."
+        },
+        {
+          "label": "Multivariate FTC reduction to the full mixed tree-edge derivative",
+          "state": "finite",
+          "note": "E_I(1)=∫(Π_a∂_{s_a})E_I(s) ds because E_I vanishes on every coordinate hyperplane."
+        },
+        {
+          "label": "Mixed cut-response derivative with one influence factor per tree edge",
+          "state": "open",
+          "note": "The exact conjugated two-cut identity is now E_ab=<B_ab>−<B_a R B_b>−<B_b R B_a>; the remaining issue is a uniform connected-resolvent/tree bound for its source coefficients."
+        },
+        {
+          "label": "Control of faces crossing multiple cuts",
+          "state": "open",
+          "note": "For m distinct cuts, derivatives of alpha_f are bounded by 1 and derivatives of alpha_f² or alpha_f alpha_g by 2^m; coefficient growth is exponential, but the quantum time-ordered cluster bound remains open."
+        },
+        {
+          "label": "Exact conjugated face/pair interaction decomposition and local norm bounds",
+          "state": "finite",
+          "note": "K−Σ_f ρ_f b_f p_f+Σ_{f<g}V_fg up to scalar; ρ_f≤32, ||V_fg||∞≤512 b₀²/a₀; face-overlap degree≤28."
+        },
+        {
+          "label": "Quantum linked-cluster/Kotecký–Preiss theorem with actual rotor resolvent constants",
+          "state": "open",
+          "note": "Per-link weighted sums at a=1/8: κ_H<0.022695, κ_cut<0.022863, κ_cut2<0.023199; q_path=8eκ_H<0.494 is only a combinatorial candidate, not a verified quantum KP criterion."
+        },
+        {
+          "label": "Uniform-in-n constants and connected activity summability",
+          "state": "open",
+          "note": "The one-cut exponent γ/[2(n−1)] is not uniform in n."
+        },
+        {
+          "label": "Transfer to actual interacting Wilson vacuum and all-functions Poincaré",
+          "state": "open",
+          "note": "Still separate from finite dressed-reference coefficient estimates."
+        },
+        {
+          "label": "Conjugated multi-cut derivative as bounded local multiplication insertion",
+          "state": "finite",
+          "note": "First and second cut derivatives are bounded multiplication insertions; local supports≤8 links. Per-link weighted root sums are κ_cut<0.022863 and κ_cut2<0.023199 at a=1/8."
+        },
+        {
+          "label": "Quantum connected-resolvent/tree bound for mixed cut insertions",
+          "state": "open",
+          "note": "Must retain one spatial influence factor per tree edge and control temporal ordering/resolvent constants."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 multi-cut forest interpolation and open connected-response lemma",
+          "path": "research/theorems/PF_I16_MULTI_CUT_FOREST_INTERPOLATION_OPEN_GATE_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_MULTI_CUT_FOREST_INTERPOLATION_OPEN_GATE_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 fourth-order cut interpolation and conditional tree bound",
+          "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 Dobrushin third-order tree bound",
+          "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "Preserved PF116 continuation source",
+          "path": "sources/originals/session-2026-11-11/Branch · Branch · Continue PF116 Objective (1).md",
+          "git_blob_sha": "f1687cc7fb75e7b2b31139d48462932b7d68e761",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/sources/originals/session-2026-11-11/Branch%20%C2%B7%20Branch%20%C2%B7%20Continue%20PF116%20Objective%20(1).md"
+        },
+        {
+          "title": "PF-I16 conjugated local-rotor interaction decomposition and candidate cluster margin",
+          "path": "research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 local-rotor candidate margin arithmetic verifier",
+          "path": "research/verification/verify_pf_i16_local_rotor_cluster_margin.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_local_rotor_cluster_margin.py"
+        },
+        {
+          "title": "Yarotsky — Ground states in relatively bounded quantum perturbations of classical lattice systems",
+          "url": "https://arxiv.org/abs/math-ph/0412040",
+          "note": "Candidate framework only; no direct application or threshold certification."
+        },
+        {
+          "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
+          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 two-cut connected-resolvent activity arithmetic verifier",
+          "path": "research/verification/verify_pf_i16_connected_resolvent_activity.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_connected_resolvent_activity.py"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "all-orders",
+        "activity-summability",
+        "open",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-TWO-CUT-CONNECTED-RESOLVENT-IDENTITY",
+      "title": "Conditional: exact two-cut connected-resolvent identity and local activity sums",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "For a finite-volume simple isolated ground state, the two-cut reduced-resolvent identity and bounded local insertions are exact. Per-link sums satisfy κ_H<0.022695, κ_cut<0.022863, κ_cut2<0.023199 at a=1/8. The temporal projection multiplicity subgate is now exact with C_time=2; the full quantum connected-resolvent/tree theorem remains open.",
+      "detail": "Let B_a=∂_a U_{Φ_s}, B_ab=∂_a∂_b U_{Φ_s}, Q=1−|Ψ><Ψ|, R=Q(H−E)^{-1}Q. Then E_ab=<B_ab>−<B_a R B_b>−<B_b R B_a>. For distinct source labels i,j, its coefficient is C_3(B_ab,−r_i,−r_j)+C_4(B_a,B_b,−r_i,−r_j). The local singleton/pair insertion bounds are respectively (64b₀+256b₀²/a₀, 1024b₀²/a₀) for one cut and (64b₀+768b₀²/a₀, 2048b₀²/a₀) for two cuts. The along-interpolation Hamiltonian bounds are (64b₀+64b₀²/a₀, 512b₀²/a₀). With link-face incidence≤8, face degree≤28, support sizes 4/8, a=1/8 and x≤1/50000, the weighted per-link sums are κ_H<0.022695, κ_cut<0.022863 and κ_cut2<0.023199. The arithmetic is exact-rationally verified using e^{1/2}<1.65 and e<2.72. The identity assumes a simple isolated finite-volume eigenvalue; it does not prove a volume-uniform gap or connected-cluster convergence. The independent product-path temporal cumulants are explicitly controlled through m=4; see Section 7 of the proof record. Higher orders remain open.",
+      "checks": [
+        {
+          "label": "Exact two-cut reduced-resolvent identity",
+          "state": "finite",
+          "note": "Finite-volume eigenvalue perturbation identity, conditional only on a simple isolated eigenvalue."
+        },
+        {
+          "label": "First/second cut local insertion bounds",
+          "state": "conditional",
+          "note": "Uses the recorded isolated-rotor derivative, face allocation and interaction bounds."
+        },
+        {
+          "label": "Per-link weighted activity arithmetic",
+          "state": "finite",
+          "note": "κ_H<0.022695, κ_cut<0.022863, κ_cut2<0.023199 at a=1/8."
+        },
+        {
+          "label": "Quantum time-ordered connected-resolvent/tree inequality",
+          "state": "open",
+          "note": "Temporal/resolvent integration and exact disconnected cancellation remain unproved."
+        },
+        {
+          "label": "Temporal product-path cumulants through fourth order",
+          "state": "finite",
+          "note": "Exact formulas (7.1)–(7.4); these cover the bare marked two-cut orders but not arbitrary background interaction insertions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
+          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 connected-resolvent activity verifier",
+          "path": "research/verification/verify_pf_i16_connected_resolvent_activity.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_connected_resolvent_activity.py"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "two-cut",
+        "connected-resolvent",
+        "conditional",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE",
+      "title": "OPEN: graph-uniform quantum connected-resolvent/tree inequality",
+      "kind": "work",
+      "status": "open",
+      "stage": "P2",
+      "summary": "OPEN: the exact all-orders temporal projection-to-tree multiplicity subgate is now closed with C_time=2 and profile-preserving port injection. The remaining theorem must control the full Feynman–Kac/ground-energy linked-cluster expansion, time-ordered reduced-resolvent integrals, and uniform spatial activity for the conjugated rotor Hamiltonian.",
+      "detail": "The finite-volume conjugated Hamiltonian H_s=K+Σ_X v_X has an exact Feynman–Kac representation Z_T=<1,e^(−TH_s)1>=E_0 exp(−∫_0^TΣ_Xv_X(U_X(τ))dτ), where E_0 is the stationary product path law of independent SU(2) Brownian motions on links; E_0(H_s)=−lim_{T→∞}T^(−1)log Z_T. The formal log-Z cumulant expansion has exact spatial cancellation: if the support-overlap graph of a tuple of local terms is disconnected, the corresponding groups depend on disjoint independent link paths, so their joint cumulant vanishes. The missing temporal estimate is |κ_0(A_1(t_1),…,A_m(t_m))|≤C_time^m Π||A_i|| Σ_{T spanning the support-overlap graph} Π_{pq∈T} exp(−Δ_0|t_p−t_q|), with explicit C_time. For any fixed tree, its time integral is ≤T_0(2/Δ_0)^(m−1). This would reduce the quantum resolvent problem to a classical polymer/tree sum. The local per-link activity is κ_H<0.022695 at a=1/8, but the actual activity is multiplied by the as-yet-unproved temporal constant and must satisfy a genuine KP criterion. The candidate q_path<0.494 does not substitute for this proof. Also required: unbounded one-link kinetic-energy control, exact vacuum-return/normalization subtractions, and comparison of interaction-support distance to PF-I16 source distance. Explicit temporal product-path cumulants are now derived through order four: covariance has e^(−Δg₁) decay, the third cumulant has e^(−Δ(g₁+g₂)), and the fourth cumulant is an exact three-term Q-semigroup expression bounded by 3e^(−Δ(t₄−t₁)). The ordered time integral is ≤TΔ^(−(m−1)) at these orders. This does not control the arbitrary-order cumulants generated by background interaction insertions; an exponential-in-order bound after time-ordering normalization is still required. The arbitrary-order moment-cumulant projection expansion has a raw term-count bound S_m=Σ_k {m brace k}(k−1)!2^(m−k)≤(5/2)^m m^(m−2), where m^(m−2) is the labeled spanning-tree count. If the weighted projection terms can be assigned to temporal spanning trees with no larger semigroup weight and bounded multiplicity C_time≤2.5, then the candidate KP condition would pass: 2(2.5)κ_H<0.113475<1/8. The weighted assignment and its support-overlap compatibility are still open; raw counting alone does not prove the temporal tree inequality.",
+      "checks": [
+        {
+          "label": "Actual quantum polymer/cluster criterion with constants",
+          "state": "open",
+          "note": "If the temporal weighted tree assignment achieves C_time≤2.5, then 2C_timeκ_H<0.113475<1/8 and the proposed KP criterion passes. That assignment is not yet proved."
+        },
+        {
+          "label": "Connected time-ordered resolvent bound",
+          "state": "open",
+          "note": "Explicit m≤4 formulas are finite; arbitrary-order projection count is ≤(2.5)^m times tree count, but the weighted projection-to-tree assignment remains open."
+        },
+        {
+          "label": "Tree graph inequality with one spatial factor per edge",
+          "state": "open",
+          "note": "Derive from the temporal cumulant tree inequality plus the connected overlap-graph expansion, retaining one support-distance factor per edge."
+        },
+        {
+          "label": "Metric comparison to PF-I16 source support distance",
+          "state": "open",
+          "note": "Prove interaction-support graph distance controls the prescribed link/source distance."
+        },
+        {
+          "label": "Feynman–Kac representation and disconnected path-cumulant cancellation",
+          "state": "finite",
+          "note": "Finite-volume formula is exact for the product SU(2) Brownian reference; disjoint support families are independent under the reference path law."
+        },
+        {
+          "label": "Explicit temporal cumulant identities for m≤4",
+          "state": "finite",
+          "note": "Exact Q-semigroup formulas and gap decay through fourth order under the independent product path law."
+        },
+        {
+          "label": "Raw cumulant projection count bounded by (2.5)^m times labeled tree count",
+          "state": "finite",
+          "note": "Stirling-number estimate S_m≤(5/2)^m m^(m−2) derived; this is only a count, not a weighted tree assignment."
+        },
+        {
+          "label": "Interval-forest completion preserves every temporal cut profile",
+          "state": "finite",
+          "note": "Every surviving centered Pi+Q projection term is a linear interval forest covering all temporal gaps; splitting an interval at a vertex of an overlapping component merges components into a spanning tree without changing any cut-crossing count."
+        },
+        {
+          "label": "All-orders coefficientwise projection/tree profile domination",
+          "state": "open",
+          "note": "Finite enumeration verifies a_m(c)≤N_m(c) for m≤8. An all-orders injection or weighted matching proving a_m(c)≤C_time^m N_m(c), preferably C_time≤2.5, is still missing."
+        },
+        {
+          "label": "Exact interval-graph formula for projection-forest coefficients",
+          "state": "finite",
+          "note": "For a projection forest F, its collected Möbius coefficient is χ′_{G_F}(0), where G_F is the interval-overlap graph of component hulls. For connected G_F, |χ′(0)| is the product of later-neighbor counts in a right-endpoint perfect-elimination ordering; equivalently it counts increasing rooted spanning trees of G_F. This gives an exact coefficient formula, not yet an all-orders matching to labeled temporal trees."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
+          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
+          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
+        },
+        {
+          "title": "PF-I16 weighted projection-to-tree assignment: structural reduction and open multiplicity gate",
+          "path": "research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md"
+        },
+        {
+          "title": "Finite-order projection/tree profile verifier",
+          "path": "research/verification/verify_pf_i16_projection_tree_profiles.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_projection_tree_profiles.py"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "quantum-cluster",
+        "resolvent-tree",
+        "open",
+        "2026-11-13"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
+    },
+    {
+      "id": "PF-I16-WEIGHTED-PROJECTION-TREE-INJECTION",
+      "title": "Exact all-orders temporal projection-to-tree port injection",
+      "kind": "theorem",
+      "status": "exact",
+      "stage": "P2",
+      "summary": "For every connected interval projection forest F, increasing rooted overlap trees inject into labeled temporal trees decorated by one incoming/outgoing port at each non-root component connector. The completion preserves every cut profile and has fiber at most 2^m, so A_m(c)≤2^m N_m(c) and C_time=2.",
+      "detail": "The interval graph's right-endpoint order is a perfect elimination order, so |χ'_{G_F}(0)| counts increasing rooted spanning trees. Complete each parent choice by inserting a canonical child-component connector into the current chain of its parent edge. Mark the two connector ports and transport them under later subdivisions. The connector set is recoverable from the completed tree's directed degrees; the transition paths of marked ports recover every original forest edge and the parent map. Since k≤m/2 components, each completed tree has at most 4^(k−1)≤2^m decorated preimages. This closes the weighted projection multiplicity subgate only; the quantum Feynman–Kac/ground-energy connected-resolvent tree theorem remains open.",
+      "checks": [
+        {
+          "label": "All-orders profile-preserving completion and port decoder",
+          "state": "exact",
+          "note": "Injective map (F,parent tree)→(T,ports), with identical temporal cut profiles and fiber bound 2^m."
+        },
+        {
+          "label": "Finite independent enumeration",
+          "state": "finite",
+          "note": "Complete projection expansion and inverse decoder checked for m=2,…,9; this corroborates but does not replace the all-orders proof."
+        },
+        {
+          "label": "Quantum time-ordered connected-resolvent/tree theorem",
+          "state": "open",
+          "note": "Uniform Feynman–Kac/ground-energy cluster convergence and actual reduced-resolvent estimates remain open."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF-I16 weighted projection-to-tree assignment and all-orders port injection",
+          "path": "research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md"
+        },
+        {
+          "title": "Finite-order port-injection verifier",
+          "path": "research/verification/verify_pf_i16_projection_tree_profiles.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_projection_tree_profiles.py"
+        },
+        {
+          "title": "PF-I16 two-cut connected-resolvent frontier",
+          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "temporal-cumulant",
+        "interval-graph",
+        "port-injection",
+        "all-orders",
+        "C_time=2"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -15179,6 +15794,111 @@
       "kind": "next-mathematical-step",
       "label": "uniform transfer and full interacting closure remain open",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW",
+      "to_id": "PF-I16-CONDITIONAL-RESOLVENT-AMPLITUDE",
+      "kind": "conditional-resolvent-amplitude",
+      "label": "pointwise derivative flow plus support oscillation closes the conditional fluctuation estimate",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-CONDITIONAL-RESOLVENT-AMPLITUDE",
+      "to_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "kind": "conditional-input",
+      "label": "conditional fluctuation estimate feeds exact third-order decomposition",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "to_id": "PF-I16-THREE-SUPPORT-BOUNDARY-CUMULANT",
+      "kind": "remaining-connected-cumulant",
+      "label": "six-permutation reduction isolates the boundary-local third cumulant",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-THREE-SUPPORT-BOUNDARY-CUMULANT",
+      "to_id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "kind": "next-mathematical-step",
+      "label": "close the three-support connected estimate before advancing to higher-order partition cancellation",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW",
+      "to_id": "PF-I16-DOBRUSHIN-THIRD-ORDER-TREE",
+      "label": "conditional pointwise derivative flow supplies quasilocal resolvent oscillation profiles",
+      "kind": "conditional-dependency",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES",
+      "to_id": "PF-I16-DOBRUSHIN-THIRD-ORDER-TREE",
+      "label": "corrected weak-coupling rotor derivative yields dressed-measure Dobrushin contraction",
+      "kind": "conditional-dependency",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-DOBRUSHIN-THIRD-ORDER-TREE",
+      "to_id": "PF-I16-THIRD-ORDER-DRESSED-RESOLVENT",
+      "label": "direct Dobrushin–Föllmer tree bound closes the conditional spatial third-order gate",
+      "kind": "proof-dependency",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-DOBRUSHIN-THIRD-ORDER-TREE",
+      "to_id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "label": "conditional third-order tree gate advances to exact fourth-order partition algebra",
+      "kind": "proof-dependency",
+      "status": "finite"
+    },
+    {
+      "from_id": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+      "to_id": "PF-I16-FOUR-SUPPORT-SPATIAL-TREE",
+      "label": "exact factorization cancellation leaves the connected four-support tree problem",
+      "kind": "next-open-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-FOUR-SUPPORT-SPATIAL-TREE",
+      "to_id": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
+      "label": "fixed fourth-order tree estimate leaves uniform all-orders growth open",
+      "kind": "next-open-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
+      "to_id": "PF-I16-TWO-CUT-CONNECTED-RESOLVENT-IDENTITY",
+      "label": "multi-cut gate specialized to exact two-cut conjugated resolvent identity",
+      "kind": "proof-dependency",
+      "status": "conditional"
+    },
+    {
+      "from_id": "PF-I16-TWO-CUT-CONNECTED-RESOLVENT-IDENTITY",
+      "to_id": "PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE",
+      "label": "local weighted insertion data feed the still-open quantum tree lemma",
+      "kind": "next-open-gate",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE",
+      "to_id": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
+      "label": "uniform connected-resolvent/tree theorem would close the multi-cut activity gate",
+      "kind": "proof-dependency",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-TWO-CUT-CONNECTED-RESOLVENT-IDENTITY",
+      "to_id": "PF-I16-WEIGHTED-PROJECTION-TREE-INJECTION",
+      "kind": "exact-combinatorial-sublemma",
+      "label": "Feynman–Kac projection expansion admits a profile-preserving port-completion injection",
+      "status": "exact"
+    },
+    {
+      "from_id": "PF-I16-WEIGHTED-PROJECTION-TREE-INJECTION",
+      "to_id": "PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE",
+      "kind": "closes-projection-multiplicity-only",
+      "label": "C_time=2 closes the temporal coefficient assignment; quantum time-ordered linked-cluster control remains open",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -15957,51 +16677,93 @@
       "exact_finite_graph_identity": true,
       "residual_support_max_links": 25,
       "residual_overlap_degree_max": 800,
-      "uniform_rotor_derivative_estimate": "refined radial bound (4/3 beta + 20/3 beta^2), conditional on inherited gradient bound; working four-factor mixed-Hessian/orientation derivation recorded; standalone sign audit pending"
+      "uniform_rotor_derivative_estimate": "corrected radial bounds ||s'||∞<=2 beta and ||Hess s||op<=(4/3) beta +(80/3) beta^2; face-map and Bochner comparison consequences remain conditional"
     },
     "third_order": {
       "exact_six_permutation_identity": true,
-      "conditional_uniform_bound": "3.25e16*b0^6/a0^5 for b0/a0<=1/40000",
-      "six_term_prefactor": "274185600000000*pi*b0^6/(a0^3*kappa*lambda)",
-      "kappa": "a0/2-(2624/3)*b0-(20480/3)*b0^2/a0",
-      "lambda": "a0/2-(53312/3)*b0-(389120/3)*b0^2/a0",
-      "smallness": "b0/a0<=1/40000",
+      "conditional_uniform_bound": "see direct Dobrushin tree bound (5.1) in PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+      "six_term_prefactor": "lambda^(-2)*exp(-eta*MST)*(13182*sum_j B_j M_i M_k + 353856*M_1 M_2 M_3)",
+      "kappa": "(1869749/3906250)*a0 at b0/a0<=1/50000",
+      "lambda": "(188981/3906250)*a0 at b0/a0<=1/50000",
+      "smallness": "b0/a0<=1/50000",
       "spatial_tree_decay_proved": false,
+      "conditional_spatial_tree_bound": true,
+      "tree_exponent": "eta=(1/8)*log(25/23)",
       "prior_numeric_bound_revalidated": false,
-      "note": "The old 1.527e16 prefactor and old kappa/lambda thresholds are superseded. The revised estimate is conditional on refined rotor/Hessian blocks, pointwise Kato-Bochner derivative flow, Poincare and sup-resolvent estimates; no spatial tree factor."
+      "note": "The complete six-permutation spatial tree estimate is now derived conditionally by the direct Dobrushin–Föllmer cumulant route on νΦ. It is not unconditional and does not imply mixing of the actual interacting Wilson-vacuum measure.",
+      "conditional_amplitude_gate": "closed under pointwise derivative-flow hypotheses",
+      "pair_arm_bounds": "derived uniformly in graph volume, conditional on corrected derivative flow",
+      "six_permutation_reduction": "direct T_ijk=νΦ[(Gr_i)r_j(Gr_k)]=cum_3(Gr_i,r_j,Gr_k); each ordered term has the Dobrushin–Föllmer tree bound",
+      "connected_boundary_cumulant_proved": false,
+      "boundary_cumulant_route": "open but bypassed for the total third-order coefficient",
+      "all_orders_summability": false,
+      "next": "PF-I16-FOUR-SUPPORT-SPATIAL-TREE"
     },
-    "next": "PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION",
+    "next": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
     "all_orders_summability": false,
     "source_physical_time": false,
     "continuum_mass_gap": false,
     "refined_rotor_residual_derivatives": {
-      "source": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-      "status": "conditional_working_estimate",
-      "radial_hessian_bound": "(4/3)*beta + (20/3)*beta^2",
-      "face_diagonal_block": "(32/3)*b0 + (320/3)*b0^2/a0",
-      "face_off_diagonal_block": "(44/3)*b0 + (320/3)*b0^2/a0",
-      "curvature_lower_bound": "a0/2 - (2624/3)*b0 - (20480/3)*b0^2/a0",
-      "derivative_flow_lower_bound_mu_log25": "a0/2 - (53312/3)*b0 - (389120/3)*b0^2/a0",
-      "sufficient_smallness": "b0/a0 <= 1/40000",
-      "residual_sup_norm": "1040*b0^2/a0",
-      "residual_component_derivative": "8450*b0^2/sqrt(a0)",
-      "residual_support_l2_derivative": "42250*b0^2/sqrt(a0)",
-      "residual_support_l1_derivative": "211250*b0^2/sqrt(a0)",
+      "source": "research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md",
+      "status": "conditional_corrected_estimate",
+      "radial_first_derivative_bound": "||s'||∞<=2*beta",
+      "radial_hessian_bound": "(4/3)*beta+(80/3)*beta^2",
+      "face_diagonal_block": "(32/3)*b0+(1280/3)*b0^2/a0",
+      "face_off_diagonal_block": "(56/3)*b0+(1280/3)*b0^2/a0",
+      "curvature_lower_bound": "(1869749/3906250)*a0 at b0/a0<=1/50000",
+      "derivative_flow_lower_bound_mu_log25": "(188981/3906250)*a0 at b0/a0<=1/50000",
+      "sufficient_smallness": "b0/a0<=1/50000",
+      "residual_sup_norm": "4160*b0^2/a0",
+      "residual_component_derivative": "21514*b0^2/sqrt(a0)",
+      "residual_support_l2_derivative": "107570*b0^2/sqrt(a0)",
+      "residual_support_l1_derivative": "537850*b0^2/sqrt(a0)",
       "support_links_max": 25,
-      "outstanding": "standalone self-contained sign/trivialization/regularization audit of the four-factor group-multiplication mixed covariant derivative and orientation conversion"
+      "outstanding": "face-map metric/pullback and finite-product Kato-Bochner comparison remain conditional"
     },
     "derivative_flow": {
-      "status": "conditional_on_refined_face_hessian_blocks",
+      "status": "conditional_on_corrected_face_hessian_blocks",
+      "reversible_measure": "dnuPhi proportional to exp(2*Phi)dU",
+      "positive_generator": "L_Phi=-Delta-2*grad(Phi).grad",
+      "markov_generator": "-L_Phi=Delta+2*grad(Phi).grad",
+      "bakry_emery_tensor": "Ric_sharp-2*(Hess Phi)_sharp",
       "pointwise_componentwise_kato_bocher_derived": true,
       "diagonal_ricci_damping": "a0/2",
-      "comparison_matrix_weighted_row_norm_mu_log25": "(53312/3)*b0+(389120/3)*b0^2/a0",
-      "decay_rate_mu_log25": "a0/2-(53312/3)*b0-(389120/3)*b0^2/a0",
-      "sufficient_smallness": "b0/a0<=1/40000",
-      "decay_rate_at_threshold": "26087*a0/468750",
+      "comparison_matrix_weighted_row_norm_mu_log25": "(67712/3)*b0+(1556480/3)*b0^2/a0",
+      "decay_rate_mu_log25": "a0/2-(67712/3)*b0-(1556480/3)*b0^2/a0",
+      "sufficient_smallness": "b0/a0<=1/50000",
+      "decay_rate_at_threshold": "(188981/3906250)*a0",
       "kernel_row_column_sum_max": 13,
       "convolution_requires_exponent_loss": true,
       "finite_support_oscillation_prefactor": "26*pi",
       "all_orders_summability": false
+    },
+    "conditional_amplitude": {
+      "status": "conditional_gate_closed",
+      "fluctuation_gate_closed_under_derivative_flow_hypotheses": true,
+      "support_links_max": 25,
+      "link_geodesic_diameter": "2*pi",
+      "exponent": "mu=log(25)",
+      "lp_range": "1<=p<=infinity",
+      "bound": "||Gr_k-E[Gr_k|F_{S_j^c}]||_Lp <= (50*pi/lambda)*M_k*exp(-(log25)*d(S_j,S_k))",
+      "conditional_poincare_required": false,
+      "conditional_mean_generally_nonzero": true,
+      "boundary_support_max_links": 600,
+      "boundary_derivative_l1_bound": "38400*B_j*beta_*",
+      "remaining": "The q_j,m_i,m_k boundary-cumulant subroute remains open but is bypassed for the total third-order coefficient by the direct Dobrushin–Föllmer route."
+    },
+    "fourth_order": {
+      "exact_recursion": true,
+      "nested_resolvent_monomials": 24,
+      "pair_energy_monomials": 12,
+      "total_monomials": 36,
+      "pair_partition_channels": 3,
+      "channel_identity": "E_ijkl=-2*sum_{ij|kl}[nu(Q_ij G Q_kl)+E_ij nu(A_k A_l)+E_kl nu(A_i A_j)]",
+      "independent_subsystem_cancellation": "exact for 1+3, 2+2, 1+1+2, 1+1+1+1 factorization",
+      "finite_algebra_status": "verified",
+      "spatial_four_support_tree_status": "conditional",
+      "next": "PF-I16-ALL-ORDERS-CONNECTED-ACTIVITY",
+      "spatial_tree_exponent": "eta4=(1/24)*log(25/23)",
+      "cut_interpolation_identity": "dE_s/ds=-nu_s[g Gamma(W,g)]/nu_s(g^2)"
     }
   }
 }
