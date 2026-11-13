@@ -65,3 +65,24 @@ The next proof task is an all-orders injection or weighted matching from the abs
 Until this profile inequality is proved, neither C_time=1 nor C_time<=2.5 is certified, and the KP convergence gate remains OPEN.
 
 **Status:** exact interval-forest-to-tree exponent-preserving completion proved; finite coefficientwise profile domination verified for 2<=m<=8; all-orders coefficientwise domination, temporal cumulant tree inequality, and quantum connected-resolvent tree bound remain OPEN.
+
+
+## 6. Ursell coefficient on the interval-overlap graph
+
+There is a sharper way to organize the remaining coefficient. Fix a surviving interval forest F and let its path components be C_1,...,C_k. Form the interval-overlap graph G_F on these components: two vertices are adjacent exactly when their temporal hulls overlap. An original moment-cumulant partition can group several components into one block only when their hulls are pairwise disjoint and ordered. Thus the coefficient of F is the hard-core Ursell coefficient
+\[
+\alpha_m(F)=\sum_{\substack{\pi\text{ partition of }V(G_F)\\\text{each block independent in }G_F}}(-1)^{|\pi|-1}(|\pi|-1)!
+=\sum_{\substack{H\subseteq E(G_F)\\(V(G_F),H)\text{ connected}}}(-1)^{|H|}.
+\]
+The repulsive-graph tree inequality (Penrose tree-graph bound) therefore gives
+\[
+|\alpha_m(F)|\le\tau(G_F),
+\]
+where \(\tau(G_F)\) is the number of spanning trees of the component-overlap graph. This explains the small coefficients seen in the finite expansion and replaces the raw Stirling count by a connected-graph quantity.
+
+A sufficient all-orders weighted assignment is consequently
+\[
+\sum_{F:\,n(F)=1+c}\tau(G_F)\le C_{\rm time}^mN_m(c)
+\quad\text{for every cut profile }c.
+\]
+Each spanning tree of \(G_F\) can be used to order component merges in the exact profile-preserving completion of Section 2. What is not yet proved is a bounded-multiplicity map from the pairs \((F,\mathcal T(G_F))\) to labeled trees on the original time indices with the same cut profile. This is now the precise combinatorial target; the finite verifier audits \(|\alpha_m(F)|\), not the stronger Penrose majorant \(\tau(G_F)\).
