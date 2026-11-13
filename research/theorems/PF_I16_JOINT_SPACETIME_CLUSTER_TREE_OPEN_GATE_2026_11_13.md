@@ -386,3 +386,82 @@ X_0\cap X_1=X_0\cap X_4=\varnothing,
 and choose the remaining supports so that the only cross-component shared-link witness is insertion \(2\) against \(C_2\). Then the spatial connector port is also forced to be \(c^S_1=2\). No cut of the two-vertex path \(C_1\) can put these two required uses into distinct nonempty pieces.
 
 This example satisfies the interval-overlap condition needed by the temporal parent construction and has a connected spatial support-overlap graph, but it violates the proposed distinct-port selection. Therefore Section 10's two-port split map cannot be made universal merely from \(|C_j|\ge2\), temporal hull overlap, and spatial support connectedness. A successful replacement must allow a shared port to serve both channels, use a different local gadget, or abandon this particular split architecture.
+
+
+## 11. Shared-port fusion: exact local case and a profile obstruction
+
+The shared-port issue from Section 10.2 has two different outcomes, depending on the location of the spatial witness inside the temporal parent component.
+
+### 11.1 Exact fusion when the witness is a subdivision endpoint
+
+Suppose the temporal completion processes a child component containing connector vertex (c), and subdivides the current parent-chain edge ((x,y)) with
+[
+x<c<y.
+]
+The operation replaces ((x,y)) by
+[
+(x,c),qquad(c,y).
+]
+If the selected spatial witness in the parent component is (x) or (y), then the corresponding cross-component edge is already one of these two subdivision edges. Thus the same local operation performs both jobs:
+
+* it inserts (c) into the temporal parent chain, as required by the profile-preserving temporal completion;
+* it realizes the selected shared-support edge, because (X_ccap X_x
+earnothing) or (X_ccap X_y
+earnothing).
+
+No extra edge is added, so the completed graph remains the temporal spanning tree and its cut profile is unchanged. This is a valid **local shared-port fusion lemma**. It applies only when the spatial witness endpoint is one of the two endpoints of the actual parent-chain edge being subdivided. It does not establish a component-level spatial spanning tree or a bounded-fiber decoder for the full source tuple.
+
+### 11.2 Non-endpoint witness: exact-profile completion is impossible
+
+The endpoint condition cannot simply be dropped. Consider the temporal forest on ordered labels
+[
+0<1<2<4<7
+]
+with components
+[
+C_1=(0,2),qquad C_2=(1,4,7).
+]
+The temporal parent of (C_1) is (C_2), and the canonical temporal connector is (c=2), lying strictly inside the parent edge ((1,4)). Choose supports so that the only cross-component shared-link witness is
+[
+X_2cap X_7
+earnothing.
+]
+In particular, the spatial witness endpoint (7) is not an endpoint of the temporal parent edge ((1,4)).
+
+The temporal forest edges are
+[
+F={(0,2),(1,4),(4,7)}.
+]
+Its exact cut-crossing profile, for cuts (q=0,ldots,6), is
+[
+igl(n_q(F)igr)_{q=0}^{6}=(1,2,1,1,1,1,1).
+	ag{11.1}
+]
+Any tree realizing the required spatial witness must contain edge ((2,7)). This edge crosses both the cut at (q=2) and the cut at (q=4). By (11.1), each of those cuts has exactly one crossing edge, so ((2,7)) would have to be the unique crossing edge at both cuts.
+
+In a tree, if an edge is the unique edge crossing a cut, deleting it separates the vertex set into exactly the two sides of that cut. But the two cuts have different bipartitions:
+[
+{0,1,2}mid{4,7},
+qquad
+{0,1,2,4}mid{7}.
+]
+One deleted edge cannot induce both bipartitions. This is a contradiction.
+
+Therefore:
+[
+oxed{	ext{No spanning tree contains }(2,7)	ext{ and preserves the full profile }(11.1).}
+	ag{11.2}
+]
+This is stronger than failure of the particular subdivision algorithm: no alternative tree topology can meet both requirements in this example.
+
+The support assignment is compatible with the local-support setting: take one link shared by (X_2) and (X_7), and choose all other links in the five supports distinct. The spatial overlap graph on the two temporal components is connected, while its only cross-component witness is the non-endpoint pair ((2,7)).
+
+### 11.3 Consequence for the bounded-fiber map
+
+The shared-port recommendation is therefore only partially successful:
+
+1. **Closed locally:** if the spatial witness is an endpoint of the temporal parent-chain edge, one temporal subdivision edge serves both channels.
+2. **Refuted in general:** if the only spatial witness is elsewhere in the parent component, exact temporal-profile preservation may be impossible, even before any decoder or fiber-count issue is considered.
+3. **Still open:** a weighted completion that permits controlled profile loss, or a different joint cumulant argument that does not require an exact-profile spatial witness edge.
+
+The next viable route is consequently not to force the two-channel split map. It is to return to the weighted-dependency-graph route of Section 8, where a spatial witness edge may carry its own integrable temporal influence kernel and need not be an edge in the exact temporal-profile tree. The model-specific quasi-factorization and explicit order-growth bounds remain to be proved. No all-orders joint space-time tree inequality or quantum cluster theorem is claimed here.
