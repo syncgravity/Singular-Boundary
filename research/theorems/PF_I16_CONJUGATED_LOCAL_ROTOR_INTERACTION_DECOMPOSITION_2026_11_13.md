@@ -203,8 +203,13 @@ Let \(\widehat H_{\mathbf s,\mathbf t}
 \]
 for the corresponding simple ground state; the desired source coefficient is obtained by taking \([t_I]\) on both sides. Thus the multi-cut derivatives become insertions of bounded local multiplication operators, rather than the first-order differential insertion \(\Gamma(W_a,g)\) in the dressed-measure picture. Mixed derivatives still require connected resolvent/cumulant bounds, but the \(D^2g\) obstruction in (4.2) of the multi-cut note is avoided at the level of the insertion itself.
 
-## 5. Next theorem required
+## 5. External framework audit: Yarotsky
 
+Yarotsky's theorem is a relevant comparison: it treats weak local perturbations of a gapped product-ground-state model, explicitly allows possibly infinite-dimensional one-site Hilbert spaces, and proves a volume-uniform gap, exponential truncated-correlation decay, and analytic dependence under a sufficiently small perturbation hypothesis. Its stated setting, however, is translation-invariant interactions on \(\mathbb Z^\nu\), with a smallness threshold depending on the dimension and interaction range. The PF-I16 accepted-link graph is nonperiodic, and the theorem's threshold is existential rather than the explicit numerical criterion needed here. Therefore this is not yet an application to the present graph or a certification that \(b_0/a_0\le1/50000\) lies below its threshold.
+
+Reference: D. A. Yarotsky, *Ground states in relatively bounded quantum perturbations of classical lattice systems*, arXiv:math-ph/0412040, especially Theorem 1 and the space-time polymer proof in Section 2.
+
+## 6. Next theorem required
 Prove a source-volume-uniform linked-cluster expansion for
 \[
 K-\sum_f \rho_fb_fp_f+\sum_{f<g}V_{fg}
@@ -218,7 +223,7 @@ with local interaction graph degree at most 28 and weights (2.1)–(2.2). The th
 The one-cut and multi-cut interpolation routes remain independent alternatives. Neither is silently identified with this quantum cluster theorem. No R3-IR constants are imported.
 
 
-## 6. Source inputs and verification
+## 7. Source inputs and verification
 
 The isolated-rotor derivative and face-map bounds are conditional source inputs from:
 - `research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md`
