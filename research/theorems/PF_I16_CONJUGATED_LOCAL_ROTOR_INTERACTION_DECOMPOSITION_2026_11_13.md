@@ -27,7 +27,7 @@ Expanding the square in (1.1) and grouping the diagonal face terms gives
 \[
 \boxed{
 \mathcal U_\Phi
-=\sum_f A_f\left[\Delta s_f+|\nabla s_f|^2\right]
+=\sum_f A_f^{\rm kin}\left[\Delta s_f+|\nabla s_f|^2\right]
 +\sum_{f<g}V_{fg},
 }
 \tag{1.2}
@@ -38,7 +38,7 @@ V_{fg}
 =2\sum_{e\in\partial f\cap\partial g}
 a_e\langle\nabla_e s_f,\nabla_e s_g\rangle,
 \qquad
-A_f=\sum_{e\in\partial f}a_e.
+A_f^{\rm kin}:=\sum_{e\in\partial f}a_e.
 \tag{1.3}
 \]
 The sum \(V_{fg}\) is zero unless the two accepted faces share an original link. Its support is contained in \(\partial f\cup\partial g\), of size at most eight links.
@@ -104,22 +104,22 @@ The product-rotor kinetic operator has one-link gap \(3a_e/4\) in the radius-two
 \]
 A conservative per-face interaction weight, including all incident pair terms, is
 \[
-z_f:=b_0+14336\,\frac{b_0^2}{a_0}.
+z_f:=32b_0+14336\,\frac{b_0^2}{a_0}.
 \]
 At the corrected threshold \(x=b_0/a_0\le1/50000\),
 \[
 \frac{z_f}{\Delta_0}
-\le\frac43x+\frac{57344}{3}x^2
-<3.432\times10^{-5}.
+\le\frac{128}{3}x+\frac{57344}{3}x^2
+<8.610\times10^{-4}.
 \tag{3.1}
 \]
 Multiplying by the face-overlap degree gives
 \[
-28\,\frac{z_f}{\Delta_0}<9.608\times10^{-4},
+28\,\frac{z_f}{\Delta_0}<2.411\times10^{-2},
 \qquad
-e\cdot28\,\frac{z_f}{\Delta_0}<2.612\times10^{-3}.
+e\cdot28\,\frac{z_f}{\Delta_0}<6.554\times10^{-2}.
 \tag{3.2}
-\]
+
 These are encouraging numerical margins for a polymer criterion on the face-overlap graph.
 
 **Important limitation:** (3.2) is not yet a verified Kotecký–Preiss condition for the quantum ground-state problem. The required polymer activity norm must account for the unbounded local rotor Hilbert spaces, reduced-resolvent insertions, temporal ordering, and exact connected cancellation. No convergence claim is made until that theorem is proved with its actual constants.
