@@ -44,3 +44,14 @@ print(f"PASS: kappa_cut < {float(kappa_cut):.12g} < 0.022863")
 print(f"PASS: kappa_cut2 < {float(kappa_cut2):.12g} < 0.023199")
 print(f"PASS: q_path < {float(q_path):.12g} < 0.494")
 print("NOTE: no quantum time-ordered resolvent or cluster theorem is asserted.")
+
+
+# Follow-up arithmetic after the exact temporal port-injection (2026-11-13)
+C_time = 2
+proposed_kp = 2 * C_time * kappa_h
+q_path_with_time = C_time * q_path
+assert proposed_kp < Fraction(1, 8)
+assert q_path_with_time < 1
+print(f"PASS: 2*C_time*kappa_H = {float(proposed_kp):.12g} < 1/8")
+print(f"PASS: C_time*q_path = {float(q_path_with_time):.12g} < 1")
+print("NOTE: these are arithmetic checks for the proposed criteria, not a quantum cluster theorem.")
