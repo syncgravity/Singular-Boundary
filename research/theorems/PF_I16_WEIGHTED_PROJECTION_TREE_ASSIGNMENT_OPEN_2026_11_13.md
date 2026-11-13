@@ -235,7 +235,7 @@ Let \(A_1,\ldots,A_m\) be centered bounded multiplication observables of the sta
 \[
 \|Q_t\|_{2\to2}\le e^{-\Delta_0t}.
 \]
-The projection expansion, the semigroup contraction on each Q interval, and (7.5) give the all-orders temporal tree bound
+The projection expansion, the semigroup contraction on each Q interval, and (7.5) give
 \[
 \boxed{
 \left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|
@@ -246,30 +246,43 @@ The projection expansion, the semigroup contraction on each Q interval, and (7.5
 }
 \tag{7.6}
 \]
-This is uniform in the number of link rotors. It is a theorem for the independent reference process, not yet for the perturbed interacting ground state.
+If the support-overlap graph of \(A_1,\ldots,A_m\) is disconnected, the corresponding groups depend on disjoint collections of independent link paths, so their joint cumulant vanishes exactly. Thus (7.6) holds with the additional factor
+\[
+\mathbf1_{\{\mathcal G_{\rm ov}\ {\rm connected}\}}.
+\]
+This proves the requested temporal cumulant inequality (6.4) with
+\[
+\boxed{C_{\rm time}=2.}
+\]
 
-For a fixed labeled tree \(T\), order the times and write \(g_q=t_{q+1}-t_q\). Its exponent is
+For each fixed labeled tree \(T\), root it at one time vertex and integrate the remaining vertices successively relative to their parents. Since
 \[
-\sum_{\{i,j\}\in T}|t_i-t_j|
-=\sum_{q=1}^{m-1}n_q(T)g_q,
-\qquad n_q(T)\ge1.
+\int_{\mathbb R}e^{-\Delta_0|t-s|}\,dt=\frac2{\Delta_0},
 \]
-Consequently its ordered time integral is bounded by
+we obtain
 \[
-\int_{0\le t_1\le\cdots\le t_m\le\mathcal T}
-e^{-\Delta_0\sum_q n_q(T)g_q}\,d\mathbf t
-\le \mathcal T\,\Delta_0^{-(m-1)}.
+\int_{[0,\mathcal T]^m}
+\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|}\,d\mathbf t
+\le
+\mathcal T\left(\frac2{\Delta_0}\right)^{m-1}.
+\tag{7.7}
 \]
-Using the symmetry of the cumulant and the \(1/m!\) normalization in the Feynman–Kac logarithm, this yields the fixed-order estimate
+Consequently the normalized fixed-order Feynman–Kac cumulant coefficient obeys
 \[
 \boxed{
 \frac1{m!\mathcal T}
 \int_{[0,\mathcal T]^m}
-\left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|\,d\mathbf t
+|\kappa_0(A_1(t_1),\ldots,A_m(t_m))|\,d\mathbf t
 \le
-2^m m^{m-2}\Delta_0^{-(m-1)}
+\frac{2^m m^{m-2}}{m!}
+\left(\frac2{\Delta_0}\right)^{m-1}
 \prod_i\|A_i\|_\infty.
 }
-\tag{7.7}
+\tag{7.8}
 \]
-This controls the reference-process time integrals at every fixed order. The remaining task is to combine them with spatial connected-support summation and the marked cut insertions in a uniform-in-volume, all-orders linked-cluster theorem. The factor \(m^{m-2}\) in (7.7) is not by itself an all-orders convergence estimate.
+The local activity condition recorded in (6.6) is now numerically satisfied:
+\[
+2C_{\rm time}\kappa_H=4\kappa_H
+<0.09078<\frac18.
+\]
+This closes the temporal projection/cumulant sublemma and verifies the proposed activity arithmetic. It does **not**, by itself, prove uniform convergence of the full interacting Feynman–Kac expansion or the quantum connected-resolvent/tree estimate (5.1): the joint space-time polymer organization, the marked-root summation, and the actual Kotecký–Preiss application still need to be written and checked. The factor \(m^{m-2}/m!\) in (7.8) is compatible with exponential tree growth, but its combination with the spatial support summation must be justified rather than assumed.
