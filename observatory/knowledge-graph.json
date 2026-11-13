@@ -1,7 +1,7 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.91-pf-i16-joint-spacetime-gate",
+  "version": "v2.92-pf-i16-joint-tree-m3",
   "scope": "PF-I16 exact finite-source coefficients, corrected conditional derivative flow, conditional third- and fourth-order spatial tree estimates, exact all-orders temporal projection-to-tree port injection with C_time=2, and explicit joint space-time cluster frontier. Quantum joint space-time connected-resolvent/tree inequality, all-orders activity convergence, source physical kinetic/time, interacting continuum existence and Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
@@ -10729,7 +10729,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "Temporal projection-to-tree assignment is closed with C_time=2. The joint support-sensitive space-time cumulant/tree bound, multi-cut mixed-derivative estimate, uniform quantum connected-resolvent theorem, connected-support activity summability, source physical kinetic/time, and continuum gap remain OPEN.",
+      "summary": "Temporal projection-to-tree assignment is closed with C_time=2. Support-sensitive joint cumulant trees are proved for m=2,3; m=4, the all-orders joint space-time bound, multi-cut mixed-derivative estimate, uniform quantum connected-resolvent theorem, connected-support activity summability, source physical kinetic/time, and continuum gap remain OPEN.",
       "detail": "The exact multi-cut interpolation still reduces the n-source coefficient to the full mixed derivative over n−1 tree cuts. The conjugated rotor representation now has an exact two-cut reduced-resolvent identity: E_ab=<B_ab>−<B_a R B_b>−<B_b R B_a>, with R=Q(H−E)^{-1}Q. Taking two source coefficients expresses it as a third connected response with B_ab plus a fourth connected response with B_a,B_b and the two source observables. The first and second cut insertions are bounded local multiplication families, with support≤8 links. Corrected along-interpolation one-face/pair interaction bounds give per-link weighted activity κ_H<0.022695 at a=1/8; first-cut root sum κ_a<0.022863; second-cut contact root sum κ_ab<0.023199. The candidate path count q_path=8e κ_H<0.494. This is a local weighted-sum and combinatorial estimate only: it does not control time-ordered reduced-resolvent integrals or prove the quantum polymer expansion. The missing theorem is a graph-uniform connected-resolvent tree inequality with exact disconnected cancellation, temporal/resolvent control for unbounded rotor kinetic energies, and one edgewise spatial decay factor per tree edge. Higher mixed alpha_f² derivatives have at most 2^m coefficient growth for m distinct cuts. The previous one-cut, Dobrushin and fourth-order conditional results remain conditional; no all-orders activity radius or physical gap follows. The Feynman–Kac representation now reduces the missing quantum estimate to a temporal cumulant tree inequality for independent product SU(2) Brownian paths; disjoint local-support families cancel exactly, and each tree time integral is bounded by T(2/Δ₀)^(m−1). The explicit temporal constant C_time and the resulting KP activity criterion remain open. The independent product-path cumulants have now been computed explicitly through order four; the remaining temporal lemma is the arbitrary-order bound needed after expanding the background interaction insertions. The arbitrary-order projection-partition count is now bounded by (2.5)^m times the labeled spanning-tree count; the weighted assignment of each surviving term to a temporal tree remains open. If achieved with C_time≤2.5, the proposed KP activity condition passes with 2C_timeκ_H<0.113475<1/8.",
       "checks": [
         {
@@ -10848,7 +10848,7 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "Finite-volume two-cut reduced-resolvent identities and bounded local insertion decompositions are exact; per-link activity arithmetic is conditional. Temporal projection multiplicity is closed with C_time=2. The proposed inequality 2 C_time κ_H<1/8 is not itself a KP verification: joint support-sensitive space-time counting remains open.",
+      "summary": "Finite-volume two-cut reduced-resolvent identities and bounded local insertion decompositions are exact; per-link activity arithmetic is conditional. The reference-process support-sensitive cumulant tree is proved for m=2,3, but m=4 and the all-orders quantum connected-resolvent/KP theorem remain open.",
       "detail": "Let B_a=∂_a U_{Φ_s}, B_ab=∂_a∂_b U_{Φ_s}, Q=1−|Ψ><Ψ|, R=Q(H−E)^{-1}Q. Then E_ab=<B_ab>−<B_a R B_b>−<B_b R B_a>. For distinct source labels i,j, its coefficient is C_3(B_ab,−r_i,−r_j)+C_4(B_a,B_b,−r_i,−r_j). The local singleton/pair insertion bounds are respectively (64b₀+256b₀²/a₀, 1024b₀²/a₀) for one cut and (64b₀+768b₀²/a₀, 2048b₀²/a₀) for two cuts. The along-interpolation Hamiltonian bounds are (64b₀+64b₀²/a₀, 512b₀²/a₀). With link-face incidence≤8, face degree≤28, support sizes 4/8, a=1/8 and x≤1/50000, the weighted per-link sums are κ_H<0.022695, κ_cut<0.022863 and κ_cut2<0.023199. The arithmetic is exact-rationally verified using e^{1/2}<1.65 and e<2.72. The identity assumes a simple isolated finite-volume eigenvalue; it does not prove a volume-uniform gap or connected-cluster convergence. The independent product-path temporal cumulants are explicitly controlled through m=4; see Section 7 of the proof record. Higher orders remain open.",
       "checks": [
         {
@@ -10906,7 +10906,7 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: temporal projection multiplicity is closed with C_time=2, but the quantum theorem still needs a joint support-sensitive space-time cumulant/tree bound. Separate spatial and temporal tree sums give superexponential m^(2m−4)/m! growth. The Feynman–Kac/ground-energy expansion, rooted-cluster counting and actual KP application remain open.",
+      "summary": "OPEN: temporal projection multiplicity is closed with C_time=2, and support-sensitive joint cumulant/tree bounds are proved for m=2,3. The m=4 two-cut response and all-orders extension remain open. The full Feynman–Kac/ground-energy linked-cluster expansion, rooted-cluster counting and actual KP application are not established.",
       "detail": "The finite-volume conjugated Hamiltonian H_s=K+Σ_X v_X has an exact Feynman–Kac representation Z_T=<1,e^(−TH_s)1>=E_0 exp(−∫_0^TΣ_Xv_X(U_X(τ))dτ), where E_0 is the stationary product path law of independent SU(2) Brownian motions on links; E_0(H_s)=−lim_{T→∞}T^(−1)log Z_T. The formal log-Z cumulant expansion has exact spatial cancellation: if the support-overlap graph of a tuple of local terms is disconnected, the corresponding groups depend on disjoint independent link paths, so their joint cumulant vanishes. The missing temporal estimate is |κ_0(A_1(t_1),…,A_m(t_m))|≤C_time^m Π||A_i|| Σ_{T spanning the support-overlap graph} Π_{pq∈T} exp(−Δ_0|t_p−t_q|), with explicit C_time. For any fixed tree, its time integral is ≤T_0(2/Δ_0)^(m−1). This would reduce the quantum resolvent problem to a classical polymer/tree sum. The local per-link activity is κ_H<0.022695 at a=1/8, but the actual activity is multiplied by the as-yet-unproved temporal constant and must satisfy a genuine KP criterion. The candidate q_path<0.494 does not substitute for this proof. Also required: unbounded one-link kinetic-energy control, exact vacuum-return/normalization subtractions, and comparison of interaction-support distance to PF-I16 source distance. Explicit temporal product-path cumulants are now derived through order four: covariance has e^(−Δg₁) decay, the third cumulant has e^(−Δ(g₁+g₂)), and the fourth cumulant is an exact three-term Q-semigroup expression bounded by 3e^(−Δ(t₄−t₁)). The ordered time integral is ≤TΔ^(−(m−1)) at these orders. This does not control the arbitrary-order cumulants generated by background interaction insertions; an exponential-in-order bound after time-ordering normalization is still required. The arbitrary-order moment-cumulant projection expansion has a raw term-count bound S_m=Σ_k {m brace k}(k−1)!2^(m−k)≤(5/2)^m m^(m−2), where m^(m−2) is the labeled spanning-tree count. If the weighted projection terms can be assigned to temporal spanning trees with no larger semigroup weight and bounded multiplicity C_time≤2.5, then the candidate KP condition would pass: 2(2.5)κ_H<0.113475<1/8. The weighted assignment and its support-overlap compatibility are still open; raw counting alone does not prove the temporal tree inequality.",
       "checks": [
         {
@@ -11058,7 +11058,7 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "The reference-process temporal projection/tree bound is closed with C_time=2, and support-disconnected cumulants vanish. These facts cannot be multiplied with a separate spatial tree bound: that gives superexponential m^(2m−4)/m! growth. The next theorem must combine shared-link support incidence and integrable temporal decay on one tree, then justify the actual rooted-cluster/KP constants.",
+      "summary": "OPEN: support-sensitive reference-process cumulant/tree bounds are now proved exactly for m=2,3, using product-path independence and the full gap Δ_0. The m=4 case needed by the two-cut identity and the all-orders extension remain open. Separate spatial and temporal tree sums give superexponential m^(2m−4)/m! growth; the next theorem must combine shared-link incidence and temporal decay on one tree.",
       "detail": "For local insertions A_i(t_i) supported on at most eight link paths, prove a joint cumulant/tree estimate whose bonds vanish for disjoint supports and have integrable temporal decay. The candidate bond is 1_{X_i∩X_j≠∅} exp(−Δ_0|t_i−t_j|), but this is not established. Exploit independence of the reference path law over links before taking absolute values; a tensor/coordinate-incidence expansion must be controlled in a norm bounded by the local insertion norm, not by an uncontrolled ℓ1 Peter–Weyl expansion. First prove m=3 and m=4, then an all-orders induction. The conditional face activity gives z_f/Δ_0<8.610e−4 and a 58-face-neighborhood continuation bound <0.049937; with C_st=2 and a single rooted-tree factor e this would give a candidate 0.543<1, but this arithmetic is conditional on the joint lemma and is not a KP theorem.",
       "checks": [
         {
@@ -11067,12 +11067,17 @@
           "note": "All-orders coefficient-profile injection; finite decoder audit through m=9."
         },
         {
-          "label": "Disconnected support cancellation under product path law",
+          "label": "Support-sensitive joint cumulant tree, m=2,3",
           "state": "exact",
-          "note": "A joint cumulant vanishes when the support-overlap graph is disconnected."
+          "note": "Exact shared-support covariance and three-observable support-tree bounds; no loss in Δ_0."
         },
         {
-          "label": "Joint support-sensitive space-time cumulant/tree bound",
+          "label": "Support-sensitive joint cumulant tree, m=4",
+          "state": "open",
+          "note": "Complete support-graph classification and coordinate-incidence contraction remain to be proved."
+        },
+        {
+          "label": "All-orders joint space-time cumulant/tree bound",
           "state": "open",
           "note": "Must avoid independent spatial and temporal Cayley factors."
         },
