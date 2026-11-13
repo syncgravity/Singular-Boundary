@@ -1,0 +1,86 @@
+{
+  "status": "PASS_STAGE26_MULTIHIT_ENDPOINT_GEOMETRY_ALL_FOUR_SEEDS",
+  "geometry_zip_sha256": "d7a3fa153e69dae0129a6f0771d8241b78a0145cbc4939ea16b0a02ea74e7d60",
+  "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+  "source_array_sha256": "fee7afad5b4b464537782b508402401502984947ac5caf5163a87dad8ae33e2e",
+  "geometry": "penrose",
+  "sweep": 10000,
+  "vertex_count": 22808,
+  "pair_count_per_seed": 600,
+  "source_target_index_range": [
+    0,
+    22807
+  ],
+  "minimum_image_period_search_radius": 2,
+  "maximum_dx_reconstruction_error": 2.5035959997664762e-14,
+  "mean_dx_reconstruction_error": 6.11679874296098e-15,
+  "maximum_r_norm_error": 8.881784197001252e-16,
+  "minimum_image_shift_histogram": {
+    "(-1, -1)": 1,
+    "(-1, 0)": 8,
+    "(0, -1)": 24,
+    "(0, 0)": 549,
+    "(0, 1)": 8,
+    "(1, 0)": 10
+  },
+  "candidate_path_indices": {
+    "unique_count": 600,
+    "min": 197,
+    "max": 999
+  },
+  "matched_pair_indices_canonical": true,
+  "seed_archives": [
+    {
+      "seed": 101,
+      "sha256": "7b3b9086f7b97cfadc2639b6d68adaac206d53891fa6b7999fef732e8e81050d",
+      "status": "PASS"
+    },
+    {
+      "seed": 211,
+      "sha256": "2acc4abc4f3a57bbbab95c045d0c95611a2849d16ccf682aff383b4d28489863",
+      "status": "PASS"
+    },
+    {
+      "seed": 307,
+      "sha256": "4d9ba56ee76b8f21c6085e00cc07af59f48e9129747330eb1a3449a6d3ebba07",
+      "status": "PASS"
+    },
+    {
+      "seed": 419,
+      "sha256": "705972eab8d3464881a8c752036fb5e6a26c31b6792588e4182c2e693133798c",
+      "status": "PASS"
+    }
+  ],
+  "cross_seed_identity": {
+    "source_arrays_identical": true,
+    "target_arrays_identical": true,
+    "dx_arrays_identical": true,
+    "r_arrays_identical": true,
+    "candidate_path_indices_identical": true,
+    "matched_pair_indices_identical": true
+  },
+  "interpretation": "All four seed files use the same 600 matched endpoint pairs and Stage16 candidate-path row IDs. Endpoint geometry is authenticated. Exact ordered edge/sign crosswalk against the Stage19 complete catalogue has now been computed: 36/600 candidates occur as exact contiguous subpaths (56 distinct catalogue-root occurrences); none is a complete Stage19 loop. Candidate IDs remain Stage16 row indices, not Stage19 root indices.",
+  "complete_catalogue_crosswalk": {
+    "repository_path": "data/raw/stage19/penrose_complete_catalogue.npz",
+    "lfs_object_sha256": "d08e157f1b6fe258f4214e834f80508ef6278cae2f672b378188e8f138c00e2d",
+    "lfs_size_bytes": 1963431,
+    "graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "stage16_reconstruction": "Rebuilt M55 rational model-set torus and exact Stage16 sparse_paths ordering (max_steps=10,n_anchors=180,per_length=100); reconstructed graph hash matches Stage19.",
+    "candidate_rows": 1000,
+    "selected_stage26_rows": 600,
+    "selected_id_min": 197,
+    "selected_id_max": 999,
+    "all_600_endpoints_match_stage26_source_target": true,
+    "exact_whole_loop_matches": 0,
+    "exact_contiguous_subpath_matches": 36,
+    "unmatched_candidates": 564,
+    "distinct_catalogue_root_occurrences": 56,
+    "orientations_tested": [
+      "forward",
+      "reverse_with_signs_negated"
+    ],
+    "matching_method": "Exact cyclic contiguous ordered (edge_id,orientation_sign) sequence matching for candidate lengths 1–10 against every Stage19 rooted loop; both orientations tested.",
+    "detailed_crosswalk": "research/evidence/PF_STAGE16_STAGE19_ORDERED_EDGE_SEQUENCE_CROSSWALK_2026_11_12.json",
+    "local_full_report_sha256": "a0b798be862bd7deb0fd9d70255ec86c6af1871fb2cd188ecb751ee520e934d4"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": "PASS_SOURCE_REPLAY_AND_CROP_AUDIT",
+  "archive_sha256": "bdc3792b2f2be40736c20c4574ef72a6f1eded226fe28415a5f1c33392af2f9b",
+  "paper2_compute_sha256": "a8e73bb783471bed28dc062856c69101a26945ad516a8c9c06af755adcea5510",
+  "source_pipeline_grid_sizes": [
+    7,
+    10,
+    12,
+    15,
+    18
+  ],
+  "source_pipeline_tiling_large_grid": 15,
+  "paper_text_claimed_worm_grid": 25,
+  "original_extractor_at_pipeline_grid": {
+    "n_worms": 155,
+    "family_counts": [
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "length_histogram": {
+      "124": 155
+    },
+    "mean_L_over_S": 1,
+    "source_fibonacci_matches": 0
+  },
+  "original_extractor_at_paper_claim_grid": {
+    "n_worms": 255,
+    "family_counts": [
+      51,
+      51,
+      51,
+      51,
+      51
+    ],
+    "length_histogram": {
+      "204": 255
+    },
+    "mean_L_over_S": 1,
+    "source_fibonacci_matches": 0
+  },
+  "corrected_common_physical_disk_crop": {
+    "radius": 20,
+    "crop_grid": 25,
+    "comparison_grid": 21,
+    "disk_tile_count": 1554,
+    "disk_tile_crop_stable": true,
+    "n_worms": 82,
+    "family_counts": [
+      16,
+      16,
+      16,
+      17,
+      17
+    ],
+    "length_min": 8,
+    "length_max": 50,
+    "long_worms_n_ge_10": 75,
+    "mean_L_over_S_long": 1.6254890620215698,
+    "within_15_percent_of_phi": 70,
+    "within_15_percent_fraction": 0.9333333333333333,
+    "consecutive_tile_pairs": 3026,
+    "bad_shared_edge_adjacencies": 0,
+    "SS_bigrams_long": 211,
+    "symbol_adjacencies_long": 2977,
+    "SS_bigram_fraction_long": 0.07087672153174336,
+    "max_thick_L_run_long": 4,
+    "max_thin_S_run_long": 2,
+    "strict_fibonacci_word_proxy_passes": 23,
+    "internal_z2_phase_increments": 2977,
+    "internal_z2_phase_mean_abs_error_to_phi_minus2_deg": 98.26132145911025,
+    "internal_z2_phase_median_abs_error_to_phi_minus2_deg": 103.59404833895998,
+    "internal_z2_phase_within_10deg_fraction": 0.03459858918374202,
+    "internal_z2_phase_within_20deg_fraction": 0.07893852872018811,
+    "internal_z2_phase_mean_abs_error_to_opposite_deg": 100.01714186674205,
+    "internal_z2_phase_within_10deg_opposite_fraction": 0.03594222371514948
+  },
+  "source_fibonacci_phase_link": {
+    "M1": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "M2_equals_M1_squared": true,
+    "M1_eigenvalues": [
+      1.618033988749895,
+      -0.6180339887498948
+    ],
+    "stable_to_unstable_magnitude_ratio": 0.3819660112501051,
+    "golden_angle_fraction_phi_minus_2": 0.38196601125010515,
+    "ratio_equals_phi_minus_2": true,
+    "interpretation": "Source matrix fixes the contraction magnitude; interpreting it as a turn fraction Δθ/(2π) is an additional observer phase-lift rule, not stated by the source script."
+  },
+  "scope": "The disk crop is a new explicit physical-interior convention. It reproduces a near-phi frequency ratio and connected tile chains, but does not establish exact Fibonacci substitution words or the 34:55 observer-to-worm map."
+}

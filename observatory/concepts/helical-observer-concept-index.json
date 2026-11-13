@@ -1,6 +1,6 @@
 {
   "schema": "singular-boundary.concept-index.v1",
-  "version": "2026-11-07-reconstruction",
+  "version": "2026-11-12-stage16-stage19-m55-worm-bridge",
   "purpose": "Index physical and mathematical concepts before document/section citations; preserve evidence level and operator identity.",
   "governing_hypothesis": "The proposed geometric mechanism is not quasiperiodicity in isolation, but the structured interaction between the coupled-Z5 projection, Fibonacci/Conway-worm organization, complementary-space complex structure, and the helical observer.",
   "historical_intent": "Extension of 2D Conway-worm observation to a 3D helical observer; 34:55 sought as consequence; full conversation unavailable.",
@@ -40,10 +40,10 @@
     {
       "id": "CON-CONWAY-FAMILIES",
       "title": "Five two-dimensional Fibonacci/Conway-worm chain families",
-      "evidence": "source-reported",
+      "evidence": "source-code-audit",
       "status": "conditional",
-      "claim": "Five planar Fibonacci path families motivate the observer mechanism; exact vertex-to-family labels and corresponding physical pathways remain absent.",
-      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+      "claim": "The authenticated predecessor paper2_compute.py defines five pentagrid worm families. Its un-cropped extract_conway_worms output is not the claimed Fibonacci interior sequence (N_grid=15: 155 worms, L/S=1, zero ratio matches). A common physical disk crop restores near-φ frequency and edge-connected chains, but strict Fibonacci-word proxy passes only 23/75. Independently, the reconstructed M55 Stage26 incidence yields 252 topological worm segments across five families; all retained segments have L/S within 15% of φ. Exact word structure and the 34:55 observer mapping remain distinct/open.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
     },
     {
       "id": "CON-J-ORIENTATION",
@@ -58,7 +58,7 @@
       "title": "Observer trajectory, longitudinal lift, clock and metric",
       "evidence": "historical-hypothesis",
       "status": "open",
-      "claim": "Helical observer is a higher-dimensional observation METHOD, not necessarily a literal Conway worm. Projected constant-radius complex circle does not supply unique 3D spatial path.",
+      "claim": "The source-motivated family observer uses w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, ρ=|λ₋/λ₊|=φ⁻². Its Fourier decomposition has s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). The observer space is R_s⊕C_Z₂ with product Euclidean metric, s_n=hn and clock t_n=nT. A normalized signed family operator O_n(τ)=Σ_j u_j(n)F_j(τ) is defined conditionally on source-labelled closed Wilson loops. The observer phase n is distinct from Yang–Mills transfer time τ. h,T, source-native family loops and physical interpretation remain OPEN. A Stage 26 family-labelled spatial-plaquette diagnostic now provides an actual gauge-field family contrast (mean second-harmonic amplitude 0.002872, 0.866% of full plaquette control) on one restart configuration; this is not an ensemble or mass-gap result. A source-derived M55 topological worm extraction now supplies 252 closed strip-boundary Wilson loops and a measured family-phase response on one Stage26 restart; the response has broad phase spread and is not a selection law.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
@@ -74,16 +74,16 @@
       "title": "Golden-angle irrational rotation and signed Fibonacci neighbor offsets",
       "evidence": "independent-math",
       "status": "finite",
-      "claim": "For α=φ⁻², F_k α−F_{k−2}=(−1)^kφ⁻ᵏ. F9=34 and F10=55 have tiny opposite winding; radial annulus Delaunay reveals these offsets.",
+      "claim": "For α=φ⁻², the exact identity F_kα−F_{k−2}=(−1)^kφ⁻ᵏ gives opposite signed residual turns at F9=34 and F10=55. In the N=1600 radial golden-angle Delaunay construction, every lag-34 and lag-55 pair in annulus [400,800) is an edge; the lag graphs split into exactly 34 and 55 residue-class chains. Verified by the 74-check script. Synthetic construction, not source-Z5 authentication.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
     },
     {
       "id": "CON-34-55-EMERGENCE",
       "title": "34:55 spiral arms as a conditional consequence—not an input",
-      "evidence": "reconstruction",
-      "status": "conditional",
-      "claim": "Synthetic radial golden-angle annulus has Delaunay neighbor steps 34/55/89, while rational 8/13 shows 5/8/13. No authenticated Z5 worm→3D observer→arm derivation yet.",
-      "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "The finite synthetic radial golden-angle/Delaunay construction establishes exactly 34 and 55 residue-class parastichy chains in array-index annulus [400,800), with 89 as the third lag; the 34/55 angular residuals have opposite signs. The count is resolved for this construction. Its mapping to the authentic coupled-Z5 Conway-worm generator and source physical observer remains OPEN.",
+      "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
     },
     {
       "id": "CON-STATIC-FIELD",
@@ -132,6 +132,78 @@
       "status": "conditional",
       "claim": "Dissertation reports spectral-dimension reductions, ζ′(0) QC/periodic~0.646±0.006, and cavity observables. These are source claims; scalar spectra do not certify interacting YM mass gap or gravity.",
       "source_provenance": "research/geometry/PF_CONCEPTUAL_3D_CONWAY_HELICAL_RECONSTRUCTION_2026_11_07.md"
+    },
+    {
+      "id": "CON-GOLDEN-3D-LIFT",
+      "title": "Radially expanding 3D lift of golden-angle parastichy chains",
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "The exact family frame w_j(n)=√n cos(4πj/5−2πnφ⁻²) has only the Z₂ Fourier component: z₂=(5/2)√n exp(2πinφ⁻²), with s=z₁=0. In observer space R_s⊕C_Z₂, Γ_n=(hn,Re Z₂,Im Z₂), t_n=nT and product Euclidean metric gives a radially expanding 3D helix. Its Delaunay parastichy chains have exact finite counts 34 and 55 in the verified annulus. The scalar-to-turn rule and physical interpretation remain conditional.",
+      "source_provenance": "research/geometry/PF_34_55_PARASTICHY_AND_3D_LIFT_CORRECTION_2026_11_12.md"
+    },
+    {
+      "id": "CON-SOURCE-WORM-CROP",
+      "title": "Source Conway-worm extraction and common physical crop",
+      "evidence": "source-code-audit",
+      "status": "conditional",
+      "claim": "The authenticated predecessor source extractor groups by pentagrid family and grid index but does not crop a common physical interior: its N_grid=15 run gives 155 worms of 124 tiles each, mean L/S=1 and zero φ-ratio matches. A common radius-20 crop at N_grid=25 is stable against N_grid=21, gives 82 edge-connected worm segments, and 70/75 long segments within 15% of φ. Strict Fibonacci-word proxy passes only 23/75; exact word structure and 34:55 observer mapping remain OPEN.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FIBONACCI-PHASE-LIFT",
+      "title": "Fibonacci substitution contraction as observer phase increment",
+      "evidence": "independent-math",
+      "status": "conditional",
+      "claim": "The predecessor source matrix M1=[[1,1],[1,0]] has eigenvalues φ and −φ⁻¹, so |λ₋/λ₊|=φ⁻² exactly. The candidate observer rule Δθ=2π|λ₋/λ₊| gives the golden-angle phase. The five-family frame w_j(n)=√n cos(4πj/5−θ_n) then projects exactly to z₂=(5/2)√n exp(iθ_n), with no z₁ or trivial component. The matrix ratio is source-grounded; interpreting it as a turn fraction and adding the radial/longitudinal rules are observer postulates.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FIVE-FAMILY-OBSERVER-FRAME",
+      "title": "C5 five-family weights as a pure Z2 observer frame",
+      "evidence": "independent-math",
+      "status": "finite",
+      "claim": "For w_j(n)=√n cos(4πj/5−θ_n), θ_n=2πnρ, the exact five-point Fourier sums give s=0, z₁=0, z₂=(5/2)√n exp(iθ_n). A cyclic family relabeling is θ→θ+4π/5. This provides a C5-equivariant family-level observer state in the source Z₂ representation without a forbidden linear Z₂→Z₁ map. Its use as a physical observer requires the separately declared R⊕Z₂ metric, clock and longitudinal coordinate.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-FAMILY-WILSON-OPERATOR",
+      "title": "Gauge-invariant family-weighted observer operator",
+      "evidence": "proposed-test",
+      "status": "conditional",
+      "claim": "The normalized signed family projection O_n(τ)=Σ_j u_j(n)F_j(τ) is gauge invariant when each F_j is an average of closed Wilson-loop defects. Stage 26 now has a reconstructed M55 worm-strip boundary catalogue (252 loops) and actual one-restart family-conditioned Wilson-loop defects; random local SU(2) gauge transformations preserve them to <8e−15. The mean second-harmonic amplitude is 8.469% of the full-family control, but its phase spread across 20 slices is 2.074 rad. One restart only: no ensemble correlator or mass-gap inference.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE26-FAMILY-PLAQUETTE",
+      "title": "Stage 26 family-labelled spatial plaquette diagnostic",
+      "evidence": "source-code-audit",
+      "status": "finite",
+      "claim": "The M55 Stage 26 reconstruction supplies source face family pairs (a,b) and spacetime fi/sg incidence. Quaternion multiplication of the restart links through all 1,368,480 oriented faces reproduces stored normalized plaquette_trace with max absolute error 5.56e−16. Five family spatial plaquette defect means over 20 slices are [0.32968420, 0.33234256, 0.33236883, 0.33194860, 0.33212504]; mean second-harmonic amplitude 0.00287180, 0.866% of full-family control. Single restart only: no ensemble, long-worm Wilson loops or mass-gap inference. Full measurement-catalogue NPZ byte match remains unverified.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE26-M55-WORM-BOUNDARY",
+      "title": "M55 worm-strip boundary Wilson loops on Stage 26 links",
+      "evidence": "source-code-audit",
+      "status": "finite",
+      "claim": "From the M55 source generator, faces carry basis-direction pairs (a,b); family-j worms are face components joined across shared j-edges. A radius-40 disk crop inside the 42.9127 cell inradius yields 252 finite segments (50,50,51,51,50), all with L/S within 15% of φ. The oriented boundary of each strip is a single closed loop of length 2L+2. On the seed-101 Stage26 restart at sweep 12000, all loops are gauge invariant under random local SU(2) transformations to max defect change 7.77e−15. Mean second-harmonic amplitude 0.08430 (8.469% of full-family control), phase circular spread 2.074 rad across 20 slices. Single restart only; no ensemble correlator or mass-gap inference. Reconstructed catalogue hash 5e080f13d5491f0aa37d1eb33591fada06e41d5e51fcdcdd4109cdee457d3857; original complete measurement catalogue identity remains unverified. The four seed multihit files also share identical 600 source/target/dx/r/path-index records; M55 torus minimum-image displacement matches dx to 2.51e−14 and r to 8.89e−16. Candidate path IDs 197–999 remain opaque pending the complete catalogue.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE26-MULTIHIT-ENDPOINT-GEOMETRY",
+      "title": "Four-seed M55 multihit endpoint geometry",
+      "evidence": "source-code-audit",
+      "status": "finite",
+      "claim": "All four uploaded Penrose multihit NPZs (seeds 101,211,307,419) have identical 600 source/target/dx/r/candidate_path_indices/matched_pair_indices records on the 22,808-vertex M55 graph; torus minimum-image displacement matches dx to 2.51e−14 and r to 8.89e−16. Candidate IDs 197–999 are Stage16 sparse candidate-path row indices, not Stage19 root indices. The Stage19 complete catalogue has 22,808 roots and graph hash f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21. Exact ordered edge/sign crosswalk: 36/600 candidates (6%) occur as contiguous subpaths of Stage19 rooted loops, with 56 root-row occurrences; zero candidates are complete Stage19 loops and 564 have no exact subpath match in either orientation. Thus there is no direct row-index or complete-loop identity, and the partial overlaps do not yet define a unique root-anchor or observer correspondence.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md"
+    },
+    {
+      "id": "CON-STAGE16-WORM-BRIDGE",
+      "title": "Exact Stage 16 candidate, Stage 19 loop and M55 worm-boundary subpath bridge",
+      "evidence": "finite-combinatorial-crosswalk",
+      "status": "finite-subset",
+      "claim": "The 600 Stage26 candidate_path_indices are Stage16 sparse-candidate row IDs, not Stage19 root IDs. Exact cyclic ordered edge/sign matching finds 36/600 Stage16 candidates as Stage19 loop subpaths (56 root-row occurrences), with zero whole-loop matches. Among those 36 recoverable sequences, 9 are exact three-edge cyclic subpaths of the 252 M55 worm-boundary Wilson loops, distributed across all five worm families (1,2,1,4,1); 27/36 have no exact worm-boundary subpath. The 564 candidates without Stage19 subpath matches are not tested against worm boundaries because their exact sequences are not available in this crosswalk. No unique root-to-worm assignment, directed observer trajectory, physical 3D lift, or 34:55 derivation follows.",
+      "source_provenance": "research/geometry/PF_SOURCE_CONWAY_WORM_AND_FIBONACCI_PHASE_AUDIT_2026_11_12.md; research/evidence/PF_STAGE16_STAGE19_ORDERED_EDGE_SEQUENCE_CROSSWALK_2026_11_12.json; research/evidence/PF_STAGE16_STAGE19_M55_WORM_BOUNDARY_CROSSWALK_2026_11_12.json"
     }
   ],
   "independent_controls": {
@@ -154,5 +226,6 @@
     "phase_shuffled": "no coherent Fibonacci hierarchy",
     "warning": "Synthetic radial golden-angle Delaunay, not authenticated Z5 Conway observer."
   },
-  "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN"
+  "proof_status": "ALL PF/CANONICAL/GRAVITY OPEN",
+  "last_update": "2026-11-12: computed exact Stage16–Stage19 cyclic oriented edge-sequence crosswalk: 36/600 contiguous subpath matches, 56 root occurrences, zero complete-loop matches; Stage16 IDs remain distinct from Stage19 root indices."
 }

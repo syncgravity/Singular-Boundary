@@ -1,0 +1,37 @@
+{
+  "schema": "stage16_stage19_m55_worm_boundary_crosswalk_v1",
+  "date": "2026-11-12",
+  "inputs": {
+    "stage19_graph_hash": "f67fc4455b37bf18f16c0a5ae90c7c3c5ccd49ca8b739fa1f5e43562b4581c21",
+    "stage16_stage19_local_report_sha256": "a0b798be862bd7deb0fd9d70255ec86c6af1871fb2cd188ecb751ee520e934d4",
+    "worm_catalogue": "PF_STAGE26_M55_WORM_BOUNDARY_CATALOGUE_R40_2026_11_12.json",
+    "worm_catalogue_sha256": "1220d3ba0b2b69d0cbba7767133889adfc30d28e5752038bc63377ef1930cb66",
+    "local_full_report_sha256": "a62af0920e7c7ebd7c455dea49846442f7490e046a34d40cd32748ecd8ccb294"
+  },
+  "method": {
+    "candidate_sequences": "Reconstructed the ordered (edge_id, sign) sequence of each of the 36 Stage16 candidates having an exact Stage19 contiguous-loop match. Every Stage19 occurrence listed for a candidate was required to reconstruct the same candidate sequence.",
+    "worm_test": "Exact ordered edge/sign equality against every cyclic contiguous segment of each of the 252 M55 worm-boundary Wilson loops, at each candidate length, testing both traversal orientations.",
+    "scope": "Only the 36 Stage16 candidates already recoverable through Stage19 matches were tested. The 564 Stage16 candidates with no Stage19 contiguous match are not covered by this crosswalk."
+  },
+  "results": {
+    "stage16_candidates_tested": 36,
+    "exact_m55_worm_boundary_subpath_candidates": 9,
+    "tested_candidates_without_exact_worm_subpath": 27,
+    "all_nine_matches_have_length": 3,
+    "worm_family_counts": {"0": 1, "1": 2, "2": 1, "3": 4, "4": 1},
+    "orientation_counts": {"same": 6, "reverse": 3},
+    "worm_family_catalogue_sizes": {"0": 50, "1": 50, "2": 51, "3": 51, "4": 50},
+    "matches": [
+      {"candidate": 274, "stage19_roots": [14203, 14612], "family": 0, "segment_id": 31, "offset": 219, "orientation": "reverse", "worm_tiles": 150, "L": 93, "S": 57, "boundary_length": 302},
+      {"candidate": 263, "stage19_roots": [14083], "family": 1, "segment_id": 54, "offset": 99, "orientation": "same", "worm_tiles": 143, "L": 87, "S": 56, "boundary_length": 288},
+      {"candidate": 239, "stage19_roots": [5412], "family": 1, "segment_id": 87, "offset": 6, "orientation": "reverse", "worm_tiles": 132, "L": 81, "S": 51, "boundary_length": 266},
+      {"candidate": 258, "stage19_roots": [17896, 18297], "family": 2, "segment_id": 144, "offset": 150, "orientation": "reverse", "worm_tiles": 102, "L": 63, "S": 39, "boundary_length": 206},
+      {"candidate": 265, "stage19_roots": [3109, 3110], "family": 3, "segment_id": 151, "offset": 26, "orientation": "same", "worm_tiles": 64, "L": 40, "S": 24, "boundary_length": 130},
+      {"candidate": 254, "stage19_roots": [11919], "family": 3, "segment_id": 166, "offset": 163, "orientation": "same", "worm_tiles": 142, "L": 88, "S": 54, "boundary_length": 286},
+      {"candidate": 267, "stage19_roots": [11132, 11530, 11534], "family": 3, "segment_id": 169, "offset": 197, "orientation": "same", "worm_tiles": 150, "L": 93, "S": 57, "boundary_length": 302},
+      {"candidate": 253, "stage19_roots": [10307, 10314, 10754], "family": 3, "segment_id": 171, "offset": 220, "orientation": "same", "worm_tiles": 152, "L": 94, "S": 58, "boundary_length": 306},
+      {"candidate": 255, "stage19_roots": [13563], "family": 4, "segment_id": 247, "offset": 46, "orientation": "same", "worm_tiles": 91, "L": 56, "S": 35, "boundary_length": 184}
+    ],
+    "interpretation": "This is an exact finite combinatorial bridge between nine Stage16 candidates, their Stage19 loop occurrences, and nine M55 worm-boundary loops. The nine matches span all five worm families and are all three-edge subpaths. The family-3 count is four of 51 segments; the other family counts are one or two of approximately 50, so there is no basis for claiming family concentration. This does not establish a unique root-to-worm assignment, a directed observer trajectory, a physical lift, or a derivation of the 34:55 parastichy count."
+  }
+}
