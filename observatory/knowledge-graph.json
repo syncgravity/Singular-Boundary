@@ -1,7 +1,7 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.97-r3-ir-full-hessian-branch-review",
+  "version": "v2.98-r3-ir-full-hessian-branch-review",
   "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. R3-IR records separate existential weak-coupling strip/periodic-cubic gap applications, a conditional finite-strip full-Hessian reference-semigroup estimate, and a conditional degree-eight finite projected-Z5 2-skeleton reference estimate. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
@@ -1643,28 +1643,10 @@
           "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
         },
         {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
           "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
           "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
           "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
           "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         },
         {
           "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
@@ -9657,28 +9639,10 @@
           "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
         },
         {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
           "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
           "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
           "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
           "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         },
         {
           "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
@@ -9909,28 +9873,10 @@
           "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
         },
         {
-          "title": "Recovered Stage26 stage26_outer.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
-          "git_blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/95423cfc83ba4774e160ac1e3dadc1fa964eca25/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py"
-        },
-        {
           "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
           "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
           "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
           "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 README_STAGE26.md (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md",
-          "git_blob_sha": "b552b9b42024a0a4dd4d577afc7d4a53a4b2b120",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/b552b9b42024a0a4dd4d577afc7d4a53a4b2b120/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/README_STAGE26.md"
-        },
-        {
-          "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
-          "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py",
-          "git_blob_sha": "c747ae3584148cc0f6e8907e529e6e742962194e",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/c747ae3584148cc0f6e8907e529e6e742962194e/sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py"
         },
         {
           "title": "Recovered Stage26 stage24_inner/deps_stage23/deps/stage17_mac/stage7_large_torus.py (Git blob)",
@@ -11011,11 +10957,6 @@
         }
       ],
       "sources": [
-        {
-          "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
-          "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
-          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md"
-        },
         {
           "title": "PF-I16 two-cut connected-resolvent identity and weighted local activity audit",
           "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
