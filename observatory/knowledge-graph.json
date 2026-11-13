@@ -11000,7 +11000,7 @@
       "status": "exact",
       "stage": "P2",
       "summary": "For every connected interval projection forest F, increasing rooted overlap trees inject into labeled temporal trees decorated by one incoming/outgoing port at each non-root component connector. The completion preserves every cut profile and has fiber at most 2^m, so A_m(c)≤2^m N_m(c) and C_time=2.",
-      "detail": "The interval graph's right-endpoint order is a perfect elimination order, so |χ'_{G_F}(0)| counts increasing rooted spanning trees. Complete each parent choice by inserting a canonical child-component connector into the current chain of its parent edge. Mark the two connector ports and transport them under later subdivisions. The connector set is recoverable from the completed tree's directed degrees; the transition paths of marked ports recover every original forest edge and the parent map. Since k≤m/2 components, each completed tree has at most 4^(k−1)≤2^m decorated preimages. This closes the weighted projection multiplicity subgate only; the quantum Feynman–Kac/ground-energy connected-resolvent tree theorem remains open.",
+      "detail": "The interval graph's right-endpoint order is a perfect elimination order, so |χ'_{G_F}(0)| counts increasing rooted spanning trees. Complete each parent choice by inserting a canonical child-component connector into the current chain of its parent edge. Mark the two connector ports and transport them under later subdivisions. The connector set is recoverable from the completed tree's directed degrees; the transition paths of marked ports recover every original forest edge and the parent map. Since k≤m/2 components, each completed tree has at most 4^(k−1)≤2^m decorated preimages. This closes the weighted projection multiplicity subgate only; the quantum Feynman–Kac/ground-energy connected-resolvent tree theorem remains open. The same coefficientwise bound yields the exact reference-process cumulant inequality |κ_0(A_1(t_1),…,A_m(t_m))|≤2^m∏||A_i||_∞ Σ_T∏_{ij∈T}e^{−Δ_0|t_i−t_j|}; each fixed-order ordered time integral is bounded by T Δ_0^{−(m−1)} per tree. This is not an all-orders convergence bound after summing m^{m−2} trees.",
       "checks": [
         {
           "label": "All-orders profile-preserving completion and port decoder",
@@ -11016,6 +11016,11 @@
           "label": "Quantum time-ordered connected-resolvent/tree theorem",
           "state": "open",
           "note": "Uniform Feynman–Kac/ground-energy cluster convergence and actual reduced-resolvent estimates remain open."
+        },
+        {
+          "label": "Reference-process all-orders temporal cumulant tree bound",
+          "state": "exact",
+          "note": "C_time=2; fixed-order ordered time integral is at most T Δ_0^{-(m−1)} per labeled tree. The m^{m−2} tree sum alone does not prove all-orders convergence."
         }
       ],
       "sources": [
