@@ -146,7 +146,7 @@ The preserved PF116 continuation also records the exact conjugation
 e^\Phi L_\Phi e^{-\Phi}=K+\mathcal U_\Phi,\qquad
 K=\sum_e a_e(-\Delta_e),
 \]
-with \(\mathcal U_\Phi=\sum_e U_e\) and \(|\operatorname{supp}U_e|\le25\). The overlap graph of the \(U_e\) terms has the conservative degree bound \(24+24\cdot23=576\). This gives a second route: prove a four-source linked-cluster lemma for the product-rotor Hamiltonian, then extend it to all orders. The local support identity is exact; the required connected-cluster estimate is not yet proved.
+with \(\mathcal U_\Phi=\sum_e U_e\) and \(|\operatorname{supp}U_e|\le25\). The overlap graph of the \(U_e\) terms has the conservative degree bound \(24+24\cdot23=576\). This gives a second route: prove a four-source linked-cluster lemma for the product-rotor Hamiltonian, then extend it to all orders. The local support identity is exact; the required connected-cluster estimate is not yet proved. A further exact calculation now shows that in the conjugated picture each cut derivative is a bounded multiplication insertion: the conservative per-face insertion/gap ratio is below \(1.723\times10^{-3}\), with degree-weighted value below \(4.822\times10^{-2}\). This avoids differentiating \(\Gamma(W_b,g)\) and hence avoids the immediate \(D^2g\) obstruction, but the mixed connected-resolvent/tree estimate remains open; see `research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md`.
 
 The universal accepted-face incidence remains \(d_e\le8\). Do not substitute the sharper two-incidence observation from finite crops as a source-volume theorem. Do not import R3-IR constants without the seven-part equivalence certificate.
 
