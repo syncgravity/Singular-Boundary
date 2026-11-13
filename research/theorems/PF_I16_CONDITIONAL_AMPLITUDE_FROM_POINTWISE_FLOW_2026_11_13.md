@@ -227,7 +227,7 @@ When the six permutations are summed, the remaining boundary terms pair exactly 
 where \(\{i,k\}=\{1,2,3\}\setminus\{j\}\), and \(\mathcal R_{123}\) is bounded by summing (6.3). In particular,
 \[
 |\mathcal R_{123}|
-\le\frac{3900\pi^2}{\lambda^2}
+\le\frac{1950\pi^2}{\lambda^2}
 \sum_{j=1}^3B_jM_iM_k
 \sum_{\ell\ne j}e^{-(\log25)d(S_j,S_\ell)}.
 \tag{6.5}
