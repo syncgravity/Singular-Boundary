@@ -164,3 +164,9 @@ The single-cut order-four theorem remains conditional with exponent \(\eta_4=\fr
 The weighted projection-to-tree multiplicity problem referenced in Section 5 is now closed. The all-orders port-completion map preserves every temporal cut profile and is injective after recording one incoming and one outgoing port at each non-root component's connector. The fiber bound is \(4^{k-1}\le2^m\), hence \(C_{\rm time}=2\).
 
 This resolves the combinatorial assignment subproblem only. It does not prove the mixed multi-cut derivative estimate (3.1), the uniform quantum connected-resolvent/tree theorem, or all-orders activity summability.
+
+
+## 8. Follow-up — joint space-time activity gate (2026-11-13)
+
+The temporal projection multiplicity subgate is closed, but the full quantum tree theorem needs a joint space-time cluster bound. The separate temporal-tree estimate and spatial connected-support tree estimate cannot simply be multiplied: the resulting \(m^{2m-4}/m!\) majorant is superexponential. See
+\`PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md\` for the exact next lemma and the conditional face-activity arithmetic.
