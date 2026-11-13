@@ -232,3 +232,30 @@ where \(\mathcal T(G_{\rm ov})\) denotes the spanning trees of the support-overl
 Thus the joint support-sensitive space-time tree bound is established at orders two and three. The proof uses only product-path independence and the reference semigroup gap. It does not use the all-orders unrestricted temporal-tree estimate (1.1).
 
 **Still open:** the order-four version. Cyclic support-overlap graphs on four insertions need not contain the temporal path edges, and the order-three articulation argument does not settle their coordinate-incidence contractions. The next calculation is the complete \(m=4\) support-graph classification and its tensorized path-semigroup estimate. No all-orders quantum cluster theorem is claimed.
+
+
+## 8. Refined route: weighted dependency graphs
+
+A useful external framework is Féray's weighted dependency graphs. Its definition bounds a joint cumulant by
+\[
+|\kappa(Y_{\alpha_1},\ldots,Y_{\alpha_m})|
+\le C_m\,\Psi(B)\,\mathcal M(\widetilde L[B]),
+\]
+where \(\mathcal M\) is the **maximum spanning-tree product** of the weighted graph induced by the insertion labels. This is a single-tree majorant, not a sum over all spanning trees. Féray's Proposition 5.2 further reduces the weighted-dependency-graph property to quasi-factorization estimates for products over the connected components of the weight-one subgraph; the Prim-ordering lemma gives a multiplicative representation of the maximum-tree weight.
+
+Reference: V. Féray, *Weighted dependency graphs*, arXiv:1605.03836, Definition 4.5, Lemma 3.3, and Proposition 5.2:
+https://arxiv.org/abs/1605.03836
+
+For the PF-I16 reference path process, the candidate weighted graph on marked insertions \(\alpha_i=(X_i,t_i)\) is
+\[
+w(\alpha_i,\alpha_j)
+=
+\mathbf1_{\{X_i\cap X_j\ne\varnothing\}}
+e^{-\Delta_0|t_i-t_j|}.
+\tag{8.1}
+\]
+The order-two and order-three results in Section 7 are consistent with this candidate. If the full weighted-dependency-graph property can be proved with \(\Psi(B)=\prod_i\|A_i\|_\infty\) and a sequence \(C_m\) of at most exponential growth, then the maximum-tree representation and Prim ordering offer a way to sum local interactions without multiplying independent spatial and temporal Cayley factors.
+
+The missing verification is precise: prove the quasi-factorization bounds required by Proposition 5.2 for products of PF-I16 local path observables, uniformly over repeated labels and arbitrary finite link supports. The product path law is independent across links, but a local observable can couple several link coordinates; this is where the coordinate-incidence contraction must be controlled. The weighted-dependency-graph theorem itself does not supply that model-specific estimate, and its normality criterion is not a quantum Kotecký–Preiss theorem.
+
+**Updated next target:** establish the candidate weighted dependency graph (8.1) for the product SU(2) path process, beginning with the product-cumulant quasi-factorization hypothesis in Proposition 5.2. Then compute the actual weighted-degree/rooted-cluster constants for the face/pair interaction family. The \(m=4\) proof and all-orders activity gate remain OPEN.
