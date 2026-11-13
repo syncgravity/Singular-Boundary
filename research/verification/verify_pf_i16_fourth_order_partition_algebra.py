@@ -27,7 +27,7 @@ for m in LABELS:
             continue
         c, d = [x for x in LABELS if x not in (m, a)]
         part = canonical_pair_partition((m, a), (c, d))
-        nested_counts[part] += 2  # B_cd expands into two resolvent monomials.
+        nested_counts[part] += 2
 
 energy_counts = {canonical_pair_partition(*p): 0 for p in PARTITIONS}
 for m in LABELS:
@@ -48,8 +48,7 @@ def laplacian(n, rng):
     w = rng.uniform(0.2, 1.4, size=(n, n))
     w = np.triu(w, 1)
     w = w + w.T
-    L = np.diag(w.sum(axis=1)) - w
-    return L
+    return np.diag(w.sum(axis=1)) - w
 
 def centered(x):
     return x - np.mean(x)
@@ -77,7 +76,7 @@ def check_random_generator(seed):
         return E2[tuple(sorted((a, b)))]
 
     def b2(a, b):
-        return B(tuple(sorted((a, b)))
+        return B(tuple(sorted((a, b))))
 
     E4_rec = 0.0
     for m in LABELS:
