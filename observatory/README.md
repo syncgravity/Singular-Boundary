@@ -447,3 +447,12 @@ The all-orders temporal port-completion injection is retained as an exact sublem
 [Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Temporal port injection](../research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) · [Conjugated local-rotor decomposition](../research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md).
 
 **Status:** temporal projection gate closed; joint space-time cumulant tree, quantum connected-resolvent/KP convergence, multi-cut all-orders activity, and continuum mass gap remain OPEN.
+
+
+## PF-I16 proof advance · support-sensitive cumulant tree through order three (2026-11-13)
+
+The next joint space-time gate has advanced: for the product reference path law, the support-sensitive cumulant/tree inequality is now proved exactly for \(m=2,3\), with no loss in the reference gap \(\Delta_0\). The three-support proof handles all connected support-overlap graphs: complete graph, path with middle temporal vertex, and path with an endpoint as temporal center (the latter uses factorization over disjoint leaf supports).
+
+The \(m=4\) case needed by the two-cut response remains open, as does the all-orders induction and the quantum KP application.
+
+[Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md).
