@@ -6,7 +6,16 @@ A_m(c)\le2^mN_m(c),\qquad C_{\rm time}=2.
 \]
 The proposed activity arithmetic now gives \(2C_{\rm time}\kappa_H<0.09078<1/8\).
 
-This closes the temporal projection-coefficient assignment, **not** the full quantum connected-resolvent/tree theorem. Uniform Feynman–Kac/ground-energy linked-cluster convergence, the complete time-ordered reduced-resolvent estimate, the multi-cut mixed-derivative bound, and the physical continuum mass-gap gates remain open. The finite verifier audits the injection through order nine; the all-orders result is the mathematical construction, not the enumeration.
+This closes the temporal projection-coefficient assignment, **not** the full quantum connected-resolvent/tree theorem.
+
+The same injection yields an all-orders **reference-process** cumulant bound with temporal tree constant \(C_{\rm time}=2\):
+\[
+|\kappa_0(A_1(t_1),\ldots,A_m(t_m))|
+\le2^m\prod_i\|A_i\|_\infty
+\sum_{T\in\mathcal T_m}\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|}.
+\]
+For each fixed order and each labeled tree, the ordered time integral is at most \(\mathcal T\Delta_0^{-(m-1)}\). The remaining problem is the uniform-in-volume, all-orders spatial-support/temporal linked-cluster summation; the factor \(m^{m-2}\) from the labeled-tree sum is not by itself summable.
+ Uniform Feynman–Kac/ground-energy linked-cluster convergence, the complete time-ordered reduced-resolvent estimate, the multi-cut mixed-derivative bound, and the physical continuum mass-gap gates remain open. The finite verifier audits the injection through order nine; the all-orders result is the mathematical construction, not the enumeration.
 
 [All-orders injection proof and finite verifier](../research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) · [Two-cut connected-resolvent frontier](../research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md).
 
