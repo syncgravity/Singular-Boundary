@@ -394,3 +394,12 @@ The numerical consequence is useful. If the weighted assignment can be made with
 \tag{8.4}
 \]
 Thus a temporal tree inequality with constant at most \(2.5\) would be sufficient for the present local activity margin. The exact weighted assignment and its compatibility with the support-overlap graph remain OPEN.
+
+
+## 9. Weighted projection-to-tree structural reduction (2026-11-13)
+
+The next combinatorial step is recorded in
+research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md.
+Every surviving centered Pi+Q projection term is a linear interval forest whose intervals cover every adjacent temporal gap. If two path components have overlapping time hulls, split an edge (a,b) of one component at a vertex c of the other lying strictly between a and b, replacing (a,b) by (a,c),(c,b). This merges components without a cycle and preserves the number of Q intervals crossing every temporal gap. Iteration completes the forest to a labeled spanning tree with exactly the same temporal cut profile and therefore exactly the same exponential semigroup weight.
+
+The remaining issue is multiplicity, not exponent loss. For each cut profile c, let a_m(c) be the total absolute Möbius coefficient mass of projection forests with that profile, and N_m(c) the number of labeled spanning trees with the same profile. The required all-orders bound is a_m(c) <= C_time^m N_m(c). The finite verifier research/verification/verify_pf_i16_projection_tree_profiles.py confirms the stronger inequality a_m(c) <= N_m(c) for m<=8. This is a finite audit only; the all-orders profile matching remains OPEN. Consequently no C_time<=2.5 is certified and the KP gate remains open.
