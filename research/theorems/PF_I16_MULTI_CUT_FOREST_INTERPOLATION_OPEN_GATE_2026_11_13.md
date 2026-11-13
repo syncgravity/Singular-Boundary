@@ -96,7 +96,50 @@ where each \(w\) contains a genuine edgewise spatial decay and \(C\) is controll
 
 The face assignment in (2.1) is itself part of the combinatorial audit: a face may cross several tree cuts, so the mixed derivatives of its product coefficient must be counted without losing the edgewise factors or introducing uncontrolled \(2^{|C_f|}\) growth.
 
-## 4. Alternative local-rotor linked-cluster route
+## 4. The two-cut jet exposes the derivative-order obstruction
+
+For two cut parameters \(s_a,s_b\), write
+\[
+W_a=2\partial_{s_a}\Phi_{\mathbf s},\quad
+W_b=2\partial_{s_b}\Phi_{\mathbf s},\quad
+W_{ab}=2\partial_{s_a}\partial_{s_b}\Phi_{\mathbf s},
+\quad
+N=\pi_{\mathbf s}(g^2),\quad
+H_a=\pi_{\mathbf s}[g\Gamma(W_a,g)].
+\]
+The first-response identity is \(E_a=-H_a/N\). Differentiating it exactly gives
+\[
+\begin{aligned}
+E_{ab}=-\frac1N\Big[&
+\pi((W_b-\pi W_b)g\Gamma(W_a,g))
++\pi(g_b\Gamma(W_a,g))
++\pi(g\Gamma(W_{ab},g))
++\pi(g\Gamma(W_a,g_b))\\
+&-\frac{H_a}{N}
+\{\pi((W_b-\pi W_b)g^2)+2\pi(gg_b)\}
+\Big],
+\end{aligned}
+\tag{4.1}
+\]
+where \(g_b=\partial_{s_b}g\) at fixed source parameters. The differentiated eigenvalue equation is
+\[
+(L_{\mathbf s}-V-E)g_b
+=E_b g+\Gamma(W_b,g),
+\qquad
+\pi_{\mathbf s}(g_b)
+=-\pi_{\mathbf s}[(W_b-\pi_{\mathbf s}W_b)g].
+\tag{4.2}
+\]
+Here \(\partial_{s_b}L_{\mathbf s}=-\Gamma(W_b,\cdot)\), with the same fixed carré du champ. At zero source parameters, \(g=1\), \(E_b=0\), and \(g_b=0\); the cut-response eigenfunction jet begins at positive source order.
+
+Equation (4.2) identifies the main analytic obstruction. The available first-order flow estimate controls \(D G h\) through \(D h\), but for \(h=\Gamma(W_b,g)\), differentiating \(h\) introduces \(D^2g\). Thus the current first-order derivative-flow estimate alone does not close the multi-cut recursion. The next proof must supply one of:
+1. a uniform second-derivative/resolvent-flow estimate with the required face regularity;
+2. an integration-by-parts identity that removes \(D^2g\) without losing the individual cut influence factors; or
+3. a conjugated local-rotor linked-cluster expansion in which cut derivatives become bounded multiplication insertions.
+
+This is a genuine missing estimate, not a notational gap.
+
+## 5. Alternative local-rotor linked-cluster route
 
 The preserved PF116 continuation also records the exact conjugation
 \[
@@ -107,7 +150,7 @@ with \(\mathcal U_\Phi=\sum_e U_e\) and \(|\operatorname{supp}U_e|\le25\). The o
 
 The universal accepted-face incidence remains \(d_e\le8\). Do not substitute the sharper two-incidence observation from finite crops as a source-volume theorem. Do not import R3-IR constants without the seven-part equivalence certificate.
 
-## 5. Proof ledger
+## 6. Proof ledger
 
 **Derived exactly:** the product interpolation (2.1); factorization on every coordinate hyperplane (2.2); the multi-variable integral identity (2.3); and the first cut-response identity (2.4).
 
