@@ -208,6 +208,7 @@ At most eight accepted faces meet any link, and each face derivative is bounded 
 \qquad \beta_*:=\sup_f\beta_f.
 \tag{3.3}
 \]
+The derivative norms in (2.3) and (3.3), the carré-du-champ norm, and the radius-two link oscillation are taken in the same normalization; compatibility with the weighted product metric remains part of the conditional face-map metric/pullback input.
 The derivative of \(W\) is supported on links belonging to faces crossing \(A_r|B_r\).
 
 For every such boundary link \(e\), the cut property and face diameter one in the link-overlap graph imply
