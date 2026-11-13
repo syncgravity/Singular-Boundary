@@ -247,3 +247,10 @@ The earlier straight-strip R3 conditional-amplitude and weighted-\(L^4\) results
 **Still open:** the local amplitude/conditional \(L^4\) estimate for the PF-I16 dressed measure, conditional centering control, and the connected cancellation identity. Therefore the requested three-support connected tree estimate has not yet been proved.
 
 The next mathematically decisive step is to derive (or disprove) (6.1) for the actual PF-I16 measure, beginning with a single residual support and conditioning on its complement. In parallel, the six-permutation coefficient should be rewritten in a history-labelled cumulant form before any absolute-value estimate is applied. These are the two missing bridges; further pairwise resolvent bounds alone will not close them.
+
+
+## 8. Exact arithmetic reproduction
+
+The shell-convolution constants in Section 2 are checked by
+[verify_pf_i16_three_support_convolution.py](../verification/verify_pf_i16_three_support_convolution.py).
+The checker uses exact rational comparisons, including fourth-power and squared inequalities to avoid floating-point assumptions in the upper bounds.
