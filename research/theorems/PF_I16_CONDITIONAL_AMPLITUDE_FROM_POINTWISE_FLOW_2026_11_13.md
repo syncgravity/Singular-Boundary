@@ -152,3 +152,87 @@ The new information is that \(q_j\) is supported on the finite boundary set \(B_
 **Still open:** the boundary-mean contribution in the nested third-order coefficient and the history-aware six-permutation cancellation needed for a connected three-support tree estimate. The conditional fluctuation lemma by itself does not close that gap.
 
 No conditional Poincaré estimate is claimed or needed for (2.1). No R3 constants are imported. No physical spectral gap, all-orders activity bound, continuum limit, or Yang–Mills mass gap is inferred.
+
+
+## 6. Exact reduction of the nested third-order term
+
+The boundary contribution can be isolated more sharply by using self-adjointness before differentiating. For centered \(r_i,r_j,r_k\), put \(u_\ell=Gr_\ell\), fix \(X=S_j\), and write
+\[
+m_\ell=\mathbb E[u_\ell\mid\mathcal F_{X^c}],
+\qquad q_j=\mathbb E[r_j\mid\mathcal F_{X^c}].
+\]
+Since \(G\) is self-adjoint and \(u_i\) is centered,
+\[
+T_{ijk}:=\nu_\Phi[r_iGQ(r_ju_k)]
+=\nu_\Phi[u_i r_j u_k].
+\tag{6.1}
+\]
+Conditioning first on \(X^c\), and defining
+\[
+c_{ij}:=\operatorname{Cov}_{\nu_\Phi(\cdot\mid\mathcal F_{X^c})}
+(u_i,r_j),
+\]
+gives the exact decomposition
+\[
+\boxed{
+T_{ijk}
+=\nu_\Phi[u_i r_j(u_k-m_k)]
++\nu_\Phi[m_kc_{ij}]
++\nu_\Phi[q_jm_im_k].
+}
+\tag{6.2}
+\]
+Indeed, \(\mathbb E[u_ir_j\mid X^c]=m_iq_j+c_{ij}\).
+
+The first two terms have explicit pair-arm decay. The conditional covariance inequality
+\[
+|\operatorname{Cov}(A,B)|\le
+\tfrac14\operatorname{osc}(A)\operatorname{osc}(B)
+\]
+and \(\operatorname{osc}_X(r_j)\le2B_j\) imply
+\[
+\|c_{ij}\|_\infty
+\le\frac{B_j}{2}\operatorname{osc}_X(u_i)
+\le\frac{25\pi}{\lambda}B_jM_i
+e^{-(\log25)d(X,S_i)}.
+\]
+Using also
+\(\|u_\ell\|_\infty\le(26\pi/\lambda)M_\ell\)
+and (2.1), we obtain
+\[
+\boxed{
+\begin{aligned}
+|T_{ijk}-\nu_\Phi[q_jm_im_k]|
+\le{}&
+\frac{1300\pi^2}{\lambda^2}
+B_jM_iM_k e^{-(\log25)d(S_j,S_k)}\\
+&+\frac{650\pi^2}{\lambda^2}
+B_jM_iM_k e^{-(\log25)d(S_j,S_i)}.
+\end{aligned}}
+\tag{6.3}
+\]
+All constants are independent of graph volume, conditional on (1.1).
+
+When the six permutations are summed, the remaining boundary terms pair exactly under \(i\leftrightarrow k\):
+\[
+\boxed{
+\sum_{(i,j,k)\in S_3}T_{ijk}
+=
+2\sum_{j=1}^3
+\nu_\Phi[q_jm_im_k]
++\mathcal R_{123},
+}
+\tag{6.4}
+\]
+where \(\{i,k\}=\{1,2,3\}\setminus\{j\}\), and \(\mathcal R_{123}\) is bounded by summing (6.3). In particular,
+\[
+|\mathcal R_{123}|
+\le\frac{3900\pi^2}{\lambda^2}
+\sum_{j=1}^3B_jM_iM_k
+\sum_{\ell\ne j}e^{-(\log25)d(S_j,S_\ell)}.
+\tag{6.5}
+\]
+
+This is a sharper diagnosis of the remaining tree problem. The non-decaying part is a symmetric conditional three-observable correlation \(\nu_\Phi[q_jm_im_k]\), where \(q_j\) is local on the boundary of \(S_j\), and \(m_i,m_k\) are conditional resolvent means. The fluctuation and conditional-covariance pieces are no longer obstructions.
+
+**Remaining task:** prove a connected, spatially decaying bound for the six-permutation sum of \(\nu_\Phi[q_jm_im_k]\), using the boundary-local score structure of \(q_j\) and the derivative profiles of the conditional means. No such bound is claimed here.
