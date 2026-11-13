@@ -236,3 +236,44 @@ where \(\{i,k\}=\{1,2,3\}\setminus\{j\}\), and \(\mathcal R_{123}\) is bounded b
 This is a sharper diagnosis of the remaining tree problem. The non-decaying part is a symmetric conditional three-observable correlation \(\nu_\Phi[q_jm_im_k]\), where \(q_j\) is local on the boundary of \(S_j\), and \(m_i,m_k\) are conditional resolvent means. The fluctuation and conditional-covariance pieces are no longer obstructions.
 
 **Remaining task:** prove a connected, spatially decaying bound for the six-permutation sum of \(\nu_\Phi[q_jm_im_k]\), using the boundary-local score structure of \(q_j\) and the derivative profiles of the conditional means. No such bound is claimed here.
+
+
+## 7. Conditional-mean derivative profile and cumulant interpretation
+
+For \(z\in X^c\), differentiating the conditional integral defining \(m_\ell\) gives
+\[
+D_zm_\ell
+=\mathbb E[D_zu_\ell\mid\mathcal F_{X^c}]
++2\operatorname{Cov}_{\nu_\Phi(\cdot\mid\mathcal F_{X^c})}
+(u_\ell,D_z\Phi_X).
+\tag{7.1}
+\]
+The covariance term vanishes for \(z\notin B_X\). For \(z\in B_X\), the range-covariance inequality and (2.1) give
+\[
+\left|2\operatorname{Cov}(u_\ell,D_z\Phi_X)\right|
+\le \operatorname{osc}_X(u_\ell)\,
+\|D_z\Phi_X\|_\infty
+\le\frac{800\pi\beta_*}{\lambda}
+M_\ell e^{-(\log25)d(X,S_\ell)}.
+\]
+Consequently the conditional mean has the explicit gradient profile
+\[
+\boxed{
+\begin{aligned}
+\|D_zm_\ell\|_\infty
+\le{}&\frac1\lambda\sum_{b\in S_\ell}
+e^{-(\log25)d(z,b)}A_{\ell,b}\\
+&+\mathbf1_{z\in B_X}
+\frac{800\pi\beta_*}{\lambda}
+M_\ell e^{-(\log25)d(X,S_\ell)}.
+\end{aligned}}
+\tag{7.2}
+\]
+Thus its direct derivative tail is centered at \(S_\ell\); the extra conditional-law response is confined to \(B_X\) and carries an exponential factor from \(X\) to \(S_\ell\). This identity is exact on each finite product; the displayed bound is conditional on (1.1) and the isolated-face first-derivative bound.
+
+Finally, \(\nu_\Phi(q_j)=\nu_\Phi(m_i)=\nu_\Phi(m_k)=0\), since conditional expectation preserves means and each \(r_\ell\) is centered. Therefore
+\[
+\nu_\Phi[q_jm_im_k]
+=\operatorname{cum}_{3,\nu_\Phi}(q_j,m_i,m_k),
+\]
+the third joint cumulant of three centered observables. The six-permutation residual (6.4) is exactly twice the sum of these cumulants, one for each middle support. The remaining theorem can therefore be stated cleanly: prove a spatial tree bound for these conditional third cumulants, using the boundary support of \(q_j\) and the derivative profiles (7.2). The derivative profiles alone do not imply such a cumulant inequality; no tree estimate is claimed.
