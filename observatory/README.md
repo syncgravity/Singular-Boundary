@@ -532,3 +532,10 @@ The next bounded-fiber map must encode the full source tuple
 where \(F\) is the temporal projection forest, \(p\) is its increasing rooted parent tree (accounting for \(|\alpha_m(F)|\)), and \(\mathcal S\) is a spanning tree of the contracted spatial support graph. The simple union \(F\cup\mathcal S\) is a single tree, but does not recover \(p\). Encoding \(p\) by extra ports/marks on that same tree, with a uniform \(C^m\) fiber, is the actual open combinatorial target.
 
 [Joint space-time completion frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md).
+
+
+## PF-I16 two-channel completion skeleton (2026-11-13)
+
+A conditional construction now splits each temporal path component into T- and S-pieces, completes the increasing temporal parent tree in the T-channel and the spatial support tree in the S-channel, then bridges the two roots. The edge count is exactly \(m-1\). This is not yet an injection: canonical distinct port selection, recovery of the T/S piece pairing with \(C^m\) fiber, and compensation for the deleted temporal cut edges remain open.
+
+[Joint space-time completion frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md).
