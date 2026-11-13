@@ -467,3 +467,10 @@ The exact reference-process support-sensitive tree bounds now cover orders two a
 The framework uses a maximum-spanning-tree product and a quasi-factorization criterion, potentially avoiding separate spatial and temporal Cayley factors. Its application to the product SU(2) path process is not yet proved.
 
 [Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Féray, *Weighted dependency graphs*](https://arxiv.org/abs/1605.03836).
+
+
+## PF-I16 refined route · one-link Markov WDG and tensor lift (2026-11-13)
+
+The next calculation is now specified more concretely. Adapt the time-indexed Markov weighted-dependency estimate to one continuous-time SU(2) link using \(\|P_t-\Pi\|_{2\to2}\le e^{-\Delta_0t}\). Then lift to degree-eight elementary tensor insertions by the product/power construction. The remaining local analytic input is an explicit projective tensor norm for the actual face and face-pair potentials, together with exponential-in-order control of the lifted cumulant constants.
+
+[Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Féray, *Weighted dependency graphs*](https://arxiv.org/abs/1605.03836).
