@@ -287,3 +287,60 @@ Root the tree at one time variable, integrate the root over an interval of lengt
 
 For the two-cut coefficient, the marked vertices are \(B_{ab}\), \(B_a\), \(B_b\), \(r_i\), and \(r_j\); the unmarked vertices are the background \(v_X\) insertions from (6.3). A connected tree on these marked and unmarked vertices, summed over the background vertices, is the precise object that should yield the two-cut spatial tree estimate. This gives a concrete route to (5.1), but (6.4) and the resulting polymer convergence remain OPEN.
 
+
+
+## 7. Explicit temporal cumulant checks through four marked vertices
+
+The first three temporal orders can be controlled directly under the independent product path law. Center each \(A_k\) with respect to product Haar and order the times \(t_1\le\cdots\le t_m\). Write \(g_k=t_{k+1}-t_k\), \(P_t=e^{-tK}\), \(Q_t=P_t-\Pi\). Since the product semigroup has gap \(\Delta_0\),
+\[
+\|Q_t\|_{2\to2}\le e^{-\Delta_0t}.
+\]
+
+For \(m=2\),
+\[
+\kappa_0(A_1(t_1),A_2(t_2))
+=\langle A_1Q_{g_1}A_2\rangle,
+\qquad
+|\kappa_0|\le e^{-\Delta_0g_1}\prod_k\|A_k\|_\infty.
+\tag{7.1}
+\]
+For \(m=3\), centering kills both one-point partition terms and
+\[
+\kappa_0(A_1(t_1),A_2(t_2),A_3(t_3))
+=\langle A_1Q_{g_1}A_2Q_{g_2}A_3\rangle,
+\]
+so
+\[
+|\kappa_0|\le
+e^{-\Delta_0(g_1+g_2)}\prod_k\|A_k\|_\infty.
+\tag{7.2}
+\]
+For \(m=4\), the exact centered partition subtraction gives
+\[
+\begin{aligned}
+\kappa_0(A_1,A_2,A_3,A_4)
+={}&\langle A_1Q_{g_1}A_2Q_{g_2}A_3Q_{g_3}A_4\rangle\\
+&-\langle A_1Q_{g_1+g_2}A_3\rangle
+ \langle A_2Q_{g_2+g_3}A_4\rangle\\
+&-\langle A_1Q_{g_1+g_2+g_3}A_4\rangle
+ \langle A_2Q_{g_2}A_3\rangle.
+\end{aligned}
+\tag{7.3}
+\]
+Each of the three terms is bounded by
+\(e^{-\Delta_0(g_1+g_2+g_3)}\prod_k\|A_k\|_\infty\), hence
+\[
+|\kappa_0(A_1,A_2,A_3,A_4)|
+\le3e^{-\Delta_0(t_4-t_1)}\prod_k\|A_k\|_\infty.
+\tag{7.4}
+\]
+These identities verify the temporal decay mechanism for the marked orders needed by the bare two-cut response. They do not control the higher cumulant orders generated when the background interaction family \(v_X\) is expanded.
+
+For each ordered time simplex,
+\[
+\int_{0\le t_1\le\cdots\le t_m\le T_0}
+e^{-\Delta_0(t_m-t_1)}\,d\mathbf t
+\le T_0\Delta_0^{-(m-1)}.
+\tag{7.5}
+\]
+The missing all-orders step is to extend the explicit projection/cumulant cancellation in (7.1)–(7.3) to arbitrary \(m\), with a sufficiently sharp exponential-in-\(m\) coefficient after the time-ordering normalization. A factorial bound here would not establish a nonzero activity radius. This is the remaining temporal core of (6.4).
