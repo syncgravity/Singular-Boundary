@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.97-pf-i16-two-port-obstruction",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. R3-IR records separate existential weak-coupling strip/periodic-cubic gap applications, a conditional finite-strip full-Hessian reference-semigroup estimate, and a conditional degree-eight finite projected-Z5 2-skeleton reference estimate. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v2.98-pf-i16-shared-port-profile-obstruction",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. Shared-port endpoint fusion is proved locally; a five-vertex non-endpoint witness example refutes exact temporal-profile-preserving joint completion. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -11059,8 +11059,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. The full source is (F,p,S,witnesses). A two-channel split skeleton has the correct m−1 edge count conditionally, but a minimal two-component example shows distinct temporal/spatial ports need not exist: C1=(0,2), C2=(1,4), with the sole cross-support witness at insertion 2, which is also the forced temporal subdivision port. Thus the naive split map is not universal. A different local gadget or weighted analytic organization is required; decoder and temporal-profile compensation remain open.",
-      "detail": "Keep three claims distinct: (i) all-orders temporal projection multiplicity is closed by the profile-preserving port injection; (ii) reference-process support-sensitive cumulant trees are proved for m=2,3; (iii) the full four-source coefficient has a conditional spatial MST bound via cut interpolation, with eta_4=(1/24)log(25/23), conditional on the corrected derivative-flow/pullback hypotheses. The direct m=4 support-sensitive reference cumulant tree and the all-orders joint space-time/support tree are still open. The simple product of separate spatial and temporal tree sums is superexponential. The full tuple (F,p,S,witnesses) remains the open bounded-fiber completion target for a direct all-orders joint route. New Section 10 records the conditional two-channel split-completion. Its port-realizability assumptions are not yet derived from PF-I16 source data; temporal and spatial witnesses may coincide. The construction must also encode the matching of T/S pieces and compensate the k deleted temporal edges in the time-weight profile. Section 10.2 gives a minimal obstruction to the naive two-port hypothesis. The example does not refute all possible bounded-fiber maps; it refutes deriving this split architecture from only temporal interval overlap, spatial connectedness, and component size ≥2.",
+      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. The two-channel split skeleton is conditional and its naive distinct-port hypothesis is refuted. A local shared-port fusion works when the spatial witness is an endpoint of the temporal parent edge. But a five-vertex example C1=(0,2), C2=(1,4,7), with sole spatial witness (2,7), proves that no spanning tree can contain that witness and preserve the exact temporal cut profile. Thus exact-profile completion cannot handle arbitrary spatial witnesses; a weighted dependency-graph/quasi-factorization route is now preferred. The full bounded-fiber map remains open.",
+      "detail": "Keep four claims distinct: (i) all-orders temporal projection multiplicity is closed by the profile-preserving port injection; (ii) reference-process support-sensitive cumulant trees are proved for m=2,3; (iii) the full four-source coefficient has a conditional spatial MST bound via cut interpolation, with eta_4=(1/24)log(25/23), conditional on the corrected derivative-flow/pullback hypotheses; (iv) the direct all-orders joint space-time tree is still open. The simple product of separate spatial and temporal tree sums is superexponential. Section 10 records the conditional two-channel split-completion and the failure of universal distinct-port selection. Section 11 proves local fusion when the shared spatial witness is one endpoint of the actual temporal parent-chain edge. Section 11.2 gives a stronger non-endpoint obstruction: for C1=(0,2), C2=(1,4,7), the only spatial witness (2,7) crosses two cuts whose exact temporal profile is one, but those cuts induce different bipartitions, so no tree can contain (2,7) and preserve the full profile. This refutes exact-profile shared-port completion in that source-compatible example, not all weighted joint estimates or all possible bounded-fiber maps. The preferred route is now a Féray-style weighted dependency graph, with product-cumulant quasi-factorization and explicit order-growth constants still to prove.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -11103,24 +11103,19 @@
           "note": "Exact m−1 edge count under two-port realizability; not yet a source-to-tree injection."
         },
         {
-          "label": "Canonical two-port witness selection",
-          "state": "open",
-          "note": "Need distinct T/S ports in each component satisfying temporal parent and spatial witness conditions."
+          "label": "Shared-port fusion at a temporal parent-edge endpoint",
+          "state": "exact",
+          "note": "The temporal subdivision edge itself realizes the spatial witness; no extra edge is added and the exact cut profile is retained."
         },
         {
-          "label": "T/S piece-pair decoder with C^m fiber",
-          "state": "open",
-          "note": "Completed channel trees do not themselves recover the matching of split pieces."
-        },
-        {
-          "label": "Temporal cut-profile compensation after component splits",
-          "state": "open",
-          "note": "Deleting one edge per component loses time weight; channel additions must restore or dominate it."
-        },
-        {
-          "label": "Naive two-channel split map universally realizable",
+          "label": "Exact-profile completion for a non-endpoint spatial witness",
           "state": "refuted",
-          "note": "Two-component counterexample forces temporal and spatial ports to coincide."
+          "note": "For C1=(0,2), C2=(1,4,7), witness (2,7), no spanning tree can contain the witness and preserve the full temporal cut profile; cuts q=2 and q=4 force the same edge to induce different bipartitions."
+        },
+        {
+          "label": "Weighted dependency-graph quasi-factorization route",
+          "state": "open",
+          "note": "Preferred next route; prove product-cumulant quasi-factorization for local path observables and explicit exponential-in-order constants."
         }
       ],
       "sources": [
@@ -11148,6 +11143,11 @@
           "title": "PF-I16 Dobrushin third-order tree bound",
           "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md"
+        },
+        {
+          "title": "Finite verifier for shared-port exact-profile obstruction",
+          "path": "research/verification/verify_pf_i16_shared_port_profile_obstruction.py",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/verification/verify_pf_i16_shared_port_profile_obstruction.py"
         }
       ],
       "tags": [
