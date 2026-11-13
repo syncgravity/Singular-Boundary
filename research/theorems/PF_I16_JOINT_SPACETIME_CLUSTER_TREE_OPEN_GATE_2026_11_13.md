@@ -311,10 +311,16 @@ T(F,\mathcal S,\text{witnesses})\in\mathcal T_m.
 
 This is the desired *joint completion shape*: retain every temporal \(Q\)-edge of \(F\), and use exactly \(k-1\) shared-link edges to connect its temporal components. Unlike multiplying two spanning-tree counts, (9.1) produces one tree.
 
+**Important coefficient bookkeeping:** the source objects are not merely \((F,\mathcal S,\text{witnesses})\). The coefficient \(|\alpha_m(F)|\) is represented by the increasing rooted parent trees \(p\in\mathcal T_{\rm inc}(G_F)\). The full source is therefore
+\[
+(F,p,\mathcal S,\text{witnesses}).
+\]
+The colored union tree in (9.1) decodes \(F\), \(\mathcal S\), and the spatial witness endpoints, but it does **not** by itself decode \(p\). This is the central bounded-fiber issue. A successful completion must encode the increasing temporal parent tree as additional ports/marks on the same joint tree, or otherwise prove that its multiplicity is absorbed by a uniform \(C^m\) fiber bound. Simply keeping the old temporal completed tree and an independent spatial tree would reintroduce two trees and the superexponential count.
+
 The remaining proof obligations are analytic and combinatorial:
 1. Show that the component-level spatial cumulant/decoupling expansion supplies the \(k-1\) witness edges with a product of integrable temporal influence kernels. Mere support connectedness is not enough; each witness edge must carry its actual semigroup decay.
-2. Define a canonical witness rule and port decoration so that \((F,\mathcal S,\text{witnesses})\) can be decoded from the completed tree and decoration, or prove a uniform fiber bound \(C^m\).
+2. Define a canonical witness rule and port decoration so that the **full tuple** \((F,p,\mathcal S,\text{witnesses})\) can be decoded from one completed tree and its decoration, or prove a uniform fiber bound \(C^m\).
 3. Combine the temporal profile-preserving injection with this component completion without losing the exact time-cut weights.
 4. Sum the resulting single-tree weights against the face/pair activity and verify the actual rooted-cluster/KP criterion.
 
-The quotient-connectivity assertion is exact. The existence of a bounded-fiber decoder with the required temporal edge weights is **not yet proved**. This is now the primary injection/completion target for the joint space-time gate; the one-link weighted-dependency route in Section 8 is a possible way to supply its component-level edge weights.
+The quotient-connectivity assertion is exact. The existence of a bounded-fiber decoder for the full source tuple, with the required temporal edge weights, is **not yet proved**. This is now the primary injection/completion target for the joint space-time gate; the one-link weighted-dependency route in Section 8 is a possible way to supply its component-level edge weights.
