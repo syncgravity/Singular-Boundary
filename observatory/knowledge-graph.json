@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.99-pf-i16-one-link-wdg",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, exact one-link continuous-time weighted-dependency cumulant bound with factorial envelope, and explicit all-orders joint-cluster frontier. Shared-port endpoint fusion is local; a five-vertex non-endpoint witness example refutes exact temporal-profile-preserving joint completion. Degree-eight tensor lift, actual insertion projective norms, quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v3.00-pf-i16-explicit-d8r-bound",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, exact one-link continuous-time weighted-dependency cumulant bound, and explicit degree-eight Leonov–Shiryaev product constant bound. The available D_8,r bound is superexponential after 1/r! normalization, so the cancellation-sensitive order-growth gate and all-orders joint-cluster theorem remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -11064,8 +11064,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. Exact-profile completion for arbitrary spatial witnesses is refuted by a five-vertex example; endpoint fusion works only in the special endpoint case. A continuous-time one-link weighted-dependency estimate is now proved under the reference L2 semigroup gap, with C_r≤(2e)^r r!. The candidate shared-support/time-decay bond is therefore justified for elementary tensor insertions at the one-link level. Degree-eight product constants and actual face/pair insertion projective norms remain open, as does the all-orders joint tree/KP theorem.",
-      "detail": "Keep the established claims distinct: all-orders temporal projection multiplicity is closed with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; the full four-source coefficient has a conditional spatial MST bound under derivative-flow/pullback hypotheses; and the direct all-orders joint space-time tree remains open. The exact-profile two-channel completion is not universal: Section 11.2 gives a source-compatible five-vertex obstruction. Section 12 now proves the continuous-time one-link Boolean-cumulant identity and classical cumulant bound C_r≤(2e)^r r!, yielding the maximum-spanning-tree factor exp(−Δ_0 time-span). This supports the Féray-style weighted-dependency route. Still open are the degree-eight product-cumulant constants with adequate order growth, the projective tensor norm of actual PF-I16 face/pair insertions, and the all-orders joint space-time/KP application.",
+      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. One-link continuous-time weighted-dependency estimate is exact with C_r≤(2e)^r r!. Degree-eight product stability now has an explicit Leonov–Shiryaev formula and bound D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)); this is too large after division by r! and does not establish a nonzero activity radius. A cancellation-sensitive connected-partition/quasi-factorization estimate is still required. Exact-profile completion for arbitrary spatial witnesses remains refuted by the five-vertex obstruction.",
+      "detail": "Section 12.4 makes Féray Proposition 5.11 quantitative for degree-eight insertions: Leonov–Shiryaev's connected multiset partitions give an explicit D_8,r sum, and dropping monochromatic/join restrictions yields D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)). The maximum-tree weight is preserved through the connected union of block trees. But D_8,r/r!=exp(7r log r+O(r)), so this absolute partition-sum estimate is superexponential and cannot support a KP/activity radius. This is not a lower bound on actual cumulants: it loses cancellations. The next precise gate is a cancellation-sensitive connected-partition or quasi-factorization representation with C_8^r r! growth (or equivalent summability). Actual insertion projective norms also remain open.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -11136,6 +11136,16 @@
           "label": "Projective tensor norm of actual face/pair insertions",
           "state": "open",
           "note": "Actual PF-I16 insertions are not yet represented with an absolutely summable projective coefficient norm compatible with local activities."
+        },
+        {
+          "label": "Explicit degree-eight Leonov–Shiryaev constant",
+          "state": "exact",
+          "note": "Finite connected-multiset-partition formula with rigorous bound D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)); preserves the max-tree weight."
+        },
+        {
+          "label": "Degree-eight order growth after 1/r! normalization",
+          "state": "open",
+          "note": "The derived bound grows as exp(7r log r+O(r)); cancellation-sensitive reorganization is needed for a nonzero activity radius."
         }
       ],
       "sources": [
