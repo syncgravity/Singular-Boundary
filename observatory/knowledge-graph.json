@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.96-pf-i16-third-fourth-order-audit",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. R3-IR weak-coupling strip and periodic-cubic gap applications are recorded as separate control models. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v2.97-r3-ir-full-hessian-branch-review",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. R3-IR records separate existential weak-coupling strip/periodic-cubic gap applications, a conditional finite-strip full-Hessian reference-semigroup estimate, and a conditional degree-eight finite projected-Z5 2-skeleton reference estimate. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -1946,8 +1946,8 @@
       "kind": "model",
       "status": "partial",
       "stage": "P1",
-      "summary": "Corrected original-link interacting Hamiltonian with extensive finite/thermodynamic partial results, not the target 3D spatial regulator.",
-      "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison.",
+      "summary": "Corrected original-link interacting SU(2) strip laboratory with exact finite results, an existential weak-local-coupling gap via published stability theory, and a separate conditional full-Hessian reference-semigroup estimate; not the target 3D spatial regulator.",
+      "detail": "Do not transfer a statement to another regulator without an explicit operator/evidence comparison. PR #106 additionally records a conditional full-Hessian derivative-energy decay estimate with λ_*>0.4955484 under |g|≤10⁻³ and finite-strip hypotheses. It is review-branch evidence, not a scalar uniform gap or physical continuum result.",
       "checks": [],
       "sources": [
         {
@@ -10456,7 +10456,7 @@
       "status": "conditional",
       "stage": "P2",
       "summary": "Finite open SU(2) strip: conditional one-link Poincare gives c_tr≈0.257510 and gradient leakage ℓ≈0.00248474; exact trace commutator exposes weighted A2/A3 contractions and trace-free/mixed Hessian coupling. Full closure remains open.",
-      "detail": "The product-manifold trace commutator includes two Ricci contributions before the drift factor. The diagnostic two-variable threshold is not a full closure because A2, A3,w and K_w evolution are unevaluated. This R3_IR result is distinct from PF-I16 and transfers neither to 3D nor to the continuum.",
+      "detail": "The product-manifold trace commutator includes two Ricci contributions before the drift factor. The diagnostic two-variable threshold is not a full closure because A2, A3,w and K_w evolution are unevaluated. This R3_IR result is distinct from PF-I16 and transfers neither to 3D nor to the continuum. A separate full-Hessian route on PR #106 now conditionally closes the finite-strip reference-semigroup derivative-energy estimate; it does not validate this provisional three-sector trace-to-K calculation or establish an interacting gap.",
       "checks": [
         {
           "label": "Evaluate the local plaquette Hessian row bound A2 uniformly",
@@ -11321,6 +11321,163 @@
         "Yarotsky"
       ],
       "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R3-IR-FULL-HESSIAN-STRIP-CONDITIONAL",
+      "title": "R3-IR · Conditional full-Hessian decay on finite SU(2) strips",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P2",
+      "summary": "On each finite open straight SU(2) strip, under the isolated-dressing regime |g|≤10⁻³ and the stated scalar/local geometric hypotheses, the one-output weighted gradient-plus-Hessian energy decays at rate λ*>0.4955484 independent of strip length. This is a reference-semigroup estimate, not a uniform scalar spectral gap or true interacting-vacuum theorem.",
+      "detail": "The PR #106 review branch consolidates the exact ordered covariant Hessian evolution, common reversible measure and smooth-core extension, sharpened weighted Bochner and conditional one-link trace–Poincaré inputs, local third-tensor/Hessian-dressing bounds, SU(2) curvature/Codazzi forcing, and the positive 2×2 energy matrix. The estimate is G_w(t)^2+H_w(t)^2≤exp(−2λ_*t)(G_w(0)^2+H_w(0)^2), λ_*>0.4955484. Only the first Hessian link index is weighted; norm-equivalence constants to unweighted Sobolev norms need not be uniform in N. For L² data the estimate is asserted only after positive time. It is conditional on the isolated scalar dressing branch and the recorded finite-strip hypotheses. PR #106 remains a divergent review branch, not a mainline theorem promotion.",
+      "checks": [
+        {
+          "label": "Exact ordered Hessian evolution and common-measure/smooth-core extension",
+          "state": "finite",
+          "note": "Derived for the finite compact product SU(2) strip under the stated metric and generator convention."
+        },
+        {
+          "label": "Sharpened weighted Bochner and conditional trace–Poincaré inputs",
+          "state": "conditional",
+          "note": "Constants c_*>0.4983981314, c_tr,*>0.7468631508 and leakage ell_*<1.108×10⁻⁷ use the certified scalar derivative enclosure."
+        },
+        {
+          "label": "Local ordered third-tensor, Hessian-dressing and curvature/Codazzi estimates",
+          "state": "conditional",
+          "note": "Explicit straight-strip incidence and one-output weighted Schur estimates."
+        },
+        {
+          "label": "Full gradient-plus-Hessian energy decay",
+          "state": "conditional",
+          "note": "Positive quadratic-form margin λ_min>0.4955484, independent of strip length under the hypotheses."
+        },
+        {
+          "label": "Uniform scalar Poincaré gap or unweighted norm equivalence",
+          "state": "open",
+          "note": "The one-output weighted norm equivalence constants need not be uniform in strip length."
+        },
+        {
+          "label": "Nonlinear continuation to the full interacting strip / λ=1",
+          "state": "open",
+          "note": "No uniform nonlinear ground-state Hessian or physical-coupling gap follows."
+        },
+        {
+          "label": "Transfer to PF-I16 source regulator, 3D refinement or continuum Yang–Mills",
+          "state": "open",
+          "note": "No operator, measure, metric, physical-time or refinement equivalence is established."
+        }
+      ],
+      "sources": [
+        {
+          "title": "R3-IR conditional full-Hessian finite-strip semigroup proposition",
+          "path": "research/audits/R3_IR_CONDITIONAL_FULL_HESSIAN_FINITE_STRIP_PROPOSITION_2026-11-11.md",
+          "git_blob_sha": "097d52550fccfa03a6bbcc422966364c43d4b7a5",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_CONDITIONAL_FULL_HESSIAN_FINITE_STRIP_PROPOSITION_2026-11-11.md",
+          "review_only": true
+        },
+        {
+          "title": "R3-IR sharpened weighted Bochner and conditional trace–Poincaré inputs",
+          "path": "research/audits/R3_IR_SHARP_WEIGHTED_BOCHNER_AND_TRACE_POINCARE_2026-11-11.md",
+          "git_blob_sha": "041550bf5cfba1a7595f1db3e2efb07300bd5853",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_SHARP_WEIGHTED_BOCHNER_AND_TRACE_POINCARE_2026-11-11.md",
+          "review_only": true
+        },
+        {
+          "title": "R3-IR local geometry and straight-strip incidence audit",
+          "path": "research/audits/R3_IR_LOCAL_GEOMETRY_SOURCE_AND_INCIDENCE_AUDIT_2026-11-11.md",
+          "git_blob_sha": "2af917aefe6a03234753e3f7ba2eb574d4b973fd",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_LOCAL_GEOMETRY_SOURCE_AND_INCIDENCE_AUDIT_2026-11-11.md",
+          "review_only": true
+        },
+        {
+          "title": "R3-IR common-measure and smooth-core extension",
+          "path": "research/audits/R3_IR_COMMON_MEASURE_SMOOTH_CORE_FINITE_STRIP_EXTENSION_2026-11-11.md",
+          "git_blob_sha": "34993e1c832e3cc6ffdb30f53cb98faf8c73e613",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_COMMON_MEASURE_SMOOTH_CORE_FINITE_STRIP_EXTENSION_2026-11-11.md",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "R3_IR",
+        "finite-open-strip",
+        "full-Hessian",
+        "conditional",
+        "reference-semigroup",
+        "PR-106"
+      ],
+      "importance": 5,
+      "core": false,
+      "route": null
+    },
+    {
+      "id": "R3-IR-PROJECTED-Z5-2SKELETON-REFERENCE",
+      "title": "R3-IR · Degree-eight finite projected-Z5 2-skeleton reference estimate",
+      "kind": "result",
+      "status": "conditional",
+      "stage": "P0",
+      "summary": "An illustrative finite 3+2 projected-Z5 cubical 2-skeleton has four-link square faces and maximum link-face incidence r=8. Under the product radius-two SU(2) metric and isolated reference action, the conditional full-Hessian reference energy matrix has λ_min(Q₈)>0.1972. The selected 3-cells are non-manifoldly incident; no source-authenticated 3D regulator or refinement family is established.",
+      "detail": "The finite screened patch has 903 vertices, 2,620 links, 2,810 square faces and 1,360 selected cubes; 1,700 square faces meet more than two selected cubes, with incidence up to six. The r=8 calculation applies only to an independent product-link reference model on the finite 2-skeleton. It does not provide a 3D cellulation, compatible refinement maps, a true interacting Wilson-vacuum estimate, physical time/kinetic normalization or continuum transfer. The later source audit explicitly keeps the historical dissertation's coupled-Z5 model distinct from this illustrative 3+2 split.",
+      "checks": [
+        {
+          "label": "Finite projected-Z5 2-skeleton inventory",
+          "state": "finite",
+          "note": "903 vertices, 2,620 links, 2,810 square faces and 1,360 selected cubes in the screened patch."
+        },
+        {
+          "label": "Universal degree-eight reference Hessian estimate",
+          "state": "conditional",
+          "note": "For the finite 2-skeleton with independent SU(2) links, four-link square faces, product radius-two metric and isolated reference action; rational certificate λ_min(Q₈)>0.1972."
+        },
+        {
+          "label": "Ordinary 3D manifold cellulation",
+          "state": "obstruction",
+          "note": "1,700 square faces are incident to more than two selected cubes, up to six."
+        },
+        {
+          "label": "Source-authenticated physical 3D regulator and refinement maps",
+          "state": "open",
+          "note": "The illustrative 3+2 split is not the historical dissertation's physical model and supplies no fixed-domain refinement."
+        },
+        {
+          "label": "True interacting-vacuum Poincaré and continuum mass gap",
+          "state": "open",
+          "note": "The reference estimate is not a true interacting-vacuum or continuum theorem."
+        }
+      ],
+      "sources": [
+        {
+          "title": "R3-IR 3D regulator transfer audit",
+          "path": "research/audits/R3_IR_3D_REGULATOR_TRANSFER_AUDIT_2026-11-11.md",
+          "git_blob_sha": "92cdc6ac85fae008297c0e6295e43e7b4dbbd074",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_3D_REGULATOR_TRANSFER_AUDIT_2026-11-11.md",
+          "review_only": true
+        },
+        {
+          "title": "R3-IR bounded-incidence analytic extension and verifier",
+          "path": "research/audits/R3_IR_BOUNDED_INCIDENCE_ANALYTIC_EXTENSION_2026-11-11.md",
+          "git_blob_sha": "e53765450c65abc320a7ce10f1eb84d8b9ac2557",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/R3_IR_BOUNDED_INCIDENCE_ANALYTIC_EXTENSION_2026-11-11.md",
+          "review_only": true
+        },
+        {
+          "title": "R3-IR bounded-incidence arithmetic verifier",
+          "path": "research/audits/verify_R3_IR_bounded_incidence_extension_2026-11-11.py",
+          "git_blob_sha": "59cda681ea87f5007d1917d00eb23c893e336431",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/audit/r3-ir-h2-trace-to-k-2026-11-10/research/audits/verify_R3_IR_bounded_incidence_extension_2026-11-11.py",
+          "review_only": true
+        }
+      ],
+      "tags": [
+        "R3_IR",
+        "projected-Z5",
+        "finite-2-skeleton",
+        "degree-eight",
+        "conditional-reference",
+        "nonmanifold-cells"
+      ],
+      "importance": 4,
       "core": false,
       "route": null
     }
@@ -16218,6 +16375,34 @@
       "label": "small z regime is opposite to g0→0 continuum scaling",
       "kind": "regime-mismatch",
       "status": "obstruction"
+    },
+    {
+      "from_id": "M-STRIP",
+      "to_id": "R3-IR-FULL-HESSIAN-STRIP-CONDITIONAL",
+      "label": "conditional full-Hessian reference-semigroup estimate on the strip",
+      "kind": "conditional-result",
+      "status": "conditional"
+    },
+    {
+      "from_id": "R3-IR-FULL-HESSIAN-STRIP-CONDITIONAL",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "label": "reference derivative-energy decay does not establish the true interacting-vacuum Poincare inequality",
+      "kind": "conditional-not-closure",
+      "status": "open"
+    },
+    {
+      "from_id": "M-PENROSE-2D",
+      "to_id": "R3-IR-PROJECTED-Z5-2SKELETON-REFERENCE",
+      "label": "illustrative projected-Z5 2-skeleton is distinct from an authenticated physical 3D regulator",
+      "kind": "distinct-model",
+      "status": "open"
+    },
+    {
+      "from_id": "R3-IR-PROJECTED-Z5-2SKELETON-REFERENCE",
+      "to_id": "YM-UNIFORM-GAUGE-POINCARE",
+      "label": "finite product-reference estimate does not prove true interacting-vacuum Poincare",
+      "kind": "conditional-not-closure",
+      "status": "open"
     }
   ],
   "sources_verified": {
