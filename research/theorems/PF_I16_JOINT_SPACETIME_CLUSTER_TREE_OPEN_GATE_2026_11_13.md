@@ -175,3 +175,64 @@ is not, by itself, a consequence of (1.1)–(1.2). The actual polymer criterion 
 Do not enlarge the local-activity estimates yet. Work at fixed \(m=3\) and \(m=4\) under the product reference path law. Use the tensor product over independent link paths to derive the support-sensitive cumulant decomposition, retaining the complete coordinate-incidence structure. The desired output is an explicit tree formula with constants, or a concrete counterexample to the proposed bond (3.2). Only after this calculation should the all-orders induction and KP constants be attempted.
 
 **No quantum connected-resolvent/tree theorem or interacting-vacuum gap is claimed in this record.**
+
+
+## 7. Exact support-sensitive tree bound at order three
+
+The candidate bond (3.2) is now proved for \(m=2,3\), with no loss in the reference gap.
+
+For \(m=2\), if \(S_1\cap S_2=\varnothing\), the two path observables are independent and the covariance is zero. Otherwise, centering and the product semigroup gap give
+\[
+|\kappa_0(A_1(t_1),A_2(t_2))|
+\le e^{-\Delta_0|t_1-t_2|}
+\|A_1\|_\infty\|A_2\|_\infty.
+\tag{7.1}
+\]
+
+For \(m=3\), center the three observables; the cumulant is unchanged. Relabel their times so that \(t_1\le t_2\le t_3\), and put \(u=t_2-t_1\), \(v=t_3-t_2\). The Markov property and centering give
+\[
+\kappa_0(A_1(t_1),A_2(t_2),A_3(t_3))
+=
+\langle A_1,Q_u A_2 Q_v A_3\rangle,
+\tag{7.2}
+\]
+where multiplication by \(A_2\) is understood between the two semigroup factors. Therefore
+\[
+|\kappa_0(A_1(t_1),A_2(t_2),A_3(t_3))|
+\le e^{-\Delta_0(u+v)}
+\prod_{i=1}^3\|A_i\|_\infty.
+\tag{7.3}
+\]
+
+If the support-overlap graph is complete, its temporal path edges \(\{1,2\},\{2,3\}\) are available, and (7.3) is exactly the corresponding tree weight. If the graph is a path with middle vertex \(2\), the same is true.
+
+It remains to consider a path whose center is an endpoint in temporal order. Suppose its edges are \(\{1,2\}\) and \(\{1,3\}\), so \(S_2\cap S_3=\varnothing\). Put
+\[
+R=S_1\cap S_2,\qquad U=S_1\cap S_3.
+\]
+Then \(R\cap U=\varnothing\). Integrating out link paths outside \(R\cup U\) replaces \(A_1,A_2,A_3\) by conditional expectations \(\bar A_1(R,U),\bar A_2(R),\bar A_3(U)\), without increasing their \(L^2\) norms. The two path families on \(R\) and \(U\) are independent. Since \(\bar A_2,\bar A_3\) are centered, only the component of \(\bar A_1\) centered in both coordinate groups contributes. The product semigroup therefore gives
+\[
+|\kappa_0(A_1(t_1),A_2(t_2),A_3(t_3))|
+\le
+e^{-\Delta_0u}e^{-\Delta_0(u+v)}
+\prod_i\|A_i\|_\infty.
+\tag{7.4}
+\]
+This is the tree weight on \(\{\{1,2\},\{1,3\}\}\). The case with center \(3\) is symmetric.
+
+Consequently, for centered bounded local observables,
+\[
+\boxed{
+|\kappa_0(A_1(t_1),A_2(t_2),A_3(t_3))|
+\le
+\prod_i\|A_i\|_\infty
+\sum_{T\in\mathcal T(G_{\rm ov})}
+\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|},
+}
+\tag{7.5}
+\]
+where \(\mathcal T(G_{\rm ov})\) denotes the spanning trees of the support-overlap graph. If that graph is disconnected, both sides vanish. For noncentered inputs, replacing each input by its centered version gives the same inequality with an additional factor \(2^3\).
+
+Thus the joint support-sensitive space-time tree bound is established at orders two and three. The proof uses only product-path independence and the reference semigroup gap. It does not use the all-orders unrestricted temporal-tree estimate (1.1).
+
+**Still open:** the order-four version. Cyclic support-overlap graphs on four insertions need not contain the temporal path edges, and the order-three articulation argument does not settle their coordinate-incidence contractions. The next calculation is the complete \(m=4\) support-graph classification and its tensorized path-semigroup estimate. No all-orders quantum cluster theorem is claimed.
