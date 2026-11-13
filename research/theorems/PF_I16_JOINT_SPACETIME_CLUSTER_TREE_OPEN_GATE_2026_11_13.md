@@ -364,3 +364,25 @@ Before attempting an all-orders decoder, test whether the actual source data adm
 \{(e_j,c_j^T,c_j^S):1\le j\le k\}
 \]
 such that (i) each cut leaves the two required ports in different pieces, (ii) every T-port is admissible for its parent-edge subdivision, (iii) every S-port realizes its spatial witness, and (iv) the sum of the resulting edge time-lengths dominates the original temporal profile. A single valid family with no such selection would refute this particular two-channel construction, though not every possible joint completion map.
+
+
+### 10.2 A source-compatible obstruction to the naive two-port hypothesis
+
+The two-port hypothesis is not automatic, even in the smallest interval configuration. Take two temporal components
+\[
+C_1=(0,2),\qquad C_2=(1,4),
+\]
+ordered by right endpoint. Their hulls overlap, and the increasing temporal parent of \(C_1\) is \(C_2\). The only vertex of \(C_1\) lying strictly inside the parent edge \((1,4)\) is \(2\). Thus the temporal subdivision port is forced to be \(c^T_1=2\).
+
+Now assign link supports so that
+\[
+X_2\cap X_1\ne\varnothing,\qquad
+X_2\cap X_4\ne\varnothing,
+\]
+but
+\[
+X_0\cap X_1=X_0\cap X_4=\varnothing,
+\]
+and choose the remaining supports so that the only cross-component shared-link witness is insertion \(2\) against \(C_2\). Then the spatial connector port is also forced to be \(c^S_1=2\). No cut of the two-vertex path \(C_1\) can put these two required uses into distinct nonempty pieces.
+
+This example satisfies the interval-overlap condition needed by the temporal parent construction and has a connected spatial support-overlap graph, but it violates the proposed distinct-port selection. Therefore Section 10's two-port split map cannot be made universal merely from \(|C_j|\ge2\), temporal hull overlap, and spatial support connectedness. A successful replacement must allow a shared port to serve both channels, use a different local gadget, or abandon this particular split architecture.
