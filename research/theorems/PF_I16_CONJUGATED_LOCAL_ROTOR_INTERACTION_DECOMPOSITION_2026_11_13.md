@@ -220,7 +220,7 @@ with local interaction graph degree at most 28 and weights (2.1)–(2.2). The th
 3. control the reduced-resolvent/time-ordering constants with at most exponential growth after the \(1/n!\) coefficient normalization;
 4. yield a nonzero source-volume-uniform activity radius.
 
-The one-cut and multi-cut interpolation routes remain independent alternatives. Neither is silently identified with this quantum cluster theorem. No R3-IR constants are imported.
+The exact two-cut reduced-resolvent identity and the corrected along-interpolation local activity sums are now recorded in `research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md`. The weighted per-link background sum is \(\kappa_H<0.022695\) at \(a=1/8\); this is a candidate local activity input, not a verified quantum polymer criterion. The one-cut and multi-cut interpolation routes remain independent alternatives. Neither is silently identified with this quantum cluster theorem. No R3-IR constants are imported.
 
 
 ## 7. Source inputs and verification
