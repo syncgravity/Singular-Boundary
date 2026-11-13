@@ -250,3 +250,17 @@ The exponent is small but strictly positive and independent of graph size.
 **Not proved:** the third-order spatial tree bound; fourth-order spatial connected-support cancellation for coupled Penrose subsystems; an all-orders activity majorant; stability of the extensive residual perturbation at the physical coupling; source-derived physical kinetic/time; a refining physical three-dimensional regulator; continuum reconstruction; or a positive physical mass gap.
 
 The next mathematical task is to obtain a genuinely three-support tree estimate for the exact third-order coefficient. The two-point estimate (5.2) is one input, but it cannot be multiplied naively to claim a tree bound: the nested product contains an undifferentiated resolvent factor, and the required connected cancellation/derivative control must be proved explicitly.
+
+
+## 7. Exact arithmetic reproduction
+
+The exact rational margins, algebraic shell-convolution upper bound, and rounded pair coefficient are checked by
+[verify_pf_i16_two_point_resolvent_decay.py](../verification/verify_pf_i16_two_point_resolvent_decay.py).
+The script uses only Python's standard-library Fraction arithmetic; it verifies the square-root comparison by integer squaring and does not use floating-point arithmetic for the inequalities.
+
+Expected output:
+
+    PASS: corrected curvature margin 1869749/3906250
+    PASS: corrected weighted derivative-flow margin 188981/3906250
+    PASS: shell-convolution constant C < 25.511
+    PASS: residual pair coefficient < 6.307e15 * b0^4/a0^3
