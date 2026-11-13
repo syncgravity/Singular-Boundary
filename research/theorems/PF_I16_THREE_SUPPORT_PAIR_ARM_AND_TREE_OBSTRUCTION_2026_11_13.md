@@ -254,3 +254,22 @@ The next mathematically decisive step is to derive (or disprove) (6.1) for the a
 The shell-convolution constants in Section 2 are checked by
 [verify_pf_i16_three_support_convolution.py](../verification/verify_pf_i16_three_support_convolution.py).
 The checker uses exact rational comparisons, including fourth-power and squared inequalities to avoid floating-point assumptions in the upper bounds.
+
+
+## 9. 2026-11-13 correction: conditional fluctuation follows from pointwise flow
+
+The local conditional-amplitude *fluctuation* requested in (6.1) is now derived directly from the pointwise derivative-flow estimate; it does not require a separate conditional Poincaré or conditional Sobolev theorem. For \(X=S_j\), \(|X|\le25\), and \(u_k=Gr_k\), the coordinatewise geodesic oscillation bound and (1.1) give
+\[
+\left\|u_k-\mathbb E[u_k\mid\mathcal F_{X^c}]\right\|_{L^p(\nu_\Phi)}
+\le\frac{50\pi}{\lambda}M_k
+e^{-(\log25)d(X,S_k)},\qquad1\le p\le\infty.
+\]
+This is conditional on the corrected derivative-flow theorem, as are the preceding pair-arm estimates. The full proof and constants are recorded in [PF-I16 conditional amplitude from pointwise flow](PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md).
+
+The unresolved term is therefore more precise than stated in Section 6: it is not the conditional fluctuation, but the **conditional-mean/boundary contribution**. The conditional mean
+\[
+q_j=\mathbb E[r_j\mid\mathcal F_{S_j^c}]
+\]
+is generally nonzero. It is, however, a local observable on the boundary links of faces meeting \(S_j\), with an explicit score-covariance derivative bound; see Sections 3–4 of the new conditional-amplitude record. What remains is to control its coupling to the other resolvent factors while retaining the outer resolvent-gradient factor and six-permutation cancellations. The earlier list item (6.1) should henceforth be read as a sufficient fluctuation target that has been met, not as the outstanding gate.
+
+**Updated status:** conditional resolvent fluctuation amplitude — derived from pointwise flow; conditional-mean/boundary term — open; history-aware six-permutation connected cancellation — open; connected three-support tree estimate — open.
