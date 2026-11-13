@@ -47,11 +47,37 @@ print("NOTE: no quantum time-ordered resolvent or cluster theorem is asserted.")
 
 
 # Follow-up arithmetic after the exact temporal port-injection (2026-11-13)
+# These are candidate arithmetic checks only. They are NOT a Kotecky-Preiss
+# criterion until the joint space-time tree expansion is proved.
 C_time = 2
 proposed_kp = 2 * C_time * kappa_h
 q_path_with_time = C_time * q_path
 assert proposed_kp < Fraction(1, 8)
 assert q_path_with_time < 1
-print(f"PASS: 2*C_time*kappa_H = {float(proposed_kp):.12g} < 1/8")
-print(f"PASS: C_time*q_path = {float(q_path_with_time):.12g} < 1")
-print("NOTE: these are arithmetic checks for the proposed criteria, not a quantum cluster theorem.")
+
+# The direct temporal-tree integral contributes a further factor 2 per
+# integrated edge; Stirling on m^(m-2)/m! contributes e^m.
+temporal_base = 2 * C_time * e_upper
+per_link_overlap_base = temporal_base * 8 * Fraction(22695, 1_000_000)
+
+# Face/pair grouping gives a much smaller candidate local activity.
+z_face = 32*x + 14336*x*x
+z_face_ratio = z_face / delta
+q_face = 58 * z_face_ratio
+q_joint_candidate = temporal_base * e_upper * q_face / e_upper
+# The last expression is written this way to keep the single e-factor explicit:
+# q_joint_candidate = (2*C_time) * e * (2) * q_face = 4*e*q_face.
+q_joint_candidate = 4 * e_upper * q_face
+
+assert z_face_ratio < Fraction(8610, 10_000_000)
+assert q_face < Fraction(49937, 1_000_000)
+assert q_joint_candidate < Fraction(544, 1000)
+
+print(f"PASS: arithmetic candidate 2*C_time*kappa_H = {float(proposed_kp):.12g} < 1/8")
+print(f"PASS: arithmetic candidate C_time*q_path = {float(q_path_with_time):.12g} < 1")
+print(f"DIAGNOSTIC: temporal-integrated base 2*C_time*e <= {float(temporal_base):.6g}")
+print(f"DIAGNOSTIC: crude per-link overlap continuation <= {float(per_link_overlap_base):.6g} (not < 1)")
+print(f"PASS: face activity z_face/Delta_0 < {float(z_face_ratio):.12g}")
+print(f"PASS: 58-face-neighborhood q_face < {float(q_face):.12g}")
+print(f"PASS: conditional single-tree candidate 4*e*q_face < {float(q_joint_candidate):.12g} < 1")
+print("SCOPE: all values above are arithmetic only. The joint support-sensitive space-time tree lemma and the actual KP criterion remain OPEN.")
