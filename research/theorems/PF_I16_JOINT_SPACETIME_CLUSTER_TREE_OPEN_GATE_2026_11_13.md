@@ -259,3 +259,25 @@ The order-two and order-three results in Section 7 are consistent with this cand
 The missing verification is precise: prove the quasi-factorization bounds required by Proposition 5.2 for products of PF-I16 local path observables, uniformly over repeated labels and arbitrary finite link supports. The product path law is independent across links, but a local observable can couple several link coordinates; this is where the coordinate-incidence contraction must be controlled. The weighted-dependency-graph theorem itself does not supply that model-specific estimate, and its normality criterion is not a quantum Kotecký–Preiss theorem.
 
 **Updated next target:** establish the candidate weighted dependency graph (8.1) for the product SU(2) path process, beginning with the product-cumulant quasi-factorization hypothesis in Proposition 5.2. Then compute the actual weighted-degree/rooted-cluster constants for the face/pair interaction family. The \(m=4\) proof and all-orders activity gate remain OPEN.
+
+
+### 8.1 Concrete tensor-product reduction
+
+Féray's Section 10 is especially relevant: for a stationary finite-state Markov chain, it proves a time-indexed weighted dependency graph with edge weight \(\lambda_2^{|i-j|}\), using boolean cumulants and the spectral contraction of \(P^n-\Pi\) (Lemmas 10.1–10.3 and Proposition 10.4). The proof mechanism depends on the contraction estimate, not on a special combinatorial property of the state space. Its continuous-time Hilbert-space analogue should therefore be tested for one SU(2) link:
+\[
+\|P_t-\Pi\|_{2\to2}\le e^{-\Delta_0t}.
+\]
+The needed output is an explicit one-link weighted-dependency bound for arbitrary bounded one-link multiplication observables at times \(t_i\), with constants \(C_r\) controlled in \(r\).
+
+For elementary tensor insertions
+\[
+A_i(U_{S_i})=\prod_{e\in S_i}a_{i,e}(U_e),
+\qquad |S_i|\le8,
+\]
+the link path processes are independent. Féray's product/power construction (Proposition 5.11) suggests lifting the one-link graph to monomials of degree at most eight. The resulting edge weight is the maximum over constituent link pairs: it is zero for disjoint supports and \(e^{-\Delta_0|t_i-t_j|}\) when the supports share a link. This is exactly (8.1).
+
+There are two remaining quantitative obligations before this becomes a proof:
+1. The actual face and face-pair insertions are not single elementary tensors. Their Peter–Weyl/tensor expansions must have an absolutely summable projective coefficient norm, with an explicit bound compatible with the small local activities. An uncontrolled \(\ell^1\) expansion cannot be used.
+2. The constants produced by the degree-eight product construction must have an explicit growth bound in cumulant order \(r\). Existence of constants \(C_r\) alone does not establish analyticity or a nonzero Feynman–Kac activity radius.
+
+This is now the preferred route for the next calculation: first prove the continuous-time one-link weighted-dependency estimate, then lift it to degree-eight elementary tensors, and only then estimate the actual PF-I16 interaction tensor norms.
