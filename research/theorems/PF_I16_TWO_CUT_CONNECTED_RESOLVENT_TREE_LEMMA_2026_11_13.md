@@ -436,3 +436,10 @@ The next required result is a support-sensitive space-time cumulant tree bound, 
 \`PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md\`.
 
 **Status:** temporal projection multiplicity closed; joint space-time tree bound, all-orders Feynman–Kac/ground-energy convergence, actual KP application, and interacting-vacuum mass gap remain OPEN.
+
+
+## 7. Follow-up — support-sensitive reference cumulants through order three
+
+The joint space-time frontier now contains an exact support-sensitive tree estimate for \(m=2,3\). In particular, the third cumulant is bounded by the spanning-tree sum of the support-overlap graph with edge factor \(e^{-\Delta_0|t_i-t_j|}\), using product-path independence in the endpoint-centered path case. This does not yet cover the fourth connected response in (3.2); the \(m=4\) support-graph classification remains open.
+
+See \`PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md\`.
