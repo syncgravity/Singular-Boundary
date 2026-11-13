@@ -1,7 +1,7 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v2.98-r3-ir-full-hessian-branch-review",
+  "version": "v2.96-pf-i16-two-channel-skeleton",
   "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, and explicit all-orders joint-cluster frontier. R3-IR records separate existential weak-coupling strip/periodic-cubic gap applications, a conditional finite-strip full-Hessian reference-semigroup estimate, and a conditional degree-eight finite projected-Z5 2-skeleton reference estimate. Quantum joint space-time connected-resolvent/KP convergence, PF source physical kinetic/time, actual interacting-vacuum Poincare, source-faithful 3D refinement, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
@@ -11059,8 +11059,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "The all-orders temporal port injection is exact (C_time=2), and support-sensitive reference cumulant trees are exact for m=2,3. A separate cut-interpolation route gives a conditional MST tree bound for the full fourth-order coefficient, while the direct support-sensitive m=4 reference cumulant and all-orders joint space-time tree remain open. The full (F,p,S,witnesses) bounded-fiber completion is still a candidate route, not a completed theorem.",
-      "detail": "Keep three claims distinct: (i) all-orders temporal projection multiplicity is closed by the profile-preserving port injection; (ii) reference-process support-sensitive cumulant trees are proved for m=2,3; (iii) the full four-source coefficient has a conditional spatial MST bound via cut interpolation, with eta_4=(1/24)log(25/23), conditional on the corrected derivative-flow/pullback hypotheses. The direct m=4 support-sensitive reference cumulant tree and the all-orders joint space-time/support tree are still open. The simple product of separate spatial and temporal tree sums is superexponential. The full tuple (F,p,S,witnesses) remains the open bounded-fiber completion target for a direct all-orders joint route.",
+      "summary": "OPEN: m=2,3 support-sensitive cumulant trees are proved. The full source tuple is (F,p,S,witnesses). A two-channel split skeleton now gives an exact conditional edge count: split each of k temporal path components into T/S pieces, complete the temporal parent tree on T pieces and spatial support tree on S pieces, then bridge the roots; total edges m−1. It is not yet an injection: two-port witness selection, pairing decoder with C^m fiber, and temporal cut-profile compensation remain open.",
+      "detail": "Keep three claims distinct: (i) all-orders temporal projection multiplicity is closed by the profile-preserving port injection; (ii) reference-process support-sensitive cumulant trees are proved for m=2,3; (iii) the full four-source coefficient has a conditional spatial MST bound via cut interpolation, with eta_4=(1/24)log(25/23), conditional on the corrected derivative-flow/pullback hypotheses. The direct m=4 support-sensitive reference cumulant tree and the all-orders joint space-time/support tree are still open. The simple product of separate spatial and temporal tree sums is superexponential. The full tuple (F,p,S,witnesses) remains the open bounded-fiber completion target for a direct all-orders joint route. New Section 10 records the conditional two-channel split-completion. Its port-realizability assumptions are not yet derived from PF-I16 source data; temporal and spatial witnesses may coincide. The construction must also encode the matching of T/S pieces and compensate the k deleted temporal edges in the time-weight profile.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -11096,6 +11096,26 @@
           "label": "Full fourth-order coefficient via cut interpolation",
           "state": "conditional",
           "note": "A separate finite dressed-reference proof gives a volume-independent four-support MST tree bound with eta_4=(1/24)log(25/23), conditional on derivative-flow and face-pullback hypotheses."
+        },
+        {
+          "label": "Two-channel split-completion edge-count skeleton",
+          "state": "conditional",
+          "note": "Exact m−1 edge count under two-port realizability; not yet a source-to-tree injection."
+        },
+        {
+          "label": "Canonical two-port witness selection",
+          "state": "open",
+          "note": "Need distinct T/S ports in each component satisfying temporal parent and spatial witness conditions."
+        },
+        {
+          "label": "T/S piece-pair decoder with C^m fiber",
+          "state": "open",
+          "note": "Completed channel trees do not themselves recover the matching of split pieces."
+        },
+        {
+          "label": "Temporal cut-profile compensation after component splits",
+          "state": "open",
+          "note": "Deleting one edge per component loses time weight; channel additions must restore or dominate it."
         }
       ],
       "sources": [
