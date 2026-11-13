@@ -602,3 +602,128 @@ There are still two nontrivial gates:
 2. **Actual PF-I16 insertions.** The face and face-pair observables are not known here to be elementary tensors. Their finite-link tensor/projective expansions must have an absolutely summable coefficient norm with an explicit bound compatible with the local activities. No uncontrolled Peter–Weyl (ell^1) expansion is allowed.
 
 Accordingly, the one-link estimate (12.8) is **closed under (12.1)**. The degree-eight lift with a usable order-growth bound, the projective tensor estimate for the actual PF-I16 insertions, and the all-orders joint space-time/KP theorem remain **open**. This is the new preferred analytic route; it does not revive the refuted exact-profile completion in Section 11.2.
+
+
+### 12.4 Explicit degree-eight Leonov–Shiryaev constant
+
+We now make the product-stability constant explicit, using the precise Leonov–Shiryaev formula in Féray, Proposition 5.11.
+
+Let
+\[
+A_i=\prod_{a=1}^{d_i}Y_{\alpha_{i,a}},\qquad 1\le d_i\le8,
+\]
+where the \(Y_\alpha\) are elementary link-time observables. Write
+\[
+\mathfrak I=I_1\uplus\cdots\uplus I_r,\qquad
+I_i=\{\alpha_{i,1},\ldots,\alpha_{i,d_i}\},
+\qquad n:=|\mathfrak I|\le8r.
+\]
+The Leonov–Shiryaev identity is
+\[
+\kappa(A_1,\ldots,A_r)
+=
+\sum_{\substack{\pi\vdash\mathfrak I\\
+\pi\vee\{I_1,\ldots,I_r\}=\{\mathfrak I\}}}
+\prod_{B\in\pi}\kappa(Y_\alpha:\alpha\in B).
+\tag{12.10}
+\]
+Here \(\pi\) ranges over multiset partitions, and the join condition says that the block hyperedges connect all \(r\) product rows.
+
+For each block \(B\), the one-link estimate (12.8) gives
+\[
+|\kappa(Y_\alpha:\alpha\in B)|
+\le (2e)^{|B|}|B|!\,
+\mathcal M(w[B]),
+\tag{12.11}
+\]
+with the convention that the term is zero unless the block is monochromatic in its link label. The maximum-spanning-tree product inequality for connected joins, together with supermultiplicativity of the trivial factor \(\Psi\equiv1\), gives
+\[
+\prod_{B\in\pi}\mathcal M(w[B])
+\le \mathcal M(w^{[8]}[A_1,\ldots,A_r]),
+\tag{12.12}
+\]
+where
+\[
+w^{[8]}(A_i,A_j)
+=\max_{a\le d_i,\,b\le d_j}
+w((i,a),(j,b))
+=\mathbf1_{\{X_i\cap X_j\ne\varnothing\}}
+e^{-\Delta_0|t_i-t_j|}.
+\tag{12.13}
+\]
+The inequality follows because the union of the block trees is connected on the product rows; it contains a spanning tree, and every omitted edge weight is at most one.
+
+Consequently an explicit admissible product constant is
+\[
+D_{8,r}
+:=
+\max_{d_1,\ldots,d_r\le8}
+\sum_{\substack{\pi\vdash I_1\uplus\cdots\uplus I_r\\
+\pi\vee\{I_1,\ldots,I_r\}=\{\mathfrak I\}}}
+\prod_{B\in\pi}(2e)^{|B|}|B|!.
+\tag{12.14}
+\]
+This is a genuine finite formula, not merely the existence statement in Proposition 5.11.
+
+A uniform closed-form upper bound follows by dropping both the monochromatic restriction and the join restriction. For \(n=8r\), define
+\[
+S_n:=\sum_{\pi\vdash[n]}\prod_{B\in\pi}|B|!.
+\]
+The exponential formula gives
+\[
+S_n=n![z^n]\exp\!\left(\sum_{s\ge1}z^s\right)
+=n![z^n]\exp\!\left(\frac z{1-z}\right).
+\tag{12.15}
+\]
+Taking \(x=1-n^{-1/2}\) in Cauchy's coefficient estimate, for \(n\ge4\),
+\[
+[z^n]\exp\!\left(\frac z{1-z}\right)
+\le
+\exp\!\left(\frac{x}{1-x}\right)x^{-n}
+\le e^{2\sqrt n}.
+\tag{12.16}
+\]
+Thus, for every \(r\ge1\),
+\[
+\boxed{
+D_{8,r}
+\le (2e)^{8r}(8r)!\,e^{2\sqrt{8r}}.
+}
+\tag{12.17}
+\]
+For \(n<4\), the same displayed bound follows directly by inspection.
+
+This proves an explicit degree-eight product-stability bound and retains the desired maximum-tree weight (12.13). It is, however, **too large for the intended Feynman–Kac use**:
+\[
+\frac{D_{8,r}}{r!}
+\le
+(2e)^{8r}\frac{(8r)!}{r!}e^{2\sqrt{8r}}
+=
+\exp\!\bigl(7r\log r+O(r)\bigr).
+\tag{12.18}
+\]
+The right side is superexponential in \(r\), so (12.17) does not yield a nonzero activity radius after the \(1/r!\) normalization.
+
+This is a limitation of the absolute Leonov–Shiryaev partition sum, not a proof that the actual product cumulants have superexponential growth. The sum discards cancellations between different multiset partitions and also ignores the monochromatic link restriction. In particular, (12.17) is a valid but deliberately coarse \(D_{8,r}\) estimate; it does not close the order-growth gate.
+
+### 12.5 The sharper combinatorial gate
+
+The remaining task is now an explicit cancellation-sensitive estimate for (12.10), not another application of the raw Bell-number bound. The needed statement is:
+
+\[
+\boxed{
+\sum_{\substack{\pi\vdash\mathfrak I\\
+\pi\vee\{I_1,\ldots,I_r\}=\{\mathfrak I\}}}
+\prod_{B\in\pi}
+\left|\kappa(Y_\alpha:\alpha\in B)\right|
+\ \le\
+C_8^r r!\,
+\mathcal M(w^{[8]}[A_1,\ldots,A_r])
+}
+\tag{12.19}
+\]
+with \(C_8\) independent of \(r\), the number of links, and the insertion supports.
+
+The absolute-value version (12.19) may itself be too strong: the actual Leonov–Shiryaev sum is signed/complex and can have substantial cancellation. The analytically relevant alternative is to reorganize the full sum before taking absolute values, using a connected-partition/Ursell or quasi-factorization representation that keeps the same maximum-tree weight. This is the precise unresolved subproblem.
+
+**Status update:** the degree-eight product constant now has an explicit finite formula and a rigorous closed-form upper bound, but the bound is superexponential after Feynman–Kac normalization. The desired \(C_8^r r!\) growth, or another summable cancellation-sensitive replacement, remains OPEN. No all-orders joint space-time/KP theorem is claimed.
