@@ -1,4 +1,4 @@
-# PF-I16 — Weighted projection-to-tree assignment: structural reduction and open multiplicity gate
+# PF-I16 — Weighted projection-to-tree assignment: all-orders port-completion injection
 
 **Date:** 2026-11-13  
 **Status (follow-up 2026-11-13):** the all-orders weighted projection-to-tree assignment is CLOSED by the exact port-completion injection in Section 7, with coefficientwise bound \(A_m(c)\le 2^mN_m(c)\) and \(C_{\rm time}=2\). The quantum time-ordered connected-resolvent/tree theorem remains OPEN.
@@ -55,16 +55,18 @@ The exact finite enumeration gives:
 
 The audited orders satisfy the stronger finite statement a_m(c)<=N_m(c), i.e. C_time=1 at those orders. This is computational evidence only; it is not an all-orders proof.
 
-## 5. Exact open point and consequence for the activity criterion
+## 5. Resolution of the exact coefficient-profile gate
 
-The previous raw estimate S_m <= (5/2)^m m^(m-2) does not prove the profile inequality: it counts terms before collecting equal Q-forests and does not control profile-specific multiplicity. The tree completion lemma removes the exponent-mismatch issue, but not the matching/multiplicity issue.
+The previous raw estimate \(S_m\le (5/2)^m m^{m-2}\) did not prove the profile inequality because it counted terms before collecting equal Q-forests. The all-orders port-completion injection in Section 7 now resolves that exact coefficient-profile problem:
+\[
+A_m(c)\le2^mN_m(c),\qquad C_{\rm time}=2.
+\]
+Consequently the previously proposed local-activity arithmetic is satisfied:
+\[
+2C_{\rm time}\kappa_H=4\kappa_H<0.09078<1/8.
+\]
 
-The next proof task is an all-orders injection or weighted matching from the absolute projection-forest coefficient mass in each profile class into the labeled trees with the same profile, or a direct proof with C_time<=2.5. If established, the already-recorded local activity bound would imply
-2 C_time kappa_H <= 5(0.022695)=0.113475<1/8.
-
-Until this profile inequality is proved, neither C_time=1 nor C_time<=2.5 is certified, and the KP convergence gate remains OPEN.
-
-**Status:** exact interval-forest-to-tree exponent-preserving completion proved; finite coefficientwise profile domination verified for 2<=m<=8; all-orders coefficientwise domination, temporal cumulant tree inequality, and quantum connected-resolvent tree bound remain OPEN.
+**Current status:** exact interval-forest completion, all-orders coefficientwise profile domination, and the reference temporal projection-tree inequality are established. The quantum connected-resolvent/tree theorem and the uniform all-orders activity/convergence claim remain OPEN.
 
 
 ## 6. Ursell coefficient on the interval-overlap graph
@@ -80,12 +82,7 @@ The repulsive-graph tree inequality (Penrose tree-graph bound) therefore gives
 \]
 where \(\tau(G_F)\) is the number of spanning trees of the component-overlap graph. This explains the small coefficients seen in the finite expansion and replaces the raw Stirling count by a connected-graph quantity.
 
-A sufficient all-orders weighted assignment is consequently
-\[
-\sum_{F:\,n(F)=1+c}\tau(G_F)\le C_{\rm time}^mN_m(c)
-\quad\text{for every cut profile }c.
-\]
-Each spanning tree of \(G_F\) can be used to order component merges in the exact profile-preserving completion of Section 2. What is not yet proved is a bounded-multiplicity map from the pairs \((F,\mathcal T(G_F))\) to labeled trees on the original time indices with the same cut profile. This is now the precise combinatorial target; the finite verifier audits \(|\alpha_m(F)|\), not the stronger Penrose majorant \(\tau(G_F)\).
+A stronger, but unnecessary, alternative would be to prove the profile inequality with the Penrose majorant \(\tau(G_F)\) in place of the exact coefficient \(|\alpha_m(F)|\). That stronger assignment is not established here. It is not needed: the interval-graph perfect-elimination formula in Section 7.1 counts the exact coefficient \(|\alpha_m(F)|\) directly by increasing rooted spanning trees, and Section 7.2–7.5 injects precisely those objects into decorated labeled trees with the same cut profile. The finite verifier audits this exact coefficient count.
 
 
 ## 7. All-orders port-completion injection (2026-11-13)
