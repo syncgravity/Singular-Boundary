@@ -98,15 +98,11 @@ b_{ij}(t_i,t_j)
 e^{-\Delta_0|t_i-t_j|}.
 \tag{3.2}
 \]
-Equation (3.2) is a proposed target, not an established inequality. The proof must determine whether it holds with \(C_{\rm st}=2\), with a larger explicit constant, or only after replacing the exponential by a weaker influence kernel.
+Equation (3.2) is now proved for \(m=2,3\) in Section 7. Its extension to \(m\ge4\) is open. The proof must determine whether it holds with \(C_{\rm st}=2\), with a larger explicit constant, or only after replacing the exponential by a weaker influence kernel.
 
 The relevant structure is the product decomposition of the reference path law over links. Each insertion depends on at most eight link paths. A viable proof should exploit that independence before taking absolute values: decompose local insertions into link-coordinate components, express the joint cumulant as a sum of connected coordinate-incidence diagrams, and extract one spanning tree whose edges each correspond to a shared link and carry the associated temporal mixing factor. The tensor/contraction norm used in this step must be controlled by the stated local insertion norm; an uncontrolled \(\ell^1\) Peter–Weyl expansion is not acceptable.
 
-The first concrete proof milestones are:
-1. establish the two-observable shared-link covariance bound exactly;
-2. prove the three-observable tree inequality for every possible support-overlap graph;
-3. prove the four-observable version needed for the exact third- and fourth-order responses in the two-cut identity;
-4. identify the induction that gives the all-orders bound with explicit \(C_{\rm st}\).
+The two- and three-observable cases are now exact (Section 7). The remaining finite-order milestone is the four-observable version needed for the exact third- and fourth-order responses in the two-cut identity, followed by an induction that gives the all-orders bound with explicit \(C_{\rm st}\).
 
 ## 4. Activity arithmetic conditional on the joint lemma
 
@@ -172,7 +168,7 @@ is not, by itself, a consequence of (1.1)–(1.2). The actual polymer criterion 
 
 ## 6. Immediate next calculation
 
-Do not enlarge the local-activity estimates yet. Work at fixed \(m=3\) and \(m=4\) under the product reference path law. Use the tensor product over independent link paths to derive the support-sensitive cumulant decomposition, retaining the complete coordinate-incidence structure. The desired output is an explicit tree formula with constants, or a concrete counterexample to the proposed bond (3.2). Only after this calculation should the all-orders induction and KP constants be attempted.
+Do not enlarge the local-activity estimates yet. Work at fixed \(m=4\) under the product reference path law. Classify all connected support-overlap graphs on four insertions and derive the support-sensitive cumulant decomposition, retaining the complete coordinate-incidence structure. The desired output is an explicit tree formula with constants, or a concrete counterexample to the proposed bond (3.2). Only after this calculation should the all-orders induction and KP constants be attempted.
 
 **No quantum connected-resolvent/tree theorem or interacting-vacuum gap is claimed in this record.**
 
