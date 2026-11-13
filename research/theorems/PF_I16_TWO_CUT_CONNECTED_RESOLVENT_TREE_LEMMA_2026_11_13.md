@@ -217,3 +217,73 @@ The elementary spatial combinatorics are favorable: a connected sequence of loca
 Applying (5.1) to (3.2), then summing the marked cut-root families using \(\kappa_a,\kappa_{ab}\), would give the two-cut connected tree estimate. The same argument must then be extended to \(m=n-1\) cut insertions. The higher mixed derivatives of \(\alpha_f^2\) grow at most as \(2^m\) for distinct cuts, so their coefficient combinatorics are exponential; the unresolved issue remains the uniform quantum connected-resolvent estimate.
 
 **Status:** exact two-cut identity and local activity sums derived; (5.1) OPEN. No all-orders activity radius is claimed.
+
+
+## 6. Feynman–Kac reduction to a product Markov-path cumulant problem
+
+Because \(K\) is a sum of independent compact-group Laplacians and every \(v_X\) is a bounded multiplication operator, the finite-volume Feynman–Kac formula gives
+\[
+Z_T(\mathbf s,\mathbf t)
+:=\langle\mathbf1,e^{-T\widehat H_{\mathbf s,\mathbf t}}\mathbf1\rangle
+=
+\mathbb E_0\exp\left[
+-\int_0^T\left\{
+\sum_Xv_X(\mathbf s;U_X(\tau))
+-\sum_i t_ir_i(U_{S_i}(\tau))
+\right\}d\tau
+\right],
+\tag{6.1}
+\]
+where \(\mathbb E_0\) is the stationary path law of independent SU(2) Brownian motions, one for each link. In finite volume, positivity improvement gives nonzero overlap of the positive ground state with \(\mathbf1\), and hence
+\[
+E_0(\widehat H_{\mathbf s,\mathbf t})
+=-\lim_{T\to\infty}\frac1T\log Z_T(\mathbf s,\mathbf t).
+\tag{6.2}
+\]
+Thus the reduced-resolvent derivatives in (3.2) can equivalently be studied as long-time connected cumulants of local observables along independent reference paths, tilted by the local potential family \(v_X\).
+
+At fixed \(T\), the formal cumulant expansion around the independent path law is
+\[
+\log Z_T
+=
+\sum_{m\ge1}\frac{(-1)^m}{m!}
+\sum_{X_1,\ldots,X_m}
+\int_{[0,T]^m}
+\kappa_0\!\left(
+v_{X_1}(t_1),\ldots,v_{X_m}(t_m)
+\right)\,d\mathbf t,
+\tag{6.3}
+\]
+with source and cut insertions treated as marked local vertices when differentiating in \(\mathbf t\) and \(\mathbf s\). Equation (6.3) is initially a coefficient identity near zero coupling; its uniform convergence as \(T\to\infty\) is part of the open task.
+
+There is an exact spatial cancellation before any estimate: if the overlap graph of \(X_1,\ldots,X_m\) is disconnected, the corresponding groups depend on disjoint sets of independent link paths. Their joint cumulant in (6.3) is therefore zero. This is the desired disconnected-subsystem cancellation, now expressed directly on the product-path reference measure.
+
+The remaining temporal estimate can be isolated as follows. For bounded local multiplication observables \(A_k\) supported on \(S_k\), prove a uniform tree bound for the stationary product-path cumulant,
+\[
+\left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|
+\le C_{\rm time}^{\,m}
+\left(\prod_k\|A_k\|_\infty\right)
+\sum_{T\in\mathcal T_m(\mathcal G_{\rm ov})}
+\prod_{\{p,q\}\in T}
+e^{-\Delta_0|t_p-t_q|},
+\tag{6.4}
+\]
+where \(\mathcal G_{\rm ov}\) is the support-overlap graph and the sum is over its spanning trees (zero if it is disconnected). The constant \(C_{\rm time}\) must be explicit and at most exponential in \(m\). The one-link spectral gap supplies
+\[
+\|P_\tau-\Pi\|_{2\to2}\le e^{-\Delta_0\tau};
+\]
+the proof obligation is to propagate this estimate through the full cumulant partition formula without losing the connected-tree cancellation.
+
+For every fixed tree \(T\), the time integral is elementary:
+\[
+\int_{[0,T_0]^m}
+\prod_{\{p,q\}\in T}e^{-\Delta_0|t_p-t_q|}
+\,d\mathbf t
+\le
+T_0\left(\frac{2}{\Delta_0}\right)^{m-1}.
+\tag{6.5}
+\]
+Root the tree at one time variable, integrate the root over an interval of length \(T_0\), and integrate each remaining vertex relative to its parent over the real line. Thus (6.4), if proved with its actual \(C_{\rm time}\), converts the quantum time-ordered problem into a classical polymer/tree sum. The resulting polymer activity is proportional to \(C_{\rm time}\|v_X\|/\Delta_0\); the actual Kotecký–Preiss threshold must be checked with this constant, not with the provisional \(q_{\rm path}\) in (4.2).
+
+For the two-cut coefficient, the marked vertices are \(B_{ab}\), \(B_a\), \(B_b\), \(r_i\), and \(r_j\); the unmarked vertices are the background \(v_X\) insertions from (6.3). A connected tree on these marked and unmarked vertices, summed over the background vertices, is the precise object that should yield the two-cut spatial tree estimate. This gives a concrete route to (5.1), but (6.4) and the resulting polymer convergence remain OPEN.
+
