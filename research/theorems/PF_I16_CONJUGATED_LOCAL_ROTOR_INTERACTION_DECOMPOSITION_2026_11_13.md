@@ -196,12 +196,12 @@ These are candidate local insertion margins only; they are not a quantum polymer
 Let \(\widehat H_{\mathbf s,\mathbf t}
 =K+\mathcal U_{\Phi_{\mathbf s}}-\sum_i t_ir_i\) on product Haar space. Its spectrum agrees with that of \(L_{\Phi_{\mathbf s}}-\sum_i t_ir_i\), and ordinary Hellmann–Feynman gives
 \[
-\partial_{s_a}E_I(\mathbf s)
+\partial_{s_a}E_{\mathbf s}(\mathbf t)
 =\langle\Psi_{\mathbf s,\mathbf t},
 (\partial_{s_a}\mathcal U_{\Phi_{\mathbf s}})
 \Psi_{\mathbf s,\mathbf t}\rangle
 \]
-for the corresponding simple ground state. Thus the multi-cut derivatives become insertions of bounded local multiplication operators, rather than the first-order differential insertion \(\Gamma(W_a,g)\) in the dressed-measure picture. Mixed derivatives still require connected resolvent/cumulant bounds, but the \(D^2g\) obstruction in (4.2) of the multi-cut note is avoided at the level of the insertion itself.
+for the corresponding simple ground state; the desired source coefficient is obtained by taking \([t_I]\) on both sides. Thus the multi-cut derivatives become insertions of bounded local multiplication operators, rather than the first-order differential insertion \(\Gamma(W_a,g)\) in the dressed-measure picture. Mixed derivatives still require connected resolvent/cumulant bounds, but the \(D^2g\) obstruction in (4.2) of the multi-cut note is avoided at the level of the insertion itself.
 
 ## 5. Next theorem required
 
