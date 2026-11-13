@@ -43,22 +43,27 @@ A_f^{\rm kin}:=\sum_{e\in\partial f}a_e.
 \]
 The sum \(V_{fg}\) is zero unless the two accepted faces share an original link. Its support is contained in \(\partial f\cup\partial g\), of size at most eight links.
 
-The isolated-face ground-state equation
+The isolated-face ground-state equation in the refined-rotor dossier is
 \[
 A_f(-\Delta)\psi_f-b_fp_f\psi_f=E_f\psi_f,\qquad
 s_f=\log\psi_f,
 \]
-implies the exact identity
+so
 \[
 A_f\left[\Delta s_f+|\nabla s_f|^2\right]
 =-b_fp_f-E_f.
 \tag{1.4}
 \]
-The variational bound \(|E_f|\le|b_f|\le b_0\) shows that, after dropping the irrelevant scalar \(-E_f\), the one-face interaction is exactly \(-b_fp_f\), with norm at most \(b_0\). Therefore, up to a scalar energy shift,
+Do not identify \(A_f\) with \(A_f^{\rm kin}\) unless that equality is separately established. The recorded allocation bounds give
+\[
+\rho_f:=\frac{A_f^{\rm kin}}{A_f}
+\le4\cdot8=32.
+\]
+Thus the one-face term is \(-\rho_fb_fp_f-\rho_fE_f\); after dropping the scalar, its norm is at most \(32b_0\). Therefore, up to a scalar energy shift,
 \[
 \boxed{
 e^\Phi L_\Phi e^{-\Phi}
-=K-\sum_f b_fp_f+\sum_{f<g}V_{fg}.
+=K-\sum_f \rho_fb_fp_f+\sum_{f<g}V_{fg}.
 }
 \tag{1.5}
 \]
@@ -128,7 +133,7 @@ These are encouraging numerical margins for a polymer criterion on the face-over
 
 Prove a source-volume-uniform linked-cluster expansion for
 \[
-K-\sum_f b_fp_f+\sum_{f<g}V_{fg}
+K-\sum_f \rho_fb_fp_f+\sum_{f<g}V_{fg}
 \]
 with local interaction graph degree at most 28 and weights (2.1)–(2.2). The theorem must:
 1. express the \(n\)-source ground-energy coefficient as a sum over connected face-overlap clusters or trees;
