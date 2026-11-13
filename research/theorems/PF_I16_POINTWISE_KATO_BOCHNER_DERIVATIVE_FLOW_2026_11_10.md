@@ -270,3 +270,46 @@ Consequently the weighted comparison at \(\mu=\log25\) is
 -\frac{67712}{3}b_0-\frac{1556480}{3}\frac{b_0^2}{a_0}.
 \]
 For \(b_0/a_0\le1/50000\), this lower bound exceeds \(0.0483a_0\). These corrected constants remain conditional on the finite-product Bochner/Kato comparison and the face-map metric calculations. The old numerical rate and \(1/40000\) threshold are superseded, not certified.
+
+
+## 8. 2026-11-13 correction: reversible drift sign and two-point resolvent decay
+
+The exact PF-I16 conjugation identity is
+\[
+e^{-\Phi}He^\Phi=L_\Phi+\text{constant}-\sum_eR_e,\qquad
+L_\Phi=K-2\Gamma_K(\Phi,\cdot).
+\]
+With \(K=-\Delta_{\widetilde g}\), the actual dressed measure is
+\(d\nu_\Phi=Z^{-1}e^{2\Phi}dU\), and the corresponding Markov generator is
+\[
+L_\Phi=-\Delta_{\widetilde g}-2\nabla_{\nabla\Phi},
+\qquad
+-L_\Phi=\Delta_{\widetilde g}+2\nabla_{\nabla\Phi}.
+\]
+Accordingly, the displayed generator and vector Bochner signs in Sections 1 and 3.1 above are superseded. The correct Bakry–Émery tensor is
+\[
+\operatorname{Ric}^{\sharp}_{\widetilde g}
+-2(\nabla^2\Phi)^\sharp,
+\]
+not \(\operatorname{Ric}^{\sharp}_{\widetilde g}
++2(\nabla^2\Phi)^\sharp\). The absolute-block comparison is unchanged after this sign correction, so the corrected rotor blocks in Section 7 give the conditional rates
+\[
+\kappa\ge\frac{1869749}{3906250}a_0,\qquad
+\lambda_{\log25}\ge\frac{188981}{3906250}a_0
+\quad\text{when }b_0/a_0\le1/50000.
+\]
+These are still conditional on the face-pullback and finite-product Kato estimates.
+
+The sign-corrected reversible-flow derivation and its consequence are given in the new theorem record:
+[PF-I16 corrected reversible flow and two-point resolvent decay](PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md).
+
+In particular, conditional on the derivative-flow estimate, centered local functions satisfy a volume-independent two-point bound
+\[
+|\nu_\Phi(fL_\Phi^{-1}g)|
+\le\frac{C_{\mu,\gamma}}{\lambda^2}
+e^{-\gamma d(S_f,S_g)}
+\left(\sum_{e\in S_f}\|\mathsf D_ef\|_\infty\right)
+\left(\sum_{e\in S_g}\|\mathsf D_eg\|_\infty\right),
+\]
+with \(\mu=\log25\), \(\gamma=\frac12\log(25/23)>0\), and
+\(C_{\mu,\gamma}<25.511\). This is a two-point dressed-reference resolvent estimate only; it does not establish the third-order tree bound or all-orders activity summability.
