@@ -281,3 +281,40 @@ There are two remaining quantitative obligations before this becomes a proof:
 2. The constants produced by the degree-eight product construction must have an explicit growth bound in cumulant order \(r\). Existence of constants \(C_r\) alone does not establish analyticity or a nonzero Feynman–Kac activity radius.
 
 This is now the preferred route for the next calculation: first prove the continuous-time one-link weighted-dependency estimate, then lift it to degree-eight elementary tensors, and only then estimate the actual PF-I16 interaction tensor norms.
+
+
+## 9. Immediate combinatorial target: complete temporal components by a spatial tree
+
+There is a more direct completion formulation that should be tested before attempting a global tensor expansion.
+
+Fix a temporal projection forest \(F\) with path components
+\[
+C_1,\ldots,C_k\subseteq[m].
+\]
+Let
+\[
+S_j=\bigcup_{i\in C_j}X_i
+\]
+be the union of the link supports in component \(C_j\). If the original support-overlap graph on \([m]\) is connected, its contraction by the partition \(\{C_j\}_{j=1}^k\) is connected. Thus the component support-overlap graph \(H_F\), with \(j\sim p\) whenever \(S_j\cap S_p\ne\varnothing\), is connected.
+
+Choose a spanning tree \(\mathcal S\) of \(H_F\). For each edge \(\{j,p\}\in\mathcal S\), choose a witness pair
+\[
+i(j,p)\in C_j,\qquad i(p,j)\in C_p,
+\qquad
+X_{i(j,p)}\cap X_{i(p,j)}\ne\varnothing.
+\]
+Add the corresponding cross-component edge to \(F\). Since \(F\) has \(m-k\) edges and \(\mathcal S\) has \(k-1\) edges, the union has exactly \(m-1\) edges. It is connected by construction, hence it is a spanning tree on the original \(m\) insertion labels:
+\[
+T(F,\mathcal S,\text{witnesses})\in\mathcal T_m.
+\tag{9.1}
+\]
+
+This is the desired *joint completion shape*: retain every temporal \(Q\)-edge of \(F\), and use exactly \(k-1\) shared-link edges to connect its temporal components. Unlike multiplying two spanning-tree counts, (9.1) produces one tree.
+
+The remaining proof obligations are analytic and combinatorial:
+1. Show that the component-level spatial cumulant/decoupling expansion supplies the \(k-1\) witness edges with a product of integrable temporal influence kernels. Mere support connectedness is not enough; each witness edge must carry its actual semigroup decay.
+2. Define a canonical witness rule and port decoration so that \((F,\mathcal S,\text{witnesses})\) can be decoded from the completed tree and decoration, or prove a uniform fiber bound \(C^m\).
+3. Combine the temporal profile-preserving injection with this component completion without losing the exact time-cut weights.
+4. Sum the resulting single-tree weights against the face/pair activity and verify the actual rooted-cluster/KP criterion.
+
+The quotient-connectivity assertion is exact. The existence of a bounded-fiber decoder with the required temporal edge weights is **not yet proved**. This is now the primary injection/completion target for the joint space-time gate; the one-link weighted-dependency route in Section 8 is a possible way to supply its component-level edge weights.
