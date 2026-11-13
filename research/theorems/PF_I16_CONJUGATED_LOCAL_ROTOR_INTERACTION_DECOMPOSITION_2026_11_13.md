@@ -142,3 +142,12 @@ with local interaction graph degree at most 28 and weights (2.1)–(2.2). The th
 4. yield a nonzero source-volume-uniform activity radius.
 
 The one-cut and multi-cut interpolation routes remain independent alternatives. Neither is silently identified with this quantum cluster theorem. No R3-IR constants are imported.
+
+
+## 5. Source inputs and verification
+
+The isolated-rotor derivative and face-map bounds are conditional source inputs from:
+- `research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md`
+- `research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md`
+
+The arithmetic in (3.1)–(3.2) is checked by `research/verification/verify_pf_i16_local_rotor_cluster_margin.py`. The verifier checks only the numerical inequalities; it does not certify the quantum cluster expansion.
