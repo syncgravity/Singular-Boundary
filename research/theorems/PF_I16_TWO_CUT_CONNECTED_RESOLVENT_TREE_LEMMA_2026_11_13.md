@@ -420,3 +420,19 @@ Thus \(C_{\rm time}=2\), and the previously proposed numerical condition is sati
 See [the updated projection/tree proof and verifier](PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) and [the finite-order audit](../verification/verify_pf_i16_projection_tree_profiles.py).
 
 **The quantum connected-resolvent/tree theorem (5.1) remains OPEN.** The temporal reference-process inequality (6.4), exact disconnected-support cancellation, and the per-tree time integral (6.5) are now established, and the numeric KP activity condition (6.6) is satisfied. What remains open is the rigorous joint space-time/support polymer organization, uniform-in-volume convergence of (6.3), and the resulting marked two-cut and higher-cut connected tree estimates for the actual conjugated rotor Hamiltonian.
+
+
+## 6. Follow-up audit — joint space-time counting remains open (2026-11-13)
+
+The temporal projection-to-tree coefficient assignment is now proved with \(C_{\rm time}=2\), and the reference-process temporal cumulant estimate (7.6) follows. This is not yet the quantum linked-cluster theorem.
+
+In particular, (7.6) supplies an unrestricted temporal-tree sum, while support disconnectedness supplies only the zero criterion. Applying a separate spatial tree-graph bound and multiplying the two tree sums produces a factor of order
+\[
+m^{2m-4}/m!,
+\]
+which is superexponential. The single local-activity inequality \(2C_{\rm time}\kappa_H<1/8\) therefore cannot be treated as a verified KP criterion without a sharper joint counting argument.
+
+The next required result is a support-sensitive space-time cumulant tree bound, with one tree carrying both local-support incidence and integrable temporal decay. Its exact statement, candidate constants, and finite-order proof plan are recorded in
+\`PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md\`.
+
+**Status:** temporal projection multiplicity closed; joint space-time tree bound, all-orders Feynman–Kac/ground-energy convergence, actual KP application, and interacting-vacuum mass gap remain OPEN.
