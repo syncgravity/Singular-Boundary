@@ -438,3 +438,12 @@ Private stacked review branch, no main merge, public Pages action, Git LFS migra
 
 
 The source navigator, searchable catalog, graph JSON, and browser payload are kept synchronized by the repository's generated Observatory integrity check.
+
+
+## Current PF-I16 follow-up · joint space-time tree gate (2026-11-13)
+
+The all-orders temporal port-completion injection is retained as an exact sublemma with \(C_{\rm time}=2\). The next open theorem is now isolated: a **joint support-sensitive space-time cumulant/tree bound**. The temporal projection estimate and the spatial disconnected-support cancellation cannot be combined by two independent tree-graph bounds; that produces superexponential \(m^{2m-4}/m!\) growth. The proposed local-activity inequality is not a verified KP criterion until this joint counting is proved.
+
+[Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Temporal port injection](../research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) · [Conjugated local-rotor decomposition](../research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md).
+
+**Status:** temporal projection gate closed; joint space-time cumulant tree, quantum connected-resolvent/KP convergence, multi-cut all-orders activity, and continuum mass gap remain OPEN.
