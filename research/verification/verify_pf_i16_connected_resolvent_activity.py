@@ -64,9 +64,8 @@ per_link_overlap_base = temporal_base * 8 * Fraction(22695, 1_000_000)
 z_face = 32*x + 14336*x*x
 z_face_ratio = z_face / delta
 q_face = 58 * z_face_ratio
-q_joint_candidate = temporal_base * e_upper * q_face / e_upper
-# The last expression is written this way to keep the single e-factor explicit:
-# q_joint_candidate = (2*C_time) * e * (2) * q_face = 4*e*q_face.
+# Conditional on a single joint tree: C_st=2, time integral=2/Delta,
+# and one rooted-tree/Stirling factor e. This is not a proven KP criterion.
 q_joint_candidate = 4 * e_upper * q_face
 
 assert z_face_ratio < Fraction(8610, 10_000_000)
