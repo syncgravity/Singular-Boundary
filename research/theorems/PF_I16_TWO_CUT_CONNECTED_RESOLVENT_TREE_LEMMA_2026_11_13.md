@@ -358,3 +358,39 @@ e^{-\Delta_0(t_m-t_1)}\,d\mathbf t
 \tag{7.5}
 \]
 The missing all-orders step is to extend the explicit projection/cumulant cancellation in (7.1)–(7.3) to arbitrary \(m\), with a sufficiently sharp exponential-in-\(m\) coefficient after the time-ordering normalization. A factorial bound here would not establish a nonzero activity radius. This is the remaining temporal core of (6.4).
+
+
+## 8. Cumulant projection count and the numerical threshold for the temporal lemma
+
+There is a useful combinatorial reduction for the arbitrary-order projection expansion. Center all \(A_i\). In the moment-cumulant formula, a partition \(\pi\) with \(k\) blocks has Möbius coefficient \((k-1)!\). Expanding each semigroup between consecutive times in each block as \(P_\tau=\Pi+Q_\tau\) produces at most \(2^{m-k}\) projection terms. Thus the total absolute coefficient count before cancellations is bounded by
+\[
+S_m:=\sum_{k=1}^m {m\brace k}(k-1)!\,2^{m-k},
+\tag{8.1}
+\]
+where \({m\brace k}\) is a Stirling number of the second kind. Since
+\[
+{m\brace k}\le\frac{k^m}{k!},
+\]
+we get
+\[
+S_m\le\sum_{k=1}^m k^{m-1}2^{m-k}
+\le m^{m-2}\sum_{k=1}^m k\,2^{m-k}
+<2^{m+1}m^{m-2}.
+\tag{8.2}
+\]
+For \(m\ge4\), \(2^{m+1}\le(5/2)^m\); the cases \(m=2,3\) satisfy the same final bound directly. Hence
+\[
+\boxed{S_m\le(5/2)^m\,m^{m-2}\quad(m\ge2).}
+\tag{8.3}
+\]
+The factor \(m^{m-2}\) is exactly the number of labeled spanning trees. This shows that the raw projection-partition count is no worse than a \(2.5^m\) multiple of the tree count.
+
+This count alone is not the temporal tree inequality: one must still prove that every non-canceling projection term has a connected interval-overlap structure and assign it to a spanning tree whose product of semigroup decay factors dominates that term, with bounded multiplicity. That weighted assignment is the remaining combinatorial proof, not an assumption.
+
+The numerical consequence is useful. If the weighted assignment can be made with \(C_{\rm time}\le2.5\), then the proposed Kotecký–Preiss condition (6.6) is satisfied because
+\[
+2(2.5)\kappa_H
+<5(0.022695)=0.113475<1/8.
+\tag{8.4}
+\]
+Thus a temporal tree inequality with constant at most \(2.5\) would be sufficient for the present local activity margin. The exact weighted assignment and its compatibility with the support-overlap graph remain OPEN.
