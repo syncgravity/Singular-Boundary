@@ -227,3 +227,49 @@ With the previously recorded \(\kappa_H<0.022695\), the proposed numerical activ
 This closes the weighted projection multiplicity subgate and verifies that stated numerical condition.
 
 **It does not close the quantum connected-resolvent/tree theorem.** The uniform Feynman–Kac/ground-energy linked-cluster expansion, its full time-ordered reduced-resolvent control, and the application of an actual quantum Kotecký–Preiss theorem remain open. The PF-I16 interacting-vacuum and physical continuum mass-gap obligations are unchanged.
+
+
+### 7.7 Reference-process temporal cumulant consequence
+
+Let \(A_1,\ldots,A_m\) be centered bounded multiplication observables of the stationary product SU(2) reference process, and let \(P_t=\Pi+Q_t\) with
+\[
+\|Q_t\|_{2\to2}\le e^{-\Delta_0t}.
+\]
+The projection expansion, the semigroup contraction on each Q interval, and (7.5) give the all-orders temporal tree bound
+\[
+\boxed{
+\left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|
+\le
+2^m\left(\prod_{i=1}^m\|A_i\|_\infty\right)
+\sum_{T\in\mathcal T_m}
+\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|}.
+}
+\tag{7.6}
+\]
+This is uniform in the number of link rotors. It is a theorem for the independent reference process, not yet for the perturbed interacting ground state.
+
+For a fixed labeled tree \(T\), order the times and write \(g_q=t_{q+1}-t_q\). Its exponent is
+\[
+\sum_{\{i,j\}\in T}|t_i-t_j|
+=\sum_{q=1}^{m-1}n_q(T)g_q,
+\qquad n_q(T)\ge1.
+\]
+Consequently its ordered time integral is bounded by
+\[
+\int_{0\le t_1\le\cdots\le t_m\le\mathcal T}
+e^{-\Delta_0\sum_q n_q(T)g_q}\,d\mathbf t
+\le \mathcal T\,\Delta_0^{-(m-1)}.
+\]
+Using the symmetry of the cumulant and the \(1/m!\) normalization in the Feynman–Kac logarithm, this yields the fixed-order estimate
+\[
+\boxed{
+\frac1{m!\mathcal T}
+\int_{[0,\mathcal T]^m}
+\left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|\,d\mathbf t
+\le
+2^m m^{m-2}\Delta_0^{-(m-1)}
+\prod_i\|A_i\|_\infty.
+}
+\tag{7.7}
+\]
+This controls the reference-process time integrals at every fixed order. The remaining task is to combine them with spatial connected-support summation and the marked cut insertions in a uniform-in-volume, all-orders linked-cluster theorem. The factor \(m^{m-2}\) in (7.7) is not by itself an all-orders convergence estimate.
