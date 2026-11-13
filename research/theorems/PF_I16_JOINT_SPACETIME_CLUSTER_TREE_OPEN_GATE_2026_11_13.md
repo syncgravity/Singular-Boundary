@@ -324,3 +324,43 @@ The remaining proof obligations are analytic and combinatorial:
 4. Sum the resulting single-tree weights against the face/pair activity and verify the actual rooted-cluster/KP criterion.
 
 The quotient-connectivity assertion is exact. The existence of a bounded-fiber decoder for the full source tuple, with the required temporal edge weights, is **not yet proved**. This is now the primary injection/completion target for the joint space-time gate; the one-link weighted-dependency route in Section 8 is a possible way to supply its component-level edge weights.
+
+
+## 10. Two-channel split-completion: exact edge count, conditional realizability
+
+The source has two component-level trees on the same \(k\) temporal components: the increasing temporal parent tree \(p\) and a spatial support tree \(\mathcal S\). A direct union on the component set has \(2k-2\) edges and generally contains cycles. The following split construction gives the correct one-tree edge count.
+
+For each component path \(C_j\), choose a cut edge \(e_j\) and split it into two nonempty path pieces
+\[
+C_j=C_j^{T}\sqcup C_j^{S}.
+\]
+There are now \(2k\) disjoint path pieces, with a T-port and an S-port in each original component. Suppose the following two port-realizability conditions hold:
+
+* for every nonroot vertex \(j\) of \(p\), its T-piece contains a vertex \(c_j^T\) lying strictly inside an edge \((a,b)\) of the T-piece of its parent \(p(j)\);
+* for every nonroot vertex \(j\) of \(\mathcal S\), its S-piece contains a vertex \(c_j^S\) whose insertion support overlaps the support of some vertex in the S-piece of its spatial parent.
+
+Starting from the \(2k\) path pieces, perform the existing edge-subdivision completion separately in the T-channel along \(p\), and the corresponding shared-support connector completion in the S-channel along \(\mathcal S\). Each channel joins its \(k\) pieces into a tree using \(k-1\) connector operations. Finally add one bridge between the two root pieces. The resulting graph is connected and has
+\[
+(m-2k)+ (k-1)+(k-1)+1=m-1
+\]
+edges, hence is a spanning tree on the original \(m\) insertion labels.
+
+This is a genuine one-tree skeleton for the pair \((p,\mathcal S)\), not a product of two spanning-tree counts. It also makes clear why the assumption \(|C_j|\ge2\) is relevant: it supplies two nonempty pieces per temporal component.
+
+**However, this is not yet an injection.** Three precise issues remain:
+
+1. **Port realizability:** the temporal overlap witness and the spatial shared-link witness for a component may be the same insertion vertex. A cut of \(C_j\) need not place the required T- and S-witnesses in different pieces. The two-port hypotheses above have not been derived from the PF-I16 source constraints.
+2. **Component-pair decoder:** after the \(k\) cut edges are removed, the T- and S-pieces must be paired back into their original \(C_j\)'s. The two channel trees and the root bridge do not, by themselves, specify this matching. A canonical pairing mark or a structural decoder is still required, and its fiber must be bounded by \(C^m\).
+3. **Temporal profile:** deleting one edge from each \(C_j\) changes the cut profile. The T-channel subdivisions preserve the profile of the forest on which they act, but that fact does not restore the deleted-edge contribution. The S-channel and bridge must be shown to compensate for the lost temporal cut weights, or the construction must be modified to retain a profile-dominating weight.
+
+Thus the edge-count/connectivity lemma is exact **conditional on the two-port hypotheses**, but no bounded-fiber completion theorem is claimed. In particular, the spatial connector must carry a genuine integrable time-influence factor; support overlap alone is only a zero-pattern and supplies no temporal decay.
+
+### 10.1 The next decisive sublemma
+
+Before attempting an all-orders decoder, test whether the actual source data admit a canonical *two-port witness selection*:
+\[
+(F,p,\mathcal S,\text{witnesses})
+\longmapsto
+\{(e_j,c_j^T,c_j^S):1\le j\le k\}
+\]
+such that (i) each cut leaves the two required ports in different pieces, (ii) every T-port is admissible for its parent-edge subdivision, (iii) every S-port realizes its spatial witness, and (iv) the sum of the resulting edge time-lengths dominates the original temporal profile. A single valid family with no such selection would refute this particular two-channel construction, though not every possible joint completion map.
