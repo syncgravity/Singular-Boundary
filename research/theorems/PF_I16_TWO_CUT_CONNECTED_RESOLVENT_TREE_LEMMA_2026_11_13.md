@@ -258,23 +258,23 @@ with source and cut insertions treated as marked local vertices when differentia
 
 There is an exact spatial cancellation before any estimate: if the overlap graph of \(X_1,\ldots,X_m\) is disconnected, the corresponding groups depend on disjoint sets of independent link paths. Their joint cumulant in (6.3) is therefore zero. This is the desired disconnected-subsystem cancellation, now expressed directly on the product-path reference measure.
 
-The remaining temporal estimate can be isolated as follows. For bounded local multiplication observables \(A_k\) supported on \(S_k\), prove a uniform tree bound for the stationary product-path cumulant,
+The remaining temporal estimate can be isolated as follows. For bounded local multiplication observables \(A_k\) supported on \(S_k\), prove
 \[
 \left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|
 \le C_{\rm time}^{\,m}
 \left(\prod_k\|A_k\|_\infty\right)
-\sum_{T\in\mathcal T_m(\mathcal G_{\rm ov})}
-\prod_{\{p,q\}\in T}
-e^{-\Delta_0|t_p-t_q|},
+\mathbf1_{\{\mathcal G_{\rm ov}\ {\rm connected}\}}
+\sum_{T\in\mathcal T_m}
+\prod_{\{p,q\}\in T}e^{-\Delta_0|t_p-t_q|},
 \tag{6.4}
 \]
-where \(\mathcal G_{\rm ov}\) is the support-overlap graph and the sum is over its spanning trees (zero if it is disconnected). The constant \(C_{\rm time}\) must be explicit and at most exponential in \(m\). The one-link spectral gap supplies
+where \(\mathcal G_{\rm ov}\) is the graph joining support-overlapping local observables, and \(\mathcal T_m\) is the set of all labeled spanning trees on the time indices (the temporal tree is not required to be an edge of \(\mathcal G_{\rm ov}\)). The constant \(C_{\rm time}\) must be explicit and at most exponential in \(m\). The one-link spectral gap supplies
 \[
 \|P_\tau-\Pi\|_{2\to2}\le e^{-\Delta_0\tau};
 \]
-the proof obligation is to propagate this estimate through the full cumulant partition formula without losing the connected-tree cancellation.
+the proof obligation is to propagate this estimate through the full cumulant partition formula while retaining exact spatial cancellation.
 
-For every fixed tree \(T\), the time integral is elementary:
+For every fixed temporal tree \(T\), the time integral is elementary:
 \[
 \int_{[0,T_0]^m}
 \prod_{\{p,q\}\in T}e^{-\Delta_0|t_p-t_q|}
@@ -283,7 +283,21 @@ For every fixed tree \(T\), the time integral is elementary:
 T_0\left(\frac{2}{\Delta_0}\right)^{m-1}.
 \tag{6.5}
 \]
-Root the tree at one time variable, integrate the root over an interval of length \(T_0\), and integrate each remaining vertex relative to its parent over the real line. Thus (6.4), if proved with its actual \(C_{\rm time}\), converts the quantum time-ordered problem into a classical polymer/tree sum. The resulting polymer activity is proportional to \(C_{\rm time}\|v_X\|/\Delta_0\); the actual Kotecký–Preiss threshold must be checked with this constant, not with the provisional \(q_{\rm path}\) in (4.2).
+Root the tree at one time variable, integrate the root over an interval of length \(T_0\), and integrate each remaining vertex relative to its parent over the real line. The resulting local polymer activity is
+\[
+z_X=\frac{2C_{\rm time}\|v_X\|_\infty}{\Delta_0}.
+\]
+For the standard support-incompatibility criterion, it is sufficient that
+\[
+\sup_e\sum_{X\ni e}z_Xe^{a|X|}\le a.
+\tag{6.6}
+\]
+At \(a=1/8\), our verified \(\kappa_H<0.022695\) makes (6.6) hold whenever
+\[
+C_{\rm time}\le \frac{a}{2\kappa_H}<2.754.
+\tag{6.7}
+\]
+Thus the local activity arithmetic is sufficient for this explicit KP target provided the temporal cumulant tree inequality is proved with \(C_{\rm time}\le2.75\). The marked cut-root sums \(\kappa_a,\kappa_{ab}\) and the source support factor \(e^{25/8}<23\) then contribute only finite external-root prefactors; they are not background convergence activities. The provisional \(q_{\rm path}\) in (4.2) is not used as a substitute for (6.4).
 
 For the two-cut coefficient, the marked vertices are \(B_{ab}\), \(B_a\), \(B_b\), \(r_i\), and \(r_j\); the unmarked vertices are the background \(v_X\) insertions from (6.3). A connected tree on these marked and unmarked vertices, summed over the background vertices, is the precise object that should yield the two-cut spatial tree estimate. This gives a concrete route to (5.1), but (6.4) and the resulting polymer convergence remain OPEN.
 
