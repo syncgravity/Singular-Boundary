@@ -258,7 +258,7 @@ with source and cut insertions treated as marked local vertices when differentia
 
 There is an exact spatial cancellation before any estimate: if the overlap graph of \(X_1,\ldots,X_m\) is disconnected, the corresponding groups depend on disjoint sets of independent link paths. Their joint cumulant in (6.3) is therefore zero. This is the desired disconnected-subsystem cancellation, now expressed directly on the product-path reference measure.
 
-The remaining temporal estimate can be isolated as follows. For bounded local multiplication observables \(A_k\) supported on \(S_k\), prove
+The temporal estimate is now established as follows. For bounded local multiplication observables \(A_k\) supported on \(S_k\), prove
 \[
 \left|\kappa_0(A_1(t_1),\ldots,A_m(t_m))\right|
 \le C_{\rm time}^{\,m}
@@ -272,7 +272,7 @@ where \(\mathcal G_{\rm ov}\) is the graph joining support-overlapping local obs
 \[
 \|P_\tau-\Pi\|_{2\to2}\le e^{-\Delta_0\tau};
 \]
-the proof obligation is to propagate this estimate through the full cumulant partition formula while retaining exact spatial cancellation.
+the all-orders proof propagates this estimate through the full cumulant partition formula by the port-completion injection; exact spatial cancellation follows independently from product-path independence when the support-overlap graph is disconnected. The resulting constant is \\(C_{\\rm time}=2\\), not merely the earlier target \\(C_{\\rm time}\\le2.5\\).
 
 For every fixed temporal tree \(T\), the time integral is elementary:
 \[
@@ -299,7 +299,7 @@ C_{\rm time}\le \frac{a}{2\kappa_H}<2.754.
 \]
 Thus the local activity arithmetic is sufficient for this explicit KP target provided the temporal cumulant tree inequality is proved with \(C_{\rm time}\le2.75\). The marked cut-root sums \(\kappa_a,\kappa_{ab}\) and the source support factor \(e^{25/8}<23\) then contribute only finite external-root prefactors; they are not background convergence activities. The provisional \(q_{\rm path}\) in (4.2) is not used as a substitute for (6.4).
 
-For the two-cut coefficient, the marked vertices are \(B_{ab}\), \(B_a\), \(B_b\), \(r_i\), and \(r_j\); the unmarked vertices are the background \(v_X\) insertions from (6.3). A connected tree on these marked and unmarked vertices, summed over the background vertices, is the precise object that should yield the two-cut spatial tree estimate. This gives a concrete route to (5.1), but (6.4) and the resulting polymer convergence remain OPEN.
+For the two-cut coefficient, the marked vertices are \(B_{ab}\), \(B_a\), \(B_b\), \(r_i\), and \(r_j\); the unmarked vertices are the background \(v_X\) insertions from (6.3). A connected tree on these marked and unmarked vertices, summed over the background vertices, is the precise object that should yield the two-cut spatial tree estimate. This gives a concrete route to (5.1): (6.4) is now CLOSED, while the resulting uniform-in-volume polymer convergence and the full estimate (5.1) remain OPEN pending a proof of the joint space-time/support cluster summation.
 
 
 
@@ -385,7 +385,7 @@ For \(m\ge4\), \(2^{m+1}\le(5/2)^m\); the cases \(m=2,3\) satisfy the same final
 \]
 The factor \(m^{m-2}\) is exactly the number of labeled spanning trees. This shows that the raw projection-partition count is no worse than a \(2.5^m\) multiple of the tree count.
 
-This count alone is not the temporal tree inequality: one must still prove that every non-canceling projection term has a connected interval-overlap structure and assign it to a spanning tree whose product of semigroup decay factors dominates that term, with bounded multiplicity. That weighted assignment is the remaining combinatorial proof, not an assumption.
+This raw count alone was not the temporal tree inequality. The required profile-preserving bounded-multiplicity assignment is now proved in Section 10 and the companion port-injection theorem; it gives the sharper \\(C_{\\rm time}=2\\) for the exact coefficient, not the stronger Penrose \\(\\tau(G_F)\\) majorant.
 
 The numerical consequence is useful. If the weighted assignment can be made with \(C_{\rm time}\le2.5\), then the proposed Kotecký–Preiss condition (6.6) is satisfied because
 \[
@@ -402,10 +402,10 @@ The next combinatorial step is recorded in
 research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md.
 Every surviving centered Pi+Q projection term is a linear interval forest whose intervals cover every adjacent temporal gap. If two path components have overlapping time hulls, split an edge (a,b) of one component at a vertex c of the other lying strictly between a and b, replacing (a,b) by (a,c),(c,b). This merges components without a cycle and preserves the number of Q intervals crossing every temporal gap. Iteration completes the forest to a labeled spanning tree with exactly the same temporal cut profile and therefore exactly the same exponential semigroup weight.
 
-The remaining issue is multiplicity, not exponent loss. For each cut profile c, let a_m(c) be the total absolute Möbius coefficient mass of projection forests with that profile, and N_m(c) the number of labeled spanning trees with the same profile. The required all-orders bound is a_m(c) <= C_time^m N_m(c). The finite verifier research/verification/verify_pf_i16_projection_tree_profiles.py confirms the stronger inequality a_m(c) <= N_m(c) for m<=8. This is a finite audit only; the all-orders profile matching remains OPEN. Consequently no C_time<=2.5 is certified and the KP gate remains open.
+The multiplicity issue is now resolved for the exact coefficient: the all-orders port-completion injection proves \\(a_m(c)\\le2^mN_m(c)\\), hence \\(C_{\\rm time}=2\\). The finite verifier now checks the decoder and parent-tree recovery through \\(m=9\\). The stronger assignment with the Penrose majorant \\(\\tau(G_F)\\) is not proved and is unnecessary for the exact cumulant coefficient. The remaining KP gate concerns the joint space-time/support polymer summation, not this profile multiplicity.
 
 
-## 7. Follow-up — temporal projection multiplicity closed (2026-11-13)
+## 10. Follow-up — temporal projection multiplicity and reference cumulant bound closed (2026-11-13)
 
 The weighted projection-to-tree assignment previously identified as a missing combinatorial input is now proved by the all-orders port-completion injection:
 - every increasing rooted interval-overlap tree completes to a labeled tree with exactly the same temporal cut profile;
@@ -419,4 +419,4 @@ Thus \(C_{\rm time}=2\), and the previously proposed numerical condition is sati
 \]
 See [the updated projection/tree proof and verifier](PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) and [the finite-order audit](../verification/verify_pf_i16_projection_tree_profiles.py).
 
-**The quantum connected-resolvent/tree theorem remains OPEN.** The new result also gives the all-orders reference-process temporal cumulant tree bound and fixed-order time-integral estimate (7.6)–(7.7). What remains open is the uniform-in-volume, all-orders Feynman–Kac/ground-energy linked-cluster expansion and its application to the actual conjugated rotor Hamiltonian.
+**The quantum connected-resolvent/tree theorem (5.1) remains OPEN.** The temporal reference-process inequality (6.4), exact disconnected-support cancellation, and the per-tree time integral (6.5) are now established, and the numeric KP activity condition (6.6) is satisfied. What remains open is the rigorous joint space-time/support polymer organization, uniform-in-volume convergence of (6.3), and the resulting marked two-cut and higher-cut connected tree estimates for the actual conjugated rotor Hamiltonian.
