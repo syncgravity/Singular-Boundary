@@ -98,7 +98,7 @@ The face-overlap graph therefore has degree at most 28. This uses the universal 
 
 ## 3. Candidate local activity margin
 
-The product-rotor kinetic operator has one-link gap \(3a_e/4\) in the radius-two SU(2) normalization. With the product-metric lower bound \(a_e\ge a_0\),
+The product-rotor kinetic operator has one-link gap \(3a_e/4\) in the radius-two SU(2) normalization. In the product metric \(\tilde g_e=a_e^{-1}g_e\), the Ricci endomorphism on link \(e\) is \(a_e/2\); hence the corrected lower bound \(\operatorname{Ric}^{\sharp}_{\tilde g}\ge a_0/2\) gives \(a_e\ge a_0\). Therefore,
 \[
 \operatorname{gap}(K)\ge\Delta_0:=\frac{3a_0}{4}.
 \]
