@@ -456,3 +456,14 @@ The next joint space-time gate has advanced: for the product reference path law,
 The \(m=4\) case needed by the two-cut response remains open, as does the all-orders induction and the quantum KP application.
 
 [Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md).
+
+
+## PF-I16 next method · weighted dependency graph route (2026-11-13)
+
+The exact reference-process support-sensitive tree bounds now cover orders two and three. For the open order-four/all-orders step, the next route is a Féray-style weighted dependency graph on insertion labels \((X_i,t_i)\), with candidate bond
+\[
+\mathbf1_{\{X_i\cap X_j\ne\varnothing\}}e^{-\Delta_0|t_i-t_j|}.
+\]
+The framework uses a maximum-spanning-tree product and a quasi-factorization criterion, potentially avoiding separate spatial and temporal Cayley factors. Its application to the product SU(2) path process is not yet proved.
+
+[Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Féray, *Weighted dependency graphs*](https://arxiv.org/abs/1605.03836).
