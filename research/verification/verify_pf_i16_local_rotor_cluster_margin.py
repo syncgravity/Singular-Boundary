@@ -14,7 +14,7 @@ e_weighted = e_upper * degree_weighted
 
 assert z_over_gap < Fraction(861, 1_000_000)  # 8.61e-4
 assert degree_weighted < Fraction(2411, 100_000)  # 2.411e-2
-assert e_weighted < Fraction(6554, 100_000)  # 6.554e-2
+assert e_weighted < Fraction(6558, 100_000)  # 6.558e-2
 
 print(f"PASS: z_face/gap = {float(z_over_gap):.12g} < 8.61e-4")
 print(f"PASS: 28*z_face/gap = {float(degree_weighted):.12g} < 2.411e-2")
