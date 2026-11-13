@@ -465,3 +465,140 @@ The shared-port recommendation is therefore only partially successful:
 3. **Still open:** a weighted completion that permits controlled profile loss, or a different joint cumulant argument that does not require an exact-profile spatial witness edge.
 
 The next viable route is consequently not to force the two-channel split map. It is to return to the weighted-dependency-graph route of Section 8, where a spatial witness edge may carry its own integrable temporal influence kernel and need not be an edge in the exact temporal-profile tree. The model-specific quasi-factorization and explicit order-growth bounds remain to be proved. No all-orders joint space-time tree inequality or quantum cluster theorem is claimed here.
+
+
+## 12. Continuous-time one-link weighted-dependency estimate
+
+The obstruction in Section 11 rules out an exact-profile completion for arbitrary spatial witnesses. The analytic alternative in Section 8 can be advanced one level without any tensor expansion: the one-link stationary reference process itself has an explicit weighted-dependency estimate.
+
+Let (U_t) be one stationary reversible link process with invariant law (pi), Markov semigroup (P_t), projection (Pi f=pi(f)mathbf1), and
+[
+|P_t-Pi|_{L^2(pi)	o L^2(pi)}
+le e^{-Delta_0t}.
+	ag{12.1}
+]
+For bounded multiplication observables (f_1,ldots,f_r), put (Z_j=f_j(U_{t_j})), and order the times
+[
+t_1le t_2lecdotsle t_r,qquad g_j=t_{j+1}-t_j.
+]
+
+### 12.1 Boolean cumulants factor across every temporal gap
+
+The Boolean cumulant is the alternating sum over interval partitions:
+[
+B_r(Z_1,ldots,Z_r)
+=
+sum_{Dsubseteq[r-1]}(-1)^{|D|}
+prod_{Iinoperatorname{Int}(D)}
+mathbb E!left[prod_{jin I}Z_jight],
+	ag{12.2}
+]
+where (operatorname{Int}(D)) is the interval partition obtained by cutting between (j) and (j+1) for (jin D).
+
+The Markov moment formula expresses each interval-block moment by inserting (P_{g_j}) between consecutive multiplication operators. The product over interval blocks inserts (Pi) at each cut. Thus the alternating sum (12.2) is exactly the operator identity
+[
+B_r(Z_1,ldots,Z_r)
+=
+leftlangle
+mathbf1,,
+M_{f_1}(P_{g_1}-Pi)M_{f_2}
+cdots
+(P_{g_{r-1}}-Pi)M_{f_r}mathbf1
+ightangle_{L^2(pi)}.
+	ag{12.3}
+]
+Consequently, by (12.1) and (|M_f|_{2	o2}le|f|_infty),
+[
+oxed{
+|B_r(Z_1,ldots,Z_r)|
+le
+e^{-Delta_0(t_r-t_1)}
+prod_{j=1}^r|f_j|_infty.
+}
+	ag{12.4}
+]
+This is an exact continuous-time analogue of the Boolean-cumulant step in Féray's finite-state Markov-chain argument.
+
+### 12.2 Classical cumulants and an explicit factorial envelope
+
+The classical/Boolean cumulant relation expresses the classical cumulant as
+[
+kappa_r(Z_1,ldots,Z_r)
+=
+sum_{hoinmathcal P_{mathrm{irr}}[r]}
+d_ho
+prod_{Cinho}B_{|C|}(Z_j:jin C),
+	ag{12.5}
+]
+where (mathcal P_{mathrm{irr}}[r]) consists of the set partitions that are not separated by any cut ({1,ldots,q}mid{q+1,ldots,r}), and (d_ho) are universal coefficients.
+
+For every irreducible (ho), the index intervals
+[
+[min C,max C],qquad Cinho,
+]
+cover every consecutive gap ([j,j+1]). Therefore
+[
+sum_{Cinho}(t_{max C}-t_{min C})
+ge t_r-t_1.
+	ag{12.6}
+]
+Applying (12.4) to every block in (12.5) gives the same full-span exponential factor.
+
+An explicit crude bound on the total absolute coefficient mass follows directly by expanding the classical moment-cumulant formula into Boolean moment-cumulant formulas. A set partition with (k) blocks has Möbius coefficient of magnitude ((k-1)!), and its (k) block moments produce at most (2^{r-k}) interval-partition terms. Hence
+[
+sum_{hoinmathcal P_{mathrm{irr}}[r]}|d_ho|
+le
+sum_{k=1}^r
+left{egin{matrix}r\kend{matrix}ight}
+(k-1)!,2^{r-k}
+le 2^rsum_{k=1}^r k^{r-1}
+le 2^r r^r
+le (2e)^r r!.
+	ag{12.7}
+]
+Combining (12.4)–(12.7),
+[
+oxed{
+|kappa_r(f_1(U_{t_1}),ldots,f_r(U_{t_r}))|
+le
+(2e)^r r!,
+e^{-Delta_0(t_{max}-t_{min})}
+prod_{j=1}^r|f_j|_infty.
+}
+	ag{12.8}
+]
+
+For the complete graph on the (r) time-labelled observables with edge weights
+[
+w_{ij}=e^{-Delta_0|t_i-t_j|},
+]
+the maximum spanning-tree product is exactly
+[
+mathcal M(w)=e^{-Delta_0(t_{max}-t_{min})},
+]
+because the minimum-length spanning tree on the line joins consecutive ordered times. Thus (12.8) proves a one-link weighted-dependency-graph estimate with the explicit factorial envelope (C_rle(2e)^r r!). Repeated times are allowed: zero gaps simply give (P_0-Pi=I-Pi), whose (L^2) norm is at most one.
+
+### 12.3 What this does and does not lift
+
+For elementary tensor insertions
+[
+A_i(U_{X_i})=prod_{ein X_i}f_{i,e}(U_e),
+qquad |X_i|le8,
+]
+independence of the link path processes and the product-stability theorem for weighted dependency graphs suggest the lifted edge weight
+[
+w_{ij}
+=
+mathbf1_{{X_icap X_j
+earnothing}}
+e^{-Delta_0|t_i-t_j|}.
+	ag{12.9}
+]
+This is the desired spatial-incidence/time-decay bond, now supported by an explicit one-link estimate rather than only a finite-state analogy.
+
+There are still two nontrivial gates:
+
+1. **Degree-eight product constants.** Féray's product-stability proposition gives constants (D_{8,r}) depending on the one-link constants through order (8r), but does not itself give the growth estimate needed here. A direct count in the Leonov–Shiryaev product-cumulant formula must show that the lifted constants, after the (1/r!) Feynman–Kac normalization, are compatible with a nonzero activity radius.
+2. **Actual PF-I16 insertions.** The face and face-pair observables are not known here to be elementary tensors. Their finite-link tensor/projective expansions must have an absolutely summable coefficient norm with an explicit bound compatible with the local activities. No uncontrolled Peter–Weyl (ell^1) expansion is allowed.
+
+Accordingly, the one-link estimate (12.8) is **closed under (12.1)**. The degree-eight lift with a usable order-growth bound, the projective tensor estimate for the actual PF-I16 insertions, and the all-orders joint space-time/KP theorem remain **open**. This is the new preferred analytic route; it does not revive the refuted exact-profile completion in Section 11.2.
