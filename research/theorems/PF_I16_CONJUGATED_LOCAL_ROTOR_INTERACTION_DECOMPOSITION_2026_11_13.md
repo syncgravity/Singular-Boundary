@@ -129,7 +129,81 @@ These are encouraging numerical margins for a polymer criterion on the face-over
 
 **Important limitation:** (3.2) is not yet a verified Kotecký–Preiss condition for the quantum ground-state problem. The required polymer activity norm must account for the unbounded local rotor Hilbert spaces, reduced-resolvent insertions, temporal ordering, and exact connected cancellation. No convergence claim is made until that theorem is proved with its actual constants.
 
-## 4. Next theorem required
+## 4. Cut derivatives become bounded multiplication insertions after conjugation
+
+For the multi-cut interpolation, write
+\[
+\Phi_{\mathbf s}=\sum_f\alpha_f(\mathbf s)s_f(H_f),
+\qquad
+\alpha_f(\mathbf s)=\prod_{a\in C_f}s_a,\qquad 0\le\alpha_f\le1.
+\]
+The exact face/pair decomposition becomes
+\[
+\mathcal U_{\Phi_{\mathbf s}}
+=\sum_f A_f^{\rm kin}
+\left[\alpha_f\Delta s_f+\alpha_f^2|\nabla s_f|^2\right]
++\sum_{f<g}\alpha_f\alpha_gV_{fg}.
+\tag{4.1}
+\]
+For a tree-cut parameter \(s_a\), put \(\alpha_{f,a}=\partial_{s_a}\alpha_f\), which is zero unless \(a\in C_f\) and otherwise has magnitude at most one. Then
+\[
+\begin{aligned}
+\partial_{s_a}\mathcal U_{\Phi_{\mathbf s}}
+={}&\sum_f A_f^{\rm kin}\alpha_{f,a}
+\left[\Delta s_f+2\alpha_f|\nabla s_f|^2\right]\\
+&+\sum_{f<g}
+(\alpha_{f,a}\alpha_g+\alpha_f\alpha_{g,a})V_{fg}.
+\end{aligned}
+\tag{4.2}
+\]
+This is a bounded multiplication operator, supported on face and adjacent-face-pair terms crossing cut \(a\).
+
+The isolated-rotor equation gives
+\[
+\Delta s_f+2\alpha_f|\nabla s_f|^2
+=(2\alpha_f-1)|\nabla s_f|^2-\beta_fp_f-\lambda_f.
+\]
+Using \(|\lambda_f|\le\beta_f\), \(\|p_f\|_\infty\le1\), \(\|\nabla s_f\|_\infty\le2\beta_f\), \(A_f^{\rm kin}/A_f\le32\), and \(A_f\ge a_0/2\), each one-face derivative insertion is bounded by
+\[
+\left\|A_f^{\rm kin}\alpha_{f,a}
+[\Delta s_f+2\alpha_f|\nabla s_f|^2]\right\|_\infty
+\le64b_0+256\,\frac{b_0^2}{a_0}.
+\tag{4.3}
+\]
+The pair derivative coefficient in (4.2) is at most two, so
+\[
+\|(\alpha_{f,a}\alpha_g+\alpha_f\alpha_{g,a})V_{fg}\|_\infty
+\le1024\,\frac{b_0^2}{a_0}.
+\tag{4.4}
+\]
+Since each face has at most 28 neighbors, the incident cut-insertion weight per face is bounded by
+\[
+z_{\rm cut}
+\le64b_0+28928\,\frac{b_0^2}{a_0}.
+\tag{4.5}
+\]
+Relative to \(\Delta_0=3a_0/4\), at \(x=b_0/a_0\le1/50000\),
+\[
+\frac{z_{\rm cut}}{\Delta_0}
+\le\frac{256}{3}x+\frac{115712}{3}x^2
+<1.723\times10^{-3},
+\quad
+28\frac{z_{\rm cut}}{\Delta_0}<4.822\times10^{-2}.
+\tag{4.6}
+\]
+These are candidate local insertion margins only; they are not a quantum polymer criterion.
+
+Let \(\widehat H_{\mathbf s,\mathbf t}
+=K+\mathcal U_{\Phi_{\mathbf s}}-\sum_i t_ir_i\) on product Haar space. Its spectrum agrees with that of \(L_{\Phi_{\mathbf s}}-\sum_i t_ir_i\), and ordinary Hellmann–Feynman gives
+\[
+\partial_{s_a}E_I(\mathbf s)
+=\langle\Psi_{\mathbf s,\mathbf t},
+(\partial_{s_a}\mathcal U_{\Phi_{\mathbf s}})
+\Psi_{\mathbf s,\mathbf t}\rangle
+\]
+for the corresponding simple ground state. Thus the multi-cut derivatives become insertions of bounded local multiplication operators, rather than the first-order differential insertion \(\Gamma(W_a,g)\) in the dressed-measure picture. Mixed derivatives still require connected resolvent/cumulant bounds, but the \(D^2g\) obstruction in (4.2) of the multi-cut note is avoided at the level of the insertion itself.
+
+## 5. Next theorem required
 
 Prove a source-volume-uniform linked-cluster expansion for
 \[
@@ -144,7 +218,7 @@ with local interaction graph degree at most 28 and weights (2.1)–(2.2). The th
 The one-cut and multi-cut interpolation routes remain independent alternatives. Neither is silently identified with this quantum cluster theorem. No R3-IR constants are imported.
 
 
-## 5. Source inputs and verification
+## 6. Source inputs and verification
 
 The isolated-rotor derivative and face-map bounds are conditional source inputs from:
 - `research/audits/PF_I16_ISOLATED_ROTOR_FIRST_DERIVATIVE_OBSTRUCTION_2026_11_11.md`
