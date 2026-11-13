@@ -46,6 +46,28 @@ Accordingly, the present Observatory distinguishes exact finite identities, cond
 
 ---
 
+## R3-IR branch review · PR #106 · 2026-11-11
+
+The separate branch \`audit/r3-ir-h2-trace-to-k-2026-11-10\` contains a consolidated **conditional full-Hessian reference-semigroup proposition** for the finite open straight SU(2) strip. Under its isolated-dressing branch \\(|g|\\le10^{-3}\\) and the stated scalar/local geometric hypotheses,
+\\[
+G_w(t)^2+H_w(t)^2
+\\le e^{-2\\lambda_*t}(G_w(0)^2+H_w(0)^2),
+\\qquad \\lambda_*>0.4955484.
+\\]
+The rate is independent of strip length under those hypotheses. The norm weights only the first Hessian link index; equivalence to unweighted Sobolev norms need not be uniform in strip length. This is a reference-semigroup derivative-energy estimate, **not** a uniform scalar Poincaré gap, nonlinear full-interaction gap, or physical continuum theorem. The local geometry, sharp weighted Bochner/conditional trace-Poincaré inputs, common-measure/smooth-core extension, and consolidated proposition are linked in the graph as review-only sources. PR #106 remains on a divergent review branch; no theorem ID is promoted.
+
+The same branch records a conditional degree-eight estimate for an illustrative finite projected-\\(\\mathbb Z^5\\) **2-skeleton**, with \\(\\lambda_{\\min}(Q_8)>0.1972\\). Its selected 3-cells are non-manifoldly incident (1,700 square faces meet more than two selected cubes, up to six). It has no source-authenticated 3D cellulation or refinement family, so this is not a physical regulator transfer.
+
+### Branch reconciliation snapshot
+
+- \`audit/pf-i16-local-interacting-vacuum-2026-11-08\`: 53 commits ahead / 429 behind main, 48 candidate paths. The PF-I16 preservation ledger records 46 files copied to main and two already identical; the original branch is retained as provenance and not merged wholesale.
+- \`audit/r3-ir-h2-trace-to-k-2026-11-10\` (PR #106): 64 ahead / 301 behind main, 28 changed paths; remains a review-only finite-strip lane.
+- \`architecture/source-compatible-spectral-spine-2026-11-11\` (PR #107): 81 ahead / 291 behind main, 41 changed paths. Its source/proof architecture and selected records were reconciled, not merged wholesale; seven script paths remain explicit retrieval items in the preservation ledger.
+
+These branch comparisons are a dated repository snapshot, not mergeability claims. The distinct R3-IR results do not close the PF-I16 all-orders activity theorem or the source-native P0–P5 continuum gates.
+
+---
+
 # Research Observatory — source-linked proof and evidence map
 
 ## Current source corrections · 2026-11-11
