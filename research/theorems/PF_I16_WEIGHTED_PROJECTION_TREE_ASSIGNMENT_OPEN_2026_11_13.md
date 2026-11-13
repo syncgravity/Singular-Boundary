@@ -39,9 +39,11 @@ Indeed, multiplying this inequality by exp(-Delta_0 sum_k(1+c_k)g_k) and summing
 
 ## 4. Finite-order coefficient audit
 
-The new verifier research/verification/verify_pf_i16_projection_tree_profiles.py constructs the centered Pi+Q expansion, collects equal interval forests with their signed Mobius coefficients, enumerates labeled trees by Prufer sequences, and compares a_m(c) with N_m(c) profile by profile.
+The original finite profile audit constructed the centered Pi+Q expansion, collected equal interval forests with their signed Mobius coefficients, and enumerated labeled trees by Prufer sequences to compare a_m(c) with N_m(c) profile by profile. Its historical counts are retained below for reproducibility.
 
-The exact finite enumeration gives:
+The current verifier, research/verification/verify_pf_i16_projection_tree_profiles.py, now audits the stronger constructive injection directly: it enumerates the projection forests and increasing parent maps, applies the port-completion algorithm, checks every temporal cut profile, and decodes the forest and parent map from the decorated tree. It does not enumerate all labeled trees by Prufer sequences or recompute the historical tree-profile columns.
+
+The original finite profile audit gave:
 
 | m | surviving projection forests | absolute coefficient mass | projection profiles | tree profiles | coefficientwise violations |
 |---:|---:|---:|---:|---:|---:|
