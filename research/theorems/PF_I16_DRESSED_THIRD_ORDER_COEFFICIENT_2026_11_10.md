@@ -161,3 +161,10 @@ The algebraic cancellation for independent subsystem decompositions does not est
 **Open:** spatially decaying third-order tree bound; fourth-order spatial connected-support/tree estimate for coupled Penrose subsystems; all-orders connected activity majorant; source physical kinetic/time; source-authenticated refining physical 3D regulator; nontrivial interacting continuum existence and positive physical mass gap.
 
 The previous (3.25\times10^{16}) third-order prefactor, (1/40000) threshold, and all constants depending on \(\|s'_f\|_\infty\le\beta_f\) are superseded. No spatial tree decay or all-orders conclusion is claimed.
+
+
+## 6. 2026-11-13 spatial continuation
+
+The corrected two-point resolvent theorem has now been applied to the nested third-order term. The result is a uniform three-kernel convolution and a six-permutation **pair-arm** bound, not a connected tree estimate. The exact remaining obstruction is the undifferentiated factor \( (Gr_k)D r_j \) in the product rule; the global oscillation bound controls its amplitude but supplies no decay from \(S_j\) to \(S_k\). See [PF-I16 three-support pair-arm estimate and tree obstruction](PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md) and its [exact convolution verifier](../verification/verify_pf_i16_three_support_convolution.py).
+
+The report specifies the missing PF-I16 conditional-amplitude/\(L^4\) estimate, conditional-centering control, and history-aware six-permutation cancellation. Earlier straight-strip R3 estimates are not silently imported as PF-I16 theorems. Spatial tree decay remains **OPEN**.
