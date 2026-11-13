@@ -403,3 +403,20 @@ research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md.
 Every surviving centered Pi+Q projection term is a linear interval forest whose intervals cover every adjacent temporal gap. If two path components have overlapping time hulls, split an edge (a,b) of one component at a vertex c of the other lying strictly between a and b, replacing (a,b) by (a,c),(c,b). This merges components without a cycle and preserves the number of Q intervals crossing every temporal gap. Iteration completes the forest to a labeled spanning tree with exactly the same temporal cut profile and therefore exactly the same exponential semigroup weight.
 
 The remaining issue is multiplicity, not exponent loss. For each cut profile c, let a_m(c) be the total absolute Möbius coefficient mass of projection forests with that profile, and N_m(c) the number of labeled spanning trees with the same profile. The required all-orders bound is a_m(c) <= C_time^m N_m(c). The finite verifier research/verification/verify_pf_i16_projection_tree_profiles.py confirms the stronger inequality a_m(c) <= N_m(c) for m<=8. This is a finite audit only; the all-orders profile matching remains OPEN. Consequently no C_time<=2.5 is certified and the KP gate remains open.
+
+
+## 7. Follow-up — temporal projection multiplicity closed (2026-11-13)
+
+The weighted projection-to-tree assignment previously identified as a missing combinatorial input is now proved by the all-orders port-completion injection:
+- every increasing rooted interval-overlap tree completes to a labeled tree with exactly the same temporal cut profile;
+- the connector set is determined by the completed tree's directed degrees;
+- incoming/outgoing port decorations decode the original forest and its parent tree;
+- each completed tree has at most \(2^m\) decorated preimages.
+
+Thus \(C_{\rm time}=2\), and the previously proposed numerical condition is satisfied:
+\[
+2C_{\rm time}\kappa_H=4\kappa_H<0.09078<1/8.
+\]
+See [the updated projection/tree proof and verifier](PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) and [the finite-order audit](../verification/verify_pf_i16_projection_tree_profiles.py).
+
+**The quantum connected-resolvent/tree theorem remains OPEN.** The new result closes the projection-coefficient multiplicity subgate only. A uniform Feynman–Kac/ground-energy linked-cluster expansion, the full time-ordered reduced-resolvent bound, and its application to the actual conjugated rotor Hamiltonian still require proof.
