@@ -212,6 +212,7 @@ The derivative norms in (2.3) and (3.3), the carré-du-champ norm, and the radiu
 The derivative of \(W\) is supported on links belonging to faces crossing \(A_r|B_r\).
 
 For every such boundary link \(e\), the cut property and face diameter one in the link-overlap graph imply
+Indeed, a crossing face contains a link in \(A_r\) and a link in \(A_r^c\), and every pair of links in that face is adjacent. A crossing-face link inside \(A_r\) must be at distance at least \(r\) from every \(P\)-side support, or its outside neighbor would also lie in \(A_r\); a crossing-face link outside \(A_r\) is at distance at least \(r+1\) from every \(P\)-side support. For any \(Q\)-side support, use the inside neighbor and the cross-cut distance lower bound \(L\) to obtain distance at least \(L-r-1\). Thus every crossing-face link is at distance at least \(\min(r,L-r-1)\ge R\) from all four supports.
 \[
 d(e,S_m)\ge R:=\max\!\left(0,\left\lfloor\frac L2\right\rfloor-1\right)
 \qquad(m\in I).
