@@ -21,6 +21,31 @@ For each fixed order and each labeled tree, the ordered time integral is at most
 
 ---
 
+## Integrated proof-status update · 2026-11-13 — third/fourth order and weak-coupling controls
+
+The earlier PF-I16 summaries are now reconciled with the later theorem records. The completed results are:
+
+- **Exact all-orders temporal projection/tree injection:** the port-completion map preserves every temporal cut profile, has fibre at most \\(2^m\\), and gives \\(C_{\\rm time}=2\\). This closes the temporal coefficient-multiplicity subproblem, not the quantum linked-cluster theorem.
+- **Reference-process support-sensitive cumulants:** the space-time tree inequality is exact for orders two and three. The direct support-sensitive order-four reference cumulant/tree bound remains open.
+- **Third-order dressed response:** the complete six-permutation coefficient has a conditional, volume-independent Dobrushin–Föllmer MST bound under the corrected PF-I16 derivative-flow and face-pullback hypotheses.
+- **Fourth-order dressed response:** the full four-support coefficient has a separate conditional cut-interpolation MST bound, with \\(\\eta_4=\\frac1{24}\\log\\frac{25}{23}\\). The exact 36-term partition identity and cancellation under genuine independent-subsystem factorization are also established. These are finite-order results, not an all-orders radius of convergence.
+- **Two-cut response:** the finite-volume reduced-resolvent identity, bounded local multiplication insertions, and uniform per-link activity arithmetic are recorded. The numerical activity margin is not itself a Kotecký–Preiss proof.
+
+The open PF-I16 theorem is now stated more precisely: prove a **single joint space-time/support tree estimate** for arbitrary background interaction insertions, with exponential-in-order constants; then prove uniform Feynman–Kac/ground-energy convergence and the actual quantum KP criterion. Multiplying independent spatial and temporal tree sums gives a superexponential majorant and is not an acceptable substitute. The dressed reference estimates do not yet imply a Poincaré inequality for the true source-interacting vacuum.
+
+### Separate R3-IR weak-coupling results
+
+The Observatory now also records two results that were present in the earlier R3-IR work but must not be transferred to PF-I16:
+
+- On the original-link straight strip, an application of Yarotsky's published weak-interaction stability theorem gives an existential, strip-length-uniform gap for sufficiently small local magnetic coupling.
+- On **periodic cubic** original-link SU(2) lattices, the audited application gives the symbolic condition \\(16|z|<\\beta_Y\\), with \\(\\beta_Y\\) not numerically evaluated. The audited Kogut–Susskind normalization is \\(z=4/g_0^4\\), so the asymptotically-free trajectory \\(g_0\\to0\\) has \\(z\\to\\infty\\), outside that electric-dominated small-\\(z\\) regime. The earlier broader open-boundary/inhomogeneous claim is not carried forward.
+
+Accordingly, the present Observatory distinguishes exact finite identities, conditional finite-order spatial bounds, imported weak-coupling stability results, and the still-open source-native all-orders/continuum obligations. The physical kinetic/time law, refinement-uniform interacting-vacuum Poincaré inequality, nontrivial continuum reconstruction, and positive physical mass gap remain **OPEN**.
+
+[Two-cut connected-resolvent record](../research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md) · [Third-order Dobrushin–Föllmer tree bound](../research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md) · [Fourth-order cut-interpolation tree bound](../research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md) · [Exact fourth-order partition cancellation](../research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md) · [R3-IR periodic-cubic continuum-scaling audit](../research/theorems/R3_IR_3D_QUANTITATIVE_THRESHOLD_AND_CONTINUUM_SCALING_AUDIT_2026-11-04.md).
+
+---
+
 # Research Observatory — source-linked proof and evidence map
 
 ## Current source corrections · 2026-11-11
