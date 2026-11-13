@@ -1,3 +1,17 @@
+## Current PF-I16 update · 2026-11-13 — all-orders temporal port injection
+
+The weighted projection-to-tree multiplicity subgate is now closed by an exact all-orders injection. Each connected interval forest together with an increasing rooted spanning tree of its interval-overlap graph is completed to a labeled tree with the identical temporal cut profile. One incoming and one outgoing port at each non-root component's connector encode an inverse; the connector set is determined by the completed tree's directed degrees. Since there are at most \(m/2\) components, each completed tree has at most \(4^{m/2}=2^m\) decorated preimages. Therefore
+\[
+A_m(c)\le2^mN_m(c),\qquad C_{\rm time}=2.
+\]
+The proposed activity arithmetic now gives \(2C_{\rm time}\kappa_H<0.09078<1/8\).
+
+This closes the temporal projection-coefficient assignment, **not** the full quantum connected-resolvent/tree theorem. Uniform Feynman–Kac/ground-energy linked-cluster convergence, the complete time-ordered reduced-resolvent estimate, the multi-cut mixed-derivative bound, and the physical continuum mass-gap gates remain open. The finite verifier audits the injection through order nine; the all-orders result is the mathematical construction, not the enumeration.
+
+[All-orders injection proof and finite verifier](../research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md) · [Two-cut connected-resolvent frontier](../research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md).
+
+---
+
 # Research Observatory — source-linked proof and evidence map
 
 ## Current source corrections · 2026-11-11
