@@ -474,3 +474,14 @@ The framework uses a maximum-spanning-tree product and a quasi-factorization cri
 The next calculation is now specified more concretely. Adapt the time-indexed Markov weighted-dependency estimate to one continuous-time SU(2) link using \(\|P_t-\Pi\|_{2\to2}\le e^{-\Delta_0t}\). Then lift to degree-eight elementary tensor insertions by the product/power construction. The remaining local analytic input is an explicit projective tensor norm for the actual face and face-pair potentials, together with exponential-in-order control of the lifted cumulant constants.
 
 [Joint space-time tree frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md) · [Féray, *Weighted dependency graphs*](https://arxiv.org/abs/1605.03836).
+
+
+## PF-I16 joint completion clarification (2026-11-13)
+
+The next bounded-fiber map must encode the full source tuple
+\[
+(F,\ p,\ \mathcal S,\ \text{shared-link witnesses}),
+\]
+where \(F\) is the temporal projection forest, \(p\) is its increasing rooted parent tree (accounting for \(|\alpha_m(F)|\)), and \(\mathcal S\) is a spanning tree of the contracted spatial support graph. The simple union \(F\cup\mathcal S\) is a single tree, but does not recover \(p\). Encoding \(p\) by extra ports/marks on that same tree, with a uniform \(C^m\) fiber, is the actual open combinatorial target.
+
+[Joint space-time completion frontier](../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md).
