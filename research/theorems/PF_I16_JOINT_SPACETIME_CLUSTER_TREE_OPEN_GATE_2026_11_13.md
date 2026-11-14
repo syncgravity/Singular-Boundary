@@ -1016,3 +1016,78 @@ If a cancellation-preserving joint support/time WDG theorem were proved with coe
 Equations (15.11)–(15.12) give an explicit conditional smaller-coupling radius once \(K_6\) and \(C_{\rm st}\) are known. They do not certify the present \(1/50000\) threshold.
 
 **Conclusion of this audit.** The actual one-face insertion has a finite eight-term projective representation; the pair, first-cut, second-cut, and residual insertions have explicit projective majorants controlled by the one-rotor \(H^6\) constant \(K_6\). The required numerical value of \(K_6\), the marked source multiplicity, and—most importantly—the cancellation-preserving all-orders joint support/time cumulant constant are not yet established. Consequently no KP convergence theorem is claimed. The present projective-norm *upper majorant* is too costly to certify the KP inequality at the recorded coupling threshold; this is not a lower bound on the true projective norm and does not refute convergence. A direct tensorized semigroup proof in the \(L^\infty\) norm, avoiding the factor-eight plaquette projective loss, is now the preferred route for preserving the existing activity margin.
+
+
+### 16. Cancellation-preserving route: exact link-factorization of quasi-factorization variables
+
+The absolute Leonov–Shiryaev envelope in Sections 12 and 14 is too large. A more promising route is to apply the quasi-factorization formulation of weighted dependency graphs *before* expanding products into Leonov–Shiryaev partitions. This section records the exact reduction and isolates the remaining combinatorial estimate.
+
+Take elementary tensor insertions
+\[
+A_i(t_i)=\prod_{e\in X_i}f_{i,e}(U_e(t_i)),\qquad |X_i|\le8,
+\]
+and let \(I_e=\{i:e\in X_i\}\). For formal variables \(z_i\), use the shifted row variables
+\[
+Y_i(z_i)=\prod_{e\in X_i}(1+z_i f_{i,e}(U_e(t_i))).
+\]
+Their joint moments are polynomials with constant term one:
+\[
+u_\Delta(\mathbf z)
+=\mathbb E_0\prod_{i\in\Delta}Y_i(z_i)
+=\prod_e u^e_{\Delta\cap I_e}(\mathbf z),
+\quad
+u^e_J(\mathbf z)
+=\mathbb E_e\prod_{i\in J}(1+z_i f_{i,e}(U_e(t_i))).
+\tag{16.1}
+\]
+Thus all \(u_\Delta\) are invertible as formal power series at \(\mathbf z=0\), with no positivity or nonzero-moment assumption.
+
+Define the Boolean-lattice quasi-factorization variable
+\[
+P_\Delta(\mathbf z)
+=\prod_{\delta\subseteq\Delta}
+u_\delta(\mathbf z)^{(-1)^{|\Delta|-|\delta|}}.
+\tag{16.2}
+\]
+Taking formal logarithms in (16.1) and applying Möbius cancellation gives the exact identity
+\[
+\boxed{
+P_\Delta(\mathbf z)
+=\prod_{e:\,\Delta\subseteq I_e}
+P^e_\Delta(\mathbf z),\qquad
+P^e_\Delta
+=\prod_{\delta\subseteq\Delta}
+(u^e_\delta)^{(-1)^{|\Delta|-|\delta|}}.
+}
+\tag{16.3}
+\]
+In particular, if no single link belongs to every support \(X_i\), \(i\in\Delta\), then \(P_\Delta\equiv1\). Otherwise there are at most eight factors in (16.3), since every row support has size at most eight. This is the precise way in which the bounded local support enters *before* the cumulant partition expansion.
+
+For one link, the semigroup identity from Section 12 gives the classical-cumulant estimate
+\[
+|\kappa_e(f_{i_1}(U(t_{i_1})),\ldots,
+f_{i_k}(U(t_{i_k})))|
+\le(2e)^k k!\,
+e^{-\Delta_0(\max t_i-\min t_i)}
+\prod_j\|f_{i_j}\|_\infty.
+\tag{16.4}
+\]
+The desired one-link quasi-factorization estimate is therefore
+\[
+|P^e_\Delta-1|
+\le K^{|\Delta|}\,
+e^{-\Delta_0(\max_{i\in\Delta}t_i-\min_{i\in\Delta}t_i)}
+\prod_{i\in\Delta}|z_i|
+\quad\text{at the square-free coefficient level},
+\tag{16.5}
+\]
+with a controlled analytic majorant for the higher powers of the \(z_i\). Equation (16.4) controls the square-free coefficient, but a uniform analytic majorant for the full formal series in (16.5) has not yet been derived.
+
+Féray's Proposition 5.8 identifies quasi-factorization bounds of this type with weighted-dependency-graph cumulant bounds; its proof organizes the cumulant as a sum over connected collections of subsets, so the disconnected terms cancel before absolute values are taken. The present product structure makes every nontrivial quasi-factorization subset \(\Delta\) a subset of at least one link-incidence set \(I_e\). The remaining combinatorial task is to bound the total connected collection of such subsets by \(K_8^r\), using the row-incidence constraint
+\[
+\sum_e |I_e|=\sum_i|X_i|\le8r,
+\tag{16.6}
+\]
+while preserving the maximum-tree product. A naive count of all subsets of all \(I_e\) is not acceptable: a single link can have \(|I_e|=r\), and its power set already has \(2^r\) members. The link's entire quasi-factorization series must be summed as one object before counting interactions between different links.
+
+**Exact reduction:** (16.1)–(16.3). **One-link input:** (16.4). **Still open:** the analytic one-link quasi-factorization majorant (16.5), the connected-subset resummation with \(K_8^r\) growth, and the resulting all-orders maximum-tree bound for products. This is the cancellation-preserving target; it does not rely on the superfactorial absolute LS majorant and does not yet prove the desired theorem.
