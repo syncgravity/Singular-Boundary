@@ -2,7 +2,7 @@
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this checkout; indexing is source discovery, not mathematical certification.",
   "generated_utc_date": "2026-11-13",
-  "source_commit": "325a77b2c5660a85c51a7da5b32982f293accfc3",
+  "source_commit": "434d9db6f3932e933289afb2ea05c9089ef88ed9",
   "baseline_historical_count": 740,
   "count": 773,
   "theorems": [

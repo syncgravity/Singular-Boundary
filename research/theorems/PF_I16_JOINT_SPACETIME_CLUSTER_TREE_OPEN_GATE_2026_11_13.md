@@ -795,11 +795,11 @@ D_{8,4}
 (2e)^{32}\,32!\,[z^{32}]
 \exp\!\left(\frac z{1-z}\right)
 \le
-(2e)^{32}\,32!\,1020
+(2e)^{32}\,32!\,e^{2\sqrt{32}}
 <9.2\times10^{61}.
 \tag{13.4}
 \]
-The first inequality drops both the monochromatic and connected-join restrictions. The coefficient bound uses the exact recurrence a_0=1, n a_n=sum_{j=0}^{n-1}(n-j)a_j for A(z)=exp(z/(1-z)), giving a_32=[z^32]A(z)<1020. The elementary rational estimate e<2.719 then proves the displayed numerical envelope; see [the exact-rational verifier](../verification/verify_pf_i16_degree_eight_ls_constant.py). This constant is not optimized and is not proposed as an activity constant.
+The first inequality drops both the monochromatic and connected-join restrictions. This constant is not optimized and is not proposed as an activity constant.
 
 For general local insertions with an absolutely convergent elementary-tensor representation
 \[
