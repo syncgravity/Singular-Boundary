@@ -1,7 +1,7 @@
 # PF-I16 — Fourth-order cut interpolation and conditional four-support tree bound
 
 **Date:** 2026-11-13  
-**Status:** conditional spatial tree estimate for the full fourth-order coefficient. The cut-response identity and the weighted derivative-profile recursion are derived here. The result remains conditional on the corrected pointwise derivative-flow estimate, its uniform validity along the cut interpolation, and the existing face-map metric/pullback normalization. It is a finite dressed-reference result, not an all-orders convergence theorem or a physical Yang–Mills gap.
+**Status:** finite-product spatial tree theorem for the full fourth-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The corrected derivative-flow estimate and face-map metric pullback are established by the companion closure audit. It is a finite dressed-reference result, not an all-orders convergence theorem or a physical Yang–Mills gap.
 
 ## 1. Cut interpolation
 
@@ -287,7 +287,7 @@ The exponent is positive:
 
 **Derived conditionally:** the exact cut-response identity (1.4); the centered recursion and weighted derivative-profile bounds through order four; the denominator coefficient recursion; the cut-layer tail; and the full four-support MST tree estimate (3.10). Because the interpolation retains the full coefficient, no pair-partition channel is bounded separately and the disconnected cancellation is not lost.
 
-**Conditional inputs:** the corrected pointwise derivative-flow estimate must hold uniformly for all \(\Phi_s\); the face-map metric/pullback normalization must match the derivative and carré-du-champ norms; the finite-product Kato–Bochner comparison remains conditional. The cross-face derivative bound (3.3) uses the corrected isolated-face first-derivative estimate.
+**Finite-model hypotheses:** source-uniform incidence (d_e\le8), the allocation bounds, and (b_0/a_0\le1/50000). The face-map metric pullback and finite-product Kato–Bochner comparison are derived in the companion closure audit. The same absolute Hessian majorants hold uniformly along the interpolation. The corrected pointwise derivative-flow estimate holds uniformly for all \(\Phi_s\). The cross-face derivative bound (3.3) uses the corrected isolated-face first-derivative estimate.
 
 **Not proved:** a uniform growth bound on \(\mathcal C_n\) as the order \(n\) increases; all-orders activity summability or a nonzero convergence radius; Dobrushin mixing of the actual interacting Wilson-vacuum measure; physical-time normalization; continuum reconstruction; or a Yang–Mills mass gap. The fixed fourth-order estimate does not close these gaps.
 
