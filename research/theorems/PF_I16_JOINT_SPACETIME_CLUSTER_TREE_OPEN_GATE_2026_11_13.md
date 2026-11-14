@@ -815,3 +815,38 @@ the same estimate follows by multilinearity, with the elementary product norm re
 No assertion is made that the actual PF-I16 face and face-pair insertions have finite, uniformly controlled \(\|\cdot\|_{\pi,8}\); establishing that remains a separate open gate.
 
 **Scope.** Equation (13.2) proves the support-sensitive maximum-tree estimate for four elementary-tensor insertions, and (13.3) gives the requested spanning-tree form at that fixed order. It does not prove the all-orders estimate (3.1), does not give an order-uniform \(C_{\rm st}^m\) constant, and does not close the Feynman–Kac/KP expansion. The cancellation-sensitive all-orders product-cumulant bound and the actual insertion projective norms remain OPEN.
+
+
+### 14. Absolute Leonov–Shiryaev summation has an intrinsic superfactorial obstruction
+
+The failure of the absolute partition majorant is not merely an artifact of the estimate \(n\le8r\) in (12.17). Its combinatorics already contains a superfactorial contribution for the maximally overlapping support pattern.
+
+Fix \(r\ge2\). Take eight link labels \(e_1,\ldots,e_8\), and let every row contain all eight labels:
+\[
+I_i=\{(i,e_1),\ldots,(i,e_8)\},\qquad i=1,\ldots,r.
+\]
+For each link \(e_a\), choose the single-block partition
+\[
+\pi_a=\bigl\{\{(1,e_a),\ldots,(r,e_a)\}\bigr\},
+\]
+and put \(\pi=\pi_1\cup\cdots\cup\pi_8\). Each block is monochromatic, and the join of \(\pi\) with the row partition is the one-block partition: every one of the eight blocks meets every row. Thus \(\pi\) is an admissible connected Leonov–Shiryaev partition.
+
+Its contribution to the absolute coefficient envelope (12.14) is exactly
+\[
+\prod_{a=1}^8 (2e)^r r!
+=(2e)^{8r}(r!)^8.
+\]
+Consequently the explicit absolute partition envelope necessarily obeys
+\[
+\boxed{
+D_{8,r}\ge (2e)^{8r}(r!)^8,
+\qquad
+\frac{D_{8,r}}{r!}\ge(2e)^{8r}(r!)^7.
+}
+\tag{14.1}
+\]
+In particular, no refinement of the *counting* of the absolute Leonov–Shiryaev terms can produce a bound \(D_{8,r}\le C^r r!\) uniformly in \(r\). The obstruction is present in the admissible partition family itself.
+
+This is **not** a lower bound on the actual product cumulant. The Leonov–Shiryaev identity is a signed/complex sum, and the eight large one-link contributions can cancel against the other admissible partitions. The elementary example in which all eight link coordinates are shared by all rows makes the point: at equal times, if \(Y_{i,a}=Z_a\) for every row \(i\), then all row observables are the same bounded variable \(A=\prod_{a=1}^8Z_a\). Their joint cumulant is the ordinary repeated-variable cumulant \(\kappa_r(A,\ldots,A)\), whose growth is governed by the one-variable log moment-generating function, not by eight independent factors of \(r!\). The LS representation must cancel its large absolute terms to recover this behavior.
+
+**Consequence.** The all-orders gate is now sharply identified: one must exploit algebraic cancellation in the full product-cumulant identity, or use a different quasi-factorization/interpolation before taking absolute values. A stronger absolute-value estimate of the form (12.19) is impossible for this general degree-eight product class. The fixed-order \(m=4\) theorem in Section 13 is unaffected, since its finite constant is allowed to be large. The all-orders cancellation-sensitive bound and the actual PF-I16 insertion norm control remain OPEN.
