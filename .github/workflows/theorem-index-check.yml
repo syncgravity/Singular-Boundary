@@ -12,6 +12,8 @@ on:
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
       - 'research/experiments/pf_i16_three_hyperedge_attachment.py'
       - 'research/verification/verify_pf_i16_joint_spacetime_activity.py'
+      - 'research/verification/verify_pf_i16_exact_centering_joint_tree.py'
+      - 'research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md'
       - 'research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
@@ -78,6 +80,8 @@ jobs:
         run: python research/experiments/pf_i16_three_hyperedge_attachment.py
       - name: Verify PF-I16 joint space-time activity and centering thresholds
         run: python research/verification/verify_pf_i16_joint_spacetime_activity.py
+      - name: Verify exact centering and face-pair joint-tree activity
+        run: python research/verification/verify_pf_i16_exact_centering_joint_tree.py
       - name: Verify curated Proof Atlas graph
         run: python observatory/tools/verify_knowledge_graph.py
       - name: Syntax-check Proof Atlas application
