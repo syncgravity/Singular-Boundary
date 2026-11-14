@@ -10,7 +10,6 @@ on:
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
-      - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -34,6 +33,7 @@ on:
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
+      - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -46,6 +46,7 @@ on:
       - 'observatory/README.md'
       - 'research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md'
       - 'research/audits/PF_I16_NILPOTENT_GLUING_AND_HIGH_DEGREE_TESTS_2026_11_13.md'
+      - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
 permissions:
   contents: read
 jobs:
