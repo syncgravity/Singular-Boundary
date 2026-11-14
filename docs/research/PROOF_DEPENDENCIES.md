@@ -228,3 +228,10 @@ This later checkpoint supersedes the earlier statements above that no third-orde
 5. **Still open.** A uniform bound on the cut-response prefactors $\mathcal C_n$, the all-orders cancellation-preserving joint space/time tree theorem, actual quantum connected-resolvent/KP convergence at the intended coupling, stability in the physical interacting vacuum, source-derived physical kinetic/time normalization, a genuine refining physical 3D regulator, continuum reconstruction and a positive physical mass gap.
 
 No result above imports R3-IR constants or establishes a theorem for the physical continuum Yang–Mills theory.
+
+
+## PF-I16 finite-product face-pullback and Kato–Bochner closure (2026-11-13)
+
+The companion [face-pullback/Kato–Bochner closure audit](../audits/PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md) discharges the finite-model metric-pullback and pointwise Kato comparison under the universal incidence (d_e\le8), allocation bounds (A_f\ge a_0/2), (a_e\le8A_f), and weak-coupling condition (b_0/a_0\le1/50000). Thus the corrected derivative-flow estimate is a finite-accepted-graph theorem, uniform in graph volume, with (kappa\ge0.478655744a_0) and (lambda_{\log25}\ge0.048379136a_0). It does not supply physical-time normalization or the interacting-vacuum/continuum gap.
+
+The conditional Dobrushin third-order support-tree result and fourth-order cut-interpolation support-tree result therefore have proved finite dressed-reference inputs under the same source-incidence and weak-coupling hypotheses. The actual quantum connected-resolvent/KP theorem, all-orders activity convergence, interacting Wilson-vacuum stability, source-derived physical time, refining physical 3D regulator, continuum reconstruction and physical mass gap remain OPEN.

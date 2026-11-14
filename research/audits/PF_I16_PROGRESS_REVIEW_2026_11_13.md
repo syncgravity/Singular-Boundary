@@ -126,3 +126,8 @@ is a valid cancellation-preserving reduction, but the analytic one-link quasi-fa
 **Still open:** the analytic one-link quasi-factorization majorant; connected-subset $K_8^r$ resummation; uniform growth of the cut-response constants $\mathcal C_n$; actual quantum connected-resolvent/KP convergence at the intended coupling; stability in the interacting Wilson vacuum; source-derived physical kinetic/time normalization; a genuine refining physical three-dimensional regulator; continuum reconstruction; and a positive physical Yang–Mills mass gap.
 
 No canonical P0–P5 or PF-G gate is closed by this review.
+
+
+## 7. Face-map pullback and finite-product Kato–Bochner closure
+
+The companion [closure audit](PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md) derives the corrected radial bounds, exact metric scaling in the four-link face map, diagonal/off-diagonal Hessian blocks, corrected reversible drift, and componentwise Kato–Bochner comparison. The face-map and finite-product Kato caveats are discharged for finite accepted graphs satisfying the source-uniform incidence and allocation hypotheses. At (b_0/a_0\le1/50000), the unweighted and (log25)-weighted margins are (0.478655744a_0) and (0.048379136a_0). This upgrades the third-order Dobrushin and fourth-order cut-interpolation estimates to finite dressed-reference theorems uniform in graph volume under those assumptions. All-orders quantum convergence, physical interacting-vacuum stability, source-derived physical time, the refining regulator, continuum reconstruction and the physical mass gap remain open.
