@@ -10,6 +10,8 @@ on:
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/verification/verify_pf_i16_radial_character_casimir.py'
       - 'research/verification/verify_pf_i16_character_tail_projective_norm.py'
+      - 'research/verification/verify_pf_i16_support_tree_qf_obstruction.py'
+      - 'research/audits/PF_I16_SUPPORT_TREE_CANCELLATION_BRIDGE_AND_QF_OBSTRUCTION_2026_11_14.md'
       - 'research/audits/PF_I16_ALL_ORDERS_RADIAL_CHARACTER_TAIL_AND_FACE_PAIR_PROJECTIVE_NORM_2026_11_14.md'
       - 'research/audits/PF_I16_RADIAL_CHARACTER_EXPANSION_AND_SHARED_LINK_CASIMIR_CONTRACTION_2026_11_14.md'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
@@ -88,6 +90,8 @@ jobs:
         run: python research/verification/verify_pf_i16_joint_spacetime_activity.py
       - name: Verify PF-I16 radial character coefficients and shared-link Casimir contraction
         run: python research/verification/verify_pf_i16_radial_character_casimir.py
+      - name: Verify cut-QF insufficiency parity obstruction
+        run: python research/verification/verify_pf_i16_support_tree_qf_obstruction.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
       - name: Verify exact centering and face-pair joint-tree activity
