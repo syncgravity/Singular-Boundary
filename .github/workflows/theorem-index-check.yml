@@ -6,6 +6,7 @@ on:
       - 'docs/research/THEOREM_INDEX.md'
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
+      - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -47,6 +48,8 @@ jobs:
         run: python research/scripts/verify_theorem_index.py --repo .
       - name: Verify generated theorem catalog and current navigator
         run: python observatory/tools/sync_theorem_catalog.py --check
+      - name: Verify degree-eight order-four LS arithmetic envelope
+        run: python research/verification/verify_pf_i16_degree_eight_ls_constant.py
       - name: Verify curated Proof Atlas graph
         run: python observatory/tools/verify_knowledge_graph.py
       - name: Syntax-check Proof Atlas application
