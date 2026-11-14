@@ -231,7 +231,7 @@ def test_third_link_one_row_attachment():
 def main():
     n = test_three_link_telescoping_and_mixed_derivative()
     test_third_link_one_row_attachment()
-    print(f"PASS: three-link activation, arbitrary third-link overlap ({n} cases), mixed-log derivative")
+    print(f"PASS: three-link activation, all overlapping two-link covers and third-link attachments ({n} cases), mixed-log derivative")
     
 
 if __name__ == "__main__":
