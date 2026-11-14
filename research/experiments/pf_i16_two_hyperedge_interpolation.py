@@ -129,7 +129,7 @@ def coefficient(poly, mask):
 
 
 def direct_cumulant_via_log(f, r):
-    return coefficient(zpower_series_log(f, r), (1 << r) - 1)[0]
+    return sum(coefficient(zpower_series_log(f, r), (1 << r) - 1))
 
 
 def test_overlap_sizes_and_nonzero_means():
@@ -155,7 +155,7 @@ def test_overlap_sizes_and_nonzero_means():
             f = projected_interpolation(r, h1, h2, m1, m2)
             full = (1 << r) - 1
             logf = zpower_series_log(f, r)
-            target = coefficient(logf, full)[0]
+            target = sum(coefficient(logf, full))
 
             # Exact logarithmic derivative:
             # d/dlambda log F = (dF/dlambda) F^{-1}.
