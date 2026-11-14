@@ -211,22 +211,28 @@ C_5(\beta)=\sum_{n\ge1}(n+1)^5|\sigma_n(\beta)|.
 The fixed-point equation and (4.4) give the sharper decomposition
 \[
 \left\|R_\beta-\frac43\beta\chi_0\right\|_{4,\chi}
-\le672\beta^2,
+=\left\|\mathcal K\{(1-p^2)R_\beta^2\}\right\|_{4,\chi}
+\le672\beta^2.
 \]
-hence
+Since the subtracted term has only character index zero, this directly gives
 \[
 |r_0|\le\frac43\beta+672\beta^2,\qquad
-\sum_{m\ge1}(m+1)^4|r_m|
-\le\frac23\beta+672\beta^2.
+\boxed{\sum_{m\ge1}(m+1)^4|r_m|\le672\beta^2.}
 \]
+In particular, the nonconstant tail is \(O(\beta^2)\); it is not merely bounded by the residual \(2\beta-\frac43\beta\).
 Using (5.1), separating \(n=1\), and bounding the remaining coefficient ratios,
 \[
 C_5(\beta)
 \le16|r_0|+\frac{275}{64}
 \sum_{m\ge1}(m+1)^4|r_m|
-\le\frac{2323}{96}\beta+\frac{1299}{64}\,672\beta^2.
+\le\frac{64}{3}\beta+\frac{1299}{64}\,672\beta^2.
 \]
-For \(\beta\le1/25000\), the coefficient on the right is less than \(25\). Therefore
+At \(\beta\le1/25000\), this yields the sharper rational constant
+\[
+\boxed{C_5(\beta)\le\frac{3281837}{150000}\,\beta
+<21.879\,\beta.}
+\]
+Therefore
 \[
 \boxed{
 \sum_{n\ge1}(n+1)^5|\sigma_n(\beta)|\le25\beta.
@@ -283,8 +289,9 @@ we obtain
 \[
 \boxed{
 \mathfrak p(v_{fg})\le
-4\cdot2a_e\cdot\frac{625}{4}\beta_f\beta_g
-\le20000\,\frac{b_0^2}{a_0}.
+4\cdot2a_e\cdot\frac14 C_5(\beta_f)C_5(\beta_g)
+\le\frac{10770454094569}{703125000}\,\frac{b_0^2}{a_0}
+<15318\,\frac{b_0^2}{a_0}.
 }
 \tag{6.5}
 \]
@@ -307,7 +314,8 @@ Combining (6.5) and (7.1), the per-link projective activity with support weight 
 \[
 \kappa_\pi
 \le
-\frac{8(256x)e^{1/2}+224(20000x^2)e}{3/4},
+\frac{8(256x)e^{1/2}
++224\left(\frac{10770454094569}{703125000}x^2\right)e}{3/4},
 \qquad x=\frac{b_0}{a_0}\le\frac1{50000}.
 \tag{7.2}
 \]
@@ -315,14 +323,14 @@ Using \(\sqrt e<1.65\) and \(e<2.72\),
 \[
 \boxed{
 \kappa_\pi
-\le0.090112+0.006498986667
-<0.096611.
+\le0.090112+0.004977568
+<0.095090.
 }
 \tag{7.3}
 \]
 The pair term is reduced from the previous \(K_6^2\)-dependent projective majorant to an explicit all-orders coefficient bound. However,
 \[
-2\kappa_\pi<0.193222
+2\kappa_\pi<0.190180
 \]
 is not below \(1/8=0.125\). Thus this improved sufficient majorant still does **not** certify the proposed projective KP threshold. This is failure of the upper majorant, not a lower bound on the true projective norm and not evidence of divergence. The face-only term \(0.090112\) already prevents this particular criterion from closing.
 
