@@ -175,3 +175,21 @@ After (5.1), write the connected-partition tree-graph reduction with all coeffic
 
 
 **Verification note:** `verify_pf_i16_exact_centering_joint_tree.py` is included in theorem-index CI. The Proof Atlas verifier distinguishes this exact face/pair centering result from the still-open centering caveat in the separate per-link insertion inventory.
+
+
+## 8. Superseding correction — cross-split QF is now proved
+
+The earlier Sections 5–7 described the weighted cross-split quasi-factorization (5.1) as an open proof obligation. That status is superseded by the companion audit
+[PF-I16 arbitrary-local-observable link interpolation](PF_I16_ARBITRARY_LOCAL_OBSERVABLE_LINK_INTERPOLATION_2026_11_13.md), with the detailed path interpolation and interlaced-time covariance proof in
+[PF-I16 link-by-link path coupling interpolation](PF_I16_LINK_BY_LINK_PATH_COPULING_INTERPOLATION_2026_11_14.md).
+
+Conditioning on every link except one interpolated shared link turns each arbitrary bounded local row observable into a bounded one-time function of that link. The first-colour-change covariance lemma then proves (5.1) with the explicit link-multiplicity bond and coefficient \(2|I|\). No row-factor decomposition or projective norm is needed. Thus:
+- Cross-split QF for arbitrary bounded local multiplication observables: **ESTABLISHED** under independent stationary link paths and the uniform one-link \(L^2\) gap.
+- Actual face/pair cross-split QF: **ESTABLISHED** under those same hypotheses, with overlap multiplicity at most eight for the recorded face/pair supports.
+- The support-sensitive all-orders cumulant tree (4.1): **OPEN**. The QF theorem is an input, not yet the completed connected-partition/tree-graph conversion.
+- Marked-root summation, quantum KP convergence, interacting-vacuum Poincare inequality, and continuum mass gap: **OPEN**.
+
+The former Section 7 instruction to prove (5.1) is withdrawn. The remaining next step is to derive the support-restricted all-orders cumulant tree from the now-established QF estimate with explicit order constants, then perform the marked-root and polymer sums. No P0–P5 status is promoted.
+
+The all-orders radial character tail and full face/pair projective tensor bounds are separately established in
+[PF-I16 all-orders radial character tail and face/pair projective norm](PF_I16_ALL_ORDERS_RADIAL_CHARACTER_TAIL_AND_FACE_PAIR_PROJECTIVE_NORM_2026_11_14.md). Their projective activity majorant still misses the proposed \(1/8\) sufficient threshold; this does not affect the QF proof.
