@@ -51,7 +51,19 @@ For each fixed spanning tree, root it and integrate leaves successively; each le
 \le T C_\Delta^r.
 \]
 Each tree product is also bounded pointwise by the single span factor
-\(e^{-\Delta(\max_i t_i-\min_i t_i)}\). Thus this explicit tree norm has the desired Feynman–Kac order growth after \(1/r!\) normalization. The unresolved theorem is the domination of the unexpanded activity-integrated projected-log coefficient by \(C^r\) times this norm. Establishing that domination—not integrating the proposed tree norm—is the outstanding two-hyperedge estimate.
+\(e^{-\Delta(\max_i t_i-\min_i t_i)}\). Thus this explicit tree norm has the desired Feynman–Kac order growth after \(1/r!\) normalization. The unresolved theorem is the domination of the unexpanded activity-integrated projected-log coefficient by \(C^r\) times this norm.
+
+The precise two-link estimate to prove is therefore
+\[
+\boxed{
+\left|\frac1{r!}\int_{[0,T]^r}\int_0^1
+[z_{[r]}]Q_\lambda(\mathbf t)\,d\lambda\,d\mathbf t
+\right|
+\le C_0^r\,\mathcal T_{\Delta_*}(H_1,H_2;T).
+}
+\tag{W2-tree}
+\]
+Together with the displayed tree-integral bound, this would give \(T(C_0C_{\Delta_*})^r\). Establishing that domination—not integrating the proposed tree norm—is the outstanding two-hyperedge estimate.
 
 ## 2. Why the inverse cannot be bounded in isolation
 
