@@ -1081,7 +1081,7 @@ e^{-\Delta_0(\max_{i\in\Delta}t_i-\min_{i\in\Delta}t_i)}
 \quad\text{at the square-free coefficient level},
 \tag{16.5}
 \]
-with a controlled analytic majorant for the higher powers of the \(z_i\). Equation (16.4) controls the square-free coefficient, but a uniform analytic majorant for the full formal series in (16.5) has not yet been derived.
+with a controlled analytic majorant for the higher powers of the \(z_i\). The square-free coefficient of \(\log P^e_\Delta\) is the one-link cumulant and is controlled by (16.4). This does not by itself bound the square-free coefficient of \(P^e_\Delta-1\), which also contains products of lower-order connected terms, nor the higher powers of the \(z_i\). A uniform analytic majorant for the full formal series in (16.5) has not yet been derived.
 
 Féray's Proposition 5.8 identifies quasi-factorization bounds of this type with weighted-dependency-graph cumulant bounds; its proof organizes the cumulant as a sum over connected collections of subsets, so the disconnected terms cancel before absolute values are taken. The present product structure makes every nontrivial quasi-factorization subset \(\Delta\) a subset of at least one link-incidence set \(I_e\). The remaining combinatorial task is to bound the total connected collection of such subsets by \(K_8^r\), using the row-incidence constraint
 \[
