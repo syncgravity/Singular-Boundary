@@ -105,15 +105,15 @@ e^r\left(\frac2\Delta\right)^{r-1}.
 }
 \tag{3.1}
 \]
-Therefore a cancellation-preserving pointwise estimate
+The originally proposed cancellation-preserving estimate with only an exponential coefficient and the single maximum-tree factor, as in (3.2), is now **refuted for the general bounded-local-observable class** by the one-link Haar-Rademacher counterexample in [the support maximum-tree obstruction audit](PF_I16_SUPPORT_TREE_MAXIMUM_BOUND_OBSTRUCTION_2026_11_14.md). For the actual smooth face/pair subclass it remains undecided. The viable general target must retain a tree sum (or an equivalent factorial-scale coefficient), for example
 \[
 |\kappa(A_1(t_1),\ldots,A_r(t_r))|
 \le C_{\rm slot}^{\,r}
 \left(\prod_i\|A_i\|_\infty\right)
-\mathcal M(G_X;\mathbf t)
-\tag{3.2}
+\sum_{T\in\mathcal T(G_X)}\prod_{\{i,j\}\in T}e^{-\Delta|t_i-t_j|}.
+\tag{3.2'}
 \]
-would immediately give an exponential-in-\(r\) normalized Feynman–Kac time-integrated bound. The time integration and the single \(1/r!\) normalization are not the obstruction once (3.2) is available.
+The tree sum can accommodate the factorial growth of high-order one-link cumulants. Its proof is still open; the temporal integral is exponential after the normalized $1/r!$ because each tree leaf integral costs $2/\Delta$ and $|\mathcal T(G_X)|\le r^{r-2}.
 
 ## 4. Why the obvious tree map cannot prove (3.2)
 
@@ -140,7 +140,7 @@ Thus termwise tree extraction is exact, but a naive injection into trees loses a
 4. The naive canonical tree map has Bell\((r)^7\) fibers in an allowed eight-link incidence pattern.
 
 **Still open**
-The signed sum in (1.1) must be reorganized before absolute values so that the resulting coefficient after factoring out \(\mathcal M(G_X;\mathbf t)\) is bounded by \(C_{\rm slot}^r\), uniformly over all support families with
+For the general bounded-local-observable class, the coefficient after factoring out the single maximum-tree factor cannot be bounded by \(C_{\rm slot}^r\); see the exact counterexample audit linked above. The remaining support-sensitive goal is to reorganize the signed sum before absolute values and prove a tree-sum estimate such as (3.2'), uniformly over support families with
 \[
 \sum_e|I_e|\le8r.
 \]
