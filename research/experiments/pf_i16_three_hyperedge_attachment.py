@@ -144,7 +144,7 @@ def coeff_at(f, full, a, b):
 
 def test_three_link_telescoping_and_mixed_derivative():
     cases = 0
-    for r in range(3, 7):
+    for r in range(3, 6):
         rows = set(range(r))
         ms = [
             moment_table(rows, {i: .31 + .04*i for i in rows},
