@@ -1003,7 +1003,7 @@ Put \(x=b_0/a_0\). With the universal eight-face and 224-pair incidences, \(e^{|
 :=\sup_e\sum_{X\ni e}
 \frac{\|v_X\|_{\pi,|X|}}{\Delta_0}e^{|X|/8}
 \le
-4505.6\,x+2.5833\times10^7 K_6^2x^2.
+4505.6\,x+2.5890\times10^7 K_6^2x^2.
 \tag{15.11}
 \]
 The displayed decimals are upward-rounded. At the currently recorded \(x=1/50000\), the linear face contribution alone is \(0.090112\), so this projective-norm majorant does **not** meet the candidate KP threshold \(a=1/8\), even before the pair term and before the unknown joint-cumulant constant are included.
