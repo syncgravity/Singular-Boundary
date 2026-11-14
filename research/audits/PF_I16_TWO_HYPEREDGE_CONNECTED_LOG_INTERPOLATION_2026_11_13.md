@@ -27,6 +27,8 @@ m_1(S\cap H_1)m_2(S\cap H_2)
 \]
 The convention \(m_e(\varnothing)=1\) makes (1) valid for every subset, including rows incident to only one hyperedge. \(F_\lambda\) has constant term one, so it is invertible in the finite squarefree row algebra \(\mathcal Z\).
 
+The interpolation has a genuine probability interpretation: take one Bernoulli switch \(\eta_\lambda\), independent of the entire second-link path, with \(\mathbb P(\eta_\lambda=1)=\lambda\), and replace every slot on that link by \(\eta_\lambda Y_{i,2}\). The *same* switch is used for every row and time on the link. Hence every nonempty joint moment of the second link is multiplied by exactly \(\lambda\), including its singleton means, while its internal dependence structure is retained whenever the link is active. Independent switches per row would instead produce \(\lambda^{|B|}\) and would not give (1).
+
 ## 2. Exact interpolation lemma
 
 **Lemma (two-hyperedge projected-log interpolation).** For every finite \(r\), every pair \(H_1,H_2\) covering \([r]\), and arbitrary finite local moments \(m_1,m_2\) (including nonzero means),
