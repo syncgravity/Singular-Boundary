@@ -1,3 +1,15 @@
+## Observatory v3.05 · 2026-11-13 — scoped-check inventory and product-cumulant resummation candidate
+
+The canonical P0–P5 acceptance ledger contains **27 scoped checks**: P0=6, P1=4, P2=4, P3=4, P4=4, P5=5. Their current recorded states are 2 met, 6 partial, and 19 open. The verifier now asserts the total, per-gate allocation, unique labels, and state distribution. These are review/status controls, not theorem certification; no proof gate has been closed.
+
+The graph and browser data are synchronized at **v3.05** (299 curated nodes / 705 typed relationships / 773 indexed theorem-source paths). The stale v2.73 edition label on the Proof Atlas page has been corrected.
+
+A new P2 candidate audit records an exact squarefree slot-moment / row-diagonal projection identity. It packages each link's full partition family into one local generating object and extracts the global product cumulant by a logarithm after the all-or-none row constraint. This is an exact algebraic reorganization; the weighted connected-log estimate, single maximum-tree temporal factor, \(C^r r!\) growth or Feynman–Kac-integrable substitute, and quantum convergence remain OPEN.
+
+[Nilpotent row-projection candidate](../research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md) · [Proof Atlas](graph.html).
+
+---
+
 ## Current PF-I16 update · 2026-11-13 — all-orders temporal port injection
 
 The weighted projection-to-tree multiplicity subgate is now closed by an exact all-orders injection. Each connected interval forest together with an increasing rooted spanning tree of its interval-overlap graph is completed to a labeled tree with the identical temporal cut profile. One incoming and one outgoing port at each non-root component's connector encode an inverse; the connector set is determined by the completed tree's directed degrees. Since there are at most \(m/2\) components, each completed tree has at most \(4^{m/2}=2^m\) decorated preimages. Therefore
