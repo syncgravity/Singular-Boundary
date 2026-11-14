@@ -1102,4 +1102,30 @@ Féray's Proposition 5.8 identifies quasi-factorization bounds of this type with
 \]
 while preserving the maximum-tree product. A naive count of all subsets of all \(I_e\) is not acceptable: a single link can have \(|I_e|=r\), and its power set already has \(2^r\) members. The link's entire quasi-factorization series must be summed as one object before counting interactions between different links.
 
-**Exact reduction:** (16.1)–(16.3). **One-link input:** (16.4). **Still open:** the analytic one-link quasi-factorization majorant (16.5), the connected-subset resummation with \(K_8^r\) growth, and the resulting all-orders maximum-tree bound for products. This is the cancellation-preserving target; it does not rely on the superfactorial absolute LS majorant and does not yet prove the desired theorem.
+**Exact reduction:** (16.1)–(16.3) for the auxiliary row variables \(Y_i\). **One-link input:** (16.4). The relationship between this auxiliary factorization and cumulants of the product insertions \(A_i\) is not established; see the [product-cumulant bridge audit](../audits/PF_I16_PRODUCT_CUMULANT_BRIDGE_AUDIT_2026_11_14.md). In particular, the auxiliary row variables have first derivative \(\sum_{e\in X_i}f_{i,e}\), not \(A_i=\prod_{e\in X_i}f_{i,e}\). The product-cumulant bridge is therefore a prior open prerequisite, in addition to the analytic one-link quasi-factorization majorant (16.5), the connected-subset resummation with \(K_8^r\) growth, and the resulting all-orders maximum-tree bound for products. The cancellation-preserving target remains open; it does not yet prove the desired theorem.
+
+### 16.1 Scope check: the row-factorization variables do not directly encode product cumulants
+
+The identity (16.3) is an exact factorization for the specified auxiliary variables, but its square-free row coefficient is not in general the cumulant of the product insertions \(A_i\). Indeed,
+\[
+Y_i'(0)=\sum_{e\in X_i}f_{i,e}(U_e(t_i)),
+\]
+whereas the target insertion is \(A_i=\prod_{e\in X_i}f_{i,e}(U_e(t_i))\). The distinction already changes the order-two coefficient.
+
+Take two independent Rademacher link variables \(U_1,U_2\), and set \(X_1=X_2=\{1,2\}\) and \(f_{i,e}(U_e)=U_e\). Then \(A_1=A_2=U_1U_2\), so
+\[
+\operatorname{Cov}(A_1,A_2)=1.
+\]
+For the auxiliary variables in (16.1), however, each link contributes
+\[
+u^e_{\{1,2\}}=1+z_1z_2,\qquad
+u^e_{\{1\}}=u^e_{\{2\}}=1,
+\]
+and hence
+\[
+P_{\{1,2\}}=(1+z_1z_2)^2,\qquad
+[z_1z_2](P_{\{1,2\}}-1)=2.
+\]
+That coefficient is the covariance of the row sums \(U_1+U_2\), not the covariance of the row products \(U_1U_2\). The exact-rational verifier [verify_pf_i16_product_cumulant_bridge.py](../verification/verify_pf_i16_product_cumulant_bridge.py) checks this example.
+
+One possible way to retain the product insertions is to index formal variables by factor slots \((i,e)\), then recover the row-product cumulant through the Leonov–Shiryaev connected-partition condition on the row partition. This requires reorganizing the connected slot partitions before taking absolute values; neither the row-variable identity (16.3) nor the estimate (16.5) supplies that step. The slot-level reorganization, its temporal weights, and its all-orders growth remain open. Accordingly, Section 16 is an exact auxiliary factorization and a candidate route, not yet a product-cumulant reduction.
