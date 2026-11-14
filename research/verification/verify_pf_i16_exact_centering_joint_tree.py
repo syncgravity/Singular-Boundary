@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Exact rational arithmetic for centered PF-I16 face/pair activities.
 
+The matching Observatory graph verifier treats the alternate per-link centering
+inventory separately; this script only certifies the exact conjugated face/pair route.
+
 The Haar-centering identities are proved in the companion audit; this script
 checks the displayed activity constants and the conditional q_joint margin.
 It does not verify the all-orders quasi-factorization or KP theorem.
