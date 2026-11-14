@@ -1072,16 +1072,28 @@ e^{-\Delta_0(\max t_i-\min t_i)}
 \prod_j\|f_{i_j}\|_\infty.
 \tag{16.4}
 \]
-The desired one-link quasi-factorization estimate is therefore
+The square-free coefficient is fixed by the one-link cumulant:
 \[
-|P^e_\Delta-1|
-\le K^{|\Delta|}\,
+[z_1\cdots z_k](P^e_\Delta-1)
+=[z_1\cdots z_k]\log P^e_\Delta
+=\kappa_e(f_{i_1}(U(t_{i_1})),\ldots,f_{i_k}(U(t_{i_k}))).
+\]
+Consequently the established one-link estimate gives
+\[
+\boxed{
+\left|[z_1\cdots z_k](P^e_\Delta-1)\right|
+\le(2e)^k k!\,
 e^{-\Delta_0(\max_{i\in\Delta}t_i-\min_{i\in\Delta}t_i)}
-\prod_{i\in\Delta}|z_i|
-\quad\text{at the square-free coefficient level},
+\prod_{i\in\Delta}\|f_i\|_\infty.
+}
 \tag{16.5}
 \]
-with a controlled analytic majorant for the higher powers of the \(z_i\). The square-free coefficient of \(\log P^e_\Delta\) is the one-link cumulant and is controlled by (16.4). This does not by itself bound the square-free coefficient of \(P^e_\Delta-1\), which also contains products of lower-order connected terms, nor the higher powers of the \(z_i\). A uniform analytic majorant for the full formal series in (16.5) has not yet been derived.
+A pure-exponential coefficient bound \(K^k\) is **impossible** uniformly in \(k\), even for one stationary Rademacher observable at coincident times; see the companion [factorial-obstruction audit](../audits/PF_I16_ONE_LINK_QUASIFACTORIZATION_FACTORIAL_OBSTRUCTION_2026_11_13.md). Thus the full analytic majorant for
+\[
+P^e_\Delta-1=\sum_{n_1,\ldots,n_k\ge1}
+c_{\mathbf n}\prod_i z_i^{n_i}
+\]
+must retain factorial-compatible coefficient growth. The relevant open problem is to control these higher coefficients and the connected-subset resummation so that the factorial is canceled by the Feynman–Kac time integration and its \(1/r!\) normalization, rather than demanding an impossible pointwise-in-time \(K^k\) bound. No such time-integrated cancellation estimate has yet been proved.
 
 Féray's Proposition 5.8 identifies quasi-factorization bounds of this type with weighted-dependency-graph cumulant bounds; its proof organizes the cumulant as a sum over connected collections of subsets, so the disconnected terms cancel before absolute values are taken. The present product structure makes every nontrivial quasi-factorization subset \(\Delta\) a subset of at least one link-incidence set \(I_e\). The remaining combinatorial task is to bound the total connected collection of such subsets by \(K_8^r\), using the row-incidence constraint
 \[

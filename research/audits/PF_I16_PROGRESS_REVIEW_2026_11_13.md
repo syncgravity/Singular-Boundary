@@ -131,3 +131,8 @@ No canonical P0–P5 or PF-G gate is closed by this review.
 ## 7. Face-map pullback and finite-product Kato–Bochner closure
 
 The companion [closure audit](PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md) derives the corrected radial bounds, exact metric scaling in the four-link face map, diagonal/off-diagonal Hessian blocks, corrected reversible drift, and componentwise Kato–Bochner comparison. The face-map and finite-product Kato caveats are discharged for finite accepted graphs satisfying the source-uniform incidence and allocation hypotheses. At (b_0/a_0\le1/50000), the unweighted and (log25)-weighted margins are (0.478655744a_0) and (0.048379136a_0). This upgrades the third-order Dobrushin and fourth-order cut-interpolation estimates to finite dressed-reference theorems uniform in graph volume under those assumptions. All-orders quantum convergence, physical interacting-vacuum stability, source-derived physical time, the refining regulator, continuum reconstruction and the physical mass gap remain open.
+
+
+## 8. One-link quasi-factorization target corrected to factorial growth
+
+A pure (K^k\) bound for the square-free one-link quasi-factorization coefficient cannot hold uniformly in (k). The coincident-time Rademacher example has (|\kappa_{2n}|\sim2(2/\pi)^{2n}(2n-1)!\). The correct one-link input is factorial, as in (12.8)/(16.5). The new [factorial-obstruction audit](PF_I16_ONE_LINK_QUASIFACTORIZATION_FACTORIAL_OBSTRUCTION_2026_11_13.md) narrows the remaining problem to a factorial-compatible full analytic majorant and a proof that temporal integration plus (1/r!\) cancels the factorial before spatial connected-subset summation. This is not a divergence result for PF-I16 and does not alter the finite third-/fourth-order results.
