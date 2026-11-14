@@ -1,7 +1,7 @@
 # PF-I16 — Link-by-link shared-path / copied-path interpolation
 
 **Date:** 2026-11-14  
-**Status:** exact interpolation identity established; the required one-link interlaced-time covariance estimate remains OPEN. No P0–P5 gate is promoted.  
+**Status:** exact whole-path interpolation and the one-link interlaced-time covariance lemma are ESTABLISHED under the stated stationary Markov L2-gap hypothesis. The many-link QF consequence is established for bounded row-factor observables. No P0–P5 gate is promoted.  
 **Scope:** finite link set, finite row family, stationary independent link path processes.
 
 ## 1. Setup and target
@@ -108,14 +108,14 @@ In particular, the derivative does not involve a cumulant over the other links. 
 
 Thus (1.1) follows if one proves the following one-link lemma with a constant independent of the link state space and time horizon.
 
-## 4. The precise one-link lemma still required
+## 4. One-link interlaced-time covariance lemma — proved
 
 Let \(X_t\) be a stationary Markov process whose semigroup satisfies
 \[
 P_t=\Pi+Q_t,\qquad \|Q_t\|_{2\to2}\le e^{-\Delta_0t}.
 \tag{4.1}
 \]
-For arbitrary finite disjoint index sets \(J_e,K_e\), arbitrary (not necessarily ordered or contiguous) observation times, and bounded one-time multiplication functions, prove
+For arbitrary finite disjoint index sets \(J_e,K_e\), arbitrary (not necessarily ordered or contiguous) observation times, and bounded one-time multiplication functions, we prove
 \[
 \boxed{
 \left|\operatorname{Cov}\left(
@@ -134,18 +134,117 @@ The times may be interlaced in any order. A proof only for two separated time bl
 
 If (4.2) holds, substituting it into (2.4), using (3.3), and summing first over links gives (1.1), with a changed exponential constant. Indeed, each cross pair \((i,j)\) is counted once for each shared link; this is exactly the multiplicity represented by the sum over \(e\in X_i\cap X_j\).
 
-## 5. Why this is a real reduction, not yet a proof
+## 5. Proof of the interlaced-time covariance estimate
 
-1. **Whole paths are essential.** Replacing (2.1) by independent mixture selectors at each time changes the joint path law and does not interpolate between the two desired endpoints while preserving each side's Markov path law.
+Write the \(n=|J_e|+|K_e|\) observation times in nondecreasing order
+\[
+s_1\le s_2\le\cdots\le s_n.
+\]
+Ties may be ordered arbitrarily; the corresponding gap is zero. Let \(h_\ell\) be the one-time factor at \(s_\ell\), and colour the index \(\ell\) by \(J\) or \(K\) according to its side. Put
+\[
+U=\prod_{\ell:\,c_\ell=J}h_\ell(X_{s_\ell}),\qquad
+V=\prod_{\ell:\,c_\ell=K}h_\ell(X_{s_\ell}),\qquad
+M=\prod_{\ell=1}^n\|h_\ell\|_\infty.
+\]
+The target cross-pair sum is
+\[
+S=\sum_{\substack{a:\,c_a=J\\b:\,c_b=K}}
+e^{-\Delta_0|s_a-s_b|}.
+\]
 
-2. **The two-block mixing inequality does not immediately apply.** If all \(J_e\)-times precede all \(K_e\)-times, (4.2) follows from the usual \(L^2\) semigroup contraction across the separating time gap. For interlaced times, both products depend on observations on both sides of every temporal cut. Conditioning at one cut does not make either whole product measurable on just one side.
+### 5.1 First-colour-change decomposition
 
-3. **The global projection-tree estimate is not enough pointwise.** Its complete-graph tree sum has \(n^{n-2}\) labeled trees. Extracting one cross edge termwise leaves a superexponential tree-count factor, not the \(C_1^n\) coefficient in (4.2). The normalized time-integrated bound from the projection-tree theorem is useful for the Feynman–Kac coefficient, but it does not imply this pointwise cross-split estimate.
+Let \(k\) be the first index whose colour differs from \(c_1\). After exchanging the names \(J,K\) if necessary, assume
+\[
+c_1=\cdots=c_{k-1}=J,\qquad c_k=K.
+\]
+Set
+\[
+A=\prod_{\ell<k}h_\ell(X_{s_\ell}),\qquad
+B=\prod_{\substack{\ell>k\\c_\ell=J}}h_\ell(X_{s_\ell}),\qquad
+C=\prod_{\substack{\ell\ge k\\c_\ell=K}}h_\ell(X_{s_\ell}).
+\]
+Then \(U=AB\), \(V=C\). Crucially, \(A\) is measurable through time \(s_{k-1}\), while both \(B\) and \(C\) use only times at or after \(s_k\). The exact covariance identity
+\[
+\boxed{
+\operatorname{Cov}(AB,C)
+=\operatorname{Cov}(A,BC)
++\mathbb E[A]\operatorname{Cov}(B,C)
+-\operatorname{Cov}(A,B)\mathbb E[C]
+}
+\tag{5.1}
+\]
+follows by expanding the three covariances.
 
-4. **The interpolation is still useful without (4.2).** It proves that all spatial dependence across the row split is mediated by shared links, and it isolates the entire temporal difficulty in a single-link path covariance. It also avoids taking absolute values of Leonov–Shiryaev slot-partition fibers.
+### 5.2 Apply the ordinary separated-past/future estimate twice
 
-## 6. Current conclusion and next proof obligation
+For bounded past-measurable \(D\) through time \(s\) and bounded future-measurable \(E\) from time \(s+\delta\) onward, stationarity, the Markov property, and the L2 gap give
+\[
+|\operatorname{Cov}(D,E)|
+\le e^{-\Delta_0\delta}\|D\|_\infty\|E\|_\infty.
+\tag{5.2}
+\]
+Indeed, with \(\psi(x)=\mathbb E[E\mid X_{s+\delta}=x]\),
+\[
+\operatorname{Cov}(D,E)
+=\langle D-\mathbb ED,\,
+P_\delta(\psi-\nu\psi)\rangle_\nu,
+\]
+and both centered L2 norms are bounded by the corresponding sup norms.
 
-The link-by-link interpolation (2.1)–(2.4) and derivative identity (3.2) are exact. They reduce the many-link QF claim to (4.2). The one-link interlaced-time covariance lemma is **not** established in this audit. No support-sensitive joint tree, all-orders QF, KP convergence, interacting-vacuum inequality, or continuum mass gap follows until (4.2) is proved (or a counterexample identifies a necessary stronger hypothesis).
+Take \(\delta=s_k-s_{k-1}\). Applying (5.2) to \((A,BC)\) and \((A,B)\) in (5.1) gives
+\[
+|\operatorname{Cov}(U,V)|
+\le 2M e^{-\Delta_0(s_k-s_{k-1})}
++\|A\|_\infty|\operatorname{Cov}(B,C)|.
+\tag{5.3}
+\]
+The boundary pair \((k-1,k)\) has opposite colours, so its weight
+\(e^{-\Delta_0(s_k-s_{k-1})}\) is one of the summands of \(S\).
 
-**Gate status:** exact interpolation — established; one-link interlaced-time covariance — OPEN; cross-split QF — OPEN; all P0–P5 gates unchanged.
+If \(B=1\), the remaining covariance is zero and the proof is complete. Otherwise \(B,C\) involve a strictly smaller family of rows, all lying in the suffix \(\{k,\ldots,n\}\). Let \(S_{\rm suf}\) be its cross-pair sum. It is a sub-sum of \(S\), and the induction hypothesis applies to it.
+
+### 5.3 Induction and constant
+
+For \(n=2\), (5.2) directly gives
+\[
+|\operatorname{Cov}(U,V)|\le M S,
+\]
+so take \(C_2=1\). If the estimate holds at all smaller orders with coefficient \(C_{n-1}\), then (5.3), the boundary-pair observation, and \(S_{\rm suf}\le S\) yield
+\[
+|\operatorname{Cov}(U,V)|
+\le (2+C_{n-1})MS.
+\]
+Thus one may take
+\[
+C_n=2n-3\qquad(n\ge2).
+\]
+In particular \(2n-3\le 2^n\), so the requested exponential form holds. We have proved the sharper bound
+\[
+\boxed{
+|\operatorname{Cov}(U,V)|
+\le (2n-3)\prod_{\ell=1}^n\|h_\ell\|_\infty
+\sum_{\substack{a:\,c_a=J\\b:\,c_b=K}}
+e^{-\Delta_0|s_a-s_b|}.
+}
+\tag{5.4}
+\]
+This proof permits arbitrary interlacing, arbitrary repeated times, and nonreversible stationary Markov semigroups. It uses only the stated \(L^2(\nu)\) contraction on mean-zero functions.
+
+## 6. Consequence for the link-by-link QF interpolation
+
+Apply (5.4) to the two groups of factors on each shared link \(e\), with \(n_e=|J_e|+|K_e|\). Since \(n_e\le |I|\), its coefficient is at most \(2|I|\). In the derivative (3.2), the other-link factors contribute only their sup norms. Integrating (2.4) and summing over shared links therefore gives the cross-split quasi-factorization (1.1), with a global coefficient bounded by \(2|I|\) times the row-factor normalization. If one prefers the original exponential notation, \(2|I|\le 2^{|I|+1}\) absorbs this into \(C^{|I|}\) for a fixed numerical \(C\).
+
+More explicitly, for row-factor observables \(A_i=\prod_{e\in X_i}f_{i,e}\), the linkwise derivative contributes
+\[
+2|I|\prod_{i,e}\|f_{i,e}\|_\infty
+\sum_{\substack{i\in J,j\in K\\e\in X_i\cap X_j}}
+e^{-\Delta_0|t_i-t_j|}.
+\]
+Thus the shared-link indicator and temporal bond are obtained with no partition-fiber or tree-count loss.
+
+## 7. Scope and remaining obligations
+
+The one-link interlaced-time covariance lemma and the corresponding link-by-link cross-split QF estimate are now proved for bounded row-factor observables under independent stationary link paths with the uniform \(L^2\) semigroup gap. This does **not** by itself prove the all-orders support-sensitive cumulant tree, the marked-root/cluster sum, quantum connected-resolvent convergence, the interacting-vacuum Poincare inequality, or the continuum mass gap. The hypotheses must also be checked for the actual reference link processes used by the PF-I16 construction.
+
+**Gate status:** exact path interpolation — ESTABLISHED; one-link interlaced-time covariance — ESTABLISHED; row-factor cross-split QF — ESTABLISHED under the stated product-Markov hypotheses; all P0–P5 gate statuses unchanged.
