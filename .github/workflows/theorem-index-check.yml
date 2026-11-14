@@ -29,6 +29,8 @@ on:
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
+      - 'research/verification/verify_pf_i16_link_coloured_hypergraph.py'
+      - 'research/audits/PF_I16_LINK_COLOURED_HYPERGRAPH_PRODUCT_CUMULANT_REDUCTION_2026_11_14.md'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
