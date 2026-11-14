@@ -233,15 +233,21 @@ This proof permits arbitrary interlacing, arbitrary repeated times, and nonrever
 
 ## 6. Consequence for the link-by-link QF interpolation
 
-Apply (5.4) to the two groups of factors on each shared link \(e\), with \(n_e=|J_e|+|K_e|\). Since \(n_e\le |I|\), its coefficient is at most \(2|I|\). In the derivative (3.2), the other-link factors contribute only their sup norms. Integrating (2.4) and summing over shared links therefore gives the cross-split quasi-factorization (1.1), with a global coefficient bounded by \(2|I|\) times the row-factor normalization. If one prefers the original exponential notation, \(2|I|\le 2^{|I|+1}\) absorbs this into \(C^{|I|}\) for a fixed numerical \(C\).
-
-More explicitly, for row-factor observables \(A_i=\prod_{e\in X_i}f_{i,e}\), the linkwise derivative contributes
+Apply (5.4) to the two groups of factors on each shared link \(e\), with \(n_e=|J_e|+|K_e|\). Since \(n_e\le |I|\), its coefficient is at most \(2|I|\). In the derivative (3.2), the other-link factors contribute only their sup norms. Integrating (2.4) and summing over shared links gives the exact link-multiplicity form
 \[
-2|I|\prod_{i,e}\|f_{i,e}\|_\infty
-\sum_{\substack{i\in J,j\in K\\e\in X_i\cap X_j}}
-e^{-\Delta_0|t_i-t_j|}.
+2|I|\prod_i\|A_i\|_\infty
+\sum_{i\in J,j\in K}|X_i\cap X_j|e^{-\Delta_0|t_i-t_j|}.
+\tag{6.1}
 \]
-Thus the shared-link indicator and temporal bond are obtained with no partition-fiber or tree-count loss.
+Here we used the product-state identity
+\[
+\|A_i\|_\infty=\prod_{e\in X_i}\|f_{i,e}\|_\infty.
+\]
+If the row supports satisfy the uniform overlap condition
+\[
+\sup_{i,j}|X_i\cap X_j|\le D_{\rm ov},
+\]
+then (6.1) implies the indicator-form QF estimate (1.1), with the fixed factor \(D_{\rm ov}\) absorbed into \(C^{|I|}\). In particular, for elementary plaquette boundaries where distinct faces share at most one link, \(D_{\rm ov}\le1\) and the target indicator form follows exactly. For unrestricted support families, the multiplicity-weighted form (6.1), rather than the indicator form, is what this interpolation proves.
 
 ## 7. Scope and remaining obligations
 
