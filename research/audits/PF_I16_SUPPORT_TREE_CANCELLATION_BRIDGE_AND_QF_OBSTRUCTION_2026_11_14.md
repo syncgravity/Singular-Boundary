@@ -90,9 +90,9 @@ The reference law is a product of independent link path laws, and each row depen
 4. For a fixed coordinate, the surviving Q intervals form the one-link interval forests already used in the support-temporal extraction.
 5. The row-incidence bound \(\sum_e|I_e|\le8r\) limits the total number of coordinate slots, even though a single link may occur in many rows.
 
-The next proof must retain the coordinate label through the projection expansion and perform the signed Möbius/port-completion resummation before discarding it. A global projection-tree bound forgets the coordinate label and returns trees on the complete graph. A termwise slot bound retains the label but pays the Bell-partition fiber. The missing lemma must avoid both losses.
+The next proof must retain the coordinate label through the projection expansion and perform the signed Möbius/port-completion resummation before discarding it. A global projection-tree bound forgets the coordinate label and returns trees on the complete graph. A termwise slot bound retains the label but pays the Bell-partition fiber. The general target should be a sum over support trees, not the maximum of one tree: the stronger $C^r$-times-maximum-tree target is impossible for arbitrary bounded local observables by the one-link Haar-Rademacher counterexample in [the maximum-tree obstruction audit](PF_I16_SUPPORT_TREE_MAXIMUM_BOUND_OBSTRUCTION_2026_11_14.md). The actual face/pair subclass remains a separate, undecided question.
 
-## 4. A precise next lemma
+## 4. A precise next lemma — revised to retain the support-tree sum
 
 Let \(\mathscr F=(F_e)_e\) be a tuple of linkwise interval forests arising in the coordinate-resolved \(\Pi+Q\) expansion, with each row incident to at most eight link coordinates. Let \(\alpha(\mathscr F)\) be the **signed coefficient after all global moment-cumulant Möbius cancellations**, not the product of absolute one-link cumulant bounds. The desired estimate is
 \[
