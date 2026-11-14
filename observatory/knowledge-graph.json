@@ -2,7 +2,7 @@
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-14",
   "version": "v3.06-pf-i16-product-process-tensor-gap",
-  "scope": "PF-I16 exact finite-source coefficients, conditional finite-order spatial trees, exact temporal port injection, exact nilpotent row-diagonal product-cumulant identity, and a conditional product-process tensor-gap bridge giving exponential-order temporal cumulant bounds under independent stationary link Markov semigroups with a uniform L2 gap. Spatial support summation, a joint space-time polymer/KP criterion, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "scope": "PF-I16 exact finite-source coefficients, conditional finite-order spatial trees, exact temporal port injection, exact nilpotent row-diagonal product-cumulant identity, and a conditional product-process tensor-gap bridge giving exponential-order temporal cumulant bounds under independent stationary link Markov semigroups with a uniform L2 gap. Spatial support summation, a joint space-time polymer/KP criterion, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. A further activity audit records the centering loss and the missing all-orders support-sensitive joint tree: the uncentered local arithmetic alone does not certify the proposed KP criterion.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 773,
@@ -5796,8 +5796,8 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "For a finite family of independent stationary link Markov semigroups with a common uniform L² gap, the tensor-product process has the same L² decay rate independent of the number of links. Applying the existing projection-tree theorem to each bounded row-product observable yields an exponential-in-order temporal cumulant tree bound and a normalized time-integrated bound. This resums the signed product cumulant before taking absolute values over link partitions.",
-      "detail": "Assume P_t^e=Π_e+Q_t^e on L²(ν_e), ||Q_t^e||₂→₂≤exp(−Δ_e t), Δ_e≥Δ₀>0, with independent stationary links. The global product semigroup decomposes into nonempty tensor sectors, each decaying at least exp(−Δ₀t), hence ||P_t−Π||₂→₂≤exp(−Δ₀t), uniformly in the finite link count. For F_i(x)=∏_{e∈X_i}f_{i,e}(x_e), the row product is one bounded observable on the global product state space. The projection-tree theorem gives |κ(A_1(t_1),…,A_r(t_r))|≤4^r∏_i||F_i||∞ Σ_{T∈Trees_r}∏_{ij∈T}exp(−Δ₀|t_i−t_j|). Consequently (1/(r!𝒯))∫_[0,𝒯]^r |κ| ≤4^r r^(r−2)/r! (2/Δ₀)^(r−1)∏_i||F_i||∞, hence exponential order growth uniformly in link count and time horizon. This is a reference-process result under independent stationary link Markov semigroups and a uniform linkwise L² gap. It is not implied by local cumulant bounds alone; it uses all complete-graph labeled trees rather than a support-restricted tree. It does not establish spatial support summation, a joint space-time polymer/Kotecký–Preiss criterion, actual quantum connected-resolvent convergence, the interacting vacuum, P3, or any continuum mass gap.",
+      "summary": "Under independent stationary link Markov semigroups with a common L² gap, the product process yields an exponential-order temporal cumulant tree bound for row products. This is a conditional reference-process result, not a joint space-time polymer theorem. The all-orders support-sensitive tree is open; crude centering of uncentered interaction insertions raises the activity coefficient from 2 to 4 and misses the current proposed KP threshold.",
+      "detail": "Assume P_t^e=Π_e+Q_t^e on L²(ν_e), ||Q_t^e||₂→₂≤exp(−Δ_e t), Δ_e≥Δ₀>0, with independent stationary links. The global product semigroup decomposes into nonempty tensor sectors, each decaying at least exp(−Δ₀t), hence ||P_t−Π||₂→₂≤exp(−Δ₀t), uniformly in the finite link count. For F_i(x)=∏_{e∈X_i}f_{i,e}(x_e), the row product is one bounded observable on the global product state space. The projection-tree theorem gives |κ(A_1(t_1),…,A_r(t_r))|≤4^r∏_i||F_i||∞ Σ_{T∈Trees_r}∏_{ij∈T}exp(−Δ₀|t_i−t_j|). Consequently (1/(r!𝒯))∫_[0,𝒯]^r |κ| ≤4^r r^(r−2)/r! (2/Δ₀)^(r−1)∏_i||F_i||∞, hence exponential order growth uniformly in link count and time horizon. This is a reference-process result under independent stationary link Markov semigroups and a uniform linkwise L² gap. It is not implied by local cumulant bounds alone; it uses all complete-graph labeled trees rather than a support-restricted tree. It does not establish spatial support summation, a joint space-time polymer/Kotecký–Preiss criterion, actual quantum connected-resolvent convergence, the interacting vacuum, P3, or any continuum mass gap. A separate joint-polymer/centering audit identifies two further precise obstructions: (i) the projection-tree theorem is stated for centered observables, and the generic estimate ||v_X−E_0v_X||∞≤2||v_X||∞ changes the effective temporal coefficient from 2 to 4 when activities are measured by the existing uncentered ||v_X||∞; at the recorded κ_H<0.022695 this gives 8κ_H<0.18156>1/8. A sharper centered local norm or a direct oscillation estimate is required. (ii) the temporal tree sum is over the complete graph and only carries a support-disconnectedness indicator; multiplying a separate spatial tree count produces superexponential growth. A single support-sensitive joint tree, or an equivalent weighted-dependency-graph resummation, remains open.",
       "checks": [
         {
           "label": "Tensor-product L² gap independent of finite link count",
@@ -5828,6 +5828,21 @@
           "label": "Quantum connected-resolvent convergence and P3 inequality",
           "state": "open",
           "note": "No actual quantum activity radius, interacting-vacuum Poincaré inequality, or continuum mass gap follows."
+        },
+        {
+          "label": "Centered local activity compatible with proposed KP threshold",
+          "state": "open",
+          "note": "Generic centering costs a factor two in each insertion: effective C_time=4 gives 8κ_H<0.18156, above 1/8. A sharper centered-norm estimate is needed."
+        },
+        {
+          "label": "All-orders support-sensitive joint space-time tree",
+          "state": "open",
+          "note": "The complete-graph temporal tree plus support disconnectedness is not a joint tree; separate spatial and temporal tree counts are superexponential after 1/r!."
+        },
+        {
+          "label": "Marked-root sum with explicit order dependence",
+          "state": "open",
+          "note": "First/second cut-root per-link bounds exist, but the all-orders anchored marked-root family is not summed."
         }
       ],
       "sources": [
@@ -5835,6 +5850,11 @@
           "title": "PF-I16 product-process tensor-gap bridge for signed product-cumulant resummation",
           "path": "research/audits/PF_I16_PRODUCT_PROCESS_TENSOR_GAP_CUMULANT_BRIDGE_2026_11_14.md",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/observatory-scoped-checks-and-nilpotent-resummation/research/audits/PF_I16_PRODUCT_PROCESS_TENSOR_GAP_CUMULANT_BRIDGE_2026_11_14.md"
+        },
+        {
+          "title": "PF-I16 joint space-time polymer summation and centering audit",
+          "path": "research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/observatory-scoped-checks-and-nilpotent-resummation/research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md"
         }
       ],
       "tags": [
