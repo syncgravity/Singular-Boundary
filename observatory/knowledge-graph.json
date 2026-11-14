@@ -10978,7 +10978,7 @@
         {
           "label": "Projective-norm KP criterion at b0/a0=1/50000",
           "state": "obstruction",
-          "note": "The one-face linear contribution alone gives κπ≥0.090112 as an upper-majorant term, so 2κπ>1/8 even with C_st=1; this projective route cannot verify the current threshold."
+          "note": "The derived face-only upper-majorant term is 0.090112, so its sufficient test fails already at C_st=1 (2*kappa_face>1/8). This is not a lower bound on the true projective norm and does not refute convergence."
         },
         {
           "label": "Cancellation-preserving all-orders joint support/time cumulant bound",
@@ -16507,7 +16507,7 @@
     },
     "projectiveverifier": {
       "path": "research/verification/verify_pf_i16_projective_insertion_activity.py",
-      "blob_sha": "4f4e0f5dde86b4cd881496913945dda1bf726177"
+      "blob_sha": "8d760a4e18d822af669c00a582f940bb0896e989"
     }
   },
   "library_manifest": "observatory/data-manifest.json",
