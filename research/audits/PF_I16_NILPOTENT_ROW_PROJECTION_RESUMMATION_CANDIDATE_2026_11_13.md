@@ -91,29 +91,38 @@ However, this dimension count alone does **not** bound the coefficient norm of \
 
 The target is a weighted connected norm, not merely an unweighted coefficient count.
 
-## 5. Candidate analytic route
+## 5. Candidate analytic route and the correct Feynman–Kac target
 
 A plausible route is a **nilpotent hyperedge polymer / BKAR forest estimate** on the projected moment functional:
 
 1. Keep each \(M_e\), or equivalently its cumulant exponent \(K_e\), as one local hyperedge object. Do not expand its set-partition exponential into separate LS terms.
 2. Introduce a row-coupling interpolation for the diagonal constraint. Apply a multivariate forest formula (BKAR or a hypergraph analogue) to \([z_{[r]}]\log F\). The forest derivatives should select connected row blocks while differentiating each link object as a whole.
-3. Prove a tree-graph bound in which each selected non-singleton link block contributes its one-link maximum-tree temporal weight. The union of these link trees is connected; select one row-spanning tree from the union. Since all extra exponential factors are at most one, their product is bounded by that single spanning-tree weight. The challenge is to sum all choices *before* taking absolute values and to avoid an extra Cayley factor.
-4. Use \(\sum_e|I_e|\le8r\) to bound the number of active slot/link incidences charged by the forest derivatives. The desired outcome is
+3. Prove a tree-graph bound in which each selected non-singleton link block contributes its one-link maximum-tree temporal weight. The union of these link trees is connected; select one row-spanning tree from the union. Since all extra exponential factors are at most one, their product is bounded by that **single maximum spanning-tree** weight. The challenge is to sum all choices *before* taking absolute values and to avoid an extra Cayley factor.
+4. Use \(\sum_e|I_e|\le8r\) to bound the number of active slot/link incidences charged by the forest derivatives. The desired pointwise form, if obtainable, is
 \[
 |\kappa(A_1(t_1),\ldots,A_r(t_r))|
-\le C^r r!\,\prod_i\|A_i\|_{\rm slot}
+\le C^r\prod_i\|A_i\|_{\rm slot}
 \max_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}
-e^{-\Delta_*|t_i-t_j|},
-\tag{2}
+e^{-\Delta_*|t_i-t_j|}.
+\tag{2a}
 \]
-or a time-integrated substitute with the same Feynman–Kac summability.
+Note **there is no extra \(r!\) in (2a)**. That distinction matters for Feynman–Kac summability.
 
-The key advantage of the **maximum** in (2), rather than a sum over trees, is that on the line the maximum spanning tree is the path through the ordered times. If \(t_{(1)}\le\cdots\le t_{(r)}\), then
+The more flexible target is a direct **time-integrated cumulant coefficient**:
+\[
+\left|\frac1{r!}\int_{[0,\mathcal T]^r}
+\kappa(A(t_1),\ldots,A(t_r))\,d\mathbf t\right|
+\le \mathcal T C^r,
+\tag{2b}
+\]
+after the spatial/support sums appropriate to the interaction have also been performed. Equivalently, the absolute value of the integrated cumulant before the Feynman–Kac normalization is at most \(\mathcal T C^r r!\). This is the precise normalization-compatible statement to target if cancellations in time integration are needed.
+
+For ordered times \(t_1<\cdots<t_r\), the maximum spanning tree is the adjacent-time path and
 \[
 \max_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}e^{-\Delta|t_i-t_j|}
-=e^{-\Delta(t_{(r)}-t_{(1)})}.
+=e^{-\Delta(t_r-t_1)}.
 \]
-Consequently the ordered-simplex integral has the exact bound
+Its ordered-simplex integral is
 \[
 \int_{0<t_1<\cdots<t_r<\mathcal T}
 e^{-\Delta(t_r-t_1)}\,d\mathbf t
@@ -122,8 +131,7 @@ e^{-\Delta L}\frac{L^{r-2}}{(r-2)!}\,dL
 \le \mathcal T\Delta^{-(r-1)}
 \quad(r\ge2).
 \]
-Thus a pointwise \(C^r r!\) bound with **one maximum-tree weight** is precisely compatible with the Feynman–Kac normalization: the perturbative \(1/r!\) cancels the cumulant factorial, and the ordered time integral contributes only \(\mathcal T\Delta^{-(r-1)}\). There is no Cayley factor \(r^{r-2}\), because the target is not a sum over labeled trees. The already-proved temporal port-injection constant \(C_{\rm time}=2\) is a useful input, but does not itself establish this joint spatial/temporal maximum-tree estimate. The expansion convention (cube with \(1/r!\), or ordered simplex with its permutation sum) must be matched exactly to the Hamiltonian/Feynman–Kac expansion.
-
+Thus (2a) implies (2b), up to the exponential factor \(\Delta_*^{-(r-1)}\), because the cube divided by \(r!\) is the ordered simplex for a symmetric cumulant integrand. Crucially, a weaker pointwise estimate \(C^r r!\) times the maximum-tree weight does **not** by itself imply (2b): integrating the pointwise factorial against the maximum-tree kernel leaves an additional factorial. The temporal port-injection result \(C_{\rm time}=2\) is useful but does not establish (2a) or (2b). The expansion convention (cube with \(1/r!\), or ordered simplex with its permutation sum) must match the Hamiltonian/Feynman–Kac expansion exactly.
 ## 6. Immediate falsification tests / next lemmas
 
 - Re-derive the two-row/two-shared-link, three-row path, and four-row path identities directly from (1), and compare with the LS hypergraph formula.
