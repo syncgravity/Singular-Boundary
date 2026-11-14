@@ -109,7 +109,7 @@ The missing step is precisely the cancellation-preserving coefficient estimate.
 
 ## 5. Exact next lemma
 
-A sufficient next result would be a **coordinate-preserving port-completion inequality**. Group the signed projection expansion by its link-labelled interval forest \(H\), and prove that its total absolute grouped coefficient assigned to any support tree \(T\) is at most
+A sufficient next result would be a **coordinate-preserving signed coefficient inequality**. Group the signed projection expansion by its link-labelled interval data \(H\), and prove that its total absolute grouped coefficient assigned to any support tree \(T\) is at most
 \[
 C^{\,r+\sum_e |I_e|}
 \]
