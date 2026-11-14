@@ -727,3 +727,88 @@ with \(C_8\) independent of \(r\), the number of links, and the insertion suppor
 The absolute-value version (12.19) may itself be too strong: the actual Leonov–Shiryaev sum is signed/complex and can have substantial cancellation. The analytically relevant alternative is to reorganize the full sum before taking absolute values, using a connected-partition/Ursell or quasi-factorization representation that keeps the same maximum-tree weight. This is the precise unresolved subproblem.
 
 **Status update:** the degree-eight product constant now has an explicit finite formula and a rigorous closed-form upper bound, but the bound is superexponential after Feynman–Kac normalization. The desired \(C_8^r r!\) growth, or another summable cancellation-sensitive replacement, remains OPEN. No all-orders joint space-time/KP theorem is claimed.
+
+
+### 13. Order-four support-sensitive bound from the full Leonov–Shiryaev formula
+
+The cancellation-sensitive all-orders estimate in Section 12.5 is still open. There is, however, a useful finite-order result: for four elementary-tensor insertions, the full Leonov–Shiryaev expansion gives an explicit support-sensitive maximum-tree bound. This closes the order-four combinatorial estimate with a large but finite constant, without asserting exponential-in-order control.
+
+Let
+\[
+A_i(t_i)=\prod_{a=1}^{d_i}Y_{i,a}(t_i),\qquad
+d_i\le8,\qquad i=1,\ldots,4,
+\]
+where each elementary factor is a bounded observable of one link path, and within a row the four-or-fewer (in fact at most eight) link labels are distinct. Let \(X_i\) be the link support of row \(i\), and let \(G_{\rm ov}\) be the graph on \(\{1,2,3,4\}\) with \(ij\) an edge exactly when \(X_i\cap X_j\ne\varnothing\).
+
+For a connected \(G_{\rm ov}\), define
+\[
+\mathcal M(G_{\rm ov};\mathbf t)
+=\max_{T\in\mathcal T(G_{\rm ov})}
+\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|},
+\]
+where \(\mathcal T(G_{\rm ov})\) is its set of spanning trees. Put
+\[
+D_{8,4}:=
+\max_{1\le d_i\le8}
+\sum_{\substack{\pi\vdash I_1\uplus\cdots\uplus I_4\\
+\pi\vee\{I_1,\ldots,I_4\}=\{\mathfrak I\}\\
+\text{every block of }\pi\text{ has one link label}}}
+\prod_{B\in\pi}(2e)^{|B|}|B|!.
+\tag{13.1}
+\]
+This is a finite, explicit integer-real sum over partitions of at most 32 labeled slots.
+
+For each partition \(\pi\) in the Leonov–Shiryaev formula, every block \(B\) is monochromatic in its link label. The one-link estimate (12.8) bounds its cumulant by
+\[
+(2e)^{|B|}|B|!\,
+\exp\{-\Delta_0(\max_{i\in J(B)}t_i-\min_{i\in J(B)}t_i)\}
+\prod_{(i,a)\in B}\|Y_{i,a}\|_\infty,
+\]
+where \(J(B)\) is the set of rows represented in \(B\). Since the maximum-spanning-tree product of the complete temporal graph on \(J(B)\) is exactly this exponential, choose such a tree for every block. Each chosen edge joins two rows sharing the link label of \(B\), hence is an edge of \(G_{\rm ov}\).
+
+The join condition in (13.1) says that the union of these block trees is connected on the four rows. Delete cycle edges until a spanning tree remains. All edge weights lie in \([0,1]\), so deleting edges can only increase the product. The resulting tree is a spanning tree of \(G_{\rm ov}\), and its product is at most \(\mathcal M(G_{\rm ov};\mathbf t)\). Therefore every partition summand has the same common majorant, and
+\[
+\boxed{
+|\kappa(A_1(t_1),A_2(t_2),A_3(t_3),A_4(t_4))|
+\le
+D_{8,4}\,\mathcal M(G_{\rm ov};\mathbf t)
+\prod_{i=1}^4\prod_{a=1}^{d_i}\|Y_{i,a}\|_\infty.
+}
+\tag{13.2}
+\]
+If \(G_{\rm ov}\) is disconnected, the cumulant is zero by independence, so (13.2) extends with a zero right-hand side under the convention \(\mathcal M=0\) for disconnected graphs. Since a maximum is bounded by the sum,
+\[
+\mathcal M(G_{\rm ov};\mathbf t)
+\le
+\sum_{T\in\mathcal T(G_{\rm ov})}
+\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|},
+\tag{13.3}
+\]
+which is precisely the proposed support-restricted tree form at order four.
+
+A fully closed, deliberately crude numerical envelope follows from the same generating function as (12.15):
+\[
+D_{8,4}
+\le
+(2e)^{32}\,32!\,[z^{32}]
+\exp\!\left(\frac z{1-z}\right)
+\le
+(2e)^{32}\,32!\,e^{2\sqrt{32}}.
+\tag{13.4}
+\]
+The first inequality drops both the monochromatic and connected-join restrictions. This constant is not optimized and is not proposed as an activity constant.
+
+For general local insertions with an absolutely convergent elementary-tensor representation
+\[
+A_i=\sum_\nu c_{i,\nu}\prod_{a=1}^{d_{i,\nu}}Y_{i,\nu,a},
+\qquad d_{i,\nu}\le8,
+\]
+the same estimate follows by multilinearity, with the elementary product norm replaced by the projective coefficient norm
+\[
+\|A_i\|_{\pi,8}
+:=\inf\sum_\nu |c_{i,\nu}|
+\prod_a\|Y_{i,\nu,a}\|_\infty.
+\]
+No assertion is made that the actual PF-I16 face and face-pair insertions have finite, uniformly controlled \(\|\cdot\|_{\pi,8}\); establishing that remains a separate open gate.
+
+**Scope.** Equation (13.2) proves the support-sensitive maximum-tree estimate for four elementary-tensor insertions, and (13.3) gives the requested spanning-tree form at that fixed order. It does not prove the all-orders estimate (3.1), does not give an order-uniform \(C_{\rm st}^m\) constant, and does not close the Feynman–Kac/KP expansion. The cancellation-sensitive all-orders product-cumulant bound and the actual insertion projective norms remain OPEN.
