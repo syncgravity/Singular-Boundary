@@ -146,3 +146,32 @@ At \(x=1/50000\), its linear face term alone is \(0.090112\). It therefore canno
 4. Only after 1–3, insert the resulting constants into the space-time polymer/KP criterion and prove uniform Feynman–Kac/ground-energy convergence.
 
 **Conclusion.** The per-link uncentered activity arithmetic (2.1) is verified, and the centered temporal tree theorem is available with its stated hypotheses. The current combination does not yet establish a KP condition: the crude centering-safe constant misses the proposed threshold, and the all-orders support-sensitive joint tree remains open. No P0–P5 gate is promoted.
+
+
+## 7. Superseding results — QF closed; projective pair tail sharpened
+
+Two former inputs in Sections 5–6 are now superseded.
+
+First, actual-insertion cross-split QF is **ESTABLISHED** for arbitrary bounded local multiplication observables under independent stationary link paths with a uniform one-link \(L^2\) semigroup gap. The proof conditions on all other link paths and applies the interlaced-time one-link covariance lemma to the remaining shared link. See
+[PF-I16 arbitrary-local-observable link interpolation](PF_I16_ARBITRARY_LOCAL_OBSERVABLE_LINK_INTERPOLATION_2026_11_13.md). The QF estimate carries the exact link multiplicity \(|X_i\cap X_j|\). It does not yet imply the support-restricted all-orders tree (1.2).
+
+Second, the previous \(K_6^2\)-dependent projective pair majorant is superseded by the all-orders character-tail and Casimir-block estimate in
+[PF-I16 all-orders radial character tail and face/pair projective norm](PF_I16_ALL_ORDERS_RADIAL_CHARACTER_TAIL_AND_FACE_PAIR_PROJECTIVE_NORM_2026_11_14.md):
+\[
+\mathfrak p(v_f)\le256b_0,\qquad
+\mathfrak p(v_{fg})\le20000\,b_0^2/a_0,
+\]
+and the resulting per-link support-weighted activity satisfies
+\[
+\kappa_\pi\le0.096611
+\quad\text{at }b_0/a_0=1/50000.
+\]
+This is a substantial improvement over the former pair majorant, but \(2\kappa_\pi\le1/8\) is still not certified; the improved upper majorant gives \(2\kappa_\pi\le0.193222\). This remains a failure of a sufficient upper test, not a lower bound on the true norm.
+
+The current boundary is therefore:
+- Actual-insertion cross-split QF: **ESTABLISHED** under the stated product-Markov hypotheses.
+- All-orders radial character tail and full face/pair projective tensor bounds: **ESTABLISHED** under the recorded rotor and incidence/allocation hypotheses.
+- Support-restricted all-orders space-time cumulant tree: **OPEN**.
+- Marked-root sum, quantum KP convergence, interacting-vacuum Poincare inequality, and continuum mass gap: **OPEN**.
+
+No P0–P5 gate is promoted.
