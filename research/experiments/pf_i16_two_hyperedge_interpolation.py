@@ -150,7 +150,7 @@ def test_overlap_sizes_and_nonzero_means():
         for q in range(1, r + 1):
             # q shared rows; the union is all rows.
             h1 = set(range(r - 1)) if q < r else set(rows)
-            h2 = set(range(q - 1)) | ({r - 1} if q < r else set())
+            h2 = set(range(q)) | ({r - 1} if q < r else set())
             assert h1 | h2 == rows and len(h1 & h2) == q
             f = projected_interpolation(r, h1, h2, m1, m2)
             full = (1 << r) - 1
