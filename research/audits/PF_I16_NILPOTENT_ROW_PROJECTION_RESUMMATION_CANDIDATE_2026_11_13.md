@@ -102,19 +102,27 @@ A plausible route is a **nilpotent hyperedge polymer / BKAR forest estimate** on
 \[
 |\kappa(A_1(t_1),\ldots,A_r(t_r))|
 \le C^r r!\,\prod_i\|A_i\|_{\rm slot}
-\sum_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}
+\max_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}
 e^{-\Delta_*|t_i-t_j|},
 \tag{2}
 \]
 or a time-integrated substitute with the same Feynman–Kac summability.
 
-The existing temporal port-injection result gives \(C_{\rm time}=2\) for the reference-process time-ordering projection, and for each fixed labeled tree
+The key advantage of the **maximum** in (2), rather than a sum over trees, is that on the line the maximum spanning tree is the path through the ordered times. If \(t_{(1)}\le\cdots\le t_{(r)}\), then
 \[
-\int_{[0,\mathcal T]^r}\prod_{\{i,j\}\in T}
-e^{-\Delta_0|t_i-t_j|}\,d\mathbf t
-\le \mathcal T(2/\Delta_0)^{r-1}.
+\max_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}e^{-\Delta|t_i-t_j|}
+=e^{-\Delta(t_{(r)}-t_{(1)})}.
 \]
-The Feynman–Kac factor \(1/r!\) can then cancel the labeled-tree growth \(|\mathcal T_r|=r^{r-2}\) up to an exponential factor, provided (2) has no additional superfactorial coefficient. The precise time-ordering convention and whether the perturbation expansion sums ordered simplices or the full cube must be fixed in the theorem statement.
+Consequently the ordered-simplex integral has the exact bound
+\[
+\int_{0<t_1<\cdots<t_r<\mathcal T}
+e^{-\Delta(t_r-t_1)}\,d\mathbf t
+=\int_0^{\mathcal T}ds\int_0^{\mathcal T-s}
+e^{-\Delta L}\frac{L^{r-2}}{(r-2)!}\,dL
+\le \mathcal T\Delta^{-(r-1)}
+\quad(r\ge2).
+\]
+Thus a pointwise \(C^r r!\) bound with **one maximum-tree weight** is precisely compatible with the Feynman–Kac normalization: the perturbative \(1/r!\) cancels the cumulant factorial, and the ordered time integral contributes only \(\mathcal T\Delta^{-(r-1)}\). There is no Cayley factor \(r^{r-2}\), because the target is not a sum over labeled trees. The already-proved temporal port-injection constant \(C_{\rm time}=2\) is a useful input, but does not itself establish this joint spatial/temporal maximum-tree estimate. The expansion convention (cube with \(1/r!\), or ordered simplex with its permutation sum) must be matched exactly to the Hamiltonian/Feynman–Kac expansion.
 
 ## 6. Immediate falsification tests / next lemmas
 
