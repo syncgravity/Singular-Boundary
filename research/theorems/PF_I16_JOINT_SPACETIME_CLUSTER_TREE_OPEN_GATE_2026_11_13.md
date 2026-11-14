@@ -850,3 +850,169 @@ In particular, no refinement of the *counting* of the absolute Leonov–Shiryaev
 This is **not** a lower bound on the actual product cumulant. The Leonov–Shiryaev identity is a signed/complex sum, and the eight large one-link contributions can cancel against the other admissible partitions. The elementary example in which all eight link coordinates are shared by all rows makes the point: at equal times, if \(Y_{i,a}=Z_a\) for every row \(i\), then all row observables are the same bounded variable \(A=\prod_{a=1}^8Z_a\). Their joint cumulant is the ordinary repeated-variable cumulant \(\kappa_r(A,\ldots,A)\), whose growth is governed by the one-variable log moment-generating function, not by eight independent factors of \(r!\). The LS representation must cancel its large absolute terms to recover this behavior.
 
 **Consequence.** The all-orders gate is now sharply identified: one must exploit algebraic cancellation in the full product-cumulant identity, or use a different quasi-factorization/interpolation before taking absolute values. A stronger absolute-value estimate of the form (12.19) is impossible for this general degree-eight product class. The fixed-order \(m=4\) theorem in Section 13 is unaffected, since its finite constant is allowed to be large. The all-orders cancellation-sensitive bound and the actual PF-I16 insertion norm control remain OPEN.
+
+
+### 15. Actual face/pair insertion projective norms: Peter–Weyl reduction and the remaining regularity constant
+
+This section replaces the earlier abstract assumption that the actual insertions possess projective tensor representations. It gives a concrete Peter–Weyl representation and an explicit norm bound in terms of a one-rotor \(H^6\) norm. The latter is finite by compact elliptic regularity, but its uniform numerical value has not yet been extracted from the radial ODE.
+
+For a function \(F\) on \(G^k\), \(G=\mathrm{SU}(2)\), define the \(L^\infty\)-projective norm
+\[
+\|F\|_{\pi,k}
+=\inf\left\{\sum_\nu |c_\nu|
+\prod_{j=1}^k\|F_{\nu,j}\|_\infty:
+F=\sum_\nu c_\nu\bigotimes_{j=1}^kF_{\nu,j}\right\}.
+\tag{15.1}
+\]
+The infimum is over absolutely convergent representations. This is the norm needed to apply a monomial/weighted-dependency-graph lift to elementary one-link path observables.
+
+#### 15.1. The one-face plaquette insertion is an explicit finite tensor
+
+With the normalized PF-I16 plaquette convention \(p_f(H)=\frac12\operatorname{Tr}H\), and oriented face word \(H=U_1^{\epsilon_1}\cdots U_4^{\epsilon_4}\), the fundamental representation gives
+\[
+p_f(H)=\frac12\sum_{i_0,i_1,i_2,i_3=1}^{2}
+D(U_1^{\epsilon_1})_{i_0i_1}
+D(U_2^{\epsilon_2})_{i_1i_2}
+D(U_3^{\epsilon_3})_{i_2i_3}
+D(U_4^{\epsilon_4})_{i_3i_0}.
+\]
+Every matrix coefficient has supremum norm at most one. There are \(2^4=16\) summands, so
+\[
+\boxed{\|p_f(H_f)\|_{\pi,4}\le8,\qquad
+\|v_f\|_{\pi,4}\le8\rho_fb_f\le256b_0,}
+\tag{15.2}
+\]
+after discarding the scalar energy shift in the one-face interaction. This is an actual finite decomposition, not a smoothness assumption.
+
+#### 15.2. Gradient insertions have an explicit Fourier projective majorant
+
+Write the radial one-face logarithm in the normalized character basis
+\[
+s_f(H)=\sum_{n=0}^\infty c_{f,n}\chi_n(H),
+\]
+where \(\chi_n\) is the character of the \((n+1)\)-dimensional irreducible representation. The radius-two Laplacian eigenvalue is
+\[
+\lambda_n=\frac{n(n+2)}4,
+\]
+and a unit Lie-algebra generator has operator norm \(n/2\) in this representation.
+
+The four-factor trace expansion of \(\chi_n(U_1^{\epsilon_1}\cdots U_4^{\epsilon_4})\) has \((n+1)^4\) terms, each a product of four one-link matrix coefficients of norm at most one. Differentiating in one link replaces one matrix coefficient by a matrix coefficient of \(D^{(n)}(X)\), whose norm is at most \(n/2\). Thus every scalar component of the pulled-back one-link gradient has projective norm at most
+\[
+P_f:=\frac12\sum_{n\ge1}n(n+1)^4|c_{f,n}|.
+\tag{15.3}
+\]
+Define
+\[
+\|s_f\|_{H^6}^2
+:=\sum_{n\ge0}(1+\lambda_n)^6|c_{f,n}|^2.
+\]
+Cauchy–Schwarz gives
+\[
+P_f\le C_6\|s_f\|_{H^6},\qquad
+C_6:=\frac12\left[
+\sum_{n\ge1}
+\frac{n^2(n+1)^8}{(1+n(n+2)/4)^6}
+\right]^{1/2}<9.1.
+\tag{15.4}
+\]
+For the displayed strict bound, use \(1+n(n+2)/4\ge(n+1)^2/4\) and
+\(\sum_{n\ge1}n^2/(n+1)^4<0.324\). In particular, the projective gradient expansion is absolutely convergent whenever \(s_f\in H^6(\mathrm{SU}(2))\).
+
+The radial ground-state branch is analytic in \(b_f/A_f\) near zero: the isolated compact-rotor operator is an analytic family with a simple positive ground state, and elliptic regularity transfers this analyticity to \(H^6\). On the compact parameter interval \(0\le\beta_f\le1/25000\), simplicity and compactness therefore give a finite constant
+\[
+K_6:=
+\sup_{0<\beta\le1/25000}
+\frac{\|s_\beta-\int s_\beta\,dH\|_{H^6}}{\beta}<\infty.
+\tag{15.5}
+\]
+The quotient has a finite limit at zero by analytic perturbation. The value of \(K_6\) is not yet evaluated from the radial ODE; it is an explicit remaining numerical regularity input, not an assumed projective norm.
+
+Since \(\beta_f\le2b_0/a_0\), (15.3)–(15.5) give
+\[
+P_f\le 2C_6K_6\,\frac{b_0}{a_0}.
+\tag{15.6}
+\]
+
+#### 15.3. Actual pair and cut insertions
+
+The shared-link term is
+\[
+V_{fg}=2\sum_{e\in\partial f\cap\partial g}
+a_e\sum_{\alpha=1}^3
+(D_{e,\alpha}s_f)(D_{e,\alpha}s_g).
+\]
+Products of two elementary tensor expansions combine their factors on a shared link into one bounded one-link function. Therefore
+\[
+\|V_{fg}\|_{\pi,8}
+\le6\sum_{e\in\partial f\cap\partial g}a_eP_fP_g
+\le384\,C_6^2K_6^2\,\frac{b_0^2}{a_0}.
+\tag{15.7}
+\]
+Here there are at most four shared links and \(a_e\beta_f\beta_g\le16b_0^2/a_0\).
+
+For the first cut insertion, the exact identity
+\[
+\Delta s_f+2\alpha_f|\nabla s_f|^2
+=(2\alpha_f-1)|\nabla s_f|^2
+-\beta_f p_f-\lambda_f
+\]
+and \(\||\nabla s_f|^2\|_{\pi,4}\le3P_f^2\) give the local bounds
+\[
+\boxed{
+\|b_{a,f}\|_{\pi,4}
+\le256b_0+192\,C_6^2K_6^2\,\frac{b_0^2}{a_0},
+\quad
+\|b_{a,fg}\|_{\pi,8}
+\le768\,C_6^2K_6^2\,\frac{b_0^2}{a_0}.
+}
+\tag{15.8}
+\]
+The scalar \(\lambda_f\) is omitted because it contributes no cumulant of order at least two. For distinct cuts \(a,b\), the coefficient of \(|\nabla s_f|^2\) is at most three, so
+\[
+\boxed{
+\|b_{ab,f}\|_{\pi,4}
+\le256b_0+576\,C_6^2K_6^2\,\frac{b_0^2}{a_0},
+\quad
+\|b_{ab,fg}\|_{\pi,8}
+\le1536\,C_6^2K_6^2\,\frac{b_0^2}{a_0}.
+}
+\tag{15.9}
+\]
+These are termwise local bounds. A global cut insertion is a marked sum of such terms; its rooted activity must be summed with the actual cut-incidence profile, not bounded by its volume-dependent global operator norm.
+
+For the shared-link residual
+\[
+R_e=a_e\left(\left|\sum_{f:e\in\partial f}D_es_f\right|^2
+-\frac1{d_e}\sum_{f:e\in\partial f}|D_es_f|^2\right),
+\]
+the same tensor multiplication gives the safe local estimate
+\[
+\boxed{
+\|R_e\|_{\pi,25}
+\le3120\,C_6^2K_6^2\,\frac{b_0^2}{a_0}.
+}
+\tag{15.10}
+\]
+This uses \(d_e\le8\), at most three tangent components, and the same \(a_e\beta_f\beta_g\) allocation. Any source observable \(r_i\) that is a sum of these residuals inherits the sum of (15.10) over its specified link support. The exact \(r_i\) definition and its support multiplicity must be inserted before assigning a numerical marked-root norm.
+
+#### 15.4. Projective activity audit and the KP threshold
+
+Put \(x=b_0/a_0\). With the universal eight-face and 224-pair incidences, \(e^{|X|/8}\le e^{1/2}<1.65\) for face terms and \(\le e<2.72\) for pair terms, (15.2) and (15.7) yield
+\[
+\kappa_\pi(x)
+:=\sup_e\sum_{X\ni e}
+\frac{\|v_X\|_{\pi,|X|}}{\Delta_0}e^{|X|/8}
+\le
+4505.6\,x+2.5833\times10^7 K_6^2x^2.
+\tag{15.11}
+\]
+The displayed decimals are upward-rounded. At the currently recorded \(x=1/50000\), the linear face contribution alone is \(0.090112\), so this projective-norm majorant does **not** meet the candidate KP threshold \(a=1/8\), even before the pair term and before the unknown joint-cumulant constant are included.
+
+If a cancellation-preserving joint support/time WDG theorem were proved with coefficient-growth constant \(C_{\rm st}\), the standard integrated-tree KP input would require, in this normalization,
+\[
+2C_{\rm st}\,\kappa_\pi(x)\le\frac18.
+\tag{15.12}
+\]
+Equations (15.11)–(15.12) give an explicit conditional smaller-coupling radius once \(K_6\) and \(C_{\rm st}\) are known. They do not certify the present \(1/50000\) threshold.
+
+**Conclusion of this audit.** The actual one-face insertion has a finite eight-term projective representation; the pair, first-cut, second-cut, and residual insertions have explicit projective majorants controlled by the one-rotor \(H^6\) constant \(K_6\). The required numerical value of \(K_6\), the marked source multiplicity, and—most importantly—the cancellation-preserving all-orders joint support/time cumulant constant are not yet established. Consequently no KP convergence theorem is claimed. The projective-norm route is quantitatively too costly at the present coupling threshold; a direct tensorized semigroup proof in the \(L^\infty\) norm, avoiding the factor-eight plaquette projective loss, is now the preferred route for preserving the existing activity margin.
