@@ -74,7 +74,12 @@ e^{-\Delta_0(t_{\max}-t_{\min})}
 \]
 has the correct factorial growth class. The Section 16 square-free target must retain a factor of order \(K^k k!\) (or \((k-1)!\)); a pure \(K^k\) coefficient target is impossible.
 
-This does **not** prove that the quantum Feynman–Kac series diverges. In the time-integrated order-\(k\) coefficient, the factor \(1/k!\) and the integration of the full-span temporal decay may cancel the one-link factorial. What is still required is a joint estimate that performs that cancellation before summing spatially connected collections, while preserving the maximum-tree weight and the link-incidence structure.
+This does **not** prove that the quantum Feynman–Kac series diverges. However, the bare full-span envelope does not become summable merely by the (1/k!\) normalization. For (k\ge2), ordering the times and integrating the (k-1) gaps gives
+\[
+\int_{[0,T]^k}e^{-\Delta_0(t_{\max}-t_{\min})}\,d\mathbf t
+\le k!\,T\,\Delta_0^{-(k-1)}.
+\]
+Thus multiplying the pointwise ((2e)^k k!\) bound and dividing by (k!\) still leaves a (k!\) factor. The already-proved temporal projection-tree estimate (7.6)–(7.8) is stronger for Feynman–Kac purposes: after the fixed-tree time integral and (1/k!\) normalization it has coefficient (2^k k^{k-2}/k!\), which is only exponential in (k\). The unresolved task is to combine that temporal tree with spatial support connectivity in one bounded-fiber tree or an equivalent weighted-dependency estimate, without restoring a second Cayley factor.
 
 ## 4. Exact proof boundary
 
