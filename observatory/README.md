@@ -1,3 +1,13 @@
+## PF-I16 · Joint space-time polymer and centering audit (2026-11-14)
+
+The local per-link **uncentered** activity arithmetic is verified: \(\kappa_H<0.022695\), and hence \(4\kappa_H<0.09078<1/8\). But the projection-tree theorem is stated for centered observables. From the current uncentered local norm bound, centering costs \(\|v_X-\mathbb E_0v_X\|_\infty\le2\|v_X\|_\infty\), so the effective coefficient is \(C_{\rm time}=4\) and the corresponding sufficient test becomes \(8\kappa_H<0.18156\), which misses \(1/8\). A sharper local oscillation/centered-norm estimate is needed; this is a loss in the upper bound, not evidence of divergence.
+
+There is a second independent obstruction: the available temporal tree is over all labeled row trees, while spatial independence gives only exact vanishing for disconnected support families. Multiplying a separate spatial tree count by the temporal tree count produces superexponential order growth after the \(1/m!\) normalization. The actual KP step requires a **single support-sensitive space-time tree** or an equivalent weighted-dependency-graph resummation, plus an explicit all-orders anchored marked-root sum. The projective-norm alternative also fails its sufficient threshold at the recorded coupling before its unknown \(K_6\) term.
+
+[Full activity arithmetic, centering calculation and exact next obligations](../research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md). No KP convergence or P0–P5 gate closure is claimed.
+
+---
+
 ## PF-I16 · Product-process tensor-gap bridge (2026-11-14)
 
 **Conditional reference-process result; spatial/quantum convergence remains OPEN.** For finitely many independent stationary link Markov semigroups with \(P_t^e=\Pi_e+Q_t^e\), \(\|Q_t^e\|_{2\to2}\le e^{-\Delta_e t}\), and \(\Delta_e\ge\Delta_0>0\), the global tensor-product semigroup has the same \(L^2\) decay rate \(e^{-\Delta_0t}\), independent of the number of links. Treating each row product as one bounded observable on that global process and applying the existing projection-tree theorem yields
