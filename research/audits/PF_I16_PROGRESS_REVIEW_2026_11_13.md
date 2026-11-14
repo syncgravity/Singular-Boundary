@@ -136,3 +136,9 @@ The companion [closure audit](PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_
 ## 8. One-link quasi-factorization target corrected to factorial growth
 
 A pure (K^k\) bound for the square-free one-link quasi-factorization coefficient cannot hold uniformly in (k). The coincident-time Rademacher example has (|\kappa_{2n}|\sim2(2/\pi)^{2n}(2n-1)!\). The correct one-link input is factorial, as in (12.8)/(16.5). The new [factorial-obstruction audit](PF_I16_ONE_LINK_QUASIFACTORIZATION_FACTORIAL_OBSTRUCTION_2026_11_13.md) narrows the remaining problem to a factorial-compatible full analytic majorant and a proof that temporal integration plus (1/r!\) cancels the factorial before spatial connected-subset summation. This is not a divergence result for PF-I16 and does not alter the finite third-/fourth-order results.
+
+
+## 9. Pointwise factorial versus integrated temporal tree
+
+The one-link Rademacher example requires factorial pointwise cumulant growth. The crude full-span envelope cannot have its factorial removed by the (1/r!\) Feynman–Kac normalization alone: 
+\(\int_{[0,T]^r}e^{-\Delta_0(\max t_i-\min t_i)}d\mathbf t\le r!T\Delta_0^{-(r-1)}\). The all-orders temporal projection-tree theorem already provides the sharper normalized bound (2^r r^{r-2}/r!\) times the fixed-tree integral, which is exponential. The remaining problem is to combine that temporal tree with spatial support connectivity in a single bounded-fiber tree. This is the current decisive combinatorial/analytic gate; no all-orders quantum convergence is claimed.
