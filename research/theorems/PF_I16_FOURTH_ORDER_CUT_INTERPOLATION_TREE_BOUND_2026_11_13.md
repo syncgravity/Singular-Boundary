@@ -1,7 +1,7 @@
 # PF-I16 — Fourth-order cut interpolation and conditional four-support tree bound
 
 **Date:** 2026-11-13  
-**Status:** finite-product spatial tree theorem for the full fourth-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The corrected derivative-flow estimate and face-map metric pullback are established by the companion closure audit. It is a finite dressed-reference result, not an all-orders convergence theorem or a physical Yang–Mills gap.
+**Status:** finite-product spatial tree theorem for the full fourth-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The corrected derivative-flow estimate and face-map metric pullback are established by the companion [closure audit](../audits/PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md). It is a finite dressed-reference result, not an all-orders convergence theorem or a physical Yang–Mills gap.
 
 ## 1. Cut interpolation
 
