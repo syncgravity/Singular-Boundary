@@ -63,23 +63,9 @@ Therefore
 \]
 The last inequality follows from \(r\le2^r\).
 
-By Cayley's formula, the complete graph has \(r^{r-2}\) spanning trees. Since \(G_X\) is connected, it has at least one spanning tree, so
-\[
-r^{r-2}\le r^{r-2}|\mathcal T(G_X)|
-\]
-is not the useful direction; instead use the connected-graph bound
-\[
-|\mathcal T(G_X)|\ge1
-\]
-and (2.2) only gives \(4^r r^{r-2}\), which is **not** bounded by \(4^r|\mathcal T(G_X)|\) for a sparse graph. To obtain (1.1) with a support-tree count, use the sharper graph-sensitive cumulant estimate below.
+Cayley's formula gives \\(r^{r-2}\\) trees for the complete graph. The estimate (2.2) is therefore a complete-graph tree envelope. It cannot be replaced by \\(|\\mathcal T(G_X)|\\) using connectedness alone: a connected support graph may be a path, with only one spanning tree, while \\(r^{r-2}\\) is superexponential.
 
-For each partition \(\pi\), form its block-intersection graph \(K_\pi\) on the blocks of \(\pi\), joining two blocks if some support edge of \(G_X\) crosses them. If \(K_\pi\) is disconnected, the block products factor across a support cut. The standard connected-partition cancellation in the cumulant formula removes all such disconnected contributions. The surviving terms are indexed by connected partitions of \(G_X\), and their absolute coefficient sum is bounded by the rooted-forest expansion. A connected partition has a spanning tree of \(G_X\) crossing its blocks; summing over rooted forests and then forgetting roots gives the graph-sensitive bound
-\[
-\sum_{\pi\ {\rm connected}}(|\pi|-1)!
-\le 4^r|\mathcal T(G_X)|.
-\tag{2.3}
-\]
-For completeness, (2.3) is the only nontrivial combinatorial claim in this proof and is not established by the preceding estimates alone.
+The missing graph-sensitive improvement is not supplied by the moment-cumulant triangle inequality. In particular, this argument does not justify restricting the partition sum to “connected partitions” and then bounding their coefficient mass by a rooted-forest count. Such a cancellation-preserving regrouping would require a separate proof and is left open.
 
 ## 3. Status correction and exact useful conclusion
 
