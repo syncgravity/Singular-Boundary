@@ -1,3 +1,24 @@
+## PF-I16 · Product-process tensor-gap bridge (2026-11-14)
+
+**Conditional reference-process result; spatial/quantum convergence remains OPEN.** For finitely many independent stationary link Markov semigroups with \(P_t^e=\Pi_e+Q_t^e\), \(\|Q_t^e\|_{2\to2}\le e^{-\Delta_e t}\), and \(\Delta_e\ge\Delta_0>0\), the global tensor-product semigroup has the same \(L^2\) decay rate \(e^{-\Delta_0t}\), independent of the number of links. Treating each row product as one bounded observable on that global process and applying the existing projection-tree theorem yields
+
+\[
+|\kappa(A_1(t_1),\ldots,A_r(t_r))|
+\le 4^r\prod_i\|F_i\|_\infty
+\sum_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|}.
+\]
+
+Cayley counting and leaf integration then give the normalized bound
+\[
+\frac1{r!\mathcal T}\int_{[0,\mathcal T]^r}|\kappa|\,d\mathbf t
+\le 4^r\frac{r^{r-2}}{r!}\left(\frac2{\Delta_0}\right)^{r-1}\prod_i\|F_i\|_\infty.
+\]
+This controls the signed product cumulant before taking absolute values over link partitions and avoids the Bell-fiber loss in that reference-process setting. It is **not** a spatially sensitive tree: the sum is over all labeled trees on the rows. The assumptions are stronger than local link-cumulant decay and are not yet established for the physical interacting path measure. No spatial-support sum, joint space-time polymer/Kotecký–Preiss criterion, quantum connected-resolvent convergence, interacting-vacuum Poincaré inequality, or continuum mass gap follows.
+
+[Full assumptions, proof and limitations](../research/audits/PF_I16_PRODUCT_PROCESS_TENSOR_GAP_CUMULANT_BRIDGE_2026_11_14.md) · [Proof Atlas](graph.html).
+
+---
+
 ## Observatory v3.05 · 2026-11-13 — scoped-check inventory and product-cumulant resummation candidate
 
 The canonical P0–P5 acceptance ledger contains **27 scoped checks**: P0=6, P1=4, P2=4, P3=4, P4=4, P5=5. Their current recorded states are 2 met, 6 partial, and 19 open. The verifier now asserts the total, per-gate allocation, unique labels, and state distribution. These are review/status controls, not theorem certification; no proof gate has been closed.
