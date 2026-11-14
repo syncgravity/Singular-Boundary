@@ -64,7 +64,7 @@ A verifier computes the full joint law of all observations for stationary binary
 \]
 forms the normalized joint-probability matrix for the S- and T-observation vectors, and computes its second singular value, which is their maximal correlation.
 
-It exhausts all two-color patterns through six observation times, all gap patterns with gaps one or two, and several values of q. It checks (1.1) directly, rather than testing only selected sign functions. This is stronger than checking a handful of covariances but remains a finite-state regression test, not a proof for general chains.
+It exhausts all two-color patterns through six observation times, all gap patterns with gaps one or two, and several values of q. It checks (1.1) directly, rather than testing only selected sign functions. It also samples 128 nonreversible three-state doubly-stochastic kernels (convex combinations of permutation matrices), with four interlaced color patterns and nonuniform gaps one through three, comparing the exact finite joint law's maximal correlation to the bound computed from the kernel's L2 contraction norm. These remain finite-state regression tests, not a proof for general chains.
 
 ## 3. Why the hyperbolic-tangent form is a useful target
 
@@ -83,7 +83,7 @@ A proof must establish a valid tensorization/composition inequality for the two 
 - arbitrary finite, nonuniform observation-time gaps;
 - arbitrary finite observation sets, with constants independent of the state-space size.
 
-The binary exhaustive test can falsify the conjecture in a small example but cannot certify these general points. A counterexample for a nonreversible or larger-state chain would terminate this route or force a stronger hypothesis.
+The binary exhaustive and sampled three-state nonreversible tests can falsify the conjecture in small examples but cannot certify these general points. A counterexample for a nonreversible or larger-state chain would terminate this route or force a stronger hypothesis.
 
 Even if (1.1) is proved, a separate multi-row cumulant argument is still needed to assign its cut bonds to original row pairs and preserve the signed outer cumulant through recursive super-row merging.
 
