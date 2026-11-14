@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v3.04-pf-i16-quasi-factorization-reduction",
-  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; one-link continuous-time cumulant bound; and exact link-factorization identity for Boolean-lattice quasi-factorization variables. The analytic one-link quasi-factorization majorant, connected-subset resummation with K_8^r growth, uniform higher-order coefficient bounds, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v3.05-pf-i16-nilpotent-row-projection",
+  "scope": "PF-I16 exact finite-source coefficients, corrected isolated-rotor bounds, conditional finite-order spatial trees, exact all-orders temporal port injection with C_time=2, and an exact squarefree row-diagonal generating-function identity proposed as a cancellation-preserving product-cumulant resummation. The nilpotent row-projection identity is algebraically exact, but its weighted connected-log bound, single maximum-tree temporal factor, C^r r! growth or Feynman-Kac-integrable equivalent, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 773,
@@ -11521,6 +11521,55 @@
       "importance": 4,
       "core": false,
       "route": null
+    },
+    {
+      "id": "PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION",
+      "title": "Candidate: nilpotent link objects and row-diagonal projection",
+      "kind": "work",
+      "status": "candidate",
+      "stage": "P2",
+      "summary": "An exact squarefree generating-function identity packages each link's entire partition family into one local moment polynomial, imposes the all-or-none row-product constraint by a diagonal projection, and extracts the global product cumulant with one logarithm. This is a candidate cancellation-preserving resummation, not yet a C^r r! estimate.",
+      "detail": "For each link e let M_e(x_e)=E_e∏_{i∈I_e}(1+x_{i,e}Y_{i,e}) in the commutative squarefree algebra x_{i,e}²=0. Independence gives the joint slot moment polynomial ∏_e M_e. The linear row-diagonal map D sends a slot monomial to z_S exactly when, for every row i, its selected incident slots are either empty or all of E_i; otherwise it sends it to zero. Then F(z)=D(∏_e M_e) has [z_S]F=E∏_{i∈S}A_i and κ(A_1,…,A_r)=[z_1…z_r]log F. Equivalently M_e=exp K_e with K_e=Σ_{∅≠B⊆I_e}κ_e(Y_{i,e}:i∈B)x_{B,e}. The logarithm retains global connectedness after projection; no termwise absolute value is taken over the link partitions. Since Σ_e|I_e|≤8r, the total number of slot variables is at most 8r and the naive squarefree coefficient count is at most 2^(8r). The hard step is a weighted connected-norm bound on log D(∏M_e) that preserves one global maximum-tree temporal weight. The projection is linear, not multiplicative, so standard product-norm estimates do not automatically commute with log or preserve connectedness. High-degree links, singleton means, and the Feynman–Kac time-ordering normalization must be handled explicitly.",
+      "checks": [
+        {
+          "label": "Exact squarefree slot-moment and row-diagonal identity",
+          "state": "exact",
+          "note": "Formal finite-dimensional algebra; no estimate or physical transfer is implied."
+        },
+        {
+          "label": "Connectedness retained by the global logarithm after row projection",
+          "state": "exact",
+          "note": "The coefficient of the full row monomial is the classical joint cumulant."
+        },
+        {
+          "label": "Weighted connected norm with one maximum-tree temporal factor",
+          "state": "open",
+          "note": "Need a tree-graph/BKAR or hypergraph polymer estimate that acts before absolute values."
+        },
+        {
+          "label": "C^r r! growth or Feynman–Kac-integrable equivalent",
+          "state": "open",
+          "note": "Incidence budget alone is not a convergence proof; high-degree link activities and the log must be controlled."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nilpotent row-projection resummation candidate audit",
+          "path": "research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md"
+        }
+      ],
+      "tags": [
+        "PF-I16",
+        "product-cumulant",
+        "nilpotent-algebra",
+        "row-projection",
+        "cancellation-preserving",
+        "candidate"
+      ],
+      "importance": 5,
+      "core": true,
+      "route": null
     }
   ],
   "edges": [
@@ -16444,6 +16493,20 @@
       "label": "finite product-reference estimate does not prove true interacting-vacuum Poincare",
       "kind": "conditional-not-closure",
       "status": "open"
+    },
+    {
+      "from_id": "PF-I16-JOINT-SPACETIME-CLUSTER-TREE",
+      "to_id": "PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION",
+      "kind": "candidate-reorganization",
+      "label": "row-diagonal generating function packages link partition families before the global cumulant logarithm",
+      "status": "candidate"
+    },
+    {
+      "from_id": "PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION",
+      "to_id": "PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE",
+      "kind": "candidate-route-open",
+      "label": "would supply the cancellation-sensitive joint space-time coefficient bound if the weighted log estimate is proved",
+      "status": "open"
     }
   ],
   "sources_verified": {
@@ -17322,5 +17385,25 @@
       "spatial_tree_exponent": "eta4=(1/24)*log(25/23)",
       "cut_interpolation_identity": "dE_s/ds=-nu_s[g Gamma(W,g)]/nu_s(g^2)"
     }
+  },
+  "scoped_checks": {
+    "schema": "singular-boundary.observatory-scoped-checks.v1",
+    "reviewed_at": "2026-11-13",
+    "count": 27,
+    "gate_counts": {
+      "P0": 6,
+      "P1": 4,
+      "P2": 4,
+      "P3": 4,
+      "P4": 4,
+      "P5": 5
+    },
+    "state_counts": {
+      "met": 2,
+      "partial": 6,
+      "open": 19
+    },
+    "source": "observatory/knowledge-graph.json nodes P0-P5 checks arrays",
+    "assertion": "Every scoped check is counted exactly once under its gate; this inventory is a navigation/status audit, not theorem certification."
   }
 }
