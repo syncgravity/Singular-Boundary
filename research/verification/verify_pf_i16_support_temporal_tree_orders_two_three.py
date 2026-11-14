@@ -52,10 +52,8 @@ def check_case(q, d1, d3):
                             * (f3[b3] - mu3)
                         )
                         # Conditional expectations given the middle states.
-                        alpha = (f1[0] + f1[1]) / 2
-                        alpha += (q ** d1) * (f1[a2] - mu1)
-                        beta = (f3[0] + f3[1]) / 2
-                        beta += (q ** d3) * (f3[b2] - mu3)
+                        alpha = (q ** d1) * (f1[a2] - mu1)
+                        beta = (q ** d3) * (f3[b2] - mu3)
                         rhs_identity += weight * alpha * f2[2 * a2 + b2] * beta
 
                 assert cumulant == rhs_identity, (q, d1, d3, f1, f2, f3)
