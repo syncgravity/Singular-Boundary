@@ -33,6 +33,10 @@ def check_tree(edges, times, q):
     for e, (u, v) in enumerate(edges):
         incident[u].append((e, 0))
         incident[v].append((e, 1))
+    local_index = {}
+    for vertex, inc in enumerate(incident):
+        for position, (edge, endpoint) in enumerate(inc):
+            local_index[(vertex, edge)] = position
     row_sizes = [1 << len(inc) for inc in incident]
     row_functions = [list(product((-1, 1), repeat=size))
                      for size in row_sizes]
@@ -48,9 +52,9 @@ def check_tree(edges, times, q):
             xu, xv = states[2 * e], states[2 * e + 1]
             distance = abs(times[u] - times[v])
             weight *= Fraction(1, 2) * transition(q, distance, xu, xv)
-            for bit, (vertex, endpoint) in enumerate(((u, 0), (v, 1))):
+            for vertex, endpoint in ((u, 0), (v, 1)):
                 if states[2 * e + endpoint]:
-                    masks[vertex] |= 1 << bit
+                    masks[vertex] |= 1 << local_index[(vertex, e)]
         weighted_assignments.append(weight)
         row_masks.append(masks)
 
