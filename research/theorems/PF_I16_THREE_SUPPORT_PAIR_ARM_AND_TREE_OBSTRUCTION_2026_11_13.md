@@ -1,5 +1,7 @@
 # PF-I16 — Three-support nested-resolvent estimate and the remaining tree obstruction
 
+> **Scope update — 2026-11-13.** The pair-arm obstruction below remains correct for the particular product-rule/absolute-value estimate derived here: that estimate does not imply a three-support tree. It is no longer the current overall status of the third-order problem. An independent [Dobrushin cumulant argument](PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md) now yields a conditional spatial MST bound for the complete six-permutation coefficient on the finite dressed reference measure. The conditional-amplitude record also derives the resolvent fluctuation estimate and local boundary-score structure. The conditional-mean term in this pair-arm route remains unresolved, as does all-orders quantum connected-resolvent/KP convergence and transfer to the physical interacting vacuum.
+
 **Date:** 2026-11-13  
 **Program:** canonical source-native coupled-\(\mathbb Z^5\), intrinsic \(2+2\), PF-I16 interacting-vacuum route.  
 **Status:** a conditional, volume-independent *pair-arm* bound for the exact nested third-order resolvent term is derived from the corrected two-point theorem. A genuine three-support connected tree bound is **not** obtained: the undifferentiated inner resolvent creates a non-decaying local-amplitude term. The missing estimate and a precise test configuration are identified below.
