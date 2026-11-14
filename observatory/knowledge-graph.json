@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v3.01-pf-i16-order-four-support-tree",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary-tensor insertions, exact one-link continuous-time weighted-dependency cumulant bound, and explicit degree-eight product-constant obstruction. The order-four constant is finite but crude; the all-orders cancellation-sensitive product lift and actual face/pair projective tensor norms remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v3.02-pf-i16-ls-absolute-obstruction",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary-tensor insertions, exact one-link continuous-time weighted-dependency cumulant bound, and a sharp superfactorial obstruction to absolute Leonov–Shiryaev summation. The all-orders cancellation-sensitive product lift and actual face/pair projective tensor norms remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -10907,8 +10907,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and an explicit order-four support-sensitive maximum-tree estimate is proved for elementary-tensor insertions of degree at most eight. Its finite D_8,4 constant is deliberately crude and does not provide all-orders growth. The cancellation-sensitive all-orders product lift, actual face/pair projective tensor norms, graph-uniform quantum connected-resolvent theorem, Feynman–Kac/KP convergence, and interacting-vacuum gap remain OPEN.",
-      "detail": "Sections 12–13 of the joint space-time frontier prove the one-link continuous-time Boolean-cumulant factorization and explicit factorial classical-cumulant envelope, derive a crude explicit degree-eight Leonov–Shiryaev constant, and then close the m=4 support-sensitive maximum-tree estimate for elementary-tensor insertions by retaining the monochromatic link structure and connected join. The order-four result is finite-order only; its D_8,4 bound is not an activity constant. The actual face/pair insertions still require controlled projective tensor norms, and the all-orders product-cumulant bound still requires cancellation-sensitive reorganization. The exact-profile spatial completion route has a non-endpoint obstruction. The actual quantum linked-cluster theorem must establish acceptable all-orders growth and then prove uniform convergence of the Feynman–Kac/ground-energy expansion.",
+      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and an explicit order-four support-sensitive maximum-tree estimate is proved for elementary-tensor insertions of degree at most eight. The absolute degree-eight Leonov–Shiryaev envelope is intrinsically superfactorial: D_8,r ≥ (2e)^(8r)(r!)^8 for eight common link labels. This is not a lower bound on actual cumulants; cancellation is essential. The all-orders cancellation-sensitive product lift, actual face/pair projective tensor norms, quantum connected-resolvent/KP convergence, and interacting-vacuum gap remain OPEN.",
+      "detail": "Sections 12–14 of the joint space-time frontier establish the one-link continuous-time cumulant estimate, the explicit degree-eight product envelope, an order-four support-sensitive maximum-tree bound for elementary-tensor insertions, and a combinatorial obstruction to absolute LS summation. With eight link labels shared by every row, one admissible connected LS partition contributes (2e)^(8r)(r!)^8, so no termwise absolute bound of order C^r r! is possible. This lower bound concerns the absolute majorant, not the actual cumulant: cancellations in the full LS identity are indispensable. The actual face/pair insertions still require controlled projective tensor norms, and the all-orders product-cumulant bound requires a cancellation-preserving reorganization. The exact-profile spatial completion route has a non-endpoint obstruction. The graph-uniform quantum connected-resolvent theorem and uniform Feynman–Kac/KP convergence remain open.",
       "checks": [
         {
           "label": "All-orders temporal projection-to-tree injection",
@@ -10964,6 +10964,11 @@
           "label": "Actual PF-I16 face/pair projective tensor norms",
           "state": "open",
           "note": "The m=4 elementary-tensor estimate transfers only if the actual local insertions have uniformly controlled projective coefficient norms."
+        },
+        {
+          "label": "Absolute Leonov–Shiryaev envelope at degree eight",
+          "state": "obstruction",
+          "note": "For eight common link labels the connected LS partition with one full-row block per label forces D_8,r ≥ (2e)^(8r)(r!)^8; only cancellation-sensitive reorganization can yield useful all-orders growth."
         }
       ],
       "sources": [
