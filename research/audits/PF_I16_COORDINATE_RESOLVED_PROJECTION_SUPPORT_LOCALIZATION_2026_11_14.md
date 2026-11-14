@@ -111,9 +111,9 @@ The missing step is precisely the cancellation-preserving coefficient estimate.
 
 A sufficient next result would be a **coordinate-preserving port-completion inequality**. Group the signed projection expansion by its link-labelled interval forest \(H\), and prove that its total absolute grouped coefficient assigned to any support tree \(T\) is at most
 \[
-C^{\,r+\sum_e |I_e|/r\cdot 0}
+C^{\,r+\sum_e |I_e|}
 \]
-with a universal \(C\); under the actual face/pair incidence constraint \(|X_i|\le8\), the target can equivalently be written \(C_8^r\). The notation emphasizes that the bound must not contain a Bell-number or \(r^{cr}\) fiber.
+with a universal \(C\). Under the actual face/pair incidence constraint \(\sum_e|I_e|=\sum_i|X_i|\le8r\), this is at most \((C^9)^r\). The bound must not contain a Bell-number or \(r^{cr}\) fiber.
 
 A successful construction must satisfy all three conditions:
 
