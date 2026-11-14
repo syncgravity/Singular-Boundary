@@ -8,8 +8,6 @@ The tests retain each link's complete moment table, including nonzero means.
 They verify an exact interpolation identity in the squarefree row algebra.
 They do not prove a uniform time-integrated estimate.
 """
-from itertools import product
-
 
 def padd(a, b):
     out = list(a) + [0] * max(0, len(b) - len(a))
