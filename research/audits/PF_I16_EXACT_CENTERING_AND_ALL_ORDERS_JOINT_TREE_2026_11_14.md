@@ -172,3 +172,6 @@ Prove (5.1) directly for products of local multiplication observables of the ind
 After (5.1), write the connected-partition tree-graph reduction with all coefficients and constants, then insert the centered activities (3.1)–(3.2). Until that is done, (4.1), the KP expansion, and P3 remain OPEN.
 
 **Gate status:** exact centered local activity — established under the stated product-Haar geometry; all-orders support-sensitive joint tree — OPEN; KP convergence — OPEN; no P0–P5 status promoted.
+
+
+**Verification note:** `verify_pf_i16_exact_centering_joint_tree.py` is included in theorem-index CI. The Proof Atlas verifier distinguishes this exact face/pair centering result from the still-open centering caveat in the separate per-link insertion inventory.
