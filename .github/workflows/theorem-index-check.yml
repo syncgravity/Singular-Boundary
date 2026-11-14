@@ -1,4 +1,4 @@
-name: Theorem source-index integrity
+name: Theorem source-index integrity # Includes PF-I16 coincident-time support cumulant baseline
 on:
   pull_request:
     paths:
