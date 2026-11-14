@@ -254,3 +254,12 @@ then (6.1) implies the indicator-form QF estimate (1.1), with the fixed factor \
 The one-link interlaced-time covariance lemma and the corresponding link-by-link cross-split QF estimate are now proved for bounded row-factor observables under independent stationary link paths with the uniform \(L^2\) semigroup gap. This does **not** by itself prove the all-orders support-sensitive cumulant tree, the marked-root/cluster sum, quantum connected-resolvent convergence, the interacting-vacuum Poincare inequality, or the continuum mass gap. The hypotheses must also be checked for the actual reference link processes used by the PF-I16 construction.
 
 **Gate status:** exact path interpolation — ESTABLISHED; one-link interlaced-time covariance — ESTABLISHED; link-multiplicity row-factor cross-split QF — ESTABLISHED under the stated product-Markov hypotheses; all P0–P5 gate statuses unchanged.
+
+
+## 8. Scope correction — arbitrary bounded local multiplication observables
+
+The row-factor restriction in Sections 1, 3, 6, and 7 is superseded. For a general bounded local row (F_i), condition on every other link path pair in the derivative with respect to one shared link (e). Each row containing (e) becomes a one-time function (f_{i,e}^{\omega}(X_e(t_i))) with (|f_{i,e}^{\omega}|_\infty\le\|F_i\|_\infty); rows not containing (e) form a bounded scalar multiplier. The already-proved one-link interlaced-time covariance estimate then gives exactly the same derivative bound, with (prod_i\|F_i\|_\infty), without factoring any row over links. Integrating the whole-path interpolation proves the link-multiplicity QF for arbitrary bounded local multiplication observables.
+
+Full derivation: [PF-I16 arbitrary-local-observable link interpolation](PF_I16_ARBITRARY_LOCAL_OBSERVABLE_LINK_INTERPOLATION_2026_11_13.md).
+
+**Corrected gate status:** link-multiplicity cross-split QF for arbitrary bounded local observables — ESTABLISHED under the stated product-Markov hypotheses. Actual face/pair QF is therefore ESTABLISHED. The all-orders support-sensitive cumulant tree and subsequent quantum/cluster gates remain OPEN. No P0–P5 status is promoted.
