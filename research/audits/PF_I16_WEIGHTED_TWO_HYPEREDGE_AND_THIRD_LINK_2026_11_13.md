@@ -33,6 +33,26 @@ Here \(\mathfrak W\) must be an explicit sum of connected row-spanning-tree temp
 
 For ordered times \(t_1<\cdots<t_r\), a maximum-tree factor is \(e^{-\Delta(t_r-t_1)}\), whose ordered-simplex integral is at most \(T\Delta^{-(r-1)}\). Thus a pointwise \(C^r r!\) tree estimate would be compatible with (W2) *if* the connected-tree multiplicity and spatial support sum were already controlled. It is not yet shown that \(Q_\lambda\) admits such a tree representation without expanding local moment objects into absolute LS terms.
 
+### Explicit candidate tree norm
+
+Let \(G(H_1,H_2)\) be the graph on \([r]\) whose edges join rows lying together in \(H_1\) or together in \(H_2\). If the hyperedges overlap and cover all rows, \(G\) is connected. Define the integrated tree norm
+\[
+\mathcal T_{\Delta}(H_1,H_2;T)
+=\frac1{r!}\int_{[0,T]^r}
+\sum_{T_0\in\mathcal T(G)}
+\prod_{\{i,j\}\in T_0}e^{-\Delta|t_i-t_j|}
+\,d\mathbf t.
+\]
+For each fixed spanning tree, root it and integrate leaves successively; each leaf integral is at most \(2/\Delta\), while the root contributes \(T\). Hence
+\[
+\mathcal T_{\Delta}
+\le \frac{|\mathcal T(G)|}{r!}\,T(2/\Delta)^{r-1}
+\le \frac{r^{r-2}}{r!}\,T(2/\Delta)^{r-1}
+\le T C_\Delta^r.
+\]
+Each tree product is also bounded pointwise by the single span factor
+\(e^{-\Delta(\max_i t_i-\min_i t_i)}\). Thus this explicit tree norm has the desired Feynman–Kac order growth after \(1/r!\) normalization. The unresolved theorem is the domination of the unexpanded activity-integrated projected-log coefficient by \(C^r\) times this norm. Establishing that domination—not integrating the proposed tree norm—is the outstanding two-hyperedge estimate.
+
 ## 2. Why the inverse cannot be bounded in isolation
 
 The formal inverse is
