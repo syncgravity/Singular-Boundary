@@ -6,14 +6,14 @@
 
 ## 1. The activity integral is exactly the full product cumulant
 
-Let \(H_1,H_2\subsetneq[r]\) be overlapping hyperedges with
-\(H_1\cup H_2=[r]\). For row \(i\), let
+Let \(H_1,H_2\subsetneq[r]\) be the incident row sets of two independent links, with
+\(H_1\cap H_2\ne\varnothing\) and \(H_1\cup H_2=[r]\). Write
+\(Y_{i,j}=1\) when \(i\notin H_j\), and otherwise let \(Y_{i,j}\)
+be the row observable supplied by link \(j\). Thus
 \[
-A_i=X_iY_i,\qquad
-X_i=\prod_{e\in H_1:\,i\in I_e}Y_{i,e}^{(1)},\quad
-Y_i=\prod_{e\in H_2:\,i\in I_e}Y_{i,e}^{(2)},
+A_i=Y_{i,1}Y_{i,2},\qquad i\in[r],
 \]
-with the two link processes independent. In the two-link specialization,
+and the two link processes are independent. In the two-link specialization,
 \[
 M_e(x_e)=\sum_{B\subseteq H_e}
 \mathbb E\!\left[\prod_{i\in B}Y_{i,e}\right]x_{B,e},
