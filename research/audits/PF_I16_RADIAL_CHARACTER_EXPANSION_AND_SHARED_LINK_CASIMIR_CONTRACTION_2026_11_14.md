@@ -276,3 +276,21 @@ The crude corrected global estimate \(\|q_\beta\|_\infty\le2\beta\) remains vali
 - Marked-root sum, quantum KP convergence, interacting-vacuum Poincaré inequality, and continuum mass gap: **OPEN**.
 
 No P0–P5 status is promoted.
+
+
+## 8. Superseding result — all-orders character tail and projective pair norm
+
+The former Section 6 statement that the all-orders character/projective norm remains open is superseded by
+[PF-I16 all-orders radial character tail and face/pair projective norm](PF_I16_ALL_ORDERS_RADIAL_CHARACTER_TAIL_AND_FACE_PAIR_PROJECTIVE_NORM_2026_11_14.md).
+The character-basis recurrence and weighted Banach-algebra contraction prove
+\[
+\sum_{n\ge0}(n+1)^4|r_n(\beta_f)|\le2\beta_f,
+\qquad
+\sum_{n\ge1}(n+1)^5|\sigma_n(\beta_f)|\le25\beta_f,
+\]
+and hence
+\[
+\mathfrak p(v_f)\le256b_0,\qquad
+\mathfrak p(v_{fg})\le20000\,b_0^2/a_0.
+\]
+The improved support-weighted per-link projective activity is \(\kappa_\pi\le0.096611\) at \(b_0/a_0=1/50000\), but the proposed \(2\kappa_\pi\le1/8\) sufficient criterion is still not certified. Actual-insertion cross-split QF is independently established by the arbitrary-local-observable interpolation audit; it does not require these projective estimates. The support-restricted all-orders space-time tree and all later gates remain open.
