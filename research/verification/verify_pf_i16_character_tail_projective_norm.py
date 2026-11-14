@@ -31,9 +31,12 @@ delta = nonlinear_constant * ball_radius**2
 assert delta == 672 * beta_max**2
 
 # Weighted gradient-character coefficient bound:
-# C5 <= (2323/96) beta + (1299/64)*672 beta^2 < 25 beta.
-c5_ratio = F(2323, 96) + F(1299, 64) * 672 * beta_max
-assert c5_ratio < 25
+# The nonlinear remainder is K((1-p^2)R^2), so its entire nonconstant
+# character tail is <= 672 beta^2 (not 2 beta/3 + 672 beta^2).
+# Thus C5 <= (64/3) beta + (1299/64)*672 beta^2.
+c5_ratio = F(64, 3) + F(1299, 64) * 672 * beta_max
+assert c5_ratio == F(3281837, 150000)
+assert c5_ratio < F(21879, 1000)
 
 # Exact SU(2) Casimir contraction:
 # ||Omega_{j,k}|| = min(j,k)(max(j,k)+1)
@@ -46,9 +49,10 @@ for n in range(0, 20):
 
 # Face/pair projective norms and support-weighted per-link activity.
 face_norm_coeff = F(256)
-pair_norm_coeff = F(20_000)
+pair_norm_coeff = 32 * c5_ratio**2
 assert face_norm_coeff == 32 * 8
-assert pair_norm_coeff == 4 * 2 * F(625, 4) * 16
+assert pair_norm_coeff == F(10770454094569, 703125000)
+assert pair_norm_coeff < 15_318
 
 sqrt_e_upper = F(165, 100)
 e_upper = F(272, 100)
@@ -59,19 +63,19 @@ pair_activity = F(224) * pair_norm_coeff * x_max**2 * e_upper / delta0_ratio
 kappa = face_activity + pair_activity
 
 assert face_activity == F(1408, 15_625)
-assert pair_activity == F(7_616, 1_171_875)
-assert kappa == F(113_216, 1_171_875)
+assert pair_activity == F(1281684037253711, 257492065429687500)
+assert kappa == F(24484809037253711, 257492065429687500)
 assert 2 * kappa > F(1, 8)
 
 print("PASS: weighted character Banach algebra and parity-tail constants M4=21, K4<=8")
 print("PASS: PF-I16 weighted character fixed point maps the 2 beta ball into itself")
 print("PASS: contraction constant 672 beta <= 0.02688")
-print(f"PASS: weighted gradient-character coefficient ratio < {float(c5_ratio):.9f} < 25")
+print(f"PASS: weighted gradient-character coefficient ratio = {float(c5_ratio):.9f} < 21.879")
 print("PASS: exact shared-link Casimir norm is bounded by (n+1)(m+1)/4")
 print("PASS: face projective norm <= 256 b0")
-print("PASS: pair projective norm <= 20000 b0^2/a0")
+print(f"PASS: corrected pair projective norm <= {float(pair_norm_coeff):.6f} b0^2/a0")
 print(f"DIAGNOSTIC: face activity = {float(face_activity):.9f}")
-print(f"DIAGNOSTIC: pair activity = {float(pair_activity):.9f}")
-print(f"DIAGNOSTIC: kappa_pi <= {float(kappa):.9f}; 2*kappa_pi = {float(2*kappa):.9f} > 1/8")
+print(f"DIAGNOSTIC: corrected pair activity = {float(pair_activity):.9f}")
+print(f"DIAGNOSTIC: corrected kappa_pi <= {float(kappa):.9f}; 2*kappa_pi = {float(2*kappa):.9f} > 1/8")
 print("SCOPE: improved sufficient projective majorant still does not certify the 1/8 criterion.")
 print("SCOPE: this verifier does not prove the analytic fixed-point theorem, joint support tree, KP convergence, or mass gap.")
