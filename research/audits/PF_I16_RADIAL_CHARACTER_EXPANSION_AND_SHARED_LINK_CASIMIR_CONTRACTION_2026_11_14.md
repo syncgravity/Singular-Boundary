@@ -114,7 +114,7 @@ On the ball \(\|R\|_\infty\le r\), the nonlinear part has Lipschitz constant at 
 \|(1-p^2)(R^2-S^2)+\lambda(R)-\lambda(S)\|_\infty
 \le4r\|R-S\|_\infty.
 \]
-The already-proved maximum-principle bound \(0\le R_\beta\le2\beta\) places the physical solution in the ball \(r=2\beta\).
+The already-proved maximum-principle bound \(0\le R_\beta\le2\beta\) places the physical solution in the ball \(r=2\beta\); also \(\|P_\beta\|_\infty\le\frac43\beta+\frac{16}{9}\beta^2<2\beta\) throughout the stated coupling interval.
 
 Now take the second-order polynomial
 \[
