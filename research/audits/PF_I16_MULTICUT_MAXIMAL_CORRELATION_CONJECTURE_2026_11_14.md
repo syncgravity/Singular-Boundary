@@ -96,3 +96,20 @@ Even if (1.1) is proved, a separate multi-row cumulant argument is still needed 
 - Full PF-I16 face/pair support-temporal tree and all downstream gates: **OPEN**.
 
 No P0–P5 acceptance status is promoted.
+
+
+## 6. Subsequent scope correction — discrete-time statement refuted
+
+A later search beyond the original binary-reset and doubly-stochastic test family found a strictly positive, rational, three-state stationary discrete-time counterexample. The details and exact-rational verifier are recorded in
+`research/audits/PF_I16_MULTICUT_MAXIMAL_CORRELATION_DISCRETE_TIME_COUNTEREXAMPLE_2026_11_14.md`
+and
+`research/verification/verify_pf_i16_multicut_discrete_time_counterexample.py`.
+
+For the pattern S,T,S, the one-step centered-L2 norm is approximately 0.5898802493, while the maximal correlation between (X_0,X_2) and X_1 is approximately 0.8969370325, exceeding the proposed two-cut bound 0.8752200577.
+
+This matrix has a simple negative real eigenvalue and is not embeddable as the time-one map of a finite-dimensional continuous-time Markov generator. Therefore:
+- the arbitrary stationary discrete-time kernel version of (1.1) is **REFUTED**;
+- the continuous-time stationary Markov-semigroup version remains **OPEN**;
+- the finite tests in Section 2 are regression tests for their stated subclasses only and do not support the general discrete-time claim.
+
+The earlier conjecture statement must not be cited as established or as valid for all stationary Markov kernels.
