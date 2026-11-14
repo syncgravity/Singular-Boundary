@@ -235,7 +235,7 @@ At \(\beta\le1/25000\), this yields the sharper rational constant
 Therefore
 \[
 \boxed{
-\sum_{n\ge1}(n+1)^5|\sigma_n(\beta)|\le25\beta.
+\sum_{n\ge1}(n+1)^5|\sigma_n(\beta)|\le21.879\beta.
 }
 \tag{5.2}
 \]
@@ -358,12 +358,12 @@ This QF statement is distinct from the all-orders support-sensitive cumulant tre
 ## 9. Gate disposition
 
 - All-orders radial character tail \(\sum(n+1)^4|r_n|\le2\beta\): **ESTABLISHED**.
-- Weighted gradient-character coefficient tail \(\sum(n+1)^5|\sigma_n|\le25\beta\): **ESTABLISHED**.
+- Weighted gradient-character coefficient tail \(\sum(n+1)^5|\sigma_n|\le(3281837/150000)\beta<21.879\beta\): **ESTABLISHED**.
 - Exact shared-link Casimir contraction: **ESTABLISHED**.
 - Full face projective norm \(\mathfrak p(v_f)\le256b_0\): **ESTABLISHED**.
-- Full pair projective norm \(\mathfrak p(v_{fg})\le20000b_0^2/a_0\): **ESTABLISHED**.
+- Full pair projective norm \(\mathfrak p(v_{fg})\le15318b_0^2/a_0\): **ESTABLISHED**.
 - Actual-insertion cross-split QF: **ESTABLISHED** under independent stationary link paths and uniform one-link \(L^2\) gap.
-- Proposed projective \(1/8\) activity criterion: **NOT CERTIFIED** by the improved upper majorant.
+- Proposed projective \(1/8\) activity criterion: **NOT CERTIFIED**; the face-only contribution to \(\kappa_\pi\) is already \(0.090112>1/16\), before pair terms. This particular criterion cannot close without improving the face projective bound or changing the criterion/normalization.
 - All-orders support-sensitive joint cumulant tree, marked-root sum, quantum KP convergence, interacting-vacuum Poincaré inequality, and continuum mass gap: **OPEN**.
 
 No P0–P5 acceptance status is promoted.
