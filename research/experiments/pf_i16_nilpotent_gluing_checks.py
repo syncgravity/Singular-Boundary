@@ -6,7 +6,7 @@ No external dependencies. Run:
 These tests validate finite moment/cumulant identities only; they do not
 establish a weighted all-orders estimate.
 """
-from itertools import combinations
+from math import factorial
 
 
 def partitions(items):
@@ -28,9 +28,7 @@ def cumulant(moment, rows):
     total = 0
     for p in partitions(rows):
         k = len(p)
-        coefficient = (-1) ** (k - 1)
-        for j in range(1, k):
-            coefficient *= j
+        coefficient = (-1) ** (k - 1) * factorial(k - 1)
         product = 1
         for block in p:
             product *= moment(frozenset(block))
@@ -58,7 +56,6 @@ def test_two_row_two_link_gluing():
           frozenset({1, 2}): 11}
     mf = {frozenset(): 1, frozenset({1}): 5, frozenset({2}): 7,
           frozenset({1, 2}): 41}
-    m = lambda table: lambda s: table[s]
     moment = lambda s: me[s] * mf[s]
     kappa = cumulant(moment, (1, 2))
     ce, cf = 11 - 2 * 3, 41 - 5 * 7
@@ -67,7 +64,6 @@ def test_two_row_two_link_gluing():
 
 
 def test_centered_three_row_path():
-    # e joins 1--2, f joins 2--3; centered singleton moments vanish.
     def link_pair(c):
         return lambda s: 1 if not s else (0 if len(s) == 1 else c)
     incidences = {"e": frozenset({1, 2}), "f": frozenset({2, 3})}
@@ -82,12 +78,15 @@ def test_centered_four_row_path():
         "e23": frozenset({2, 3}),
         "e34": frozenset({3, 4}),
     }
-    lm = {}
-    for link, c in (("e12", 2), ("e23", 3), ("e34", 5)):
-        lm[link] = (lambda c: lambda s: 1 if not s else
-                    (0 if len(s) == 1 else c))(c)
+    lm = {link: link_pair(c) for link, c in (
+        ("e12", 2), ("e23", 3), ("e34", 5)
+    )}
     moment = lambda s: product_link_moment(s, incidences, lm)
     assert cumulant(moment, (1, 2, 3, 4)) == 2 * 3 * 5
+
+
+def link_pair(c):
+    return lambda s: 1 if not s else (0 if len(s) == 1 else c)
 
 
 def test_degree_eight_rademacher_witness():
