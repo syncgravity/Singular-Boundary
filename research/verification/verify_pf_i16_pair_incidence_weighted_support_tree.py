@@ -24,7 +24,7 @@ def partitions(items):
 
 
 def transition(q, d, x, y):
-    return Fraction(1, 2) * (1 + (q ** d if x == y else -q ** d))
+    return Fraction(1, 4) * (1 + (q ** d if x == y else -q ** d))
 
 
 def graph_data(edges, times, q):
