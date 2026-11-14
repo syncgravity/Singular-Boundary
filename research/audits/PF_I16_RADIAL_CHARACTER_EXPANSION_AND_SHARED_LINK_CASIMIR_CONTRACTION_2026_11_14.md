@@ -119,9 +119,9 @@ For two character modes of spins \(j,k\), the shared-link derivative contraction
 On the Clebsch–Gordan summand of total spin \(J\in\{|j-k|,\ldots,j+k\}\),
 \[
 \Omega_{jk}
-=\frac12\{C_{\rm tot}-C_j-C_k\}
+=\frac12\{C_j+C_k-C_{\rm tot}\}
 \]
-with the sign fixed by the anti-Hermitian-generator convention; hence its eigenvalue is
+where each positive Casimir is (C=-\sum_a d\pi(T_a)^2); hence its eigenvalue is
 \[
 \omega_{jkJ}
 =-\frac12\{J(J+1)-j(j+1)-k(k+1)\}.
