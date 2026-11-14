@@ -119,6 +119,43 @@ def direct_product_cumulant(supports):
     return joint_cumulant(tuple(range(row_count)))
 
 
+def perfect_matchings(items):
+    """Generate perfect matchings of an even-sized tuple."""
+    items = tuple(items)
+    if not items:
+        yield ()
+        return
+    first = items[0]
+    for j in range(1, len(items)):
+        pair = (first, items[j])
+        rest = items[1:j] + items[j + 1:]
+        for matching in perfect_matchings(rest):
+            yield (pair,) + matching
+
+
+def check_eight_link_cancellation_witness():
+    """Verify the exact cumulant and a huge positive subfamily of LS terms."""
+    rows = tuple(range(8))
+    matchings = list(perfect_matchings(rows))
+    assert len(matchings) == 105
+
+    # Alternating matchings form the cycle 0-1-2-3-4-5-6-7-0.
+    m0 = tuple((i, i + 1) for i in (0, 2, 4, 6))
+    m1 = ((1, 2), (3, 4), (5, 6), (7, 0))
+    assert connected(8, list(m0) + list(m1))
+
+    # For each of the other six link colours, any perfect matching is allowed.
+    positive_connected_summands = len(matchings) ** 6
+    exact_product_cumulant = rademacher_cumulant(8)
+    assert positive_connected_summands == 105**6
+    assert exact_product_cumulant == -272
+    print(
+        "PASS: eight-link witness has at least "
+        f"{positive_connected_summands} connected +1 LS summands, "
+        f"while the exact product cumulant is {exact_product_cumulant}"
+    )
+
+
 def check(name, supports, expected):
     lhs = direct_product_cumulant(supports)
     rhs = hypergraph_ls(supports)
@@ -131,6 +168,7 @@ def main():
     check("three-row support path", [(0,), (0, 1), (1,)], 1)
     check("four-row support path", [(0,), (0, 1), (1, 2), (2,)], 1)
     check("three rows sharing one link", [(0,), (0,), (0,)], 0)
+    check_eight_link_cancellation_witness()
     print("LIMIT: these exact finite checks do not prove an all-orders growth bound")
 
 
