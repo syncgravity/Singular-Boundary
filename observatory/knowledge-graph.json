@@ -2,7 +2,7 @@
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-14",
   "version": "v3.06-pf-i16-product-process-tensor-gap",
-  "scope": "PF-I16 exact finite-source coefficients, conditional finite-order spatial trees, exact temporal port injection, exact nilpotent row-diagonal product-cumulant identity, and a conditional product-process tensor-gap bridge giving exponential-order temporal cumulant bounds under independent stationary link Markov semigroups with a uniform L2 gap. Spatial support summation, a joint space-time polymer/KP criterion, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. A further activity audit records the centering loss and the missing all-orders support-sensitive joint tree: the uncentered local arithmetic alone does not certify the proposed KP criterion.",
+  "scope": "PF-I16 exact finite-source coefficients, conditional finite-order spatial trees, exact temporal port injection, exact nilpotent row-diagonal product-cumulant identity, and a conditional product-process tensor-gap bridge giving exponential-order temporal cumulant bounds under independent stationary link Markov semigroups with a uniform L2 gap. Spatial support summation, a joint space-time polymer/KP criterion, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. A further activity audit records the centering loss and the missing all-orders support-sensitive joint tree: the uncentered local arithmetic alone does not certify the proposed KP criterion. Exact Haar centering of the conjugated face/pair insertions removes the generic factor-two centering loss for that Hamiltonian representation. The all-orders support-sensitive joint tree is reduced to an explicit cross-split quasi-factorization estimate but remains OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 773,
@@ -5796,8 +5796,8 @@
       "kind": "result",
       "status": "conditional",
       "stage": "P2",
-      "summary": "Under independent stationary link Markov semigroups with a common L² gap, the product process yields an exponential-order temporal cumulant tree bound for row products. This is a conditional reference-process result, not a joint space-time polymer theorem. The all-orders support-sensitive tree is open; crude centering of uncentered interaction insertions raises the activity coefficient from 2 to 4 and misses the current proposed KP threshold.",
-      "detail": "Assume P_t^e=Π_e+Q_t^e on L²(ν_e), ||Q_t^e||₂→₂≤exp(−Δ_e t), Δ_e≥Δ₀>0, with independent stationary links. The global product semigroup decomposes into nonempty tensor sectors, each decaying at least exp(−Δ₀t), hence ||P_t−Π||₂→₂≤exp(−Δ₀t), uniformly in the finite link count. For F_i(x)=∏_{e∈X_i}f_{i,e}(x_e), the row product is one bounded observable on the global product state space. The projection-tree theorem gives |κ(A_1(t_1),…,A_r(t_r))|≤4^r∏_i||F_i||∞ Σ_{T∈Trees_r}∏_{ij∈T}exp(−Δ₀|t_i−t_j|). Consequently (1/(r!𝒯))∫_[0,𝒯]^r |κ| ≤4^r r^(r−2)/r! (2/Δ₀)^(r−1)∏_i||F_i||∞, hence exponential order growth uniformly in link count and time horizon. This is a reference-process result under independent stationary link Markov semigroups and a uniform linkwise L² gap. It is not implied by local cumulant bounds alone; it uses all complete-graph labeled trees rather than a support-restricted tree. It does not establish spatial support summation, a joint space-time polymer/Kotecký–Preiss criterion, actual quantum connected-resolvent convergence, the interacting vacuum, P3, or any continuum mass gap. A separate joint-polymer/centering audit identifies two further precise obstructions: (i) the projection-tree theorem is stated for centered observables, and the generic estimate ||v_X−E_0v_X||∞≤2||v_X||∞ changes the effective temporal coefficient from 2 to 4 when activities are measured by the existing uncentered ||v_X||∞; at the recorded κ_H<0.022695 this gives 8κ_H<0.18156>1/8. A sharper centered local norm or a direct oscillation estimate is required. (ii) the temporal tree sum is over the complete graph and only carries a support-disconnectedness indicator; multiplying a separate spatial tree count produces superexponential growth. A single support-sensitive joint tree, or an equivalent weighted-dependency-graph resummation, remains open.",
+      "summary": "The independent stationary-link product process gives an exponential-order unrestricted temporal cumulant tree under a uniform L² gap. For the actual conjugated face/pair Hamiltonian, both one-face and shared-face-pair insertions are exactly centered under product Haar, so the generic factor-two centering loss is absent and the face activity is z_f/Δ₀=0.0008609792. The all-orders support-sensitive joint tree still requires a quantitative cross-split quasi-factorization estimate.",
+      "detail": "Assume P_t^e=Π_e+Q_t^e on L²(ν_e), ||Q_t^e||₂→₂≤exp(−Δ_e t), Δ_e≥Δ₀>0, with independent stationary links. The global product semigroup decomposes into nonempty tensor sectors, each decaying at least exp(−Δ₀t), hence ||P_t−Π||₂→₂≤exp(−Δ₀t), uniformly in the finite link count. For F_i(x)=∏_{e∈X_i}f_{i,e}(x_e), the row product is one bounded observable on the global product state space. The projection-tree theorem gives |κ(A_1(t_1),…,A_r(t_r))|≤4^r∏_i||F_i||∞ Σ_{T∈Trees_r}∏_{ij∈T}exp(−Δ₀|t_i−t_j|). Consequently (1/(r!𝒯))∫_[0,𝒯]^r |κ| ≤4^r r^(r−2)/r! (2/Δ₀)^(r−1)∏_i||F_i||∞, hence exponential order growth uniformly in link count and time horizon. This is a reference-process result under independent stationary link Markov semigroups and a uniform linkwise L² gap. It is not implied by local cumulant bounds alone; it uses all complete-graph labeled trees rather than a support-restricted tree. It does not establish spatial support summation, a joint space-time polymer/Kotecký–Preiss criterion, actual quantum connected-resolvent convergence, the interacting vacuum, P3, or any continuum mass gap. A separate joint-polymer/centering audit identifies two further precise obstructions: (i) the projection-tree theorem is stated for centered observables, and the generic estimate ||v_X−E_0v_X||∞≤2||v_X||∞ changes the effective temporal coefficient from 2 to 4 when activities are measured by the existing uncentered ||v_X||∞; at the recorded κ_H<0.022695 this gives 8κ_H<0.18156>1/8. A sharper centered local norm or a direct oscillation estimate is required. (ii) the temporal tree sum is over the complete graph and only carries a support-disconnectedness indicator; multiplying a separate spatial tree count produces superexponential growth. A single support-sensitive joint tree, or an equivalent weighted-dependency-graph resummation, remains open. Exact centering: v_f=−ρ_f b_f p_f with p_f=cos θ_f and Haar radial density sin²θ dθ, so E₀v_f=0. For v_fg=2Σ_{e∈∂f∩∂g}a_e⟨∇_e s_f,∇_e s_g⟩, condition on shared links; private boundary links make H_f,H_g conditionally independent Haar variables, and each conditional mean gradient is zero by Haar invariance, hence E₀v_fg=0. Therefore the centered norms equal the original bounds 32b₀ and 512b₀²/a₀. The resulting face activity is z_f=32b₀+14336b₀²/a₀, z_f/Δ₀≤0.0008609792 at b₀/a₀≤1/50000, and q_face=58z_f/Δ₀≤0.0499367936. The conditional candidate q_joint<0.543 remains dependent on the open all-orders tree and rooted-cluster count. The all-orders target is reduced to a cross-split quasi-factorization estimate (audit §5), not proved.",
       "checks": [
         {
           "label": "Tensor-product L² gap independent of finite link count",
@@ -5830,9 +5830,9 @@
           "note": "No actual quantum activity radius, interacting-vacuum Poincaré inequality, or continuum mass gap follows."
         },
         {
-          "label": "Centered local activity compatible with proposed KP threshold",
+          "label": "Centered activity in the alternate per-link insertion inventory",
           "state": "open",
-          "note": "Generic centering costs a factor two in each insertion: effective C_time=4 gives 8κ_H<0.18156, above 1/8. A sharper centered-norm estimate is needed."
+          "note": "This separate per-link inventory still has the generic centering issue; the exact conjugated face/pair insertions are separately proved centered."
         },
         {
           "label": "All-orders support-sensitive joint space-time tree",
@@ -5843,6 +5843,21 @@
           "label": "Marked-root sum with explicit order dependence",
           "state": "open",
           "note": "First/second cut-root per-link bounds exist, but the all-orders anchored marked-root family is not summed."
+        },
+        {
+          "label": "Exact product-Haar centering of face and pair insertions",
+          "state": "exact",
+          "note": "E₀v_f=0 from the SU(2) fundamental-character Haar integral; E₀v_fg=0 by conditioning on shared links and integrating the independent private face links."
+        },
+        {
+          "label": "Centered face/pair activity arithmetic",
+          "state": "exact",
+          "note": "The centered norms equal the original bounds 32b₀ and 512b₀²/a₀; z_f/Δ₀=0.0008609792 and q_face=0.0499367936 at b₀/a₀=1/50000."
+        },
+        {
+          "label": "Cross-split product-path quasi-factorization with shared-link temporal weights",
+          "state": "open",
+          "note": "This is the explicit sufficient input for the all-orders support-sensitive tree. One-link Boolean estimates and unrestricted product-process trees do not yet prove it."
         }
       ],
       "sources": [
@@ -5855,6 +5870,11 @@
           "title": "PF-I16 joint space-time polymer summation and centering audit",
           "path": "research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md",
           "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/observatory-scoped-checks-and-nilpotent-resummation/research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md"
+        },
+        {
+          "title": "PF-I16 exact centering of face/pair interactions and all-orders joint-tree reduction",
+          "path": "research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/observatory-scoped-checks-and-nilpotent-resummation/research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md"
         }
       ],
       "tags": [
