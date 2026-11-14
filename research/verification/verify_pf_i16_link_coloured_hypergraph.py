@@ -7,6 +7,7 @@ same-time elementary factors Y_{i,e}=U_e.  All arithmetic is rational.
 from fractions import Fraction
 from functools import lru_cache
 from itertools import product
+from math import prod
 
 
 def set_partitions(items):
