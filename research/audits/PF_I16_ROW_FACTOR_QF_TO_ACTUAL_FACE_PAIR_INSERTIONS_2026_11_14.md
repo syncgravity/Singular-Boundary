@@ -111,3 +111,16 @@ The all-orders WDG route may then be applied only after its product quasi-factor
 No P0–P5 acceptance status is promoted.
 
 **Next concrete calculation:** derive an explicit character expansion and projective norm for \(\widetilde s_f'(p_f)\), then contract the shared-link Lie-algebra index in (2.3) before taking absolute values. Compare the resulting *centered* face/pair tensor activities with the \(1/8\) threshold. If that norm is too costly, replace it with a semigroup-stable coordinate-influence norm and prove the interpolation estimate in that norm.
+
+
+## 6. Superseding scope correction — arbitrary local observables
+
+A subsequent re-examination of the interpolation derivative shows that the rank-one restriction in Sections 1 and 4 was unnecessary. After conditioning on all other link paths, an arbitrary bounded local observable (F_i) becomes a one-time bounded function of the single interpolated link, with norm at most (|F_i|_\infty). The one-link interlaced-time covariance lemma therefore applies directly. The complete proof and exact conditional derivative are recorded in [PF-I16 arbitrary-local-observable link interpolation](PF_I16_ARBITRARY_LOCAL_OBSERVABLE_LINK_INTERPOLATION_2026_11_13.md).
+
+Accordingly, replace the status bullets above as follows:
+- Cross-split QF for arbitrary bounded local multiplication observables: **ESTABLISHED** under the independent stationary link-path and uniform L2-gap hypotheses.
+- Cross-split QF for the actual face/pair insertions: **ESTABLISHED** under those same hypotheses, with link-multiplicity bonds.
+- All-orders support-sensitive joint cumulant tree: **OPEN**.
+- Marked-root/cluster sum, quantum KP convergence, interacting-vacuum Poincare inequality, and continuum mass gap: **OPEN**.
+
+The previous claim that a quantitative tensor decomposition of (s_f'(p_f)) is a prerequisite for the cross-split QF is withdrawn. The radial derivative and contracted pair calculations in the new audit sharpen the local pair activity independently, but are not needed to prove QF. No P0–P5 status is promoted.
