@@ -23,6 +23,8 @@ on:
       - 'research/audits/PF_I16_MULTIROW_LINK_CONDITIONAL_CUMULANT_DECOMPOSITION_2026_11_14.md'
       - 'research/audits/PF_I16_MULTI_TIME_SUPERROW_INTERLACED_CUT_OBSTRUCTION_2026_11_14.md'
       - 'research/verification/verify_pf_i16_interlaced_superrow_covariance_obstruction.py'
+      - 'research/verification/verify_pf_i16_superrow_temporal_port_budget.py'
+      - 'research/audits/PF_I16_BOUNDED_MULTITIME_SUPERROW_PORT_BUDGET_2026_11_14.md'
       - 'research/verification/verify_pf_i16_pair_incidence_weighted_support_tree.py'
       - 'research/verification/verify_pf_i16_tree_support_all_orders_temporal_cumulant.py'
       - 'research/verification/verify_pf_i16_support_temporal_tree_orders_two_three.py'
@@ -126,6 +128,8 @@ jobs:
         run: python research/verification/verify_pf_i16_pair_incidence_weighted_support_tree.py
       - name: Verify interlaced-time super-row covariance obstruction
         run: python research/verification/verify_pf_i16_interlaced_superrow_covariance_obstruction.py
+      - name: Verify bounded multi-time super-row temporal-port budget
+        run: python research/verification/verify_pf_i16_superrow_temporal_port_budget.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
       - name: Verify exact centering and face-pair joint-tree activity
