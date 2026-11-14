@@ -1,6 +1,6 @@
 # Complete theorem-record navigator
 
-> **Current inventory — November 10, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **761 of 761** tracked theorem files; these 740 baseline links and 19 later entries are retained below. Indexing is source discovery, not proof certification.
+> **Current inventory — November 13, 2026:** The canonical [current theorem navigator](THEOREM_INDEX_CURRENT.md) and [Git-source-hashed registry](THEOREM_INDEX_LIVE.json) contain **773 of 773** tracked theorem files; these 740 baseline links and 33 later entries are retained below. Indexing is source discovery, not proof certification.
 
 > **Historical baseline — November 4, 2026:** `main` then contained **740 theorem Markdown records**, including **202 original theorem files merged from the historic audit branch without changing their contents**. The 335-file category index below is retained as a historical baseline; the additional 405 files are linked in the appendix. This is a filename index, **not** mathematical certification. Conflicting historical claim IDs remain source-qualified and unresolved; see the claim identity crosswalk.
 
@@ -843,3 +843,20 @@ These original files were missing from the November 1 index, including files alr
 ## Current branch additions · 2026-11-11
 
 - [PF_I16_UNIFORM_CONNECTED_CYCLE_MIXING_GATE_2026_11_10.md](../../research/theorems/PF_I16_UNIFORM_CONNECTED_CYCLE_MIXING_GATE_2026_11_10.md) — preserved PF-I16 conditional cluster gate; degree-four count explicitly superseded by the source-uniform incidence correction.
+
+
+## Current branch additions — November 13, 2026
+
+These source records were added or completed after the historical 740-file baseline. Inclusion is indexing only, not certification.
+
+- [PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md](../../research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md)
+- [PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md](../../research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md)
+- [PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md](../../research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md)
+- [PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md](../../research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md)
+- [PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md](../../research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md)
+- [PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md](../../research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md)
+- [PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md](../../research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md)
+- [PF_I16_MULTI_CUT_FOREST_INTERPOLATION_OPEN_GATE_2026_11_13.md](../../research/theorems/PF_I16_MULTI_CUT_FOREST_INTERPOLATION_OPEN_GATE_2026_11_13.md)
+- [PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md](../../research/theorems/PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md)
+- [PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md](../../research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md)
+- [PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md](../../research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md)
