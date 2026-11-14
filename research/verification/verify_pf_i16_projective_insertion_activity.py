@@ -17,7 +17,6 @@ pair_coeff = 224 * 384 * C6**2 * e / delta
 pair = pair_coeff * x**2
 
 assert face == F(11264, 125000)
-assert face == F(0.090112)
 assert pair_coeff < F(25_890_000, 1)
 assert face + pair > face
 assert 2 * face > F(1, 8)
