@@ -1,7 +1,7 @@
 # PF-I16 — Dobrushin control of the dressed third-order tree coefficient
 
 **Date:** 2026-11-13  
-**Status:** finite-product spatial tree theorem for the complete six-permutation third-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The derivative-flow input is established by the companion face-pullback/Kato–Bochner closure audit. This is not a theorem for the actual interacting Wilson vacuum, an all-orders activity theorem, a physical-time theorem, or a Yang–Mills mass-gap result.
+**Status:** finite-product spatial tree theorem for the complete six-permutation third-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The derivative-flow input is established by the companion [face-pullback/Kato–Bochner closure audit](../audits/PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md). This is not a theorem for the actual interacting Wilson vacuum, an all-orders activity theorem, a physical-time theorem, or a Yang–Mills mass-gap result.
 
 ## 1. Direct cumulant representation
 
