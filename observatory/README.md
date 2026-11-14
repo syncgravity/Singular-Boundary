@@ -1,3 +1,20 @@
+## PF-I16 · Exact centering of the face/pair Hamiltonian (2026-11-14)
+
+The conjugated interaction is \(v_f=-\rho_fb_fp_f\) and \(v_{fg}=2\sum_{e\in\partial f\cap\partial g}a_e\langle\nabla_es_f,\nabla_es_g\rangle\). Both are **exactly centered** under the product-Haar reference law. For the face term, \(p_f=\cos\theta_f\) and the radial Haar density is proportional to \(\sin^2\theta\,d\theta\), so its mean is zero. For the pair term, condition on the shared links; the private links in the two distinct face boundaries make the two face holonomies conditionally independent Haar variables, and each conditional mean gradient vanishes by Haar invariance. Thus the centered norms remain \(32b_0\) and \(512b_0^2/a_0\), without the generic factor-two loss.
+
+The centered face activity is
+\[
+z_f=32b_0+14336b_0^2/a_0,\quad z_f/\Delta_0\le0.0008609792,
+\quad q_{\rm face}=58z_f/\Delta_0\le0.0499367936.
+\]
+The conditional candidate \(q_{\rm joint}<0.543\) is restored if the proposed all-orders joint tree and rooted-cluster counting are proved. It is not yet a KP theorem.
+
+The all-orders target is now reduced to a precise cross-split quasi-factorization estimate: moment factorization errors must be bounded by a sum of shared-link temporal bonds \(\mathbf1_{X_i\cap X_j\ne\varnothing}e^{-\Delta_0|t_i-t_j|}\), with exponential-in-order constants. This estimate is still open; neither the unrestricted product-process tree nor termwise absolute Leonov–Shiryaev expansion proves it.
+
+[Full proof, activity arithmetic and all-orders reduction](../research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md).
+
+---
+
 ## PF-I16 · Joint space-time polymer and centering audit (2026-11-14)
 
 The local per-link **uncentered** activity arithmetic is verified: \(\kappa_H<0.022695\), and hence \(4\kappa_H<0.09078<1/8\). But the projection-tree theorem is stated for centered observables. From the current uncentered local norm bound, centering costs \(\|v_X-\mathbb E_0v_X\|_\infty\le2\|v_X\|_\infty\), so the effective coefficient is \(C_{\rm time}=4\) and the corresponding sufficient test becomes \(8\kappa_H<0.18156\), which misses \(1/8\). A sharper local oscillation/centered-norm estimate is needed; this is a loss in the upper bound, not evidence of divergence.
