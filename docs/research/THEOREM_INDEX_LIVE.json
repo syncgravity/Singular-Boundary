@@ -2,7 +2,7 @@
   "schema": "singular-boundary-theorem-index-v1",
   "scope": "All tracked research/theorems/*.md source paths in this checkout; indexing is source discovery, not mathematical certification.",
   "generated_utc_date": "2026-11-13",
-  "source_commit": "434d9db6f3932e933289afb2ea05c9089ef88ed9",
+  "source_commit": "af52050be6aba477fdce666bbcd1307704e32477",
   "baseline_historical_count": 740,
   "count": 773,
   "theorems": [
@@ -36,8 +36,8 @@
     },
     {
       "path": "research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md",
-      "git_blob_sha": "3bd01c150e5debcce6ba4b750c25111d3f0bf914",
-      "bytes": 10362,
+      "git_blob_sha": "397d1838c7e820492847ce83d74f3db4b676e7fe",
+      "bytes": 10533,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -57,22 +57,22 @@
     },
     {
       "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
-      "git_blob_sha": "fef18c4bff255dcfa081d586d08a3382057db55d",
-      "bytes": 10355,
+      "git_blob_sha": "981f56f83592c91067d27fbfa3c669f29c7d7a28",
+      "bytes": 11085,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
-      "git_blob_sha": "f41fb99080894150317e8cc2000f28301829ef26",
-      "bytes": 10756,
+      "git_blob_sha": "0e02c3fc6f613d69959681093e6ce47cfa7e127e",
+      "bytes": 10726,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-      "git_blob_sha": "5552029fbcd08e488ecca27c4cdff9ed1b8359a3",
-      "bytes": 9433,
+      "git_blob_sha": "da01d7cf24549a9b10efbb9da3cbd8fcc02f9fbe",
+      "bytes": 10423,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -85,8 +85,8 @@
     },
     {
       "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
-      "git_blob_sha": "34d60617b03c90fcbee306d822c2ebc1a404fb65",
-      "bytes": 11012,
+      "git_blob_sha": "656797578d1f84ea1d5b3b03f216feaa6a9f0e22",
+      "bytes": 11155,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -99,8 +99,8 @@
     },
     {
       "path": "research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md",
-      "git_blob_sha": "3f45d21f2adb6fead533571c59db3d6befdf539c",
-      "bytes": 58185,
+      "git_blob_sha": "a78cd6eb7b21856448f02979cf22573d0fb46b56",
+      "bytes": 58903,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -120,22 +120,22 @@
     },
     {
       "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
-      "git_blob_sha": "ebc4e981030bccdfb5d5fbab0a792c2eebbe7e92",
-      "bytes": 13004,
+      "git_blob_sha": "884a695a5d6e2b0dbdf89017460fd87da9fe1ab0",
+      "bytes": 14083,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_REFINED_ROTOR_HESSIAN_RESIDUAL_DERIVATIVES_2026_11_10.md",
-      "git_blob_sha": "f58e3ca61ed69f9b5a00ffdeb113b63c6134a078",
-      "bytes": 11121,
+      "git_blob_sha": "04ee0e00e9baeb67a42fe7f7e9ba42dbed592f17",
+      "bytes": 12220,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md",
-      "git_blob_sha": "9fa04d5669073c2b187d3d23101901c13999d74a",
-      "bytes": 11756,
+      "git_blob_sha": "ff0af52001752c23c8113fbef4711021ff23f193",
+      "bytes": 12646,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
