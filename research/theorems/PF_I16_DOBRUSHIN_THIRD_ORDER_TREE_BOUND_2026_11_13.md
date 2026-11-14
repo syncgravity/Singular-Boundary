@@ -1,7 +1,7 @@
 # PF-I16 — Dobrushin control of the dressed third-order tree coefficient
 
 **Date:** 2026-11-13  
-**Status:** conditional finite-product spatial tree estimate for the complete six-permutation third-order coefficient. The new Dobrushin influence estimate is derived from the corrected single-face first-derivative bound and universal incidence inventory. The final tree estimate additionally uses the corrected pointwise derivative-flow theorem, which remains conditional on the refined face-pullback and finite-product Kato–Bochner comparison. This is not a theorem for the actual interacting Wilson vacuum, an all-orders activity theorem, a physical-time theorem, or a Yang–Mills mass-gap result.
+**Status:** finite-product spatial tree theorem for the complete six-permutation third-order coefficient, uniform in graph volume under the source-incidence and (b_0/a_0\le1/50000) hypotheses. The derivative-flow input is established by the companion face-pullback/Kato–Bochner closure audit. This is not a theorem for the actual interacting Wilson vacuum, an all-orders activity theorem, a physical-time theorem, or a Yang–Mills mass-gap result.
 
 ## 1. Direct cumulant representation
 
@@ -38,7 +38,7 @@ together with the local oscillation consequence
 \|u_i\|_\infty\le \frac{26\pi}{\lambda}M_i.
 \tag{1.3}
 \]
-These are conditional PF-I16 inputs, as recorded in the corrected reversible-flow theorem.
+These are finite-graph PF-I16 inputs, established under the stated source-incidence and weak-coupling hypotheses in the corrected reversible-flow theorem and its closure audit.
 The oscillation step below uses the same radius-two link-derivative normalization as the recorded conditional-amplitude lemma; compatibility of that normalization with the weighted product metric is part of the existing conditional face-map metric/pullback input, not an unconditional assertion here.
 
 ## 2. Dobrushin influence matrix for the dressed reference measure
@@ -239,7 +239,7 @@ gives
 }
 \tag{4.3}
 \]
-This is a volume-independent connected tree estimate for each ordered third-order term, conditional on the PF-I16 derivative-flow input and the corrected isolated-face derivative bound.
+This is a volume-independent connected tree estimate for each ordered third-order term on the finite dressed reference measure, under the stated source-incidence and weak-coupling hypotheses.
 
 ## 5. Six-permutation coefficient
 
