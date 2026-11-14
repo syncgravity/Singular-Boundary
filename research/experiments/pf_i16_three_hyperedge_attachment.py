@@ -4,7 +4,7 @@
 This tests iterative whole-object activation and mixed logarithmic derivatives.
 It is an algebraic regression, not a weighted temporal estimate.
 """
-from itertools import combinations
+from itertools import combinations, product
 
 
 def ptrim(p):
@@ -154,44 +154,48 @@ def test_three_link_telescoping_and_mixed_derivative():
             moment_table(rows, {i: .27 + .05*i for i in rows},
                          {i: .11 + .017*i for i in rows}),
         ]
-        h1 = set(range(r))
-        h2 = set(range(r))
-        # Third link attaches through every nonempty subset of rows.
-        for q in range(1, r + 1):
-            for h3_tuple in combinations(rows, q):
-                hs = [h1, h2, set(h3_tuple)]
-                f = projected_three_link(r, hs, ms)
-                full = (1 << r) - 1
-                L = zlog(f, r)
-                target = eval_poly(L.get(full, {}), 1, 1)
+        # Enumerate every overlapping two-hyperedge cover: each row is
+        # incident to link 1 only, link 2 only, or both. Then attach link 3
+        # through every nonempty subset of rows.
+        for states in product((0, 1, 2), repeat=r):
+            h1 = {i for i, state in enumerate(states) if state in (0, 2)}
+            h2 = {i for i, state in enumerate(states) if state in (1, 2)}
+            if not (h1 & h2):
+                continue
+            for q in range(1, r + 1):
+                for h3_tuple in combinations(rows, q):
+                    hs = [h1, h2, set(h3_tuple)]
+                    f = projected_three_link(r, hs, ms)
+                    full = (1 << r) - 1
+                    L = zlog(f, r)
+                    target = eval_poly(L.get(full, {}), 1, 1)
 
-                # Sequential activation: first link 2, then link 3.
-                first = coeff_at(L, full, 1, 0) - coeff_at(L, full, 0, 0)
-                second = coeff_at(L, full, 1, 1) - coeff_at(L, full, 1, 0)
-                assert abs(target - first - second - coeff_at(L, full, 0, 0)) < 1e-8
+                    # Sequential activation: first link 2, then link 3.
+                    first = coeff_at(L, full, 1, 0) - coeff_at(L, full, 0, 0)
+                    second = coeff_at(L, full, 1, 1) - coeff_at(L, full, 1, 0)
+                    assert abs(target - first - second - coeff_at(L, full, 0, 0)) < 1e-8
 
-                # Mixed derivative of log F = F_ab/F - F_a F_b/F^2.
-                fa = zderiv(f, 0)
-                fb = zderiv(f, 1)
-                fab = zderiv(fa, 1)
-                inv = zinv(f, r)
-                mixed = zadd(zmul(fab, inv),
-                             zscale(zmul(zmul(fa, fb), zmul(inv, inv)), -1))
-                full_mixed = mixed.get(full, {})
-                # Double polynomial integration of the mixed derivative
-                # is the rectangular log increment.
-                mixed_integral = sum(
-                    v / ((i + 1) * (j + 1))
-                    for (i, j), v in full_mixed.items()
-                )
-                rectangular = (
-                    coeff_at(L, full, 1, 1)
-                    - coeff_at(L, full, 1, 0)
-                    - coeff_at(L, full, 0, 1)
-                    + coeff_at(L, full, 0, 0)
-                )
-                assert abs(mixed_integral - rectangular) < 1e-8
-                cases += 1
+                    # Mixed derivative of log F = F_ab/F - F_a F_b/F^2.
+                    fa = zderiv(f, 0)
+                    fb = zderiv(f, 1)
+                    fab = zderiv(fa, 1)
+                    inv = zinv(f, r)
+                    mixed = zadd(zmul(fab, inv),
+                                 zscale(zmul(zmul(fa, fb), zmul(inv, inv)), -1))
+                    full_mixed = mixed.get(full, {})
+                    # Double polynomial integration gives the rectangular log increment.
+                    mixed_integral = sum(
+                        v / ((i + 1) * (j + 1))
+                        for (i, j), v in full_mixed.items()
+                    )
+                    rectangular = (
+                        coeff_at(L, full, 1, 1)
+                        - coeff_at(L, full, 1, 0)
+                        - coeff_at(L, full, 0, 1)
+                        + coeff_at(L, full, 0, 0)
+                    )
+                    assert abs(mixed_integral - rectangular) < 1e-8
+                    cases += 1
     return cases
 
 
