@@ -749,10 +749,12 @@ For a connected \(G_{\rm ov}\), define
 where \(\mathcal T(G_{\rm ov})\) is its set of spanning trees. Put
 \[
 D_{8,4}:=
-\max_{1\le d_i\le8}
+\max_{\substack{1\le d_i\le8\\
+\ell:\mathfrak I\to\mathcal E\\
+\ell\text{ injective on each }I_i}}
 \sum_{\substack{\pi\vdash I_1\uplus\cdots\uplus I_4\\
 \pi\vee\{I_1,\ldots,I_4\}=\{\mathfrak I\}\\
-\text{every block of }\pi\text{ has one link label}}}
+\ell\text{ is constant on every block }B\in\pi}}
 \prod_{B\in\pi}(2e)^{|B|}|B|!.
 \tag{13.1}
 \]
