@@ -77,6 +77,88 @@ Thus
 \]
 The remainder is a perturbative remainder on the compact one-face rotor; this note does not supply an explicit numerical bound for it at \(\beta\le2/50000\). In particular, (2.1) must not be substituted into a global activity estimate without a proved remainder bound.
 
+### 2.1 A quantitative uniform remainder on the admissible rotor interval
+
+The perturbative remainder in (2.1) can be made explicit in the sup norm. Define
+\[
+\langle h\rangle_w:=\frac{2}{\pi}\int_{-1}^1\sqrt{1-p^2}\,h(p)\,dp,\qquad
+\lambda(R):=-\langle(1-p^2)R^2\rangle_w.
+\]
+For weighted-mean-zero \(F\), the regular inverse of
+\[
+L R:=(1-p^2)R'-3pR=F
+\]
+is
+\[
+(TF)(p):=(1-p^2)^{-3/2}
+\int_{-1}^p\sqrt{1-u^2}\,F(u)\,du.
+\]
+The zero-mean condition permits replacing the integral by minus the tail integral from \(p\) to \(1\). The elementary inequality
+\[
+\min\left\{\int_{-1}^p\sqrt{1-u^2}\,du,\,
+\int_p^1\sqrt{1-u^2}\,du\right\}
+\le\frac{\pi}{4}(1-p^2)^{3/2}
+\]
+follows by differentiating the difference on each half-interval. Hence
+\[
+\|TF\|_\infty\le\frac{\pi}{4}\|F\|_\infty.
+\tag{2.2}
+\]
+The fixed-point equation is
+\[
+R=T\left[-4\{(1-p^2)R^2+\beta p+\lambda(R)\}\right].
+\tag{2.3}
+\]
+On the ball \(\|R\|_\infty\le r\), the nonlinear part has Lipschitz constant at most \(4\pi r\): indeed
+\[
+\|(1-p^2)(R^2-S^2)+\lambda(R)-\lambda(S)\|_\infty
+\le4r\|R-S\|_\infty.
+\]
+The already-proved maximum-principle bound \(0\le R_\beta\le2\beta\) places the physical solution in the ball \(r=2\beta\).
+
+Now take the second-order polynomial
+\[
+P_\beta(p)=\frac43\beta-\frac{16}{9}\beta^2p.
+\]
+Its weighted mean parameter is exactly
+\[
+\lambda(P_\beta)=-\frac43\beta^2-\frac{32}{81}\beta^4.
+\]
+A direct polynomial calculation gives the residual
+\[
+F(P_\beta)-LP_\beta
+=\frac{128}{81}\beta^3
+\left(8\beta p^4-8\beta p^2+\beta-12p^3+12p\right),
+\]
+so
+\[
+\|F(P_\beta)-LP_\beta\|_\infty
+\le\frac{128}{81}(24+17\beta)\beta^3.
+\]
+Using (2.2), the Lipschitz constant \(8\pi\beta\) on the ball \(r=2\beta\), and \(T(LP_\beta)=P_\beta\), we obtain
+\[
+\boxed{
+\|R_\beta-P_\beta\|_\infty
+\le
+\frac{32\pi}{81}\,
+\frac{24+17\beta}{1-8\pi\beta}\,\beta^3.
+}
+\tag{2.4}
+\]
+The allocation \(A_f\ge a_0/2\) and \(b_0/a_0\le1/50000\) imply
+\(\beta_f\le2b_0/a_0\le4\times10^{-5}\). On this interval the coefficient in (2.4) is less than \(30\), giving the explicit bound
+\[
+\boxed{
+\left\|R_{\beta_f}
+-\frac43\beta_f+\frac{16}{9}\beta_f^2p\right\|_\infty
+<30\beta_f^3.
+}
+\tag{2.5}
+\]
+Thus the displayed two-mode expansion is now controlled in \(L^\infty\) at the PF-I16 coupling scale, rather than being only asymptotic.
+
+**Scope:** (2.5) is not a character-coefficient \(\ell^1\) bound. A small \(L^\infty\) remainder can still have a large Peter–Weyl/projective coefficient sum. The all-orders character-tail norm required by the row-factor interpolation remains open.
+
 ## 3. Character form of the vector-valued face gradient
 
 Let \(\chi_m\) denote the SU(2) character of spin \(m/2\), so
