@@ -253,4 +253,4 @@ then (6.1) implies the indicator-form QF estimate (1.1), with the fixed factor \
 
 The one-link interlaced-time covariance lemma and the corresponding link-by-link cross-split QF estimate are now proved for bounded row-factor observables under independent stationary link paths with the uniform \(L^2\) semigroup gap. This does **not** by itself prove the all-orders support-sensitive cumulant tree, the marked-root/cluster sum, quantum connected-resolvent convergence, the interacting-vacuum Poincare inequality, or the continuum mass gap. The hypotheses must also be checked for the actual reference link processes used by the PF-I16 construction.
 
-**Gate status:** exact path interpolation — ESTABLISHED; one-link interlaced-time covariance — ESTABLISHED; row-factor cross-split QF — ESTABLISHED under the stated product-Markov hypotheses; all P0–P5 gate statuses unchanged.
+**Gate status:** exact path interpolation — ESTABLISHED; one-link interlaced-time covariance — ESTABLISHED; link-multiplicity row-factor cross-split QF — ESTABLISHED under the stated product-Markov hypotheses; all P0–P5 gate statuses unchanged.
