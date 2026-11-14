@@ -53,9 +53,9 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient'),'unexpected graph version')
- if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670),'v2.71-pf-i16-refined-rotor':(283,672),'v2.72-pf-i16-pointwise-kato-bochner':(284,675),'v2.73-r3-ir-trace-gradient':(285,678)}
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'):
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670),'v2.71-pf-i16-refined-rotor':(283,672),'v2.72-pf-i16-pointwise-kato-bochner':(284,675),'v2.73-r3-ir-trace-gradient':(285,678),'v3.04-pf-i16-quasi-factorization-reduction':(298,703)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
   if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
@@ -113,7 +113,7 @@ def main():
   check(node['PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION']['status']=='open','fourth-order cancellation remains open')
   check(any(z['from_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['to_id']=='PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION' and z['status']=='open' for z in e),'fourth-order next-step edge missing')
   check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
- if g['version'] in ('v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient'):
+ if g['version'] in ('v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'):
   check(node['PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES']['status']=='conditional','refined rotor estimates remain conditional')
   check(any(z['from_id']=='PF-I16-EXACT-DRESSING-RESIDUAL' and z['to_id']=='PF-I16-REFINED-ROTOR-HESSIAN-RESIDUAL-DERIVATIVES' for z in e),'refined rotor dependency edge missing')
   check(g['pf_i16_dressed_locality']['third_order']['prior_numeric_bound_revalidated'] is False,'prior third-order bound not silently promoted')
@@ -123,10 +123,17 @@ def main():
   check(any(z['from_id']=='PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW' and z['to_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['status']=='conditional' for z in e),'derivative-flow resolvent edge missing')
   check(g['pf_i16_dressed_locality']['derivative_flow']['pointwise_componentwise_kato_bocher_derived'] is True,'componentwise Kato-Bochner bridge missing')
   check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
- if g['version']=='v2.73-r3-ir-trace-gradient':
+ if g['version'] in ('v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'):
   check(node['R3-IR-TRACE-GRADIENT']['status']=='conditional','R3_IR trace-gradient result remains conditional')
   check(node['R3-IR-TRACE-GRADIENT']['stage']=='P2','R3_IR trace-gradient block remains finite strip P2')
   check(any(x['from_id']=='R3-IR-TRACE-GRADIENT' and x['to_id']=='W-3D-ANALYTIC' and x['status']=='open' for x in e),'3D transfer remains explicitly open')
+
+ if g['version']=='v3.04-pf-i16-quasi-factorization-reduction':
+  check(node['PF-I16-THIRD-ORDER-DRESSED-RESOLVENT']['status']=='conditional','third-order spatial tree remains conditional')
+  check(node['PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION']['status']=='finite','fourth-order exact partition identity finite only')
+  check(g['pf_i16_dressed_locality']['third_order']['conditional_spatial_tree_bound'] is True,'conditional third-order Dobrushin tree bound missing')
+  check(g['pf_i16_dressed_locality']['fourth_order']['spatial_four_support_tree_status']=='conditional','fourth-order cut-interpolation tree remains conditional')
+  check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'all-orders and continuum gates remain open')
  check('dissertation' not in node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title'].lower() and re.search(r'(?i)\\bpaper\\s*[1-5]\\b',node['PF-I16-EXACT-SEVEN-CLASS-FOUR-FACE-C2222']['title']) is None,'PF-I16 result node must remain result-focused, not a source-document title')
  check(all(x in node and node[x]['status'] in ('open','conditional') for x in ('T0-QC-3D','T1-QC-ACTION','T2-OBSERVABLES','T3-TIME-COMPARE','T4-OS-LIMIT','T5-GAP-TRANSFER')),'unclosed Penrose transfer obligations')
  check(node['R-CUBIC-FINITE-GAP']['status']=='finite','finite strong-coupling theorem scope')

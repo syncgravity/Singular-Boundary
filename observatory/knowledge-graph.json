@@ -2,10 +2,10 @@
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
   "version": "v3.04-pf-i16-quasi-factorization-reduction",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary tensors, one-link continuous-time cumulant bound, and actual face/pair/cut/residual projective-norm formulas controlled by a finite but unevaluated one-rotor H6 constant. The projective activity majorant exceeds the current KP threshold already at the one-face linear term; the all-orders cancellation-preserving joint support/time estimate and direct L-infinity tensorized route remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. Section 16 now gives an exact link-factorization identity for Boolean-lattice quasi-factorization variables, reducing the cancellation-preserving all-orders estimate to a one-link analytic quasi-factorization bound and a connected-subset resummation with exponential growth. Both remain OPEN.",
+  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; one-link continuous-time cumulant bound; and exact link-factorization identity for Boolean-lattice quasi-factorization variables. The analytic one-link quasi-factorization majorant, connected-subset resummation with K_8^r growth, uniform higher-order coefficient bounds, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
-  "indexed_theorem_paths": 762,
+  "indexed_theorem_paths": 773,
   "existing_proof_paths": 78,
   "git_branch": "main",
   "status_legend": {
@@ -7894,12 +7894,12 @@
     },
     {
       "id": "R-INDEX",
-      "title": "762 current indexed theorem source files (740 historical baseline)",
+      "title": "773 current indexed theorem source files (740 historical baseline)",
       "kind": "result",
       "status": "indexed",
       "stage": "P0",
       "summary": "All tracked research/theorems Markdown source files appear in the searchable index and source-hashed registry. Indexing only; source access does not certify any mathematical result.",
-      "detail": "Current source count 762, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
+      "detail": "Current source count 773, historical discovery baseline 740. All P0–P5 and separate Penrose/gravity objectives remain OPEN. The curated Proof Atlas graph has distinct review scopes.",
       "checks": [],
       "sources": [
         {
@@ -7917,8 +7917,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "8673a307436fafe220a139253349062415bd8543",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/8673a307436fafe220a139253349062415bd8543/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "c6604748f87e2f8fc9b950528c7ca78d4477dc5d",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/c6604748f87e2f8fc9b950528c7ca78d4477dc5d/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
