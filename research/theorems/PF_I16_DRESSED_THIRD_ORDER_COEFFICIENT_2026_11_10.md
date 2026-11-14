@@ -1,5 +1,7 @@
 # PF-I16 — Centered dressed-resolvent expansion through third order
 
+> **Supersession notice — 2026-11-13.** The exact finite-label perturbation identities and corrected fixed-triple amplitude calculations below remain useful. The statement in Section 6 that spatial tree decay remains open is superseded by [PF-I16 Dobrushin control of the dressed third-order tree coefficient](PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md), which proves a conditional, volume-independent support-MST bound for the complete six-permutation third-order coefficient on the finite dressed reference measure. That result uses the corrected derivative-flow input and remains conditional on the face-map metric/pullback and finite-product Kato comparison. It is not a theorem for the actual interacting Wilson vacuum or an all-orders activity theorem.
+
 **Original date:** 2026-11-10  
 **Correction:** 2026-11-12, using the independently audited four-factor derivative and corrected isolated-rotor estimate.  
 **Status:** exact finite-label perturbation identities; corrected third-order coefficient bound is **conditional** on the corrected finite-graph curvature, derivative-flow, and resolvent estimates below. It is not a spatial tree estimate and gives no all-orders or continuum conclusion.
@@ -167,4 +169,4 @@ The previous (3.25\times10^{16}) third-order prefactor, (1/40000) threshold, and
 
 The corrected two-point resolvent theorem has now been applied to the nested third-order term. The result is a uniform three-kernel convolution and a six-permutation **pair-arm** bound, not a connected tree estimate. The exact remaining obstruction is the undifferentiated factor \( (Gr_k)D r_j \) in the product rule; the global oscillation bound controls its amplitude but supplies no decay from \(S_j\) to \(S_k\). See [PF-I16 three-support pair-arm estimate and tree obstruction](PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md) and its [exact convolution verifier](../verification/verify_pf_i16_three_support_convolution.py).
 
-The report specifies the missing PF-I16 conditional-amplitude/\(L^4\) estimate, conditional-centering control, and history-aware six-permutation cancellation. Earlier straight-strip R3 estimates are not silently imported as PF-I16 theorems. Spatial tree decay remains **OPEN**.
+The report specifies the missing PF-I16 conditional-amplitude/\(L^4\) estimate, conditional-centering control, and history-aware six-permutation cancellation. Earlier straight-strip R3 estimates are not silently imported as PF-I16 theorems. Spatial tree decay for the complete six-permutation coefficient is **conditionally established by the later Dobrushin route** cited in the supersession notice; the specific pair-arm method here remains insufficient.
