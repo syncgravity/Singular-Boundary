@@ -14,6 +14,8 @@ on:
       - 'research/verification/verify_pf_i16_support_tree_maximum_bound_obstruction.py'
       - 'research/verification/verify_pf_i16_coordinate_port_completion_obstruction.py'
       - 'research/verification/verify_pf_i16_coincident_time_support_tree_bound.py'
+      - 'research/verification/verify_pf_i16_graph_sensitive_coincident_cumulant.py'
+      - 'research/audits/PF_I16_COINCIDENT_TIME_GRAPH_SENSITIVE_CUMULANT_TREE_BOUND_2026_11_14.md'
       - 'research/audits/PF_I16_COINCIDENT_TIME_SUPPORT_TREE_CUMULANT_BOUND_2026_11_14.md'
       - 'research/audits/PF_I16_COORDINATE_PORT_COMPLETION_OBSTRUCTION_2026_11_14.md'
       - 'research/audits/PF_I16_SUPPORT_TREE_MAXIMUM_BOUND_OBSTRUCTION_2026_11_14.md'
@@ -104,6 +106,8 @@ jobs:
         run: python research/verification/verify_pf_i16_coordinate_port_completion_obstruction.py
       - name: Verify coincident-time support cumulant baseline
         run: python research/verification/verify_pf_i16_coincident_time_support_tree_bound.py
+      - name: Verify graph-sensitive coincident cumulant tree bound
+        run: python research/verification/verify_pf_i16_graph_sensitive_coincident_cumulant.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
       - name: Verify exact centering and face-pair joint-tree activity
