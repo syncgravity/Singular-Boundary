@@ -8,6 +8,25 @@ on:
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
+      - 'research/verification/verify_pf_i16_radial_character_casimir.py'
+      - 'research/verification/verify_pf_i16_character_tail_projective_norm.py'
+      - 'research/verification/verify_pf_i16_support_tree_qf_obstruction.py'
+      - 'research/verification/verify_pf_i16_support_tree_maximum_bound_obstruction.py'
+      - 'research/verification/verify_pf_i16_coordinate_port_completion_obstruction.py'
+      - 'research/audits/PF_I16_COORDINATE_PORT_COMPLETION_OBSTRUCTION_2026_11_14.md'
+      - 'research/audits/PF_I16_SUPPORT_TREE_MAXIMUM_BOUND_OBSTRUCTION_2026_11_14.md'
+      - 'research/audits/PF_I16_SUPPORT_TREE_CANCELLATION_BRIDGE_AND_QF_OBSTRUCTION_2026_11_14.md'
+      - 'research/audits/PF_I16_ALL_ORDERS_RADIAL_CHARACTER_TAIL_AND_FACE_PAIR_PROJECTIVE_NORM_2026_11_14.md'
+      - 'research/audits/PF_I16_RADIAL_CHARACTER_EXPANSION_AND_SHARED_LINK_CASIMIR_CONTRACTION_2026_11_14.md'
+      - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
+      - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
+      - 'research/experiments/pf_i16_three_hyperedge_attachment.py'
+      - 'research/verification/verify_pf_i16_joint_spacetime_activity.py'
+      - 'research/verification/verify_pf_i16_exact_centering_joint_tree.py'
+      - 'research/verification/verify_pf_i16_radial_character_casimir.py'
+      - 'research/audits/PF_I16_RADIAL_CHARACTER_EXPANSION_AND_SHARED_LINK_CASIMIR_CONTRACTION_2026_11_14.md'
+      - 'research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md'
+      - 'research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -18,6 +37,10 @@ on:
       - 'observatory/index.html'
       - 'observatory/graph.html'
       - 'observatory/README.md'
+      - 'research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md'
+      - 'research/audits/PF_I16_NILPOTENT_GLUING_AND_HIGH_DEGREE_TESTS_2026_11_13.md'
+      - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
+      - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
       - '.github/workflows/theorem-index-check.yml'
   push:
     branches: [main]
@@ -27,6 +50,9 @@ on:
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
+      - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
+      - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
+      - 'research/experiments/pf_i16_three_hyperedge_attachment.py'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -37,6 +63,10 @@ on:
       - 'observatory/index.html'
       - 'observatory/graph.html'
       - 'observatory/README.md'
+      - 'research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md'
+      - 'research/audits/PF_I16_NILPOTENT_GLUING_AND_HIGH_DEGREE_TESTS_2026_11_13.md'
+      - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
+      - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
 permissions:
   contents: read
 jobs:
@@ -54,6 +84,26 @@ jobs:
         run: python research/verification/verify_pf_i16_degree_eight_ls_constant.py
       - name: Verify PF-I16 product-cumulant bridge counterexample
         run: python research/verification/verify_pf_i16_product_cumulant_bridge.py
+      - name: Verify PF-I16 nilpotent gluing and high-degree identities
+        run: python research/experiments/pf_i16_nilpotent_gluing_checks.py
+      - name: Verify PF-I16 two-hyperedge connected-log interpolation
+        run: python research/experiments/pf_i16_two_hyperedge_interpolation.py
+      - name: Verify PF-I16 three-hyperedge attachment identities
+        run: python research/experiments/pf_i16_three_hyperedge_attachment.py
+      - name: Verify PF-I16 joint space-time activity and centering thresholds
+        run: python research/verification/verify_pf_i16_joint_spacetime_activity.py
+      - name: Verify PF-I16 radial character coefficients and shared-link Casimir contraction
+        run: python research/verification/verify_pf_i16_radial_character_casimir.py
+      - name: Verify cut-QF insufficiency parity obstruction
+        run: python research/verification/verify_pf_i16_support_tree_qf_obstruction.py
+      - name: Verify factorial obstruction to support maximum-tree coefficient
+        run: python research/verification/verify_pf_i16_support_tree_maximum_bound_obstruction.py
+      - name: Verify coordinate-preserving port-completion obstruction
+        run: python research/verification/verify_pf_i16_coordinate_port_completion_obstruction.py
+      - name: Verify all-orders radial character tail and face-pair projective norm
+        run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
+      - name: Verify exact centering and face-pair joint-tree activity
+        run: python research/verification/verify_pf_i16_exact_centering_joint_tree.py
       - name: Verify curated Proof Atlas graph
         run: python observatory/tools/verify_knowledge_graph.py
       - name: Syntax-check Proof Atlas application

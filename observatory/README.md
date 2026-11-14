@@ -1,3 +1,63 @@
+## PF-I16 · Exact centering of the face/pair Hamiltonian (2026-11-14)
+
+The conjugated interaction is \(v_f=-\rho_fb_fp_f\) and \(v_{fg}=2\sum_{e\in\partial f\cap\partial g}a_e\langle\nabla_es_f,\nabla_es_g\rangle\). Both are **exactly centered** under the product-Haar reference law. For the face term, \(p_f=\cos\theta_f\) and the radial Haar density is proportional to \(\sin^2\theta\,d\theta\), so its mean is zero. For the pair term, condition on the shared links; the private links in the two distinct face boundaries make the two face holonomies conditionally independent Haar variables, and each conditional mean gradient vanishes by Haar invariance. Thus the centered norms remain \(32b_0\) and \(512b_0^2/a_0\), without the generic factor-two loss.
+
+The centered face activity is
+\[
+z_f=32b_0+14336b_0^2/a_0,\quad z_f/\Delta_0\le0.0008609792,
+\quad q_{\rm face}=58z_f/\Delta_0\le0.0499367936.
+\]
+The conditional candidate \(q_{\rm joint}<0.543\) is restored if the proposed all-orders joint tree and rooted-cluster counting are proved. It is not yet a KP theorem.
+
+The all-orders target is now reduced to a precise cross-split quasi-factorization estimate: moment factorization errors must be bounded by a sum of shared-link temporal bonds \(\mathbf1_{X_i\cap X_j\ne\varnothing}e^{-\Delta_0|t_i-t_j|}\), with exponential-in-order constants. This estimate is still open; neither the unrestricted product-process tree nor termwise absolute Leonov–Shiryaev expansion proves it.
+
+[Full proof, activity arithmetic and all-orders reduction](../research/audits/PF_I16_EXACT_CENTERING_AND_ALL_ORDERS_JOINT_TREE_2026_11_14.md).
+
+---
+
+## PF-I16 · Joint space-time polymer and centering audit (2026-11-14)
+
+The local per-link **uncentered** activity arithmetic is verified: \(\kappa_H<0.022695\), and hence \(4\kappa_H<0.09078<1/8\). But the projection-tree theorem is stated for centered observables. From the current uncentered local norm bound, centering costs \(\|v_X-\mathbb E_0v_X\|_\infty\le2\|v_X\|_\infty\), so the effective coefficient is \(C_{\rm time}=4\) and the corresponding sufficient test becomes \(8\kappa_H<0.18156\), which misses \(1/8\). A sharper local oscillation/centered-norm estimate is needed; this is a loss in the upper bound, not evidence of divergence.
+
+There is a second independent obstruction: the available temporal tree is over all labeled row trees, while spatial independence gives only exact vanishing for disconnected support families. Multiplying a separate spatial tree count by the temporal tree count produces superexponential order growth after the \(1/m!\) normalization. The actual KP step requires a **single support-sensitive space-time tree** or an equivalent weighted-dependency-graph resummation, plus an explicit all-orders anchored marked-root sum. The projective-norm alternative also fails its sufficient threshold at the recorded coupling before its unknown \(K_6\) term.
+
+[Full activity arithmetic, centering calculation and exact next obligations](../research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md). No KP convergence or P0–P5 gate closure is claimed.
+
+---
+
+## PF-I16 · Product-process tensor-gap bridge (2026-11-14)
+
+**Conditional reference-process result; spatial/quantum convergence remains OPEN.** For finitely many independent stationary link Markov semigroups with \(P_t^e=\Pi_e+Q_t^e\), \(\|Q_t^e\|_{2\to2}\le e^{-\Delta_e t}\), and \(\Delta_e\ge\Delta_0>0\), the global tensor-product semigroup has the same \(L^2\) decay rate \(e^{-\Delta_0t}\), independent of the number of links. Treating each row product as one bounded observable on that global process and applying the existing projection-tree theorem yields
+
+\[
+|\kappa(A_1(t_1),\ldots,A_r(t_r))|
+\le 4^r\prod_i\|F_i\|_\infty
+\sum_{T\in\mathcal T_r}\prod_{\{i,j\}\in T}e^{-\Delta_0|t_i-t_j|}.
+\]
+
+Cayley counting and leaf integration then give the normalized bound
+\[
+\frac1{r!\mathcal T}\int_{[0,\mathcal T]^r}|\kappa|\,d\mathbf t
+\le 4^r\frac{r^{r-2}}{r!}\left(\frac2{\Delta_0}\right)^{r-1}\prod_i\|F_i\|_\infty.
+\]
+This controls the signed product cumulant before taking absolute values over link partitions and avoids the Bell-fiber loss in that reference-process setting. It is **not** a spatially sensitive tree: the sum is over all labeled trees on the rows. The assumptions are stronger than local link-cumulant decay and are not yet established for the physical interacting path measure. No spatial-support sum, joint space-time polymer/Kotecký–Preiss criterion, quantum connected-resolvent convergence, interacting-vacuum Poincaré inequality, or continuum mass gap follows.
+
+[Full assumptions, proof and limitations](../research/audits/PF_I16_PRODUCT_PROCESS_TENSOR_GAP_CUMULANT_BRIDGE_2026_11_14.md) · [Proof Atlas](graph.html).
+
+---
+
+## Observatory v3.05 · 2026-11-13 — scoped-check inventory and product-cumulant resummation candidate
+
+The canonical P0–P5 acceptance ledger contains **27 scoped checks**: P0=6, P1=4, P2=4, P3=4, P4=4, P5=5. Their current recorded states are 2 met, 6 partial, and 19 open. The verifier now asserts the total, per-gate allocation, unique labels, and state distribution. These are review/status controls, not theorem certification; no proof gate has been closed.
+
+The graph and browser data are synchronized at **v3.05** (299 curated nodes / 705 typed relationships / 773 indexed theorem-source paths). The stale v2.73 edition label on the Proof Atlas page has been corrected.
+
+A new P2 candidate audit records an exact squarefree slot-moment / row-diagonal projection identity. It packages each link's full partition family into one local generating object and extracts the global product cumulant by a logarithm after the all-or-none row constraint. This is an exact algebraic reorganization; the weighted connected-log estimate, single maximum-tree temporal factor, \(C^r r!\) growth or Feynman–Kac-integrable substitute, and quantum convergence remain OPEN.
+
+[Nilpotent row-projection candidate](../research/audits/PF_I16_NILPOTENT_ROW_PROJECTION_RESUMMATION_CANDIDATE_2026_11_13.md) · [Proof Atlas](graph.html).
+
+---
+
 ## Current PF-I16 update · 2026-11-13 — all-orders temporal port injection
 
 The weighted projection-to-tree multiplicity subgate is now closed by an exact all-orders injection. Each connected interval forest together with an increasing rooted spanning tree of its interval-overlap graph is completed to a labeled tree with the identical temporal cut profile. One incoming and one outgoing port at each non-root component's connector encode an inverse; the connector set is determined by the completed tree's directed degrees. Since there are at most \(m/2\) components, each completed tree has at most \(4^{m/2}=2^m\) decorated preimages. Therefore
