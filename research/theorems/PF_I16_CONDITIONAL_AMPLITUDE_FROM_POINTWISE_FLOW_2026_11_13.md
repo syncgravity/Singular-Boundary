@@ -1,7 +1,7 @@
 # PF-I16 — Conditional resolvent amplitude from pointwise derivative flow
 
 **Date:** 2026-11-13  
-**Status:** exact finite-product conditional-oscillation lemma, conditional on the PF-I16 pointwise derivative-flow estimate. The conditional mean is shown to be a boundary-local observable with an explicit derivative bound. This does not yet prove the three-support connected tree estimate.
+**Status:** exact finite-product oscillation and boundary-score lemmas. The pointwise derivative-flow input is established under the source-incidence and weak-coupling hypotheses by the companion face-pullback/Kato–Bochner closure audit. The conditional mean is a boundary-local observable with an explicit derivative bound. This does not yet prove the three-support connected tree estimate.
 
 ## 1. Setup
 
