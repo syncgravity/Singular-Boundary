@@ -16,6 +16,7 @@ on:
       - 'research/verification/verify_pf_i16_coincident_time_support_tree_bound.py'
       - 'research/verification/verify_pf_i16_graph_sensitive_coincident_cumulant.py'
       - 'research/audits/PF_I16_COINCIDENT_TIME_GRAPH_SENSITIVE_CUMULANT_TREE_BOUND_2026_11_14.md'
+      - 'research/audits/PF_I16_TEMPORAL_WEIGHTED_CHROMATIC_REGROUPING_FRONTIER_2026_11_14.md'
       - 'research/audits/PF_I16_COINCIDENT_TIME_SUPPORT_TREE_CUMULANT_BOUND_2026_11_14.md'
       - 'research/audits/PF_I16_COORDINATE_PORT_COMPLETION_OBSTRUCTION_2026_11_14.md'
       - 'research/audits/PF_I16_SUPPORT_TREE_MAXIMUM_BOUND_OBSTRUCTION_2026_11_14.md'
