@@ -33,6 +33,29 @@ def main():
   check(a['from_id']!=a['to_id'],f'self edge {a}')
  check(len([x for x in n if x['kind']=='gate'])==6,'six proof gates required');check(set(x['id'] for x in n if x['kind']=='gate')=={'P0','P1','P2','P3','P4','P5'},'gate ids')
  check(all(x['status']=='open' for x in n if x['kind'] in ('gate','goal')),'FALSELY CLOSED GATE')
+
+ # Canonical P0-P5 scoped-check inventory: exactly 27, status-counted once.
+ scoped={x['id']:x for x in n if x['id'] in {'P0','P1','P2','P3','P4','P5'}}
+ expected_gate_counts={'P0':6,'P1':4,'P2':4,'P3':4,'P4':4,'P5':5}
+ check(set(scoped)==set(expected_gate_counts),'all six canonical scoped gates required')
+ for gate,count in expected_gate_counts.items():
+  checks=scoped[gate].get('checks',[])
+  check(len(checks)==count,f'{gate} scoped-check count changed')
+  labels=[x.get('label','').strip() for x in checks]
+  check(all(labels) and len(labels)==len(set(labels)),f'{gate} scoped-check labels must be nonempty and unique')
+  check(all(x.get('state') in {'met','partial','open','blocked','finite','conditional','exact','obstruction','refuted'} for x in checks),f'{gate} has unknown scoped-check state')
+ all_scoped=[x for gate in expected_gate_counts for x in scoped[gate]['checks']]
+ state_counts=collections.Counter(x['state'] for x in all_scoped)
+ check(len(all_scoped)==27,'canonical P0-P5 scoped-check total must equal 27')
+ check(dict(state_counts)=={'partial':6,'open':19,'met':2},'canonical P0-P5 scoped-check state distribution changed; review explicitly')
+ if g['version']=='v3.05-pf-i16-nilpotent-row-projection':
+  check(g.get('scoped_checks',{}).get('count')==27,'scoped-check metadata count')
+  check(g['scoped_checks'].get('gate_counts')==expected_gate_counts,'scoped-check metadata gate allocation')
+  check(g['scoped_checks'].get('state_counts')=={'met':2,'partial':6,'open':19},'scoped-check metadata state allocation')
+  check(node['PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION']['status']=='candidate','nilpotent resummation must remain candidate')
+  check(node['PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION']['stage']=='P2','nilpotent resummation remains a P2 analytic candidate')
+  check(any(z['from_id']=='PF-I16-JOINT-SPACETIME-CLUSTER-TREE' and z['to_id']=='PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION' for z in e),'nilpotent resummation route edge missing')
+  check(any(z['from_id']=='PF-I16-NILPOTENT-ROW-PROJECTION-RESUMMATION' and z['to_id']=='PF-I16-QUANTUM-CONNECTED-RESOLVENT-TREE' for z in e),'nilpotent candidate must not bypass quantum tree gate')
  check(node['P0']['checks'][0]['label'].startswith('Penrose P3'),'Penrose P0 must be first')
  check(node['P0']['checks'][3]['note'].find('CONTROL ONLY')>=0,'cubic belongs to control certificate')
  check(node['G-GRAV']['status']=='open' and node['THEOREM']['status']=='open','both targets open')
@@ -53,9 +76,9 @@ def main():
   if args.data_dir:
    p=args.data_dir/f['file'];check(p.is_file(),'missing uploaded source '+str(p));check(p.stat().st_size==f['bytes'],'byte length mismatch');check(sha(p)==f['sha256'],'source SHA mismatch '+str(p))
  # Physics ontology and model-comparison acceptance gates (v2.29 integrated).
- check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'),'unexpected graph version')
- if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'):
-  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670),'v2.71-pf-i16-refined-rotor':(283,672),'v2.72-pf-i16-pointwise-kato-bochner':(284,675),'v2.73-r3-ir-trace-gradient':(285,678),'v3.04-pf-i16-quasi-factorization-reduction':(298,703)}
+ check(g['version'] in ('v2.29','v2.30-draft','v2.31-draft','v2.32-draft','v2.33-draft','v2.34-draft','v2.35-draft','v2.36-draft','v2.37-draft','v2.38-draft','v2.39-draft','v2.40-draft','v2.41-draft','v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction','v3.05-pf-i16-nilpotent-row-projection'),'unexpected graph version')
+ if g['version'] in ('v2.42-research','v2.43-research','v2.44-research','v2.45-research','v2.46-research','v2.47-research','v2.48-concepts','v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor','v2.72-pf-i16-pointwise-kato-bochner','v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction','v3.05-pf-i16-nilpotent-row-projection'):
+  expected={'v2.42-research':(148,342),'v2.43-research':(156,362),'v2.44-research':(159,374),'v2.45-research':(163,388),'v2.46-research':(168,403),'v2.47-research':(172,417),'v2.48-concepts':(188,452),'v2.49-ym-proof':(196,474),'v2.69-pf-i16-four-face-c2222':(278,663),'v2.70-pf-i16-dressed-locality':(282,670),'v2.71-pf-i16-refined-rotor':(283,672),'v2.72-pf-i16-pointwise-kato-bochner':(284,675),'v2.73-r3-ir-trace-gradient':(285,678),'v3.04-pf-i16-quasi-factorization-reduction':(298,703),'v3.05-pf-i16-nilpotent-row-projection':(299,705)}
   check((len(n),len(e))==expected[g['version']],'curated graph counts by version')
   if g['version'] in ('v2.49-ym-proof','v2.69-pf-i16-four-face-c2222','v2.70-pf-i16-dressed-locality','v2.71-pf-i16-refined-rotor'):
    check(g['ym_proof_interface']['primary_gap_gate']=='YM-UNIFORM-GAUGE-POINCARE','true interacting gauge spectral target')
@@ -123,12 +146,12 @@ def main():
   check(any(z['from_id']=='PF-I16-POINTWISE-KATO-BOCHNER-DERIVATIVE-FLOW' and z['to_id']=='PF-I16-THIRD-ORDER-DRESSED-RESOLVENT' and z['status']=='conditional' for z in e),'derivative-flow resolvent edge missing')
   check(g['pf_i16_dressed_locality']['derivative_flow']['pointwise_componentwise_kato_bocher_derived'] is True,'componentwise Kato-Bochner bridge missing')
   check(g['pf_i16_dressed_locality']['all_orders_summability'] is False and g['pf_i16_dressed_locality']['continuum_mass_gap'] is False,'no all-orders or continuum gap overclaim')
- if g['version'] in ('v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction'):
+ if g['version'] in ('v2.73-r3-ir-trace-gradient','v3.04-pf-i16-quasi-factorization-reduction','v3.05-pf-i16-nilpotent-row-projection'):
   check(node['R3-IR-TRACE-GRADIENT']['status']=='conditional','R3_IR trace-gradient result remains conditional')
   check(node['R3-IR-TRACE-GRADIENT']['stage']=='P2','R3_IR trace-gradient block remains finite strip P2')
   check(any(x['from_id']=='R3-IR-TRACE-GRADIENT' and x['to_id']=='W-3D-ANALYTIC' and x['status']=='open' for x in e),'3D transfer remains explicitly open')
 
- if g['version']=='v3.04-pf-i16-quasi-factorization-reduction':
+ if g['version'] in ('v3.04-pf-i16-quasi-factorization-reduction','v3.05-pf-i16-nilpotent-row-projection'):
   check(node['PF-I16-THIRD-ORDER-DRESSED-RESOLVENT']['status']=='conditional','third-order spatial tree remains conditional')
   check(node['PF-I16-FOURTH-ORDER-PARTITION-CANCELLATION']['status']=='finite','fourth-order exact partition identity finite only')
   check(g['pf_i16_dressed_locality']['third_order']['conditional_spatial_tree_bound'] is True,'conditional third-order Dobrushin tree bound missing')
