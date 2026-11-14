@@ -80,7 +80,31 @@ For singleton blocks the factor is the one-link mean and is bounded by
 
 For each non-singleton hyperedge \(B\), its temporal factor in (1) is exactly the maximum-spanning-tree product on the complete graph over \(B\), with edge weights \(e^{-\Delta_0|t_i-t_j|}\). A connected \(\mathcal H(\boldsymbol\rho)\) therefore contains a row-spanning tree assembled from edges inside its hyperedges. Consequently the product of all non-singleton temporal factors dominates at least one connected row-tree weight. This observation is useful, but it does not yet bound the **sum over link-coloured partitions** by one common maximum-tree weight with an exponential-in-\(r\) coefficient.
 
-## 5. Exact special case: tree incidence with pairwise links
+## 5. An eight-link witness: cancellation is indispensable
+
+The connected-hypergraph form also gives a sharp warning against taking absolute values term by term. Let \(r=8\), let every row have the same support \(X_i=\{1,\ldots,8\}\), and let
+\[
+Y_{i,e}=U_e,\qquad e=1,\ldots,8,
+\]
+where the \(U_e\) are independent symmetric Rademacher variables at coincident times. Then every product row is the same Rademacher variable
+\[
+A_i=W:=\prod_{e=1}^8U_e.
+\]
+Consequently the exact product cumulant is
+\[
+\kappa(A_1,\ldots,A_8)=\kappa_8(W)=-272.
+\]
+
+For each link colour \(e\), restrict its partition \(\rho_e\) to perfect matchings of the eight row labels. There are \(7!!=105\) such matchings, and every pair-block weight is
+\(\kappa(U_e,U_e)=1\). Choose two fixed alternating perfect matchings whose union is one cycle through all eight rows. The hypergraph is then connected regardless of the choices of the remaining six link matchings. This gives at least
+\[
+(7!!)^6=105^6=1{,}340{,}095{,}640{,}625
+\]
+distinct connected LS summands, each equal to \(+1\). Therefore the absolute sum of the LS/hypergraph summands is at least \(105^6\), although their signed total is only \(-272\).
+
+This is an exact degree-eight-support cancellation witness. It proves that **no proof based on taking absolute values of the individual connected link-partition summands can deliver the desired \(C^r r!\) growth in general**. The cancellation must be retained across different link-coloured partition families (or encoded by another exact connected representation) before estimating. It does not show that the actual product cumulant is large; this example shows the opposite.
+
+## 6. Exact special case: tree incidence with pairwise links
 
 Suppose the row-overlap graph is a tree, every link belongs to exactly two rows, and each graph edge is represented by exactly one link. Suppose also that every elementary factor is centered under its one-link stationary law. Then \(I_e=\{i,j\}\) for each link, and its only partitions are \(\{\{i,j\}\}\) and \(\{\{i\},\{j\}\}\). The singleton option has zero weight by centering. The hypergraph is connected only if every tree edge contributes its pair block. Hence (H) reduces exactly to
 \[
@@ -95,7 +119,7 @@ The temporal decay and constants in this special case are inherited directly fro
 
 The hypotheses matter: a link shared by three or more rows creates higher-cardinality hyperedges, and multiple links shared by the same pair create parallel colours. Those are precisely the general cases not covered by (2).
 
-## 6. The remaining combinatorial/analytic gate
+## 7. The remaining combinatorial/analytic gate
 
 Identity (H) makes the obstruction precise. The next target is not to count all partitions independently. It is to sum, **for each link as one object**, the family of its coloured blocks while retaining the global connectedness constraint. A successful estimate must:
 
@@ -106,10 +130,10 @@ Identity (H) makes the obstruction precise. The next target is not to count all 
 
 The raw absolute Leonov--Shiryaev majorant still fails this growth test. The identity (H) is an exact reduction and a useful special-case closure, not the required all-orders estimate. The joint space-time/KP gate remains **OPEN**.
 
-## 7. Reproducibility
+## 8. Reproducibility
 
 Run:
 \`\`\`bash
 python research/verification/verify_pf_i16_link_coloured_hypergraph.py
 \`\`\`
-The checker compares (H) with directly computed product-insertion cumulants in several exact finite Rademacher models, including a two-link covariance, a three-row support path, and a one-link three-row case.
+The checker compares (H) with directly computed product-insertion cumulants in several exact finite Rademacher models, including a two-link covariance, three- and four-row support paths, a one-link three-row case, and the eight-link cancellation witness.
