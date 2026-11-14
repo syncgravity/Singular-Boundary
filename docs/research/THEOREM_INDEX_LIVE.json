@@ -1,10 +1,10 @@
 {
   "schema": "singular-boundary-theorem-index-v1",
-  "scope": "All tracked research/theorems/*.md source paths in this Observatory review branch; indexing is not mathematical certification.",
-  "generated_utc_date": "2026-11-10",
-  "source_commit": "a874ee8ef8b10c90fd5004316210996beb859f60",
+  "scope": "All tracked research/theorems/*.md source paths in this checkout; indexing is source discovery, not mathematical certification.",
+  "generated_utc_date": "2026-11-13",
+  "source_commit": "325a77b2c5660a85c51a7da5b32982f293accfc3",
   "baseline_historical_count": 740,
-  "count": 762,
+  "count": 773,
   "theorems": [
     {
       "path": "research/theorems/COMPLETED_CAGE_CUT_COMPARISON_2026-10-30.md",
@@ -35,6 +35,20 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/PF_I16_CONDITIONAL_AMPLITUDE_FROM_POINTWISE_FLOW_2026_11_13.md",
+      "git_blob_sha": "3bd01c150e5debcce6ba4b750c25111d3f0bf914",
+      "bytes": 10362,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_CONJUGATED_LOCAL_ROTOR_INTERACTION_DECOMPOSITION_2026_11_13.md",
+      "git_blob_sha": "cef90dee0c647d21338b8f4a27783be0baaa8dba",
+      "bytes": 10234,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/PF_I16_CONNECTED_SUPPORT_INCIDENCE_CORRECTION_2026_11_10.md",
       "git_blob_sha": "8285ff968642992cf3e5ce8a59c6ae90b60da435",
       "bytes": 4072,
@@ -42,9 +56,23 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/PF_I16_CORRECTED_REVERSIBLE_FLOW_AND_TWO_POINT_RESOLVENT_DECAY_2026_11_13.md",
+      "git_blob_sha": "fef18c4bff255dcfa081d586d08a3382057db55d",
+      "bytes": 10355,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_DOBRUSHIN_THIRD_ORDER_TREE_BOUND_2026_11_13.md",
+      "git_blob_sha": "f41fb99080894150317e8cc2000f28301829ef26",
+      "bytes": 10756,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/PF_I16_DRESSED_THIRD_ORDER_COEFFICIENT_2026_11_10.md",
-      "git_blob_sha": "906a4d63005b5beb59f7b0cbf2fc3827bb43978e",
-      "bytes": 7804,
+      "git_blob_sha": "5552029fbcd08e488ecca27c4cdff9ed1b8359a3",
+      "bytes": 9433,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -56,16 +84,44 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/PF_I16_FOURTH_ORDER_CUT_INTERPOLATION_TREE_BOUND_2026_11_13.md",
+      "git_blob_sha": "34d60617b03c90fcbee306d822c2ebc1a404fb65",
+      "bytes": 11012,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_FOURTH_ORDER_EXACT_PARTITION_CANCELLATION_2026_11_13.md",
+      "git_blob_sha": "5e44fbd39054c530b8b69c04f7d14242de10e354",
+      "bytes": 7577,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md",
+      "git_blob_sha": "3f45d21f2adb6fead533571c59db3d6befdf539c",
+      "bytes": 58185,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/PF_I16_LOCAL_DRESSING_SHARED_LINK_RESIDUAL_2026_11_10.md",
-      "git_blob_sha": "63350c256de4103da4ec7c90c53b9f7a2ba9f38d",
-      "bytes": 3581,
+      "git_blob_sha": "c821ad9de288350eb4ced64e0d6e96f1cc04329b",
+      "bytes": 5102,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_MULTI_CUT_FOREST_INTERPOLATION_OPEN_GATE_2026_11_13.md",
+      "git_blob_sha": "d64099da2215a983cf644d128d3fe1bbadbfea68",
+      "bytes": 10365,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
     {
       "path": "research/theorems/PF_I16_POINTWISE_KATO_BOCHNER_DERIVATIVE_FLOW_2026_11_10.md",
-      "git_blob_sha": "c0b53f43f78431f4c80673fefc1244e283952f06",
-      "bytes": 11071,
+      "git_blob_sha": "ebc4e981030bccdfb5d5fbab0a792c2eebbe7e92",
+      "bytes": 13004,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
@@ -77,9 +133,30 @@
       "certification": "not-inferred"
     },
     {
+      "path": "research/theorems/PF_I16_THREE_SUPPORT_PAIR_ARM_AND_TREE_OBSTRUCTION_2026_11_13.md",
+      "git_blob_sha": "9fa04d5669073c2b187d3d23101901c13999d74a",
+      "bytes": 11756,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_TWO_CUT_CONNECTED_RESOLVENT_TREE_LEMMA_2026_11_13.md",
+      "git_blob_sha": "ddc5f0525117f96241c8c1ce7349593720251847",
+      "bytes": 21706,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
       "path": "research/theorems/PF_I16_UNIFORM_CONNECTED_CYCLE_MIXING_GATE_2026_11_10.md",
       "git_blob_sha": "0ef44e17807a02ff3517913663d5f3a045fcef00",
       "bytes": 7739,
+      "indexing_status": "source-file-indexed",
+      "certification": "not-inferred"
+    },
+    {
+      "path": "research/theorems/PF_I16_WEIGHTED_PROJECTION_TREE_ASSIGNMENT_OPEN_2026_11_13.md",
+      "git_blob_sha": "3727319740b16af3b196fb0b808bdb6e149f732a",
+      "bytes": 17441,
       "indexing_status": "source-file-indexed",
       "certification": "not-inferred"
     },
