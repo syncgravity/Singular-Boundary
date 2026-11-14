@@ -19,6 +19,8 @@ on:
       - 'research/audits/PF_I16_TEMPORAL_WEIGHTED_CHROMATIC_REGROUPING_FRONTIER_2026_11_14.md'
       - 'research/audits/PF_I16_SUPPORT_TEMPORAL_TREE_ORDERS_TWO_THREE_2026_11_14.md'
       - 'research/audits/PF_I16_TREE_SUPPORT_ALL_ORDERS_TEMPORAL_CUMULANT_2026_11_14.md'
+      - 'research/audits/PF_I16_PAIR_INCIDENCE_WEIGHTED_SUPPORT_TREE_CUMULANT_2026_11_14.md'
+      - 'research/verification/verify_pf_i16_pair_incidence_weighted_support_tree.py'
       - 'research/verification/verify_pf_i16_tree_support_all_orders_temporal_cumulant.py'
       - 'research/verification/verify_pf_i16_support_temporal_tree_orders_two_three.py'
       - 'research/audits/PF_I16_COINCIDENT_TIME_SUPPORT_TREE_CUMULANT_BOUND_2026_11_14.md'
@@ -117,6 +119,8 @@ jobs:
         run: python research/verification/verify_pf_i16_support_temporal_tree_orders_two_three.py
       - name: Verify all-orders tree-support temporal cumulant bound
         run: python research/verification/verify_pf_i16_tree_support_all_orders_temporal_cumulant.py
+      - name: Verify pair-incidence weighted support-tree cumulant bound
+        run: python research/verification/verify_pf_i16_pair_incidence_weighted_support_tree.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
       - name: Verify exact centering and face-pair joint-tree activity
