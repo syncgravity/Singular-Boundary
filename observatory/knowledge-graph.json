@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v3.02-pf-i16-ls-absolute-obstruction",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary-tensor insertions, exact one-link continuous-time weighted-dependency cumulant bound, and a sharp superfactorial obstruction to absolute Leonov–Shiryaev summation. The all-orders cancellation-sensitive product lift and actual face/pair projective tensor norms remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v3.03-pf-i16-projective-insertion-audit",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary tensors, one-link continuous-time cumulant bound, and actual face/pair/cut/residual projective-norm formulas controlled by a finite but unevaluated one-rotor H6 constant. The projective activity majorant exceeds the current KP threshold already at the one-face linear term; the all-orders cancellation-preserving joint support/time estimate and direct L-infinity tensorized route remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -10907,8 +10907,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and an explicit order-four support-sensitive maximum-tree estimate is proved for elementary-tensor insertions of degree at most eight. The absolute degree-eight Leonov–Shiryaev envelope is intrinsically superfactorial: D_8,r ≥ (2e)^(8r)(r!)^8 for eight common link labels. This is not a lower bound on actual cumulants; cancellation is essential. The all-orders cancellation-sensitive product lift, actual face/pair projective tensor norms, quantum connected-resolvent/KP convergence, and interacting-vacuum gap remain OPEN.",
-      "detail": "Sections 12–14 of the joint space-time frontier establish the one-link continuous-time cumulant estimate, the explicit degree-eight product envelope, an order-four support-sensitive maximum-tree bound for elementary-tensor insertions, and a combinatorial obstruction to absolute LS summation. With eight link labels shared by every row, one admissible connected LS partition contributes (2e)^(8r)(r!)^8, so no termwise absolute bound of order C^r r! is possible. This lower bound concerns the absolute majorant, not the actual cumulant: cancellations in the full LS identity are indispensable. The actual face/pair insertions still require controlled projective tensor norms, and the all-orders product-cumulant bound requires a cancellation-preserving reorganization. The exact-profile spatial completion route has a non-endpoint obstruction. The graph-uniform quantum connected-resolvent theorem and uniform Feynman–Kac/KP convergence remain open.",
+      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and an explicit order-four support-sensitive maximum-tree estimate is proved for elementary tensors of degree ≤8. Actual face, pair, first/second cut, and shared-link residual projective norms now have explicit Peter–Weyl bounds in terms of a finite one-rotor H6 constant K6. The resulting projective activity majorant fails the current 1/50000 KP threshold already at the one-face linear term. The all-orders cancellation-preserving joint support/time bound, explicit K6 value, marked source multiplicity, direct L-infinity tensorized route, quantum KP convergence, and interacting-vacuum gap remain OPEN.",
+      "detail": "Section 15 of the joint space-time frontier gives an eight-term projective representation for the normalized plaquette trace, an absolutely convergent Peter–Weyl gradient majorant P_f≤C6||s_f||H6 with C6<9.11, and explicit projective bounds for V_fg, first/second cut insertions, and R_e in terms of K6=sup ||s_beta-mean||H6/beta. Analytic perturbation and elliptic regularity show K6 is finite on the recorded compact beta interval, but its numerical value has not been extracted. The resulting per-link projective activity has face contribution 0.090112 at b0/a0=1/50000, so even 2*kappa_face>1/8 before the joint cumulant constant; this representation cannot certify the present KP threshold. A direct L-infinity tensorized semigroup proof is preferable if it can avoid the projective factor-eight loss. The all-orders absolute Leonov–Shiryaev envelope remains superfactorial; this is a bound obstruction, not an actual cumulant lower bound. The order-four elementary-tensor estimate remains finite-order only.",
       "checks": [
         {
           "label": "All-orders temporal projection-to-tree injection",
@@ -10969,6 +10969,21 @@
           "label": "Absolute Leonov–Shiryaev envelope at degree eight",
           "state": "obstruction",
           "note": "For eight common link labels the connected LS partition with one full-row block per label forces D_8,r ≥ (2e)^(8r)(r!)^8; only cancellation-sensitive reorganization can yield useful all-orders growth."
+        },
+        {
+          "label": "Actual local insertion projective norms",
+          "state": "conditional",
+          "note": "Face norm ≤8ρb; pair, cut and residual norms are bounded in terms of K6 via Peter–Weyl, but K6 has no explicit numerical evaluation yet."
+        },
+        {
+          "label": "Projective-norm KP criterion at b0/a0=1/50000",
+          "state": "obstruction",
+          "note": "The one-face linear contribution alone gives κπ≥0.090112 as an upper-majorant term, so 2κπ>1/8 even with C_st=1; this projective route cannot verify the current threshold."
+        },
+        {
+          "label": "Cancellation-preserving all-orders joint support/time cumulant bound",
+          "state": "open",
+          "note": "Need a direct tensorized/quasi-factorization proof retaining overlap and temporal decay in one maximum-tree bond, without absolute LS partition summation."
         }
       ],
       "sources": [
@@ -16485,6 +16500,14 @@
     "stage26runner": {
       "path": "sources/historical/raw/Archive_4/Penrose_YM_Stage26_Outer_First_Connected_Scalar_Campaign.zip/__nested__/stage26_outer/stage26_outer.py",
       "blob_sha": "95423cfc83ba4774e160ac1e3dadc1fa964eca25"
+    },
+    "projectiveinsertions": {
+      "path": "research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md",
+      "blob_sha": "deaa47e8d2f1afd68afec27982c38549ecc4e82d"
+    },
+    "projectiveverifier": {
+      "path": "research/verification/verify_pf_i16_projective_insertion_activity.py",
+      "blob_sha": "4f4e0f5dde86b4cd881496913945dda1bf726177"
     }
   },
   "library_manifest": "observatory/data-manifest.json",
