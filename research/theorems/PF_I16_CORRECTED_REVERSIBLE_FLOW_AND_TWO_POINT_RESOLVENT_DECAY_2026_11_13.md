@@ -1,8 +1,8 @@
 # PF-I16 corrected reversible flow and two-point resolvent decay
 
 **Date:** 2026-11-13  
-**Scope:** finite accepted-rhombus SU(2) graph, exact single-face dressing, corrected isolated-rotor bounds, and the conditional derivative-flow estimate.  
-**Status:** the sign correction and two-point resolvent-decay implication are derived below. The derivative-flow input remains conditional on the corrected face-pullback and finite-product Kato comparison. This result is not an all-orders activity theorem, a physical-time theorem, or a mass-gap proof.
+**Scope:** finite accepted-rhombus SU(2) graph, exact single-face dressing, corrected isolated-rotor bounds, and finite-product derivative flow under the explicit source-incidence and weak-coupling hypotheses.  
+**Status:** the corrected derivative-flow estimate, face-map metric pullback, and finite-product Kato–Bochner comparison are closed under the stated finite-graph hypotheses; the two-point resolvent-decay implication follows. This result is not an all-orders activity theorem, a physical-time theorem, or a mass-gap proof.
 
 ## 1. Sign reconciliation: the ground-state measure fixes the drift
 
@@ -131,7 +131,7 @@ At \(b_0/a_0\le1/50000\), the exact rational margins are
 =0.048379136\,a_0.}
 \tag{3.4}
 \]
-These numbers are arithmetic consequences of (3.1)–(3.3). Their use as an analytic theorem remains conditional on the face-map metric/pullback estimates and the finite-product Kato comparison. They are not promoted to physical coefficients or physical time.
+The face-map pullback and finite-product Kato comparison are derived in the companion [closure audit](../audits/PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md). The resulting derivative-flow theorem is uniform in finite graph volume under the stated source-incidence and coupling hypotheses. These constants are not physical coefficients or physical time.
 
 ## 4. Conditional spatial derivative flow
 
@@ -264,3 +264,8 @@ Expected output:
     PASS: corrected weighted derivative-flow margin 188981/3906250
     PASS: shell-convolution constant C < 25.511
     PASS: residual pair coefficient < 6.307e15 * b0^4/a0^3
+
+
+## 8. Finite-product analytic closure (2026-11-13)
+
+The face-map metric pullback and Kato–Bochner comparison used in Sections 2–4 are derived in [the companion closure audit](../audits/PF_I16_FACE_PULLBACK_KATO_BOCHNER_CLOSURE_2026_11_13.md). The derivative-flow estimate is therefore a proved finite-accepted-graph result under the explicit source-incidence, allocation, and weak-coupling hypotheses, not an unresolved analytic input. The result remains separate from physical-time normalization and the interacting-vacuum/continuum problem.
