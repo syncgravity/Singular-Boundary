@@ -39,7 +39,7 @@ together with the local oscillation consequence
 \tag{1.3}
 \]
 These are finite-graph PF-I16 inputs, established under the stated source-incidence and weak-coupling hypotheses in the corrected reversible-flow theorem and its closure audit.
-The oscillation step below uses the same radius-two link-derivative normalization as the recorded conditional-amplitude lemma; compatibility of that normalization with the weighted product metric is part of the existing conditional face-map metric/pullback input, not an unconditional assertion here.
+The oscillation step below uses the same radius-two link-derivative normalization as the conditional-amplitude lemma. Compatibility with the weighted product metric follows from the exact block scaling in the companion face-pullback/Kato–Bochner closure audit.
 
 ## 2. Dobrushin influence matrix for the dressed reference measure
 
