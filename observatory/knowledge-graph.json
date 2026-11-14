@@ -1,8 +1,8 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
-  "version": "v3.00-pf-i16-explicit-d8r-bound",
-  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, conditional dressed third- and fourth-order spatial tree estimates, exact one-link continuous-time weighted-dependency cumulant bound, and explicit degree-eight Leonov–Shiryaev product constant bound. The available D_8,r bound is superexponential after 1/r! normalization, so the cancellation-sensitive order-growth gate and all-orders joint-cluster theorem remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "version": "v3.01-pf-i16-order-four-support-tree",
+  "scope": "PF-I16 exact finite-source coefficients, exact all-orders temporal projection/tree injection, exact reference support-sensitive cumulants through order three, explicit order-four support-sensitive maximum-tree bound for elementary-tensor insertions, exact one-link continuous-time weighted-dependency cumulant bound, and explicit degree-eight product-constant obstruction. The order-four constant is finite but crude; the all-orders cancellation-sensitive product lift and actual face/pair projective tensor norms remain OPEN. Quantum connected-resolvent/KP convergence, actual interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 762,
@@ -10907,8 +10907,8 @@
       "kind": "work",
       "status": "open",
       "stage": "P2",
-      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and the continuous-time one-link weighted-dependency estimate is now exact with C_r≤(2e)^r r!. The all-orders joint support/time estimate is still OPEN because the degree-eight product lift and actual face/pair insertion projective tensor norms are not controlled. The graph-uniform quantum connected-resolvent theorem, uniform Feynman–Kac/KP convergence, and actual interacting-vacuum gap remain OPEN.",
-      "detail": "The exact finite two-cut identity, local insertion norms, per-link activity arithmetic, and all-orders temporal projection injection are available. Section 12 of the joint space-time frontier proves a one-link continuous-time Boolean-cumulant factorization and an explicit factorial classical-cumulant envelope. This makes the Féray weighted-dependency graph route more concrete but does not yet lift it to the actual local insertions: degree-eight product constants and projective tensor norms remain open. The exact-profile spatial completion route has a non-endpoint obstruction. The actual quantum linked-cluster theorem must establish a joint support/time bound with acceptable order growth, then prove uniform convergence of the Feynman–Kac/ground-energy expansion.",
+      "summary": "The reference temporal projection/tree subproblem is closed all-orders with C_time=2; support-sensitive reference cumulant trees are exact for m=2,3; and an explicit order-four support-sensitive maximum-tree estimate is proved for elementary-tensor insertions of degree at most eight. Its finite D_8,4 constant is deliberately crude and does not provide all-orders growth. The cancellation-sensitive all-orders product lift, actual face/pair projective tensor norms, graph-uniform quantum connected-resolvent theorem, Feynman–Kac/KP convergence, and interacting-vacuum gap remain OPEN.",
+      "detail": "Sections 12–13 of the joint space-time frontier prove the one-link continuous-time Boolean-cumulant factorization and explicit factorial classical-cumulant envelope, derive a crude explicit degree-eight Leonov–Shiryaev constant, and then close the m=4 support-sensitive maximum-tree estimate for elementary-tensor insertions by retaining the monochromatic link structure and connected join. The order-four result is finite-order only; its D_8,4 bound is not an activity constant. The actual face/pair insertions still require controlled projective tensor norms, and the all-orders product-cumulant bound still requires cancellation-sensitive reorganization. The exact-profile spatial completion route has a non-endpoint obstruction. The actual quantum linked-cluster theorem must establish acceptable all-orders growth and then prove uniform convergence of the Feynman–Kac/ground-energy expansion.",
       "checks": [
         {
           "label": "All-orders temporal projection-to-tree injection",
@@ -10927,8 +10927,8 @@
         },
         {
           "label": "Direct support-sensitive reference cumulant tree, m=4",
-          "state": "open",
-          "note": "The m=4 support-incidence/time-decay joint bound remains unproved."
+          "state": "exact",
+          "note": "For four elementary-tensor insertions of degree ≤8, the full Leonov–Shiryaev expansion gives an explicit D_8,4 maximum-tree bound on the connected support-overlap graph; the actual insertion projective norms remain open."
         },
         {
           "label": "Complete third-order dressed coefficient spatial tree",
@@ -10954,6 +10954,16 @@
           "label": "Transfer to the actual interacting Wilson vacuum",
           "state": "open",
           "note": "The dressed-reference and product-path estimates do not prove the actual source-vacuum Poincare inequality."
+        },
+        {
+          "label": "All-orders cancellation-sensitive degree-eight product cumulant bound",
+          "state": "open",
+          "note": "The explicit D_8,r absolute partition bound is superexponential after 1/r! normalization; signed cancellation or another quasi-factorization is still required."
+        },
+        {
+          "label": "Actual PF-I16 face/pair projective tensor norms",
+          "state": "open",
+          "note": "The m=4 elementary-tensor estimate transfers only if the actual local insertions have uniformly controlled projective coefficient norms."
         }
       ],
       "sources": [
