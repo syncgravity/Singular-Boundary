@@ -11,6 +11,8 @@ on:
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
       - 'research/experiments/pf_i16_three_hyperedge_attachment.py'
+      - 'research/verification/verify_pf_i16_joint_spacetime_activity.py'
+      - 'research/audits/PF_I16_JOINT_SPACETIME_POLYMER_SUMMATION_AND_CENTERING_AUDIT_2026_11_14.md'
       - 'docs/research/THEOREM_INDEX_CURRENT.md'
       - 'observatory/catalog.js'
       - 'observatory/knowledge-graph.json'
@@ -74,6 +76,8 @@ jobs:
         run: python research/experiments/pf_i16_two_hyperedge_interpolation.py
       - name: Verify PF-I16 three-hyperedge attachment identities
         run: python research/experiments/pf_i16_three_hyperedge_attachment.py
+      - name: Verify PF-I16 joint space-time activity and centering thresholds
+        run: python research/verification/verify_pf_i16_joint_spacetime_activity.py
       - name: Verify curated Proof Atlas graph
         run: python observatory/tools/verify_knowledge_graph.py
       - name: Syntax-check Proof Atlas application
