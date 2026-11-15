@@ -106,7 +106,7 @@ Every cycle on $[q]$, written with $1$ first, is obtained uniquely by inserting 
 w(\sigma)=w(\sigma')r_{\max(a,b)}.
 \tag{3.5}
 \]
-Each vertex of \(\sigma'\) has degree two (counting the two directed edges separately when $q-1=2). Therefore
+Each vertex of \(\sigma'\) has degree two (counting the two directed edges separately when $q-1=2$). Therefore
 \[
 \sum_{a\to b\in\sigma'}r_{\max(a,b)}
 \le2\sum_{i=1}^{q-1}r_i.
