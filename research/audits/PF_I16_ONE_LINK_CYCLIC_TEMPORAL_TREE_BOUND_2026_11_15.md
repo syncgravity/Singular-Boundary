@@ -118,7 +118,7 @@ W_q\le2W_{q-1}\sum_{i=1}^{q-1}r_i.
 \tag{3.7}
 \]
 
-On the other hand, every tree on $[q]$ obtained by taking a tree on ([q-1]) and attaching $q$ as a leaf to $i$ has weight equal to the old tree weight times $r_i$. These are distinct trees, so
+On the other hand, every tree on $[q]$ obtained by taking a tree on $[q-1]$ and attaching $q$ as a leaf to $i$ has weight equal to the old tree weight times $r_i$. These are distinct trees, so
 \[
 \tau_q\ge\tau_{q-1}\sum_{i=1}^{q-1}r_i.
 \tag{3.8}
