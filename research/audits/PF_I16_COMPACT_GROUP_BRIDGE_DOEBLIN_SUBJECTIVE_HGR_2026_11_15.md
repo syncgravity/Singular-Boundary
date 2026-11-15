@@ -184,25 +184,53 @@ Combining (4.2) and (5.2),
 \]
 for arbitrary square-integrable functionals \(F=F((X_{s_i})_i)\) and \(G=G((X_{t_j})_j)\). This retains every cross-time bond and is valid for interlaced sets. It does not assert the refuted coefficient-one minimum-distance estimate.
 
-## 6. Specialization to the SU(2) heat semigroup
+## 6. Specialization to the actual SU(2) temporal heat-kernel reference
 
-For normalized Haar measure on \(SU(2)\), the bi-invariant heat kernel has Peter–Weyl expansion
-\[
-p_t(g)=\sum_{j\in\{0,1/2,1,\ldots\}}
-(2j+1)\,\chi_j(g)\,e^{-\kappa j(j+1)t},
-\tag{6.1}
-\]
-where \(\kappa>0\) depends on the metric normalization and \(\chi_0=1\). Since \(|\chi_j(g)|\le2j+1\),
-\[
-\sup_{g\in SU(2)}|p_t(g)-1|
-\le\sum_{j\ge1/2}(2j+1)^2e^{-\kappa j(j+1)t}
-\le C_\kappa e^{-3\kappa t/4},
-\qquad t\ge1.
-\tag{6.2}
-\]
-The heat kernel is smooth and strictly positive for every \(t>0\). Compactness gives the positive lower and finite upper bounds in (2.4). Thus the hypotheses of Sections 2–5 hold for stationary SU(2) Brownian motion, with a uniform exponential envelope in time.
+The finite cubic transfer certificate `P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md` specifies the temporal link kernel
+\\[
+\\kappa_{\\epsilon\\alpha_h}(g)
+=\\sum_{j\\in\\{0,1/2,\\ldots\\}}
+(2j+1)e^{-\\epsilon\\alpha_h j(j+1)}\\chi_j(g),
+\\tag{6.1}
+\\]
+with normalized SU(2) Haar measure. Thus the independent one-link stationary reference path has transition density
+\\[
+p_t(x,y)=\\kappa_{\\alpha_h t}(x^{-1}y)
+\\tag{6.2}
+\\]
+relative to Haar. This is exactly the compact-group heat semigroup required above, not an additional model assumption.
 
-**Applicability gate:** Before using this in PF-I16, verify that the one-link reference process in the product-process cumulant bridge is precisely the stationary SU(2) heat semigroup (or another compact-state semigroup with the same strict-positivity and uniform-kernel-mixing properties). A mere \(L^2\) spectral-gap bound is not enough to infer (2.3)–(2.4).
+Since \(|\\chi_j(g)|\\le2j+1\),
+\\[
+\\sup_g|\\kappa_\\tau(g)-1|
+\\le\\sum_{j\\ge1/2}(2j+1)^2e^{-\\tau j(j+1)}
+\\le C e^{-3\\tau/4},\\qquad \\tau\\ge1.
+\\tag{6.3}
+\\]
+The heat kernel is smooth and strictly positive for every \(\\tau>0\). For each fixed finite regulator this proves (2.3)–(2.4).
+
+For the refinement-uniform reference-process hypothesis used in the product-process cumulant bridge, the one-link gap is
+\\[
+\\Delta_h=\\frac34\\alpha_h.
+\\tag{6.4}
+\\]
+Therefore the already stated uniform gap assumption \(\\Delta_h\\ge\\Delta_0>0\) is equivalent to \(\\alpha_h\\ge4\\Delta_0/3\). Under that same assumption, define the uniform kernel extrema
+\\[
+m_{\\Delta_0}(d)=\\inf_{\\tau\\ge(4/3)\\Delta_0d,\\,g}\\kappa_\\tau(g),
+\\qquad
+M_{\\Delta_0}(d)=\\sup_{\\tau\\ge(4/3)\\Delta_0d,\\,g}\\kappa_\\tau(g).
+\\tag{6.5}
+\\]
+Strict positivity, compactness, and (6.3) give \(0<m_{\\Delta_0}(d)\\le1\\le M_{\\Delta_0}(d)<\\infty\) for every \(d>0\). The proof of Sections 3–4 is consequently uniform in the link and in the spatial regulator, and
+\\[
+\\psi_{\\Delta_0}(d)
+=1-\\left(\\frac{m_{\\Delta_0}(d)}{M_{\\Delta_0}(d)}\\right)^2
+\\le C_0e^{-\\Delta_0d}
+\\tag{6.6}
+\\]
+with \(C_0\) depending only on the fixed lower gap and heat-kernel normalization.
+
+**Scope qualification:** The compact SU(2) heat-kernel structure is the actual finite-regulator link reference. Refinement-uniform constants follow if the uniform one-link gap \(\\Delta_h\\ge\\Delta_0\) from the product-process hypothesis holds. Establishing that gap along the physical bare-coupling trajectory is a separate scale-setting obligation; the P0 certificate itself does not prove the continuum trajectory or mass gap.
 
 ## 7. Consequence for PF-I16 and remaining work
 
