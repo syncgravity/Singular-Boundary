@@ -215,3 +215,18 @@ This provides a concrete replacement for the failed generic bridge-contraction b
 4. insert this two-block estimate into the multi-row conditional-cumulant recursion and prove that the resulting cut multigraph admits a support-labelled spanning-tree extraction with exponentially controlled multiplicity.
 
 Steps 1–3 are proved under the explicit compact heat-kernel hypotheses above. Step 4 remains OPEN. The marked-root spatial summation, quantum connected-resolvent/KP convergence, interacting-vacuum Poincare inequality, and continuum mass gap also remain OPEN. No P0–P5 gate is promoted.
+
+
+## 8. Finite-state regression
+
+The bridge-minorization algebra is also replayed on the strictly positive rational three-state kernel already used for the discrete-time multi-cut counterexample. Relative transition densities are \(p_n(i,j)=P^n(i,j)/\pi_j\). Since every row of \(P^n\) is a convex combination of rows of \(P\), the one-step extrema
+\[
+m=\min_{i,j}\frac{P_{ij}}{\pi_j},\qquad
+M=\max_{i,j}\frac{P_{ij}}{\pi_j}
+\]
+bound all integer-time relative densities for \(n\ge1\). The verifier enumerates 300 choices of left boundary presence/gap, bridge gap, right boundary presence/gap, and endpoint states. For each conditional bridge joint law it computes the HGR coefficient by normalized-joint SVD and checks
+\[
+\rho_{\max}(X_s,X_t\mid\text{conditioned endpoints})
+\le1-(m/M)^2.
+\]
+The executable regression is `research/verification/verify_pf_i16_bridge_doeblin_minorization.py`. It checks the finite-state algebra only; it is not a numerical verification of the SU(2) heat-kernel lower bound or of the all-orders cumulant tree.
