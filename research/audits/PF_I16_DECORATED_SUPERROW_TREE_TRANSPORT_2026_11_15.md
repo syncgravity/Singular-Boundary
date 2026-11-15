@@ -98,12 +98,15 @@ Singleton blocks add no new edge and retain their old decoration. Thus every bra
 For an explicit recursive coefficient, the law-of-total-cumulance partition at a link of incidence \(q\le D\) contributes at most \(\mathrm{Bell}(q)\) branches. The inner LS partition sum is bounded by \(K_q\). Since each original link is eliminated at most once and the number of links in the original support is at most \(mR\), the conservative recursive overhead is bounded by
 \[
 \left[
-\max_{1\le q\le D}
-\bigl(\mathrm{Bell}(q)K_q\bigr)
-\right]^{mR}.
+B_D^*K_D^*
+\right]^{mR},
+\qquad
+B_D^*:=\max_{1\le q\le D}\mathrm{Bell}(q),
+\quad
+K_D^*:=\max_{1\le q\le D}K_q.
 \tag{4.1}
 \]
-This is finite and exponential in \(R\), but is generally much larger than the direct one-shot LS constant \(C_{m,D}^{R}\). The direct decorated LS lemma (3.1) does not pay the extra Bell factor; (4.1) is only a safe bound for the explicit recursive law-of-total-cumulance implementation.
+This is finite and exponential in \(R\), but is generally much larger than the direct one-shot LS constant \(C_{m,D}^{R}\). The two maxima are kept separate because the number of current clusters incident to a link and the number of original time slots on that link need not be equal. The direct decorated LS lemma (3.1) does not pay the extra Bell factor; (4.1) is only a safe bound for the explicit recursive law-of-total-cumulance implementation.
 
 The argument requires that each original insertion have at most \(m\) one-time link slots, that each link's total original slot incidence is at most \(D\), and that no recursion step duplicates or discards an original slot. These are exactly the port-conservation hypotheses; they must be checked for the chosen insertion inventory.
 
