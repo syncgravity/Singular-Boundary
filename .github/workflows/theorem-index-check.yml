@@ -15,6 +15,10 @@ on:
       - 'research/audits/PF_I16_DECORATED_SUPERROW_TREE_TRANSPORT_2026_11_15.md'
       - 'research/verification/verify_pf_i16_decorated_superrow_tree_transport.py'
       - 'research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py'
+      - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
+      - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
       - 'research/audits/PF_I16_HYPOCOERCIVE_THREE_POINT_BRIDGE_CONTRACTION_AUDIT_2026_11_15.md'
       - 'research/audits/PF_I16_COMPACT_GROUP_BRIDGE_DOEBLIN_SUBJECTIVE_HGR_2026_11_15.md'
@@ -168,6 +172,8 @@ jobs:
         run: python research/verification/verify_pf_i16_bridge_doeblin_minorization.py
       - name: Verify projective multi-time super-row cumulant tree and local port envelope
         run: python research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py
+      - name: Verify one-link cyclic-permutation temporal-tree bound
+        run: python research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py
       - name: Verify decorated-tree transport through recursive super-row elimination
         run: python research/verification/verify_pf_i16_decorated_superrow_tree_transport.py
       - name: Verify all-orders radial character tail and face-pair projective norm
