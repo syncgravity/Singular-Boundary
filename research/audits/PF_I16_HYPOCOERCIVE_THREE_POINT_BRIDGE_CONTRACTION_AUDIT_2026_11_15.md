@@ -1,0 +1,155 @@
+# PF-I16 — Audit of the proposed hypocoercive three-point bridge contraction
+
+**Date:** 2026-11-15  
+**Status:** The proposed Lemma 3 bound is REFUTED, including for reversible Ornstein–Uhlenbeck dynamics. The bridge-variance differential identity and hypocoercive transfer require substantial reformulation. No multi-cut or PF-I16 gate is promoted.  
+**Scope:** Three-point conditional expectation for a stationary continuous-time process; this audit does not settle the distinct continuous-time multi-cut HGR conjecture for arbitrary interlaced observation sets.
+
+## 1. Proposed statement and immediate endpoint obstruction
+
+The proposed target is
+\[
+\rho_{\max}( (X_0,X_T),X_t)
+\le \sqrt{1-e^{-2\lambda\min(t,T-t)}},\qquad 0<t<T.
+\tag{1.1}
+\]
+This cannot hold for any \(\lambda>0\). Since \(X_0\) is one of the conditioning variables, data processing gives
+\[
+\rho_{\max}((X_0,X_T),X_t)
+\ge \rho_{\max}(X_0,X_t).
+\tag{1.2}
+\]
+For any stochastically continuous stationary process with nondegenerate observable(s) that are continuous in probability, the right side can approach one as \(t\downarrow0\). The right side of (1.1), in contrast, approaches zero. The same obstruction occurs as \(t\uparrow T\), using \(X_T\).
+
+This is an endpoint geometry issue, not a non-normal transient-growth issue. It already occurs in a reversible process.
+
+## 2. Exact reversible Ornstein–Uhlenbeck calculation
+
+Let
+\[
+dX_s=-aX_s\,ds+\sqrt{2a}\,dW_s,\qquad a>0,
+\]
+in its stationary law \(N(0,1)\). The generator is
+\[
+\mathcal L f=a(f''-xf'),
+\]
+self-adjoint in \(L^2(N(0,1))\), with spectral gap \(a\). Thus \(\mathcal A=0\); no hypocoercive correction is needed.
+
+Write \(r=e^{-at}\), \(s=e^{-a(T-t)}\), and \(u=e^{-aT}=rs\). The covariance matrix of the endpoint vector \((X_0,X_T)\) is
+\[
+\Sigma_E=\begin{pmatrix}1&u\\u&1\end{pmatrix},
+\]
+and its covariance with \(X_t\) is \((r,s)\). For jointly Gaussian variables, the maximal correlation between a scalar Gaussian and a Gaussian vector is the multiple correlation coefficient. Hence
+\[
+\rho_{\max}^2((X_0,X_T),X_t)
+=(r,s)\Sigma_E^{-1}\binom r s
+=\frac{r^2+s^2-2u rs}{1-u^2}.
+\]
+Equivalently,
+\[
+\boxed{
+\rho_{\max}^2((X_0,X_T),X_t)
+=1-\frac{(1-e^{-2at})(1-e^{-2a(T-t)})}{1-e^{-2aT}}.
+}
+\tag{2.1}
+\]
+The bridge conditional variance is exactly
+\[
+\boxed{
+\mathbb E[\operatorname{Var}(X_t\mid X_0,X_T)]
+=\operatorname{Var}(X_t\mid X_0,X_T)
+=\frac{(1-e^{-2at})(1-e^{-2a(T-t)})}{1-e^{-2aT}}.
+}
+\tag{2.2}
+\]
+In particular,
+\[
+\rho_{\max}((X_0,X_T),X_t)\ge e^{-at}\to1
+\quad(t\downarrow0),
+\]
+whereas (1.1) tends to zero. This is a strict contradiction for sufficiently small positive \(t\), for every fixed \(\lambda>0\).
+
+For fixed T, the bridge conditional variance in (2.2) vanishes at both endpoints and is maximal in the interior. The maximal correlation has the opposite profile: it is one at both endpoints and smallest at the midpoint. It is therefore not a quantity that decays monotonically as the middle time moves away from either endpoint.
+
+## 3. Correct operator/variance identity
+
+For centered \(f\in L^2(\pi)\), define
+\[
+m_f(X_0,X_T)=\mathbb E[f(X_t)\mid X_0,X_T].
+\]
+Stationarity and the law of total variance give
+\[
+\mathbb E[\operatorname{Var}(f(X_t)\mid X_0,X_T)]
+=\|f\|_2^2-\|m_f\|_{L^2(\pi_{0,T})}^2.
+\tag{3.1}
+\]
+Consequently,
+\[
+\rho_{\max}^2((X_0,X_T),X_t)
+=\sup_{f\in L_0^2(\pi),\,f\ne0}
+\frac{\|m_f\|_2^2}{\|f\|_2^2}
+=1-\inf_{f\in L_0^2(\pi),\,f\ne0}
+\frac{\mathbb E[\operatorname{Var}(f(X_t)\mid X_0,X_T)]}{\|f\|_2^2}.
+\tag{3.2}
+\]
+Thus an upper bound on maximal correlation requires a **uniform lower bound** on bridge conditional variance over the relevant observable class. A decay estimate for \(P_t-\Pi\) alone does not supply such a lower bound. In degenerate or deterministic systems the infimum in (3.2) can be zero, giving maximal correlation one.
+
+The displayed definition of \(\mathcal E_{0,T}f(x_0)\) in the proposal also suppresses its dependence on \(x_T\). The bridge expectation is a function of both endpoints:
+\[
+(\mathcal E_{0,T}f)(x_0,x_T)
+=\mathbb E[f(X_t)\mid X_0=x_0,X_T=x_T].
+\]
+
+## 4. Bridge evolution is not the original semigroup evolution
+
+For a diffusion with generator
+\[
+\mathcal L f=b\cdot\nabla f+\tfrac12 a:\nabla^2 f
+\]
+and a sufficiently regular transition density, the bridge from \(x_0\) to \(x_T\) has a time-inhomogeneous Doob-transform generator (for \(s<T\))
+\[
+\mathcal L_s^{x_0,x_T} f(x)
+=\mathcal L f(x)
++a(x)\nabla\log p_{T-s}(x,x_T)\cdot\nabla f(x).
+\tag{4.1}
+\]
+The additional drift depends on the terminal endpoint and becomes singular in typical diffusion coordinates as \(s\uparrow T\). The bridge law is not governed by the stationary generator \(\mathcal L\) alone.
+
+Accordingly, the proposed differential identity
+\[
+v'(t)=-2\langle\mathcal S\nabla f_t,\nabla f_t\rangle
++\text{antisymmetric terms}
+\]
+is not a general identity as written. It needs a precise state space, bridge density, time-dependent bridge generator, observable evolution, and endpoint-integrability conditions. For a general Markov process there may be no gradient or carré-du-champ structure at all. Even for diffusions, differentiating the bridge conditional variance includes the time dependence of the bridge generator and bridge law.
+
+The OU calculation is a direct diagnostic: its bridge conditional variance increases from zero and then decreases to zero. There is no global monotone decay of this variance along the bridge.
+
+## 5. Hypocoercivity decomposition: what is missing
+
+The formal decomposition
+\[
+\mathcal S=\tfrac12(\mathcal L+\mathcal L^*),\qquad
+\mathcal A=\tfrac12(\mathcal L-\mathcal L^*)
+\]
+requires appropriate common domains/closures and an invariant reference measure. It does not by itself produce a coercive modified norm. A first-order \(\Gamma\), commutator estimate, or modified entropy is model-specific; it must be defined on a specified function space and shown to control the relevant norm.
+
+More importantly, hypocoercivity for the unconditioned semigroup \(P_t\) is not automatically hypocoercivity for the endpoint-conditioned, time-inhomogeneous bridge family (4.1), nor does it imply the uniform lower bound in (3.2). A valid bridge estimate would need constants uniform in endpoints (or an explicitly averaged endpoint norm), control of the singular terminal drift, and a precise observable class.
+
+## 6. Recommended repair to the research program
+
+1. **Withdraw (1.1) and the stated Lemma 3.** The proposed right side has the wrong endpoint limit.
+2. **Use OU as a mandatory calibration case** for any replacement bridge inequality. It must reproduce (2.1) or a valid upper bound consistent with it.
+3. **Separate bridge geometry from interlaced-block mixing.** The three-point quantity \(\rho_{\max}((X_0,X_T),X_t)\) is not a decaying mixing coefficient near the endpoints. It should not be used as a direct surrogate for the HGR coefficient between two arbitrary interlaced observation sigma-fields.
+4. **If a bridge method is pursued**, formulate a time-inhomogeneous Doob-transform estimate and prove a uniform lower bound on conditional variance (equivalently an upper bound on HGR) for a restricted observable class, with explicit dependence on both \(t\) and \(T-t\). State endpoint degeneracy explicitly.
+5. **For the PF-I16 multi-cut problem**, return to a cut-profile/cumulant formulation that retains all temporal crossing intervals and original row-link labels. A three-point bridge estimate, even if proved in a corrected form, would still require a separate tensorization/conditional-cumulant argument to yield the required support-labelled spanning tree.
+
+## 7. Disposition
+
+- Proposed bridge bound (1.1): **REFUTED**, by reversible stationary OU.
+- Exact OU bridge formula (2.1)–(2.2): **ESTABLISHED**.
+- General bridge-variance differential identity as stated: **NOT ESTABLISHED / INSUFFICIENTLY SPECIFIED**.
+- Transfer of unconditioned hypocoercivity to endpoint-conditioned bridge HGR: **OPEN**.
+- Continuous-time multi-cut HGR inequality for arbitrary interlaced observation sets: **OPEN**.
+- Multi-time super-row cumulant tree with original-row support bonds: **OPEN**.
+- Marked-root spatial summation, quantum KP convergence, interacting-vacuum Poincare inequality, continuum mass gap: **OPEN**.
+
+No P0–P5 acceptance status is promoted.
