@@ -91,7 +91,8 @@ def nonreversible_three_state_tests():
         tested += 1
     return tested
 
-\ndef main():
+
+def main():
     tested = 0
     worst_slack = float("inf")
     worst_case = None
