@@ -214,7 +214,7 @@ For the refinement-uniform reference-process hypothesis used in the product-proc
 \Delta_h=\frac34\alpha_h.
 \tag{6.4}
 \]
-Therefore the already stated uniform gap assumption \(\Delta_h\ge\Delta_0>0\) is equivalent to \(\alpha_h\ge4\Delta_0/3\). Under that same assumption, define the uniform kernel extrema
+Therefore the already stated uniform gap assumption \(\Delta_h\ge\Delta_0>0\) is equivalent to \(\alpha_h\ge4\Delta_0/3\). Under that same assumption, use the uniform versions of the bounds (2.3)–(4.2), and define the kernel extrema
 \[
 m_{\Delta_0}(d)=\inf_{\tau\ge(4/3)\Delta_0d,\,g}\kappa_\tau(g),
 \qquad
