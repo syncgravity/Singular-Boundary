@@ -236,3 +236,8 @@ No P0–P5 acceptance status is promoted.
 The companion finite-state verifier checks the slot-partition connectivity implication and the maximum-tree weight domination on small interlaced port hypergraphs. It is a combinatorial regression test; it does not verify the SU(2) heat-kernel semigroup or the analytic projective decompositions.
 
 Reference for the Boolean/classical cumulant conversion and weighted-dependency-graph product formula: Valentin Féray, *Weighted dependency graphs*, arXiv:1605.03836, Lemma 10.2, Lemma 10.3, Proposition 10.4, and Proposition 5.11. The proof above makes the bounded per-link slot count explicit; it does not use the paper's finite-state restriction in the operator estimate (2.2).
+
+
+## 7. Recursive-decoration clarification
+
+The one-shot theorem (3.5)–(4.3) is a theorem for the current row labels and their projective monomial expansions. When a current row represents a cluster of original labels, the ordinary projective norm in (4.2) does not itself retain the internal temporal bonds already generated inside that cluster. Consequently, the final paragraph of Section 4 is to be interpreted using the decorated projective norm and transport lemma in `PF_I16_DECORATED_SUPERROW_TREE_TRANSPORT_2026_11_15.md`. That lemma carries the internal tree term-by-term and supplies the original-label spanning-tree conclusion. Without that decoration, only the current-superrow-label tree is asserted. The recursive law-of-total-cumulance implementation has an additional conservative Bell-partition overhead as recorded there; it is not part of the sharper one-shot constant (3.5).
