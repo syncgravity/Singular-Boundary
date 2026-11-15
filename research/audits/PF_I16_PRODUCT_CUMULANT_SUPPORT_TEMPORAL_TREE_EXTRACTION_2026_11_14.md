@@ -144,7 +144,7 @@ For the general bounded-local-observable class, the coefficient after factoring 
 \[
 \sum_e|I_e|\le8r.
 \]
-The one-link factorial bound and an absolute Leonov–Shiryaev majorant do not provide this: the latter contains at least \((2e)^{8r}(r!)^8\) in the maximally overlapping example.
+The sharper one-link temporal-tree-sum bound (6.1), when inserted termwise, and an absolute Leonov–Shiryaev majorant do not provide this: the latter contains at least \((2e)^{8r}(r!)^8\) in the maximally overlapping example.
 
 The next mathematical target is a **tree-rooted Leonov–Shiryaev resummation**: group all slot partitions that induce the same connected support-temporal tree, perform the linkwise Möbius/cumulant sums inside each fiber while preserving their signs, and prove that the resummed fiber coefficient is at most \(C^r\). If this fails, produce an explicit bounded-link counterexample to that proposed fiber estimate. No all-orders WDG estimate, Feynman–Kac convergence, P3 inequality, or physical mass gap is claimed. 
 
