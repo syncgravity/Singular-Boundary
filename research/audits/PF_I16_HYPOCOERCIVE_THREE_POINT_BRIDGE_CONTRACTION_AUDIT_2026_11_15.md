@@ -185,3 +185,54 @@ Thus OU satisfies (8.1), strictly for \(0<r,s<1\). Equivalently, the OU bridge c
 for every centered observable, with equality in the HGR variational characterization only in limiting/degenerate cases.
 
 **Status:** (8.1) is a corrected and well-calibrated candidate for continuous-time semigroups, not a theorem. The previously recorded strictly positive discrete-time counterexample refutes the analogous assertion for arbitrary stationary discrete-time kernels. Whether continuous-time embeddability and generator structure suffice remains OPEN. Even a proof of (8.1) for the three-point pattern would not by itself establish the arbitrary interlaced multi-time or multi-row cumulant theorem needed for PF-I16.
+
+
+## 9. Finite CTMC obstruction to the stronger bridge-to-unconditioned contraction
+
+A separate finite continuous-time test shows why it is not enough to assume that endpoint-conditioned bridge correlations are bounded by the unconditioned semigroup norm. Consider the irreducible three-state generator (off-diagonal rates are strictly positive)
+\[
+Q=10^{-6}\begin{pmatrix}
+-187844&167637&20207\\
+45820559&-45891980&71421\\
+7805983&12454510&-20260493
+\end{pmatrix},
+\]
+with exact stationary law
+\[
+\pi=\left(
+\frac{464452312993715}{466746007289039},
+\frac{3648076548611}{933492014578078},
+\frac{939312042037}{933492014578078}
+\right).
+\]
+At gaps \(t=0.064\) and \(s=0.078\), numerical matrix exponentials and normalized-joint SVDs give
+\[
+q_t=\|e^{tQ}-\Pi\|_{2\to2}\approx0.2787927451,
+\quad
+q_s\approx0.2104539989,
+\]
+but
+\[
+\sup_z\rho_{\max}(X_0,X_t\mid X_T=z)\approx0.4764845757,
+\quad
+\sup_x\rho_{\max}(X_T,X_t\mid X_0=x)\approx0.4571207077.
+\]
+Thus both endpoint-conditioned bridge HGR coefficients can substantially exceed their corresponding unconditioned semigroup contractions, even for a finite irreducible continuous-time Markov chain.
+
+For the full three-point coefficient, the same calculation gives
+\[
+\rho_{\max}((X_0,X_T),X_t)\approx0.3771389403.
+\]
+It exceeds the stronger but unjustified substitution
+\[
+\sqrt{1-(1-q_t^2)(1-q_s^2)}\approx0.3443453990,
+\]
+while remaining below the weaker two-cut tanh expression
+\[
+\tanh(\operatorname{arctanh}q_t+\operatorname{arctanh}q_s)
+\approx0.4621320481.
+\]
+
+This is a numerical finite-state witness (the generator and stationary law are rational; exponentials and singular values are evaluated numerically). It does **not** refute the tanh two-cut continuous-time conjecture. It does refute the proposed shortcut of bounding each subjective/endpoint-conditioned HGR coefficient by the unconditioned \(L^2\) semigroup norm, and it shows why the sharp N-against-1 tensorization theorem cannot be fed the unconditional \(q_t,q_s\) without a separate conditional estimate.
+
+The reproducible NumPy verifier is `research/verification/verify_pf_i16_ctmc_bridge_conditional_hgr_obstruction.py`.
