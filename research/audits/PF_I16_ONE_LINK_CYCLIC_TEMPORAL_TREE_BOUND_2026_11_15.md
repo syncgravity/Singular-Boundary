@@ -132,7 +132,7 @@ The argument is uniform in the state space and uses only the one-link Markov est
 
 The previous max-tree estimate
 \[
-|\kappa_q|\le$q-1$!\prod_i\|f_i\|_\infty
+|\kappa_q|\le(q-1)!\prod_i\|f_i\|_\infty
 \max_{T\in\mathcal T_q}\prod_{ij\in T}e^{-\Delta_0|s_i-s_j|}
 \]
 follows from (2.1) by bounding every Boolean block by its span and summing the absolute cyclic coefficients. The new estimate (3.3) is stronger for the one-link problem because it retains the full temporal tree sum and replaces the factorial coefficient by $2^{q-2}$.
