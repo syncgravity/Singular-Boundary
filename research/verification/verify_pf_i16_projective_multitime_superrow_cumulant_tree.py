@@ -144,11 +144,9 @@ def check_local_partition_envelope():
             for part in canonical_partitions(range(q))
         )
         assert enumerated == factorial(q)
-    kstar = max(
-        Fraction(factorial(q), 1) ** Fraction(1, q)
-        for q in range(1, 7)
-    )
-    assert kstar == Fraction(factorial(6), 1) ** Fraction(1, 6)
+    # Exact integer form of (q!)^(1/q) <= (6!)^(1/6).
+    for q in range(1, 7):
+        assert factorial(q) ** 6 <= factorial(6) ** q
     # Verify the per-link factorization envelope for several port profiles.
     for profile in ([6, 6, 2], [4, 3, 3, 2], [5, 5, 4], [2, 2, 2, 2, 2, 2]):
         lhs = 1
@@ -156,8 +154,8 @@ def check_local_partition_envelope():
         for q in profile:
             lhs *= factorial(q)
             total_slots += q
-        rhs = kstar ** total_slots
-        assert lhs <= rhs
+        # Avoid floating-point roots: lhs <= (6!)^(total_slots/6).
+        assert lhs ** 6 <= factorial(6) ** total_slots
     print("PASS Bell(6)=203; exact K_q=q! for q<=6; exponential local partition envelope")
 
 
