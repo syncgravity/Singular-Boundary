@@ -1,4 +1,4 @@
-name: Theorem source-index integrity # Includes PF-I16 coincident-time and bridge calibrations
+name: Theorem source-index integrity # Includes PF-I16 coincident-time, bridge, and Doeblin calibrations
 on:
   pull_request:
     paths:
@@ -10,6 +10,7 @@ on:
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
       - 'research/audits/PF_I16_HYPOCOERCIVE_THREE_POINT_BRIDGE_CONTRACTION_AUDIT_2026_11_15.md'
+      - 'research/audits/PF_I16_COMPACT_GROUP_BRIDGE_DOEBLIN_SUBJECTIVE_HGR_2026_11_15.md'
       - 'research/verification/verify_pf_i16_ctmc_bridge_conditional_hgr_obstruction.py'
       - 'research/verification/verify_pf_i16_radial_character_casimir.py'
       - 'research/verification/verify_pf_i16_character_tail_projective_norm.py'
