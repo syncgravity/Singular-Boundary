@@ -32,6 +32,7 @@ on:
       - 'research/verification/verify_pf_i16_multicut_discrete_time_counterexample.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
       - 'research/audits/PF_I16_HYPOCOERCIVE_THREE_POINT_BRIDGE_CONTRACTION_AUDIT_2026_11_15.md'
+      - 'research/audits/PF_I16_COMPACT_GROUP_BRIDGE_DOEBLIN_SUBJECTIVE_HGR_2026_11_15.md'
       - 'research/audits/PF_I16_MULTICUT_MAXIMAL_CORRELATION_DISCRETE_TIME_COUNTEREXAMPLE_2026_11_14.md'
       - 'research/audits/PF_I16_MULTICUT_MAXIMAL_CORRELATION_CONJECTURE_2026_11_14.md'
       - 'research/audits/PF_I16_BOUNDED_MULTITIME_SUPERROW_PORT_BUDGET_2026_11_14.md'
