@@ -17,6 +17,8 @@ on:
       - 'research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py'
       - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
       - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
+      - 'research/audits/PF_I16_REPEATED_INSERTION_INCIDENCE_AND_COMPLETE_OVERLAP_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_repeated_insertion_incidence_and_complete_overlap_tree.py'
       - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
       - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
@@ -172,6 +174,8 @@ jobs:
         run: python research/verification/verify_pf_i16_bridge_doeblin_minorization.py
       - name: Verify projective multi-time super-row cumulant tree and local port envelope
         run: python research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py
+      - name: Verify repeated insertion incidence and complete-overlap tensor gap
+        run: python research/verification/verify_pf_i16_repeated_insertion_incidence_and_complete_overlap_tree.py
       - name: Verify one-link cyclic-permutation temporal-tree bound
         run: python research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py
       - name: Verify decorated-tree transport through recursive super-row elimination
