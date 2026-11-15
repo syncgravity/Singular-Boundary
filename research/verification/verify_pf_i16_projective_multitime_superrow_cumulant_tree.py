@@ -7,6 +7,7 @@ It is not a verifier for the SU(2) semigroup or the analytic cumulant formula.
 """
 from fractions import Fraction
 from itertools import product
+from math import factorial
 
 
 def set_partitions(items):
@@ -135,17 +136,29 @@ def bell_numbers(n):
 def check_local_partition_envelope():
     bell = bell_numbers(6)
     assert bell == [1, 1, 2, 5, 15, 52, 203]
-    kstar = max(Fraction(bell[q], 1) ** Fraction(1, q) for q in range(1, 7))
+    # Directly enumerate the exact local LS coefficient:
+    # K_q = sum_{pi in Pi([q])} prod_{B in pi} (|B|-1)! = q!.
+    for q in range(1, 7):
+        enumerated = sum(
+            __import__("math").prod(factorial(len(block) - 1) for block in part)
+            for part in canonical_partitions(range(q))
+        )
+        assert enumerated == factorial(q)
+    kstar = max(
+        Fraction(factorial(q), 1) ** Fraction(1, q)
+        for q in range(1, 7)
+    )
+    assert kstar == Fraction(factorial(6), 1) ** Fraction(1, 6)
     # Verify the per-link factorization envelope for several port profiles.
     for profile in ([6, 6, 2], [4, 3, 3, 2], [5, 5, 4], [2, 2, 2, 2, 2, 2]):
         lhs = 1
         total_slots = 0
         for q in profile:
-            lhs *= bell[q]
+            lhs *= factorial(q)
             total_slots += q
         rhs = kstar ** total_slots
         assert lhs <= rhs
-    print("PASS Bell(6)=203 and product of local partition fibers has an exponential slot envelope")
+    print("PASS Bell(6)=203; exact K_q=q! for q<=6; exponential local partition envelope")
 
 
 def main():
