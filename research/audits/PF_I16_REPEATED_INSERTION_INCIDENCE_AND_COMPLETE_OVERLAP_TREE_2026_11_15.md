@@ -165,3 +165,5 @@ The all-orders Feynman–Kac problem therefore has a precise remaining gap:
 A viable next step is to exploit the exact moment factorization (3.2) inside the full partition sum (3.3), proving the one-link block-functional estimate (3.4) and a clustered partition-lattice resummation. This must retain the original occurrence labels; simply replacing repeated rows by their product is invalid. The ordinary cross-split QF is not sufficient for that step by itself; it controls one cut but not an all-orders tree.
 
 No marked-root sum, KP convergence, interacting-vacuum Poincaré inequality, physical scale-setting, or continuum mass gap is promoted. No P0–P5 gate is promoted.
+
+**Reference for (3.5)–(3.6):** Rémi Peyre, *Tensorizing maximal correlations*, arXiv:1004.1602, Theorem 3.3.1 (N-against-M tensorization). The theorem bounds the maximal correlation of two generated sigma-fields by the operator norm of the matrix of pairwise subjective correlation bounds. It supplies the block-sigma-field step only; it is not the missing all-orders cumulant-tree lemma.
