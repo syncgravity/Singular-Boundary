@@ -70,21 +70,21 @@ The Boolean-cumulant identity and irreducible-partition conversion are the Marko
 
 ## 3. The bounded-incidence monomial lift
 
-Let \(r\) current rows/super-rows be indexed by \([r]\). An elementary monomial row has the form
+Let \(r\) current rows/super-rows be indexed by \([r]\), and let \(R\) be the number of original insertion labels represented by this family. An elementary monomial row has the form
 \[
 A_i=\prod_{\alpha\in S_i}Y_\alpha,\qquad
 Y_\alpha=f_\alpha(X_{e(\alpha)}(s_\alpha)),
 \tag{3.1}
 \]
-where each slot \(\alpha\) specifies one link, one time, and one bounded one-link function. Different slots in one row may use the same link at different times.
+where each slot \(\alpha\) specifies one link, one time, and one bounded one-link function. Different slots in one row may use the same link at different times. Super-rows may contain arbitrarily many slots; the required uniform budget is on the whole family, not on each current row.
 
 Assume:
-- each row has at most \(m\) slots: \(|S_i|\le m\);
-- each link has at most \(D\) slots in the entire family, counted with multiplicity:
+- the total number of slots is bounded by the original local port budget, \(N:=\sum_i|S_i|\le mR\);
+- each link has at most \(D\) slots in the entire current family, counted with multiplicity:
 \[
 q_e:=|\{\alpha:e(\alpha)=e\}|\le D.
 \tag{3.2}
-\]
+]
 Let \(G_{\rm port}\) be the graph on row labels with
 \[
 ij\in E(G_{\rm port})
@@ -116,9 +116,12 @@ These are explicit universal constants once the finite list \(b_1,\ldots,b_D\) i
 \[
 \boxed{
 |\kappa(A_1,\ldots,A_r)|
-\le C_{m,D}^{\,r}
+\le (K_D^*)^{N}
 \left(\prod_{i=1}^r\prod_{\alpha\in S_i}
 \|f_\alpha\|_\infty\right)
+\mathcal M(G_{\rm port},W)
+\le C_{m,D}^{\,R}
+\left(\prod_{i,\alpha}\|f_\alpha\|_\infty\right)
 \mathcal M(G_{\rm port},W),
 }
 \tag{3.5}
@@ -128,7 +131,7 @@ where \(\mathcal M(G_{\rm port},W)\) is the maximum weight of a spanning tree of
 In particular,
 \[
 |\kappa(A_1,\ldots,A_r)|
-\le C_{m,D}^{\,r}
+\le C_{m,D}^{\,R}
 \left(\prod_{i,\alpha}\|f_\alpha\|_\infty\right)
 \sum_{T\in\mathcal T(G_{\rm port})}
 \prod_{\{i,j\}\in T}W_{ij}.
@@ -169,9 +172,10 @@ It remains to sum the coefficients. Dropping the global join constraint only inc
 \prod_e K_{q_e}
 \le
 (K_D^*)^{\sum_e q_e}
+=(K_D^*)^{N}
 \le
-(K_D^*)^{mr}
-=C_{m,D}^{\,r}.
+(K_D^*)^{mR}
+=C_{m,D}^{\,R}.
 \tag{3.9}
 \]
 Combining (3.8) and (3.9) proves (3.5). Since the maximum spanning-tree weight is bounded by the sum of all spanning-tree weights, (3.6) follows. \(\square\)
@@ -215,7 +219,7 @@ For the recorded PF-I16 insertion inventory:
 - a face-pair insertion has at most eight link ports and \(\mathfrak p(v_{fg})\le15318\,b_0^2/a_0\);
 - the conservative incidence inventory gives at most eight face supports and 224 adjacent-face-pair supports per link, hence \(D\le232\) when both insertion types are included.
 
-Thus (4.3) applies to the actual face/pair family with \(m=8,D=232\), under the previously recorded projective-norm and uniform one-link gap hypotheses. For face-only rows one may use \(m=4,D\le8\) (or the sharper geometric incidence if separately verified). The proof also applies to the finite sums of monomials generated at intermediate conditional-cumulant steps, provided the same global port-count and per-link incidence budgets are retained.
+Thus (4.3) applies to the actual face/pair family with \(m=8,D=232\), under the previously recorded projective-norm and uniform one-link gap hypotheses. For face-only rows one may use \(m=4,D\le8\) (or the sharper geometric incidence if separately verified). The same bound applies at intermediate conditional-cumulant steps: the super-row clusters partition the original labels, so their total number of slots remains \(N\le mR\), and each link's total slot count remains at most \(D\). Each block cumulant supplies an internal tree on its source labels; the outer super-row tree joins these clusters by edges that each come from a pair of original ports on a common link. The union of the internal cluster trees and the outer tree is connected and has exactly \(R-1\) edges, hence is a spanning tree on the original insertion labels. The temporal weight on each edge is the corresponding original port-pair weight. This is the decorated-tree lift that makes the estimate stable under recursive conditional-cumulant decomposition.
 
 ## 5. What this closes—and what it does not
 
