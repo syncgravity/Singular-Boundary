@@ -163,19 +163,17 @@ It has the correct exponential-in-order coefficient, but the complete-graph tree
 
 3. The temporal-forest plus spatial-component-tree completion has the correct edge count, but the full source tuple includes two component trees. The proposed two-port split is refuted by the recorded non-endpoint witness example; exact temporal-profile preservation can be impossible for that completion architecture.
 
-4. The one-link temporal cumulant input has since been sharpened: the cyclic-permutation formula and leaf-attachment induction give a coefficient (2^{q-2}) multiplying the full temporal spanning-tree sum, rather than a factorial multiplying the maximum tree weight. The remaining obstruction is the multi-link lift: the Leonov–Shiryaev/slot-forest expansion still has an uncontrolled projection multiplicity when its link-labelled trees are reduced to one row spanning tree.
+4. The one-link temporal cumulant input has since been sharpened: the cyclic-permutation formula and leaf-attachment induction give a coefficient $2^{q-2}$ multiplying the full temporal spanning-tree sum, rather than a factorial multiplying the maximum tree weight. The remaining obstruction is the multi-link lift: the Leonov–Shiryaev/slot-forest expansion still has an uncontrolled projection multiplicity when its link-labelled trees are reduced to one row spanning tree.
 
 ## 7. Concrete next proof obligation
 
-Prove (5.1) directly for products of local multiplication observables of the independent stationary link processes, with a constant \(C_{\rm qf}\) whose growth is exponential in \(|I|\), and with the cross-split edge carrying the same shared-link temporal kernel. A promising route is a link-by-link interpolation between the shared path and independently copied paths, but the interpolation must handle interlaced time sets; a simple separation-of-time-blocks argument is insufficient.
+Derive the support-restricted all-orders cumulant tree (4.1) from the now-established cross-split QF, retaining cancellation across link partitions. The new one-link temporal-tree-sum estimate supplies a $2^{q-2}$ local tree majorant; the missing step is a coordinate-preserving signed forest-to-row-tree assignment whose fiber is only exponential in the number of rows and whose edges remain on shared links. The max-tree LS envelope $K_q=q!$ is explicit but far too large, and taking absolute values before the global resummation loses the necessary cancellations.
 
-After (5.1), write the connected-partition tree-graph reduction with all coefficients and constants, then insert the centered activities (3.1)–(3.2). Until that is done, (4.1), the KP expansion, and P3 remain OPEN.
+Once (4.1) is proved with an explicit $C_{\rm st}$, carry out the marked-root sum and the joint space-time polymer/KP organization using the centered activities (3.1)–(3.2). Until those steps are completed, the support-sensitive tree, KP expansion, and P3 remain OPEN.
 
 **Gate status:** exact centered local activity — established under the stated product-Haar geometry; all-orders support-sensitive joint tree — OPEN; KP convergence — OPEN; no P0–P5 status promoted.
 
-
-**Verification note:** `verify_pf_i16_exact_centering_joint_tree.py` is included in theorem-index CI. The Proof Atlas verifier distinguishes this exact face/pair centering result from the still-open centering caveat in the separate per-link insertion inventory.
-
+**Verification note:** `verify_pf_i16_exact_centering_joint_tree.py` remains in theorem-index CI; the one-link temporal-tree regression is separately wired into the same workflow.
 
 ## 8. Superseding correction — cross-split QF is now proved
 
