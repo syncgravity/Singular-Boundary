@@ -128,6 +128,14 @@ Combining (3.7) and (3.8) with the induction hypothesis
 
 The argument is uniform in the state space and uses only the one-link Markov estimate (1.3) plus the cyclic-permutation identity. It permits interlaced time order after sorting, arbitrary bounded one-time factors, and repeated observation times.
 
+### Sharpness of the coefficient
+
+The factor $2^{q-2}$ cannot be reduced uniformly at the same gap rate. Take strictly increasing equally spaced times, so every adjacent gap has weight $x=e^{-\Delta_0 L}$. In the cycle sum, the exponent is the sum over cuts of the number of upward cycle edges crossing each cut. It is at least $q-1$. Equality holds exactly when each cut is crossed upward once. Starting from the unique 2-cycle, inserting the newest vertex preserves equality precisely at the two directed edges incident to the previous largest vertex. Hence the coefficient of the lowest power $x^{q-1}$ in $W_q$ is $2^{q-2}$. In the tree polynomial, every cut must be crossed at least once; equality in total exponent $q-1$ occurs only for the chronological path, with coefficient one. Therefore
+\[
+\lim_{L\to\infty}\frac{W_q(0,L,2L,\ldots,(q-1)L)}
+{\tau_q(0,L,2L,\ldots,(q-1)L)}=2^{q-2}.
+\]
+
 ## 4. Consequence and boundary of use
 
 The previous max-tree estimate
