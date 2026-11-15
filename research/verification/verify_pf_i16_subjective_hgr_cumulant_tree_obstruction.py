@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 """Exact regression for the three-way-interaction HGR/cumulant obstruction.
 
-For P(x,y,z) = (1 + lam*x*y*z)/8 on {-1,+1}^3:
-- all one- and two-coordinate marginals are uniform;
-- every pairwise HGR coefficient conditioned on the remaining coordinate is |lam|;
-- the third joint cumulant is lam.
-
-Thus a universal q=3 product-of-two-edges tree bound cannot follow from
-pairwise subjective HGR bounds alone.
+For P(x,y,z) = (1 + lam*x*y*z)/8 on {-1,+1}^3, each pair has conditional
+HGR |lam| given the remaining coordinate, while kappa(X,Y,Z)=lam.
 """
 from itertools import product
 
@@ -19,31 +14,19 @@ def joint(lam):
     }
 
 
-def expectation(p, fn):
-    return sum(prob * fn(*state) for state, prob in p.items())
-
-
-def conditional_pair_correlation(lam, fixed_coordinate):
-    # By symmetry it suffices to condition on Z=z and compute Corr(X,Y|Z=z).
-    p = joint(lam)
-    out = {}
-    for z in (-1, 1):
-        slice_probs = {
-            (x, y): prob * 2.0
-            for (x, y, zz), prob in p.items()
-            if zz == z
-        }
-        mass = sum(slice_probs.values())
-        assert abs(mass - 1.0) < 1e-14
-        ex = sum(prob * x for (x, y), prob in slice_probs.items())
-        ey = sum(prob * y for (x, y), prob in slice_probs.items())
-        exy = sum(prob * x * y for (x, y), prob in slice_probs.items())
-        vx = sum(prob * (x - ex) ** 2 for (x, y), prob in slice_probs.items())
-        vy = sum(prob * (y - ey) ** 2 for (x, y), prob in slice_probs.items())
-        corr = (exy - ex * ey) / (vx * vy) ** 0.5
-        out[z] = corr
-    assert fixed_coordinate == "Z"
-    return out
+def conditional_corr(p, i, j, k, fixed):
+    pairs = {}
+    for state, prob in p.items():
+        if state[k] == fixed:
+            key = (state[i], state[j])
+            pairs[key] = pairs.get(key, 0.0) + 2.0 * prob
+    assert abs(sum(pairs.values()) - 1.0) < 1e-14
+    ex = sum(prob * x for (x, y), prob in pairs.items())
+    ey = sum(prob * y for (x, y), prob in pairs.items())
+    exy = sum(prob * x * y for (x, y), prob in pairs.items())
+    vx = sum(prob * (x - ex) ** 2 for (x, y), prob in pairs.items())
+    vy = sum(prob * (y - ey) ** 2 for (x, y), prob in pairs.items())
+    return (exy - ex * ey) / (vx * vy) ** 0.5
 
 
 def check(lam):
@@ -51,34 +34,29 @@ def check(lam):
     assert all(prob > 0 for prob in p.values())
     assert abs(sum(p.values()) - 1.0) < 1e-14
 
-    means = [
-        expectation(p, lambda x, y, z: x),
-        expectation(p, lambda x, y, z: y),
-        expectation(p, lambda x, y, z: z),
-    ]
+    means = [sum(prob * state[i] for state, prob in p.items()) for i in range(3)]
     pairs = [
-        expectation(p, lambda x, y, z: x * y),
-        expectation(p, lambda x, y, z: x * z),
-        expectation(p, lambda x, y, z: y * z),
+        sum(prob * state[i] * state[j] for state, prob in p.items())
+        for i, j in ((0, 1), (0, 2), (1, 2))
     ]
-    triple = expectation(p, lambda x, y, z: x * y * z)
+    triple = sum(prob * x * y * z for (x, y, z), prob in p.items())
     assert max(abs(v) for v in means + pairs) < 1e-14
     assert abs(triple - lam) < 1e-14
 
-    # Binary HGR equals |conditional Pearson correlation|.
-    for fixed in ("X", "Y", "Z"):
-        for value in (-1, 1):
-            # Symmetry of (2.1) gives the same |lam| for all pairs/fixed values.
-            assert abs(abs(lam) - abs(lam)) < 1e-14
-    for corr in conditional_pair_correlation(lam, "Z").values():
-        assert abs(abs(corr) - abs(lam)) < 1e-14
+    conditional = []
+    for i, j, k in ((0, 1, 2), (0, 2, 1), (1, 2, 0)):
+        for fixed in (-1, 1):
+            corr = conditional_corr(p, i, j, k, fixed)
+            assert abs(abs(corr) - abs(lam)) < 1e-14
+            conditional.append(corr)
 
-    tree_rhs_without_constant = 3.0 * lam * lam
-    ratio = abs(triple) / tree_rhs_without_constant
+    # For q=3 there are three spanning trees, each with two eta=|lam| edges.
+    tree_sum = 3.0 * lam * lam
+    required_constant = abs(triple) / tree_sum
     print(
-        f"PASS lambda={lam:g}: conditional_HGR={abs(lam):.8g}, "
-        f"|kappa3|={abs(triple):.8g}, tree_sum={tree_rhs_without_constant:.8g}, "
-        f"required_C3>={ratio:.8g}"
+        f"PASS lambda={lam:g}: max_conditional_HGR={max(map(abs, conditional)):.8g}, "
+        f"|kappa3|={abs(triple):.8g}, tree_sum={tree_sum:.8g}, "
+        f"required_C3>={required_constant:.8g}"
     )
 
 
