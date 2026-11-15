@@ -56,8 +56,32 @@ def check_repeated_incidence():
               f"geometric_D_suffices={q_e <= D_geometry}")
 
 
+def check_support_type_compression():
+    # Repetition grows, while distinct support-type incidence stays fixed.
+    supports = {
+        'face-A': frozenset({'e1', 'e2', 'e3', 'e4'}),
+        'face-B': frozenset({'e2', 'e5', 'e6', 'e7'}),
+        'pair-AB': frozenset({'e2', 'e3', 'e5', 'e8'}),
+    }
+    for repetitions in (1, 16, 256, 4096):
+        occurrences = [name for name in supports for _ in range(repetitions)]
+        types_per_link = {
+            link: sum(link in supports[name] for name in supports)
+            for link in {e for support in supports.values() for e in support}
+        }
+        occurrences_per_link = {
+            link: sum(link in supports[name] for name in occurrences)
+            for link in types_per_link
+        }
+        assert max(types_per_link.values()) <= len(supports)
+        assert max(occurrences_per_link.values()) == repetitions * max(types_per_link.values())
+        print(f'PASS support compression: repetitions={repetitions}, '
+              f'distinct_types/link={max(types_per_link.values())}, '
+              f'occurrences/link={max(occurrences_per_link.values())}')
+
 def main():
     check_repeated_incidence()
+    check_support_type_compression()
     check_tensor_gap()
     print("LIMIT: finite reset-chain regression; no sparse-graph repeated-label theorem")
 
