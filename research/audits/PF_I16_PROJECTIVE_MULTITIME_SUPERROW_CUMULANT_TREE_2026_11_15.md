@@ -84,7 +84,7 @@ Assume:
 \[
 q_e:=|\{\alpha:e(\alpha)=e\}|\le D.
 \tag{3.2}
-]
+\]
 Let \(G_{\rm port}\) be the graph on row labels with
 \[
 ij\in E(G_{\rm port})
@@ -201,7 +201,7 @@ and the port and per-link incidence bounds hold uniformly on the expansion suppo
 \[
 \boxed{
 |\kappa(F_1,\ldots,F_r)|
-\le C_{m,D}^{\,r}\prod_i\mathfrak p(F_i)
+\le C_{m,D}^{\,R}\prod_i\mathfrak p(F_i)
 \sum_{T\in\mathcal T(G_{\rm port})}
 \prod_{\{i,j\}\in T}
 \left(
