@@ -101,12 +101,12 @@ Assume $q\ge3$, and put
 r_i=e^{-\Delta_0(s_q-s_i)},\qquad 1\le i<q.
 \tag{3.4}
 \]
-Every cycle on $[q]$, written with $1$ first, is obtained uniquely by inserting $q$ into one directed edge $a\to b$ of a cycle \(\sigma'\) on ([q-1]\). Let \(w(\sigma')\) be its summand in (2.3). If $a<b$, the insertion extends the increasing run ending at $b$, increasing the total run span by $s_q-s_b$. If $a>b$, it extends the run ending at $a$, increasing the total run span by $s_q-s_a$. Thus in either case
+Every cycle on $[q]$, written with $1$ first, is obtained uniquely by inserting $q$ into one directed edge $a\to b$ of a cycle \(\sigma'\) on $[q-1]$. Let \(w(\sigma')\) be its summand in (2.3). If $a<b$, the insertion extends the increasing run ending at $b$, increasing the total run span by $s_q-s_b$. If $a>b$, it extends the run ending at $a$, increasing the total run span by $s_q-s_a$. Thus in either case
 \[
 w(\sigma)=w(\sigma')r_{\max(a,b)}.
 \tag{3.5}
 \]
-Each vertex of \(\sigma'\) has degree two. Therefore
+Each vertex of \(\sigma'\) has degree two (counting the two directed edges separately when $q-1=2). Therefore
 \[
 \sum_{a\to b\in\sigma'}r_{\max(a,b)}
 \le2\sum_{i=1}^{q-1}r_i.
