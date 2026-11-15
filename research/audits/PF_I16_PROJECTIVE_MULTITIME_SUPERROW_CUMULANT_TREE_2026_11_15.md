@@ -39,22 +39,23 @@ e^{-\Delta_0(s_q-s_1)}.
 \]
 This identity is an operator identity and does not require a finite state space; it applies to the compact-group heat-kernel semigroup.
 
-The universal Boolean-to-classical cumulant formula expresses the classical cumulant as
+The multivariate cyclic-permutation formula of Arizmendi–Hasebe–Lehner–Vargas expresses the classical cumulant as
 \[
 \kappa(Z_1,\ldots,Z_q)
 =
-\sum_{\rho\in\mathcal P_{\rm irr}[q]}
-d_\rho\prod_{C\in\rho}B_{|C|}(Z_j:j\in C),
+\sum_{\sigma\in\mathfrak C_q}
+(-1)^{\#\operatorname{runs}(\sigma)-1}
+B_{\operatorname{runs}(\sigma)}(Z_1,\ldots,Z_q),
 \tag{2.4}
 \]
-where \(\mathcal P_{\rm irr}[q]\) is the finite set of irreducible set partitions and \(d_\rho\) are universal coefficients. For an irreducible partition, the sum of the time spans of its blocks is at least \(s_q-s_1\). Thus, with
+where \(\mathfrak C_q\) is the set of cyclic permutations of \([q]\), and \(B_{\operatorname{runs}(\sigma)}\) is the product of Boolean cumulants over the blocks of the cycle-run partition. Grouping terms by their run partition gives the irreducible-partition formula with coefficients \(d_\rho\). For a fixed \(\rho\), every contributing cyclic permutation has the same sign \((-1)^{|\rho|-1}\), so there is no cancellation in \(|d_\rho|\). Since \(|\mathfrak C_q|=(q-1)!\),
 \[
-b_1=1,\qquad
-b_q=\sum_{\rho\in\mathcal P_{\rm irr}[q]}|d_\rho|
-\quad(q\ge2),
+b_q:=\sum_{\rho\in\mathcal P_{\rm irr}[q]}|d_\rho|
+=(q-1)!,
+\qquad q\ge1.
 \tag{2.5}
 \]
-we obtain
+For an irreducible partition, the sum of the time spans of its blocks is at least \(s_q-s_1\). We therefore obtain
 \[
 \boxed{
 |\kappa(f_1(X_{s_1}),\ldots,f_q(X_{s_q}))|
@@ -101,16 +102,22 @@ e^{-\Delta_0|s_\alpha-s_\beta|}.
 \]
 Set \(W_{ij}=0\) if there is no common link.
 
-Define the finite local partition constants
+The local partition constants now have an exact evaluation:
 \[
-K_q:=\sum_{\pi\in\Pi([q])}\prod_{B\in\pi}b_{|B|},
-\qquad
-K_D^*:=\max\left(1,\max_{1\le q\le D}K_q^{1/q}\right),
-\qquad
-C_{m,D}:=(K_D^*)^m.
+K_q:=\sum_{\pi\in\Pi([q])}\prod_{B\in\pi}b_{|B|}
+=\sum_{\pi\in\Pi([q])}\prod_{B\in\pi}(|B|-1)!
+=q!,
 \tag{3.4}
 \]
-These are explicit universal constants once the finite list \(b_1,\ldots,b_D\) is fixed.
+because a permutation of \([q]\) is uniquely specified by its set of cycles, and a block \(B\) admits \((|B|-1)!\) cyclic orders. Hence
+\[
+K_D^*:=\max\left(1,\max_{1\le q\le D}K_q^{1/q}\right)
+=(D!)^{1/D},
+\qquad
+C_{m,D}:=(D!)^{m/D}.
+\tag{3.5}
+\]
+
 
 **Theorem.** Under (2.1)–(3.2),
 \[
@@ -235,7 +242,7 @@ No P0–P5 acceptance status is promoted.
 
 The companion finite-state verifier checks the slot-partition connectivity implication and the maximum-tree weight domination on small interlaced port hypergraphs. It is a combinatorial regression test; it does not verify the SU(2) heat-kernel semigroup or the analytic projective decompositions.
 
-Reference for the Boolean/classical cumulant conversion and weighted-dependency-graph product formula: Valentin Féray, *Weighted dependency graphs*, arXiv:1605.03836, Lemma 10.2, Lemma 10.3, Proposition 10.4, and Proposition 5.11. The proof above makes the bounded per-link slot count explicit; it does not use the paper's finite-state restriction in the operator estimate (2.2).
+References: Valentin Féray, *Weighted dependency graphs*, arXiv:1605.03836, Lemmas 10.2–10.3 and Proposition 10.4; Octavio Arizmendi, Takahiro Hasebe, Franz Lehner, and Carlos Vargas, *Relations between cumulants in noncommutative probability*, arXiv:1408.2977, Theorem 1.5 and Corollary 7.1. The latter gives the cyclic-permutation expansion and the total absolute coefficient sum \((q-1)!\). The proof above writes the Markov operator estimate in semigroup form; it uses stationarity, the Markov property, and (2.1), not a finite-state restriction.
 
 
 ## 7. Recursive-decoration clarification
