@@ -65,6 +65,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/theorem-index-check.yml'
       - 'research/theorems/**'
       - 'docs/research/THEOREM_INDEX.md'
       - 'docs/research/THEOREM_INDEX_LIVE.json'
