@@ -187,50 +187,50 @@ for arbitrary square-integrable functionals \(F=F((X_{s_i})_i)\) and \(G=G((X_{t
 ## 6. Specialization to the actual SU(2) temporal heat-kernel reference
 
 The finite cubic transfer certificate `P0_CUBIC_HEAT_KERNEL_TRANSFER_CERTIFICATE_2026-11-04.md` specifies the temporal link kernel
-\\[
-\\kappa_{\\epsilon\\alpha_h}(g)
-=\\sum_{j\\in\\{0,1/2,\\ldots\\}}
-(2j+1)e^{-\\epsilon\\alpha_h j(j+1)}\\chi_j(g),
-\\tag{6.1}
-\\]
+\[
+\kappa_{\epsilon\alpha_h}(g)
+=\sum_{j\in\{0,1/2,\ldots\}}
+(2j+1)e^{-\epsilon\alpha_h j(j+1)}\chi_j(g),
+\tag{6.1}
+\]
 with normalized SU(2) Haar measure. Thus the independent one-link stationary reference path has transition density
-\\[
-p_t(x,y)=\\kappa_{\\alpha_h t}(x^{-1}y)
-\\tag{6.2}
-\\]
+\[
+p_t(x,y)=\kappa_{\alpha_h t}(x^{-1}y)
+\tag{6.2}
+\]
 relative to Haar. This is exactly the compact-group heat semigroup required above, not an additional model assumption.
 
-Since \(|\\chi_j(g)|\\le2j+1\),
-\\[
-\\sup_g|\\kappa_\\tau(g)-1|
-\\le\\sum_{j\\ge1/2}(2j+1)^2e^{-\\tau j(j+1)}
-\\le C e^{-3\\tau/4},\\qquad \\tau\\ge1.
-\\tag{6.3}
-\\]
-The heat kernel is smooth and strictly positive for every \(\\tau>0\). For each fixed finite regulator this proves (2.3)–(2.4).
+Since \(|\chi_j(g)|\le2j+1\),
+\[
+\sup_g|\kappa_\tau(g)-1|
+\le\sum_{j\ge1/2}(2j+1)^2e^{-\tau j(j+1)}
+\le C e^{-3\tau/4},\qquad \tau\ge1.
+\tag{6.3}
+\]
+The heat kernel is smooth and strictly positive for every \(\tau>0\). For each fixed finite regulator this proves (2.3)–(2.4).
 
 For the refinement-uniform reference-process hypothesis used in the product-process cumulant bridge, the one-link gap is
-\\[
-\\Delta_h=\\frac34\\alpha_h.
-\\tag{6.4}
-\\]
-Therefore the already stated uniform gap assumption \(\\Delta_h\\ge\\Delta_0>0\) is equivalent to \(\\alpha_h\\ge4\\Delta_0/3\). Under that same assumption, define the uniform kernel extrema
-\\[
-m_{\\Delta_0}(d)=\\inf_{\\tau\\ge(4/3)\\Delta_0d,\\,g}\\kappa_\\tau(g),
-\\qquad
-M_{\\Delta_0}(d)=\\sup_{\\tau\\ge(4/3)\\Delta_0d,\\,g}\\kappa_\\tau(g).
-\\tag{6.5}
-\\]
-Strict positivity, compactness, and (6.3) give \(0<m_{\\Delta_0}(d)\\le1\\le M_{\\Delta_0}(d)<\\infty\) for every \(d>0\). The proof of Sections 3–4 is consequently uniform in the link and in the spatial regulator, and
-\\[
-\\psi_{\\Delta_0}(d)
-=1-\\left(\\frac{m_{\\Delta_0}(d)}{M_{\\Delta_0}(d)}\\right)^2
-\\le C_0e^{-\\Delta_0d}
-\\tag{6.6}
-\\]
+\[
+\Delta_h=\frac34\alpha_h.
+\tag{6.4}
+\]
+Therefore the already stated uniform gap assumption \(\Delta_h\ge\Delta_0>0\) is equivalent to \(\alpha_h\ge4\Delta_0/3\). Under that same assumption, define the uniform kernel extrema
+\[
+m_{\Delta_0}(d)=\inf_{\tau\ge(4/3)\Delta_0d,\,g}\kappa_\tau(g),
+\qquad
+M_{\Delta_0}(d)=\sup_{\tau\ge(4/3)\Delta_0d,\,g}\kappa_\tau(g).
+\tag{6.5}
+\]
+Strict positivity, compactness, and (6.3) give \(0<m_{\Delta_0}(d)\le1\le M_{\Delta_0}(d)<\infty\) for every \(d>0\). The proof of Sections 3–4 is consequently uniform in the link and in the spatial regulator, and
+\[
+\psi_{\Delta_0}(d)
+=1-\left(\frac{m_{\Delta_0}(d)}{M_{\Delta_0}(d)}\right)^2
+\le C_0e^{-\Delta_0d}
+\tag{6.6}
+\]
 with \(C_0\) depending only on the fixed lower gap and heat-kernel normalization.
 
-**Scope qualification:** The compact SU(2) heat-kernel structure is the actual finite-regulator link reference. Refinement-uniform constants follow if the uniform one-link gap \(\\Delta_h\\ge\\Delta_0\) from the product-process hypothesis holds. Establishing that gap along the physical bare-coupling trajectory is a separate scale-setting obligation; the P0 certificate itself does not prove the continuum trajectory or mass gap.
+**Scope qualification:** The compact SU(2) heat-kernel structure is the actual finite-regulator link reference. Refinement-uniform constants follow if the uniform one-link gap \(\Delta_h\ge\Delta_0\) from the product-process hypothesis holds. Establishing that gap along the physical bare-coupling trajectory is a separate scale-setting obligation; the P0 certificate itself does not prove the continuum trajectory or mass gap.
 
 ## 7. Consequence for PF-I16 and remaining work
 
