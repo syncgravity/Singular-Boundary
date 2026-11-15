@@ -7,6 +7,7 @@ This does not verify the Markov semigroup or the multi-link support tree.
 """
 from fractions import Fraction
 from itertools import permutations, product
+from math import prod
 
 
 def cycle_weight(cycle, gaps):
@@ -73,7 +74,7 @@ def check_profile(gaps):
         if n >= 3:
             prev_w = cycle_sum(n - 1, gaps[:n - 2])
             prev_t = tree_sum(n - 1, gaps[:n - 2])
-            r = [product(gaps[i:n - 1]) for i in range(n - 1)]
+            r = [prod(gaps[i:n - 1]) for i in range(n - 1)]
             assert lhs <= 2 * prev_w * sum(r)
             assert rhs >= prev_t * sum(r)
 
