@@ -195,13 +195,13 @@ The all-orders radial character tail and full face/pair projective tensor bounds
 
 ## 9. Superseding correction — one-link temporal-tree sum is now established
 
-The companion audit [PF-I16 one-link cyclic-permutation temporal-tree bound](PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md) proves, for every (q\ge2),
+The companion audit [PF-I16 one-link cyclic-permutation temporal-tree bound](PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md) proves, for every $q\ge2$,
 \[
 |\kappa(f_1(X_{s_1}),\ldots,f_q(X_{s_q}))|
 \le 2^{q-2}\prod_i\|f_i\|_\infty
 \sum_{T\in\mathcal T_q}
 \prod_{\{i,j\}\in E(T)}e^{-\Delta_0|s_i-s_j|}.
 \]
-The proof groups the classical cumulant into cyclic permutations, then inserts the latest-time vertex. The cycle weight increases by at most twice the sum of its leaf-attachment weights, while the temporal spanning-tree polynomial contains all such leaf attachments. Induction gives the stated (2^{q-2}) coefficient.
+The proof groups the classical cumulant into cyclic permutations, then inserts the latest-time vertex. The cycle weight increases by at most twice the sum of its leaf-attachment weights, while the temporal spanning-tree polynomial contains all such leaf attachments. Induction gives the stated $2^{q-2}$ coefficient.
 
 This supersedes only the factorial *one-link maximum-tree* caveat. It does not solve the multi-link support problem: applying the estimate blockwise in the Leonov–Shiryaev formula creates a family of link-labelled slot trees, and the required uniform multiplicity bound after projecting their connected union to a single row spanning tree is still missing. In particular, neither (4.1) nor the candidate (q_{\rm joint}<1) is promoted to a theorem.
