@@ -67,7 +67,9 @@ def main() -> None:
     t1, t2 = 0.064, 0.078
 
     assert np.max(np.abs(qgen.sum(axis=1))) < 1e-13
-    assert np.min(qgen - np.diag(np.diag(qgen))) > 0.0
+    off_diagonal = qgen.copy()
+    np.fill_diagonal(off_diagonal, np.inf)
+    assert np.min(off_diagonal) > 0.0
     assert abs(float(pi.sum()) - 1.0) < 1e-14
     assert np.max(np.abs(pi @ qgen)) < 1e-11
 
