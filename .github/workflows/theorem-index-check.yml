@@ -162,7 +162,7 @@ jobs:
         run: python research/verification/verify_pf_i16_ctmc_bridge_conditional_hgr_obstruction.py
       - name: Verify finite-state bridge Doeblin minorization
         run: python research/verification/verify_pf_i16_bridge_doeblin_minorization.py
-      - name: Verify projective multi-time super-row cumulant tree combinatorics
+      - name: Verify projective multi-time super-row cumulant tree and local port envelope
         run: python research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
