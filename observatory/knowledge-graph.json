@@ -2,7 +2,7 @@
   "schema": "singular-boundary.knowledge-graph.v1",
   "build_date": "2026-11-13",
   "version": "v3.04-pf-i16-quasi-factorization-reduction",
-  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; one-link continuous-time cumulant bound; and exact link-factorization identity for Boolean-lattice quasi-factorization variables. The analytic one-link quasi-factorization majorant, connected-subset resummation with K_8^r growth, uniform higher-order coefficient bounds, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; exact coincident-time vanishing for disconnected support and a complete-graph Cayley-tree envelope; one-link continuous-time cumulant bound; and exact algebraic reconstruction of product cumulants by top-degree extraction and Boolean Möbius inversion. A temporally weighted, summable all-orders bound for the resulting connected expansion, sparse support-tree counts, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 773,
@@ -7917,8 +7917,8 @@
         {
           "title": "Complete current theorem source registry",
           "path": "docs/research/THEOREM_INDEX_LIVE.json",
-          "git_blob_sha": "3941ec4c93320dd9f28ccce79bbe1648e15221ba",
-          "url": "https://github.com/syncgravity/singular-boundary/blob/3941ec4c93320dd9f28ccce79bbe1648e15221ba/docs/research/THEOREM_INDEX_LIVE.json"
+          "git_blob_sha": "eb84a1622829ae3b20a1a7d98fac293c02ddceb2",
+          "url": "https://github.com/syncgravity/singular-boundary/blob/eb84a1622829ae3b20a1a7d98fac293c02ddceb2/docs/research/THEOREM_INDEX_LIVE.json"
         }
       ],
       "tags": [],
@@ -10988,7 +10988,7 @@
         {
           "label": "Link-factorized quasi-factorization identity",
           "state": "exact",
-          "note": "For elementary tensor insertions, the Boolean-lattice factor P_Δ factors exactly over links common to all rows in Δ; this is an algebraic reduction only."
+          "note": "The top-degree coefficient of the full row-polynomial cumulant is the product cumulant by multilinearity. The full family of link-factorized P_Δ ratios reconstructs the row moments and hence the cumulant via an outer square-free logarithmic selector. P_[r]−1 alone is not generally the higher-degree cumulant coefficient. A temporally weighted, summable all-orders bound remains open."
         },
         {
           "label": "Exponential connected-subset resummation for quasi-factorization",
@@ -11104,8 +11104,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. One-link continuous-time weighted-dependency estimate is exact with C_r≤(2e)^r r!. Degree-eight product stability now has an explicit Leonov–Shiryaev formula and bound D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)); this is too large after division by r! and does not establish a nonzero activity radius. A cancellation-sensitive connected-partition/quasi-factorization estimate is still required. Exact-profile completion for arbitrary spatial witnesses remains refuted by the five-vertex obstruction.",
-      "detail": "Section 12.4 makes Féray Proposition 5.11 quantitative for degree-eight insertions: Leonov–Shiryaev's connected multiset partitions give an explicit D_8,r sum, and dropping monochromatic/join restrictions yields D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)). The maximum-tree weight is preserved through the connected union of block trees. But D_8,r/r!=exp(7r log r+O(r)), so this absolute partition-sum estimate is superexponential and cannot support a KP/activity radius. This is not a lower bound on actual cumulants: it loses cancellations. The next precise gate is a cancellation-sensitive connected-partition or quasi-factorization representation with C_8^r r! growth (or equivalent summability). Actual insertion projective norms also remain open.",
+      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. At coincident times, disconnected support gives exact cumulant vanishing and connected support has a complete-graph Cayley-tree envelope; counting trees of the actual sparse support graph remains open. Product cumulants have an exact algebraic reconstruction from top-degree extraction and the full family of link-factorized Boolean ratios; the single ratio P_[r]−1 is not generally the higher-degree cumulant coefficient. The absolute degree-eight Leonov–Shiryaev envelope D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)) is superexponential after division by r! and does not establish a nonzero activity radius. A temporally weighted, cancellation-sensitive connected expansion with summable order growth remains open. Exact-profile completion for arbitrary spatial witnesses remains refuted by the five-vertex obstruction.",
+      "detail": "Section 12.4 makes Féray Proposition 5.11 quantitative for degree-eight insertions: Leonov–Shiryaev's connected multiset partitions give an explicit D_8,r sum, and dropping monochromatic/join restrictions yields D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)). The maximum-tree weight is preserved through the connected union of block trees. But D_8,r/r!=exp(7r log r+O(r)), so this absolute partition-sum estimate is superexponential and cannot support a KP/activity radius. Section 16.2 gives exact top-degree extraction and Möbius reconstruction of the product cumulant from the full family of P_Δ. The two-row example shows only that P_[r]−1 alone is not generally the higher-degree cumulant coefficient. This is not a lower bound on actual cumulants: the absolute LS envelope loses cancellations. The coincident-time audit establishes exact disconnection vanishing and a complete-graph tree envelope, not a sparse support-tree count. The next precise gate is a temporally weighted, cancellation-sensitive connected expansion with summable order growth. Actual insertion projective norms also remain open.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -16513,7 +16513,7 @@
     },
     "projectiveinsertions": {
       "path": "research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md",
-      "blob_sha": "430a7e422490629eecec5812113e8df295f31d06"
+      "blob_sha": "cbee5699dc84990ad1cd42e5ed9c0ed7d22b2251"
     },
     "projectiveverifier": {
       "path": "research/verification/verify_pf_i16_projective_insertion_activity.py",
@@ -16521,7 +16521,7 @@
     },
     "quasifact": {
       "path": "research/theorems/PF_I16_JOINT_SPACETIME_CLUSTER_TREE_OPEN_GATE_2026_11_13.md",
-      "blob_sha": "430a7e422490629eecec5812113e8df295f31d06"
+      "blob_sha": "cbee5699dc84990ad1cd42e5ed9c0ed7d22b2251"
     }
   },
   "library_manifest": "observatory/data-manifest.json",

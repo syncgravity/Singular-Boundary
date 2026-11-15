@@ -1102,9 +1102,9 @@ Féray's Proposition 5.8 identifies quasi-factorization bounds of this type with
 \]
 while preserving the maximum-tree product. A naive count of all subsets of all \(I_e\) is not acceptable: a single link can have \(|I_e|=r\), and its power set already has \(2^r\) members. The link's entire quasi-factorization series must be summed as one object before counting interactions between different links.
 
-**Exact reduction:** (16.1)–(16.3) for the auxiliary row variables \(Y_i\). **One-link input:** (16.4). The relationship between this auxiliary factorization and cumulants of the product insertions \(A_i\) is not established; see the [product-cumulant bridge audit](../audits/PF_I16_PRODUCT_CUMULANT_BRIDGE_AUDIT_2026_11_14.md). In particular, the auxiliary row variables have first derivative \(\sum_{e\in X_i}f_{i,e}\), not \(A_i=\prod_{e\in X_i}f_{i,e}\). The product-cumulant bridge is therefore a prior open prerequisite, in addition to the analytic one-link quasi-factorization majorant (16.5), the connected-subset resummation with \(K_8^r\) growth, and the resulting all-orders maximum-tree bound for products. The cancellation-preserving target remains open; it does not yet prove the desired theorem.
+**Exact reduction:** (16.1)–(16.3) for the row polynomials \(Y_i\). **One-link input:** (16.4). The square-free coefficient discussed above describes first-degree row terms, not the target products. By multilinearity the product cumulant is the top-degree coefficient of the full cumulant polynomial of the \(Y_i\). Boolean Möbius inversion reconstructs every row moment from all \(P_\Delta\), yielding the exact outer-selector formula (16.9). This is an algebraic identity, not a bound: (16.5) controls only one square-free coefficient of a one-link quasi-factorization factor. A temporally weighted majorant for the connected-subset expansion, summable all-orders growth, and the resulting joint maximum-tree bound remain open. The cancellation-preserving target remains open; it does not yet prove the desired theorem.
 
-### 16.1 Scope check: the row-factorization variables do not directly encode product cumulants
+### 16.1 Scope check: the square-free coefficient is not the product cumulant
 
 The identity (16.3) is an exact factorization for the specified auxiliary variables, but its square-free row coefficient is not in general the cumulant of the product insertions \(A_i\). Indeed,
 \[
@@ -1128,4 +1128,69 @@ P_{\{1,2\}}=(1+z_1z_2)^2,\qquad
 \]
 That coefficient is the covariance of the row sums \(U_1+U_2\), not the covariance of the row products \(U_1U_2\). The exact-rational verifier [verify_pf_i16_product_cumulant_bridge.py](../verification/verify_pf_i16_product_cumulant_bridge.py) checks this example.
 
-One possible way to retain the product insertions is to index formal variables by factor slots \((i,e)\), then recover the row-product cumulant through the Leonov–Shiryaev connected-partition condition on the row partition. This requires reorganizing the connected slot partitions before taking absolute values; neither the row-variable identity (16.3) nor the estimate (16.5) supplies that step. The slot-level reorganization, its temporal weights, and its all-orders growth remain open. Accordingly, Section 16 is an exact auxiliary factorization and a candidate route, not yet a product-cumulant reduction.
+The mismatch above rules out using that particular square-free coefficient as the product cumulant. It does not rule out coefficient extraction from the full row polynomials.
+
+### 16.2 Exact top-degree extraction of product cumulants
+
+Write \(d_i=|X_i|\), and use \(s_i\) for the formal variable and \(\tau_i\) for the insertion time:
+\[
+Y_i(s_i)=\prod_{e\in X_i}(1+s_i f_{i,e}(U_e(\tau_i))).
+\]
+The top-degree coefficient is the desired product insertion:
+\[
+[s_i^{d_i}]Y_i(s_i)=A_i.
+\]
+By multilinearity of classical cumulants, the polynomial cumulant satisfies the exact identity
+\[
+\boxed{
+\kappa(A_1,\ldots,A_r)
+=[s_1^{d_1}\cdots s_r^{d_r}]
+\kappa(Y_1(s_1),\ldots,Y_r(s_r)).
+}
+\tag{16.7}
+\]
+For each subset \(\Delta\subseteq[r]\), its raw moment polynomial still factorizes over independent links:
+\[
+u_\Delta(\mathbf s)
+= \mathbb E_0\prod_{i\in\Delta}Y_i(s_i)
+=\prod_e\mathbb E_e\prod_{i\in\Delta\cap I_e}
+(1+s_i f_{i,e}(U_e(\tau_i))).
+\tag{16.8}
+\]
+The raw joint moments in (16.8) factor over links. Their Boolean-lattice ratios also factor over links, and Möbius inversion gives
+\[
+u_\Delta(\mathbf s)=\prod_{\gamma\subseteq\Delta}P_\gamma(\mathbf s).
+\]
+Use the convention \(P_\varnothing=1\).
+Introduce square-free selector variables \(x_1,\ldots,x_r\). The moment-cumulant identity and this inversion give
+\[
+\boxed{
+\kappa(Y_1(s_1),\ldots,Y_r(s_r))
+=[x_1\cdots x_r]\log\!\left(
+\sum_{\Delta\subseteq[r]}
+\left[\prod_{\gamma\subseteq\Delta}P_\gamma(\mathbf s)\right]
+\prod_{i\in\Delta}x_i
+\right).
+}
+\tag{16.9}
+\]
+Thus the full collection of link-factorized row moments does reconstruct the cumulant. What fails is the shortcut of identifying a higher-degree coefficient of \(P_{[r]}(\mathbf s)-1\) alone with the cumulant coefficient. The first Rademacher example happens to have matching top-degree coefficients of that ratio and covariance, but this is not general.
+
+For a counterexample to that shortcut, take independent symmetric Rademacher links \(U,V\), with both row supports equal to \(\{1,2\}\). Set
+\[
+f_{1,1}(U)=f_{2,1}(U)=-1-U,\quad
+f_{1,2}(V)=-1-V,\quad f_{2,2}(V)=1.
+\]
+Then \(A_1=(-1-U)(-1-V)\), \(A_2=-1-U\), and direct expectation gives \(\operatorname{Cov}(A_1,A_2)=-1\). The row polynomials have means
+\[
+\mathbb EY_1(s)=(1-s)^2,\qquad
+\mathbb EY_2(t)=1-t^2,
+\]
+and covariance
+\[
+\operatorname{Cov}(Y_1(s),Y_2(t))
+=st+st^2-s^2t-s^2t^2.
+\]
+Since \(P_{\{1,2\}}-1=\operatorname{Cov}(Y_1,Y_2)/(\mathbb EY_1\,\mathbb EY_2)\), its \(s^2t^2\) coefficient is \(1\), not \(-1\). Multiplying back by \(u_{\{1\}}u_{\{2\}}\) recovers the covariance polynomial exactly, as (16.9) requires. The exact-rational verifier checks the shortcut mismatch and the valid top-degree extraction from the full covariance polynomial.
+
+Equations (16.7)–(16.9) give an exact algebraic reconstruction of product cumulants from link-factorized row moments. They do not yield a quantitative majorant: the outer logarithm/connected-subset expansion combines coefficients from the full family \(P_\Delta\), while (16.5) controls only one square-free coefficient of a one-link factor. A temporally weighted, summable all-orders estimate for this reconstructed cumulant and the resulting joint space-time/support tree remain OPEN.
