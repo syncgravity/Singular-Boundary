@@ -773,11 +773,13 @@ b_C=\#\{I\in C:\max I>q\}.
 \]
 These are precisely the available attachment vertices to A and B.
 
-There are two cases, and the formulas follow by contracting each component of F. If q<p, A and B are adjacent in H_M. A spanning tree must attach every forest component exactly once, to either A or B; attaching a component to both would create a cycle using the A-B edge. Its contribution is therefore
+There are two cases, and the formulas follow by contracting each component of F. If q<p, the edge A-B is available. A spanning tree either uses A-B and attaches every forest component exactly once, or omits A-B and uses exactly one forest component as the bridge between A and B. Its contribution is therefore
 \[
-\prod_C(a_C+b_C).
+\prod_C(a_C+b_C)
++\sum_{C_0}a_{C_0}b_{C_0}
+\prod_{C\ne C_0}(a_C+b_C).
 \]
-If q>p, A and B are not adjacent. The contracted graph is a tree joining A to B, so exactly one forest component must attach once to A and once to B; every other component attaches exactly once to either root. The contribution is
+If q>p, A and B are not adjacent, so exactly one forest component must attach once to A and once to B; every other component attaches exactly once to either root. The contribution is just
 \[
 \sum_{C_0}a_{C_0}b_{C_0}
 \prod_{C\ne C_0}(a_C+b_C).
