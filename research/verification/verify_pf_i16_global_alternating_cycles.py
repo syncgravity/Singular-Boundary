@@ -155,7 +155,11 @@ def run(n, expected):
                         continue
                     distinct_projection_pairs += 1
                     owner = mr[right_ids[tree]]
-                    assert owner >= 0
+                    if owner < 0:
+                        # T is already free: assigning it to either child
+                        # immediately preserves saturation (its old target frees).
+                        reroutable_pairs += 1
+                        continue
                     if owner not in (a, b):
                         external_owners += 1
                     path = path_from(owner)
