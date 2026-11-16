@@ -2,6 +2,7 @@
 """Exact rational regression for one-row-intersection cumulant gluing."""
 from fractions import Fraction
 from itertools import product
+from math import prod
 
 
 def partitions(items):
