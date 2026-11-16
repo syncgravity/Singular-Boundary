@@ -706,3 +706,51 @@ There is one down-set for which Hall holds at every order: the full poset. For \
 The last expression is the total number of labeled trees on \(2s\) ports, again by Cayley. Thus Hall holds for \(D=\mathcal P_n\) for every even \(n\).
 
 This global count does not localize to a proper down-set: the Cayley upper bound forgets the matching load, while the right-side trees in a proper down-set must satisfy the corresponding cut capacities. The unresolved work is precisely to retain that cut information in the comparison.
+
+
+## Proper-down-set endpoint-leaf decomposition (2026-11-16)
+
+The proper-down-set supply admits an exact decomposition by the two forced endpoint leaves. This refines the single-capacity endpoint-leaf recurrence above from one principal ideal to an arbitrary down-set.
+
+For a finite family B of capacity vectors of length m-1, write
+\[
+N_m(B)=\#\{T\in\mathcal T(K_m): c(T)\le b
+\text{ for at least one }b\in B\}.
+\]
+For a down-set D in the primitive-path poset, let H=Max(D). Every h in H has h_1=h_{n-1}=1. Consequently every tree in the right Hall neighborhood of D has c_1=c_{n-1}=1, so vertices 1 and n are leaves. Let p and q be their respective neighbors, with p,q in {2,...,n-1}. Delete these two leaves and relabel the remaining vertices increasingly. For each h in H define the residual capacity vector
+\[
+b^{h;p,q}_j
+=h_{j+1}-\mathbf1_{p>j+1}-\mathbf1_{q\le j+1},
+\qquad 1\le j\le n-3,
+\]
+and put B_{p,q}(D)={b^{h;p,q}:h in H}. Vectors with a coordinate below 1 simply admit no interior tree.
+
+The map T -> (p,q,T') is bijective, and its cut-load identity is exactly the displayed subtraction. The capacity condition c(T)<=h is equivalent to c(T')<=b^{h;p,q}. Since the ordered pair (p,q) is unique, the union over h and the decomposition by (p,q) commute without overcounting. Therefore
+\[
+\boxed{
+N_n(D)=\sum_{p=2}^{n-1}\sum_{q=2}^{n-1}
+N_{n-2}(B_{p,q}(D)).
+}
+\tag{DL-EL}
+\]
+This is an exact all-orders identity for the right-hand side of every proper-down-set Hall inequality. It is stronger than applying the principal-ideal recurrence separately and then using inclusion-exclusion: it keeps the union of residual capacity classes intact at each endpoint attachment state.
+
+The reduction is useful because it separates the right supply into (n-2)^2 boundary states and smaller labeled-tree capacity-union problems. The residual families need not consist of primitive Dyck paths, and their endpoint capacities need not both equal one; thus (DL-EL) is a one-step decomposition, not yet a closed recursion on the original primitive-path poset.
+
+### Exact regression
+
+A new standard-library verifier enumerates Prüfer trees and every down-set for n=4,6,8. For each down-set it compares:
+1. direct counting of trees whose cut-load is dominated by at least one maximal path in D; and
+2. the right side of (DL-EL), by enumerating the interior trees separately for each ordered endpoint-neighbor pair.
+
+It also checks the single-path specialization against the existing A_n(h) endpoint-leaf recurrence. These are exact integer checks of the bijection's implementation, not an all-orders Hall proof.
+
+### What this does and does not solve
+
+The remaining proper-down-set inequality is now equivalently
+\[
+\sum_{h\in D}L(h)
+\le
+\sum_{p,q=2}^{n-1}N_{n-2}(B_{p,q}(D)).
+\]
+The unresolved side is still the comparison with the left demand. In particular, no corresponding decomposition of \(\sum_{h\in D}L(h)\) with matching interval-overlap spanning-tree multiplicities has been established. The endpoint-leaf decomposition is therefore a rigorous right-supply reduction, not a Hall proof. The weighted one-link inequality and the Yang--Mills mass gap remain open.
