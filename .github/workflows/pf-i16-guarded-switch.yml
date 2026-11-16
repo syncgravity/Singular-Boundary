@@ -1,0 +1,25 @@
+name: PF-I16 guarded switch certificate
+
+on:
+  push:
+    branches:
+      - research/pf-i16-superrow-cut-covariance-2026-11-15
+    paths:
+      - "research/verification/verify_pf_i16_local_switch_fractional_transport.py"
+      - ".github/workflows/pf-i16-guarded-switch.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guarded-switch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact guarded transition enumeration
+        run: python research/verification/verify_pf_i16_local_switch_fractional_transport.py
