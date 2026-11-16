@@ -168,13 +168,17 @@ If each row belongs to at most (m) links, then
 [
 |E|=\sum_e(|I_e|-1)\le\sum_e|I_e|\le mR,
 ]
-so there are at most (2^{mR}) possible transition-edge supports. The unresolved part is the coefficient norm: exponents on an edge can exceed one (the symmetric four-port example has exponent two on the middle edge), and no bound is yet proved for
-[
+so there are at most (2^{mR}) possible transition-edge supports. The unresolved part is the coefficient norm. Each occurrence of \(Q_e\) in a coefficient contributes a contraction bounded by \(w_e\); write the resulting operator estimate as
+\[
+|a_{\mathbf n}|\le b_{\mathbf n}\prod_{e\in\operatorname{supp}\mathbf n}w_e^{n_e},
+\]
+where \(b_{\mathbf n}\) records the normalized combinatorial/operator coefficient. Exponents can exceed one (the symmetric four-port example has exponent two on the middle edge). The missing estimate is a uniform bound on the sum of \(b_{\mathbf n}\) over exponent vectors with a fixed connected support, strong enough that
+\[
 \sum_{\mathbf n:\,G_{\operatorname{supp}\mathbf n}\text{ connected}}
-|a_{\mathbf n}|
-\prod_{e\in\operatorname{supp}\mathbf n}w_e^{n_e}
-]
-with the required (C_m^R) support-tree majorant. A successful estimate of this connected coefficient sum would complete the differentiated-cumulant step; (5.1) alone does not.
+ b_{\mathbf n}\prod_{e\in\operatorname{supp}\mathbf n}w_e^{n_e}
+\le C_m^R\sum_{T\in\mathcal T(G_X)}\prod_{e\in T}w_e.
+\]
+For each connected support \(H\), choose a spanning tree \(T(H)\subseteq H\); since \(n_e\ge1\) on \(H\) and \(w_e\le1\), its temporal monomial is bounded by the tree weight. There are at most \(2^{mR}\) possible supports, so a per-support exponential bound on \(\sum_{\operatorname{supp}\mathbf n=H}b_{\mathbf n}\) would suffice. This is the precise remaining coefficient-resummation target; (5.1) alone does not establish it.
 
 ## 6. Corrected frontier
 
