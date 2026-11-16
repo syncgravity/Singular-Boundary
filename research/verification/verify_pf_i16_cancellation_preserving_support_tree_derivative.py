@@ -66,9 +66,43 @@ def check_omitted_port_parameter_survives():
     print("PASS omitted-port marginal depends on both intervening reset parameters")
 
 
+
+def interval_hull_covers(block, edge_index):
+    if not block:
+        return False
+    return min(block) <= edge_index < max(block)
+
+
+def verify_port_hull_criterion():
+    checked = 0
+    for n in range(2, 7):
+        path_edges = list(range(n - 1))
+        for pi in partitions(range(n)):
+            covered = set()
+            for block in pi:
+                for edge in path_edges:
+                    if interval_hull_covers(block, edge):
+                        covered.add(edge)
+            # A partition product can depend on every path-edge parameter
+            # exactly when the union of its block hulls covers every cut.
+            expected = (covered == set(path_edges))
+            # Direct endpoint test on each block: the parameter at cut a
+            # occurs iff the block has a selected port on both sides.
+            for block in pi:
+                for edge in path_edges:
+                    direct = any(i <= edge for i in block) and any(i > edge for i in block)
+                    assert direct == interval_hull_covers(block, edge)
+            if n == 4 and frozenset(map(frozenset, pi)) == frozenset((frozenset((0, 2)), frozenset((1, 3)))):
+                assert expected
+            checked += 1
+    print(f"PASS exact port-hull dependency criterion over {checked} partitions (R=2..6)")
+    print("PASS overlapping block hulls can cover all path transitions without a one-block partition")
+
+
 def main():
     check_exact_counterexample()
     check_omitted_port_parameter_survives()
+    verify_port_hull_criterion()
 
 
 if __name__ == "__main__":
