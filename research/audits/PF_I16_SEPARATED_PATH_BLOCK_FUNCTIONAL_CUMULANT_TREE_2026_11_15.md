@@ -1,7 +1,7 @@
-# PF-I16 — Markov path-block cumulant tree for separated temporal hulls
+# PF-I16 — Sharp Markov path-block cumulant tree for separated temporal hulls
 
 **Date:** 2026-11-15  
-**Status:** ESTABLISHED for a fixed finite number q of bounded path-block observables whose temporal hull intervals are pairwise disjoint and ordered. The constant depends only on q, not on the number of sample times inside a block, the interval lengths, or the gaps. This is a restricted case of the local block-functional cumulant-tree target. Interlaced/overlapping hulls remain open.
+**Status:** ESTABLISHED for any fixed finite number q of bounded path-block observables whose temporal hull intervals are pairwise disjoint and ordered. The sharp one-link coefficient (2^{q-2}) survives unchanged, independent of the number of sample times inside a block, interval lengths, and horizon. Interlaced/overlapping hulls remain open.
 
 ## 1. Setup
 
@@ -15,99 +15,151 @@ Let (S_1,\ldots,S_q) be finite nonempty time sets, with ordered disjoint hulls
 [
 J_a=[u_a,v_a]=[\min S_a,\max S_a],
 \qquad v_a<u_{a+1},\quad a=1,\ldots,q-1.
+\tag{1.2}
 ]
-Let (G_a) be any bounded measurable function of the path coordinates ((X_s)_{s\in S_a}). Write (M_a=\|G_a\|_\infty) and (g_a=u_{a+1}-v_a>0).
+Let (G_a) be any bounded measurable function of the path coordinates ((X_s)_{s\in S_a}), and put (M_a=\|G_a\|_\infty).
 
-## 2. Transfer-operator representation
+For (i<j), define the interval-gap weight
+[
+w_{ij}=e^{-\Delta_0(u_j-v_i)},\qquad w_{ji}=w_{ij}.
+\tag{1.3}
+]
+For a tree T on the block labels, write (w(T)=\prod_{\{i,j\}\in T}w_{ij}).
 
-For each block a, define its path transfer operator (K_a) from (u_a) to (v_a) by
+## 2. Path transfer operators and Boolean cumulants
+
+For each block a, define the path transfer operator from (u_a) to (v_a):
 [
 (K_af)(x)=\mathbb E_x[G_a f(X_{v_a})],
-]
-where the conditional expectation includes all path coordinates in (S_a). If the block observable is absent from a moment, use (K_a^{(0)}=P_{v_a-u_a}); if present, use (K_a^{(1)}=K_a). Positivity and domination by the Markov semigroup imply
-[
-\|K_a^{(1)}\|_{2\to2}\le M_a,
-\qquad \|K_a^{(0)}\|_{2\to2}\le1.
 \tag{2.1}
 ]
-For every (B\subseteq[q]), the joint moment is
+where the conditional expectation includes the path coordinates in (S_a). Positivity and domination by (P_{v_a-u_a}) imply
 [
-m(B)=\mathbb E\prod_{a\in B}G_a
-=
-\langle\mathbf1,
-K_1^{(\mathbf1_{1\in B})}P_{g_1}
-K_2^{(\mathbf1_{2\in B})}\cdots
-P_{g_{q-1}}K_q^{(\mathbf1_{q\in B})}
-\mathbf1\rangle_\pi.
+\|K_a\|_{2\to2}\le M_a.
 \tag{2.2}
 ]
-Write each gap transition as (P_{g_j}=\Pi+R_j), with
+For any ordered subfamily (i_1<\cdots<i_k), the Boolean cumulant is the interval-partition cumulant of these variables. Its transfer-operator identity is
 [
-\|R_j\|_{2\to2}\le e^{-\Delta_0g_j}.
+B_k(G_{i_1},\ldots,G_{i_k})
+=
+\langle\mathbf1,
+K_{i_1}(P_{u_{i_2}-v_{i_1}}-\Pi)K_{i_2}
+\cdots
+(P_{u_{i_k}-v_{i_{k-1}}}-\Pi)K_{i_k}
+\mathbf1\rangle_\pi.
 \tag{2.3}
 ]
-
-## 3. Exact gap-cancellation lemma
-
-The classical cumulant is
+Indeed, expanding each (P-Pi) gives inclusion–exclusion over interval partitions, which is precisely Boolean moment-cumulant inversion. Therefore
 [
-\kappa(G_1,\ldots,G_q)
-=
-\sum_{\pi\in\Pi([q])}
-(-1)^{|\pi|-1}(|\pi|-1)!
-\prod_{B\in\pi}m(B).
+|B_k(G_{i_1},\ldots,G_{i_k})|
+\le
+\left(\prod_{\ell=1}^kM_{i_\ell}\right)
+\exp\left[-\Delta_0
+\sum_{\ell=1}^{k-1}(u_{i_{\ell+1}}-v_{i_\ell})\right].
+\tag{2.4}
+]
+For k=1 this is the trivial mean bound.
+
+## 3. Cyclic-permutation conversion
+
+The multivariate classical/Boolean cumulant formula expresses the classical cumulant as a signed sum over cyclic permutations. Each cycle is decomposed into its maximal increasing runs; each run contributes one Boolean cumulant, and the sign is ((-1)^{\#\mathrm{runs}-1}). Taking absolute values and applying (2.4), we obtain
+[
+|\kappa(G_1,\ldots,G_q)|
+\le
+\left(\prod_{i=1}^qM_i\right)W_q,
 \tag{3.1}
 ]
-In each product indexed by π, there is one copy of every gap operator (P_{g_j}) for every block (B\in\pi). Expand every copy as (\Pi+R_j).
-
-**Lemma.** In the fully summed expansion (3.1), all terms in which a fixed gap j uses (\Pi) in every block-copy cancel.
-
-**Proof.** Replace (P_{g_j}) by (\Pi) in every moment (2.2). Since (\Pi) is the rank-one stationary projection, each such moment factors exactly into a left moment involving only (G_1,\ldots,G_j) and a right moment involving only (G_{j+1},\ldots,G_q). The resulting moment functional is the moment functional of two independent families. Its full joint cumulant is zero. This is an identity as a polynomial in all the other gap operators, so after expanding those other operators into (\Pi+R_k), cancellation holds coefficient by coefficient. \(\square\)
-
-It follows that every nonzero monomial in the cumulant expansion contains at least one (R_j) for every gap j. Thus every surviving monomial carries the factor
+where
 [
-\prod_{j=1}^{q-1}e^{-\Delta_0g_j}.
+W_q=
+\sum_{\sigma\in\mathfrak C_q}
+\prod_{a\to b\text{ an increasing edge of }\sigma}w_{ab}.
 \tag{3.2}
 ]
+The increasing edges of a cycle are exactly the adjacent pairs within its increasing runs. This is the same cyclic weight polynomial as in the one-time Markov theorem, with (e^{-\Delta_0(s_j-s_i)}) replaced by the interval-gap weight (w_{ij}).
 
-## 4. Uniform block-functional tree estimate
+## 4. Temporal tree theorem for interval-gap weights
 
-For a partition π, the product of the operator norms of all local block operators in its moment factors is at most (prod_a M_a), because each G_a occurs in exactly one block. The expansion of the (|\pi|) copies of the (q-1) gap operators has at most (2^{(q-1)|\pi|}) terms. Therefore
+Let
 [
-\boxed{
-|\kappa(G_1,\ldots,G_q)|
-\le C_q
-\left(\prod_{a=1}^qM_a\right)
-e^{-\Delta_0\sum_{j=1}^{q-1}g_j},
-\quad
-C_q:=\sum_{\pi\in\Pi([q])}(|\pi|-1)!\,2^{(q-1)|\pi|}.
-}
+\tau_q=\sum_{T\in\mathcal T_q}w(T)
 \tag{4.1}
 ]
-This constant is finite for each q and independent of the number of time coordinates in each (S_a).
+be the spanning-tree polynomial of the complete graph on block labels.
 
-Now define the port-pair weight
+**Theorem.** For all q≥2,
 [
-W_{ab}=\sum_{s\in S_a,t\in S_b}e^{-\Delta_0|s-t|}.
+\boxed{W_q\le2^{q-2}\tau_q.}
+\tag{4.2}
 ]
-Because the hulls are disjoint and ordered, (W_{a,a+1}\ge e^{-\Delta_0g_a}), using the last port of (S_a) and first port of (S_{a+1}). The path on block labels is a spanning tree of the complete graph (K_q). Hence
+
+**Proof.** The case q=2 is equality. For q≥3, insert the largest label q into a directed edge (a\to b) of a cycle (sigma') on ([q-1]). If (a<b), the old increasing edge (a\to b) is replaced by the increasing edge (a\to q), while (q\to b) is decreasing. The ratio of new to old weight is
+[
+\frac{w_{aq}}{w_{ab}}
+=e^{-\Delta_0[(u_q-v_a)-(u_b-v_a)]}
+=e^{-\Delta_0(u_q-u_b)}
+\le e^{-\Delta_0(u_q-v_b)}=w_{bq}.
+\tag{4.3}
+]
+If (a>b), the old edge was decreasing and had weight one in (3.2); the insertion creates the increasing edge (a\to q), whose weight is (w_{aq}=w_{\max(a,b),q}). Thus in either case the insertion multiplies the cycle weight by at most (w_{\max(a,b),q}).
+
+Every vertex of (sigma') is incident to two directed edges, so summing over all insertion positions gives
+[
+W_q\le2W_{q-1}\sum_{i=1}^{q-1}w_{iq}.
+\tag{4.4}
+]
+On the other hand, every tree on ([q]) obtained by attaching q as a leaf to i to a tree on ([q-1]) is distinct, hence
+[
+\tau_q\ge\tau_{q-1}\sum_{i=1}^{q-1}w_{iq}.
+\tag{4.5}
+]
+Induction proves (4.2). \(\square\)
+
+Combining (3.1) and (4.2),
 [
 \boxed{
 |\kappa(G_1,\ldots,G_q)|
-\le C_q\left(\prod_aM_a\right)
-\sum_{T\in\mathcal T(K_q)}
-\prod_{\{a,b\}\in T}W_{ab}.
+\le
+2^{q-2}\left(\prod_{i=1}^q\|G_i\|_\infty\right)
+\sum_{T\in\mathcal T_q}
+\prod_{\{i,j\}\in T}
+e^{-\Delta_0(u_{\max(i,j)}-v_{\min(i,j)})}.
 }
-\tag{4.2}
+\tag{4.6}
 ]
-This proves the desired block-level cumulant-tree form for pairwise disjoint temporal hulls, with a constant independent of each block's number of ports.
 
-## 5. Boundary
+## 5. Port-pair tree form
+
+Define
+[
+W_{ij}^{\mathrm{port}}
+=\sum_{s\in S_i,t\in S_j}e^{-\Delta_0|s-t|}.
+\tag{5.1}
+]
+For i<j, the last port (v_i\in S_i) and first port (u_j\in S_j) give
+[
+W_{ij}^{\mathrm{port}}\ge e^{-\Delta_0(u_j-v_i)}=w_{ij}.
+\tag{5.2}
+]
+Therefore (4.6) implies the desired port-pair tree estimate
+[
+\boxed{
+|\kappa(G_1,\ldots,G_q)|
+\le
+2^{q-2}\left(\prod_i\|G_i\|_\infty\right)
+\sum_{T\in\mathcal T_q}
+\prod_{\{i,j\}\in T}W_{ij}^{\mathrm{port}}.
+}
+\tag{5.3}
+]
+The coefficient is exactly the one-link coefficient (2^{q-2}), and is independent of the number of time ports in each block.
+
+## 6. Boundary
 
 - Arbitrary bounded path functionals on pairwise disjoint ordered hulls: **ESTABLISHED**.
-- The number of sample times in each block and the horizon: unrestricted.
-- The number q of blocks: fixed; in the PF-I16 application it is at most the distinct-support incidence cap (232), so (C_q\le\max_{1\le s\le232}C_s<\infty).
-- Interlaced port sets whose hulls overlap: **OPEN**. Compressing them to their hull intervals loses the finer port-pair weights; the parity/HGR obstruction prevents replacing the missing higher-order argument by pairwise conditional correlation alone.
-- The general repeated-support local block-functional theorem, cyclic hyperedges of arity at least four, KP convergence, interacting-vacuum Poincaré, scale setting, and the continuum mass gap remain open.
+- Number of sample times per block and horizon: unrestricted.
+- Number q of blocks: arbitrary finite; for PF-I16 local support types, q≤232.
+- Interlaced port sets whose hulls overlap: **OPEN**. The ordered block transfer-operator representation no longer applies as a simple chain of disjoint segments. Compressing to hulls loses the finer port-pair weights; pairwise conditional HGR alone is insufficient.
+- General repeated-support local block-functional theorem, cyclic hyperedges of arity at least four, KP convergence, interacting-vacuum Poincaré, scale setting, and the continuum mass gap remain open.
 
-The companion verifier uses exact rational finite-state Markov paths to check the operator-gap reset cancellation and the resulting cumulant decay for several multi-time block functions. It is a regression for the algebraic cancellation mechanism, not a proof of the infinite-dimensional semigroup norm bound. No P0–P5 gate is promoted.
+The companion verifiers check the exact gap-reset cancellation and the interval-weight cyclic insertion/tree inequality with rational finite data. The semigroup norm bound (1.1) is an analytic hypothesis. No P0–P5 gate is promoted.
