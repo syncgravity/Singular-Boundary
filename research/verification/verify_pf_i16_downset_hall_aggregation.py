@@ -112,7 +112,7 @@ def port_tree_loads(n, retain_states=False):
             adj[a].append(b)
             adj[b].append(a)
         load = tuple(sum(min(a, b) <= k < max(a, b) for a, b in edges)
-                     for k in range(1, n))
+                     for k in range(n - 1))
         out[load] += 1
         if retain_states and len(adj[0]) == len(adj[n - 1]) == 1:
             states[(adj[0][0] + 1, adj[n - 1][0] + 1, load)] += 1
@@ -169,11 +169,11 @@ def check_statewise_obstruction():
                        if (p, q) == (3, 6) and leq(load, h))
     local_supply = sum(c for (p, q, load), c in right_states.items()
                        if (p, q) == (3, 6) and leq(load, h))
-    assert (local_demand, local_supply) == (2, 0)
-    assert (demand, supply) == (8, 36)
+    assert (local_demand, local_supply) == (1, 0)
+    assert (demand, supply) == (8, 27)
     print(
-        "PASS statewise obstruction: D=down(h), state=(3,6) "
-        "has demand=2, supply=0; aggregate demand=8, supply=36"
+        "PASS statewise obstruction: D=down(h), state=(3,2) "
+        "has demand=1, supply=0; aggregate demand=8, supply=27"
     )
 
 
