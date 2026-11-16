@@ -56,8 +56,8 @@ are new, so every edge incident to either endpoint is one of the local
 switch edges. The complete local tree is inserted. For the last insertion
 in a history, no later step can have attached an edge to either endpoint.
 The replaced edge was deleted and is not one of the inserted local edges;
-thus all four conditions hold when reversing a genuine history in reverse
-chronological order.
+thus the guarded conditions hold when reversing a genuine history in
+reverse chronological order.
 
 **Why it is sufficient.** The current tree contains the complete local
 switch tree, and its incidences at \(a,b\) are exactly the prescribed
@@ -184,3 +184,9 @@ The finite verifier now asserts this corrected floor and checks at every
 enumerated state that the number of next transitions is at least twice the
 number of current states. These are executable checks; corrected finite
 column figures remain pending execution.
+
+
+For the corrected exact finite counts and the two-choice sourcewise degree
+proof under the no-reinsertion guard, see
+`PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md`. The earlier
+pre-guard weighted-column figures are superseded by that revalidation.
