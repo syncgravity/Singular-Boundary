@@ -122,6 +122,19 @@ and an assignment can contribute only if every edge \(ij\in T\) lies in the port
 
 For a single link with four ordered ports, the nontrivial partition \(\{\{1,3\},\{2,4\}\}\) has hulls \([1,3]\) and \([2,4]\); their union covers all three consecutive transition parameters. Hence even a tree derivative using all three transitions can receive contributions from a partition with no block containing both extreme ports. The surviving partition family is an interval-covering family, not just the one-block partition.
 
+The contribution is not merely a formal possibility. On one asymmetric two-state link with four ordered ports, take all four row factors to be the centered eigenfunction \(X_i\), with transition parameters \(\lambda_1,\lambda_2,\lambda_3\) and eigenvalue \(\rho\). Then
+\[
+M_{\{1,3\}}=\lambda_1\lambda_2\rho^2v,\qquad
+M_{\{2,4\}}=\lambda_2\lambda_3\rho^2v,
+\]
+where \(v=\mathbb E X^2>0\). The two-block partition \(\{\{1,3\},\{2,4\}\}\) therefore has
+\[
+\partial_{\lambda_1}\partial_{\lambda_2}\partial_{\lambda_3}
+\bigl(M_{\{1,3\}}M_{\{2,4\}}\bigr)
+=2\lambda_2\rho^4v^2\ne0
+\]
+for \(\lambda_2>0\). Its two block hulls \([1,3]\) and \([2,4]\) cover all three cuts. This directly exhibits a nontrivial partition term surviving a full path-tree derivative.
+
 The remaining combinatorial task is to resum (4.2) with its Möbius signs over interval-covering partitions, and then combine the link colors while keeping the row-incidence bound \(m\). The present audit establishes the criterion, not the required uniform bound.
 
 ## 5. Corrected remaining obstacle
