@@ -359,3 +359,35 @@ For each such matching, exactly one matched interval crosses every odd cut and e
 oxed{L(h^{min})=2^{s-1}.}
 ]
 The corresponding right-hand exact ceiling counts observed for n=4,6,8,10 are 3,9,27,81, i.e. (3^{s-1}). That right-hand formula is not asserted here as an all-orders theorem; proving it directly, or deriving it from (EL) with a closed boundary-state recursion, would establish the pointwise Hall inequality on this one extremal path.
+
+
+## General endpoint deletion: exact rooted-forest recurrence
+
+The two-leaf identity (EL) is the first case of a more general boundary-state recursion, which handles the residual capacity vectors whose new endpoint cut has capacity 2 or larger.
+
+For (b=(b_1,\ldots,b_{n-1})), let (A_n(b)) be the number of labeled trees with cut loads at most (b). For a nonempty set (S\subseteq\{2,\ldots,n\}), write
+[
+r_k(S)=|S\cap\{k+1,\ldots,n\}|,\qquad 2\le k\le n-1.
+]
+Let (F_{n-1}(S;d)) denote the number of spanning forests on vertices (2,\ldots,n) which have exactly (|S|) components, each containing exactly one vertex of S, and whose old cut loads satisfy (c_k(F)\le d_k) for all (2\le k\le n-1). Then
+[
+oxed{
+A_n(b)=
+\sum_{\substack{\varnothing\ne S\subseteq\{2,\ldots,n\}\\|S|\le b_1}}
+F_{n-1}\bigl(S; (b_k-r_k(S))_{k=2}^{n-1}\bigr).
+}
+	ag{RF}
+]
+A term with any negative residual capacity is zero.
+
+**Proof.** In a tree T counted by A_n(b), let S be the neighbor set of vertex 1. Its size is deg_T(1)=c_1(T)≤b_1. Deleting vertex 1 produces a forest with exactly |S| components, and each component contains exactly one vertex of S: two neighbors of 1 in the same component would create a cycle when the two incident edges are restored. Conversely, any such rooted forest becomes a unique tree when vertex 1 is joined to every root in S. At cut k≥2, the restored star edges contribute exactly r_k(S), so the forest capacity is b_k-r_k(S). This partitions all counted trees by their unique neighbor set S and proves (RF).
+
+When b_1=1, S={p} and the forest has one component, hence is a tree; (RF) reduces to the one-leaf recurrence. Applying it at both endpoints when b_1=b_{n-1}=1 gives (EL).
+
+The rooted-forest count in (RF) is itself a matrix-tree quantity if the cut constraints are removed: for a weighted graph on {2,...,n}, the all-minors Matrix-Tree Theorem identifies the number of forests rooted at S with the principal Laplacian minor obtained by deleting rows and columns indexed by S. The cut constraints remain the hard part; they couple the forest's components to the ordered boundary.
+
+### Why this is the relevant next state space
+
+After deleting the two forced endpoint leaves of a primitive capacity h, the residual first and last capacities are in {1,2}, depending on the two leaf-neighbor choices. Repeated leaf deletion alone therefore does not close: when a residual boundary capacity is 2, the endpoint may have degree 2, and deleting it creates a two-component rooted forest rather than a tree. Formula (RF) gives the exact missing state, without discarding multiplicities or assuming a false leaf condition.
+
+A plausible induction state is consequently a rooted forest with a specified ordered boundary-root set and residual cut capacities. To prove the one-link inequality by this route, one would need (i) a tractable recursion/upper bound for the left interval-overlap spanning-tree demand in matching boundary states, and (ii) a lower bound on the corresponding right rooted-forest supply. Neither comparison is established yet. The recurrence is exact, but it is not itself a Hall inequality.
