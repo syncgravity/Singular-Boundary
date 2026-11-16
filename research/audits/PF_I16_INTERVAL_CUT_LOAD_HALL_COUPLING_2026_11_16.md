@@ -917,7 +917,7 @@ Thus the local-switch relation has a fractional Hall certificate at every tested
 The remaining statement is now a specific combinatorial bound:
 \[
 \boxed{
-\sum_{(M,\tau):,T\in C(M,\tau)}
+\sum_{(M,\tau):T\in C(M,\tau)}
 \frac{1}{|C(M,\tau)|}\le1
 \quad\text{for every labeled port tree }T.
 }
