@@ -174,14 +174,94 @@ def verify_connected_weight_and_global_coefficient_bound():
         assert coefficient_sum <= 4**n * n**(n - 2), (n, coefficient_sum)
 
 
+
+def determinant_fraction(matrix):
+    a = [row[:] for row in matrix]
+    n = len(a)
+    sign = F(1)
+    det = F(1)
+    for k in range(n):
+        pivot = next((i for i in range(k, n) if a[i][k] != 0), None)
+        if pivot is None:
+            return F(0)
+        if pivot != k:
+            a[k], a[pivot] = a[pivot], a[k]
+            sign = -sign
+        p = a[k][k]
+        det *= p
+        for i in range(k + 1, n):
+            factor = a[i][k] / p
+            for j in range(k + 1, n):
+                a[i][j] -= factor * a[k][j]
+            a[i][k] = F(0)
+    return sign * det
+
+
+def complete_temporal_tree_polynomial(n, edge_weights):
+    # Matrix-Tree theorem: cofactor of the weighted complete-graph Laplacian.
+    lap = [[F(0) for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(i + 1, n):
+            w = F(1)
+            for k in range(i, j):
+                w *= edge_weights[k]
+            lap[i][i] += w
+            lap[j][j] += w
+            lap[i][j] -= w
+            lap[j][i] -= w
+    return determinant_fraction([row[:-1] for row in lap[:-1]])
+
+
+def absolute_matching_resummation(n, edge_weights):
+    total = F(0)
+    for matching in perfect_matchings(range(n)):
+        intervals, edges = overlap_graph(matching)
+        coefficient = chromatic_linear_coefficient(len(intervals), edges)
+        product = F(1)
+        for pair in matching:
+            product *= interval_weight(pair, edge_weights)
+        total += abs(coefficient) * product
+    return total
+
+
+def verify_weighted_tree_graph_inequality_finite_grid():
+    # Exact rational tests only. This is a diagnostic for the conjectured
+    # weighted inequality, not a proof for arbitrary R or arbitrary weights.
+    grids = {
+        2: [(F(1, 10),), (F(1),)],
+        4: [
+            (F(1, 10), F(1, 10), F(1, 10)),
+            (F(1, 10), F(1), F(1, 10)),
+            (F(1, 2), F(3, 4), F(1, 3)),
+            (F(1), F(1), F(1)),
+        ],
+        6: [
+            tuple(map(F, (1, 1, 1, 1, 1))),
+            (F(1,10), F(1,2), F(9,10), F(1,3), F(1,5)),
+            (F(1,3), F(4,5), F(1,10), F(1,2), F(1,10)),
+        ],
+        8: [
+            tuple(map(F, (1, 1, 1, 1, 1, 1, 1))),
+            (F(1,2), F(1,2), F(1,10), F(3,10), F(1,2), F(1), F(1,10)),
+            (F(1,10), F(9,10), F(1,5), F(4,5), F(1,3), F(1,2), F(1,10)),
+        ],
+    }
+    for n, vectors in grids.items():
+        for weights in vectors:
+            lhs = absolute_matching_resummation(n, weights)
+            rhs = complete_temporal_tree_polynomial(n, weights)
+            assert lhs <= rhs, (n, weights, lhs, rhs)
+
 def main():
     verify_exact_resummation()
     verify_four_port_formula()
     verify_connected_weight_and_global_coefficient_bound()
+    verify_weighted_tree_graph_inequality_finite_grid()
     print("PASS exact matching/chromatic resummation (R=2,4,6,8)")
     print("PASS four-port overlapping/nested interval coefficients")
     print("PASS connected interval coverage and temporal path majorant (R<=10)")
     print("PASS coefficient sum <= 4^R R^(R-2) on tested even arities")
+    print("PASS conjectured weighted tree-graph inequality on exact rational grid (R<=8)")
 
 
 if __name__ == "__main__":
