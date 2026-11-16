@@ -13,6 +13,7 @@ alternating-reachability Hall witness. This is finite diagnostic evidence,
 not an all-orders theorem.
 """
 from collections import deque
+from heapq import heappop, heappush
 from verify_pf_i16_local_switch_fractional_transport import (
     LOCAL_TREES, load, matchings, overlap_edges, overlaps, spanning_trees,
     tree_path,
@@ -40,11 +41,33 @@ def canonical_order(intervals, tau, strategy):
         adj[a].append(b)
         adj[b].append(a)
     for row in adj:
-        row.sort(key=lambda v: intervals[v], reverse=(strategy == "bfs-desc"))
+        row.sort(key=lambda v: intervals[v],
+                 reverse=(strategy.endswith("desc")))
 
     parent = {root: None}
     order = []
-    if strategy.startswith("bfs"):
+    if strategy.startswith("kahn"):
+        def priority(v):
+            a, b = intervals[v]
+            if strategy == "kahn-interval-asc":
+                return (a, b, v)
+            if strategy == "kahn-interval-desc":
+                return (-a, -b, v)
+            if strategy == "kahn-span-asc":
+                return (b - a, a, b, v)
+            return (-(b - a), a, b, v)
+        heap = []
+        for v in adj[root]:
+            parent[v] = root
+            heappush(heap, (priority(v), v))
+        while heap:
+            _, u = heappop(heap)
+            order.append(u)
+            for v in adj[u]:
+                if v not in parent:
+                    parent[v] = u
+                    heappush(heap, (priority(v), v))
+    elif strategy.startswith("bfs"):
         queue = deque([root])
         while queue:
             u = queue.popleft()
@@ -110,7 +133,11 @@ def fixed_order_outputs(intervals, tau, n, ids, strategy):
 def enumerate_rows(n):
     ids = edge_ids(n)
     rows, labels = [], []
-    strategies = ("bfs-asc", "bfs-desc", "dfs-asc")
+    strategies = (
+        "bfs-asc", "bfs-desc", "dfs-asc", "dfs-desc",
+        "kahn-interval-asc", "kahn-interval-desc",
+        "kahn-span-asc", "kahn-span-desc",
+    )
     for matching in matchings(range(1, n + 1)):
         intervals = tuple(sorted(tuple(sorted(e)) for e in matching))
         overlap = overlap_edges(intervals)
