@@ -33,6 +33,7 @@ E(T^-)=
 The inverse is legal precisely when
 \[
 e\notin E(S_j),\qquad
+e\notin E(U),\qquad
 E(S_j)\subseteq E(U),\qquad
 \delta_U(\{a,b\})=\delta_{S_j}(\{a,b\}).
 \tag{R-inc}
@@ -50,12 +51,12 @@ the previous tree exactly: it deletes the two new vertices, removes their
 local incidences, and restores the replaced edge. It is not the operation
 of deleting all three local edges while retaining all four endpoints.
 
-**Why (R-inc) is necessary.** At the instant \(J\) is inserted, \(a,b\)
+**Why the four conditions are necessary.** At the instant \(J\) is inserted, \(a,b\)
 are new, so every edge incident to either endpoint is one of the local
 switch edges. The complete local tree is inserted. For the last insertion
 in a history, no later step can have attached an edge to either endpoint.
 The replaced edge was deleted and is not one of the inserted local edges;
-thus all three conditions hold when reversing a genuine history in reverse
+thus all four conditions hold when reversing a genuine history in reverse
 chronological order.
 
 **Why it is sufficient.** The current tree contains the complete local
@@ -119,6 +120,10 @@ transition relation. The previously reported finite degree and column
 figures were produced before this guard was added and must be revalidated
 against the corrected relation. The updated verifiers have not yet been
 executed in this work session; no corrected finite pass result is claimed.
+
+The displayed inverse condition (R-inc) is the four-condition version;
+the earlier prose-only mention of e's absence is not a separate optional
+guard.
 
 This is a precise inverse-transition lemma and search rule, not a proof of
 the weighted one-link inequality or of a Yang--Mills mass gap.
