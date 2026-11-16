@@ -213,11 +213,29 @@ def check(n, expected_left, expected_types, expected_right_types):
             n, load, multiplicity, ceilings[load]
         )
 
+    # Stronger sufficient estimate: Q(h) >= A(h) - sum_{g<h} A(g),
+    # where A(h)=sum_{g<=h}Q(g). Check the resulting union-bound
+    # criterion A(h) >= L(h)+sum_{g<h}A(g) exactly.
+    cumulative = {
+        h: sum(count for g, count in ceilings.items()
+               if all(a <= b for a, b in zip(g, h)))
+        for h in left
+    }
+    ub_margins = {
+        h: cumulative[h] - left[h] - sum(
+            cumulative[g] for g in left
+            if g != h and all(a <= b for a, b in zip(g, h))
+        )
+        for h in left
+    }
+    assert min(ub_margins.values()) >= 0, (n, ub_margins)
+
     print(
         f"PASS n={n}: connected_matchings={connected_matchings}, "
         f"left_copies={sum(left.values())}, left_load_types={len(left)}, "
         f"trees={sum(right.values())}, right_load_types={len(right)}, "
         f"minimum_Hall_slack={slack}, "
+        f"minimum_union_bound_margin={min(ub_margins.values())}, "
         f"relevant_trees={sum(ceilings.values())}, excluded_trees={excluded}"
     )
     for load, multiplicity in sorted(left.items()):
