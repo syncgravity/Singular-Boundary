@@ -111,10 +111,29 @@ def verify_port_hull_criterion():
     print("PASS overlapping block hulls can cover all path transitions without a one-block partition")
 
 
+
+def check_four_port_interval_partition():
+    lam1, lam2, lam3 = F(2, 5), F(1, 2), F(3, 7)
+    var = VAR
+    m13 = lam1 * lam2 * RHO**2 * var
+    m24 = lam2 * lam3 * RHO**2 * var
+    product_moment = m13 * m24
+    # d/dlam1 d/dlam2 d/dlam3 of lam1*lam2^2*lam3*rho^4*var^2
+    mixed = 2 * lam2 * RHO**4 * var**2
+    assert product_moment == lam1 * lam2**2 * lam3 * RHO**4 * var**2
+    assert mixed == F(1, 324)
+    assert mixed != 0
+    # Hulls [1,3] and [2,4] cover each of the three consecutive cuts.
+    hull_13 = {1, 2}
+    hull_24 = {2, 3}
+    assert hull_13 | hull_24 == {1, 2, 3}
+    print(f"PASS four-port nontrivial partition survives all three derivatives: {mixed}")
+
 def main():
     check_exact_counterexample()
     check_omitted_port_parameter_survives()
     verify_port_hull_criterion()
+    check_four_port_interval_partition()
 
 
 if __name__ == "__main__":
