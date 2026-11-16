@@ -10,7 +10,7 @@ The uniform star-only transport failed at n=6. Could source-dependent weights re
 \sum_x\pi(x,T)\leq1.
 \]
 
-All candidates preserve the source cut-load exactly, so the problem splits into exact-profile classes.
+All candidates preserve the source cut-load exactly, so this restricted problem splits into exact-profile classes.
 
 ## Exact finite result
 
@@ -26,12 +26,16 @@ For the n=6 profile (1,2,3,2,1), the alternating-reachability Hall witness is th
 
 The six matching configurations in this profile are the six perfect matchings whose three intervals pairwise overlap. Each overlap graph is K3, contributing three spanning trees, hence 18 left objects.
 
-## Important boundary: this is not a counterexample to the target inequality
+## Important correction: exact-profile Hall is too strong
 
-The failure is only for the restricted candidate relation. For this same profile, there are 59 complete-graph port trees with cut-load coordinatewise at most (1,2,3,2,1), so the full down-set neighborhood is much larger than the 17 exact-profile star-only candidates. In particular, the increasing-path local replacement can lower cut-load and is not captured by the star-only relation.
+For h=(1,2,3,2,1), the number of right trees with cut-load *exactly* h is 17, while the left multiplicity is 18. Therefore the pointwise claim L(h)<=Q_exact(h) is false already at n=6 and must not be used as the target theorem.
 
-Therefore the viable local-switch target must retain profile-lowering moves (at least the increasing path) or enlarge the relation in another way. The earlier three-move transport (two middle-centred stars plus the increasing path) has a successful uniform finite test through n=8; the star-only restriction is now ruled out even with arbitrary fractional weights.
+The actual Hall neighborhood for a source of load h consists of all right trees with c(T)<=h coordinatewise, not only trees with c(T)=h. For this same h there are 59 complete-graph port trees with cut-load coordinatewise at most h. The full down-set supply is therefore much larger than the 17 exact-profile star-only candidates. The appropriate exact finite bookkeeping uses least primitive-Dyck majorants / ceiling classes, or the full down-set Hall inequalities; it does not require equality of cut-load profiles.
 
 ## Consequence
 
-Do not pursue an all-orders theorem for star-only fractional transport. The next meaningful target is an all-orders column-capacity bound for the three-move relation, or a more structured nonuniform transport using its lower-load outputs. Neither is established here. The weighted one-link inequality and Yang--Mills mass gap remain open.
+The failure is only for the restricted candidate relation. In particular, the increasing-path local replacement can lower cut-load and is not captured by the star-only relation. The viable local-switch target must retain profile-lowering moves (at least the increasing path) or enlarge the relation in another way.
+
+The earlier three-move transport (two middle-centred stars plus the increasing path) has a successful uniform finite test through n=8; the star-only restriction is now ruled out even with arbitrary fractional weights. The next meaningful target is an all-orders column-capacity bound for the three-move relation, or a more structured nonuniform transport using its lower-load outputs. Neither is established here.
+
+The weighted one-link inequality and Yang--Mills mass gap remain open.
