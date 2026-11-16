@@ -885,7 +885,7 @@ The three local four-vertex trees with cut-load bounded by (1,2,1) are the two m
 
 ## Local-switch candidate relation and finite fractional transport (2026-11-16)
 
-The local-switch witness can be made multivalued. Root \tau at the interval containing port 1; choose any parent-before-child order; when inserting child interval J, choose any edge of the current monotone parent path that overlaps J; and replace it by any of the three admissible four-vertex trees (the two middle-centered stars or the increasing path). Each resulting output is a port tree with \(c(T)\le m(M)\).
+The local-switch witness can be made multivalued. Root \tau at the interval containing port 1; choose any parent-before-child order; when inserting child interval J, choose any edge of the current tree that overlaps J; and replace it by any of the three admissible four-vertex trees (the two middle-centered stars or the increasing path). Each resulting output is a port tree with \(c(T)\le m(M)\).
 
 For each source object x=(M,\tau), let \(C(x)\) be the set of *distinct* output trees obtainable by all such choices. The finite experiment uses the uniform fractional transport
 \[
