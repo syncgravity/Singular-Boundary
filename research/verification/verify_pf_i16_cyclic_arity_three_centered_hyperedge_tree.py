@@ -101,7 +101,7 @@ def check(n, hyperedges, tag):
         choices.append(local)
 
     rhs = Fraction(0)
-    for selection in product(*choices):
+    for selection in cartesian_product(*choices):
         active = [tuple(s) for s in selection if s]
         if not active or not connected(n, active):
             continue
