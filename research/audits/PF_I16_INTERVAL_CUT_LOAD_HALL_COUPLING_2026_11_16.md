@@ -258,3 +258,30 @@ det(L_n(x)^(n)) coefficient-sum below h
 A proof of this determinant-growth inequality would imply `Q(h)>=L(h)` by the displayed estimate, then the classwise injection, then all Hall inequalities, then the weighted one-link interval-tree inequality.
 
 **Current status:** (UB) has only been checked at n=4,6,8,10. The key unresolved step is a uniform lower bound on the cumulative tree count `A(h)` relative to all strict lower paths and the interval-overlap demand. In particular, the positive finite margins do not yet yield a recurrence or an all-orders estimate. No closure is claimed.
+
+
+## Injection attempt: rooted endpoint-doubling and its obstruction
+
+A natural way to turn a spanning tree \(\tau\) of the interval-overlap graph into a tree on the \(2s\) ports is to root \(\tau\), retain the matched edge of the root interval, and, for each parent-child edge of \(\tau\), replace the child's matched edge by two endpoint links: left endpoint to left endpoint and right endpoint to right endpoint. The edge count is exactly
+\[
+1+2(s-1)=2s-1,
+\]
+and the resulting graph is a tree: it is two copies of the rooted \(\tau\)-tree joined by the root matched edge.
+
+This construction is **not cut-load preserving**. The smallest transparent obstruction is the four-interval star on eight ports:
+\[
+M=\{(1,8),(2,3),(4,5),(6,7)\}.
+\]
+Its overlap graph is \(K_{1,3}\), so \(\tau=1\), and its matching cut-load is
+\[
+h=(1,2,1,2,1,2,1).
+\]
+Root at \((1,8)\). The endpoint-doubling tree has edges
+\[
+(1,8),(1,2),(8,3),(1,4),(8,5),(1,6),(8,7).
+\]
+At the cut between ports 3 and 4, six of these edges cross, whereas \(h_3=1\). Thus its cut-load is 6, exceeding the permitted load by 5.
+
+This is not a minor choice-of-root issue: the long root interval is the only active matching interval at that cut, while endpoint doubling routes several child endpoints across it. Any successful injection must use a different port-tree encoding—one that reroutes/replaces edges so that every cut is charged at most once per active interval, while retaining enough information to recover both \(M\) and the overlap-tree copy.
+
+The failed construction is recorded to prevent it being reused as a proof. It does not disprove the desired injection or the Hall inequality.
