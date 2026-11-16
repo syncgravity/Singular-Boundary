@@ -968,3 +968,27 @@ Exact rational values from exhaustive enumeration:
 All are strictly below one. The Python down-set verifier now checks (UI) with exact rational arithmetic through eight ports. The ten-port C++ verifier has been extended to check the same bound using the exact integer A(h) values and a long-double evaluation of the 14-term sum; its CI run is pending.
 
 The all-orders central problem is now reduced to proving (UI), or replacing it with a comparably simple scalar upper bound. This is a sufficient condition, not a theorem yet: no proof of (UI) for arbitrary even n has been established. The observed margin narrows as n grows, so an estimate with explicit n-dependence will be needed.
+
+
+### Ten-port obstruction to the uniform principal-ideal transport
+
+The scalar condition (UI) fails at n=10. Exact enumeration gives, in lexicographic primitive-path order,
+\[
+L(h)=(16,72,72,288,768,72,324,288,1116,2880,768,2880,7200,15000),
+\]
+\[
+A(h)=(81,531,531,3363,10485,531,3481,3363,20964,64280,10485,64280,205866,442979).
+\]
+Consequently
+\[
+\boxed{
+\sum_h\frac{L(h)}{A(h)}
+=
+\frac{108907816739572020902250967}
+{88771306100908588072891245}
+\approx1.226835804531>1.
+}
+\]
+The right tree that is the monotone path 1-2-...-10 has cut-load (1,...,1), so it belongs to every principal neighborhood. Its incoming mass under the uniform-principal-ideal transport is exactly this sum, exceeding its unit capacity. The scalar transport is therefore genuinely obstructed at ten ports; it is not merely unproved.
+
+This does **not** violate Hall: the same right tree can receive less mass under a different transport. It only rules out the uniform distribution over each full principal ideal as a universal certificate. The n=10 C++ verifier now records and checks this obstruction instead of asserting the false inequality (UI). The broader all-orders Hall problem remains open.
