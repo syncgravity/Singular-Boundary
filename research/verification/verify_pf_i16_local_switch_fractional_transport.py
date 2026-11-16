@@ -157,19 +157,29 @@ def candidate_outputs(intervals, tau):
             J = intervals[child]
             next_states = []
             for paths, tree_edges in states:
-                # The parent interval and J interleave. On the unique
-                # current-tree path between the parent endpoints, the first
-                # edge leaving the open interval (J[0], J[1]) overlaps J.
-                parent_interval = intervals[parent[child]]
-                ppath = tree_path(tree_edges, *parent_interval)
+                # Port 1 is already present and lies outside J. If any
+                # current vertex lies inside J, connect it to port 1; the
+                # first edge leaving J has alternating endpoints. If none
+                # lies inside J, the parent interval must contain J, and
+                # its endpoint path has an edge spanning across J.
+                inside = sorted({
+                    x for edge in tree_edges for x in edge
+                    if J[0] < x < J[1]
+                })
+                if inside:
+                    path_start, path_end = inside[0], 1
+                else:
+                    parent_interval = intervals[parent[child]]
+                    path_start, path_end = parent_interval
+                ppath = tree_path(tree_edges, path_start, path_end)
                 path_edges = tuple(zip(ppath, ppath[1:]))
                 guaranteed = tuple(e for e in path_edges if overlaps(e, J))
                 assert guaranteed, (
-                    "parent path has no edge overlapping child interval",
-                    intervals, tau, order, child, parent_interval, ppath, J,
+                    "connected-tree witness has no edge overlapping child interval",
+                    intervals, tau, order, child, inside, ppath, J,
                 )
-                # Keep the full edge-choice relation, but explicitly count
-                # the two guarded local replacements of the path witness.
+                # A path witness is either alternating with J (two guarded
+                # patterns) or contains J (three guarded patterns).
                 witness = guaranteed[0]
                 guaranteed_valid = 0
                 for u, w in sorted(tree_edges):
@@ -214,8 +224,8 @@ def candidate_outputs(intervals, tau):
                         next_states.append(
                             (new_paths, frozenset(new_edges))
                         )
-                assert guaranteed_valid == 2, (
-                    "selected path witness does not have exactly two guarded patterns",
+                assert guaranteed_valid >= 2, (
+                    "selected connected-tree witness has fewer than two guarded patterns",
                     intervals, tau, order, child, witness, guaranteed_valid,
                 )
             assert len(next_states) >= 2 * len(states), (
