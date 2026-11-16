@@ -2,8 +2,7 @@
 """Exact chromatic interval-overlap resummation for a symmetric binary chain.
 
 Checks the perfect-matching reindexing of the cumulant, the interval-graph
-chromatic coefficient, the chordal/PEO spanning-tree bound, and the temporal
-path-tree majorant. This is a special-case verifier, not a general Markov proof.
+chromatic coefficient, the chordal/PEO spanning-tree bound, and finite weighted tree-polynomial diagnostics. This is a special-case verifier, not a general Markov proof.
 """
 from fractions import Fraction as F
 from itertools import combinations
