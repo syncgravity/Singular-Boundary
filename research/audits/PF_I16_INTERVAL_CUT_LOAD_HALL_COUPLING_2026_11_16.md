@@ -628,31 +628,53 @@ The exact n=4,6,8 Hall verifier and n=10 C++ ceiling-class verifier now check th
 **What remains open.** No uniform lower bound for the determinant sums \(A_n(h)\) in (PC-UB) has been proved. Thus the peak-cover lemma is an exact poset reduction and (PC-UB) is a sharper all-orders sufficient target, but neither the pointwise inequalities \(Q(h)\ge L(h)\) nor the general down-set Hall inequalities are yet established.
 
 
-## Prefix-component interpretation of right cut loads
+## Correct component identity and the cut-load generating polynomial
 
-There is a useful equivalent description of the right-hand capacity constraint. For a tree T on {1,...,n}, let T[k] be the induced forest on the prefix {1,...,k}, and let \(\kappa(T[k])\) be its number of connected components. Then
+A previous draft incorrectly identified the number of crossing edges at a prefix cut with the number of components in the induced prefix forest. That identity is false: a connected prefix component can have more than one edge to the suffix. For example, on four ports the tree with edges
 \[
-\boxed{c_k(T)=\kappa(T[k]).}
+\{1,2\},\quad\{2,3\},\quad\{1,4\}
 \]
-Indeed, every component of T[k] must have at least one edge to the suffix in order for T to be connected, and it can have at most one such edge because two would create a cycle using the path in that component and the suffix. Thus the crossing edges are in bijection with the prefix components.
+has one component in the prefix \(\{1,2\}\), but two edges crossing the cut after port 2.
 
-Equivalently, if
+The correct identity for a tree \(T\) is
 \[
-r_j(T)=|\{i<j:\{i,j\}\in E(T)\}|
+\boxed{
+c_k(T)=\kappa(T[1..k])+\kappa(T[k+1..n])-1.
+}
+\tag{CC}
 \]
-is the number of earlier neighbors of vertex j, then
+Here both induced subgraphs are forests. To prove (CC), contract each component of the two induced forests. The crossing edges form a connected acyclic graph on the resulting
+\(\kappa(T[1..k])+\kappa(T[k+1..n])\) contracted vertices, hence a tree, so their number is one less than the number of contracted vertices.
+
+For a perfect matching \(M\) with load \(h\), the two induced subgraphs each consist of closed matching edges and isolated endpoints of intervals crossing the cut. Therefore
 \[
-c_k(T)=k-\sum_{j=2}^{k}r_j(T),
+\kappa(M[1..k])=\frac{k+h_k}{2},\qquad
+\kappa(M[k+1..n])=\frac{n-k+h_k}{2},
 \]
-and the cut-capacity condition is
+and their sum minus the number \(s=n/2\) of matching components is exactly \(h_k\). This gives a useful common language for the two sides, but does not itself provide a comparison: the tree has one global component after contraction, whereas the matching has \(s\) components, and the overlap-tree edges must be realized by endpoint switches that reduce the two-side component counts without exceeding any cut capacity.
+
+### Exact generating polynomial for the right side
+
+Give each edge \(\{i,j\}\), \(i<j\), weight
 \[
-\sum_{j=2}^{k}r_j(T)\ge k-h_k
-\qquad(1\le k<n).
+w_{ij}(x)=\prod_{k=i}^{j-1}x_k.
 \]
-This follows by counting the edges of the induced prefix forest: it has k vertices and \(\sum_{j=2}^k r_j(T)\) edges, so its component count is their difference.
+Then the spanning-tree polynomial
+\[
+Z_n(x_1,\ldots,x_{n-1})
+=\sum_{T\in\mathcal T(K_n)}\prod_{k=1}^{n-1}x_k^{c_k(T)}
+\]
+is exactly the Kirchhoff cofactor of the weighted complete-graph Laplacian with off-diagonal entries \(-w_{ij}(x)\) and diagonal entries \(\sum_{j\ne i}w_{ij}(x)\). In particular,
+\[
+A_n(h)=\sum_{\alpha\le h}[x^\alpha]Z_n(x)
+\]
+is an exact coefficient-sum representation of the right-hand supply.
 
-For a matching M of load h, the induced matching graph on the first k ports has exactly \((k+h_k)/2\) components: each closed pair is one component and each of the h_k currently open interval endpoints is an isolated component. Thus h_k is precisely the number of *open singleton components* in the matching prefix, while c_k(T) is the total number of components in the tree prefix.
+The desired all-orders pointwise Hall inequality is
+\[
+L(h)\le Q(h),
+\]
+where \(Q(h)\) is the number of trees whose least primitive majorant is \(h\). The peak-cover formula (PC) expresses \(Q(h)\) as a finite alternating sum of the coefficient sums \(A_n(h-2\sum_{k\in S}e_k)\). Thus an all-orders proof can be pursued either by a coefficientwise lower bound for this Kirchhoff cofactor or by a direct endpoint-switch injection. Neither has been established here.
 
-The peak-cover characterization sharpens this interpretation: a tree in ceiling class h has at most h_k prefix components at every cut and at least h_k-1 components at every lowerable peak. The right-hand Hall supply is therefore concentrated on trees whose prefix-component count nearly saturates the Dyck capacity at each such peak.
+**Correction notice.** The earlier statement \(c_k(T)=\kappa(T[1..k])\), and the derived formula \(c_k(T)=k-\sum_{j=2}^k r_j(T)\), are withdrawn. The latter expression is the component count of the prefix forest, not the number of edges crossing the cut. No Hall conclusion was based on that false identity in the proof audit.
 
-This suggests a growth-process formulation of the Hall problem: process ports from left to right, and at vertex j attach it to r_j earlier components. The open-interval matching process creates a new singleton component at an up-step and closes one open interval at a down-step; the overlap-tree decoration must be encoded by choices of earlier components at these closing steps. The count identity above is exact, but a canonical injective encoding of all (M,\tau) into such component-merging histories has not yet been constructed.
