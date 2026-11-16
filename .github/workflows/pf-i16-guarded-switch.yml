@@ -30,5 +30,5 @@ jobs:
         run: python research/verification/verify_pf_i16_guarded_switch_injective_assignment.py
       - name: Test deterministic lexicographic augmenting rule
         run: python research/verification/verify_pf_i16_guarded_switch_lexicographic_rule.py
-      - name: Test fixed-order inductive candidate through ten ports
+      - name: Diagnose eight-order canonical subrelation and report Hall witness
         run: python research/verification/verify_pf_i16_fixed_order_inductive_candidate.py
