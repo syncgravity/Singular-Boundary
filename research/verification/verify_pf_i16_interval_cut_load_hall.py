@@ -238,14 +238,43 @@ def check(n, expected_left, expected_types, expected_right_types):
             k for k in range(1, len(h) - 1)
             if h[k] > h[k - 1] and h[k] > h[k + 1] and h[k] >= 3
         ]
+        lower_covers = [
+            tuple(value - (2 if j == k else 0)
+                  for j, value in enumerate(h))
+            for k in peaks
+        ]
+        # Finite check of the cover lemma on this primitive-path poset.
+        for g in left:
+            if g != h and all(x <= y for x, y in zip(g, h)):
+                assert any(
+                    all(x <= y for x, y in zip(g, cover))
+                    for cover in lower_covers
+                ), (n, g, h, lower_covers)
+
         lower_cover_supplies = []
-        for k in peaks:
-            bound = tuple(value - (2 if j == k else 0)
-                          for j, value in enumerate(h))
+        for bound in lower_covers:
             lower_cover_supplies.append(sum(
                 count for g, count in ceilings.items()
                 if all(x <= y for x, y in zip(g, bound))
             ))
+        # Exact inclusion-exclusion formula (PC) for the ceiling class.
+        exact_class_count = 0
+        for mask in range(1 << len(peaks)):
+            selected = [i for i in range(len(peaks)) if mask & (1 << i)]
+            bound = tuple(
+                value - (2 if j in selected else 0)
+                for j, value in enumerate(h)
+            )
+            intersection_count = sum(
+                count for g, count in ceilings.items()
+                if all(x <= y for x, y in zip(g, bound))
+            )
+            exact_class_count += (
+                -1 if len(selected) % 2 else 1
+            ) * intersection_count
+        assert exact_class_count == ceilings[h], (
+            n, h, exact_class_count, ceilings[h]
+        )
         peak_margins[h] = (
             cumulative[h] - left[h] - sum(lower_cover_supplies)
         )
