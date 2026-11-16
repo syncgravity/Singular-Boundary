@@ -84,3 +84,19 @@ The next mathematical task is no longer to guess how to decode an injection. It 
 A useful proof would likely need a direct family of trees counted by A(h), organized so that its members can be separated into disjoint rank blocks for all strict lower paths and at least L(h) additional trees of exact ceiling h. The current endpoint-doubling map does not provide such a family and is ruled out by the recorded eight-port cut obstruction.
 
 No all-orders injection or Yang-Mills mass-gap proof is claimed.
+
+## Executable rank/unrank regression
+
+The canonical construction is now implemented in
+`research/verification/verify_pf_i16_ranked_classwise_injection.py`.
+For each of n=4,6,8 it independently enumerates the left objects and right
+Prüfer trees, sorts each class by the canonical keys above, checks
+`Q(h)>=L(h)`, and maps the kth left object to the kth right tree. It then
+recomputes the image tree's least primitive majorant, checks its class-local
+Prüfer rank is exactly k, and checks cut-load domination. This verifies both
+the forward map and its inverse on every left object in those finite cases.
+
+The verifier is wired into `.github/workflows/theorem-index-check.yml`.
+This is an implementation/regression of the conditional ranking argument;
+it does not establish the class-size hypothesis beyond the tested finite
+sizes, and does not replace the all-orders proof of (UB).
