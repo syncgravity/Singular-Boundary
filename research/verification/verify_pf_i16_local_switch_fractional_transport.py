@@ -128,7 +128,7 @@ def overlaps(edge, interval):
     a, b = interval
     return max(u, a) < min(w, b)
 
-def candidate_outputs(intervals, tau):
+def candidate_outputs(intervals, tau, forced_last=None):
     v = len(intervals)
     root = next(i for i, I in enumerate(intervals) if I[0] == 1)
     adj = [[] for _ in intervals]
@@ -148,6 +148,8 @@ def candidate_outputs(intervals, tau):
     outputs = set()
 
     for order in permutations(vertices):
+        if forced_last is not None and order[-1] != forced_last:
+            continue
         position = {u: i for i, u in enumerate(order)}
         if any(parent[u] != root and position[parent[u]] > position[u]
                for u in vertices):
