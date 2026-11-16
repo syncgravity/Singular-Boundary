@@ -924,3 +924,47 @@ The remaining statement is now a specific combinatorial bound:
 \tag{FC}
 \]
 If (FC) holds for all even n, the proper-down-set Hall inequality follows immediately from the preceding mass-transport argument. The observed maximum column mass rises from 2/3 to 4/5 to about 0.9764, so there is little numerical slack by n=8. No proof of (FC), nor an all-orders bound replacing it, has been found. This is the current central inequality in a more explicit fractional-transport form.
+
+
+## Uniform principal-ideal fractional Hall reduction (2026-11-16)
+
+There is a simpler fractional transport than the local-switch candidate relation. For each primitive path h, let
+\[
+A(h)=\#\{T\in\mathcal T(K_n):c(T)\le h\}.
+\]
+Send each left object of exact type h uniformly to all A(h) trees in its principal right neighborhood:
+\[
+\pi((M,\tau),T)=
+\begin{cases}
+A(h)^{-1},&c(T)\le h=m(M),\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+Every left object sends unit mass. For a fixed right tree T, its incoming mass is
+\[
+\sum_{h\in\mathcal P_n: c(T)\le h}\frac{L(h)}{A(h)}
+\le
+\sum_{h\in\mathcal P_n}\frac{L(h)}{A(h)}.
+\]
+Every cut of a spanning tree is crossed by at least one edge, so c(T) is coordinatewise at least the all-ones vector; the first sum is indeed over a subset of all primitive paths. Therefore the single scalar inequality
+\[
+\boxed{\displaystyle
+\sum_{h\in\mathcal P_n}\frac{L(h)}{A(h)}\le1
+}
+\tag{UI}
+\]
+is sufficient for Hall for *every* down-set. If (UI) holds, any subset of left objects sends its total mass into the right neighborhood of its down-set, and no right tree receives more than one.
+
+This is a useful sharpening: instead of constructing an injection or proving all down-set inequalities independently, it suffices to prove one scalar inequality at each even order. The right denominators A(h) are exactly the cumulative counts already computed by the Kirchhoff/Prüfer ceiling verifier.
+
+Exact rational values from exhaustive enumeration:
+
+| n | \(\sum_h L(h)/A(h)\) |
+|---:|---:|
+| 4 | \(2/3\) |
+| 6 | \(398/531\) |
+| 8 | \(33194896/35261055\) |
+
+All are strictly below one. The Python down-set verifier now checks (UI) with exact rational arithmetic through eight ports. The ten-port C++ verifier has been extended to check the same bound using the exact integer A(h) values and a long-double evaluation of the 14-term sum; its CI run is pending.
+
+The all-orders central problem is now reduced to proving (UI), or replacing it with a comparably simple scalar upper bound. This is a sufficient condition, not a theorem yet: no proof of (UI) for arbitrary even n has been established. The observed margin narrows as n grows, so an estimate with explicit n-dependence will be needed.
