@@ -146,7 +146,37 @@ At \(q_i=1,\lambda_i=1\), these are (0) and (-4), respectively.
 
 This refutes the proposed inference that a block moment contains one factor \(\lambda_iq_i\) for every cut in its port hull. The *joint marginal law* of the selected ports remembers the intervening transition, but a particular product moment can annihilate that dependence through algebraic identities such as (X^2=1).
 
-## 4. Corrected frontier
+## 5. Exact coefficient-support consequence of disconnected cancellation
+
+There is a more general algebraic fact available from the link-compressed interpolation, independent of the false monomial ansatz above. Let (E) be the finite set of consecutive-port transition edges in the union of the link paths, and write the actual cumulant polynomial as
+[
+\Phi(\lambda)=\sum_{\mathbf n\in\mathbb N^E}a_{\mathbf n}\lambda^{\mathbf n}.
+]
+The interpolation has finitely many transition parameters, and every transition kernel is affine in its own parameter, so this is a finite polynomial. Exact projective factorization gives
+[
+\Phi(\lambda)=0\quad\text{whenever }G_{\{e:\lambda_e>0\}}
+\text{ is disconnected}.
+]
+If the support (H=\{e:n_e>0\}) of a multi-index is disconnected, set every parameter outside (H) to zero. The resulting polynomial in the variables indexed by (H) vanishes identically, since every such parameter assignment has disconnected active support. Therefore
+[
+\boxed{a_{\mathbf n}=0\quad\text{whenever }G_H\text{ is disconnected}.}
+\tag{5.1}
+]
+Every nonzero Taylor monomial of the actual cumulant has connected transition-edge support. This is a coefficient-level consequence of the already established disconnected-support cancellation; it does not assume block moments are hull monomials.
+
+If each row belongs to at most (m) links, then
+[
+|E|=\sum_e(|I_e|-1)\le\sum_e|I_e|\le mR,
+]
+so there are at most (2^{mR}) possible transition-edge supports. The unresolved part is the coefficient norm: exponents on an edge can exceed one (the symmetric four-port example has exponent two on the middle edge), and no bound is yet proved for
+[
+\sum_{\mathbf n:\,G_{\operatorname{supp}\mathbf n}\text{ connected}}
+|a_{\mathbf n}|
+\prod_{e\in\operatorname{supp}\mathbf n}w_e^{n_e}
+]
+with the required (C_m^R) support-tree majorant. A successful estimate of this connected coefficient sum would complete the differentiated-cumulant step; (5.1) alone does not.
+
+## 6. Corrected frontier
 
 What survives:
 
