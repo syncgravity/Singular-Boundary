@@ -156,11 +156,13 @@ def verify_four_port_markov_obstruction():
 
 
 def verify_formal_stirling_bound():
-    stirling = [0, 1]
-    for n in range(2, 31):
+    stirling = [1]  # S(0,0)
+    for n in range(1, 31):
         row = [0] * (n + 1)
         for k in range(1, n + 1):
-            row[k] = k * stirling[k] + stirling[k - 1]
+            previous_k = stirling[k] if k < len(stirling) else 0
+            previous_k_minus_one = stirling[k - 1] if k - 1 < len(stirling) else 0
+            row[k] = k * previous_k + previous_k_minus_one
         stirling = row
         lhs = sum(factorial(k - 1) * stirling[k] for k in range(1, n + 1))
         assert lhs <= n ** n
