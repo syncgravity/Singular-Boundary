@@ -6,6 +6,7 @@ on:
       - research/pf-i16-superrow-cut-covariance-2026-11-15
     paths:
       - "research/verification/verify_pf_i16_local_switch_fractional_transport.py"
+      - "research/verification/verify_pf_i16_guarded_switch_injective_assignment.py"
       - ".github/workflows/pf-i16-guarded-switch.yml"
   workflow_dispatch:
 
@@ -15,7 +16,7 @@ permissions:
 jobs:
   guarded-switch:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,3 +24,5 @@ jobs:
           python-version: "3.12"
       - name: Run exact guarded transition enumeration
         run: python research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - name: Test source-saturating injective assignment
+        run: python research/verification/verify_pf_i16_guarded_switch_injective_assignment.py
