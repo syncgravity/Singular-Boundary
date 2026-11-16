@@ -696,13 +696,13 @@ Therefore the capacitated Hall condition is equivalent to
 \]
 Indeed, for arbitrary \(S\), its neighborhood is \(D=\downarrow S\), and \(S\subseteq D\), so (H-D) implies Hall; conversely choose \(S=D\) for a down-set. This is the exact all-orders target. The pointwise inequalities \(L(h)\le Q(h)\) imply (H-D), but are stronger than necessary.
 
-There is one nontrivial-looking but elementary down-set for which Hall holds at every order: the full poset. Put \(n=2s\). Each matching contributes at most \(s^{s-2}\) spanning trees of its overlap graph, by Cayley's bound, and there are \((2s-1)!!\) matchings. Hence
+There is one down-set for which Hall holds at every order: the full poset. For \(s=1\) (two ports), both sides have one object. For \(s\ge2\), each matching contributes at most \(s^{s-2}\) spanning trees of its overlap graph, by Cayley's bound, and there are \((2s-1)!!\) matchings. Hence
 \[
 \sum_h L(h)
 \le (2s-1)!!\,s^{s-2}
 \le (2s)^s s^{s-2}
 \le (2s)^{2s-2}.
 \]
-The last expression is the total number of labeled trees on \(2s\) ports, again by Cayley. With the usual one-vertex convention for \(s=1\), this proves Hall for \(D=\mathcal P_n\) for every even \(n\).
+The last expression is the total number of labeled trees on \(2s\) ports, again by Cayley. Thus Hall holds for \(D=\mathcal P_n\) for every even \(n\).
 
 This global count does not localize to a proper down-set: the Cayley upper bound forgets the matching load, while the right-side trees in a proper down-set must satisfy the corresponding cut capacities. The unresolved work is precisely to retain that cut information in the comparison.
