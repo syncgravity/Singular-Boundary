@@ -110,7 +110,7 @@ with an empty or singleton hull contributing no transition parameter. The margin
 \]
 This follows by compressing the omitted ports: the effective transition between consecutive retained ports is \(\Pi+(\prod\lambda)Q_{\text{total gap}}\). Thus a transition parameter survives precisely when the selected block has at least one retained port on each side of it.
 
-If the same row-pair parameter is shared by several links, it is present in \(M_B\) if (4.1) holds on at least one of those links. Consequently, for a partition \(\pi\), the mixed derivative of \(\prod_{B\in\pi}M_B\) along a tree \(T\) is a sum over assignments \(\phi:T\to\pi\):
+If the same row-pair parameter is shared by several links, it is present in the joint marginal law if (4.1) holds on at least one of those links; an individual block moment can still have additional algebraic cancellations. Consequently, for a partition \(\pi\), the mixed derivative of \(\prod_{B\in\pi}M_B\) along a tree \(T\) is a sum over assignments \(\phi:T\to\pi\):
 \[
 \partial_T\prod_{B\in\pi}M_B
 =
