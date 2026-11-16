@@ -1,3 +1,5 @@
+> **Superseded by the no-reinsertion guard revalidation (2026-11-16).** The figures below were computed for the pre-guard relation and are not certificates for the corrected relation. Under the guarded relation, the sourcewise distinct-output floor is 2^(s-1), not 3^(s-1); exact weighted columns are 5/6 (n=4), 19033/13464 (n=6), and 882579599341774396916901475041277863425921/354366397581230860789644812360005986409200 (n=8). The uniform transport overloads at n=6 and n=8. See [PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md](PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md) for the corrected enumeration and proof boundary.
+
 # Three-move incidence/degree test: finite obstruction to the crude reduction (2026-11-16)
 
 ## Test performed
