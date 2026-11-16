@@ -96,7 +96,35 @@ The following parts of the previous construction are unaffected:
 \]
 This is a bound on \(\partial_T M_{[R]}\), not on \(\partial_T\kappa\).
 
-## 4. Corrected remaining obstacle
+### Exact port-hull criterion for which partition terms survive
+
+For one link \(e\), let its ordered incident rows be \(i_1,\ldots,i_k\). For a block \(B\), define its port hull
+\[
+H_e(B)=
+[\min\{a:i_a\in B\},\max\{a:i_a\in B\}],
+\]
+with an empty or singleton hull contributing no transition parameter. The marginal moment \(M_B\) depends on the parameter for the consecutive transition \(i_a i_{a+1}\) **if and only if**
+\[
+\min\{r:i_r\in B\}\le a<\max\{r:i_r\in B\}.
+\tag{4.1}
+\]
+This follows by compressing the omitted ports: the effective transition between consecutive retained ports is \(\Pi+(\prod\lambda)Q_{\text{total gap}}\). Thus a transition parameter survives precisely when the selected block has at least one retained port on each side of it.
+
+If the same row-pair parameter is shared by several links, it is present in \(M_B\) if (4.1) holds on at least one of those links. Consequently, for a partition \(\pi\), the mixed derivative of \(\prod_{B\in\pi}M_B\) along a tree \(T\) is a sum over assignments \(\phi:T\to\pi\):
+\[
+\partial_T\prod_{B\in\pi}M_B
+=
+\sum_{\phi:T\to\pi}
+\prod_{B\in\pi}\partial_{\phi^{-1}(B)}M_B,
+\tag{4.2}
+\]
+and an assignment can contribute only if every edge \(ij\in T\) lies in the port hull of its assigned block on at least one shared link. This is the exact admissibility criterion missing from the false endpoint-coincidence argument.
+
+For a single link with four ordered ports, the nontrivial partition \(\{\{1,3\},\{2,4\}\}\) has hulls \([1,3]\) and \([2,4]\); their union covers all three consecutive transition parameters. Hence even a tree derivative using all three transitions can receive contributions from a partition with no block containing both extreme ports. The surviving partition family is an interval-covering family, not just the one-block partition.
+
+The remaining combinatorial task is to resum (4.2) with its Möbius signs over interval-covering partitions, and then combine the link colors while keeping the row-incidence bound \(m\). The present audit establishes the criterion, not the required uniform bound.
+
+## 5. Corrected remaining obstacle
 
 A valid proof must control the differentiated moment-cumulant sum while retaining the interval structure of omitted-port marginals. The counterexample shows that one cannot discard all nontrivial partitions merely from connectivity of the differentiated support tree.
 
@@ -104,6 +132,6 @@ A possible combinatorial object is the *port hull* of a block: for each link, th
 
 No uniform \(C_m^R\) bound for this signed sum is established here. No support-localized cumulant-tree theorem is claimed from this route.
 
-## 5. Scope
+## 6. Scope
 
 This is a correction to the attempted derivative-cancellation proof, not a refutation of the desired support-localized cumulant bound itself. The exact example shows only that this proposed shortcut is invalid. The Yang–Mills mass-gap proof remains open; no P0–P5 gate is promoted.
