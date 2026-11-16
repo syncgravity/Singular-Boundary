@@ -7,6 +7,7 @@
 #include <cassert>
 #include <cstdint>
 #include <iostream>
+#include <iomanip>
 #include <map>
 #include <utility>
 #include <vector>
@@ -244,6 +245,19 @@ int main() {
         for (int j = 0; j < (int)primitive_paths.size(); ++j)
             if (leq(primitive_paths[j], primitive_paths[i]))
                 cumulative[i] += right_mass[j];
+
+    // Uniform-principal-ideal fractional Hall certificate:
+    // each left object of type h sends 1/A(h) to every tree with c(T)<=h,
+    // where A(h)=cumulative[i]. Since every tree has c(T)>=1 coordinatewise,
+    // every right-tree column is bounded by sum_h L(h)/A(h).
+    long double uniform_ideal_column_bound = 0.0L;
+    for (int i = 0; i < (int)primitive_paths.size(); ++i) {
+        assert(cumulative[i] > 0);
+        uniform_ideal_column_bound +=
+            (long double)left_mass.at(primitive_paths[i]) /
+            (long double)cumulative[i];
+    }
+    assert(uniform_ideal_column_bound < 1.0L);
     uint64_t min_union_bound_margin = UINT64_MAX;
     uint64_t min_peak_cover_margin = UINT64_MAX;
     for (int i = 0; i < (int)primitive_paths.size(); ++i) {
@@ -323,6 +337,8 @@ int main() {
     assert(excluded_trees == 16334237);
 
     cout << "PASS n=10 primitive-Dyck ceiling-class regression\n";
+    cout << "uniform_principal_ideal_column_bound="
+         << setprecision(18) << uniform_ideal_column_bound << "\n";
     cout << "connected_matchings=" << connected_matchings
          << " primitive_paths=" << primitive_paths.size()
          << " left_copies=" << left_total
