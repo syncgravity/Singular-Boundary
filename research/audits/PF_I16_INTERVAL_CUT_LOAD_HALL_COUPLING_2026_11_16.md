@@ -678,3 +678,31 @@ where \(Q(h)\) is the number of trees whose least primitive majorant is \(h\). T
 
 **Correction notice.** The earlier statement \(c_k(T)=\kappa(T[1..k])\), and the derived formula \(c_k(T)=k-\sum_{j=2}^k r_j(T)\), are withdrawn. The latter expression is the component count of the prefix forest, not the number of edges crossing the cut. No Hall conclusion was based on that false identity in the proof audit.
 
+
+
+## Exact down-set form of Hall and the one global case that is immediate
+
+Let \(\mathcal P_n\) be the primitive-path poset, and let \(L(h)\) and \(Q(h)\) be the left and right multiplicities at exact ceiling \(h\). For any subset \(S\subseteq\mathcal P_n\), its right neighborhood is the down-closure
+\[
+\downarrow S=\{g:\exists h\in S,\ g\le h\}.
+\]
+Therefore the capacitated Hall condition is equivalent to
+\[
+\boxed{
+\sum_{h\in D}L(h)\le\sum_{g\in D}Q(g)
+\quad\text{for every down-set }D\subseteq\mathcal P_n.
+}
+\tag{H-D}
+\]
+Indeed, for arbitrary \(S\), its neighborhood is \(D=\downarrow S\), and \(S\subseteq D\), so (H-D) implies Hall; conversely choose \(S=D\) for a down-set. This is the exact all-orders target. The pointwise inequalities \(L(h)\le Q(h)\) imply (H-D), but are stronger than necessary.
+
+There is one nontrivial-looking but elementary down-set for which Hall holds at every order: the full poset. Put \(n=2s\). Each matching contributes at most \(s^{s-2}\) spanning trees of its overlap graph, by Cayley's bound, and there are \((2s-1)!!\) matchings. Hence
+\[
+\sum_h L(h)
+\le (2s-1)!!\,s^{s-2}
+\le (2s)^s s^{s-2}
+\le (2s)^{2s-2}.
+\]
+The last expression is the total number of labeled trees on \(2s\) ports, again by Cayley. With the usual one-vertex convention for \(s=1\), this proves Hall for \(D=\mathcal P_n\) for every even \(n\).
+
+This global count does not localize to a proper down-set: the Cayley upper bound forgets the matching load, while the right-side trees in a proper down-set must satisfy the corresponding cut capacities. The unresolved work is precisely to retain that cut information in the comparison.
