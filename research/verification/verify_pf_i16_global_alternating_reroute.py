@@ -106,6 +106,7 @@ def reroute_from_target(start, rows, matched_left, right_owner, child_fiber, for
 
 def run(n, expected_sources):
     child_rows = []
+    child_sources = []
     child_fibers = []
     child_projection = []
     fiber_children = defaultdict(list)
@@ -126,6 +127,7 @@ def run(n, expected_sources):
             row_projection[T] = P
         idx = len(child_rows)
         child_rows.append(outputs)
+        child_sources.append((intervals, tau))
         child_fibers.append(p)
         child_projection.append(row_projection)
         fiber_children[p].append(idx)
@@ -188,8 +190,12 @@ def run(n, expected_sources):
     if first_failure:
         T, owner, challenger = first_failure
         print(f"  first_failure_target={T}")
-        print(f"  matched_owner_parent={child_fibers[owner]}")
-        print(f"  challenger_parent={child_fibers[challenger]}")
+        print(f"  matched_owner_source={child_sources[owner]}")
+        print(f"  challenger_source={child_sources[challenger]}")
+        print(f"  matched_owner_assignment={matched_left[owner]}")
+        print(f"  challenger_assignment={matched_left[challenger]}")
+        print(f"  matched_owner_neighbors={sorted(child_rows[owner])}")
+        print(f"  challenger_neighbors={sorted(child_rows[challenger])}")
     assert len(child_rows) == expected_sources
     return tested == repaired
 
