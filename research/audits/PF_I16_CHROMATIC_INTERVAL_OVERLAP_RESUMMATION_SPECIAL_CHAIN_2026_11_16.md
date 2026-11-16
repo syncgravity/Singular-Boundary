@@ -128,7 +128,6 @@ For \(R=4\), the two nonzero matching terms each have weight \(r_1r_2^2r_3\); th
 The verifier now checks (5.1) exactly on a deterministic collection of rational gap vectors through \(R=8\), using the Matrix–Tree determinant for \(\mathcal T_R\). These are finite tests, not a proof for arbitrary \(R\) or real gap weights.
 
 ## 6. Four-port check and the interlacing obstruction
-he interlacing obstruction
 
 For \(R=4\), the three matchings are
 \[
