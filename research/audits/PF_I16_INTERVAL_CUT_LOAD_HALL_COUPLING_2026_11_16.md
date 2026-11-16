@@ -39,6 +39,41 @@ As an exploratory left-side extension, exact enumeration at n=10 finds 706 conne
 
 This Dyck-path identification narrows the all-orders problem: prove the Hall inequalities for primitive Dyck-path types against the cut-load distribution of labeled trees. It does not yet provide those inequalities.
 
+
+## Structural Hall reduction by the primitive-Dyck-path lattice
+
+A matching load vector is a Dyck path: at port k the height rises when k is the left endpoint of its matched interval and falls when k is the right endpoint. Connectedness of the interval-overlap graph is equivalent to positive height at every interior cut. Thus the left types are exactly the primitive Dyck paths of semilength n/2.
+
+The primitive Dyck paths form a meet-semilattice under coordinatewise minimum. To see this, all paths have the same parity at each fixed time. If two heights differ at time k, they differ by at least two; since each path changes by one at the next step, their pointwise minimum also changes by exactly one. Positivity and the zero endpoints are preserved. In particular, for any tree cut-load vector c that is dominated by at least one primitive path, there is a unique least primitive majorant
+
+`\widehat c=\bigwedge\{h\in\mathcal P_n:c\le h\}`.
+
+Let Q(h) be the number of labeled spanning trees whose least primitive majorant is h. A tree is adjacent to a left load type h exactly when `\widehat c(T)\le h`. Trees not dominated by the maximal primitive path `h^{max}_k=\min(k,n-k)` have no left neighbors and can be discarded.
+
+Consequently the Hall graph is the order relation on one finite poset: left mass L(h), right mass Q(h), and an edge from right type u to left type h exactly when u<=h. Its capacitated Hall condition is therefore equivalent to the order-ideal inequalities
+
+`\boxed{\sum_{h\in D}L(h)\le\sum_{h\in D}Q(h)\quad\text{for every down-set }D\subseteq\mathcal P_n.}`
+
+Proof of equivalence: for arbitrary left subset S, its right neighborhood is the right mass on the down-closure `\downarrow S`, while `L(S)\le L(\downarrow S)`. Thus all down-set inequalities imply Hall. Conversely, taking S itself to be a down-set gives its own down-set as neighborhood, so Hall implies the inequalities.
+
+### Stronger pointwise sufficient condition
+
+A particularly simple sufficient condition is
+
+`\boxed{Q(h)\ge L(h)\quad\text{for every primitive Dyck path }h.}`
+
+If this holds, assign the L(h) left copies at h to distinct trees in the same least-majorant class h. Every such tree has cut load c(T)<=h, so this is an explicit classwise Hall coupling. Pointwise domination is stronger than the order-ideal Hall inequalities; it is a candidate theorem, not established in general.
+
+The verifier now checks this stronger condition as well as the original exhaustive Hall test. Exact data:
+
+| n | Primitive paths | Left L(h) values | Same-ceiling tree counts Q(h) |
+|---:|---:|---|---|
+| 4 | 1 | 2 | 3 |
+| 6 | 2 | 4, 18 | 9, 50 |
+| 8 | 5 | 8, 36, 36, 144, 384 | 27, 150, 150, 794, 2,374 |
+
+For n=8 the paths are ordered lexicographically as in the verifier output. The pointwise inequalities hold in all these cases. This finite pattern is evidence only; no formula or all-orders lower bound for Q(h) has yet been proved.
+
 ## Exact Hall criterion
 
 Compress the bipartite graph by load-vector types. A left type v is adjacent to a right type u exactly when u<=v coordinatewise. For every nonempty set S of left load types, Hall's capacitated condition is
