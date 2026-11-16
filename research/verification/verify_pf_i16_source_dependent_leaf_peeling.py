@@ -95,7 +95,7 @@ def inverse_last_switch(tree, J, n):
 
 def hopcroft_karp_size(rows):
     right = {t: i for i, t in enumerate(sorted({x for row in rows for x in row}))}
-    adj = [[right[x] for x in row] for row in rows]
+    adj = [[right[x] for x in sorted(row)] for row in rows]
     nl, nr = len(adj), len(right)
     ml, mr = [-1] * nl, [-1] * nr
     from collections import deque
@@ -155,6 +155,8 @@ def run(n, expected):
     projection_rows = {}
     child_count = 0
     inverse_count = 0
+    max_inverse_multiplicity = 0
+    ambiguous_inverse_outputs = 0
     leaf_last_column_load = Counter()
     full_neighborhood_equal = 0
     full_neighborhood_strict = 0
@@ -182,6 +184,8 @@ def run(n, expected):
                 compressed.add(compress_tree(P, set(J), n))
             projections[T] = compressed
             inverse_count += len(compressed)
+            max_inverse_multiplicity = max(max_inverse_multiplicity, len(compressed))
+            ambiguous_inverse_outputs += len(compressed) > 1
         child = (intervals, tau)
         fibers[p].append(child)
         child_rows[child] = outputs
@@ -260,6 +264,8 @@ def run(n, expected):
     print(f"n={n}: child_sources={child_count}, parent_fibers={len(fibers)}, "
           f"leaf_last_inverse_candidates={inverse_count}, "
           f"projection_closure_failures={len(closure_failures)}")
+    print(f"  inverse_projection_multiplicity_max={max_inverse_multiplicity}, "
+          f"outputs_with_multiple_parent_projections={ambiguous_inverse_outputs}")
     print(f"  per_source_full_vs_leaf_last_equal={full_neighborhood_equal}, "
           f"strict_subsets={full_neighborhood_strict}, "
           f"full_outputs_missing_from_leaf_last={missing_from_leaf_last}, "
