@@ -75,7 +75,7 @@ Write
 w_{ij}=e^{-\Delta_0|t_i-t_j|}
 \quad\text{for }\{i,j\}\text{ with }X_i\cap X_j\ne\varnothing,
 \]
-and let \(G_X\) be the row support-overlap graph. The missing uniform estimate is a bound of the form
+and let \(G_X\) be the row support-overlap graph. The proposed (and now-disproved) absolute-value estimate had the form
 \[
 \begin{aligned}
 &\sum_{\substack{(\pi_e)_e\\
@@ -94,7 +94,7 @@ C^R\sum_{T\in\mathcal T(G_X)}
 \]
 with a constant C depending only on the fixed row arity and the maximum number of **distinct support types** incident to a link (232 here), but not on the occurrence multiplicities \(|I_S|\), the number of links, or the time horizon.
 
-The left side of (3.1) is an absolute-value majorant. A proof may need to preserve additional cancellations in (1.2), rather than bound every partition separately. In particular, the crude observation that each connected union contains some spanning tree does not suffice: the number of preimages of a row tree under the choices of link partitions and local trees must itself be controlled uniformly.
+The left side of (3.1) is an absolute-value majorant, and the two-link counterexample shows that it cannot be controlled by a multiplicity-uniform exponential coefficient. A viable replacement must preserve cancellations in (1.2), rather than bound every partition separately. The crude observation that each connected union contains some spanning tree does not suffice.
 
 The exact factorization by support type in the repeated-insertion audit is compatible with (1.2), but does not prove (3.1). Nor does pairwise block HGR tensorization: the three-way hyperedge counterexample in the companion audit shows that pairwise subjective-HGR control cannot replace the missing higher-order estimate.
 
