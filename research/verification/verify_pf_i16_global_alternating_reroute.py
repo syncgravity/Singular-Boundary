@@ -180,6 +180,7 @@ def run(n, expected_sources):
                 # T is already free: challenger can take it directly.
                 repaired += 1
                 path_lengths[0] += 1
+                reroute_kinds["free-direct"] += 1
                 continue
             path, fiber_hops, reroute_kind = reroute_from_target(
                 T, child_rows, matched_left, right_owner, child_fibers, challenger
