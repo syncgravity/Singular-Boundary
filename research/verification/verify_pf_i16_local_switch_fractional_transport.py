@@ -199,6 +199,7 @@ def check(n, expected_sources, expected_union):
     source_count = 0
     columns = Counter()
     incidence = Counter()
+    degree_profile = {}
     min_degree = None
     max_degree = 0
     for matching in matchings(range(1, n + 1)):
@@ -220,6 +221,7 @@ def check(n, expected_sources, expected_union):
                 )
                 columns[T] += weight
                 incidence[T] += 1
+                degree_profile.setdefault(T, Counter())[len(outputs)] += 1
 
     assert source_count == expected_sources, (n, source_count)
     assert len(columns) == expected_union, (n, len(columns))
@@ -227,6 +229,10 @@ def check(n, expected_sources, expected_union):
     max_incidence = max(incidence.values())
     degree_floor = 3 ** (n // 2 - 1)
     incidence_bound = Fraction(max_incidence, degree_floor)
+    worst_tree = max(columns, key=columns.get)
+    profile = degree_profile[worst_tree]
+    profile_mass = sum((Fraction(count, degree) for degree, count in profile.items()), Fraction())
+    assert profile_mass == columns[worst_tree]
     assert max_column <= 1, (n, max_column)
     print(
         f"PASS n={n}: left_objects={source_count}, "
@@ -236,6 +242,22 @@ def check(n, expected_sources, expected_union):
         f"max_source_incidence={max_incidence}, "
         f"3^(s-1)_degree_floor={degree_floor}, "
         f"incidence_over_degree_floor={float(incidence_bound):.12f}"
+    )
+    print(
+        f"  worst_tree={worst_tree}; incidence={incidence[worst_tree]}; "
+        f"degree_strata={sorted(profile.items())}; "
+        f"reconstructed_column={profile_mass}"
+    )
+    # Report the largest single degree-stratum contribution over all targets.
+    stratum_max = max(
+        (Fraction(count, degree), T, degree, count)
+        for T, hist in degree_profile.items()
+        for degree, count in hist.items()
+    )
+    print(
+        f"  max_single_stratum_mass={stratum_max[0]} "
+        f"at_tree={stratum_max[1]}, source_degree={stratum_max[2]}, "
+        f"sources_in_stratum={stratum_max[3]}"
     )
 
 
