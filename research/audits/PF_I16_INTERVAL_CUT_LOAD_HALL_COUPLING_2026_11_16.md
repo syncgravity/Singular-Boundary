@@ -479,7 +479,11 @@ The three pairwise paths are
 \[
 1-2-3-8,\qquad 1-4-5-8,\qquad 1-6-7-8.
 \]
-Their union is connected, but **every** spanning tree contained in this union has cut-load at least 3 at the cut after port 4, while the allowed capacity is \(h_4=2\). Indeed, port 4 has only one incident edge in the union, namely \(\{1,4\}\), and port 5 has only \(\{4,5\}\) and \(\{5,8\}\). A spanning tree must therefore contain \(\{1,4\}\) and \(\{4,5\}\); it must also connect the component containing ports 1,2,3 to the component containing 8, and the only available connection from that side is \(\{3,8\}\). These three forced edges all cross the cut after 4. Hence the local switch paths cannot simply be unioned and pruned to a capacity-admissible tree.
+Their union is connected, but **no** spanning tree contained in this union has cut-load coordinatewise bounded by \(h\). The union has exactly nine edges:
+\[
+\{1,2\},\{2,3\},\{3,8\},\{1,4\},\{4,5\},\{5,8\},\{1,6\},\{6,7\},\{7,8\}.
+\]
+A spanning tree has seven edges, so there are only \(\binom97=36\) candidate edge subsets. Exact enumeration of these 36 subsets finds 27 spanning trees and zero whose seven cut loads are bounded by \((1,2,1,2,1,2,1)\). This is a small, fully finite obstruction to the proposed union-and-prune rule; it does not rely on a heuristic picture or on an incorrect claim that a particular edge is forced. The cut constraints at the four odd cuts each allow only one crossing edge, and the available local-path edges cannot satisfy all four constraints while connecting all eight vertices.
 
 The obstruction is specific to this proposed local-to-global rule, not to the Hall inequality: the same load vector has ample right-side supply in the finite computations. It shows what a successful construction must add beyond pairwise switching: a global reassignment of which endpoint edges represent each overlap-tree incidence, or a nonlocal encoding of \(\tau\) that can reroute around the forced-cut bottleneck.
 
