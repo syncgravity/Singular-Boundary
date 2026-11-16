@@ -30,16 +30,18 @@ E(T^-)=
 }
 \tag{R}
 \]
-The inverse is legal precisely when both
+The inverse is legal precisely when
 \[
-E(S_j)\subseteq E(U)
-\quad\text{and}\quad
+e\notin E(S_j),\qquad
+E(S_j)\subseteq E(U),\qquad
 \delta_U(\{a,b\})=\delta_{S_j}(\{a,b\}).
 \tag{R-inc}
 \]
-The first condition ensures that the entire prescribed local switch tree
-is present, including a possible edge between the two old endpoints.
-The second says that the two new endpoints have no incident edges beyond
+The first condition is essential: otherwise the forward operation can
+reinsert the edge it supposedly replaced, and the edge count need not be
+that of a tree. The second ensures that the entire prescribed local switch
+tree is present, including a possible edge between the two old endpoints.
+The third says that the two new endpoints have no incident edges beyond
 those prescribed by the local switch. Under these conditions, (R) recovers
 the previous tree exactly: it deletes the two new vertices, removes their
 local incidences, and restores the replaced edge. It is not the operation
@@ -49,7 +51,8 @@ of deleting all three local edges while retaining all four endpoints.
 are new, so every edge incident to either endpoint is one of the local
 switch edges. The complete local tree is inserted. For the last insertion
 in a history, no later step can have attached an edge to either endpoint.
-Thus both conditions hold when reversing a genuine history in reverse
+The replaced edge was deleted and is not one of the inserted local edges;
+thus all three conditions hold when reversing a genuine history in reverse
 chronological order.
 
 **Why it is sufficient.** The current tree contains the complete local
@@ -103,11 +106,16 @@ collapsing repeated branches from the same source would overcount.
 
 The ancestry verifier
 research/verification/verify_pf_i16_switch_ancestry_quotient.py
-has been extended with reverse_history, which checks both conditions in
+has been extended with reverse_history, which checks all three conditions in
 (R-inc), performs (R), and verifies the tree invariant at every reverse
 step for every enumerated history. It is configured for four and six ports.
-The updated verifier has not yet been executed in this work session; no new
-finite pass result is claimed here.
+Both forward enumerators now discard a proposed local replacement when
+the selected old edge reappears in the three-edge local tree; the ancestry
+reverse checker also asserts this exclusion. This tightens the admissible
+transition relation. The previously reported finite degree and column
+figures were produced before this guard was added and must be revalidated
+against the corrected relation. The updated verifiers have not yet been
+executed in this work session; no corrected finite pass result is claimed.
 
 This is a precise inverse-transition lemma and search rule, not a proof of
 the weighted one-link inequality or of a Yang--Mills mass gap.
