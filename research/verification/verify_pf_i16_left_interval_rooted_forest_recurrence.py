@@ -97,9 +97,21 @@ def left_rooted_decomposition(n, h):
             if load(M0, n) != residual:
                 continue
             # M0 intervals are indexed in their tuple order.
-            roots = {i for i, (a, b) in enumerate(M0) if a < p}
+            candidate_roots = {
+                i for i, (a, b) in enumerate(M0) if a < p
+            }
             H0 = overlap_graph(M0)
-            total += rooted_forest_count(H0, len(M0), roots)
+            ordered_roots = sorted(candidate_roots)
+            # The actual neighbors of [1,p] in the overlap tree form an
+            # arbitrary nonempty subset R of all possible overlapping
+            # intervals. Each component of the deleted forest has exactly
+            # one root from this selected R.
+            for mask in range(1, 1 << len(ordered_roots)):
+                roots = {
+                    ordered_roots[j] for j in range(len(ordered_roots))
+                    if mask & (1 << j)
+                }
+                total += rooted_forest_count(H0, len(M0), roots)
     return total
 
 
