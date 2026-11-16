@@ -38,6 +38,8 @@ on:
       - 'research/verification/verify_pf_i16_interval_gap_cyclic_tree_bound.py'
       - 'research/audits/PF_I16_ARITY_FOUR_CENTERED_HYPEREDGE_2PLUS2_OBSTRUCTION_2026_11_15.md'
       - 'research/audits/PF_I16_INTERLACED_PATH_BLOCK_BKAR_REDUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_interlaced_block_cumulant_tree_doeblin_regeneration.py'
+      - 'research/audits/PF_I16_INTERLACED_BLOCK_CUMULANT_TREE_DOEBLIN_REGENERATION_2026_11_15.md'
       - 'research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py'
       - 'research/audits/PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md'
       - 'research/verification/verify_pf_i16_interlaced_path_block_bkar_reduction.py'
@@ -221,6 +223,8 @@ jobs:
         run: python research/verification/verify_pf_i16_arity_four_centered_hyperedge_2plus2_obstruction.py
       - name: Verify interlaced path-block forest reduction and derivative obstruction
         run: python research/verification/verify_pf_i16_interlaced_path_block_bkar_reduction.py
+      - name: Verify Doeblin-regeneration interlaced block cumulant tree
+        run: python research/verification/verify_pf_i16_interlaced_block_cumulant_tree_doeblin_regeneration.py
       - name: Verify L2-gap obstruction for interlaced block observables
         run: python research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py
       - name: Verify one-link cyclic-permutation temporal-tree bound
