@@ -180,3 +180,16 @@ parent-before-child order and using reverse uniqueness gives at least
 2^(s-1) distinct terminal trees from each source. The finite weighted
 columns in Section 4 concern the full guarded edge-choice relation, not
 merely the selected-witness subrelation.
+
+
+## 8. CI certificate for the corrected witness
+
+The corrected executable verifier, including the nested-interval
+two-case witness and the assertion of at least two guarded local patterns,
+completed successfully in GitHub Actions on commit
+`026d8474f0c718ffaa87cc678ce576d5dc37e078` (run
+`43969981967`). The exact enumeration step completed with success.
+This run checks n=4,6,8, the expected source and target-union counts,
+sourcewise degree floors, tree validity, cut-load domination, and exact
+rational weighted columns. It is a finite computational certificate, not
+an all-orders weighted-column estimate.
