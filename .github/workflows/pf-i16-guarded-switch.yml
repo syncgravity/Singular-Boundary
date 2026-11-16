@@ -8,6 +8,7 @@ on:
       - "research/verification/verify_pf_i16_local_switch_fractional_transport.py"
       - "research/verification/verify_pf_i16_guarded_switch_injective_assignment.py"
       - "research/verification/verify_pf_i16_guarded_switch_lexicographic_rule.py"
+      - "research/verification/verify_pf_i16_fixed_order_inductive_candidate.py"
       - ".github/workflows/pf-i16-guarded-switch.yml"
   workflow_dispatch:
 
@@ -29,3 +30,5 @@ jobs:
         run: python research/verification/verify_pf_i16_guarded_switch_injective_assignment.py
       - name: Test deterministic lexicographic augmenting rule
         run: python research/verification/verify_pf_i16_guarded_switch_lexicographic_rule.py
+      - name: Test fixed-order inductive candidate through ten ports
+        run: python research/verification/verify_pf_i16_fixed_order_inductive_candidate.py
