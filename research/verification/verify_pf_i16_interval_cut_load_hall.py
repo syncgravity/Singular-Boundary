@@ -230,12 +230,34 @@ def check(n, expected_left, expected_types, expected_right_types):
     }
     assert min(ub_margins.values()) >= 0, (n, ub_margins)
 
+    # Sharper criterion: every strict lower primitive path lies below an
+    # immediate predecessor obtained by lowering one peak >=3 by two.
+    peak_margins = {}
+    for h in left:
+        peaks = [
+            k for k in range(1, len(h) - 1)
+            if h[k] > h[k - 1] and h[k] > h[k + 1] and h[k] >= 3
+        ]
+        lower_cover_supplies = []
+        for k in peaks:
+            bound = tuple(value - (2 if j == k else 0)
+                          for j, value in enumerate(h))
+            lower_cover_supplies.append(sum(
+                count for g, count in ceilings.items()
+                if all(x <= y for x, y in zip(g, bound))
+            ))
+        peak_margins[h] = (
+            cumulative[h] - left[h] - sum(lower_cover_supplies)
+        )
+    assert min(peak_margins.values()) >= 0, (n, peak_margins)
+
     print(
         f"PASS n={n}: connected_matchings={connected_matchings}, "
         f"left_copies={sum(left.values())}, left_load_types={len(left)}, "
         f"trees={sum(right.values())}, right_load_types={len(right)}, "
         f"minimum_Hall_slack={slack}, "
         f"minimum_union_bound_margin={min(ub_margins.values())}, "
+        f"minimum_peak_cover_margin={min(peak_margins.values())}, "
         f"relevant_trees={sum(ceilings.values())}, excluded_trees={excluded}"
     )
     for load, multiplicity in sorted(left.items()):
