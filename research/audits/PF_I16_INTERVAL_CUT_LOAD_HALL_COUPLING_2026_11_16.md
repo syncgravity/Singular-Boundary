@@ -965,7 +965,7 @@ Exact rational values from exhaustive enumeration:
 | 6 | \(398/531\) |
 | 8 | \(33194896/35261055\) |
 
-All are strictly below one. The Python down-set verifier now checks (UI) with exact rational arithmetic through eight ports. The ten-port C++ verifier has been extended to check the same bound using the exact integer A(h) values and a long-double evaluation of the 14-term sum; its CI run is pending.
+All are strictly below one. The Python down-set verifier now checks (UI) with exact rational arithmetic through eight ports. The ten-port C++ verifier evaluates the same 14-term sum from exact integer A(h) values and confirms that it exceeds one; the latest CI run passes this obstruction check.
 
 The all-orders central problem is now reduced to proving (UI), or replacing it with a comparably simple scalar upper bound. This is a sufficient condition, not a theorem yet: no proof of (UI) for arbitrary even n has been established. The observed margin narrows as n grows, so an estimate with explicit n-dependence will be needed.
 
