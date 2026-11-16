@@ -623,6 +623,6 @@ For ten ports, the path-by-path margins in lexicographic order are:
 \[
 65,\ 378,\ 378,\ 2013,\ 6354,\ 378,\ 2095,\ 2013,\ 9641,\ 29951,\ 6354,\ 29951,\ 70106,\ 222113.
 \]
-The exact n=4,6,8 Hall verifier and n=10 C++ ceiling-class verifier now check the peak-cover lemma on the finite path poset, the exact inclusion-exclusion identity (PC), and (PC-UB), in addition to their previous Hall and union-bound checks.
+The exact n=4,6,8 Hall verifier and n=10 C++ ceiling-class verifier now check the peak-cover lemma on the finite path poset, the exact inclusion-exclusion identity (PC), and (PC-UB), in addition to their previous Hall and union-bound checks. The Python inclusion-exclusion verifier uses the actual peak coordinates (not peak-list indices) when lowering the capacity vector.
 
 **What remains open.** No uniform lower bound for the determinant sums \(A_n(h)\) in (PC-UB) has been proved. Thus the peak-cover lemma is an exact poset reduction and (PC-UB) is a sharper all-orders sufficient target, but neither the pointwise inequalities \(Q(h)\ge L(h)\) nor the general down-set Hall inequalities are yet established.
