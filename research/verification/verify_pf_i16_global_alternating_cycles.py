@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
-"""Global alternating-cycle diagnostic for PF-I16 leaf-last source matching.
+"""Global alternating-path diagnostic for PF-I16 leaf-last source matching.
 
 Build the exact leaf-last child-source -> port-tree relation and a deterministic
-maximum matching. Contract each matched right vertex to its owner. Every
-unmatched source->target edge then gives a directed arc from that source to
-the source currently occupying the target. Directed cycles are precisely
-alternating cycles along which the matching can be rerouted without losing
-saturation.
+maximum matching. Contract each occupied right vertex to its matched owner.
+An unmatched candidate tree is a free endpoint. For a same-parent-fiber
+collision at T, let x be the non-owner and y the owner of T. If y has an
+alternating path to a free tree, shift the owners along that path, freeing T,
+then assign T to x. The test records whether such a path exists and whether
+it passes through another parent fiber.
 
-The test asks whether same-parent-fiber collision pairs that are disconnected
-inside their own parent neighborhood nevertheless lie in a common alternating
-strongly connected component, and whether that component uses other parent
-fibers. This is a diagnostic of one global rerouting mechanism, not a Hall
-proof.
+This is a finite rerouting diagnostic, not an all-orders Hall proof.
 """
 from collections import defaultdict, deque
 from verify_pf_i16_source_dependent_leaf_peeling import (
@@ -67,43 +64,28 @@ def hopcroft_karp(rows):
     return ml, mr, right
 
 
-def strongly_connected_components(graph):
-    n = len(graph)
-    index = 0
-    stack, on_stack = [], set()
-    indices, low = [-1] * n, [0] * n
-    components = []
-
-    def visit(v):
-        nonlocal index
-        indices[v] = low[v] = index
-        index += 1
-        stack.append(v)
-        on_stack.add(v)
-        for w in graph[v]:
-            if indices[w] < 0:
-                visit(w)
-                low[v] = min(low[v], low[w])
-            elif w in on_stack:
-                low[v] = min(low[v], indices[w])
-        if low[v] == indices[v]:
-            comp = []
-            while True:
-                w = stack.pop()
-                on_stack.remove(w)
-                comp.append(w)
-                if w == v:
-                    break
-            components.append(comp)
-
-    for v in range(n):
-        if indices[v] < 0:
-            visit(v)
-    labels = [-1] * n
-    for c, members in enumerate(components):
-        for v in members:
-            labels[v] = c
-    return labels, components
+def alternating_path_to_free(start, graph, free_exit):
+    """Return source path ending at a source with a free candidate, or None."""
+    q = deque([start])
+    pred = {start: None}
+    end = None
+    while q:
+        u = q.popleft()
+        if free_exit[u]:
+            end = u
+            break
+        for v in graph[u]:
+            if v not in pred:
+                pred[v] = u
+                q.append(v)
+    if end is None:
+        return None
+    path = []
+    cur = end
+    while cur is not None:
+        path.append(cur)
+        cur = pred[cur]
+    return list(reversed(path))
 
 
 def run(n, expected):
@@ -131,95 +113,90 @@ def run(n, expected):
     ml, mr, right_ids = hopcroft_karp(rows)
     matched = sum(v >= 0 for v in ml)
     assert matched == expected, (n, matched, expected)
-    right_values = [None] * len(right_ids)
-    for tree, idx in right_ids.items():
-        right_values[idx] = tree
 
-    # Directed source graph: i -> owner(t) for every non-matching candidate t.
     graph = [set() for _ in children]
+    free_exit = [False] * len(children)
     for i, row in enumerate(rows):
         for tree in row:
-            v = right_ids[tree]
-            owner = mr[v]
-            assert owner >= 0
-            if owner != i:
+            owner = mr[right_ids[tree]]
+            if owner < 0:
+                free_exit[i] = True
+            elif owner != i:
                 graph[i].add(owner)
     graph = [sorted(x) for x in graph]
-    labels, comps = strongly_connected_components(graph)
-    comp_fibers = {
-        c: {parents[i] for i in members}
-        for c, members in enumerate(comps)
-    }
-    cyclic_cross = {
-        c for c, members in enumerate(comps)
-        if (len(members) > 1 or any(i in graph[i] for i in members))
-        and len(comp_fibers[c]) > 1
-    }
 
-    # Same-fiber shared-target collisions and their alternating SCC status.
+    path_cache = {}
+    def path_from(owner):
+        if owner not in path_cache:
+            path_cache[owner] = alternating_path_to_free(owner, graph, free_exit)
+        return path_cache[owner]
+
+    all_reachable = sum(path_from(i) is not None for i in range(len(children)))
     collision_pairs = 0
-    same_scc = 0
-    cross_fiber_cycle = 0
-    local_disconnected_pairs = 0
-    collision_examples = []
+    distinct_projection_pairs = 0
+    reroutable_pairs = 0
+    cross_fiber_reroutes = 0
+    max_path_length = 0
+    first_failure = None
+    first_cross_path = None
+
     for parent, members in fibers.items():
         owners = defaultdict(list)
         for i in members:
             for tree in rows[i]:
                 owners[tree].append(i)
         for tree, who in owners.items():
-            if len(who) < 2:
-                continue
-            for a_pos in range(len(who)):
-                for b_pos in range(a_pos + 1, len(who)):
-                    a, b = who[a_pos], who[b_pos]
+            for ai in range(len(who)):
+                for bi in range(ai + 1, len(who)):
+                    a, b = who[ai], who[bi]
                     collision_pairs += 1
-                    if labels[a] == labels[b]:
-                        same_scc += 1
-                        if labels[a] in cyclic_cross:
-                            cross_fiber_cycle += 1
-                    if projections[a][tree] != projections[b][tree]:
-                        local_disconnected_pairs += 1
-                        if len(collision_examples) < 3:
-                            collision_examples.append(
-                                (parent, tree, a, b,
-                                 projections[a][tree], projections[b][tree],
-                                 labels[a] == labels[b],
-                                 labels[a] in cyclic_cross if labels[a] == labels[b] else False)
-                            )
+                    if projections[a][tree] == projections[b][tree]:
+                        continue
+                    distinct_projection_pairs += 1
+                    owner = mr[right_ids[tree]]
+                    assert owner in (a, b)
+                    path = path_from(owner)
+                    if path is None:
+                        if first_failure is None:
+                            first_failure = (parent, tree, a, b, owner)
+                        continue
+                    reroutable_pairs += 1
+                    max_path_length = max(max_path_length, len(path) - 1)
+                    crosses = any(parents[v] != parent for v in path)
+                    if crosses:
+                        cross_fiber_reroutes += 1
+                        if first_cross_path is None:
+                            first_cross_path = (parent, tree, a, b, path,
+                                                [parents[v] for v in path])
 
-    multi = [members for members in comps if len(members) > 1]
-    cross_components = [members for c, members in enumerate(comps)
-                        if c in cyclic_cross]
-    max_scc = max(map(len, comps), default=0)
     print(
         f"n={n}: sources={expected}, target_union={len(right_ids)}, "
-        f"matching={matched}/{expected}, alternating_arcs={sum(map(len, graph))}"
-    )
-    print(
-        f"  nontrivial_sccs={len(multi)}, cross_parent_fiber_sccs={len(cross_components)}, "
-        f"largest_scc={max_scc}, sources_in_cross_fiber_sccs="
-        f"{sum(map(len, cross_components))}"
+        f"matching={matched}/{expected}, alternating_arcs={sum(map(len, graph))}, "
+        f"sources_reaching_free_tree={all_reachable}/{expected}"
     )
     print(
         f"  same_fiber_collision_pairs={collision_pairs}, "
-        f"collision_pairs_in_same_alternating_scc={same_scc}, "
-        f"collision_pairs_in_cross_fiber_scc={cross_fiber_cycle}, "
-        f"distinct_parent_projection_collision_pairs={local_disconnected_pairs}"
+        f"distinct_parent_projection_pairs={distinct_projection_pairs}, "
+        f"reroutable_by_alternating_path={reroutable_pairs}, "
+        f"reroutes_crossing_parent_fibers={cross_fiber_reroutes}, "
+        f"max_reroute_path_length={max_path_length}"
     )
-    if collision_examples:
-        print("  sample_projection_collisions=", collision_examples)
+    if first_failure:
+        print("  first_unresolved_collision=", first_failure)
+    if first_cross_path:
+        print("  sample_cross_fiber_reroute=", first_cross_path)
     return {
         "sources": expected, "matching": matched,
-        "collision_pairs": collision_pairs, "same_scc": same_scc,
-        "cross_fiber_cycle": cross_fiber_cycle,
-        "local_disconnected": local_disconnected_pairs,
+        "collision_pairs": collision_pairs,
+        "distinct_projection_pairs": distinct_projection_pairs,
+        "reroutable": reroutable_pairs,
+        "cross_fiber": cross_fiber_reroutes,
     }
 
 
 def main():
     results = [run(4, 2), run(6, 22), run(8, 608)]
-    print("Global alternating-cycle diagnostic complete; no all-orders Hall claim.")
+    print("Global alternating-path diagnostic complete; no all-orders Hall claim.")
     assert all(r["matching"] == r["sources"] for r in results)
 
 
