@@ -119,3 +119,31 @@ executed in this work session; no corrected finite pass result is claimed.
 
 This is a precise inverse-transition lemma and search rule, not a proof of
 the weighted one-link inequality or of a Yang--Mills mass gap.
+
+
+## 4. Corrected valid-choice count
+
+For overlapping intervals, the endpoints of the old edge and the new
+interval alternate in the sorted four-point order. Thus the old edge is
+either the (1,3) or (2,4) diagonal. Inspecting the three allowed local trees,
+exactly one contains that diagonal; the other two are valid. Therefore,
+for every currently available overlapping edge, there are exactly two
+valid local replacements after the no-reinsertion guard.
+
+At every insertion, the maintained path joining the endpoints of the
+parent interval contains an edge overlapping the child interval. To see
+this, if the intervals interleave as p<a<q<b, the p-to-q path crosses the
+cut at a; if a<p<b<q, the p-to-q path crosses the cut at b. The crossing
+edge overlaps the child interval. Consequently every current state has at
+least two valid next transitions.
+
+For a fixed parent-before-child order with s-1 non-root intervals, the
+number of forward histories is therefore at least 2^(s-1). This is a
+history lower bound, not yet a lower bound for the number of distinct
+terminal trees: histories may coalesce across different orders (and that
+quotient must be counted sourcewise).
+
+The inverse test now explicitly checks e is absent from U before restoring
+it. This condition is necessary for exact edge-set recovery and follows
+for a genuine reverse-chronological history after all later insertions
+have first been undone.
