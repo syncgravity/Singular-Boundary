@@ -824,9 +824,9 @@ An exact regression now enumerates all perfect matchings and their interval-over
 
 | n | primitive paths | all down-sets | minimum nonempty slack | full-poset slack |
 |---:|---:|---:|---:|---:|
-| 4 | 1 | 2 | 2 | 2 |
-| 6 | 2 | 3 | 8 | 40 |
-| 8 | 5 | 7 | 28 | 2536 |
+| 4 | 1 | 2 | 1 | 1 |
+| 6 | 2 | 3 | 5 | 37 |
+| 8 | 5 | 7 | 19 | 2887 |
 
 These are exact integer checks, not an asymptotic estimate. The new verifier is `research/verification/verify_pf_i16_downset_hall_aggregation.py`, wired into theorem-index CI.
 
@@ -836,12 +836,17 @@ The endpoint-neighbor decomposition does not yield a termwise inequality at fixe
 \[
 h=(1,2,1,2,1,2,1).
 \]
-The left state (p,q)=(3,6), where p and q are the matching partners of ports 1 and 8, contributes demand 2. The right state with the two endpoint leaves adjacent to ports 3 and 6 contributes supply 0. Nevertheless, after summing all endpoint states, this down-set has total demand 8 and total supply 36, hence slack 28.
+The left state (p,q)=(3,2), where p and q are the matching partners of ports 1 and 8, contributes demand 1. The right state with the two endpoint leaves adjacent to ports 3 and 2 contributes supply 0. Nevertheless, after summing all endpoint states, this down-set has total demand 8 and total supply 27, hence slack 19.
 
-The compensation is genuinely nonlocal in the endpoint states: the left exceptional matching state (p,q)=(8,1) contributes one, while the right state (2,7) contributes nine; the other left states also redistribute their contributions across the aggregate. In particular, neither fixed-(p,q) domination nor a simple grouping by p+q, unordered {p,q}, or min(p,q) can be the missing argument.
+The compensation is genuinely nonlocal in the endpoint states: for this down-set the right supply is supported at states (2,6), (2,7), (3,6), and (3,7), with respective counts 6, 12, 3, and 6, while the left demand also occupies states with no matching right supply. In particular, fixed-(p,q) domination cannot be the missing argument.
 
 This disproves the most direct attempt to combine the two endpoint recurrences state by state. It does not disprove H-D. The required central estimate must compare the full endpoint-state sums, likely through a transport/coupling that moves mass between states while preserving the down-set cut-capacity constraints.
 
 ### Current proof boundary
 
 The exact left two-root forest formula and exact right two-leaf tree formula are now both available, and their aggregate inequality is checked for all down-sets through eight ports. No all-orders transport kernel, injection, determinant comparison, or uniform lower bound has yet been established. Therefore H-D for proper down-sets remains open at arbitrary even n. The weighted one-link inequality and Yang--Mills mass gap remain open as well.
+
+
+### Cut-index correction to the finite Hall regression
+
+The first version of `verify_pf_i16_downset_hall_aggregation.py` used cuts 1,...,n-1 on zero-based Prüfer vertices. The correct cuts are 0,...,n-2. This shifted the right load vector and invalidated the first reported statewise example and slack table. The verifier and all figures above have been corrected to use the same cut convention as the established interval/tree Hall verifier. The corrected statewise counterexample is (p,q)=(3,2), with demand 1 and supply 0; the corrected aggregate slack is 19. The earlier figures (36 supply, slack 28, and state (3,6)) are withdrawn.
