@@ -53,6 +53,7 @@ on:
       - 'research/verification/verify_pf_i16_chromatic_interval_overlap_special_chain.py'
       - 'research/audits/PF_I16_MULTILINK_BINARY_CONFLICT_GRAPH_SUPPORT_TREE_2026_11_16.md'
       - 'research/verification/verify_pf_i16_multilink_binary_conflict_graph_support_tree.py'
+      - 'research/verification/verify_pf_i16_quotient_tree_multiplicity.py'
       - 'research/verification/verify_pf_i16_global_occurrence_regeneration_tree.py'
       - 'research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py'
       - 'research/audits/PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md'
@@ -253,6 +254,8 @@ jobs:
         run: python research/verification/verify_pf_i16_chromatic_interval_overlap_special_chain.py
       - name: Verify multi-link binary conflict-graph support-tree expansion
         run: python research/verification/verify_pf_i16_multilink_binary_conflict_graph_support_tree.py
+      - name: Verify unweighted quotient-tree multiplicity injection
+        run: python research/verification/verify_pf_i16_quotient_tree_multiplicity.py
       - name: Verify L2-gap obstruction for interlaced block observables
         run: python research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py
       - name: Verify one-link cyclic-permutation temporal-tree bound
