@@ -25,7 +25,7 @@ def petersen_graph():
     edges = set()
     for i in range(5):
         edges.add(tuple(sorted((i, (i + 1) % 5))))
-        edges.add(tuple(sorted((i + 5, ((i + 2) % 5) + 5)))
+        edges.add(tuple(sorted((i + 5, ((i + 2) % 5) + 5))))
         edges.add((i, i + 5))
     adj = [set() for _ in range(10)]
     for a, b in edges:
