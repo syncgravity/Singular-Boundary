@@ -191,6 +191,7 @@ def run(n, expected):
         pi, pt = p
         parent_cache[p] = candidate_outputs(pi, pt)
     closure_failures = []
+    nonparent_inverse_candidates = 0
     for p, children in fibers.items():
         parent_targets = parent_cache[p]
         for child in children:
@@ -198,6 +199,7 @@ def run(n, expected):
                 if not projected.intersection(parent_targets):
                     closure_failures.append((p, child, T, projected))
                     break
+                nonparent_inverse_candidates += len(projected - parent_targets)
 
     robust_total = 0
     parent_summary = []
@@ -256,7 +258,8 @@ def run(n, expected):
           f"projection_closure_failures={len(closure_failures)}")
     print(f"  per_source_full_vs_leaf_last_equal={full_neighborhood_equal}, "
           f"strict_subsets={full_neighborhood_strict}, "
-          f"full_outputs_missing_from_leaf_last={missing_from_leaf_last}")
+          f"full_outputs_missing_from_leaf_last={missing_from_leaf_last}, "
+          f"nonparent_inverse_candidates={nonparent_inverse_candidates}")
     print(f"  fiber_size_range=[{min(x[0] for x in parent_summary)},"
           f"{max(x[0] for x in parent_summary)}], "
           f"parent_targets_with_full_fiber_lift={robust_total}")
