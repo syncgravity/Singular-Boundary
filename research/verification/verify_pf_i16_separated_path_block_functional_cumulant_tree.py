@@ -56,7 +56,7 @@ def path_expectations(q, gaps, rho, reset_gap=None):
                     # Reset the transition from the left block endpoint
                     # to the right block start to an independent stationary draw.
                     reset_step = starts[reset_gap] + 1
-                    if k == reset_step + gaps[reset_gap]:
+                    if k == reset_step:
                         weight *= Fraction(1, 2)
                         continue
                 weight *= (1 + rho*path[k-1]*path[k]) / 2
