@@ -257,7 +257,7 @@ int main() {
             (long double)left_mass.at(primitive_paths[i]) /
             (long double)cumulative[i];
     }
-    assert(uniform_ideal_column_bound < 1.0L);
+    assert(uniform_ideal_column_bound > 1.0L);
     uint64_t min_union_bound_margin = UINT64_MAX;
     uint64_t min_peak_cover_margin = UINT64_MAX;
     for (int i = 0; i < (int)primitive_paths.size(); ++i) {
