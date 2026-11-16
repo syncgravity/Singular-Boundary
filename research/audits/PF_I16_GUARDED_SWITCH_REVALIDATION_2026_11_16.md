@@ -61,18 +61,27 @@ Root the overlap spanning tree tau at the matching interval containing
 port 1 and fix any parent-before-child order of its s-1 non-root
 intervals.
 
-When inserting child interval J=(a,b), its parent interval K has
-endpoints that alternate with a,b. Thus exactly one endpoint z of K lies
-strictly inside (a,b), while the other endpoint y lies outside (a,b).
-Consider the unique current-tree path from z to y. Starting at z, take
-the first edge of this path that leaves the vertices strictly between a
-and b. Its endpoints interleave with a,b, so this edge overlaps J.
-This first-exit argument is important: merely saying that the path crosses
-one boundary cut is insufficient, because a single edge could jump across
-both cuts. For the selected overlapping edge e, the four endpoints
-alternate. If e=(x1,x3), exactly S0,S1 avoid e; if e=(x2,x4), exactly
-S1,S2 avoid e. Therefore every current state has at least two valid
-successors, obtained from this one path-witness edge.
+When inserting child interval J=(a,b), port 1 is already a vertex of
+the current tree and lies outside (a,b). There are two cases.
+
+**Case 1: some current vertex z lies strictly inside (a,b).** Take the
+unique tree path from z to port 1. Its first edge leaving the set of
+current vertices in (a,b) has one endpoint strictly inside J and one
+outside J. Since all endpoints are distinct, that edge alternates with J
+and is an admissible old edge.
+
+**Case 2: no current vertex lies strictly inside (a,b).** The parent
+interval overlaps J. Its endpoints are current vertices, neither lies
+inside J, and therefore one lies to the left of a and the other to the
+right of b. The unique tree path between those parent endpoints must
+contain an edge joining the left and right sides. That edge contains J
+and is an admissible old edge.
+
+Thus every current tree has at least one overlapping edge that is not
+contained in J. If the selected edge alternates with J, exactly two local
+patterns avoid reinserting it; if it contains J, all three do. In either
+case at least two valid successors are available from every current
+state. This handles nested intervals as well as crossing intervals.
 
 For this fixed insertion order, different histories have different final
 labeled trees. To reverse the last step, its child J is known. Since the
@@ -157,16 +166,16 @@ the ancestry-history replay was not run at n=8.
 
 ## 7. Explicit path-witness verifier
 
-The forward verifier now computes the unique current-tree path between the
-parent interval endpoints at every insertion, extracts an edge on that
-path overlapping the child interval, and asserts that the selected edge
-has exactly two local patterns surviving the no-reinsertion guard. It
-retains the full guarded edge-choice relation for target-incidence
-enumeration. The executable witness therefore checks the combinatorial
-existence argument at every enumerated state.
+The forward verifier now implements the two-case witness: it follows
+a path from an interior current vertex to port 1 when one exists; otherwise
+it follows the path between the parent interval endpoints. It extracts an
+overlapping edge and asserts that at least two local patterns survive the
+no-reinsertion guard (two for an alternating edge, three for an edge
+containing J). It retains the full guarded edge-choice relation for
+target-incidence enumeration.
 
-The first-exit argument establishes the all-orders local-choice
-obligation: at least two valid next moves from every state. Fixing one
+The connected-tree two-case argument establishes the all-orders
+local-choice obligation: at least two valid next moves from every state. Fixing one
 parent-before-child order and using reverse uniqueness gives at least
 2^(s-1) distinct terminal trees from each source. The finite weighted
 columns in Section 4 concern the full guarded edge-choice relation, not
