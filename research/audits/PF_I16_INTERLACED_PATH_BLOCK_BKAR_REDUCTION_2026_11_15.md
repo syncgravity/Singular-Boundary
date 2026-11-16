@@ -74,7 +74,7 @@ e^{-\Delta_0d_k}
 \]
 Indeed, inserting (5) into (4), integrating over a unit cube, and summing over row trees gives (1).
 
-The local operator part of (5) is straightforward: differentiating one transition inserts Q_{d_k}=P_{d_k}-Π, whose L²-operator norm is at most e^{-Δ_0d_k}; all undifferentiated kernels in (2) are contractions. The unresolved part is the **connected-log / cumulant combinatorics**: the q-1 derivatives act on the logarithm of the path moment functional, not merely on its full joint moment. A uniform C^q bound for that connected derivative, with arbitrary interlacing and arbitrary numbers of ports, is not yet established.
+The derivative insertion is Q_{d_k}=P_{d_k}-Π, but the claim that its L²-operator norm directly bounds a contraction against an arbitrary multi-time block functional is **not justified**: after conditioning on the transition endpoints, the block functional can couple coordinates on both sides, so the test object is a general bounded function H(x,y), not a rank-one product f(x)g(y). The L² operator norm controls rank-one bilinear tests, not arbitrary H. The companion audit `PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md` gives a rigorous order-two counterexample showing that the desired block estimate is false under an L² spectral gap alone. Accordingly, (5) must be pursued only with the stronger compact-group heat-kernel bridge-Doeblin hypotheses, or another complete conditional-regularity assumption. The connected-log / cumulant combinatorics remains open even under those stronger hypotheses.
 
 ## 4. A precise warning: derivative does not collapse to the full moment
 
@@ -127,4 +127,4 @@ Still open:
 - The previous absolute-value LS resummation is not a substitute: its multiplicity-uniform majorant is false.
 - Pairwise subjective HGR alone is not a substitute: the exact three-variable parity obstruction is already recorded in PF_I16_SUBJECTIVE_HGR_CUMULANT_TREE_OBSTRUCTION_2026_11_15.md.
 
-No all-orders interlaced path-block theorem is claimed in this audit. This is a reduction of the unresolved obligation to one explicit connected-log derivative inequality.
+No all-orders interlaced path-block theorem is claimed in this audit. The L²-only formulation of (1) is now disproved by the companion graph-walk obstruction; the intended compact heat-kernel version remains open. The BKAR reduction is a formal reduction, not yet a valid analytic proof of (1).
