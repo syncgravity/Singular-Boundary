@@ -168,7 +168,7 @@ def check_statewise_obstruction():
     local_demand = sum(c for (p, q, load), c in left_states.items()
                        if (p, q) == (3, 2) and leq(load, h))
     local_supply = sum(c for (p, q, load), c in right_states.items()
-                       if (p, q) == (3, 6) and leq(load, h))
+                       if (p, q) == (3, 2) and leq(load, h))
     assert (local_demand, local_supply) == (1, 0)
     assert (demand, supply) == (8, 27)
     print(
