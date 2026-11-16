@@ -214,3 +214,4 @@ jobs:
         run: node --check observatory/graph-app.js
       - name: Syntax-check branch maintenance script
         run: bash -n scripts/safe_prune_merged_branches.sh
+# Pair-incidence centered-edge proof regression is part of the theorem gate.
