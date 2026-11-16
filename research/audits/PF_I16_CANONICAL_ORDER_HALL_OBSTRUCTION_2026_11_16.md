@@ -79,3 +79,18 @@ already fails. No ten-port result is claimed here.
 
 No all-orders weighted one-link inequality or Yang–Mills mass-gap conclusion
 follows from these finite tests.
+
+## Reproduction
+
+Verifier:
+`research/verification/verify_pf_i16_fixed_order_inductive_candidate.py`
+
+The GitHub Actions run completed successfully with the Hall deficit reported as
+an expected diagnostic (rather than causing CI to fail):
+- Run: https://github.com/syncgravity/Singular-Boundary/actions/runs/43972795747
+- Commit: `15a437a3889ec79d74ad85bbd083fdde368896d5`
+- Full guarded-neighborhood enumeration and full-relation injective assignment
+  also passed in the same run at n=4,6,8.
+
+The eight-order verifier's final exact output at n=8 was 525 matched of 608,
+with alternating Hall witness sizes 342 and 259 (deficit 83).
