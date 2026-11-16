@@ -393,9 +393,9 @@ After deleting the two forced endpoint leaves of a primitive capacity h, the res
 A plausible induction state is consequently a rooted forest with a specified ordered boundary-root set and residual cut capacities. To prove the one-link inequality by this route, one would need (i) a tractable recursion/upper bound for the left interval-overlap spanning-tree demand in matching boundary states, and (ii) a lower bound on the corresponding right rooted-forest supply. Neither comparison is established yet. The recurrence is exact, but it is not itself a Hall inequality.
 
 
-## Left-side root-interval / rooted-overlap-forest recurrence
+## Left-side root-interval / rooted-overlap-forest recurrence (corrected)
 
-There is an exact counterpart to (RF) for the left demand (L_n(h)), obtained by rooting each interval-overlap spanning tree at the unique matching interval incident to port 1.
+There is an exact counterpart to (RF) for the left demand (L_n(h)), obtained by deleting the unique matching interval incident to port 1 from each interval-overlap spanning tree.
 
 Let (I_0=[1,p]) be that interval. The remaining matching (M') is a perfect matching of
 [
@@ -403,43 +403,47 @@ V_p=\{2,\ldots,n\}\setminus\{p\}.
 ]
 Let (H_{M'}) be its interval-overlap graph, with edges between intervals whose interiors intersect:
 [
-[a,b]\sim[c,d]iff \max(a,c)<\min(b,d).
+[a,b]\sim[c,d]\iff \max(a,c)<\min(b,d).
 ]
-The root interval (I_0) overlaps exactly those remaining intervals whose left endpoint is less than p. Let
+The root interval (I_0) overlaps exactly those remaining intervals whose left endpoint is less than p. Define the *candidate root set*
 [
 S_p(M')=\{I\in M':\min I<p\}\subseteq V(H_{M'}).
 ]
-For a finite graph H and a nonempty distinguished root set S, write (mathfrak F(H,S)) for the set of spanning forests F of H such that every component of F contains exactly one vertex of S. (If some connected component of H contains no S, this set is empty.) Write (R(H,S)=|\mathfrak F(H,S)|).
+For a finite graph H and a nonempty selected root set R\subseteq V(H), write (\mathfrak F(H,R)) for the spanning forests F of H such that every component of F contains exactly one vertex of R. Write (R(H,R)=|\mathfrak F(H,R)|).
 
-Then, for every load vector h,
+The exact recurrence is
 [
-oxed{
+\boxed{
 L_n(h)=
-\sum_{p=2}^{n}\ 
+\sum_{p=2}^{n}\
 \sum_{\substack{M'\text{ perfect matching of }V_p\\
 m_k(M')=h_k-\mathbf1_{k<p}\;\forall k}}
-R\bigl(H_{M'},S_p(M')\bigr).
+\quad
+\sum_{\varnothing\ne R\subseteq S_p(M')}
+R(H_{M'},R).
 }
-	ag{LF}
+\tag{LF-corrected}
 ]
 
-**Proof (bijection).** A left object counted by (L_n(h)) is a pair ((M,\tau)), where M is a matching of load h and (	au) is a spanning tree of (H_M). The matching has a unique interval (I_0=[1,p]). Delete its vertex from (	au). The result is a spanning forest F of (H_{M'}). Every component of F contains exactly one neighbor of (I_0) in (	au), and every such neighbor belongs to (S_p(M')); conversely, every component has exactly one such neighbor because (	au) was connected. Thus F is in (mathfrak F(H_{M'},S_p(M'))). The deleted interval contributes one to each cut k<p, so the residual matching load is exactly (h_k-\mathbf1_{k<p}).
+**Proof (bijection).** A left object is a pair ((M,\tau)), where M has load h and \tau is a spanning tree of H_M. Let I_0=[1,p] be the unique interval containing port 1. Delete the vertex I_0 from \tau. The result is a spanning forest F of H_{M'}. Let R be the set of neighbors of I_0 in \tau. Every such neighbor belongs to S_p(M'), because it must overlap [1,p]. Since \tau is a tree, each component of F contains exactly one vertex of R: it contains at least one because \tau was connected, and cannot contain two because the path between two neighbors would create a cycle after I_0 is restored. Thus F\in\mathfrak F(H_{M'},R) for the *selected* nonempty subset R\subseteq S_p(M').
 
-Conversely, given p, M', and F in (mathfrak F(H_{M'},S_p(M'))), restore interval [1,p] and add one edge from its graph vertex to the unique S_p-root in each component of F. These added edges exist in H_M by the definition of S_p. The result is a spanning tree of H_M, and the matching load is h. The two operations are inverse. This proves (LF).
+Conversely, choose p, M', a nonempty subset R\subseteq S_p(M'), and a forest F\in\mathfrak F(H_{M'},R). Restore [1,p] and join its graph vertex to every vertex in R. Each added edge exists in H_M by the definition of S_p. Since each component of F has exactly one R-root, the restored graph is connected and acyclic, hence a spanning tree of H_M. These operations are inverse. The deleted interval contributes \mathbf1_{k<p} to cut k, so the residual matching load is h_k-\mathbf1_{k<p}. This proves (LF-corrected).
 
-The identity is valid even when H_{M'} is disconnected: the rooted-forest count is zero precisely when one of its connected components has no root, exactly the condition that the restored overlap graph H_M would fail to be connected. It therefore incorporates the connectivity restriction without an extra indicator.
+The selected root set is essential. It is not generally the entire candidate set S_p(M'). For example, if H_M=K_3 and I_0 is one vertex, the other two vertices both lie in S_p. The three spanning trees of K_3 correspond to selected root sets {v_1}, {v_2}, and {v_1,v_2}; fixing R=S_p would count only the last one and lose two trees. This was the defect in the earlier formula and is now corrected in both the audit and verifier.
+
+The identity remains valid when H_{M'} is disconnected: a selected-root forest exists exactly when every connected component of H_{M'} contains at least one selected root. That is precisely what is needed for the restored graph H_M to be connected.
 
 ### Paired recursions and the remaining comparison
 
-The right recurrence (RF) deletes a port-vertex from a port spanning tree and records a rooted forest on the remaining complete graph. The left recurrence (LF) deletes the matching interval incident to port 1 and records a rooted forest on the remaining interval-overlap graph. Both are exact rooted-forest decompositions with the same abstract condition (one designated root per forest component).
+The right recurrence (RF) deletes a port-vertex from a port spanning tree and records a rooted forest on the remaining complete graph. The corrected left recurrence deletes the matching interval incident to port 1 and records a rooted forest on the remaining interval-overlap graph, summed over all nonempty selected subsets of its candidate root set.
 
 The structural difference is now sharply isolated:
-- right side: all rooted forests in the complete graph on (V_p), subject to residual port-cut capacities;
-- left side: rooted forests only in the sparse interval-overlap graph (H_{M'}), with root set (S_p(M')), summed over residual matchings.
+- right side: rooted forests in the complete graph on V_p, subject to residual port-cut capacities and a root set determined by the deleted port's actual neighbor set;
+- left side: rooted forests in the sparse interval-overlap graph H_{M'}, with selected roots R ranging over nonempty subsets of S_p(M'), summed over residual matchings.
 
-This is promising but does not immediately imply the desired inequality. Although (H_{M'}) is a subgraph of the complete graph, its root set varies with M', and the right recurrence sums over a single root set at a time with capacities coupled to that set. A valid comparison must inject the *matching-decorated* left rooted forests into the capacity-admissible right rooted forests, or prove an aggregate Hall inequality across these root states. Merely using graph inclusion (H_{M'}\subseteq K_{V_p}) is insufficient because the right side does not preserve the left matching label and the residual cut capacities depend on the attachment set.
+Graph inclusion H_{M'}\subseteq K_{V_p} alone still does not compare the two sides: the left root subsets and residual capacities vary with M', and the right recurrence's root set is coupled to the port-tree attachment choices. A valid Hall comparison must inject these matching-decorated rooted forests into capacity-admissible complete-graph rooted forests, or prove an aggregate Hall inequality over the selected-root states.
 
-A new exact verifier, `research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py`, compares (LF) against direct spanning-tree counts for all primitive loads at n=4,6,8,10. The verifier uses explicit enumeration of overlap-graph spanning trees and rooted spanning forests. This is a finite identity check, not an all-orders proof of the Hall inequality.
+The verifier research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py now sums over all nonempty selected root subsets and compares the corrected recurrence against direct spanning-tree counts for primitive loads at n=4,6,8,10. It is a finite identity check, not an all-orders Hall proof.
 
 
 ## Pairwise interval switch: a valid local cut domination, and why it does not yet globalize
