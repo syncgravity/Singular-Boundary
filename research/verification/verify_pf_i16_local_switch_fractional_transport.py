@@ -169,6 +169,10 @@ def candidate_outputs(intervals, tau):
                         next_states.append(
                             (new_paths, frozenset(new_edges))
                         )
+            assert len(next_states) >= 2 * len(states), (
+                "fewer than two valid local choices per current state",
+                intervals, tau, order, child, len(states), len(next_states),
+            )
             states = next_states
 
         for _, tree_edges in states:
