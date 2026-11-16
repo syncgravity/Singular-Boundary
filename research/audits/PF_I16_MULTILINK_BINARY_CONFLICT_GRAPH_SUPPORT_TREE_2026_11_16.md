@@ -65,3 +65,35 @@ under (|X_i|le m), uniformly in link count and port multiplicity. No such bound 
 ## 5. Scope
 
 The exact identity and domination are restricted to products of centered symmetric binary coordinates on independent Markov links. They do not cover arbitrary bounded link observables or compact-group heat-kernel coordinates. The multiplicity estimate (4.1), KP activity bound, interacting-vacuum Poincaré inequality, physical scale-setting, and continuum Yang–Mills mass gap remain open.
+
+
+## 6. Unweighted multiplicity theorem
+
+There is a useful exact counting reduction. For a nonzero matching configuration, every row belongs to a matched pair, so every connected component of the row-pair graph has at least two rows. If its components are the blocks of a partition P, then |P|=k<=floor(R/2).
+
+Each block is connected in the row support graph G_X. Moreover, every conflict edge of H_M joins two blocks that have at least one cross-edge in G_X: the overlapping intervals are on a common link, and their endpoints are rows carrying that link. Thus H_M is a subgraph of the quotient graph G_X/P.
+
+Using |[q] chi_H(q)|<=tau(H), we obtain
+[
+sum_P |c(H_P)| le sum_P 	au(G_X/P)
+le 2^{R-1}	au(G_X).
+	ag{6.1}
+]
+Here the sum is over partitions into nonempty connected blocks (and can be restricted further to those arising from valid link matchings).
+
+**Proof of the last inequality.** For each such partition P and each spanning tree tau of G_X/P, choose a deterministic spanning tree inside every induced connected block G_X[B], and for each edge of tau choose a deterministic cross-edge of G_X between its two blocks. Their union is a spanning tree T of G_X. Mark the k-1 cross-block edges F. The pair (T,F) recovers P as the components of T\F and recovers tau as the quotient tree represented by F. Hence this is an injection into pairs (T,F), where T is a spanning tree of G_X and F is one of its edge subsets. There are at most 2^(R-1) such subsets per T.
+
+This proves that the matching/conflict-tree multiplicity is at most exponential relative to the **unweighted** support-tree count. In particular, when all W_ij=1, the desired tree comparison holds with coefficient 2^(R-1).
+
+## 7. Weighted fiber problem remains
+
+The injection above is not yet weight preserving. Its canonical internal block trees and cross-block witness edges need not have total temporal cost bounded by the sum of the matched interval costs. The separate interval-path construction proves that each configuration has *some* low-cost support tree, but does not ensure that the tree encodes the chosen quotient spanning tree tau. Mapping every tau to the same low-cost tree loses the fiber bound.
+
+The remaining target is therefore a weighted version of (6.1): distribute each pair (P,tau) to a support tree T so that
+[
+prod_{e}prod_{{i,j}in M_e}r^e_{ij}
+le prod_{{i,j}in T}W_{ij},
+]
+while no T receives more than C^R preimages (or an equivalent fractional-load bound). The unweighted injection shows the combinatorial multiplicity itself is not the obstacle; the unresolved issue is compatibility between temporal cost and the encoding of the quotient tree.
+
+No weighted multiplicity estimate, KP bound, or mass-gap conclusion is claimed.
