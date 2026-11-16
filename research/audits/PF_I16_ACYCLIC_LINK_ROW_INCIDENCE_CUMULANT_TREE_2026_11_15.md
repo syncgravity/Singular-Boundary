@@ -1,7 +1,7 @@
 # PF-I16 — Cumulant factorization on an acyclic link–row incidence hypergraph
 
 **Date:** 2026-11-15  
-**Status:** ESTABLISHED for finite families whose bipartite link–row incidence graph is a tree (or a forest, componentwise). The result allows arbitrary within-link dependence, nonzero means, and any number of links. Combining it with the one-link temporal-tree estimate gives a support-restricted tree bound with coefficient at most (2^{mR}) when each row has at most m link slots. Cyclic incidence hypergraphs, including repeated multi-link support labels, remain outside this theorem.
+**Status:** ESTABLISHED for finite families whose bipartite link–row incidence graph is a tree. If the graph is a disconnected forest, the full row cumulant is zero because the components depend on disjoint independent link families. The result allows arbitrary within-link dependence, nonzero means, and any number of links. Combining it with the one-link temporal-tree estimate gives a support-restricted tree bound with coefficient at most (2^{mR}) when each row has at most m link slots. Cyclic incidence hypergraphs, including repeated multi-link support labels, remain outside this theorem.
 
 ## 1. Setup and incidence acyclicity
 
@@ -95,6 +95,8 @@ sum_e |H_e|\le mR,qquad
 Thus the coefficient is exponential in R and independent of the number of observations on a link beyond the explicit row count. There is no per-link multiplicity cap D.
 
 ## 4. Scope
+
+If the incidence graph is a disconnected forest, rows split into independent nonempty components, so the joint cumulant is zero for (R\ge2); this is the trivial forest case and is not the product identity (2.1). The nontrivial factorization theorem assumes one connected incidence tree.
 
 - Acyclic link–row incidence: **ESTABLISHED**, exact factorization (2.1).
 - Temporal support-tree bound (3.3): **ESTABLISHED** under the one-link Markov temporal-tree hypothesis.
