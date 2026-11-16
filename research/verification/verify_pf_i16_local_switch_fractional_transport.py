@@ -198,6 +198,7 @@ def verify_tree(edges, n):
 def check(n, expected_sources, expected_union):
     source_count = 0
     columns = Counter()
+    incidence = Counter()
     min_degree = None
     max_degree = 0
     for matching in matchings(range(1, n + 1)):
@@ -218,16 +219,23 @@ def check(n, expected_sources, expected_union):
                     n, intervals, tau, T, load(T, n), matching_load
                 )
                 columns[T] += weight
+                incidence[T] += 1
 
     assert source_count == expected_sources, (n, source_count)
     assert len(columns) == expected_union, (n, len(columns))
     max_column = max(columns.values())
+    max_incidence = max(incidence.values())
+    degree_floor = 3 ** (n // 2 - 1)
+    incidence_bound = Fraction(max_incidence, degree_floor)
     assert max_column <= 1, (n, max_column)
     print(
         f"PASS n={n}: left_objects={source_count}, "
         f"candidate_trees={len(columns)}, "
         f"source_degree_range=[{min_degree},{max_degree}], "
-        f"max_fractional_column_load={float(max_column):.12f}"
+        f"max_fractional_column_load={float(max_column):.12f}, "
+        f"max_source_incidence={max_incidence}, "
+        f"3^(s-1)_degree_floor={degree_floor}, "
+        f"incidence_over_degree_floor={float(incidence_bound):.12f}"
     )
 
 
@@ -236,7 +244,7 @@ def main():
     check(6, expected_sources=22, expected_union=45)
     check(8, expected_sources=608, expected_union=1688)
     print("PASS finite local-switch fractional Hall certificate through eight ports")
-    print("NOTE no all-orders column-load bound is claimed")
+    print("NOTE incidence/degree comparison is diagnostic; no all-orders bound is claimed")
 
 
 if __name__ == "__main__":
