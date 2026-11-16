@@ -195,7 +195,8 @@ def run(n, expected):
     worst = None
     fibers_with_parent_sdr = 0
     fibers_with_local_lift = 0
-    chosen_global_trees = []
+    fibers_with_leaf_last_injection = 0
+    independent_fiber_trees = []
     for p, children in fibers.items():
         robust = 0
         child_projection_rows = [
@@ -218,7 +219,15 @@ def run(n, expected):
             lift_size, _, lift_match, lift_right = hopcroft_karp_size(lift_rows)
             if lift_size == len(children):
                 fibers_with_local_lift += 1
-                chosen_global_trees.extend(lift_right[v] for v in lift_match)
+        # Independently match the children in this parent fiber using all
+        # leaf-last outputs, allowing several children to lift the same
+        # parent target when their actual port trees differ.
+        local_size, _, local_match, local_right = hopcroft_karp_size(
+            [child_rows[ch] for ch in children]
+        )
+        if local_size == len(children):
+            fibers_with_leaf_last_injection += 1
+            independent_fiber_trees.extend(local_right[v] for v in local_match)
         for parent_T in parent_cache[p]:
             rows = [
                 {T for T, projections in projection_rows[ch].items()
@@ -243,7 +252,14 @@ def run(n, expected):
     print(f"  fibers_with_no_single_parent_target_supporting_all_children={zero}")
     print(f"  fibers_with_parent_target_SDR={fibers_with_parent_sdr}, "
           f"fibers_with_local_distinct_lifts={fibers_with_local_lift}, "
-          f"cross_fiber_tree_collisions={len(chosen_global_trees)-len(set(chosen_global_trees))}")
+          f"fibers_with_leaf_last_injection={fibers_with_leaf_last_injection}, "
+          f"independent_fiber_collisions={len(independent_fiber_trees)-len(set(independent_fiber_trees))}")
+    global_size, global_union, global_match, global_right = hopcroft_karp_size(
+        [child_rows[ch] for children in fibers.values() for ch in children]
+    )
+    print(f"  global_leaf_last_matching={global_size}/{child_count}, "
+          f"global_target_union={global_union}, "
+          f"global_saturated={global_size == child_count}")
     if worst:
         print(f"  largest_zero_robust_fiber_size={worst[0]}, parent={worst[1]}")
     assert child_count == expected
