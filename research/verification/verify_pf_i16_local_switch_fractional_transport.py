@@ -1,0 +1,242 @@
+#!/usr/bin/env python3
+"""Finite fractional Hall certificate from all local-switch outputs.
+
+For each left object (M,tau), enumerate every output tree obtainable by:
+- rooting tau at the interval containing port 1;
+- choosing any parent-before-child order;
+- choosing any overlapping edge on the current parent-interval path; and
+- choosing one of the two middle-centered stars or the increasing path.
+
+Each source sends unit mass uniformly over its DISTINCT output trees. The
+verifier checks that every port tree receives total mass at most one. Since
+every output T satisfies c(T) <= m(M), this is a fractional Hall certificate
+for every down-set at the tested orders. It is finite evidence only.
+"""
+from collections import Counter
+from fractions import Fraction
+from itertools import permutations
+
+
+def matchings(items):
+    items = tuple(items)
+    if not items:
+        yield ()
+        return
+    a = items[0]
+    for j in range(1, len(items)):
+        b = items[j]
+        for tail in matchings(items[1:j] + items[j + 1:]):
+            yield ((a, b),) + tail
+
+
+def overlap_edges(intervals):
+    return tuple(
+        (i, j) for i in range(len(intervals))
+        for j in range(i + 1, len(intervals))
+        if max(intervals[i][0], intervals[j][0])
+        < min(intervals[i][1], intervals[j][1])
+    )
+
+
+def components(v, edges, mask):
+    parent = list(range(v))
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for bit, (a, b) in enumerate(edges):
+        if (mask >> bit) & 1:
+            x, y = find(a), find(b)
+            if x == y:
+                return None
+            parent[x] = y
+    return {find(i) for i in range(v)}
+
+
+def spanning_trees(v, edges):
+    if v == 1:
+        yield ()
+        return
+    for mask in range(1 << len(edges)):
+        if mask.bit_count() != v - 1:
+            continue
+        c = components(v, edges, mask)
+        if c is not None and len(c) == 1:
+            yield tuple(edges[i] for i in range(len(edges))
+                        if (mask >> i) & 1)
+
+
+def local_path(local_edges, vertices, start, end):
+    adj = {x: [] for x in vertices}
+    for a, b in local_edges:
+        adj[a].append(b)
+        adj[b].append(a)
+    stack = [(start, [start])]
+    seen = set()
+    while stack:
+        v, path = stack.pop()
+        if v == end:
+            return path
+        if v in seen:
+            continue
+        seen.add(v)
+        for w in adj[v]:
+            if w not in seen:
+                stack.append((w, path + [w]))
+    raise AssertionError((local_edges, start, end))
+
+
+LOCAL_TREES = (
+    ((0, 1), (1, 2), (1, 3)),  # star centered at x_2
+    ((0, 1), (1, 2), (2, 3)),  # increasing path
+    ((0, 2), (1, 2), (2, 3)),  # star centered at x_3
+)
+
+
+def candidate_outputs(intervals, tau):
+    v = len(intervals)
+    root = next(i for i, I in enumerate(intervals) if I[0] == 1)
+    adj = [[] for _ in intervals]
+    for a, b in tau:
+        adj[a].append(b)
+        adj[b].append(a)
+
+    parent = {root: None}
+    stack = [root]
+    while stack:
+        u = stack.pop()
+        for w in adj[u]:
+            if w not in parent:
+                parent[w] = u
+                stack.append(w)
+    vertices = [i for i in range(v) if i != root]
+    outputs = set()
+
+    for order in permutations(vertices):
+        position = {u: i for i, u in enumerate(order)}
+        if any(parent[u] != root and position[parent[u]] > position[u]
+               for u in vertices):
+            continue
+
+        states = [(
+            {root: [intervals[root][0], intervals[root][1]]},
+            frozenset({tuple(sorted(intervals[root]))}),
+        )]
+        for child in order:
+            J = intervals[child]
+            next_states = []
+            for paths, tree_edges in states:
+                P = paths[parent[child]]
+                for u, w in zip(P, P[1:]):
+                    if max(u, J[0]) >= min(w, J[1]):
+                        continue
+                    xs = sorted((u, w, J[0], J[1]))
+                    local_edge = tuple(sorted((u, w)))
+                    assert local_edge in tree_edges
+                    for local in LOCAL_TREES:
+                        mapped = tuple(
+                            tuple(sorted((xs[a], xs[b]))) for a, b in local
+                        )
+                        local_vertices = tuple(xs)
+                        old_path = local_path(
+                            mapped, local_vertices, u, w
+                        )
+                        child_path = local_path(
+                            mapped, local_vertices, J[0], J[1]
+                        )
+                        new_edges = set(tree_edges)
+                        new_edges.remove(local_edge)
+                        new_edges.update(mapped)
+
+                        new_paths = {}
+                        for key, old in paths.items():
+                            new = []
+                            i = 0
+                            while i < len(old):
+                                if (i + 1 < len(old)
+                                        and old[i] == u and old[i + 1] == w):
+                                    new.extend(old_path)
+                                    i += 2
+                                else:
+                                    new.append(old[i])
+                                    i += 1
+                            new_paths[key] = new
+                        new_paths[child] = child_path
+                        next_states.append(
+                            (new_paths, frozenset(new_edges))
+                        )
+            states = next_states
+
+        for _, tree_edges in states:
+            outputs.add(tuple(sorted(tree_edges)))
+    return outputs
+
+
+def load(edges, n):
+    return tuple(
+        sum(a <= k < b for a, b in edges) for k in range(1, n)
+    )
+
+
+def verify_tree(edges, n):
+    assert len(edges) == n - 1
+    parent = list(range(n + 1))
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for a, b in edges:
+        x, y = find(a), find(b)
+        assert x != y
+        parent[x] = y
+    assert len({find(i) for i in range(1, n + 1)}) == 1
+
+
+def check(n, expected_sources, expected_union):
+    source_count = 0
+    columns = Counter()
+    min_degree = None
+    max_degree = 0
+    for matching in matchings(range(1, n + 1)):
+        intervals = tuple(sorted(tuple(sorted(e)) for e in matching))
+        overlap = overlap_edges(intervals)
+        matching_load = load(intervals, n)
+        for tau in spanning_trees(len(intervals), overlap):
+            outputs = candidate_outputs(intervals, tau)
+            assert outputs, (n, intervals, tau)
+            source_count += 1
+            min_degree = (len(outputs) if min_degree is None
+                          else min(min_degree, len(outputs)))
+            max_degree = max(max_degree, len(outputs))
+            weight = Fraction(1, len(outputs))
+            for T in outputs:
+                verify_tree(T, n)
+                assert all(x <= y for x, y in zip(load(T, n), matching_load)), (
+                    n, intervals, tau, T, load(T, n), matching_load
+                )
+                columns[T] += weight
+
+    assert source_count == expected_sources, (n, source_count)
+    assert len(columns) == expected_union, (n, len(columns))
+    max_column = max(columns.values())
+    assert max_column <= 1, (n, max_column)
+    print(
+        f"PASS n={n}: left_objects={source_count}, "
+        f"candidate_trees={len(columns)}, "
+        f"source_degree_range=[{min_degree},{max_degree}], "
+        f"max_fractional_column_load={float(max_column):.12f}"
+    )
+
+
+def main():
+    check(4, expected_sources=2, expected_union=3)
+    check(6, expected_sources=22, expected_union=45)
+    check(8, expected_sources=608, expected_union=1688)
+    print("PASS finite local-switch fractional Hall certificate through eight ports")
+    print("NOTE no all-orders column-load bound is claimed")
+
+
+if __name__ == "__main__":
+    main()
