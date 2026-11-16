@@ -94,6 +94,36 @@ LOCAL_TREES = (
 )
 
 
+
+def tree_path(edges, start, end):
+    adj = {}
+    for a, b in edges:
+        adj.setdefault(a, []).append(b)
+        adj.setdefault(b, []).append(a)
+    parent = {start: None}
+    stack = [start]
+    while stack:
+        u = stack.pop()
+        if u == end:
+            break
+        for w in adj.get(u, ()):
+            if w not in parent:
+                parent[w] = u
+                stack.append(w)
+    assert end in parent, (edges, start, end)
+    path = []
+    u = end
+    while u is not None:
+        path.append(u)
+        u = parent[u]
+    return tuple(reversed(path))
+
+
+def overlaps(edge, interval):
+    u, w = sorted(edge)
+    a, b = interval
+    return max(u, a) < min(w, b)
+
 def candidate_outputs(intervals, tau):
     v = len(intervals)
     root = next(i for i, I in enumerate(intervals) if I[0] == 1)
@@ -127,10 +157,22 @@ def candidate_outputs(intervals, tau):
             J = intervals[child]
             next_states = []
             for paths, tree_edges in states:
-                # Any current tree edge overlapping J is an admissible
-                # local switch; the parent path guarantees at least one.
+                # The parent interval and J interleave. On the unique
+                # current-tree path between the parent endpoints, the first
+                # edge leaving the open interval (J[0], J[1]) overlaps J.
+                parent_interval = intervals[parent[child]]
+                ppath = tree_path(tree_edges, *parent_interval)
+                path_edges = tuple(zip(ppath, ppath[1:]))
+                guaranteed = tuple(e for e in path_edges if overlaps(e, J))
+                assert guaranteed, (
+                    "parent path has no edge overlapping child interval",
+                    intervals, tau, order, child, parent_interval, ppath, J,
+                )
+                # Keep the full edge-choice relation, but explicitly retain
+                # the path witness in the candidate set and assert its two
+                # guarded local replacements below.
                 for u, w in sorted(tree_edges):
-                    if max(u, J[0]) >= min(w, J[1]):
+                    if not overlaps((u, w), J):
                         continue
                     xs = sorted((u, w, J[0], J[1]))
                     local_edge = tuple(sorted((u, w)))
