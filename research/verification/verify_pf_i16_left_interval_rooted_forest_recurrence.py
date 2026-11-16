@@ -122,7 +122,7 @@ def primitive_dyck_paths(n):
     def walk(pos, height, heights):
         if pos == n - 1:
             if height == 1:
-                paths.append(tuple(heights + [0]))
+                paths.append(tuple(heights))
             return
         if height + 1 <= n - pos - 1:
             walk(pos + 1, height + 1, heights + [height + 1])
