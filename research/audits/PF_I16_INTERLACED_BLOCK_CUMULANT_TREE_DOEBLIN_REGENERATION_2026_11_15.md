@@ -12,7 +12,7 @@ P_d(x,dy)=p_d(x,y)\,\mu(dy),\qquad d>0,
 \]
 and there are constants C_0,Δ_0>0 such that
 \[
-\alpha(d):=\inf_{x,y}p_d(x,y)>0,
+\alpha(d):=\inf_{u\ge d}\inf_{x,y}p_u(x,y)>0,
 \qquad
 1-\alpha(d)\le C_0e^{-\Delta_0d}
 \quad(d>0).
