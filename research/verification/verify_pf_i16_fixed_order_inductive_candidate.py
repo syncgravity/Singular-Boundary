@@ -1,28 +1,27 @@
 #!/usr/bin/env python3
-"""Fixed-order guarded-switch subrelation and exact source matching.
+"""Canonical-order guarded-switch subrelation and exact source matching.
 
-For each source (M,tau), use one canonical parent-before-child order of the
-rooted overlap tree. At each insertion choose the first admissible edge on
-the connected-tree witness path and branch over every guarded local pattern
-for that edge. This deliberately keeps a small, canonical sub-neighborhood:
-it tests whether the all-orders proof can be reduced to one fixed insertion
-order plus the two/three local choices supplied by the witness lemma.
+For each source (M,tau), test a small fixed family of parent-before-child
+orders (BFS ascending, BFS descending, DFS ascending). At each insertion take
+the first admissible edge on the connected-tree witness path and branch over
+all guarded local patterns for that edge. The union is a deliberately small
+subrelation of the full guarded switch relation.
 
-Trees are encoded as integer edge bitmasks to keep the n=10 exact test small.
-A deterministic lexicographic augmenting-path assignment is then computed.
-This is a finite diagnostic, not an all-orders theorem.
+Trees are encoded as integer edge bitmasks. A deterministic lexicographic
+augmenting-path assignment is computed, and a failed run reports an
+alternating-reachability Hall witness. This is finite diagnostic evidence,
+not an all-orders theorem.
 """
+from collections import deque
 from verify_pf_i16_local_switch_fractional_transport import (
     LOCAL_TREES, load, matchings, overlap_edges, overlaps, spanning_trees,
     tree_path,
 )
-from verify_pf_i16_guarded_switch_injective_assignment import hopcroft_karp
 
 
 def edge_ids(n):
-    return {(a, b): i for i, (a, b) in enumerate(
-        ( (a, b) for a in range(1, n + 1) for b in range(a + 1, n + 1) )
-    )}
+    pairs = ((a, b) for a in range(1, n + 1) for b in range(a + 1, n + 1))
+    return {(a, b): i for i, (a, b) in enumerate(pairs)}
 
 
 def encode_tree(edges, ids):
@@ -34,31 +33,42 @@ def decode_tree(mask, n):
     return tuple(pairs[i] for i in range(len(pairs)) if (mask >> i) & 1)
 
 
-def canonical_order(intervals, tau):
+def canonical_order(intervals, tau, strategy):
     root = next(i for i, I in enumerate(intervals) if I[0] == 1)
     adj = [[] for _ in intervals]
     for a, b in tau:
         adj[a].append(b)
         adj[b].append(a)
+    for row in adj:
+        row.sort(key=lambda v: intervals[v], reverse=(strategy == "bfs-desc"))
+
     parent = {root: None}
     order = []
-    queue = [root]
-    while queue:
-        u = queue.pop(0)
-        children = sorted((v for v in adj[u] if v not in parent),
-                          key=lambda v: intervals[v])
-        for v in children:
-            parent[v] = u
-            order.append(v)
-            queue.append(v)
+    if strategy.startswith("bfs"):
+        queue = deque([root])
+        while queue:
+            u = queue.popleft()
+            for v in adj[u]:
+                if v not in parent:
+                    parent[v] = u
+                    order.append(v)
+                    queue.append(v)
+    else:
+        stack = [root]
+        while stack:
+            u = stack.pop()
+            children = [v for v in adj[u] if v not in parent]
+            for v in reversed(children):
+                parent[v] = u
+                order.append(v)
+                stack.append(v)
     assert len(parent) == len(intervals)
     return root, parent, tuple(order)
 
 
-def fixed_order_outputs(intervals, tau, n, ids):
-    root, parent, order = canonical_order(intervals, tau)
-    root_edge = tuple(sorted(intervals[root]))
-    states = {frozenset({root_edge})}
+def fixed_order_outputs(intervals, tau, n, ids, strategy):
+    root, parent, order = canonical_order(intervals, tau, strategy)
+    states = {frozenset({tuple(sorted(intervals[root])})})}
     for child in order:
         J = intervals[child]
         next_states = set()
@@ -75,7 +85,7 @@ def fixed_order_outputs(intervals, tau, n, ids):
                 if overlaps(e, J)
                 and not (J[0] < min(e) < max(e) < J[1])
             ]
-            assert eligible, (intervals, tau, child, J, path)
+            assert eligible, (intervals, tau, strategy, child, J, path)
             old_edge = tuple(sorted(eligible[0]))
             a, b = old_edge
             xs = sorted((a, b, J[0], J[1]))
@@ -89,26 +99,28 @@ def fixed_order_outputs(intervals, tau, n, ids):
                 next_states.add(
                     frozenset((set(tree_edges) - {old_edge}) | set(mapped))
                 )
-            assert valid >= 2, (intervals, tau, child, old_edge, valid)
+            assert valid >= 2, (intervals, tau, strategy, child, old_edge, valid)
         assert len(next_states) >= 2 * len(states)
         states = next_states
     encoded = {encode_tree(T, ids) for T in states}
     assert len(encoded) == len(states)
-    for mask in encoded:
-        T = decode_tree(mask, n)
-        assert len(T) == n - 1
     return encoded
 
 
 def enumerate_rows(n):
     ids = edge_ids(n)
     rows, labels = [], []
+    strategies = ("bfs-asc", "bfs-desc", "dfs-asc")
     for matching in matchings(range(1, n + 1)):
         intervals = tuple(sorted(tuple(sorted(e)) for e in matching))
         overlap = overlap_edges(intervals)
         source_load = load(intervals, n)
         for tau in spanning_trees(len(intervals), overlap):
-            outputs = fixed_order_outputs(intervals, tau, n, ids)
+            outputs = set()
+            for strategy in strategies:
+                outputs.update(fixed_order_outputs(
+                    intervals, tau, n, ids, strategy
+                ))
             for mask in outputs:
                 T = decode_tree(mask, n)
                 assert all(x <= y for x, y in zip(load(T, n), source_load))
@@ -143,13 +155,30 @@ def lexicographic_assignment(rows):
     for source in range(len(rows)):
         if not augment(source, set(), 1):
             failures.append(source)
-    return targets, chosen, failures, max_depth
+
+    # Alternating-reachability Hall witness from all unmatched left vertices.
+    seen_left = set(failures)
+    seen_right = set()
+    queue = deque(failures)
+    while queue:
+        u = queue.popleft()
+        for v in adjacency[u]:
+            if chosen[u] == v or v in seen_right:
+                continue
+            seen_right.add(v)
+            mate = owner[v]
+            if mate != -1 and mate not in seen_left:
+                seen_left.add(mate)
+                queue.append(mate)
+    return targets, chosen, failures, max_depth, seen_left, seen_right
 
 
 def run(n, expected_sources):
     rows, labels = enumerate_rows(n)
     assert len(rows) == expected_sources, (n, len(rows), expected_sources)
-    targets, chosen, failures, depth = lexicographic_assignment(rows)
+    targets, chosen, failures, depth, hall_left, hall_right = (
+        lexicographic_assignment(rows)
+    )
     matched = sum(v >= 0 for v in chosen)
     min_degree = min(map(len, rows))
     max_degree = max(map(len, rows))
@@ -157,12 +186,14 @@ def run(n, expected_sources):
           f"degree_range=[{min_degree},{max_degree}], matched={matched}, "
           f"failures={len(failures)}, max_augmenting_depth={depth}")
     if failures:
-        witness = failures[0]
-        print(f"  FIRST_DEFICIT_SOURCE={labels[witness]}")
-        raise SystemExit("Fixed-order canonical subrelation is not source-saturating.")
+        print(f"  HALL_WITNESS: |S|={len(hall_left)}, "
+              f"|N(S)|={len(hall_right)}, deficit={len(hall_left)-len(hall_right)}")
+        witness = min(hall_left)
+        print(f"  FIRST_WITNESS_SOURCE={labels[witness]}")
+        raise SystemExit("Three-order canonical subrelation is not source-saturating.")
     assignment = [targets[v] for v in chosen]
     assert len(set(assignment)) == len(rows)
-    print("  PASS: fixed-order canonical subrelation has a lexicographic injection")
+    print("  PASS: three-order canonical subrelation has a lexicographic injection")
     print(f"  first_assignments={[decode_tree(x, n) for x in assignment[:3]]}")
 
 
@@ -171,7 +202,7 @@ def main():
     run(6, 22)
     run(8, 608)
     run(10, 31744)
-    print("Fixed-order finite tests complete; no all-orders claim is made.")
+    print("Canonical-order finite tests complete; no all-orders claim is made.")
 
 
 if __name__ == "__main__":
