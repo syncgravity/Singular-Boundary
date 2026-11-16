@@ -1,42 +1,42 @@
 # Reverse switches from a fixed final tree (2026-11-16)
 
 This note records the inverse rule for the **guarded** local-switch
-relation. The corrected finite results and sourcewise degree proof are in
+relation. Corrected finite results and the sourcewise degree proof are in
 `PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md`.
 
 ## 1. One-step inverse
 
 Let T be a tree on V, let J={a,b} be a new matching interval, and let
 e={u,w} be an edge of T overlapping J. Write the four endpoints as
-x1<x2<x3<x4. Let S_j be one of
+x1<x2<x3<x4. The three local trees are
 
 - S0={(x1,x2),(x2,x3),(x2,x4)},
 - S1={(x1,x2),(x2,x3),(x3,x4)},
 - S2={(x1,x3),(x2,x3),(x3,x4)}.
 
 The guarded forward move is
-[
-E(U)=(E(T)\setminus\{e\})\cup E(S_j),
-qquad e\notin E(S_j).
-]
+
+```
+E(U) = (E(T) minus {e}) union E(S_j),    e notin E(S_j).
+```
+
 The guard excludes a move that immediately puts the replaced edge back.
 Such an unguarded move can still produce a tree, but it is not part of the
 transition relation studied here.
 
-Define
-[
-\delta_U(J)=\{f\in E(U):f\cap J\ne\varnothing\}.
-]
-For a specified e and S_j, the inverse is
-[
-E(T)=\bigl(E(U)\setminus\delta_U(J)\bigr)\cup\{e\}.
-]
-The inverse checks are
-[
-e\notin E(S_j),\quad
-E(S_j)\subseteq E(U),\quad
-\delta_U(J)=\delta_{S_j}(J).
-]
+Define delta_U(J) to be the set of edges of U incident to a or b. For a
+specified e and S_j, the inverse is
+
+```
+E(T) = (E(U) minus delta_U(J)) union {e}.
+```
+
+The inverse checks are:
+
+1. e is not in S_j (the forward guard);
+2. S_j is a subset of E(U);
+3. delta_U(J) equals delta_S_j(J).
+
 One may also check e notin E(U); this is redundant because U is a tree,
 S_j is connected and contained in U, and e is not in S_j.
 
@@ -73,8 +73,7 @@ outside J determines the two old endpoints and hence e. The predecessor
 is then unique. Repeating backward proves that, for a fixed insertion
 order, distinct forward histories have distinct final labeled trees.
 
-The exact corrected finite enumeration and inverse replay counts are
-recorded in
+The exact finite counts and inverse replay checks are recorded in
 `PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md`.
 
 This inverse lemma and its finite checks do not prove the full weighted
