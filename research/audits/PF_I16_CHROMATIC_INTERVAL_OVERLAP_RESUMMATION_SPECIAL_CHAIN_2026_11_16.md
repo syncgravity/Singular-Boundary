@@ -100,27 +100,35 @@ There are \((R-1)!!\le R^{R/2}\) perfect matchings. Thus, for even \(R\ge2\),
 \tag{4.3}
 ]
 
-## 5. Temporal tree bound
+## 5. The weighted tree-graph inequality is the sharper target
 
-If \(H_M\) is connected, the matching intervals cover every path cut. Since \(0\le r_j\le1\),
-[
-\prod_{ab\in M}w_{ab}
-=\prod_{j=1}^{R-1}r_j^{m_j}
-\le\prod_{j=1}^{R-1}r_j,
-\qquad m_j\ge1.
+The coefficient-only estimate in Section 4 is not, by itself, a support-tree estimate: a factor \(R^{R-2}\) cannot be discarded merely because the complete support graph has \(R^{R-2}\) spanning trees. Their temporal weights need not be comparable to the path weight.
+
+The correct weighted quantity is
+\[
+\mathcal L_R(r)=
+\sum_{M\text{ perfect matching}}
+|c(H_M)|\prod_{ab\in M}\prod_{j=a}^{b-1}r_j.
+\]
+For the complete temporal graph on the ordered ports, put
+\[
+\mathcal T_R(r)=
+\sum_{T\in\mathcal T_R}
+\prod_{\{a,b\}\in T}\prod_{j=\min(a,b)}^{\max(a,b)-1}r_j.
+\]
+The missing combinatorial inequality suggested by the exact low-arity tests is
+\[
+\boxed{\mathcal L_R(r)\le C^R\mathcal T_R(r),\quad 0\le r_j\le1.}
 \tag{5.1}
-]
-Combining (2.3), (4.3), and (5.1),
-[
-\boxed{
-|\kappa(X_1,\ldots,X_R)|
-\le 4^R R^{R-2}\prod_{j=1}^{R-1}r_j.
-}
-\tag{5.2}
-]
-When \(r_j=e^{-\Delta(t_{j+1}-t_j)}\), the product is the weight of the consecutive-time path tree. Since all rows share this one link, the support graph is complete, and the path tree is one of its spanning trees. Thus (5.2) is bounded by \(4^R\) times the complete support-tree polynomial.
+\]
+If proved with universal \(C\), this immediately gives the desired complete temporal tree bound for this symmetric binary one-link family.
+
+For \(R=4\), the two nonzero matching terms each have weight \(r_1r_2^2r_3\); the complete tree polynomial contains two distinct trees with exactly that weight, so \(\mathcal L_4\le\mathcal T_4\) in this case.
+
+The verifier now checks (5.1) exactly on a deterministic collection of rational gap vectors through \(R=8\), using the Matrix–Tree determinant for \(\mathcal T_R\). These are finite tests, not a proof for arbitrary \(R\) or real gap weights.
 
 ## 6. Four-port check and the interlacing obstruction
+he interlacing obstruction
 
 For \(R=4\), the three matchings are
 \[
@@ -147,7 +155,7 @@ Established here:
 - exact perfect-matching / interval-overlap-graph resummation for the symmetric binary coordinate chain;
 - exact chromatic-polynomial interpretation of the Möbius coefficient;
 - connectedness cancellation and a \(4^R R^{R-2}\) coefficient bound;
-- a temporal support-tree bound for this special one-link observable family.
+- an exact matching/chromatic resummation; the weighted tree-graph inequality (5.1) is supported by finite tests but remains unproved in general.
 
 Not established:
 
@@ -156,4 +164,4 @@ Not established:
 - multiple independent links with row observables that are products over link supports;
 - the required general \(C_m^R\) multi-link support-localized cumulant-tree theorem.
 
-The special case provides a concrete model for the missing signed interval-overlap resummation, but it does not close the Yang–Mills mass-gap proof or promote any P0–P5 gate.
+The special case provides a concrete model for the missing signed interval-overlap resummation. The remaining weighted inequality is open; this audit does not establish a uniform temporal tree bound or close the Yang–Mills mass-gap proof.
