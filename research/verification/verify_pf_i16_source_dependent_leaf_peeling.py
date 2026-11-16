@@ -20,7 +20,8 @@ This tests a concrete recursive strengthening. It is not itself a proof of
 global Hall: different parent fibers may still produce the same child tree
 under different source-dependent deletions.
 """
-from collections import defaultdict
+from collections import defaultdict, Counter
+from fractions import Fraction
 from verify_pf_i16_local_switch_fractional_transport import (
     LOCAL_TREES, candidate_outputs, matchings, overlap_edges, spanning_trees,
 )
@@ -154,6 +155,7 @@ def run(n, expected):
     projection_rows = {}
     child_count = 0
     inverse_count = 0
+    leaf_last_column_load = Counter()
     full_neighborhood_equal = 0
     full_neighborhood_strict = 0
     missing_from_leaf_last = 0
@@ -184,6 +186,8 @@ def run(n, expected):
         fibers[p].append(child)
         child_rows[child] = outputs
         projection_rows[child] = projections
+        for T in outputs:
+            leaf_last_column_load[T] += Fraction(1, len(outputs))
         child_count += 1
 
     # Enumerate parent neighborhoods once, then verify exact projection closure.
@@ -272,9 +276,13 @@ def run(n, expected):
     global_size, global_union, global_match, global_right = hopcroft_karp_size(
         [child_rows[ch] for children in fibers.values() for ch in children]
     )
+    worst_column = max(leaf_last_column_load.values())
     print(f"  global_leaf_last_matching={global_size}/{child_count}, "
           f"global_target_union={global_union}, "
           f"global_saturated={global_size == child_count}")
+    print(f"  leaf_last_uniform_max_column={worst_column} "
+          f"({float(worst_column):.12f}), "
+          f"fractional_hall_certificate={worst_column <= 1}")
     if worst:
         print(f"  largest_zero_robust_fiber_size={worst[0]}, parent={worst[1]}")
     assert child_count == expected
