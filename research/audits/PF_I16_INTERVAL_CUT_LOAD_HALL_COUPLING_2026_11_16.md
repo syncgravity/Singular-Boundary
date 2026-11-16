@@ -754,3 +754,46 @@ The remaining proper-down-set inequality is now equivalently
 \sum_{p,q=2}^{n-1}N_{n-2}(B_{p,q}(D)).
 \]
 The unresolved side is still the comparison with the left demand. In particular, no corresponding decomposition of \(\sum_{h\in D}L(h)\) with matching interval-overlap spanning-tree multiplicities has been established. The endpoint-leaf decomposition is therefore a rigorous right-supply reduction, not a Hall proof. The weighted one-link inequality and the Yang--Mills mass gap remain open.
+
+
+## Two-endpoint rooted-forest decomposition of the left demand (2026-11-16)
+
+The right down-set decomposition has a matching-side counterpart. It is not yet an injection, but it puts both sides into the same ordered endpoint-neighbor states (p,q).
+
+Fix a perfect matching M. If port 1 is paired with n, write its distinguished interval as [1,n]; deleting it leaves a matching M_0 on {2,...,n-1}. Its interval-overlap graph H_0 is augmented by one universal vertex [1,n]. Deleting that vertex from a spanning tree leaves a spanning forest F of H_0, with one chosen attachment vertex in each component. Thus the number of spanning trees of H_M is
+\[
+\sum_{F\text{ spanning forest of }H_0}
+\prod_{C\in\operatorname{comp}(F)}|C|.
+\]
+
+Otherwise write the two distinguished intervals as A=[1,p] and B=[q,n], where p,q are distinct interior labels. Delete A and B from H_M. The remaining graph is exactly H_0, the interval-overlap graph of the matching M_0 on {2,...,n-1}\{p,q}. For a component C of a spanning forest F of H_0, define
+\[
+a_C=\#\{I\in C:\min I<p\},\qquad
+b_C=\#\{I\in C:\max I>q\}.
+\]
+These are precisely the available attachment vertices to A and B.
+
+There are two cases, and the formulas follow by contracting each component of F. If q<p, A and B are adjacent in H_M. A spanning tree must attach every forest component exactly once, to either A or B; attaching a component to both would create a cycle using the A-B edge. Its contribution is therefore
+\[
+\prod_C(a_C+b_C).
+\]
+If q>p, A and B are not adjacent. The contracted graph is a tree joining A to B, so exactly one forest component must attach once to A and once to B; every other component attaches exactly once to either root. The contribution is
+\[
+\sum_{C_0}a_{C_0}b_{C_0}
+\prod_{C\ne C_0}(a_C+b_C).
+\]
+Summing these weights over all spanning forests F gives the exact spanning-tree multiplicity \(\tau(H_M)\). This also covers an empty residual graph: the q<p case contributes one (the edge A-B), while q>p contributes zero (disconnected roots).
+
+The matching cut load decomposes in the same state:
+\[
+m_k(M)=m_k(M_0)+\mathbf1_{k<p}+\mathbf1_{k\ge q}.
+\]
+For the exceptional [1,n] interval, its contribution is one at every cut. Consequently the full left multiset can be reconstructed by summing these two-root forest weights over the interior matchings and the endpoint states (p,q).
+
+A new exact verifier compares this forest formula against direct edge-subset enumeration of every interval-overlap spanning tree for n=4,6,8. It checks equality of the complete load-multiplicity maps, not just total counts.
+
+### Consequence for the proper-down-set comparison
+
+Combining this formula with the right endpoint-leaf decomposition isolates the remaining problem by the same boundary state (p,q): on the right, one counts interior port trees under the residual capacities; on the left, one counts interval-overlap forests on the matching with the two endpoint pairs removed, weighted by the displayed attachment factors. This is a sharper structural alignment than the earlier one-root recurrence.
+
+It still does not identify the two state spaces or prove a statewise inequality. In particular, the residual left matching has two fewer intervals and omits the labels p,q, whereas the residual right tree retains p,q as interior vertices. A cut-preserving encoding or a direct comparison of these weighted forest sums with the interior tree-capacity counts remains open. No proper-down-set Hall inequality is claimed.
