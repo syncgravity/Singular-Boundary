@@ -147,11 +147,16 @@ def run(n, expected_sources):
     first_failure = None
     path_lengths = defaultdict(int)
     for T in collision_targets:
-        matched_owner = right_owner[T]
+        matched_owner = right_owner.get(T)
         for challenger in target_owners[T]:
             if challenger == matched_owner:
                 continue
             tested += 1
+            if matched_owner is None:
+                # T is already free: challenger can take it directly.
+                repaired += 1
+                path_lengths[0] += 1
+                continue
             path, fiber_hops = reroute_from_target(
                 T, child_rows, matched_left, right_owner, child_fibers
             )
@@ -160,7 +165,7 @@ def run(n, expected_sources):
                     first_failure = (T, matched_owner, challenger)
                 continue
             repaired += 1
-            edges = (len(path) - 1) // 2
+            edges = len(path) - 1
             max_alt_edges = max(max_alt_edges, edges)
             max_fibers = max(max_fibers, fiber_hops)
             path_lengths[edges] += 1
