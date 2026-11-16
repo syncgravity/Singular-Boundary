@@ -107,6 +107,25 @@ def left_load_multiplicities(n):
     return left, connected_matchings
 
 
+def induced_component_count(vertex_count, edges, vertices):
+    """Number of components in the forest induced by the supplied vertices."""
+    vertices = set(vertices)
+    parent = {v: v for v in vertices}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for a, b in edges:
+        if a in vertices and b in vertices:
+            ra, rb = find(a), find(b)
+            assert ra != rb, "induced subgraph of a tree cannot contain a cycle"
+            parent[ra] = rb
+    return len({find(v) for v in vertices})
+
+
 def prufer_tree_loads(n):
     """Count c(T) over all n^(n-2) labeled trees using Prüfer codes."""
     counts = Counter()
@@ -126,6 +145,18 @@ def prufer_tree_loads(n):
             sum(min(a, b) <= k < max(a, b) for a, b in edges)
             for k in range(n - 1)
         )
+        # Correct two-sided component identity: the crossing edges of a
+        # tree form a tree after contracting prefix/suffix forest components.
+        for k in range(1, n):
+            left_components = induced_component_count(
+                n, edges, range(k)
+            )
+            right_components = induced_component_count(
+                n, edges, range(k, n)
+            )
+            assert load[k - 1] == left_components + right_components - 1, (
+                n, edges, k, load[k - 1], left_components, right_components
+            )
         counts[load] += 1
     assert sum(counts.values()) == n ** (n - 2)
     return counts
