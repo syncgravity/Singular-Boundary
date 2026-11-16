@@ -154,6 +154,9 @@ def run(n, expected):
     projection_rows = {}
     child_count = 0
     inverse_count = 0
+    full_neighborhood_equal = 0
+    full_neighborhood_strict = 0
+    missing_from_leaf_last = 0
 
     for intervals, tau in sources(n):
         leaf = canonical_leaf(intervals, tau)
@@ -162,6 +165,12 @@ def run(n, expected):
         parent_cache.setdefault(p, None)
         outputs = candidate_outputs(intervals, tau, forced_last=leaf)
         assert outputs, (n, intervals, tau, leaf)
+        full_outputs = candidate_outputs(intervals, tau)
+        if outputs == full_outputs:
+            full_neighborhood_equal += 1
+        else:
+            full_neighborhood_strict += 1
+            missing_from_leaf_last += len(full_outputs - outputs)
         projections = {}
         for T in outputs:
             inv = inverse_last_switch(T, J, n)
@@ -245,6 +254,9 @@ def run(n, expected):
     print(f"n={n}: child_sources={child_count}, parent_fibers={len(fibers)}, "
           f"leaf_last_inverse_candidates={inverse_count}, "
           f"projection_closure_failures={len(closure_failures)}")
+    print(f"  per_source_full_vs_leaf_last_equal={full_neighborhood_equal}, "
+          f"strict_subsets={full_neighborhood_strict}, "
+          f"full_outputs_missing_from_leaf_last={missing_from_leaf_last}")
     print(f"  fiber_size_range=[{min(x[0] for x in parent_summary)},"
           f"{max(x[0] for x in parent_summary)}], "
           f"parent_targets_with_full_fiber_lift={robust_total}")
