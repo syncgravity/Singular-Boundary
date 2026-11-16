@@ -7,6 +7,7 @@ Also records a concrete failure of endpoint-statewise Hall domination.
 """
 from collections import Counter
 from itertools import product
+from fractions import Fraction
 
 
 def primitive_paths(n):
@@ -151,10 +152,20 @@ def check_order(n):
         assert slack >= 0, (n, sorted(D), demand, supply)
         slacks.append((slack, demand, supply, len(D)))
     nonempty = [x for x in slacks if x[3]]
+    principal_sizes = {
+        h: sum(count for load, count in right.items() if leq(load, h))
+        for h in paths
+    }
+    uniform_ideal_bound = sum(
+        (Fraction(left[h], principal_sizes[h]) for h in paths),
+        Fraction(0, 1),
+    )
+    assert uniform_ideal_bound <= 1, (n, uniform_ideal_bound)
     print(
         f"PASS n={n}: paths={len(paths)}, downsets={len(slacks)}, "
         f"min_nonempty_slack={min(x[0] for x in nonempty)}, "
-        f"full_slack={next(x[0] for x in slacks if x[3] == len(paths))}"
+        f"full_slack={next(x[0] for x in slacks if x[3] == len(paths))}, "
+        f"uniform_ideal_bound={float(uniform_ideal_bound):.12f}"
     )
 
 
