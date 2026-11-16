@@ -217,7 +217,8 @@ def run(n, expected_sources):
               f"|N(S)|={len(hall_right)}, deficit={len(hall_left)-len(hall_right)}")
         witness = min(hall_left)
         print(f"  FIRST_WITNESS_SOURCE={labels[witness]}")
-        raise SystemExit("Eight-order canonical subrelation is not source-saturating.")
+        print("  REJECTED: this fixed family is not a Hall-saturating subrelation.")
+        return False
     assignment = [targets[v] for v in chosen]
     assert len(set(assignment)) == len(rows)
     print("  PASS: eight-order canonical subrelation has a lexicographic injection")
