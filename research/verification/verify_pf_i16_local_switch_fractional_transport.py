@@ -139,6 +139,8 @@ def candidate_outputs(intervals, tau):
                         mapped = tuple(
                             tuple(sorted((xs[a], xs[b]))) for a, b in local
                         )
+                        if local_edge in mapped:
+                            continue
                         local_vertices = tuple(xs)
                         old_path = local_path(
                             mapped, local_vertices, u, w
