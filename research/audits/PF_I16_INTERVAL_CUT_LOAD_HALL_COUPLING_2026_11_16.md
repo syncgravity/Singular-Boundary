@@ -440,3 +440,47 @@ The structural difference is now sharply isolated:
 This is promising but does not immediately imply the desired inequality. Although (H_{M'}) is a subgraph of the complete graph, its root set varies with M', and the right recurrence sums over a single root set at a time with capacities coupled to that set. A valid comparison must inject the *matching-decorated* left rooted forests into the capacity-admissible right rooted forests, or prove an aggregate Hall inequality across these root states. Merely using graph inclusion (H_{M'}\subseteq K_{V_p}) is insufficient because the right side does not preserve the left matching label and the residual cut capacities depend on the attachment set.
 
 A new exact verifier, `research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py`, compares (LF) against direct spanning-tree counts for all primitive loads at n=4,6,8,10. The verifier uses explicit enumeration of overlap-graph spanning trees and rooted spanning forests. This is a finite identity check, not an all-orders proof of the Hall inequality.
+
+
+## Pairwise interval switch: a valid local cut domination, and why it does not yet globalize
+
+Let two distinct matching intervals have four endpoints
+\[
+x_1<x_2<x_3<x_4.
+\]
+If their interiors intersect, their endpoint pairing is either the crossing pairing
+\((x_1,x_3),(x_2,x_4)\) or the nested pairing
+\((x_1,x_4),(x_2,x_3)\). In either case, the two matching intervals contribute cut-load
+\[
+(1,2,1)
+\]
+on the three consecutive cut blocks
+\([x_1,x_2),[x_2,x_3),[x_3,x_4)\), respectively (with zero contribution outside \([x_1,x_4)\)). Replacing those two matching edges by the three-edge path
+\[
+x_1-x_2-x_3-x_4
+\]
+gives cut-load \((1,1,1)\) on those same blocks. Thus:
+
+**Pairwise switch lemma.** For any overlapping pair of matching intervals, the consecutive-endpoint path on their four endpoints is a tree on those endpoints and its cut-load is coordinatewise bounded by the contribution of the two original matching intervals.
+
+This gives a genuine local rerouting operation, including for nested intervals; it is stronger than merely choosing one connector between the two interval-vertices. It does not by itself produce a global port tree from an overlap-tree \(\tau\), because local paths belonging to different edges of \(\tau\) share interval endpoints and can force incompatible edge choices.
+
+A minimal obstruction to the naive globalization is
+\[
+M=\{(1,8),(2,3),(4,5),(6,7)\},
+\qquad
+\tau=K_{1,3}
+\]
+with center \((1,8)\). The matching load is
+\[
+h=(1,2,1,2,1,2,1).
+\]
+The three pairwise paths are
+\[
+1-2-3-8,\qquad 1-4-5-8,\qquad 1-6-7-8.
+\]
+Their union is connected, but **every** spanning tree contained in this union has cut-load at least 3 at the cut after port 4, while the allowed capacity is \(h_4=2\). Indeed, port 4 has only one incident edge in the union, namely \(\{1,4\}\), and port 5 has only \(\{4,5\}\) and \(\{5,8\}\). A spanning tree must therefore contain \(\{1,4\}\) and \(\{4,5\}\); it must also connect the component containing ports 1,2,3 to the component containing 8, and the only available connection from that side is \(\{3,8\}\). These three forced edges all cross the cut after 4. Hence the local switch paths cannot simply be unioned and pruned to a capacity-admissible tree.
+
+The obstruction is specific to this proposed local-to-global rule, not to the Hall inequality: the same load vector has ample right-side supply in the finite computations. It shows what a successful construction must add beyond pairwise switching: a global reassignment of which endpoint edges represent each overlap-tree incidence, or a nonlocal encoding of \(\tau\) that can reroute around the forced-cut bottleneck.
+
+**Consequence for the proof plan.** The pairwise switch lemma can be used as a local exchange rule inside a future augmenting-path/Hall argument, but it is not an injection. Any such argument must track the residual cut capacity after earlier switches; treating each overlap-tree edge independently double-spends capacity in configurations such as the four-vertex star above. No all-orders Hall inequality follows from this lemma alone.
