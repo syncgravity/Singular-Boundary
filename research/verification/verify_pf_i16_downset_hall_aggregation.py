@@ -166,7 +166,7 @@ def check_statewise_obstruction():
     demand = sum(left[g] for g in primitive_paths(n) if leq(g, h))
     supply = sum(c for load, c in right.items() if leq(load, h))
     local_demand = sum(c for (p, q, load), c in left_states.items()
-                       if (p, q) == (3, 6) and leq(load, h))
+                       if (p, q) == (3, 2) and leq(load, h))
     local_supply = sum(c for (p, q, load), c in right_states.items()
                        if (p, q) == (3, 6) and leq(load, h))
     assert (local_demand, local_supply) == (1, 0)
