@@ -70,6 +70,8 @@ def ancestry_outputs(intervals, tau):
                         mapped = tuple(
                             tuple(sorted((xs[a], xs[b]))) for a, b in local
                         )
+                        if local_edge in mapped:
+                            continue
                         old_path = local_path(mapped, tuple(xs), u, w)
                         child_path = local_path(mapped, tuple(xs), J[0], J[1])
                         new_edges = set(tree_edges)
@@ -134,6 +136,10 @@ def reverse_history(intervals, history, target, n):
             "reverse incidence obstruction", intervals, history,
             tuple(sorted(current)), child, old_edge, local_index,
             actual, expected,
+        )
+        assert tuple(sorted(old_edge)) not in mapped, (
+            "replaced edge reappears in local switch", intervals, history,
+            tuple(sorted(current)), mapped,
         )
         assert mapped <= current, (
             "missing local switch tree", intervals, history,
