@@ -146,7 +146,7 @@ def verify_four_port_markov_obstruction():
     # Its mixed derivative at lambda_i=1 is -4*q1*q2^2*q3.
     q1, q2, q3 = F(2, 3), F(3, 4), F(4, 5)
     mixed_derivative = -4 * q1 * q2**2 * q3
-    assert mixed_derivative == F(-3, 5)
+    assert mixed_derivative == F(-6, 5)
     # The full block moment r1*r3 is independent of lambda2, hence this
     # three-parameter mixed derivative is exactly zero.
     assert m1234 == r1 * r3
