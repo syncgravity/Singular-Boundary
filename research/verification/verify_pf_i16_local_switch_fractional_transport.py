@@ -170,6 +170,7 @@ def candidate_outputs(intervals, tau):
                 )
                 # Keep the full edge-choice relation, but explicitly count
                 # the two guarded local replacements of the path witness.
+                witness = guaranteed[0]
                 guaranteed_valid = 0
                 for u, w in sorted(tree_edges):
                     if not overlaps((u, w), J):
@@ -183,7 +184,7 @@ def candidate_outputs(intervals, tau):
                         )
                         if local_edge in mapped:
                             continue
-                        if (u, w) in guaranteed or (w, u) in guaranteed:
+                        if (u, w) == tuple(sorted(witness)):
                             guaranteed_valid += 1
                         local_vertices = tuple(xs)
                         old_path = local_path(
@@ -214,8 +215,8 @@ def candidate_outputs(intervals, tau):
                             (new_paths, frozenset(new_edges))
                         )
                 assert guaranteed_valid == 2, (
-                    "path witness does not have exactly two guarded patterns",
-                    intervals, tau, order, child, guaranteed, guaranteed_valid,
+                    "selected path witness does not have exactly two guarded patterns",
+                    intervals, tau, order, child, witness, guaranteed_valid,
                 )
             assert len(next_states) >= 2 * len(states), (
                 "fewer than two valid local choices per current state",
