@@ -70,18 +70,20 @@ def two_root_forest_weight(intervals, p, q, cone=False):
             a = [sum(intervals[i][0] < p for i in C) for C in components]
             b = [sum(intervals[i][1] > q for i in C) for C in components]
             factors = [x + y for x, y in zip(a, b)]
-            if q < p:  # the two distinguished intervals overlap
-                weight = 1
+            # A spanning tree may use the A-B edge (if available),
+            # or omit it and use exactly one forest component as the bridge.
+            weight = 0
+            if q < p:
+                product = 1
                 for f in factors:
-                    weight *= f
-            else:      # exactly one forest component bridges the two roots
-                weight = 0
-                for j in range(len(components)):
-                    term = a[j] * b[j]
-                    for i, f in enumerate(factors):
-                        if i != j:
-                            term *= f
-                    weight += term
+                    product *= f
+                weight += product
+            for j in range(len(components)):
+                term = a[j] * b[j]
+                for i, f in enumerate(factors):
+                    if i != j:
+                        term *= f
+                weight += term
         total += weight
     return total
 
@@ -147,7 +149,7 @@ def endpoint_recurrence(n):
         intervals = tuple(sorted(tuple(sorted(e)) for e in M0))
         weight = two_root_forest_weight(intervals, None, None, cone=True)
         load0 = tuple(sum(a <= k < b for a, b in intervals)
-                      for k in range(n - 1))
+                      for k in range(1, n))
         load = tuple(x + 1 for x in load0)
         out[load] += weight
 
