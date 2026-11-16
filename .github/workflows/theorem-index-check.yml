@@ -243,7 +243,7 @@ jobs:
         run: python research/verification/verify_pf_i16_link_compressed_support_graph_bkar.py
       - name: Verify omitted-port differentiated-cumulant obstruction
         run: python research/verification/verify_pf_i16_cancellation_preserving_support_tree_derivative.py
-      - name: Verify rank-one interval-component signed resummation
+      - name: Verify formal interval-component identity and connected Taylor support
         run: python research/verification/verify_pf_i16_rank_one_interval_component_resummation.py
       - name: Verify L2-gap obstruction for interlaced block observables
         run: python research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py
