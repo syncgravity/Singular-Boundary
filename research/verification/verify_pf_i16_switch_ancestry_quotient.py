@@ -104,6 +104,12 @@ def ancestry_outputs(intervals, tau):
             )
             states = next_states
 
+        # For this fixed insertion order, the reverse map is unique at
+        # every step; hence the 2^(s-1) histories give distinct outputs.
+        assert len({tuple(sorted(state[1])) for state in states}) >= 2 ** (v - 1), (
+            "fixed-order distinct-output lower bound failed", intervals, tau, order,
+            len(states), len({tuple(sorted(state[1])) for state in states}),
+        )
         for _, tree_edges, history in states:
             target = tuple(sorted(tree_edges))
             # Independently replay the exact inverse transition from this
@@ -196,6 +202,9 @@ def run(n):
         for tau in spanning_trees(len(intervals), overlap):
             outputs = ancestry_outputs(intervals, tau)
             degree = len(outputs)
+            assert degree >= 2 ** (n // 2 - 1), (
+                "source distinct-output lower bound failed", intervals, tau, degree
+            )
             source_count += 1
             weight = Fraction(1, degree)
             for T, (history_count, canonical) in outputs.items():
