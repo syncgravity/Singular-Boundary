@@ -79,3 +79,30 @@ assert an all-orders matching theorem. The unresolved obligation is a
 constructive all-orders rerouting argument for the leaf-last relation, or a
 structural characterization of its Hall neighborhoods. No Yang–Mills mass-gap
 conclusion follows from these computations.
+
+
+## Stronger inverse and assignment trace
+
+The refined verifier establishes at n=4,6,8 that the inverse parent projection
+is unique for every leaf-last child output: maximum inverse multiplicity is 1,
+and no output has multiple parent projections. All 30,810 inverse candidates
+at n=8 are valid parent-neighborhood trees (the run reports zero non-parent
+inverse candidates).
+
+Tracing the global matching through this unique projection gives:
+- n=4: maximum assigned multiplicity of one (parent source, parent target)
+  pair is 2; one such pair is used;
+- n=6: maximum multiplicity 8; five pairs are used;
+- n=8: maximum multiplicity 18; 157 pairs are used.
+
+This identifies the recursive object more precisely: the parent assignment
+must be a capacitated multiset of parent targets, not a single parent target
+per parent source. The finite global child matching induces such a multiset,
+but the verifier does not yet prove a general capacity bound or construct it
+without solving the child matching problem.
+
+Latest verifier commit:
+378f7dc1f47a6c591000e268f87192293f97fb8e
+
+Latest CI run:
+https://github.com/syncgravity/Singular-Boundary/actions/runs/43974717402
