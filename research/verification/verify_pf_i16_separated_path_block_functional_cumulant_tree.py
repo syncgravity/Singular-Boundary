@@ -89,6 +89,41 @@ def check(q, gaps, rho, tag):
     )
 
 
+
+def cluster_path_moments(sets, rho, reset_step=None):
+    last_time = max(max(s) for s in sets)
+    q = len(sets)
+    moments = {}
+    for subset_mask in range(1 << q):
+        value = Fraction(0)
+        for path in product((-1, 1), repeat=last_time + 1):
+            weight = Fraction(1, 2)
+            for k in range(1, last_time + 1):
+                if reset_step == k:
+                    weight *= Fraction(1, 2)
+                else:
+                    weight *= (1 + rho * path[k-1] * path[k]) / 2
+            obs = Fraction(1)
+            for a, times in enumerate(sets):
+                if (subset_mask >> a) & 1:
+                    obs *= sum(path[t] for t in times) / len(times)
+            value += weight * obs
+        moments[frozenset(i for i in range(q) if (subset_mask >> i) & 1)] = value
+    return moments
+
+
+def check_overlap_clusters(sets, gap, reset_step, rho, tag):
+    q = len(sets)
+    moments = cluster_path_moments(sets, rho)
+    kappa = cumulant(range(q), lambda s: moments[s])
+    rhs = cumulant_constant(q) * (rho ** gap)
+    assert abs(kappa) <= rhs, (tag, kappa, rhs)
+    reset = cluster_path_moments(sets, rho, reset_step=reset_step)
+    reset_kappa = cumulant(range(q), lambda s: reset[s])
+    assert reset_kappa == 0, (tag, reset_kappa)
+    print(f"PASS {tag}: q={q}, gap={gap}, exact component-reset factorization")
+
+
 def main():
     rho = Fraction(2, 5)
     fixtures = [
@@ -99,7 +134,9 @@ def main():
     ]
     for q, gaps, tag in fixtures:
         check(q, gaps, rho, tag)
-    print("LIMIT: separated hulls only; interlaced multi-time blocks remain open")
+    check_overlap_clusters([(0,1),(1,2),(4,5)], 2, 3, rho, "two-port-overlap-clusters")
+    check_overlap_clusters([(0,1),(1,2),(5,6),(6,7)], 3, 3, rho, "two-two-block-overlap-clusters")
+    print("LIMIT: separated hulls and port-overlap clusters only; interlaced disjoint blocks remain open")
 
 
 if __name__ == "__main__":
