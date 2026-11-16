@@ -129,14 +129,11 @@ def run(n, expected_sources):
         assert all(child_projection[i][T] in parent_neighborhoods[child_fibers[i]]
                    for T in row)
 
-    ml, mr, right_index = hopcroft_karp(child_rows)
+    ml, mr, right = hopcroft_karp(child_rows)
     assert sum(v >= 0 for v in ml) == expected_sources
-    matched_left = {i: next(t for t, j in right_index.items() if j == ml[i])
-                    for i in range(len(ml))}
-    target_by_index = {j: t for t, j in right_index.items()}
-    right_owner = {target_by_index[j]: i for j, i in enumerate(mr) if i >= 0}
+    matched_left = {i: right[ml[i]] for i in range(len(ml))}
+    right_owner = {right[j]: i for j, i in enumerate(mr) if i >= 0}
     free_targets = sum(v < 0 for v in mr)
-    right = sorted(right_index, key=right_index.get)
 
     collision_targets = [T for T, owners in target_owners.items()
                          if len(owners) > 1]
