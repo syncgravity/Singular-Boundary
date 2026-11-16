@@ -39,7 +39,10 @@ E(S_j)\subseteq E(U),\qquad
 \]
 The first condition is essential: otherwise the forward operation can
 reinsert the edge it supposedly replaced, and the edge count need not be
-that of a tree. The second ensures that the entire prescribed local switch
+that of a tree. The additional condition \(e\\notin E(U)\) is also
+necessary: the replaced edge must actually be absent from the current tree
+when it is restored. Without it, the set-union formula can fail to add an
+edge and cannot recover the predecessor edge set. The second ensures that the entire prescribed local switch
 tree is present, including a possible edge between the two old endpoints.
 The third says that the two new endpoints have no incident edges beyond
 those prescribed by the local switch. Under these conditions, (R) recovers
@@ -147,3 +150,32 @@ The inverse test now explicitly checks e is absent from U before restoring
 it. This condition is necessary for exact edge-set recovery and follows
 for a genuine reverse-chronological history after all later insertions
 have first been undone.
+
+
+## 5. Distinct-output lower bound from reverse uniqueness
+
+Fix one parent-before-child insertion order. At a step inserting J, the
+old edge e and J interleave. If e is the (1,3) pair, the two valid local
+trees are S0 and S1; if e is the (2,4) pair, they are S1 and S2. In either
+case every edge of the valid local tree is incident to at least one of the
+two new endpoints. The three-edge local tree is therefore exactly the
+incidence set delta_U(J) at the instant it is the last insertion.
+
+For a fixed J and final tree U, a valid reverse step is unique: delta_U(J)
+is the local tree S; its support outside J gives the two old endpoints,
+hence determines e. The predecessor is then uniquely
+(U minus the incidences at J) union {e}. Inducting backward along the fixed
+insertion order shows that two different forward histories with that same
+order cannot end at the same labeled tree.
+
+There are at least two valid choices at every current state, by the
+parent-path crossing argument in Section 4. Thus one fixed insertion order
+has at least 2^(s-1) histories, and reverse uniqueness makes their terminal
+trees distinct. Consequently every source has at least 2^(s-1) distinct
+outputs under the guarded relation. This replaces the former, invalid
+3^(s-1) degree floor.
+
+The finite verifier now asserts this corrected floor and checks at every
+enumerated state that the number of next transitions is at least twice the
+number of current states. These are executable checks; corrected finite
+column figures remain pending execution.
