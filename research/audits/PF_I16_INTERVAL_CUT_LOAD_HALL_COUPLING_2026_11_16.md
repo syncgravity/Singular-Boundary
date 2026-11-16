@@ -511,9 +511,11 @@ c_k(T)=1.
 \]
 Let \(e_k(T)\) be its unique crossing edge. Then every \(e_k(T)\) lies on the unique path in \(T\) from vertex 1 to vertex n, and these edges occur along that path in increasing cut order.
 
-**Proof.** Every spanning tree has at least one edge across every nontrivial prefix cut, so the capacity one forces equality. Removing the unique crossing edge disconnects the tree into the prefix and suffix, hence that edge lies on the 1-to-n path. Along that path, the first passage from \(\{1,\ldots,k\}\) to its complement must precede the first passage across any larger prefix cut. This gives the order assertion. If the same edge crosses several tight cuts, it is the same backbone edge for that whole run of cuts.
+**Proof.** Every spanning tree has at least one edge across every nontrivial prefix cut, so the capacity one forces equality. Removing the unique crossing edge disconnects the tree into the prefix and suffix, hence that edge lies on the 1-to-n path. Along that path, the first passage from \(\{1,\ldots,k\}\) to its complement must precede the first passage across any larger prefix cut. This gives the order assertion.
 
-In particular, after deleting the distinct edges among \(\{e_k:k\in K(h)\}\), every remaining tree edge lies wholly within one of the consecutive label slabs cut out by those bridge edges. The right-hand tree is therefore a chain of within-slab trees joined by the tight-cut backbone edges. Off-backbone branches cannot cross a tight cut: that would create a second crossing edge there.
+The edges at distinct tight cuts are also distinct. If one edge crossed two cuts \(k<l\), deleting it would leave every vertex in the nonempty middle slab \(\{k+1,\ldots,l\}\) in one of its two components. The component containing such a vertex would still have to connect across one of the two cuts without using the deleted unique crossing edge, a contradiction.
+
+Consequently the \(r=|K(h)|\) tight cuts force \(r\) distinct bridge edges. Deleting these \(r\) edges from \(T\) produces exactly \(r+1\) components, each confined to one of the \(r+1\) nonempty consecutive label slabs determined by \(K(h)\). Since there are \(r+1\) slabs, there is exactly one connected within-slab tree in each slab. The original right-hand tree is a chain of these slab trees joined by the unique bridge edges. Off-slab branches cannot cross a tight cut: that would create a second crossing edge there.
 
 ### Left-hand tight-cut structure
 
