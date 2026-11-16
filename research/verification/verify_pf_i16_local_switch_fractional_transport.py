@@ -241,9 +241,9 @@ def check(n, expected_sources, expected_union):
     profile = degree_profile[worst_tree]
     profile_mass = sum((Fraction(count, degree) for degree, count in profile.items()), Fraction())
     assert profile_mass == columns[worst_tree]
-    assert max_column <= 1, (n, max_column)
+    status = "PASS" if max_column <= 1 else "OVERLOAD"
     print(
-        f"PASS n={n}: left_objects={source_count}, "
+        f"{status} n={n}: left_objects={source_count}, "
         f"candidate_trees={len(columns)}, "
         f"source_degree_range=[{min_degree},{max_degree}], "
         f"max_fractional_column_load={float(max_column):.12f}, "
@@ -282,9 +282,9 @@ def check(n, expected_sources, expected_union):
 
 def main():
     check(4, expected_sources=2, expected_union=3)
-    check(6, expected_sources=22, expected_union=45)
-    check(8, expected_sources=608, expected_union=1688)
-    print("PASS finite local-switch fractional Hall certificate through eight ports")
+    check(6, expected_sources=22, expected_union=43)
+    check(8, expected_sources=608, expected_union=1493)
+    print("Finite guarded-relation enumeration complete; OVERLOAD means this uniform transport is not a Hall certificate.")
     print("NOTE incidence/degree comparison is diagnostic; no all-orders bound is claimed")
 
 
