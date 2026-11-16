@@ -33,6 +33,8 @@ g(X)\ge 2\log_p q.
 \]
 Choose q>p^2, so g(X)>4. The construction is non-bipartite under the stated quadratic-residue condition.
 
+**Reference for the graph family:** Lubotzky, Phillips and Sarnak, “Ramanujan graphs,” *Combinatorica* 8 (1988), 261–277, [DOI 10.1007/BF02126799](https://doi.org/10.1007/BF02126799). The non-bipartite LPS case and its high-girth bound are summarized in [this construction note](https://www.math.uchicago.edu/~may/REU2016/REUPapers/Zhang%2CR.pdf).
+
 ## 3. Two-time block decodes the middle state
 
 Choose any balanced function g:V(X)→{-1,+1}; this exists because
