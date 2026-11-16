@@ -488,3 +488,41 @@ A spanning tree has seven edges, so there are only \(\binom97=36\) candidate edg
 The obstruction is specific to this proposed local-to-global rule, not to the Hall inequality: the same load vector has ample right-side supply in the finite computations. It shows what a successful construction must add beyond pairwise switching: a global reassignment of which endpoint edges represent each overlap-tree incidence, or a nonlocal encoding of \(\tau\) that can reroute around the forced-cut bottleneck.
 
 **Consequence for the proof plan.** The pairwise switch lemma can be used as a local exchange rule inside a future augmenting-path/Hall argument, but it is not an injection. Any such argument must track the residual cut capacity after earlier switches; treating each overlap-tree edge independently double-spends capacity in configurations such as the four-vertex star above. No all-orders Hall inequality follows from this lemma alone.
+
+
+## Hall reduction at tight cuts: a common backbone / rooted-forest state
+
+The coordinatewise Hall condition has a useful additional structure at cuts where a primitive load is minimal. Fix a primitive Dyck load \(h\), and let
+\[
+K(h)=\{k\in\{1,\ldots,n-1\}:h_k=1\}
+=\{k_1<\cdots<k_r\}.
+\]
+Call these *tight cuts*. They are the cuts at which every admissible right-hand tree has exactly one crossing edge.
+
+### Right-hand backbone lemma
+
+If \(T\) is a spanning tree with \(c_k(T)\le h_k\), then for every \(k\in K(h)\),
+\[
+c_k(T)=1.
+\]
+Let \(e_k(T)\) be its unique crossing edge. Then every \(e_k(T)\) lies on the unique path in \(T\) from vertex 1 to vertex n, and these edges occur along that path in increasing cut order.
+
+**Proof.** Every spanning tree has at least one edge across every nontrivial prefix cut, so the capacity one forces equality. Removing the unique crossing edge disconnects the tree into the prefix and suffix, hence that edge lies on the 1-to-n path. Along that path, the first passage from \(\{1,\ldots,k\}\) to its complement must precede the first passage across any larger prefix cut. This gives the order assertion. If the same edge crosses several tight cuts, it is the same backbone edge for that whole run of cuts.
+
+In particular, after deleting the distinct edges among \(\{e_k:k\in K(h)\}\), every remaining tree edge lies wholly within one of the consecutive label slabs cut out by those bridge edges. The right-hand tree is therefore a chain of within-slab trees joined by the tight-cut backbone edges. Off-backbone branches cannot cross a tight cut: that would create a second crossing edge there.
+
+### Left-hand tight-cut structure
+
+For a matching \(M\) with load \(h\), each tight cut \(k\in K(h)\) is crossed by exactly one matching interval, denoted \(I(k)\). Any two distinct intervals that overlap have a common integer cut \(t\) with both intervals active, and necessarily \(h_t\ge2\); hence their overlap occurs strictly inside one of the open blocks between consecutive tight cuts. Thus every edge of the interval-overlap graph is supported inside a single such block.
+
+For a block \((k_j,k_{j+1})\), the intervals active at its interior cuts form a connected interval-overlap subgraph: their union covers the block, and a gap between two disjoint overlap components would leave an interior cut with no active interval. The unique intervals crossing the two boundary tight cuts, when distinct, are the natural boundary vertices of this block graph. The full overlap graph is assembled from these block graphs by identifying the boundary interval that persists across consecutive tight cuts. A spanning tree of the full overlap graph consequently restricts to rooted forests in the block graphs, with roots at the boundary intervals through which the block pieces attach. This is the multi-block analogue of the one-root recurrence (LF).
+
+### What this does and does not establish
+
+This identifies a shared state space for the two sides:
+- right: trees inside consecutive slabs, attached along the unique edges forced at tight cuts;
+- left: interval-overlap rooted forests inside the corresponding blocks, attached along the unique matching intervals forced at tight cuts.
+
+It also explains why the minimal primitive path is unusually tractable: every cut is tight or has height two, so the backbone leaves almost no room for branching. For a general primitive path, the non-tight blocks can have substantial height and the rooted boundary state must retain the attachment locations and residual cut capacities.
+
+The remaining Hall step is now a blockwise capacitated comparison: for each sequence of tight-cut boundary states, compare the total number of left interval-overlap rooted-forest decorations with the number of right slab-tree decorations having no larger residual cut loads. The boundary data must be retained; summing over blocks independently would lose the correlation of a matching interval or a right bridge edge that spans several consecutive tight cuts. This is a structural reduction, not yet an inequality. In particular, it does not prove the pointwise class bound \(Q(h)\ge L(h)\) or the down-set Hall inequalities.
