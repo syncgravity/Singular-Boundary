@@ -285,3 +285,61 @@ At the cut between ports 3 and 4, six of these edges cross, whereas \(h_3=1\). T
 This is not a minor choice-of-root issue: the long root interval is the only active matching interval at that cut, while endpoint doubling routes several child endpoints across it. Any successful injection must use a different port-tree encoding—one that reroutes/replaces edges so that every cut is charged at most once per active interval, while retaining enough information to recover both \(M\) and the overlap-tree copy.
 
 The failed construction is recorded to prevent it being reused as a proof. It does not disprove the desired injection or the Hall inequality.
+
+
+## Endpoint-leaf recurrence and complementary cut swap (2026-11-16 continuation)
+
+This section records a further exact decomposition of the right-hand cumulative counts. It is independent of Prüfer-code enumeration.
+
+For an arbitrary integer capacity vector b=(b_1,...,b_{n-1}), write
+`A_n(b)=#{T in T(K_n): c_k(T)<=b_k for every k}`.
+Set A_n(b)=0 if any b_k<1. If b_1=b_{n-1}=1, every admissible tree has vertices 1 and n as leaves. Let p in {2,...,n-1} be the neighbor of 1 and q in {2,...,n-1} the neighbor of n. Removing those leaves gives a unique tree T' on {2,...,n-1}. For its cut after old vertex k, the two deleted edges contribute respectively 1_{p>k} and 1_{q<=k}. Therefore, with
+[
+b^{p,q}_j=b_{j+1}-\mathbf1_{p>j+1}-\mathbf1_{q\le j+1},
+qquad 1\le j\le n-3,
+]
+there is the exact recurrence
+[
+oxed{
+A_n(b)=\sum_{p=2}^{n-1}\sum_{q=2}^{n-1} A_{n-2}(b^{p,q}).
+}
+	ag{EL}
+]
+Here the interior labels are relabeled in increasing order. A term with any capacity below 1 is zero. The identity is bijective: each tree has a unique ordered pair (p,q), and conversely any interior tree counted by A_{n-2}(b^{p,q}) becomes a unique admissible n-vertex tree after adjoining leaves 1 and n at p and q.
+
+For a primitive Dyck path h, the hypotheses b_1=b_{n-1}=1 hold. Thus (EL) is an exact recursion for the determinant-derived cumulative count A(h), with no Möbius inversion. Its nonzero attachment pairs are precisely those satisfying, at every interior cut k,
+[
+h_k-\mathbf1_{p>k}-\mathbf1_{q\le k}\ge1.
+]
+Equivalently: at a height-1 cut neither leaf edge may cross; at a height-2 cut both may not cross; at a height-at-least-3 cut there is no further restriction.
+
+As a check, for the minimal primitive path h_k=1 for odd k and 2 for even k, the only nonzero pairs are p in {2,3} and q in {n-2,n-1}. The exact recurrence terms obtained by exhaustive smaller-tree counts are:
+- n=6: 2, 4, 1, 2; sum 9.
+- n=8: 6, 12, 3, 6; sum 27.
+- n=10: 18, 36, 9, 18; sum 81.
+
+These agree with the minimal-ceiling class counts in the Prüfer verifier. They suggest a small boundary-state recursion for this extremal path, but the four terms are not yet evaluated by a proved closed recurrence for all n.
+
+### A cut-complement identity relevant to an injection
+
+Suppose a matching contains two distinct outer intervals [1,p] and [q,n] with q<p, so these two intervals overlap. Their contribution to its cut-load at k is
+[
+m^{outer}_k=\mathbf1_{k<p}+\mathbf1_{k\ge q}.
+]
+Instead attach the two tree leaves by edges {1,q} and {p,n}. Their contribution is
+[
+c^{leaf}_k=\mathbf1_{k<q}+\mathbf1_{k\ge p}.
+]
+A direct three-region check gives
+[
+m^{outer}_k-c^{leaf}_k=
+\begin{cases}
+2,&q\le k<p,\\
+0,&k<q\text{ or }k\ge p.
+\end{cases}
+]
+Thus this swap never increases any cut load and saves two units throughout the overlap region. It is exactly the type of complementary attachment pattern that the endpoint-leaf recurrence permits.
+
+This is only a local cut identity. It does **not** yet define an injection from (M, spanning tree of H_M) to a port tree: the remaining interval-overlap tree must still be encoded into a tree on the interior ports, and connected matchings need not have their two endpoint intervals overlapping as a pair when other intervals bridge them. The outstanding task is to construct that interior encoding, or a more general boundary-state recursion that handles the bridged case, while preserving injectivity and the cut budget.
+
+**Status:** (EL) and the cut-complement identity are proved. They give a new recursive representation of the right-hand supply and a concrete local edge-swap mechanism. They do not prove Q(h)>=L(h), the weighted one-link inequality, or the Yang--Mills mass gap.
