@@ -223,12 +223,12 @@ def run(n, expected_sources):
     assert len(set(assignment)) == len(rows)
     print("  PASS: eight-order canonical subrelation has a lexicographic injection")
     print(f"  first_assignments={[decode_tree(x, n) for x in assignment[:3]]}")
+    return True
 
 
 def main():
-    run(4, 2)
-    run(6, 22)
-    run(8, 608)
+    results = [run(4, 2), run(6, 22), run(8, 608)]
+    print(f"canonical_family_saturates_all_tested_orders={all(results)}")
     print("Canonical-order finite tests complete; no all-orders claim is made.")
 
 
