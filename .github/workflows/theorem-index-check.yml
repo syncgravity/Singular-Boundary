@@ -58,6 +58,7 @@ on:
       - 'research/audits/PF_I16_INTERVAL_CUT_LOAD_HALL_COUPLING_2026_11_16.md'
       - 'research/verification/verify_pf_i16_interval_cut_load_hall.py'
       - 'research/verification/verify_pf_i16_downset_endpoint_leaf.py'
+      - 'research/verification/verify_pf_i16_left_two_endpoint_forest_recurrence.py'
       - 'research/verification/verify_pf_i16_rooted_forest_endpoint_recurrence.py'
       - 'research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py'
       - 'research/verification/verify_pf_i16_interval_cut_load_hall_n10.cpp'
@@ -271,6 +272,8 @@ jobs:
         run: python research/verification/verify_pf_i16_interval_cut_load_hall.py
       - name: Verify proper-down-set endpoint-leaf decomposition
         run: python research/verification/verify_pf_i16_downset_endpoint_leaf.py
+      - name: Verify two-endpoint left rooted-forest recurrence
+        run: python research/verification/verify_pf_i16_left_two_endpoint_forest_recurrence.py
       - name: Verify rooted-forest endpoint recurrence for cut-bounded trees
         run: python research/verification/verify_pf_i16_rooted_forest_endpoint_recurrence.py
       - name: Verify left interval rooted-forest recurrence
