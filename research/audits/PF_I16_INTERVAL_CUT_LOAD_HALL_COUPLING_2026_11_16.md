@@ -881,3 +881,46 @@ This proves that every individual left object has a nonempty right neighborhood,
 The map just described is many-to-one. A deterministic choice of the leftmost overlapping edge and increasing path produces only 62 distinct output trees from the 608 left objects at n=8. Thus nonempty neighborhoods alone do not prove Hall. The remaining central inequality is a fiber/multiplicity problem: the family of all legal local-switch choices for a left object must be coupled to distinct port trees, or their fibers must be controlled by a fractional transport whose column sums are at most one.
 
 The three local four-vertex trees with cut-load bounded by (1,2,1) are the two middle-centered stars and the increasing path. The stars preserve the local profile exactly; the path lowers the middle cut. Allowing all three choices and all eligible parent-path edges gives a much larger candidate family, but no all-orders Hall theorem for that candidate relation has been proved. The local-switch lemma is therefore an all-orders existence result, not an injection or proof of H-D.
+
+
+## Local-switch candidate relation and finite fractional transport (2026-11-16)
+
+The local-switch witness can be made multivalued. Root \tau at the interval containing port 1; choose any parent-before-child order; when inserting child interval J, choose any edge of the current monotone parent path that overlaps J; and replace it by any of the three admissible four-vertex trees (the two middle-centered stars or the increasing path). Each resulting output is a port tree with \(c(T)\le m(M)\).
+
+For each source object x=(M,\tau), let \(C(x)\) be the set of *distinct* output trees obtainable by all such choices. The finite experiment uses the uniform fractional transport
+\[
+\pi(x,T)=
+\begin{cases}
+|C(x)|^{-1},&T\in C(x),\\
+0,&T\notin C(x).
+\end{cases}
+\]
+Every source sends unit mass. If every port tree receives column mass at most one, then for every source subset X,
+\[
+|X|=\sum_{x\in X}\sum_T\pi(x,T)
+\le \#\bigcup_{x\in X}C(x),
+\]
+and because every candidate T is cut-load dominated by its source matching, this gives Hall for every down-set. This is a valid fractional-Hall certificate when the column bound holds.
+
+The exact verifier `research/verification/verify_pf_i16_local_switch_fractional_transport.py` enumerates all candidate sets and checks the column bound using rational arithmetic. Results:
+
+| n | left objects | distinct candidate trees | source candidate-set sizes | maximum column mass |
+|---:|---:|---:|---:|---:|
+| 4 | 2 | 3 | 3 | 0.666666666667 |
+| 6 | 22 | 45 | 9–30 | 0.800000000000 |
+| 8 | 608 | 1688 | 27–552 | 0.976422959218 |
+
+Thus the local-switch relation has a fractional Hall certificate at every tested order, not merely an arbitrary injection found by search. The column loads are checked exactly as rational numbers; the decimals are for display only.
+
+### The all-orders bottleneck has sharpened
+
+The remaining statement is now a specific combinatorial bound:
+\[
+\boxed{
+\sum_{(M,\tau):,T\in C(M,\tau)}
+\frac{1}{|C(M,\tau)|}\le1
+\quad\text{for every labeled port tree }T.
+}
+\tag{FC}
+\]
+If (FC) holds for all even n, the proper-down-set Hall inequality follows immediately from the preceding mass-transport argument. The observed maximum column mass rises from 2/3 to 4/5 to about 0.9764, so there is little numerical slack by n=8. No proof of (FC), nor an all-orders bound replacing it, has been found. This is the current central inequality in a more explicit fractional-transport form.
