@@ -245,6 +245,7 @@ int main() {
             if (leq(primitive_paths[j], primitive_paths[i]))
                 cumulative[i] += right_mass[j];
     uint64_t min_union_bound_margin = UINT64_MAX;
+    uint64_t min_peak_cover_margin = UINT64_MAX;
     for (int i = 0; i < (int)primitive_paths.size(); ++i) {
         uint64_t strict_lower_sum = 0;
         for (int j = 0; j < (int)primitive_paths.size(); ++j)
@@ -255,6 +256,27 @@ int main() {
         min_union_bound_margin = min(
             min_union_bound_margin,
             cumulative[i] - strict_lower_sum - demand);
+
+        // Every strict lower primitive path is below a one-peak lower cover.
+        // The union bound over these covers is sharper than summing all
+        // strict lower principal ideals.
+        uint64_t peak_cover_sum = 0;
+        const Load& h = primitive_paths[i];
+        for (int k = 1; k < N - 2; ++k) {
+            if (h[k] <= h[k - 1] || h[k] <= h[k + 1] || h[k] < 3)
+                continue;
+            Load lower = h;
+            lower[k] -= 2;
+            uint64_t cover_supply = 0;
+            for (int j = 0; j < (int)primitive_paths.size(); ++j)
+                if (leq(primitive_paths[j], lower))
+                    cover_supply += right_mass[j];
+            peak_cover_sum += cover_supply;
+        }
+        assert(cumulative[i] >= demand + peak_cover_sum);
+        min_peak_cover_margin = min(
+            min_peak_cover_margin,
+            cumulative[i] - demand - peak_cover_sum);
     }
 
     assert(connected_matchings == 706);
