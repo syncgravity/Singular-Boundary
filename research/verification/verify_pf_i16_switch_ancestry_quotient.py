@@ -98,6 +98,9 @@ def ancestry_outputs(intervals, tau):
 
         for _, tree_edges, history in states:
             target = tuple(sorted(tree_edges))
+            # Independently replay the exact inverse transition from this
+            # fixed final tree, deleting the newest interval at each step.
+            reverse_history(intervals, history, target, 2 * v)
             final_histories[target].append((order, history))
 
     result = {}
@@ -105,6 +108,62 @@ def ancestry_outputs(intervals, tau):
         canonical = min(histories)
         result[target] = (len(histories), canonical)
     return result
+
+
+def reverse_history(intervals, history, target, n):
+    """Invert a complete forward history from its fixed final tree.
+
+    At each reverse step, the two endpoints of the last inserted interval
+    must have exactly their prescribed local-switch incidences. Delete those
+    vertices and restore the replaced edge. This is the inverse transition,
+    not a count of raw histories.
+    """
+    current = set(target)
+    remaining = set(range(1, n + 1))
+    for child, old_edge, local_index in reversed(history):
+        a, b = intervals[child]
+        u, w = old_edge
+        xs = sorted((u, w, a, b))
+        local = LOCAL_TREES[local_index]
+        mapped = {
+            tuple(sorted((xs[i], xs[j]))) for i, j in local
+        }
+        expected = {edge for edge in mapped if a in edge or b in edge}
+        actual = {edge for edge in current if a in edge or b in edge}
+        assert actual == expected, (
+            "reverse incidence obstruction", intervals, history,
+            tuple(sorted(current)), child, old_edge, local_index,
+            actual, expected,
+        )
+        assert mapped <= current, (
+            "missing local switch tree", intervals, history,
+            tuple(sorted(current)), mapped,
+        )
+        current = {
+            edge for edge in current if a not in edge and b not in edge
+        }
+        current.add(tuple(sorted(old_edge)))
+        remaining.remove(a)
+        remaining.remove(b)
+
+        # The inverse must be a tree on exactly the surviving vertices.
+        assert len(current) == len(remaining) - 1
+        parent = {v: v for v in remaining}
+        def find(x):
+            while parent[x] != x:
+                parent[x] = parent[parent[x]]
+                x = parent[x]
+            return x
+        for x, y in current:
+            rx, ry = find(x), find(y)
+            assert rx != ry, ("reverse cycle", current, remaining)
+            parent[rx] = ry
+        assert len({find(v) for v in remaining}) == 1
+
+    root = next(I for I in intervals if I[0] == 1)
+    assert remaining == set(root)
+    assert current == {tuple(sorted(root))}
+    return tuple(sorted(current))
 
 
 def run(n):
