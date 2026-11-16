@@ -136,7 +136,7 @@ def hopcroft_karp_size(rows):
         for u in range(nl):
             if ml[u] < 0:
                 dfs(u)
-    return sum(v >= 0 for v in ml), len(right)
+    return sum(v >= 0 for v in ml), len(right), ml, sorted(right, key=right.get)
 
 
 def sources(n):
@@ -193,15 +193,39 @@ def run(n, expected):
     robust_total = 0
     parent_summary = []
     worst = None
+    fibers_with_parent_sdr = 0
+    fibers_with_local_lift = 0
+    chosen_global_trees = []
     for p, children in fibers.items():
         robust = 0
+        child_projection_rows = [
+            set().union(*projection_rows[ch].values()).intersection(parent_cache[p])
+            for ch in children
+        ]
+        parent_match_size, _, parent_match, parent_right = (
+            hopcroft_karp_size(child_projection_rows)
+        )
+        if parent_match_size == len(children):
+            fibers_with_parent_sdr += 1
+            # Fix the lexicographic child-to-parent-target SDR, then ask whether
+            # those particular parent targets have pairwise distinct lifts.
+            selected_parent_targets = [parent_right[v] for v in parent_match]
+            lift_rows = [
+                {T for T, projections in projection_rows[ch].items()
+                 if selected_parent_targets[i] in projections}
+                for i, ch in enumerate(children)
+            ]
+            lift_size, _, lift_match, lift_right = hopcroft_karp_size(lift_rows)
+            if lift_size == len(children):
+                fibers_with_local_lift += 1
+                chosen_global_trees.extend(lift_right[v] for v in lift_match)
         for parent_T in parent_cache[p]:
             rows = [
                 {T for T, projections in projection_rows[ch].items()
                  if parent_T in projections}
                 for ch in children
             ]
-            size, union = hopcroft_karp_size(rows)
+            size, _, _, _ = hopcroft_karp_size(rows)
             if size == len(children):
                 robust += 1
         robust_total += robust
@@ -217,6 +241,9 @@ def run(n, expected):
           f"parent_targets_with_full_fiber_lift={robust_total}")
     zero = sum(1 for x in parent_summary if x[1] == 0)
     print(f"  fibers_with_no_single_parent_target_supporting_all_children={zero}")
+    print(f"  fibers_with_parent_target_SDR={fibers_with_parent_sdr}, "
+          f"fibers_with_local_distinct_lifts={fibers_with_local_lift}, "
+          f"cross_fiber_tree_collisions={len(chosen_global_trees)-len(set(chosen_global_trees))}")
     if worst:
         print(f"  largest_zero_robust_fiber_size={worst[0]}, parent={worst[1]}")
     assert child_count == expected
