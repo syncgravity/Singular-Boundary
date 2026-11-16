@@ -210,3 +210,51 @@ This is a finite, explicit algebraic criterion for each (n) and each down-set. I
 - The Möbius inversion follows from the definition of the least primitive majorant.
 - The down-set inclusion-exclusion formula follows from the meet property and ordinary finite inclusion-exclusion.
 - These are exact reformulations, not an all-orders Hall proof. In particular, cancellation in the inclusion-exclusion sum prevents replacing the union count by the sum of the individual (A(h)) without an additional argument.
+
+
+## A sharper sufficient condition from the cumulative tree counts
+
+The determinant formula gives a useful lower bound on each exact ceiling class without evaluating inclusion-exclusion. Recall
+
+`A(h)=\sum_{g\le h}Q(g)`, hence
+`Q(h)=A(h)-\sum_{g<h}Q(g)`.
+
+Since every `Q(g)\le A(g)`, we obtain the rigorous estimate
+
+```
+Q(h) >= A(h) - sum_{g<h} A(g).
+```
+
+Consequently the following *strict-lower-ideal union-bound criterion* is sufficient for the desired pointwise coupling:
+
+```
+A(h) >= L(h) + sum_{g<h} A(g)       for every primitive h.       (UB)
+```
+
+This is not equivalent to pointwise domination and is stronger: it replaces the union of all lower principal tree classes by the sum of their sizes, allowing arbitrary overlap. Its advantage is that it reduces the exact-class problem to cumulative determinant counts only. No Möbius inversion or cancellation estimate is needed once (UB) is established.
+
+The finite data through ten ports satisfy (UB). For compactness, the table reports the minimum margin
+`A(h)-L(h)-sum_{g<h}A(g)` over all primitive paths at each size:
+
+| n | number of primitive paths | minimum (UB) margin |
+|---:|---:|---:|
+| 4 | 1 | 1 |
+| 6 | 2 | 5 |
+| 8 | 5 | 19 |
+| 10 | 14 | 65 |
+
+At n=10, the margins path-by-path in lexicographic order are:
+`65, 378, 378, 1932, 5211, 378, 2014, 1932, 7967, 18070, 5211, 18070, 16291, 39738`.
+The corresponding cumulative counts `A(h)` are:
+`81, 531, 531, 3363, 10485, 531, 3481, 3363, 20964, 64280, 10485, 64280, 205866, 442979`.
+
+This identifies a concrete all-orders target:
+
+```
+det(L_n(x)^(n)) coefficient-sum below h
+    >= L(h) + sum_{g<h} coefficient-sum below g.
+```
+
+A proof of this determinant-growth inequality would imply `Q(h)>=L(h)` by the displayed estimate, then the classwise injection, then all Hall inequalities, then the weighted one-link interval-tree inequality.
+
+**Current status:** (UB) has only been checked at n=4,6,8,10. The key unresolved step is a uniform lower bound on the cumulative tree count `A(h)` relative to all strict lower paths and the interval-overlap demand. In particular, the positive finite margins do not yet yield a recurrence or an all-orders estimate. No closure is claimed.
