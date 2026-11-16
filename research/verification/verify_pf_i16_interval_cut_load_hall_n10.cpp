@@ -260,13 +260,30 @@ int main() {
         // Every strict lower primitive path is below a one-peak lower cover.
         // The union bound over these covers is sharper than summing all
         // strict lower principal ideals.
-        uint64_t peak_cover_sum = 0;
         const Load& h = primitive_paths[i];
-        for (int k = 1; k < N - 2; ++k) {
-            if (h[k] <= h[k - 1] || h[k] <= h[k + 1] || h[k] < 3)
-                continue;
+        vector<int> peaks;
+        for (int k = 1; k < N - 2; ++k)
+            if (h[k] > h[k - 1] && h[k] > h[k + 1] && h[k] >= 3)
+                peaks.push_back(k);
+
+        vector<Load> lower_covers;
+        for (int k : peaks) {
             Load lower = h;
             lower[k] -= 2;
+            lower_covers.push_back(lower);
+        }
+        for (int j = 0; j < (int)primitive_paths.size(); ++j) {
+            const Load& g = primitive_paths[j];
+            if (g != h && leq(g, h)) {
+                bool covered = false;
+                for (const Load& lower : lower_covers)
+                    covered = covered || leq(g, lower);
+                assert(covered);
+            }
+        }
+
+        uint64_t peak_cover_sum = 0;
+        for (const Load& lower : lower_covers) {
             uint64_t cover_supply = 0;
             for (int j = 0; j < (int)primitive_paths.size(); ++j)
                 if (leq(primitive_paths[j], lower))
@@ -274,6 +291,27 @@ int main() {
             peak_cover_sum += cover_supply;
         }
         assert(cumulative[i] >= demand + peak_cover_sum);
+
+        // Exact inclusion-exclusion over lower-cover events recovers Q(h).
+        int64_t exact_class_count = 0;
+        const unsigned subsets = 1u << peaks.size();
+        for (unsigned mask = 0; mask < subsets; ++mask) {
+            Load bound = h;
+            int parity = 0;
+            for (size_t bit = 0; bit < peaks.size(); ++bit) {
+                if (mask & (1u << bit)) {
+                    bound[peaks[bit]] -= 2;
+                    ++parity;
+                }
+            }
+            uint64_t intersection_count = 0;
+            for (int j = 0; j < (int)primitive_paths.size(); ++j)
+                if (leq(primitive_paths[j], bound))
+                    intersection_count += right_mass[j];
+            exact_class_count += (parity % 2 ? -1 : 1)
+                               * (int64_t)intersection_count;
+        }
+        assert(exact_class_count == (int64_t)right_mass[i]);
         min_peak_cover_margin = min(
             min_peak_cover_margin,
             cumulative[i] - demand - peak_cover_sum);
