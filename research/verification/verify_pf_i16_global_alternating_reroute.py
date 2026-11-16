@@ -65,34 +65,26 @@ def hopcroft_karp(rows):
 
 
 def reroute_from_target(start, rows, matched_left, right_owner, child_fiber, forbidden_left):
-    """Find alternating path R -> matched L -> unmatched R -> ... -> free R."""
+    """Find an alternating path to a free tree or to challenger's matched tree.
+
+    The latter closes an alternating cycle with the proposed challenger--start
+    edge. The challenger is never used as an intermediate matched source.
+    """
+    challenger_target = matched_left[forbidden_left]
     q = deque([start])
     predecessor = {start: None}
     predecessor_owner = {}
+    terminal_kind = None
+    terminal = None
     while q:
         target = q.popleft()
+        if target == challenger_target:
+            terminal, terminal_kind = target, "cycle"
+            break
         owner = right_owner.get(target)
         if owner is None:
-            targets = []
-            owners = []
-            cur = target
-            while cur is not None:
-                targets.append(cur)
-                prev = predecessor[cur]
-                if prev is not None:
-                    owners.append(predecessor_owner[cur])
-                cur = prev
-            targets.reverse()
-            owners.reverse()
-            assert len(owners) + 1 == len(targets)
-            assert targets[-1] not in right_owner
-            for i, owner in enumerate(owners):
-                assert owner != forbidden_left
-                assert right_owner[targets[i]] == owner
-                assert targets[i + 1] in rows[owner]
-                assert targets[i + 1] != matched_left[owner]
-            fibers = {child_fiber[x] for x in owners}
-            return targets, len(fibers)
+            terminal, terminal_kind = target, "free-path"
+            break
         if owner == forbidden_left:
             continue
         for nxt in rows[owner]:
@@ -101,8 +93,31 @@ def reroute_from_target(start, rows, matched_left, right_owner, child_fiber, for
             predecessor[nxt] = target
             predecessor_owner[nxt] = owner
             q.append(nxt)
-    return None, None
-
+    if terminal is None:
+        return None, None, None
+    targets = []
+    owners = []
+    cur = terminal
+    while cur is not None:
+        targets.append(cur)
+        prev = predecessor[cur]
+        if prev is not None:
+            owners.append(predecessor_owner[cur])
+        cur = prev
+    targets.reverse()
+    owners.reverse()
+    assert len(owners) + 1 == len(targets)
+    if terminal_kind == "free-path":
+        assert targets[-1] not in right_owner
+    else:
+        assert right_owner[targets[-1]] == forbidden_left
+    for i, owner in enumerate(owners):
+        assert owner != forbidden_left
+        assert right_owner[targets[i]] == owner
+        assert targets[i + 1] in rows[owner]
+        assert targets[i + 1] != matched_left[owner]
+    fibers = {child_fiber[x] for x in owners}
+    return targets, len(fibers), terminal_kind
 
 def run(n, expected_sources):
     child_rows = []
@@ -154,6 +169,7 @@ def run(n, expected_sources):
     max_alt_edges = max_fibers = 0
     first_failure = None
     path_lengths = defaultdict(int)
+    reroute_kinds = defaultdict(int)
     for T in collision_targets:
         matched_owner = right_owner.get(T)
         for challenger in target_owners[T]:
@@ -165,7 +181,7 @@ def run(n, expected_sources):
                 repaired += 1
                 path_lengths[0] += 1
                 continue
-            path, fiber_hops = reroute_from_target(
+            path, fiber_hops, reroute_kind = reroute_from_target(
                 T, child_rows, matched_left, right_owner, child_fibers, challenger
             )
             if path is None:
@@ -177,6 +193,7 @@ def run(n, expected_sources):
             max_alt_edges = max(max_alt_edges, edges)
             max_fibers = max(max_fibers, fiber_hops)
             path_lengths[edges] += 1
+            reroute_kinds[reroute_kind] += 1
 
     print(f"n={n}: sources={len(child_rows)}, target_union={len(right)}, "
           f"parent_fibers={len(fiber_children)}, free_targets={free_targets}")
@@ -187,6 +204,7 @@ def run(n, expected_sources):
           f"max_alternating_steps={max_alt_edges}, "
           f"max_parent_fibers_on_path={max_fibers}")
     print(f"  alternating_path_length_histogram={dict(sorted(path_lengths.items()))}")
+    print(f"  reroute_kinds={dict(sorted(reroute_kinds.items()))}")
     if first_failure:
         T, owner, challenger = first_failure
         print(f"  first_failure_target={T}")
