@@ -107,7 +107,7 @@ def left_load_multiplicities(n):
     return left, connected_matchings
 
 
-def induced_component_count(vertex_count, edges, vertices):
+def induced_component_count(edges, vertices):
     """Number of components in the forest induced by the supplied vertices."""
     vertices = set(vertices)
     parent = {v: v for v in vertices}
@@ -149,10 +149,10 @@ def prufer_tree_loads(n):
         # tree form a tree after contracting prefix/suffix forest components.
         for k in range(1, n):
             left_components = induced_component_count(
-                n, edges, range(k)
+                edges, range(k)
             )
             right_components = induced_component_count(
-                n, edges, range(k, n)
+                edges, range(k, n)
             )
             assert load[k - 1] == left_components + right_components - 1, (
                 n, edges, k, load[k - 1], left_components, right_components
