@@ -115,3 +115,40 @@ The verifier is standard-library-only and exhaustively checks n=4,6,8. The n=8 r
 3. If this coupling is established, it proves the weighted one-link tau(H_M)-majorant. It still does not by itself solve the multi-link gluing/multiplicity problem or close the Yang-Mills mass-gap argument.
 
 No all-orders coupling, weighted interval-tree inequality, or mass-gap proof is claimed here.
+
+
+### Ten-port exhaustive extension
+
+The C++ verifier `research/verification/verify_pf_i16_interval_cut_load_hall_n10.cpp` exhausts the right-hand trees that can possibly have a left neighbor. Since every left path has first and last cut height 1, any neighboring tree must have vertices 1 and 10 as leaves. In Prüfer coordinates those two labels are absent, so it is enough to enumerate exactly `8^8 = 16,777,216` codes rather than all `10^8` labeled trees. Every such code is decoded, its nine cut loads are computed, and it is retained precisely when they lie below the maximal primitive path `(1,2,3,4,5,4,3,2,1)`. The least primitive majorant is then found by taking the coordinatewise meet of all primitive majorants.
+
+The same C++ verifier independently enumerates all 945 perfect matchings, computes each interval-overlap spanning-tree count by an exact Bareiss Matrix-Tree determinant, and compares the left and right ceiling-class multiplicities.
+
+Exact result:
+
+- Connected interval matchings: 706.
+- Primitive Dyck paths: 14.
+- Left copies: 31,744.
+- Relevant labeled trees: 442,979.
+- Trees excluded because they have no left neighbor: 16,334,237.
+- Pointwise `Q(h)>=L(h)` holds for all 14 paths.
+
+In lexicographic primitive-path order, the left and right class multiplicities are:
+
+| Primitive path h | L(h) | Q(h) |
+|---|---:|---:|
+| (1,2,1,2,1,2,1,2,1) | 16 | 81 |
+| (1,2,1,2,1,2,3,2,1) | 72 | 450 |
+| (1,2,1,2,3,2,1,2,1) | 72 | 450 |
+| (1,2,1,2,3,2,3,2,1) | 288 | 2,382 |
+| (1,2,1,2,3,4,3,2,1) | 768 | 7,122 |
+| (1,2,3,2,1,2,1,2,1) | 72 | 450 |
+| (1,2,3,2,1,2,3,2,1) | 324 | 2,500 |
+| (1,2,3,2,3,2,1,2,1) | 288 | 2,382 |
+| (1,2,3,2,3,2,3,2,1) | 1,116 | 12,269 |
+| (1,2,3,2,3,4,3,2,1) | 2,880 | 36,194 |
+| (1,2,3,4,3,2,1,2,1) | 768 | 7,122 |
+| (1,2,3,4,3,2,3,2,1) | 2,880 | 36,194 |
+| (1,2,3,4,3,4,3,2,1) | 7,200 | 98,270 |
+| (1,2,3,4,5,4,3,2,1) | 15,000 | 237,113 |
+
+This remains an exact finite regression, not a proof of pointwise domination for all semilengths. The C++ verifier is wired into theorem-index CI.
