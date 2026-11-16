@@ -154,7 +154,34 @@ Therefore (4.6) implies the desired port-pair tree estimate
 ]
 The coefficient is exactly the one-link coefficient (2^{q-2}), and is independent of the number of time ports in each block.
 
-## 6. Boundary
+## 6. Extension to port-overlap clusters with separated cluster hulls
+
+There is a useful extension when individual block hulls overlap, but their actual port-overlap components remain temporally separated. Form the graph O on block labels by joining a,b when (S_a\cap S_b\ne\varnothing). Let its connected components be (C_1,\ldots,C_k), ordered so that their union hulls
+[
+J_j=[U_j,V_j]=
+[\min_{a\in C_j,s\in S_a}s,\max_{a\in C_j,s\in S_a}s]
+]
+satisfy (V_j<U_{j+1}). Put (g_j=U_{j+1}-V_j).
+
+For any subset (B\subseteq[q]), the product of the selected (G_a)'s within a component (C_j) is a bounded path functional on (J_j), with norm at most (prod_{a\in B\cap C_j}M_a). Its path transfer operator therefore has the same contraction bound as in (2.2). The global moment has the transfer representation (2.2) with one such component operator per (C_j) and gap transitions (P_{g_j}). The exact gap-cancellation lemma from Section 3 applies verbatim, giving
+[
+|\kappa(G_1,\ldots,G_q)|
+\le C_q\left(\prod_aM_a\right)e^{-\Delta_0\sum_{j=1}^{k-1}g_j}.
+\tag{6.1}
+]
+
+This decay is represented by a spanning tree on the original q block labels. Inside each overlap component (C_j), choose a spanning tree of its overlap graph; every chosen edge has (S_a\cap S_b\ne\varnothing), hence (W_{ab}^{\mathrm{port}}\ge1). Between consecutive components, choose a block containing (V_j) and a block containing (U_{j+1}); their port-pair weight is at least (e^{-\Delta_0g_j}). The union of the internal component trees and these k−1 cross-component edges is a spanning tree on [q]. Consequently the port-pair tree polynomial dominates the exponential in (6.1), and
+[
+|\kappa(G_1,\ldots,G_q)|
+\le C_q\left(\prod_aM_a\right)
+\sum_{T\in\mathcal T_q}\prod_{\{a,b\}\in T}W_{ab}^{\mathrm{port}}.
+\tag{6.2}
+]
+When every overlap component is a singleton, the sharper (2^{q-2}) coefficient of (5.3) applies.
+
+This cluster extension still excludes the genuinely interlaced case in which two port sets are disjoint but their hulls overlap (for example (S_a=\{0,100\}), (S_b=\{40,60\})). In that case there is no shared-port tree edge of weight at least one and no temporal cut separating the two block functionals.
+
+## 7. Boundary
 
 - Arbitrary bounded path functionals on pairwise disjoint ordered hulls: **ESTABLISHED**.
 - Number of sample times per block and horizon: unrestricted.
