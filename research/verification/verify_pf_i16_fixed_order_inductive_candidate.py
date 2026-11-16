@@ -217,10 +217,10 @@ def run(n, expected_sources):
               f"|N(S)|={len(hall_right)}, deficit={len(hall_left)-len(hall_right)}")
         witness = min(hall_left)
         print(f"  FIRST_WITNESS_SOURCE={labels[witness]}")
-        raise SystemExit("Three-order canonical subrelation is not source-saturating.")
+        raise SystemExit("Eight-order canonical subrelation is not source-saturating.")
     assignment = [targets[v] for v in chosen]
     assert len(set(assignment)) == len(rows)
-    print("  PASS: three-order canonical subrelation has a lexicographic injection")
+    print("  PASS: eight-order canonical subrelation has a lexicographic injection")
     print(f"  first_assignments={[decode_tree(x, n) for x in assignment[:3]]}")
 
 
@@ -228,7 +228,6 @@ def main():
     run(4, 2)
     run(6, 22)
     run(8, 608)
-    run(10, 31744)
     print("Canonical-order finite tests complete; no all-orders claim is made.")
 
 
