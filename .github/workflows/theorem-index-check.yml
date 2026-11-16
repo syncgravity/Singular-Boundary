@@ -43,6 +43,8 @@ on:
       - 'research/audits/PF_I16_GLOBAL_OCCURRENCE_REGENERATION_TREE_2026_11_16.md'
       - 'research/audits/PF_I16_PRODUCT_SEMIGROUP_SUPPORT_LOCALIZATION_GAP_2026_11_16.md'
       - 'research/verification/verify_pf_i16_product_semigroup_support_localization.py'
+      - 'research/audits/PF_I16_LINK_COMPRESSED_SUPPORT_GRAPH_BKAR_INTERPOLATION_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_link_compressed_support_graph_bkar.py'
       - 'research/verification/verify_pf_i16_global_occurrence_regeneration_tree.py'
       - 'research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py'
       - 'research/audits/PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md'
@@ -233,6 +235,8 @@ jobs:
         run: python research/verification/verify_pf_i16_global_occurrence_regeneration_tree.py
       - name: Verify product-semigroup support localization gap
         run: python research/verification/verify_pf_i16_product_semigroup_support_localization.py
+      - name: Verify link-compressed support-graph BKAR interpolation
+        run: python research/verification/verify_pf_i16_link_compressed_support_graph_bkar.py
       - name: Verify L2-gap obstruction for interlaced block observables
         run: python research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py
       - name: Verify one-link cyclic-permutation temporal-tree bound
