@@ -1,7 +1,7 @@
 # PF-I16 — Chromatic resummation for the symmetric binary one-link chain
 
 **Date:** 2026-11-16  
-**Status:** exact special-case cumulant identity and exponential-times-tree bound proved  
+**Status:** exact special-case cumulant identity proved; weighted tree-graph inequality remains open  
 **Scope:** one stationary symmetric two-state Markov link, one centered coordinate observable at each ordered port. This is a genuine special-case support-tree result, not the general multi-link super-row theorem.
 
 ## 1. Model and exact moments
