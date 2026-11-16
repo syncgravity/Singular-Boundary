@@ -127,8 +127,9 @@ def candidate_outputs(intervals, tau):
             J = intervals[child]
             next_states = []
             for paths, tree_edges in states:
-                P = paths[parent[child]]
-                for u, w in zip(P, P[1:]):
+                # Any current tree edge overlapping J is an admissible
+                # local switch; the parent path guarantees at least one.
+                for u, w in sorted(tree_edges):
                     if max(u, J[0]) >= min(w, J[1]):
                         continue
                     xs = sorted((u, w, J[0], J[1]))
