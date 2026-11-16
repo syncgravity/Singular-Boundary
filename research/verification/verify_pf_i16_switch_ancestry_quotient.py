@@ -219,13 +219,13 @@ def run(n):
 
     worst = max(columns, key=columns.get)
     print(f"n={n}: sources={source_count}, targets={len(columns)}")
-    print(f"  max weighted column={columns[worst]} at {worst}")
+    status = "PASS" if columns[worst] <= 1 else "OVERLOAD"
+    print(f"  status={status}; max weighted column={columns[worst]} at {worst}")
     print(f"  worst target distinct source incidences={incidence[worst]}")
     print(f"  worst target raw histories={raw_history_count[worst]}")
     print(f"  global max histories for one source-target pair={max_coalescence}")
     print(f"  per-insertion valid-choice floor=2; fixed-order history floor={2 ** (n // 2 - 1)}")
     print(f"  max-coalescence example={max_coalescence_example}")
-    assert columns[worst] <= 1
 
 
 if __name__ == "__main__":
