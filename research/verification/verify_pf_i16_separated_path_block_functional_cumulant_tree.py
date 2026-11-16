@@ -106,7 +106,7 @@ def cluster_path_moments(sets, rho, reset_step=None):
             obs = Fraction(1)
             for a, times in enumerate(sets):
                 if (subset_mask >> a) & 1:
-                    obs *= sum(path[t] for t in times) / len(times)
+                    obs *= Fraction(sum(path[t] for t in times), len(times))
             value += weight * obs
         moments[frozenset(i for i in range(q) if (subset_mask >> i) & 1)] = value
     return moments
