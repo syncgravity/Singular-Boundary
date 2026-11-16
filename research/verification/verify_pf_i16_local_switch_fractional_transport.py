@@ -4,8 +4,12 @@
 For each left object (M,tau), enumerate every output tree obtainable by:
 - rooting tau at the interval containing port 1;
 - choosing any parent-before-child order;
-- choosing any overlapping edge on the current parent-interval path; and
-- choosing one of the two middle-centered stars or the increasing path.
+- choosing an overlapping current-tree edge for which the no-reinsertion
+  guard leaves at least one local pattern; and
+- choosing one of the surviving middle-centered stars or increasing path.
+
+A connected-tree witness guarantees at least two surviving patterns at
+every insertion, including when intervals are nested.
 
 Each source sends unit mass uniformly over its DISTINCT output trees. The
 verifier checks that every port tree receives total mass at most one. Since
