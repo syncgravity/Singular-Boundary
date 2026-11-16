@@ -151,6 +151,7 @@ def sources(n):
 def run(n, expected):
     parent_cache = {}
     fibers = defaultdict(list)
+    child_parent = {}
     child_rows = {}
     projection_rows = {}
     child_count = 0
@@ -188,6 +189,7 @@ def run(n, expected):
             ambiguous_inverse_outputs += len(compressed) > 1
         child = (intervals, tau)
         fibers[p].append(child)
+        child_parent[child] = p
         child_rows[child] = outputs
         projection_rows[child] = projections
         for T in outputs:
@@ -286,6 +288,16 @@ def run(n, expected):
     print(f"  global_leaf_last_matching={global_size}/{child_count}, "
           f"global_target_union={global_union}, "
           f"global_saturated={global_size == child_count}")
+    if global_size == child_count:
+        parent_target_load = Counter()
+        for i, child in enumerate(
+                ch for group in fibers.values() for ch in group):
+            T = global_right[global_match[i]]
+            projections = projection_rows[child][T]
+            assert len(projections) == 1
+            parent_target_load[(child_parent[child], next(iter(projections)))] += 1
+        print(f"  assigned_parent_target_multiplicity_max={max(parent_target_load.values())}, "
+              f"distinct_parent_source_target_pairs={len(parent_target_load)}")
     print(f"  leaf_last_uniform_max_column={worst_column} "
           f"({float(worst_column):.12f}), "
           f"fractional_hall_certificate={worst_column <= 1}")
