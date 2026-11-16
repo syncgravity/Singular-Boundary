@@ -155,6 +155,51 @@ def verify_four_port_markov_obstruction():
     print(f"  mixed derivative of M1234=0; of cumulant={mixed_derivative}")
 
 
+
+def symmetric_chain_block_exponents(block, n):
+    # For a symmetric +/-1 Markov chain, a block moment is zero for odd
+    # |block|. For even |block|, its monomial has exponent 1 at cut i
+    # exactly when the number of selected ports to the right is odd.
+    if len(block) % 2:
+        return None
+    return tuple(sum(x > cut for x in block) % 2 for cut in range(n - 1))
+
+
+def verify_connected_taylor_support_symmetric_chain():
+    # Build the exact cumulant polynomial for the symmetric two-state chain.
+    # Its only nonzero Taylor monomials must use every edge of the path,
+    # which is the connected-support consequence of reset factorization.
+    for n in range(2, 9):
+        coefficients = {}
+        for part in all_partitions(n):
+            block_exponents = [symmetric_chain_block_exponents(block, n)
+                               for block in part]
+            if any(exponents is None for exponents in block_exponents):
+                continue
+            exponent = tuple(sum(block[j] for block in block_exponents)
+                             for j in range(n - 1))
+            mobius = (-1) ** (len(part) - 1) * factorial(len(part) - 1)
+            coefficients[exponent] = coefficients.get(exponent, 0) + mobius
+        coefficients = {e: c for e, c in coefficients.items() if c}
+        for exponent, coefficient in coefficients.items():
+            assert coefficient != 0
+            assert all(power >= 1 for power in exponent), (n, exponent, coefficient)
+    assert calc_four_port_symmetric_coefficients() == {(1, 2, 1): -2}
+
+
+def calc_four_port_symmetric_coefficients():
+    coefficients = {}
+    n = 4
+    for part in all_partitions(n):
+        block_exponents = [symmetric_chain_block_exponents(block, n) for block in part]
+        if any(exponents is None for exponents in block_exponents):
+            continue
+        exponent = tuple(sum(block[j] for block in block_exponents)
+                         for j in range(n - 1))
+        mobius = (-1) ** (len(part) - 1) * factorial(len(part) - 1)
+        coefficients[exponent] = coefficients.get(exponent, 0) + mobius
+    return {e: c for e, c in coefficients.items() if c}
+
 def verify_formal_stirling_bound():
     stirling = [1]  # S(0,0)
     for n in range(1, 31):
@@ -174,10 +219,12 @@ def main():
     verify_generating_function_recurrence()
     verify_symmetric_formal_sequence()
     verify_four_port_markov_obstruction()
+    verify_connected_taylor_support_symmetric_chain()
     verify_formal_stirling_bound()
     print("PASS unique consecutive-component decomposition for all partitions (R<=8)")
     print("PASS C(z,u)=1-1/P(z,u) recurrence against direct partitions (R<=8)")
     print("PASS exact symmetric formal sequence through R=30 recurrence")
+    print("PASS connected Taylor support for symmetric Markov cumulants (R<=8)")
     print("PASS formal Stirling/Cayley coefficient bound for R<=30")
 
 
