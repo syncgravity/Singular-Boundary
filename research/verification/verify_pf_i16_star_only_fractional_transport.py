@@ -213,7 +213,7 @@ def check(n, expected_sources, expected_union):
             weight = Fraction(1, len(outputs))
             for T in outputs:
                 verify_tree(T, n)
-                assert all(x <= y for x, y in zip(load(T, n), matching_load)), (
+                assert load(T, n) == matching_load, (
                     n, intervals, tau, T, load(T, n), matching_load
                 )
                 columns[T] += weight
