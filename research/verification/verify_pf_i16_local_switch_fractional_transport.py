@@ -214,7 +214,9 @@ def check(n, expected_sources, expected_union):
         matching_load = load(intervals, n)
         for tau in spanning_trees(len(intervals), overlap):
             outputs = candidate_outputs(intervals, tau)
-            assert outputs, (n, intervals, tau)
+            assert len(outputs) >= 2 ** (n // 2 - 1), (
+                "source distinct-output lower bound failed", n, intervals, tau, len(outputs)
+            )
             source_count += 1
             min_degree = (len(outputs) if min_degree is None
                           else min(min_degree, len(outputs)))
@@ -233,8 +235,8 @@ def check(n, expected_sources, expected_union):
     assert len(columns) == expected_union, (n, len(columns))
     max_column = max(columns.values())
     max_incidence = max(incidence.values())
-    degree_floor = 3 ** (n // 2 - 1)
-    incidence_bound = Fraction(max_incidence, degree_floor)
+    degree_floor = 2 ** (n // 2 - 1)
+    incidence_over_floor = Fraction(max_incidence, degree_floor)
     worst_tree = max(columns, key=columns.get)
     profile = degree_profile[worst_tree]
     profile_mass = sum((Fraction(count, degree) for degree, count in profile.items()), Fraction())
@@ -246,8 +248,8 @@ def check(n, expected_sources, expected_union):
         f"source_degree_range=[{min_degree},{max_degree}], "
         f"max_fractional_column_load={float(max_column):.12f}, "
         f"max_source_incidence={max_incidence}, "
-        f"3^(s-1)_degree_floor={degree_floor}, "
-        f"incidence_over_degree_floor={float(incidence_bound):.12f}"
+        f"2^(s-1)_degree_floor={degree_floor}, "
+        f"max_incidence_over_floor={float(incidence_over_floor):.12f}"
     )
     harmonic_degree = Fraction(incidence[worst_tree], columns[worst_tree])
     degree_bins = ((1, 127), (128, 191), (192, 255),
