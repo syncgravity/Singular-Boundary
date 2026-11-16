@@ -5,51 +5,85 @@ Date: 2026-11-16
 ## Motivation
 
 The source-constrained parent-exchange graph is disconnected at eight ports:
-5,156 collision pairs have projections in different components. The next
-test therefore uses the full child-source to final-tree bipartite graph,
-allowing alternating paths to pass through multiple parent fibers.
+5,156 collision pairs have projections in different components. A reroute
+must therefore be allowed to pass through multiple parent fibers and use
+the full child-source-to-final-tree relation.
 
 ## Exact test
 
-For each child source, enumerate its complete leaf-last output neighborhood.
-Compute a deterministic maximum bipartite matching. It must saturate all
-child sources. For each final tree shared by multiple child sources, and
-each challenger other than the tree's currently matched owner, search for
-an alternating path
+For each child source, enumerate its complete leaf-last output neighborhood
+and compute a deterministic maximum bipartite matching. The matching must
+saturate every child source.
+
+For every final tree T shared by multiple child sources, test every
+challenger x other than the current matched owner of T. If T is occupied by
+y, search for an alternating path
 
 ```
-shared tree -> its matched source -> an alternative tree
-             -> that tree's matched source -> ... -> free tree.
+T = T_0 -> y_0 -> T_1 -> y_1 -> ... -> T_r (free),
 ```
 
-If such a path exists, the challenger can be assigned the shared tree while
-the currently matched owner is shifted along the path. This certifies that
-the individual collision can be rerouted without losing left saturation.
+where each T_i (i < r) is matched to y_i, each y_i--T_{i+1} edge is
+unmatched, and the challenger x is forbidden from appearing among the
+intermediate y_i. This exclusion is essential: x is being reassigned to T
+and cannot simultaneously be shifted along the path.
 
-The verifier also records how many parent fibers occur among sources on
-the alternating path. It verifies each child-to-parent projection lies in
-the corresponding parent source's exact guarded output neighborhood.
+Flipping the path assigns y_i to T_{i+1}; then assign x to T_0. The
+challenger's former matched tree becomes free. Thus each successful path
+gives a valid left-saturating matching in which that particular collision
+edge x--T is selected. If T is already unmatched, x can take it directly.
 
-This is a diagnostic of individual collision repair. It does not prove that
-many collisions can be repaired simultaneously, nor does it prove the
-all-orders Hall inequality.
+The verifier checks every child-to-parent projection belongs to the exact
+guarded output neighborhood of its parent source. It reports collision
+counts, challenger reroutes, shortest path lengths, and the number of parent
+fibers represented along each path.
 
-## Reproducibility
+## Exact results
 
-Verifier: `research/verification/verify_pf_i16_global_alternating_reroute.py`
+Successful GitHub Actions run: 43982198609
+Successful run commit: 6d2229f3634b5def7f6f8798e72f10cc7205449b
 
-Workflow: `.github/workflows/pf-i16-global-alternating-reroute.yml`
+| Ports | Child sources | Target trees | Parent fibers | Free targets | Collision targets | Challenger reroutes | Failures | Max alternating steps | Max parent fibers on path |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 4 | 2 | 3 | 1 | 1 | 2 | 2/2 | 0 | 2 | 1 |
+| 6 | 22 | 43 | 2 | 21 | 39 | 173/173 | 0 | 2 | 2 |
+| 8 | 608 | 1,493 | 22 | 885 | 1,480 | 29,985/29,985 | 0 | 3 | 2 |
 
-The workflow is deliberately strict: it exits nonzero if any challenger
-cannot be rerouted. A failure is an obstruction to this particular
-single-collision rerouting proposal, not a counterexample to full Hall.
+At eight ports, the test considered 495,974 pairwise source collisions
+across shared target trees; the more stringent challenger test covered
+29,985 distinct target/challenger reassignment cases. All passed.
 
-## Interpretation
+The alternating-path length histogram at eight ports was:
+- 0 steps (contested target already free): 12,813
+- 1 step: 13,770
+- 2 steps: 3,245
+- 3 steps: 157
 
-A pass would show that every individual shared-target collision can be
-resolved in the full graph by an alternating path, potentially traversing
-multiple parent fibers. A failure would identify a collision target whose
-matched owner cannot be moved to a free target under the selected matching.
-Even a pass is weaker than the required simultaneous exchange theorem:
-the rerouting paths may overlap and compete for the same matched sources or
-free targets.
+The maximum path visited sources from two parent fibers, despite there
+being 22 parent fibers in total.
+
+## The finite rerouting lemma
+
+Let M be a matching saturating the left vertex set X in a bipartite graph
+(X,Y,E). Let T_0 be a right vertex matched to y_0, and let x in X be a
+different neighbor of T_0. Suppose there is an alternating path
+T_0,y_0,T_1,y_1,...,T_r with T_r unmatched, and x is not among the y_i.
+Flipping the path and assigning x to T_0 produces another matching
+saturating X. This is the exact combinatorial operation tested above.
+
+The verifier establishes this condition for every tested challenger edge
+under the selected deterministic matching at n=4,6,8.
+
+## What this does and does not establish
+
+This is stronger than merely finding one matching: every tested
+source-to-shared-target collision edge can individually be made part of a
+left-saturating matching by an alternating reroute that avoids the
+challenger source.
+
+It is still a finite, matching-dependent flexibility statement. The
+rerouting paths for different collision edges may overlap and compete, and
+the test does not give a simultaneous reassignment theorem, a uniform
+fractional transport, an all-orders Hall inequality, or the weighted
+one-link inequality. The original Hall problem and Yang--Mills mass-gap
+target remain open.
