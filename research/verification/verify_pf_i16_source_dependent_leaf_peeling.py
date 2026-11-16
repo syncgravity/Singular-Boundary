@@ -50,7 +50,8 @@ def canonical_leaf(intervals, tau):
     for a, b in tau:
         degree[a] += 1
         degree[b] += 1
-    leaves = [i for i, d in enumerate(degree) if d == 1]
+    root = next(i for i, I in enumerate(intervals) if I[0] == 1)
+    leaves = [i for i, d in enumerate(degree) if d == 1 and i != root]
     return min(leaves, key=lambda i: intervals[i])
 
 
