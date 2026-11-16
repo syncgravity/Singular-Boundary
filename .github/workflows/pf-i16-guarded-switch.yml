@@ -9,6 +9,7 @@ on:
       - "research/verification/verify_pf_i16_guarded_switch_injective_assignment.py"
       - "research/verification/verify_pf_i16_guarded_switch_lexicographic_rule.py"
       - "research/verification/verify_pf_i16_fixed_order_inductive_candidate.py"
+      - "research/verification/verify_pf_i16_source_dependent_leaf_peeling.py"
       - ".github/workflows/pf-i16-guarded-switch.yml"
   workflow_dispatch:
 
@@ -32,3 +33,5 @@ jobs:
         run: python research/verification/verify_pf_i16_guarded_switch_lexicographic_rule.py
       - name: Diagnose eight-order canonical subrelation and report Hall witness
         run: python research/verification/verify_pf_i16_fixed_order_inductive_candidate.py
+      - name: Test source-dependent leaf-peeling projection
+        run: python research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
