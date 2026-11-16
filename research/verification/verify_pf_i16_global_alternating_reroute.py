@@ -84,6 +84,13 @@ def reroute_from_target(start, rows, matched_left, right_owner, child_fiber, for
                 cur = prev
             targets.reverse()
             owners.reverse()
+            assert len(owners) + 1 == len(targets)
+            assert targets[-1] not in right_owner
+            for i, owner in enumerate(owners):
+                assert owner != forbidden_left
+                assert right_owner[targets[i]] == owner
+                assert targets[i + 1] in rows[owner]
+                assert targets[i + 1] != matched_left[owner]
             fibers = {child_fiber[x] for x in owners}
             return targets, len(fibers)
         if owner == forbidden_left:
