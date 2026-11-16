@@ -66,31 +66,33 @@ def compress_tree(tree, removed, n):
 
 
 def inverse_last_switch(tree, J, n):
+    """Invert the final switch from the two new interval endpoints alone.
+
+    Since a and b are newly inserted at the final step, every edge incident
+    to either is one of the three local switch edges. Across the three local
+    trees, the union of their neighbors outside {a,b} is exactly the two
+    endpoints u,v of the replaced old edge. Thus {u,v} is uniquely recovered.
+    """
     a, b = J
-    result = set()
-    for u in range(1, n + 1):
-        if u in J:
-            continue
-        for v in range(u + 1, n + 1):
-            if v in J:
-                continue
-            xs = sorted((a, b, u, v))
-            induced = tuple(sorted(e for e in tree
-                                   if e[0] in xs and e[1] in xs))
-            for local in LOCAL_TREES:
-                mapped = tuple(sorted(
-                    tuple(sorted((xs[i], xs[j]))) for i, j in local
-                ))
-                if induced != mapped:
-                    continue
-                parent = set(tree) - set(mapped)
-                parent.add(tuple(sorted((u, v))))
-                if len(parent) != n - 3:
-                    continue
-                if any(x in J for edge in parent for x in edge):
-                    continue
-                result.add(tuple(sorted(parent)))
-    return result
+    old_endpoints = {
+        w for edge in tree if a in edge or b in edge
+        for w in edge if w not in J
+    }
+    assert len(old_endpoints) == 2, (J, tree, old_endpoints)
+    u, v = sorted(old_endpoints)
+    xs = sorted((a, b, u, v))
+    induced = tuple(sorted(e for e in tree
+                           if e[0] in xs and e[1] in xs))
+    matches = [
+        tuple(sorted(tuple(sorted((xs[i], xs[j]))) for i, j in local))
+        for local in LOCAL_TREES
+    ]
+    assert induced in matches, (J, (u, v), induced, matches)
+    parent = set(tree) - set(induced)
+    parent.add((u, v))
+    assert len(parent) == n - 3
+    assert not any(x in J for edge in parent for x in edge)
+    return {tuple(sorted(parent))}
 
 
 def hopcroft_karp_size(rows):
