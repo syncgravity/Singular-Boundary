@@ -40,7 +40,7 @@ E(S_j)\subseteq E(U),\qquad
 \]
 The first condition is essential: otherwise the forward operation can
 reinsert the edge it supposedly replaced, and the edge count need not be
-that of a tree. The additional condition \(e\\notin E(U)\) is also
+that of a tree. The additional condition \(e\notin E(U)\) is also
 necessary: the replaced edge must actually be absent from the current tree
 when it is restored. Without it, the set-union formula can fail to add an
 edge and cannot recover the predecessor edge set. The second ensures that the entire prescribed local switch
