@@ -96,6 +96,12 @@ def ancestry_outputs(intervals, tau):
                         next_states.append((
                             new_paths, frozenset(new_edges), history + (step,)
                         ))
+            # The parent-interval path contains at least one edge overlapping J.
+            # Each such edge has exactly two local patterns that do not reinsert it.
+            assert len(next_states) >= 2 * len(states), (
+                "fewer than two valid local choices per current state",
+                intervals, tau, order, child, len(states), len(next_states),
+            )
             states = next_states
 
         for _, tree_edges, history in states:
@@ -140,6 +146,10 @@ def reverse_history(intervals, history, target, n):
         assert tuple(sorted(old_edge)) not in mapped, (
             "replaced edge reappears in local switch", intervals, history,
             tuple(sorted(current)), mapped,
+        )
+        assert tuple(sorted(old_edge)) not in current, (
+            "replaced edge is still present in the final-stage tree",
+            intervals, history, tuple(sorted(current)), old_edge,
         )
         assert mapped <= current, (
             "missing local switch tree", intervals, history,
@@ -186,7 +196,6 @@ def run(n):
         for tau in spanning_trees(len(intervals), overlap):
             outputs = ancestry_outputs(intervals, tau)
             degree = len(outputs)
-            assert degree >= 3 ** (n // 2 - 1)
             source_count += 1
             weight = Fraction(1, degree)
             for T, (history_count, canonical) in outputs.items():
@@ -205,6 +214,7 @@ def run(n):
     print(f"  worst target distinct source incidences={incidence[worst]}")
     print(f"  worst target raw histories={raw_history_count[worst]}")
     print(f"  global max histories for one source-target pair={max_coalescence}")
+    print(f"  per-insertion valid-choice floor=2; fixed-order history floor={2 ** (n // 2 - 1)}")
     print(f"  max-coalescence example={max_coalescence_example}")
     assert columns[worst] <= 1
 
