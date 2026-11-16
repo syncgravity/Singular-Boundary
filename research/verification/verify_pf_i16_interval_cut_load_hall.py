@@ -154,6 +154,47 @@ def hall_minimum_slack(left, right):
     return best_slack, best_subset, best_demand, best_supply
 
 
+
+def least_primitive_majorant(load, primitive_paths):
+    """Least primitive Dyck path h satisfying load <= h coordinatewise.
+
+    Primitive Dyck paths form a meet-semilattice under coordinatewise min:
+    the minimum of two such paths is again a primitive Dyck path. Therefore
+    the coordinatewise minimum of all majorants is the unique least one.
+    """
+    candidates = [
+        h for h in primitive_paths
+        if all(x <= y for x, y in zip(load, h))
+    ]
+    if not candidates:
+        return None
+    least = tuple(min(h[k] for h in candidates) for k in range(len(load)))
+    assert least in primitive_paths
+    assert all(x <= y for x, y in zip(load, least))
+    assert all(
+        all(least[k] <= h[k] for k in range(len(load)))
+        for h in candidates
+    )
+    return least
+
+
+def right_ceiling_multiplicities(right, primitive_paths):
+    """Partition all relevant trees by their least primitive Dyck majorant.
+
+    Trees whose cut-load vector is not dominated by the maximal primitive
+    Dyck path cannot neighbor any left type and are omitted.
+    """
+    ceilings = Counter()
+    excluded = 0
+    for load, count in right.items():
+        ceiling = least_primitive_majorant(load, primitive_paths)
+        if ceiling is None:
+            excluded += count
+        else:
+            ceilings[ceiling] += count
+    return ceilings, excluded
+
+
 def check(n, expected_left, expected_types, expected_right_types):
     left, connected_matchings = left_load_multiplicities(n)
     right = prufer_tree_loads(n)
@@ -162,21 +203,35 @@ def check(n, expected_left, expected_types, expected_right_types):
     assert len(right) == expected_right_types, (n, len(right))
     slack, subset, demand, supply = hall_minimum_slack(left, right)
     assert slack >= 0, (n, slack, subset, demand, supply)
+
+    # A stronger sufficient condition: classify each relevant tree by its
+    # least primitive-Dyck majorant. If each class has at least as many trees
+    # as left copies at that exact load, a within-class injection proves Hall.
+    ceilings, excluded = right_ceiling_multiplicities(right, tuple(left))
+    for load, multiplicity in left.items():
+        assert ceilings[load] >= multiplicity, (
+            n, load, multiplicity, ceilings[load]
+        )
+
     print(
         f"PASS n={n}: connected_matchings={connected_matchings}, "
         f"left_copies={sum(left.values())}, left_load_types={len(left)}, "
         f"trees={sum(right.values())}, right_load_types={len(right)}, "
-        f"minimum_Hall_slack={slack}"
+        f"minimum_Hall_slack={slack}, "
+        f"relevant_trees={sum(ceilings.values())}, excluded_trees={excluded}"
     )
     for load, multiplicity in sorted(left.items()):
-        print(f"  left load {load}: multiplicity {multiplicity}")
+        print(
+            f"  load {load}: left={multiplicity}, "
+            f"same-ceiling trees={ceilings[load]}"
+        )
 
 
 def main():
     check(4, expected_left=2, expected_types=1, expected_right_types=13)
     check(6, expected_left=22, expected_types=2, expected_right_types=383)
     check(8, expected_left=608, expected_types=5, expected_right_types=15165)
-    print("PASS exact capacitated Hall tests through eight ports")
+    print("PASS exact capacitated Hall and pointwise ceiling tests through eight ports")
     print("NOTE finite sufficient-coupling regression only; no all-n theorem")
 
 
