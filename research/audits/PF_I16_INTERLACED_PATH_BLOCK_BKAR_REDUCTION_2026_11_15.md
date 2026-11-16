@@ -1,5 +1,7 @@
 # PF-I16 interlaced path-block cumulant: temporal-edge forest reduction
 
+**Supersession note (2026-11-15):** The local interlaced block-functional tree estimate under the compact heat-kernel Doeblin envelope is now proved by `PF_I16_INTERLACED_BLOCK_CUMULANT_TREE_DOEBLIN_REGENERATION_2026_11_15.md`. The BKAR derivative inequality below remains an alternative formal route and is not needed for that local theorem. Its L²-only analytic shortcut is invalid, as recorded in `PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md`.
+
 **Date:** 2026-11-15  
 **Status:** rigorous reduction; the all-orders derivative estimate remains open  
 **Scope:** one stationary Markov path, finite pairwise-disjoint port sets with arbitrary interlacing and overlapping temporal hulls.
