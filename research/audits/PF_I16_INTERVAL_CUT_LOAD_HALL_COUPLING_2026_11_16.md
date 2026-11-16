@@ -626,3 +626,33 @@ For ten ports, the path-by-path margins in lexicographic order are:
 The exact n=4,6,8 Hall verifier and n=10 C++ ceiling-class verifier now check the peak-cover lemma on the finite path poset, the exact inclusion-exclusion identity (PC), and (PC-UB), in addition to their previous Hall and union-bound checks. The Python inclusion-exclusion verifier uses the actual peak coordinates (not peak-list indices) when lowering the capacity vector.
 
 **What remains open.** No uniform lower bound for the determinant sums \(A_n(h)\) in (PC-UB) has been proved. Thus the peak-cover lemma is an exact poset reduction and (PC-UB) is a sharper all-orders sufficient target, but neither the pointwise inequalities \(Q(h)\ge L(h)\) nor the general down-set Hall inequalities are yet established.
+
+
+## Prefix-component interpretation of right cut loads
+
+There is a useful equivalent description of the right-hand capacity constraint. For a tree T on {1,...,n}, let T[k] be the induced forest on the prefix {1,...,k}, and let \(\kappa(T[k])\) be its number of connected components. Then
+\[
+\boxed{c_k(T)=\kappa(T[k]).}
+\]
+Indeed, every component of T[k] must have at least one edge to the suffix in order for T to be connected, and it can have at most one such edge because two would create a cycle using the path in that component and the suffix. Thus the crossing edges are in bijection with the prefix components.
+
+Equivalently, if
+\[
+r_j(T)=|\{i<j:\{i,j\}\in E(T)\}|
+\]
+is the number of earlier neighbors of vertex j, then
+\[
+c_k(T)=k-\sum_{j=2}^{k}r_j(T),
+\]
+and the cut-capacity condition is
+\[
+\sum_{j=2}^{k}r_j(T)\ge k-h_k
+\qquad(1\le k<n).
+\]
+This follows by counting the edges of the induced prefix forest: it has k vertices and \(\sum_{j=2}^k r_j(T)\) edges, so its component count is their difference.
+
+For a matching M of load h, the induced matching graph on the first k ports has exactly \((k+h_k)/2\) components: each closed pair is one component and each of the h_k currently open interval endpoints is an isolated component. Thus h_k is precisely the number of *open singleton components* in the matching prefix, while c_k(T) is the total number of components in the tree prefix.
+
+The peak-cover characterization sharpens this interpretation: a tree in ceiling class h has at most h_k prefix components at every cut and at least h_k-1 components at every lowerable peak. The right-hand Hall supply is therefore concentrated on trees whose prefix-component count nearly saturates the Dyck capacity at each such peak.
+
+This suggests a growth-process formulation of the Hall problem: process ports from left to right, and at vertex j attach it to r_j earlier components. The open-interval matching process creates a new singleton component at an up-step and closes one open interval at a down-step; the overlap-tree decoration must be encoded by choices of earlier components at these closing steps. The count identity above is exact, but a canonical injective encoding of all (M,\tau) into such component-merging histories has not yet been constructed.
