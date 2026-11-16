@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Exact rational regression for centered connected pair/triple hyperedges."""
 from fractions import Fraction
-from itertools import combinations, product
+from itertools import combinations, product as cartesian_product
+from math import prod
 from math import factorial
 
 
@@ -32,11 +33,11 @@ def local_law(q, seed):
     # p(x) proportional to prod_i(1+a_i*x_i) * (1+theta*prod_i x_i).
     aa = [Fraction(1, 5 + seed + i) for i in range(q)]
     theta = Fraction(1, 7 + seed)
-    norm = 1 + theta * product(aa)
+    norm = 1 + theta * prod(aa)
     law = {}
-    for x in product((-1, 1), repeat=q):
-        p = product((1 + aa[i]*x[i]) / 2 for i in range(q))
-        p *= (1 + theta * product(x)) / norm
+    for x in cartesian_product((-1, 1), repeat=q):
+        p = prod((1 + aa[i]*x[i]) / 2 for i in range(q))
+        p *= (1 + theta * prod(x)) / norm
         assert p > 0
         law[x] = p
     means = [
@@ -55,7 +56,7 @@ def local_law(q, seed):
 
     def raw_moment(indices):
         return sum(
-            p * product(x[i] for i in indices)
+            p * prod(x[i] for i in indices)
             for x, p in law.items()
         )
 
