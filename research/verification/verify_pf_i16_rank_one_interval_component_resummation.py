@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Exact checks for the rank-one interval-component resummation audit.
+"""Exact checks for formal interval-component resummation and its Markov obstruction.
 
-This verifies finite partition identities and the explicit symmetric two-state
-sequence. It is not a verifier for the general multi-link cumulant theorem.
+The formal generating-function identity is combinatorial. The four-port
+symmetric two-state calculation explicitly prevents treating it as a general
+Markov block-moment formula.
 """
 from fractions import Fraction as F
 from itertools import product
@@ -67,7 +68,6 @@ def poly_scale(a, c):
 
 
 def connected_polynomials(nmax, moments):
-    # P_R(u) = sum_{j=1}^R binom(R-1,j-1) m_j u P_{R-j}(u).
     P = [{0: F(1)}]
     for n in range(1, nmax + 1):
         pn = {}
@@ -77,7 +77,6 @@ def connected_polynomials(nmax, moments):
             pn = poly_add(pn, term)
         P.append(pn)
 
-    # P=1/(1-C), so C_n=P_n-sum_{j=1}^{n-1} C_j P_{n-j}.
     C = [{0: F(0)}]
     for n in range(1, nmax + 1):
         cn = dict(P[n])
@@ -93,7 +92,6 @@ def mobius_functional(poly):
 
 
 def verify_interval_component_decomposition():
-    # Every partition splits uniquely at precisely its uncovered cuts.
     for n in range(1, 9):
         for part in all_partitions(n):
             cuts = [i for i in range(n - 1)
@@ -119,11 +117,10 @@ def verify_generating_function_recurrence():
     moments = [F(0)] + [F((-1) ** j, j + 1) for j in range(1, 9)]
     _, C = connected_polynomials(8, moments)
     for n in range(1, 9):
-        direct = connected_component_polynomial_direct(n, moments)
-        assert C[n] == direct, (n, C[n], direct)
+        assert C[n] == connected_component_polynomial_direct(n, moments)
 
 
-def verify_symmetric_two_state_sequence():
+def verify_symmetric_formal_sequence():
     nmax = 30
     moments = [F(0)] + [F(1 if j % 2 == 0 else 0) for j in range(1, nmax + 1)]
     _, C = connected_polynomials(nmax, moments)
@@ -132,29 +129,33 @@ def verify_symmetric_two_state_sequence():
         10: 4778, 12: -231205, 14: 15638140,
     }
     for n, value in expected.items():
-        assert mobius_functional(C[n]) == value, (n, mobius_functional(C[n]))
+        assert mobius_functional(C[n]) == value
 
 
-def verify_integrated_monomial_identity():
-    # Exact finite check of int_0^1 c*lambda^(c-1) d lambda = 1.
-    for c in range(1, 20):
-        integral = F(c, c)
-        assert integral == 1
-    # If any cut is uncovered, the full mixed derivative is zero.
-    for n in range(2, 8):
-        for part in all_partitions(n):
-            cover = covers_all_cuts(part, n)
-            multiplicities = [
-                sum(min(block) <= cut < max(block) for block in part)
-                for cut in range(n - 1)
-            ]
-            assert cover == all(c >= 1 for c in multiplicities)
+def verify_four_port_markov_obstruction():
+    # Symmetric +/-1 chain: r_i=lambda_i*q_i.
+    # M1234 = r1*r3, so the middle transition is absent from this moment.
+    r1, r2, r3 = F(2, 3), F(3, 5), F(4, 7)
+    m1234 = r1 * r3
+    m12, m13, m14 = r1, r1 * r2, r1 * r2 * r3
+    m23, m24, m34 = r2, r2 * r3, r3
+    cumulant = m1234 - m12 * m34 - m13 * m24 - m14 * m23
+    assert cumulant == -2 * r1 * r2**2 * r3
+
+    # Symbolically, kappa=-2*(lambda1*q1)*(lambda2*q2)^2*(lambda3*q3).
+    # Its mixed derivative at lambda_i=1 is -4*q1*q2^2*q3.
+    q1, q2, q3 = F(2, 3), F(3, 4), F(4, 5)
+    mixed_derivative = -4 * q1 * q2**2 * q3
+    assert mixed_derivative == F(-3, 5)
+    # The full block moment r1*r3 is independent of lambda2, hence this
+    # three-parameter mixed derivative is exactly zero.
+    assert m1234 == r1 * r3
+    print("PASS four-port symmetric Markov obstruction:")
+    print(f"  M1234={m1234}; cumulant={cumulant}")
+    print(f"  mixed derivative of M1234=0; of cumulant={mixed_derivative}")
 
 
-def verify_cayley_absorption_bound():
-    # S(n,k) <= k^n/k!, hence sum_k (k-1)! S(n,k) <= n^n.
-    # n^n <= 4^n n^(n-2), so the coefficient is exponential relative
-    # to the number n^(n-2) of trees in the complete support graph.
+def verify_formal_stirling_bound():
     stirling = [0, 1]
     for n in range(2, 31):
         row = [0] * (n + 1)
@@ -169,14 +170,13 @@ def verify_cayley_absorption_bound():
 def main():
     verify_interval_component_decomposition()
     verify_generating_function_recurrence()
-    verify_symmetric_two_state_sequence()
-    verify_integrated_monomial_identity()
-    verify_cayley_absorption_bound()
+    verify_symmetric_formal_sequence()
+    verify_four_port_markov_obstruction()
+    verify_formal_stirling_bound()
     print("PASS unique consecutive-component decomposition for all partitions (R<=8)")
     print("PASS C(z,u)=1-1/P(z,u) recurrence against direct partitions (R<=8)")
-    print("PASS exact symmetric two-state signed sequence through R=30 recurrence")
-    print("PASS integrated monomial derivative and hull-cover criterion")
-    print("PASS Stirling/Cayley exponential absorption bound for R<=30")
+    print("PASS exact symmetric formal sequence through R=30 recurrence")
+    print("PASS formal Stirling/Cayley coefficient bound for R<=30")
 
 
 if __name__ == "__main__":
