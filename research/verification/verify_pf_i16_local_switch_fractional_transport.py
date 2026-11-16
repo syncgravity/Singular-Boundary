@@ -243,11 +243,22 @@ def check(n, expected_sources, expected_union):
         f"3^(s-1)_degree_floor={degree_floor}, "
         f"incidence_over_degree_floor={float(incidence_bound):.12f}"
     )
+    harmonic_degree = Fraction(incidence[worst_tree], columns[worst_tree])
+    degree_bins = ((1, 127), (128, 191), (192, 255),
+                   (256, 383), (384, 10**9))
+    binned_profile = []
+    for lo, hi in degree_bins:
+        count = sum(c for d, c in profile.items() if lo <= d <= hi)
+        mass = sum((Fraction(c, d) for d, c in profile.items()
+                    if lo <= d <= hi), Fraction())
+        binned_profile.append((f"{lo}-{hi}", count, mass))
     print(
         f"  worst_tree={worst_tree}; incidence={incidence[worst_tree]}; "
+        f"harmonic_mean_source_degree={float(harmonic_degree):.12f}; "
         f"degree_strata={sorted(profile.items())}; "
         f"reconstructed_column={profile_mass}"
     )
+    print(f"  degree_bin_profile={binned_profile}")
     # Report the largest single degree-stratum contribution over all targets.
     stratum_max = max(
         (Fraction(count, degree), T, degree, count)
