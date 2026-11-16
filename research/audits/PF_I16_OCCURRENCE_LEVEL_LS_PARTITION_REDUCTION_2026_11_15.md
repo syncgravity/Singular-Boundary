@@ -1,5 +1,7 @@
 # PF-I16 — Exact occurrence-level Leonov–Shiryaev reduction
 
+**Update (2026-11-15):** The local interlaced block-functional cumulant-tree obligation for the at-most-232 distinct support types on a link is now proved under the compact heat-kernel Doeblin envelope; see `PF_I16_INTERLACED_BLOCK_CUMULANT_TREE_DOEBLIN_REGENERATION_2026_11_15.md`. This supplies a port-count-uniform bound for each grouped support-type block functional. It does **not** by itself prove the multiplicity-uniform resummation of the original occurrence-level LS partition sum below: the latter still has to preserve the original occurrence partition structure and control its signed cancellations.
+
 **Date:** 2026-11-15  
 **Status:** Exact algebraic reduction proved below. The resulting uniform decorated-tree resummation is stated as a precise remaining inequality; it is not claimed proved.
 
