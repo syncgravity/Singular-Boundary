@@ -67,26 +67,30 @@ def hopcroft_karp(rows):
 def reroute_from_target(start, rows, matched_left, right_owner, child_fiber):
     """Find alternating path R -> matched L -> unmatched R -> ... -> free R."""
     q = deque([start])
-    parent = {start: None}
+    predecessor = {start: None}
+    predecessor_owner = {}
     while q:
         target = q.popleft()
         owner = right_owner.get(target)
         if owner is None:
-            path = []
+            targets = []
+            owners = []
             cur = target
             while cur is not None:
-                path.append(cur)
-                cur = parent[cur]
-            path.reverse()
-            lefts = []
-            for i in range(1, len(path) - 1, 2):
-                lefts.append(path[i])
-            fibers = {child_fiber[x] for x in lefts}
-            return path, len(fibers)
+                targets.append(cur)
+                prev = predecessor[cur]
+                if prev is not None:
+                    owners.append(predecessor_owner[cur])
+                cur = prev
+            targets.reverse()
+            owners.reverse()
+            fibers = {child_fiber[x] for x in owners}
+            return targets, len(fibers)
         for nxt in rows[owner]:
-            if nxt == matched_left[owner] or nxt in parent:
+            if nxt == matched_left[owner] or nxt in predecessor:
                 continue
-            parent[nxt] = target
+            predecessor[nxt] = target
+            predecessor_owner[nxt] = owner
             q.append(nxt)
     return None, None
 
