@@ -103,7 +103,7 @@ def direct_left(n):
                 tau += 1
         if tau:
             load = tuple(sum(a <= k < b for a, b in intervals)
-                         for k in range(n - 1))
+                         for k in range(1, n))
             out[load] += tau
     return out
 
