@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Exact two-endpoint rooted-forest recurrence for left interval demand."""
 from collections import Counter
-from itertools import combinations
 
 
 def matchings(items):
@@ -88,39 +87,6 @@ def two_root_forest_weight(intervals, p, q, cone=False):
     return total
 
 
-def direct_tree_count(n, intervals):
-    edges = overlap_edges(intervals)
-    if len(intervals) == 1:
-        return 1
-    # Matrix-tree determinant, small exact integer matrices only.
-    size = len(intervals)
-    lap = [[0] * size for _ in range(size)]
-    for u, v in edges:
-        lap[u][u] += 1
-        lap[v][v] += 1
-        lap[u][v] -= 1
-        lap[v][u] -= 1
-    a = [row[:-1] for row in lap[:-1]]
-    det = 1
-    for k in range(size - 1):
-        if a[k][k] == 0:
-            r = next((r for r in range(k + 1, size - 1) if a[r][k]), None)
-            if r is None:
-                return 0
-            a[k], a[r] = a[r], a[k]
-            det = -det
-        pivot = a[k][k]
-        for i in range(k + 1, size - 1):
-            for j in range(k + 1, size - 1):
-                num = a[i][j] * pivot - a[i][k] * a[k][j]
-                assert num % (det if False else 1) == 0
-                a[i][j] = num
-        # Small graphs are verified by an independent brute force below;
-        # this determinant helper is not used in the recurrence comparison.
-        return None
-    return None
-
-
 def direct_left(n):
     out = Counter()
     for M in matchings(range(1, n + 1)):
@@ -163,10 +129,10 @@ def endpoint_recurrence(n):
                 intervals = tuple(sorted(tuple(sorted(e)) for e in M0))
                 weight = two_root_forest_weight(intervals, p, q)
                 load0 = tuple(sum(a <= k < b for a, b in intervals)
-                              for k in range(n - 1))
+                              for k in range(1, n))
                 load = tuple(
-                    load0[k] + int(k + 1 < p) + int(k + 1 >= q)
-                    for k in range(n - 1)
+                    load0[k - 1] + int(k < p) + int(k >= q)
+                    for k in range(1, n)
                 )
                 out[load] += weight
     return out
