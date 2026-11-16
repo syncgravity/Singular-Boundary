@@ -260,7 +260,9 @@ def check(n, expected_left, expected_types, expected_right_types):
         # Exact inclusion-exclusion formula (PC) for the ceiling class.
         exact_class_count = 0
         for mask in range(1 << len(peaks)):
-            selected = [i for i in range(len(peaks)) if mask & (1 << i)]
+            selected = {
+                peaks[i] for i in range(len(peaks)) if mask & (1 << i)
+            }
             bound = tuple(
                 value - (2 if j in selected else 0)
                 for j, value in enumerate(h)
