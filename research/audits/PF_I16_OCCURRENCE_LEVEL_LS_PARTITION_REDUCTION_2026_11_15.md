@@ -62,7 +62,13 @@ For any fixed tuple \((\pi_e)_e\) admitted in (1.2), choose one temporal tree fo
 
 This proves the **connectivity mechanism** and identifies the admissible edge set. It does not yet prove the desired coefficient bound after summing over all link partitions and all local temporal trees.
 
-## 3. The remaining resummation inequality
+## 3. The absolute-value resummation is obstructed
+
+The absolute-value inequality displayed below is **false in general**, not merely unproved. A two-link complete-overlap counterexample is recorded in [PF-I16 obstruction to the absolute-value LS partition resummation](PF_I16_LS_ABSOLUTE_RESUMMATION_OBSTRUCTION_2026_11_15.md). With all times coincident, one link may use the one-block partition while the second ranges over pair partitions; this gives a lower bound whose ratio to the target complete-graph tree polynomial is at least \(2^{R-2}(R-1)!!\) for even R. No fixed \(C^R\) can absorb it.
+
+Thus the absolute-value majorant below must not be treated as a viable proof obligation. The LS identity and connectivity mechanism remain valid, but any unrestricted-repetition argument must retain cancellations between link partitions or use a different representation. The actual complete-overlap cumulant estimate remains true by the product-semigroup proof.
+
+## 4. The remaining resummation inequality (invalid absolute majorant)
 
 Write
 \[
@@ -92,7 +98,7 @@ The left side of (3.1) is an absolute-value majorant. A proof may need to preser
 
 The exact factorization by support type in the repeated-insertion audit is compatible with (1.2), but does not prove (3.1). Nor does pairwise block HGR tensorization: the three-way hyperedge counterexample in the companion audit shows that pairwise subjective-HGR control cannot replace the missing higher-order estimate.
 
-## 4. Proof ledger
+## 5. Proof ledger
 
 Established:
 - the occurrence-level Leonov–Shiryaev identity (1.1);
@@ -101,7 +107,7 @@ Established:
 - the fact that local temporal trees, if inserted, form a connected row multigraph supported on common-link edges.
 
 Still open:
-- the multiplicity-uniform resummation (3.1), or a sharper signed/canceling replacement;
+- a signed/canceling replacement for (3.1); the absolute-value version (3.1) is disproved by the two-link counterexample;
 - the sparse support-overlap case with unrestricted repeated labels;
 - KP convergence, interacting-vacuum Poincaré, physical scale setting, and the continuum mass gap.
 
