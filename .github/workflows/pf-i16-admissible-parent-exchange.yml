@@ -1,0 +1,17 @@
+name: PF-I16 admissible parent exchange
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  admissible-parent-exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test admissible parent exchange connectivity
+        working-directory: research/verification
+        run: python verify_pf_i16_admissible_parent_exchange.py
