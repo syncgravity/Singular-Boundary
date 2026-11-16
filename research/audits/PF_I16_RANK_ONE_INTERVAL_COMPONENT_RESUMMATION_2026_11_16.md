@@ -6,7 +6,7 @@
 
 ## 1. Rank-one ordered-link model
 
-Take one stationary Markov link with ordered ports (1<\cdots<R). Assume each row observable is the same centered eigenfunction (X_i=X(t_i)), with
+Take one stationary reversible Markov link (so the semigroup is self-adjoint in its invariant (L^2)) with ordered ports (1<\cdots<R). Assume each row observable is the same centered eigenfunction (X_i=X(t_i)), with
 [
 \mathbb E X=0,\qquad \|X\|_\infty\le1,\qquad
 P_{s,t}X=q_{s,t}X,quad 0\le q_{s,t}\le1.
