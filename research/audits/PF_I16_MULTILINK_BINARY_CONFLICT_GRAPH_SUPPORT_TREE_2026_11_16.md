@@ -71,7 +71,7 @@ The exact identity and domination are restricted to products of centered symmetr
 
 There is a useful exact counting reduction. For a nonzero matching configuration, every row belongs to a matched pair, so every connected component of the row-pair graph has at least two rows. If its components are the blocks of a partition P, then |P|=k<=floor(R/2).
 
-Each block is connected in the row support graph G_X. Moreover, every conflict edge of H_M joins two blocks that have at least one cross-edge in G_X: the overlapping intervals are on a common link, and their endpoints are rows carrying that link. Thus H_M is a subgraph of the quotient graph G_X/P.
+Each block is connected in the row support graph G_X. Also, a component partition P determines its matching family uniquely: within each block and each link, the only pairing compatible with the block moment is the pairing of consecutive selected ports. Thus the sum over matching families has no additional matching multiplicity once P is fixed. Conversely, a matching family determines P as the connected components of its row-pair graph. Moreover, every conflict edge of H_M joins two blocks that have at least one cross-edge in G_X: the overlapping intervals are on a common link, and their endpoints are rows carrying that link. Thus H_M is a subgraph of the quotient graph G_X/P.
 
 Using |[q] chi_H(q)|<=tau(H), we obtain
 [
