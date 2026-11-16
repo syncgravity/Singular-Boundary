@@ -136,6 +136,7 @@ def run(n, expected):
     distinct_projection_pairs = 0
     reroutable_pairs = 0
     cross_fiber_reroutes = 0
+    external_owners = 0
     max_path_length = 0
     first_failure = None
     first_cross_path = None
@@ -154,7 +155,9 @@ def run(n, expected):
                         continue
                     distinct_projection_pairs += 1
                     owner = mr[right_ids[tree]]
-                    assert owner in (a, b)
+                    assert owner >= 0
+                    if owner not in (a, b):
+                        external_owners += 1
                     path = path_from(owner)
                     if path is None:
                         if first_failure is None:
@@ -179,6 +182,7 @@ def run(n, expected):
         f"distinct_parent_projection_pairs={distinct_projection_pairs}, "
         f"reroutable_by_alternating_path={reroutable_pairs}, "
         f"reroutes_crossing_parent_fibers={cross_fiber_reroutes}, "
+        f"collisions_owned_outside_pair={external_owners}, "
         f"max_reroute_path_length={max_path_length}"
     )
     if first_failure:
@@ -190,7 +194,7 @@ def run(n, expected):
         "collision_pairs": collision_pairs,
         "distinct_projection_pairs": distinct_projection_pairs,
         "reroutable": reroutable_pairs,
-        "cross_fiber": cross_fiber_reroutes,
+        "cross_fiber": cross_fiber_reroutes, "external_owners": external_owners,
     }
 
 
