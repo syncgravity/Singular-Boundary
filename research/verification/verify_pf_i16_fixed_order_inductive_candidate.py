@@ -68,7 +68,7 @@ def canonical_order(intervals, tau, strategy):
 
 def fixed_order_outputs(intervals, tau, n, ids, strategy):
     root, parent, order = canonical_order(intervals, tau, strategy)
-    states = {frozenset({tuple(sorted(intervals[root])})})}
+    states = {frozenset({tuple(sorted(intervals[root]))})})}
     for child in order:
         J = intervals[child]
         next_states = set()
