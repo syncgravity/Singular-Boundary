@@ -782,7 +782,7 @@ If q>p, A and B are not adjacent. The contracted graph is a tree joining A to B,
 \sum_{C_0}a_{C_0}b_{C_0}
 \prod_{C\ne C_0}(a_C+b_C).
 \]
-Summing these weights over all spanning forests F gives the exact spanning-tree multiplicity \(\tau(H_M)\). This also covers an empty residual graph: the q<p case contributes one (the edge A-B), while q>p contributes zero (disconnected roots).
+Summing these weights over all spanning forests F gives the exact spanning-tree multiplicity \(\tau(H_M)\). This also covers an empty residual graph: the q<p case contributes one (the edge A-B), while q>p contributes zero (disconnected roots). The bridge-component term is present only when the residual forest has at least one component.
 
 The matching cut load decomposes in the same state:
 \[
@@ -797,3 +797,8 @@ A new exact verifier compares this forest formula against direct edge-subset enu
 Combining this formula with the right endpoint-leaf decomposition isolates the remaining problem by the same boundary state (p,q): on the right, one counts interior port trees under the residual capacities; on the left, one counts interval-overlap forests on the matching with the two endpoint pairs removed, weighted by the displayed attachment factors. This is a sharper structural alignment than the earlier one-root recurrence.
 
 It still does not identify the two state spaces or prove a statewise inequality. In particular, the residual left matching has two fewer intervals and omits the labels p,q, whereas the residual right tree retains p,q as interior vertices. A cut-preserving encoding or a direct comparison of these weighted forest sums with the interior tree-capacity counts remains open. No proper-down-set Hall inequality is claimed.
+
+
+### Two-root correction
+
+The first two-root audit draft omitted spanning trees that *omit* the available A-B edge even when q<p. For example, when the overlap graph is K3, its third spanning tree uses the two root-to-component edges and not A-B. The exact formula above includes both alternatives. The verifier was corrected accordingly; only the corrected formula is authoritative.
