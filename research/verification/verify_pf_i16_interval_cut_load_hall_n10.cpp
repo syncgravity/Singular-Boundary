@@ -230,6 +230,33 @@ int main() {
     for (const auto& [h, count] : left_mass) left_total += count;
     for (uint64_t count : right_mass) right_total += count;
     assert(left_mass.size() == primitive_paths.size());
+
+    // A(h)=sum_{g<=h}Q(g). Since Q(g)<=A(g),
+    // Q(h)>=A(h)-sum_{g<h}A(g). Verify the sufficient union-bound
+    // criterion A(h)>=L(h)+sum_{g<h}A(g) exactly.
+    auto leq = [](const Load& a, const Load& b) {
+        for (int k = 0; k < N - 1; ++k)
+            if (a[k] > b[k]) return false;
+        return true;
+    };
+    vector<uint64_t> cumulative(primitive_paths.size(), 0);
+    for (int i = 0; i < (int)primitive_paths.size(); ++i)
+        for (int j = 0; j < (int)primitive_paths.size(); ++j)
+            if (leq(primitive_paths[j], primitive_paths[i]))
+                cumulative[i] += right_mass[j];
+    uint64_t min_union_bound_margin = UINT64_MAX;
+    for (int i = 0; i < (int)primitive_paths.size(); ++i) {
+        uint64_t strict_lower_sum = 0;
+        for (int j = 0; j < (int)primitive_paths.size(); ++j)
+            if (j != i && leq(primitive_paths[j], primitive_paths[i]))
+                strict_lower_sum += cumulative[j];
+        const uint64_t demand = (uint64_t)left_mass.at(primitive_paths[i]);
+        assert(cumulative[i] >= strict_lower_sum + demand);
+        min_union_bound_margin = min(
+            min_union_bound_margin,
+            cumulative[i] - strict_lower_sum - demand);
+    }
+
     assert(connected_matchings == 706);
     assert(left_total == 31744);
     assert(feasible_trees == 442979);
