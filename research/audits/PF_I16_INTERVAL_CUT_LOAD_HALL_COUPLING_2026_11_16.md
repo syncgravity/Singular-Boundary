@@ -526,3 +526,97 @@ This identifies a shared state space for the two sides:
 It also explains why the minimal primitive path is unusually tractable: every cut is tight or has height two, so the backbone leaves almost no room for branching. For a general primitive path, the non-tight blocks can have substantial height and the rooted boundary state must retain the attachment locations and residual cut capacities.
 
 The remaining Hall step is now a blockwise capacitated comparison: for each sequence of tight-cut boundary states, compare the total number of left interval-overlap rooted-forest decorations with the number of right slab-tree decorations having no larger residual cut loads. The boundary data must be retained; summing over blocks independently would lose the correlation of a matching interval or a right bridge edge that spans several consecutive tight cuts. This is a structural reduction, not yet an inequality. In particular, it does not prove the pointwise class bound \(Q(h)\ge L(h)\) or the down-set Hall inequalities.
+
+
+## Peak-cover reduction of the classwise Hall inequality (2026-11-16)
+
+The primitive-Dyck poset has a much smaller family of immediate lower covers than its full strict lower ideal. This yields a sharper sufficient inequality for the pointwise Hall condition.
+
+For a primitive path \(h=(h_1,\ldots,h_{n-1})\), define its *lowerable peaks*
+\[
+P(h)=\{k: h_k>h_{k-1},\ h_k>h_{k+1},\ h_k\ge3\},
+\qquad h_0=h_n=0.
+\]
+For each \(k\in P(h)\), let \(h^{(k)}=h-2e_k\). This is again a primitive Dyck path: at a peak its two neighbors are \(h_k-1\), and lowering the peak by two changes the two adjacent steps to down then up; positivity follows from \(h_k\ge3\).
+
+### Cover lemma
+
+**Lemma.** If \(g,h\) are primitive Dyck paths with \(g\le h\) and \(g\ne h\), then there is a lowerable peak \(k\in P(h)\) such that
+\[
+g\le h^{(k)}<h.
+\]
+Consequently the immediate lower covers of \(h\) are exactly the paths \(h^{(k)}\), \(k\in P(h)\), and
+\[
+\{g\in\mathcal P_n:g<h\}
+=
+\bigcup_{k\in P(h)}\{g\in\mathcal P_n:g\le h^{(k)}\}.
+\]
+
+**Proof.** At every index, primitive Dyck paths have the same parity, so
+\[
+d_i=(h_i-g_i)/2
+\]
+is a nonnegative integer. Since \(g\ne h\), some interior index has \(d_i>0\). If such an index is not a local maximum of \(h\), at least one neighboring index \(j\) has \(h_j=h_i+1\). Since both paths take unit steps, \(g_j\in\{g_i-1,g_i+1\}\), and therefore \(d_j\ge d_i>0\). Follow such an uphill neighbor. The height strictly increases at each move, so the process terminates at a local maximum \(k\) with \(d_k>0\). Then \(h_k-g_k\ge2\), and positivity of \(g_k\) gives \(h_k\ge3\). Thus \(k\in P(h)\) and \(g_k\le h_k-2\), while \(g_i\le h_i\) at every other coordinate. Hence \(g\le h^{(k)}\). This proves the lemma and the cover characterization.
+
+### Exact ceiling-class formula
+
+Recall
+\[
+A_n(b)=\#\{T\in\mathcal T(K_n):c_k(T)\le b_k\text{ for all }k\},
+\]
+for any integer capacity vector \(b\), with \(A_n(b)=0\) if a capacity is below 1. Let \(Q(h)\) be the number of trees whose least primitive majorant is exactly \(h\). By the cover lemma,
+\[
+\widehat c(T)=h
+\quad\Longleftrightarrow\quad
+c(T)\le h\text{ and }c_k(T)\ge h_k-1
+\text{ for every }k\in P(h).
+\]
+Indeed, failure of the latter condition is exactly membership in one of the lower-cover events \(c(T)\le h^{(k)}\). Inclusion-exclusion over these events gives the exact formula
+\[
+\boxed{
+Q(h)=
+\sum_{S\subseteq P(h)}(-1)^{|S|}
+A_n\!\left(h-2\sum_{k\in S}e_k\right).
+}
+\tag{PC}
+\]
+The capacities in the terms need not themselves be Dyck paths; \(A_n\) was defined for arbitrary capacity vectors. Formula (PC) is exact and uses only \(2^{|P(h)|}\) determinant coefficient-sums, rather than Möbius inversion over the full primitive-path ideal.
+
+### Sharper sufficient Hall bound
+
+The union bound applied only to the immediate lower-cover events yields
+\[
+Q(h)\ge A_n(h)-\sum_{k\in P(h)}A_n(h^{(k)}).
+\]
+Therefore the following condition is sufficient for the classwise injection, and hence for every capacitated Hall inequality:
+\[
+\boxed{
+A_n(h)\ge L(h)+\sum_{k\in P(h)}A_n(h^{(k)})
+\quad\text{for every primitive }h.
+}
+\tag{PC-UB}
+\]
+This is strictly sharper than the earlier criterion that subtracted \(A_n(g)\) for every strict lower primitive path. It is still only a sufficient condition: overlaps among the lower-cover events make (PC) potentially substantially larger than its union-bound lower estimate.
+
+### Exact finite checks
+
+The existing exact tree enumerations through ten ports give the following minimum margins in (PC-UB):
+\[
+\min_{h\in\mathcal P_n}
+\left(A_n(h)-L(h)-\sum_{k\in P(h)}A_n(h^{(k)})\right).
+\]
+
+| Ports \(n\) | Primitive paths | Minimum peak-cover margin |
+|---:|---:|---:|
+| 4 | 1 | 1 |
+| 6 | 2 | 5 |
+| 8 | 5 | 19 |
+| 10 | 14 | 65 |
+
+For ten ports, the path-by-path margins in lexicographic order are:
+\[
+65,\ 378,\ 378,\ 2013,\ 6354,\ 378,\ 2095,\ 2013,\ 9641,\ 29951,\ 6354,\ 29951,\ 70106,\ 222113.
+\]
+The exact n=4,6,8 Hall verifier and n=10 C++ ceiling-class verifier now check (PC-UB) in addition to their previous Hall and union-bound checks.
+
+**What remains open.** No uniform lower bound for the determinant sums \(A_n(h)\) in (PC-UB) has been proved. Thus the peak-cover lemma is an exact poset reduction and (PC-UB) is a sharper all-orders sufficient target, but neither the pointwise inequalities \(Q(h)\ge L(h)\) nor the general down-set Hall inequalities are yet established.
