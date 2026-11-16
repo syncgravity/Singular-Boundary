@@ -16,6 +16,18 @@ VAR = P * (1 - P)
 MU3 = P * (1 - P) * (1 - 2 * P)
 
 
+def partitions(items):
+    items = tuple(items)
+    if not items:
+        yield ()
+        return
+    first, *rest = items
+    for tail in partitions(rest):
+        yield ((first,),) + tail
+        for k in range(len(tail)):
+            yield tail[:k] + (tuple(sorted(tail[k] + (first,))),) + tail[k + 1:]
+
+
 def check_exact_counterexample():
     # Centered two-state coordinate X=Y-p. The interpolated transition
     # contracts its centered eigenfunction by lambda*rho.
