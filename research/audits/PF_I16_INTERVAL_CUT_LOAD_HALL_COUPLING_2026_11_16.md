@@ -152,3 +152,61 @@ In lexicographic primitive-path order, the left and right class multiplicities a
 | (1,2,3,4,5,4,3,2,1) | 15,000 | 237,113 |
 
 This remains an exact finite regression, not a proof of pointwise domination for all semilengths. The C++ verifier is wired into theorem-index CI.
+
+
+## Exact determinant / order-ideal formulation
+
+There is an exact way to compute every right-hand Hall capacity without enumerating Prüfer codes. For (1\le i<j\le n), put
+[
+w_{ij}(x)=\prod_{k=i}^{j-1}x_k,
+\qquad w_{ji}=w_{ij}.
+]
+Let (\mathcal L_n(x)) be the weighted Laplacian of the complete graph on the ordered ports, with off-diagonal entries (-w_{ij}(x)) and diagonal entries (\sum_{j\ne i}w_{ij}(x)). By the weighted Matrix-Tree Theorem,
+[
+\Phi_n(x_1,\ldots,x_{n-1})
+=\det\bigl(\mathcal L_n(x)^{(n)}\bigr)
+=\sum_{T\in\mathcal T(K_n)}\prod_{k=1}^{n-1}x_k^{c_k(T)}.
+]
+Thus, for a primitive path (h), define the cumulative tree count
+[
+A(h)=\#\{T:c(T)\le h\}
+=\sum_{u\le h}[x^u]\Phi_n(x).
+]
+The ceiling-class counts are the poset Möbius inversion of these cumulative counts:
+[
+A(h)=\sum_{g\le h}Q(g),
+\qquad
+Q(h)=\sum_{g\le h}\mu(g,h)A(g),
+]
+where the order is coordinatewise on primitive Dyck paths and \(\mu\) is its incidence-algebra Möbius function. This identity is exact; it does not establish the desired lower bound on (Q).
+
+There is also an exact formula for the supply of an arbitrary down-set (D). Let \(\operatorname{Max}(D)\) be its maximal paths and let \(\wedge S\) denote their coordinatewise meet. Since
+[
+\{T:c(T)\le h_1,\ldots,c(T)\le h_r\}
+=\{T:c(T)\le h_1\wedge\cdots\wedge h_r\},
+]
+finite inclusion-exclusion gives
+[
+\boxed{
+\sum_{h\in D}Q(h)
+=
+\sum_{\varnothing\ne S\subseteq\operatorname{Max}(D)}
+(-1)^{|S|+1}A(\wedge S).
+}
+]
+The meet remains primitive and belongs to (D), so every term is defined. Equivalently, the all-orders Hall problem is the family of determinant-count inequalities
+[
+\sum_{h\in D}L(h)
+\le
+\sum_{\varnothing\ne S\subseteq\operatorname{Max}(D)}
+(-1)^{|S|+1}
+\sum_{u\le\wedge S}[x^u]\Phi_n(x).
+]
+This is a finite, explicit algebraic criterion for each (n) and each down-set. It exposes the remaining challenge as a lower bound on a union of bounded-cutwidth tree classes against the interval-overlap spanning-tree demand. No inequality between these two sides has yet been proved uniformly in (n).
+
+### Status of this refinement
+
+- The determinant identity follows directly from weighted Matrix-Tree.
+- The Möbius inversion follows from the definition of the least primitive majorant.
+- The down-set inclusion-exclusion formula follows from the meet property and ordinary finite inclusion-exclusion.
+- These are exact reformulations, not an all-orders Hall proof. In particular, cancellation in the inclusion-exclusion sum prevents replacing the union count by the sum of the individual (A(h)) without an additional argument.
