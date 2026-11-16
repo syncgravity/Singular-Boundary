@@ -54,8 +54,8 @@ def canonical_leaf(intervals, tau):
     return min(leaves, key=lambda i: intervals[i])
 
 
-def compress_tree(tree, removed):
-    remaining = [x for x in range(1, 2 * (len(tree) + 1) + 1)
+def compress_tree(tree, removed, n):
+    remaining = [x for x in range(1, n + 1)
                  if x not in removed]
     rank = {x: i + 1 for i, x in enumerate(remaining)}
     return tuple(sorted(tuple(sorted((rank[a], rank[b])))
@@ -83,7 +83,7 @@ def inverse_last_switch(tree, J, n):
                     continue
                 parent = set(tree) - set(mapped)
                 parent.add(tuple(sorted((u, v))))
-                if len(parent) != n - 1:
+                if len(parent) != n - 3:
                     continue
                 if any(x in J for edge in parent for x in edge):
                     continue
@@ -167,7 +167,7 @@ def run(n, expected):
             assert inv, ("no inverse for leaf-last output", n, intervals, tau, J, T)
             compressed = set()
             for P in inv:
-                compressed.add(compress_tree(P, set(J)))
+                compressed.add(compress_tree(P, set(J), n))
             projections[T] = compressed
             inverse_count += len(compressed)
         child = (intervals, tau)
