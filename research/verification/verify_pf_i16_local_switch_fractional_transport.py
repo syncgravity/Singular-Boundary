@@ -173,13 +173,19 @@ def candidate_outputs(intervals, tau):
                     path_start, path_end = parent_interval
                 ppath = tree_path(tree_edges, path_start, path_end)
                 path_edges = tuple(zip(ppath, ppath[1:]))
-                guaranteed = tuple(e for e in path_edges if overlaps(e, J))
+                guaranteed = tuple(
+                    e for e in path_edges
+                    if overlaps(e, J)
+                    and not (J[0] < min(e) < max(e) < J[1])
+                )
                 assert guaranteed, (
                     "connected-tree witness has no edge overlapping child interval",
                     intervals, tau, order, child, inside, ppath, J,
                 )
-                # A path witness is either alternating with J (two guarded
-                # patterns) or contains J (three guarded patterns).
+                # Exclude path edges contained inside J: they reinsert e in
+                # all three local trees. The selected edge is either
+                # alternating with J (two guarded patterns) or contains J
+                # (three guarded patterns).
                 witness = guaranteed[0]
                 guaranteed_valid = 0
                 for u, w in sorted(tree_edges):
