@@ -103,12 +103,12 @@ For one link \(e\), let its ordered incident rows be \(i_1,\ldots,i_k\). For a b
 H_e(B)=
 [\min\{a:i_a\in B\},\max\{a:i_a\in B\}],
 \]
-with an empty or singleton hull contributing no transition parameter. The marginal moment \(M_B\) depends on the parameter for the consecutive transition \(i_a i_{a+1}\) **if and only if**
+with an empty or singleton hull contributing no transition parameter. The joint marginal transition law on the retained ports depends on the parameter for the consecutive transition \(i_a i_{a+1}\) **if and only if**
 \[
 \min\{r:i_r\in B\}\le a<\max\{r:i_r\in B\}.
 \tag{4.1}
 \]
-This follows by compressing the omitted ports: the effective transition between consecutive retained ports is \(\Pi+(\prod\lambda)Q_{\text{total gap}}\). Thus a transition parameter survives precisely when the selected block has at least one retained port on each side of it.
+This follows by compressing the omitted ports: the effective transition between consecutive retained ports is \(\Pi+(\prod\lambda)Q_{\text{total gap}}\). Thus a transition parameter survives in the joint marginal law precisely when the selected block has at least one retained port on each side. A particular scalar block moment may nevertheless be independent of that parameter because the chosen row functions annihilate the corresponding operator component; hull containment is necessary for a derivative contribution, not sufficient.
 
 If the same row-pair parameter is shared by several links, it is present in the joint marginal law if (4.1) holds on at least one of those links; an individual block moment can still have additional algebraic cancellations. Consequently, for a partition \(\pi\), the mixed derivative of \(\prod_{B\in\pi}M_B\) along a tree \(T\) is a sum over assignments \(\phi:T\to\pi\):
 \[
