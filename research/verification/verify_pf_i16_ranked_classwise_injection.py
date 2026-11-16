@@ -133,6 +133,8 @@ def verify(n):
     left = left_classes(n)
     right = right_classes(n, paths)
     images = set()
+    right_rank = {h: {item[0]: k for k, item in enumerate(items)}
+                  for h, items in right.items()}
     mapped = 0
 
     assert set(left).issubset(set(paths))
@@ -157,7 +159,7 @@ def verify(n):
                 for j in range(n - 1)
             )
             assert recovered_ceiling == h
-            assert right[h][k][0] == code
+            assert right_rank[h][code] == k
             assert left[h][k] == left_object
 
     assert mapped == sum(map(len, left.values()))
