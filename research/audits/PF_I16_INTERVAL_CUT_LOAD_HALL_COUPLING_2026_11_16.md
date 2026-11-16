@@ -850,3 +850,34 @@ The exact left two-root forest formula and exact right two-leaf tree formula are
 ### Cut-index correction to the finite Hall regression
 
 The first version of `verify_pf_i16_downset_hall_aggregation.py` used cuts 1,...,n-1 on zero-based Prüfer vertices. The correct cuts are 0,...,n-2. This shifted the right load vector and invalidated the first reported statewise example and slack table. The verifier and all figures above have been corrected to use the same cut convention as the established interval/tree Hall verifier. The corrected statewise counterexample is (p,q)=(3,2), with demand 1 and supply 0; the corrected aggregate slack is 19. The earlier figures (36 supply, slack 28, and state (3,6)) are withdrawn.
+
+
+## All-orders local switch: a load-dominated witness for each left object (2026-11-16)
+
+There is an all-orders constructive map from each individual left object (M,\tau) to at least one admissible right tree. It does not yet give the required injection, but it establishes the cut-load part of the transport without an endpoint-state assumption.
+
+For two overlapping matching intervals I and J, let e be the edge of the current port tree whose endpoints are the endpoints of I's current path segment. The four distinct endpoints of e and J have an increasing order x_1<x_2<x_3<x_4. Because the intervals overlap, their two interval indicators have cut-load (1,2,1) on the three cuts between consecutive x_i, and zero elsewhere. The increasing path
+\[
+x_1-x_2-x_3-x_4
+\]
+has cut-load (1,1,1), hence is coordinatewise dominated by the sum of the old edge e and the new interval J.
+
+The local operation removes e and replaces it by this three-edge path. The two endpoints of J are new vertices, so deleting e splits the old tree into two components and the new path reconnects them while adding those two vertices. The result is again a tree, and its cut-load obeys
+\[
+c(T_{new})\le c(T_{old})+\mathbf1_J.
+\tag{LS}
+\]
+
+Now root the interval-overlap tree \tau at the unique matching interval containing port 1. Initially the port tree is the single edge joining the endpoints of this root interval. Maintain, for each processed interval I, a monotone path P_I in the current port tree joining its endpoints and partitioning I into consecutive edge intervals. When a child interval J of I is processed, J overlaps I, so some edge e of P_I overlaps J. Apply the local switch to e and J. For every previously maintained path using e, replace e by the monotone subpath between its endpoints in the new four-vertex path; this preserves the path invariant. The new path between the endpoints of J is monotone and supplies P_J. Thus the induction continues.
+
+After all s intervals are processed, the constructed graph is a tree on all 2s ports. Iterating (LS) gives
+\[
+\boxed{c(T)\le\sum_{I\in M}\mathbf1_I=m(M).}
+\]
+This proves that every individual left object has a nonempty right neighborhood, with the exact cut capacities required by Hall.
+
+### The missing multiplicity estimate
+
+The map just described is many-to-one. A deterministic choice of the leftmost overlapping edge and increasing path produces only 62 distinct output trees from the 608 left objects at n=8. Thus nonempty neighborhoods alone do not prove Hall. The remaining central inequality is a fiber/multiplicity problem: the family of all legal local-switch choices for a left object must be coupled to distinct port trees, or their fibers must be controlled by a fractional transport whose column sums are at most one.
+
+The three local four-vertex trees with cut-load bounded by (1,2,1) are the two middle-centered stars and the increasing path. The stars preserve the local profile exactly; the path lowers the middle cut. Allowing all three choices and all eligible parent-path edges gives a much larger candidate family, but no all-orders Hall theorem for that candidate relation has been proved. The local-switch lemma is therefore an all-orders existence result, not an injection or proof of H-D.
