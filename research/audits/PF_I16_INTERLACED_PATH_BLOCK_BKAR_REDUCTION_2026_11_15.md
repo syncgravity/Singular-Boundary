@@ -80,32 +80,40 @@ The local operator part of (5) is straightforward: differentiating one transitio
 
 It is tempting to assert ∂_TΦ=∂_TM([q]), where M([q])=E_λ∏_iG_i. This is false for the globally consistent interpolation (2), because a transition involving an omitted row can still affect the marginal law of a block whose ports straddle that transition.
 
-An exact four-port example is:
-- row A: ports 0,2, with G_A=X_0X_2;
-- row B: port 1, with G_B=1+X_1;
-- row C: port 3, with G_C=1+X_3.
+An exact five-port example is:
+- row A: ports 0,3, with G_A=X_0X_3;
+- row B: port 1, with G_B=X_1;
+- row C: ports 2,4, with G_C=X_2+X_4.
 
-Take a stationary symmetric two-state Markov chain with adjacent transition correlations
-\[
-r_k=\rho\lambda_k,\qquad k=1,2,3.
-\]
-Direct moment calculation gives
-\[
-\kappa_\lambda(G_A,G_B,G_C)
-=r_1r_3(1-r_2^2),
-\qquad
-M_\lambda(\{A,B,C\})=r_1r_2+r_1r_3.
-\]
-Consequently
-\[
-\partial_{\lambda_1}\partial_{\lambda_3}\Phi
-=\rho^2(1-\rho^2\lambda_2^2)
-\ne
-\rho^2
-=\partial_{\lambda_1}\partial_{\lambda_3}M_\lambda(\{A,B,C\})
-\]
-whenever ρλ_2≠0. The extra term comes from the partition contribution involving the A-marginal and the (B,C)-moment. This example is a regression against the invalid derivative-collapse shortcut, not a counterexample to (1).
-
+The temporal label sequence is A,B,C,A,C, so the hulls of A and C overlap and all five ports are used. Take a stationary symmetric two-state Markov chain. Under (2), let the adjacent transition correlations be
+\\[
+r_1=\\rho x,\\quad r_2=\\rho y,\\quad r_3=r_4=\\rho z,
+\\]
+where x=λ_AB, y=λ_BC, and z=λ_AC. Direct calculation gives
+\\[
+M_A=\\rho^3xyz,\\quad M_B=M_C=M_{AB}=M_{AC}=0,
+\\]
+\\[
+M_{BC}=\\rho y+\\rho^3yz^2,\\qquad
+M_{ABC}=2\\rho^2xz.
+\\]
+Hence
+\\[
+\\Phi(x,y,z)=\\kappa_\\lambda(G_A,G_B,G_C)
+=\\rho^2xz\\left(2-\\rho^2y^2-\\rho^4y^2z^2\\right).
+\\]
+For the row tree T={{A,B},{A,C}},
+\\[
+\\partial_x\\partial_z\\Phi
+=\\rho^2\\left(2-\\rho^2y^2-3\\rho^4y^2z^2\\right),
+\\qquad
+\\partial_x\\partial_z M_{ABC}=2\\rho^2.
+\\]
+Their difference is
+\\[
+-\\rho^4y^2(1+3\\rho^2z^2)\\ne0
+\\]
+whenever ρy≠0. The extra term comes from the partition contribution -M_A M_{BC}. This example is a regression against the invalid derivative-collapse shortcut, not a counterexample to (1).
 ## 5. What is established and what is not
 
 Established:
