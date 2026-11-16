@@ -33,6 +33,8 @@ on:
       - 'research/verification/verify_pf_i16_cyclic_pair_incidence_centered_edge_tree.py'
       - 'research/audits/PF_I16_CYCLIC_ARITY_THREE_CENTERED_HYPEREDGE_TREE_2026_11_15.md'
       - 'research/verification/verify_pf_i16_cyclic_arity_three_centered_hyperedge_tree.py'
+      - 'research/audits/PF_I16_SEPARATED_PATH_BLOCK_FUNCTIONAL_CUMULANT_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_separated_path_block_functional_cumulant_tree.py'
       - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
       - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
@@ -204,6 +206,8 @@ jobs:
         run: python research/verification/verify_pf_i16_cyclic_pair_incidence_centered_edge_tree.py
       - name: Verify cyclic arity-three centered-hyperedge tree
         run: python research/verification/verify_pf_i16_cyclic_arity_three_centered_hyperedge_tree.py
+      - name: Verify separated path-block functional cumulant tree
+        run: python research/verification/verify_pf_i16_separated_path_block_functional_cumulant_tree.py
       - name: Verify one-link cyclic-permutation temporal-tree bound
         run: python research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py
       - name: Verify decorated-tree transport through recursive super-row elimination
