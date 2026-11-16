@@ -96,7 +96,8 @@ and every source was checked against the 2^(s-1) distinct-output floor.
 
 Worst target trees and exact source-degree profiles:
 
-- n=4: T={(1,2),(2,3),(2,4)}; profile {(2,2)}.
+- n=4: two tied worst targets, T={(1,2),(2,3),(2,4)} and
+  T={(1,2),(2,3),(3,4)}; each has profile {(2,1),(3,1)}.
 - n=6: T={(1,2),(2,3),(3,4),(4,5),(4,6)}; profile
   {(4,1),(6,3),(9,2),(10,1),(11,1),(12,1),(15,1),(17,1),(24,1)}.
 - n=8: T={(1,2),(2,3),(3,4),(3,8),(4,5),(5,6),(5,7)}; profile
@@ -128,3 +129,21 @@ coupling is needed to prove the weighted one-link inequality.
 
 No all-orders weighted-column bound or Yang--Mills mass-gap proof is
 claimed.
+
+
+## 6. Reverse-replay checks
+
+The inverse checker was independently replayed on every generated forward
+history for n=4 and n=6. It verified the exact incidence set, the
+no-reinsertion guard, absence of the replaced edge at the inverse stage,
+the restored edge count, acyclicity, connectivity, and final recovery of
+the root interval.
+
+| Ports | Sources | Total forward histories replayed backward | Maximum histories for one source-target pair |
+|---:|---:|---:|---:|
+| 4 | 2 | 5 | 1 |
+| 6 | 22 | 278 | 2 |
+
+This validates the inverse implementation at these finite orders. The
+n=8 forward distinct-output and weighted-column enumeration was run, but
+the ancestry-history replay was not run at n=8.
