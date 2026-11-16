@@ -28,7 +28,7 @@ def overlap_graph(intervals):
     for i, (a, b) in enumerate(intervals):
         for j in range(i + 1, len(intervals)):
             c, d = intervals[j]
-            if a < c < b < d or c < a < d < b:
+            if max(a, c) < min(b, d):
                 edges.append((i, j))
     return tuple(edges)
 
@@ -97,7 +97,7 @@ def left_rooted_decomposition(n, h):
             if load(M0, n) != residual:
                 continue
             # M0 intervals are indexed in their tuple order.
-            roots = {i for i, (a, b) in enumerate(M0) if a < p < b}
+            roots = {i for i, (a, b) in enumerate(M0) if a < p}
             H0 = overlap_graph(M0)
             total += rooted_forest_count(H0, len(M0), roots)
     return total
