@@ -343,3 +343,19 @@ Thus this swap never increases any cut load and saves two units throughout the o
 This is only a local cut identity. It does **not** yet define an injection from (M, spanning tree of H_M) to a port tree: the remaining interval-overlap tree must still be encoded into a tree on the interior ports, and connected matchings need not have their two endpoint intervals overlapping as a pair when other intervals bridge them. The outstanding task is to construct that interior encoding, or a more general boundary-state recursion that handles the bridged case, while preserving injectivity and the cut budget.
 
 **Status:** (EL) and the cut-complement identity are proved. They give a new recursive representation of the right-hand supply and a concrete local edge-swap mechanism. They do not prove Q(h)>=L(h), the weighted one-link inequality, or the Yang--Mills mass gap.
+
+
+### Exact left demand on the minimal primitive path
+
+There is also a closed formula for the left mass at the minimal primitive path
+[
+h^{min}_k=\begin{cases}1&k\text{ odd},\\2&k\text{ even},\end{cases}
+\qquad 1\le k<n.
+]
+Its Dyck word is (UUD(UD)^{s-2}D). At each of the (s-1) down-steps at odd positions (3,5,\ldots,2s-1), there are exactly two currently open left endpoints to close; the final down-step has only one choice. Hence there are exactly (2^{s-1}) compatible matchings.
+
+For each such matching, exactly one matched interval crosses every odd cut and exactly two cross every even interior cut. Every edge of the interval-overlap graph is witnessed by a common crossing cut, which therefore must be even. Each of the (s-1) even interior cuts gives a distinct pair of crossing intervals: if the same pair crossed two even cuts, it would also cross the odd cut between them, where only one interval is present. Thus the overlap graph has exactly (s-1) edges. It is connected because the Dyck path is primitive, so it is a tree and has exactly one spanning tree. Therefore
+[
+oxed{L(h^{min})=2^{s-1}.}
+]
+The corresponding right-hand exact ceiling counts observed for n=4,6,8,10 are 3,9,27,81, i.e. (3^{s-1}). That right-hand formula is not asserted here as an all-orders theorem; proving it directly, or deriving it from (EL) with a closed boundary-state recursion, would establish the pointwise Hall inequality on this one extremal path.
