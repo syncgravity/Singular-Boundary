@@ -121,10 +121,6 @@ The inverse final switch is unique for fixed J. Distinct parent targets therefor
 ]
 For s>=3 this is at least s-1, the maximum number of child sources in a fixed (parent,J) fiber. Thus every fixed fiber has local Hall within its matching first-overcrowded-cut block.
 
-This proves the all-orders support inclusion
-[
-N_{R_{2s}}(X_k)\subseteq Y_k
-]
-for the constructed cut-preserving choices, and every individual source has a nonempty same-k neighborhood. It does NOT prove Hall for arbitrary unions of different fixed-(parent,J) fibers inside X_k. Those neighborhoods can still collide, and the global capacity problem remains.
+This proves the all-orders row-support statement: every source x in X_k has at least one neighbor in Y_k, and in fact the stated lower bound on its same-k neighborhood. It does not say that every edge out of X_k lands in Y_k; load domination only rules out target classes earlier than k. It does NOT prove Hall for arbitrary unions of different fixed-(parent,J) fibers inside X_k. Those neighborhoods can still collide, and the global capacity problem remains.
 
 The verifier `verify_pf_i16_first_overcrowded_cut_partition_n10.py` tests the row-support statement in the actual finite n=10 multivalued-pi relation. The verifier `verify_pf_i16_overcrowded_cut_split_transport.py` tests whether split-demand uniform transport now has column loads at most one after restricting to Y_k. These are finite diagnostics of the stronger quotient condition; they do not replace the local proof above or establish the global quotient inequality.
