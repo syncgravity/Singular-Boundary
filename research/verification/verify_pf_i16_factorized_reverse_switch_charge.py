@@ -93,7 +93,7 @@ def run(n, expected_sources):
         for P,Ts in lifts.items():
             share=demand/Fraction(len(C),1)/Fraction(len(Ts),1)
             for Tcode in Ts:
-                loads[T]+=share
+                loads[Tcode]+=share
             lift_total+=len(Ts)
             min_lifts=len(Ts) if min_lifts is None else min(min_lifts,len(Ts))
             max_lifts=max(max_lifts,len(Ts))
