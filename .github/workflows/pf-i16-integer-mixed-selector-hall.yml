@@ -1,0 +1,25 @@
+name: PF-I16 integer mixed selector Hall
+
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_integer_mixed_selector_hall.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - .github/workflows/pf-i16-integer-mixed-selector-hall.yml
+  workflow_dispatch:
+
+jobs:
+  integer-selector-hall:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify integer mixed selector Hall at n=6 and n=8
+        working-directory: research/verification
+        run: python verify_pf_i16_integer_mixed_selector_hall.py
