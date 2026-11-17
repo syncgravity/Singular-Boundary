@@ -148,6 +148,7 @@ def evaluate_single_parent(n, p, fibers, parent_target):
 
 def local_parent_census(n, fibers, parents):
     no_local_Q = []
+    allowed = {}
     for p in parents:
         choices = sorted(parent_neighborhood(p), key=repr)
         feasible = []
@@ -158,6 +159,7 @@ def local_parent_census(n, fibers, parents):
                 best = (got, total, P)
             if got == total:
                 feasible.append(P)
+        allowed[p] = feasible
         if not feasible:
             no_local_Q.append((p, len(choices), best))
     print(f"n={n} parent_fibers_without_any_locally_feasible_Q={len(no_local_Q)}",
@@ -165,7 +167,7 @@ def local_parent_census(n, fibers, parents):
     for p, count, best in no_local_Q[:5]:
         print(f"  local_obstruction parent={p} choices={count} "
               f"best={best[0]}/{best[1]} Q={best[2]}", flush=True)
-    return no_local_Q
+    return allowed
 
 def exhaustive_n6(fibers, parents):
     from itertools import product
