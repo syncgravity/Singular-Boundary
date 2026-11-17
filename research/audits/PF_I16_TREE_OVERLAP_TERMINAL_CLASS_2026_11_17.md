@@ -132,3 +132,75 @@ The n=10 matching-relative SCC computation
 [44048791345](https://github.com/syncgravity/Singular-Boundary/actions/runs/44048791345)
 has not yet completed. No all-orders Hall theorem, weighted one-link
 inequality, or Yang--Mills mass-gap proof is claimed.
+
+
+## 6. The matching-load boundary profile and its target class
+
+Every source in K_{2s} has the same matching load
+[
+h_k^*=
+\begin{cases}
+1,&k\text{ odd},\\
+2,&k\text{ even}.
+\end{cases}
+]
+This is exactly the live-interval pattern in the endpoint-sweep proof.
+
+Define the target class
+[
+Q_{2s}=\{T\in\mathcal T(K_{2s}):c_k(T)\le h_k^*\text{ for every }k\}.
+]
+Since a spanning tree crosses every cut at least once, its odd-cut loads in Q are
+exactly one.
+
+There is a second all-orders count:
+[
+|Q_{2s}|=3^{s-1}.
+]
+To see this, take the unique path P in T from port 1 to port 2s. At every odd
+cut P must use the unique crossing edge. Any edge not on P therefore cannot
+cross an odd cut; its endpoints must lie in one adjacent pair
+({2j,2j+1}). At least one vertex of each such pair lies on P, and there
+are exactly three possibilities:
+1. both vertices lie on P and are joined by their pair edge;
+2. only 2j lies on P, with 2j+1 attached as a leaf;
+3. only 2j+1 lies on P, with 2j attached as a leaf.
+
+These independent three-state choices determine P and all off-path edges,
+and every sequence of choices gives a tree in Q. Hence |Q|=3^(s-1).
+
+Because every edge of R_n is load-dominating, every neighbor of K_{2s} lies
+in Q_{2s}. Thus
+[
+N_{R_n}(K_{2s})\subseteq Q_{2s}.
+]
+The finite computations give equality at n=4,6,8: the respective target
+neighborhood sizes are 3,9,27, exactly 3^(s-1). The K-only neighborhood
+census, including n=10, is running as
+[44052220966](https://github.com/syncgravity/Singular-Boundary/actions/runs/44052220966).
+
+## 7. Hall on the terminal class is already an all-orders consequence
+
+For any x in K_{2s}, choose any non-root leaf interval J of its overlap tree.
+Deleting J leaves a parent source in K_{2s-2}. The canonical parent
+neighborhood has at least 2^(s-2) distinct targets by the guarded-switch
+witness lemma. For each such parent target, insertion of J has at least two
+guarded local lifts; the inverse final switch is unique for fixed J, so lifts
+of distinct parent targets are disjoint. All these lifts belong to R_n(x).
+Therefore
+[
+|R_n(x)|\ge 2\cdot2^{s-2}=2^{s-1}=|K_{2s}|.
+]
+For every nonempty A subset K_{2s}, choose x in A. Then
+[
+|N_{R_n}(A)|\ge|R_n(x)|\ge|K_{2s}|\ge|A|.
+]
+So Hall holds on the entire terminal class K_{2s} for every s, without a
+matching computation.
+
+This is an important reduction: the unresolved part is entirely the
+complement. The separable finite matching test asks for a matching of
+(X_{2s}\setminus K_{2s}) into (Y_{2s}\setminus Q_{2s}). It succeeds at
+n=4,6,8, with complement sizes 0,18,600 respectively. Proving this
+complement Hall statement (or a suitable recursive replacement for it) is
+now the central remaining combinatorial task.
