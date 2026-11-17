@@ -51,7 +51,14 @@ def run(n=6):
     for m in sorted(min_sets, key=lambda z: (z.bit_count(), z)):
         ids = [i for i in range(N) if m & (1 << i)]
         fibers = Counter(metadata[i]["parent"] for i in ids)
-        print(f"    minimum_set_sources={ids}, size={len(ids)}, parent_fiber_sizes={sorted(fibers.values())}")
+        neigh_mask = unions[m]
+        neigh_ids = [j for j in range(len(targets)) if neigh_mask & (1 << j)]
+        neigh_trees = [targets[j] for j in neigh_ids]
+        print(f"    minimum_set_sources={ids}, size={len(ids)}, "
+              f"neighborhood_size={len(neigh_trees)}, "
+              f"parent_fiber_sizes={sorted(fibers.values())}")
+        for tree in neigh_trees:
+            print(f"      critical_target={tree}")
     print(f"  zero_slack_subsets={len(zero_sets)}, one_slack_subsets={len(one_sets)}")
     for size in sorted(by_size):
         c = by_size[size]
