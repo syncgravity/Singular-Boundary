@@ -55,6 +55,8 @@ def run(n, expected_sources):
     assert source_count==expected_sources,(n,source_count,expected_sources)
 
     loads=defaultdict(Fraction)
+    incidence_bounds=defaultdict(Fraction)
+    contributions=defaultdict(list)
     total_demand=Fraction(0)
     fiber_count=0
     parent_target_total=0
@@ -94,6 +96,8 @@ def run(n, expected_sources):
             share=demand/Fraction(len(C),1)/Fraction(len(Ts),1)
             for Tcode in Ts:
                 loads[Tcode]+=share
+                incidence_bounds[Tcode]+=share*len(Ts)
+                contributions[Tcode].append((J,P,demand,len(C),len(Ts),share))
             lift_total+=len(Ts)
             min_lifts=len(Ts) if min_lifts is None else min(min_lifts,len(Ts))
             max_lifts=max(max_lifts,len(Ts))
@@ -115,6 +119,10 @@ def run(n, expected_sources):
     print(f"  max_factorized_target_load={max_load} ({float(max_load):.12f})")
     print(f"  overloaded_targets={len(overloaded)}")
     print(f"  top_10_target_loads={top}")
+    if n==6 and top:
+        worst=top[0][0]
+        print(f"  n6_worst_target_contributions={contributions[worst]}")
+    print(f"  max_parent_incidence_bound={max(incidence_bounds.values(),default=Fraction(0))}")
     print("RESULT: factorized complete-parent-neighborhood charge saturates all demand."
           if max_load<=1 else
           "RESULT: this factorized charge overloads targets; this does NOT imply Hall failure.")
