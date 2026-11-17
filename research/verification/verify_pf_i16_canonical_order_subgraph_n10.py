@@ -22,19 +22,19 @@ def canonical_order(intervals, tau, leaf):
     for a,b in tau:
         adj[a].append(b); adj[b].append(a)
     order=[]
-    def dfs(u,p):
+    parent={root:None}
+    def dfs(u):
         for v in sorted(adj[u], key=lambda z: intervals[z]):
-            if v == p or v == leaf:
+            if v in parent or v == leaf:
                 continue
+            parent[v]=u
             order.append(v)
-            dfs(v,u)
-    dfs(root,-1)
+            dfs(v)
+    dfs(root)
+    parent[leaf]=next(p for p in adj[leaf] if p in parent)
     order.append(leaf)
     assert len(order)==len(intervals)-1
-    pos={v:i for i,v in enumerate(order)}
-    assert all((v==root or pos.get(v,10**9)>pos.get(parent, -1))
-               for v,parent in [])
-    return order, root, adj
+    return order, root, adj, parent
 
 
 def local_choices(tree_edges, J, parent_interval):
@@ -66,15 +66,15 @@ def local_choices(tree_edges, J, parent_interval):
 
 def outputs_for_source(intervals,tau):
     leaf=canonical_leaf(intervals,tau)
-    order,root,adj=canonical_order(intervals,tau,leaf)
+    order,root,adj,parent=canonical_order(intervals,tau,leaf)
     tree={tuple(sorted(intervals[root]))}
     states={frozenset(tree)}
     for child in order:
         J=intervals[child]
-        parent=next(p for p in adj[child] if p in order[:order.index(child)])
+        parent_interval=intervals[parent[child]]
         next_states=set()
         for state in states:
-            next_states.update(local_choices(state,J,intervals[parent]))
+            next_states.update(local_choices(state,J,parent_interval))
         states=next_states
     return states
 
