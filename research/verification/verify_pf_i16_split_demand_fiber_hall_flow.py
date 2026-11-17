@@ -161,3 +161,87 @@ if __name__=="__main__":
     run(6,22)
     run(8,608)
     run(10,31744)
+
+
+def terminal_target_access_diagnostic(n, expected_sources):
+    """Test whether every nonterminal source has a Q-neighbor in R_n.
+
+    Q consists of trees with exactly one edge crossing every odd cut. The
+    check uses all non-root leaf fibers and the same parent-canonical inverse
+    filter as the split-demand Hall verifier. A failure is diagnostic only;
+    it does not affect the quotient-flow result above.
+    """
+    all_sources = list(sources(n))
+    assert len(all_sources) == expected_sources
+    fibers = defaultdict(list)
+    source_cut = []
+    for idx, (iv, tau) in enumerate(all_sources):
+        k = next((k for k in range(1, n, 2)
+                  if sum(a <= k < b for a, b in iv) >= 3), None)
+        source_cut.append(k)
+        if k is None:
+            continue
+        for leaf in nonroot_leaf_indices(iv, tau):
+            J = iv[leaf]
+            p = parent_data(iv, tau, leaf)
+            fibers[(p, J, k)].append((idx, iv, tau, leaf))
+
+    parent_cache = {}
+    covered = set()
+    fibers_tested = 0
+    raw_q_incidences = 0
+    retained_q_incidences = 0
+    q_targets = set()
+    fibers_with_q = 0
+
+    for (p, J, k), children in fibers.items():
+        if all(idx in covered for idx, *_ in children):
+            continue
+        if p not in parent_cache:
+            pi, pt = p
+            if len(pi) == 1:
+                parent_cache[p] = {((1, 2),)}
+            else:
+                pl = canonical_leaf(pi, pt)
+                parent_cache[p] = candidate_outputs(pi, pt, forced_last=pl)
+        parent_targets = parent_cache[p]
+        iv, tau, leaf = children[0][1:]
+        raw = candidate_outputs(iv, tau, forced_last=leaf)
+        for civ, ctau, cleaf in [child[1:] for child in children[1:]]:
+            assert candidate_outputs(civ, ctau, forced_last=cleaf) == raw
+        fibers_tested += 1
+        found = False
+        for T in raw:
+            if not all(sum(a <= k0 < b for a, b in T) == 1
+                       for k0 in range(1, n, 2)):
+                continue
+            raw_q_incidences += 1
+            inverse = inverse_last_switch(T, J, n)
+            assert len(inverse) == 1
+            P = compress_tree(next(iter(inverse)), set(J), n)
+            if P in parent_targets:
+                retained_q_incidences += 1
+                q_targets.add(T)
+                found = True
+        if found:
+            fibers_with_q += 1
+            covered.update(idx for idx, *_ in children)
+
+    uncovered = [i for i, k in enumerate(source_cut)
+                 if k is not None and i not in covered]
+    by_cut = Counter(source_cut[i] for i in uncovered)
+    total_by_cut = Counter(k for k in source_cut if k is not None)
+    print(f"TERMINAL_Q_ACCESS n={n} complement={sum(total_by_cut.values())}")
+    print(f"  complement_by_first_cut={sorted(total_by_cut.items())}")
+    print(f"  fibers_tested={fibers_tested} fibers_with_Q={fibers_with_q}")
+    print(f"  raw_Q_incidences={raw_q_incidences} retained_parent_canonical_Q_incidences={retained_q_incidences}")
+    print(f"  distinct_retained_Q_targets={len(q_targets)}")
+    print(f"  uncovered_sources={len(uncovered)} uncovered_by_first_cut={sorted(by_cut.items())}")
+    print("  CONJECTURE_STATUS=" + ("PASSES_FINITE_TEST" if not uncovered else "FAILS_FINITE_TEST"))
+    if uncovered:
+        print(f"  first_uncovered_source={all_sources[uncovered[0]]}")
+
+
+    terminal_target_access_diagnostic(6,22)
+    terminal_target_access_diagnostic(8,608)
+    terminal_target_access_diagnostic(10,31744)
