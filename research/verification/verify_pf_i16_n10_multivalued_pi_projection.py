@@ -51,24 +51,47 @@ def run():
             print(f"  prepared_child_sources={idx+1} distinct_pi_parents={len(parent_targets)}", flush=True)
 
     rows = []
+    witness_by_source = []
     total = retained_incidence_pairs = 0
+    full_incidence_total = 0
+    strict_source_restrictions = 0
+    full_degree_min = None
+    full_degree_max = 0
     for idx, (intervals, tau, leaves) in enumerate(child_data):
         retained = set()
+        witnesses = {}
+        all_leaf_outputs = set()
         for ell, parent in parent_set_by_child_leaf[idx]:
             J = intervals[ell]
             allowed = parent_targets[parent]
             outputs = candidate_outputs(intervals, tau, forced_last=ell)
             total += len(outputs)
+            all_leaf_outputs.update(outputs)
             for T in outputs:
                 inv = inverse_last_switch(T, J, 10)
                 assert len(inv) == 1, (idx, ell, T, inv)
                 P = compress_tree(next(iter(inv)), set(J), 10)
                 if P in allowed:
-                    retained.add(encode_tree(T))
+                    key = encode_tree(T)
+                    retained.add(key)
+                    witnesses.setdefault(key, (ell, parent, P))
+        full_outputs = candidate_outputs(intervals, tau)
+        assert all_leaf_outputs == full_outputs, (
+            "union over all possible final leaves does not recover all-orders outputs",
+            idx, len(all_leaf_outputs), len(full_outputs),
+        )
+        full_incidence_total += len(full_outputs)
+        full_degree_min = (len(full_outputs) if full_degree_min is None
+                           else min(full_degree_min, len(full_outputs)))
+        full_degree_max = max(full_degree_max, len(full_outputs))
+        if retained != {encode_tree(T) for T in full_outputs}:
+            strict_source_restrictions += 1
+        assert retained <= {encode_tree(T) for T in full_outputs}
         retained_incidence_pairs += len(retained)
         rows.append(retained)
+        witness_by_source.append(witnesses)
         if (idx + 1) % 2000 == 0:
-            print(f"  child_sources={idx+1} raw_leaf_incidences={total} retained_unique={retained_incidence_pairs}", flush=True)
+            print(f"  child_sources={idx+1} raw_leaf_incidences={total} retained_unique={retained_incidence_pairs} full_edges={full_incidence_total}", flush=True)
 
     ml, mr, right = hopcroft_karp(rows)
     matching = sum(v >= 0 for v in ml)
@@ -99,13 +122,32 @@ def run():
     for u in reachable_left:
         witness_fibers.update(parent for _, parent in parent_set_by_child_leaf[u])
 
+    # Record the actual saturating assignment's parent projection. A matched
+    # child target has at least one explicit (leaf,parent,projected-tree)
+    # witness by construction; choose the first deterministic witness.
+    assigned_parent_pairs = Counter()
+    assigned_parent_sources = Counter()
+    assigned_leaf_choices = Counter()
+    for u, right_j in enumerate(ml):
+        assert right_j >= 0
+        target = right[right_j]
+        ell, parent, projected = witness_by_source[u][target]
+        assert projected in parent_targets[parent]
+        assigned_parent_pairs[(parent, projected)] += 1
+        assigned_parent_sources[parent] += 1
+        assigned_leaf_choices[ell] += 1
+
     print("n10_child_graph_with_multivalued_pi_parent_projection")
     print(f"  child_sources={len(rows)} distinct_pi_parent_sources={len(parent_targets)}")
     print(f"  nonroot_leaf_count_range=[{min(leaf_counts)},{max(leaf_counts)}]")
     print(f"  pi_fiber_size_range=[{min(map(len, fibers.values()))},{max(map(len, fibers.values()))}]")
     print(f"  pi_parent_target_count_range=[{min(map(len, parent_targets.values()))},{max(map(len, parent_targets.values()))}]")
     print(f"  raw_child_leaf_incidences={total}")
+    print(f"  all_orders_unique_child_source_target_incidences={full_incidence_total}")
+    print(f"  all_orders_source_degree_range=[{full_degree_min},{full_degree_max}]")
+    print(f"  sources_strictly_restricted_vs_all_orders={strict_source_restrictions}")
     print(f"  retained_unique_child_source_target_incidences={retained_incidence_pairs}")
+    print(f"  retained_fraction_of_all_orders_edges={retained_incidence_pairs/full_incidence_total:.8f}")
     print(f"  retained_degree_range=[{min(map(len, rows))},{max(map(len, rows))}]")
     print(f"  retained_degree_zero_sources={sum(not row for row in rows)}")
     print(f"  retained_target_trees={len(right)}")
@@ -114,6 +156,13 @@ def run():
     print(f"  alternating_hall_witness_sources={len(reachable_left)}")
     print(f"  alternating_hall_witness_neighbors={len(hall_neighbors)}")
     print(f"  alternating_hall_witness_deficiency={deficiency}")
+    print(f"  matched_parent_source_count={len(assigned_parent_sources)}")
+    print(f"  matched_parent_fiber_source_count_range=[{min(assigned_parent_sources.values())},{max(assigned_parent_sources.values())}]")
+    print(f"  matched_parent_source_histogram={dict(sorted(Counter(assigned_parent_sources.values()).items()))}")
+    print(f"  assigned_parent_source_target_pairs={len(assigned_parent_pairs)}")
+    print(f"  assigned_parent_pair_multiplicity_range=[{min(assigned_parent_pairs.values())},{max(assigned_parent_pairs.values())}]")
+    print(f"  assigned_parent_pair_multiplicity_histogram={dict(sorted(Counter(assigned_parent_pairs.values()).items()))}")
+    print(f"  assigned_child_leaf_index_histogram={dict(sorted(assigned_leaf_choices.items()))}")
     print("RESULT: multivalued pi-parent relation is Hall-saturating." if matching == len(rows)
           else "RESULT: multivalued pi-parent relation is not Hall-saturating.")
 
