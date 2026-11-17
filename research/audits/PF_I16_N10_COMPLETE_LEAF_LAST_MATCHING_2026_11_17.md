@@ -27,17 +27,37 @@ Verifier:
 Workflow:
 `.github/workflows/pf-i16-full-leaf-last-graph-n10.yml`
 
-## Matching-relative expansion reduction
+## Matching-relative expansion: exact n=10 result
 
 Fix the computed saturating matching mu:X->Y and let Y_free be the unmatched targets. For each source x define its free-target neighborhood F_x and the directed graph D on X by x->y iff x is adjacent to mu(y), x != y.
 
 For every A subset X, exactly:
 
-  |N(A)| - |A| = |out_D(A) \ A| + |union_{x in A} F_x|.
+  |N(A)| - |A| = |out_D(A) \\ A| + |union_{x in A} F_x|.       (MR)
 
-Thus the desired three-unit expansion follows immediately if every source has at least three free-target neighbors. Otherwise only subsets of the low-free-degree sources need further attention: any A containing a source with at least three free neighbors already has slack at least three.
+The corrected exact verifier computes each F_x by removing the one matched target mu(x) from the complete row N(x). It finds:
+- free-target degree range: 15 to 2,676;
+- exactly 35 sources attain the minimum 15;
+- no source has free-target degree below 15;
+- 64,120 unmatched right targets.
 
-The verifier now reports the free-target degree histogram under the fixed matching. This is the next diagnostic; the earlier matching result alone does not prove positive expansion.
+Consequently, for every nonempty A choose any x in A. Then
+|union_{z in A} F_z| >= |F_x| >= 15,
+and |out_D(A) \\ A| >= 0. By (MR),
+
+  |N(A)| - |A| >= 15  for every nonempty A subset X.
+
+This is sharp: a source of minimum row degree 16 has singleton slack
+|N({x})|-1=15. Therefore the exact global minimum Hall slack is
+
+  min_{empty != A subset X} (|N(A)|-|A|) = 15.
+
+In particular the complete n=10 leaf-last relation has Hall expansion by 15, stronger than the three-unit expansion previously targeted. This conclusion requires no subset enumeration: it follows from the fixed saturating matching and the verified per-source free-neighbor lower bound.
+
+Corrected diagnostic CI:
+https://github.com/syncgravity/Singular-Boundary/actions/runs/43997960767
+
+The verifier now asserts min_free >= 3 and min_free == min_source - 1, and prints the exact global Hall-slack lower bound. The assertion turns the deduction into a regression-checked certificate.
 
 ## Scope
 
@@ -47,7 +67,13 @@ Established:
 - a left-saturating matching for all 31,744 sources.
 
 Not yet established:
-- Hall expansion by three for all source subsets at n=10;
+Established:
+- complete n=10 leaf-last graph construction;
+- exact source and target counts and incidence count;
+- a left-saturating matching for all 31,744 sources;
+- exact Hall expansion constant 15 for every nonempty source subset at n=10.
+
+Not established:
 - a uniform all-orders expansion theorem;
 - the weighted one-link inequality at all orders;
 - the Yang-Mills mass gap.
