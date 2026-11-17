@@ -102,9 +102,27 @@ is the unique sink SCC.
 This decomposition test is stronger than merely observing that an arbitrary
 maximum matching happens to have K as its sink. It tests whether the terminal
 class can be separated first and the remaining matching built outside its
-entire neighborhood. Its workflow is
-[44051839819](https://github.com/syncgravity/Singular-Boundary/actions/runs/44051839819)
-and is still queued/running at the time of this note.
+entire neighborhood. Its exact successful workflow is
+[44051839819](https://github.com/syncgravity/Singular-Boundary/actions/runs/44051839819).
+It passes at n=4,6,8:
+
+| n | all sources | |K_n| | all targets | |N(K_n)| | complement matching |
+|---:|---:|---:|---:|---:|---:|
+| 4 | 2 | 2 | 3 | 3 | 0/0 |
+| 6 | 22 | 4 | 43 | 9 | 18/18 |
+| 8 | 608 | 8 | 1,493 | 27 | 600/600 |
+
+At each order, K_n itself has a saturating matching into N(K_n), and the
+complementary sources have a saturating matching using only targets outside
+N(K_n). Their union is therefore a full source-saturating matching with no
+exchange arc from K_n to an outside source. The computed full exchange
+digraph has respectively 1, 2, and 4 SCCs; its unique sink is exactly K_n,
+with 1, 5, and 19 free target neighbors. K_n is strongly connected at all
+three orders.
+
+This is a stronger finite result than merely observing that a maximum
+matching happens to have K_n as its sink: it verifies the *separable
+matching* construction directly.
 
 ## 5. Proof boundary
 
