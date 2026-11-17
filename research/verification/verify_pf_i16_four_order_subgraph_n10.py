@@ -43,8 +43,11 @@ def order_variants(intervals,tau,leaf):
             return out
         variants.append(dfs_order())
         nonleaf=[v for v in parent if v not in (root,leaf)]
-        variants.append(sorted(nonleaf,key=lambda v:(depth[v],intervals[v]),
-                               reverse=reverse)+[leaf])
+        variants.append(sorted(
+            nonleaf,
+            key=lambda v:(depth[v], intervals[v] if not reverse
+                          else tuple(-x for x in intervals[v]))
+        )+[leaf])
     unique=[]
     seen=set()
     for order in variants:
