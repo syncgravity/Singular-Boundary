@@ -211,3 +211,35 @@ The selected assignment can be viewed as a nonuniform integral allocation to par
 This explains how the finite matching avoids the overloaded columns of the uniform split-demand transport: it chooses the leaf and child target jointly, instead of distributing every source uniformly over all its leaves. Parent projection is emphatically not injective; repeated parent pairs are allowed and are resolved by distinct child lifts.
 
 This is a finite certificate, not an all-orders construction. The matching algorithm still solves the full finite child graph. The all-orders problem is to prove a structural nonuniform allocation/augmenting theorem that chooses one leaf and one lift per source while keeping child targets distinct, for every even order. See `PF_I16_N10_MULTIVALUED_PI_MATCHING_CERTIFICATE_2026_11_17.md` for the certificate audit and exact counts.
+
+
+## New reduction: first-overcrowded-cut blocks and all-orders local Hall
+
+The complement of K_{2s} partitions by the first odd cut k with matching load m_k>=3. Write X_k for this source block. Port trees partition similarly into Q_{2s} (all odd cut loads equal one) and Y_k (first odd cut with c_k>=2).
+
+The exact parity argument is:
+- m_k is odd at odd cuts and even at even cuts;
+- connectedness gives m_k>=1 at every cut;
+- if no odd cut has load at least three, then all odd loads are one and all even loads are two, which is exactly K_{2s}.
+
+A new all-orders theorem is recorded in
+`research/audits/PF_I16_CUT_CLASS_LOCAL_HALL_THEOREM_2026_11_17.md`:
+
+For every source x in X_k,
+[
+|N_{R_{2s}}(x)cap Y_k|ge 2^{s-2}.
+]
+The proof is by induction on s and a cut-preserving final-switch lemma. If the deleted leaf interval J is on one side of k, the parent source remains in the corresponding first-overcrowded-cut class, and every admissible final switch preserves c_k. If J crosses k, a guarded local switch can always increase the crossing count from at least one to at least two. Distinct parent targets have disjoint lifts for fixed J.
+
+Every fixed (parent,J) fiber has at most s-1 child sources and a common target row, so its restricted graph into Y_k satisfies Hall individually:
+[
+|N(F(p,J))cap Y_k|ge 2^{s-2}ge s-1ge |F(p,J)|.
+]
+
+This does not yet prove Hall for unions of different fibers inside X_k. Their target neighborhoods can overlap. The next sufficient test is the split-demand quotient transport restricted to each first-overcrowded-cut block. Its exact finite diagnostic is
+`research/verification/verify_pf_i16_overcrowded_cut_split_transport.py`.
+The n=12 source-profile census is
+[44070581000](https://github.com/syncgravity/Singular-Boundary/actions/runs/44070581000); it found 2,692,064 connected sources, of which 32 are in K_12, and first-overcrowded-cut counts 2,628,576 (k=3), 61,056 (k=5), 2,256 (k=7), and 144 (k=9).
+
+The finite n=10 same-cut row-support and split-demand transport diagnostics are running in
+[44073281842](https://github.com/syncgravity/Singular-Boundary/actions/runs/44073281842). These computations test the quotient criterion; they do not replace the all-orders local theorem and cannot establish the global quotient inequality by themselves.
