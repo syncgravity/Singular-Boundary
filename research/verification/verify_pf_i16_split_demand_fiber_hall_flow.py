@@ -74,15 +74,16 @@ def run(n, expected_sources):
     for d in range(1,s):
         scale=lcm(scale,d)
     fibers=defaultdict(list)
-    for iv,tau in sources(n):
+    all_sources=list(sources(n))
+    for iv,tau in all_sources:
         leaves=nonroot_leaf_indices(iv,tau)
         for leaf in leaves:
             J=iv[leaf]
             p=parent_data(iv,tau,leaf)
             fibers[(p,J)].append((iv,tau,leaf))
     assert sum(len(v) for v in fibers.values())==sum(
-        len(nonroot_leaf_indices(iv,tau)) for iv,tau in sources(n))
-    source_count=len(sources(n))
+        len(nonroot_leaf_indices(iv,tau)) for iv,tau in all_sources)
+    source_count=len(all_sources)
     assert source_count==expected_sources,(n,source_count,expected_sources)
 
     rows=[]
