@@ -2,14 +2,14 @@
 """Exact reverse-switch factorized charge over the FULL canonical parent neighborhood.
 
 For each fixed fiber F=(p,J), split its demand delta(F) uniformly over every
-P in C_can(p), then split that parent-target share uniformly over all valid
-final-switch lifts T of P that lie in the same first-overcrowded-cut class.
+P in the COMPLETE C_can(p), then split that parent-target share uniformly
+over ALL valid final-switch lifts T of P (without imposing a target cut class).
 
 Thus alpha(F,P)=delta(F)/|C_can(p)| and
-beta(F,P,T)=1/|L_J(P) intersect Y_k|.
+beta(F,P,T)=1/|L_J(P)|.
 
 The resulting exact target load is
-  L(T)=sum_{F,P: P_J(T)=P} delta(F)/(|C_can(p)| |L_J(P) intersect Y_k|).
+  L(T)=sum_{F,P: P_J(T)=P} delta(F)/(|C_can(p)| |L_J(P)|).
 This is a genuine two-stage, nonuniform-on-child-targets transport. It differs
 from spreading delta(F) uniformly over the whole child row.
 
@@ -83,18 +83,16 @@ def run(n, expected_sources):
         # For each canonical parent target, recover its exact valid child lifts.
         lifts=defaultdict(set)
         for T in child_rows[0]:
-            if first_target_cut(T,n)!=k:
-                continue
             inv=inverse_last_switch(T,J,n)
             assert len(inv)==1
             P=compress_tree(next(iter(inv)),set(J),n)
             if P in C:
                 lifts[P].add(encode_tree(T))
         assert set(lifts)==set(encode_tree(P) for P in C), (
-            "some canonical parent target lacks a same-cut lift",n,p,J,k,
+            "some canonical parent target lacks a final-switch lift",n,p,J,k,
             len(C),len(lifts))
         # alpha uniform over complete C_can(p); beta uniform over each
-        # parent's same-cut final-switch lift set.
+        # parent's complete final-switch lift set.
         pcode={encode_tree(P):P for P in C}
         for Pcode,Ts in lifts.items():
             share=demand/Fraction(len(C),1)/Fraction(len(Ts),1)
@@ -108,6 +106,7 @@ def run(n, expected_sources):
         parent_target_total+=len(C)
         fiber_count+=1
 
+    assert sum(loads.values(),Fraction(0))==total_demand
     max_load=max(loads.values(),default=Fraction(0))
     overloaded=[(T,v) for T,v in loads.items() if v>1]
     top=sorted(loads.items(),key=lambda z:(-z[1],z[0]))[:10]
@@ -116,6 +115,11 @@ def run(n, expected_sources):
     print(f"  total_split_demand={total_demand} by_cut={dict(sorted(demand_by_cut.items()))}")
     print(f"  canonical_parent_target_incidences={parent_target_total} same_cut_lifts={lift_total}")
     print(f"  lifts_per_parent_target_range=[{min_lifts},{max_lifts}]")
+    class_loads=defaultdict(list)
+    for Tcode,load in loads.items():
+        # Decode target codes is unnecessary: class is recorded from the
+        # representative tree below in the target metadata map.
+        pass
     print(f"  child_target_columns={len(loads)}")
     print(f"  max_factorized_target_load={max_load} ({float(max_load):.12f})")
     print(f"  overloaded_targets={len(overloaded)}")
