@@ -114,6 +114,59 @@ def evaluate_Q(n, fibers, Q):
     return got, total, rows, witness
 
 
+
+def evaluate_single_parent(n, p, fibers, parent_target):
+    rows = []
+    target_ids = {}
+    for (pp, J), children in sorted(fibers.items(), key=lambda z: repr(z[0])):
+        if pp != p:
+            continue
+        P = expand_parent_tree(parent_target, J, n)
+        lifts = one_switch_lifts(P, J)
+        demand = sum((Fraction(1, len(nonroot_leaves(iv, tau)))
+                      for iv, tau in children), Fraction(0))
+        quota = ceil_fraction(demand)
+        ids = []
+        for T in lifts:
+            if T not in target_ids:
+                target_ids[T] = len(target_ids)
+            ids.append(target_ids[T])
+        rows.append((demand, quota, sorted(set(ids)), J))
+    F, T = len(rows), len(target_ids)
+    S = 0; r0 = 1; t0 = r0 + F; sink = t0 + T
+    net = Dinic(sink + 1)
+    total = 0
+    for i, (_, quota, neigh, _) in enumerate(rows):
+        net.add(S, r0+i, quota); total += quota
+        for j in neigh:
+            net.add(r0+i, t0+j, 1)
+    for j in range(T):
+        net.add(t0+j, sink, 1)
+    got, _ = net.maxflow(S, sink, total)
+    return got, total, rows
+
+
+def local_parent_census(n, fibers, parents):
+    no_local_Q = []
+    for p in parents:
+        choices = sorted(parent_neighborhood(p), key=repr)
+        feasible = []
+        best = (0, 0, None)
+        for P in choices:
+            got, total, rows = evaluate_single_parent(n, p, fibers, P)
+            if got > best[0]:
+                best = (got, total, P)
+            if got == total:
+                feasible.append(P)
+        if not feasible:
+            no_local_Q.append((p, len(choices), best))
+    print(f"n={n} parent_fibers_without_any_locally_feasible_Q={len(no_local_Q)}",
+          flush=True)
+    for p, count, best in no_local_Q[:5]:
+        print(f"  local_obstruction parent={p} choices={count} "
+              f"best={best[0]}/{best[1]} Q={best[2]}", flush=True)
+    return no_local_Q
+
 def exhaustive_n6(fibers, parents):
     from itertools import product
     neighborhoods = {p: sorted(parent_neighborhood(p), key=repr)
@@ -170,6 +223,7 @@ def main():
     exhaustive_n6(f6, p6)
     f8, p8 = build_fibers(8)
     print(f"n=8 parent_sources={len(p8)} fibers={len(f8)}", flush=True)
+    local_parent_census(8, f8, p8)
     randomized_n8(f8, p8)
 
 
