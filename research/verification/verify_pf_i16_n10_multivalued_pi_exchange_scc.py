@@ -81,7 +81,18 @@ def main():
     assert len(source_list) == len(rows)
     tree_overlap_class = [len(overlap_edges(intervals)) == 4
                           for intervals, tau in source_list]
-    print(f"  tree_overlap_class_size={sum(tree_overlap_class)}")
+    K_indices = [i for i, flag in enumerate(tree_overlap_class) if flag]
+    K_targets = set().union(*(rows[i] for i in K_indices))
+    complement_indices = [i for i, flag in enumerate(tree_overlap_class) if not flag]
+    complement_rows = [rows[i] - K_targets for i in complement_indices]
+    complement_ml, complement_mr, complement_right = hopcroft_karp(complement_rows)
+    complement_matching = sum(v >= 0 for v in complement_ml)
+    print(f"  tree_overlap_class_size={len(K_indices)}")
+    print(f"  tree_overlap_target_union={len(K_targets)}")
+    print(f"  complement_sources={len(complement_indices)} "
+          f"complement_targets_outside_K={len(set(right)-K_targets)}")
+    print(f"  complement_avoiding_K_targets_matching="
+          f"{complement_matching}/{len(complement_indices)}")
     census = sink_scc_census(rows, ml, mr, right, tree_overlap_class)
     zero_free = [item for item in census if item[1] == 0]
     print(f"  zero_free_sink_scc_count={len(zero_free)}")
