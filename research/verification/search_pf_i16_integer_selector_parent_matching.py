@@ -269,6 +269,7 @@ def main():
         print(f"n=8 exact_Hall_witness_left={len(z_left)} right={len(z_right)} "
               f"deficiency={len(z_left)-len(z_right)}", flush=True)
         print(f"n=8 deficient_parent_sources={sorted(z_left, key=repr)}", flush=True)
+        print(f"n=8 deficient_parent_targets={sorted(z_right, key=repr)}", flush=True)
         print("n=8 NO_INJECTIVE_Q_CAN_SATISFY_EVEN_SINGLE_PARENT_ROW_HALL", flush=True)
         return
     randomized_n8(f8, p8, allowed=allowed)
