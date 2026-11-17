@@ -7,7 +7,7 @@ is equivalent to H_M being a tree, and tau is then forced.
 
 The test splits the bipartite graph into:
   K_n -> N(K_n), and
-  X_n\K_n -> Y_n\N(K_n).
+  the complement of K_n -> the complement of N(K_n).
 If both pieces have saturating matchings, their union makes K_n closed in
 the matching-relative exchange digraph. We then check that K_n is strongly
 connected and that the full exchange digraph has no other sink SCC.
