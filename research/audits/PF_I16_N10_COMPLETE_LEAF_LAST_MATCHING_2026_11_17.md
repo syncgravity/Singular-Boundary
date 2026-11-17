@@ -27,53 +27,35 @@ Verifier:
 Workflow:
 `.github/workflows/pf-i16-full-leaf-last-graph-n10.yml`
 
-## Matching-relative expansion: exact n=10 result
+## Matching-relative expansion reduction and diagnostic correction
 
-Fix the computed saturating matching mu:X->Y and let Y_free be the unmatched targets. For each source x define its free-target neighborhood F_x and the directed graph D on X by x->y iff x is adjacent to mu(y), x != y.
+Fix the computed saturating matching mu:X->Y and let Y_free be the targets unmatched by every left source. For each source x define its genuinely free-target neighborhood F_x=N(x) intersect Y_free and the directed graph D on X by x->y iff x is adjacent to mu(y), x != y.
 
 For every A subset X, exactly:
 
   |N(A)| - |A| = |out_D(A) \\ A| + |union_{x in A} F_x|.       (MR)
 
-The corrected exact verifier computes each F_x by removing the one matched target mu(x) from the complete row N(x). It finds:
-- free-target degree range: 15 to 2,676;
-- exactly 35 sources attain the minimum 15;
-- no source has free-target degree below 15;
-- 64,120 unmatched right targets.
+The first corrected diagnostic run reported the range 15 to 2,676 by removing only the source's own matched target from each row. That is not the free-target degree: other neighbors in that row may be matched to other sources. Consequently the apparent lower bound 15 and the claimed exact Hall slack 15 were invalid and are withdrawn.
 
-Consequently, for every nonempty A choose any x in A. Then
-|union_{z in A} F_z| >= |F_x| >= 15,
-and |out_D(A) \\ A| >= 0. By (MR),
+The verifier has now been corrected to form the global set
+Y_free={right[j] : mr[j]<0}
+from the right-to-left matching array, then count only row neighbors belonging to Y_free. The complete n=10 saturating matching and graph counts remain valid. The true free-target degree census is pending a rerun of the full exact enumeration.
 
-  |N(A)| - |A| >= 15  for every nonempty A subset X.
+Corrected verifier:
+`research/verification/verify_pf_i16_full_leaf_last_graph_n10.py`
 
-This is sharp: a source of minimum row degree 16 has singleton slack
-|N({x})|-1=15. Therefore the exact global minimum Hall slack is
-
-  min_{empty != A subset X} (|N(A)|-|A|) = 15.
-
-In particular the complete n=10 leaf-last relation has Hall expansion by 15, stronger than the three-unit expansion previously targeted. This conclusion requires no subset enumeration: it follows from the fixed saturating matching and the verified per-source free-neighbor lower bound.
-
-Corrected diagnostic CI:
-https://github.com/syncgravity/Singular-Boundary/actions/runs/43997960767
-
-The verifier now asserts min_free >= 3 and min_free == min_source - 1, and prints the exact global Hall-slack lower bound. The assertion turns the deduction into a regression-checked certificate.
+The matching-relative identity (MR) remains valid. If the corrected census eventually shows |F_x|>=r for every source, it will imply expansion by r for every nonempty source set. No such bound is asserted until the true globally unmatched target neighborhoods are verified.
 
 ## Scope
 
 Established:
 - complete n=10 leaf-last graph construction;
-- exact source and target counts;
-- a left-saturating matching for all 31,744 sources.
-
-Not yet established:
-Established:
-- complete n=10 leaf-last graph construction;
 - exact source and target counts and incidence count;
 - a left-saturating matching for all 31,744 sources;
-- exact Hall expansion constant 15 for every nonempty source subset at n=10.
+- the exact matching-relative Hall-slack identity (MR).
 
 Not established:
+- positive Hall expansion at n=10 from this matching;
 - a uniform all-orders expansion theorem;
 - the weighted one-link inequality at all orders;
 - the Yang-Mills mass gap.
