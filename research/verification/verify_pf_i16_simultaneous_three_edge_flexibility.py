@@ -66,41 +66,73 @@ def selected_ranks(total, cap):
     return sorted({((2*i + 1) * total) // (2*cap) for i in range(cap)})
 
 
+def residual_hall_witness(rows, forced):
+    forced_sources = {x for x, _ in forced}
+    forced_targets = {T for _, T in forced}
+    remaining = [i for i in range(len(rows)) if i not in forced_sources]
+    residual = [set(rows[i]) - forced_targets for i in remaining]
+    ml, mr, right = hopcroft_karp(residual)
+    if all(v >= 0 for v in ml):
+        return None
+    # Alternating reachability from unmatched left vertices gives a Hall-
+    # deficient left set Z_L with |N(Z_L)| < |Z_L|.
+    reverse = {T: j for j, T in enumerate(right)}
+    seen_l = {i for i, v in enumerate(ml) if v < 0}
+    seen_r = set()
+    queue = list(seen_l)
+    while queue:
+        i = queue.pop()
+        for T in residual[i]:
+            j = reverse[T]
+            if ml[i] == j or j in seen_r:
+                continue
+            seen_r.add(j)
+            mate = mr[j]
+            if mate >= 0 and mate not in seen_l:
+                seen_l.add(mate)
+                queue.append(mate)
+    hall_sources = [remaining[i] for i in sorted(seen_l)]
+    hall_targets = [right[j] for j in sorted(seen_r)]
+    return {
+        "sources": hall_sources,
+        "neighbor_count": len(hall_targets),
+        "source_count": len(hall_sources),
+        "deficiency": len(hall_sources) - len(hall_targets),
+    }
+
+
 def saturated_after_forcing(rows, forced):
     sources = [x for x, _ in forced]
     targets = [T for _, T in forced]
     if len(set(sources)) != len(sources) or len(set(targets)) != len(targets):
         return None
-    residual = [
-        set(row) - set(targets)
-        for i, row in enumerate(rows) if i not in set(sources)
-    ]
-    ml, _, _ = hopcroft_karp(residual)
-    return sum(v >= 0 for v in ml) == len(residual)
+    return residual_hall_witness(rows, forced) is None
 
 
 def run(n, cap):
     rows, req = build_case(n)
     total = comb(len(req), 3)
     tested = satisfied = 0
-    first_failure = None
+    failures = []
     for rank in selected_ranks(total, cap):
         idx = unrank_combination(rank, len(req), 3)
         forced = [req[i] for i in idx]
         if len({x for x, _ in forced}) != 3 or len({T for _, T in forced}) != 3:
             continue
         tested += 1
-        if saturated_after_forcing(rows, forced):
+        witness = residual_hall_witness(rows, forced)
+        if witness is None:
             satisfied += 1
-        elif first_failure is None:
-            first_failure = forced
+        else:
+            failures.append((forced, witness))
     scope = "exhaustive" if total <= cap else "deterministic-spread"
     print(f"n={n}: sources={len(rows)}, single_edge_requirements={len(req)}, "
           f"triple_universe={total}, triple_tests={tested}, scope={scope}")
     print(f"  three_edge_constraints_satisfied={satisfied}/{tested}, "
           f"failures={tested-satisfied}")
-    if first_failure:
-        print(f"  first_failure={first_failure}")
+    for forced, witness in failures:
+        print(f"  failure={forced}")
+        print(f"    residual_hall_witness={witness}")
     return satisfied == tested
 
 
