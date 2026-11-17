@@ -14,7 +14,7 @@ from collections import defaultdict, deque
 from fractions import Fraction
 from math import lcm
 
-from verify_pf_i16_source_dependent_leaf_peeling import sources, parent_data
+from verify_pf_i16_source_dependent_leaf_peeling import (\n    sources, parent_data, canonical_leaf, inverse_last_switch, compress_tree,\n)
 from verify_pf_i16_local_switch_fractional_transport import candidate_outputs
 from verify_pf_i16_fixed_parent_leaf_fiber_expansion import nonroot_leaf_indices
 
@@ -114,7 +114,7 @@ def run(n, expected_sources):
         net.add(t0+j,sink,scale)
     sent,reachable=net.flow(src,sink)
     total=int(demand_total*scale)
-    print(f"n={n} sources={source_count} fibers={nf} targets={nt} scale={scale}")
+    print(f"n={n} sources={source_count} fibers={nf} targets={nt} scale={scale}")\n    print(f"  raw_leaf_last_fiber_incidences={raw_incidences} retained_multivalued_pi_incidences={retained_incidences}")
     print(f"  exact_total_demand={demand_total} scaled={total}")
     print(f"  max_flow={sent} deficit={total-sent}")
     if sent==total:
