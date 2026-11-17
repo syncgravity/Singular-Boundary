@@ -1,0 +1,19 @@
+name: PF-I16 exact low-boundary cut census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  low-boundary-cuts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile exact cut enumerator
+        run: g++ -O3 -std=c++17 research/verification/pf_i16_low_boundary_cuts.cpp -o research/verification/pf_i16_low_boundary_cuts
+      - name: Enumerate every banned set of size at most two
+        working-directory: research/verification
+        run: python verify_pf_i16_low_boundary_cuts.py
