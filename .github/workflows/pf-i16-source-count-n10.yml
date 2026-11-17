@@ -1,0 +1,17 @@
+name: PF-I16 n=10 source-count census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  source-count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Count n=10 source objects
+        working-directory: research/verification
+        run: python count_pf_i16_sources_n10.py
