@@ -18,6 +18,7 @@ from verify_pf_i16_source_dependent_leaf_peeling import (
 from verify_pf_i16_local_switch_fractional_transport import candidate_outputs
 from verify_pf_i16_global_alternating_reroute import hopcroft_karp
 from verify_pf_i16_full_leaf_last_graph_n10 import encode_tree, sink_scc_census
+from verify_pf_i16_local_switch_fractional_transport import overlap_edges
 
 
 def nonroot_leaves(intervals, tau):
@@ -76,7 +77,12 @@ def main():
     print(f"  target_union={len(right)}")
     print(f"  matching={matching}/{len(rows)}")
 
-    census = sink_scc_census(rows, ml, mr, right)
+    source_list = list(sources(10))
+    assert len(source_list) == len(rows)
+    tree_overlap_class = [len(overlap_edges(intervals)) == 4
+                          for intervals, tau in source_list]
+    print(f"  tree_overlap_class_size={sum(tree_overlap_class)}")
+    census = sink_scc_census(rows, ml, mr, right, tree_overlap_class)
     zero_free = [item for item in census if item[1] == 0]
     print(f"  zero_free_sink_scc_count={len(zero_free)}")
     print(f"  all_sink_sccs_reach_free_target={not zero_free}")
