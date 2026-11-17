@@ -41,6 +41,103 @@ def hall_witness(rows,ml,mr,right):
     return sorted(seen_l),len(seen_r)
 
 
+
+def sink_scc_census(rows, ml, mr, right):
+    """Exact sink-SCC census in the matching-relative digraph.
+
+    Vertices are left sources.  There is an arc x -> y (x != y) when
+    source x is adjacent to the target matched to source y.  A sink SCC
+    with no neighbor among genuinely unmatched right targets is a tight
+    Hall block.  Adjacency is stored in compact unsigned-int arrays.
+    """
+    n = len(rows)
+    owner = {right[j]: i for j, i in enumerate(mr) if i >= 0}
+    free_targets = {right[j] for j, i in enumerate(mr) if i < 0}
+    adj = [array('I') for _ in range(n)]
+    rev = [array('I') for _ in range(n)]
+    for x, row in enumerate(rows):
+        for target in row:
+            y = owner.get(target)
+            if y is not None and y != x:
+                adj[x].append(y)
+                rev[y].append(x)
+
+    # Iterative Kosaraju first pass; avoid recursion-depth dependence.
+    seen = bytearray(n)
+    order = []
+    for root in range(n):
+        if seen[root]:
+            continue
+        seen[root] = 1
+        stack = [(root, 0)]
+        while stack:
+            v, pos = stack[-1]
+            if pos < len(adj[v]):
+                w = adj[v][pos]
+                stack[-1] = (v, pos + 1)
+                if not seen[w]:
+                    seen[w] = 1
+                    stack.append((w, 0))
+            else:
+                order.append(v)
+                stack.pop()
+
+    # Second pass on the reversed graph.
+    comp = [-1] * n
+    comp_members = []
+    for root in reversed(order):
+        if comp[root] >= 0:
+            continue
+        cid = len(comp_members)
+        members = []
+        comp[root] = cid
+        stack = [root]
+        while stack:
+            v = stack.pop()
+            members.append(v)
+            for w in rev[v]:
+                if comp[w] < 0:
+                    comp[w] = cid
+                    stack.append(w)
+        comp_members.append(members)
+
+    sink = bytearray([1]) * len(comp_members)
+    for x in range(n):
+        cx = comp[x]
+        for y in adj[x]:
+            if comp[y] != cx:
+                sink[cx] = 0
+    sink_ids = [i for i, flag in enumerate(sink) if flag]
+    census = []
+    zero_free = []
+    for cid in sink_ids:
+        members = comp_members[cid]
+        free_neighbors = set()
+        for x in members:
+            free_neighbors.update(t for t in rows[x] if t in free_targets)
+        item = (len(members), len(free_neighbors), min(members))
+        census.append(item)
+        if not free_neighbors:
+            zero_free.append(item)
+
+    census.sort()
+    zero_free.sort()
+    print(f"  matching_relative_arcs={sum(map(len, adj))}")
+    print(f"  scc_count={len(comp_members)}, sink_scc_count={len(sink_ids)}")
+    print(f"  sink_scc_zero_free_count={len(zero_free)}, "
+          f"positive_free_count={len(sink_ids)-len(zero_free)}")
+    if census:
+        print(f"  sink_scc_size_range=[{min(z[0] for z in census)},"
+              f"{max(z[0] for z in census)}]")
+        print(f"  sink_scc_free_neighbor_range=[{min(z[1] for z in census)},"
+              f"{max(z[1] for z in census)}]")
+        print(f"  sink_scc_census_size_free_minindex={census}")
+    if zero_free:
+        print(f"  ZERO_FREE_SINK_SCCS={zero_free}")
+    else:
+        print("  NO_ZERO_FREE_SINK_SCC")
+    return census
+
 def run(n=10):
     rows=[]
     degrees=Counter()
