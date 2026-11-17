@@ -22,7 +22,7 @@ For each B, it computes the strongly connected components of D-B and inspects ev
 
 where out_D(C) is the set of vertices outside C receiving an arc from C, and F(C) is the set of free targets adjacent to at least one source in C.
 
-The output on n=8 was:
+The successful exact run reports:
 
 - no sink component with q(C)<=2;
 - minimum q(C)=883;
@@ -46,7 +46,7 @@ For every A subset X, let
   B_D(A) = { y outside A : there exists x in A with x->y },
   F(A) = { t in Y_free : t is adjacent to some x in A }.
 
-The matched targets mu(A) are |A| distinct members of N(A). Every other neighbor of A is either a matched target mu(y) with y outside A, or a free target. Therefore the exact identity is
+The matched targets mu(A) are |A| distinct members of N(A). Every other neighbor of A is either a matched target mu(y) with y outside A, or a free target. Therefore
 
   |N(A)| - |A| = |B_D(A)| + |F(A)|.                 (1)
 
@@ -77,11 +77,18 @@ This is a complete all-subsets Hall-expansion proof for this finite graph. It do
 
 The n=6 case is deliberately a positive control, not an expected pass: it must find a slack-2 obstruction. The n=8 case must prove absence of any slack-at-most-two obstruction.
 
+## Next finite order
+
+A separate n=10 source-count census has been added before attempting full candidate-neighborhood generation. There are 945 perfect matchings on ten ports and at most 125 overlap spanning trees per matching, so the raw source count is bounded above by 118,125. The exact count will determine whether the same matching-relative SCC method is computationally tractable at the next order.
+
 ## Scope
 
-This establishes uniform Hall expansion for the specific n=8 leaf-last graph and hence a left-saturating matching with three units of global Hall surplus for every nonempty source set.
+Established:
+- all-subset Hall expansion with slack at least three for the n=8 leaf-last graph;
+- a finite left-saturating matching for n=8;
+- exact low-boundary certificate using one fixed matching.
 
-It does not establish:
+Not established:
 - the same expansion for n=10 or general n;
 - a general theorem for the family of leaf-last graphs;
 - the weighted one-link inequality at all orders;
