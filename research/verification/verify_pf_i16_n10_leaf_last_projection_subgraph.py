@@ -6,7 +6,7 @@ Keep a child target only when its unique inverse final switch belongs to the
 canonical leaf-last neighborhood of that child's n=8 parent. Then test Hall
 saturation of this stricter child graph exactly.
 """
-from collections import defaultdict
+from collections import defaultdict, deque
 from verify_pf_i16_source_dependent_leaf_peeling import (
     sources, canonical_leaf, parent_data, inverse_last_switch, compress_tree,
 )
@@ -62,6 +62,35 @@ def run():
 
     ml, mr, right = hopcroft_karp(rows)
     matching = sum(v >= 0 for v in ml)
+
+    # Konig alternating-reachability certificate from every unmatched source.
+    right_index = {t: j for j, t in enumerate(right)}
+    adj = [[right_index[t] for t in sorted(row)] for row in rows]
+    reachable_left = {i for i, v in enumerate(ml) if v < 0}
+    reachable_right = set()
+    queue = deque(("L", i) for i in sorted(reachable_left))
+    while queue:
+        side, v = queue.popleft()
+        if side == "L":
+            for w in adj[v]:
+                if ml[v] == w:  # left-to-right uses only unmatched edges
+                    continue
+                if w not in reachable_right:
+                    reachable_right.add(w)
+                    queue.append(("R", w))
+        else:
+            u = mr[v]
+            if u >= 0 and u not in reachable_left:
+                reachable_left.add(u)
+                queue.append(("L", u))
+    hall_neighbors = {w for u in reachable_left for w in adj[u]}
+    assert hall_neighbors == reachable_right
+    hall_deficiency = len(reachable_left) - len(hall_neighbors)
+    assert hall_deficiency == len(rows) - matching
+    witness_fibers = defaultdict(int)
+    for u in reachable_left:
+        witness_fibers[parent_of[u]] += 1
+
     print("n10_child_graph_restricted_to_canonical_n8_parent_leaf_last")
     print(f"  child_sources={len(rows)} parent_sources={len(fibers)}")
     print(f"  original_child_incidences={total}")
@@ -71,6 +100,13 @@ def run():
     print(f"  retained_target_trees={len(right)}")
     print(f"  maximum_matching={matching}/{len(rows)}")
     print(f"  deficiency={len(rows)-matching}")
+    print(f"  alternating_hall_witness_sources={len(reachable_left)}")
+    print(f"  alternating_hall_witness_neighbors={len(hall_neighbors)}")
+    print(f"  alternating_hall_witness_deficiency={hall_deficiency}")
+    print(f"  witness_parent_fibers={len(witness_fibers)}")
+    print(f"  witness_parent_fiber_source_count_range=[{min(witness_fibers.values())},{max(witness_fibers.values())}]")
+    print(f"  witness_parent_fiber_source_count_histogram={dict(sorted(__import__('collections').Counter(witness_fibers.values()).items()))}")
+    print(f"  witness_source_indices_first_100={sorted(reachable_left)[:100]}")
     if matching == len(rows):
         print("PASS: a child matching exists with every projection in the canonical parent leaf-last graph.")
     else:
