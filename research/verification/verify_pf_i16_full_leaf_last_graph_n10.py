@@ -42,7 +42,7 @@ def hall_witness(rows,ml,mr,right):
 
 
 
-def sink_scc_census(rows, ml, mr, right):
+def sink_scc_census(rows, ml, mr, right, distinguished=None):
     """Exact sink-SCC census in the matching-relative digraph.
 
     Vertices are left sources.  There is an arc x -> y (x != y) when
@@ -118,6 +118,11 @@ def sink_scc_census(rows, ml, mr, right):
     for cx, children in enumerate(dag):
         for cy in children:
             indegree[cy] += 1
+    if distinguished is not None:
+        assert len(distinguished) == n
+        print("  distinguished_by_component="
+              + repr([(cid, sum(bool(distinguished[x]) for x in comp_members[cid]),
+                       len(comp_members[cid])) for cid in range(len(comp_members))]))
     print("  condensation_components="
           + repr([(cid, len(comp_members[cid]), len(dag[cid]),
                    indegree[cid], len(free_by_comp[cid]),
