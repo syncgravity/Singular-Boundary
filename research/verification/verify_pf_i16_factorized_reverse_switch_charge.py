@@ -83,9 +83,12 @@ def run(n, expected_sources):
             P=compress_tree(next(iter(inv)),set(J),n)
             if P in C:
                 lifts[P].add(encode_tree(T))
-        assert set(lifts)==set(encode_tree(P) for P in C), (
-            "some canonical parent target lacks a final-switch lift",n,p,J,k,
-            len(C),len(lifts))
+        if set(lifts)!=set(encode_tree(P) for P in C):
+            missing=set(encode_tree(P) for P in C)-set(lifts)
+            extra=set(lifts)-set(encode_tree(P) for P in C)
+            raise AssertionError(("canonical parent/lift mismatch",n,p,J,k,
+                                  "missing",sorted(missing),"extra",sorted(extra),
+                                  "parent_targets",sorted(C)))
         # alpha uniform over complete C_can(p); beta uniform over each
         # parent's complete final-switch lift set.
         for Pcode,Ts in lifts.items():
