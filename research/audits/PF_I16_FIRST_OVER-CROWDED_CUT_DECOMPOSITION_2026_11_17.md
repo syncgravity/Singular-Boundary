@@ -69,7 +69,7 @@ All 2,692,032 complementary sources have a first overcrowded odd cut. The first-
 
 At a cut k, the number of live intervals is the number of opening endpoints among the first k ports minus the number of closing endpoints among them. Since each of the first k ports is exactly one endpoint of the matching,
 [
-m_kequiv kpmod 2.
+`m_k ≡ k (mod 2)`.
 ]
 For a connected interval-overlap graph, m_k cannot be zero: if no interval crosses cut k, no interval on the left can overlap an interval on the right, disconnecting H_M.
 
