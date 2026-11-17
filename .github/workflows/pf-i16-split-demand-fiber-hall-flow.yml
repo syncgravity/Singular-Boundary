@@ -1,0 +1,20 @@
+name: PF-I16 exact split-demand fiber Hall flow
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/verification/verify_pf_i16_split_demand_fiber_hall_flow.py'
+      - '.github/workflows/pf-i16-split-demand-fiber-hall-flow.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-admissible-exchange-2026-11-16
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact split-demand fiber Hall flow at n=6,8
+        working-directory: research/verification
+        run: python verify_pf_i16_split_demand_fiber_hall_flow.py
