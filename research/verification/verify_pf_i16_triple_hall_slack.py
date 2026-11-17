@@ -16,6 +16,8 @@ def run(n=8):
         masks.append(m)
 
     N = len(rows)
+    degrees = [m.bit_count() for m in masks]
+    print(f"  source_degree_range=[{min(degrees)},{max(degrees)}]")
     minimum = None
     minimizers = []
     hist = Counter()
