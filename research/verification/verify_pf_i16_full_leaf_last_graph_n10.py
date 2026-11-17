@@ -61,7 +61,7 @@ def run(n=10):
     print(f"  source_degree_histogram={dict(sorted(degrees.items()))}")
     print(f"  maximum_matching={size}/{len(rows)}, unmatched_sources={len(rows)-size}")
     if size==len(rows):
-        free_degree=[sum(1 for t in row if t != ml[i]) for i,row in enumerate(rows)]
+        free_degree=[sum(1 for t in row if t != right[ml[i]]) for i,row in enumerate(rows)]
         print(f"  free_target_degree_range=[{min(free_degree)},{max(free_degree)}], "
               f"histogram={dict(sorted(Counter(free_degree).items()))}")
         print(f"  sources_with_free_degree_le2={sum(d<=2 for d in free_degree)}")
