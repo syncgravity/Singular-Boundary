@@ -15,6 +15,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify exact split-demand fiber Hall flow at n=6,8
+      - name: Verify exact split-demand fiber Hall flow at n=6,8,10
         working-directory: research/verification
         run: python verify_pf_i16_split_demand_fiber_hall_flow.py
