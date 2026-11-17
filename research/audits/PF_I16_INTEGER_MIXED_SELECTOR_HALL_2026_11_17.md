@@ -66,7 +66,49 @@ enumerated, and the search procedure is not a complete optimization
 algorithm. The logged cut is a witness for the best Q encountered, not a
 Q-independent Hall obstruction.
 
-## 4. Consequence for the proof strategy
+## 4. Exact n=8 obstruction to every injective fixed-Q selector
+
+The search was strengthened by first enumerating, for each of the 22 parent
+sources p, every canonical parent target P for which the rows belonging to
+that p satisfy their own integer Hall condition. This is a necessary
+condition for any global Q: restricting (IMH) to rows with one fixed p
+shows that Q(p) must be one of these locally feasible representatives.
+
+The exact census gives:
+
+- 22 parent sources;
+- 440 (p,J)-rows;
+- 139 locally feasible parent-source/target choices in total;
+- each parent source has between 1 and 12 locally feasible choices;
+- no individual parent source is locally impossible.
+
+Now form the bipartite graph from parent sources p to their locally feasible
+representative targets P. An exact augmenting-path maximum matching has size
+21/22. Its alternating-reachability Hall witness consists of four parent
+sources and only three neighboring representative targets:
+[
+\begin{aligned}
+p_1&=(((1,4),(2,6),(3,5)),((0,1),(0,2))),\\
+p_2&=(((1,4),(2,6),(3,5)),((0,2),(1,2))),\\
+p_3&=(((1,5),(2,6),(3,4)),((0,1),(0,2))),\\
+p_4&=(((1,5),(2,6),(3,4)),((0,2),(1,2))).
+\end{aligned}
+]
+Thus their locally feasible representative-target union has cardinality
+three, strictly less than four. No injective parent representative matching
+Q can choose a locally feasible target for all four sources.
+
+This is stronger than the randomized search: it proves that **no fixed
+injective parent representative map Q can satisfy the integer selector
+condition (IMH) at n=8**. Indeed, if (IMH) held globally, it would hold on
+the rows belonging to each p separately, forcing Q(p) to be locally
+feasible. The four-source Hall obstruction then contradicts injectivity.
+
+The obstruction is not a failure of the underlying fractional mixed
+expansion. It rules out this particular reduction to one integral parent
+representative per parent source and a single reverse-mark selector.
+
+## 5. Consequence for the proof strategy
 
 The integer selector criterion is a valid sufficient condition, but the
 present evidence shows that it is a brittle strengthening:
