@@ -37,6 +37,14 @@ def parent_neighborhood(parent):
     return candidate_outputs(intervals, tau, forced_last=leaf)
 
 
+def expand_parent_tree(parent_target, J, n):
+    """Undo parent port compression, restoring the child labels outside J."""
+    removed = set(J)
+    remaining = [x for x in range(1, n + 1) if x not in removed]
+    return tuple(sorted(tuple(sorted((remaining[a - 1], remaining[b - 1])))
+                        for a, b in parent_target))
+
+
 def one_switch_lifts(parent_target, J):
     """All guarded outputs of inserting J into the fixed parent tree."""
     a, b = J
@@ -191,7 +199,7 @@ def run(n, expected_sources):
     max_demand = Fraction(0)
     for (p, J), children in sorted(fibers.items(), key=lambda z: repr(z[0])):
         # All child sources in a fixed (p,J) fiber must have the same d-neighborhood.
-        P = Q[p]
+        P = expand_parent_tree(Q[p], J, n)
         lifts = one_switch_lifts(P, J)
         assert lifts, ("empty fixed-representative row", n, p, J)
         d = sum((Fraction(1, len(nonroot_leaves(iv, tau)))
