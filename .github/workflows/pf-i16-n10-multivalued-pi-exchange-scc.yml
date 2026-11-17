@@ -27,3 +27,6 @@ jobs:
       - name: Test first-overcrowded-cut partition
         working-directory: research/verification
         run: python -u verify_pf_i16_first_overcrowded_cut_partition_n10.py
+      - name: Test split-demand transport by first overcrowded cut
+        working-directory: research/verification
+        run: python -u verify_pf_i16_overcrowded_cut_split_transport.py
