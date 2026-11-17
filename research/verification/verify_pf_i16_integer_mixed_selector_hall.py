@@ -133,6 +133,61 @@ class Dinic:
         return flow, level
 
 
+
+def enumerate_n6_parent_representatives(parent_sources, fibers):
+    """Exhaust every injective parent representative assignment at n=6."""
+    from itertools import product
+    parents = sorted(parent_sources, key=repr)
+    neighborhoods = [sorted(parent_neighborhood(p), key=repr) for p in parents]
+    choices = []
+    for assignment in product(*neighborhoods):
+        if len(set(assignment)) != len(assignment):
+            continue
+        Q = dict(zip(parents, assignment))
+        rows = []
+        targets = {}
+        for (p, J), children in sorted(fibers.items(), key=lambda z: repr(z[0])):
+            P = expand_parent_tree(Q[p], J, 6)
+            lifts = one_switch_lifts(P, J)
+            d = sum((Fraction(1, len(nonroot_leaves(iv, tau)))
+                     for iv, tau in children), Fraction(0))
+            quota = (d.numerator + d.denominator - 1) // d.denominator
+            ids = []
+            for T in lifts:
+                if T not in targets:
+                    targets[T] = len(targets)
+                ids.append(targets[T])
+            rows.append((p, J, d, quota, sorted(set(ids))))
+        F, T = len(rows), len(targets)
+        S = 0; r0 = 1; t0 = r0 + F; sink = t0 + T
+        net = Dinic(sink + 1)
+        total = 0
+        for i, row in enumerate(rows):
+            net.add(S, r0+i, row[3]); total += row[3]
+            for j in row[4]:
+                net.add(r0+i, t0+j, 1)
+        for j in range(T):
+            net.add(t0+j, sink, 1)
+        got, _ = net.maxflow(S, sink, total)
+        choices.append((got == total, got, total, Q, rows, targets))
+    passed = [x for x in choices if x[0]]
+    print(f"  n6_parent_representative_assignments={len(choices)} "
+          f"selector_feasible={len(passed)}", flush=True)
+    if passed:
+        for ok, got, total, Q, _, _ in passed[:3]:
+            print(f"  feasible_Q={Q} flow={got}/{total}", flush=True)
+    else:
+        best = max(choices, key=lambda x: x[1])
+        print(f"  best_Q={best[3]} flow={best[1]}/{best[2]}", flush=True)
+        # Show the exact minimal deficient row family from the min cut.
+        Q = best[3]
+        for p, J, d, quota, _ in best[4]:
+            if quota > 1:
+                P = expand_parent_tree(Q[p], J, 6)
+                print(f"  high_quota_row parent={p} J={J} demand={d} "
+                      f"quota={quota} lifts={one_switch_lifts(P,J)}", flush=True)
+
+
 def run(n, expected_sources):
     source_rows = list(sources(n))
     assert len(source_rows) == expected_sources
@@ -239,6 +294,8 @@ def run(n, expected_sources):
             (rows[i][0], rows[i][1], str(rows[i][2]), rows[i][3],
              len(rows[i][4])) for i in cut_rows[:12]
         ]))
+        if n == 6:
+            enumerate_n6_parent_representatives(parent_sources, fibers)
         raise SystemExit(1)
     print(f"PASS n={n}: exact integer selector Hall condition.", flush=True)
 
