@@ -59,3 +59,60 @@ Not established:
 - a uniform all-orders expansion theorem;
 - the weighted one-link inequality at all orders;
 - the Yang-Mills mass gap.
+
+
+## Corrected true-free-target census and full SCC condensation
+
+The corrected full enumeration completed successfully in CI:
+
+https://github.com/syncgravity/Singular-Boundary/actions/runs/44005349911
+
+Commit:
+`7b0cac850898ae50f48f5163346de4d5c044fc3f`
+
+The matching and graph counts are unchanged:
+- 31,744 sources;
+- 95,864 right target trees;
+- 12,748,570 incidences;
+- matching size 31,744/31,744;
+- 64,120 genuinely unmatched right target trees.
+
+The true free-target degree range is 0 to 1,980. There are 2,669 sources with zero genuinely free-target neighbors and 2,931 with at most two. Thus a pointwise lower bound on |F_x| cannot establish expansion.
+
+The matching-relative digraph has 6,156,818 arcs and exactly ten strongly connected components. The exact component census is listed as (component, source_count, outgoing_component_count, incoming_component_count, distinct_free_target_neighbors, total_source_incidence_count, minimum_source_index):
+
+```
+(0, 1,     1, 0, 362,   621,       26408)
+(1, 1,     2, 0, 324,   540,       26308)
+(2, 4,     4, 0, 1290,  3295,      22164)
+(3, 4,     2, 1, 1315,  3390,      24564)
+(4, 4,     2, 1, 1277,  3267,      23334)
+(5, 4,     1, 0, 1010,  2626,      21237)
+(6, 4,     1, 0, 1008,  2517,      20909)
+(7, 1,     2, 0, 205,   414,       20523)
+(8, 30505, 1, 8, 62145, 12569380,  2)
+(9, 1216,  0, 6, 3263,  162520,    0)
+```
+
+The condensation arcs are:
+```
+0->8
+1->8, 1->9
+2->3, 2->4, 2->8, 2->9
+3->8, 3->9
+4->8, 4->9
+5->8
+6->8
+7->8, 7->9
+8->9
+```
+
+There is one sink SCC, component 9, with 1,216 sources and 3,263 distinct free-target neighbors. No sink SCC has zero free-target neighbors.
+
+By (MR), a nonempty set A has zero Hall slack only if it is out-closed in D and has no free-target neighbor. Every nonempty out-closed set contains a sink SCC of the condensation. Therefore a tight nonempty Hall set would force a sink SCC with no free-target neighbor. Since none exists, the finite n=10 graph satisfies the strict expansion statement
+[
+|N(A)|\ge |A|+1
+\qquad(\varnothing\ne A\subseteq X_{10}).
+]
+
+This is a complete finite-order statement for the n=10 leaf-last graph. It does not provide a uniform surplus greater than one, nor an induction in n. In particular, it does not establish the weighted one-link inequality or the Yang-Mills mass gap.
