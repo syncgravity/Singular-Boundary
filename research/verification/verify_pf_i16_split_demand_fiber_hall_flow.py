@@ -116,7 +116,8 @@ def run(n, expected_sources):
         net.add(t0+j,sink,scale)
     sent,reachable=net.flow(src,sink)
     total=int(demand_total*scale)
-    print(f"n={n} sources={source_count} fibers={nf} targets={nt} scale={scale}")\n    print(f"  raw_leaf_last_fiber_incidences={raw_incidences} retained_multivalued_pi_incidences={retained_incidences}")
+    print(f"n={n} sources={source_count} fibers={nf} targets={nt} scale={scale}")
+    print(f"  raw_leaf_last_fiber_incidences={raw_incidences} retained_multivalued_pi_incidences={retained_incidences}")
     print(f"  exact_total_demand={demand_total} scaled={total}")
     print(f"  max_flow={sent} deficit={total-sent}")
     if sent==total:
