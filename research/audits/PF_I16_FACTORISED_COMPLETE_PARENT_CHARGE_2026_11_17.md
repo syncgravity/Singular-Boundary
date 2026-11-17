@@ -170,3 +170,20 @@ The fiber supplies are `L*delta(F)` and each target has capacity `L`, with `L=lc
 The initial run [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991) failed before constructing a network because the script attempted `len()` on a generator; it is superseded by the corrected successful run and has no mathematical significance.
 
 The verifier has now been extended to 10 ports (`run(10,31744)`) and the workflow is queued as [44160475265](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160475265) and [44160469684](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160469684). The latter uses the workflow's updated step label. The 10-port result is pending; no extrapolation from 6 and 8 ports is claimed.
+
+
+## Diagnostic completion and scope correction (2026-11-17)
+
+The detailed factorized-charge diagnostic completed successfully in workflow [44159456188](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159456188). It confirms the exact overload census already recorded above and adds these diagnostics:
+
+| Ports | Max parent-incidence bound | Worst factorized target load | Overloaded targets |
+|---:|---:|---:|---:|
+| 6 | 15/4 | 5/4 | 4 |
+| 8 | 5863/540 | 247217/75600 | 123 |
+| 10 | 5025526866284379097/145081064198790720 | 2173943720504674434439/221974028224149801600 | 6,641 |
+
+These are failures of the specified uniform-over-parent-targets then uniform-over-lifts allocation only. They are not Hall counterexamples.
+
+**Correction to the split-demand quotient test:** the initial verifier's fiber rows were the entire forced-leaf-last child neighborhoods (candidate_outputs with forced_last=leaf). The multivalued-pi relation is narrower: it retains a target T only when reversing the final switch at J projects to a parent target in the canonical leaf-last neighborhood of the parent source p. Thus the successful runs [44160365037](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160365037) and [44160475265](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160475265) prove exact split-demand quotient Hall only for the larger unfiltered leaf-last relation, not for the multivalued-pi graph. This scope correction applies at 6 and 8 ports as well as 10 ports. Those earlier quotient-flow results must not be cited as proofs of Hall for the pi-restricted graph.
+
+The verifier has been amended to filter each fiber row by the canonical parent neighborhood before building the exact integer max-flow network. Its fresh workflow is [44170770073](https://github.com/syncgravity/Singular-Boundary/actions/runs/44170770073); result pending. The failed intermediate runs [44170560400](https://github.com/syncgravity/Singular-Boundary/actions/runs/44170560400) and [44170608433](https://github.com/syncgravity/Singular-Boundary/actions/runs/44170608433) were Python string-escaping errors in the edited verifier, not mathematical outcomes.
