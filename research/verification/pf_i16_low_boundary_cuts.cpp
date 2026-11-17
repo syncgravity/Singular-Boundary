@@ -46,7 +46,11 @@ int main() {
     vector<char> banned(n,0);
     vector<int> mark(f,0);
     int stamp=0;
-    long long tested=0;
+    long long tested=0, sinkComponents=0;
+    long long minimumSinkSlack=LLONG_MAX, minimumCount=0;
+    int bestB1=-1, bestB2=-1, bestFree=0, bestBoundary=0;
+    vector<int> bestSources;
+    map<int,long long> slackHistogram;
     auto inspect = [&](int b1, int b2)->bool {
         fill(banned.begin(),banned.end(),0);
         if(b1>=0) banned[b1]=1;
@@ -74,6 +78,15 @@ int main() {
             }
             int bcount=__builtin_popcount((unsigned)boundary[c]);
             int slack=freeCount+bcount;
+            ++sinkComponents;
+            ++slackHistogram[slack];
+            if(slack<minimumSinkSlack) {
+                minimumSinkSlack=slack; minimumCount=1;
+                bestB1=b1; bestB2=b2; bestFree=freeCount;
+                bestBoundary=bcount; bestSources=tr.members[c];
+            } else if(slack==minimumSinkSlack) {
+                ++minimumCount;
+            }
             if(slack<=2) {
                 cout << "LOW_SLACK_WITNESS slack=" << slack
                      << " banned=(" << b1 << "," << b2 << ")"
@@ -99,6 +112,16 @@ int main() {
     cout << "NO_BOUNDARY_AT_MOST_2"
          << " n=" << n << " arcs=" << m << " free_targets=" << f
          << " banned_sets_tested=" << tested << "\n";
-    cout << "Therefore every nonempty source subset A has Hall slack >= 3.\n";
+    cout << "sink_components_examined=" << sinkComponents
+         << " minimum_sink_slack=" << minimumSinkSlack
+         << " minimizers=" << minimumCount << "\n";
+    cout << "minimum_witness_banned=(" << bestB1 << "," << bestB2 << ")"
+         << " boundary_count=" << bestBoundary
+         << " free_target_count=" << bestFree
+         << " source_count=" << bestSources.size() << "\nsources";
+    for(int u:bestSources) cout << " " << u;
+    cout << "\nslack_histogram";
+    for(auto [s,c]:slackHistogram) cout << " " << s << ":" << c;
+    cout << "\nTherefore every nonempty source subset A has Hall slack >= 3.\n";
     return 0;
 }
