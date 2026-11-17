@@ -48,6 +48,7 @@ int main() {
     int stamp=0;
     long long tested=0, sinkComponents=0;
     long long minimumSinkSlack=LLONG_MAX, minimumCount=0;
+    int minimumFreeCount=INT_MAX, minimumSinkSize=INT_MAX;
     int bestB1=-1, bestB2=-1, bestFree=0, bestBoundary=0;
     vector<int> bestSources;
     map<int,long long> slackHistogram;
@@ -78,6 +79,8 @@ int main() {
             }
             int bcount=__builtin_popcount((unsigned)boundary[c]);
             int slack=freeCount+bcount;
+            minimumFreeCount=min(minimumFreeCount,freeCount);
+            minimumSinkSize=min(minimumSinkSize,(int)tr.members[c].size());
             ++sinkComponents;
             ++slackHistogram[slack];
             if(slack<minimumSinkSlack) {
