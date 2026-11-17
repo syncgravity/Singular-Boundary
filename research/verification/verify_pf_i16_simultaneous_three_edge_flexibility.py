@@ -12,17 +12,24 @@ This is diagnostic evidence only, not an all-orders exchange theorem.
 from collections import defaultdict
 from verify_pf_i16_global_alternating_reroute import hopcroft_karp
 from verify_pf_i16_source_dependent_leaf_peeling import (
-    canonical_leaf, sources, candidate_outputs,
+    canonical_leaf, parent_data, sources, candidate_outputs,
 )
 
 
 def build_case(n):
     rows = []
+    metadata = []
     target_sources = defaultdict(list)
     for intervals, tau in sources(n):
         leaf = canonical_leaf(intervals, tau)
         row = candidate_outputs(intervals, tau, forced_last=leaf)
         rows.append(row)
+        metadata.append({
+            "intervals": intervals,
+            "overlap_tree": tau,
+            "leaf": intervals[leaf],
+            "parent": parent_data(intervals, tau, leaf),
+        })
         for T in row:
             target_sources[T].append(len(rows) - 1)
     ml, mr, right = hopcroft_karp(rows)
@@ -33,7 +40,7 @@ def build_case(n):
         for T, xs in target_sources.items()
         for x in xs if owner.get(T) != x
     )
-    return rows, requirements
+    return rows, requirements, metadata
 
 
 def unrank_combination(rank, n, k):
@@ -110,7 +117,7 @@ def saturated_after_forcing(rows, forced):
 
 
 def run(n, cap):
-    rows, req = build_case(n)
+    rows, req, metadata = build_case(n)
     total = comb(len(req), 3)
     tested = satisfied = 0
     failures = []
@@ -133,6 +140,11 @@ def run(n, cap):
     for forced, witness in failures:
         print(f"  failure={forced}")
         print(f"    residual_hall_witness={witness}")
+        forced_targets = {T for _, T in forced}
+        for source_index in witness["sources"]:
+            residual_neighbors = sorted(set(rows[source_index]) - forced_targets)
+            print(f"      source[{source_index}]={metadata[source_index]}")
+            print(f"      residual_neighbors[{source_index}]={residual_neighbors}")
     return satisfied == tested
 
 
