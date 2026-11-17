@@ -61,20 +61,15 @@ def run(n=10):
     print(f"  source_degree_histogram={dict(sorted(degrees.items()))}")
     print(f"  maximum_matching={size}/{len(rows)}, unmatched_sources={len(rows)-size}")
     if size==len(rows):
-        free_degree=[sum(1 for t in row if t != right[ml[i]]) for i,row in enumerate(rows)]
-        min_free=min(free_degree)
-        min_source=min(degrees)
-        print(f"  free_target_degree_range=[{min_free},{max(free_degree)}], "
+        # A free target is unmatched by every left source, i.e. mr[j] < 0.
+        # Excluding only row i's own matched target is NOT sufficient:
+        # its other neighbors may be matched to other sources.
+        free_targets={right[j] for j,owner in enumerate(mr) if owner<0}
+        free_degree=[sum(1 for t in row if t in free_targets) for row in rows]
+        print(f"  free_target_count={len(free_targets)}")
+        print(f"  true_free_target_degree_range=[{min(free_degree)},{max(free_degree)}], "
               f"histogram={dict(sorted(Counter(free_degree).items()))}")
-        print(f"  sources_with_free_degree_le2={sum(d<=2 for d in free_degree)}")
-        # For every nonempty A, the matching-relative identity gives
-        # slack(A)=|out_D(A)\\A|+|union_{x in A} F_x|.
-        # Since A contains some x and |F_x|>=min_free, slack(A)>=min_free.
-        # A minimum-degree singleton attains min_source-1.
-        assert min_free >= 3
-        assert min_free == min_source - 1
-        print(f"  exact_global_Hall_slack_lower_bound={min_free}")
-        print(f"  exact_minimum_Hall_slack={min_free}")
+        print(f"  sources_with_true_free_degree_le2={sum(d<=2 for d in free_degree)}")
     if size<len(rows):
         A,nb=hall_witness(rows,ml,mr,right)
         print(f"  hall_witness_sources={len(A)}, neighbor_count={nb}, "
