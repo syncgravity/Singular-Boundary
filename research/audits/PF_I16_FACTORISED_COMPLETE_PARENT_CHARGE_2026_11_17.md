@@ -133,3 +133,19 @@ The corrected accumulator was run successfully in GitHub Actions run [4415629805
 At n=6, the maximally loaded target is the tree with edges `(1,2),(2,3),(3,4),(3,6),(4,5)`, at exact load `5/4`. At n=8 and n=10, the maximum loads are approximately 3.270066137566 and 9.793685044583. Every run verifies exact total column load equals total split demand. Hence this is a failure of the uniform-over-parent-targets / uniform-over-lifts allocation, not a Hall obstruction.
 
 A diagnostic extension now records each worst target's contributing fibers and the corresponding raw parent-incidence upper bound. This will distinguish whether the dominant concentration comes from many parent fibers mapping to the same reverse parent, or from unusually small lift multiplicities.
+
+
+## Next test: nonuniform split-demand fiber flow
+
+The uniform factorized charge is too concentrated. The next relaxation removes both uniformity requirements while retaining the exact source-to-fiber decomposition. For each source x with d(x) non-root leaves, assign demand 1/d(x) to each leaf fiber F=(p,J). The fiber's complete child-target row N(F) is common to every source in that fiber. The necessary sufficient quotient condition for this split demand is
+
+\[
+\left|\bigcup_{F\in S}N(F)\right|\ge \sum_{F\in S}\delta(F),\qquad
+\delta(F)=\sum_{x\in F}\frac1{d(x)}.
+\]
+
+This is tested by an exact capacitated bipartite max-flow network: source-to-fiber capacity L*delta(F), target-to-sink capacity L, where L=lcm(1,...,s-1), and each fiber is adjacent to every target in N(F). All capacities are integers; max-flow integrality makes a full flow an exact rational fractional Hall certificate, not a numerical LP approximation. A deficient min-cut would reject this fiber quotient only, not the original source Hall statement.
+
+Verifier: `research/verification/verify_pf_i16_split_demand_fiber_hall_flow.py`.
+Workflow: `.github/workflows/pf-i16-split-demand-fiber-hall-flow.yml`.
+Workflow run is queued as [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991). It currently tests n=6 and n=8, where the graph is small enough for exact max flow.
