@@ -77,9 +77,10 @@ This separates the problem into two logically distinct parts:
 1. Parent-source separation: supplied by injectivity of Q.
 2. Mark separation: supplied by the open canonical-mark lift lemma.
 
-The first part is already available at finite parent orders and in the
-all-orders canonical-parent matching theorem established in the prior
-work. The second part is the new combinatorial obstacle.
+The first part is available whenever a parent matching Q has been proved;
+that matching has finite verified instances, including the n=10 parent
+instance, but no all-orders parent-matching theorem is claimed here. The
+second part is the new combinatorial obstacle.
 
 ## 5. What has and has not been proved
 
