@@ -1,4 +1,4 @@
-name: PF-I16 integer mixed selector Hall
+name: PF-I16 integer mixed selector Hall (rounded row quotas)
 
 on:
   push:
