@@ -1,0 +1,17 @@
+name: PF-I16 pair Hall-slack census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  pair-hall-slack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Enumerate all source pairs at n=6 and n=8
+        working-directory: research/verification
+        run: python verify_pf_i16_pair_hall_slack.py
