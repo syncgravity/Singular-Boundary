@@ -32,11 +32,6 @@ def first_source_cut(intervals, n):
     return next((k for k in range(1,n,2) if loads[k-1]>=3), None)
 
 
-def first_target_cut(T, n):
-    loads=[sum(a<=k<b for a,b in T) for k in range(1,n)]
-    return next((k for k in range(1,n,2) if loads[k-1]>=2), None)
-
-
 def parent_neighborhood(parent):
     pi,pt=parent
     if len(pi)==1:
@@ -93,7 +88,6 @@ def run(n, expected_sources):
             len(C),len(lifts))
         # alpha uniform over complete C_can(p); beta uniform over each
         # parent's complete final-switch lift set.
-        pcode={encode_tree(P):P for P in C}
         for Pcode,Ts in lifts.items():
             share=demand/Fraction(len(C),1)/Fraction(len(Ts),1)
             for Tcode in Ts:
@@ -113,13 +107,8 @@ def run(n, expected_sources):
     print(f"n={n} source_classes={sorted(class_counts.items(),key=lambda z:(-1 if z[0] is None else z[0]))}")
     print(f"  complement_sources={source_count-class_counts[None]} fibers={fiber_count}")
     print(f"  total_split_demand={total_demand} by_cut={dict(sorted(demand_by_cut.items()))}")
-    print(f"  canonical_parent_target_incidences={parent_target_total} same_cut_lifts={lift_total}")
+    print(f"  canonical_parent_target_incidences={parent_target_total} all_valid_lifts={lift_total}")
     print(f"  lifts_per_parent_target_range=[{min_lifts},{max_lifts}]")
-    class_loads=defaultdict(list)
-    for Tcode,load in loads.items():
-        # Decode target codes is unnecessary: class is recorded from the
-        # representative tree below in the target metadata map.
-        pass
     print(f"  child_target_columns={len(loads)}")
     print(f"  max_factorized_target_load={max_load} ({float(max_load):.12f})")
     print(f"  overloaded_targets={len(overloaded)}")
