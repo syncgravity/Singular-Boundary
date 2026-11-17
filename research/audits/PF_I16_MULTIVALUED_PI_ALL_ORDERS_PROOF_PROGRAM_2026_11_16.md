@@ -114,37 +114,49 @@ This isolates the remaining obstruction sharply: it is not a shortage of lifts w
 
 The inequality above is a local Hall statement. It does not imply global Hall for a union of different \((p,J)\) fibers, because their target neighborhoods can overlap.
 
-## Quotient reduction: the child graph is a weighted fiber graph
+## Quotient reduction: a sufficient split-demand Hall test
 
-There is a further exact simplification. For fixed \((p,J)\), every child source in \(X(p,J)\) has the same parent source after deleting \(J\), and its overlap tree is the same parent overlap tree plus one edge incident to \(J\). In a history with \(J\) inserted last, the preceding states depend only on \(p\); the final set of allowed local switches depends only on the current port tree and \(J\), not on which overlap-tree edge made \(J\) a leaf. Hence
+For fixed \((p,J)\), all child sources in \(X(p,J)\) have the same restricted target neighborhood \(N(p,J)\). This follows because the parent-before-child switch history has \(J\) last: the preceding history depends only on the parent source, and the final allowed local switch depends on the current port tree and \(J\), not on which parent interval is the unique overlap-tree neighbor of \(J\). The finite verifier checks this row equality.
+
+A child source can have several non-root leaves and therefore belongs to several \((p,J)\) fibers. Consequently the stronger weighted condition with demand \(|X(p,J)|\) is sufficient but is not equivalent to source-level Hall: it can count one child source more than once.
+
+The correct quotient demand splits each source's unit mass evenly among its available leaves. If \(d(x)=|L_0(\tau_x)|\), define
 \[
-R_n(x)=R_n(x')=:N(p,J)
-\qquad(x,x'\in X(p,J)).
+\delta(p,J)=\sum_{x\in X(p,J)}\frac1{d(x)}.
 \]
-The finite verifier `verify_pf_i16_fixed_parent_leaf_fiber_expansion.py` explicitly checks this equality.
-
-Let \(w(p,J)=|X(p,J)|\). The full child Hall condition is therefore equivalent to the weighted quotient condition
+Then every source contributes total demand exactly one:
+\[
+\sum_{(p,J):x\in X(p,J)}\frac1{d(x)}=1.
+\]
+For any source family \(A\), let \(S(A)\) be the set of fibers touched by at least one source in \(A\). Every leaf-fiber of every \(x\in A\) lies in \(S(A)\), so
+\[
+|A|\le\sum_{(p,J)\in S(A)}\delta(p,J).
+\]
+Thus the following weighted quotient inequality is a sufficient Hall criterion:
 \[
 \boxed{
 \left|\bigcup_{(p,J)\in S}N(p,J)\right|
-\ge \sum_{(p,J)\in S}w(p,J)
-\quad\text{for every set }S\text{ of nonempty fibers}.
+\ge\sum_{(p,J)\in S}\delta(p,J)
+\quad\text{for every set of fibers }S.
 }
-\tag{QH\(_n^\pi\)}
+\tag{QH\(_n^{\rm split}\)}
 \]
-Indeed, for any child-source subset \(A\), its neighborhood is the union of the neighborhoods of the fibers it meets, while \(|A|\) is at most the sum of the full weights of those fibers. Conversely, taking all sources in any chosen collection of fibers gives exactly the weighted inequality.
 
-This is a real reduction: the recursive Hall problem is no longer about arbitrary subsets of individual \((M,\tau)\) sources. It is a capacitated Hall problem on the much more structured index set \((p,J)\). The local lemma gives
+A particularly concrete sufficient condition is the uniform row transport
 \[
-w(p,J)\le s-1,
-\qquad
-|N(p,J)|\ge 2|C_{\rm can}(p)|\ge 2^{s-1}.
+\lambda_{(p,J),T}=
+\begin{cases}
+\delta(p,J)/|N(p,J)|,&T\in N(p,J),\\
+0,&T\notin N(p,J).
+\end{cases}
 \]
-Thus every individual quotient vertex has a large surplus; only overlap among neighborhoods of distinct fibers can cause deficiency.
+If every target column has load
+\[
+\sum_{(p,J):T\in N(p,J)}
+\frac{\delta(p,J)}{|N(p,J)|}\le1,
+\]
+then summing the transport over any fiber set proves \((QH_n^{\rm split})\), and hence the original source-level Hall condition.
 
-A proof can now focus on the quotient incidence geometry:
-- a right target \(T\) and a proposed deleted interval \(J\) determine at most one parent port tree \(P\);
-- for fixed \(J\), different parent targets have disjoint lift sets;
-- the remaining collisions are precisely between distinct \((p,J)\) fibers, including different \(J\)'s for the same parent source and different parent sources whose canonical neighborhoods share a parent target.
+The verifier `verify_pf_i16_fixed_parent_leaf_fiber_expansion.py` now computes these demands exactly as rational numbers and reports exact target loads and overload counts. A maximum column load at most one proves Hall for that finite order. A load above one only disproves this uniform transport; it does not disprove Hall or a nonuniform fractional transport.
 
-The all-orders problem has consequently been reduced to proving \((QH_n^\pi)\), not the original source-level Hall statement directly.
+The all-orders task is to prove the split-demand quotient inequality, perhaps by constructing a nonuniform transport or a matching-relative alternating-boundary argument. This quotient formulation is a sufficient reduction, not an equivalence.
