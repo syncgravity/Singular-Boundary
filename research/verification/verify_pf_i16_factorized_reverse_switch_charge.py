@@ -24,7 +24,6 @@ from verify_pf_i16_source_dependent_leaf_peeling import (
 )
 from verify_pf_i16_local_switch_fractional_transport import candidate_outputs
 from verify_pf_i16_fixed_parent_leaf_fiber_expansion import nonroot_leaf_indices
-from verify_pf_i16_full_leaf_last_graph_n10 import encode_tree
 
 
 def first_source_cut(intervals, n):
@@ -82,19 +81,19 @@ def run(n, expected_sources):
             assert len(inv)==1
             P=compress_tree(next(iter(inv)),set(J),n)
             if P in C:
-                lifts[P].add(encode_tree(T))
-        if set(lifts)!=set(encode_tree(P) for P in C):
-            missing=set(encode_tree(P) for P in C)-set(lifts)
-            extra=set(lifts)-set(encode_tree(P) for P in C)
+                lifts[P].add(T)
+        if set(lifts)!=set(C):
+            missing=set(C)-set(lifts)
+            extra=set(lifts)-set(C)
             raise AssertionError(("canonical parent/lift mismatch",n,p,J,k,
                                   "missing",sorted(missing),"extra",sorted(extra),
                                   "parent_targets",sorted(C)))
         # alpha uniform over complete C_can(p); beta uniform over each
         # parent's complete final-switch lift set.
-        for Pcode,Ts in lifts.items():
+        for P,Ts in lifts.items():
             share=demand/Fraction(len(C),1)/Fraction(len(Ts),1)
             for Tcode in Ts:
-                loads[Tcode]+=share
+                loads[T]+=share
             lift_total+=len(Ts)
             min_lifts=len(Ts) if min_lifts is None else min(min_lifts,len(Ts))
             max_lifts=max(max_lifts,len(Ts))
