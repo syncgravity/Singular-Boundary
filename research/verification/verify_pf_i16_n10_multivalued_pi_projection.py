@@ -8,6 +8,7 @@ its inverse final-switch projection lies in the CANONICAL leaf-last
 neighborhood of pi_ell(x). Thus pi is a relation, not one canonical map.
 """
 from collections import Counter, defaultdict, deque
+import json
 from verify_pf_i16_source_dependent_leaf_peeling import (
     sources, canonical_leaf, parent_data, inverse_last_switch, compress_tree,
 )
@@ -136,6 +137,36 @@ def run():
         assigned_parent_pairs[(parent, projected)] += 1
         assigned_parent_sources[parent] += 1
         assigned_leaf_choices[ell] += 1
+
+    # Emit a compact, independently checkable matching certificate. The
+    # certificate records one explicit leaf/projection witness per matched
+    # child edge; a separate checker need only replay these selected edges,
+    # not reconstruct the full 15.8-million-edge graph.
+    certificate = {
+        "schema": "pf-i16-multivalued-pi-matching-v1",
+        "n": 10,
+        "source_count": len(rows),
+        "target_count": len(right),
+        "matching_size": matching,
+        "rows": [],
+    }
+    for u, right_j in enumerate(ml):
+        intervals, tau, _ = child_data[u]
+        target = right[right_j]
+        ell, parent, projected = witness_by_source[u][target]
+        pi, pt = parent
+        certificate["rows"].append({
+            "source_intervals": [list(e) for e in intervals],
+            "source_overlap_tree": [list(e) for e in tau],
+            "leaf_interval": list(intervals[ell]),
+            "target_mask": target,
+            "parent_intervals": [list(e) for e in pi],
+            "parent_overlap_tree": [list(e) for e in pt],
+            "projected_parent_tree": [list(e) for e in projected],
+        })
+    with open("n10_multivalued_pi_matching.json", "w", encoding="utf-8") as out:
+        json.dump(certificate, out, separators=(",", ":"))
+        out.write("\\n")
 
     print("n10_child_graph_with_multivalued_pi_parent_projection")
     print(f"  child_sources={len(rows)} distinct_pi_parent_sources={len(parent_targets)}")
