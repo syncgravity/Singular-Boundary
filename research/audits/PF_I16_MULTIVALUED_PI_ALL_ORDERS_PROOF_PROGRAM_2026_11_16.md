@@ -191,3 +191,23 @@ is antitone in the coordinatewise order. On a finite poset, every nonnegative an
 Since each matching \(M\) occurs with exactly \(\tau(H_M)\) overlap-tree choices \(\tau\), the left side is precisely the weighted one-link expression in (1).
 
 Thus the split-demand column test is not merely a numerical surrogate: a successful all-orders bound would imply the desired weighted inequality exactly. The present computations only test this route at finite orders; no all-orders column bound has yet been established.
+
+
+## Independently checked n=10 matching certificate (2026-11-17)
+
+The multivalued-pi workflow now emits and independently checks an explicit matching certificate:
+[workflow 44031284003](https://github.com/syncgravity/Singular-Boundary/actions/runs/44031284003),
+[artifact 14309344057](https://github.com/syncgravity/Singular-Boundary/actions/runs/44031284003/artifacts/14309344057).
+The independent checker reports `PASS: explicit n=10 multivalued-pi matching certificate`.
+
+The certificate gives one selected non-root leaf and one projected parent target for each of the 31,744 child sources. It verifies that each selected child target is in the retained relation and that all 31,744 child targets are distinct. Thus the finite relation is Hall-saturating with an explicit, independently replayable witness.
+
+The selected assignment can be viewed as a nonuniform integral allocation to parent-leaf fibers. Each child source chooses exactly one of its available leaf fibers; the selected child target is routed through that fiber. In the certificate:
+- 16,176 parent-leaf fibers receive positive selected demand;
+- selected demand per occupied fiber is 1–4 (histogram 1: 6,353; 2: 5,400; 3: 3,101; 4: 1,322);
+- 608 distinct parent sources are represented, with 12–98 child sources per parent source;
+- 10,179 distinct assigned (parent source, projected parent target) pairs occur, with pair multiplicity 1–43.
+
+This explains how the finite matching avoids the overloaded columns of the uniform split-demand transport: it chooses the leaf and child target jointly, instead of distributing every source uniformly over all its leaves. Parent projection is emphatically not injective; repeated parent pairs are allowed and are resolved by distinct child lifts.
+
+This is a finite certificate, not an all-orders construction. The matching algorithm still solves the full finite child graph. The all-orders problem is to prove a structural nonuniform allocation/augmenting theorem that chooses one leaf and one lift per source while keeping child targets distinct, for every even order. See `PF_I16_N10_MULTIVALUED_PI_MATCHING_CERTIFICATE_2026_11_17.md` for the certificate audit and exact counts.
