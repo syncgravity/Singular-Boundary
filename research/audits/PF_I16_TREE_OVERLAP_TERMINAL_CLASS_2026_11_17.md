@@ -234,3 +234,37 @@ Important correction: the unique sink SCC at n=10 has size 1,216, not 16. Theref
 A follow-up diagnostic is being run to locate the 16 K_10 sources among the three SCCs and test whether K_10 is itself a strongly connected component or is distributed among components. A second follow-up tests whether the complement sources can be matched outside Q_10. Those results are not yet asserted here.
 
 No all-orders complement Hall theorem or weighted one-link inequality is claimed.
+
+
+## 9. n=10 complement matching succeeds: full finite Hall theorem at n=10
+
+A strengthened n=10 run explicitly tested the missing complement matching:
+[44058575898](https://github.com/syncgravity/Singular-Boundary/actions/runs/44058575898).
+
+It reports:
+- tree-overlap sources K_10: 16;
+- their complete target neighborhood Q_10: 81;
+- complementary sources: 31,728;
+- targets outside Q_10: 95,783;
+- maximum matching in the restricted complement graph: 31,728/31,728.
+
+Thus there is an injective assignment
+[
+phi:X_{10}\setminus K_{10}\longrightarrow Y_{10}\setminus Q_{10}
+]
+with each (phi(x)) adjacent to x.
+
+Combine this with the all-orders Hall theorem on K_{2s}. For any A subset X_10, write A_K=A intersect K_10 and A_C=A\K_10. Since N(A_K) is contained in Q_10, while the assigned targets (phi(A_C)) are distinct and lie outside Q_10,
+[
+|N(A)|\ge |N(A_K)|+|phi(A_C)|
+\ge |A_K|+|A_C|=|A|.
+]
+Therefore the complete n=10 multivalued-pi graph satisfies Hall. This is stronger and more direct than the SCC-based strict-Hall evidence: it gives an explicit constructive finite decomposition into a terminal-class Hall part and a complement matching.
+
+The same run also classifies the 16 K_10 sources inside the SCCs of the *original maximum matching*: all 16 lie in the 1,216-source sink SCC. The 30,132- and 396-source SCCs contain no K_10 sources. This does not contradict the separable decomposition: the SCC census uses the original global maximum matching, whereas the complement matching above is a separate matching on X_10\K_10 into Y_10\Q_10. Combining the two restricted matchings changes the matching-relative exchange digraph.
+
+The n=10 finite Hall theorem is now established by a verifiable matching computation. The all-orders gap is to prove, for every s, a matching
+[
+X_{2s}\setminus K_{2s}\longrightarrow Y_{2s}\setminus Q_{2s}.
+]
+No such all-orders complement matching theorem is yet proved.
