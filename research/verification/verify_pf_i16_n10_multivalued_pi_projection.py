@@ -166,7 +166,7 @@ def run():
         })
     with open("n10_multivalued_pi_matching.json", "w", encoding="utf-8") as out:
         json.dump(certificate, out, separators=(",", ":"))
-        out.write("\\n")
+        out.write("\n")
 
     print("n10_child_graph_with_multivalued_pi_parent_projection")
     print(f"  child_sources={len(rows)} distinct_pi_parent_sources={len(parent_targets)}")
