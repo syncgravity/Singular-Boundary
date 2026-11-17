@@ -189,9 +189,10 @@ def exhaustive_n6(fibers, parents):
     assert feasible, "No n=6 parent representative assignment supports selector Hall."
 
 
-def randomized_n8(fibers, parents, trials=500, seed=161117):
-    neighborhoods = {p: sorted(parent_neighborhood(p), key=repr)
-                     for p in parents}
+def randomized_n8(fibers, parents, trials=1000, seed=161117, allowed=None):
+    neighborhoods = (allowed if allowed is not None else
+                     {p: sorted(parent_neighborhood(p), key=repr)
+                      for p in parents})
     rng = Random(seed)
     best = None
     seen_Q = set()
@@ -223,8 +224,10 @@ def main():
     exhaustive_n6(f6, p6)
     f8, p8 = build_fibers(8)
     print(f"n=8 parent_sources={len(p8)} fibers={len(f8)}", flush=True)
-    local_parent_census(8, f8, p8)
-    randomized_n8(f8, p8)
+    allowed = local_parent_census(8, f8, p8)
+    print(f"n=8 locally_feasible_parent_choices={sum(len(v) for v in allowed.values())} "
+          f"choice_range=[{min(map(len, allowed.values()))},{max(map(len, allowed.values()))}]", flush=True)
+    randomized_n8(f8, p8, allowed=allowed)
 
 
 if __name__ == "__main__":
