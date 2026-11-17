@@ -67,10 +67,8 @@ All 2,692,032 complementary sources have a first overcrowded odd cut. The first-
 
 ## 4. Exact parity proof
 
-At a cut k, the number of live intervals is the number of opening endpoints among the first k ports minus the number of closing endpoints among them. Since each of the first k ports is exactly one endpoint of the matching,
-[
-`m_k ≡ k (mod 2)`.
-]
+At a cut k, the number of live intervals is the number of opening endpoints among the first k ports minus the number of closing endpoints among them. Since each of the first k ports is exactly one endpoint of the matching, the parity identity is `m_k ≡ k (mod 2)`.
+
 For a connected interval-overlap graph, m_k cannot be zero: if no interval crosses cut k, no interval on the left can overlap an interval on the right, disconnecting H_M.
 
 If no odd cut is overcrowded, then m_k=1 at every odd cut. For an even cut k, m_k is even and is adjacent to odd cuts k-1 and k+1, each with load one; changing one endpoint changes the live count by exactly one. Hence m_k=2. This is precisely the endpoint word of the tree-overlap class.
@@ -115,10 +113,9 @@ If every crossing edge of P is contained strictly inside J, use the guaranteed n
 
 Therefore there is always a guarded final switch producing a child target in Y_k.
 
-The inverse final switch is unique for fixed J. Distinct parent targets therefore have disjoint lift sets. The parent canonical neighborhood has at least 2^(s-2) targets. In the noncrossing case at least two guarded patterns per parent target preserve the class; in the crossing case at least one pattern per parent target enters Y_k. Consequently
-[
-|N_{R_{2s}}(x)\cap Y_k|\ge 2^{s-2}.
-]
+The inverse final switch is unique for fixed J. Distinct parent targets therefore have disjoint lift sets. The parent canonical neighborhood has at least `2^(s-2)` targets. In the noncrossing case at least two guarded patterns per parent target preserve the class; in the crossing case at least one pattern per parent target enters Y_k. Consequently every source has at least `2^(s-2)` distinct same-class targets:
+`|N_R(x) ∩ Y_k| ≥ 2^(s−2)`.
+
 For s>=3 this is at least s-1, the maximum number of child sources in a fixed (parent,J) fiber. Thus every fixed fiber has local Hall within its matching first-overcrowded-cut block.
 
 This proves the all-orders row-support statement: every source x in X_k has at least one neighbor in Y_k, and in fact the stated lower bound on its same-k neighborhood. It does not say that every edge out of X_k lands in Y_k; load domination only rules out target classes earlier than k. It does NOT prove Hall for arbitrary unions of different fixed-(parent,J) fibers inside X_k. Those neighborhoods can still collide, and the global capacity problem remains.
