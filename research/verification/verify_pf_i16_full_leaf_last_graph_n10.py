@@ -101,6 +101,32 @@ def sink_scc_census(rows, ml, mr, right):
                     stack.append(w)
         comp_members.append(members)
 
+    # Full condensation and componentwise free-target census.
+    dag = [set() for _ in comp_members]
+    free_by_comp = [set() for _ in comp_members]
+    source_degree = [0] * len(comp_members)
+    for x, row in enumerate(rows):
+        cx = comp[x]
+        source_degree[cx] += len(row)
+        for target in row:
+            y = owner.get(target)
+            if y is not None and comp[y] != cx:
+                dag[cx].add(comp[y])
+            elif target in free_targets:
+                free_by_comp[cx].add(target)
+    indegree = [0] * len(comp_members)
+    for cx, children in enumerate(dag):
+        for cy in children:
+            indegree[cy] += 1
+    print("  condensation_components="
+          + repr([(cid, len(comp_members[cid]), len(dag[cid]),
+                   indegree[cid], len(free_by_comp[cid]),
+                   source_degree[cid], min(comp_members[cid]))
+                  for cid in range(len(comp_members))]))
+    print("  condensation_arcs="
+          + repr([(cx, cy) for cx, children in enumerate(dag)
+                  for cy in sorted(children)]))
+
     sink = bytearray([1]) * len(comp_members)
     for x in range(n):
         cx = comp[x]
