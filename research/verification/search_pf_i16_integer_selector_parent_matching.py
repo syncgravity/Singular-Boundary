@@ -141,10 +141,13 @@ def randomized_n8(fibers, parents, trials=500, seed=161117):
                      for p in parents}
     rng = Random(seed)
     best = None
+    seen_Q = set()
     for k in range(trials):
         Q = randomized_parent_matching(parents, neighborhoods, rng)
         if Q is None:
             continue
+        signature = tuple((p, Q[p]) for p in parents)
+        seen_Q.add(signature)
         got, total, rows, witness = evaluate_Q(8, fibers, Q)
         if best is None or got * best[1] > best[0] * total:
             best = (got, total, witness, Q)
@@ -156,8 +159,9 @@ def randomized_n8(fibers, parents, trials=500, seed=161117):
         if (k+1) % 25 == 0:
             print(f"n=8 trials={k+1} best_flow={best[0]}/{best[1]} "
                   f"witness={best[2]}", flush=True)
-    print(f"n=8 NO_SELECTOR_Q_FOUND trials={trials} "
+    print(f"n=8 NO_SELECTOR_Q_FOUND trials={trials} distinct_Q={len(seen_Q)} "
           f"best_flow={best[0]}/{best[1]} witness={best[2]}", flush=True)
+    print(f"n=8 best_Q={best[3]}", flush=True)
     raise SystemExit(1)
 
 
