@@ -94,7 +94,7 @@ def run(n=10):
     right=sorted(target_sources)
     rid={t:i for i,t in enumerate(right)}
     adj=[[rid[t] for t in sorted(row)] for row in rows]
-    ml,mr=hopcroft_karp(adj)
+    ml,mr,_=hopcroft_karp(adj)
     size=sum(v>=0 for v in ml)
     incidence=Counter(len(v) for v in target_sources.values())
     print(f"n={n}: sources={len(rows)}, target_union={len(right)}, "
