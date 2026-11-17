@@ -78,20 +78,26 @@ def check(n, expected_sources):
             n, parent, J, min(lift_counts.values()),
         )
         retained = sum(lift_counts.values())
-        weight = len(children)
+        # Split each source's unit demand evenly over all its non-root leaves.
+        # This avoids double-counting a source that belongs to several fibers.
+        weight = sum(
+            (Fraction(1, len(nonroot_leaf_indices(intervals, tau)))
+             for intervals, tau, leaf in children),
+            Fraction(0, 1),
+        )
         parent_demand[parent] += weight
         parent_capacity[parent] = len(parent_targets)
         row = set(T for T in child_rows[0]
                   if compress_tree(next(iter(inverse_last_switch(T, J, nchild))),
                                    set(J), nchild) in parent_targets)
         assert len(row) == retained
-        mass = Fraction(weight, len(row))
+        mass = weight / len(row)
         for T in row:
             quotient_column_load[T] += mass
         assert retained >= 2 * len(parent_targets)
         assert retained >= 2 ** (s - 1)
-        assert retained >= len(children)
-        slack = retained - len(children)
+        assert retained >= weight
+        slack = Fraction(retained, 1) - weight
         min_neighborhood_slack = (slack if min_neighborhood_slack is None
                                   else min(min_neighborhood_slack, slack))
         min_lifts_per_parent_target = (
@@ -114,7 +120,7 @@ def check(n, expected_sources):
         f"retained_lift_total={total_lifts}, "
         f"min_lifts_per_parent_target={min_lifts_per_parent_target}, "
         f"min_fiber_Hall_slack={min_neighborhood_slack}, "
-        f"parent_demand_range=[{min(parent_demand.values())},{max(parent_demand.values())}], "
+        f"split_parent_demand_range=[{min(parent_demand.values())},{max(parent_demand.values())}], "
         f"parent_capacity_range=[{min(parent_capacity.values())},{max(parent_capacity.values())}], "
         f"max_uniform_quotient_column={max_load} ({float(max_load):.12f}), "
         f"overloaded_targets={len(overloaded)}, "
@@ -126,8 +132,10 @@ def main():
     check(4, 2)
     check(6, 22)
     check(8, 608)
-    print("Fixed-(parent,J) local Hall expansion verified.")
-    print("This does not establish Hall across different (parent,J) fibers.")
+    print("Fixed-(parent,J) local Hall expansion and split-demand quotient transport tested.")
+    print("A column-load maximum <= 1 proves source-level Hall for this finite n.")
+    print("A column-load maximum > 1 only rejects this uniform quotient transport.")
+
 
 
 if __name__ == "__main__":
