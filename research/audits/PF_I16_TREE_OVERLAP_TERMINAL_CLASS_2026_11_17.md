@@ -137,26 +137,24 @@ inequality, or Yang--Mills mass-gap proof is claimed.
 ## 6. The matching-load boundary profile and its target class
 
 Every source in K_{2s} has the same matching load
-[
+$
 h_k^*=
 \begin{cases}
 1,&k\text{ odd},\\
 2,&k\text{ even}.
 \end{cases}
-]
+$
 This is exactly the live-interval pattern in the endpoint-sweep proof.
 
 Define the target class
-[
+$
 Q_{2s}=\{T\in\mathcal T(K_{2s}):c_k(T)\le h_k^*\text{ for every }k\}.
-]
+$
 Since a spanning tree crosses every cut at least once, its odd-cut loads in Q are
 exactly one.
 
 There is a second all-orders count:
-[
-|Q_{2s}|=3^{s-1}.
-]
+$|Q_{2s}|=3^{s-1}.$
 To see this, take the unique path P in T from port 1 to port 2s. At every odd
 cut P must use the unique crossing edge. Any edge not on P therefore cannot
 cross an odd cut; its endpoints must lie in one adjacent pair
@@ -171,9 +169,7 @@ and every sequence of choices gives a tree in Q. Hence |Q|=3^(s-1).
 
 Because every edge of R_n is load-dominating, every neighbor of K_{2s} lies
 in Q_{2s}. Thus
-[
-N_{R_n}(K_{2s})\subseteq Q_{2s}.
-]
+$N_{R_n}(K_{2s})\subseteq Q_{2s}.$
 The finite computations give equality at n=4,6,8: the respective target
 neighborhood sizes are 3,9,27, exactly 3^(s-1). The K-only neighborhood
 census, including n=10, is running as
@@ -188,13 +184,9 @@ witness lemma. For each such parent target, insertion of J has at least two
 guarded local lifts; the inverse final switch is unique for fixed J, so lifts
 of distinct parent targets are disjoint. All these lifts belong to R_n(x).
 Therefore
-[
-|R_n(x)|\ge 2\cdot2^{s-2}=2^{s-1}=|K_{2s}|.
-]
+$|R_n(x)|\ge 2\cdot2^{s-2}=2^{s-1}=|K_{2s}|.$
 For every nonempty A subset K_{2s}, choose x in A. Then
-[
-|N_{R_n}(A)|\ge|R_n(x)|\ge|K_{2s}|\ge|A|.
-]
+$|N_{R_n}(A)|\ge|R_n(x)|\ge|K_{2s}|\ge|A|.$
 So Hall holds on the entire terminal class K_{2s} for every s, without a
 matching computation.
 
