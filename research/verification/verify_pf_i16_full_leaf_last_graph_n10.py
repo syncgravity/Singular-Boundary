@@ -5,7 +5,9 @@ Unlike the canonical subgraph tests, this uses every parent-before-child
 insertion order and every guarded overlapping edge from candidate_outputs.
 Trees are encoded as 45-bit masks on K_10 to keep the incidence graph compact.
 """
-from collections import Counter
+from collections import Counter, defaultdict
+from array import array
+import sys
 from verify_pf_i16_source_dependent_leaf_peeling import (
     sources, canonical_leaf,
 )
@@ -70,6 +72,7 @@ def run(n=10):
         print(f"  true_free_target_degree_range=[{min(free_degree)},{max(free_degree)}], "
               f"histogram={dict(sorted(Counter(free_degree).items()))}")
         print(f"  sources_with_true_free_degree_le2={sum(d<=2 for d in free_degree)}")
+        sink_scc_census(rows, ml, mr, right)
     if size<len(rows):
         A,nb=hall_witness(rows,ml,mr,right)
         print(f"  hall_witness_sources={len(A)}, neighbor_count={nb}, "
