@@ -121,3 +121,22 @@ For s>=3 this is at least s-1, the maximum number of child sources in a fixed (p
 This proves the all-orders row-support statement: every source x in X_k has at least one neighbor in Y_k, and in fact the stated lower bound on its same-k neighborhood. It does not say that every edge out of X_k lands in Y_k; load domination only rules out target classes earlier than k. It does NOT prove Hall for arbitrary unions of different fixed-(parent,J) fibers inside X_k. Those neighborhoods can still collide, and the global capacity problem remains.
 
 The verifier `verify_pf_i16_first_overcrowded_cut_partition_n10.py` tests the row-support statement in the actual finite n=10 multivalued-pi relation. The verifier `verify_pf_i16_overcrowded_cut_split_transport.py` tests whether split-demand uniform transport now has column loads at most one after restricting to Y_k. These are finite diagnostics of the stronger quotient condition; they do not replace the local proof above or establish the global quotient inequality.
+
+
+## 7. Exhaustive n=10 same-cut row-support result
+
+The first-overcrowded-cut partition diagnostic completed successfully in workflow [44073281842](https://github.com/syncgravity/Singular-Boundary/actions/runs/44073281842), job 134004657248.
+
+Exact output:
+- 31,744 total sources; 31,728 complement sources.
+- 95,864 target trees in the multivalued-pi relation.
+- Source classes: X_3 has 30,528 sources; X_5 has 1,128; X_7 has 72.
+- Same-cut target support: 31,728/31,728 sources.
+- No source lacked a target in its own Y_k block.
+- The target incidence totals restricted to same-cut classes were 30,528 for Y_3, 22,002 for Y_5, and 4,708 for Y_7.
+
+The source degree sums in the same-cut restricted relation were 15,625,852 (k=3), 202,364 (k=5), and 5,400 (k=7).
+
+The diagnostic's second step (uniform split-demand transport) failed before executing its mathematics because the terminal class None was sorted with integer cut labels. The sort was corrected in commit 60a042fe9488e4686712c5059bffc16916ef1e8f. This is a reporting correction, not a failed transport result.
+
+The exact nonuniform split-demand max-flow test is separately running in [44078442710](https://github.com/syncgravity/Singular-Boundary/actions/runs/44078442710).
