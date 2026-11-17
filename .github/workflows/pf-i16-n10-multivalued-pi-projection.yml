@@ -9,6 +9,7 @@ on:
       - research/verification/verify_pf_i16_local_switch_fractional_transport.py
       - research/verification/verify_pf_i16_full_leaf_last_graph_n10.py
       - research/verification/verify_pf_i16_global_alternating_reroute.py
+      - research/verification/verify_pf_i16_n10_multivalued_pi_matching_certificate.py
       - .github/workflows/pf-i16-n10-multivalued-pi-projection.yml
   workflow_dispatch:
 jobs:
@@ -22,4 +23,12 @@ jobs:
           python-version: '3.12'
       - name: Test multivalued pi-parent projection graph
         working-directory: research/verification
-        run: python -u verify_pf_i16_n10_multivalued_pi_projection.py
+        run: |
+          python -u verify_pf_i16_n10_multivalued_pi_projection.py
+          python -u verify_pf_i16_n10_multivalued_pi_matching_certificate.py
+      - name: Upload explicit matching certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-n10-multivalued-pi-matching-certificate
+          path: research/verification/n10_multivalued_pi_matching.json
+          if-no-files-found: error
