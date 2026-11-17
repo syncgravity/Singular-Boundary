@@ -76,7 +76,7 @@ def run(n):
         vals=[v for (kk,_),v in loads.items() if kk==k]
         per_cut[k]=(len(vals),max(vals) if vals else Fraction(0),sum(vals,Fraction()))
     overloaded=[(key,val) for key,val in loads.items() if val>1]
-    print(f"n={n} sources={source_count} source_classes={sorted(source_class.items())}")
+    print(f"n={n} sources={source_count} source_classes={sorted(source_class.items(), key=lambda z: (-1 if z[0] is None else z[0]))}")
     print(f"  complement_fibers_by_cut={sorted(fiber_counts.items())}")
     print(f"  target_incidence_sum_by_cut={sorted(row_sizes.items())}")
     print(f"  max_fiber_size={max_fiber} empty_same_cut_fibers={len(empty)}")
