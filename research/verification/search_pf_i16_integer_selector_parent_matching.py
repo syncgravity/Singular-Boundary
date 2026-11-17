@@ -185,8 +185,23 @@ def maximum_matching_size(neighborhoods):
     for p in sorted(neighborhoods, key=lambda x: len(neighborhoods[x])):
         if augment(p, set()):
             size += 1
-    return size, owner
-
+    matched_left = set(owner.values())
+    unmatched = [p for p in neighborhoods if p not in matched_left]
+    # Standard alternating reachability from all unmatched left vertices.
+    z_left = set(unmatched)
+    z_right = set()
+    queue = list(unmatched)
+    while queue:
+        p = queue.pop()
+        for t in neighborhoods[p]:
+            if t in z_right:
+                continue
+            z_right.add(t)
+            q = owner.get(t)
+            if q is not None and q not in z_left:
+                z_left.add(q)
+                queue.append(q)
+    return size, owner, z_left, z_right
 
 def exhaustive_n6(fibers, parents):
     from itertools import product
@@ -248,9 +263,12 @@ def main():
     allowed = local_parent_census(8, f8, p8)
     print(f"n=8 locally_feasible_parent_choices={sum(len(v) for v in allowed.values())} "
           f"choice_range=[{min(map(len, allowed.values()))},{max(map(len, allowed.values()))}]", flush=True)
-    msize, owner = maximum_matching_size(allowed)
+    msize, owner, z_left, z_right = maximum_matching_size(allowed)
     print(f"n=8 matching_on_locally_feasible_Q_choices={msize}/{len(p8)}", flush=True)
     if msize < len(p8):
+        print(f"n=8 exact_Hall_witness_left={len(z_left)} right={len(z_right)} "
+              f"deficiency={len(z_left)-len(z_right)}", flush=True)
+        print(f"n=8 deficient_parent_sources={sorted(z_left, key=repr)}", flush=True)
         print("n=8 NO_INJECTIVE_Q_CAN_SATISFY_EVEN_SINGLE_PARENT_ROW_HALL", flush=True)
         return
     randomized_n8(f8, p8, allowed=allowed)
