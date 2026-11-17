@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify the fixed-(parent source, deleted interval) fiber expansion lemma."""
 from collections import defaultdict, Counter
+from fractions import Fraction
 
 from verify_pf_i16_source_dependent_leaf_peeling import (
     sources, canonical_leaf, parent_data, inverse_last_switch, compress_tree,
@@ -35,6 +36,9 @@ def check(n, expected_sources):
     max_fiber_size = 0
     min_neighborhood_slack = None
     checked = 0
+    parent_demand = Counter()
+    parent_capacity = {}
+    quotient_column_load = Counter()
 
     for (parent, J), children in fibers.items():
         pi, pt = parent
@@ -74,6 +78,16 @@ def check(n, expected_sources):
             n, parent, J, min(lift_counts.values()),
         )
         retained = sum(lift_counts.values())
+        weight = len(children)
+        parent_demand[parent] += weight
+        parent_capacity[parent] = len(parent_targets)
+        row = set(T for T in child_rows[0]
+                  if compress_tree(next(iter(inverse_last_switch(T, J, nchild))),
+                                   set(J), nchild) in parent_targets)
+        assert len(row) == retained
+        mass = Fraction(weight, len(row))
+        for T in row:
+            quotient_column_load[T] += mass
         assert retained >= 2 * len(parent_targets)
         assert retained >= 2 ** (s - 1)
         assert retained >= len(children)
@@ -94,7 +108,10 @@ def check(n, expected_sources):
         f"canonical_parent_target_total={total_parent_targets}, "
         f"retained_lift_total={total_lifts}, "
         f"min_lifts_per_parent_target={min_lifts_per_parent_target}, "
-        f"min_fiber_Hall_slack={min_neighborhood_slack}"
+        f"min_fiber_Hall_slack={min_neighborhood_slack}, "
+        f"parent_demand_range=[{min(parent_demand.values())},{max(parent_demand.values())}], "
+        f"parent_capacity_range=[{min(parent_capacity.values())},{max(parent_capacity.values())}], "
+        f"max_uniform_quotient_column={float(max(quotient_column_load.values())):.12f}"
     )
 
 
