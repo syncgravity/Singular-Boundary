@@ -1,0 +1,26 @@
+name: PF-I16 multivalued-pi exchange SCC small orders
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_multivalued_pi_exchange_scc_small.py
+      - research/verification/verify_pf_i16_n10_multivalued_pi_exchange_scc.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - research/verification/verify_pf_i16_full_leaf_last_graph_n10.py
+      - research/verification/verify_pf_i16_global_alternating_reroute.py
+      - .github/workflows/pf-i16-multivalued-pi-exchange-scc-small.yml
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify n4, n6, n8 exchange SCCs
+        working-directory: research/verification
+        run: python -u verify_pf_i16_multivalued_pi_exchange_scc_small.py
