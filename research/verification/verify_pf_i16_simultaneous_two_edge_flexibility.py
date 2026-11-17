@@ -45,7 +45,7 @@ def build_case(n):
     requirements = sorted(
         (x, T)
         for T, xs in target_sources.items()
-        for x in xs if owner[T] != x
+        for x in xs if owner.get(T) != x
     )
     return rows, requirements
 
