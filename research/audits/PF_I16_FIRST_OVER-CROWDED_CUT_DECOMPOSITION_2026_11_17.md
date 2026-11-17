@@ -113,7 +113,7 @@ If every crossing edge of P is contained strictly inside J, use the guaranteed n
 
 Therefore there is always a guarded final switch producing a child target in Y_k.
 
-The inverse final switch is unique for fixed J. Distinct parent targets therefore have disjoint lift sets. The parent canonical neighborhood has at least `2^(s-2)` targets. In the noncrossing case at least two guarded patterns per parent target preserve the class; in the crossing case at least one pattern per parent target enters Y_k. Consequently every source has at least `2^(s-2)` distinct same-class targets:
+The inverse final switch is unique for fixed J. Distinct parent targets therefore have disjoint lift sets. The parent canonical neighborhood has at least `2^(s-2)` targets. In the noncrossing case, the induction hypothesis supplies at least `2^(s-3)` parent targets in the corresponding class Y_{k'}; each has at least two guarded lifts preserving the class. This gives at least `2^(s-2)` child targets in Y_k. In the crossing case, every parent target has at least one guarded lift entering Y_k, so the full parent neighborhood gives at least `2^(s-2)` child targets. Consequently every source has at least `2^(s-2)` distinct same-class targets:
 `|N_R(x) ∩ Y_k| ≥ 2^(s−2)`.
 
 For s>=3 this is at least s-1, the maximum number of child sources in a fixed (parent,J) fiber. Thus every fixed fiber has local Hall within its matching first-overcrowded-cut block.
