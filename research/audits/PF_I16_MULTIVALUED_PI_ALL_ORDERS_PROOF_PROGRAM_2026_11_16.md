@@ -82,3 +82,34 @@ One promising route is a matching-relative Hall argument at the child level. Giv
 ## Proof boundary
 
 The ten-port matching is a finite verified computation. It does not establish \((H_n^\pi)\) for arbitrary \(n\), does not prove the weighted inequality, and does not establish a Yang–Mills mass gap. The all-orders burden is precisely the capacity-sensitive lifting/exchange lemma above.
+
+## New structural lemma: expansion inside a fixed (parent, deleted interval) fiber
+
+Fix a parent source \(p\) and a possible deleted interval \(J\). Consider all child sources \(x\) satisfying \(\pi_J(x)=p\). Such a child is obtained by adjoining \(J\) to the parent matching and adjoining exactly one overlap edge \(e=(J,I)\) to the parent overlap tree. Consequently
+\[
+|X(p,J)|\le s-1
+\]
+when the child has \(s\) matching intervals: there are at most \(s-1\) choices for the parent interval \(I\).
+
+For a fixed \(J\), the inverse final switch is rigid: from a child target \(T\), the two neighbors outside \(J\) recover the replaced edge, and deleting the local four-vertex tree and restoring that edge recovers a unique parent port tree \(P\). Therefore the lift sets of two distinct parent targets \(P\) are disjoint when \(J\) is fixed.
+
+Moreover, for every \(P\in C_{\rm can}(p)\), insertion of \(J\) has at least two guarded local switch outcomes. The connected-tree witness argument applies to the connected port tree \(P\): if a port lies strictly inside \(J\), follow its path to port 1 and take the first edge leaving the interior; otherwise the parent interval adjacent to \(J\) contains \(J\), and the path between that interval's endpoints has an edge spanning \(J\). The no-reinsertion guard leaves at least two local patterns. Thus, writing \(L_J(P)\) for the final-switch lifts,
+\[
+|L_J(P)|\ge 2,
+\qquad
+L_J(P)\cap L_J(P')=\varnothing\quad(P\ne P').
+\]
+It follows that
+\[
+|N_{R_n}(X(p,J))|
+\ge 2|C_{\rm can}(p)|
+\ge 2\cdot 2^{s-2}
+=2^{s-1}
+\ge s-1
+\ge |X(p,J)|.
+\]
+So Hall holds on every single fixed-\((p,J)\) fiber, with substantial local slack.
+
+This isolates the remaining obstruction sharply: it is not a shortage of lifts within one fixed parent/deleted-interval fiber. It is collision between lift sets belonging to different deleted intervals \(J\), and potentially different parent sources, where the same child port tree can have distinct inverse projections. An all-orders proof should exploit the switch relation between these different projections to exchange/reroute representatives globally.
+
+The inequality above is a local Hall statement. It does not imply global Hall for a union of different \((p,J)\) fibers, because their target neighborhoods can overlap.
