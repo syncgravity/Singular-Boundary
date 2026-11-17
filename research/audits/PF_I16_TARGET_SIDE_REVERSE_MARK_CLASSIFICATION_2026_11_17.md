@@ -65,17 +65,24 @@ induced four-set cannot be connected.
 
 ## 3. Port order makes the surviving type-II pattern rigid
 
-For type II, write the path as a-u-b-v, where a is the leaf and b is
-degree two. Since the allowed local path is the increasing path on the four
-sorted ports and a<b for an interval J=(a,b), the only possible order is
-\[
-a<u<b<v.
-\]
-The reverse local switch removes au, ub, bv and restores the absent edge uv.
-Thus a valid type-II mark is a leaf a to the left of a center u, paired
-with a degree-two vertex b to the right of u whose other neighbor v lies
-to the right of b. The symmetric path orientation is incompatible with the
-ordered interval endpoints.
+For type II, write the target path as l-u-d-v, where l is the leaf, d is
+the degree-two endpoint, and u is the middle vertex. The allowed local path
+is the increasing path on the four sorted ports. Since the interval endpoints
+are the two marked vertices, there are exactly two possible order patterns:
+
+- l < u < d < v, with J=(l,d)=(x1,x3);
+- v < d < u < l, with J=(d,l)=(x2,x4).
+
+In the first pattern, the path edges are lu, ud, dv and the absent old edge
+is uv. In the second, the path edges in increasing order are vd, du, ul
+and the absent old edge is vu. In either case the old edge joins the two
+unmarked vertices and is absent from the local path. These are mirror
+orientations; neither may be discarded. The inverse removes the three
+path edges and restores uv.
+
+Type-I marks are similarly rigid: in a star pattern, J is the adjacent
+leaf/center pair at one end of the sorted four-set; in the path pattern,
+J is the middle edge (x2,x3).
 
 Type-I marks are likewise local: either a leaf/degree-three adjacent pair
 in one of the two star patterns, or the middle edge of an increasing
