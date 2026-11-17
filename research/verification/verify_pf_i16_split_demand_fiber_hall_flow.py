@@ -14,7 +14,9 @@ from collections import defaultdict, deque
 from fractions import Fraction
 from math import lcm
 
-from verify_pf_i16_source_dependent_leaf_peeling import (\n    sources, parent_data, canonical_leaf, inverse_last_switch, compress_tree,\n)
+from verify_pf_i16_source_dependent_leaf_peeling import (
+    sources, parent_data, canonical_leaf, inverse_last_switch, compress_tree,
+)
 from verify_pf_i16_local_switch_fractional_transport import candidate_outputs
 from verify_pf_i16_fixed_parent_leaf_fiber_expansion import nonroot_leaf_indices
 
