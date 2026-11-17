@@ -1,0 +1,26 @@
+name: PF-I16 tree-overlap terminal decomposition
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_tree_overlap_terminal_decomposition.py
+      - research/verification/verify_pf_i16_n10_multivalued_pi_exchange_scc.py
+      - research/verification/verify_pf_i16_global_alternating_reroute.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - research/verification/verify_pf_i16_full_leaf_last_graph_n10.py
+      - .github/workflows/pf-i16-tree-overlap-terminal-decomposition.yml
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test tree-overlap terminal decomposition
+        working-directory: research/verification
+        run: python -u verify_pf_i16_tree_overlap_terminal_decomposition.py
