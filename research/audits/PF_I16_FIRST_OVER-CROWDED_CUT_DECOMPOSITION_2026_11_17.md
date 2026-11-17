@@ -89,3 +89,42 @@ The first-overcrowded-cut partition verifier
 is being run through the n=10 multivalued-pi exchange workflow. It tests the necessary preliminary condition that every source in X_k has at least one allowed target in Y_k. Even if this passes, it is only a row-support test, not Hall on each block. If it fails, the first-overcrowded cut still gives a valid source partition but cannot be used as a same-k block decomposition without a more flexible rerouting argument.
 
 No all-orders complement Hall theorem is claimed here.
+
+
+## 6. Local cut-preserving lifting lemma
+
+The first-overcrowded-cut partition is compatible with the final guarded switch. This gives an all-orders row-support statement, not just a finite observation.
+
+Fix a child source x in X_k, and choose any non-root leaf interval J. Let p=pi_J(x), and let P be a canonical parent target for p. Let k' be the parent cut corresponding to child cut k.
+
+There are two cases.
+
+### J does not cross k
+
+Both endpoints of J lie on the same side of k. Deleting them preserves the number of matching intervals crossing the corresponding cut, and preserves the first-overcrowded odd cut after the obvious relabeling:
+- if J lies left of k, the parent first-overcrowded cut is k-2;
+- if J lies right of k, it is k.
+
+By induction, choose P in the corresponding parent target class, so c_{k'}(P)>=2. The guarded final switch replaces an admissible edge e overlapping J by a three-edge local tree. Since J lies on one side of the cut, either e also lies on that side (zero crossing edges are replaced by zero) or e crosses the cut (exactly one crossing edge is replaced by exactly one). Thus c_k is preserved. The child target remains in Y_k.
+
+### J crosses k
+
+Every parent port tree P has at least one edge crossing the corresponding parent cut. If an admissible crossing edge e is not contained strictly inside J, the four endpoints of e and J are either interleaved or J is nested inside e. In either case a guarded middle-centered star survives and replaces one crossing edge by two, increasing the cut crossing count by one.
+
+If every crossing edge of P is contained strictly inside J, use the guaranteed no-reinsertion witness edge e from the connected-tree switch lemma. It is not contained inside J and cannot cross k under this assumption. Since it overlaps J, its endpoints lie on one side of k; the local switch then introduces exactly one crossing edge while leaving the existing crossing edges untouched. Again c_k increases from at least one to at least two.
+
+Therefore there is always a guarded final switch producing a child target in Y_k.
+
+The inverse final switch is unique for fixed J. Distinct parent targets therefore have disjoint lift sets. The parent canonical neighborhood has at least 2^(s-2) targets. In the noncrossing case at least two guarded patterns per parent target preserve the class; in the crossing case at least one pattern per parent target enters Y_k. Consequently
+[
+|N_{R_{2s}}(x)\cap Y_k|\ge 2^{s-2}.
+]
+For s>=3 this is at least s-1, the maximum number of child sources in a fixed (parent,J) fiber. Thus every fixed fiber has local Hall within its matching first-overcrowded-cut block.
+
+This proves the all-orders support inclusion
+[
+N_{R_{2s}}(X_k)\subseteq Y_k
+]
+for the constructed cut-preserving choices, and every individual source has a nonempty same-k neighborhood. It does NOT prove Hall for arbitrary unions of different fixed-(parent,J) fibers inside X_k. Those neighborhoods can still collide, and the global capacity problem remains.
+
+The verifier `verify_pf_i16_first_overcrowded_cut_partition_n10.py` tests the row-support statement in the actual finite n=10 multivalued-pi relation. The verifier `verify_pf_i16_overcrowded_cut_split_transport.py` tests whether split-demand uniform transport now has column loads at most one after restricting to Y_k. These are finite diagnostics of the stronger quotient condition; they do not replace the local proof above or establish the global quotient inequality.
