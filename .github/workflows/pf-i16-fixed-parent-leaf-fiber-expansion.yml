@@ -1,0 +1,23 @@
+name: PF-I16 fixed parent-leaf fiber expansion
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_fixed_parent_leaf_fiber_expansion.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - .github/workflows/pf-i16-fixed-parent-leaf-fiber-expansion.yml
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify fixed-parent-leaf Hall expansion
+        working-directory: research/verification
+        run: python -u verify_pf_i16_fixed_parent_leaf_fiber_expansion.py
