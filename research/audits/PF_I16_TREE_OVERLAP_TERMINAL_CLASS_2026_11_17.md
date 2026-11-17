@@ -196,3 +196,41 @@ complement. The separable finite matching test asks for a matching of
 n=4,6,8, with complement sizes 0,18,600 respectively. Proving this
 complement Hall statement (or a suitable recursive replacement for it) is
 now the central remaining combinatorial task.
+
+
+## 8. Completed n=10 computations: terminal SCC conjecture needs refinement
+
+The original n=10 multivalued-pi exchange SCC workflow completed successfully:
+[44048791345](https://github.com/syncgravity/Singular-Boundary/actions/runs/44048791345).
+
+Exact output:
+- 31,744 sources and 608 parent sources;
+- 31,815,129 raw leaf outputs;
+- 15,834,241 distinct source-target incidences;
+- 95,864 target trees;
+- a source-saturating matching of 31,744/31,744;
+- 3 SCCs, of sizes 30,132, 396, and 1,216;
+- condensation arcs 0->1, 0->2, 1->2;
+- the unique sink SCC has 1,216 sources and 3,263 free target neighbors;
+- no zero-free sink SCC.
+
+Thus the matching-relative criterion proves strict Hall expansion for the complete n=10 multivalued-pi relation. It also proves every individual incidence is exchangeable into some saturating matching. It does NOT prove simultaneous prescribed-edge flexibility.
+
+The K-only neighborhood workflow also completed:
+[44052220966](https://github.com/syncgravity/Singular-Boundary/actions/runs/44052220966).
+
+It gives:
+| n | |K_n| | |N(K_n)| | expected 2^(s-1) | expected 3^(s-1) | incidences | K matching |
+|---:|---:|---:|---:|---:|---:|---:|
+| 4 | 2 | 3 | 2 | 3 | 5 | 2/2 |
+| 6 | 4 | 9 | 4 | 9 | 25 | 4/4 |
+| 8 | 8 | 27 | 8 | 27 | 125 | 8/8 |
+| 10 | 16 | 81 | 16 | 81 | 625 | 16/16 |
+
+Since every K-neighbor lies in Q and |Q_10|=81, this confirms N(K_10)=Q_10. The terminal class itself remains Hall-saturating at n=10.
+
+Important correction: the unique sink SCC at n=10 has size 1,216, not 16. Therefore the earlier conjecture that K_{2s} itself is the unique terminal SCC is false at n=10. The n=4,6,8 separable decomposition does not automatically extend. The all-orders terminal Hall lemma and the exact K/Q counts remain valid; what fails is identifying K as the terminal exchange component at every order.
+
+A follow-up diagnostic is being run to locate the 16 K_10 sources among the three SCCs and test whether K_10 is itself a strongly connected component or is distributed among components. A second follow-up tests whether the complement sources can be matched outside Q_10. Those results are not yet asserted here.
+
+No all-orders complement Hall theorem or weighted one-link inequality is claimed.
