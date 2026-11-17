@@ -85,3 +85,34 @@ It does **not** prove (QH) for arbitrary \(n\), provide a uniform structural bou
 1. Export the successful integral flows (and preferably min-cut/replay data) as standalone certificates for each order, with a small independent verifier that checks capacities, conservation, adjacency, and total demand without rerunning the graph construction.
 2. Identify a structural mechanism controlling the quotient neighborhood union as \(n\) grows. In particular, seek a decomposition or expansion inequality that explains why parent-canonical fiber rows jointly carry the split demand.
 3. Keep all-orders claims separate from finite-order evidence. Do not promote the observed zero deficits to a theorem for arbitrary \(n\).
+
+
+## Run-log provenance and exact terminal output (2026-11-17)
+
+The completed GitHub Actions run [44177680653](https://github.com/syncgravity/Singular-Boundary/actions/runs/44177680653) was independently re-opened after completion. Its sole job, `verify` (job ID `134373326561`), has status `completed` and conclusion `success`. The job checked out commit `2773ccc51d286eb2c8e0675584530a4bf875730d` on this branch and executed:
+
+```text
+python verify_pf_i16_split_demand_fiber_hall_flow.py
+```
+
+The verifier's exact result lines and accounting, as emitted in the job log, are:
+
+```text
+n=6 sources=22 fibers=18 targets=43 scale=2
+  raw_leaf_last_fiber_incidences=159 retained_multivalued_pi_incidences=159
+  exact_total_demand=22 scaled=44
+  max_flow=44 deficit=0
+RESULT: exact split-demand quotient Hall flow exists.
+n=8 sources=608 fibers=440 targets=1493 scale=6
+  raw_leaf_last_fiber_incidences=23114 retained_multivalued_pi_incidences=19154
+  exact_total_demand=608 scaled=3648
+  max_flow=3648 deficit=0
+RESULT: exact split-demand quotient Hall flow exists.
+n=10 sources=31744 fibers=21280 targets=95864 scale=12
+  raw_leaf_last_fiber_incidences=9438630 retained_multivalued_pi_incidences=6598466
+  exact_total_demand=31744 scaled=380928
+  max_flow=380928 deficit=0
+RESULT: exact split-demand quotient Hall flow exists.
+```
+
+The workflow job's steps show the verifier step completed successfully. No workflow artifact was published by this run; therefore this run establishes the exact finite max-flow result through its checked-in verifier and job log, but does not yet provide a separately downloadable flow witness. Exporting a replayable flow certificate remains an explicit next task.
