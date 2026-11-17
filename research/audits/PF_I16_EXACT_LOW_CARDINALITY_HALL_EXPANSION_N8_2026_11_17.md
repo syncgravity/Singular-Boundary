@@ -31,7 +31,7 @@ source triples. Its minimum Hall slack was 5, attained by exactly two triples:
 There are no triple slacks 6, 7, or 8: the next triple slack is 9. The exact triple verifier and CI run are:
 
 - `research/verification/verify_pf_i16_triple_hall_slack.py`
-- https://github.com/syncgravity/Singular-Boundary/actions/runs/43987620661
+- https://github.com/syncgravity/Singular-Boundary/actions/runs/43987845454
 
 The pair census found seven minimizers; the triple census found two. In both cases the minimizing configurations are concentrated within a single matching and a single parent source, rather than spread across parent fibers.
 
