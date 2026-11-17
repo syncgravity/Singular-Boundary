@@ -118,8 +118,11 @@ def run():
     print(f"  alternating_hall_witness_neighbors={len(hall_neighbors)}")
     print(f"  alternating_hall_witness_deficiency={deficiency}")
     print(f"  witness_parent_fibers={len(witness_fibers)}")
-    print(f"  witness_fiber_source_count_range=[{min(witness_fibers.values())},{max(witness_fibers.values())}]")
-    print(f"  witness_fiber_histogram={dict(sorted(Counter(witness_fibers.values()).items()))}")
+    if witness_fibers:
+        print(f"  witness_fiber_source_count_range=[{min(witness_fibers.values())},{max(witness_fibers.values())}]")
+        print(f"  witness_fiber_histogram={dict(sorted(Counter(witness_fibers.values()).items()))}")
+    else:
+        print("  witness_fiber_source_count_range=empty (no Hall witness; graph is saturated)")
     if matching == len(rows):
         print("PASS: every child source can be matched while its pi-projection is leaf-last for some non-root parent leaf.")
     else:
