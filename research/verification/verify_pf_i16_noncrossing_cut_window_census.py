@@ -56,8 +56,11 @@ def run(n):
             windows[(k,cls,q0,window)]+=1
     print(f"n={n} fibers={sum(totals.values())}")
     for (k,cls),count in sorted(totals.items()):
-        dist=sorted((pf,c) for (kk,cc,pf),c in first.items()
-                    if kk==k and cc==cls)
+        dist=sorted(
+            ((pf,c) for (kk,cc,pf),c in first.items()
+             if kk==k and cc==cls),
+            key=lambda z:(-1 if z[0] is None else z[0])
+        )
         wdist=sorted((q,w,c) for (kk,cc,q,w),c in windows.items()
                      if kk==k and cc==cls)
         print(f"  child_cut={k} class={cls} fibers={count} parent_first_cut={dist}")
