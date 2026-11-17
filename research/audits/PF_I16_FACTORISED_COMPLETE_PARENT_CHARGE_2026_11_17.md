@@ -154,3 +154,19 @@ Workflow run is queued as [44159648991](https://github.com/syncgravity/Singular-
 ## Split-demand flow verifier correction (2026-11-17)
 
 The first queued run [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991) failed before constructing the network: `sources(n)` is a generator, but the verifier called `len(sources(n))`. This is a Python harness error, not a Hall result. The verifier now materializes the source iterator once as `all_sources=list(sources(n))`, counts that list, and uses it consistently for the fiber construction and accounting (commit `4d5c12357cbd46c2e9ec093131ea62efea272e20`). A fresh push-triggered workflow run is pending. No quotient-Hall conclusion is drawn from the failed run.
+
+
+## Exact nonuniform split-demand quotient result (2026-11-17)
+
+The corrected verifier completed successfully in GitHub Actions run [44160365037](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160365037), at commit `f3631e6a27d86b6455176bf750a5a1c158a23c19`. Exact integer max-flow output:
+
+| Ports | Sources | Leaf fibers | Targets | Scale | Split demand | Max flow | Deficit |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 6 | 22 | 18 | 43 | 2 | 22 | 44 | 0 |
+| 8 | 608 | 440 | 1,493 | 6 | 608 | 3,648 | 0 |
+
+The fiber supplies are `L*delta(F)` and each target has capacity `L`, with `L=lcm(1,...,s-1)`. A full integral flow is therefore an exact rational allocation of each fiber's split demand across its common child-target row. This establishes the split-demand quotient Hall inequality at 6 and 8 ports. The original source-level Hall inequality follows at those orders because every source contributes total demand one across all of its leaf fibers, and every family of sources is supported on the union of its touched fibers.
+
+The initial run [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991) failed before constructing a network because the script attempted `len()` on a generator; it is superseded by the corrected successful run and has no mathematical significance.
+
+The verifier has now been extended to 10 ports (`run(10,31744)`) and the workflow is queued as [44160475265](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160475265) and [44160469684](https://github.com/syncgravity/Singular-Boundary/actions/runs/44160469684). The latter uses the workflow's updated step label. The 10-port result is pending; no extrapolation from 6 and 8 ports is claimed.
