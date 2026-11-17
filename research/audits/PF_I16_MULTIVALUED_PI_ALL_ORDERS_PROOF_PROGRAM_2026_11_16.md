@@ -113,3 +113,38 @@ So Hall holds on every single fixed-\((p,J)\) fiber, with substantial local slac
 This isolates the remaining obstruction sharply: it is not a shortage of lifts within one fixed parent/deleted-interval fiber. It is collision between lift sets belonging to different deleted intervals \(J\), and potentially different parent sources, where the same child port tree can have distinct inverse projections. An all-orders proof should exploit the switch relation between these different projections to exchange/reroute representatives globally.
 
 The inequality above is a local Hall statement. It does not imply global Hall for a union of different \((p,J)\) fibers, because their target neighborhoods can overlap.
+
+## Quotient reduction: the child graph is a weighted fiber graph
+
+There is a further exact simplification. For fixed \((p,J)\), every child source in \(X(p,J)\) has the same parent source after deleting \(J\), and its overlap tree is the same parent overlap tree plus one edge incident to \(J\). In a history with \(J\) inserted last, the preceding states depend only on \(p\); the final set of allowed local switches depends only on the current port tree and \(J\), not on which overlap-tree edge made \(J\) a leaf. Hence
+\[
+R_n(x)=R_n(x')=:N(p,J)
+\qquad(x,x'\in X(p,J)).
+\]
+The finite verifier `verify_pf_i16_fixed_parent_leaf_fiber_expansion.py` explicitly checks this equality.
+
+Let \(w(p,J)=|X(p,J)|\). The full child Hall condition is therefore equivalent to the weighted quotient condition
+\[
+\boxed{
+\left|\bigcup_{(p,J)\in S}N(p,J)\right|
+\ge \sum_{(p,J)\in S}w(p,J)
+\quad\text{for every set }S\text{ of nonempty fibers}.
+}
+\tag{QH\(_n^\pi\)}
+\]
+Indeed, for any child-source subset \(A\), its neighborhood is the union of the neighborhoods of the fibers it meets, while \(|A|\) is at most the sum of the full weights of those fibers. Conversely, taking all sources in any chosen collection of fibers gives exactly the weighted inequality.
+
+This is a real reduction: the recursive Hall problem is no longer about arbitrary subsets of individual \((M,\tau)\) sources. It is a capacitated Hall problem on the much more structured index set \((p,J)\). The local lemma gives
+\[
+w(p,J)\le s-1,
+\qquad
+|N(p,J)|\ge 2|C_{\rm can}(p)|\ge 2^{s-1}.
+\]
+Thus every individual quotient vertex has a large surplus; only overlap among neighborhoods of distinct fibers can cause deficiency.
+
+A proof can now focus on the quotient incidence geometry:
+- a right target \(T\) and a proposed deleted interval \(J\) determine at most one parent port tree \(P\);
+- for fixed \(J\), different parent targets have disjoint lift sets;
+- the remaining collisions are precisely between distinct \((p,J)\) fibers, including different \(J\)'s for the same parent source and different parent sources whose canonical neighborhoods share a parent target.
+
+The all-orders problem has consequently been reduced to proving \((QH_n^\pi)\), not the original source-level Hall statement directly.
