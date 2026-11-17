@@ -117,3 +117,19 @@ No all-orders complement Hall theorem, weighted one-link inequality, or Yang–M
 The first completed run exposed an implementation error in the target-load accumulator: the loop iterated over each lift as `Tcode` but incremented the stale outer-loop variable `T`. Consequently it accumulated each fiber's total charge on one unrelated final target, producing artificial loads (including values greater than 1) and a severely undercounted target-column set. Those numerical loads and the associated apparent overload are invalid and must not be interpreted mathematically.
 
 The verifier was corrected to increment `loads[Tcode]` in commit `4d1c8a823be07a5b18a1dadf727236579147fd2c`. A fresh workflow run is required before reporting any factorized-charge result. The structural identity and conservation argument above are unaffected; the finite target-column computation is pending re-verification.
+
+
+## Corrected exact finite result (2026-11-17)
+
+The corrected accumulator was run successfully in GitHub Actions run [44156298056](https://github.com/syncgravity/Singular-Boundary/actions/runs/44156298056), at commit `3900934774f08e6d5ab98deca0bbf8222648dcfe`. Exact rational output:
+
+| Ports | Complement sources | Fibers | Split demand | Child target columns | Maximum load | Overloaded targets |
+|---:|---:|---:|---:|---:|---:|---:|
+| 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6 | 18 | 12 | 18 | 37 | 5/4 | 4 |
+| 8 | 600 | 424 | 600 | 1,482 | 247217/75600 | 123 |
+| 10 | 31,728 | 21,240 | 31,728 | 95,844 | 2173943720504674434439/221974028224149801600 | 6,641 |
+
+At n=6, the maximally loaded target is the tree with edges `(1,2),(2,3),(3,4),(3,6),(4,5)`, at exact load `5/4`. At n=8 and n=10, the maximum loads are approximately 3.270066137566 and 9.793685044583. Every run verifies exact total column load equals total split demand. Hence this is a failure of the uniform-over-parent-targets / uniform-over-lifts allocation, not a Hall obstruction.
+
+A diagnostic extension now records each worst target's contributing fibers and the corresponding raw parent-incidence upper bound. This will distinguish whether the dominant concentration comes from many parent fibers mapping to the same reverse parent, or from unusually small lift multiplicities.
