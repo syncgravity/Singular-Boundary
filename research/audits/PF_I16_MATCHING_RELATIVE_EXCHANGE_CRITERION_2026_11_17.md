@@ -21,7 +21,7 @@ An arc x->z means that x can take the right vertex currently assigned to z. Also
 For A subset X, the exact slack identity is
 
 ```
-|N(A)| - |A| = |F(A)| + |out_D(A)|,
+|N(A)| - |A| = |F(A)| + |N_D^+(A)|,
 ```
 
 where F(A)=N(A) intersect Y_free and out_D(A) is the set of arcs from A to X\A. This follows by partitioning N(A) into unmatched right vertices and matched right vertices mu(z); the latter are indexed injectively by z in X.
