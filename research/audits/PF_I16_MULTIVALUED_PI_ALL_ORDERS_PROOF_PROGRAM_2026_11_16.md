@@ -160,3 +160,34 @@ then summing the transport over any fiber set proves \((QH_n^{\rm split})\), and
 The verifier `verify_pf_i16_fixed_parent_leaf_fiber_expansion.py` now computes these demands exactly as rational numbers and reports exact target loads and overload counts. A maximum column load at most one proves Hall for that finite order. A load above one only disproves this uniform transport; it does not disprove Hall or a nonuniform fractional transport.
 
 The all-orders task is to prove the split-demand quotient inequality, perhaps by constructing a nonuniform transport or a matching-relative alternating-boundary argument. This quotient formulation is a sufficient reduction, not an equivalence.
+
+## From a Hall matching to the weighted one-link inequality
+
+Let \(X_n\) be the source objects \((M,\tau)\), each carrying load vector \(m(M)\), and let \(Y_n\) be all labelled port-spanning trees, each carrying cut-load vector \(c(T)\). Every edge in the guarded-switch relation satisfies
+\[
+c(T)\le m(M)\quad\text{coordinatewise}.
+\]
+
+If the split-demand transport has all target-column loads at most one, then it is a fractional matching saturating every source. Since the bipartite incidence matrix is integral (equivalently, by the max-flow/min-cut theorem for bipartite graphs), a source-saturating integral matching exists. The same conclusion follows directly if one verifies a matching certificate.
+
+Now let \(D\) be any down-set in the coordinatewise load poset. Every source with \(m(M)\in D\) is matched to a distinct target with \(c(T)\le m(M)\), hence \(c(T)\in D\). Therefore
+\[
+\#\{(M,\tau):m(M)\in D\}
+\le
+\#\{T:c(T)\in D\}.
+\tag{D}
+\]
+
+For \(0\le x_k\le1\), the weight
+\[
+f(h)=\prod_{k=1}^{n-1}x_k^{h_k}
+\]
+is antitone in the coordinatewise order. On a finite poset, every nonnegative antitone function is a nonnegative linear combination of indicators of its superlevel down-sets (equivalently, use the layer-cake identity \(f(h)=\int_0^\infty\mathbf 1_{\{f(h)\ge t\}}\,dt\)). Applying (D) to each such down-set and integrating yields
+\[
+\sum_{(M,\tau)}\prod_{k=1}^{n-1}x_k^{m_k(M)}
+\le
+\sum_{T\in\mathcal T(K_n)}\prod_{k=1}^{n-1}x_k^{c_k(T)}.
+\]
+Since each matching \(M\) occurs with exactly \(\tau(H_M)\) overlap-tree choices \(\tau\), the left side is precisely the weighted one-link expression in (1).
+
+Thus the split-demand column test is not merely a numerical surrogate: a successful all-orders bound would imply the desired weighted inequality exactly. The present computations only test this route at finite orders; no all-orders column bound has yet been established.
