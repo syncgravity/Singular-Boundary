@@ -169,6 +169,25 @@ def local_parent_census(n, fibers, parents):
               f"best={best[0]}/{best[1]} Q={best[2]}", flush=True)
     return allowed
 
+def maximum_matching_size(neighborhoods):
+    owner = {}
+    def augment(p, seen):
+        for t in neighborhoods[p]:
+            if t in seen:
+                continue
+            seen.add(t)
+            q = owner.get(t)
+            if q is None or augment(q, seen):
+                owner[t] = p
+                return True
+        return False
+    size = 0
+    for p in sorted(neighborhoods, key=lambda x: len(neighborhoods[x])):
+        if augment(p, set()):
+            size += 1
+    return size, owner
+
+
 def exhaustive_n6(fibers, parents):
     from itertools import product
     neighborhoods = {p: sorted(parent_neighborhood(p), key=repr)
@@ -229,6 +248,11 @@ def main():
     allowed = local_parent_census(8, f8, p8)
     print(f"n=8 locally_feasible_parent_choices={sum(len(v) for v in allowed.values())} "
           f"choice_range=[{min(map(len, allowed.values()))},{max(map(len, allowed.values()))}]", flush=True)
+    msize, owner = maximum_matching_size(allowed)
+    print(f"n=8 matching_on_locally_feasible_Q_choices={msize}/{len(p8)}", flush=True)
+    if msize < len(p8):
+        print("n=8 NO_INJECTIVE_Q_CAN_SATISFY_EVEN_SINGLE_PARENT_ROW_HALL", flush=True)
+        return
     randomized_n8(f8, p8, allowed=allowed)
 
 
