@@ -110,3 +110,10 @@ An initial implementation compared parent-target keys encoded by a port-count-de
 The factorized allocation is an exact structural construction conditional only on the already established fixed-fiber inverse partition and lift lower bound. The target capacity-one estimate (1), or sufficient estimate (3), remains open until the exact finite run is complete and, more importantly, until an all-orders argument is found.
 
 No all-orders complement Hall theorem, weighted one-link inequality, or Yang–Mills mass gap is claimed.
+
+
+## Verifier correction (2026-11-17)
+
+The first completed run exposed an implementation error in the target-load accumulator: the loop iterated over each lift as `Tcode` but incremented the stale outer-loop variable `T`. Consequently it accumulated each fiber's total charge on one unrelated final target, producing artificial loads (including values greater than 1) and a severely undercounted target-column set. Those numerical loads and the associated apparent overload are invalid and must not be interpreted mathematically.
+
+The verifier was corrected to increment `loads[Tcode]` in commit `4d1c8a823be07a5b18a1dadf727236579147fd2c`. A fresh workflow run is required before reporting any factorized-charge result. The structural identity and conservation argument above are unaffected; the finite target-column computation is pending re-verification.
