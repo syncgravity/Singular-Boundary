@@ -132,3 +132,4 @@ def run(n, expected_sources):
 if __name__=="__main__":
     run(6,22)
     run(8,608)
+    run(10,31744)
