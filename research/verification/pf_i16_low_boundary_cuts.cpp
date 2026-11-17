@@ -116,7 +116,10 @@ int main() {
          << " n=" << n << " arcs=" << m << " free_targets=" << f
          << " banned_sets_tested=" << tested << "\n";
     cout << "sink_components_examined=" << sinkComponents
+         << " sink_components_per_banned_set=" << (tested ? (double)sinkComponents/tested : 0.0)
          << " minimum_sink_slack=" << minimumSinkSlack
+         << " minimum_free_target_neighbors=" << minimumFreeCount
+         << " minimum_sink_source_count=" << minimumSinkSize
          << " minimizers=" << minimumCount << "\n";
     cout << "minimum_witness_banned=(" << bestB1 << "," << bestB2 << ")"
          << " boundary_count=" << bestBoundary
