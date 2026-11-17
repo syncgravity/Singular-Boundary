@@ -1,0 +1,20 @@
+name: PF-I16 factorized reverse-switch charge
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/verification/verify_pf_i16_factorized_reverse_switch_charge.py'
+      - '.github/workflows/pf-i16-factorized-reverse-switch-charge.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-admissible-exchange-2026-11-16
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact factorized charge at n=4,6,8,10
+        working-directory: research/verification
+        run: python verify_pf_i16_factorized_reverse_switch_charge.py
