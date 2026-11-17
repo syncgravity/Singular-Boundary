@@ -25,6 +25,7 @@ def run(n=6):
     by_size = defaultdict(Counter)
     zero_sets = []
     one_sets = []
+    min_sets = []
     min_slack = N + len(targets)
     for mask in range(1, 1 << N):
         bit = mask & -mask
@@ -34,7 +35,11 @@ def run(n=6):
         size = mask.bit_count()
         slack = unions[mask].bit_count() - size
         by_size[size][slack] += 1
-        min_slack = min(min_slack, slack)
+        if slack < min_slack:
+            min_slack = slack
+            min_sets = [mask]
+        elif slack == min_slack:
+            min_sets.append(mask)
         if slack == 0:
             zero_sets.append(mask)
         elif slack == 1:
@@ -42,6 +47,11 @@ def run(n=6):
 
     print(f"n={n}: sources={N}, targets={len(targets)}, subsets={(1<<N)-1}")
     print(f"  minimum_nonempty_Hall_slack={min_slack}")
+    print(f"  subsets_attaining_minimum={len(min_sets)}")
+    for m in sorted(min_sets, key=lambda z: (z.bit_count(), z)):
+        ids = [i for i in range(N) if m & (1 << i)]
+        fibers = Counter(metadata[i]["parent"] for i in ids)
+        print(f"    minimum_set_sources={ids}, size={len(ids)}, parent_fiber_sizes={sorted(fibers.values())}")
     print(f"  zero_slack_subsets={len(zero_sets)}, one_slack_subsets={len(one_sets)}")
     for size in sorted(by_size):
         c = by_size[size]
