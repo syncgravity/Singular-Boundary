@@ -64,7 +64,7 @@ Thus every canonical parent target has at least one guarded final-switch lift in
 
 This completes the induction.
 
-Finally, a fixed fiber \(F(p,J)\) has at most \(s-1\) sources, since the new interval \(J\) can be attached to at most the \(s-1\) parent intervals in the overlap tree. All sources in this fiber have the same leaf-last target neighborhood, and the same first-overcrowded cut. Therefore (L) gives
+Finally, a fixed fiber \(F(p,J)\) has at most \(s-1\) sources, since the new interval \(J\) can be attached to at most the \(s-1\) parent intervals in the overlap tree. All sources in this fiber have the same matching (the parent matching plus J) and hence the same first-overcrowded cut. They also have the same leaf-last target neighborhood: their parent overlap tree is identical, and the parent-before-child switch history followed by insertion of J depends only on the parent source, J, and the current parent port tree—not on which parent interval is the unique overlap-tree neighbor of J. Therefore (L) gives
 \[
 |N(F(p,J))\cap Y_k|\ge2^{s-2}\ge s-1\ge|F(p,J)|
 \]
