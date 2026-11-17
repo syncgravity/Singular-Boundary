@@ -97,6 +97,12 @@ p_4&=(((1,5),(2,6),(3,4)),((0,2),(1,2))).
 Thus their locally feasible representative-target union has cardinality
 three, strictly less than four. No injective parent representative matching
 Q can choose a locally feasible target for all four sources.
+The three targets in this exact neighborhood are
+\[
+((1,2),(2,3),(2,6),(3,4),(3,5)),\quad
+((1,2),(2,3),(2,6),(3,4),(4,5)),\quad
+((1,2),(2,4),(2,6),(3,4),(4,5)).
+\]
 
 This is stronger than the randomized search: it proves that **no fixed
 injective parent representative map Q can satisfy the integer selector
