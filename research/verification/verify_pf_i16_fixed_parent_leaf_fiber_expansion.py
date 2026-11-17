@@ -102,6 +102,11 @@ def check(n, expected_sources):
         total_lifts += retained
         checked += 1
 
+    max_load = max(quotient_column_load.values())
+    overloaded = [(target, load) for target, load in quotient_column_load.items()
+                  if load > 1]
+    top_loads = sorted(quotient_column_load.items(),
+                       key=lambda item: (-item[1], item[0]))[:10]
     print(
         f"PASS n={n}: sources={source_count}, fixed_parent_leaf_fibers={checked}, "
         f"fiber_size_max={max_fiber_size}, "
@@ -111,7 +116,9 @@ def check(n, expected_sources):
         f"min_fiber_Hall_slack={min_neighborhood_slack}, "
         f"parent_demand_range=[{min(parent_demand.values())},{max(parent_demand.values())}], "
         f"parent_capacity_range=[{min(parent_capacity.values())},{max(parent_capacity.values())}], "
-        f"max_uniform_quotient_column={float(max(quotient_column_load.values())):.12f}"
+        f"max_uniform_quotient_column={max_load} ({float(max_load):.12f}), "
+        f"overloaded_targets={len(overloaded)}, "
+        f"top_10_exact_loads={top_loads}"
     )
 
 
