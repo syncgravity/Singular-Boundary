@@ -91,11 +91,36 @@ def run(n, expected_sources):
     rows=[]
     demand_total=Fraction(0)
     targets=set()
+    raw_incidences=0
+    retained_incidences=0
+    parent_neighborhood_cache={}
     for key,children in fibers.items():
         iv,tau,leaf=children[0]
-        row=candidate_outputs(iv,tau,forced_last=leaf)
+        J=iv[leaf]
+        raw_row=candidate_outputs(iv,tau,forced_last=leaf)
+        raw_incidences+=len(raw_row)
         for civ,ctau,cleaf in children[1:]:
-            assert candidate_outputs(civ,ctau,forced_last=cleaf)==row
+            assert candidate_outputs(civ,ctau,forced_last=cleaf)==raw_row
+        p=key[0]
+        if p not in parent_neighborhood_cache:
+            pi,pt=p
+            if len(pi)==1:
+                parent_neighborhood_cache[p]={((1,2),)}
+            else:
+                parent_leaf=canonical_leaf(pi,pt)
+                parent_neighborhood_cache[p]=candidate_outputs(
+                    pi,pt,forced_last=parent_leaf
+                )
+        canonical_parent_targets=parent_neighborhood_cache[p]
+        row=set()
+        for T in raw_row:
+            inverse=inverse_last_switch(T,J,n)
+            assert len(inverse)==1,(n,key,T,inverse)
+            parent_tree=compress_tree(next(iter(inverse)),set(J),n)
+            if parent_tree in canonical_parent_targets:
+                row.add(T)
+        row=frozenset(row)
+        retained_incidences+=len(row)
         demand=sum((Fraction(1,len(nonroot_leaf_indices(civ,ctau)))
                     for civ,ctau,cleaf in children),Fraction(0))
         rows.append((key,demand,row))
