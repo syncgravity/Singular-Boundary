@@ -121,9 +121,6 @@ def run(n):
     assert all(assignment[x] not in K_targets for x in outside)
     comp, groups, sinks, sink_free = scc_census(rows, assignment)
     k_components = {comp[x] for x in K}
-    k_closed = all(comp[y] in k_components for x in K
-                   for t in rows[x]
-                   for y in [next((z for z,v in assignment.items() if v == t), x)])
     sink_sizes = [len(groups[i]) for i in sinks]
     print(f"  full_scc_count={len(groups)} sink_sizes={sink_sizes} "
           f"sink_free_target_counts={sink_free}")
