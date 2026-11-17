@@ -149,3 +149,8 @@ This is tested by an exact capacitated bipartite max-flow network: source-to-fib
 Verifier: `research/verification/verify_pf_i16_split_demand_fiber_hall_flow.py`.
 Workflow: `.github/workflows/pf-i16-split-demand-fiber-hall-flow.yml`.
 Workflow run is queued as [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991). It currently tests n=6 and n=8, where the graph is small enough for exact max flow.
+
+
+## Split-demand flow verifier correction (2026-11-17)
+
+The first queued run [44159648991](https://github.com/syncgravity/Singular-Boundary/actions/runs/44159648991) failed before constructing the network: `sources(n)` is a generator, but the verifier called `len(sources(n))`. This is a Python harness error, not a Hall result. The verifier now materializes the source iterator once as `all_sources=list(sources(n))`, counts that list, and uses it consistently for the fiber construction and accounting (commit `4d5c12357cbd46c2e9ec093131ea62efea272e20`). A fresh push-triggered workflow run is pending. No quotient-Hall conclusion is drawn from the failed run.
