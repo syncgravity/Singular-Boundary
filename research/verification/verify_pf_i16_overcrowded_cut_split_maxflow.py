@@ -85,7 +85,7 @@ def run(n,scale):
         for leaf in nonroot_leaves(intervals,tau):
             J=intervals[leaf]
             fibers[(parent_data(intervals,tau,leaf),J,k)].append((intervals,tau,leaf))
-    print(f"n={n} source_classes={sorted(source_classes.items())} fibers={len(fibers)}",flush=True)
+    print(f"n={n} source_classes={sorted(source_classes.items(), key=lambda z: (-1 if z[0] is None else z[0]))} fibers={len(fibers)}",flush=True)
     fiber_rows=[]; target_ids={}
     total_demand=0; max_demand=0
     for fi,((parent,J,k),children) in enumerate(fibers.items()):
