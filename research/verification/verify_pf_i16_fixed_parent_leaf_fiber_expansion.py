@@ -58,8 +58,13 @@ def check(n, expected_sources):
             n, parent, J,
         )
 
-        parent_leaf = canonical_leaf(pi, pt)
-        parent_targets = candidate_outputs(pi, pt, forced_last=parent_leaf)
+        if len(pi) == 1:
+            # Base case: the unique two-port spanning tree; there is no
+            # non-root leaf to peel from a one-vertex overlap tree.
+            parent_targets = {((1, 2),)}
+        else:
+            parent_leaf = canonical_leaf(pi, pt)
+            parent_targets = candidate_outputs(pi, pt, forced_last=parent_leaf)
         lift_counts = Counter()
         for T in child_rows[0]:
             inverse = inverse_last_switch(T, J, nchild)
