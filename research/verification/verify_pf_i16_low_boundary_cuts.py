@@ -32,10 +32,16 @@ def run(n):
     print(result.stdout, end="")
     if result.stderr:
         print(result.stderr)
-    if "NO_BOUNDARY_AT_MOST_2" not in result.stdout:
-        raise SystemExit(f"n={n}: low Hall-slack witness found")
+    found = "LOW_SLACK_WITNESS" in result.stdout
+    passed = "NO_BOUNDARY_AT_MOST_2" in result.stdout
+    return found, passed
 
 
 if __name__ == "__main__":
-    run(6)
-    run(8)
+    # n=6 is a positive control: the known two-source/two-slack obstruction
+    # must be recovered. n=8 is the target: no boundary of size <=2 may exist.
+    found6, passed6 = run(6)
+    assert found6 and not passed6, "n=6 positive control was not recovered"
+    found8, passed8 = run(8)
+    assert passed8 and not found8, "n=8 has a Hall-slack <=2 witness"
+    print("Exact low-boundary cut census: PASS")
