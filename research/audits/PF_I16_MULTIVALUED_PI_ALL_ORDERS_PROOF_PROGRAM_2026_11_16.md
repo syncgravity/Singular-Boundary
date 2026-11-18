@@ -243,3 +243,81 @@ The n=12 source-profile census is
 
 The finite n=10 same-cut row-support and split-demand transport diagnostics are running in
 [44073281842](https://github.com/syncgravity/Singular-Boundary/actions/runs/44073281842). These computations test the quotient criterion; they do not replace the all-orders local theorem and cannot establish the global quotient inequality by themselves.
+
+
+## Canonical third-mark obligation: corrected base-order boundary and leaf-bubbling reduction (2026-11-18)
+
+The source-diamond census through eight target ports is useful for checking the exact source projections and target-side inverses, but its C3 conclusion is automatic once the common double inverse is known to be an output of the common parent source:
+
+- At target order n=6, the common parent source r has one matching interval and no non-root leaf.
+- At target order n=8, r has two matching intervals. Its overlap tree has exactly one non-root leaf, so the full output set C(r) equals the canonical-leaf-last set C_can(r).
+
+Thus the 7,884 n=8 C3 passes do not test a nontrivial canonical choice. The first order at which C3 can distinguish canonical from noncanonical last leaves is n=10, when r has three matching intervals. For a rooted path, there is still only one non-root leaf and C3 is automatic. The first genuine case is a rooted star, with two non-root leaves.
+
+### Exact rooted-star reduction
+
+Let r have root interval R and non-root leaves A,B, with A lexicographically smaller than B. Then C_can(r) is the set of outputs of r whose last inserted interval is A.
+
+If U in C(r) has a construction ending in A, then U is already in C_can(r). Otherwise its two-interval insertion history ends in B, so B is a valid guarded reverse mark of U. Since r^- = r-A has only one non-root leaf B, its full output set is exactly the set of targets for which B is a valid guarded reverse mark. Therefore, in this nontrivial rooted-star case,
+\[
+U\in C_{\rm can}(r)
+\iff
+\bigl[A\text{ is a valid guarded reverse mark of }U\bigr]
+\ \text{and}\
+\bigl[B\text{ remains a valid guarded reverse mark of }P_A(U)\bigr],
+\]
+provided the chosen history of U ends in B.
+
+This is a one-sided survival criterion. It is not necessary to assume that A also survives after reversing B. If both directions survive, the proved target-side mutual-survival diamond additionally identifies the two double inverses.
+
+### Source attachment constraint in the first nontrivial case
+
+In the rooted-star case, let v_K be the attachment vertex in r of the child-source leaf K (the canonical leaf of p=r+K), and v_J the attachment vertex of J (the canonical leaf of q=r+J). If v_K is not A, then A remains a non-root leaf in p; canonicality of K in p forces K to precede A in p's lexicographic interval order. Similarly, if v_J is not A, canonicality of J in q forces J to precede A in q's interval order.
+
+Consequently, the only attachment geometry in which neither canonicality condition compares the new leaf against A is
+\[
+v_K=v_J=A.
+\]
+This is a necessary case split, not a proof of the target-side third-mark conclusion. The p and q interval orders are separately compressed; no direct comparison between K and J across those two coordinate systems is implied.
+
+### Leaf-bubbling criterion
+
+Let L be any non-root leaf of a source overlap tree, and let
+\[
+\sigma=(I_1,\ldots,I_s)
+\]
+be a parent-before-child insertion history producing a target U. Because L is a leaf, it has no descendants. Hence moving L to the right across later intervals preserves the source partial order.
+
+For an adjacent segment in the history where L is followed by K, let V be the target immediately after inserting K. Suppose:
+
+1. L is a valid guarded reverse mark of V; and
+2. K remains a valid guarded reverse mark of P_L(V).
+
+Then the two-step inverse
+\[
+V\xrightarrow{P_L}P_L(V)\xrightarrow{P_K}W
+\]
+is valid. Reversing these two steps gives a valid construction
+\[
+W\xrightarrow{K}P_L(V)\xrightarrow{L}V.
+\]
+Thus the adjacent insertions can be swapped without changing their terminal target. Repeating this swap moves L to the final position. Consequently U belongs to C_can(r).
+
+This is a rigorous sufficient criterion for canonicalization. It uses only one-sided survival at each adjacent swap; the stronger mutual-survival theorem is available when both directions hold.
+
+### Remaining all-orders third-mark burden
+
+For a source diamond (p,J),(q,K) over common parent r, the hypotheses provide two canonical parent histories and a common double inverse U in C(r). They do not yet provide the adjacent one-sided survival chain needed to move the canonical leaf L of r to the end of a history for U.
+
+The all-orders proof must derive one of the following, not assume it:
+
+1. directly, that L is a valid reverse mark of U and P_L(U) belongs to C(r-L); or
+2. a leaf-bubbling chain of one-sided adjacent survivals that reorders a construction of U so that L is last.
+
+The first nontrivial rooted-star case at n=10 is being instrumented by the canonical source-diamond verifier to separate:
+- rooted path versus rooted star parent sources;
+- attachment vertices v_K,v_J relative to the canonical leaf A, the other leaf B, and the root;
+- validity of A as a reverse mark of U;
+- survival of B after reversing A, equivalently P_A(U) in C(r-A).
+
+The n=6/n=8 finite C3 counts are retained as source/target consistency checks, not as evidence for the nontrivial all-orders third-mark lemma. No all-orders third-mark or Hall theorem is claimed here.
