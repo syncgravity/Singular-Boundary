@@ -96,7 +96,7 @@ enumerates rooted-star sibling diamonds at \(n=10\), excludes \(p=q\), and separ
 
 The script checks the common double inverse and verifies that it is an ordinary output of the common parent. It is a finite census, not a proof for arbitrary \(n\). Its parent-output membership check is cached by common parent to avoid recomputing the full output set for every incidence.
 
-The first run on the initial diagnostic was still in progress at run 44256861362. A cached version was committed later; its workflow run is 44257821334 and was queued at the last status check. No numerical distinct-parent conclusion is asserted in this note.
+The first run on the initial diagnostic, [44256861362](https://github.com/syncgravity/Singular-Boundary/actions/runs/44256861362), remained in progress at the last status check. A cached version was committed at 399dcbdb79fc55be44dd8b787a2182b1b796869e; its workflow run [44257821334](https://github.com/syncgravity/Singular-Boundary/actions/runs/44257821334) was queued. The audit commit itself also triggered [run 44258114237](https://github.com/syncgravity/Singular-Boundary/actions/runs/44258114237), which was queued at the last status check. These runs have not yet supplied numerical output. No numerical distinct-parent conclusion is asserted in this note.
 
 ## 6. Proof obligation after the census
 
