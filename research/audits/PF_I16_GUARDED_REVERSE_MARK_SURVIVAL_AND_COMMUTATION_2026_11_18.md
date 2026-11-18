@@ -115,6 +115,8 @@ after the natural restriction to V\(J\cup K\).
 
 This is a **sufficient**, not necessary, criterion. Failure of (LC) does not prove noncommutation; it means the two inverse tests must be checked directly. Nor does (LC) establish canonical compatibility: after either inverse, the canonical leaf of the resulting parent source may differ from the other marked interval.
 
+The stronger target-side statement is now proved: if J and K are disjoint valid marks and each remains a valid guarded mark after the opposite inverse, then the double inverses commute even when X_J and X_K overlap. See `PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md`. Thus (LC) is a convenient sufficient special case, not the general criterion. Canonical source/fiber compatibility remains separate.
+
 ## 5. Canonical eligibility is a separate test
 
 The repository's canonical leaf is not an arbitrary or inferred ordering. In
