@@ -27,6 +27,8 @@ This is consistent with the actual two-case witness in that verifier:
 
 The earlier sentence in `PF_I16_GUARDED_SWITCH_REVALIDATION_2026_11_16.md` saying “Because e and J overlap, their endpoints alternate” is too strong and is corrected here. The subsequent discussion in that note already distinguishes an alternating edge from an edge containing J.
 
+The same correction applies to the paragraph in `PF_I16_MIXED_REVERSE_MARK_OVERLAP_AUDIT_2026_11_17.md` that says the inserted interval and old edge must alternate and that only two alternating marked pairs are possible. That paragraph is retained as historical context, but its geometric assertion is superseded by the classification below. The five-rank-pair crossing template in `PF_I16_CROSSING_REVERSE_MARK_TEMPLATES_2026_11_17.md` is consistent with the corrected classification because it includes the contained mark (x2,x3).
+
 Write the four distinct endpoints as x1<x2<x3<x4. With the three allowed local trees
 
 ```
