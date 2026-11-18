@@ -2,26 +2,26 @@
 
 Date: 2026-11-18
 
-Status: **finite target-tree census through seven ports; the mutual-survival diamond conjecture raised by this census has since been proved for every finite port tree. See `PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md`.**
+Status: **finite target-tree census through seven ports; the mutual-survival diamond conjecture raised by this census has since been proved for every finite port tree. See 'PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md'.**
 
-Verifier: `research/verification/verify_pf_i16_reverse_mark_pair_census.py`.
+Verifier: 'research/verification/verify_pf_i16_reverse_mark_pair_census.py'.
 
 ## 1. Exact object tested
 
 A target is a labelled spanning tree T on [n]. A proposed reverse mark J={a,b} is accepted only when there are two distinct old endpoints u,v outside J such that, on the ordered four-port set X=J union {u,v}:
 
 1. the induced target tree T[X] is exactly one of
-   `S0={x1x2,x2x3,x2x4}`,
-   `S1={x1x2,x2x3,x3x4}`, or
-   `S2={x1x3,x2x3,x3x4}`;
+   'S0={x1x2,x2x3,x2x4}',
+   'S1={x1x2,x2x3,x3x4}', or
+   'S2={x1x3,x2x3,x3x4}';
 2. the full set of T-edges incident to either endpoint of J equals the corresponding local-pattern incidence set (no extra incident edge);
 3. the complementary old edge uv is not in the local pattern (no reinsertion);
 4. the open intervals uv and J have positive-length intersection.
 
 For each fixed (T,J), the verifier asserts at most one witness pair and pattern. The inverse is
-[
+\[
 P_J(T)=T[V\setminus J]\cup\{uv\}.
-]
+\]
 
 This is the target-side guarded inverse only. There is no matching M, overlap tree tau, source fiber, canonical parent neighborhood, or split demand in this census.
 
@@ -70,13 +70,13 @@ Thus disjoint four-port supports are not necessary for mutual survival. The loca
 The finite data originally motivated the following statement: if J and K are disjoint valid guarded reverse marks of T, and each remains a valid guarded reverse mark after the other inverse, then the two double inverses agree, even though the second inverse witnesses may change.
 
 That statement is no longer merely a conjecture. It is proved for arbitrary finite port trees in
-`PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md`.
+'PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md'.
 
 The proof uses the exact three-edge incidence count for a valid mark. If h is the number of T-edges joining J to K, mutual survival forces
-[
+\[
 h=\mathbf 1_{\{e_J\cap K\ne\varnothing\}}
  =\mathbf 1_{\{e_K\cap J\ne\varnothing\}}.
-]
+\]
 For h=0 the two distinct original inverse edges are restored in either order. For h=1 each old edge meets the opposite mark in exactly one endpoint, and both orders restore the same edge between the two surviving external endpoints.
 
 The exhaustive n≤7 census remains useful as regression evidence, but it is not the proof of the theorem. The theorem remains target-side only; canonical source/fiber compatibility is not included.
