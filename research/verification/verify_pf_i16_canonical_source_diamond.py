@@ -73,34 +73,40 @@ def fiber_neighborhood(parent_source, mark, n, parent_cache):
                 # Check the exact guarded inverse, including induced pattern,
                 # full endpoint incidence and no-reinsertion, rather than
                 # trusting the forward construction alone.
-                records = local_records(target, n, tuple(mark))
+                target0 = frozenset(edge(a - 1, b - 1) for a, b in target)
+                mark0 = tuple(v - 1 for v in mark)
+                records = local_records(target0, n, mark0)
                 assert len(records) == 1, (
                     "forward lift did not have a unique exact inverse",
                     parent_source, mark, parent_target, old, local, records,
                 )
-                recovered = inverse(target, tuple(mark), records[0])
-                assert recovered == lifted
+                recovered = inverse(target0, mark0, records[0])
+                lifted0 = frozenset(edge(a - 1, b - 1) for a, b in lifted)
+                assert recovered == lifted0
                 answer.add(target)
     return answer
 
 
 def project_once(tree, mark, n):
-    records = local_records(tree, n, tuple(mark))
+    tree0 = frozenset(edge(a - 1, b - 1) for a, b in tree)
+    mark0 = tuple(v - 1 for v in mark)
+    records = local_records(tree0, n, mark0)
     if not records:
         return None
     assert len(records) == 1
-    parent = inverse(tree, tuple(mark), records[0])
-    remaining = sorted(set(range(n)) - set(mark))
+    parent = inverse(tree0, mark0, records[0])
+    remaining = sorted(set(range(n)) - set(mark0))
     return relabel_tree(parent, remaining)
 
 
 def second_inverse(parent_tree, compressed_mark, parent_n):
-    records = local_records(parent_tree, parent_n, tuple(compressed_mark))
+    mark0 = tuple(v - 1 for v in compressed_mark)
+    records = local_records(parent_tree, parent_n, mark0)
     if not records:
         return None
     assert len(records) == 1
-    parent = inverse(parent_tree, tuple(compressed_mark), records[0])
-    remaining = sorted(set(range(parent_n)) - set(compressed_mark))
+    parent = inverse(parent_tree, mark0, records[0])
+    remaining = sorted(set(range(parent_n)) - set(mark0))
     return relabel_tree(parent, remaining)
 
 
@@ -179,13 +185,16 @@ def main():
                             support_types[
                                 (len(set(J) | set(K)),)
                             ] += 1
-                            if Uj in canonical_outputs(r):
+                            Uj_one_based = frozenset(
+                                edge(a + 1, b + 1) for a, b in Uj
+                            )
+                            if Uj_one_based in canonical_outputs(r):
                                 c3_pass += 1
                             else:
                                 c3_failures.append({
                                     "n": n, "J": J, "K": K,
                                     "p": p, "q": q, "r": r,
-                                    "target": T, "common_parent_target": Uj,
+                                    "target": T, "common_parent_target": Uj_one_based,
                                     "canonical_parent_targets": canonical_outputs(r),
                                 })
 
