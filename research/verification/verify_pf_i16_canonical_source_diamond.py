@@ -150,6 +150,8 @@ def main():
         mutually_surviving = 0
         c3_pass = 0
         c3_failures = []
+        canonical_leaf_valid = 0
+        canonical_leaf_parent_output_valid = 0
         one_way_survival = 0
         no_survival = 0
         support_types = defaultdict(int)
@@ -216,6 +218,30 @@ def main():
                             ))
                             if Uj_one_based in canonical_outputs(r):
                                 c3_pass += 1
+                                r_intervals, r_tau = r
+                                if len(r_intervals) > 1:
+                                    leaf_r = canonical_leaf(r_intervals, r_tau)
+                                    L = r_intervals[leaf_r]
+                                    U0 = frozenset(
+                                        edge(a - 1, b - 1)
+                                        for a, b in Uj_one_based
+                                    )
+                                    L0 = tuple(v - 1 for v in L)
+                                    L_records = local_records(U0, n - 4, L0)
+                                    if L_records:
+                                        canonical_leaf_valid += 1
+                                        L_parent = inverse(U0, L0, L_records[0])
+                                        L_remaining = sorted(
+                                            set(range(n - 4)) - set(L0)
+                                        )
+                                        L_parent = relabel_tree(
+                                            L_parent, L_remaining
+                                        )
+                                        r_parent = parent_data(
+                                            r_intervals, r_tau, leaf_r
+                                        )
+                                        if L_parent in candidate_outputs(*r_parent):
+                                            canonical_leaf_parent_output_valid += 1
                             else:
                                 c3_failures.append({
                                     "n": n, "J": J, "K": K,
@@ -244,6 +270,8 @@ def main():
         print(f"  mutually_surviving_target_pairs={mutually_surviving}")
         print(f"  one_way_survival={one_way_survival}, no_survival={no_survival}")
         print(f"  C3_pass={c3_pass}, C3_fail={len(c3_failures)}")
+        print(f"  canonical_leaf_valid={canonical_leaf_valid}, "
+              f"canonical_leaf_parent_output_valid={canonical_leaf_parent_output_valid}")
         print(f"  support_types={dict(sorted(support_types.items()))}")
         if c3_failures:
             witness = c3_failures[0]
