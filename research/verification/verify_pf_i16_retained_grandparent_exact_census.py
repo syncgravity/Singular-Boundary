@@ -216,6 +216,7 @@ def main():
              if 1 not in pair]
     parent_cache = {}
     fiber_cache = {}
+    ordinary_R = candidate_outputs(*R)
 
     candidate_matching_pairs = 0
     exact_sibling_diamonds = 0
@@ -251,7 +252,7 @@ def main():
                 lifted_intervals, _ = lifted_source(q, K, N)
                 q_groups[lifted_intervals].append(q)
 
-            for child_matching in p_groups.keys() & q_groups.keys():
+            for child_matching in sorted(p_groups.keys() & q_groups.keys()):
                 for p in p_groups[child_matching]:
                     for q in q_groups[child_matching]:
                         candidate_matching_pairs += 1
@@ -294,7 +295,6 @@ def main():
                             mutually_surviving += 1
 
                             U_one = one_based_tree(Uj)
-                            ordinary_R = candidate_outputs(*R)
                             assert U_one in ordinary_R, (
                                 "source routes did not give an ordinary R output",
                                 J, K, p, q, child, T, U_one,
