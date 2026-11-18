@@ -30,11 +30,7 @@ L\text{ is a valid guarded reverse mark of }U,P_L(U)\in C_{\rm can}(\pi_L(r))\}.
 \]
 The deleted leaf L is allowed to be any non-root leaf. Only the *parent target* must be canonical for the parent source.
 
-Therefore
-\[
-C_{\rm can}(r)\subseteq N_\pi(r)\subseteq C(r),
-\]
-where the first inclusion follows by choosing the canonical leaf of r and the second by forgetting the parent-canonical filter.
+The inclusion N_pi(r) subseteq C(r) is immediate by forgetting the parent-canonical filter. No general inclusion between C_can(r) and N_pi(r) is asserted: C_can(r) fixes the final leaf of r but does not require the preceding parent target to be canonical, whereas N_pi(r) allows any leaf but imposes that parent-canonical condition.
 
 The distinction matters in the rooted-star counterexamples. There, the common inverse U is not in C_can(r), because the canonical leaf A is not a valid reverse mark. But U has an ordinary history with the other leaf B last. Deleting B leaves a two-interval parent source, whose unique non-root leaf is automatically canonical. Hence U is in N_pi(r) despite not being in C_can(r).
 
