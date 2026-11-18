@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - research/pf-i16-admissible-exchange-2026-11-16
+      - research/pf-i16-superrow-cut-covariance-2026-11-15
     paths:
       - research/verification/verify_pf_i16_retained_grandparent_coverage.py
       - .github/workflows/pf-i16-retained-grandparent-coverage.yml
