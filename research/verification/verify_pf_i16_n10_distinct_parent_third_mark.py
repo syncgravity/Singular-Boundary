@@ -163,7 +163,16 @@ def main():
                                 first_failures.append({
                                     "kind": "A_not_reverse_mark",
                                     "J": J, "K": K, "p": p, "q": q,
-                                    "r": r, "A": L, "B": B, "U": U_one,
+                                    "r": r, "A": L, "B": B, "T": tuple(sorted(T)),
+                                    "U": U_one,
+                                    "J_reverse_record": local_records(
+                                        frozenset(edge(a - 1, b - 1) for a, b in T),
+                                        n, tuple(v - 1 for v in J)
+                                    )[0],
+                                    "K_reverse_record": local_records(
+                                        frozenset(edge(a - 1, b - 1) for a, b in T),
+                                        n, tuple(v - 1 for v in K)
+                                    )[0],
                                 })
                             continue
                         A_valid += 1
