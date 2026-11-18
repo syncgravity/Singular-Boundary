@@ -127,3 +127,111 @@ Not established:
 - an arbitrary-family mixed-fiber Hall inequality;
 - the all-orders multivalued-\(\pi\) Hall theorem;
 - the weighted one-link inequality unconditionally.
+
+
+## 8. Completed n=10 third-mark census: canonical step fails (2026-11-18)
+
+The two pending workflows have completed successfully:
+
+- Focused rooted-star census, [run 44231435721](https://github.com/syncgravity/Singular-Boundary/actions/runs/44231435721), checked out `a0fb1755363382a91998a3663abd7f7163418ff5`.
+- Full canonical source-diamond census, [run 44231184102](https://github.com/syncgravity/Singular-Boundary/actions/runs/44231184102), checked out `b15cabdcb82a45b124f3bbaa9c771f7e63e22a0e`.
+
+Both jobs completed with success. The script output, rather than the CI success status alone, gives the mathematical result.
+
+### Full n=10 source-diamond result
+
+The full census reports:
+
+- 608 parent sources and 630 unordered disjoint mark pairs;
+- 16,636 exact sibling-source diamonds;
+- 3,600,244 common-target incidences;
+- all 3,600,244 incidences mutually surviving on the target side;
+- 3,279,589 canonical-parent passes and **320,655 canonical-parent failures**.
+
+The 16,636 diamonds split into 13,398 rooted-path common parents and 3,238 rooted-star common parents. The rooted-path cases have only one non-root leaf, so their canonical condition is automatic. Every one of the 320,655 failures occurs in the first nontrivial rooted-star class.
+
+### Focused rooted-star result
+
+The focused census reports:
+
+- 158 child-parent sources whose common parent is a three-interval rooted star;
+- 3,238 source diamonds and 858,905 common-target incidences;
+- all 858,905 incidences mutually surviving;
+- canonical leaf (A) is a guarded reverse mark in 538,250 incidences and is **not** a guarded reverse mark in 320,655;
+- in every one of the 538,250 cases where (A) is valid, the other leaf (B) survives after reversing (A);
+- there are zero failures of (B)-survival conditional on (A)-validity.
+
+Thus the rooted-star equivalence (S) is confirmed by the finite census, but it does not rescue the proposed source-diamond implication: the obstruction is that (A) itself is not a reverse mark of (U) in 320,655 incidences. The adjacent leaf-bubbling argument cannot start in those cases.
+
+The attachment-type counts across the 3,238 rooted-star source diamonds are:
+[
+egin{array}{c|rrr}
+ & A & B & R\\
+A & 800 & 360 & 640\\
+B & 180 & 144 & 240\\
+R & 280 & 210 & 384
+end{array}
+]
+where the row records the attachment of (K) and the column the attachment of (J), with (A) the canonical leaf of the common parent, (B) its other leaf, and (R) its root.
+
+### Explicit first counterexample
+
+The first failure has
+[
+J=(2,3),\qquad K=(4,5),
+]
+and the two parent sources coincide:
+[
+p=q=
+left(
+((1,6),(2,3),(4,7),(5,8)),
+((0,1),(0,2),(0,3))
+ight).
+]
+The common parent is the rooted star
+[
+r=
+left(
+((1,4),(2,5),(3,6)),
+((0,1),(0,2))
+ight),
+]
+whose canonical non-root leaf is (A=(2,5)), and whose other leaf is (B=(3,6)).
+
+The common parent target is
+[
+U=((1,2),(2,3),(3,4),(4,5),(4,6)).
+]
+It is an ordinary guarded output of (r), obtained with (B) last, but (A) is not a valid guarded reverse mark of (U). Hence (U\notin C_{\rm can}(r)), despite the two target-side reverse operations being mutually surviving and giving the same double inverse.
+
+The full census also records the corresponding child target:
+[
+T=\{(1,3),(2,3),(3,5),(4,5),(5,6),(6,7),(7,8),(8,9),(8,10)\}.
+]
+This is a concrete finite counterexample to the source-level canonical third-mark implication as currently formulated. It does not contradict the target-side mutual-survival theorem, the multivalued-π relation, or Hall for that relation.
+
+### Consequence and next separation
+
+The canonical third-mark lemma in its unrestricted sibling-source form is false. It must not remain a proof obligation stated as though a proof were merely missing. The next diagnostic separates the degenerate case (p=q) from the genuinely distinct-parent case (p\ne q). The first counterexample has (p=q), so it is not yet known whether the distinct-parent restriction restores the finite n=10 implication.
+
+A separate diagnostic script and CI workflow have been added:
+
+- `research/verification/verify_pf_i16_n10_distinct_parent_third_mark.py`
+- `.github/workflows/pf-i16-n10-distinct-parent-third-mark.yml`
+
+Their execution result has not yet been retrieved. No claim about the (p\ne q) subcase is made here.
+
+### Updated proof boundary
+
+Established:
+- the target-side mutual-survival diamond;
+- the exact rooted-star criterion (S);
+- the one-sided leaf-bubbling sufficient criterion;
+- a finite n=10 counterexample to the unrestricted canonical source-level third-mark implication.
+
+Still open:
+- whether a corrected distinct-parent third-mark lemma holds;
+- how the (p=q) degeneracy should be handled in the global capacity argument;
+- the arbitrary-family mixed-fiber Hall inequality;
+- the all-orders multivalued-π Hall theorem;
+- the weighted one-link inequality unconditionally.
