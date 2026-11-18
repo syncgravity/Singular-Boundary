@@ -110,7 +110,7 @@ For n=10, focus first on the rooted-star case. The verifier has been extended to
 - B surviving after the A inverse;
 - canonical parent-output membership.
 
-The ten-port run is not yet accepted as evidence until its workflow completes and its logs are read back. No numerical result from an in-progress run is asserted here.
+The ten-port run and log review are complete; the numerical results and the resulting counterexample are recorded in Section 8 below.
 
 ## 7. Proof boundary
 
