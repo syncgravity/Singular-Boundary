@@ -226,7 +226,7 @@ def main():
     assert rank_records == EXPECTED_RANK_MARKS, rank_records
 
     print("PASS four-port rank census:", rank_records)
-    for n in (5, 6):
+    for n in (5, 6, 7):
         result = pair_census(n)
         assert result["both_directions_survive"] == result["commuting_double_inverses"]
         print("PASS exhaustive pair census:", result)
