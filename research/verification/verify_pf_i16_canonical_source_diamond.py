@@ -110,6 +110,23 @@ def second_inverse(parent_tree, compressed_mark, parent_n):
     return relabel_tree(parent, remaining)
 
 
+EXPECTED = {
+    6: {
+        "parent_sources": 2, "disjoint_mark_pairs": 45,
+        "C2": 8, "common": 37, "mutual": 37,
+        "one_way": 0, "none": 0, "C3": 37, "C3_fail": 0,
+        "support": {(2, 1, 1): 37},
+    },
+    8: {
+        "parent_sources": 22, "disjoint_mark_pairs": 210,
+        "C2": 274, "common": 7884, "mutual": 7884,
+        "one_way": 0, "none": 0, "C3": 7884, "C3_fail": 0,
+        "support": {(0, 0, 0): 535, (1, 0, 0): 4854,
+                    (2, 1, 1): 2495},
+    },
+}
+
+
 def main():
     for n in (6, 8):
         m = n - 2
@@ -207,8 +224,21 @@ def main():
                                     "canonical_parent_targets": canonical_outputs(r),
                                 })
 
+        observed = {
+            "parent_sources": len(parent_sources),
+            "disjoint_mark_pairs": candidate_mark_pairs,
+            "C2": c2_source_diamonds,
+            "common": common_target_incidences,
+            "mutual": mutually_surviving,
+            "one_way": one_way_survival,
+            "none": no_survival,
+            "C3": c3_pass,
+            "C3_fail": len(c3_failures),
+            "support": dict(support_types),
+        }
+        assert observed == EXPECTED[n], (n, observed, EXPECTED[n])
         print(f"n={n}: parent_sources={len(parent_sources)}")
-        print(f"  ordered_disjoint_mark_pairs={candidate_mark_pairs}")
+        print(f"  unordered_disjoint_mark_pairs={candidate_mark_pairs}")
         print(f"  exact_sibling_source_diamonds_C2={c2_source_diamonds}")
         print(f"  common_target_incidences={common_target_incidences}")
         print(f"  mutually_surviving_target_pairs={mutually_surviving}")
