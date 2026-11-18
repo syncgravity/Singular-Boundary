@@ -142,7 +142,17 @@ def main():
             leaf = canonical_leaf(intervals, tau)
             leaf_interval = intervals[leaf]
             r = parent_data(intervals, tau, leaf)
-            source_meta[source] = (leaf_interval, r)
+            # The distinguished canonical leaf is attached to exactly one
+            # vertex of the common parent source. Preserve that attachment
+            # type: it is the source-side datum most likely to control the
+            # first nontrivial (three-interval) canonical-leaf case.
+            neighbor = next(
+                b if a == leaf else a for a, b in tau if leaf in (a, b)
+            )
+            keep_indices = [i for i in range(len(intervals)) if i != leaf]
+            old_to_new = {old_i: new_i for new_i, old_i in enumerate(keep_indices)}
+            attachment = old_to_new[neighbor]
+            source_meta[source] = (leaf_interval, r, attachment)
             by_leaf[leaf_interval].append(source)
 
         # Cache each (parent source, target mark) neighborhood.
@@ -158,6 +168,9 @@ def main():
         one_way_survival = 0
         no_survival = 0
         support_types = defaultdict(int)
+        source_shape_types = defaultdict(int)
+        canonical_leaf_invalid = 0
+        canonical_parent_output_invalid = 0
 
         marks = list(combinations(range(1, n + 1), 2))
         for J in marks:
@@ -174,6 +187,28 @@ def main():
                         if rp != rq:
                             continue
                         r = rp
+                        p_attachment = source_meta[p][2]
+                        q_attachment = source_meta[q][2]
+                        r_intervals, r_tau = r
+                        root_r = next(i for i, I in enumerate(r_intervals) if I[0] == 1)
+                        degree_r = [0] * len(r_intervals)
+                        for a, b in r_tau:
+                            degree_r[a] += 1
+                            degree_r[b] += 1
+                        leaves_r = [i for i, d in enumerate(degree_r)
+                                    if d == 1 and i != root_r]
+                        if len(r_intervals) == 3 and len(leaves_r) == 2:
+                            r_shape = "rooted_star"
+                            L_index = min(leaves_r, key=lambda i: r_intervals[i])
+                            other_leaf = next(i for i in leaves_r if i != L_index)
+                            def attach_type(v):
+                                return ("canonical_leaf" if v == L_index else
+                                        "other_leaf" if v == other_leaf else "root")
+                            source_shape_types[(r_shape, attach_type(p_attachment),
+                                                attach_type(q_attachment))] += 1
+                        else:
+                            r_shape = "rooted_path" if len(r_intervals) == 3 else f"m{len(r_intervals)}"
+                            source_shape_types[(r_shape, "na", "na")] += 1
                         c2_source_diamonds += 1
                         fkey, gkey = (p, J), (q, K)
                         if fkey not in fiber_cache:
@@ -221,40 +256,6 @@ def main():
                             ))
                             if Uj_one_based in canonical_outputs(r):
                                 c3_pass += 1
-                                r_intervals, r_tau = r
-                                if len(r_intervals) > 1:
-                                    leaf_r = canonical_leaf(r_intervals, r_tau)
-                                    L = r_intervals[leaf_r]
-                                    U0 = frozenset(
-                                        edge(a - 1, b - 1)
-                                        for a, b in Uj_one_based
-                                    )
-                                    L0 = tuple(v - 1 for v in L)
-                                    L_records = local_records(U0, n - 4, L0)
-                                    if L_records:
-                                        canonical_leaf_valid += 1
-                                        L_parent = inverse(U0, L0, L_records[0])
-                                        L_remaining = sorted(
-                                            set(range(n - 4)) - set(L0)
-                                        )
-                                        L_parent = relabel_tree(
-                                            L_parent, L_remaining
-                                        )
-                                        r_parent = parent_data(
-                                            r_intervals, r_tau, leaf_r
-                                        )
-                                        parent_outputs_zero_based = {
-                                            frozenset(edge(a - 1, b - 1) for a, b in target)
-                                            for target in candidate_outputs(*r_parent)
-                                        }
-                                        if L_parent in parent_outputs_zero_based:
-                                            canonical_leaf_parent_output_valid += 1
-                                        elif canonical_leaf_parent_output_valid == 0:
-                                            print("  FIRST_CANONICAL_LEAF_PARENT_MISS:",
-                                                  {"r": r, "L": L, "U": Uj_one_based,
-                                                   "inverse_parent": L_parent,
-                                                   "parent_source": r_parent,
-                                                   "parent_outputs": parent_outputs_zero_based})
                             else:
                                 c3_failures.append({
                                     "n": n, "J": J, "K": K,
@@ -262,6 +263,34 @@ def main():
                                     "target": T, "common_parent_target": Uj_one_based,
                                     "canonical_parent_targets": canonical_outputs(r),
                                 })
+                            r_intervals, r_tau = r
+                            if len(r_intervals) > 1:
+                                leaf_r = canonical_leaf(r_intervals, r_tau)
+                                L = r_intervals[leaf_r]
+                                U0 = frozenset(
+                                    edge(a - 1, b - 1)
+                                    for a, b in Uj_one_based
+                                )
+                                L0 = tuple(v - 1 for v in L)
+                                L_records = local_records(U0, n - 4, L0)
+                                if L_records:
+                                    canonical_leaf_valid += 1
+                                    L_parent = inverse(U0, L0, L_records[0])
+                                    L_remaining = sorted(
+                                        set(range(n - 4)) - set(L0)
+                                    )
+                                    L_parent = relabel_tree(L_parent, L_remaining)
+                                    r_parent = parent_data(r_intervals, r_tau, leaf_r)
+                                    parent_outputs_zero_based = {
+                                        frozenset(edge(a - 1, b - 1) for a, b in target)
+                                        for target in candidate_outputs(*r_parent)
+                                    }
+                                    if L_parent in parent_outputs_zero_based:
+                                        canonical_leaf_parent_output_valid += 1
+                                    else:
+                                        canonical_parent_output_invalid += 1
+                                else:
+                                    canonical_leaf_invalid += 1
 
         observed = {
             "parent_sources": len(parent_sources),
@@ -287,7 +316,10 @@ def main():
         print(f"  one_way_survival={one_way_survival}, no_survival={no_survival}")
         print(f"  C3_pass={c3_pass}, C3_fail={len(c3_failures)}")
         print(f"  canonical_leaf_valid={canonical_leaf_valid}, "
-              f"canonical_leaf_parent_output_valid={canonical_leaf_parent_output_valid}")
+              f"canonical_leaf_invalid={canonical_leaf_invalid}, "
+              f"canonical_leaf_parent_output_valid={canonical_leaf_parent_output_valid}, "
+              f"canonical_parent_output_invalid={canonical_parent_output_invalid}")
+        print(f"  source_shape_attachment_types={dict(sorted(source_shape_types.items()))}")
         print(f"  support_types={dict(sorted(support_types.items()))}")
         if c3_failures:
             witness = c3_failures[0]
