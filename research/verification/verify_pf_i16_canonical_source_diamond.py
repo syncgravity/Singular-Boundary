@@ -243,7 +243,11 @@ def main():
                                         r_parent = parent_data(
                                             r_intervals, r_tau, leaf_r
                                         )
-                                        if L_parent in candidate_outputs(*r_parent):
+                                        L_parent_one_based = tuple(sorted(
+                                            edge(a + 1, b + 1)
+                                            for a, b in L_parent
+                                        ))
+                                        if L_parent_one_based in candidate_outputs(*r_parent):
                                             canonical_leaf_parent_output_valid += 1
                             else:
                                 c3_failures.append({
