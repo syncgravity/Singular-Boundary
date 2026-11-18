@@ -207,6 +207,31 @@ def pair_census(n):
     }
 
 
+EXPECTED_CENSUS = {
+    5: {
+        "trees": 125, "mark_histogram": {0: 86, 1: 14, 2: 22, 4: 3},
+        "max_marks": 4, "unordered_mark_pairs": 40,
+        "disjoint_mark_pairs": 10, "second_survives_after_first": 0,
+        "both_directions_survive": 0, "commuting_double_inverses": 0,
+        "survivor_support_types": {},
+    },
+    6: {
+        "trees": 1296, "mark_histogram": {0: 777, 1: 267, 2: 210, 3: 20, 4: 19, 5: 1, 6: 2},
+        "max_marks": 6, "unordered_mark_pairs": 424,
+        "disjoint_mark_pairs": 118, "second_survives_after_first": 58,
+        "both_directions_survive": 58, "commuting_double_inverses": 58,
+        "survivor_support_types": {(2, 1, 1): 58},
+    },
+    7: {
+        "trees": 16807, "mark_histogram": {0: 9249, 1: 4088, 2: 2632, 3: 510, 4: 290, 5: 24, 6: 11, 7: 2, 8: 1},
+        "max_marks": 8, "unordered_mark_pairs": 6377,
+        "disjoint_mark_pairs": 2331, "second_survives_after_first": 1701,
+        "both_directions_survive": 1701, "commuting_double_inverses": 1701,
+        "survivor_support_types": {(2, 1, 1): 812, (1, 0, 0): 889},
+    },
+}
+
+
 def main():
     # Exhaust all six possible mark ranks on a four-port support.
     rank_records = {}
@@ -228,7 +253,9 @@ def main():
     print("PASS four-port rank census:", rank_records)
     for n in (5, 6, 7):
         result = pair_census(n)
+        assert result["second_survives_after_first"] == result["both_directions_survive"]
         assert result["both_directions_survive"] == result["commuting_double_inverses"]
+        assert {k: v for k, v in result.items() if k != "n"} == EXPECTED_CENSUS[n]
         print("PASS exhaustive pair census:", result)
 
 
