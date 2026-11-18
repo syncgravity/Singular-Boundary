@@ -54,9 +54,11 @@ def lifted_source(source, inserted_mark, n):
     """Lift a compressed parent source to n-port labels, adjoining mark."""
     intervals, tau = source
     keep = [v for v in range(1, n + 1) if v not in set(inserted_mark)]
-    lifted = tuple(sorted(
+    lifted_items = [
         tuple(sorted((keep[a - 1], keep[b - 1]))) for a, b in intervals
-    ) + (tuple(sorted(inserted_mark)),))
+    ]
+    lifted_items.append(tuple(sorted(inserted_mark)))
+    lifted = tuple(sorted(lifted_items))
     child_index = {I: i for i, I in enumerate(lifted)}
     parent_to_child = [
         child_index[tuple(sorted((keep[a - 1], keep[b - 1])))]
