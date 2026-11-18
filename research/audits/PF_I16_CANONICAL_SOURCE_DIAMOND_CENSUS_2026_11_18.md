@@ -83,7 +83,30 @@ Two initial verifier defects were caught before accepting the census:
 
 Neither failed run is evidence of a mathematical counterexample. The pinned expected counts apply only to the corrected verifier.
 
-## 5. What is and is not established
+## 5. Exact canonical-leaf witness reduction
+
+Let L be the canonical non-root leaf of r, and let r^- be the source obtained by deleting L and compressing the remaining ports. By the definition of the forced-last construction,
+\[
+U\in C_{\rm can}(r)
+\iff
+L\text{ is a valid guarded reverse mark of }U
+\quad\text{and}\quad
+P_L(U)\in C(r^-),
+\tag{C4}
+\]
+where C(r^-) is the full (unforced) output neighborhood of the parent source.
+
+Proof: an insertion order for r with L last restricts, after deleting its final step, to a parent-before-child insertion order for r^-. The last insertion at L is exactly one guarded local switch, so its inverse is P_L(U) and belongs to C(r^-). Conversely, any output of r^- followed by a valid guarded lift at L is an allowed insertion history for r with L last. The fixed-mark inverse is unique by the exact endpoint-incidence/no-reinsertion guard, so the two descriptions coincide.
+
+This turns C3 into a concrete **third-mark obligation**: starting from the common double inverse U supplied by the J,K diamond, prove that the canonical leaf L of r is itself a guarded reverse mark of U and that its inverse lies in C(r^-). This is stronger and more actionable than merely checking U against a stored output set.
+
+The corrected verifier independently checks the two parts of (C4) on all n=8 common incidences:
+- canonical leaf L is a valid guarded reverse mark: 7,884 / 7,884;
+- its inverse parent target belongs to the full parent-source neighborhood C(r^-): 7,884 / 7,884.
+
+CI run [#44226223559](https://github.com/syncgravity/Singular-Boundary/actions/runs/44226223559) passed on commit \`d9cf28885b08584ca74ed35c939253ba0730a62a\`. The n=6 base case has one interval in r and therefore no non-root leaf; C3 is automatic there.
+
+## 6. What is and is not established
 
 Established:
 
@@ -101,7 +124,7 @@ Not established:
 - the all-orders multivalued-pi Hall theorem;
 - the weighted one-link inequality unconditionally.
 
-## 6. Next proof obligation
+## 7. Next proof obligation
 
 The finite pattern suggests a source-level canonical-diamond lemma:
 
