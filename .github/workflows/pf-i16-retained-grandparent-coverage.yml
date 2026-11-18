@@ -1,0 +1,21 @@
+name: PF-I16 retained grandparent coverage
+
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_retained_grandparent_coverage.py
+      - .github/workflows/pf-i16-retained-grandparent-coverage.yml
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test retained grandparent coverage
+        run: python research/verification/verify_pf_i16_retained_grandparent_coverage.py
