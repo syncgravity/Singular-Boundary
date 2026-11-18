@@ -43,9 +43,16 @@ def nonroot_leaves(intervals, tau):
 def retained_routes(U, source, parent_cache):
     intervals, tau = source
     routes = []
+    # second_inverse returns zero-based edges; source-deletion helpers use
+    # one-based port labels.
+    U1 = tuple(sorted((a + 1, b + 1) for a, b in U))
     for leaf in nonroot_leaves(intervals, tau):
         J = intervals[leaf]
-        inv = inverse_last_switch(U, J, len(intervals) * 2)
+        try:
+            inv = inverse_last_switch(U1, J, len(intervals) * 2)
+        except AssertionError:
+            # The leaf is not a guarded reverse mark of this target.
+            continue
         if len(inv) != 1:
             continue
         P = compress_tree(next(iter(inv)), set(J), len(intervals) * 2)
