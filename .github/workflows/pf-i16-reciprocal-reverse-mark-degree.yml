@@ -1,0 +1,36 @@
+name: PF-I16 reciprocal reverse-mark degree diagnostic
+
+on:
+  push:
+    branches:
+      - research/pf-i16-direct-mixed-hall-2026-11-18
+    paths:
+      - research/verification/verify_pf_i16_reciprocal_reverse_mark_degree.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - .github/workflows/pf-i16-reciprocal-reverse-mark-degree.yml
+
+permissions:
+  contents: read
+
+jobs:
+  exact-reciprocal-degree:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact rational diagnostic at n=8 and n=10
+        working-directory: research/verification
+        run: |
+          set -o pipefail
+          python -u verify_pf_i16_reciprocal_reverse_mark_degree.py | tee reciprocal_reverse_mark_degree.txt
+      - name: Upload exact diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-reciprocal-reverse-mark-degree
+          path: research/verification/reciprocal_reverse_mark_degree.txt
+          if-no-files-found: warn
