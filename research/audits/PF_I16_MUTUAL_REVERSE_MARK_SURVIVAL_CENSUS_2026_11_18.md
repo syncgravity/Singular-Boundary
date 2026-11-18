@@ -83,7 +83,7 @@ The exhaustive n≤7 census remains useful as regression evidence, but it is not
 
 ## 6. What this does and does not contribute to Hall
 
-If the conjectured diamond lemma holds, it gives a canonical way to identify the common twice-reversed parent target whenever two reverse marks mutually survive. This could help organize overlap classes of target incidences and prevent counting the same two-step inverse history twice.
+The proved mutual-survival diamond lemma gives a common twice-reversed parent target whenever two disjoint reverse marks mutually survive. This can organize local overlap classes of target incidences and prevents counting the two orders of the same mutually surviving two-step inverse as different terminal targets.
 
 It still does not establish:
 - that the parent sources associated with the two marks are compatible;
