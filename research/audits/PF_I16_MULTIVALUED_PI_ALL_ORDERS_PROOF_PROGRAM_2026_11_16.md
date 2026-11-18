@@ -321,3 +321,31 @@ The first nontrivial rooted-star case at n=10 is being instrumented by the canon
 - survival of B after reversing A, equivalently P_A(U) in C(r-A).
 
 The n=6/n=8 finite C3 counts are retained as source/target consistency checks, not as evidence for the nontrivial all-orders third-mark lemma. No all-orders third-mark or Hall theorem is claimed here.
+
+
+## Current proof boundary after the exact twelve-port retained-grandparent census (2026-11-18)
+
+The proposed sibling-source retained-grandparent rerouting is now **disproved** at the first four-interval common parent. The corrected exact census is recorded in
+\`PF_I16_DIRECT_MIXED_HALL_AFTER_RETAINED_DIAMOND_COUNTEREXAMPLE_2026_11_18.md\`
+and workflow [44369690167](https://github.com/syncgravity/Singular-Boundary/actions/runs/44369690167).
+
+The census reconstructs genuine twelve-port sibling sources, includes both p=q and p!=q, and uses the exact no-reinsertion reverse guard. It finds 796,012 mutually surviving common-target incidences at the fixed parent R, of which 248,636 have a common double inverse outside the actual retained grandparent neighborhood N_pi(R). The first witness has p=q. Thus no all-orders proof may rely on merging sibling fibers through a retained common-grandparent target.
+
+This does not refute the child-level Hall theorem or the split-demand quotient inequality. The proof target remains the direct arbitrary-family inequality (QH), or equivalently its first-overcrowded-cut blockwise form (BQH_k). The all-orders noncrossing recursion, target cut preservation, and crossing-leaf localization remain valid and independent of the disproved rerouting lemma.
+
+A further exact source-side identity is now available. For a fiber F=(p,J), lift the parent intervals to the child port line. If d(p) is the number of non-root leaves of p, a(p,J) is the number of overlapping non-root-leaf parent intervals, and b(p,J) is the number of overlapping root/internal parent intervals, then
+\[
+\delta(p,J)=\frac{a(p,J)}{d(p)}+\frac{b(p,J)}{d(p)+1},
+\]
+with the one-interval parent base case \delta=1. This follows by enumerating the possible single attachment edge from the new leaf J to an overlap-neighbor in the parent tree.
+
+The next proof obligation is therefore not a third-mark or grandparent-compatibility lemma. It is a capacity-sensitive proof of the weighted reverse-mark inequality
+\[
+\sum_F\delta(F)z_F
+\le
+\sum_T\max_{F:T\in N(F)}z_F
+\qquad(z_F\ge0),
+\]
+within each cut block. The proof must account for mixed crossing/noncrossing fibers and preserve unit capacity at each child target. The previous uniform row allocation is overloaded at n=10, and the fixed-grandparent reroute is false. No new workflow should be launched until a new allocation or dual inequality is specified and its finite predictions are clear.
+
+The all-orders Hall theorem, weighted one-link inequality, and any Yang--Mills mass-gap claim remain open.
