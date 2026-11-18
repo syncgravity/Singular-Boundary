@@ -336,4 +336,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if sys.argv[1:] == ["--self-test-only"]:
+        run_self_tests()
+    else:
+        main()
