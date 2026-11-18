@@ -115,12 +115,15 @@ EXPECTED = {
         "parent_sources": 2, "disjoint_mark_pairs": 45,
         "C2": 8, "common": 37, "mutual": 37,
         "one_way": 0, "none": 0, "C3": 37, "C3_fail": 0,
+        "canonical_leaf_valid": 0, "canonical_leaf_parent_output_valid": 0,
         "support": {(2, 1, 1): 37},
     },
     8: {
         "parent_sources": 22, "disjoint_mark_pairs": 210,
         "C2": 274, "common": 7884, "mutual": 7884,
         "one_way": 0, "none": 0, "C3": 7884, "C3_fail": 0,
+        "canonical_leaf_valid": 7884,
+        "canonical_leaf_parent_output_valid": 7884,
         "support": {(0, 0, 0): 535, (1, 0, 0): 4854,
                     (2, 1, 1): 2495},
     },
@@ -260,6 +263,8 @@ def main():
             "none": no_survival,
             "C3": c3_pass,
             "C3_fail": len(c3_failures),
+            "canonical_leaf_valid": canonical_leaf_valid,
+            "canonical_leaf_parent_output_valid": canonical_leaf_parent_output_valid,
             "support": dict(support_types),
         }
         assert observed == EXPECTED[n], (n, observed, EXPECTED[n])
