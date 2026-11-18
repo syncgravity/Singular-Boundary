@@ -73,7 +73,10 @@ Suppose J and K are disjoint. Then K survives as a *candidate pair* in P_J(T), b
 =
 (\delta_T(K)\setminus\delta_T(J))
 \cup
-\bigl(\{e_J\}\cap\delta_{P_J(T)}(K)\bigr).
+\begin{cases}
+\{e_J\},&e_J\cap K\ne\varnothing,\\
+\varnothing,&e_J\cap K=\varnothing.
+\end{cases}
 ]
 
 Equivalently, because e_J is a single restored edge disjoint from J, its contribution is present precisely when e_J meets K. To test whether K is still a guarded reverse mark, one must additionally find two distinct surviving old endpoints outside K and verify the full four-port induced pattern, positive overlap, no-reinsertion, and exact incidence equality in P_J(T).
@@ -91,14 +94,16 @@ The branching five-port example in the preceding census illustrates this distinc
 Let X_J=J union endpoints(e_J) and X_K=K union endpoints(e_K) be the two four-port supports. Suppose
 
 [
-J\cap X_K=\varnothing,\qquad e_J\notin E(T[X_K]),
-]
-[
-K\cap X_J=\varnothing,\qquad e_K\notin E(T[X_J]).
-	ag{LC}
+X_J\cap X_K=\varnothing.
+\tag{LC}
 ]
 
-Then the two inverse operations are locally independent: deleting the J-incident switch edges and restoring e_J does not alter the K-marked four-port tree or its incidence guard, and symmetrically for K. The two deletions remove disjoint endpoint pairs, and the two restored edges survive both operations. Therefore
+The full incidence guard for J says that every edge of T incident to J lies inside
+X_J; similarly for K. Hence there is no T-edge joining J to K, and the two sets of
+deleted edges \(\delta_T(J)\) and \(\delta_T(K)\) are disjoint. The restored edges
+e_J and e_K lie in their respective disjoint supports. Thus neither inverse changes
+the other mark's four-port induced tree or incidence guard. The edge-set operations
+commute, and both restored edges survive both operations. Therefore
 
 [
 P_K(P_J(T))=P_J(P_K(T))
