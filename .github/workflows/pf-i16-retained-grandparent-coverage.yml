@@ -7,6 +7,10 @@ on:
     paths:
       - research/verification/verify_pf_i16_retained_grandparent_coverage.py
       - .github/workflows/pf-i16-retained-grandparent-coverage.yml
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
