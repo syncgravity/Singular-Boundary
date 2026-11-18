@@ -61,6 +61,7 @@ def main():
     meta = {}
     parent_target_cache = {}
     fiber_cache = {}
+    ordinary_outputs_cache = {}
 
     for source in parent_sources:
         intervals, tau = source
@@ -141,10 +142,13 @@ def main():
                         assert Uj == Uk, ("target diamond disagreement", J, K, p, q, T)
                         U = Uj
                         U_one = tuple(sorted(edge(a + 1, b + 1) for a, b in U))
-                        assert U_one in canonical_outputs(r) or U_one in {
-                            tuple(sorted(edge(a, b) for a, b in z))
-                            for z in candidate_outputs_all(r)
-                        }
+                        if r not in ordinary_outputs_cache:
+                            ordinary_outputs_cache[r] = {
+                                tuple(sorted(edge(a, b) for a, b in z))
+                                for z in candidate_outputs_all(r)
+                            }
+                            ordinary_outputs_cache[r].update(canonical_outputs(r))
+                        assert U_one in ordinary_outputs_cache[r], ("double inverse not in parent neighborhood", r, U_one)
 
                         intervals, tau = r
                         L = intervals[Aidx]
