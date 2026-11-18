@@ -131,7 +131,7 @@ EXPECTED = {
 
 
 def main():
-    for n in (6, 8):
+    for n in (6, 8, 10):
         m = n - 2
         parent_sources = list(sources(m))
         source_meta = {}
@@ -271,7 +271,8 @@ def main():
             "canonical_leaf_parent_output_valid": canonical_leaf_parent_output_valid,
             "support": dict(support_types),
         }
-        assert observed == EXPECTED[n], (n, observed, EXPECTED[n])
+        if n in EXPECTED:
+            assert observed == EXPECTED[n], (n, observed, EXPECTED[n])
         print(f"n={n}: parent_sources={len(parent_sources)}")
         print(f"  unordered_disjoint_mark_pairs={candidate_mark_pairs}")
         print(f"  exact_sibling_source_diamonds_C2={c2_source_diamonds}")
