@@ -243,12 +243,18 @@ def main():
                                         r_parent = parent_data(
                                             r_intervals, r_tau, leaf_r
                                         )
-                                        L_parent_one_based = tuple(sorted(
-                                            edge(a + 1, b + 1)
-                                            for a, b in L_parent
-                                        ))
-                                        if L_parent_one_based in candidate_outputs(*r_parent):
+                                        parent_outputs_zero_based = {
+                                            frozenset(edge(a - 1, b - 1) for a, b in target)
+                                            for target in candidate_outputs(*r_parent)
+                                        }
+                                        if L_parent in parent_outputs_zero_based:
                                             canonical_leaf_parent_output_valid += 1
+                                        elif canonical_leaf_parent_output_valid == 0:
+                                            print("  FIRST_CANONICAL_LEAF_PARENT_MISS:",
+                                                  {"r": r, "L": L, "U": Uj_one_based,
+                                                   "inverse_parent": L_parent,
+                                                   "parent_source": r_parent,
+                                                   "parent_outputs": parent_outputs_zero_based})
                             else:
                                 c3_failures.append({
                                     "n": n, "J": J, "K": K,
