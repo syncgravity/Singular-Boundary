@@ -140,14 +140,14 @@ Accordingly, no proof may sum or identify sibling fibers by assuming \(U\in N_\p
 
 There is a useful source-side expression for \(\delta(p,J)\).
 
-Let \(p=(M',\tau')\) be a parent source with at least two matching intervals. Let
+Let \(p=(M',\tau')\) be a parent source with at least two matching intervals. Lift its compressed port labels back to the child port line by reinserting the two endpoints of \(J\); write \(\widetilde I\) for the lifted interval corresponding to a parent interval \(I\). Let
 - \(d=d(p)\) be the number of non-root leaves of \(\tau'\);
-- \(a(p,J)\) be the number of non-root leaves \(I\) of \(\tau'\) whose intervals overlap \(J\);
-- \(b(p,J)\) be the number of root or internal vertices \(I\) of \(\tau'\) whose intervals overlap \(J\).
+- \(a(p,J)\) be the number of non-root leaves \(I\) of \(\tau'\) for which \(\widetilde I\) overlaps \(J\);
+- \(b(p,J)\) be the number of root or internal vertices \(I\) of \(\tau'\) for which \(\widetilde I\) overlaps \(J\).
 
-Every child source \(x\) in the fiber \(F=(p,J)\) is obtained by adjoining \(J\) to the matching and adjoining exactly one tree edge \(J I\) to \(\tau'\), for an overlap-neighbor \(I\). These are all the possible child sources in the fiber.
+Every child source \(x\) in the fiber \(F=(p,J)\) is obtained by adjoining \(J\) to the matching and adjoining exactly one tree edge \(JI\) to the lifted parent tree, for an overlap-neighbor \(I\). These are all the possible child sources in the fiber.
 
-If \(I\) is a non-root leaf of \(\tau'\), adding \(J I\) removes \(I\) from the leaf set and adds \(J\), so \(d(x)=d\). If \(I\) is root or internal, the old non-root leaves remain and \(J\) is added, so \(d(x)=d+1\). Therefore
+If \(I\) is a non-root leaf of \(\tau'\), adding \(JI\) removes \(I\) from the leaf set and adds \(J\), so \(d(x)=d\). If \(I\) is root or internal, the old non-root leaves remain and \(J\) is added, so \(d(x)=d+1\). Therefore
 \[
 \boxed{
 \delta(p,J)=\frac{a(p,J)}{d(p)}
@@ -157,7 +157,7 @@ If \(I\) is a non-root leaf of \(\tau'\), adding \(J I\) removes \(I\) from the 
 \]
 For the one-interval parent base case, there is only the root attachment and \(\delta=1\).
 
-This formula is exact, not an estimate. It replaces a sum over child sources by local data of the parent overlap tree and the interval \(J\). It may be useful in a cut-local capacity proof, because the demand depends only on which overlap-neighbors of \(J\) are leaves versus internal/root vertices.
+This formula is exact, not an estimate. It replaces a sum over child sources by local data of the parent overlap tree and the lifted interval \(J\). It may be useful in a cut-local capacity proof, because the demand depends only on which overlap-neighbors of \(J\) are leaves versus internal/root vertices.
 
 For each fixed parent target \(P\in C_{\rm can}(p)\), the child lifts at fixed \(J\) are disjoint from the lifts of every other parent target \(P'\), by fixed-\(J\) inverse uniqueness. Thus the remaining collisions are precisely between different deleted intervals and/or different parent sources, not between two parent targets in the same fixed fiber.
 
