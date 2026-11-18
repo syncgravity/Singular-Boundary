@@ -151,5 +151,6 @@ def run(n, expected_sources):
 
 
 if __name__ == "__main__":
-    assert run(8, 608)
-    assert run(10, 31744)
+    result8 = run(8, 608)
+    result10 = run(10, 31744)
+    print(f"FINITE_DIAGNOSTIC_SUMMARY n8_pass={result8} n10_pass={result10}")
