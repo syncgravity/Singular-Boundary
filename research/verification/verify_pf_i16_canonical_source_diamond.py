@@ -182,12 +182,21 @@ def main():
                                 "target-side mutual-survival diamond failed",
                                 n, J, K, p, q, r, T, Uj, Uk,
                             )
+                            J0 = tuple(v - 1 for v in J)
+                            K0 = tuple(v - 1 for v in K)
+                            T0 = frozenset(edge(a - 1, b - 1) for a, b in T)
+                            rj = local_records(T0, n, J0)[0]
+                            rk = local_records(T0, n, K0)[0]
+                            support_j = set(J0) | set(rj[0])
+                            support_k = set(K0) | set(rk[0])
                             support_types[
-                                (len(set(J) | set(K)),)
+                                (len(support_j & support_k),
+                                 len(set(rj[0]) & set(K0)),
+                                 len(set(rk[0]) & set(J0)))
                             ] += 1
-                            Uj_one_based = frozenset(
+                            Uj_one_based = tuple(sorted(
                                 edge(a + 1, b + 1) for a, b in Uj
-                            )
+                            ))
                             if Uj_one_based in canonical_outputs(r):
                                 c3_pass += 1
                             else:
