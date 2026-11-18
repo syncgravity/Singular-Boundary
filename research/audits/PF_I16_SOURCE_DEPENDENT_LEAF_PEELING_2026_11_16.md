@@ -106,3 +106,24 @@ Latest verifier commit:
 
 Latest CI run:
 https://github.com/syncgravity/Singular-Boundary/actions/runs/43974717402
+
+
+## Structural inverse lemma
+
+The verifier's final version no longer searches all pairs u,v. If J={a,b}
+is inserted at the final step, all edges incident to a or b are among the
+three local switch edges. For each of the three local trees, the union of
+the neighbors of a and b, with a,b removed, is exactly the two endpoints
+u,v of the old edge. Hence
+\[
+\{u,v\}=(N_T(a)\cup N_T(b))\setminus\{a,b\}.
+\]
+This recovers the old edge and the local four-vertex tree uniquely. Replacing
+the local three edges by uv and deleting a,b is therefore a deterministic
+inverse, not a multivalued projection.
+
+The direct inverse verifier passed the complete n=4,6,8 CI suite:
+https://github.com/syncgravity/Singular-Boundary/actions/runs/43974862779
+
+Latest verifier commit:
+c2baaaab83a29412ac5a82ef98ee962ff204db87
