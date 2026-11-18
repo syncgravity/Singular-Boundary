@@ -1,0 +1,25 @@
+name: PF-I16 exact retained-grandparent sibling census
+on:
+  push:
+    branches:
+      - research/pf-i16-retained-grandparent-exact-2026-11-18
+    paths:
+      - research/verification/verify_pf_i16_retained_grandparent_exact_census.py
+      - .github/workflows/pf-i16-retained-grandparent-exact-census.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate exact retained-route controls (fast)
+        working-directory: research/verification
+        run: python verify_pf_i16_retained_grandparent_exact_census.py --self-test-only
+      - name: Enumerate exact twelve-port sibling diamonds
+        working-directory: research/verification
+        run: python verify_pf_i16_retained_grandparent_exact_census.py
