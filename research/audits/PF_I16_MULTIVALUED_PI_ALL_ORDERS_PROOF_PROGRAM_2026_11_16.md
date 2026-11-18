@@ -349,3 +349,29 @@ The next proof obligation is therefore not a third-mark or grandparent-compatibi
 within each cut block. The proof must account for mixed crossing/noncrossing fibers and preserve unit capacity at each child target. The previous uniform row allocation is overloaded at n=10, and the fixed-grandparent reroute is false. No new workflow should be launched until a new allocation or dual inequality is specified and its finite predictions are clear.
 
 The all-orders Hall theorem, weighted one-link inequality, and any Yang--Mills mass-gap claim remain open.
+
+
+## New direct capacity criterion: reciprocal reverse-mark degrees (2026-11-18)
+
+A sufficient condition for the mixed Hall dual is now isolated in
+`PF_I16_RECIPROCAL_REVERSE_MARK_DEGREE_CRITERION_2026_11_18.md`.
+
+For a target (T) in cut block (Y_k), let (r_k(T)) be the number of **all** eligible fibers (F=(p,J)) in that block for which (T\in N_k(F)). Then the fiberwise bound
+[
+\delta(F)\le \sum_{T\in N_k(F)}\frac1{r_k(T)}
+\tag{RD}
+]
+implies blockwise Hall. Indeed, for arbitrary (z_F\ge0),
+[
+\max_{F:T\in N_k(F)}z_F
+\ge \frac1{r_k(T)}\sum_{F:T\in N_k(F)}z_F.
+]
+Summing over targets gives the mixed weighted dual (MR) immediately. Equivalently, each target splits its unit capacity equally among every eligible reverse-mark fiber; if each fiber receives at least its demand, trim the excess.
+
+This is genuinely different from the failed uniform row allocation: shares are target-dependent and penalize high-collision targets. The reciprocal degree must count crossing and noncrossing fibers together. Restricted degrees are invalid for this test.
+
+The next finite test, if implemented, is exact rational evaluation of
+[
+q(F)-\delta(F)=\sum_{T\in N_k(F)}1/r_k(T)-\delta(F)
+]
+for every fiber in each block. A negative fiber rejects this sufficient criterion at that order only; it does not refute Hall. No finite test has yet been run, and (RD) is not claimed as an all-orders theorem.
