@@ -2,7 +2,7 @@
 
 Date: 2026-11-18
 
-Status: **finite target-tree evidence through seven ports; mutual-survival commutation remains a conjecture, not an all-orders lemma.**
+Status: **finite target-tree census through seven ports; the mutual-survival diamond conjecture raised by this census has since been proved for every finite port tree. See `PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md`.**
 
 Verifier: `research/verification/verify_pf_i16_reverse_mark_pair_census.py`.
 
@@ -65,17 +65,21 @@ For each mutually surviving pair, let X_J and X_K be the two four-port supports,
 
 Thus disjoint four-port supports are not necessary for mutual survival. The local sufficient criterion in the preceding commutation audit (disjoint supports) remains sufficient, but it is not a classification and is not necessary. In the (2,1,1) type, each support meets the other mark in one old endpoint. In the (1,0,0) type, the supports share one old endpoint and neither old edge meets the opposite mark.
 
-## 5. Candidate mutual-survival commutation lemma
+## 5. Resolution: mutual-survival commutation is now proved
 
-The finite data motivate the following precise conjecture.
+The finite data originally motivated the following statement: if J and K are disjoint valid guarded reverse marks of T, and each remains a valid guarded reverse mark after the other inverse, then the two double inverses agree, even though the second inverse witnesses may change.
 
-**Conjecture (guarded mutual-survival diamond).** Let T be a port tree and let J,K be disjoint two-port marks, each a valid guarded reverse mark of T. If K is still a valid guarded reverse mark of P_J(T), and J is still a valid guarded reverse mark of P_K(T), then the two resulting double inverses agree:
+That statement is no longer merely a conjecture. It is proved for arbitrary finite port trees in
+`PF_I16_GUARDED_MUTUAL_SURVIVAL_DIAMOND_LEMMA_2026_11_18.md`.
+
+The proof uses the exact three-edge incidence count for a valid mark. If h is the number of T-edges joining J to K, mutual survival forces
 [
-P_{K}^{,J}(P_J(T))=P_{J}^{,K}(P_K(T)),
+h=\mathbf 1_{\{e_J\cap K\ne\varnothing\}}
+ =\mathbf 1_{\{e_K\cap J\ne\varnothing\}}.
 ]
-where the superscript records that the second inverse witness is revalidated in the first parent tree and need not equal its original witness.
+For h=0 the two distinct original inverse edges are restored in either order. For h=1 each old edge meets the opposite mark in exactly one endpoint, and both orders restore the same edge between the two surviving external endpoints.
 
-The census is consistent with this conjecture through seven ports. It does not prove it for arbitrary n. A proof must use the exact full-incidence guard and the fact that each first inverse deletes its marked vertices and restores the unique complementary edge; it must not assume the two original four-port supports are disjoint.
+The exhaustive n≤7 census remains useful as regression evidence, but it is not the proof of the theorem. The theorem remains target-side only; canonical source/fiber compatibility is not included.
 
 ## 6. What this does and does not contribute to Hall
 
@@ -88,6 +92,6 @@ It still does not establish:
 - that the weighted fiber demands in such a class fit target capacity one;
 - any arbitrary-family mixed-fiber Hall inequality.
 
-In particular, local target-side commutation is not a substitute for the canonical source/fiber condition. The next proof step is to prove or refute the mutual-survival diamond conjecture abstractly, then separately test whether its common parent target is canonical for both source histories.
+In particular, local target-side commutation is not a substitute for the canonical source/fiber condition. The next proof step is to characterize when the common parent target supplied by the proved target-side diamond is canonical for both source histories.
 
 No all-orders Hall theorem or unconditional weighted one-link inequality is claimed.
