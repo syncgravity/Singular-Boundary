@@ -13,63 +13,63 @@ Thus the exact failure is at the first clause of the rooted-star criterion, not 
 ## 2. Exact source-diamond setup
 
 Let x=(M,tau) be a child source and J,K disjoint non-root leaves. Put
-[
+\[
 p=\pi_J(x),\quad q=\pi_K(x),\quad r=\pi_K(p)=\pi_J(q).
-]
+\]
 The retained target T lies in both fiber neighborhoods, and the guarded reverse operations at J and K mutually survive. Hence there is a common double inverse
-[
+\[
 U=P_K(P_J(T))=P_J(P_K(T)).
-]
+\]
 The canonical source routes put U in the ordinary common-parent neighborhood C(r).
 
 The proposed strengthening
-[
+\[
 p\ne q\quad\Longrightarrow\quad U\in C_{\rm can}(r)
 	ag{DP}
-]
+\]
 is disproved by the witness below.
 
 ## 3. Explicit distinct-parent counterexample
 
 The first logged failure has
-[
+\[
 J=(2,3),\qquad K=(4,6),
-]
+\]
 and distinct parent sources
-[
+\[
 p=\left(
 ((1,6),(2,4),(3,7),(5,8)),
 ((0,1),(0,2),(0,3))
 \right),
-]
-[
+\]
+\[
 q=\left(
 ((1,6),(2,3),(4,7),(5,8)),
 ((0,1),(0,2),(0,3))
 \right).
-]
+\]
 They are distinct as matching/overlap-tree sources, and both delete to
-[
+\[
 r=\left(
 ((1,4),(2,5),(3,6)),
 ((0,1),(0,2))
 \right).
-]
+\]
 The common parent r is a rooted star. Its non-root leaves are
-[
+\[
 A=(2,5),\qquad B=(3,6),
-]
+\]
 with A the canonical leaf. The common double inverse is
-[
+\[
 U=((1,2),(2,3),(3,4),(4,5),(4,6)).
-]
+\]
 The verifier reports that A has no exact guarded reverse record in U. Therefore U is an ordinary output of r but not in C_can(r), by the exact rooted-star criterion
-[
+\[
 U\in C_{\rm can}(r)
 \iff
 A\text{ is a guarded reverse mark of }U
 \text{ and }B\text{ survives after reversing }A.
-]
+\]
 
 Both added canonical leaves in p and q attach to the root of r (attachment type (R,R)), rather than to A. Thus the earlier attachment discussion does not isolate the obstruction: even when both source extensions attach at the root and their canonical-leaf comparisons place the added leaves before A in their respective compressed orders, A need not be a reverse mark of U. The compressed-order comparisons do not control the target-side endpoint-incidence/guard condition.
 
@@ -96,7 +96,7 @@ Their shared counts are:
 - B survives after A in all 479,412 A-valid cases; no conditional B failures.
 
 Attachment types (p-extension attachment, q-extension attachment) across the 2,906 distinct-parent source diamonds:
-[
+\[
 \begin{array}{c|r}
 (A,A)&632\\
 (A,B)&360\\
@@ -108,7 +108,7 @@ Attachment types (p-extension attachment, q-extension attachment) across the 2,9
 (R,B)&210\\
 (R,R)&280
 \end{array}
-]
+\]
 Here A and B denote the two non-root leaves of r, and R its root.
 
 This is a finite disproof at n=10, not an all-orders statement. It does not contradict target-side mutual-survival, the retained multivalued-pi relation, or the all-orders Hall theorem.
@@ -116,11 +116,11 @@ This is a finite disproof at n=10, not an all-orders statement. It does not cont
 ## 5. What remains usable
 
 The following rooted-star implication remains supported by the exhaustive n=10 census:
-[
+\[
 A\text{ valid in }U
 \quad\Longrightarrow\quad
 B\text{ survives after reversing }A.
-]
+\]
 This is only finite evidence at n=10. The leaf-bubbling criterion remains a sufficient condition: if a leaf is valid at each adjacent swap and the next inserted leaf survives after its inverse, that leaf can be bubbled to the final position. The source-diamond hypotheses have not been shown to imply those swap conditions.
 
 The distinct-parent split alone is not a valid reduction. In particular, the (R,R) attachment class already contains failures, so excluding the exceptional (A,A) attachment geometry would not suffice.
