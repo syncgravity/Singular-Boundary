@@ -102,3 +102,13 @@ The local same-cut theorem proves each fiber has at least 2^{s-2} outputs, but d
 ## 6. Status
 
 This is an exact structural reduction of target congestion to unique marked-interval inverses and a two-level allocation. It is not yet a proof of (TC), and no all-orders cross-fiber Hall theorem is claimed. The finite n=8 and n=10 max-flow certificates remain valid independent evidence.
+
+## 7. Correction: the double-star leaf-pair example is not a valid reverse-mark family (2026-11-18)
+
+The example in Section 4 claiming that every pair of leaves a at u and b at v gives a valid reverse mark J={a,b} is withdrawn.
+
+The induced four-port tree on {a,u,v,b} is the path a-u-v-b, and the proposed replaced edge is e={u,v}. In the ordered local path S1, the two path leaves are x1 and x4, so the proposed mark is J={x1,x4}; its complementary old edge is the middle edge {x2,x3}. That edge belongs to S1. Equivalently, J contains the old edge as an interval, and the no-reinsertion guard rejects all three local patterns because each contains x2x3. The other two allowed local trees are stars and cannot realize the induced four-port path.
+
+Thus none of these leaf-to-leaf pairs is a valid guarded reverse mark. The claimed rq lower bound on the number of valid reverse marks does not follow and must not be used to argue that the number of valid marks is unbounded.
+
+This correction does **not** establish a uniform bound on valid reverse marks. It removes only this proposed example. The exact target-congestion identity (RC) remains valid, and the aggregate marked-interval capacity estimate (TC) remains open. Future examples must be checked against all three ordered local trees, the complementary-edge no-reinsertion guard, and the full incidence equality before being counted as reverse marks.
