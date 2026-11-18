@@ -375,3 +375,24 @@ The next finite test, if implemented, is exact rational evaluation of
 q(F)-\delta(F)=\sum_{T\in N_k(F)}1/r_k(T)-\delta(F)
 ]
 for every fiber in each block. A negative fiber rejects this sufficient criterion at that order only; it does not refute Hall. No finite test has yet been run, and (RD) is not claimed as an all-orders theorem.
+
+
+## Exact reciprocal-degree diagnostic: eight-port obstruction (2026-11-18)
+
+The equal reciprocal target split criterion (RD), recorded in
+`PF_I16_RECIPROCAL_REVERSE_MARK_DEGREE_CRITERION_2026_11_18.md`, has now been tested exactly at n=8. It fails for 98 of 424 fibers:
+- cut 3: 90 negative fibers among 382; 1,356 targets; 17,100 fiber-target incidences;
+- cut 5: 8 negative fibers among 42; 102 targets; 1,047 incidences.
+
+The minimum exact slacks are
+[
+\min_{F\in X_3}(q(F)-\delta(F))=-169259/95760,
+\qquad
+\min_{F\in X_5}(q(F)-\delta(F))=-451/420.
+]
+The first cut-3 witness has (J=(2,8)), three child sources, eight retained targets, (q=22261/95760), and (delta=2). Its target reverse degrees range from 28 to 48.
+
+Yet the aggregate reciprocal capacity surplus is (792) in cut 3 and (66) in cut 5, exactly target count minus total split demand. The failure is local concentration, not aggregate shortage. Thus equal reciprocal splitting is rejected, while a nonuniform allocation and mixed Hall remain open.
+
+Audit: `PF_I16_RECIPROCAL_REVERSE_MARK_DEGREE_N8_OBSTRUCTION_2026_11_18.md`.
+The continued n=8/n=10 workflow is [44392154434](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392154434); its n=10 outcome is pending. The earlier run [44392067165](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392067165) stopped after n=8 because the original harness incorrectly asserted that the sufficient criterion should pass; that harness has been corrected.
