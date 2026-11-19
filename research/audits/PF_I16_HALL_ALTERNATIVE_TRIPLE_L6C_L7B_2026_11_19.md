@@ -158,9 +158,13 @@ the adopted L6c coarse equivalence. It does not change the relative cyclic
 placement: every retained footprint is one connected cell in the same open
 complementary arc. Since there is only one retained footprint on each
 restricted boundary in a projection, there is no unresolved ordering among
-multiple retained footprints. An orientation-preserving boundary
-subdivision/collapse can carry the footprint along that same anchored arc
-while fixing the directed matched edge and its ordered endpoints.
+multiple retained footprints. For the 28 edge-to-edge comparisons, an orientation-preserving boundary
+identification carries the child footprint edge to the parent footprint edge.
+For the 32 vertex-to-edge comparisons, contract the parent footprint edge
+inside the open complementary arc to its image vertex; this edge contraction
+leaves the boundary a circle and does not touch the distinguished matched edge
+or either ordered endpoint. These are explicit anchored cyclic alignments,
+not merely equality of a coarse label.
 
 For each of the two exact parent structures, all 15 incoming restrictions
 have one identical ordered two-interval word, equal to the parent word:
