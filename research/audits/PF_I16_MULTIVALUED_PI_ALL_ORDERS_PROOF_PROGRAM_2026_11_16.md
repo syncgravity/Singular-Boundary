@@ -395,4 +395,54 @@ The first cut-3 witness has (J=(2,8)), three child sources, eight retained targe
 Yet the aggregate reciprocal capacity surplus is (792) in cut 3 and (66) in cut 5, exactly target count minus total split demand. The failure is local concentration, not aggregate shortage. Thus equal reciprocal splitting is rejected, while a nonuniform allocation and mixed Hall remain open.
 
 Audit: `PF_I16_RECIPROCAL_REVERSE_MARK_DEGREE_N8_OBSTRUCTION_2026_11_18.md`.
-The continued n=8/n=10 workflow is [44392154434](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392154434); its n=10 outcome is pending. The earlier run [44392067165](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392067165) stopped after n=8 because the original harness incorrectly asserted that the sufficient criterion should pass; that harness has been corrected.
+The continued n=8/n=10 workflow [44392154434](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392154434) completed successfully; its exact n=10 result is recorded below. The earlier run [44392067165](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392067165) stopped after n=8 because the original harness incorrectly asserted that the sufficient criterion should pass; the harness was corrected before the completed run.
+
+
+## Exact reciprocal-degree diagnostic: ten-port obstruction (2026-11-18)
+
+The completed exact-rational workflow [44392154434](https://github.com/syncgravity/Singular-Boundary/actions/runs/44392154434) confirms that equal reciprocal target splitting fails in all three first-overcrowded-cut blocks at n=10. The durable audit is
+`PF_I16_RECIPROCAL_REVERSE_MARK_DEGREE_N10_OBSTRUCTION_2026_11_18.md`.
+
+The exact census is:
+
+| Cut | Fibers | Targets | Fiber-target incidences | Negative RD fibers |
+|---:|---:|---:|---:|---:|
+| 3 | 19,792 | 90,751 | 6,243,410 | 4,896 |
+| 5 | 1,328 | 4,068 | 181,674 | 228 |
+| 7 | 120 | 306 | 8,343 | 15 |
+| Total | 21,240 | 95,125 | 6,433,427 | 5,139 |
+
+The exact minimum slacks are
+[
+\min_{F\in X_3}(q(F)-\delta(F))
+=-\frac{2228458211181273977}{911269137711009000},
+]
+[
+\min_{F\in X_5}(q(F)-\delta(F))
+=-\frac{771499531}{412650360},
+\qquad
+\min_{F\in X_7}(q(F)-\delta(F))=-\frac{604}{495}.
+]
+
+The first negative cut-3 fiber has (J=(2,10)), four child sources, 16 retained targets, demand (delta(F)=5/2), and
+[
+q(F)=\frac{49714633096248523}{911269137711009000}.
+]
+Its target reverse degrees range from 176 to 500. The exact parent source and full witness are in the audit.
+
+Aggregate surpluses remain positive:
+[
+\sum_{F\in X_3}(q(F)-\delta(F))=60223,quad
+\sum_{F\in X_5}(q(F)-\delta(F))=2940,quad
+\sum_{F\in X_7}(q(F)-\delta(F))=234.
+]
+These are exactly target count minus total split demand in the respective blocks. Thus the equal-split criterion fails by local concentration, not aggregate capacity shortage.
+
+**Interpretation:** (RD) remains a valid sufficient implication, but its premise fails at n=8 and n=10. The 5,139 negative fibers do not constitute a Hall-deficient family and do not contradict the successful split-demand max-flow certificates. The next route must be a nonuniform capacity allocation or a direct proof of
+[
+\sum_F\delta(F)z_F
+\le
+\sum_T\max_{F:T\in N_k(F)}z_F
+qquad(z_F\ge0).
+]
+Any such construction must handle crossing and noncrossing fibers together and maintain unit target capacity. The all-orders mixed Hall theorem and weighted one-link inequality remain open; no mass-gap conclusion is claimed.
