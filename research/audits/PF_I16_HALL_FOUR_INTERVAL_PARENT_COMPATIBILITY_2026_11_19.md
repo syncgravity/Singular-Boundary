@@ -65,7 +65,7 @@ For each graph, the test requires:
 - retained pair intersections and unions to remain contractible; and
 - every nonempty pair footprint to be a single boundary vertex or edge on the open complementary arc of the directed matched edge.
 
-The tested mark sets are the union of possible non-root leaf marks over spanning trees of each three-interval overlap graph: star `[1,2]`, path `[2]`, triangle `[1,2]`. This makes the parent-support family graph-invariant and independent of a particular selected parent tree.
+For the decisive triangle parent, the test uses the actual star spanning tree on intervals 1,2,3, with edges `01,02` and both non-root leaves `[1,2]` eligible. This is not merely a hypothetical parent pattern: the order-eight source census contains four graph-5 sources and twelve graph-12 sources in which interval 4 is an eligible leaf and the retained parent tree is exactly this star. Therefore the simultaneous two-deletion parent condition is required by actual source records in both decisive graph types. The path parent pattern is tested with its rooted path tree and eligible leaf `[2]`.
 
 ## Per-graph fourth-edge candidate counts
 
@@ -95,11 +95,22 @@ The parent-compatibility artifact stores one explicit witness for every candidat
 
 There are 103 such witnesses for graph 5 and 21 for graph 12. The script checks the exact required fourth adjacency vector and the two-sided open-complementary-arc footprint condition before recording each witness. The candidate sets are then compared as complete edge sets, not by comparing only a sample or a single greedy assignment.
 
+### Star-parent source witnesses in the order-eight census
+
+The canonical source enumerator was checked directly for the decisive graph types:
+
+| Graph | Sources with interval 4 eligible | Sources whose retained parent tree is star `01,02` and interval 4 is eligible |
+|---|---:|---:|
+| 5 | 12 | 4 |
+| 12 | 36 | 12 |
+
+In each star-parent source, the retained three-interval parent has root 0 and both non-root leaves 1 and 2. Thus the two relative deletion restrictions used to construct the triangle parent-compatible family are simultaneously demanded by actual source records for both graph types. The verifier now asserts these counts, so a future change to the source enumerator cannot silently invalidate this obstruction witness.
+
 ## Exact scope of the obstruction
 
 For each graph, the test existentially chooses a parent-compatible first-three support triple and a fourth support for the same candidate edge, then checks the exact fourth-interval adjacency vector and open-arc footprint conditions. It searches all 8,004 vertex-disjoint candidate edges and their enumerated support families, after a necessary support-incidence prefilter.
 
-The obstruction is stronger than a failed greedy support choice: it compares complete feasible fourth-edge sets for the two decisive graph types, with existential freedom to choose different parent-compatible first-three support triples for each graph. If those sets are disjoint, no common fourth edge can satisfy both graph types under this frozen motif and support family.
+The obstruction is stronger than a failed greedy support choice: it compares complete feasible fourth-edge sets for the two decisive graph types, with existential freedom to choose different parent-compatible first-three support triples and different fourth supports for each graph. The parent-compatible family is a necessary-condition superset: it enforces support collapse, exact pairwise intersection pattern, contractible nonempty intersections/unions, the star-parent relative deletions, and the single-cell open-arc footprint condition, but not the full L6c intersection-diagram equivalence or complete L7b boundary word. If even these relaxed candidate sets are disjoint, no common fourth edge can satisfy both actual star-parent source families under this frozen motif and support bound.
 
 ## Limitations and nonclaims
 
