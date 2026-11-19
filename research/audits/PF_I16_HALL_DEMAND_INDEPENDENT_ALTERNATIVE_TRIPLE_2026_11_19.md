@@ -28,7 +28,7 @@ e_2 &: ( -7,-3,5,7,-1)\to(-7,-3,6,7,-1), &&+e_2,\\
 e_3 &: ( -6,-3,5,6,-1)\to(-6,-3,5,6,0), &&+e_4.
 \end{aligned}
 \]
-Each edge is an actual accepted elementary basis edge in the PF-I11 core and the PF-I16 original-source replay. All nine support-face occurrences used across the three graph patterns are drawn from eight distinct accepted rhombi, all present in both target domains.
+Each edge is an actual accepted elementary basis edge in the PF-I11 core and the PF-I16 original-source replay. Across the three graph patterns there are fourteen support-face occurrences, drawn from eight distinct accepted rhombi, all present in both target domains.
 
 ## 3. Support realizations
 
