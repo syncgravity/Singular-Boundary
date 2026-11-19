@@ -155,3 +155,38 @@ A result is scoped to its declared domain, support bound, and trace/witness vari
 - L4 boundary-trace and L5/L6 overlap/deletion semantics: **candidate variants specified above; not yet selected or executed**.
 - Finite lift feasibility: **NOT YET RUN**. The previous “no finite target domain” blocker is withdrawn; the remaining blocker is the explicit candidate encoding and the Hall-to-target constraint implementation.
 - All-orders Hall theorem: **OPEN**. No finite geometric lift result alone proves it.
+
+
+---
+
+## 9. Next check executed: canonical Hall source records and marked-parent audit
+
+Added `research/scripts/export_pf_i16_hall_source_records.py`. It independently enumerates:
+- every perfect matching of the ordered ports;
+- the strict-interior interval-overlap graph;
+- every spanning tree of that graph;
+- the root interval and every eligible non-root leaf;
+- each marked parent after endpoint deletion and order compression, including its full overlap graph and induced parent tree.
+
+The exporter now asserts for **every** eligible mark that deleting the non-root leaf leaves a valid spanning tree of the parent's full strict-overlap graph. It does not use any target geometry, Hall load, deficiency, flow, or observer coordinate.
+
+Independent execution of the same enumeration and parent checks gives:
+
+| Order | Sources | Eligible marks | Marks/source histogram | Parent-tree checks |
+|---:|---:|---:|---|---:|
+| 4 | 2 | 2 | 1: 2 | 2/2 pass |
+| 6 | 22 | 30 | 1: 14; 2: 8 | 30/30 pass |
+
+This is a source-side verification, not a geometric lift. It confirms the combinatorial parent operation is well-defined for every enumerated marked source at these two orders. In particular, the six-port example in §2 is included in the enumeration; all marks are retained, including distinct marks even if parent projections happen to coincide.
+
+### Status after this check
+
+- Canonical source-record exporter: **ADDED**.
+- n=4/n=6 source counts: **PASS** (2 and 22).
+- Eligible reverse marks: **PASS** (2 and 30).
+- Parent endpoint deletion and order compression: **PASS** for all 32 marks.
+- Parent overlap-tree validity: **PASS** for all 32 marks.
+- `Phi, epsilon, kappa` construction: **NOT YET TESTED**.
+- L1–L3 target assignment and L4–L6 support/overlap naturality: **NEXT**.
+
+The next geometric check should begin with L1–L3 on each of the two existing Ngrid=7 target domains, retaining the original-source replay and completed-window core as separate cases. It must produce explicit target labels and signed basis edges, not infer feasibility from the large V/E/F counts alone.
