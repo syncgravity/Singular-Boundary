@@ -310,10 +310,12 @@ def main():
     candidates.sort()
 
     feasible_by_graph = {}
+    witnesses_by_graph = {}
     for graph in graphs:
         pname = triple_pattern(graph)
         adjacency = tuple((i, 3) in graph for i in range(3))
         feasible = set()
+        witnesses = {}
         for edge in candidates:
             found = False
             for parent_supports in parent_compatible[pname]:
@@ -334,12 +336,19 @@ def main():
                                 break
                     if good:
                         found = True
+                        witnesses[edge] = {
+                            "first_three_support_face_indices": [
+                                sorted(s) for s in parent_supports
+                            ],
+                            "fourth_support_face_indices": sorted(fourth_support),
+                        }
                         break
                 if found:
                     break
             if found:
                 feasible.add(edge)
         feasible_by_graph[graph] = feasible
+        witnesses_by_graph[graph] = witnesses
 
     graph_rows = []
     for index, graph in enumerate(graphs, 1):
@@ -400,9 +409,23 @@ def main():
             "graph_5_edges": [list(e) for e in sorted(g5)],
             "graph_5_feasible_fourth_edge_count": len(feasible_by_graph[g5]),
             "graph_5_feasible_fourth_edge_sha256": sha_edges(feasible_by_graph[g5]),
+            "graph_5_candidate_edges_with_support_witnesses": [
+                {
+                    "edge": {"lower": list(edge[0]), "upper": list(edge[1])},
+                    **witnesses_by_graph[g5][edge],
+                }
+                for edge in sorted(feasible_by_graph[g5])
+            ],
             "graph_12_edges": [list(e) for e in sorted(g12)],
             "graph_12_feasible_fourth_edge_count": len(feasible_by_graph[g12]),
             "graph_12_feasible_fourth_edge_sha256": sha_edges(feasible_by_graph[g12]),
+            "graph_12_candidate_edges_with_support_witnesses": [
+                {
+                    "edge": {"lower": list(edge[0]), "upper": list(edge[1])},
+                    **witnesses_by_graph[g12][edge],
+                }
+                for edge in sorted(feasible_by_graph[g12])
+            ],
             "intersection_count": len(pair_intersection),
         },
         "scope": [
