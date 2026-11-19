@@ -280,6 +280,7 @@ def main():
     graph_sources = Counter()
     graph_marks = Counter()
     graph_mark3 = Counter()
+    graph_star_parent_mark4 = Counter()
     diamonds = 0
     for row in sources:
         g = graph_key(row)
@@ -287,12 +288,22 @@ def main():
         marks = [int(p["deleted_interval_index"]) for p in row["parents"]]
         graph_marks[g] += len(marks)
         graph_mark3[g] += sum(m == 3 for m in marks)
+        for parent in row["parents"]:
+            parent_tree = tuple(tuple(e) for e in parent["parent_tree_edges"])
+            if (int(parent["deleted_interval_index"]) == 3 and
+                    parent_tree == ((0, 1), (0, 2))):
+                graph_star_parent_mark4[g] += 1
         diamonds += len(marks) * (len(marks) - 1) // 2
     graphs = sorted(graph_sources, key=lambda g: (len(g), tuple(sorted(g))))
     if len(graphs) != 13 or diamonds != 490:
         raise AssertionError(("order-eight graph/diamond census", len(graphs), diamonds))
     if any(graph_mark3[g] == 0 for g in graphs):
         raise AssertionError("a four-interval graph lacks an eligible deletion of interval 4")
+    g5_check, g12_check = graphs[4], graphs[11]
+    if graph_star_parent_mark4[g5_check] != 4 or graph_star_parent_mark4[g12_check] != 12:
+        raise AssertionError((
+            "decisive graphs must contain star-parent sources with interval 4 eligible",
+            graph_star_parent_mark4[g5_check], graph_star_parent_mark4[g12_check]))
 
     # A fourth support must meet at least one of the first three supports for
     # every graph. Remove candidates whose entire support family is disjoint
@@ -361,6 +372,7 @@ def main():
             "source_count": graph_sources[graph],
             "eligible_mark_count": graph_marks[graph],
             "interval_4_eligible_mark_count": graph_mark3[graph],
+            "star_parent_interval_4_leaf_source_count": graph_star_parent_mark4[graph],
             "retained_parent_pattern": pname,
             "fourth_adjacency_vector": adj,
             "parent_compatible_triple_count": len(parent_compatible[pname]),
@@ -408,6 +420,7 @@ def main():
         "obstruction_pair": {
             "graph_5_edges": [list(e) for e in sorted(g5)],
             "graph_5_feasible_fourth_edge_count": len(feasible_by_graph[g5]),
+            "graph_5_star_parent_interval_4_leaf_source_count": graph_star_parent_mark4[g5],
             "graph_5_feasible_fourth_edge_sha256": sha_edges(feasible_by_graph[g5]),
             "graph_5_candidate_edges_with_support_witnesses": [
                 {
@@ -418,6 +431,7 @@ def main():
             ],
             "graph_12_edges": [list(e) for e in sorted(g12)],
             "graph_12_feasible_fourth_edge_count": len(feasible_by_graph[g12]),
+            "graph_12_star_parent_interval_4_leaf_source_count": graph_star_parent_mark4[g12],
             "graph_12_feasible_fourth_edge_sha256": sha_edges(feasible_by_graph[g12]),
             "graph_12_candidate_edges_with_support_witnesses": [
                 {
