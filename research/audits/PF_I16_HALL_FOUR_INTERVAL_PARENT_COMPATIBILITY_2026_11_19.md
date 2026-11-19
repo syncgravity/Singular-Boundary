@@ -30,7 +30,7 @@ This is a genuine finite obstruction to extending the **fixed three-edge motif**
 - Verifier: `research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py`
 - Inventory verifier: `research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py`
 
-The corrected run `44572883975` completed the inventory and parent-compatibility calculations, uploaded both artifacts, and proceeded through the theorem-index and other repository checks. The four-interval inventory and parent-compatibility steps both concluded successfully. At the time this audit was updated, the broader workflow's later unrelated checks were still running.
+The corrected run `44572883975` completed successfully. The inventory and parent-compatibility steps both concluded successfully, both artifacts uploaded, and the full theorem-index and repository verification workflow finished with a successful job conclusion.
 
 ## Target and source sizes
 
