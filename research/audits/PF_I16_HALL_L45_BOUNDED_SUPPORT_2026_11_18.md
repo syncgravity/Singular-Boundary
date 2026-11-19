@@ -102,3 +102,19 @@ This result does not establish:
 - any all-orders Hall inequality.
 
 The next check is L6: for every eligible non-root leaf mark, compare the child support family with the parent support family after deleting the marked interval, and test whether the removed support is support-exclusive and collapses by explicitly certified free-edge moves while preserving all retained incidences. Keep the multivalued parent relation intact. A failure of this chosen support family is not a Hall counterexample; it would be a failure of this bounded geometric lift candidate.
+
+
+## 7. Canonical support assignments
+
+The lexicographic tie-break in the verifier fixes the following support families. A face is written as \((m;j,k)\), where \(m\in\mathbb Z^5\) is its lower label and \(j<k\) are its two directions. Interval indices below refer to sorted intervals \(I_1<I_2<I_3\).
+
+| Source overlap pattern | \(I_1\) support | \(I_2\) support | \(I_3\) support |
+|---|---|---|---|
+| \(n=4:\ (1,2)\) | \((01000;0,2),(01000;0,4)\) | \((01000;0,4),(01000;3,4)\) | — |
+| \(n=6:\ (1,2),(2,3)\) | \((01000;0,4)\) | \((01000;2,3),(01000;3,4)\) | \((0110{-1};1,4),(0110{-1};3,4)\) |
+| \(n=6:\ (1,2),(1,3)\) | \((01000;0,2),(01000;0,4)\) | \((01000;0,4),(01000;3,4)\) | \((0110{-1};1,4),(0110{-1};3,4)\) |
+| \(n=6:\ (1,2),(1,3),(2,3)\) | \((01000;0,2),(01000;0,4)\) | \((01000;0,4),(01000;3,4)\) | \((01000;0,2),(01000;2,3)\) |
+
+Here \(01000\) abbreviates \((0,1,0,0,0)\), \(0110{-1}\) abbreviates \((0,1,1,0,-1)\), and the notation is only a compact display of the exact five-integer labels. In every row, the matched edge \(e_i\) is contained in exactly one face of its assigned support and therefore remains on the support boundary.
+
+The verifier now also asserts that all 1,330 PF-I11 completed-core rhombi occur in the 1,468-face PF-I16 original-source replay, that all candidate supports lie in this common face population, and that the lexicographically selected support assignments and witnesses are identical when checked in either target. This is a finite cross-target containment check, not an identification of the two vertex populations.
