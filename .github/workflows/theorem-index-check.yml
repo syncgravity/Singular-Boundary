@@ -6,6 +6,11 @@ on:
       - 'docs/research/THEOREM_INDEX.md'
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
+      - 'research/scripts/verify_pf_i9_source_cut_project_bridge.py'
+      - 'research/scripts/export_pf_i16_hall_source_records.py'
+      - 'research/scripts/verify_pf_i16_hall_l123_motif_lift.py'
+      - 'research/scripts/verify_pf_i16_hall_l45_bounded_support.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
@@ -107,7 +112,15 @@ jobs:
         with:
           fetch-depth: 1
       - name: Install numerical verifier dependency
-        run: python -m pip install --disable-pip-version-check numpy
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Enumerate all one-to-three-rhombus four-interval support candidates
+        run: python research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py --output /tmp/pf_i16_four_interval_support_inventory.json
+      - name: Upload four-interval support inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-support-inventory
+          path: /tmp/pf_i16_four_interval_support_inventory.json
+          if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
       - name: Verify generated theorem catalog and current navigator
