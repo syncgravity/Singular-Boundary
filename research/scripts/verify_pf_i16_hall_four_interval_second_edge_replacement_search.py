@@ -52,12 +52,15 @@ def main():
     )
 
     e1 = edge_key(inv["fixed_triple_edges"][0])
-    second_edges = sorted({
-        edge_key(row["second_edge"])
+    frontier_rows = {
+        edge_key(row["second_edge"]): row
         for row in frontier["candidate_second_edges"]
-    })
+    }
+    second_edges = sorted(frontier_rows)
     if len(second_edges) != frontier["second_edges_with_parent_compatible_support_pair"]:
-        raise AssertionError("frontier candidate edge count/hash mismatch")
+        raise AssertionError("frontier candidate edge count mismatch")
+    if sha_edges(second_edges) != frontier["candidate_second_edge_sha256"]:
+        raise AssertionError("frontier candidate edge SHA-256 mismatch")
     if any(e not in options for e in second_edges):
         raise AssertionError("frontier contains an edge absent from support inventory")
 
@@ -135,6 +138,12 @@ def main():
                 if not footprint(s1, s2, e1) or not footprint(s2, s1, e2):
                     continue
                 first_pairs.append((oid1, oid2))
+        expected_pair_count = frontier_rows[e2]["support_pair_witness_count"]
+        if len(first_pairs) != expected_pair_count:
+            raise AssertionError((
+                "recomputed first-two support-pair count differs from frontier",
+                e2, len(first_pairs), expected_pair_count
+            ))
         if not first_pairs:
             raise AssertionError(("frontier edge lost all support-pair witnesses", e2))
         total_pair_witnesses += len(first_pairs)
