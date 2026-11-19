@@ -181,8 +181,7 @@ def main():
                     - options_touching(c3[2])
                 )
                 hit12 = (
-                    options_touching(c2[2])
-                    & options_touching(c3[2])
+                    (options_touching(c2[2]) & options_touching(c3[2]))
                     - options_touching(c1[2])
                 )
                 endpoints123 = fixed_endpoints | set(e3)
