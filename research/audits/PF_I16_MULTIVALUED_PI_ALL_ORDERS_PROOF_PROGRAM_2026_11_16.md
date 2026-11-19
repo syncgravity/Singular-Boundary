@@ -509,3 +509,25 @@ Two targeted diagnostics were launched:
 Both were in progress at the time of this update. The global test is stronger in a different sense but does not substitute for the same-block test; a global failure alone does not refute blockwise RNL_k. A failure of either criterion rejects only that allocation, not Hall. A finite pass remains finite evidence and would still require an all-orders structural estimate.
 
 Durable test plan: `PF_I16_ROW_NORMALIZED_ALLOCATION_TEST_PLAN_2026_11_18.md`. No all-orders mixed-Hall proof is claimed.
+
+
+## New all-orders single-fiber demand bound (2026-11-19)
+
+From the exact local demand identity and the (s-1) vertices of the parent overlap tree, if (n=2s) and (d) is the number of parent non-root leaves, then
+[
+1\le d\le s-2,\quad a\le d,\quad b\le s-1-d.
+]
+Consequently every non-base fiber satisfies
+[
+\delta(F)=\frac{a}{d}+\frac{b}{d+1}
+\le\frac{s}{d+1}\le\frac{s}{2}.
+]
+Writing (g=a+b) for the parent overlap-degree of the deleted interval also gives
+[
+\frac{g}{d+1}\le\delta(F)\le\frac{g+1}{d+1}.
+]
+The one-interval parent base case has (delta=1) and obeys the same cap at (s=2).
+
+Durable proof: `PF_I16_SINGLE_FIBER_DEMAND_BOUND_2026_11_19.md`.
+
+This is a genuine all-orders source-side bound. It controls one fiber's demand but not the sum of competing fibers at a target; it does not close (RNL_k) or (BQH_k). The unresolved step remains target-side reverse-incidence/collision control.
