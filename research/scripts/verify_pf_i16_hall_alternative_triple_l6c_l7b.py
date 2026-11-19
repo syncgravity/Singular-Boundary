@@ -377,6 +377,10 @@ def run_target(name, labels, edges, faces, records):
                     "parent_interval_index": parent_i,
                     "child_footprint": child_fp,
                     "parent_footprint": parent_fp,
+                    "orientation_preserving_alignment": (
+                        "edge-identification" if child_fp["shape"] == "edge"
+                        else "contract-parent-footprint-edge-to-vertex"
+                    ),
                     "cyclic_placement_matches": same,
                 })
             projection_pass = all(x["cyclic_placement_matches"] for x in interval_rows)
