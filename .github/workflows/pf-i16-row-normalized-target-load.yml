@@ -1,0 +1,41 @@
+name: PF-I16 row-normalized target-load diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/pf-i16-direct-mixed-hall-2026-11-18
+    paths:
+      - research/verification/verify_pf_i16_row_normalized_target_load.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - research/verification/verify_pf_i16_fixed_parent_leaf_fiber_expansion.py
+      - .github/workflows/pf-i16-row-normalized-target-load.yml
+
+permissions:
+  contents: read
+
+jobs:
+  exact-row-normalized-load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact rational n=8 and n=10 diagnostic
+        working-directory: research/verification
+        run: |
+          set -o pipefail
+          python -u verify_pf_i16_row_normalized_target_load.py | tee row_normalized_target_load.txt
+      - name: Upload exact diagnostic and overload witnesses
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-row-normalized-target-load
+          path: |
+            research/verification/row_normalized_target_load.txt
+            research/verification/row_normalized_n*_overload_witness.json
+          if-no-files-found: warn
+          retention-days: 90
