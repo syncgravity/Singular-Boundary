@@ -66,7 +66,7 @@ def main():
     for row in candidate_rows:
         e=row["second_edge"]
         edge_lines.append(",".join(map(str,e["lower"]))+"->"+",".join(map(str,e["upper"])))
-    digest=hashlib.sha256(("\\n".join(edge_lines)+"\\n").encode()).hexdigest()
+    digest=hashlib.sha256(("\n".join(edge_lines)+"\n").encode()).hexdigest()
     result={
       "schema":"PF-I16-HALL-FOUR-INTERVAL-SECOND-EDGE-FRONTIER-v1",
       "target":inv["target"],
@@ -91,7 +91,7 @@ def main():
       ]
     }
     a.output.parent.mkdir(parents=True,exist_ok=True)
-    a.output.write_text(json.dumps(result,sort_keys=True,indent=2)+"\\n")
+    a.output.write_text(json.dumps(result,sort_keys=True,indent=2)+"\n")
     print(json.dumps({k:v for k,v in result.items() if k!="candidate_second_edges"},sort_keys=True,indent=2))
 
 if __name__=="__main__":
