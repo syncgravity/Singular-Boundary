@@ -1,6 +1,11 @@
 name: PF-I16 export and independently replay n10 split-demand flow
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'research/verification/verify_pf_i16_split_demand_fiber_hall_flow.py'
+      - 'research/verification/verify_pf_i16_split_demand_flow_certificate.py'
+      - '.github/workflows/pf-i16-export-split-demand-flow.yml'
 jobs:
   certificate:
     runs-on: ubuntu-latest
