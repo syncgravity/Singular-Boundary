@@ -23,13 +23,13 @@ On branch `research/pf-i16-direct-mixed-hall-2026-11-18`:
 
 ## Important implementation boundary
 
-The first targeted run [44426921009](https://github.com/syncgravity/Singular-Boundary/actions/runs/44426921009) failed after completing the exact n=10 max flow and writing an 8,204,258-byte certificate. The log shows 31,744 sources, 21,280 fibers, 95,864 targets, scaled demand and max flow both 380,928, 49,584 positive fiber-target arcs, 32,414 used targets, and maximum target load 12. The failure was a harness `NameError: Counter is not defined` in the pre-existing terminal-target-access diagnostic, invoked after the flow computations; it was not a max-flow or certificate-export failure. Because the builder exited nonzero, the replay and upload steps were skipped, so the certificate has not yet been independently replayed or preserved as a workflow artifact. The missing `Counter` import was fixed in commit `75141c303dfad6191c5a797c262b704a6049fe5a`. The targeted rerun [44432123349](https://github.com/syncgravity/Singular-Boundary/actions/runs/44432123349) is now in progress. No replay pass is claimed yet. The existing finite split-demand flow results remain the previously verified results from workflow [44177680653](https://github.com/syncgravity/Singular-Boundary/actions/runs/44177680653); this new work only adds export and independent replay instrumentation.
+The first targeted run [44426921009](https://github.com/syncgravity/Singular-Boundary/actions/runs/44426921009) failed after completing the exact n=10 max flow and writing an 8,204,258-byte certificate. The failure was a harness `NameError: Counter is not defined` in a post-flow diagnostic; replay and upload were skipped. The missing import was fixed in commit `75141c303dfad6191c5a797c262b704a6049fe5a`. The corrected rerun [44432123349](https://github.com/syncgravity/Singular-Boundary/actions/runs/44432123349) completed successfully: the exact flow, independent replay, and artifact upload all passed. See the durable result and replay audit `PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_RESULT_2026_11_18.md` and `PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_REPLAY_2026_11_18.md`.
 
 The replay checker independently validates the exported allocation against the reconstructed finite relation, but it shares the repository's canonical source enumeration, switch inversion, compression, and candidate-output primitives. It is independent of the max-flow implementation and serialized flow construction, not an independently implemented mathematical definition of the relation.
 
 ## Intended mathematical use
 
-Once the manual workflow passes, inspect:
+The corrected workflow has passed. The exported allocation has been inspected; see the result audit for support counts and the order-dependence warning. The next task is not more certificate extraction but a sharply specified candidate allocation/dual test:
 - the distribution of positive flow arcs per fiber;
 - which fibers receive zero, partial, or full target capacity;
 - whether target capacities are typically saturated;
