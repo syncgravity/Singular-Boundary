@@ -458,7 +458,7 @@ Instrumentation has been committed:
 - `.github/workflows/pf-i16-export-split-demand-flow.yml` manually builds, replays, and uploads the certificate.
 - Design and verification boundaries are recorded in `PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_PLAN_2026_11_18.md`.
 
-**Status:** implementation committed; manual workflow not yet dispatched. No exported certificate or replay pass is claimed yet. The checker shares the canonical relation-generation primitives, but is independent of the max-flow algorithm and exported flow construction.
+**Status:** implementation committed; targeted workflow [44426921009](https://github.com/syncgravity/Singular-Boundary/actions/runs/44426921009) is running. At the latest poll, the flow-builder step was in progress and replay/upload were pending. No exported certificate or replay pass is claimed yet. The checker shares the canonical relation-generation primitives, but is independent of the max-flow algorithm and exported flow construction.
 
 If the workflow passes, inspect support concentration by parent source, deleted interval, first crowded cut, and crossing/noncrossing class. The aim is to identify a structural nonuniform allocation or augmenting/exchange invariant. This remains finite diagnostic work; it does not itself establish an all-orders allocation.
 
