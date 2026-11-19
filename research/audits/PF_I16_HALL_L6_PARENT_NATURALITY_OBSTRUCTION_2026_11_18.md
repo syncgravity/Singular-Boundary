@@ -92,3 +92,14 @@ A further possibility is to weaken L6 to naturality only after forgetting the in
 ## 6. Next work
 
 The next step should be a redesign decision before further collapse enumeration: choose whether the source object is to retain ancestry/marked-embedding data, or whether L6 should be weakened to a coarser support-level statement. Only after that choice should we rerun support-exclusive deletion, relative free-edge collapses, and retained-incidence preservation. This failure is a geometric-lift obstruction, **not** a counterexample to the Hall inequality.
+
+
+## 7. Status after the revised hierarchy
+
+The strict labelled-edge L6 requirement documented above remains **rejected for this frozen rank-indexed lift**. It is not silently reclassified as a pass.
+
+The working hierarchy has now replaced it with L6c, coarse support naturality. The finite n=6 to n=4 test checks all 30 eligible marked projections in both Ngrid=7 target domains, including relative free-cell collapses, support/intersection contractibility, and coherence for both parent structures. That separate result is recorded in:
+
+research/audits/PF_I16_HALL_L6C_COARSE_SUPPORT_NATURALITY_2026_11_18.md
+
+L6c does not preserve the identity of each inherited matched basis edge. It preserves the retained support intersection diagram up to simple-homotopy equivalence. The strict L6 obstruction above remains useful as the reason for making that explicit change.
