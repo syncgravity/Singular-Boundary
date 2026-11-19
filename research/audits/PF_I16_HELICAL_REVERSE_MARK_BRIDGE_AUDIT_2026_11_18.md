@@ -107,7 +107,24 @@ The map must be specified before Hall loads are inspected and must satisfy all o
 
 **(M6) Acceptance-window membership.** The image must lie in W when the failure-band indicators are evaluated. Out-of-window values must be reported, not projected back by an unrecorded repair.
 
-A likely data recovery target is the original coupled-Z5 generator, phason/acceptance-window convention, five Conway-worm paths, and observer sampling implementation referenced by the dissertation. If these are not recoverable, the bridge remains a conjectural new construction and must be labelled as such.
+### Source-geometry recovery achieved in the private research Library
+
+The source-side geometry is no longer wholly missing. The private Library contains the original research script `paper6_extend_local.py` (not present in the public repository), whose inspected implementation supplies:
+- `make_generic_gamma()`: the five-component generic phason built from fractional parts of j sqrt(2)+j^2 sqrt(3), centered to zero sum;
+- `build_penrose_tiling()`: five-integer labels `mi` with the acceptance-layer condition 1 <= sum(mi) <= 4;
+- `extract_z5_coordinates()`: z1(mi)=sum mi_j omega^j and z2(mi)=sum mi_j omega^(2j), together with a sample-centroid-centered z2 and its polar angle;
+- `build_coupled_z5_laplacian()`: accepted-label neighbors mi±e_j and Fibonacci hopping determined by the integer level.
+
+The companion PF-I9 reconstruction records the four distinct internal windows W_h, h=1,2,3,4, and the exact generic-cell acceptance condition. Thus the source-side projection, phason convention, accepted integer labels, and finite neighbor rule have a concrete implementation to recover and authenticate. This materially advances G0.
+
+It does **not** close G1. The PF-I16 matching-tree source/target/reverse-mark objects still contain ordered port labels and interval data, not one of these accepted five-integer labels. No source document or code found so far specifies an association m(T,J) between a reverse-mark state and a Penrose vertex/edge. The proposed map can now be written more concretely as
+\[
+\Psi_n(T,J)=z_2(m(T,J))-\overline{z_2},\qquad
+\theta_T(J)=\arg\Psi_n(T,J),
+\]
+with m(T,J) required to be derived from the authentic PF-I16-to-Penrose correspondence, and the correct W_h layer retained. The centroid, gamma, integer-label rule, and five shifts must be taken from the source implementation, not refitted to Hall outcomes.
+
+A likely next data-recovery target is the exact PF-I16/Penrose correspondence (if one exists in the original research archive), including whether a port is a Penrose vertex, a directed basis edge, a boundary label, or only an abstract combinatorial index. If no such correspondence exists, the helical-to-Hall bridge is a new conjectural construction rather than a consequence of the dissertation and must be labelled accordingly.
 
 ## 5. Reverse-mark graph once the map exists
 
@@ -164,9 +181,9 @@ Such a decomposition would prove the blockwise mixed-fiber Hall inequality. The 
 
 ## 8. Decision gates
 
-- **G0 — Recover source geometry:** authenticated Z5 lift, W, phason, failure bands, worm paths, and observer sampling source. OPEN.
-- **G1 — Define Psi:** source-derived map from reverse marks to W with covariance and reflection laws. OPEN.
-- **G2 — Build and audit reverse-mark graphs:** H1/H2/H3 plus controls at n=6,8,10. BLOCKED on G0/G1.
+- **G0 — Recover source geometry:** source script and phason/accepted-label implementation located in the private Library; authenticate original archive bytes and recover exact worm/observer sampling inputs. PARTIAL.
+- **G1 — Define Psi:** PF-I16-to-Penrose correspondence m(T,J), then source-derived map to W_h with covariance and reflection laws. BLOCKED.
+- **G2 — Build and audit reverse-mark graphs:** H1/H2/H3 plus controls at n=6,8,10. BLOCKED on G1.
 - **G3 — Capacity experiment:** solve/measure path-supported split-demand allocations and compare against existing exact n=6,8,10 flow certificates. BLOCKED on G2.
 - **G4 — Prove an order-uniform capacity lemma:** derive the mixed-fiber Hall dual for arbitrary nonnegative weights. OPEN.
 - **G5 — Consequence:** only after G4 does all-orders multivalued-pi Hall follow, and only then does the weighted one-link inequality follow.
