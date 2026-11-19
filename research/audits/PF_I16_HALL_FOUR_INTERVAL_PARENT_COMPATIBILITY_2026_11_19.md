@@ -20,15 +20,17 @@ This is a genuine finite obstruction to extending the **fixed three-edge motif**
 
 ## Reproducibility
 
-- Workflow run: `44571253464`
-- Job: `135726593158`
-- Parent-compatibility artifact ID: `14553892992`
-- Artifact SHA-256: `975d02fc135d5784c37be836188d374262ba3b6a01bc3ed114c9323c33b64a30`
+- Reproducible witness run: `44572883975`
+- Job: `135732462912`
+- Parent-compatibility artifact ID: `14555262164`
+- Artifact ZIP SHA-256: `78f09e89485b31f3fc6f9f9ae55174a8ce9017528481785eee8813ceadcc3a40`
+- The artifact includes all 103 graph-5 and all 21 graph-12 candidate edges, each with explicit first-three and fourth support face-index witnesses.
+- Earlier run `44571253464` independently reproduced the same candidate counts and empty intersection before explicit witnesses were added.
 - Target face-key SHA-256: `f0f63287b3194a8625e4dd5c0a7369b04da315406fdc64a0d828627814ada7eb`
 - Verifier: `research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py`
 - Inventory verifier: `research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py`
 
-The inventory and parent-compatibility calculations both completed and their artifacts uploaded. The workflow job was marked failed only because a later report-commit push raced with other branch updates; the compatibility test itself completed and uploaded its artifact before that push. The workflow was subsequently adjusted to remove the race-prone commit step and retain artifacts as the run outputs.
+The corrected run `44572883975` completed the inventory and parent-compatibility calculations, uploaded both artifacts, and proceeded through the theorem-index and other repository checks. The four-interval inventory and parent-compatibility steps both concluded successfully. At the time this audit was updated, the broader workflow's later unrelated checks were still running.
 
 ## Target and source sizes
 
@@ -84,6 +86,14 @@ The tested mark sets are the union of possible non-root leaf marks over spanning
 | 13 | 111 | 18 |
 
 No single edge realizes all 13 graphs; the best single edge realizes 10 graph types. The decisive pair is graphs 5 and 12, whose feasible candidate sets are disjoint.
+
+### Explicit support witnesses
+
+The parent-compatibility artifact stores one explicit witness for every candidate edge in graphs 5 and 12. A witness gives:
+- the three face-index sets for the parent-compatible first-three supports; and
+- the face-index set for the fourth support.
+
+There are 103 such witnesses for graph 5 and 21 for graph 12. The script checks the exact required fourth adjacency vector and the two-sided open-complementary-arc footprint condition before recording each witness. The candidate sets are then compared as complete edge sets, not by comparing only a sample or a single greedy assignment.
 
 ## Exact scope of the obstruction
 
