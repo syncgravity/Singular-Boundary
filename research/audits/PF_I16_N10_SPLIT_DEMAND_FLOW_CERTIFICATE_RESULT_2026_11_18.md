@@ -62,7 +62,7 @@ The exported Dinic allocation has the following support:
 
 Thus the 21,280 fibers use 49,584 positive arcs. Every one of the 32,414 interned targets receives positive flow. Of these, 31,040 are saturated at 12 units; 1,374 are partially loaded. Target ownership counts are: 17,432 with one fiber owner, 12,973 with two, 1,836 with three, 167 with four, and 6 with five. No target in this exported allocation is shared by more than five fibers.
 
-There are 608 distinct eight-port parent sources, and the certificate has exactly 35 deleted-interval fibers for each parent source (all (inom82=28) would be wrong; the child-line interval indexing here yields the enumerated 35 interval choices). This is a useful regularity of the finite n=10 fiber index set, not yet an all-orders theorem about the relation.
+There are 608 distinct eight-port parent sources, and the certificate has exactly 35 deleted-interval fibers for each parent source in this finite n=10 census. This is a useful regularity of the finite fiber index set, not yet an all-orders theorem about the relation.
 
 Classifying each fiber by the first crowded odd cut of its child matching and whether its deleted interval crosses that cut gives:
 
