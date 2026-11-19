@@ -531,3 +531,17 @@ The one-interval parent base case has (delta=1) and obeys the same cap at (s=2).
 Durable proof: `PF_I16_SINGLE_FIBER_DEMAND_BOUND_2026_11_19.md`.
 
 This is a genuine all-orders source-side bound. It controls one fiber's demand but not the sum of competing fibers at a target; it does not close (RNL_k) or (BQH_k). The unresolved step remains target-side reverse-incidence/collision control.
+
+
+## Completed row-normalized allocation diagnostics (2026-11-19)
+
+Both targeted exact-rational workflows have completed:
+
+- Blockwise same-cut row normalization, run [44440991439](https://github.com/syncgravity/Singular-Boundary/actions/runs/44440991439), fails already at n=6: the k=3 maximum target load is exactly 17/14, with eight overloaded targets. It also fails in the n=8 k=3 and k=5 blocks and n=10 k=3 and k=5 blocks. The n=10 k=7 block passes this particular sufficient test.
+- Global full-row normalization, run [44440846425](https://github.com/syncgravity/Singular-Boundary/actions/runs/44440846425), fails at n=8 (138 overloaded targets) and n=10 (6,428 overloaded targets). At n=8 its exact maximum target load is 56478563159950721/20150147805387600.
+
+Neither failure is a Hall-deficient family. Both reject only the uniform-in-row allocation delta(F)/|N(F)|. The finite nonuniform split-demand flows at n=6,8,10 remain valid finite evidence of feasibility.
+
+Durable audit: [PF_I16_ROW_NORMALIZED_FAILURE_AND_DIRECT_HALL_CONTINUATION_2026_11_19.md](PF_I16_ROW_NORMALIZED_FAILURE_AND_DIRECT_HALL_CONTINUATION_2026_11_19.md).
+
+The next proof obligation remains arbitrary-family BQH_k / weighted dual MR_k. A viable allocation must preserve the reverse-mark J, projected parent target P_J(T), and guarded-switch structure; neither row-size normalization nor equal reciprocal reverse-degree splitting is adequate. Do not infer failure of Hall from an overloaded target in either diagnostic.
