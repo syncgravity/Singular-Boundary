@@ -85,9 +85,10 @@ def collapse_support_to_edge(S, face_records):
     if not edges:
         return False, []
     target_edge = sorted(edges)[0]
-    return collapse_to_subcomplex(
+    ok, steps, _ = collapse_to_subcomplex(
         faces, edges, vertices, set(), {target_edge}, set(target_edge),
         face_records)
+    return ok, steps
 
 
 def collapse_support_to_vertex(S, face_records):
@@ -95,8 +96,9 @@ def collapse_support_to_vertex(S, face_records):
     if not vertices:
         return False, []
     target_vertex = sorted(vertices)[0]
-    return collapse_to_subcomplex(
+    ok, steps, _ = collapse_to_subcomplex(
         faces, edges, vertices, set(), set(), {target_vertex}, face_records)
+    return ok, steps
 
 
 def intersection_cells(A, B, face_records):
@@ -151,14 +153,15 @@ def diagram_signature(supports, overlap_graph, face_records):
         if nonempty != expected:
             raise AssertionError(("intersection nerve differs from full overlap graph",
                                   i, j, nonempty, expected))
+        intersection_ok = not nonempty
         if nonempty:
-            ok, _ = collapse_intersection_to_vertex(
+            intersection_ok, _ = collapse_intersection_to_vertex(
                 supports[i], supports[j], face_records)
-            if not ok:
+            if not intersection_ok:
                 raise AssertionError(("nonempty support intersection is not collapsible",
                                       i, j))
         pair_records.append({"pair": [i, j], "nonempty": nonempty,
-                             "intersection_contractible": (not nonempty) or ok})
+                             "intersection_contractible": intersection_ok})
     union_ok, _ = collapse_union_to_vertex(supports, face_records)
     if not all(support_contractible) or not union_ok:
         raise AssertionError(("support diagram is not contractible in required pieces",
