@@ -8,7 +8,7 @@ Scope: frozen L1-L5 support family; PF-I16 original-source replay and PF-I11 com
 
 L7b asks whether the cyclic order of retained overlap footprints on each interval's oriented support boundary is compatible with parent deletion.
 
-A target-wide linear order is not introduced. Each support boundary is instead oriented from its distinguished lower-port image to its upper-port image. Its directed matched edge is the marked edge of the boundary circle.
+No target-wide linear order is introduced. Each support boundary is oriented from its distinguished lower-port image to its upper-port image. Its directed matched edge is the marked edge of the boundary circle.
 
 For each retained interval, the test records the pairwise support-intersection footprint on that interval's boundary. It compares the footprint's relative position to the distinguished directed edge before and after deletion.
 
@@ -46,68 +46,45 @@ The 14 failing projections split as follows:
 | Star: (0,1),(0,2) | 1 | 2 |
 | Triangle: (0,1),(0,2),(1,2) | 1 | 12 |
 
-All failures occur when the middle sorted interval (I_2) is deleted from a star or triangle full-overlap graph. Deleting (I_3) in those same graph patterns passes this necessary test. The path cases pass.
+All failures occur when the middle sorted interval I2 is deleted from a star or triangle full-overlap graph. Deleting I3 in those same graph patterns passes this necessary test. The path cases pass.
 
 The two parent structures each have 15 incoming marked projections. In each group, the parent ordered-position word is fixed, while the child-restricted words have three distinct forms; seven of the 15 incoming restrictions disagree with the parent word. Thus parent coherence also fails under L7b.
 
 ## 3. First explicit obstruction
 
-Take
-[
-M={[1,4],[2,5],[3,6]},qquad
-	au={I_1I_2,I_1I_3}.
-]
-The full overlap graph is a triangle. Delete (I_2=[2,5]). The parent is
-[
-{[1,3],[2,4]},
-]
-with the retained child intervals (I_1,I_3) mapping in order to parent intervals 1 and 2.
+Take the source matching M = {[1,4], [2,5], [3,6]} and tree edges {(I1,I2), (I1,I3)}. The full overlap graph is a triangle. Delete I2 = [2,5]. The parent is {[1,3], [2,4]}, with retained child intervals I1 and I3 mapping in order to parent intervals 1 and 2.
 
-Write (m=(0,1,0,0,0)). The child supports are:
+Write m = (0,1,0,0,0). The child supports are:
 
-- child (I_1): ((m;0,2),(m;0,4));
-- child (I_3): ((m;0,2),(m;2,3)).
+- child I1: (m;0,2), (m;0,4);
+- child I3: (m;0,2), (m;2,3).
 
 The parent supports are:
 
-- parent interval 1: ((m;0,2),(m;0,4));
-- parent interval 2: ((m;0,4),(m;3,4)).
+- parent interval 1: (m;0,2), (m;0,4);
+- parent interval 2: (m;0,4), (m;3,4).
 
-The retained child supports intersect in face ((m;0,2)); the parent supports intersect in face ((m;0,4)). This is permitted by L6c, which forgets the identity of the shared face. L7b, however, detects where those faces lie relative to the marked boundary edge.
+The retained child supports intersect in face (m;0,2); the parent supports intersect in face (m;0,4). This is permitted by L6c, which forgets the identity of the shared face. L7b detects where those faces lie relative to the marked boundary edge.
 
 ### Retained interval 1
 
-Its oriented boundary cycle, starting with its distinguished directed edge, is
-[
-egin{aligned}
-(&01000, 01001, 11001, 11000, 11100, 01100).
-end{aligned}
-]
-Here each five-digit string denotes its five coordinates.
+Its oriented boundary cycle, starting with its distinguished directed edge, is:
 
-- Child restriction: shared face ((m;0,2)) meets boundary edges at positions ({3,4,5}), and boundary vertices at ({0,3,4,5}). It touches the tail endpoint only; it does **not** contain the distinguished edge.
-- Parent: shared face ((m;0,4)) meets boundary edges at positions ({0,1,2}), and vertices at ({0,1,2,3}). It contains the distinguished directed edge and both endpoints.
+`01000 -> 01001 -> 11001 -> 11000 -> 11100 -> 01100 -> 01000`
 
-Thus the relative classes are
-[
-	exttt{tail_endpoint_only}
-quad
-equad
-	exttt{contains_marked_edge}.
-]
+Each five-digit string denotes its five coordinates.
+
+- Child restriction: shared face (m;0,2) meets boundary edges at positions {3,4,5}, and boundary vertices at positions {0,3,4,5}. It touches the tail endpoint only; it does **not** contain the distinguished edge.
+- Parent: shared face (m;0,4) meets boundary edges at positions {0,1,2}, and vertices at positions {0,1,2,3}. It contains the distinguished directed edge and both endpoints.
+
+Thus the relative classes are `tail_endpoint_only` versus `contains_marked_edge`.
 
 ### Retained child interval 3, becoming parent interval 2
 
-- Child restriction: boundary-edge positions ({3,4,5}), vertices ({0,3,4,5}); it touches the tail endpoint only.
-- Parent restriction: boundary-edge positions ({2,3,4}), vertices ({2,3,4,5}); it lies in the open complementary arc and touches neither endpoint.
+- Child restriction: boundary-edge positions {3,4,5}, vertices {0,3,4,5}; it touches the tail endpoint only.
+- Parent restriction: boundary-edge positions {2,3,4}, vertices {2,3,4,5}; it lies in the open complementary arc and touches neither endpoint.
 
-Thus
-[
-	exttt{tail_endpoint_only}
-quad
-equad
-	exttt{open_complementary_arc}.
-]
+Thus the relative classes are `tail_endpoint_only` versus `open_complementary_arc`.
 
 Neither mismatch can be repaired by an orientation-preserving subdivision or collapse that preserves the distinguished directed matched edge and its ordered endpoints. Doing so would require moving the footprint across the marked edge or changing its incidence with a marked endpoint.
 
@@ -125,8 +102,7 @@ Both target domains produce the same boundary cycles and footprint positions bec
 
 ## 5. Reproducibility and provenance
 
-Verifier:
-`research/scripts/verify_pf_i16_hall_l7b_boundary_order.py`.
+Verifier: `research/scripts/verify_pf_i16_hall_l7b_boundary_order.py`.
 
 It imports the frozen L4-L5 support constructor, the two target builders, and the Hall source exporter. It checks all 30 marked projections in each target, emits the oriented boundary cycles and footprint positions, compares target-domain outputs, and records parent-group coherence.
 
