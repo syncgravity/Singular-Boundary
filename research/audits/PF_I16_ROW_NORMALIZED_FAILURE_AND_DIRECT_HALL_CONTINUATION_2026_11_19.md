@@ -38,8 +38,8 @@ Exact results:
 | 6 | 3 | 12 | 34 | 111 | 8 |
 | 8 | 3 | 382 | 1,356 | 17,100 | 131 |
 | 8 | 5 | 42 | 102 | 1,047 | 6 |
-| 10 | 3 | 19,792 | 90,751 | 6,243,410 | positive |
-| 10 | 5 | 1,328 | 4,068 | 181,674 | positive |
+| 10 | 3 | 19,792 | 90,751 | 6,243,410 | 6,272 |
+| 10 | 5 | 1,328 | 4,068 | 181,674 | 165 |
 | 10 | 7 | 120 | 306 | 8,343 | 0 |
 
 At n=6 the exact maximum target load in the k=3 block is
@@ -63,7 +63,7 @@ and the n=8 k=5 maximum is
 \[
 \frac{19129}{18144}>1.
 \]
-At n=10 the k=7 block passes this sufficient load test, but the k=3 and k=5 blocks do not.
+At n=10 the exact k=3 maximum is 108208168560182449223374633077289517347549367337119368082796869763661/12394165049773375450605818967192944603756382108292777626542281478400 (6,272 overloaded targets); the k=5 maximum is 4941769761533813840449/1898487321004380506400 (165 overloaded targets). The k=7 maximum is 253267/285120 and has no overloaded targets.
 
 **Conclusion:** blockwise row normalization fails already at n=6. This does not produce a Hall-deficient fiber family; it rejects only the allocation \(\delta(F)/|N_k(F)|\).
 
