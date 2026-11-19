@@ -1,0 +1,23 @@
+name: PF-I16 blockwise row-normalized split-demand diagnostic
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/pf-i16-direct-mixed-hall-2026-11-18
+    paths:
+      - research/verification/verify_pf_i16_row_normalized_split_demand.py
+      - .github/workflows/pf-i16-row-normalized-split-demand.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test exact blockwise row-normalized allocation at n=6,8,10
+        working-directory: research/verification
+        run: python verify_pf_i16_row_normalized_split_demand.py
