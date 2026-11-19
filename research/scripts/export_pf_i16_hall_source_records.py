@@ -74,6 +74,12 @@ def source_records(n):
                 parent_overlap=[[i,j] for i,j in itertools.combinations(range(s-1),2)
                     if max(parent_intervals[i][0],parent_intervals[j][0])
                        < min(parent_intervals[i][1],parent_intervals[j][1])]
+                if parent_tree != sorted(parent_tree):
+                    raise AssertionError("parent tree edge order is not canonical")
+                if any(e not in parent_overlap for e in parent_tree):
+                    raise AssertionError("deleted-leaf tree edge is not a parent overlap edge")
+                if not is_tree(list(range(s-1)),parent_tree):
+                    raise AssertionError("deleting a non-root leaf did not leave a parent spanning tree")
                 row["parents"].append({
                     "deleted_interval_index":mark,
                     "deleted_interval":list(intervals[mark]),
