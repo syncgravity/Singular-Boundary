@@ -124,11 +124,32 @@ jobs:
           if-no-files-found: error
       - name: Publish inventory JSON to the pull request
         if: github.event_name == 'pull_request'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPOSITORY: ${{ github.repository }}
         run: |
-          gh api "repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" -f body="$(cat /tmp/pf_i16_four_interval_support_inventory.json)"
+          python - <<'PY'
+          import json, os, urllib.request, urllib.error
+          path = "/tmp/pf_i16_four_interval_support_inventory.json"
+          payload = open(path, encoding="utf-8").read()
+          body = "Four-interval target-only support inventory (machine-generated):\n\n\u0060\u0060\u0060json\n" + payload + "\n\u0060\u0060\u0060"
+          url = f"https://api.github.com/repos/{os.environ['REPOSITORY']}/issues/{os.environ['PR_NUMBER']}/comments"
+          data = json.dumps({"body": body}).encode()
+          req = urllib.request.Request(url, data=data, method="POST", headers={
+              "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "Content-Type": "application/json",
+          })
+          try:
+              with urllib.request.urlopen(req) as response:
+                  print("Published inventory comment:", response.status)
+          except urllib.error.HTTPError as exc:
+              print("Inventory comment failed:", exc.code, exc.read().decode())
+              raise
+          PY
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
       - name: Verify generated theorem catalog and current navigator
