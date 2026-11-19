@@ -204,7 +204,8 @@ def run_target(name, labels, edges, faces, records):
     intersection_type_counts = Counter()
     parent_origins = defaultdict(list)
     max_relative_steps = 0
-    explicit_witness = None
+    explicit_witnesses = []
+    collapse_certificates = []
 
     for row in records:
         child_graph = l45.source_graph(row)
@@ -267,18 +268,25 @@ def run_target(name, labels, edges, faces, records):
                 "parent_signature": parent_sig,
             })
 
+            collapse_certificates.append({
+                "child_intervals": [list(x) for x in row["intervals"]],
+                "child_tree": [list(x) for x in row["tree_edges"]],
+                "deleted_interval_index": mark,
+                "relative_free_cell_pairs": steps,
+            })
+
             if (tuple(tuple(x) for x in row["intervals"]) ==
                     ((1, 4), (2, 5), (3, 6)) and
                     tuple(tuple(x) for x in row["tree_edges"]) ==
                     ((0, 1), (0, 2)) and mark in (1, 2)):
-                explicit_witness = {
+                explicit_witnesses.append({
                     "child_intervals": [list(x) for x in row["intervals"]],
                     "deleted_interval_index": mark,
                     "parent_intervals": [list(x) for x in parent["parent_intervals"]],
                     "retained_child_support_face_counts": [len(x) for x in retained_supports],
                     "retained_child_intersection_type": intersection_type,
                     "coarse_diagram_signature": child_sig,
-                }
+                })
 
     coherence_groups = {}
     for key, origins in parent_origins.items():
@@ -311,7 +319,8 @@ def run_target(name, labels, edges, faces, records):
         "relative_collapse_length_histogram": dict(sorted(collapse_length_counts.items())),
         "relative_collapse_pair_counts": dict(sorted(collapse_pair_counts.items())),
         "maximum_relative_collapse_pairs": max_relative_steps,
-        "explicit_two_mark_witnesses": explicit_witness,
+        "explicit_two_mark_witnesses": explicit_witnesses,
+        "relative_collapse_certificates": collapse_certificates,
     }
 
 
