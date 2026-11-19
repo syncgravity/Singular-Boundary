@@ -23,7 +23,7 @@ On branch `research/pf-i16-direct-mixed-hall-2026-11-18`:
 
 ## Important implementation boundary
 
-The new scripts and workflow have been committed, but the workflow has **not yet been dispatched**. Therefore no certificate file, successful replay, or artifact is claimed at this stage. The existing finite split-demand flow results remain the previously verified results from workflow [44177680653](https://github.com/syncgravity/Singular-Boundary/actions/runs/44177680653); this new work only adds export and independent replay instrumentation.
+The new scripts and workflow have been committed. The targeted push-triggered run [44426921009](https://github.com/syncgravity/Singular-Boundary/actions/runs/44426921009) has started; at the latest check, the flow-builder step was still running and the replay/upload steps were pending. Therefore no certificate file, successful replay, or artifact is claimed yet. The existing finite split-demand flow results remain the previously verified results from workflow [44177680653](https://github.com/syncgravity/Singular-Boundary/actions/runs/44177680653); this new work only adds export and independent replay instrumentation.
 
 The replay checker independently validates the exported allocation against the reconstructed finite relation, but it shares the repository's canonical source enumeration, switch inversion, compression, and candidate-output primitives. It is independent of the max-flow implementation and serialized flow construction, not an independently implemented mathematical definition of the relation.
 
