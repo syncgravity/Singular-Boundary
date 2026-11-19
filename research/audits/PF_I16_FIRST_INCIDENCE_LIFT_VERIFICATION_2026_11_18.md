@@ -72,3 +72,86 @@ The bounds must be declared as part of the candidate lift class, not tuned after
 - Parent naturality, observer phases, and Hall relevance: **not yet tested**.
 
 No Hall loads, target congestion, or helical phase data enter this verification pass.
+
+
+---
+
+## 6. Correction: finite accepted target domains already exist
+
+**This section supersedes the “no finite target domain is specified” conclusion in §3.1 and the corresponding PF-I9-only framing in §1.** That conclusion was too broad. Earlier PF-I11/PF-I16 work supplies two independently defined finite target domains. The remaining issue is not absence of finite geometry; it is the missing Hall-to-target association and the operational semantics of L4–L6.
+
+### 6.1 Original-source finite complex (PF-I16)
+
+The PF-I16 source replay `research/scripts/verify_pf_i16_authentic_source_three_face.py` independently reimplements the indexed original `paper6_extend_local.py` selection and the PF-I11 strict face-triangle test. At Ngrid=7 it reports:
+
+- 1,550 selected vertices;
+- 3,017 elementary edges;
+- 1,468 accepted rhombi;
+- at most two accepted faces incident to any original link in this crop.
+
+The verifier explicitly states that the private original source bytes were **not** directly executed; this is an independent reimplementation, not byte-identical source replay. Its eight finite population counts match the recorded values, but that provenance distinction remains material.
+
+### 6.2 Completed-window core (PF-I11)
+
+The independent completed-window construction is implemented by `research/scripts/verify_pf_i11_completed_core.py`, using the direct accepted-window generator and an explicit collar. Its Ngrid=7 evidence record reports:
+
+- 1,432 vertices;
+- 2,761 edges;
+- 1,330 accepted rhombi;
+- one connected component;
+- all 1,330 faces peel by free-edge collapses.
+
+This is deliberately **not** the original source-retained population: the same record reports 1,550 source-retained vertices. The completed-window core is a separate control domain, not a replacement for the original-source complex.
+
+### 6.3 Geometry interface already available
+
+`research/scripts/verify_pf_i11_intrinsic_su2.py` supplies the reusable `Complex` representation and `assemble_complex(labels, gamma, source_Ngrid)` constructor. It stores:
+- accepted integer labels;
+- elementary basis edges;
+- accepted rhombi and direction-pair families;
+- oriented face-edge incidence indices and signs;
+- face heights, phason, and source Ngrid.
+
+Its face constructor checks strict internal triangle membership independently of the four-corner test. The original-source constructor `source_complex` requires the private SHA-pinned source file; the public PF-I16 replay is an independent alternative with explicitly weaker provenance.
+
+### 6.4 Phason separation
+
+Do not merge the PF-I9 direct-construction phason with the PF-I16/PF-I11 generic source phason. The first verification pass's §1 describes PF-I9's gamma and remains a record of that distinct construction. The PF-I16 original-source replay instead uses
+[
+\gamma_j=((j\sqrt2+j^2\sqrt3)\bmod 1),\quad
+\gamma\leftarrow\gamma-\operatorname{mean}(\gamma),\quad
+\gamma_4=-\sum_{j=0}^3\gamma_j.
+]
+The completed-window core uses the generic source gamma imported from its source module. Every run must label the construction and gamma convention in its output.
+
+## 7. Corrected finite verification plan
+
+The first two test domains are now fixed by existing research, not invented cutoffs:
+
+| Domain | Ngrid=7 | Provenance / interpretation |
+|---|---:|---|
+| PF-I16 original-source replay | V=1,550; E=3,017; F=1,468 | Independent reimplementation of indexed private source; original bytes not executed |
+| PF-I11 completed-window core | V=1,432; E=2,761; F=1,330 | Direct full-window incident-star core; source-retained population remains separate |
+
+The initial Hall test orders remain n=4 and n=6. The Hall source records are to be enumerated independently (2 and 22 sources; 2 and 30 eligible marks respectively). No Hall load, deficiency, allocation, or observer phase is an input to target construction or lift search.
+
+Before running the constraint checker, the candidate encoding must be declared as a **bounded model class**, not silently treated as the unique meaning of L4–L6:
+
+1. **Port labels and matching edges:** retain L1 and L2 literally. Each port receives a distinct accepted label; each matched pair maps to one actual accepted elementary edge with signed unit increment.
+2. **Interval support:** candidate support is a connected set of accepted rhombi in the chosen finite complex. Enumerate support cardinalities in an announced ladder (start at one face, then increase); the finite complex's total face count is an absolute finite ceiling for that crop, not a universal bound.
+3. **Boundary trace variants:** test separately (A) an oriented simple boundary cycle of the support, and (B) an oriented boundary walk with repeated vertices/edges permitted. In either variant, the trace is a target-side ordered object; do not equate its length with the number of Hall ports without an explicit port-to-trace rule. Internal Hall ports must remain represented in the support data.
+4. **Overlap witness variants:** for each strict-overlap edge in the full interval graph, record separately whether the two supports intersect in a vertex, an edge, or a face. The selected tree edges are marked among these witnesses; non-tree overlap edges remain present and checked.
+5. **Parent naturality:** implement deletion only after a support-difference rule is fixed. Candidate rule: remove the marked leaf's support-exclusive faces, then perform only free-edge elementary collapses; reject if a retained port, matched edge, interval support, or required overlap witness is lost. Compare this with independently lifting the compressed parent. Keep each eligible mark as a distinct state even when parent projections coincide.
+6. **Independence:** generate and freeze candidate lifts without inspecting Hall neighborhood sizes, reverse-degree loads, flow solutions, or perpendicular observer phases.
+
+A result is scoped to its declared domain, support bound, and trace/witness variant. “No lift found” means no lift in that bounded model class; it is not a global nonexistence theorem. A global obstruction requires an exhaustive reduction proof. If a variant is infeasible, retain the minimal conflicting constraints and report the first failed axiom.
+
+## 8. Updated status
+
+- Existing finite target domains: **AVAILABLE** (two distinct Ngrid=7 domains above).
+- Reusable accepted-complex incidence interface: **AVAILABLE** (`Complex`, `assemble_complex`).
+- Hall source counts n=4,6: **PASS**, as recorded in §2.
+- Actual `Phi, epsilon, kappa` correspondence: **NOT YET CONSTRUCTED**.
+- L4 boundary-trace and L5/L6 overlap/deletion semantics: **candidate variants specified above; not yet selected or executed**.
+- Finite lift feasibility: **NOT YET RUN**. The previous “no finite target domain” blocker is withdrawn; the remaining blocker is the explicit candidate encoding and the Hall-to-target constraint implementation.
+- All-orders Hall theorem: **OPEN**. No finite geometric lift result alone proves it.
