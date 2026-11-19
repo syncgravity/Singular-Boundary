@@ -141,8 +141,7 @@ def main():
                     - options_touching(c3[2])
                 )
                 hit_graph12 = (
-                    options_touching(c2[2])
-                    & options_touching(c3[2])
+                    (options_touching(c2[2]) & options_touching(c3[2]))
                     - options_touching(c1[2])
                 )
 
