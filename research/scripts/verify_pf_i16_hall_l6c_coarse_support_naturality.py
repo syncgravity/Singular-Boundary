@@ -31,7 +31,8 @@ def cells_for_support(S, face_records):
 
 
 def collapse_to_subcomplex(faces, edges, vertices,
-                           target_faces, target_edges, target_vertices):
+                           target_faces, target_edges, target_vertices,
+                           face_records):
     cur_f, cur_e, cur_v = set(faces), set(edges), set(vertices)
     tgt_f, tgt_e, tgt_v = (set(target_faces), set(target_edges),
                            set(target_vertices))
@@ -57,9 +58,7 @@ def collapse_to_subcomplex(faces, edges, vertices,
         for edge in sorted(cur_e - tgt_e):
             for vertex in edge:
                 degree = sum(vertex in e for e in cur_e)
-                in_face = any(vertex in l45.face_edge_set(face)[0]
-                              for face in ())  # no-op; face incidence checked below
-                in_face = any(vertex in face_records_vertices(face)
+                in_face = any(vertex in face_records[face]
                               for face in cur_f)
                 if vertex not in tgt_v and degree == 1 and not in_face:
                     found = vertex, edge
@@ -81,17 +80,14 @@ def collapse_to_subcomplex(faces, edges, vertices,
     }
 
 
-def face_records_vertices(face):
-    return set(face_records[face])
-
-
 def collapse_support_to_edge(S, face_records):
     faces, edges, vertices = cells_for_support(S, face_records)
     if not edges:
         return False, []
     target_edge = sorted(edges)[0]
     return collapse_to_subcomplex(
-        faces, edges, vertices, set(), {target_edge}, set(target_edge))
+        faces, edges, vertices, set(), {target_edge}, set(target_edge),
+        face_records)
 
 
 def collapse_support_to_vertex(S, face_records):
@@ -100,7 +96,7 @@ def collapse_support_to_vertex(S, face_records):
         return False, []
     target_vertex = sorted(vertices)[0]
     return collapse_to_subcomplex(
-        faces, edges, vertices, set(), set(), {target_vertex})
+        faces, edges, vertices, set(), set(), {target_vertex}, face_records)
 
 
 def intersection_cells(A, B, face_records):
@@ -115,7 +111,7 @@ def collapse_intersection_to_vertex(A, B, face_records):
         return False, []
     target_vertex = sorted(vertices)[0]
     return collapse_to_subcomplex(
-        faces, edges, vertices, set(), set(), {target_vertex})
+        faces, edges, vertices, set(), set(), {target_vertex}, face_records)
 
 
 def union_cells(supports, face_records):
@@ -131,14 +127,14 @@ def collapse_union_to_vertex(supports, face_records):
         return False, []
     target_vertex = sorted(vertices)[0]
     return collapse_to_subcomplex(
-        faces, edges, vertices, set(), set(), {target_vertex})
+        faces, edges, vertices, set(), set(), {target_vertex}, face_records)
 
 
 def relative_delete_collapse(child_supports, retained_indices, face_records):
     retained = [child_supports[i] for i in retained_indices]
     all_cells = union_cells(child_supports, face_records)
     target_cells = union_cells(retained, face_records)
-    return collapse_to_subcomplex(*all_cells, *target_cells)
+    return collapse_to_subcomplex(*all_cells, *target_cells, face_records)
 
 
 def diagram_signature(supports, overlap_graph, face_records):
