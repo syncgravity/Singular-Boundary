@@ -103,7 +103,7 @@ on:
       - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
       - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
 permissions:
-  contents: read
+  contents: write
   issues: write
 jobs:
   index-check:
@@ -122,6 +122,19 @@ jobs:
           name: pf-i16-four-interval-support-inventory
           path: /tmp/pf_i16_four_interval_support_inventory.json
           if-no-files-found: error
+      - name: Commit reproducible support inventory report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p research/evidence
+          cp /tmp/pf_i16_four_interval_support_inventory.json research/evidence/PF_I16_HALL_FOUR_INTERVAL_SUPPORT_INVENTORY_NGRID12.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/evidence/PF_I16_HALL_FOUR_INTERVAL_SUPPORT_INVENTORY_NGRID12.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Ngrid-12 four-interval support inventory"
+            git push
+          fi
       - name: Publish inventory JSON to the pull request
         if: github.event_name == 'pull_request'
         continue-on-error: true
