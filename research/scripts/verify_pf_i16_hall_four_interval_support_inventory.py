@@ -128,8 +128,20 @@ def main():
                         tuple(sorted(e)) in edge_faces for e in FIXED_EDGES)
     if not fixed_present:
         raise AssertionError("one of the frozen triple edges is absent from target")
-    face_keys = set().union(*(set(S) for e in eligible for S in options[e]))
-    margins_v = [l123.window_margin(v) for S in (options[e][i] for e in eligible for i in range(len(options[e]))) for f in S for v in rec_c[f]]
+    all_inventory_edges = sorted(set(eligible) | {tuple(sorted(e)) for e in FIXED_EDGES})
+    face_keys = set().union(*(set(S) for e in all_inventory_edges for S in options[e]))
+    face_key_table = sorted(face_keys)
+    face_key_index = {key: i for i, key in enumerate(face_key_table)}
+    compact_edge_options = []
+    for edge in all_inventory_edges:
+        compact_edge_options.append({
+          "edge": edge_record(edge),
+          "support_options": [
+            sorted(face_key_index[key] for key in S)
+            for S in options[edge]
+          ]
+        })
+    margins_v = [l123.window_margin(v) for S in (options[e][i] for e in all_inventory_edges for i in range(len(options[e]))) for f in S for v in rec_c[f]]
     margins_f = [l123.face_margin(f[0], f[1], f[2]) for e in eligible for S in options[e] for f in S]
     if min(margins_v, default=0) <= 1e-9 or min(margins_f, default=0) <= 1e-9:
         raise AssertionError("non-strict acceptance margin in enumerated supports")
@@ -149,6 +161,11 @@ def main():
         for k in sorted({len(options[e]) for e in eligible})},
       "fourth_edge_candidate_sample": [edge_record(e) for e in eligible[:20]],
       "enumerated_support_face_key_count": len(face_keys),
+      "face_key_table": [
+        {"lower": list(key[0]), "directions": [key[1], key[2]]}
+        for key in face_key_table
+      ],
+      "edge_support_options": compact_edge_options,
       "minimum_strict_vertex_margin": min(margins_v),
       "minimum_strict_face_margin": min(margins_f),
       "fixed_triple_edges": [edge_record(e) for e in FIXED_EDGES],
