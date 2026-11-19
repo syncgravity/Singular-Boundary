@@ -112,8 +112,9 @@ def collapse_intersection_to_vertex(A, B, face_records):
     if not vertices:
         return False, []
     target_vertex = sorted(vertices)[0]
-    return collapse_to_subcomplex(
+    ok, steps, _ = collapse_to_subcomplex(
         faces, edges, vertices, set(), set(), {target_vertex}, face_records)
+    return ok, steps
 
 
 def union_cells(supports, face_records):
