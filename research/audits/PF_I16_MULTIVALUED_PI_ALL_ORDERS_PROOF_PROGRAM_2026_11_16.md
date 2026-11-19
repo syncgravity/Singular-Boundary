@@ -480,19 +480,19 @@ The positive support uses 1–6 targets per fiber (3,296 / 9,649 / 6,477 / 1,737
 
 Durable replay audit: `PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_REPLAY_2026_11_18.md`.
 
-### Next candidate sufficient condition (not yet tested)
+### Full-row/global row-normalized sufficient condition
 
-Consider the row-normalized allocation
+On the full relation, the allocation
 [
-lambda(F,T)=rac{delta(F)}{|N(F)|},1_{{Tin N(F)}}.
+lambda(F,T)=rac{delta(F)}{|N(F)|}quad(Tin N(F))
 ]
-It has the correct fiber row sums. It proves Hall if every target load obeys
+has the correct fiber row sums. It proves the global split-demand quotient Hall inequality if
 [
-L(T)=sum_{F:Tin N(F)}rac{delta(F)}{|N(F)|}le1.
-	ag{RNL}
+L(T)=sum_{F:Tin N(F)}rac{delta(F)}{|N(F)|}le1
 ]
-Unlike reciprocal reverse-degree splitting, this weights each incident fiber by its actual demand and row size. It is a candidate only: no finite evaluation or all-orders estimate is claimed yet. The next discriminating test is exact rational evaluation at n=8 and n=10 over the full mixed relation. If it passes, seek an all-orders bound using the exact local demand formula (D) and lower bounds for `|N(F)|`; if it fails, preserve the first overloaded target and its complete incident-fiber list. The full weighted dual (MR) remains the theorem to prove.
+for every target. This is a valid sufficient condition, but it is distinct from the same-block condition (RNL_k) below: full rows can include targets outside (Y_k), so failure of this global allocation alone does not refute blockwise (RNL_k).
 
+The exact full-row diagnostic [44440846425](https://github.com/syncgravity/Singular-Boundary/actions/runs/44440846425) is running at n=8 and n=10. Its output will test this candidate only. The complete incident-fiber list for the first overloaded target is preserved if it fails.
 
 ## Exact row-normalized capacity tests now running (2026-11-19)
 
