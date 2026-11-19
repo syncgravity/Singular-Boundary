@@ -80,16 +80,24 @@ def main():
             result.update(vertex_to_options[vertex])
         return result
 
+    def matched_edge_contractible(support, edge):
+        fset, eset, vset = cells(tuple(sorted(support)))
+        target_edge = tuple(sorted(edge))
+        return collapse(
+            (set(fset), set(eset), set(vset)),
+            (set(), {target_edge}, set(target_edge)),
+        )
+
     first_pair_count = 0
     triple_assignment_count = 0
     by_third = defaultdict(lambda: {"graph5": set(), "graph12": set()})
 
     for s1 in options[e1]:
-        if not edge_contractible(s1):
+        if not matched_edge_contractible(s1, e1):
             continue
         c1 = cells(tuple(sorted(s1)))
         for s2 in options[e2]:
-            if not edge_contractible(s2):
+            if not matched_edge_contractible(s2, e2):
                 continue
             c2 = cells(tuple(sorted(s2)))
             common12 = intersection([s1, s2])
@@ -106,7 +114,7 @@ def main():
                 e3, s3 = all_options[s3_oid]
                 if e3 in (e1, e2) or (set(e3) & fixed_endpoints):
                     continue
-                if not edge_contractible(s3):
+                if not matched_edge_contractible(s3, e3):
                     continue
 
                 common13 = intersection([s1, s3])
