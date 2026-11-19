@@ -105,6 +105,31 @@ Nor does equality of labelled port trees by itself identify accepted Penrose--Fi
 
 Accordingly, this closes the **canonical-sibling source-to-target port-tree diamond**, not full geometric L8 on accepted rhombus supports, and not the all-orders multivalued-π Hall inequality.
 
-## 5. Next proof obligation
+## 5. The canonical strengthening is not available in this generality
+
+The n=10 third-mark census in
+PF_I16_ALL_ORDERS_THIRD_MARK_PROOF_ATTEMPT_2026_11_18.md
+shows that the stronger conclusion U∈C_can(r) fails in 320,655 common-target incidences. The distinct-parent follow-up also finds 286,440 canonical-parent failures among 765,852 common-target incidences, so excluding p=q does not repair the implication.
+
+One explicit distinct-parent witness has J=(2,3), K=(4,6), with
+\[
+p=(((1,6),(2,4),(3,7),(5,8)),((0,1),(0,2),(0,3))),
+\]
+\[
+q=(((1,6),(2,3),(4,7),(5,8)),((0,1),(0,2),(0,3))),
+\]
+and common parent
+\[
+r=(((1,4),(2,5),(3,6)),((0,1),(0,2))).
+\]
+The common parent target is
+\[
+U=((1,2),(2,3),(3,4),(4,5),(4,6)).
+\]
+It is in C(r), as theorem (4) guarantees, but the canonical leaf A=(2,5) is not a guarded reverse mark of U. Thus U is not in C_can(r).
+
+This does not refute the port-tree diamond (3)-(4): the two inverse orders still agree, and their common result is an ordinary output of r. It does refute any attempt to promote (4) to canonical-parent membership without additional hypotheses.
+
+## 6. Next proof obligation
 
 The next step is to lift (3) from labelled port trees to the accepted-face support diagram. First derive the canonical third-mark criterion above for ℓ(r); then compare the complete L6c incidence diagrams in the two reduction orders and verify equality of the L7b oriented boundary signatures. The four-interval support search remains a bounded diagnostic and cannot substitute for this all-orders argument.
