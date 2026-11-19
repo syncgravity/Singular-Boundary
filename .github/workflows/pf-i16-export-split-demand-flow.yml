@@ -1,0 +1,26 @@
+name: PF-I16 export and independently replay n10 split-demand flow
+on:
+  workflow_dispatch:
+jobs:
+  certificate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build exact split-demand flow and export certificate
+        working-directory: research/verification
+        run: python verify_pf_i16_split_demand_fiber_hall_flow.py
+      - name: Independently replay exported n10 certificate
+        working-directory: research/verification
+        run: python verify_pf_i16_split_demand_flow_certificate.py
+      - name: Upload replayable n10 flow certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-n10-split-demand-flow-certificate
+          path: research/verification/n10_split_demand_flow_certificate.json
+          if-no-files-found: error
+          retention-days: 90
