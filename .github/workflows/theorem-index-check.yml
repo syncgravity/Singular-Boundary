@@ -112,6 +112,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
       - name: Enumerate all one-to-three-rhombus four-interval support candidates
@@ -133,7 +134,7 @@ jobs:
           git add research/evidence/PF_I16_HALL_FOUR_INTERVAL_SUPPORT_INVENTORY_NGRID12.json
           if ! git diff --cached --quiet; then
             git commit -m "Record Ngrid-12 four-interval support inventory"
-            git push
+            git push origin "HEAD:${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
           fi
       - name: Publish inventory JSON to the pull request
         if: github.event_name == 'pull_request'
