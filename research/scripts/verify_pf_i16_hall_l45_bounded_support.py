@@ -236,6 +236,10 @@ def check_target(name, labels, edges, faces, records, core_face_signatures=None)
         source_count += 1
         pattern_counts[str(graph_key)] += 1
 
+    if min_vertex_margin <= 1e-9 or min_face_margin <= 1e-9:
+        raise AssertionError((name, "support violates strict W_h/T_jk,h acceptance",
+                              min_vertex_margin, min_face_margin))
+
     assignment_report = {}
     for graph_key, (selected, witnesses) in sorted(results_by_graph.items()):
         assignment_report[str(graph_key)] = {
