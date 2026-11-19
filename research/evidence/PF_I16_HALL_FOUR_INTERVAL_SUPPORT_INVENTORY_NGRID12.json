@@ -1,0 +1,466 @@
+{
+  "eligible_edges_vertex_disjoint_from_frozen_triple": 8004,
+  "eligible_matched_edges": 8026,
+  "enumerated_support_face_key_count": 4089,
+  "fixed_triple_edges": [
+    {
+      "direction": 0,
+      "lower": [
+        -7,
+        -4,
+        5,
+        7,
+        0
+      ],
+      "upper": [
+        -6,
+        -4,
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "direction": 2,
+      "lower": [
+        -7,
+        -3,
+        5,
+        7,
+        -1
+      ],
+      "upper": [
+        -7,
+        -3,
+        6,
+        7,
+        -1
+      ]
+    },
+    {
+      "direction": 4,
+      "lower": [
+        -6,
+        -3,
+        5,
+        6,
+        -1
+      ],
+      "upper": [
+        -6,
+        -3,
+        5,
+        6,
+        0
+      ]
+    }
+  ],
+  "fourth_edge_candidate_sample": [
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -4,
+        10,
+        11,
+        -3
+      ],
+      "upper": [
+        -12,
+        -4,
+        10,
+        11,
+        -3
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -4,
+        10,
+        12,
+        -3
+      ],
+      "upper": [
+        -12,
+        -4,
+        10,
+        12,
+        -3
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -4,
+        11,
+        11,
+        -3
+      ],
+      "upper": [
+        -12,
+        -4,
+        11,
+        11,
+        -3
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -3,
+        11,
+        10,
+        -4
+      ],
+      "upper": [
+        -12,
+        -3,
+        11,
+        10,
+        -4
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -3,
+        11,
+        11,
+        -4
+      ],
+      "upper": [
+        -12,
+        -3,
+        11,
+        11,
+        -4
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -3,
+        11,
+        11,
+        -3
+      ],
+      "upper": [
+        -12,
+        -3,
+        11,
+        11,
+        -3
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -13,
+        -3,
+        12,
+        10,
+        -4
+      ],
+      "upper": [
+        -12,
+        -3,
+        12,
+        10,
+        -4
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -8,
+        7,
+        13,
+        1
+      ],
+      "upper": [
+        -11,
+        -8,
+        7,
+        13,
+        1
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -8,
+        7,
+        13,
+        2
+      ],
+      "upper": [
+        -11,
+        -8,
+        7,
+        13,
+        2
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -7,
+        7,
+        13,
+        1
+      ],
+      "upper": [
+        -11,
+        -7,
+        7,
+        13,
+        1
+      ]
+    },
+    {
+      "direction": 4,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        0
+      ],
+      "upper": [
+        -12,
+        -7,
+        8,
+        12,
+        1
+      ]
+    },
+    {
+      "direction": 3,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        0
+      ],
+      "upper": [
+        -12,
+        -7,
+        8,
+        13,
+        0
+      ]
+    },
+    {
+      "direction": 1,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        0
+      ],
+      "upper": [
+        -12,
+        -6,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        0
+      ],
+      "upper": [
+        -11,
+        -7,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "direction": 3,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        1
+      ],
+      "upper": [
+        -12,
+        -7,
+        8,
+        13,
+        1
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -7,
+        8,
+        12,
+        1
+      ],
+      "upper": [
+        -11,
+        -7,
+        8,
+        12,
+        1
+      ]
+    },
+    {
+      "direction": 1,
+      "lower": [
+        -12,
+        -7,
+        8,
+        13,
+        0
+      ],
+      "upper": [
+        -12,
+        -6,
+        8,
+        13,
+        0
+      ]
+    },
+    {
+      "direction": 0,
+      "lower": [
+        -12,
+        -7,
+        8,
+        13,
+        1
+      ],
+      "upper": [
+        -11,
+        -7,
+        8,
+        13,
+        1
+      ]
+    },
+    {
+      "direction": 4,
+      "lower": [
+        -12,
+        -6,
+        8,
+        12,
+        -1
+      ],
+      "upper": [
+        -12,
+        -6,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "direction": 2,
+      "lower": [
+        -12,
+        -6,
+        8,
+        12,
+        -1
+      ],
+      "upper": [
+        -12,
+        -6,
+        9,
+        12,
+        -1
+      ]
+    }
+  ],
+  "fourth_edge_support_option_count_histogram": {
+    "10": 10,
+    "12": 12,
+    "13": 18,
+    "14": 5,
+    "15": 28,
+    "16": 18,
+    "17": 86,
+    "18": 54,
+    "19": 62,
+    "20": 16,
+    "21": 18,
+    "22": 28,
+    "23": 30,
+    "24": 146,
+    "25": 76,
+    "26": 2801,
+    "27": 18,
+    "28": 4564,
+    "9": 14
+  },
+  "minimum_strict_face_margin": 0.0036094554034273862,
+  "minimum_strict_vertex_margin": 0.0036094554034273862,
+  "nonclaims": [
+    "No four-interval overlap graph compatibility is tested in this inventory.",
+    "No L6c intersection-diagram or relative-collapse test is performed.",
+    "No L7b multi-footprint boundary-word test is performed.",
+    "No Hall source records, demands, loads, deficiencies, matchings, or flows are read.",
+    "No all-orders geometric incidence lift is established."
+  ],
+  "original_source_control": {
+    "edges": 8468,
+    "faces": 4145,
+    "vertices": 4324
+  },
+  "schema": "PF-I16-HALL-FOUR-INTERVAL-SUPPORT-INVENTORY-v1",
+  "scope": "Ngrid=12 PF-I11 completed core; all eligible edges with exactly two accepted incident rhombi; all connected simple-boundary supports of one to three rhombi",
+  "support_bound": 3,
+  "support_option_count_histogram": {
+    "10": 10,
+    "12": 12,
+    "13": 18,
+    "14": 5,
+    "15": 28,
+    "16": 18,
+    "17": 86,
+    "18": 54,
+    "19": 62,
+    "20": 16,
+    "21": 18,
+    "22": 28,
+    "23": 30,
+    "24": 146,
+    "25": 76,
+    "26": 2808,
+    "27": 18,
+    "28": 4579,
+    "9": 14
+  },
+  "target": {
+    "edges": 8382,
+    "face_key_sha256": "f0f63287b3194a8625e4dd5c0a7369b04da315406fdc64a0d828627814ada7eb",
+    "faces": 4089,
+    "vertices": 4294
+  },
+  "total_support_options_all_eligible_edges": 214108
+}
