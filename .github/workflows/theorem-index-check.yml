@@ -13,6 +13,7 @@ on:
       - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_two_edge_anchored_search.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
@@ -161,6 +162,15 @@ jobs:
         with:
           name: pf-i16-four-interval-second-edge-frontier
           path: /tmp/pf_i16_four_interval_second_edge_frontier.json
+          if-no-files-found: error
+      - name: Search second-edge replacements against graph-5 and graph-12 attachments
+        run: |
+          python research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --frontier /tmp/pf_i16_four_interval_second_edge_frontier.json --output /tmp/pf_i16_four_interval_second_edge_replacement_search.json
+      - name: Upload second-edge replacement search
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-second-edge-replacement-search
+          path: /tmp/pf_i16_four_interval_second_edge_replacement_search.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
