@@ -1210234,8 +1210234,8 @@
     "28": 4564,
     "9": 14
   },
-  "minimum_strict_face_margin": 0.0036094554034273862,
-  "minimum_strict_vertex_margin": 0.0036094554034273862,
+  "minimum_strict_face_margin": 0.003609455403427164,
+  "minimum_strict_vertex_margin": 0.003609455403427164,
   "nonclaims": [
     "No four-interval overlap graph compatibility is tested in this inventory.",
     "No L6c intersection-diagram or relative-collapse test is performed.",
