@@ -59,7 +59,14 @@ def inventory(face_records):
     for f, es in face_edges.items():
         for e in es: edge_faces[e].add(f)
     adjacency = {f: set() for f in face_records}
-    for incident in edge_faces.values():
+    # A face-supported subcomplex is connected when rhombi meet in at least
+    # one cell, including a vertex. The simple-boundary test below removes
+    # pinched unions that cannot carry the required boundary circle.
+    vertex_faces = defaultdict(set)
+    for f, vertices in face_records.items():
+        for vertex in vertices:
+            vertex_faces[vertex].add(f)
+    for incident in vertex_faces.values():
         for a, b in itertools.combinations(incident, 2):
             adjacency[a].add(b); adjacency[b].add(a)
 
