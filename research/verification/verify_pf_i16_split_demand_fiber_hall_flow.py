@@ -10,7 +10,7 @@ The resulting network has integral capacities. By max-flow integrality, a
 full flow is an exact rational fractional Hall certificate for the fibers.
 A deficient min cut rejects only this quotient reduction, not source Hall.
 """
-from collections import defaultdict, deque
+from collections import Counter, defaultdict, deque
 import json
 from pathlib import Path
 from fractions import Fraction
