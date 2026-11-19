@@ -290,9 +290,10 @@ def main():
     face_records_o = target_face_records(faces_o)
     face_records_c = target_face_records(faces_c)
     common_faces = set(face_records_o) & set(face_records_c)
-    # Every bounded support candidate must be drawn from the common local patch.
-    if len(common_faces) < 142:
-        raise AssertionError(("common accepted patch unexpectedly small", len(common_faces)))
+    # The completed-core rhombi must all occur in the original-source replay.
+    if len(common_faces) != len(face_records_c):
+        raise AssertionError(("completed-core faces are not contained in source replay",
+                              len(common_faces), len(face_records_c)))
     records = {n: hall.source_records(n) for n in (4, 6)}
     if len(records[4]) != 2 or len(records[6]) != 22:
         raise AssertionError("Hall source enumeration count mismatch")
