@@ -1,0 +1,52 @@
+{
+  "schema": "PF-I16-HALL-FOUR-INTERVAL-PARENT-COMPATIBILITY-SUMMARY-v1",
+  "workflow_run_id": 44571253464,
+  "workflow_head_sha": "1132ae482fb263039cfcac1b32f935607efaa85d",
+  "parent_compatibility_artifact_sha256": "975d02fc135d5784c37be836188d374262ba3b6a01bc3ed114c9323c33b64a30",
+  "target": {
+    "vertices": 4294,
+    "edges": 8382,
+    "faces": 4089,
+    "face_key_sha256": "f0f63287b3194a8625e4dd5c0a7369b04da315406fdc64a0d828627814ada7eb"
+  },
+  "source_census": {
+    "order_eight_sources": 608,
+    "eligible_reverse_leaf_projections": 1050,
+    "distinct_overlap_graphs": 13,
+    "unordered_source_deletion_diamonds": 490
+  },
+  "parent_compatible_triple_counts": {
+    "star": 413,
+    "path": 397,
+    "triangle": 538
+  },
+  "candidate_search": {
+    "vertex_disjoint_fourth_edge_candidates": 8004,
+    "locally_relevant_fourth_edges": 249,
+    "best_single_fourth_edge_graph_coverage": 10,
+    "common_fourth_edge_for_all_13_graphs": false,
+    "feasible_fourth_edge_counts_by_graph_index": [99, 110, 75, 97, 103, 32, 65, 105, 32, 19, 23, 21, 18]
+  },
+  "disjointness_certificate": {
+    "graph_5_edges": [[0, 1], [0, 2], [0, 3], [1, 2]],
+    "graph_5_feasible_edge_count": 103,
+    "graph_5_feasible_edge_sha256": "5faf6c6642d3730f051a4851a3700f0439958155058aa5079b3f63cfce66ec25",
+    "graph_12_edges": [[0, 1], [0, 2], [1, 2], [1, 3], [2, 3]],
+    "graph_12_feasible_edge_count": 21,
+    "graph_12_feasible_edge_sha256": "c6c1c9f9a4c43fbf60b152915069a7a8f76043c3305b23d584553b81665a013c",
+    "intersection_count": 0,
+    "empty_intersection_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "scope_limits": [
+    "Frozen first-three matched-edge motif only.",
+    "Supports of at most three accepted rhombi.",
+    "Fourth edge must be vertex-disjoint and have exactly two accepted incident rhombi.",
+    "Pairwise overlap footprints are single boundary vertices or edges on open complementary arcs.",
+    "Necessary parent-compatibility gate only; not the full four-support L6c/L7b diamond."
+  ],
+  "nonclaims": [
+    "No obstruction to other first-three motifs or larger supports.",
+    "No full four-support intersection diagram or four-union relative-collapse certificate.",
+    "No L8 construction independence or all-orders Hall proof."
+  ]
+}
