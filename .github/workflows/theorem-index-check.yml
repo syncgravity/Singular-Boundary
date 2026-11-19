@@ -12,6 +12,7 @@ on:
       - 'research/scripts/verify_pf_i16_hall_l45_bounded_support.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_two_edge_anchored_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
@@ -152,6 +153,14 @@ jobs:
         with:
           name: pf-i16-four-interval-two-edge-anchored-search
           path: /tmp/pf_i16_four_interval_two_edge_anchored_search.json
+          if-no-files-found: error
+      - name: Enumerate second-edge frontier with first matched edge anchored
+        run: python research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_interval_second_edge_frontier.json
+      - name: Upload second-edge frontier
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-second-edge-frontier
+          path: /tmp/pf_i16_four_interval_second_edge_frontier.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
