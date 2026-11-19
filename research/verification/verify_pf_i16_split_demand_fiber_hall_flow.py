@@ -11,6 +11,8 @@ full flow is an exact rational fractional Hall certificate for the fibers.
 A deficient min cut rejects only this quotient reduction, not source Hall.
 """
 from collections import defaultdict, deque
+import json
+from pathlib import Path
 from fractions import Fraction
 from math import lcm
 
@@ -123,7 +125,8 @@ def run(n, expected_sources):
         retained_incidences+=len(row)
         demand=sum((Fraction(1,len(nonroot_leaf_indices(civ,ctau)))
                     for civ,ctau,cleaf in children),Fraction(0))
-        rows.append((key,demand,row))
+        representative=(iv,tau,leaf)
+        rows.append((key,demand,row,representative))
         demand_total+=demand
         targets.update(row)
     target_list=sorted(targets)
@@ -131,12 +134,15 @@ def run(n, expected_sources):
     nf=len(rows); nt=len(target_list)
     src=0; f0=1; t0=f0+nf; sink=t0+nt
     net=Dinic(sink+1)
-    for i,(key,demand,row) in enumerate(rows):
+    flow_edge_refs=[]
+    for i,(key,demand,row,representative) in enumerate(rows):
         supply=demand*scale
         assert supply.denominator==1,(key,demand,scale)
         net.add(src,f0+i,int(supply))
         for T in row:
+            edge_index=len(net.g[f0+i])
             net.add(f0+i,t0+tid[T],int(demand_total*scale))
+            flow_edge_refs.append((i,tid[T],edge_index))
     for j in range(nt):
         net.add(t0+j,sink,scale)
     sent,reachable=net.flow(src,sink)
@@ -147,6 +153,59 @@ def run(n, expected_sources):
     print(f"  max_flow={sent} deficit={total-sent}")
     if sent==total:
         print("RESULT: exact split-demand quotient Hall flow exists.")
+        if n == 10:
+            # Preserve a compact replayable witness: targets are interned once,
+            # and each fiber stores only positive target-flow assignments.
+            target_load=[0]*nt
+            assignments=[[] for _ in rows]
+            used_targets=set()
+            for i,j,eidx in flow_edge_refs:
+                edge=net.g[f0+i][eidx]
+                units=net.g[t0+j][edge[1]][2]
+                if units:
+                    assignments[i].append([j,units])
+                    target_load[j]+=units
+                    used_targets.add(j)
+            assert max(target_load,default=0)<=scale
+            assert sum(target_load)==total
+            cert_targets=[target_list[j] for j in sorted(used_targets)]
+            remap={old:new for new,old in enumerate(sorted(used_targets))}
+            cert_fibers=[]
+            for i,(key,demand,row,representative) in enumerate(rows):
+                parent,J=key
+                pi,pt=parent
+                iv,tau,leaf=representative
+                pi_out,pt_out=iv,tau
+                cert_fibers.append({
+                    "parent_intervals":[list(e) for e in pi],
+                    "parent_tree":[list(e) for e in pt],
+                    "deleted_interval":list(J),
+                    "representative_intervals":[list(e) for e in pi_out],
+                    "representative_tree":[list(e) for e in pt_out],
+                    "representative_leaf_index":leaf,
+                    "demand":[demand.numerator,demand.denominator],
+                    "assignments":[[remap[j],units] for j,units in assignments[i] if units],
+                })
+            certificate={
+                "schema":"pf-i16-split-demand-flow-v1",
+                "n":10,
+                "scale":scale,
+                "source_count":source_count,
+                "fiber_count":nf,
+                "target_count":len(cert_targets),
+                "total_demand":[demand_total.numerator,demand_total.denominator],
+                "scaled_total_demand":total,
+                "max_flow":sent,
+                "max_target_load":max(target_load,default=0),
+                "used_target_count":len(used_targets),
+                "targets":[[list(e) for e in T] for T in cert_targets],
+                "fibers":cert_fibers,
+            }
+            out=Path("n10_split_demand_flow_certificate.json")
+            out.write_text(json.dumps(certificate,separators=(",",":")),encoding="utf-8")
+            print(f"  flow_certificate={out} bytes={out.stat().st_size}")
+            print(f"  positive_fiber_target_arcs={sum(len(x) for x in assignments)}")
+            print(f"  used_targets={len(used_targets)} max_target_load={max(target_load)}")
     else:
         rf=[i for i in range(nf) if f0+i in reachable]
         rt=[j for j in range(nt) if t0+j in reachable]
