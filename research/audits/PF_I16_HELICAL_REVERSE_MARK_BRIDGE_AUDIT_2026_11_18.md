@@ -126,6 +126,42 @@ with m(T,J) required to be derived from the authentic PF-I16-to-Penrose correspo
 
 A likely next data-recovery target is the exact PF-I16/Penrose correspondence (if one exists in the original research archive), including whether a port is a Penrose vertex, a directed basis edge, a boundary label, or only an abstract combinatorial index. If no such correspondence exists, the helical-to-Hall bridge is a new conjectural construction rather than a consequence of the dissertation and must be labelled accordingly.
 
+
+## 4A. Records-search result: common Z5 substrate found, PF-I16 port map not found
+
+A targeted search of the private research Library and the Hall proof branch located the following source records:
+
+1. **PF-I2 source pentagrid recovery** (`PF_I2_SOURCE_PENTAGRID_GENERATOR_RECOVERY_2026_11_07.md`, with revised companion `PF_I2_REVISED_SOURCE_PENTAGRID_GENERATOR_RECOVERY.md`). This records the source-defined integer labels K in Z5, the physical projection z1(K), the perpendicular projection z2(K), the four accepted height layers sum(K) in {1,2,3,4}, the elementary adjacency K -> K +/- e_j, and the rhombus corners K,K+e_j,K+e_j+e_k,K+e_k. The revised record explicitly distinguishes the Paper 1 P3 graph from any not-fully-specified additional Paper 2 coupled bonds.
+2. **PF-I9 cut-project source bridge** (`PF_I9_CUT_PROJECT_SOURCE_BRIDGE_AND_EXACT_TRACE_2026_11_07.md`). This records the four internal height windows W_h, h=1,2,3,4, and the source acceptance construction.
+3. **PF-I16 authenticated source geometry** (`PF_I16_AUTHENTICATED_THREE_FACE_MOTIF_AND_SHARP_INCIDENCE_2026_11_09.md`) and the exact two-/three-/four-face follow-up records. These explicitly retain original five-integer lower-face labels and direction pairs, e.g. ((0,1,0,0,0);(2,3)), and verify accepted source rhombi and original-link incidence across the eight finite source complexes.
+4. **Hall proof program** (`PF_I16_MULTIVALUED_PI_ALL_ORDERS_PROOF_PROGRAM_2026_11_16.md`). Its source is explicitly (M,tau), with M a perfect matching of ordered ports and tau a spanning tree of the interval-overlap graph. Its operations are interval deletion, order-preserving relabelling, overlap-tree deletion, guarded local switches, and port-tree compression. The verifier's data model exposes interval endpoints and port-tree edges; the inspected source definitions do not attach a five-integer K label, a pentagrid cell, a physical vertex, a face-family pair, a phason, or a perpendicular-space coordinate to a port or interval.
+
+### Exact conclusion of the search
+
+There is a well-defined Z5 substrate in the Penrose/Fibonacci source records, and there is a well-defined ordered-port matching-tree system in the Hall records. **No record found defines a map between them.** In particular, none of the searched records identifies:
+- a port index with a Penrose vertex label K;
+- an interval [a,b] with a source rhombus, directed edge, or pair of Z5 labels;
+- an overlap-tree edge with a physical adjacency K -> K +/- e_j;
+- a reverse mark J with a source face, basis direction, or accepted perpendicular-space point.
+
+This is stronger than saying the map is absent from the current verifier: the recovered published pentagrid construction and the PF-I16 accepted-rhombus audits define their geometric labels independently, while the Hall proof program defines its port objects independently. The records do not supply a bridge axiom or a shared indexing table. It remains possible that an unindexed historical notebook, generator input, or separate archive contains one, but it is not in the records searched here.
+
+### A constrained candidate, not yet a correspondence
+
+The only source-faithful way to construct a bridge would be to exhibit a labelled incidence-preserving map from the Hall port/interval complex into the accepted Penrose source complex. At minimum it would need to send:
+- each port to a specified accepted source vertex K;
+- each matching pair/interval to a specified source path or face-supported object with endpoints determined by those K labels;
+- each overlap-tree adjacency to an explicitly stated relation among those source objects;
+- each reverse mark J and its parent projection to a marked source subconfiguration whose Z5 labels can be read without choices.
+
+It must preserve the relevant incidence, order, root, and deletion/compression operations, and its action under reflection and parent relabelling must be proved. If it only preserves abstract graph incidence, that may suffice for a new combinatorial observer construction, but it would not automatically inherit the Paper 3/4 perpendicular-space observer or failure-band semantics. To inherit those, the map must also preserve the actual five direction labels and accepted-window coordinates.
+
+The Hall problem has arbitrary even port order n and includes every matching of those ports. The Penrose source complex has a specific accepted subset of Z5 labels and local rhombus/edge incidence. Thus a proposed embedding must explain how the entire Hall source family at each n is represented, not merely embed one selected target tree or a few convenient examples. It must also explain whether the map is injective, equivariant, or many-to-one and how that affects reverse-mark multiplicities. No such map has been found or tested.
+
+### G1 status update
+
+G0 source geometry is recovered at the indexed-definition level, subject to the byte-authentication caveat in the PF-I9/PF-I16 records. G1 is now **records-search negative / mathematically unconstructed**. The next useful action is not to assign phases to ports. It is to search the original dissertation/archive bundle for a shared data table, source generator, or notebook that constructs the Hall ordered ports from the accepted Z5 source. If no such artifact exists, the bridge must be proposed as a new labelled-complex construction and proved on its own terms before any H1/H2/H3 graph statistics are interpreted geometrically.
+
 ## 5. Reverse-mark graph once the map exists
 
 For each target T:
@@ -182,7 +218,7 @@ Such a decomposition would prove the blockwise mixed-fiber Hall inequality. The 
 ## 8. Decision gates
 
 - **G0 — Recover source geometry:** source script and phason/accepted-label implementation located in the private Library; authenticate original archive bytes and recover exact worm/observer sampling inputs. PARTIAL.
-- **G1 — Define Psi:** PF-I16-to-Penrose correspondence m(T,J), then source-derived map to W_h with covariance and reflection laws. BLOCKED.
+- **G1 — Define Psi:** records search found no PF-I16 port/interval-to-Z5 correspondence; a labelled incidence-preserving map remains mathematically unconstructed. BLOCKED (search negative).
 - **G2 — Build and audit reverse-mark graphs:** H1/H2/H3 plus controls at n=6,8,10. BLOCKED on G1.
 - **G3 — Capacity experiment:** solve/measure path-supported split-demand allocations and compare against existing exact n=6,8,10 flow certificates. BLOCKED on G2.
 - **G4 — Prove an order-uniform capacity lemma:** derive the mixed-fiber Hall dual for arbitrary nonnegative weights. OPEN.
