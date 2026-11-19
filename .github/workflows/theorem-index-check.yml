@@ -163,6 +163,7 @@ jobs:
           name: pf-i16-four-interval-second-edge-frontier
           path: /tmp/pf_i16_four_interval_second_edge_frontier.json
           if-no-files-found: error
+      # The replacement search rechecks every frontier support-pair count and edge-set digest.
       - name: Search second-edge replacements against graph-5 and graph-12 attachments
         run: |
           python research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --frontier /tmp/pf_i16_four_interval_second_edge_frontier.json --output /tmp/pf_i16_four_interval_second_edge_replacement_search.json
