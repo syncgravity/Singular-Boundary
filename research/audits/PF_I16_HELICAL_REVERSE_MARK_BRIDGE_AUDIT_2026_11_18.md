@@ -60,7 +60,7 @@ Paper 4 also gives the complementary-pair identity for the appropriate 144-degre
 
 ### What is not yet established
 
-Neither paper defines a map from a PF-I16 port, matching interval, overlap-tree vertex, or reverse mark J to a point r_perp in W. The matching-tree verifier enumerates ordered ports and interval overlaps, but the reverse-mark data do not carry a coupled-Z5 lift, phason, acceptance-window coordinate, or a canonical complex projection.
+Paper 3 does give the actual complementary projection once an integer lattice vector m=(m_0,...,m_4) in Z^5 is known: z_2(m)=sum_{j=0}^4 m_j omega^{2j}, with omega=exp(2 pi i/5). It also identifies the acceptance window W as the decagonal domain in this z_2-plane. What neither paper supplies is the preceding map from a PF-I16 port, matching interval, overlap-tree vertex, or reverse mark J to such an integer vector m(T,J), or to a physically justified difference of such vectors. The matching-tree verifier enumerates ordered ports and interval overlaps, but the reverse-mark data do not carry a coupled-Z5 lift, phason, or canonical lattice displacement. Thus the candidate map should be written explicitly as Psi_n(T,J)=z_2(m(T,J)) only after m(T,J) has been derived from authenticated model data; the projection formula itself is known, but its PF-I16 input is not.
 
 Therefore the following would be arbitrary at present and must not be used as evidence:
 - assigning a band label by J's endpoint index modulo 5;
