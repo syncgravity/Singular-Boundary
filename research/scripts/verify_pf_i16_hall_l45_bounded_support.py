@@ -304,7 +304,6 @@ def main():
         "target_center": center.tolist(),
         "target_cutoff": cutoff,
         "common_accepted_face_count": len(common_faces),
-        "common_local_patch_minimum_required": 142,
         "orders": {}
     }
     for n in (4, 6):
