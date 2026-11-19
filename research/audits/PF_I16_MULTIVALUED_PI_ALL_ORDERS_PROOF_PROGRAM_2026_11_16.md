@@ -492,3 +492,20 @@ L(T)=sum_{F:Tin N(F)}rac{delta(F)}{|N(F)|}le1.
 	ag{RNL}
 ]
 Unlike reciprocal reverse-degree splitting, this weights each incident fiber by its actual demand and row size. It is a candidate only: no finite evaluation or all-orders estimate is claimed yet. The next discriminating test is exact rational evaluation at n=8 and n=10 over the full mixed relation. If it passes, seek an all-orders bound using the exact local demand formula (D) and lower bounds for `|N(F)|`; if it fails, preserve the first overloaded target and its complete incident-fiber list. The full weighted dual (MR) remains the theorem to prove.
+
+
+## Exact row-normalized capacity tests now running (2026-11-19)
+
+The sufficient allocation is now stated blockwise: for (F\in\mathcal F_k), spread (delta(F)) uniformly over (N_k(F)=N(F)\cap Y_k). If a same-block row is empty or a target load
+[
+L_k(T)=\sum_{F:T\in N_k(F)}\frac{\delta(F)}{|N_k(F)|}
+]
+exceeds one, this sufficient condition fails. If all loads are at most one, summing the allocation over a fiber family proves (BQH_k).
+
+Two targeted diagnostics were launched:
+- Full-row/global RNL: [44440846425](https://github.com/syncgravity/Singular-Boundary/actions/runs/44440846425), script `verify_pf_i16_row_normalized_target_load.py`, n=8 and n=10.
+- Same-block RNL_k: [44440991439](https://github.com/syncgravity/Singular-Boundary/actions/runs/44440991439), script `verify_pf_i16_row_normalized_split_demand.py`, n=6,8,10. This is the direct test of the blockwise sufficient condition and asserts that all child sources in a fiber have the same retained row.
+
+Both were in progress at the time of this update. The global test is stronger in a different sense but does not substitute for the same-block test; a global failure alone does not refute blockwise RNL_k. A failure of either criterion rejects only that allocation, not Hall. A finite pass remains finite evidence and would still require an all-orders structural estimate.
+
+Durable test plan: `PF_I16_ROW_NORMALIZED_ALLOCATION_TEST_PLAN_2026_11_18.md`. No all-orders mixed-Hall proof is claimed.
