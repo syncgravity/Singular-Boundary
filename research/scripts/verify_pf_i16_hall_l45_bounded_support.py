@@ -236,6 +236,20 @@ def check_target(name, labels, edges, faces, records, core_face_signatures=None)
         source_count += 1
         pattern_counts[str(graph_key)] += 1
 
+    assignment_report = {}
+    for graph_key, (selected, witnesses) in sorted(results_by_graph.items()):
+        assignment_report[str(graph_key)] = {
+            "supports": [
+                [{"lower": list(k[0]), "directions": [k[1], k[2]]}
+                 for k in sorted(S, key=face_sort_key)]
+                for S in selected
+            ],
+            "witnesses": {
+                f"{i+1}-{j+1}": witnesses[(i, j)]
+                for i, j in itertools.combinations(range(len(selected)), 2)
+            }
+        }
+
     return {
         "target": name,
         "vertices": len(labels),
@@ -250,6 +264,7 @@ def check_target(name, labels, edges, faces, records, core_face_signatures=None)
         "maximum_faces_per_interval_support": max_faces_per_support,
         "support_face_occurrences_checked": support_face_count,
         "typed_full_overlap_witness_counts": dict(sorted(witness_counts.items())),
+        "support_assignments_by_full_overlap_pattern": assignment_report,
         "nonoverlap_pairs_with_shared_incidence": 0,
         "minimum_support_vertex_window_margin": min_vertex_margin,
         "minimum_support_face_triangle_margin": min_face_margin,
@@ -293,12 +308,19 @@ def main():
     }
     for n in (4, 6):
         rows = records[n]
+        original_result = check_target(
+            "PF-I16 original-source replay", labels_o, edges_o, faces_o, rows,
+            core_face_signatures=common_faces)
+        core_result = check_target(
+            "PF-I11 completed-window core", labels_c, edges_c, faces_c, rows,
+            core_face_signatures=common_faces)
+        if (original_result["support_assignments_by_full_overlap_pattern"] !=
+                core_result["support_assignments_by_full_overlap_pattern"]):
+            raise AssertionError(("the two target domains selected different supports", n))
         result["orders"][str(n)] = {
             "source_count": len(rows),
-            "PF_I16_original_source": check_target(
-                "PF-I16 original-source replay", labels_o, edges_o, faces_o, rows),
-            "PF_I11_completed_window_core": check_target(
-                "PF-I11 completed-window core", labels_c, edges_c, faces_c, rows),
+            "PF_I16_original_source": original_result,
+            "PF_I11_completed_window_core": core_result,
         }
     result["nonclaims"] = [
         "L6 parent naturality and support deletion",
