@@ -446,3 +446,19 @@ These are exactly target count minus total split demand in the respective blocks
 qquad(z_F\ge0).
 ]
 Any such construction must handle crossing and noncrossing fibers together and maintain unit target capacity. The all-orders mixed Hall theorem and weighted one-link inequality remain open; no mass-gap conclusion is claimed.
+
+
+## Next concrete step: expose the successful nonuniform n=10 split-demand allocation (2026-11-18)
+
+Equal reciprocal reverse-degree splitting fails at n=8 and n=10, but exact split-demand quotient max-flow succeeds at both orders and at n=6. The next step is therefore to inspect the actual nonuniform flow rather than posit another uniform rule.
+
+Instrumentation has been committed:
+- `research/verification/verify_pf_i16_split_demand_fiber_hall_flow.py` exports the positive fiber-to-target flow at n=10 as a compact JSON certificate, with targets interned once and exact scaled integer allocations.
+- `research/verification/verify_pf_i16_split_demand_flow_certificate.py` independently replays source/fiber demand, retained-row eligibility, fiber conservation, target capacity one (scale 12), and total flow, without running max flow.
+- `.github/workflows/pf-i16-export-split-demand-flow.yml` manually builds, replays, and uploads the certificate.
+- Design and verification boundaries are recorded in `PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_PLAN_2026_11_18.md`.
+
+**Status:** implementation committed; manual workflow not yet dispatched. No exported certificate or replay pass is claimed yet. The checker shares the canonical relation-generation primitives, but is independent of the max-flow algorithm and exported flow construction.
+
+If the workflow passes, inspect support concentration by parent source, deleted interval, first crowded cut, and crossing/noncrossing class. The aim is to identify a structural nonuniform allocation or augmenting/exchange invariant. This remains finite diagnostic work; it does not itself establish an all-orders allocation.
+
