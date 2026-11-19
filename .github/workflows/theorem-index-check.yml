@@ -11,6 +11,7 @@ on:
       - 'research/scripts/verify_pf_i16_hall_l123_motif_lift.py'
       - 'research/scripts/verify_pf_i16_hall_l45_bounded_support.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
@@ -85,6 +86,7 @@ on:
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
@@ -124,12 +126,21 @@ jobs:
           name: pf-i16-four-interval-support-inventory
           path: /tmp/pf_i16_four_interval_support_inventory.json
           if-no-files-found: error
+      - name: Test four-interval parent compatibility and bounded fourth-edge obstruction
+        run: python research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_interval_parent_compatibility.json
+      - name: Upload four-interval parent-compatibility result
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-parent-compatibility
+          path: /tmp/pf_i16_four_interval_parent_compatibility.json
+          if-no-files-found: error
       - name: Commit reproducible support inventory report
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p research/evidence
           cp /tmp/pf_i16_four_interval_support_inventory.json research/evidence/PF_I16_HALL_FOUR_INTERVAL_SUPPORT_INVENTORY_NGRID12.json
+          cp /tmp/pf_i16_four_interval_parent_compatibility.json research/evidence/PF_I16_HALL_FOUR_INTERVAL_PARENT_COMPATIBILITY_NGRID12.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add research/evidence/PF_I16_HALL_FOUR_INTERVAL_SUPPORT_INVENTORY_NGRID12.json
