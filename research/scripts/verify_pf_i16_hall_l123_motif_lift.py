@@ -77,7 +77,7 @@ def original_source_complex(ngrid):
             for nk in range(-ngrid,ngrid+1):
                 bj=nj+GAMMA[j]; bk=nk+GAMMA[k]
                 point=np.array([(bj*b[1]-bk*a[1])/det,
-                                (a[0]*bk-bj*a[0])/det])
+                                (a[0]*bk-bj*b[0])/det])
                 base=[0]*5
                 for f in range(5):
                     if f not in (j,k):
@@ -126,7 +126,6 @@ def face_margin(m,j,k):
 
 def check_target(name,labels,edges,faces,records):
     # The target-side motif is fixed before the Hall source records are read.
-    motif_faces=[face_tuple(m,j,k) for *mjk,j,k in []]  # overwritten below
     motif_faces=[face_tuple(tuple(row[:5]),row[5],row[6]) for row in MOTIF]
     face_set=set(faces)
     if not all(f in face_set for f in motif_faces):
