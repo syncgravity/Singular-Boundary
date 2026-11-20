@@ -312,3 +312,84 @@ This is the next finite diagnostic toward the local support-diamond hypothesis o
 - Restriction coherence and PF-specific all-orders accepted-face confluence / geometric L8: **open**.
 - Authenticated physical regulator, physical SU(2) Hamiltonian on it, uniform all-functions SI, continuum/OS reconstruction: **open and downstream**.
 - PR #119 remains open, draft, and unmerged; PR #118 remains open and unmerged. No merge was performed.
+
+
+## 13. Completed independent four-support diagram-lifting CI gate (2026-11-20 UTC)
+
+### 13.1 Workflow completion and reproducibility
+
+The independent four-support lifting verifier was run in the full theorem-index workflow on the same branch head in both trigger modes:
+
+| Trigger | Run | Job | Head SHA | Result |
+|---|---:|---:|---|---|
+| Push | [44665402346](https://github.com/syncgravity/Singular-Boundary/actions/runs/44665402346) | 136053330304 | `210da5db8e7697e81678d3d852ecdea89fb2b2d7` | success |
+| pull_request | [44665410702](https://github.com/syncgravity/Singular-Boundary/actions/runs/44665410702) | 136053356824 | `210da5db8e7697e81678d3d852ecdea89fb2b2d7` | success |
+
+All 46 substantive steps completed successfully, including support inventory, parent-compatibility, two-edge-anchored search, second-edge frontier, replacement search, same-assignment witness lifting, independent diagram lifting, theorem source/hash inventory, theorem catalog/navigation, the cumulant/temporal verifier suite, and Proof Atlas checks.
+
+Independent diagram-lifting artifacts:
+
+- Push artifact ID `14600441119`; artifact ZIP SHA-256 `1cfe2efe01003fa331d3e5303e96e92e8bf7a230ea3c8ddd63fdcb6887a0d94e`.
+- PR artifact ID `14600691430`; artifact ZIP SHA-256 `df1d7d917ad8513a8273ba80f56737acb0713ab8f15af27e12f750df2afbde60`.
+- Both contain `pf_i16_four_interval_independent_diagram_lifting.json`, 15,489,814 bytes, byte-identical SHA-256 `cd51d14450ac4c80e78bc7112b7bb2a3168a43b3d7c753eed725dcdc08fa54c0`.
+- Both consume the same replacement-search JSON hash `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c31babbcf5425b2f`.
+- The inventory target in the output is 4,294 vertices, 8,382 edges, and 4,089 faces, with face-key SHA-256 `f0f63287b3194a8625e4dd5c0a7369b04da315406fdc64a0d828627814ada7eb`.
+
+The replacement-search artifacts from both runs also unpack to the same 6,413,571-byte JSON payload, SHA-256 `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c31babbcf5425b2f`. Thus the duplicate workflow executions agree on both the upstream candidate set and the independent-lift output.
+
+### 13.2 Exact independent-lift output
+
+The verifier reopened all 52 aggregated second/third matched-edge pairs and recomputed 7,396 qualifying first-three support assignments (summed across the per-pair searches). It allowed graph-5 and graph-12 to use independent first-three face-support assignments, unlike the same-assignment verifier in Section 12.
+
+The artifact reports:
+
+- Aggregated second/third pairs reopened: 52.
+- Qualifying first-three assignments recomputed: 7,396.
+- Actual four-support realizations satisfying individual edge-collapse and required pairwise footprint conditions: graph-5 514; graph-12 810.
+- Realizations retained after requiring all nonempty intersections to be point-contractible, the four-support union to be point-contractible, and deletion of interval 4 to collapse onto the retained triple: graph-5 514; graph-12 482.
+- Second/third pairs with at least one common fourth matched edge admitting such independent realizations on both patterns: **50 of 52**.
+- Total common pair/fourth-edge cases: **64**.
+
+The 15 labelled intersection entries are emitted for every retained realization (four single supports, six pairs, four triples, and the four-way intersection), including empty cases, with face/edge/vertex counts, point-contractibility flags for nonempty intersections, and a cell digest. The artifact also emits union cell counts and contractibility, all four single-deletion relative-collapse booleans, and anchored boundary-footprint words with ordered footprint positions and footprint-meeting relations.
+
+### 13.3 Important qualification: this is a candidate-lifting result, not a full L6c/L7b certificate
+
+The artifact's own nonclaims are binding:
+
+- Its parent restriction signature is a coarse finite L6c signature and has not been compared with every actual source-parent record.
+- It does not establish an explicit source-prescribed diagram isomorphism.
+- Its boundary words and footprint-meeting relations are exported, but are not yet certified against the source-prescribed multi-footprint words for all relevant order-eight sources.
+- It does not establish restriction coherence under all further deletions, PF-specific all-orders accepted-face confluence, geometric L8, or the all-orders Hall theorem.
+
+There is an additional deletion-collapse distinction that must be preserved. The verifier records all four single-deletion collapse results, but its candidate-retention predicate requires only the interval-4 deletion collapse, together with all nonempty intersections and the union being point-contractible. Among the retained candidates:
+
+- Every graph-5 candidate has relative-deletion vector (drop supports 0,1,2,3): `(false,true,true,true)`.
+- Every retained graph-12 candidate has vector `(true,true,true,true)`.
+
+Therefore the graph-5 candidates do **not** pass all four possible single-deletion relative-collapse tests. Whether the failed drop-0 collapse is fatal depends on which deletion restriction(s) the actual source-parent diamond requires. This cannot be settled from the coarse artifact signature; it must be checked against the actual source records and their marked-parent maps. Do not describe all 514 graph-5 candidates as passing every deletion restriction.
+
+The retained diagrams also have different nonempty-intersection counts: graph-5 has 9 of 15 entries nonempty, graph-12 has 11 of 15. Their boundary-footprint count patterns are respectively (3,2,2,1) and (2,3,3,2). These are not to be declared equivalent or inequivalent in isolation: the two attachment patterns must first be matched to their actual source-parent combinatorics and the adopted labelled L6c comparison. The common coarse retained-parent signature is not a substitute for that comparison.
+
+### 13.4 Correct next operation
+
+The next operation is now **source-record matching and restriction adjudication**, not a broader candidate search:
+
+1. Export the actual order-eight source records and marked parent maps for every one of the 52 second/third pairs and the 64 common pair/fourth-edge cases.
+2. Identify exactly which support deletions correspond to each source parent on graph-5 and graph-12. In particular, determine whether graph-5's failed drop-0 relative collapse is required by the critical-pair diamond or is an irrelevant deletion for that source family.
+3. Compare each exported 15-entry labelled intersection diagram with its own source-prescribed overlap graph, retaining empty intersections and interval labels.
+4. Compare the two retained-parent diagrams under the precise L6c convention; do not require literal cell identity/dimension, but do require the full labelled incidence/collapse structure prescribed by the source maps.
+5. Compare the complete oriented boundary cycles and ordered multi-footprint words against the source-prescribed L7b data, including the meeting relations among footprints.
+6. Test restriction coherence for the actual further-deletion maps in the source critical-pair family.
+
+Only candidates passing the actual parent restrictions and source-prescribed L6c/L7b comparisons should be promoted. If the graph-5 drop-0 collapse is required, the present 514/482 retained counts are not a valid four-parent lift and the search must be refined with that requirement; if it is not required for this source diamond, document the exact parent map that explains why.
+
+### 13.5 Updated status
+
+- Independent four-support diagram-lifting verifier: **completed reproducibly in two full CI runs**.
+- Same-assignment ansatz: **bounded zero result**, not an L6c no-go (Section 12).
+- Independent graph-5 / graph-12 candidate lifts: **positive bounded result, 50/52 pairs and 64 common pair/edge cases**, subject to source-parent adjudication.
+- Full all-deletion L6c parent naturality: **not established**; graph-5 drop-0 relative collapse fails for every retained candidate under the current indexing.
+- Source-prescribed L6c diagram isomorphisms and L7b ordered multi-footprint matches: **open**.
+- Restriction coherence and PF-specific geometric L8: **open**.
+- Physical regulator, finite physical SU(2) Hamiltonian on it, uniform all-functions SI, and continuum/OS reconstruction: **open and downstream**.
+- PR #119 remains open, draft, and unmerged; PR #118 remains open, draft, and unmerged. No merge was performed.
