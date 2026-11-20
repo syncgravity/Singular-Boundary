@@ -43,7 +43,7 @@ def main():
     sources=hall.source_records(8)
     assert len(sources)==608
     families={"graph5":G5,"graph12":G12}
-    summaries={}; witness_rows=[]; map_rows=[]
+    summaries={}; witness_rows=[]; map_rows=[]; parent_port_restriction_checks=0
     for family,G in families.items():
         perms=isos(G)
         assert len(perms)==2 and all(p[0]==0 for p in perms)
@@ -169,6 +169,7 @@ def main():
                             parent_port_map[str(p)]=edge["lower"]
                             parent_port_map[str(q)]=edge["upper"]
                         assert restricted_port_map==parent_port_map,(family,pi,wi,si,perm,m)
+                        parent_port_restriction_checks+=1
                         tree_geom=[tuple(sorted((perm[retained[x]],perm[retained[y]])))
                                    for x,y in parent["parent_tree_edges"]]
                         checks=[]
@@ -269,7 +270,9 @@ def main():
             "all_44_source_parent_tree_diamonds_commute":True,
             "all_44_remaining_pair_table_restrictions_are_nonempty_contractible":True,
             "finite_order8_source_interval_to_geometric_edge_embedding_verified":True,
-            "all_608_source_records_not_claimed":True,
+            "all_parent_port_map_restrictions_commute":True,
+            "parent_port_restriction_check_count":parent_port_restriction_checks,
+            "only_graph5_and_graph12_source_families_audited":True,
             "unique_source_to_target_graph_isomorphism_identified":False,
             "source_prescribed_oriented_boundary_word_comparison_complete":False,
             "elementary_collapse_map_commutation_certified":False,
