@@ -412,6 +412,70 @@ The other mark census remains:
 
 Thus the following statements remain supported: interval 0 is always the root and never an eligible reverse mark; every actual co-deletion with interval 3 is interval 1 or 2; and deletion of interval 0 is not a source-parent operation. However, the stronger claim that deleting interval 3 always leaves the same *tree* is false. It leaves the same labelled three-vertex overlap graph, but one of three spanning trees occurs. The source parent tree must therefore be carried per source record, not collapsed to a single star signature.
 
-The verifier was corrected in commit `7ff717093c9d4a49d25a87675c03b7c7a8d7f5a3` to assert the three exact histograms and to expose whether the parent tree is unique. The correction is awaiting its fresh branch CI run. The earlier failures in runs [44675033035](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675033035) and [44675038856](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675038856) are now classified as an incorrect expected parent-tree histogram in the audit script. No geometric L6c/L7b conclusion follows from those failures.
+The verifier was corrected in commit `7ff717093c9d4a49d25a87675c03b7c7a8d7f5a3` to assert the three exact histograms and to expose whether the parent tree is unique. The corrected verifier passed in the complete theorem-index workflow run [44707308083](https://github.com/syncgravity/Singular-Boundary/actions/runs/44707308083), job `136189996539`, on branch head `61443f3a7d962fea32c7478353db33134954ae75`. The earlier failures in runs [44675033035](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675033035) and [44675038856](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675038856) are now classified as an incorrect expected parent-tree histogram in the audit script. No geometric L6c/L7b conclusion follows from those failures.
 
 This correction strengthens the next source-labelled comparison: enumerate source records with their exact marked parent trees, and compare each geometric parent diagram against the corresponding source-record restriction. Do not assume a common star parent tree across graph-5 or graph-12 families.
+
+
+## 15. Source-labelled four-support restriction audit completed (2026-11-20 UTC)
+
+The source-record matching and restriction adjudication requested in Sections 13.4 and 14 has now been carried out at the exact finite combinatorial scope supported by the source exporter and geometric artifact.
+
+### 15.1 Reproducible execution
+
+- Full workflow: [44707308083](https://github.com/syncgravity/Singular-Boundary/actions/runs/44707308083), job `136189996539`, conclusion **success**.
+- Tested head: `61443f3a7d962fea32c7478353db33134954ae75`.
+- New verifier: `research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py`.
+- Durable audit: `research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md`.
+- Source-labelled audit artifact ID `14621730510`; decompressed JSON SHA-256 `bb0ca92bbd5cef3cd6c2e26585e02c8f07acadc0c4836fe5937643a07a915958`.
+- Input independent-diagram artifact ID `14620896650`; JSON SHA-256 `cd51d14450ac4c80e78bc7112b7bb2a3168a43b3d7c753eed725dcdc08fa54c0`.
+- Source-parent artifact ID `14621091054`; JSON SHA-256 `3a2086899b7967c3239e36babb8209adb8a51c7cb0a2409f4980d5c6ecdccc2f`.
+
+### 15.2 What is now positively established
+
+The audit enumerates both root-preserving graph isomorphisms, `(0,1,2,3)` and `(0,2,1,3)`, for all 996 retained geometric witnesses and every relevant order-eight source record with mark 3. This produces 47,040 explicit witness/source/isomorphism rows.
+
+| Family | Sources | Sources with mark 3 | Retained witnesses | Compatibility rows |
+|---|---:|---:|---:|---:|
+| Graph 5 | 12 | 12 | 514 | 12,336 |
+| Graph 12 | 48 | 36 | 482 | 34,704 |
+| **Total** | **60** | **48** | **996** | **47,040** |
+
+For each row the verifier carries exact source intervals, source tree, eligible marks, parent tree after each legal deletion, mapped geometric supports, and all source critical deletion pairs. It checks all 15 labelled intersection entries per geometric witness, every source-legal relative deletion, every parent-tree edge against its mapped pair intersection, and the ordered reciprocal footprint data.
+
+The source critical-pair census is 20 graph-5 diamonds and 24 graph-12 diamonds, total 44. For all 44:
+- both source deletion orders leave the same reindexed parent tree;
+- both corresponding relative-collapse checks pass;
+- the remaining pair intersection is nonempty and point-contractible; and
+- the 15-entry incidence table restricts to the same remaining pair in either order.
+
+**The graph-5 drop-0 issue is resolved at source-mark level:** support 0 corresponds to the root under both root-preserving graph isomorphisms, and interval 0 is never an eligible reverse mark. The failed drop-0 collapse in the 514 graph-5 witnesses is therefore not a required source-parent deletion. All source-eligible deletions 1, 2, and 3 pass. Graph 12 passes all four geometric single-deletion tests.
+
+The three distinct source parent trees after deleting interval 3 are all carried per source record. Every edge in each such parent tree maps to a nonempty, point-contractible pair intersection with reciprocal footprint entries of matching cell type and vertices.
+
+### 15.3 What this does not establish
+
+The 47,040 rows are exhaustive combinatorial compatibility checks under the two root-preserving graph maps. They are **not** an authenticated source-record-to-target-edge embedding: the source exporter still does not prescribe which geometric matched-edge vector realizes each source interval or reverse mark.
+
+Likewise:
+- source records do not prescribe the oriented boundary cycle or ordered multi-footprint word required for a full source-to-target L7b comparison;
+- the target words are internally checked for order, reciprocal pair footprints, and meet relations, but are not compared with a source-prescribed word;
+- relative-collapse booleans are not elementary collapse sequences or maps, so the audit does not prove collapse-map commutation around the diamonds;
+- higher triple and four-way intersections have no source-side prescribed comparison object; and
+- the finite result does not establish geometric L8, all-orders Hall, or the physical/regulator theorem.
+
+Accordingly, Sections 13.3–13.4 should be read with this update: the actual source mark sets, source parent trees, eligible deletion checks, and abstract source-tree/table diamonds have now been audited. The remaining operation is to derive the authenticated source-to-target incidence embedding from the PF-I16 Z^5 geometry, then export complete oriented boundary cycles and elementary collapse certificates and rerun the diamonds with explicit comparison maps.
+
+### 15.4 Current gate status
+
+- Independent four-support diagrams: **passed**.
+- Actual order-eight source mark and parent-tree census: **passed**.
+- Source-labelled compatibility over both graph automorphisms: **passed, finite scope**.
+- All source-eligible relative deletions: **passed**.
+- All 44 abstract source parent-tree diamonds and remaining-pair table restrictions: **passed**.
+- Source-to-geometric matched-edge embedding: **open**.
+- Source-prescribed oriented L7b comparison: **open**.
+- Elementary collapse-map commutation / full geometric restriction coherence: **open**.
+- Geometric L8: **open**.
+- All-orders Hall: **separate and open**.
+- PR #119: remains draft, open, and unmerged; no merge was performed.
