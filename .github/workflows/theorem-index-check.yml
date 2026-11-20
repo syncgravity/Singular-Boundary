@@ -135,6 +135,9 @@ on:
       - 'research/audits/PF_I16_NILPOTENT_GLUING_AND_HIGH_DEGREE_TESTS_2026_11_13.md'
       - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
       - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
+concurrency:
+  group: theorem-index-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
