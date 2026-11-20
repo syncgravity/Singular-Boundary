@@ -132,3 +132,26 @@ The next task is not another broad candidate search and not a return to the old 
 Once that map exists, extend the target export to include the complete oriented boundary cycles and elementary relative-collapse certificates, then rerun the 44 source diamonds with explicit comparison maps. Only after those checks should the order-eight result be promoted toward geometric L8.
 
 No PR merge is implied by this audit. PR #119 remains a draft research lane pending its CI and source-to-target geometric correspondence.
+
+
+## 9. Completed CI execution and artifact integrity
+
+The complete theorem-index workflow passed on 2026-11-20:
+
+- Workflow run: [44707308083](https://github.com/syncgravity/Singular-Boundary/actions/runs/44707308083)
+- Job: `index-check`, job ID `136189996539`, conclusion `success`.
+- Tested head: `61443f3a7d962fea32c7478353db33134954ae75`.
+- PR: [#119](https://github.com/syncgravity/Singular-Boundary/pull/119), still draft, open, and unmerged at the check.
+
+Artifact provenance:
+
+| Artifact | ID | Payload SHA-256 |
+|---|---:|---|
+| Source-labelled restriction audit (gzip JSON) | `14621730510` | gzip: `7b0a3ab58b4e06199c06ebd493727e61bf466de109efbb23de1770e177161ad7`; decompressed JSON: `bb0ca92bbd5cef3cd6c2e26585e02c8f07acadc0c4836fe5937643a07a915958` |
+| Source-parent mark audit | `14621091054` | `3a2086899b7967c3239e36babb8209adb8a51c7cb0a2409f4980d5c6ecdccc2f` |
+| Independent four-support diagrams | `14620896650` | `cd51d14450ac4c80e78bc7112b7bb2a3168a43b3d7c753eed725dcdc08fa54c0` |
+| Second-edge replacement search | `14620741438` | `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c31babbcf5425b2f` |
+
+The restriction-audit payload independently records the exact diagram JSON SHA above and contains 996 witness records and 47,040 source-parent map rows. The source-parent artifact independently confirms the three-tree histogram, root index 0 in all source records, and that no actual co-deletion with interval 3 requires deleting interval 0.
+
+The CI pass includes the repository theorem-index check, generated theorem catalog check, and the branch's other research verifiers. A passing workflow establishes reproducibility of the recorded finite computations and repository integrity checks; it does not turn their mathematical scope limitations into theorem proofs.
