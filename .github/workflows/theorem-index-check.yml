@@ -145,6 +145,14 @@ jobs:
         with:
           fetch-depth: 1
           ref: ${{ github.event.pull_request.head.ref || github.ref }}
+      - name: Compile four-support audit verifiers
+        run: |
+          python -m py_compile \
+            research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py \
+            research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py \
+            research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py \
+            research/scripts/verify_pf_i16_four_support_parent_coherence.py \
+            research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
       - name: Enumerate all one-to-three-rhombus four-interval support candidates
