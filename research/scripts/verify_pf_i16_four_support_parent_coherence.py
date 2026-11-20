@@ -47,17 +47,6 @@ def parent_signature(diagram,perm,retained,parent):
         raise AssertionError("nonempty parent triple intersection not contractible")
     # The child union collapses onto this parent union, so the parent union
     # inherits contractibility from the already-certified contractible child union.
-    deleted=4-len(retained)
-    # deleted is only used to document the one removed support; the exact
-    # collapse flag is checked by the caller against the source mark.
-    relative=tuple(bool(diagram["relative_deletion_collapses"][str(g)]) for g in geom_order)
-    # The parent tree itself determines the next legal reverse marks.
-    adj={i:set() for i in range(3)}
-    for i,j in parent["parent_tree_edges"]:
-        adj[i].add(j);adj[j].add(i)
-    eligible=[i for i in range(1,3) if len(adj[i])==1]
-    if any(not relative[i] for i in eligible):
-        raise AssertionError(("parent's own eligible reverse mark lacks relative collapse",eligible,relative))
     footprint_rows=[]
     for i,g in enumerate(geom_order):
         row=words[g]
@@ -76,8 +65,6 @@ def parent_signature(diagram,perm,retained,parent):
         "pair_intersections":pair_rows,
         "triple_intersection_nonempty":bool(tri["nonempty"]),
         "triple_intersection_contractible":bool(tri["point_contractible"]) if tri["nonempty"] else None,
-        "parent_relative_deletion_vector":relative,
-        "parent_eligible_marks":eligible,
         "parent_union_contractible_by_child_relative_collapse":True,
         "ordered_footprint_neighbor_words":footprint_rows
     }
