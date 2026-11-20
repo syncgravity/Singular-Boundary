@@ -24,6 +24,9 @@ def isos(G):
 def digest(x):
     return hashlib.sha256(json.dumps(x,sort_keys=True,separators=(",",":")).encode()).hexdigest()
 
+def edge_key(row):
+    return tuple(row["lower"]),tuple(row["upper"])
+
 def face_vertices(row):
     m=tuple(row["lower"]); j,k=row["directions"]
     ej=tuple(int(t==j) for t in range(5)); ek=tuple(int(t==k) for t in range(5))
@@ -340,7 +343,10 @@ def main():
     print(json.dumps({"schema":result["schema"],
         "graph5":{k:v for k,v in summaries["graph5"].items() if k not in ("witness_results",)},
         "graph12":{k:v for k,v in summaries["graph12"].items() if k not in ("witness_results",)},
-        "common_cases":common_count,"strict_pair_set_coherent_common_cases":coherent_count},sort_keys=True,indent=2))
+        "common_cases":common_count,"collapse_only_coherent_cases":collapse_only_count,
+        "parent_only_coherent_cases":parent_only_count,"joint_coherent_cases":joint_count,
+        "joint_fourth_edge":{"lower":list(joint_edge[0]),"upper":list(joint_edge[1])},
+        "joint_second_third_edge_count":len(joint_second_third_frequency)},sort_keys=True,indent=2))
 
 if __name__=="__main__":
     main()
