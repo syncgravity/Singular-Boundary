@@ -1,0 +1,61 @@
+name: PF-I16 L1-L7 clean-checkout replay
+
+on:
+  push:
+    branches:
+      - research/pf-i16-z5-incidence-lift-2026-11-18
+    paths:
+      - 'research/scripts/verify_pf_i16_hall_l123_motif_lift.py'
+      - 'research/scripts/verify_pf_i16_hall_l45_bounded_support.py'
+      - 'research/scripts/verify_pf_i16_hall_l6c_coarse_support_naturality.py'
+      - 'research/scripts/verify_pf_i16_hall_alternative_triple_l6c_l7b.py'
+      - 'research/scripts/export_pf_i16_hall_source_records.py'
+      - 'research/scripts/verify_pf_i9_source_cut_project_bridge.py'
+      - '.github/workflows/pf-i16-l1-l7-clean-replay.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  clean-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout exact branch commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install pinned numerical dependencies
+        run: python -m pip install --disable-pip-version-check numpy==2.2.6 scipy==1.15.3
+      - name: Record source and runtime provenance
+        run: |
+          mkdir -p /tmp/pf-i16-l1-l7
+          git rev-parse HEAD | tee /tmp/pf-i16-l1-l7/checkout.txt
+          python --version | tee /tmp/pf-i16-l1-l7/python.txt
+          python -m pip freeze | sort > /tmp/pf-i16-l1-l7/pip-freeze.txt
+          sha256sum research/scripts/verify_pf_i16_hall_l123_motif_lift.py research/scripts/verify_pf_i16_hall_l45_bounded_support.py research/scripts/verify_pf_i16_hall_l6c_coarse_support_naturality.py research/scripts/verify_pf_i16_hall_alternative_triple_l6c_l7b.py research/scripts/export_pf_i16_hall_source_records.py research/scripts/verify_pf_i9_source_cut_project_bridge.py > /tmp/pf-i16-l1-l7/source-sha256.txt
+      - name: Replay L1-L3 on both Ngrid=7 target domains
+        run: python research/scripts/verify_pf_i16_hall_l123_motif_lift.py --output /tmp/pf-i16-l1-l7/l123.json
+      - name: Replay L4-L5 bounded support and overlap witnesses
+        run: python research/scripts/verify_pf_i16_hall_l45_bounded_support.py --output /tmp/pf-i16-l1-l7/l45.json
+      - name: Replay L6c relative collapses and parent coherence
+        run: python research/scripts/verify_pf_i16_hall_l6c_coarse_support_naturality.py --output /tmp/pf-i16-l1-l7/l6c.json
+      - name: Replay alternative-triple L6c and L7b boundary order
+        run: python research/scripts/verify_pf_i16_hall_alternative_triple_l6c_l7b.py --output /tmp/pf-i16-l1-l7/alternative-triple-l6c-l7b.json
+      - name: Hash all replay outputs
+        if: always()
+        run: |
+          find /tmp/pf-i16-l1-l7 -maxdepth 1 -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/pf-i16-l1-l7/output-manifest.sha256
+      - name: Upload reproducibility bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-l1-l7-clean-replay-${{ github.sha }}
+          path: /tmp/pf-i16-l1-l7/
+          if-no-files-found: error
