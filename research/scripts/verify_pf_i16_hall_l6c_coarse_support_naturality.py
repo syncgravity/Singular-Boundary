@@ -189,12 +189,13 @@ def run_target(name, labels, edges, faces, records):
     results_by_graph = {}
     for row in records:
         graph = l45.source_graph(row)
-        if graph not in results_by_graph:
+        graph_key = frozenset(graph)
+        if graph_key not in results_by_graph:
             selected, witnesses = l45.choose_supports(
                 graph, len(row["intervals"]), options, face_records)
             if selected is None:
                 raise AssertionError((name, "child support assignment missing", graph))
-            results_by_graph[graph] = selected
+            results_by_graph[graph_key] = selected
 
     marks = 0
     relative_pass = 0
@@ -209,7 +210,7 @@ def run_target(name, labels, edges, faces, records):
 
     for row in records:
         child_graph = l45.source_graph(row)
-        child_supports = results_by_graph[child_graph]
+        child_supports = results_by_graph[frozenset(child_graph)]
         for parent in row["parents"]:
             marks += 1
             mark = int(parent["deleted_interval_index"])
