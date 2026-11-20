@@ -101,6 +101,10 @@ def footprint_word(supports, edges, cells, intersection, face_edges):
             meets.append({"neighbors":[a["neighbor"],b["neighbor"]],
                           "meet":bool(av&bv)})
         result.append({"support":i,
+                       "marked_edge_orientation":[list(tail),list(head)],
+                       "oriented_boundary_cycle":[list(v) for v in cycle],
+                       "open_complementary_arc":[list(v) for v in arc],
+                       "boundary_length":len(cycle),
                        "ordered_footprints":row,
                        "footprint_meet_relations":meets})
     return result
