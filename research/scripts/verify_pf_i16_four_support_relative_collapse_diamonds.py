@@ -219,13 +219,14 @@ def main():
                     }
                     diamonds.append(row)
                 all_pairset=all(x["same_elementary_pair_set"] for x in diamonds)
-                witness_all_pairset+=int(all_pairset)
                 perm_results.append({"source_to_support_isomorphism":list(perm),
                                      "all_critical_pairs_same_elementary_pair_set":all_pairset,
                                      "diamond_certificates":diamonds})
             verdicts=[x["all_critical_pairs_same_elementary_pair_set"] for x in perm_results]
             if len(set(verdicts))!=1:
                 raise AssertionError(("collapse-pair coherence depends on graph automorphism",family,pi,wi))
+            # Count witnesses once, after verifying both root-preserving maps.
+            witness_all_pairset+=int(verdicts[0])
             wid=digest({"family":family,"pair":pi,"witness":wi,
                         "fourth_edge":w["fourth_edge"],
                         "supports":w["support_face_indices"]})[:20]
