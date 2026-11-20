@@ -216,7 +216,7 @@ jobs:
           if-no-files-found: error
       - name: Verify source-labelled four-support restrictions and deletion diamonds
         run: |
-          python research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --output /tmp/pf_i16_source_labelled_four_support_restriction_audit.json.gz
+          python research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_source_labelled_four_support_restriction_audit.json.gz
       - name: Upload source-labelled four-support restriction audit
         uses: actions/upload-artifact@v4
         with:
