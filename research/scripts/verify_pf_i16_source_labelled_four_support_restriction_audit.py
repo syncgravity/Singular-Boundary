@@ -158,6 +158,17 @@ def main():
                     for parent in r["parents"]:
                         m=parent["deleted_interval_index"]
                         retained=[j for j in range(4) if j!=m]
+                        # Restrict the child port embedding to retained ports,
+                        # then apply the source's exact order-compression map.
+                        compression={int(k):v for k,v in parent["port_order_compression"].items()}
+                        restricted_port_map={str(compression[p]):port_to_z5[str(p)]
+                                             for p in parent["retained_ports_before_compression"]}
+                        parent_port_map={}
+                        for parent_i,(p,q) in enumerate(parent["parent_intervals"]):
+                            edge=target_edges[perm[retained[parent_i]]]
+                            parent_port_map[str(p)]=edge["lower"]
+                            parent_port_map[str(q)]=edge["upper"]
+                        assert restricted_port_map==parent_port_map,(family,pi,wi,si,perm,m)
                         tree_geom=[tuple(sorted((perm[retained[x]],perm[retained[y]])))
                                    for x,y in parent["parent_tree_edges"]]
                         checks=[]
@@ -174,6 +185,8 @@ def main():
                         parent_maps.append({
                             "deleted_interval_index":m,"deleted_interval":parent["deleted_interval"],
                             "mapped_support":perm[m],"parent_intervals":parent["parent_intervals"],
+                            "parent_port_map":parent_port_map,
+                            "port_map_restriction_commutes":True,
                             "source_parent_tree_edges":parent["parent_tree_edges"],
                             "mapped_geometric_parent_tree_edges":tree_geom,
                             "tree_edge_checks":checks,"relative_collapse_pass":legal[str(m)]
@@ -222,6 +235,7 @@ def main():
                         "mapped_eligible_supports":sorted(perm[m] for m in marks),
                         "all_legal_relative_collapses_pass":True,
                         "parent_maps":parent_maps,"source_diamonds":diamonds,
+                        "all_parent_port_restrictions_natural":True,
                         "finite_source_to_target_port_embedding_verified":True,
                         "unique_source_to_target_graph_isomorphism_identified":False
                     })
