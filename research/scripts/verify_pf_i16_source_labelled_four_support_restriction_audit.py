@@ -143,7 +143,7 @@ def main():
                                 for x,y in parent["parent_tree_edges"]
                                 if x!=deleted and y!=deleted)
                         tmn=second(pm,rm.index(n)); tnm=second(pn,rn.index(m))
-                        assert tmn==tnm,(family,si,m,n,tmn,tnm)
+                        assert tmn==tnm and len(tmn)==1,(family,si,m,n,tmn,tnm)
                         remain=[j for j in range(4) if j not in (m,n)]
                         pairkey=tuple(sorted((perm[remain[0]],perm[remain[1]])))
                         ent=imap[pairkey]
