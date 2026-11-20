@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Source-labelled finite restriction audit for PF-I16 order-eight support candidates.
 
-The output explicitly separates abstract source/graph compatibility from an
-unauthenticated source-interval to target matched-edge embedding.
+The output constructs explicit finite port-to-Z5 embeddings for every source
+matching and root-preserving overlap-graph isomorphism, while keeping the
+non-uniqueness of the geometric labeling and the L7b/collapse-map gaps explicit.
 """
 from __future__ import annotations
 import argparse, gzip, hashlib, itertools, json
@@ -23,12 +24,22 @@ def isos(G):
     return [p for p in itertools.permutations(range(4))
             if p[0]==0 and edges((p[i],p[j]) for i,j in G)==G]
 
+def face_vertices(row):
+    m=tuple(row["lower"]); j,k=row["directions"]
+    ej=tuple(int(t==j) for t in range(5))
+    ek=tuple(int(t==k) for t in range(5))
+    add=lambda a,b:tuple(a[t]+b[t] for t in range(5))
+    return {m,add(m,ej),add(add(m,ej),ek),add(m,ek)}
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--diagrams",type=Path,required=True)
+    ap.add_argument("--inventory",type=Path,required=True)
     ap.add_argument("--output",type=Path,required=True)
     a=ap.parse_args()
     data=json.loads(a.diagrams.read_text())
+    inventory=json.loads(a.inventory.read_text())
+    face_vertex_table=[face_vertices(x) for x in inventory["face_key_table"]]
     sources=hall.source_records(8)
     assert len(sources)==608
     families={"graph5":G5,"graph12":G12}
@@ -48,7 +59,7 @@ def main():
                     for wi,w in enumerate(pair[key])]
         drop_hist=Counter(); fp_hist=Counter(); nmap=0
         critical_diamonds=sum(len(list(itertools.combinations(r["eligible_reverse_marks"],2)))
-                              for _,r in marked)
+                              for _,r in src)
         for pi,wi,pair,w in candidates:
             d=w["diagram"]
             assert len(d["intersections"])==15
@@ -88,6 +99,14 @@ def main():
                     assert not left and not right
             wid=digest({"family":family,"pair":pi,"witness":wi,
                         "edge":w["fourth_edge"],"supports":w["support_face_indices"]})[:20]
+            target_edges=[data["fixed_first_edge"],pair["second_edge"],pair["third_edge"],w["fourth_edge"]]
+            target_supports=w["support_face_indices"]
+            assert len(target_edges)==len(target_supports)==4
+            assert len({tuple(v) for e in target_edges for v in (e["lower"],e["upper"])})==8
+            for e in target_edges:
+                delta=[e["upper"][t]-e["lower"][t] for t in range(5)]
+                assert sum(abs(x) for x in delta)==1 and sum(x==1 for x in delta)==1
+                assert all(x>=0 for x in delta)
             witness_rows.append({
                 "family":family,"pair_index":pi,"witness_index":wi,"witness_id":wid,
                 "second_edge":pair["second_edge"],"third_edge":pair["third_edge"],
@@ -96,12 +115,42 @@ def main():
                 "relative_deletion_collapses":d["relative_deletion_collapses"],
                 "union":d["union"],"ordered_boundary_footprint_words":d["anchored_boundary_footprint_words"],
                 "root_preserving_graph_isomorphisms":[list(p) for p in perms],
-                "target_boundary_word_internally_consistent":True,
-                "source_interval_to_edge_embedding_authenticated":False
+                "target_boundary_word_internally_consistent":True
             })
-            for si,r in marked:
+            for si,r in src:
                 for perm in perms:
                     nmap+=1
+                    # Source interval i is assigned to geometric support/edge perm[i].
+                    # Its ordered endpoints p<q map to the lower/upper endpoint of
+                    # that positively oriented unit Z^5 edge.
+                    port_to_z5={}
+                    interval_edge_map=[]
+                    for i,(p,q) in enumerate(r["intervals"]):
+                        support_index=perm[i]
+                        edge=target_edges[support_index]
+                        lo=tuple(edge["lower"]); hi=tuple(edge["upper"])
+                        assert p<q
+                        port_to_z5[str(p)]=list(lo); port_to_z5[str(q)]=list(hi)
+                        face_ids=target_supports[support_index]
+                        incident=[fid for fid in face_ids
+                                  if lo in face_vertex_table[fid] and hi in face_vertex_table[fid]]
+                        assert len(incident)==1,(family,pi,wi,si,perm,i,incident)
+                        assert lo in face_vertex_table[incident[0]] and hi in face_vertex_table[incident[0]]
+                        interval_edge_map.append({
+                            "source_interval_index":i,"source_interval":[p,q],
+                            "geometric_support_index":support_index,
+                            "matched_edge":{"lower":list(lo),"upper":list(hi)},
+                            "positive_unit_direction":next(t for t,x in enumerate(hi)
+                                if x-lo[t]==1),
+                            "unique_accepted_rhombus_containing_matched_edge":incident[0]
+                        })
+                    assert set(map(int,port_to_z5))==set(range(1,9))
+                    assert len({tuple(v) for v in port_to_z5.values()})==8
+                    # Recheck the full source overlap graph against the mapped
+                    # geometric intersection table, including nonedges.
+                    source_graph=edges(r["full_overlap_edges"])
+                    for i,j in itertools.combinations(range(4),2):
+                        assert ((i,j) in source_graph)==imap[tuple(sorted((perm[i],perm[j]))) ]["nonempty"]
                     legal={str(m):bool(d["relative_deletion_collapses"][str(perm[m])])
                            for m in r["eligible_reverse_marks"]}
                     assert all(legal.values()),(family,pi,wi,si,perm,legal)
@@ -163,12 +212,18 @@ def main():
                         "family":family,"pair_index":pi,"witness_index":wi,"witness_id":wid,
                         "source_index":si,"source_intervals":r["intervals"],
                         "source_tree_edges":r["tree_edges"],
+                        "source_to_target_port_map":port_to_z5,
+                        "source_interval_to_target_edge_map":interval_edge_map,
+                        "L1_port_map_injective":True,"L2_positive_unit_edges":True,
+                        "L3_endpoints_in_accepted_support_faces":True,
+                        "L4_L5_full_overlap_graph_preserved":True,
                         "eligible_reverse_marks":marks,
                         "source_to_support_graph_isomorphism":list(perm),
                         "mapped_eligible_supports":sorted(perm[m] for m in marks),
                         "all_legal_relative_collapses_pass":True,
                         "parent_maps":parent_maps,"source_diamonds":diamonds,
-                        "source_to_target_edge_embedding_authenticated":False
+                        "finite_source_to_target_port_embedding_verified":True,
+                        "unique_source_to_target_graph_isomorphism_identified":False
                     })
         summaries[family]={
             "source_record_count":len(src),"source_records_with_mark_3":len(marked),
@@ -178,15 +233,16 @@ def main():
             "retained_geometric_witnesses":len(candidates),
             "source_critical_diamond_count":critical_diamonds,
             "witness_source_map_rows":nmap,
+            "finite_L1_L3_port_embeddings_verified":nmap,
             "relative_deletion_histogram":{str(k):v for k,v in sorted(drop_hist.items())},
             "footprint_count_patterns":{str(k):v for k,v in fp_hist.items()},
             "all_legal_source_deletions_pass":True,
             "all_source_parent_tree_edges_have_contractible_geometric_pairs":True
         }
     assert len(witness_rows)==996
-    assert len(map_rows)==47040
+    assert len(map_rows)==58608
     result={
-        "schema":"PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v1",
+        "schema":"PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v2",
         "source_order":8,"source_record_count":len(sources),
         "diagram_artifact_sha256":hashlib.sha256(a.diagrams.read_bytes()).hexdigest(),
         "graph_families":summaries,"witness_rows":witness_rows,"source_parent_map_rows":map_rows,
@@ -198,14 +254,16 @@ def main():
             "ordered_multi_footprint_words_internally_checked":True,
             "all_44_source_parent_tree_diamonds_commute":True,
             "all_44_remaining_pair_table_restrictions_are_nonempty_contractible":True,
-            "source_interval_to_geometric_edge_embedding_authenticated":False,
+            "finite_order8_source_interval_to_geometric_edge_embedding_verified":True,
+            "all_608_source_records_not_claimed":True,
+            "unique_source_to_target_graph_isomorphism_identified":False,
             "source_prescribed_oriented_boundary_word_comparison_complete":False,
             "elementary_collapse_map_commutation_certified":False,
             "full_geometric_restriction_coherence_certified":False,
             "geometric_L8_closed":False
         },
         "nonclaims":[
-            "The 47,040 source/witness/isomorphism rows are exhaustive combinatorial compatibility cross-checks, not authenticated source-record-to-target-edge embeddings. The canonical source exporter supplies port intervals, overlap graphs, parent trees, and reverse marks, but no map from an interval or reverse mark to a geometric matched-edge vector.",
+            "The 58,608 source/witness/isomorphism rows now include explicit finite port-to-Z5 maps: source interval i maps its ordered endpoints to the lower/upper endpoints of target edge perm[i]. L1 injectivity, L2 positive unit-edge realization, L3 accepted-support endpoint membership, and exact L4/L5 overlap-graph preservation are checked for every row. This is a constructed finite embedding for each retained candidate, not a unique source-prescribed map; both root-preserving graph automorphisms remain valid.",
             "The source record contains no prescribed oriented boundary cycle or multi-footprint word. The target words are checked for internal order, reciprocal pair footprints, and meeting relations, but no source-prescribed L7b comparison is available.",
             "The source parent-tree diamonds commute exactly at the abstract tree level, and the stored intersection table restricts coherently to the remaining pair. Relative-collapse booleans do not supply elementary collapse maps or prove those maps commute.",
             "The source exporter specifies pairwise interval overlap only. Higher-order triple and four-way intersections remain target-geometric data without a source-side prescribed comparison.",
