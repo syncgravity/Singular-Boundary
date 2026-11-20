@@ -244,7 +244,7 @@ def main():
             common_count+=1
             ek=(tuple(e4["lower"]),tuple(e4["upper"]))
             g5=[wi for wi,w in enumerate(pair["graph5_witnesses"])
-                if tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]) == ek]
+                if (tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]))==ek]
             # Explicit filtering avoids treating an independent family lift as
             # a same-first-three-support assignment.
             g5=[wi for wi in g5 if case_lookup["graph5"][(pi,wi)]]
