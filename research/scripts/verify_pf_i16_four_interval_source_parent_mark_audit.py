@@ -39,7 +39,8 @@ def summarize(rows):
         "eligible_mark_histogram":dict(sorted(mark_hist.items())),
         "sources_with_mark_3":len(source_ids),
         "other_eligible_marks_when_3_is_eligible":dict(sorted((str(k),v) for k,v in other_marks.items())),
-        "parent_tree_after_delete_3_histogram":dict(sorted((str(k),v) for k,v in parent_tree_hist.items())),\n        "parent_tree_after_delete_3_is_not_unique":len(parent_tree_hist)>1,
+        "parent_tree_after_delete_3_histogram":dict(sorted((str(k),v) for k,v in parent_tree_hist.items())),
+        "parent_tree_after_delete_3_is_not_unique":len(parent_tree_hist)>1,
         "source_rows_with_mark_3":source_ids
     }
 
