@@ -16,6 +16,7 @@ on:
       - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_witness_lifting.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
+      - 'research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py'
       - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
       - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
@@ -201,6 +202,15 @@ jobs:
         with:
           name: pf-i16-four-interval-independent-diagram-lifting
           path: /tmp/pf_i16_four_interval_independent_diagram_lifting.json
+          if-no-files-found: error
+      - name: Audit actual order-eight parent deletion marks
+        run: |
+          python research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py --output /tmp/pf_i16_four_interval_source_parent_mark_audit.json
+      - name: Upload source-parent mark audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-source-parent-mark-audit
+          path: /tmp/pf_i16_four_interval_source_parent_mark_audit.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
