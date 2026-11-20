@@ -230,3 +230,85 @@ A surviving common edge only opens this gate; it does not discharge it. If all s
 - PF-specific accepted-face all-orders confluence / geometric L8 remains **open**.
 - The single authenticated physical regulator, finite physical SU(2) Hamiltonian on it, uniform all-functions SI, and continuum/OS reconstruction remain **open and downstream**.
 - No PR was merged. No Hall demands, flow outcomes, or Hall deficiencies were used in the target/support search.
+
+
+## 12. Completed same-assignment witness-lifting gate and corrected interpretation (2026-11-20 UTC)
+
+### 12.1 Workflow identity and reproducibility
+
+The witness-lifting verifier and the complete existing theorem-index job both completed successfully in two duplicate workflow runs on the **same** branch head:
+
+| Trigger | Run | Job | Head SHA | Result |
+|---|---:|---:|---|---|
+| Push | [44653134866](https://github.com/syncgravity/Singular-Boundary/actions/runs/44653134866) | 136012713719 | `f93b16e6254e6ebdb0a395e6c36602026af4697c` | success |
+| pull_request | [44653144296](https://github.com/syncgravity/Singular-Boundary/actions/runs/44653144296) | 136012744880 | `f93b16e6254e6ebdb0a395e6c36602026af4697c` | success |
+
+The witness-lifting step and artifact upload both passed in each job. The full job also completed the inventory, parent-compatibility, fixed-two-edge search, second-edge frontier, second-edge replacement, theorem-source/hash, theorem-catalog, cumulant/temporal verifier, and Proof Atlas checks.
+
+Witness-lifting artifacts:
+
+- Push artifact ID: `14595027397`; GitHub ZIP digest `sha256:eff10dcb53187e4d834787b6ab90088b6bed4681a019b8d8c676d1a97ca20211`.
+- PR artifact ID: `14594331899`; GitHub ZIP digest `sha256:0b007665063ddaedddd74fb4d51de441eecbb430fd72abbba3ff6088e9a74297`.
+- Both contain `pf_i16_four_interval_witness_lifting.json`, 38,922 bytes, byte-identical SHA-256 `061e5c09aade70b001a6164e50a03c8ff440eab21fbeadba635d99fc5d232c73`.
+- The artifact records the replacement-search JSON input hash as `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c31babbcf5425b2f`, matching the previously audited second-edge replacement payload.
+
+### 12.2 Exact result
+
+The verifier reopened all 52 second/third pairs that had survived the aggregated replacement search. It independently recomputed 7,396 qualifying first-three support assignments in total across those per-pair searches. For every pair, it then required one *identical exact first-three face-support assignment* to admit fourth supports for both the graph-5 and graph-12 attachment patterns. The fourth support on each side could differ, but each had to collapse to its own distinguished matched edge and satisfy the required pairwise intersection/nonintersection, point-collapse, and two-sided open-arc tests.
+
+The output is:
+
+- Aggregated surviving second/third pairs reopened: 52.
+- Per-pair qualifying first-three support assignments recomputed (sum): 7,396.
+- Pairs with a same-first-three-assignment survivor: **0**.
+- Same-triple common-fourth-edge witness count: **0**.
+- Full pairwise support-witness tuple count: **0**.
+
+Every one of the 52 pairs had at least one aggregated common fourth-edge candidate before this stricter lifting test. The failure is therefore not a failure to reproduce the previous 52-pair frontier; it is the failure to find a common fourth-edge support on both graph patterns for one identical first-three support assignment.
+
+### 12.3 Critical mathematical qualification: this is not an L6c no-go result
+
+The zero result must be interpreted more narrowly than a failure of the adopted L6c condition.
+
+The verifier imposes identity of the first-three *face-index support assignment* across the graph-5 and graph-12 source families. That is a stronger requirement than the adopted L6c equivalence. The finite alternative-triple L6c/L7b audit explicitly states that L6c forgets shared-cell identity and dimension while retaining the labelled incidence diagram; it records 32 vertex-to-edge footprint dimension changes that pass L6c and L7b. Thus literal equality of support face indices is not an invariant required by the established L6c convention.
+
+Consequently, the new result proves only this bounded negative statement:
+
+> For the fixed first matched edge, the frozen Ngrid=12 PF-I11 target inventory, supports of one to three rhombi, and the 52 aggregated second/third pairs, there is no common fourth-edge realization using the *same exact first-three face-support assignment* on both graph-5 and graph-12 attachment patterns, under the verifier's fourth-support collapse and pairwise-footprint filters.
+
+It does **not** prove that no L6c-compatible four-interval support-diagram isomorphism exists. Different first-three support realizations on the two source families may still be equivalent after forgetting cell identity/dimension, and the verifier does not test that possibility. Nor does it rule out other first-edge choices, larger support families, or a different geometric realization.
+
+### 12.4 What the artifact did not establish
+
+Because no same-assignment witness survived, the code never entered the branch that exports a four-support family diagram. Accordingly, this artifact contains **no computed four-support intersection diagrams** and no four-support deletion-collapse certificates. It does not establish:
+
+- the six pairwise, four triple, and one four-way intersection data for any accepted four-support witness;
+- an explicit labelled incidence-diagram isomorphism between the two parent/deletion paths;
+- the complete ordered multi-footprint L7b boundary-word comparison;
+- restriction coherence under further source deletions; or
+- PF-specific geometric L8.
+
+The CI success means the verifier ran to completion and its assertions passed. It does not mean the mathematical witness-existence condition passed.
+
+### 12.5 Corrected next proof operation
+
+Do **not** respond to this zero result by weakening L6c, and do not report it as a four-interval L6c obstruction. Replace the literal same-face-index test with a diagram-level lifting test that respects the adopted equivalence:
+
+1. For each of the 52 (second, third) pairs and each common fourth matched edge, enumerate graph-5 and graph-12 four-support realizations independently. The first-three supports may differ between the two families.
+2. Require every individual support to collapse to its distinguished matched edge; impose the exact pairwise overlap graph, point-collapse, and anchored open-arc conditions.
+3. Compute all 15 labelled intersections (six pairs, four triples, four-way, with empty cases retained), the union, and the relevant relative-collapse data for each family.
+4. Compare the resulting labelled incidence diagrams under the precise L6c equivalence: preserve interval labels, intersection incidence and collapse structure, but do not require shared-cell identity or dimension where the adopted definition forgets them.
+5. Compare the complete oriented boundary cycles and ordered multi-footprint words under L7b, anchored at each directed matched edge. This must preserve cyclic order and incidence among multiple footprints, not merely individual open-arc booleans.
+6. Only after a diagram-level pair survives should its two deletion paths be checked against the actual source-parent records and tested for restriction coherence under further deletions.
+
+This is the next finite diagnostic toward the local support-diamond hypothesis of the conditional all-orders confluence theorem. A positive finite result would still not prove all-orders naturality; a bounded zero result would still need a proof that the tested family exhausts the relevant local critical-pair class.
+
+### 12.6 Status ledger update
+
+- Same-assignment witness-lifting verifier: **completed reproducibly; zero survivors**.
+- Same-face-index four-support ansatz for the fixed first-edge frontier: **bounded obstruction**.
+- L6c-compatible four-support diagram-level lifting: **open; not tested by this verifier**.
+- Full four-support L6c/L7b certification: **open**.
+- Restriction coherence and PF-specific all-orders accepted-face confluence / geometric L8: **open**.
+- Authenticated physical regulator, physical SU(2) Hamiltonian on it, uniform all-functions SI, continuum/OS reconstruction: **open and downstream**.
+- PR #119 remains open, draft, and unmerged; PR #118 remains open and unmerged. No merge was performed.
