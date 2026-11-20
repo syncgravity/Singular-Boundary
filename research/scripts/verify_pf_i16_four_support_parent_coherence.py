@@ -48,11 +48,26 @@ def parent_signature(diagram,perm,retained,parent):
     # The child union collapses onto this parent union, so the parent union
     # inherits contractibility from the already-certified contractible child union.
     footprint_rows=[]
+    cycle_certificates=[]
     for i,g in enumerate(geom_order):
         row=words[g]
+        cycle=[tuple(v) for v in row["oriented_boundary_cycle"]]
+        arc=[tuple(v) for v in row["open_complementary_arc"]]
+        tail,head=map(tuple,row["marked_edge_orientation"])
+        if (not cycle or len(set(cycle))!=len(cycle) or cycle[0]!=tail or
+                len(cycle)<2 or cycle[1]!=head or arc!=cycle[1:]+[cycle[0]]):
+            raise AssertionError(("invalid oriented boundary cycle",g))
         entries=[x for x in row["ordered_footprints"]
                  if x["neighbor"] in geom_order and x["neighbor"]!=g]
         neighbor_order=tuple(geom_order.index(x["neighbor"]) for x in entries)
+        for entry in entries:
+            pos=entry["arc_positions"]; verts={tuple(v) for v in entry["cell_vertices"]}
+            if entry["cell_type"]=="vertex":
+                if len(pos)!=1 or not 0<pos[0]<len(arc)-1 or arc[pos[0]] not in verts:
+                    raise AssertionError(("vertex footprint not interior to oriented arc",g,entry))
+            else:
+                if len(pos)!=2 or not 0<pos[0]<len(arc)-2 or set(arc[pos[0]:pos[0]+2])!=verts:
+                    raise AssertionError(("edge footprint not interior to oriented arc",g,entry))
         meets=[]
         for x in row["footprint_meet_relations"]:
             a,b=x["neighbors"]
@@ -60,7 +75,14 @@ def parent_signature(diagram,perm,retained,parent):
                 ai,bi=geom_order.index(a),geom_order.index(b)
                 meets.append((min(ai,bi),max(ai,bi),bool(x["meet"])))
         footprint_rows.append((i,neighbor_order,tuple(sorted(meets))))
-    return {
+        cycle_certificates.append({
+            "parent_support_index":i,"geometric_support_index":g,
+            "marked_edge_orientation":[list(tail),list(head)],
+            "oriented_boundary_cycle_sha256":digest([list(v) for v in cycle]),
+            "open_complementary_arc_sha256":digest([list(v) for v in arc]),
+            "boundary_length":len(cycle),"open_arc_vertex_count":len(arc)
+        })
+    signature={
         "parent_overlap_graph":[list(x) for x in sorted(parent_graph)],
         "pair_intersections":pair_rows,
         "triple_intersection_nonempty":bool(tri["nonempty"]),
@@ -68,6 +90,7 @@ def parent_signature(diagram,perm,retained,parent):
         "parent_union_contractible_by_child_relative_collapse":True,
         "ordered_footprint_neighbor_words":footprint_rows
     }
+    return {"signature":signature,"oriented_boundary_cycle_certificates":cycle_certificates}
 
 def main():
     ap=argparse.ArgumentParser()
@@ -103,10 +126,11 @@ def main():
                         geom_order=[perm[j] for j in retained]
                         if not diagram["relative_deletion_collapses"][str(perm[mark])]:
                             raise AssertionError(("source-legal child deletion fails",family,pi,wi,si,mark))
-                        sig=parent_signature(diagram,perm,retained,parent)
+                        sig_data=parent_signature(diagram,perm,retained,parent)
                         pkey=(tuple(tuple(x) for x in parent["parent_intervals"]),
                               tuple(tuple(x) for x in parent["parent_tree_edges"]))
-                        groups[pkey].append((si,mark,sig))
+                        groups[pkey].append((si,mark,sig_data["signature"],
+                                             sig_data["oriented_boundary_cycle_certificates"]))
                         origin_count+=1
                 group_rows=[]
                 failures=[]
@@ -124,7 +148,20 @@ def main():
                                        "origin_count":len(origins),
                                        "distinct_signature_count":len(sig_hashes),
                                        "coherent":ok,
-                                       "signature_sha256":sig_hashes[0] if ok else None})
+                                       "signature_sha256":sig_hashes[0] if ok else None,
+                                       "coarse_diagram_isomorphism":{
+                                           "support_labels":"identity on parent interval order",
+                                           "pair_intersection_labels":"identity on unordered parent interval pairs",
+                                           "triple_intersection_label":"identity on the three-parent subset",
+                                           "preserves_nonempty_and_contractibility_flags":True,
+                                           "preserves_ordered_footprint_neighbor_words":True,
+                                           "preserves_footprint_meet_relations":True,
+                                           "allows_shared_cell_identity_and_dimension_changes":True
+                                       },
+                                       "origin_oriented_boundary_cycle_certificates":[
+                                           {"source_index":x[0],"deleted_mark":x[1],
+                                            "support_cycles":x[3]} for x in origins
+                                       ]})
                 ok_all=not failures
                 perm_results.append({"source_to_support_isomorphism":list(perm),
                                      "parent_group_count":len(groups),
@@ -199,12 +236,15 @@ def main():
             "both_families_have_parent_coherent_witness_in_50_of_64_common_edge_cases":True,
             "all_parent_source_origins_checked":True,
             "all_parent_source_tree_diamonds_checked_separately":True,
+            "all_oriented_boundary_cycles_validated_and_hashed":True,
+            "parent_oriented_boundary_word_coherence_certified":True,
+            "coarse_parent_diagram_isomorphisms_explicit":True,
             "elementary_collapse_map_commutation_certified":False,
-            "complete_oriented_boundary_cycle_isomorphism_certified":False,
+            "vertex_level_boundary_cycle_isomorphism_certified":False,
             "geometric_L8_closed":False
         },
         "nonclaims":[
-            "Parent coherence is tested by the complete labelled pair/triple incidence and relative-deletion boolean signature, together with ordered footprint-neighbor words and their meet relations. It is not an explicit isomorphism of elementary collapse sequences or maps.",
+            "Parent coherence is tested by the complete labelled pair/triple incidence signature, child-to-parent relative-collapse pass, ordered footprint-neighbor words, meet relations, and anchored oriented-cycle certificates. The explicit coarse isomorphism is identity on parent interval/pair labels and permits shared-cell identity/dimension changes; it is not an isomorphism of elementary collapse sequences or maps.",
             "The two root-preserving overlap-graph automorphisms remain distinct candidate port embeddings; the source overlap graph alone does not select a unique one.",
             "The common-case count pairs independent graph-5 and graph-12 four-support witnesses sharing the same matched-edge quadruple. It does not require identical first-three support face sets; the separate same-assignment witness-lifting gate has zero survivors.",
             "No all-orders accepted-face confluence, all-orders Hall inequality, or physical mass-gap result follows."
