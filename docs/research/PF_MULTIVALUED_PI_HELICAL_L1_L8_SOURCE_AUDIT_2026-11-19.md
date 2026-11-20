@@ -183,3 +183,44 @@ Other unresolved source matters:
 - Derive or explicitly abandon a source-authenticated map from reverse-mark data to Z5 displacement before assigning helical phases.
 
 **No all-orders Hall theorem, all-orders accepted-face lift, geometric L8, physical 3D helical action, or continuum Yang–Mills gap is closed by this audit.**
+
+
+## 8. Clean-checkout replay completed (2026-11-20)
+
+A dedicated GitHub Actions workflow was added to the incidence-lift research branch and executed from a detached clean checkout. The first attempt exposed a Python TypeError in the L6c verifier: a mutable set-valued overlap graph was used as a dictionary key. This was a verifier defect, not a mathematical counterexample. The cache key was corrected to frozenset(graph), and the complete chain then passed.
+
+- Workflow: https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877
+- Final checkout SHA: 3ed3706367e24bd943236d9920699370dce13366
+- Workflow conclusion: **success**
+- Python: 3.12.16
+- Pinned dependencies: numpy 2.2.6; scipy 1.15.3
+- Artifact ID: 14604001410
+- Artifact ZIP SHA-256: 94b24caa7c17f73366c4b400bfe0b486642bd942fa0392e22e80586aaff992de
+- Artifact contains four JSON replay reports, checkout/runtime record, pinned environment, source-file SHA manifest and output SHA manifest.
+
+### Exact replay results
+
+**L1–L3:** all 24 source records (2 at n=4, 22 at n=6) pass L1, L2 and L3 in each of the two separate targets:
+- PF-I16 source replay: V=1,550, E=3,017, F=1,468.
+- PF-I11 completed-window core: V=1,432, E=2,761, F=1,330; frozen hashes pass.
+
+**L4–L5:** all 24 source records pass in each target. The two targets select the same support assignments over the 1,330 common accepted faces. For n=6 the verifier checks 130 support-face occurrences per target. Across the source family the typed witness totals remain 40 shared-face, 22 shared-edge and 2 shared-vertex witnesses, with no incidence for non-overlapping interval pairs.
+
+**L6c:** in each target, 30/30 eligible n=6→4 marked projections pass relative deletion collapse and coarse diagram comparison; both parent-coherence groups pass. The recorded collapse certificates comprise 58 face-edge and 110 edge-vertex pairs, maximum seven pairs per projection. Retained intersections comprise 14 shared-edge and 16 shared-vertex cases.
+
+**Alternative-triple L6c/L7b:** in each target, 30/30 marked projections pass; 30/30 L6c child-parent diagram comparisons; 30/30 relative collapses; 2/2 L6c parent coherence groups; 60/60 anchored cyclic-footprint comparisons; zero L7b cyclic-placement mismatches and zero projection failures. All 60 category comparisons are open-complementary-arc to open-complementary-arc. Footprint-shape transitions comprise 32 vertex-to-edge and 28 edge-to-edge. The two L7b parent boundary-word coherence groups each collect 15 origins.
+
+The output confirms that the frozen alternative-triple support selection uses Hall source records only for projection indexing and reads no Hall demands, loads, deficiencies or flow outcomes.
+
+### Source hashes at the successful checkout
+
+- L1–L3 verifier: ef6eea80340b6c5693a378691357e1f19377b29e9f28e28c37a81578adc9540f
+- L4–L5 verifier: 125a277dd3d8fc5f09ffbcec5e44d47057e4b61be0b0e2d6cfab3e28dd2e28de
+- L6c verifier: eba3b5a3c42dfa8856a3594e88ab8025861e8bae9ff734a94afd6c73e5964f02
+- Alternative-triple L6c/L7b verifier: 18eadcbbed691cc13b347142f76e6b2eff85e8b58c9933b452e510e5a4f408be
+- Hall source exporter: 2d16e703749f1797d2a417581184f33213e47cd212cb1d734539b2f959411bb6
+- PF-I9 source bridge dependency: 9f0b8e5bcadfdbb0d1efe3ae97abb132c3747a3bd63347a39ce6be82c179263b
+
+### Interpretation boundary after replay
+
+The finite n=4,6 L1–L7 candidate is now **clean-checkout reproducible** for the two recorded Ngrid=7 target constructions. This upgrades provenance from research-session-only calculations to reproducible finite computation. It does not make the finite results all-orders theorems; it does not resolve the PF-I16 private-source byte-identity limitation; and it does not test multi-footprint ordering on one boundary, order-eight support-to-source matching, or G-L8 geometric confluence. The first failed run and its mutable-set bug are retained in workflow history rather than erased.
