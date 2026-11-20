@@ -180,7 +180,7 @@ There are 996 retained geometric witnesses (514 graph 5 and 482 graph 12), 60 re
 
 For every legal source deletion, the verifier also restricts the child port map to the retained ports, applies the source's exact port-order compression, and compares it with the independently reconstructed parent port map. The local replay checks **98,192 parent port-map restrictions**, all equal. This is an exact finite L7a-style naturality check for the constructed embeddings.
 
-Scope remains limited to the graph-5 and graph-12 order-eight source families (60 of the 608 order-eight source records). It is not an all-source or all-orders L1–L5 theorem. The updated script and full CI artifact are being checked on PR #119 head `fe5fda277e6ece4efbb653f05c908a8d99b702f7`; the earlier corrected source-parent-mark audit workflow 44707308083 completed successfully.
+Scope remains limited to the graph-5 and graph-12 order-eight source families (60 of the 608 order-eight source records). It is not an all-source or all-orders L1–L5 theorem. The updated scripts are included in the current PR #119 head; the full cycle/port-map/parent/collapse CI replay is queued behind the expensive replacement search. The earlier corrected source-parent-mark audit workflow 44707308083 completed successfully.
 
 ## 11. Addendum: source-parent diagram coherence and oriented boundary cycles
 
