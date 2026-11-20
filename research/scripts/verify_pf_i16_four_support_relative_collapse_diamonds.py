@@ -150,14 +150,16 @@ def main():
             supports=[set(s) for s in w["support_face_indices"]]
             full=cells(supports,face_vertices_table,face_edges_table)
             diagram=w["diagram"]
-            # Cross-check the certificate generator against the original four
-            # single-deletion booleans for all 3,984 retained witnesses.
+            # Export all four deterministic single-deletion certificates,
+            # including the root deletion when it is source-ineligible.
+            single_deletion_certificates={}
             for i in range(4):
                 target=cells([supports[j] for j in range(4) if j!=i],
                              face_vertices_table,face_edges_table)
                 cert=collapse_certificate(full,target,face_vertices_table,face_edges_table)
                 if cert["success"]!=bool(diagram["relative_deletion_collapses"][str(i)]):
                     raise AssertionError(("relative-collapse verifier disagreement",family,pi,wi,i))
+                single_deletion_certificates[str(i)]=cert
             perm_results=[]
             for perm in isos(G):
                 diamonds=[]
@@ -169,9 +171,9 @@ def main():
                                    face_vertices_table,face_edges_table)
                     grand=cells([supports[i] for i in range(4) if i not in (gm,gn)],
                                 face_vertices_table,face_edges_table)
-                    c_m=collapse_certificate(full,parent_m,face_vertices_table,face_edges_table)
+                    c_m=single_deletion_certificates[str(gm)]
                     c_n_after_m=collapse_certificate(parent_m,grand,face_vertices_table,face_edges_table)
-                    c_n=collapse_certificate(full,parent_n,face_vertices_table,face_edges_table)
+                    c_n=single_deletion_certificates[str(gn)]
                     c_m_after_n=collapse_certificate(parent_n,grand,face_vertices_table,face_edges_table)
                     certs=[c_m,c_n_after_m,c_n,c_m_after_n]
                     if not all(x["success"] and not any(x["remainder"].values()) for x in certs):
@@ -221,6 +223,7 @@ def main():
             witness_rows.append({"pair_index":pi,"witness_index":wi,"witness_id":wid,
                                  "second_edge":pair["second_edge"],"third_edge":pair["third_edge"],
                                  "fourth_edge":w["fourth_edge"],
+                                 "single_deletion_certificates":single_deletion_certificates,
                                  "all_critical_pairs_same_elementary_pair_set":verdicts[0],
                                  "permutation_results":perm_results})
         summaries[family]={
