@@ -84,7 +84,7 @@ No Hall demands, loads, deficiencies, matching outcomes, or flows enter these ta
 
 The workflow already runs the frontier and replacement scripts in the PR-triggered `index-check` job and uploads their artifacts. The previous successful run `44576452636` predates the second-edge replacement stages and therefore is **not** evidence that these new stages passed.
 
-This record is paired with a workflow-trigger update so that pushes to this research branch which change either second-edge verifier also trigger the full `index-check` job. The commit changing this workflow is intended to trigger a fresh run. The fresh run, not the earlier run, is the pass/fail gate for the replacement search.
+This record is paired with a workflow-trigger update so that pushes to this research branch which change either second-edge verifier also trigger the full `index-check` job. The commit changing this workflow is intended to trigger a fresh run. The fresh runs, not the earlier run, are the pass/fail gate for the replacement search. As of the latest inspection, the push and PR runs are both in progress at the parent-compatibility stage; no second-edge outcome is yet available.
 
 Expected artifacts from the fresh run:
 - `pf-i16-four-interval-second-edge-frontier`
@@ -112,7 +112,7 @@ This continuation:
 - Retrieved the complete support inventory artifact from run `44576452636` and verified its unpacked JSON structure, dimensions, target hash, support-option count, file size and SHA-256 (Section 4).
 - Inspected the frontier and replacement verifier source. The replacement verifier rechecks the frontier's candidate edge digest and every first-two support-pair count before enumerating third-edge support assignments.
 - Established the CI trigger path so the next branch push runs the second-edge replacement gate.
-- No merge was performed. The fresh workflow result remains pending until GitHub Actions reports completion.
+- No merge was performed. Fresh workflow runs are active: push run `44644620629` and pull-request run `44644613219`, both on head commit `e374ff4299f175bb5d946709a578b7fd9649c922`. In both runs, the full inventory enumeration has passed. The parent-compatibility verifier is still running; the second-edge frontier and replacement stages have not yet started. The final result remains pending until one run completes and its output artifacts are inspected.
 
 ## 9. Status ledger
 
