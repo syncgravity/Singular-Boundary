@@ -121,10 +121,16 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--inventory",type=Path,required=True)
     ap.add_argument("--diagrams",type=Path,required=True)
+    ap.add_argument("--parent-coherence",type=Path,required=True)
     ap.add_argument("--output",type=Path,required=True)
     a=ap.parse_args()
     inv=json.loads(a.inventory.read_text())
     data=json.loads(a.diagrams.read_text())
+    parent_coherence=json.loads(a.parent_coherence.read_text())
+    parent_lookup={}
+    for family,summary in parent_coherence["families"].items():
+        for row in summary["witness_results"]:
+            parent_lookup[(family,row["pair_index"],row["witness_index"])]=row["parent_coherent_under_both_root_preserving_maps"]
     face_vertices_table=[face_vertices(x) for x in inv["face_key_table"]]
     face_edges_table=[edge_vertices(x) for x in face_vertices_table]
     sources=hall.source_records(8)
@@ -238,30 +244,54 @@ def main():
             "witness_results":witness_rows
         }
         case_lookup[family]={
-            (pi,wi):row["all_critical_pairs_same_elementary_pair_set"]
-            for row in witness_rows for pi,wi in [(row["pair_index"],row["witness_index"])]
+            (row["pair_index"],row["witness_index"]):{
+                "collapse_pair_coherent":row["all_critical_pairs_same_elementary_pair_set"],
+                "parent_diagram_coherent":parent_lookup[(family,row["pair_index"],row["witness_index"])]
+            } for row in witness_rows
         }
-    common_cases=[]; common_count=0; coherent_count=0
+    common_cases=[]; common_count=0; joint_count=0; collapse_only_count=0; parent_only_count=0
     for pi,pair in enumerate(data["per_pair"]):
         for e4 in pair["common_fourth_edges_with_independent_full_parent4_lifts"]:
             common_count+=1
             ek=(tuple(e4["lower"]),tuple(e4["upper"]))
-            g5=[wi for wi,w in enumerate(pair["graph5_witnesses"])
-                if (tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]))==ek]
-            # Explicit filtering avoids treating an independent family lift as
-            # a same-first-three-support assignment.
-            g5=[wi for wi in g5 if case_lookup["graph5"][(pi,wi)]]
-            g12=[wi for wi,w in enumerate(pair["graph12_witnesses"])
-                 if (tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]))==ek
-                 and case_lookup["graph12"][(pi,wi)]]
-            ok=bool(g5 and g12)
-            coherent_count+=int(ok)
+            g5_all=[wi for wi,w in enumerate(pair["graph5_witnesses"])
+                    if (tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]))==ek]
+            g12_all=[wi for wi,w in enumerate(pair["graph12_witnesses"])
+                     if (tuple(w["fourth_edge"]["lower"]),tuple(w["fourth_edge"]["upper"]))==ek]
+            g5_collapse=[wi for wi in g5_all if case_lookup["graph5"][(pi,wi)]["collapse_pair_coherent"]]
+            g12_collapse=[wi for wi in g12_all if case_lookup["graph12"][(pi,wi)]["collapse_pair_coherent"]]
+            g5_parent=[wi for wi in g5_all if case_lookup["graph5"][(pi,wi)]["parent_diagram_coherent"]]
+            g12_parent=[wi for wi in g12_all if case_lookup["graph12"][(pi,wi)]["parent_diagram_coherent"]]
+            g5_joint=[wi for wi in g5_all if all(case_lookup["graph5"][(pi,wi)].values())]
+            g12_joint=[wi for wi in g12_all if all(case_lookup["graph12"][(pi,wi)].values())]
+            collapse_ok=bool(g5_collapse and g12_collapse)
+            parent_ok=bool(g5_parent and g12_parent)
+            joint_ok=bool(g5_joint and g12_joint)
+            collapse_only_count+=int(collapse_ok)
+            parent_only_count+=int(parent_ok)
+            joint_count+=int(joint_ok)
             common_cases.append({"pair_index":pi,"second_edge":pair["second_edge"],
                 "third_edge":pair["third_edge"],"fourth_edge":e4,
-                "graph5_collapse_coherent_witness_indices":g5,
-                "graph12_collapse_coherent_witness_indices":g12,
-                "both_families_have_collapse_coherent_witness":ok})
-    assert common_count==64 and coherent_count==28
+                "graph5_collapse_coherent_witness_indices":g5_collapse,
+                "graph12_collapse_coherent_witness_indices":g12_collapse,
+                "graph5_parent_coherent_witness_indices":g5_parent,
+                "graph12_parent_coherent_witness_indices":g12_parent,
+                "graph5_joint_coherent_witness_indices":g5_joint,
+                "graph12_joint_coherent_witness_indices":g12_joint,
+                "both_families_collapse_pair_coherent":collapse_ok,
+                "both_families_parent_diagram_coherent":parent_ok,
+                "both_families_joint_coherent":joint_ok})
+    assert common_count==64 and collapse_only_count==28 and parent_only_count==50 and joint_count==18
+    joint_rows=[x for x in common_cases if x["both_families_joint_coherent"]]
+    joint_fourth_edges=Counter((tuple(x["fourth_edge"]["lower"]),tuple(x["fourth_edge"]["upper"])) for x in joint_rows)
+    assert len(joint_fourth_edges)==1
+    joint_edge,joint_edge_frequency=next(iter(joint_fourth_edges.items()))
+    assert joint_edge_frequency==18
+    joint_second_third_frequency=Counter()
+    for row in joint_rows:
+        joint_second_third_frequency[edge_key(row["second_edge"])]+=1
+        joint_second_third_frequency[edge_key(row["third_edge"])]+=1
+    assert len({x["pair_index"] for x in joint_rows})==18
     assert summaries["graph5"]["witnesses_with_all_critical_pairs_same_pair_set"]==312
     assert summaries["graph12"]["witnesses_with_all_critical_pairs_same_pair_set"]==102
     result={
@@ -269,10 +299,20 @@ def main():
         "scope":"Ngrid=12 finite graph-5/graph-12 four-support witnesses; all source critical deletion-mark pairs; deterministic elementary relative-collapse certificates",
         "inventory_target":inv["target"],
         "diagram_artifact_sha256":hashlib.sha256(a.diagrams.read_bytes()).hexdigest(),
+        "parent_coherence_artifact_sha256":hashlib.sha256(a.parent_coherence.read_bytes()).hexdigest(),
         "families":summaries,
         "common_fourth_edge_case_count":common_count,
-        "common_cases_with_both_families_collapse_pair_coherent":coherent_count,
-        "common_cases_not_passing_strict_pair_set_coherence":common_count-coherent_count,
+        "common_cases_with_both_families_collapse_pair_coherent":collapse_only_count,
+        "common_cases_with_both_families_parent_diagram_coherent":parent_only_count,
+        "common_cases_with_both_families_joint_coherent":joint_count,
+        "common_cases_not_passing_joint_coherence":common_count-joint_count,
+        "joint_coherent_distinct_second_third_pairs":len({x["pair_index"] for x in joint_rows}),
+        "joint_coherent_fourth_edge":{"lower":list(joint_edge[0]),"upper":list(joint_edge[1])},
+        "joint_coherent_fourth_edge_frequency":joint_edge_frequency,
+        "joint_coherent_variable_second_third_edge_frequency":[
+            {"edge":{"lower":list(e[0]),"upper":list(e[1])},"count":n}
+            for e,n in sorted(joint_second_third_frequency.items())
+        ],
         "common_case_results":common_cases,
         "conclusions":{
             "all_3984_single_deletion_certificates_match_original_booleans":True,
@@ -282,6 +322,8 @@ def main():
             "graph5_all_pair_set_coherent_witnesses":312,
             "graph12_all_pair_set_coherent_witnesses":102,
             "both_families_have_strict_pair_set_coherent_witness_in_28_of_64_common_cases":True,
+            "both_families_pass_parent_and_collapse_coherence_in_18_of_64_common_cases":True,
+            "all_18_joint_cases_share_one_fourth_matched_edge":True,
             "different_pair_set_cases_are_not_no_go_results":True,
             "geometric_L8_closed":False
         },
