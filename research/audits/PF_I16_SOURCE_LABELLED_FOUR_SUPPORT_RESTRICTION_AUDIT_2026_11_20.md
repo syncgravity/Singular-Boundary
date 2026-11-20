@@ -155,3 +155,89 @@ Artifact provenance:
 The restriction-audit payload independently records the exact diagram JSON SHA above and contains 996 witness records and 47,040 source-parent map rows. The source-parent artifact independently confirms the three-tree histogram, root index 0 in all source records, and that no actual co-deletion with interval 3 requires deleting interval 0.
 
 The CI pass includes the repository theorem-index check, generated theorem catalog check, and the branch's other research verifiers. A passing workflow establishes reproducibility of the recorded finite computations and repository integrity checks; it does not turn their mathematical scope limitations into theorem proofs.
+
+
+## 10. Addendum: explicit finite port-to-Z5 embeddings and L7a restriction
+
+The initial v1 record above correctly noted that the source exporter did not itself prescribe a unique source-interval-to-geometric-edge map. That gap is now narrowed by an explicit finite construction.
+
+For each retained four-support witness, each of the 60 order-eight source records in graph 5 or graph 12, and each of the two root-preserving graph isomorphisms, define
+
+[
+(p_i,q_i)\longmapsto (\operatorname{lower}(E_{\pi(i)}),\operatorname{upper}(E_{\pi(i)})),
+]
+
+where the four target edges are the fixed first edge, the selected second and third edges, and the selected fourth edge. The map sends the smaller source port to the lower endpoint and the larger port to the upper endpoint.
+
+The revised verifier checks:
+
+- all eight port images are distinct (L1);
+- each interval is realized by a positively oriented unit edge of \(\mathbb Z^5\) (L2);
+- the edge lies in exactly one accepted rhombus of its selected support, so both endpoints are accepted target vertices (L3);
+- the source overlap graph, including all nonedges, equals the labelled geometric support-intersection graph under \(\pi\) (L4–L5).
+
+There are 996 retained geometric witnesses (514 graph 5 and 482 graph 12), 60 relevant source records, and two root-preserving graph maps, giving **58,608 explicit source/witness/map embeddings**. Both graph maps pass; the overlap graph does not select a unique map.
+
+For every legal source deletion, the verifier also restricts the child port map to the retained ports, applies the source's exact port-order compression, and compares it with the independently reconstructed parent port map. The local replay checks **98,192 parent port-map restrictions**, all equal. This is an exact finite L7a-style naturality check for the constructed embeddings.
+
+Scope remains limited to the graph-5 and graph-12 order-eight source families (60 of the 608 order-eight source records). It is not an all-source or all-orders L1–L5 theorem. The updated script and full CI artifact are being checked on PR #119 head `fe5fda277e6ece4efbb653f05c908a8d99b702f7`; the earlier corrected source-parent-mark audit workflow 44707308083 completed successfully.
+
+## 11. Addendum: source-parent diagram coherence and oriented boundary cycles
+
+The independent diagram exporter now retains, for every support, the complete oriented boundary cycle, its directed matched edge, the open complementary arc from head to tail, the ordered footprint cells, and their meet relations. The revised source-labelled verifier checks that the cycle is simple, starts with the directed matched edge, and that every footprint lies strictly inside the anchored open arc.
+
+A separate parent-coherence verifier groups every source parent by its exact compressed interval matching and parent tree. For every retained witness and both root-preserving graph maps, it compares all source origins of each parent using:
+
+- the complete labelled pair/triple intersection signature;
+- nonempty and point-contractible pair/triple intersections;
+- contractibility of the parent union inherited from the child-to-parent relative collapse;
+- ordered footprint-neighbor words and pairwise footprint-meeting relations;
+- anchored oriented-cycle certificates for each retained support.
+
+There are eight exact parent keys per witness, with 36 parent origins per graph-5 witness and 72 per graph-12 witness. The local replay gives:
+
+| Family | Parent-coherent witnesses | Parent-incoherent witnesses |
+|---|---:|---:|
+| Graph 5 | 514 / 514 | 0 |
+| Graph 12 | 240 / 482 | 242 / 482 |
+
+Among the 64 common pair/fourth-edge cases, 50 have at least one parent-coherent witness in each graph family. This is a coarse L6c parent-diagram and ordered-footprint-word coherence test. It is not a vertex-by-vertex boundary-cycle isomorphism and does not compare elementary collapse maps.
+
+## 12. Addendum: elementary relative-collapse certificates and the joint candidate anchor
+
+A new verifier reconstructs deterministic elementary relative-collapse sequences from the accepted-face inventory. It exports the actual free face-edge and free edge-vertex pairs, not only booleans. It first cross-checks all four single-support deletion certificates against the original independent-diagram booleans for all 996 retained witnesses.
+
+For every source critical deletion pair and both root-preserving graph maps, it then computes both two-step paths to the same grandparent support union:
+
+[
+(m\text{ then }n): U\searrow U\setminus m\searrow U\setminus\{m,n\},
+\qquad
+(n\text{ then }m): U\searrow U\setminus n\searrow U\setminus\{m,n\}.
+]
+
+The local replay gives **5,012 two-path tests**. Every path succeeds and both orders reach the same grandparent union. In 3,224 tests the two paths use the same elementary free-pair set; in every such case, the orderings differ only by swaps of disjoint elementary pairs. In 1,788 tests the deterministic paths use different free-pair sets. Those still succeed to the same target, but the pairings are not certified as commuting; this is not a no-go result.
+
+The candidate filters combine as follows:
+
+| Joint filter across 64 common pair/fourth-edge cases | Cases |
+|---|---:|
+| Parent-diagram and ordered-footprint coherence in both families | 50 |
+| Same elementary free-pair set for every critical pair in both families | 28 |
+| **Both conditions simultaneously** | **18** |
+
+The 18 joint survivors span 18 distinct second/third-edge pairs and all share the same fourth matched edge:
+
+[
+(-7,-2,6,6,-2)\longrightarrow(-7,-2,6,6,-1).
+]
+
+The first matched edge is the frozen inventory edge. The 18 second/third pairs draw from a nine-edge local set. This is a sharply localized candidate anchor, not a theorem. The graph-5 and graph-12 witnesses remain independent support realizations; the same-assignment first-three-support witness-lifting gate still has zero survivors.
+
+## 13. Remaining proof obligations
+
+1. Complete the CI replay of the revised source-labelled, parent-coherence, full-cycle, and elementary-collapse verifiers on PR #119 head `fe5fda277e6ece4efbb653f05c908a8d99b702f7`.
+2. Turn the 18-case common fourth-edge pattern into a source-independent geometric construction rule, or explain why it is only a finite coincidence.
+3. For the 1,788 different-pair-set collapse tests, search for common alternative collapse matchings or a natural equivalence of the induced collapse maps. Do not call them obstructions without such a search.
+4. Produce explicit vertex/cell-level orientation-preserving boundary-cycle comparison maps, including the permitted edge-to-vertex contractions, rather than relying only on the coarse ordered-word signature.
+5. Extend beyond graph 5 and graph 12, and beyond order eight. The arbitrary connected-support L7b open-arc construction remains separate and open.
+6. Geometric L8 and the all-orders Hall inequality remain open. No physical mass-gap or continuum gate is closed by these finite computations.
