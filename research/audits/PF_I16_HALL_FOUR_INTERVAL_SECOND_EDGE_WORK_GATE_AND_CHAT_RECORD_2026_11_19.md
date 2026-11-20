@@ -479,3 +479,36 @@ Accordingly, Sections 13.3–13.4 should be read with this update: the actual so
 - Geometric L8: **open**.
 - All-orders Hall: **separate and open**.
 - PR #119: remains draft, open, and unmerged; no merge was performed.
+
+
+## 16. Complete source-labelled restriction and collapse-certificate addendum · 20 November 2026
+
+The source-parent mark correction is now confirmed by successful workflow 44707308083. The actual delete-interval-3 parent-tree histogram is three spanning trees, not one star; the corrected source audit retains each source-specific tree.
+
+The order-eight graph-5/graph-12 candidate lane has been extended beyond the original graph-isomorphism check:
+
+- **58,608** explicit port-to-\(\mathbb Z^5\) embeddings across 996 retained witnesses, 60 relevant source records, and both root-preserving graph maps. L1 injectivity, L2 positive unit-edge realization, L3 accepted support endpoints, and exact L4–L5 overlap-graph preservation pass in local replay.
+- **98,192** exact parent port-map restriction/compression checks pass. The child port map restricted to retained ports equals the reconstructed parent port map.
+- Complete oriented boundary cycles and anchored open complementary arcs are now exported and checked together with ordered multi-footprint words.
+- Parent-origin coherence: 514/514 graph-5 witnesses and 240/482 graph-12 witnesses pass the coarse labelled pair/triple incidence and ordered footprint-neighbor/meet-word comparison. This leaves 50/64 common pair/fourth-edge cases with a coherent witness in both families.
+- Deterministic elementary relative-collapse certificates now export the actual free face-edge and edge-vertex pairs. All 3,984 single-deletion certificates match the prior booleans. All 5,012 two-path critical-pair collapse tests succeed to the same grandparent union.
+- In 3,224 two-path tests the paths use the same free-pair set and differ only by swaps of disjoint elementary pairs. In 1,788 tests they use different free-pair sets; both paths still succeed, so these cases remain unresolved rather than no-go results.
+- Intersecting parent-diagram coherence and strict same-pair-set collapse coherence leaves **18/64** common cases. All 18 use the same fourth edge
+  \[
+  (-7,-2,6,6,-2)\to(-7,-2,6,6,-1),
+  \]
+  across 18 distinct second/third-edge pairs. The second/third edges come from a nine-edge local set.
+
+These counts are independent local replays from the completed Ngrid=12 support/diagram artifacts and the exact source exporter. The revised full CI pipeline now compiles and reruns the cycle, port-map, parent-coherence, and elementary-collapse verifiers; its newest runs are queued behind the expensive replacement search. Do not promote these local results to CI-green until the new artifacts are produced and inspected.
+
+### Exact limits
+
+- The 60 source records are only the graph-5 and graph-12 families among the 608 order-eight records; the other overlap-graph families are not covered.
+- The two root-preserving graph maps both pass. The source overlap graph does not choose a unique map.
+- The 18-case fourth-edge pattern is a finite candidate anchor, not a source-independent rule or theorem.
+- The same-assignment first-three-support witness-lifting search still has zero survivors; graph-5 and graph-12 support realizations are independent even when they share the matched-edge quadruple.
+- The 1,788 different-pair-set collapse tests have not been shown impossible to reconcile by alternate certificates.
+- The parent boundary comparison is a coarse labelled ordered-word alignment with cycle hashes, not yet a vertex-level cycle isomorphism or a commuting family of elementary collapse maps.
+- Arbitrary connected-support L7b, geometric L8, and the all-orders Hall inequality remain open.
+
+PR #119 remains a draft research lane. No PR has been merged and no L8 or physical proof gate is promoted by this addendum.
