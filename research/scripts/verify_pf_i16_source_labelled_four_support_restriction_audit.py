@@ -71,17 +71,31 @@ def main():
             assert d["union"]["point_contractible"]
             for i,v in d["relative_deletion_collapses"].items():
                 drop_hist[(int(i),bool(v))]+=1
-            words={x["support"]:x["ordered_footprints"]
-                   for x in d["anchored_boundary_footprint_words"]}
+            word_rows={x["support"]:x for x in d["anchored_boundary_footprint_words"]}
+            words={i:x["ordered_footprints"] for i,x in word_rows.items()}
             assert set(words)==set(range(4))
             fp=tuple(len(words[i]) for i in range(4)); fp_hist[fp]+=1
             # Check ordered positions, reciprocal pair footprints, and meet bits.
             for i,row in words.items():
+                full=word_rows[i]
+                cycle=[tuple(v) for v in full["oriented_boundary_cycle"]]
+                arc=[tuple(v) for v in full["open_complementary_arc"]]
+                tail,head=map(tuple,full["marked_edge_orientation"])
+                assert len(cycle)==full["boundary_length"] and len(set(cycle))==len(cycle)
+                assert cycle[0]==tail and cycle[1]==head
+                assert arc==cycle[1:]+[cycle[0]] and arc[0]==head and arc[-1]==tail
                 starts=[x["arc_positions"][0] for x in row]
                 assert starts==sorted(starts)
-                meets=next(x["footprint_meet_relations"]
-                           for x in d["anchored_boundary_footprint_words"]
-                           if x["support"]==i)
+                for footprint in row:
+                    pos=footprint["arc_positions"]
+                    verts={tuple(v) for v in footprint["cell_vertices"]}
+                    if footprint["cell_type"]=="vertex":
+                        assert len(pos)==1 and 0<pos[0]<len(arc)-1
+                        assert arc[pos[0]] in verts and len(verts)==1
+                    else:
+                        assert len(pos)==2 and 0<pos[0]<len(arc)-2
+                        assert set(arc[pos[0]:pos[0]+2])==verts and len(verts)==2
+                meets=full["footprint_meet_relations"]
                 expected=[bool({tuple(v) for v in x["cell_vertices"]} &
                                {tuple(v) for v in y["cell_vertices"]})
                           for x,y in itertools.combinations(row,2)]
@@ -267,6 +281,7 @@ def main():
             "all_source_parent_tree_edges_match_nonempty_contractible_geometric_pairs":True,
             "all_15_intersection_entries_retained_for_each_witness":True,
             "ordered_multi_footprint_words_internally_checked":True,
+            "all_oriented_boundary_cycles_exported_and_checked":True,
             "all_44_source_parent_tree_diamonds_commute":True,
             "all_44_remaining_pair_table_restrictions_are_nonempty_contractible":True,
             "finite_order8_source_interval_to_geometric_edge_embedding_verified":True,
