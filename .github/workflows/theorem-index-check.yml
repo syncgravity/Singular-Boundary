@@ -18,6 +18,7 @@ on:
       - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
       - 'research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py'
       - 'research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py'
+      - 'research/scripts/verify_pf_i16_four_support_parent_coherence.py'
       - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
       - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
@@ -222,6 +223,15 @@ jobs:
         with:
           name: pf-i16-source-labelled-four-support-restriction-audit
           path: /tmp/pf_i16_source_labelled_four_support_restriction_audit.json.gz
+          if-no-files-found: error
+      - name: Verify source-parent coherence across four-support origins
+        run: |
+          python research/scripts/verify_pf_i16_four_support_parent_coherence.py --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --output /tmp/pf_i16_four_support_parent_coherence.json
+      - name: Upload four-support source-parent coherence audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-support-source-parent-coherence
+          path: /tmp/pf_i16_four_support_parent_coherence.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
