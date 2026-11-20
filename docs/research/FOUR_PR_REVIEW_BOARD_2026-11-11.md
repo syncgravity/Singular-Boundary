@@ -41,13 +41,13 @@ The board now tracks the expanded active set of eight open PRs. This live snapsh
 | [#108](https://github.com/syncgravity/Singular-Boundary/pull/108) | `main` → parastichy lift correction | `1181077bdaae5dc0ca83b1fe3f3b2245f3def331` | Open draft; 59 commits; 19 files; not mergeable | Review as a separate geometry lane; no proof-gate promotion. |
 | [#114](https://github.com/syncgravity/Singular-Boundary/pull/114) | `main` → product-cumulant hypergraph bridge | `52ddf77fd67f969f90acc9c31e0a8293e9af3759` | Open; 7 commits; 3 files; not mergeable | Preserve exact cumulant identities and degree-eight obstruction; reconcile base conflicts before integration. |
 | [#118](https://github.com/syncgravity/Singular-Boundary/pull/118) | `main` → superrow cut-covariance lane | `eacc190efdb5c204d038449946e705f405a100c3` | Open draft; 605 commits; 210 files; not mergeable | Selective extraction only; no wholesale stack merge. |
-| [#119](https://github.com/syncgravity/Singular-Boundary/pull/119) | `main` → four-interval diamond lane | `8e49e2480b0b6e291524784c4caf5d4967a2efad` | Open draft; 56 commits; 20 files; currently mergeable | Keep unmerged while the expanded CI, source-parent audit, and actual source-diagram matching are incomplete. |
+| [#119](https://github.com/syncgravity/Singular-Boundary/pull/119) | `main` → four-interval diamond lane | `8e49e2480b0b6e291524784c4caf5d4967a2efad` | Open draft; 56 commits; 20 files; currently not mergeable | Keep unmerged while the expanded CI, source-parent audit, and actual source-diagram matching are incomplete. |
 
 ### Observatory synchronization
 
 On 2026-11-19 the seven core Observatory pages were refreshed with one consistent PF-I16 four-interval frontier panel: `index.html`, `graph.html`, `handoff.html`, `integration.html`, `penrose-program.html`, `spectral-inequality.html`, and `yang-mills-proof.html`. Their shared status reports the latest completed CI snapshot (50/52 pair frontier; 64 pair/fourth-edge cases; 514 graph-5 and 482 graph-12 independent full-diagram candidates), links PR #119 and the durable work-gate record, and explicitly leaves L8 and S0–S5 open. Current mainline graph metadata is v3.04, 773 theorem-source paths, 298 curated nodes, and 703 typed relationships. These counts are navigational only.
 
-Six page-update push workflows have been observed succeeding; the final page update's theorem-index/graph workflow was still in progress at the time of this record. PR #119's expanded rerun also remains in progress. Recheck both before claiming the entire refreshed set is CI-green.
+All seven page-update push workflows have now completed successfully, including the final theorem-index/graph workflow (44676689424). PR #119's expanded rerun remains in progress and its current mergeability check is false. Recheck that lane before any merge decision.
 
 ### Merge order remains unchanged
 
