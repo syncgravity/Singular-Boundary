@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit legal deletion marks for the decisive graph-5 / graph-12 families."""
+"""Audit legal deletion marks and every induced parent tree for graph-5 / graph-12."""
 from __future__ import annotations
 import argparse, collections, hashlib, json
 from pathlib import Path
@@ -39,7 +39,7 @@ def summarize(rows):
         "eligible_mark_histogram":dict(sorted(mark_hist.items())),
         "sources_with_mark_3":len(source_ids),
         "other_eligible_marks_when_3_is_eligible":dict(sorted((str(k),v) for k,v in other_marks.items())),
-        "parent_tree_after_delete_3_histogram":dict(sorted((str(k),v) for k,v in parent_tree_hist.items())),
+        "parent_tree_after_delete_3_histogram":dict(sorted((str(k),v) for k,v in parent_tree_hist.items())),\n        "parent_tree_after_delete_3_is_not_unique":len(parent_tree_hist)>1,
         "source_rows_with_mark_3":source_ids
     }
 
@@ -57,8 +57,8 @@ def main():
     assert g12["root_index_histogram"]=={0:48}
     assert g5["other_eligible_marks_when_3_is_eligible"]=={"(1, 2)":4,"(1,)":4,"(2,)":4}
     assert g12["other_eligible_marks_when_3_is_eligible"]=={"()":12,"(1,)":12,"(2,)":12}
-    assert g5["parent_tree_after_delete_3_histogram"]=={"((0, 1), (0, 2))":12}
-    assert g12["parent_tree_after_delete_3_histogram"]=={"((0, 1), (0, 2))":36}
+    assert g5["parent_tree_after_delete_3_histogram"]=={\n        "((0, 1), (0, 2))":4,\n        "((0, 1), (1, 2))":4,\n        "((0, 2), (1, 2))":4\n    }
+    assert g12["parent_tree_after_delete_3_histogram"]=={\n        "((0, 1), (0, 2))":12,\n        "((0, 1), (1, 2))":12,\n        "((0, 2), (1, 2))":12\n    }
     result={
         "schema":"PF-I16-FOUR-INTERVAL-SOURCE-PARENT-MARK-AUDIT-v1",
         "source_record_canonical_payload_sha256":hall.build([8])["sha256_canonical_payload"],
