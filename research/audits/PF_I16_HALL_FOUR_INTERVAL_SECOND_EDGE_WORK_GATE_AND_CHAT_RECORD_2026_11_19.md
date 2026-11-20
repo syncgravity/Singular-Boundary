@@ -393,3 +393,25 @@ Only candidates passing the actual parent restrictions and source-prescribed L6c
 - Restriction coherence and PF-specific geometric L8: **open**.
 - Physical regulator, finite physical SU(2) Hamiltonian on it, uniform all-functions SI, and continuum/OS reconstruction: **open and downstream**.
 - PR #119 remains open, draft, and unmerged; PR #118 remains open, draft, and unmerged. No merge was performed.
+
+
+## 14. Source-parent mark audit correction (2026-11-20 UTC)
+
+The first CI execution of `verify_pf_i16_four_interval_source_parent_mark_audit.py` failed at an assertion that incorrectly required every parent tree after deleting interval 3 to be the star `((0,1),(0,2))`. The failure was in the audit's expected-value assertion, not in source enumeration or the geometric verifier. Re-enumerating the canonical order-eight source records shows that the retained three-interval overlap graph is a triangle, and its spanning tree depends on the source record.
+
+Correct parent-tree histograms after deleting interval 3:
+
+| Source overlap family | Sources with mark 3 | Parent tree `((0,1),(0,2))` | Parent tree `((0,1),(1,2))` | Parent tree `((0,2),(1,2))` |
+|---|---:|---:|---:|---:|
+| Graph 5 | 12 | 4 | 4 | 4 |
+| Graph 12 | 36 | 12 | 12 | 12 |
+
+The other mark census remains:
+- Graph 5: 12 sources; root index 0 in all; mark 3 eligible in all 12; among those, other eligible marks are (1,2) in 4, (1,) in 4, and (2,) in 4.
+- Graph 12: 48 sources; root index 0 in all; mark 3 eligible in 36; among those, other eligible marks are empty in 12, (1,) in 12, and (2,) in 12.
+
+Thus the following statements remain supported: interval 0 is always the root and never an eligible reverse mark; every actual co-deletion with interval 3 is interval 1 or 2; and deletion of interval 0 is not a source-parent operation. However, the stronger claim that deleting interval 3 always leaves the same *tree* is false. It leaves the same labelled three-vertex overlap graph, but one of three spanning trees occurs. The source parent tree must therefore be carried per source record, not collapsed to a single star signature.
+
+The verifier was corrected in commit `7ff717093c9d4a49d25a87675c03b7c7a8d7f5a3` to assert the three exact histograms and to expose whether the parent tree is unique. The correction is awaiting its fresh branch CI run. The earlier failures in runs [44675033035](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675033035) and [44675038856](https://github.com/syncgravity/Singular-Boundary/actions/runs/44675038856) are now classified as an incorrect expected parent-tree histogram in the audit script. No geometric L6c/L7b conclusion follows from those failures.
+
+This correction strengthens the next source-labelled comparison: enumerate source records with their exact marked parent trees, and compare each geometric parent diagram against the corresponding source-record restriction. Do not assume a common star parent tree across graph-5 or graph-12 families.
