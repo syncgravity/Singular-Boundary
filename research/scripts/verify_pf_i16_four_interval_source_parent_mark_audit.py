@@ -57,8 +57,16 @@ def main():
     assert g12["root_index_histogram"]=={0:48}
     assert g5["other_eligible_marks_when_3_is_eligible"]=={"(1, 2)":4,"(1,)":4,"(2,)":4}
     assert g12["other_eligible_marks_when_3_is_eligible"]=={"()":12,"(1,)":12,"(2,)":12}
-    assert g5["parent_tree_after_delete_3_histogram"]=={\n        "((0, 1), (0, 2))":4,\n        "((0, 1), (1, 2))":4,\n        "((0, 2), (1, 2))":4\n    }
-    assert g12["parent_tree_after_delete_3_histogram"]=={\n        "((0, 1), (0, 2))":12,\n        "((0, 1), (1, 2))":12,\n        "((0, 2), (1, 2))":12\n    }
+    assert g5["parent_tree_after_delete_3_histogram"]=={
+        "((0, 1), (0, 2))":4,
+        "((0, 1), (1, 2))":4,
+        "((0, 2), (1, 2))":4
+    }
+    assert g12["parent_tree_after_delete_3_histogram"]=={
+        "((0, 1), (0, 2))":12,
+        "((0, 1), (1, 2))":12,
+        "((0, 2), (1, 2))":12
+    }
     result={
         "schema":"PF-I16-FOUR-INTERVAL-SOURCE-PARENT-MARK-AUDIT-v1",
         "source_record_canonical_payload_sha256":hall.build([8])["sha256_canonical_payload"],
