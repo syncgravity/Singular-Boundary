@@ -512,3 +512,29 @@ These counts are independent local replays from the completed Ngrid=12 support/d
 - Arbitrary connected-support L7b, geometric L8, and the all-orders Hall inequality remain open.
 
 PR #119 remains a draft research lane. No PR has been merged and no L8 or physical proof gate is promoted by this addendum.
+
+
+## 17. Full CI completion and artifact reconciliation (2026-11-21 UTC)
+
+The corrected comprehensive workflow completed successfully on PR #119 head `1b66ca65ca15ad9622b610f622e3559997188ce8`:
+
+- [Workflow 44833369833](https://github.com/syncgravity/Singular-Boundary/actions/runs/44833369833), job `index-check` (`136623622049`): **success**.
+- PR #119 remains draft, open, and unmerged.
+- The preceding run's only failure was a witness-counter accounting defect: the collapse verifier counted the same witness once per root-preserving graph isomorphism. The corrected code verifies both maps give the same verdict, then counts the witness once. The elementary collapse computations themselves were not changed.
+
+The collapse artifact (`14680929981`, ZIP SHA-256 `a717a6ef2e1006225f31ef64b5a22033e2305b8bfe8fec53e3e3c2a885f6adbf`) was downloaded and inspected. Its embedded input payload hashes match the independent diagram artifact (`14681735833`, JSON SHA-256 `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba`) and parent-coherence artifact (`14682100468`, JSON SHA-256 `a1b4817a329a55a848e490f34c492176586069110382920bbe26a7495bccd27b`).
+
+CI-verified collapse results:
+
+- 3,984/3,984 single-deletion certificates agree with the independent-diagram booleans.
+- 5,012 two-path critical-pair tests succeed; both orders reach the same grandparent support union.
+- 3,224 tests have identical elementary free-pair sets and differ only by swaps of disjoint pairs.
+- 1,788 tests use different deterministic free-pair sets. Both paths succeed to the same target, but equivalence of the collapse maps is not established.
+- Witness-level all-critical-pair same-pair-set counts: graph 5 = 312; graph 12 = 102.
+- Strict collapse-pair-set coherence in both families: 28/64 common cases.
+- Parent-diagram coherence in both families: 50/64 common cases.
+- Joint survivors: 18/64, across 18 distinct second/third matched-edge pairs, all sharing the fourth edge `(-7,-2,6,6,-2) -> (-7,-2,6,6,-1)`.
+
+The source-labelled restriction artifact reports 58,608 finite embeddings and 98,192 commuting parent port-map restrictions. The parent-coherence artifact confirms graph 5 = 514/514, graph 12 = 240/482, and 50/64 common cases with at least one coherent witness in each family.
+
+This is a finite Ngrid=12, graph-5/graph-12 order-eight result. It is not an all-source or all-orders theorem. The artifact explicitly leaves geometric L8 open. Vertex/cell-level orientation-preserving boundary-cycle comparison maps, natural equivalence for the 1,788 different-pair-set cases, arbitrary connected-support L7b, geometric L8, and the all-orders Hall inequality remain open.
