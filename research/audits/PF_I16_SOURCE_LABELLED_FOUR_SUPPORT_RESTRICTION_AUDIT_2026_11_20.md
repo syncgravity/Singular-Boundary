@@ -235,7 +235,7 @@ The first matched edge is the frozen inventory edge. The 18 second/third pairs d
 
 ## 13. Remaining proof obligations
 
-1. Complete the CI replay of the revised source-labelled, parent-coherence, full-cycle, and elementary-collapse verifiers on PR #119 head `fe5fda277e6ece4efbb653f05c908a8d99b702f7`.
+1. **Completed by Addendum 14:** the corrected source-labelled, parent-coherence, full-cycle, and elementary-collapse verifiers passed in workflow [44833369833](https://github.com/syncgravity/Singular-Boundary/actions/runs/44833369833). The later doc-only commits are being replayed separately; they do not change the tested verifier code.
 2. Turn the 18-case common fourth-edge pattern into a source-independent geometric construction rule, or explain why it is only a finite coincidence.
 3. For the 1,788 different-pair-set collapse tests, search for common alternative collapse matchings or a natural equivalence of the induced collapse maps. Do not call them obstructions without such a search.
 4. Produce explicit vertex/cell-level orientation-preserving boundary-cycle comparison maps, including the permitted edge-to-vertex contractions, rather than relying only on the coarse ordered-word signature.
@@ -257,7 +257,7 @@ The successful run produced the following artifacts:
 | Artifact | ID | Payload SHA-256 / artifact digest |
 |---|---:|---|
 | Source-parent/coherence | `14682100468` | JSON payload `a1b4817a329a55a848e490f34c492176586069110382920bbe26a7495bccd27b`; ZIP digest `fbf70a025cf8d896daad1d8d98510928529c800f7fc4364ce597926260e83b2f` |
-| Second-edge replacement search | `14681930323` | JSON payload `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c1babbcf5425b2f` |
+| Second-edge replacement search | `14681930323` | JSON payload `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c31babbcf5425b2f` |
 | Independent diagram lifting | `14681735833` | JSON payload `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba` |
 | Relative-collapse diamonds | `14680929981` | ZIP digest `a717a6ef2e1006225f31ef64b5a22033e2305b8bfe8fec53e3e3c2a885f6adbf` |
 | Source-labelled restriction audit | `14680764095` | gzip payload `aca7a8bb1ed8de320e463ff921e8c9a6a50fd0d12ff7fdcbe2bad76bd64000b6` |
