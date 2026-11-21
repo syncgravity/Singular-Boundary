@@ -241,3 +241,39 @@ The first matched edge is the frozen inventory edge. The 18 second/third pairs d
 4. Produce explicit vertex/cell-level orientation-preserving boundary-cycle comparison maps, including the permitted edge-to-vertex contractions, rather than relying only on the coarse ordered-word signature.
 5. Extend beyond graph 5 and graph 12, and beyond order eight. The arbitrary connected-support L7b open-arc construction remains separate and open.
 6. Geometric L8 and the all-orders Hall inequality remain open. No physical mass-gap or continuum gate is closed by these finite computations.
+
+
+## 14. Addendum: full CI replay and collapse-artifact reconciliation
+
+The corrected comprehensive workflow completed successfully on branch head `1b66ca65ca15ad9622b610f622e3559997188ce8`.
+
+- Workflow: [44833369833 — success](https://github.com/syncgravity/Singular-Boundary/actions/runs/44833369833)
+- Job: `index-check`, job ID `136623622049`, conclusion `success`.
+- PR #119 remains open, draft, and unmerged.
+- The preceding failed run exposed a verifier accounting error: the graph-isomorphism loop incremented the witness-level all-pair-set counter once per root-preserving map, although the reported quantity counts witnesses. The correction first checks that both maps agree and then increments once per witness. It does not alter the elementary collapse certificates or the pair-set comparison itself.
+
+The successful run produced the following artifacts:
+
+| Artifact | ID | Payload SHA-256 / artifact digest |
+|---|---:|---|
+| Source-parent/coherence | `14682100468` | JSON payload `a1b4817a329a55a848e490f34c492176586069110382920bbe26a7495bccd27b`; ZIP digest `fbf70a025cf8d896daad1d8d98510928529c800f7fc4364ce597926260e83b2f` |
+| Second-edge replacement search | `14681930323` | JSON payload `e4974b8ee430c7fe7e853153cae1b9d98337f1164000d073c1babbcf5425b2f` |
+| Independent diagram lifting | `14681735833` | JSON payload `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba` |
+| Relative-collapse diamonds | `14680929981` | ZIP digest `a717a6ef2e1006225f31ef64b5a22033e2305b8bfe8fec53e3e3c2a885f6adbf` |
+| Source-labelled restriction audit | `14680764095` | gzip payload `aca7a8bb1ed8de320e463ff921e8c9a6a50fd0d12ff7fdcbe2bad76bd64000b6` |
+
+The collapse artifact was downloaded and inspected. Its embedded input hashes match the independently downloaded payloads: the independent diagram JSON SHA-256 is `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba`, and the parent-coherence JSON SHA-256 is `a1b4817a329a55a848e490f34c492176586069110382920bbe26a7495bccd27b`.
+
+The artifact independently records:
+
+- 3,984 single-deletion certificates, all agreeing with the original independent-diagram booleans;
+- 5,012 two-path critical-pair tests, all successful, with both paths reaching the same grandparent support union;
+- 3,224 tests with identical elementary free-pair sets, all related by swaps of disjoint pairs;
+- 1,788 tests with different deterministic free-pair sets, still successful to the same target but not yet certified as equivalent collapse maps;
+- graph 5: 312 witnesses whose every critical pair uses the same elementary pair set;
+- graph 12: 102 such witnesses;
+- 28/64 common pair/fourth-edge cases with strict collapse-pair-set coherence in both families;
+- 50/64 with parent-diagram coherence in both families;
+- 18/64 satisfying both filters, spanning 18 distinct second/third-edge pairs and sharing the fourth matched edge `(-7,-2,6,6,-2) -> (-7,-2,6,6,-1)`.
+
+The collapse artifact explicitly records `geometric_L8_closed: false`. This CI pass establishes reproducibility of the finite computations only. The vertex/cell-level oriented boundary-cycle comparison maps, natural equivalence for the 1,788 different-pair-set cases, arbitrary connected-support L7b, geometric L8, and all-orders Hall inequality remain open.
