@@ -22,6 +22,11 @@ The verifier consumes three immutable artifacts from workflow [44833369833](http
 
 The corresponding decompressed/raw JSON SHA-256 values are recorded in the verifier output. Each ZIP contains exactly one expected JSON member (the collapse member is gzip-compressed inside the ZIP).
 
+The verifier pins the payload hashes so the same check runs both on the downloaded ZIPs and directly on the generated CI files:
+- Collapse JSON: `d0d96755ceaa556759f6d5a2d0f60d0df1cd5f9805b12e5461c6d1747f6f8141`
+- Independent diagrams JSON: `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba`
+- Support inventory JSON: `5b56a7485c0ab01e76f93868e331a2cb1790df01131d98c33376f7cb6370af4f`
+
 ## 3. Finite construction
 
 For each graph-5 certificate whose source critical mark pair is ([1,2]), and whose symmetric difference is the minimal typed cycle with one face (F), two edges (e_1,e_2), and one vertex (v), define (P) to be the two other boundary edges of the rhombus (F).
