@@ -277,3 +277,28 @@ The artifact independently records:
 - 18/64 satisfying both filters, spanning 18 distinct second/third-edge pairs and sharing the fourth matched edge `(-7,-2,6,6,-2) -> (-7,-2,6,6,-1)`.
 
 The collapse artifact explicitly records `geometric_L8_closed: false`. This CI pass establishes reproducibility of the finite computations only. The vertex/cell-level oriented boundary-cycle comparison maps, natural equivalence for the 1,788 different-pair-set cases, arbitrary connected-support L7b, geometric L8, and all-orders Hall inequality remain open.
+
+
+## 15. New finite pattern: differing collapse matchings form one alternating cycle
+
+Inspection of the CI collapse artifact exposed a stronger combinatorial pattern in the 1,788 tests previously labelled unresolved. For each two-path comparison, regard every elementary free pair as an edge in the typed cell-incidence graph: a face-edge pair joins a 1-cell to a 2-cell, and an edge-vertex pair joins a 0-cell to a 1-cell. Compare the two path pairings as sets and form their symmetric difference.
+
+A new verifier, `research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py`, independently reconstructs those typed pair sets from the collapse certificates. Local replay on the CI artifact confirms that **every one of the 1,788 differing-pair-set comparisons has a symmetric difference consisting of exactly one connected alternating cycle**:
+- every cell in the symmetric-difference graph has degree two;
+- each cell is incident to exactly one pair from each path;
+- the graph is connected and even;
+- there are no open alternating paths and no multiple components.
+
+The exact cycle-signature census is:
+
+| Family | Cycle cells | Faces | Edges | Vertices | Different pairs per path | Tests |
+|---|---:|---:|---:|---:|---:|---:|
+| Graph 5 | 4 | 1 | 2 | 1 | 2 | 64 |
+| Graph 5 | 12 | 2 | 6 | 4 | 6 | 340 |
+| Graph 12 | 6 | 2 | 3 | 1 | 3 | 624 |
+| Graph 12 | 8 | 1 | 4 | 3 | 4 | 136 |
+| Graph 12 | 8 | 2 | 4 | 2 | 4 | 624 |
+
+This turns the 1,788 cases from an unstructured difference into a finite **alternating-cycle switch problem**. It does not yet prove that the two collapse maps are homotopic, naturally equivalent, or related by permitted elementary collapse-map moves: the two valid matchings can differ around a closed alternating cycle even though both collapse paths reach the same grandparent union. The new script is integrated after the collapse-certificate step in the theorem-index workflow; its CI artifact is pending on the latest branch head.
+
+The next targeted task is to determine whether these alternating cycles admit a local switch lemma preserving the relative-collapse maps, and whether the cycle types can be reduced to a small set of geometric templates. This is more precise than treating all 1,788 cases as generic mismatches. It remains finite Ngrid=12 evidence only; geometric L8 remains open.
