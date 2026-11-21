@@ -157,7 +157,7 @@ jobs:
             research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py \
             research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py \
             research/scripts/verify_pf_i16_four_support_parent_coherence.py \
-            research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py
+            research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py \\
             research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
