@@ -20,6 +20,7 @@ on:
       - 'research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py'
       - 'research/scripts/verify_pf_i16_four_support_parent_coherence.py'
       - 'research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py'
+      - 'research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py'
       - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
       - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
@@ -115,6 +116,7 @@ on:
       - 'research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py'
       - 'research/scripts/verify_pf_i16_four_support_parent_coherence.py'
       - 'research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py'
+      - 'research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py'
       - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
       - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
@@ -156,6 +158,7 @@ jobs:
             research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py \
             research/scripts/verify_pf_i16_four_support_parent_coherence.py \
             research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py
+            research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
       - name: Enumerate all one-to-three-rhombus four-interval support candidates
@@ -264,6 +267,15 @@ jobs:
         with:
           name: pf-i16-four-support-relative-collapse-diamonds
           path: /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz
+          if-no-files-found: error
+      - name: Classify differing collapse pair sets as alternating cycles
+        run: |
+          python research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py --collapse /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz --output /tmp/pf_i16_collapse_alternating_cycle_audit.json
+      - name: Upload collapse alternating-cycle audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-collapse-alternating-cycle-audit
+          path: /tmp/pf_i16_collapse_alternating_cycle_audit.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
