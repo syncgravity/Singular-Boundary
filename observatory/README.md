@@ -1,3 +1,12 @@
+## PF-I16 · Four-cell geometry correction (2026-11-20)
+
+Artifact-level inspection of collapse certificate 14680929981 and independent diagram artifact 14681735833 corrects the initial abstract switch model. In witness b0290fe5f0ab7536d3d0 (graph 5, pair index 22, source marks [1,2]), the four-cycle has face 825, two adjacent rhombus edges sharing v=(-6,-3,5,6,-1), and distinct other endpoints w1=(-6,-2,5,6,-1), w2=(-6,-3,5,7,-1). The rhombus fourth vertex is z=(-6,-2,5,7,-1). Thus the finite pattern is **not** a two-edge disk, and the two collapse endpoint maps need not be equal.
+
+The corrected local candidate is a rhombus-corner switch: if the complementary two-edge arc P=[w1,z]∪[z,w2] is retained, both local collapses retract the rhombus onto P and relative-homotopy uniqueness gives a homotopy relative P. To pass to the final grandparent A, one needs a common subsequent collapse P→A fixing A. The currently inspected artifact provides only the final target digest, not the full target cell inventory needed to verify this factorization. The all-64 certificate check and every further source-restriction check remain open.
+
+The abstract two-edge-disk strict-equality lemma remains true under its extra hypothesis but is **not applied** to the finite Penrose certificate. See the [corrected switch audit](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_FOUR_CELL_ALTERNATING_CYCLE_SWITCH_2026_11_20.md).
+---
+
 ## PF-I16 · Four-support collapse history and four-cell switch (2026-11-20)
 
 The finite source-labelled geometric history is consolidated here: 996 retained four-support witnesses; 58,608 source/witness/port-map embeddings; 98,192 commuting parent port-map restrictions; and 5,012 successful two-path collapse diamonds (CI workflow 44833369833). Of these, 3,224 use the same elementary free-pair set and differ only by disjoint-pair swaps. The other 1,788 have different pair sets; workflow 44846395728 classifies every symmetric difference as one connected alternating cycle. The census is 64 graph-5 four-cell cycles, 340 graph-5 twelve-cell cycles, 624 graph-12 six-cell cycles, and 760 graph-12 eight-cell cycles (136 + 624). The joint parent/collapse filter leaves 18/64 common pair/fourth-edge cases sharing the same fourth matched edge; this is a finite candidate anchor, not a construction theorem.
