@@ -95,3 +95,53 @@ The two arguments must not be conflated:
 - Relative-homotopy uniqueness for two strong deformation retractions onto the same subcomplex: proved in the companion audit; its application to the finite certificates is conditional on the regular-CW realization.
 - Four-cell strict endpoint-map equality: proved here **under the explicit local disk-neighborhood hypothesis**; not yet verified for all 64 finite cases.
 - Geometric L8, all-orders Hall, physical continuum reconstruction and the Yang–Mills mass gap: OPEN.
+
+## 9. Artifact-level correction: the finite four-cell pattern is a rhombus-corner switch, not the two-edge disk model
+
+The preceding two-edge-disk lemma is mathematically valid under its stated extra hypothesis, but inspection of the actual collapse certificate shows that the hypothesis must **not** be inferred from the four-cycle signature. The concrete finite four-cell example below has two distinct residual endpoints.
+
+Inputs inspected:
+- collapse-diamond artifact 14680929981 from workflow 44833369833;
+- independent diagram-lifting artifact 14681735833 from the same workflow;
+- this is an artifact-level local extraction, not a replay of all 5,012 tests.
+
+A graph-5 example is:
+- witness ID: b0290fe5f0ab7536d3d0;
+- witness index 3, pair index 22;
+- source critical mark pair [1,2];
+- permutation index 0, diamond certificate index 0;
+- differing face cell F=825.
+
+The symmetric-difference pairs are exactly
+\[
+(F,e_1),\ (e_2,v)\quad\text{versus}\quad(F,e_2),\ (e_1,v),
+\]
+where
+\[
+\begin{aligned}
+v&=(-6,-3,5,6,-1),\\
+w_1&=(-6,-2,5,6,-1),\\
+w_2&=(-6,-3,5,7,-1),\\
+e_1&=[v,w_1],\qquad e_2=[v,w_2].
+\end{aligned}
+\]
+The two edges share v, but w_1≠w_2. The face is a rhombus with complementary boundary arc through
+\[
+z=(-6,-2,5,7,-1),\qquad P=[w_1,z]\cup[z,w_2].
+\]
+Thus the local boundary is the four-edge rhombus v-w_1-z-w_2-v, not a two-edge CW circle. The two collapse orders need not have the same endpoint map: one removes e_1 and then collapses e_2 against v, while the other removes e_2 and then collapses e_1 against v. The residual endpoints differ.
+
+### Correct local target
+
+The appropriate local candidate is a **rhombus-corner switch**. If the complementary two-edge arc P is retained during the local comparison, both collapse orders are strong deformation retractions of the rhombus onto P. Relative-homotopy uniqueness then gives a homotopy relative to P, but not pointwise equality of endpoint maps.
+
+If a common subsequent collapse q:P→A takes P to the final grandparent A, composing the local homotopy with q gives a homotopy relative to A, provided q fixes A pointwise. This is a local factorization criterion, not yet a certificate-level theorem: the exported collapse artifact records the final target cell digest, not the complete final target cell inventory needed to verify that P is retained or that a common suffix q exists in the required form.
+
+### Revised conclusion and next test
+
+- The two-edge-disk strict-equality lemma remains a valid abstract special case but is **not the geometry of the inspected Penrose four-cell certificate**.
+- The actual minimal geometric pattern is a rhombus-corner switch with distinct residual endpoints w_1,w_2.
+- Relative homotopy is available from the general uniqueness lemma when both full paths are regular-CW strong deformation retractions onto the same grandparent A. The local rhombus picture identifies a possible witness for that homotopy; it does not supply restriction naturality.
+- The next proof task is to extract, for all 64 graph-5 four-cell cases, the complementary arc P, the actual common grandparent cell inventory A, and the common collapse suffix (if any). Then test every further retained-support restriction for preservation of the relative pair (P,A). Do not count the two-edge-disk argument as a solution to these cases.
+
+This correction supersedes any reading of Sections 2–4 as identifying the actual finite four-cell certificates with the two-edge disk model.
