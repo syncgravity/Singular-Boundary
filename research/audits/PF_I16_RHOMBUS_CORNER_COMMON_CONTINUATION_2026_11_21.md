@@ -32,7 +32,7 @@ For each of the two ordered collapse paths, the verifier extracts, in order, eve
 
 ## 4. Result
 
-<badge>64 / 64 verified</badge>
+**64 / 64 verified**
 
 All 64 certificate/map rows (32 distinct geometric witnesses, each represented under both root-preserving graph maps) have the following exact pattern:
 
