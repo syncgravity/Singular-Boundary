@@ -6,6 +6,32 @@ on:
       - 'docs/research/THEOREM_INDEX.md'
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
+      - 'research/scripts/verify_pf_i9_source_cut_project_bridge.py'
+      - 'research/scripts/export_pf_i16_hall_source_records.py'
+      - 'research/scripts/verify_pf_i16_hall_l123_motif_lift.py'
+      - 'research/scripts/verify_pf_i16_hall_l45_bounded_support.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_two_edge_anchored_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_witness_lifting.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
+      - 'research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py'
+      - 'research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py'
+      - 'research/scripts/verify_pf_i16_four_support_parent_coherence.py'
+      - 'research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py'
+      - 'research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py'
+      - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
+      - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_witness_lifting.py'
+      - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
+      - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
@@ -72,13 +98,27 @@ on:
       - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
       - '.github/workflows/theorem-index-check.yml'
   push:
-    branches: [main]
+    branches: [main, 'research/pf-i16-four-interval-diamond-2026-11-19']
     paths:
       - '.github/workflows/theorem-index-check.yml'
       - 'research/theorems/**'
       - 'docs/research/THEOREM_INDEX.md'
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_two_edge_anchored_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_witness_lifting.py'
+      - 'research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py'
+      - 'research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py'
+      - 'research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py'
+      - 'research/scripts/verify_pf_i16_four_support_parent_coherence.py'
+      - 'research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py'
+      - 'research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py'
+      - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
+      - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
@@ -97,6 +137,9 @@ on:
       - 'research/audits/PF_I16_NILPOTENT_GLUING_AND_HIGH_DEGREE_TESTS_2026_11_13.md'
       - 'research/audits/PF_I16_TWO_HYPEREDGE_CONNECTED_LOG_INTERPOLATION_2026_11_13.md'
       - 'research/audits/PF_I16_WEIGHTED_TWO_HYPEREDGE_AND_THIRD_LINK_2026_11_13.md'
+concurrency:
+  group: theorem-index-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -106,8 +149,134 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+      - name: Compile four-support audit verifiers
+        run: |
+          python -m py_compile \
+            research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py \
+            research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py \
+            research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py \
+            research/scripts/verify_pf_i16_four_support_parent_coherence.py \
+            research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py \
+            research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py
       - name: Install numerical verifier dependency
-        run: python -m pip install --disable-pip-version-check numpy
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Enumerate all one-to-three-rhombus four-interval support candidates
+        run: |
+          python research/scripts/verify_pf_i16_hall_four_interval_support_inventory.py --output /tmp/pf_i16_four_interval_support_inventory.json > /tmp/pf_i16_four_interval_support_inventory.stdout
+          python - <<'PY'
+          import json
+          p = "/tmp/pf_i16_four_interval_support_inventory.json"
+          x = json.load(open(p, encoding="utf-8"))
+          keys = ("target", "original_source_control", "eligible_matched_edges",
+                  "eligible_edges_vertex_disjoint_from_frozen_triple",
+                  "total_support_options_all_eligible_edges",
+                  "minimum_strict_vertex_margin", "minimum_strict_face_margin")
+          print(json.dumps({k: x[k] for k in keys}, sort_keys=True))
+          PY
+      - name: Upload four-interval support inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-support-inventory
+          path: /tmp/pf_i16_four_interval_support_inventory.json
+          if-no-files-found: error
+      - name: Test four-interval parent compatibility and bounded fourth-edge obstruction
+        run: python research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_interval_parent_compatibility.json
+      - name: Upload four-interval parent-compatibility result
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-parent-compatibility
+          path: /tmp/pf_i16_four_interval_parent_compatibility.json
+          if-no-files-found: error
+      - name: Search third-edge replacements with the first two motif edges anchored
+        run: python research/scripts/verify_pf_i16_hall_four_interval_two_edge_anchored_search.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_interval_two_edge_anchored_search.json
+      - name: Upload two-edge-anchored motif search
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-two-edge-anchored-search
+          path: /tmp/pf_i16_four_interval_two_edge_anchored_search.json
+          if-no-files-found: error
+      - name: Enumerate second-edge frontier with first matched edge anchored
+        run: python research/scripts/verify_pf_i16_hall_four_interval_second_edge_frontier.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_interval_second_edge_frontier.json
+      - name: Upload second-edge frontier
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-second-edge-frontier
+          path: /tmp/pf_i16_four_interval_second_edge_frontier.json
+          if-no-files-found: error
+      # The replacement search rechecks every frontier support-pair count and edge-set digest.
+      - name: Search second-edge replacements against graph-5 and graph-12 attachments
+        run: |
+          python research/scripts/verify_pf_i16_hall_four_interval_second_edge_replacement_search.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --frontier /tmp/pf_i16_four_interval_second_edge_frontier.json --output /tmp/pf_i16_four_interval_second_edge_replacement_search.json
+      - name: Upload second-edge replacement search
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-second-edge-replacement-search
+          path: /tmp/pf_i16_four_interval_second_edge_replacement_search.json
+          if-no-files-found: error
+      - name: Lift aggregated survivors to same-assignment four-support witnesses
+        run: |
+          python research/scripts/verify_pf_i16_hall_four_interval_witness_lifting.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --replacement /tmp/pf_i16_four_interval_second_edge_replacement_search.json --output /tmp/pf_i16_four_interval_witness_lifting.json
+      - name: Upload same-assignment witness-lifting result
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-witness-lifting
+          path: /tmp/pf_i16_four_interval_witness_lifting.json
+          if-no-files-found: error
+      - name: Lift independent four-support assignments to full labelled diagrams
+        run: |
+          python research/scripts/verify_pf_i16_hall_four_interval_independent_diagram_lifting.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --replacement /tmp/pf_i16_four_interval_second_edge_replacement_search.json --output /tmp/pf_i16_four_interval_independent_diagram_lifting.json
+      - name: Upload independent four-support diagram lifting result
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-independent-diagram-lifting
+          path: /tmp/pf_i16_four_interval_independent_diagram_lifting.json
+          if-no-files-found: error
+      - name: Audit actual order-eight parent deletion marks
+        run: |
+          python research/scripts/verify_pf_i16_four_interval_source_parent_mark_audit.py --output /tmp/pf_i16_four_interval_source_parent_mark_audit.json
+      - name: Upload source-parent mark audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-interval-source-parent-mark-audit
+          path: /tmp/pf_i16_four_interval_source_parent_mark_audit.json
+          if-no-files-found: error
+      - name: Verify source-labelled four-support restrictions and deletion diamonds
+        run: |
+          python research/scripts/verify_pf_i16_source_labelled_four_support_restriction_audit.py --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_source_labelled_four_support_restriction_audit.json.gz
+      - name: Upload source-labelled four-support restriction audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-source-labelled-four-support-restriction-audit
+          path: /tmp/pf_i16_source_labelled_four_support_restriction_audit.json.gz
+          if-no-files-found: error
+      - name: Verify source-parent coherence across four-support origins
+        run: |
+          python research/scripts/verify_pf_i16_four_support_parent_coherence.py --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --output /tmp/pf_i16_four_support_parent_coherence.json
+      - name: Upload four-support source-parent coherence audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-support-source-parent-coherence
+          path: /tmp/pf_i16_four_support_parent_coherence.json
+          if-no-files-found: error
+      - name: Verify exact relative-collapse diamond certificates
+        run: |
+          python research/scripts/verify_pf_i16_four_support_relative_collapse_diamonds.py --inventory /tmp/pf_i16_four_interval_support_inventory.json --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --parent-coherence /tmp/pf_i16_four_support_parent_coherence.json --output /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz
+      - name: Upload exact relative-collapse diamond certificates
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-support-relative-collapse-diamonds
+          path: /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz
+          if-no-files-found: error
+      - name: Classify differing collapse pair sets as alternating cycles
+        run: |
+          python research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py --collapse /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz --output /tmp/pf_i16_collapse_alternating_cycle_audit.json
+      - name: Upload collapse alternating-cycle audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-collapse-alternating-cycle-audit
+          path: /tmp/pf_i16_collapse_alternating_cycle_audit.json
+          if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
       - name: Verify generated theorem catalog and current navigator
