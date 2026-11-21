@@ -24,7 +24,7 @@ def load_payload(path: Path, expected: str):
             if len(names) != 1:
                 raise AssertionError((str(path), names))
             raw = z.read(names[0])
-    if path.suffix == ".gz" or raw[:2] == b"\\x1f\\x8b":
+    if path.suffix == ".gz" or raw[:2] == b"\x1f\x8b":
         raw = gzip.decompress(raw)
     digest = hashlib.sha256(raw).hexdigest()
     if digest != expected:
@@ -62,9 +62,9 @@ def main():
     ap.add_argument("--inventory",type=Path,required=True)
     ap.add_argument("--output",type=Path,required=True)
     a=ap.parse_args()
-    collapse,ch=load_zip(a.collapse,EXPECTED["collapse_zip"],True)
-    diagrams,dh=load_zip(a.diagrams,EXPECTED["diagrams_zip"])
-    inventory,ih=load_zip(a.inventory,EXPECTED["inventory_zip"])
+    collapse,ch=load_payload(a.collapse,EXPECTED_PAYLOAD["collapse"])
+    diagrams,dh=load_payload(a.diagrams,EXPECTED_PAYLOAD["diagrams"])
+    inventory,ih=load_payload(a.inventory,EXPECTED_PAYLOAD["inventory"])
     table=inventory["face_key_table"]
     fv=[face_vertices(x) for x in table]
     fe=[face_edges(x) for x in table]
@@ -122,9 +122,9 @@ def main():
     if count!=64 or len(witnesses)!=32:
         raise AssertionError(("unexpected four-cell case census",count,len(witnesses)))
     result={"schema":"PF-I16-RHOMBUS-CORNER-COMMON-CONTINUATION-v1",
-      "inputs":{"collapse_zip_sha256":EXPECTED["collapse_zip"],"collapse_payload_sha256":ch,
-                 "independent_diagrams_zip_sha256":EXPECTED["diagrams_zip"],"independent_diagrams_payload_sha256":dh,
-                 "support_inventory_zip_sha256":EXPECTED["inventory_zip"],"support_inventory_payload_sha256":ih},
+      "inputs":{"collapse_payload_sha256":ch,
+                 "independent_diagrams_payload_sha256":dh,
+                 "support_inventory_payload_sha256":ih},
       "scope":"64 graph-5 Ngrid=12 four-cell alternating-cycle certificates, source marks [1,2], both root-preserving graph maps; 32 distinct geometric witnesses represented twice",
       "counts":{"certificates":count,"distinct_geometric_witnesses":len(witnesses),
                 "identical_ordered_P_edge_collapse_restrictions":count,
