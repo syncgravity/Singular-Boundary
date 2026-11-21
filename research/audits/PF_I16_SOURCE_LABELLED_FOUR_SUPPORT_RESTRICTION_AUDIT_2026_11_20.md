@@ -131,7 +131,7 @@ The next task is not another broad candidate search and not a return to the old 
 
 Once that map exists, extend the target export to include the complete oriented boundary cycles and elementary relative-collapse certificates, then rerun the 44 source diamonds with explicit comparison maps. Only after those checks should the order-eight result be promoted toward geometric L8.
 
-No PR merge is implied by this audit. PR #119 remains a draft research lane pending its CI and source-to-target geometric correspondence.
+No PR merge is implied by this audit. PR #119 remains a draft research lane; the finite CI replay is now complete (see Addendum 14), while source-to-target geometric correspondence beyond the finite construction remains open.
 
 
 ## 9. Completed CI execution and artifact integrity
@@ -180,7 +180,7 @@ There are 996 retained geometric witnesses (514 graph 5 and 482 graph 12), 60 re
 
 For every legal source deletion, the verifier also restricts the child port map to the retained ports, applies the source's exact port-order compression, and compares it with the independently reconstructed parent port map. The local replay checks **98,192 parent port-map restrictions**, all equal. This is an exact finite L7a-style naturality check for the constructed embeddings.
 
-Scope remains limited to the graph-5 and graph-12 order-eight source families (60 of the 608 order-eight source records). It is not an all-source or all-orders L1–L5 theorem. The updated scripts are included in the current PR #119 head; the full cycle/port-map/parent/collapse CI replay is queued behind the expensive replacement search. The earlier corrected source-parent-mark audit workflow 44707308083 completed successfully.
+Scope remains limited to the graph-5 and graph-12 order-eight source families (60 of the 608 order-eight source records). It is not an all-source or all-orders L1–L5 theorem. The updated scripts are included in PR #119. The complete cycle/port-map/parent/collapse CI replay subsequently passed in workflow 44833369833 (see Addendum 14); the earlier corrected source-parent-mark audit workflow 44707308083 also completed successfully.
 
 ## 11. Addendum: source-parent diagram coherence and oriented boundary cycles
 
