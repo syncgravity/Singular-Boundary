@@ -88,3 +88,28 @@ python research/scripts/verify_pf_i16_rhombus_corner_continuation.py \
 The verifier pins all three ZIP SHA-256 values and checks the 64-case census, exact (P)-to-(A) intersection, full ordered pair identities, and distinct-witness count. Its output schema is `PF-I16-RHOMBUS-CORNER-COMMON-CONTINUATION-v1`.
 
 **No theorem gate is promoted. Geometric L8 remains OPEN.**
+
+
+## 7. Follow-up: exact adjacent-swap test for a common suffix
+
+A second artifact-pinned verifier, `research/scripts/verify_pf_i16_rhombus_corner_suffix_commutations.py`, tests the next natural step. It reconstructs the full initial four-support complex and grandparent inventory, replays each recorded collapse path, and attempts to move the two (P)-edge pair operations to the end by adjacent swaps. A swap is accepted only if **both** two-step orders are valid elementary collapses from the same current cell inventory and produce exactly the same residual inventory.
+
+Results across the 64 certificates:
+
+- **16/64:** both paths can be reordered to a common two-pair (P)-edge suffix using only valid adjacent swaps. The two resulting suffixes agree exactly.
+- **48/64:** the naive two-pair suffix move is blocked in both paths by a noncommuting adjacent pair. Crucially, the first blocking pair has the **same exact pair identities in both paths** in all 48 cases.
+- First-blocker type census: 8 cases (EV\) against (EV\), 24 cases (FE\) against (EV\), and 16 cases (FE\) against (FE\), where (FE) denotes face–edge and (EV) edge–vertex.
+
+This is a precise negative result for the naive disjoint-swap suffix argument, but it is also a useful positive alignment: in every blocked case the first interference is the same on both sides. The next local object should therefore include the interfering pair in a larger common block, rather than forcing the two (P)-edge operations to commute independently. The larger-block reordering and its restriction behavior have **not** yet been proved.
+
+Run the second verifier with the same three inputs and output path:
+
+```bash
+python research/scripts/verify_pf_i16_rhombus_corner_suffix_commutations.py \\
+  --collapse pf_i16_collapse_diamonds.zip \\
+  --diagrams pf_i16_independent_diagrams.zip \\
+  --inventory pf_i16_support_inventory.zip \\
+  --output pf_i16_rhombus_corner_suffix_commutations.json
+```
+
+The verifier pins the same three raw JSON payload hashes and independently checks the original collapse paths before attempting any swap. It does not claim a common suffix in the 48 blocked cases, a global natural homotopy, or geometric L8.
