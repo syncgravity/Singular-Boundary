@@ -145,3 +145,15 @@ If a common subsequent collapse q:P→A takes P to the final grandparent A, comp
 - The next proof task is to extract, for all 64 graph-5 four-cell cases, the complementary arc P, the actual common grandparent cell inventory A, and the common collapse suffix (if any). Then test every further retained-support restriction for preservation of the relative pair (P,A). Do not count the two-edge-disk argument as a solution to these cases.
 
 This correction supersedes any reading of Sections 2–4 as identifying the actual finite four-cell certificates with the two-edge disk model.
+## 10. Complete graph-5 four-cell signature replay
+
+The local verifier `research/scripts/verify_pf_i16_four_cell_rhombus_corner_audit.py` was run against the decompressed JSON payload from collapse artifact 14680929981. It independently reconstructs typed face-edge and edge-vertex pair sets and computes their symmetric differences. The result is:
+
+- **64/64** graph-5 four-cell certificate cases have exactly one face, two edges, and one vertex in the alternating cycle;
+- every case has both differing edges incident to the same vertex;
+- **64/64** have two distinct residual endpoints;
+- the 64 certificate cases comprise **32 distinct geometric witnesses**, each represented under two root-preserving graph maps.
+
+The verifier therefore confirms that the two-edge-disk strict-endpoint-equality model does not apply to any member of this finite four-cell class. This is an artifact-level local replay of the 64 typed signatures, not a replay of the collapse validity tests and not a reconstruction of the complete grandparent target.
+
+The verifier output explicitly leaves the following unresolved: whether the complementary rhombus arc is retained in the common grandparent, whether a common collapse suffix factors through that arc, and whether this local comparison is preserved under every further support restriction. Geometric L8 remains open.
