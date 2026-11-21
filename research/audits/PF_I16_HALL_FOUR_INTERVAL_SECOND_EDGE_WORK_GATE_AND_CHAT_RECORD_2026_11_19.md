@@ -499,7 +499,7 @@ The order-eight graph-5/graph-12 candidate lane has been extended beyond the ori
   \]
   across 18 distinct second/third-edge pairs. The second/third edges come from a nine-edge local set.
 
-These counts are independent local replays from the completed Ngrid=12 support/diagram artifacts and the exact source exporter. The revised full CI pipeline now compiles and reruns the cycle, port-map, parent-coherence, and elementary-collapse verifiers; its newest runs are queued behind the expensive replacement search. Do not promote these local results to CI-green until the new artifacts are produced and inspected.
+These counts were initially local replays. The corrected comprehensive CI replay subsequently passed in workflow 44833369833, and the collapse artifact was downloaded and inspected; see section 17 for artifact provenance and the exact finite disposition.
 
 ### Exact limits
 
