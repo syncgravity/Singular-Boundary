@@ -538,3 +538,20 @@ CI-verified collapse results:
 The source-labelled restriction artifact reports 58,608 finite embeddings and 98,192 commuting parent port-map restrictions. The parent-coherence artifact confirms graph 5 = 514/514, graph 12 = 240/482, and 50/64 common cases with at least one coherent witness in each family.
 
 This is a finite Ngrid=12, graph-5/graph-12 order-eight result. It is not an all-source or all-orders theorem. The artifact explicitly leaves geometric L8 open. Vertex/cell-level orientation-preserving boundary-cycle comparison maps, natural equivalence for the 1,788 different-pair-set cases, arbitrary connected-support L7b, geometric L8, and the all-orders Hall inequality remain open.
+
+
+## 18. Alternating-cycle structure of the 1,788 different-pair-set cases
+
+The 1,788 different deterministic collapse-pair-set comparisons are not arbitrary. For each two-path test, encode each elementary free pair as an incidence edge between typed cells (face-edge or edge-vertex), then take the symmetric difference of the two path matchings. Local replay of the new verifier `verify_pf_i16_collapse_alternating_cycle_audit.py` finds exactly one connected alternating cycle in every case: every cell has degree two, with one incident pairing from each path; no open alternating paths or multiple components occur.
+
+| Family | Cycle cells | Face cells | Edge cells | Vertex cells | Pairs per path in difference | Tests |
+|---|---:|---:|---:|---:|---:|---:|
+| Graph 5 | 4 | 1 | 2 | 1 | 2 | 64 |
+| Graph 5 | 12 | 2 | 6 | 4 | 6 | 340 |
+| Graph 12 | 6 | 2 | 3 | 1 | 3 | 624 |
+| Graph 12 | 8 | 1 | 4 | 3 | 4 | 136 |
+| Graph 12 | 8 | 2 | 4 | 2 | 4 | 624 |
+
+Thus the remaining comparison problem is now a finite alternating-cycle switch problem. This classification is not a proof that the collapse maps are naturally equivalent or homotopic: it identifies the exact combinatorial form of the matching difference, not an allowed sequence of map-level moves. The new verifier has been added to the workflow after the collapse-certificate stage; its full CI artifact is pending on the newest branch head.
+
+The next proof task is to establish (or refute) a local switch lemma for these typed alternating cycles, then classify which cycle templates preserve the relative-collapse map. The result remains finite-order evidence and does not close geometric L8.
