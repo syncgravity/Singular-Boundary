@@ -1,0 +1,17 @@
+name: PF-I16 n10 distinct-parent third-mark census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  n10-distinct-parent-third-mark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run n10 distinct-parent rooted-star census
+        working-directory: research/verification
+        run: python verify_pf_i16_n10_distinct_parent_third_mark.py

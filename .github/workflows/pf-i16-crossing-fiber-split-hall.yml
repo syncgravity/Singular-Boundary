@@ -1,0 +1,26 @@
+name: PF-I16 crossing-fiber split-demand Hall
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_crossing_fiber_split_hall.py
+      - research/verification/verify_pf_i16_overcrowded_cut_split_maxflow.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - research/verification/verify_pf_i16_n10_multivalued_pi_exchange_scc.py
+      - research/verification/verify_pf_i16_full_leaf_last_graph_n10.py
+      - .github/workflows/pf-i16-crossing-fiber-split-hall.yml
+  workflow_dispatch:
+jobs:
+  exact_crossing_fiber_hall:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify crossing-fiber quotient Hall by exact max flow
+        working-directory: research/verification
+        run: python -u verify_pf_i16_crossing_fiber_split_hall.py

@@ -1,0 +1,26 @@
+name: PF-I16 fixed n8 miss sibling-grandparent test
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_fixed_n8_miss_sibling_diamond.py
+      - .github/workflows/pf-i16-fixed-n8-miss-sibling-diamond.yml
+  pull_request:
+    paths:
+      - research/verification/verify_pf_i16_fixed_n8_miss_sibling_diamond.py
+      - .github/workflows/pf-i16-fixed-n8-miss-sibling-diamond.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test fixed-parent sibling-grandparent compatibility
+        working-directory: research/verification
+        run: python verify_pf_i16_fixed_n8_miss_sibling_diamond.py

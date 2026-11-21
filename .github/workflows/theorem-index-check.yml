@@ -8,6 +8,72 @@ on:
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_degree_eight_ls_constant.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
+      - 'research/audits/PF_I16_GROUP_CUT_COVARIANCE_SUPERROWS_2026_11_15.md'
+      - 'research/audits/PF_I16_PROJECTIVE_MULTITIME_SUPERROW_CUMULANT_TREE_2026_11_15.md'
+      - 'research/audits/PF_I16_DECORATED_SUPERROW_TREE_TRANSPORT_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_decorated_superrow_tree_transport.py'
+      - 'research/audits/PF_I16_DECORATED_SUPERROW_TREE_TRANSPORT_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_decorated_superrow_tree_transport.py'
+      - 'research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py'
+      - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
+      - 'research/audits/PF_I16_REPEATED_INSERTION_INCIDENCE_AND_COMPLETE_OVERLAP_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_repeated_insertion_incidence_and_complete_overlap_tree.py'
+      - 'research/audits/PF_I16_SUBJECTIVE_HGR_CUMULANT_TREE_OBSTRUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_subjective_hgr_cumulant_tree_obstruction.py'
+      - 'research/audits/PF_I16_OCCURRENCE_LEVEL_LS_PARTITION_REDUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_occurrence_level_ls_partition_reduction.py'
+      - 'research/audits/PF_I16_LS_ABSOLUTE_RESUMMATION_OBSTRUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_ls_absolute_resummation_obstruction.py'
+      - 'research/audits/PF_I16_ONE_ROW_HYPEREDGE_ARTICULATION_CUMULANT_GLUE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_one_row_hyperedge_articulation_glue.py'
+      - 'research/audits/PF_I16_ACYCLIC_LINK_ROW_INCIDENCE_CUMULANT_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_acyclic_link_row_incidence_cumulant_tree.py'
+      - 'research/audits/PF_I16_CYCLIC_PAIR_INCIDENCE_CENTERED_EDGE_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_cyclic_pair_incidence_centered_edge_tree.py'
+      - 'research/audits/PF_I16_CYCLIC_ARITY_THREE_CENTERED_HYPEREDGE_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_cyclic_arity_three_centered_hyperedge_tree.py'
+      - 'research/audits/PF_I16_SEPARATED_PATH_BLOCK_FUNCTIONAL_CUMULANT_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_separated_path_block_functional_cumulant_tree.py'
+      - 'research/verification/verify_pf_i16_interval_gap_cyclic_tree_bound.py'
+      - 'research/audits/PF_I16_ARITY_FOUR_CENTERED_HYPEREDGE_2PLUS2_OBSTRUCTION_2026_11_15.md'
+      - 'research/audits/PF_I16_INTERLACED_PATH_BLOCK_BKAR_REDUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_interlaced_block_cumulant_tree_doeblin_regeneration.py'
+      - 'research/audits/PF_I16_INTERLACED_BLOCK_CUMULANT_TREE_DOEBLIN_REGENERATION_2026_11_15.md'
+      - 'research/audits/PF_I16_GLOBAL_OCCURRENCE_REGENERATION_TREE_2026_11_16.md'
+      - 'research/audits/PF_I16_PRODUCT_SEMIGROUP_SUPPORT_LOCALIZATION_GAP_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_product_semigroup_support_localization.py'
+      - 'research/audits/PF_I16_LINK_COMPRESSED_SUPPORT_GRAPH_BKAR_INTERPOLATION_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_link_compressed_support_graph_bkar.py'
+      - 'research/audits/PF_I16_CANCELLATION_PRESERVING_SUPPORT_TREE_DERIVATIVE_THEOREM_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_cancellation_preserving_support_tree_derivative.py'
+      - 'research/audits/PF_I16_RANK_ONE_INTERVAL_COMPONENT_RESUMMATION_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_rank_one_interval_component_resummation.py'
+      - 'research/audits/PF_I16_CHROMATIC_INTERVAL_OVERLAP_RESUMMATION_SPECIAL_CHAIN_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_chromatic_interval_overlap_special_chain.py'
+      - 'research/audits/PF_I16_MULTILINK_BINARY_CONFLICT_GRAPH_SUPPORT_TREE_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_multilink_binary_conflict_graph_support_tree.py'
+      - 'research/verification/verify_pf_i16_quotient_tree_multiplicity.py'
+      - 'research/audits/PF_I16_WEIGHTED_INTERVAL_TREE_INEQUALITY_2026_11_16.md'
+      - 'research/audits/PF_I16_INTERVAL_CUT_LOAD_HALL_COUPLING_2026_11_16.md'
+      - 'research/verification/verify_pf_i16_interval_cut_load_hall.py'
+      - 'research/verification/verify_pf_i16_downset_endpoint_leaf.py'
+      - 'research/verification/verify_pf_i16_left_two_endpoint_forest_recurrence.py'
+      - 'research/verification/verify_pf_i16_downset_hall_aggregation.py'
+      - 'research/verification/verify_pf_i16_local_switch_witness.py'
+      - 'research/verification/verify_pf_i16_local_switch_fractional_transport.py'
+      - 'research/verification/verify_pf_i16_rooted_forest_endpoint_recurrence.py'
+      - 'research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py'
+      - 'research/verification/verify_pf_i16_interval_cut_load_hall_n10.cpp'
+      - 'research/verification/verify_pf_i16_ranked_classwise_injection.py'
+      - 'research/verification/verify_pf_i16_weighted_interval_tree_inequality.py'
+      - 'research/verification/verify_pf_i16_global_occurrence_regeneration_tree.py'
+      - 'research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py'
+      - 'research/audits/PF_I16_L2_GAP_INTERLACED_BLOCK_OBSTRUCTION_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_interlaced_path_block_bkar_reduction.py'
+      - 'research/verification/verify_pf_i16_arity_four_centered_hyperedge_2plus2_obstruction.py'
+      - 'research/audits/PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py'
       - 'research/verification/verify_pf_i16_hypocoercive_three_point_bridge_bound.py'
       - 'research/audits/PF_I16_HYPOCOERCIVE_THREE_POINT_BRIDGE_CONTRACTION_AUDIT_2026_11_15.md'
       - 'research/audits/PF_I16_COMPACT_GROUP_BRIDGE_DOEBLIN_SUBJECTIVE_HGR_2026_11_15.md'
@@ -26,6 +92,7 @@ on:
       - 'research/audits/PF_I16_TREE_SUPPORT_ALL_ORDERS_TEMPORAL_CUMULANT_2026_11_14.md'
       - 'research/audits/PF_I16_PAIR_INCIDENCE_WEIGHTED_SUPPORT_TREE_CUMULANT_2026_11_14.md'
       - 'research/audits/PF_I16_MULTIROW_LINK_CONDITIONAL_CUMULANT_DECOMPOSITION_2026_11_14.md'
+      - 'research/audits/PF_I16_GROUP_CUT_COVARIANCE_SUPERROWS_2026_11_15.md'
       - 'research/audits/PF_I16_MULTI_TIME_SUPERROW_INTERLACED_CUT_OBSTRUCTION_2026_11_14.md'
       - 'research/verification/verify_pf_i16_interlaced_superrow_covariance_obstruction.py'
       - 'research/verification/verify_pf_i16_superrow_temporal_port_budget.py'
@@ -80,6 +147,8 @@ on:
       - 'docs/research/THEOREM_INDEX_LIVE.json'
       - 'research/scripts/verify_theorem_index.py'
       - 'research/verification/verify_pf_i16_product_cumulant_bridge.py'
+      - 'research/audits/PF_I16_PROJECTIVE_MULTITIME_SUPERROW_CUMULANT_TREE_2026_11_15.md'
+      - 'research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py'
       - 'research/experiments/pf_i16_nilpotent_gluing_checks.py'
       - 'research/experiments/pf_i16_two_hyperedge_interpolation.py'
       - 'research/experiments/pf_i16_three_hyperedge_attachment.py'
@@ -156,6 +225,78 @@ jobs:
         run: python research/verification/verify_pf_i16_ctmc_bridge_conditional_hgr_obstruction.py
       - name: Verify finite-state bridge Doeblin minorization
         run: python research/verification/verify_pf_i16_bridge_doeblin_minorization.py
+      - name: Verify projective multi-time super-row cumulant tree and local port envelope
+        run: python research/verification/verify_pf_i16_projective_multitime_superrow_cumulant_tree.py
+      - name: Verify repeated insertion incidence and complete-overlap tensor gap
+        run: python research/verification/verify_pf_i16_repeated_insertion_incidence_and_complete_overlap_tree.py
+      - name: Verify subjective-HGR does not imply cumulant tree
+        run: python research/verification/verify_pf_i16_subjective_hgr_cumulant_tree_obstruction.py
+      - name: Verify occurrence-level LS partition connectivity
+        run: python research/verification/verify_pf_i16_occurrence_level_ls_partition_reduction.py
+      - name: Verify absolute LS resummation obstruction
+        run: python research/verification/verify_pf_i16_ls_absolute_resummation_obstruction.py
+      - name: Verify one-row hyperedge articulation cumulant gluing
+        run: python research/verification/verify_pf_i16_one_row_hyperedge_articulation_glue.py
+      - name: Verify acyclic link-row incidence cumulant tree
+        run: python research/verification/verify_pf_i16_acyclic_link_row_incidence_cumulant_tree.py
+      - name: Verify cyclic pair-incidence centered-edge tree
+        run: python research/verification/verify_pf_i16_cyclic_pair_incidence_centered_edge_tree.py
+      - name: Verify cyclic arity-three centered-hyperedge tree
+        run: python research/verification/verify_pf_i16_cyclic_arity_three_centered_hyperedge_tree.py
+      - name: Verify separated path-block functional cumulant tree
+        run: python research/verification/verify_pf_i16_separated_path_block_functional_cumulant_tree.py
+      - name: Verify interval-gap cyclic tree bound
+        run: python research/verification/verify_pf_i16_interval_gap_cyclic_tree_bound.py
+      - name: Verify arity-four centered hyperedge 2+2 obstruction
+        run: python research/verification/verify_pf_i16_arity_four_centered_hyperedge_2plus2_obstruction.py
+      - name: Verify interlaced path-block forest reduction and derivative obstruction
+        run: python research/verification/verify_pf_i16_interlaced_path_block_bkar_reduction.py
+      - name: Verify Doeblin-regeneration interlaced block cumulant tree
+        run: python research/verification/verify_pf_i16_interlaced_block_cumulant_tree_doeblin_regeneration.py
+      - name: Verify global occurrence-level regeneration tree bound
+        run: python research/verification/verify_pf_i16_global_occurrence_regeneration_tree.py
+      - name: Verify product-semigroup support localization gap
+        run: python research/verification/verify_pf_i16_product_semigroup_support_localization.py
+      - name: Verify link-compressed support-graph BKAR interpolation
+        run: python research/verification/verify_pf_i16_link_compressed_support_graph_bkar.py
+      - name: Verify omitted-port differentiated-cumulant obstruction
+        run: python research/verification/verify_pf_i16_cancellation_preserving_support_tree_derivative.py
+      - name: Verify formal interval-component identity and connected Taylor support
+        run: python research/verification/verify_pf_i16_rank_one_interval_component_resummation.py
+      - name: Verify chromatic interval-overlap resummation for symmetric binary chain
+        run: python research/verification/verify_pf_i16_chromatic_interval_overlap_special_chain.py
+      - name: Verify multi-link binary conflict-graph support-tree expansion
+        run: python research/verification/verify_pf_i16_multilink_binary_conflict_graph_support_tree.py
+      - name: Verify unweighted quotient-tree multiplicity injection
+        run: python research/verification/verify_pf_i16_quotient_tree_multiplicity.py
+      - name: Verify exact weighted one-link interval-tree inequality regression
+        run: python research/verification/verify_pf_i16_weighted_interval_tree_inequality.py
+      - name: Verify exact interval cut-load Hall coupling through eight ports
+        run: python research/verification/verify_pf_i16_interval_cut_load_hall.py
+      - name: Verify proper-down-set endpoint-leaf decomposition
+        run: python research/verification/verify_pf_i16_downset_endpoint_leaf.py
+      - name: Verify two-endpoint left rooted-forest recurrence
+        run: python research/verification/verify_pf_i16_left_two_endpoint_forest_recurrence.py
+      - name: Verify proper-downset Hall aggregation and statewise obstruction
+        run: python research/verification/verify_pf_i16_downset_hall_aggregation.py
+      - name: Verify all-orders local-switch cut-load witness
+        run: python research/verification/verify_pf_i16_local_switch_witness.py
+      - name: Verify local-switch fractional Hall transport through eight ports
+        run: python research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - name: Verify rooted-forest endpoint recurrence for cut-bounded trees
+        run: python research/verification/verify_pf_i16_rooted_forest_endpoint_recurrence.py
+      - name: Verify left interval rooted-forest recurrence
+        run: python research/verification/verify_pf_i16_left_interval_rooted_forest_recurrence.py
+      - name: Verify primitive-Dyck ceiling Hall coupling at ten ports
+        run: g++ -O3 -std=c++17 research/verification/verify_pf_i16_interval_cut_load_hall_n10.cpp -o /tmp/verify_pf_i16_interval_cut_load_hall_n10 && /tmp/verify_pf_i16_interval_cut_load_hall_n10
+      - name: Verify canonical ranked classwise injection and inverse
+        run: python research/verification/verify_pf_i16_ranked_classwise_injection.py
+      - name: Verify L2-gap obstruction for interlaced block observables
+        run: python research/verification/verify_pf_i16_l2_gap_interlaced_block_obstruction.py
+      - name: Verify one-link cyclic-permutation temporal-tree bound
+        run: python research/verification/verify_pf_i16_one_link_cyclic_temporal_tree_bound.py
+      - name: Verify decorated-tree transport through recursive super-row elimination
+        run: python research/verification/verify_pf_i16_decorated_superrow_tree_transport.py
       - name: Verify all-orders radial character tail and face-pair projective norm
         run: python research/verification/verify_pf_i16_character_tail_projective_norm.py
       - name: Verify exact centering and face-pair joint-tree activity
@@ -166,3 +307,5 @@ jobs:
         run: node --check observatory/graph-app.js
       - name: Syntax-check branch maintenance script
         run: bash -n scripts/safe_prune_merged_branches.sh
+# Pair-incidence centered-edge proof regression is part of the theorem gate.
+# Rational arity-three centered-hyperedge verifier uses exact product measures.

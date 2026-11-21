@@ -1,0 +1,23 @@
+name: PF-I16 n=12 first-overcrowded-cut census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_n12_overcrowded_cut_census.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - .github/workflows/pf-i16-n12-overcrowded-cut-census.yml
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enumerate n=12 source profiles
+        working-directory: research/verification
+        run: python -u verify_pf_i16_n12_overcrowded_cut_census.py

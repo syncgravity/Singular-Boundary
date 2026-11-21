@@ -144,6 +144,24 @@ For the general bounded-local-observable class, the coefficient after factoring 
 \[
 \sum_e|I_e|\le8r.
 \]
-The one-link factorial bound and an absolute Leonov–Shiryaev majorant do not provide this: the latter contains at least \((2e)^{8r}(r!)^8\) in the maximally overlapping example.
+The sharper one-link temporal-tree-sum bound (6.1), when inserted termwise, and an absolute Leonov–Shiryaev majorant do not provide this: the latter contains at least \((2e)^{8r}(r!)^8\) in the maximally overlapping example.
 
-The next mathematical target is a **tree-rooted Leonov–Shiryaev resummation**: group all slot partitions that induce the same connected support-temporal tree, perform the linkwise Möbius/cumulant sums inside each fiber while preserving their signs, and prove that the resummed fiber coefficient is at most \(C^r\). If this fails, produce an explicit bounded-link counterexample to that proposed fiber estimate. No all-orders WDG estimate, Feynman–Kac convergence, P3 inequality, or physical mass gap is claimed.
+The next mathematical target is a **tree-rooted Leonov–Shiryaev resummation**: group all slot partitions that induce the same connected support-temporal tree, perform the linkwise Möbius/cumulant sums inside each fiber while preserving their signs, and prove that the resummed fiber coefficient is at most \(C^r\). If this fails, produce an explicit bounded-link counterexample to that proposed fiber estimate. No all-orders WDG estimate, Feynman–Kac convergence, P3 inequality, or physical mass gap is claimed. 
+
+## 6. Superseding one-link input — temporal tree sum with exponential coefficient
+
+The one-link estimate used in (1.2) has been sharpened in
+[PF-I16 one-link cyclic-permutation temporal-tree bound](PF_I16_ONE_LINK_CYCLIC_TEMPORAL_TREE_BOUND_2026_11_15.md).
+For every block $B$ of size $k\ge2$,
+\[
+|\kappa_e(Y_{i,e}:i\in B)|
+\le 2^{k-2}\prod_{i\in B}\|Y_{i,e}\|_\infty
+\sum_{T\in\mathcal T(B)}
+\prod_{\{i,j\}\in E(T)}e^{-\Delta_0|t_i-t_j|}.
+\tag{6.1}
+\]
+This follows from the Boolean operator identity, the cyclic-permutation formula for classical cumulants, and the latest-time insertion/leaf-attachment induction. The coefficient $2^{k-2}$ is sharp at fixed gap rate.
+
+This supersedes the factorial *one-link maximum-tree* estimate as the preferred local input whenever the full temporal tree sum is retained. It does **not** resolve the multi-link projection fiber. Substituting (6.1) into (1.1) gives a sum over link-labelled slot trees; the LS join condition makes each union connected, but a uniform exponential bound on the multiplicity after projecting these forests to one row spanning tree is still missing. The Bell$(r)^7$ example in Section 4 refutes the naive canonical selector, not the stronger signed tree-sum target (3.2').
+
+The next lemma remains: reorganize the signed multi-link LS sum before taking absolute values and prove (3.2') with an explicit exponential coefficient. No support-tree, KP, or mass-gap gate is promoted by (6.1) alone.

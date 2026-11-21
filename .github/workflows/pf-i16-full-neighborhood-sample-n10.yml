@@ -1,0 +1,18 @@
+name: PF-I16 n=10 full-neighborhood sample
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+  workflow_dispatch:
+jobs:
+  sample-full-neighborhoods:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sample all-edge all-order leaf-last neighborhoods
+        working-directory: research/verification
+        run: python sample_pf_i16_full_leaf_last_n10.py

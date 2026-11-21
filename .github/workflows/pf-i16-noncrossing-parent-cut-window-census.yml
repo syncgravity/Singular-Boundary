@@ -1,0 +1,26 @@
+name: PF-I16 noncrossing parent cut-window census
+on:
+  push:
+    branches:
+      - research/pf-i16-admissible-exchange-2026-11-16
+    paths:
+      - research/verification/verify_pf_i16_noncrossing_cut_window_census.py
+      - research/verification/verify_pf_i16_source_dependent_leaf_peeling.py
+      - research/verification/verify_pf_i16_local_switch_fractional_transport.py
+      - research/verification/verify_pf_i16_n10_multivalued_pi_exchange_scc.py
+      - research/verification/verify_pf_i16_overcrowded_cut_split_maxflow.py
+      - .github/workflows/pf-i16-noncrossing-parent-cut-window-census.yml
+  workflow_dispatch:
+jobs:
+  exact_cut_window_census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact parent cut windows and load identity
+        working-directory: research/verification
+        run: python -u verify_pf_i16_noncrossing_cut_window_census.py
+

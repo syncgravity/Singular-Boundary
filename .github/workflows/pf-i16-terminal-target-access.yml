@@ -1,0 +1,20 @@
+name: PF-I16 terminal target access for every complement source
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/verification/verify_pf_i16_terminal_target_access.py'
+      - '.github/workflows/pf-i16-terminal-target-access.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-admissible-exchange-2026-11-16
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test exact parent-canonical access to Q at n=6,8,10
+        working-directory: research/verification
+        run: python verify_pf_i16_terminal_target_access.py
