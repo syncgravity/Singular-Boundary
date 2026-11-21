@@ -10,25 +10,26 @@ import argparse, gzip, hashlib, itertools, json, zipfile
 from collections import Counter
 from pathlib import Path
 
-EXPECTED = {
-    "collapse_zip": "a717a6ef2e1006225f31ef64b5a22033e2305b8bfe8fec53e3e3c2a885f6adbf",
-    "diagrams_zip": "5761aef67b7ede6d8580eefff60a422307d2d69eefd3a18382c56b36e3372903",
-    "inventory_zip": "82a493237a7d20e74d17e1d4b563e0fde3143d33989b6515d426fb24237afc94",
+EXPECTED_PAYLOAD = {
+    "collapse": "d0d96755ceaa556759f6d5a2d0f60d0df1cd5f9805b12e5461c6d1747f6f8141",
+    "diagrams": "aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba",
+    "inventory": "5b56a7485c0ab01e76f93868e331a2cb1790df01131d98c33376f7cb6370af4f",
 }
 
-def load_zip(path: Path, expected: str, gzip_member: bool=False):
-    raw_zip = path.read_bytes()
-    digest = hashlib.sha256(raw_zip).hexdigest()
+def load_payload(path: Path, expected: str):
+    raw = path.read_bytes()
+    if zipfile.is_zipfile(path):
+        with zipfile.ZipFile(path) as z:
+            names = z.namelist()
+            if len(names) != 1:
+                raise AssertionError((str(path), names))
+            raw = z.read(names[0])
+    if path.suffix == ".gz" or raw[:2] == b"\\x1f\\x8b":
+        raw = gzip.decompress(raw)
+    digest = hashlib.sha256(raw).hexdigest()
     if digest != expected:
         raise AssertionError((str(path), digest, expected))
-    with zipfile.ZipFile(path) as z:
-        names = z.namelist()
-        if len(names) != 1:
-            raise AssertionError((str(path), names))
-        payload = z.read(names[0])
-    if gzip_member:
-        payload = gzip.decompress(payload)
-    return json.loads(payload), hashlib.sha256(payload).hexdigest()
+    return json.loads(raw), digest
 
 def add(a,b): return tuple(x+y for x,y in zip(a,b))
 def edge_key(a,b): return tuple(sorted((tuple(a),tuple(b))))
