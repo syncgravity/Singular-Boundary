@@ -129,3 +129,50 @@ The first unresolved local incidence is (|I_e|=4). A centered four-variable link
 \{\{i_1,i_2\},\{i_3,i_4\}\}
 \]
 (and the other pairings). Thus the unique-partition collapse fails. The next calculation must retain the signed sum between the four-block cumulant and the pair-pair products, and determine whether that linkwise resummation can be made before the global connectedness selector.
+
+
+## 6. First four-incidence connector: exact surviving partition family
+
+The first failure of uniqueness can be seen with four rows and two independent links. Let link (e) occur in all four rows, with centered factors (f_1,f_2,f_3,f_4). Let a second link (h) occur only in rows (2,3), with centered factors (g_2,g_3). Take
+\[
+A_1=f_1(U_e(t_1)),\quad
+A_2=f_2(U_e(t_2))g_2(U_h(t_2)),\quad
+A_3=f_3(U_e(t_3))g_3(U_h(t_3)),\quad
+A_4=f_4(U_e(t_4)).
+\]
+The (h)-link has only its pair block ({2,3}). On the (e)-link, the only nonzero partitions without singleton blocks are the full four-block and the three pair-pair partitions. The global join condition retains the full four-block and exactly two of the three pair-pair partitions: the pairing ({1,4}\mid\{2,3\}) is disconnected after adjoining the (h)-block, while ({1,2\}\mid\{3,4\}) and ({1,3\}\mid\{2,4\}) are connected. Thus the exact product-cumulant identity is
+\[
+\boxed{
+\begin{aligned}
+\kappa(A_1,A_2,A_3,A_4)
+={}&\kappa_h(g_2,g_3)\\
+&\times\Big[
+\kappa_e(f_1,f_2,f_3,f_4)
++\kappa_e(f_1,f_2)\kappa_e(f_3,f_4)\\
+&\hspace{2.6em}
++\kappa_e(f_1,f_3)\kappa_e(f_2,f_4)
+\Big].
+\end{aligned}
+}
+\tag{6.1}
+\]
+All cumulants are evaluated at their row-specific times.
+
+Because the factors are centered, the fourth raw moment identity is
+\[
+\mathbb E_e[f_1f_2f_3f_4]
+=
+\kappa_e(f_1,f_2,f_3,f_4)
++\kappa_e(f_1,f_2)\kappa_e(f_3,f_4)
++\kappa_e(f_1,f_3)\kappa_e(f_2,f_4)
++\kappa_e(f_1,f_4)\kappa_e(f_2,f_3).
+\]
+Therefore the bracket in (6.1) is the raw fourth moment **minus the pairing excluded by the global connectivity selector**:
+\[
+\mathbb E_e[f_1f_2f_3f_4]
+-\kappa_e(f_1,f_4)\kappa_e(f_2,f_3).
+\tag{6.2}
+\]
+This is the smallest explicit example showing why a four-incidence link cannot be resummed independently of the other link supports: the global connectedness condition selects which pair-pair terms survive. A local replacement of the entire (e)-link partition sum by its raw moment would incorrectly include the disconnected pairing.
+
+At coincident times with (f_1=f_2=f_3=f_4=Z) a Rademacher variable, (kappa_4(Z)=-2) and every pair covariance is (1), so the bracket in (6.1) is (-2+1+1=0). The cancellation is exact and is lost by taking absolute values term by term. This four-row calculation identifies the first required resummation: retain the global join selector while grouping the four-incidence link's block and pair-pair contributions.
