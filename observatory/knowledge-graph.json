@@ -1,6 +1,6 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-20",
+  "build_date": "2026-11-22",
   "version": "v3.07-pi-helical-l1-l7-replay",
   "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; exact coincident-time vanishing for disconnected support and a complete-graph Cayley-tree envelope; one-link continuous-time cumulant bound; and exact algebraic reconstruction of product cumulants by top-degree extraction and Boolean Möbius inversion. A temporally weighted, summable all-orders bound for the resulting connected expansion, sparse support-tree counts, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. Added source-qualified multivalued-π/Hall and helical-lift action routes, the ordered L1–L8 incidence-lift spine, and the exact canonical-sibling port-tree diamond. Finite, conditional, obstruction, and open statuses remain distinct; no global Hall, geometric L8, physical helical action, or continuum gate is promoted. Source audit: finite L1–L7 candidate and branch provenance; n=10 multivalued-π matching/flow replay; strict L6 versus L6c; superseded L7b candidate versus alternative triple; L8 naming collision; helical source/checksum limitations. No all-orders Hall or geometric L8 promotion. Clean-checkout reproducibility of finite L1–L7 chain established for n=4,6 in two Ngrid=7 target constructions; no all-orders lift or geometric L8 promotion.",
   "canon_status": "OPEN",
@@ -11104,8 +11104,8 @@
       "kind": "theorem",
       "status": "open",
       "stage": "P2",
-      "summary": "OPEN: exact m=2,3 support-sensitive cumulant trees are proved. At coincident times, disconnected support gives exact cumulant vanishing and connected support has a complete-graph Cayley-tree envelope; counting trees of the actual sparse support graph remains open. Product cumulants have an exact algebraic reconstruction from top-degree extraction and the full family of link-factorized Boolean ratios; the single ratio P_[r]−1 is not generally the higher-degree cumulant coefficient. The absolute degree-eight Leonov–Shiryaev envelope D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)) is superexponential after division by r! and does not establish a nonzero activity radius. A temporally weighted, cancellation-sensitive connected expansion with summable order growth remains open. Exact-profile completion for arbitrary spatial witnesses remains refuted by the five-vertex obstruction.",
-      "detail": "Section 12.4 makes Féray Proposition 5.11 quantitative for degree-eight insertions: Leonov–Shiryaev's connected multiset partitions give an explicit D_8,r sum, and dropping monochromatic/join restrictions yields D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)). The maximum-tree weight is preserved through the connected union of block trees. But D_8,r/r!=exp(7r log r+O(r)), so this absolute partition-sum estimate is superexponential and cannot support a KP/activity radius. Section 16.2 gives exact top-degree extraction and Möbius reconstruction of the product cumulant from the full family of P_Δ. The two-row example shows only that P_[r]−1 alone is not generally the higher-degree cumulant coefficient. This is not a lower bound on actual cumulants: the absolute LS envelope loses cancellations. The coincident-time audit establishes exact disconnection vanishing and a complete-graph tree envelope, not a sparse support-tree count. The next precise gate is a temporally weighted, cancellation-sensitive connected expansion with summable order growth. Actual insertion projective norms also remain open.",
+      "summary": "OPEN overall: exact support-sensitive cumulant trees for m=2,3; a finite m=4 elementary-tensor bound; and a new all-orders maximum-tree theorem for centered elementary tensors with link incidence at most three. Incidence four and the actual PF-I16 face/pair insertion class remain open. The absolute degree-eight Leonov–Shiryaev envelope is superexponential after 1/r! normalization; a cancellation-sensitive extension for higher incidence and the actual quantum KP theorem remain open.",
+      "detail": "Section 12.4 makes Féray Proposition 5.11 quantitative for degree-eight insertions: Leonov–Shiryaev's connected multiset partitions give an explicit D_8,r sum, and dropping monochromatic/join restrictions yields D_8,r≤(2e)^(8r)(8r)!exp(2√(8r)). The maximum-tree weight is preserved through the connected union of block trees. But D_8,r/r!=exp(7r log r+O(r)), so this absolute partition-sum estimate is superexponential and cannot support a KP/activity radius. Section 16.2 gives exact top-degree extraction and Möbius reconstruction of the product cumulant from the full family of P_Δ. The two-row example shows only that P_[r]−1 alone is not generally the higher-degree cumulant coefficient. This is not a lower bound on actual cumulants: the absolute LS envelope loses cancellations. The coincident-time audit establishes exact disconnection vanishing and a complete-graph tree envelope, not a sparse support-tree count. The next precise gate is a temporally weighted, cancellation-sensitive connected expansion with summable order growth. Actual insertion projective norms also remain open. Restricted all-orders result added 2026-11-22: for centered elementary tensor rows A_i=∏_{e∈X_i}f_{i,e}(U_e(t_i)) with every link-incidence set I_e of size two or three and total incidence ≤8r, the Leonov–Shiryaev expansion has a unique nonzero linkwise partition. Hence κ(A_1,…,A_r)=∏_e κ_e((f_{i,e})_{i∈I_e}); temporal chains inside each I_e combine into one support-overlap spanning tree, giving an explicit C_3^r maximum-tree bound with C_3=(2e)^8·6^4. This does not cover |I_e|≥4, noncentered factors without decomposition, or the actual face/pair insertion class. The first incidence-four connector has also been worked out exactly: with one link shared by four rows and a second link joining rows 2 and 3, the global join selector retains the four-block and two of the three pair-pair partitions. The resulting bracket is the raw fourth moment minus the disconnected pairing, demonstrating why the linkwise sum cannot be resummed independently of the other supports.",
       "checks": [
         {
           "label": "Temporal port-completion injection and C_time=2",
@@ -11186,6 +11186,11 @@
           "label": "Degree-eight order growth after 1/r! normalization",
           "state": "open",
           "note": "The derived bound grows as exp(7r log r+O(r)); cancellation-sensitive reorganization is needed for a nonzero activity radius."
+        },
+        {
+          "label": "All-orders centered elementary tensors with link incidence ≤3",
+          "state": "exact",
+          "note": "Unique nonzero linkwise Leonov–Shiryaev partition; exact product of link cumulants and a support-sensitive maximum-tree bound with C_3=(2e)^8·6^4. Incidence ≥4 and actual insertions remain open."
         }
       ],
       "sources": [
@@ -11223,6 +11228,13 @@
           "title": "Féray, Weighted dependency graphs (2018), Markov-chain Boolean/classical cumulant method and product stability",
           "path": "https://arxiv.org/abs/1605.03836",
           "url": "https://arxiv.org/abs/1605.03836"
+        },
+        {
+          "title": "PF-I16 all-orders exact cumulant bound for link incidence at most three",
+          "path": "research/audits/PF_I16_INCIDENCE_AT_MOST_THREE_EXACT_CUMULANT_2026_11_22.md",
+          "git_blob_sha": "1ec7e741227edf86b0c1b93abbcaf7d06e131785",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-pairwise-incidence-cumulant-2026-11-22/research/audits/PF_I16_INCIDENCE_AT_MOST_THREE_EXACT_CUMULANT_2026_11_22.md",
+          "review_only": true
         }
       ],
       "tags": [
