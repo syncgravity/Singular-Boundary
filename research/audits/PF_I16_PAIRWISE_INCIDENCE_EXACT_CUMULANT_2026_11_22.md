@@ -131,4 +131,4 @@ The coefficient is exactly one and independent of (r). In particular, the identi
 
 **Not established:** the same result when one link coordinate occurs in three or more row insertions; noncentered factors without first expanding them into centered components; general face/pair insertions with overlapping link-incidence hyperedges; the cancellation-sensitive all-orders PF-I16 bound; or the quantum Kotecký–Preiss/interacting-vacuum argument.
 
-The next gate is the smallest genuinely higher-order incidence hyperedge: one link shared by three rows, with the remaining row-support slots arranged to make the four-row support graph connected. Its Boolean-lattice factor (P_\Delta^e) is no longer pairwise, and the exact connected-subgraph collapse above no longer applies directly.
+The companion audit now extends the argument to link-incidence hyperedges of size three. The first unresolved incidence size is four: one link shared by four rows permits both a single four-block and a partition into two pairs in the Leonov–Shiryaev expansion, so the unique-partition collapse used here no longer applies.
