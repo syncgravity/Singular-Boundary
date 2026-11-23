@@ -48,8 +48,7 @@ def exact_guarded_inverse(tree, mark, n):
     """Return (uncompressed parent tree, restored edge, removed local edges).
 
     The repository inverse checks the unique four-vertex local tree. This
-    wrapper additionally checks the no-reinsertion and positive-overlap guards
-    explicitly, so a merely tree-shaped local pattern is not accepted.
+    wrapper additionally checks no-reinsertion and positive interval overlap.
     """
     try:
         inverse = inverse_last_switch(tree, mark, n)
@@ -156,15 +155,18 @@ def summarize_graphs(graphs):
             sink_hist[len(component)] += 1
         if record["shifted_arcs"]:
             graphs_with_shift += 1
+        nodes = set(adjacency)
+        for targets in adjacency.values():
+            nodes.update(targets)
         graph_summaries.append({
             "source_index": key[0],
             "J": list(key[1]),
             "K": list(key[2]),
             "P": encode_tree(key[3]),
-            "vertices": len(set(adjacency) | set().union(*adjacency.values())
-                            if adjacency else set()),
-            "arcs": record["distinct_arcs"],
-            "shifted_arcs": record["shifted_arcs"],
+            "vertices": len(nodes),
+            "arcs": len(record["arc_set"]),
+            "shifted_arcs": len(record["shifted_arc_set"]),
+            "transition_witnesses": record["witness_count"],
             "scc_sizes": sorted((len(c) for c in components), reverse=True),
             "sink_scc_sizes": sorted((len(c) for c in sinks), reverse=True),
         })
@@ -195,7 +197,9 @@ def census(n):
     transition_count = 0
     shifted_count = 0
     loop_count = 0
-    inverse_rejects = 0
+    j_inverse_rejects = 0
+    k_inverse_rejects = 0
+    k_noncanonical_projections = 0
     parent_cache = {}
 
     for source_index, (intervals, tau) in enumerate(sources(n)):
@@ -204,19 +208,18 @@ def census(n):
         if len(leaves) < 2:
             continue
 
-        # Each row contains only targets whose full inverse projection belongs
-        # to the canonical parent neighborhood. The row retains the exact
-        # uncompressed inverse witness and restored edge.
         rows = {}
+        parent_sources = {}
         for leaf in leaves:
             mark = intervals[leaf]
             parent = parent_data(intervals, tau, leaf)
+            parent_sources[leaf] = parent
             allowed = canonical_parent_targets(parent, parent_cache)
             row = {}
             for target in candidate_outputs(intervals, tau, forced_last=leaf):
                 inv = exact_guarded_inverse(target, mark, n)
                 if inv is None:
-                    inverse_rejects += 1
+                    j_inverse_rejects += 1
                     continue
                 parent_tree, restored, removed = inv
                 projected = compress_tree(parent_tree, set(mark), n)
@@ -229,16 +232,20 @@ def census(n):
                     }
             rows[leaf] = row
 
-        # Ordered pairs are intentional: J is the target-changing S direction,
-        # K is the mark changed by the following D step.
+        # Ordered pairs: J supplies the S move; K supplies the D move.
         for J in leaves:
             for K in leaves:
                 if J == K:
                     continue
                 ordered_pairs += 1
+                if J < K:
+                    unordered_pairs += 1
+
                 rowJ, rowK = rows[J], rows[K]
                 common = set(rowJ) & set(rowK)
                 ordered_common += len(common)
+                if J < K:
+                    unordered_common += len(common)
                 if not common:
                     continue
 
@@ -250,7 +257,6 @@ def census(n):
                     P = rowJ[target]["P"]
                     Q = rowK[target]["P"]
                     grouped[(P, Q)].append(target)
-                    stable_hist[1] += 0  # initialize histogram key deterministically
 
                 for (P, Q), start_targets in grouped.items():
                     stable_size = len(start_targets)
@@ -265,28 +271,32 @@ def census(n):
                     graph_key = (source_index, intervals[J], intervals[K], P)
                     graph = projection_graphs.setdefault(
                         graph_key,
-                        {"adj": defaultdict(set), "distinct_arcs": 0,
-                         "shifted_arcs": 0, "witness_keys": set()},
+                        {
+                            "adj": defaultdict(set),
+                            "arc_set": set(),
+                            "shifted_arc_set": set(),
+                            "witness_keys": set(),
+                            "witness_count": 0,
+                        },
                     )
-                    for Q, start_targets in q_groups:
+                    for Q, _ in q_groups:
                         graph["adj"].setdefault(Q, set())
 
-                    # Apply the exact K inverse to every J-lift with this fixed
-                    # P. This is the target-changing S move followed by the
-                    # same-source K reverse-mark D move.
+                    # All J-lifts in this fixed P block are candidate S moves.
+                    # Keep only those for which the exact K inverse is valid
+                    # and its compressed projection lies in C_can(q).
                     k_valid = []
+                    allowed_K = canonical_parent_targets(parent_sources[K], parent_cache)
                     for target_prime in sorted(lifts_by_P[P]):
                         invK = exact_guarded_inverse(target_prime, intervals[K], n)
                         if invK is None:
+                            k_inverse_rejects += 1
                             continue
                         parentK, restoredK, removedK = invK
                         Qprime = compress_tree(parentK, set(intervals[K]), n)
-                        parentK_source = parent_data(intervals, tau, K)
-                        if Qprime not in canonical_parent_targets(parentK_source, parent_cache):
+                        if Qprime not in allowed_K:
+                            k_noncanonical_projections += 1
                             continue
-                        # This must be a common retained target for the same
-                        # source and same ordered marks; otherwise a row or
-                        # inverse implementation is inconsistent.
                         if target_prime not in rowK:
                             raise AssertionError(
                                 ("K-valid target missing from exact K-last row",
@@ -302,35 +312,38 @@ def census(n):
                             for target_prime, Qprime, restoredK, removedK in k_valid:
                                 witness_key = (Q, Qprime, target, target_prime)
                                 graph["adj"][Q].add(Qprime)
-                                if witness_key not in graph["witness_keys"]:
-                                    graph["witness_keys"].add(witness_key)
-                                    graph["distinct_arcs"] += 1
-                                    transition_count += 1
-                                    if Q == Qprime:
-                                        loop_count += 1
-                                    else:
-                                        graph["shifted_arcs"] += 1
-                                        shifted_count += 1
-                                    transitions.append({
-                                        "source_index": source_index,
-                                        "intervals": [list(x) for x in intervals],
-                                        "overlap_tree": [list(x) for x in tau],
-                                        "J": list(intervals[J]),
-                                        "K": list(intervals[K]),
-                                        "P": encode_tree(P),
-                                        "Q": encode_tree(Q),
-                                        "Q_prime": encode_tree(Qprime),
-                                        "T": encode_tree(target),
-                                        "T_prime": encode_tree(target_prime),
-                                        "J_restored_edge": list(rowJ[target_prime]["restored"]),
-                                        "J_removed_local_edges": encode_tree(rowJ[target_prime]["removed"]),
-                                        "K_restored_edge": list(restoredK),
-                                        "K_removed_local_edges": encode_tree(removedK),
-                                    })
-
-                unordered_pairs += (1 if J < K else 0)
-                if J < K:
-                    unordered_common += len(common)
+                                graph["arc_set"].add((Q, Qprime))
+                                if Q != Qprime:
+                                    graph["shifted_arc_set"].add((Q, Qprime))
+                                if witness_key in graph["witness_keys"]:
+                                    continue
+                                graph["witness_keys"].add(witness_key)
+                                graph["witness_count"] += 1
+                                transition_count += 1
+                                if Q == Qprime:
+                                    loop_count += 1
+                                else:
+                                    shifted_count += 1
+                                transitions.append({
+                                    "source_index": source_index,
+                                    "intervals": [list(x) for x in intervals],
+                                    "overlap_tree": [list(x) for x in tau],
+                                    "J": list(intervals[J]),
+                                    "K": list(intervals[K]),
+                                    "P": encode_tree(P),
+                                    "Q": encode_tree(Q),
+                                    "Q_prime": encode_tree(Qprime),
+                                    "T": encode_tree(target),
+                                    "T_prime": encode_tree(target_prime),
+                                    "J_restored_edge_at_T": list(rowJ[target]["restored"]),
+                                    "J_removed_edges_at_T": encode_tree(rowJ[target]["removed"]),
+                                    "K_restored_edge_at_T": list(rowK[target]["restored"]),
+                                    "K_removed_edges_at_T": encode_tree(rowK[target]["removed"]),
+                                    "J_restored_edge_at_T_prime": list(rowJ[target_prime]["restored"]),
+                                    "J_removed_edges_at_T_prime": encode_tree(rowJ[target_prime]["removed"]),
+                                    "K_restored_edge_at_T_prime": list(restoredK),
+                                    "K_removed_edges_at_T_prime": encode_tree(removedK),
+                                })
 
     assert source_count == expected["sources"], (n, source_count)
     assert unordered_pairs == expected["unordered_leaf_pairs"], (n, unordered_pairs)
@@ -340,6 +353,9 @@ def census(n):
     assert ordered_pairs == expected["ordered_leaf_pairs"], (n, ordered_pairs)
     assert ordered_common == expected["common_incidences"], (n, ordered_common)
     assert max_stable == 1, (n, max_stable)
+    assert sum(stable_hist.values()) == ordered_common, (
+        n, sum(stable_hist.values()), ordered_common
+    )
 
     graph_summary = summarize_graphs(projection_graphs)
     payload = {
@@ -352,7 +368,9 @@ def census(n):
         "ordered_common_target_incidences": ordered_common,
         "fixed_projection_group_histogram": dict(sorted(stable_hist.items())),
         "maximum_fixed_projection_group_size": max_stable,
-        "inverse_rejections_from_J_rows": inverse_rejects,
+        "J_inverse_rejections": j_inverse_rejects,
+        "K_inverse_rejections": k_inverse_rejects,
+        "K_valid_but_noncanonical_projections": k_noncanonical_projections,
         "transition_witness_count": transition_count,
         "projection_shift_witness_count": shifted_count,
         "same_projection_loop_witness_count": loop_count,
@@ -372,8 +390,12 @@ def census(n):
         f"max_group={max_stable}"
     )
     print(
+        f"  J_inverse_rejects={j_inverse_rejects}, K_inverse_rejects={k_inverse_rejects}, "
+        f"K_noncanonical={k_noncanonical_projections}"
+    )
+    print(
         f"  transition_witnesses={transition_count}, "
-        f"projection_shifts={shifted_count}, same_projection_loops={loop_count}, "
+        f"projection_shift_witnesses={shifted_count}, same_projection_loops={loop_count}, "
         f"unique_transition_digest={payload['canonical_transition_sha256']}"
     )
     print(
