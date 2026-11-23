@@ -465,3 +465,47 @@ It changes the target while preserving the J parent-target block, then changes t
 The n=6 and n=8 switch-record census shows 46 and 46,424 such K-row, Q-shifting alternatives, respectively. The immediate next calculation should build the directed projection-transition graph whose vertices are K-parent targets Q and whose arcs Q to Q' are witnessed by these guarded J-switches at fixed P. Then test its strongly connected components, sinks, and any well-founded potential. This is preferable to pursuing a same-(P,Q) square that the exact census rules out.
 
 **Updated proof boundary:** the exact n=6,8,10 two-mark census rules out a nontrivial fixed-(P,Q) exchange square in those orders. Projection-shifting squares exist at n=6 and n=8, but no all-orders transition theorem, capacity redistribution, or Hall proof has been established. PFEL, (QH), the all-orders multivalued-π Hall theorem, and WI remain **OPEN**.
+
+
+## 8D. Reproducible exact two-mark projection census (n=6,8)
+
+The stable-set calculation has now been implemented and run in GitHub Actions against the repository's guarded-output, fixed-mark inverse, compression, and source-enumeration routines.
+
+For each source x, each pair of eligible non-root leaves (J,K), and each common retained target T in the J-last and K-last rows, the verifier computes
+[
+P=P_J(T),\qquad Q=P_K(T).
+]
+It groups common targets by the ordered pair (P,Q). For each group, its members are exactly the targets in the tested source/pair incidence with both reverse marks valid and both projected parent targets fixed. Thus the group containing T computes the finite stable set L_J^K(P;Q).
+
+**Verified run:** GitHub Actions run [45240343178](https://github.com/syncgravity/Singular-Boundary/actions/runs/45240343178), conclusion SUCCESS, commit `e5380129a451886e990311a83ae9611a0e911fc5`.
+
+| Order | Sources | Eligible leaf pairs | Common-target incidences | (P,Q)-groups | Stable-group histogram | Maximum stable-set size |
+|---|---:|---:|---:|---:|---|---:|
+| n=6 | 22 | 8 | 37 | 37 | {1: 37} | 1 |
+| n=8 | 608 | 490 | 15,533 | 15,533 | {1: 15,533} | 1 |
+
+The run output is exact and finite. Every tested stable set is a singleton:
+[
+L_J^K(P;Q)=\{T\}
+]
+for all simultaneous retained two-mark incidences at n=6 and n=8. Therefore the proposed local exchange square cannot change T while preserving both P and Q at these orders.
+
+The verifier is `research/verification/verify_pf_i16_two_mark_projection_uniqueness.py`; the workflow is `.github/workflows/pf-i16-two-mark-projection-uniqueness.yml`. The first workflow attempt failed because the verifier passed the set returned by `inverse_last_switch` directly to `compress_tree`; this was corrected by extracting its unique tree witness. The successful run above is on the corrected commit.
+
+**Scope:** this calculation does not enumerate n=10. It also does not prove that no target-changing move exists if one allows the K projection Q to change, nor does it construct a capacity-preserving reroute. The earlier unverified n=10 counts and any claim of an n=10 singleton census are not part of this authenticated result.
+
+## 8E. Correction: separated support preserves K-inverse validity, not the full K projection
+
+The separated-support criterion in Section 8C is withdrawn in its original form. A J-switch whose support is disjoint from the K reverse footprint can leave the local K inverse pattern valid. But this does **not** imply that the compressed K-parent target Q is unchanged: edges modified by the J-switch may be disjoint from the K footprint and still survive deletion of K, so they remain visible in the K-parent tree.
+
+Accordingly, the implication
+[
+\operatorname{supp}(s_J)\cap R_K(T)=\varnothing
+\quad\Longrightarrow\quad
+P_K(T')=P_K(T)
+]
+is not established and must not be used. The valid conclusion from footprint disjointness is only preservation of the relevant local K inverse data, subject to the guard conditions; exact K-row membership and the value of P_K(T') must be checked by applying the full inverse/compression routine.
+
+This correction narrows the next target. The fixed-(P,Q) two-mark exchange square is rigid at n=6,8. The next computation should instead retain projection-shifting transitions Q to Q' (with Q' allowed to differ), record exact forward switch witnesses and both inverse projections, and then test whether those transitions support a circulation or fractional reroute on the fiber-target incidence graph. No such capacity argument is yet proved.
+
+**Updated status:** the n=6,8 fixed-(P,Q) rigidity census is verified. The two-mark stability dichotomy, projection-shifting transition theorem, Parent-Fiber Exchange Lemma, quotient Hall, all-orders multivalued-π Hall theorem, and WI remain **OPEN**.
