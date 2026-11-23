@@ -249,7 +249,7 @@ def summarize_graphs(graphs):
         nontrivial_sccs += sum(len(c) > 1 for c in components)
         for component in sinks:
             sink_hist[len(component)] += 1
-        if record["shifted_arcs"]:
+        if record["shifted_arc_set"]:
             graphs_with_shift += 1
         nodes = set(adjacency)
         for targets in adjacency.values():
