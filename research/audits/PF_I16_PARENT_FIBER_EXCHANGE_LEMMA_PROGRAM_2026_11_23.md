@@ -425,3 +425,37 @@ is not established and must not be used. The valid conclusion from footprint dis
 This correction narrows the next target. The fixed-(P,Q) two-mark exchange square is rigid at n=6,8. The next computation should instead retain projection-shifting transitions Q to Q' (with Q' allowed to differ), record exact forward switch witnesses and both inverse projections, and then test whether those transitions support a circulation or fractional reroute on the fiber-target incidence graph. No such capacity argument is yet proved.
 
 **Updated status:** the n=6,8 fixed-(P,Q) rigidity census is verified. The two-mark stability dichotomy, projection-shifting transition theorem, Parent-Fiber Exchange Lemma, quotient Hall, all-orders multivalued-π Hall theorem, and WI remain **OPEN**.
+
+
+## 8F. Exact projection-shifting D–S–D census (2026-11-23)
+
+The next prescribed calculation has now been implemented and CI-verified. Full audit:
+\`PF_I16_PROJECTION_SHIFTING_TRANSITION_CENSUS_2026_11_23.md\`.
+
+Workflow [45246411525](https://github.com/syncgravity/Singular-Boundary/actions/runs/45246411525) completed successfully on commit \`97d591828aaf6de501860808a949ef39637bff7a\`. Artifact [14853712488](https://github.com/syncgravity/Singular-Boundary/actions/runs/45246411525/artifacts/14853712488), SHA-256 \`44db02fd64ff2ffc0674967941f13a869a6d2a79f15f8c1fce54b76f172c7b8f\`.
+
+The verifier now restricts both starting rows to the actual canonical-parent retained relation and checks both endpoint D-diamonds by recomputing the opposite inverse after compression. Both double inverses must agree and belong to ordinary \(C(r)\); canonical grandparent membership is not imposed.
+
+| Quantity | n=6 | n=8 |
+|---|---:|---:|
+| Sources | 22 | 608 |
+| Unordered eligible leaf pairs | 8 | 490 |
+| Common retained target incidences | 37 | 11,086 |
+| Ordered common incidences | 74 | 22,172 |
+| Maximum fixed-\((P,Q)\) group size | 1 | 1 |
+| D–S–D witnesses | 176 | 82,032 |
+| Projection-shifting witnesses \(Q\ne Q'\) | 102 | 59,860 |
+| Same-projection loops | 74 | 22,172 |
+| Projection graphs \((x,J,K,P)\) | 36 | 7,143 |
+| Graphs with projection shifts | 25 | 6,425 |
+| Nontrivial SCCs | 25 | 6,425 |
+| Sink SCCs | 36 | 7,143 |
+| Maximum sink/SCC size | 3 | 6 |
+
+Every tested projection graph has exactly one sink SCC. Sink-size histograms are n=6 \(\{1:11,2:12,3:13\}\) and n=8 \(\{1:718,2:1865,3:2213,4:1206,5:585,6:556\}\).
+
+**Interpretation:** fixed-\((P,Q)\) squares remain singleton, but allowing \(Q\to Q'\) gives abundant witnessed source-preserving D–S–D transitions and nontrivial SCCs. This is a finite exchange structure, not a fractional capacity allocation or Hall proof.
+
+**Correction to Section 8D:** the earlier 15,533 n=8 common-target incidences were raw simultaneous forced-last outputs before canonical-parent filtering. The actual retained-row intersection is 11,086 unordered (22,172 ordered). The earlier singleton result remains true because it held on the larger raw set, hence on its retained subset.
+
+**Next exact task:** extend S-edges across distinct child sources in the same fixed \((p,J,P)\) block. The current census keeps \(x\) fixed and therefore does not resolve non-diamond collisions between different source witnesses. Preserve source identity and \(1/d(x)\) demand while constructing that cross-source incidence graph. The helical \(\mathbb Z^5\) phase map remains unconstructed and is not inferred from these transitions.
