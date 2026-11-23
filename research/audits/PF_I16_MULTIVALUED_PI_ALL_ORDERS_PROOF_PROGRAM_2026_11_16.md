@@ -545,3 +545,27 @@ Neither failure is a Hall-deficient family. Both reject only the uniform-in-row 
 Durable audit: [PF_I16_ROW_NORMALIZED_FAILURE_AND_DIRECT_HALL_CONTINUATION_2026_11_19.md](PF_I16_ROW_NORMALIZED_FAILURE_AND_DIRECT_HALL_CONTINUATION_2026_11_19.md).
 
 The next proof obligation remains arbitrary-family BQH_k / weighted dual MR_k. A viable allocation must preserve the reverse-mark J, projected parent target P_J(T), and guarded-switch structure; neither row-size normalization nor equal reciprocal reverse-degree splitting is adequate. Do not infer failure of Hall from an overloaded target in either diagnostic.
+
+
+## Current continuation status — projection-shifting exchange (2026-11-23)
+
+The central all-orders target remains the arbitrary-family blockwise split-demand inequality
+\[
+\left|\bigcup_{F\in S}N_k(F)\right|\ge\sum_{F\in S}\delta(F)
+\quad\text{for every fiber family }S\subseteq\mathcal F_k,
+\]
+equivalently its weighted dual \(MR_k\). None of the local cut lemmas, finite matching certificates, or sibling port-tree diamonds proves this arbitrary-family inequality.
+
+The November 23 Parent-Fiber Exchange work has now implemented the next exact finite step prescribed by the proof program: source-preserving D–S–D transitions with a changing second parent projection \(Q\to Q'\). See:
+- \`PF_I16_PARENT_FIBER_EXCHANGE_LEMMA_PROGRAM_2026_11_23.md\`, Addenda 8A–8F;
+- \`PF_I16_PROJECTION_SHIFTING_TRANSITION_CENSUS_2026_11_23.md\`;
+- verifier \`research/verification/verify_pf_i16_projection_shifting_transitions.py\`;
+- workflow [45246411525](https://github.com/syncgravity/Singular-Boundary/actions/runs/45246411525).
+
+At n=6,8, every fixed-\((x,J,K,P)\) projection digraph is strongly connected: the total SCC count equals the number of such graphs, and each graph has exactly one sink SCC. Nontrivial projection-shifting graphs occur in 25/36 blocks at n=6 and 6,425/7,143 blocks at n=8. The exact transition census includes 102 and 59,860 projection-shifting witnesses, respectively.
+
+This does **not** solve the global Hall problem. The census keeps the child source \(x\) fixed along S-edges; it does not connect different child sources in the same \((p,J,P)\) fiber. Non-diamond collisions across distinct source witnesses therefore remain unresolved, as do target-capacity constraints and arbitrary-family \(MR_k\).
+
+**Next proof task:** extend S-edges across distinct sources in each fixed \((p,J,P)\) block, retain the source demand \(1/d(x)\), and analyze the full two-colour incidence complex. Do not infer a capacity allocation from strong connectivity of the source-fixed projection graphs.
+
+The helical \(\mathbb Z^5\) bridge remains separate: no authenticated map from \((T,J)\) to an accepted lattice label has been obtained, and no helical phase or pitch is assigned by this finite census.
