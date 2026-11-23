@@ -9,6 +9,8 @@ on:
       - .github/workflows/pf-i16-projection-shifting-transitions.yml
   workflow_dispatch:
 
+# The verifier is intentionally limited to exact n=6,8 source-preserving transitions.
+
 permissions:
   contents: read
 
