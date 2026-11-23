@@ -24,7 +24,9 @@ on:
       - 'research/scripts/verify_pf_i16_rhombus_corner_continuation.py'
       - 'research/scripts/verify_pf_i16_rhombus_corner_suffix_commutations.py'
       - 'research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py'
+      - 'research/scripts/verify_pf_i16_four_cell_switch_factorization.py'
       - 'research/audits/PF_I16_FOUR_CELL_DEPENDENCY_CLOSED_COMMON_SUFFIX_2026_11_23.md'
+      - 'research/audits/PF_I16_FOUR_CELL_ALTERNATING_SWITCH_FACTORIZATION_2026_11_23.md'
       - 'research/audits/PF_I16_RHOMBUS_CORNER_COMMON_CONTINUATION_2026_11_21.md'
       - 'research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md'
       - 'research/audits/PF_I16_HALL_FOUR_INTERVAL_SECOND_EDGE_WORK_GATE_AND_CHAT_RECORD_2026_11_19.md'
@@ -171,7 +173,8 @@ jobs:
             research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py \
             research/scripts/verify_pf_i16_rhombus_corner_continuation.py \
             research/scripts/verify_pf_i16_rhombus_corner_suffix_commutations.py \
-            research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py
+            research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py \\
+            research/scripts/verify_pf_i16_four_cell_switch_factorization.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
       - name: Enumerate all one-to-three-rhombus four-interval support candidates
@@ -316,6 +319,15 @@ jobs:
         with:
           name: pf-i16-four-cell-dependency-closed-common-suffix
           path: /tmp/pf_i16_four_cell_dependency_closed_common_suffix.json
+          if-no-files-found: error
+      - name: Verify four-cell alternating-switch factorization
+        run: |
+          python research/scripts/verify_pf_i16_four_cell_switch_factorization.py --collapse /tmp/pf_i16_four_support_relative_collapse_diamonds.json.gz --diagrams /tmp/pf_i16_four_interval_independent_diagram_lifting.json --inventory /tmp/pf_i16_four_interval_support_inventory.json --output /tmp/pf_i16_four_cell_alternating_switch_factorization.json
+      - name: Upload four-cell alternating-switch factorization
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-four-cell-alternating-switch-factorization
+          path: /tmp/pf_i16_four_cell_alternating_switch_factorization.json
           if-no-files-found: error
       - name: Verify complete theorem source inventory and Git blob hashes
         run: python research/scripts/verify_theorem_index.py --repo .
