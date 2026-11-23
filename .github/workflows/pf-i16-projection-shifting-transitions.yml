@@ -1,0 +1,41 @@
+name: PF-I16 projection-shifting transitions
+
+on:
+  push:
+    branches:
+      - research/pf-i16-parent-fiber-exchange-2026-11-23
+    paths:
+      - research/verification/verify_pf_i16_projection_shifting_transitions.py
+      - .github/workflows/pf-i16-projection-shifting-transitions.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out research branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-parent-fiber-exchange-2026-11-23
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run exact projection-shifting census
+        run: |
+          python research/verification/verify_pf_i16_projection_shifting_transitions.py \
+            --output pf_i16_projection_shifting_transitions.json
+
+      - name: Upload exact transition records
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-projection-shifting-transitions-n6-n8
+          path: pf_i16_projection_shifting_transitions.json
+          if-no-files-found: error
+          retention-days: 90
