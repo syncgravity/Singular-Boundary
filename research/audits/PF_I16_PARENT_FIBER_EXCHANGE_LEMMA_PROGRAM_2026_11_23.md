@@ -324,3 +324,58 @@ The reverse-mark complex is intended to add structure to this min-cut certificat
 This formulation prevents a circular proof: one may not assume a maximum matching's chosen assignment has a canonical form, and one may not infer a target-changing exchange merely from equality of the two inverse orders.
 
 **Updated status:** the two-colour source-mark incidence complex is now the preferred candidate exchange object. The immediate proof gap is the treatment of non-diamond collisions and the exclusion of closed deficient components.
+
+
+## 8C. A concrete local exchange-square criterion: preserve the other reverse mark
+
+The two-colour graph suggests a first local lemma that is stronger than mere coexistence of two reverse marks and weaker than a global Hall theorem.
+
+Fix a source (x), two eligible leaves (J,K), and a common retained target (T). Let
+[
+P=P_J(T)\in C_{\rm can}(p),\qquad
+Q=P_K(T)\in C_{\rm can}(q),
+]
+where (p=\pi_J(x)), (q=\pi_K(x)). Let (R_K(T)) denote the four-vertex reverse footprint for the (K)-inverse: the two endpoints of (K) and the two outside neighbors recovered by the fixed-mark inverse. Mutual survival ensures that this inverse record remains meaningful after the (J)-projection.
+
+Define the (K)-stable (J)-lift set
+[
+L_J^K(P;Q)=
+\{T'\in L_J(P):
+K\text{ is still a valid guarded reverse mark of }T'
+\text{ and }P_K(T')=Q\}.
+]
+This set contains (T).
+
+**Separated-support criterion.** If there is an alternative guarded (J)-insertion from (P) whose four-vertex switch support is disjoint from (R_K(T)), then its output (T'\ne T) lies in (L_J^K(P;Q)).
+
+Reason: the switch changes edges only on its four-vertex support. If that support is disjoint from the (K)-reverse footprint, all edges incident to the two (K)-endpoints and the two recovered outside neighbors are unchanged. Thus the same guarded (K)-inverse record survives, with the same compressed parent target (Q). Since (T'\in L_J(P)), it remains in the (J)-fiber as well. This gives the witnessed square
+[
+(p,J,P,T)\xrightarrow{S}(p,J,P,T')
+\xrightarrow{D}(q,K,Q,T').
+]
+
+This criterion is exact but conditional. The fixed-fiber theorem only gives at least two (J)-lifts; it does not guarantee that one of the alternative switch supports avoids the (K)-reverse footprint. If the supports meet, a more refined local check is needed: the alternative local pattern may still preserve the specific (K)-incident edges even when the four-vertex supports intersect.
+
+### The first obstruction to classify
+
+Let (E_J(P)) be the set of old edges of the parent target (P) on which a guarded insertion of (J) is allowed. A crude obstruction to separated support is that every (e\in E_J(P)) meets the (K)-reverse footprint after the appropriate port identifications. This is a small vertex-cover condition on the candidate insertion edges.
+
+The sharper obstruction is pattern-sensitive: every allowed local pattern on every candidate edge destroys either the (K)-guard or the exact projected parent target (Q). Call this a **K-blocking footprint**.
+
+The proposed next local theorem is:
+
+> **Two-mark stability lemma (candidate).** For every simultaneous retained pair ((J,K,T)), either (L_J^K(P;Q)) contains an alternative target (T'\ne T), or the (K)-blocking footprint has a rigid, explicitly classifiable form that forces a third eligible mark or a monotone parent-fiber descent.
+
+This dichotomy is not yet proved. It is a sharper, falsifiable step toward PFEL: it asks whether a collision between two fibers can be carried to a second target while preserving the other reverse mark, or whether the failure of that move exposes additional branching elsewhere.
+
+### Exact finite test to run
+
+For (n=6,8), and then (n=10), enumerate every source (x), every pair of distinct eligible non-root leaves (J,K), and every target (T) retained through both marks. For each record:
+
+1. Compute the exact (J)-parent target (P) and (K)-parent target (Q).
+2. Enumerate all (J)-last lifts in (L_J(P)), using the actual guarded local switch records.
+3. Apply the exact (K)-inverse to each lift and retain those whose compressed target equals (Q).
+4. Record \(|L_J^K(P;Q)|\), the candidate old edges, and which local patterns preserve the (K)-footprint.
+5. For singleton stable sets, record the blocking footprint and all other eligible leaves of (x).
+
+The output must be an exact census with explicit first witnesses for every exceptional class. A positive census would be finite evidence only; an all-orders proof still needs a structural classification of the blocking configurations.
