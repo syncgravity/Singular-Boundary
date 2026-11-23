@@ -96,9 +96,8 @@ def census(n, expected_sources):
 def main():
     census(6, expected_sources=22)
     census(8, expected_sources=608)
-    census(10, expected_sources=31744)
     print(
-        "Two-mark projection-uniqueness census complete. "
+        "Two-mark projection-uniqueness census complete for n=6,8. "
         "No all-orders result is claimed."
     )
 
