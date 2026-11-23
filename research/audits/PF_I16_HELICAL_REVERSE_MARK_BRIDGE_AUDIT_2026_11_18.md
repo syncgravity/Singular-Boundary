@@ -229,3 +229,22 @@ Such a decomposition would prove the blockwise mixed-fiber Hall inequality. The 
 The helical observer is a promising candidate for a *geometric ordering principle* on the multivalued-pi neighborhood, but the missing map Psi is the decisive mathematical gap. The rational-orbit pretest shows why phase order and a source-derived five-band word matter: the unmarked H2/H3 phase sets coincide, and the m=10 complete-orbit average vanishes. The existing Hall enumerator supplies exact reverse-mark inverses and parent projections, but it does not supply the Z5 geometry needed to label them.
 
 No new Hall theorem, no new matching certificate, and no physical 3D lift are claimed by this audit.
+
+
+## Addendum — projection-shifting transition substrate (2026-11-23)
+
+The PFEL continuation has now produced an exact source-preserving D–S–D projection-transition graph at n=6,8. For fixed \((x,J,K,P)\), its vertices are K-parent projections \(Q\), and an arc \(Q\to Q'\) is backed by:
+- a common retained starting target with mutually surviving \(J,K\) inverses;
+- a J-last target change within the same fixed parent-target block \(L_J(P)\);
+- a second mutually surviving \(J,K\) diamond at the new target;
+- equality of the two double inverses and membership in the ordinary common-parent neighborhood \(C(r)\).
+
+All tested per-block projection digraphs are strongly connected. There are 25 nontrivial blocks among 36 at n=6 and 6,425 among 7,143 at n=8. Full counts and witnesses are in \`PF_I16_PROJECTION_SHIFTING_TRANSITION_CENSUS_2026_11_23.md\`.
+
+This supplies a finite combinatorial transition structure on which a future geometric lift could act. It does **not** supply the missing map
+\[
+(T,J)\longmapsto m(T,J)\in\mathbb Z^5,
+\]
+does not identify any transition with an accepted Penrose face displacement, and does not derive a helical phase or the dissertation pitches. In particular, strong connectivity of these finite source-fixed graphs is not evidence that the phase holonomy equals \(3/13,5/13,8/13\).
+
+The next geometry-sensitive task remains an authenticated source-to-accepted-face incidence map. Before that, the combinatorial PFEL task is to add S-edges across distinct child sources in the same \((p,J,P)\) block; the current D–S–D census keeps \(x\) fixed and does not resolve non-diamond collisions. A helical interpretation should be tested only after those cross-source transitions have exact accepted-face provenance.
