@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """Exact PF-I16 projection-shifting transition census (n=6,8).
 
-A transition is a witnessed S-D path in the source-mark incidence complex:
-start at a common retained target T for marks J,K; move within the fixed
-(J,parent-target P) lift block to T'; then reverse K at T' and compute the
-full compressed K-parent target Q'. The transition is Q -> Q'.
+A certified transition is a witnessed D-S-D path in the source-mark incidence
+complex. At a common retained target T for marks J,K, first verify the
+mutually-surviving deletion diamond. Move by a sibling-lift S edge from T to
+T' while preserving (J,parent-target P). At T', verify a second mutually
+surviving J,K diamond and record the changed K-parent projection Q -> Q'.
 
-All source, mark, parent-target and child-target identities are retained.
+Every inverse uses the repository's full inverse/compression routines plus
+explicit no-reinsertion and positive-overlap checks. The common double inverse
+is checked in the ordinary C(r), never assumed canonical.
+
 This is a finite diagnostic, not a capacity theorem or an all-orders result.
 """
 from __future__ import annotations
@@ -67,6 +71,12 @@ def exact_guarded_inverse(tree, mark, n):
     return parent, restored, tuple(sorted(removed))
 
 
+def compress_mark(mark, removed, n):
+    remaining = [x for x in range(1, n + 1) if x not in removed]
+    rank = {x: i + 1 for i, x in enumerate(remaining)}
+    return tuple(sorted(rank[x] for x in mark))
+
+
 def canonical_parent_targets(parent, cache):
     if parent not in cache:
         intervals, tau = parent
@@ -79,8 +89,94 @@ def canonical_parent_targets(parent, cache):
     return cache[parent]
 
 
+def ordinary_parent_targets(parent, cache):
+    if parent not in cache:
+        intervals, tau = parent
+        if len(intervals) == 1:
+            cache[parent] = {((1, 2),)}
+        else:
+            cache[parent] = candidate_outputs(intervals, tau)
+        assert cache[parent]
+    return cache[parent]
+
+
 def encode_tree(tree):
     return [list(edge) for edge in sorted(tree)]
+
+
+def mutual_diamond(target, intervals, tau, J, K, n, source_index,
+                   ordinary_cache, diamond_cache):
+    """Exact same-source D-edge certificate for two disjoint eligible marks."""
+    key = (source_index, target, tuple(sorted((intervals[J], intervals[K]))))
+    if key in diamond_cache:
+        return diamond_cache[key]
+
+    markJ, markK = intervals[J], intervals[K]
+    invJ = exact_guarded_inverse(target, markJ, n)
+    invK = exact_guarded_inverse(target, markK, n)
+    if invJ is None or invK is None:
+        diamond_cache[key] = None
+        return None
+
+    parentJ, restoredJ, removedJ = invJ
+    parentK, restoredK, removedK = invK
+    projectedJ = compress_tree(parentJ, set(markJ), n)
+    projectedK = compress_tree(parentK, set(markK), n)
+    markK_after_J = compress_mark(markK, set(markJ), n)
+    markJ_after_K = compress_mark(markJ, set(markK), n)
+
+    # Both second inverses must survive in the opposite compressed parent.
+    invK_after_J = exact_guarded_inverse(projectedJ, markK_after_J, n - 2)
+    invJ_after_K = exact_guarded_inverse(projectedK, markJ_after_K, n - 2)
+    if invK_after_J is None or invJ_after_K is None:
+        diamond_cache[key] = None
+        return None
+
+    parentK_after_J, restoredK_after_J, removedK_after_J = invK_after_J
+    parentJ_after_K, restoredJ_after_K, removedJ_after_K = invJ_after_K
+    U_JK = compress_tree(parentK_after_J, set(markK_after_J), n - 2)
+    U_KJ = compress_tree(parentJ_after_K, set(markJ_after_K), n - 2)
+    if U_JK != U_KJ:
+        raise AssertionError(
+            ("mutually surviving reverse orders disagree",
+             n, intervals, tau, markJ, markK, target, U_JK, U_KJ)
+        )
+
+    # The two source deletions must produce the same ordinary grandparent.
+    parentJ_source = parent_data(intervals, tau, J)
+    pJ_intervals, pJ_tau = parentJ_source
+    k_in_pJ = pJ_intervals.index(markK_after_J)
+    r_from_J = parent_data(pJ_intervals, pJ_tau, k_in_pJ)
+
+    parentK_source = parent_data(intervals, tau, K)
+    pK_intervals, pK_tau = parentK_source
+    j_in_pK = pK_intervals.index(markJ_after_K)
+    r_from_K = parent_data(pK_intervals, pK_tau, j_in_pK)
+    if r_from_J != r_from_K:
+        raise AssertionError(("source deletion diamond mismatch", r_from_J, r_from_K))
+
+    if U_JK not in ordinary_parent_targets(r_from_J, ordinary_cache):
+        raise AssertionError(
+            ("mutual target inverse not in ordinary common-parent neighborhood",
+             n, intervals, tau, markJ, markK, target, U_JK, r_from_J)
+        )
+
+    witness = {
+        "U": U_JK,
+        "projected_J": projectedJ,
+        "projected_K": projectedK,
+        "J_restored_edge": restoredJ,
+        "J_removed_edges": removedJ,
+        "K_restored_edge": restoredK,
+        "K_removed_edges": removedK,
+        "K_after_J_restored_edge": restoredK_after_J,
+        "K_after_J_removed_edges": removedK_after_J,
+        "J_after_K_restored_edge": restoredJ_after_K,
+        "J_after_K_removed_edges": removedJ_after_K,
+        "common_parent_source": r_from_J,
+    }
+    diamond_cache[key] = witness
+    return witness
 
 
 def tarjan_scc(adjacency):
@@ -200,7 +296,11 @@ def census(n):
     j_inverse_rejects = 0
     k_inverse_rejects = 0
     k_noncanonical_projections = 0
+    start_diamond_rejects = 0
+    end_diamond_rejects = 0
     parent_cache = {}
+    ordinary_cache = {}
+    diamond_cache = {}
 
     for source_index, (intervals, tau) in enumerate(sources(n)):
         source_count += 1
@@ -282,9 +382,25 @@ def census(n):
                     for Q, _ in q_groups:
                         graph["adj"].setdefault(Q, set())
 
+                    # A starting D edge is required: T must have mutually
+                    # surviving J,K inverses, with common U in ordinary C(r).
+                    mutually_surviving_starts = {}
+                    for Q, start_targets in q_groups:
+                        valid_starts = []
+                        for target in start_targets:
+                            diamond = mutual_diamond(
+                                target, intervals, tau, J, K, n, source_index,
+                                ordinary_cache, diamond_cache
+                            )
+                            if diamond is None:
+                                start_diamond_rejects += 1
+                                continue
+                            valid_starts.append((target, diamond))
+                        mutually_surviving_starts[Q] = valid_starts
+
                     # All J-lifts in this fixed P block are candidate S moves.
-                    # Keep only those for which the exact K inverse is valid
-                    # and its compressed projection lies in C_can(q).
+                    # Keep only those with a valid K inverse, canonical q-target,
+                    # and a second mutually surviving D diamond at T'.
                     k_valid = []
                     allowed_K = canonical_parent_targets(parent_sources[K], parent_cache)
                     for target_prime in sorted(lifts_by_P[P]):
@@ -305,11 +421,20 @@ def census(n):
                             )
                         if rowJ[target_prime]["P"] != P or rowK[target_prime]["P"] != Qprime:
                             raise AssertionError("projection identity mismatch")
-                        k_valid.append((target_prime, Qprime, restoredK, removedK))
+                        diamond_prime = mutual_diamond(
+                            target_prime, intervals, tau, J, K, n, source_index,
+                            ordinary_cache, diamond_cache
+                        )
+                        if diamond_prime is None:
+                            end_diamond_rejects += 1
+                            continue
+                        k_valid.append(
+                            (target_prime, Qprime, restoredK, removedK, diamond_prime)
+                        )
 
-                    for Q, start_targets in q_groups:
-                        for target in start_targets:
-                            for target_prime, Qprime, restoredK, removedK in k_valid:
+                    for Q, valid_starts in mutually_surviving_starts.items():
+                        for target, diamond_start in valid_starts:
+                            for target_prime, Qprime, restoredK, removedK, diamond_prime in k_valid:
                                 witness_key = (Q, Qprime, target, target_prime)
                                 graph["adj"][Q].add(Qprime)
                                 graph["arc_set"].add((Q, Qprime))
@@ -335,13 +460,13 @@ def census(n):
                                     "Q_prime": encode_tree(Qprime),
                                     "T": encode_tree(target),
                                     "T_prime": encode_tree(target_prime),
-                                    "J_restored_edge_at_T": list(rowJ[target]["restored"]),
-                                    "J_removed_edges_at_T": encode_tree(rowJ[target]["removed"]),
-                                    "K_restored_edge_at_T": list(rowK[target]["restored"]),
-                                    "K_removed_edges_at_T": encode_tree(rowK[target]["removed"]),
-                                    "J_restored_edge_at_T_prime": list(rowJ[target_prime]["restored"]),
+                                    "common_grandparent_U_at_T": encode_tree(diamond_start["U"]),
+                                    "common_grandparent_U_at_T_prime": encode_tree(diamond_prime["U"]),
+                                    "J_restored_edge_at_T": list(diamond_start["J_restored_edge"]),
+                                    "K_restored_edge_at_T": list(diamond_start["K_restored_edge"]),
+                                    "J_restored_edge_at_T_prime": list(diamond_prime["J_restored_edge"]),
+                                    "K_restored_edge_at_T_prime": list(diamond_prime["K_restored_edge"]),
                                     "J_removed_edges_at_T_prime": encode_tree(rowJ[target_prime]["removed"]),
-                                    "K_restored_edge_at_T_prime": list(restoredK),
                                     "K_removed_edges_at_T_prime": encode_tree(removedK),
                                 })
 
@@ -371,6 +496,8 @@ def census(n):
         "J_inverse_rejections": j_inverse_rejects,
         "K_inverse_rejections": k_inverse_rejects,
         "K_valid_but_noncanonical_projections": k_noncanonical_projections,
+        "starting_diamond_rejections": start_diamond_rejects,
+        "ending_diamond_rejections": end_diamond_rejects,
         "transition_witness_count": transition_count,
         "projection_shift_witness_count": shifted_count,
         "same_projection_loop_witness_count": loop_count,
@@ -390,8 +517,9 @@ def census(n):
         f"max_group={max_stable}"
     )
     print(
-        f"  J_inverse_rejects={j_inverse_rejects}, K_inverse_rejects={k_inverse_rejects}, "
-        f"K_noncanonical={k_noncanonical_projections}"
+        f"  inverse_rejects_J={j_inverse_rejects}, inverse_rejects_K={k_inverse_rejects}, "
+        f"K_noncanonical={k_noncanonical_projections}, "
+        f"start_D_rejects={start_diamond_rejects}, end_D_rejects={end_diamond_rejects}"
     )
     print(
         f"  transition_witnesses={transition_count}, "
@@ -419,9 +547,10 @@ def main():
         "schema": "PF-I16-PROJECTION-SHIFTING-TRANSITIONS-BATCH-v1",
         "orders": reports,
         "scope_note": (
-            "Exact finite source-preserving S-D transition census at n=6,8. "
-            "No capacity-preserving transport, PFEL, all-orders Hall, or "
-            "helical phase map is claimed."
+            "Exact finite source-preserving D-S-D transition census at n=6,8. "
+            "Each transition has two mutually-surviving reverse-mark diamonds "
+            "and an exact common ordinary-parent target. No capacity-preserving "
+            "transport, PFEL, all-orders Hall, or helical phase map is claimed."
         ),
     }
     Path(args.output).write_text(json.dumps(output, sort_keys=True, indent=2) + "\n")
