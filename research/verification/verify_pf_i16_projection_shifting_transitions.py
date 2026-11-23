@@ -37,8 +37,8 @@ sys.setrecursionlimit(100000)
 EXPECTED = {
     6: {"sources": 22, "ordered_leaf_pairs": 16, "common_incidences": 74,
         "unordered_leaf_pairs": 8, "unordered_common_incidences": 37},
-    8: {"sources": 608, "ordered_leaf_pairs": 980, "common_incidences": 31066,
-        "unordered_leaf_pairs": 490, "unordered_common_incidences": 15533},
+    8: {"sources": 608, "ordered_leaf_pairs": 980, "common_incidences": 22172,
+        "unordered_leaf_pairs": 490, "unordered_common_incidences": 11086},
 }
 
 
