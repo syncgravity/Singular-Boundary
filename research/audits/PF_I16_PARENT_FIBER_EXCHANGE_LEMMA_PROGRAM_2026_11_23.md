@@ -244,3 +244,83 @@ Until then, PFEL, (QH), all-orders multivalued-\(\pi\) Hall, and the weighted on
 - `docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md` — integrated source/proof boundary.
 
 **Final status:** a corrected reverse-mark transition relation and a precise Parent-Fiber Exchange Lemma target are now recorded. The transition graph is not yet an augmenting mechanism; constructing a target-changing exchange square/path is the immediate open proof step.
+
+
+## 8A. Refined two-colour incidence complex: the candidate exchange graph
+
+The preceding sections distinguish same-target deletion diamonds from target-changing moves. The next refinement is to put both kinds of move on one graph whose vertices retain source identity.
+
+Let
+[
+\widehat E_n=\{(x,J,T):J\in L_0(\tau_x),\ T\text{ is retained through }J\}.
+]
+Each vertex carries the full parent data (p=\pi_J(x)), (P=P_J(T)), and fiber (F=(p,J)). Do not quotient away (x): two different child sources can inhabit the same parent-leaf fiber, and a target shared by two fibers need not be witnessed by one common child source.
+
+Define two kinds of certified edges.
+
+**(S) Sibling-lift edges (target-changing, fixed parent target).** Join ((x,J,T)) to ((x',J,T')) when
+[
+\pi_J(x)=\pi_J(x')=p,\qquad
+P_J(T)=P_J(T')=P\in C_{\rm can}(p),
+]
+and both (T,T'\in L_J(P)). The fixed-fiber theorem gives
+[
+|L_J(P)|\ge2,
+]
+and fixed-mark inverse uniqueness makes the blocks (L_J(P)) disjoint as (P) varies for fixed (J). These edges are genuine target-changing alternatives. They are certified by the common parent target and the exact guarded insertion records.
+
+**(D) Deletion-diamond edges (same target, different marks).** Join ((x,J,T)) to ((x,K,T)) only when the same source (x) has both eligible leaves, both reverse operations are valid and mutually survive, and the common double inverse (U\in C(r)) is recorded. The edge stores ((x,J,K,U)). It is not enough that two unrelated sources have incidences at the same target.
+
+The resulting graph (\mathscr X_n) is bipartite by edge colour: S-edges change the target while retaining a parent-target block; D-edges change the mark/fiber while retaining the target. An alternating path
+[
+(x_0,J_0,T_0)
+\xrightarrow{S}
+(x_1,J_1,T_1)
+\xrightarrow{D}
+(x_1,K_1,T_1)
+\xrightarrow{S}\cdots
+]
+is a candidate witnessed reroute. The source and mark identities make it possible to track the split demand (1/d(x)) at every D-step.
+
+### What this graph does and does not solve
+
+It now contains both ingredients that were missing from the one-target graph \(\Gamma_T\): a certified way to change target (S) and a certified way to change parent mark/fiber (D). This is a better candidate for the exchange mechanism.
+
+But it is not yet sufficient. A shared target may be incident to two fibers through two different child sources (x\ne x'\); there is then no D-edge between those incidences. Such a collision is a **non-diamond collision**. The graph \(\mathscr X_n\) must either:
+- prove that every collision relevant to a minimal deficient family can be resolved into a chain of S/D moves, or
+- classify non-diamond collisions and show they have a separate capacity surplus.
+
+That is the next genuine structural obstacle. One cannot assert that all target collisions are deletion diamonds.
+
+### Candidate exchange invariant
+
+For a partial assignment, direct every S-edge from the currently occupied incidence toward its alternative target, and every D-edge toward the competing mark incidence at the same target. An augmenting component is a directed alternating path ending at a target with unused capacity. A closed component is a possible obstruction.
+
+The desired lemma can be sharpened to:
+
+> **No-closed-deficient-component criterion.** Every nonempty component of (\mathscr X_n) reachable from unsent fiber demand either reaches a target with positive spare capacity, or admits a local redistribution of split demand that strictly decreases a well-founded source/mark potential.
+
+A plausible potential is lexicographic in (i) parent-source deletion depth, (ii) the ordered pair of deleted interval endpoints after compression, and (iii) the guarded-switch history length. This is only a candidate: the two deletion orders commute at the source level, so deletion depth alone cannot strictly decrease around a diamond. Any well-founded potential must include a target-side switch datum that changes under S-edges and is invariant under the D-square.
+
+No such potential or no-closed-component proof has yet been found.
+
+## 8B. Exact logical reduction for the next proof pass
+
+The standard fractional max-flow network has source-to-fiber capacities \(\delta(F)\), infinite fiber-to-target arcs for \(T\in N(F)\), and target-to-sink capacities one. If a maximum flow is deficient, the residual-reachable fibers (A) and their target neighborhood (N(A)) satisfy
+[
+\sum_{F\in A}\delta(F)>|N(A)|.
+]
+Conversely, any such family is a Hall obstruction. Thus proving PFEL is equivalent at the capacity level to excluding every deficient residual-reachable family.
+
+The reverse-mark complex is intended to add structure to this min-cut certificate. The precise next task is:
+
+1. Start from an arbitrary hypothetical deficient family (A) and its target set (B=N(A)).
+2. Mark every incidence in (A\times B) with its full source/mark/parent-target witness.
+3. Separate collisions into diamond collisions (same source, two marks) and non-diamond collisions (different source witnesses).
+4. Use S-edges to expose alternate targets inside each fixed parent-target block.
+5. Determine whether the no-closed-deficient-component criterion follows from the local two-lift expansion plus a source/mark potential.
+6. If not, extract the smallest finite non-diamond obstruction and identify the missing geometric or combinatorial invariant.
+
+This formulation prevents a circular proof: one may not assume a maximum matching's chosen assignment has a canonical form, and one may not infer a target-changing exchange merely from equality of the two inverse orders.
+
+**Updated status:** the two-colour source-mark incidence complex is now the preferred candidate exchange object. The immediate proof gap is the treatment of non-diamond collisions and the exclusion of closed deficient components.
