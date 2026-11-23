@@ -173,7 +173,7 @@ jobs:
             research/scripts/verify_pf_i16_collapse_alternating_cycle_audit.py \
             research/scripts/verify_pf_i16_rhombus_corner_continuation.py \
             research/scripts/verify_pf_i16_rhombus_corner_suffix_commutations.py \
-            research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py \\
+            research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py \
             research/scripts/verify_pf_i16_four_cell_switch_factorization.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
