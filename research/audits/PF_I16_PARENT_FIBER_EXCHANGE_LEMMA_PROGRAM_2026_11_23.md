@@ -242,6 +242,8 @@ Until then, PFEL, (QH), all-orders multivalued-\(\pi\) Hall, and the weighted on
 - `research/audits/PF_I16_DISTINCT_PARENT_DIAMOND_THEOREM_2026_11_18.md` — canonical-parent diamond counterexample and valid ordinary-parent boundary.
 - `research/audits/PF_I16_HELICAL_REVERSE_MARK_BRIDGE_AUDIT_2026_11_18.md` — missing PF-I16-to-\(\mathbb Z^5\) map and helical bridge requirements.
 - `docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md` — integrated source/proof boundary.
+- `research/verification/verify_pf_i16_two_mark_projection_uniqueness.py` — exact n=6,8 fixed-(P,Q) stable-set census; verified by GitHub Actions run 45240343178.
+- `.github/workflows/pf-i16-two-mark-projection-uniqueness.yml` — reproducible CI entry point for the two-mark census.
 
 **Final status:** a corrected reverse-mark transition relation and a precise Parent-Fiber Exchange Lemma target are now recorded. The transition graph is not yet an augmenting mechanism; constructing a target-changing exchange square/path is the immediate open proof step.
 
