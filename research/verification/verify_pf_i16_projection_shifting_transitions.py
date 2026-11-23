@@ -107,7 +107,7 @@ def encode_tree(tree):
 def mutual_diamond(target, intervals, tau, J, K, n, source_index,
                    ordinary_cache, diamond_cache):
     """Exact same-source D-edge certificate for two disjoint eligible marks."""
-    key = (source_index, target, tuple(sorted((intervals[J], intervals[K]))))
+    key = (source_index, target, intervals[J], intervals[K])
     if key in diamond_cache:
         return diamond_cache[key]
 
@@ -397,6 +397,9 @@ def census(n):
                                 continue
                             valid_starts.append((target, diamond))
                         mutually_surviving_starts[Q] = valid_starts
+
+                    if not any(mutually_surviving_starts.values()):
+                        continue
 
                     # All J-lifts in this fixed P block are candidate S moves.
                     # Keep only those with a valid K inverse, canonical q-target,
