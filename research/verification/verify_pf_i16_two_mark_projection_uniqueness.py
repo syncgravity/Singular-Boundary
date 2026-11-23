@@ -46,7 +46,7 @@ def census(n, expected_sources):
             for target in rows[j]:
                 inverse = inverse_last_switch(target, J, n)
                 assert inverse is not None, (n, intervals, tau, J, target)
-                projections[j][target] = compress_tree(inverse, set(J), n)
+                projections[j][target] = compress_tree(next(iter(inverse)), set(J), n)
 
         for i, j in enumerate(leaves):
             for k in leaves[i + 1:]:
