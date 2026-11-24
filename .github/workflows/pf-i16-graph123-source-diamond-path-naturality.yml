@@ -1,0 +1,67 @@
+name: PF-I16 graph-1/2/3 source deletion-diamond path naturality
+
+on:
+  push:
+    branches:
+      - research/pf-i16-four-interval-diamond-2026-11-19
+    paths:
+      - research/scripts/verify_pf_i16_graph123_source_diamond_path_naturality.py
+      - research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py
+      - research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py
+      - research/scripts/export_pf_i16_hall_source_records.py
+      - .github/workflows/pf-i16-graph123-source-diamond-path-naturality.yml
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  graph123-source-diamonds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the existing four-interval research branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-four-interval-diamond-2026-11-19
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download pinned Ngrid=12 support inventory
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-support-inventory
+          run-id: 45361114673
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/inventory
+      - name: Download pinned parent-compatibility graph catalogue
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-parent-compatibility
+          run-id: 45361114673
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/parent-compatibility
+      - name: Download successful full graph-1/2/3 candidate diagrams
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-graph123-full-diagram-candidates
+          run-id: 45449218309
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/candidate-diagrams
+      - name: Compile and replay every graph-1/2/3 source deletion diamond
+        run: |
+          python -m py_compile research/scripts/verify_pf_i16_graph123_source_diamond_path_naturality.py
+          python research/scripts/verify_pf_i16_graph123_source_diamond_path_naturality.py \
+            --inventory /tmp/pf-i16-input/inventory/pf_i16_four_interval_support_inventory.json \
+            --parent-compatibility /tmp/pf-i16-input/parent-compatibility/pf_i16_four_interval_parent_compatibility.json \
+            --candidate-diagrams /tmp/pf-i16-input/candidate-diagrams/pf_i16_graph123_full_diagram_candidates.json \
+            --output /tmp/pf_i16_graph123_source_diamond_path_naturality.json
+      - name: Upload graph-1/2/3 source-diamond path audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-graph123-source-diamond-path-naturality
+          path: /tmp/pf_i16_graph123_source_diamond_path_naturality.json
+          if-no-files-found: error
+          retention-days: 90
