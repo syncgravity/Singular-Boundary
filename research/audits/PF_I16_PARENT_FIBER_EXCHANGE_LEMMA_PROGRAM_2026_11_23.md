@@ -459,3 +459,72 @@ Every tested projection graph has exactly one sink SCC. Sink-size histograms are
 **Correction to Section 8D:** the earlier 15,533 n=8 common-target incidences were raw simultaneous forced-last outputs before canonical-parent filtering. The actual retained-row intersection is 11,086 unordered (22,172 ordered). The earlier singleton result remains true because it held on the larger raw set, hence on its retained subset.
 
 **Next exact task:** extend S-edges across distinct child sources in the same fixed \((p,J,P)\) block. The current census keeps \(x\) fixed and therefore does not resolve non-diamond collisions between different source witnesses. Preserve source identity and \(1/d(x)\) demand while constructing that cross-source incidence graph. The helical \(\mathbb Z^5\) phase map remains unconstructed and is not inferred from these transitions.
+
+
+## 8G. Cross-source S/D incidence census and parent-sibling C relation (2026-11-24)
+
+The next task from Section 8F has been carried out. Full audit:
+\`PF_I16_CROSS_SOURCE_REVERSE_MARK_EXCHANGE_CENSUS_2026_11_24.md\`.
+
+The verifier retains each state as \((x,J,P,T)\), with the full child source \(x\), deleted mark \(J\), exact canonical parent target \(P\), and child target \(T\). It verifies the Cartesian lift rows in every fixed \((p,J,P)\) block and adds target-changing S-edges across distinct child sources. D-edges remain same-source and require exact guarded inverses, mutual survival, and the ordinary common-parent target \(U\in C(r)\).
+
+| Quantity | n=6 | n=8 |
+|---|---:|---:|
+| Sources | 22 | 608 |
+| Parent-leaf fibers \((p,J)\) | 18 | 440 |
+| Parent-target blocks \((p,J,P)\) | 45 | 3,980 |
+| Full \((x,J,P,T)\) states | 278 | 48,879 |
+| Cross-source target-changing S-edges | 410 | 211,106 |
+| Certified same-source D witnesses | 37 | 11,086 |
+| Non-diamond cross-source target-collision pairs | 842 | 1,161,021 |
+| Non-diamond pairs connected by S/D | 66 | 174,828 |
+| Non-diamond pairs in different S/D components | 776 | 986,193 |
+
+The S/D graph is therefore not a universal collision-resolution mechanism. This is not a Hall counterexample: no deficient cut or capacity allocation is computed.
+
+### Parent-sibling C-incidence
+
+A restricted third relation \(C\) is now tested. It joins two distinct child sources extending the same parent source by different marks when they share both the same parent target \(P\) and child target \(T\). It retains both source witnesses and does not pretend that the two sources form a deletion diamond.
+
+| Quantity | n=6 | n=8 |
+|---|---:|---:|
+| C block-pair/target witnesses | 82 | 5,786 |
+| Distinct source-pair witnesses | 242 | 36,142 |
+| S/C/D block components | 1 | 30 |
+| Non-diamond pairs connected after C | 842 | 1,156,140 |
+| Non-diamond pairs still disconnected | 0 | 4,881 |
+
+At \(n=6\), S/C/D connects all 45 blocks. At \(n=8\), the graph has one component of 3,916 blocks, 27 components of size two, and two components of size five. The 4,881 residual collisions have changed parent source and/or parent target. A concrete first residual pair is recorded in the audit.
+
+The C relation is an incidence relation, not yet a target-changing capacity move. Connectivity does not imply that the split demand can be rerouted.
+
+**Verified workflow:** [45363512929](https://github.com/syncgravity/Singular-Boundary/actions/runs/45363512929), conclusion SUCCESS. Artifact [14905217719](https://github.com/syncgravity/Singular-Boundary/actions/runs/45363512929/artifacts/14905217719).
+
+## 8H. Recursive parent projection of the 4,881 residual collisions
+
+The 4,881 residual \(n=8\) collision pairs have now been projected to canonical-leaf blocks at order six. Full audit:
+\`PF_I16_RECURSIVE_PARENT_PROJECTION_PATHS_2026_11_24.md\`.
+
+For each endpoint \((p,P)\), the verifier locates \(p\) in the complete order-six source enumeration, selects its canonical non-root leaf, applies the exact guarded inverse of \(P\), and maps the result to its order-six \((r,L,U)\) block. It verifies that the source and target are both present in that block.
+
+| Quantity | Result |
+|---|---:|
+| Order-six blocks | 45 |
+| Order-six S/C/D components | 1 |
+| Residual order-eight collision pairs | 4,881 |
+| Distinct order-six parent-block endpoint pairs | 155 |
+| Parent projections disconnected at order six | 0 |
+| Maximum shortest order-six path length | 6 |
+
+The path-length histogram, weighted by residual order-eight collision pairs, is
+\[
+0:126,\quad 1:914,\quad 2:1053,\quad 3:903,\quad
+4:733,\quad 5:686,\quad 6:466.
+\]
+A representative parent path has edge types \(C,D,D,C,C,D\).
+
+**Interpretation:** the residual collisions are connected after canonical parent projection, but this does not lift them to order eight. The next obligation is an exact path-lifting test: each parent-level D-edge must lift through a child source with the exact outer mark, both inner guarded inverses, and ordinary common-parent witness; each C-edge must lift through two distinct child-source extensions with a common child target. Consecutive lifted edges must meet at the same order-eight state.
+
+**Verified workflow:** [45364715606](https://github.com/syncgravity/Singular-Boundary/actions/runs/45364715606), conclusion SUCCESS. Artifact [14906366335](https://github.com/syncgravity/Singular-Boundary/actions/runs/45364715606/artifacts/14906366335).
+
+**Updated status:** the finite cross-source incidence and recursive parent-connectivity censuses are established at \(n=6,8\). The parent-fiber exchange lemma, a capacity-preserving transport, split-demand quotient Hall, all-orders multivalued-\(\pi\) Hall, and the weighted one-link inequality remain **OPEN**. No helical \(\mathbb Z^5\) phase map has been constructed or inferred.
