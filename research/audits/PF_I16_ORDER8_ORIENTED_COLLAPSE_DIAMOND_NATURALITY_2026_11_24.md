@@ -2,7 +2,7 @@
 
 Date: 2026-11-24 UTC  
 Branch: `research/pf-i16-four-interval-diamond-2026-11-19`  
-Status: **clean GitHub Actions replay succeeded** for the graph-5/graph-12 collapse-diamond audit (run [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223)). Separate full-diagram replay also succeeded for 284 graph-1/2/3 candidates (run [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309)). The finite support-diagram candidate frontier now has passing diagrams in all 13 graph families. Two-order path replay is complete for graph families 1, 2, 3, 5, and 12 (54 source pairs, 47,780 instances); the remaining 436 source pairs in graph families 6, 7, 8, 9, 10, 11, and 13 are currently in a separate clean replay.
+Status: **clean GitHub Actions replay succeeded** for the graph-5/graph-12 collapse-diamond audit (run [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223)). Separate full-diagram replay also succeeded for 284 graph-1/2/3 candidates (run [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309)). The finite support-diagram candidate frontier has passing diagrams in all 13 graph families. Two-order path replay is now complete for all 490 order-eight source critical pairs across all 13 graph families, covering 82,608 lifted instances in three clean replays.
 
 ## 1. Purpose
 
@@ -186,15 +186,15 @@ The source inventory has 490 critical pairs across 608 source records and 13 ove
 | 3 | 2 | 2 | 2 | 75 | 75 / 75 | 300 instances pass |
 | 4 | 2 | 0 | 1 | 97 | 97 / 97 | No source diamond |
 | 5 | 12 | 20 | 2 | 103 | 514 witness rows pass | 20 pairs; 20,560 instances pass |
-| 6 | 18 | 30 | 2 | 32 | 18 / 32 | 1,080 instances in replay |
-| 7 | 12 | 8 | 1 | 65 | 65 / 65 | 520 instances in replay |
-| 8 | 12 | 8 | 1 | 105 | 105 / 105 | 840 instances in replay |
-| 9 | 18 | 6 | 2 | 32 | 19 / 32 | 228 instances in replay |
-| 10 | 48 | 48 | 2 | 19 | 10 / 19 | 960 instances in replay |
-| 11 | 48 | 48 | 2 | 23 | 1 / 23 | 96 instances in replay |
+| 6 | 18 | 30 | 2 | 32 | 18 / 32 | 1,080 instances pass |
+| 7 | 12 | 8 | 1 | 65 | 65 / 65 | 520 instances pass |
+| 8 | 12 | 8 | 1 | 105 | 105 / 105 | 840 instances pass |
+| 9 | 18 | 6 | 2 | 32 | 19 / 32 | 228 instances pass |
+| 10 | 48 | 48 | 2 | 19 | 10 / 19 | 960 instances pass |
+| 11 | 48 | 48 | 2 | 23 | 1 / 23 | 96 instances pass |
 | 12 | 48 | 24 | 2 | 21 | 482 witness rows pass | 24 pairs; 23,136 instances pass |
-| 13 | 384 | 288 | 6 | 18 | 18 / 18 | 31,104 instances in replay |
-| **Total** | **608** | **490** | — | **799** | **1,613 passing diagrams** | **54 pairs / 47,780 instances pass; 436 pairs / 34,828 instances in replay** |
+| 13 | 384 | 288 | 6 | 18 | 18 / 18 | 31,104 instances pass |
+| **Total** | **608** | **490** | — | **799** | **1,613 passing diagrams** | **490 pairs / 82,608 instances pass** |
 
 The graph-1/2/3 full-diagram verifier checks 284 candidate diagrams (99, 110, and 75 respectively) against the accepted face inventory. It recomputes all 15 labelled intersections, the full overlap graph, point-contractibility of nonempty intersections and the full union, four matched-edge collapses, four anchored boundary cycles, four ordered footprint words, and all source-eligible single-deletion restrictions for every root-preserving source-to-support map. All 1,708 source-map rows pass. See [the separate graph-1/2/3 full-diagram audit](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md).
 
@@ -204,7 +204,7 @@ For graph 5 and 12, the two-order paths are checked in 43,696 lifted instances. 
 
 The remaining graph-family full-diagram verifier covers 391 candidate diagrams in families 4, 6, 7, 8, 9, 10, 11, and 13. It accepts 333 and rejects 58. All 58 rejected candidates fail both full-union point-contractibility and source-eligible relative deletion; no other failure condition occurs. The 333 accepted candidates are the input to the current path replay for the remaining 436 source critical pairs.
 
-The 436 remaining source pairs divide into 30 (graph 6), 8 (graph 7), 8 (graph 8), 6 (graph 9), 48 (graph 10), 48 (graph 11), and 288 (graph 13). The clean path replay is [45452222753](https://github.com/syncgravity/Singular-Boundary/actions/runs/45452222753) and is still running at the time of this record. Its target is 34,828 path instances.
+The 436 remaining source pairs divide into 30 (graph 6), 8 (graph 7), 8 (graph 8), 6 (graph 9), 48 (graph 10), 48 (graph 11), and 288 (graph 13). Their clean path replay passed: [45453607246](https://github.com/syncgravity/Singular-Boundary/actions/runs/45453607246), artifact [14949866004](https://github.com/syncgravity/Singular-Boundary/actions/runs/45453607246/artifacts/14949866004). All 34,828 path instances passed. The graph-9 subfamily contributes 24 four-cell alternating-cycle cases; the other 34,804 have identical pair sets and valid adjacent-swap normalizations.
 
 ## 8. Interpretation
 
@@ -214,11 +214,14 @@ This advances the finite geometric confluence audit in five concrete ways:
 2. It verifies 284 full four-support diagrams in graph families 1, 2, and 3, including all source-eligible one-step restrictions across 1,708 source-map rows.
 3. It verifies 333 passing full four-support diagrams among 391 candidates in graph families 4, 6, 7, 8, 9, 10, 11, and 13; the 58 rejected candidates fail both full-union point-contractibility and source-eligible relative deletion.
 4. It upgrades the ten graph-1/2/3 source critical pairs to 4,084 two-order path comparisons; all have identical elementary-pair sets and valid adjacent-swap normalizations.
-5. It verifies 43,696 graph-5/graph-12 two-order path instances; differing-pair cases are single alternating cycles and factor through a common normalized prefix plus dependency-closed local suffixes. The remaining 436 source pairs are in the current clean replay.
+5. It verifies 43,696 graph-5/graph-12 two-order path instances; differing-pair cases are single alternating cycles and factor through a common normalized prefix plus dependency-closed local suffixes.
+6. It verifies the remaining 436 source pairs in 34,828 path instances; 34,804 have identical pair sets, and 24 graph-9 cases are four-cell alternating cycles with a three-pair dependency-closed suffix.
+
+Across all 13 graph families, the finite order-eight audit now covers all 490 source critical pairs and 82,608 path instances. Of these, 64,360 have identical elementary-pair sets and 18,248 have different sets, all single alternating cycles with valid dependency-closed factorizations.
 
 It does **not** close geometric L8. In particular:
 
-- The two-order path replay for the remaining 436 source pairs is not yet complete.
+- This remains a finite order-eight candidate-family result, not an all-orders naturality or confluence theorem.
 - Both root-preserving graph maps remain possible.
 - The source does not prescribe a unique ℤ^5 edge displacement or oriented boundary word.
 - A finite factorization of collapse sequences is not yet a natural homotopy or equality of collapse maps.
