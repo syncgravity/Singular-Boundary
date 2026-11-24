@@ -1,13 +1,13 @@
 {
   "schema": "singular-boundary.knowledge-graph.v1",
-  "build_date": "2026-11-13",
-  "version": "v3.04-pf-i16-quasi-factorization-reduction",
-  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; exact coincident-time vanishing for disconnected support and a complete-graph Cayley-tree envelope; one-link continuous-time cumulant bound; and exact algebraic reconstruction of product cumulants by top-degree extraction and Boolean Möbius inversion. A temporally weighted, summable all-orders bound for the resulting connected expansion, sparse support-tree counts, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN.",
+  "build_date": "2026-11-24",
+  "version": "v3.08-pf-i16-order8-source-diamond-path-audit",
+  "scope": "PF-I16 exact finite-source coefficients and corrected isolated-rotor bounds; conditional finite-product Dobrushin tree estimate for the complete third-order six-permutation coefficient; conditional finite-product cut-interpolation tree estimate for the fourth-order coefficient; exact order-four support-sensitive maximum-tree bound for elementary tensors; exact coincident-time vanishing for disconnected support and a complete-graph Cayley-tree envelope; one-link continuous-time cumulant bound; and exact algebraic reconstruction of product cumulants by top-degree extraction and Boolean Möbius inversion. A temporally weighted, summable all-orders bound for the resulting connected expansion, sparse support-tree counts, actual quantum KP convergence, interacting-vacuum Poincare, continuum reconstruction and physical Yang-Mills mass gap remain OPEN. Added source-qualified multivalued-π/Hall and helical-lift action routes, the ordered L1–L8 incidence-lift spine, and the exact canonical-sibling port-tree diamond. Finite, conditional, obstruction, and open statuses remain distinct; no global Hall, geometric L8, physical helical action, or continuum gate is promoted. Source audit: finite L1–L7 candidate and branch provenance; n=10 multivalued-π matching/flow replay; strict L6 versus L6c; superseded L7b candidate versus alternative triple; L8 naming collision; helical source/checksum limitations. No all-orders Hall or geometric L8 promotion. Clean-checkout reproducibility of finite L1–L7 chain established for n=4,6 in two Ngrid=7 target constructions; no all-orders lift or geometric L8 promotion.",
   "canon_status": "OPEN",
   "catalog_baseline": "fd1c1c1c8db078f8ec9d591d182059bd1635b164",
   "indexed_theorem_paths": 773,
   "existing_proof_paths": 78,
-  "git_branch": "main",
+  "git_branch": "research/pf-i16-four-interval-diamond-2026-11-19",
   "status_legend": {
     "open": "Not closed: missing mathematical/evidence conditions",
     "finite": "Recorded finite-model result only; no continuum transfer",
@@ -11521,6 +11521,724 @@
       "importance": 4,
       "core": false,
       "route": null
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "multivalued-pi",
+        "incidence-lift",
+        "L1-L8",
+        "2026-11-19"
+      ],
+      "id": "PF-MULTIVALUED-PI-HALL",
+      "title": "Multivalued π incidence-lift and Hall demand program",
+      "status": "open",
+      "summary": "Finite multivalued-π Hall/matching evidence at n=6,8,10, including n=10 exact replayed certificates; all-orders Hall remains open.",
+      "detail": "n=10 relation: 31,744 sources and a saturating matching. Split-demand flow: 21,280 fibers, 95,864 eligible targets, max flow=scaled demand=380,928, target capacity 12. Replay shares canonical source/switch primitives and is independent of flow construction, not of the whole relation. A structural all-orders capacity-sensitive exchange theorem remains missing.",
+      "checks": [
+        {
+          "label": "Define source/target fibers and multivalued neighborhoods",
+          "state": "partial",
+          "note": "Port-tree and guarded-reversal fibers are explicit in the all-orders canonical-sibling record."
+        },
+        {
+          "label": "Prove global Hall demand inequality for every finite demand set",
+          "state": "open",
+          "note": "No all-orders Hall theorem follows from the current source-side diamond."
+        },
+        {
+          "label": "Lift Hall incidence to accepted PF rhombus supports",
+          "state": "open",
+          "note": "L1–L8 accepted-face support obligations remain separately tracked."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "All-orders multivalued-π proof program",
+          "path": "research/audits/PF_I16_MULTIVALUED_PI_ALL_ORDERS_PROOF_PROGRAM_2026_11_16.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-direct-mixed-hall-2026-11-18/research/audits/PF_I16_MULTIVALUED_PI_ALL_ORDERS_PROOF_PROGRAM_2026_11_16.md"
+        },
+        {
+          "title": "n=10 split-demand certificate replay",
+          "path": "research/audits/PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_REPLAY_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-direct-mixed-hall-2026-11-18/research/audits/PF_I16_N10_SPLIT_DEMAND_FLOW_CERTIFICATE_REPLAY_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "interface",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "helical-observer",
+        "C5",
+        "lift-freedom",
+        "kinematic-not-dynamical"
+      ],
+      "id": "PF-HELICAL-LIFT-ACTION",
+      "title": "Helical observer: projected circle, lift freedom and action-level gate",
+      "status": "open",
+      "summary": "Paper 3 specifies a complementary-plane circle and rational sampling rates 3/13, 5/13, 8/13; a unique 3D helical lift, physical clock and dynamical action are not determined.",
+      "detail": "The real C5 decomposition is retained. The complex circle is a two-real-coordinate orbit; infinitely many longitudinal lifts have different curvature and torsion. The 3:5:8 relation is a conditional kinematic frequency ratio if the m=10 mode occurs, not a derived mass spectrum or Lorentz action.",
+      "checks": [
+        {
+          "label": "Source-level real C5 representation and circle sampling identity",
+          "state": "finite",
+          "note": "Source representation and rational periodic sampling audited."
+        },
+        {
+          "label": "Unique physical 3D lift, metric, clock and helical action",
+          "state": "open",
+          "note": "Projected circle admits infinitely many inequivalent longitudinal lifts."
+        },
+        {
+          "label": "Gauge-invariant interacting observable and dynamical transfer",
+          "state": "open",
+          "note": "H4/H5 operator and interaction bridge not established."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paper 3 helical observer primary hypothesis",
+          "path": "research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/geometry/PF_PAPER3_HELICAL_OBSERVER_PRIMARY_HYPOTHESIS_2026_11_07.md"
+        },
+        {
+          "title": "Harmonic triad and interacting null audit",
+          "path": "research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/research/geometry/PF_HELICAL_HARMONIC_TRIAD_AND_INTERACTING_NULL_2026_11_07.md"
+        },
+        {
+          "title": "Z5 real structure and helical observer source audit",
+          "path": "docs/research/Z5_REAL_STRUCTURE_AND_HELICAL_OBSERVER_SOURCE_AUDIT_2026-11-11.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/Z5_REAL_STRUCTURE_AND_HELICAL_OBSERVER_SOURCE_AUDIT_2026-11-11.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L1",
+        "L1-L8"
+      ],
+      "id": "PF-L1-INCIDENCE-LIFT",
+      "title": "L1 · Port injectivity",
+      "status": "finite-replay-verified",
+      "summary": "Finite n=4,6 port injectivity passes for 24 source records in each of two separate Ngrid=7 target domains; clean-checkout replay passed at the recorded branch SHA.",
+      "detail": "L1 is a finite result only: 2 n=4 and 22 n=6 sources, in PF-I16 original-source replay and PF-I11 completed-window core separately. PF-I16 is an independent reimplementation of indexed private source bytes, not byte-identical replay. Clean-checkout CI remains outstanding.",
+      "checks": [
+        {
+          "label": "All-orders accepted-face certificate",
+          "state": "partial",
+          "note": "Finite/source-structured injectivity evidence; retain exact domain and hypotheses in its source proof."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "L1–L3 finite motif lift audit",
+          "path": "research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L2",
+        "L1-L8"
+      ],
+      "id": "PF-L2-INCIDENCE-LIFT",
+      "title": "L2 · Matching realization",
+      "status": "finite-replay-verified",
+      "summary": "Finite n=4,6 matching-edge realization passes for all 24 source records in each Ngrid=7 target; no all-orders realization claim.",
+      "detail": "L2 maps each matched pair to a signed elementary basis edge in the frozen target motif. It does not by itself construct interval supports or prove Hall.",
+      "checks": [
+        {
+          "label": "All-orders accepted-face certificate",
+          "state": "partial",
+          "note": "Finite matching realization evidence; do not promote to unrestricted accepted-face realization."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "L1–L3 finite motif lift audit",
+          "path": "research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L3",
+        "L1-L8"
+      ],
+      "id": "PF-L3-INCIDENCE-LIFT",
+      "title": "L3 · Target acceptance",
+      "status": "finite-replay-verified",
+      "summary": "Strict vertex-window and face-triangle acceptance passes for the finite frozen motif in both Ngrid=7 targets at n=4,6; finite computation only; not an all-orders certificate.",
+      "detail": "Face acceptance is tested independently of vertex acceptance. PF-I16 and PF-I11 target populations remain separate, with distinct provenance and hashes.",
+      "checks": [
+        {
+          "label": "All-orders accepted-face certificate",
+          "state": "partial",
+          "note": "Accepted target membership is a separate certificate, not implied by combinatorial matching."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "L1–L3 finite motif lift audit",
+          "path": "research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L123_MOTIF_LIFT_CHECK_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L4",
+        "L1-L8"
+      ],
+      "id": "PF-L4-INCIDENCE-LIFT",
+      "title": "L4 · Interval realization",
+      "status": "finite-replay-verified",
+      "summary": "Bounded one-/two-rhombus supports realize all n=4,6 interval records in both targets; finite candidate-family result only.",
+      "detail": "The verifier checks connected face supports, oriented boundary trace, full interval-overlap graph including non-tree edges, typed shared incidence, and disjointness for non-overlapping intervals. The two-rhombus bound is not universal.",
+      "checks": [
+        {
+          "label": "All-orders accepted-face certificate",
+          "state": "partial",
+          "note": "Finite interval/support realization is recorded; preserve source labels and marked-parent conditions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "L4–L5 bounded support audit",
+          "path": "research/audits/PF_I16_HALL_L45_BOUNDED_SUPPORT_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L45_BOUNDED_SUPPORT_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L5",
+        "L1-L8"
+      ],
+      "id": "PF-L5-INCIDENCE-LIFT",
+      "title": "L5 · Overlap fidelity",
+      "status": "finite-replay-verified",
+      "summary": "Finite full-overlap witness test passes across 24 n=4,6 records in both targets: 40 face, 22 edge, 2 vertex witnesses; no incidence for non-overlapping pairs.",
+      "detail": "L5 evidence is scoped to the frozen bounded support family and Ngrid=7 targets. It does not establish all-orders overlap fidelity.",
+      "checks": [
+        {
+          "label": "All-orders accepted-face certificate",
+          "state": "partial",
+          "note": "Overlap/intersection fidelity is checked in finite constructions; complete all-orders diagram fidelity remains open."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "L4–L5 bounded support audit",
+          "path": "research/audits/PF_I16_HALL_L45_BOUNDED_SUPPORT_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L45_BOUNDED_SUPPORT_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L6",
+        "L1-L8"
+      ],
+      "id": "PF-L6-INCIDENCE-LIFT",
+      "title": "L6 · Parent naturality (L6c)",
+      "status": "finite-replay-verified",
+      "summary": "Adopted L6c passes 30/30 n=6→4 marked projections, relative collapses and diagram comparisons in both targets; strict labelled-edge L6 failed.",
+      "detail": "Strict L6 failed for 14/30 rank-shifting marks and incompatible inherited edge maps. L6c explicitly relaxes cell identity/dimension while retaining coarse intersection diagrams, relative collapses and parent coherence. Finite research-session calculation; branch verifier not clean-checkout run.",
+      "checks": [
+        {
+          "label": "Finite adopted-scope verifier",
+          "state": "finite",
+          "note": "Adopted L6c permits cell identity/dimension changes while preserving labelled incidence/collapse structure; alternative three-support test passed its 30 marked projections and relative-collapse comparisons in each target."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Strict L6 obstruction",
+          "path": "research/audits/PF_I16_HALL_L6_PARENT_NATURALITY_OBSTRUCTION_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L6_PARENT_NATURALITY_OBSTRUCTION_2026_11_18.md"
+        },
+        {
+          "title": "Adopted L6c coarse naturality",
+          "path": "research/audits/PF_I16_HALL_L6C_COARSE_SUPPORT_NATURALITY_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L6C_COARSE_SUPPORT_NATURALITY_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L7",
+        "L1-L8"
+      ],
+      "id": "PF-L7-INCIDENCE-LIFT",
+      "title": "L7 · Order/orientation preservation (L7b)",
+      "status": "finite-replay-verified",
+      "summary": "Alternative triple passes finite L7b: 60/60 anchored footprint comparisons and 30/30 projections in each target; old frozen support family fails.",
+      "detail": "The alternative triple has one retained footprint per boundary in tested n=6 projections, so multi-footprint ordering is not tested. Earlier L7b obstruction applies to a different frozen motif. Results are research-session calculations, not clean-checkout CI.",
+      "checks": [
+        {
+          "label": "Finite adopted-scope verifier",
+          "state": "finite",
+          "note": "Adopted L7b finite three-support tests passed cyclic-placement comparisons; four-support source-prescribed oriented boundary-word comparison remains open."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Alternative triple L6c/L7b audit",
+          "path": "research/audits/PF_I16_HALL_ALTERNATIVE_TRIPLE_L6C_L7B_2026_11_19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_ALTERNATIVE_TRIPLE_L6C_L7B_2026_11_19.md"
+        },
+        {
+          "title": "Candidate-specific old motif obstruction",
+          "path": "research/audits/PF_I16_HALL_L7B_LOCAL_MOTIF_OBSTRUCTION_2026_11_19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L7B_LOCAL_MOTIF_OBSTRUCTION_2026_11_19.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L8",
+        "L1-L8"
+      ],
+      "id": "PF-L8-INCIDENCE-LIFT",
+      "title": "L8 · Accepted-face support confluence",
+      "status": "open",
+      "summary": "G-L8 geometric accepted-face support confluence remains open. The finite n=8 audit now compares both collapse orders for all 490 source deletion critical pairs across all 13 overlap-graph families, but does not prove all-orders restriction naturality or collapse-map homotopy.",
+      "detail": "The finite order-eight candidate audit has 1,613 passing full four-support diagrams across all 13 overlap-graph families (58 of 1,671 candidates are rejected because the full union is not point-contractible and source-eligible relative deletion fails). Across the 490 source critical pairs, 82,608 path instances replay: 64,360 have identical elementary FE/EV pair sets and normalize by valid adjacent commutations; 18,248 differing-pair cases are single alternating cycles with dependency-closed common-prefix/local-suffix factorizations. This is finite n=8 evidence only. Equality of collapse maps, natural homotopy under arbitrary further restrictions, source-prescribed unique Z5 orientation, and all-orders G-L8 remain open. Distinguish geometric G-L8 from L8-Hall-independence.",
+      "checks": [
+        {
+          "label": "Finite n=8 candidate-family source-diamond path audit",
+          "state": "finite",
+          "note": "All 490 order-eight source critical pairs pass 82,608 path instances across 1,613 passing candidate diagrams in all 13 overlap-graph families."
+        },
+        {
+          "label": "Same-pair and alternating-cycle path comparisons",
+          "state": "finite",
+          "note": "64,360 same-pair cases normalize by adjacent commutations; 18,248 differing-pair cases are single alternating cycles with dependency-closed local suffixes."
+        },
+        {
+          "label": "All-orders accepted-face support confluence",
+          "state": "open",
+          "note": "No all-orders naturality under arbitrary support restrictions or equality/homotopy of collapse maps is proved."
+        },
+        {
+          "label": "Source-prescribed oriented boundary and helical Z5 lift",
+          "state": "open",
+          "note": "Both root-preserving graph maps remain admissible; no unique source-prescribed orientation or helical displacement is established."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "All-orders source deletion diamond",
+          "path": "research/audits/PF_I16_HALL_L7_L8_SOURCE_DELETION_DIAMOND_2026_11_19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_L7_L8_SOURCE_DELETION_DIAMOND_2026_11_19.md"
+        },
+        {
+          "title": "Order-eight oriented collapse-diamond and all-graph path audit",
+          "path": "research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Graph-1/2/3 source-diamond path naturality",
+          "path": "research/audits/PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Remaining graph-family source-diamond path naturality",
+          "path": "research/audits/PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Clean replay of remaining graph-family source diamonds",
+          "path": "workflow 45453607246",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/45453607246"
+        }
+      ]
+    },
+    {
+      "kind": "theorem",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "multivalued-pi",
+        "incidence-lift",
+        "L1-L8",
+        "2026-11-19"
+      ],
+      "id": "PF-I16-CANONICAL-SIBLING-PORT-TREE-DIAMOND",
+      "title": "All-finite-order canonical-sibling guarded port-tree diamond",
+      "status": "exact",
+      "summary": "For canonical sibling source fibers with a common target in both canonical neighborhoods, the two guarded inverse orders agree and their common result lies in the full parent neighborhood.",
+      "detail": "Exact all-finite-port-order theorem at labelled port-tree/guarded-reversal level. It does not imply canonical membership at the common parent, accepted-face support-diagram confluence, L6c/L7b naturality, restriction coherence, or the multivalued-π Hall inequality.",
+      "checks": [
+        {
+          "label": "Canonical-sibling source-to-target port-tree diamond",
+          "state": "exact",
+          "note": "All finite port orders; no finite census used."
+        },
+        {
+          "label": "Canonical membership at common parent",
+          "state": "obstruction",
+          "note": "Stronger conclusion fails in finite census examples."
+        },
+        {
+          "label": "Accepted-face support-diagram lift and restriction coherence",
+          "state": "open",
+          "note": "Geometric L8 remains open."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Canonical-sibling all-orders port-tree diamond",
+          "path": "research/audits/PF_I16_ALL_ORDERS_CANONICAL_SIBLING_PORT_TREE_DIAMOND_2026_11_19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_ALL_ORDERS_CANONICAL_SIBLING_PORT_TREE_DIAMOND_2026_11_19.md"
+        }
+      ]
+    },
+    {
+      "kind": "work",
+      "stage": "P0",
+      "importance": 4,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "L8",
+        "terminology-audit"
+      ],
+      "id": "PF-L8-HALL-INDEPENDENCE",
+      "title": "L8-Hall-independence · lift construction independent of Hall outcomes",
+      "status": "open",
+      "summary": "Original incidence-lift note uses L8 for construction independence from Hall deficiency, congestion and allocations; this is an admissibility condition, not geometric confluence.",
+      "detail": "The original PF_I16_HALL_TO_PENROSE_FIBONACCI_INCIDENCE_LIFT note calls this L8. Later records use L8 for geometric accepted-face support confluence. Preserve the distinction explicitly.",
+      "checks": [
+        {
+          "label": "Construction frozen independently of Hall outcomes",
+          "state": "partial",
+          "note": "Finite candidate selection records demand independence; all-orders admissibility is not proved."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Multivalued-π, incidence-lift L1–L8 and helical-observer source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Hall-to-Penrose incidence-lift definition",
+          "path": "research/audits/PF_I16_HALL_TO_PENROSE_FIBONACCI_INCIDENCE_LIFT_2026_11_18.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-z5-incidence-lift-2026-11-18/research/audits/PF_I16_HALL_TO_PENROSE_FIBONACCI_INCIDENCE_LIFT_2026_11_18.md"
+        }
+      ]
+    },
+    {
+      "kind": "audit",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "source-audit",
+        "multivalued-pi",
+        "helical-observer",
+        "L1-L8"
+      ],
+      "id": "PF-PI-HELICAL-SOURCE-AUDIT-2026-11-19",
+      "title": "Source audit · multivalued π, L1–L8 and helical observer",
+      "status": "reviewed-with-open-items",
+      "summary": "Source audit plus clean-checkout finite L1-L7 replay and complete finite n=8 source-diamond path audit. All 490 order-eight source critical pairs have path comparisons across all 13 overlap-graph families; all-orders Hall and geometric G-L8 remain open.",
+      "detail": "Canonical audit record. No all-orders Hall, geometric L8, physical 3D helical action or continuum gap is promoted. Clean-checkout replay run 44679286877 passed at incidence branch SHA 3ed3706367e24bd943236d9920699370dce13366; artifact SHA-256 94b24caa7c17f73366c4b400bfe0b486642bd942fa0392e22e80586aaff992de. Finite L1-L7 evidence is reproducible for n=4,6 in two Ngrid=7 targets; no all-orders theorem promoted. The 2026-11-24 order-eight audit verifies 1,613 full four-support candidate diagrams and 82,608 two-order collapse-path instances across all 490 source deletion pairs; this does not establish all-orders geometric confluence or Hall.",
+      "checks": [
+        {
+          "label": "Research records and verifier sources inspected",
+          "state": "partial",
+          "note": "Primary notes/scripts reviewed; branch-only finite verifiers still require clean-checkout replay and source checksum reconciliation."
+        },
+        {
+          "label": "L8 terminology disambiguation",
+          "state": "complete",
+          "note": "L8-Hall-independence is distinct from G-L8 geometric confluence."
+        },
+        {
+          "label": "Clean-checkout replay of finite L1–L7 chain",
+          "state": "complete",
+          "note": "Run 44679286877 passed all four verifier scripts; artifact bundle and source hashes recorded."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PF multivalued-π, helical observer and L1–L8 source audit",
+          "path": "docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/main/docs/research/PF_MULTIVALUED_PI_HELICAL_L1_L8_SOURCE_AUDIT_2026-11-19.md"
+        },
+        {
+          "title": "Clean-checkout replay bundle · L1–L7",
+          "path": "workflow 44679286877",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/44679286877"
+        },
+        {
+          "title": "Order-eight oriented collapse-diamond and all-graph path audit",
+          "path": "research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md"
+        }
+      ]
+    },
+    {
+      "kind": "result",
+      "stage": "P0",
+      "importance": 5,
+      "core": true,
+      "route": null,
+      "tags": [
+        "PF-primary",
+        "incidence-lift",
+        "L8",
+        "order8",
+        "source-diamond",
+        "finite-replay"
+      ],
+      "id": "PF-I16-ORDER8-SOURCE-DIAMOND-PATH-AUDIT",
+      "title": "Order-eight finite source-diamond path comparison across all overlap graphs",
+      "status": "finite-replay-verified",
+      "summary": "At n=8, all 490 source deletion critical pairs have finite accepted four-support path comparisons across all 13 overlap-graph families: 1,613 candidate diagrams pass and 82,608 path instances replay.",
+      "detail": "The 284 graph-1/2/3 candidates and 333 passing candidates among 391 remaining-graph candidates combine with 996 graph-5/12 witnesses. Fifty-eight remaining-graph candidates are rejected because their full union is not point-contractible and source-eligible relative deletion fails. Across 82,608 path instances, 64,360 have identical elementary-pair sets and normalize by valid adjacent commutations; 18,248 differing-pair cases are single connected alternating cycles with dependency-closed common-prefix/local-suffix factorizations. This is a finite n=8 candidate-family result only. It does not prove equality of collapse maps, natural homotopy under arbitrary further restrictions, a uniform all-orders local switch, all-orders G-L8, or the multivalued-pi Hall inequality.",
+      "checks": [
+        {
+          "label": "Full four-support candidate verification",
+          "state": "finite",
+          "note": "1,613 of 1,671 candidate diagrams pass across all 13 order-eight overlap-graph families; 58 are excluded for noncontractible full union and failed source-eligible relative deletion."
+        },
+        {
+          "label": "All order-eight source deletion critical pairs",
+          "state": "finite",
+          "note": "490 / 490 distinct source critical pairs have at least one passing finite geometric path lift."
+        },
+        {
+          "label": "Two-order collapse-path comparison",
+          "state": "finite",
+          "note": "82,608 / 82,608 instances replay; 64,360 same-pair and 18,248 single-alternating-cycle cases pass their respective normalization/factorization checks."
+        },
+        {
+          "label": "All-orders geometric confluence and restriction naturality",
+          "state": "open",
+          "note": "No all-orders local switch lemma, natural homotopy of collapse maps, or arbitrary further-restriction theorem is proved."
+        },
+        {
+          "label": "All-orders multivalued-pi Hall inequality",
+          "state": "open",
+          "note": "This geometric finite audit does not establish split-demand transport or the weighted one-link inequality."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Order-eight oriented collapse-diamond and all-graph path audit",
+          "path": "research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Graph-1/2/3 source-diamond path naturality",
+          "path": "research/audits/PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Remaining graph-family source-diamond path naturality",
+          "path": "research/audits/PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md",
+          "url": "https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md"
+        },
+        {
+          "title": "Clean replay of remaining graph-family source diamonds",
+          "path": "workflow 45453607246",
+          "url": "https://github.com/syncgravity/Singular-Boundary/actions/runs/45453607246"
+        }
+      ]
     }
   ],
   "edges": [
@@ -16444,6 +17162,104 @@
       "label": "finite product-reference estimate does not prove true interacting-vacuum Poincare",
       "kind": "conditional-not-closure",
       "status": "open"
+    },
+    {
+      "from_id": "PF-MULTIVALUED-PI-HALL",
+      "to_id": "PF-L1-INCIDENCE-LIFT",
+      "kind": "decomposes-into",
+      "label": "Multivalued π incidence-lift obligations L1–L8",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L1-INCIDENCE-LIFT",
+      "to_id": "PF-L2-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L2-INCIDENCE-LIFT",
+      "to_id": "PF-L3-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L3-INCIDENCE-LIFT",
+      "to_id": "PF-L4-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L4-INCIDENCE-LIFT",
+      "to_id": "PF-L5-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L5-INCIDENCE-LIFT",
+      "to_id": "PF-L6-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L6-INCIDENCE-LIFT",
+      "to_id": "PF-L7-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L7-INCIDENCE-LIFT",
+      "to_id": "PF-L8-INCIDENCE-LIFT",
+      "kind": "proof-dependency",
+      "label": "Ordered incidence-lift proof spine",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-L8-INCIDENCE-LIFT",
+      "to_id": "PF-I16-CANONICAL-SIBLING-PORT-TREE-DIAMOND",
+      "kind": "source-side-input-not-geometric-closure",
+      "label": "Exact source/port-tree diamond supplies only the source-side input to L8",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-I16-CANONICAL-SIBLING-PORT-TREE-DIAMOND",
+      "to_id": "PF-HELICAL-LIFT-ACTION",
+      "kind": "separate-geometric-program",
+      "label": "Combinatorial confluence does not establish a physical helical lift",
+      "status": "open"
+    },
+    {
+      "from_id": "PF-PI-HELICAL-SOURCE-AUDIT-2026-11-19",
+      "to_id": "PF-MULTIVALUED-PI-HALL",
+      "kind": "audits",
+      "label": "Source audit qualifies finite Hall certificates and open all-orders theorem",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PF-PI-HELICAL-SOURCE-AUDIT-2026-11-19",
+      "to_id": "PF-L8-HALL-INDEPENDENCE",
+      "kind": "disambiguates",
+      "label": "Separates construction admissibility from geometric confluence",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PF-L8-HALL-INDEPENDENCE",
+      "to_id": "PF-L8-INCIDENCE-LIFT",
+      "kind": "distinct-from",
+      "label": "Hall independence is not accepted-face geometric confluence",
+      "status": "tracked"
+    },
+    {
+      "from_id": "PF-L8-INCIDENCE-LIFT",
+      "to_id": "PF-I16-ORDER8-SOURCE-DIAMOND-PATH-AUDIT",
+      "kind": "finite-scope-evidence",
+      "label": "Finite n=8 path comparison for all 490 source deletion pairs; not all-orders geometric closure",
+      "status": "finite"
     }
   ],
   "sources_verified": {
