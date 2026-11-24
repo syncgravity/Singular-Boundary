@@ -182,7 +182,7 @@ def main():
         "full_diagram_pass_counts":{str(k):passed_by_graph[k] for k in expected},
         "source_map_rows_by_graph":source_map_rows_by_graph,
         "candidate_pass_counts_all_root_maps":[{"graph":g,"all_maps_valid":eligible_map_pass_counts[(g,True)],"some_map_invalid":eligible_map_pass_counts[(g,False)],"every_source_has_some_map":source_some_map_counts[(g,True)],"some_source_has_no_valid_map":source_some_map_counts[(g,False)]} for g in expected],
-        "full_diagram_failure_counts":{str(k):dict(fail_by_graph[k]) for k in (1,2,3)},
+        "full_diagram_failure_counts":{str(k):dict(fail_by_graph[k]) for k in expected},
         "boundary_length_histogram":dict(sorted(boundary_lengths.items())),
         "footprint_count_histogram":dict(sorted(footprint_counts.items())),
         "intersection_census":{
