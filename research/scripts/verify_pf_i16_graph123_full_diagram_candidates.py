@@ -14,6 +14,7 @@ from pathlib import Path
 
 import verify_pf_i16_hall_four_interval_parent_compatibility as geom
 import verify_pf_i16_order8_oriented_collapse_diamond_naturality as order8
+import export_pf_i16_hall_source_records as hall
 
 def digest_bytes(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -39,8 +40,25 @@ def main():
     expected={1:99,2:110,3:75}
     assert {x["graph_index"]:len(x["candidate_witnesses"]) for x in selected}==expected
 
+    source_rows=hall.source_records(8)
+    source_graph_rows=defaultdict(list)
+    for si,sr in enumerate(source_rows):
+        sg=frozenset(tuple(sorted(e)) for e in sr["full_overlap_edges"])
+        if sg in graphs.values():
+            source_graph_rows[sg].append((si,sr))
+    root_maps={}
+    for gi,g in graphs.items():
+        maps=[]
+        for tail in itertools.permutations((1,2,3)):
+            perm=(0,)+tail
+            image=frozenset(tuple(sorted((perm[a],perm[b]))) for a,b in g)
+            if image==g: maps.append(perm)
+        root_maps[gi]=maps
+    source_map_rows_by_graph={str(gi):len(source_graph_rows[graphs[gi]])*len(root_maps[gi]) for gi in (1,2,3)}
     results=[]
     summary_debug={}
+    eligible_map_pass_counts=Counter()
+    source_some_map_counts=Counter()
     passed_by_graph=Counter()
     fail_by_graph=defaultdict(Counter)
     boundary_lengths=Counter()
@@ -101,7 +119,32 @@ def main():
                         tuple(full[k] for k in ("F","E","V")),
                         tuple(retained[k] for k in ("F","E","V"))))
                 row["checks"]["all_four_relative_deletion_collapses"]=relative
-                if not all(relative.values()): row["failures"].append("relative_deletion_collapse")
+                # Only source-eligible non-root marks impose parent-deletion
+                # obligations. Check every root-preserving source-to-support
+                # graph map; do not treat ineligible/root deletions as failures.
+                map_checks=[]
+                by_source=defaultdict(list)
+                for si,sr in source_graph_rows[graph]:
+                    eligible=sorted(int(x["deleted_interval_index"]) for x in sr["parents"])
+                    for perm in root_maps[gi]:
+                        support_marks=sorted(perm[m] for m in eligible)
+                        mark_checks={str(m):bool(relative[str(m)]) for m in support_marks}
+                        ok=all(mark_checks.values())
+                        map_checks.append({"source_index":si,"source_to_support_map":list(perm),
+                                           "eligible_source_marks":eligible,
+                                           "eligible_support_marks":support_marks,
+                                           "eligible_deletion_checks":mark_checks,
+                                           "all_eligible_deletions_pass":ok})
+                        by_source[si].append(ok)
+                all_maps_valid=all(x["all_eligible_deletions_pass"] for x in map_checks)
+                every_source_has_some_map=all(any(v) for v in by_source.values())
+                row["checks"]["all_source_map_eligible_deletions_pass"]=all_maps_valid
+                row["checks"]["every_source_has_some_valid_root_map"]=every_source_has_some_map
+                row["source_map_row_count"]=len(map_checks)
+                row["source_map_eligible_deletion_checks"]=map_checks
+                eligible_map_pass_counts[(gi,all_maps_valid)]+=1
+                source_some_map_counts[(gi,every_source_has_some_map)]+=1
+                if not all_maps_valid: row["failures"].append("source_eligible_relative_deletion")
                 # Reconstruct anchored cycles and all ordered multi-footprint words.
                 cycles=[]
                 for i in range(4):
@@ -137,6 +180,8 @@ def main():
                         "parent_compatibility":digest_bytes(args.parent_compatibility)},
         "candidate_counts":expected,
         "full_diagram_pass_counts":{str(k):passed_by_graph[k] for k in (1,2,3)},
+        "source_map_rows_by_graph":source_map_rows_by_graph,
+        "candidate_pass_counts_all_root_maps":[{"graph":g,"all_maps_valid":eligible_map_pass_counts[(g,True)],"some_map_invalid":eligible_map_pass_counts[(g,False)],"every_source_has_some_map":source_some_map_counts[(g,True)],"some_source_has_no_valid_map":source_some_map_counts[(g,False)]} for g in (1,2,3)],
         "full_diagram_failure_counts":{str(k):dict(fail_by_graph[k]) for k in (1,2,3)},
         "boundary_length_histogram":dict(sorted(boundary_lengths.items())),
         "footprint_count_histogram":dict(sorted(footprint_counts.items())),
