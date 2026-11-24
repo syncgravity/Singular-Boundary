@@ -14,6 +14,12 @@ The Stage 19 `penrose_complete_catalogue.npz` (1,963,431 bytes, SHA-256 `d08e157
 
 The intake commit `826470c384aa0aa0147cb5ba17c474cea15059db` was pushed to `main`. A fresh clone fetched all 19 LFS objects and verified every byte count and SHA-256 against the intake manifest. The 2026-11-11 LFS manifest is authoritative for current binary custody. The older 2026-10-30 registers have been reconciled for those binary rows; their remaining text-source rows retain their separate historical status.
 
+## Helical-spectroscopy source intake (2026-11-24)
+
+Thirteen Stage 27–35 archives and standalone outputs are staged under `data/raw/helical-spectroscopy-stage27-35-2026-11-24/` on branch `intake/helical-spectroscopy-stage27-35-2026-11-24`. Their source locations, exact sizes, SHA-256 values, and current remote-verification status are recorded in `sources/source-manifests/LFS_INTAKE_LOCAL_2026-11-24.csv`. The Stage 33 pre-fix and fixed archives are both retained. All 13 files were copied byte-for-byte and locally hash-verified; remote LFS availability and clean-checkout readback are pending.
+
+The Stage 35 ZIP contains measurement/continuation code rather than an ensemble result archive. The separately included `stage35_seed101_samefield.npz` is only a same-field diagnostic, not an independent-chain ensemble. These files are preserved as historical research evidence; inclusion does not certify the helical operator, spectroscopy results, or a mass claim.
+
 ## Still unavailable in this intake
 
 - `ASSET_INDEX.csv` and `ORIGIN.csv` are not present in the local project trees inspected for this intake. The missing index has not been reconstructed or substituted.
