@@ -200,7 +200,8 @@ def main():
     expected={4:0,6:1080,7:520,8:840,9:228,10:960,11:96,13:31104}
     by_graph={str(gi):sum(v for (g,_),v in pair_counts.items() if g==gi) for gi in expected}
     assert by_graph=={str(k):v for k,v in expected.items()},by_graph
-    assert total==4084
+    assert total==34828
+    assert len(source_diamond_keys)==436
     assert all_checks["source_endpoint_compression_diamonds"]==total
     assert all_checks["retained_pair_common_footprints"]==total
     assert all_checks["two_order_paths_replay"]==total
