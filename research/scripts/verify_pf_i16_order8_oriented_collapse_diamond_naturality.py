@@ -79,7 +79,7 @@ def derive_footprint_word(i, supports, cycles):
             e=next(iter(shared))
             pos=next((k for k in range(len(cycles[i]))
                       if tuple(sorted((cycles[i][k],cycles[i][(k+1)%len(cycles[i])])))==e),None)
-            if pos is None or pos==0 or pos>=len(cycles[i])-2:
+            if pos is None or pos<=1 or pos>=len(cycles[i])-1:
                 raise AssertionError(("edge footprint outside open arc",i,j,pos))
             row.append({"neighbor":j,"cell_type":"edge",
                         "arc_positions":[pos-1,pos],
@@ -89,7 +89,7 @@ def derive_footprint_word(i, supports, cycles):
             if len(common_boundary)!=1 or common["E"]:
                 raise AssertionError(("non-singleton vertex footprint",i,j,common_boundary,common["E"]))
             v=next(iter(common_boundary)); pos=cycles[i].index(v)
-            if pos==0 or pos==len(cycles[i])-1:
+            if pos<=1:
                 raise AssertionError(("vertex footprint at anchor endpoint",i,j,pos))
             row.append({"neighbor":j,"cell_type":"vertex",
                         "arc_positions":[pos-1],"cell_vertices":[list(v)]})
