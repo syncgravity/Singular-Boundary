@@ -47,6 +47,7 @@ def run(n):
     parent_cache={}
     source_rows={}
     block_ids={}
+    block_keys_by_id=[]
     block_sources=defaultdict(set)
     block_targets=defaultdict(set)
     block_source_targets=defaultdict(dict)
@@ -91,6 +92,7 @@ def run(n):
                 key=(parent,J,P)
                 if key not in block_ids:
                     block_ids[key]=len(block_ids)
+                    block_keys_by_id.append(key)
                 bid=block_ids[key]
                 old=block_source_targets[bid].get(source_index)
                 if old is not None and old!=frozenset(Ts):
@@ -154,6 +156,8 @@ def run(n):
     same_target_cross_source_pairs=0
     target_collision_hist=Counter()
     non_diamond_by_target=[]
+    first_connected_non_diamond=None
+    first_disconnected_non_diamond=None
     for T,owners in target_blocks.items():
         incidences=[]
         for bid,srcs in owners.items():
@@ -208,7 +212,7 @@ def run(n):
         comp_rows.append({"blocks":len(bids),"distinct_sources":len(srcset),
                           "distinct_targets":len(tgtset),
                           "target_capacity":len(tgtset),
-                          "sum_of_block_source_demands_before_P_choice":str(demand)})
+                          "duplicated_source_mark_demand_over_parent_target_blocks":str(demand)})
     comp_rows.sort(key=lambda x:(-x["blocks"],-x["distinct_sources"],-x["distinct_targets"]))
 
     # Determine whether cross-source target collisions lie inside one D/S
@@ -221,10 +225,39 @@ def run(n):
             for sj,bj in inc[i+1:]:
                 if si==sj or bi==bj:
                     continue
-                if dsu.find(bi)==dsu.find(bj):
+                connected=(dsu.find(bi)==dsu.find(bj))
+                if connected:
                     connected_non_diamond+=1
                 else:
                     disconnected_non_diamond+=1
+                if connected and first_connected_non_diamond is None:
+                    first_connected_non_diamond={
+                        "target":base.encode_tree(T),
+                        "left":{"source_index":si,"intervals":[list(x) for x in source_rows[si][0]],
+                                "overlap_tree":[list(x) for x in source_rows[si][1]],
+                                "parent_source":block_keys_by_id[bi][0],
+                                "deleted_interval":list(block_keys_by_id[bi][1]),
+                                "parent_target":base.encode_tree(block_keys_by_id[bi][2])},
+                        "right":{"source_index":sj,"intervals":[list(x) for x in source_rows[sj][0]],
+                                 "overlap_tree":[list(x) for x in source_rows[sj][1]],
+                                 "parent_source":block_keys_by_id[bj][0],
+                                 "deleted_interval":list(block_keys_by_id[bj][1]),
+                                 "parent_target":base.encode_tree(block_keys_by_id[bj][2])}
+                    }
+                if not connected and first_disconnected_non_diamond is None:
+                    first_disconnected_non_diamond={
+                        "target":base.encode_tree(T),
+                        "left":{"source_index":si,"intervals":[list(x) for x in source_rows[si][0]],
+                                "overlap_tree":[list(x) for x in source_rows[si][1]],
+                                "parent_source":block_keys_by_id[bi][0],
+                                "deleted_interval":list(block_keys_by_id[bi][1]),
+                                "parent_target":base.encode_tree(block_keys_by_id[bi][2])},
+                        "right":{"source_index":sj,"intervals":[list(x) for x in source_rows[sj][0]],
+                                 "overlap_tree":[list(x) for x in source_rows[sj][1]],
+                                 "parent_source":block_keys_by_id[bj][0],
+                                 "deleted_interval":list(block_keys_by_id[bj][1]),
+                                 "parent_target":base.encode_tree(block_keys_by_id[bj][2])}
+                    }
 
     result={
         "schema":"PF-I16-CROSS-SOURCE-REVERSE-MARK-EXCHANGE-v1",
@@ -255,6 +288,8 @@ def run(n):
             "S_D_block_components":len(comps),
             "S_D_component_block_size_histogram":dict(sorted(comp_size_hist.items())),
             "largest_components":comp_rows[:20],
+            "first_connected_non_diamond_collision":first_connected_non_diamond,
+            "first_disconnected_non_diamond_collision":first_disconnected_non_diamond,
             "target_incidence_multiplicity_histogram":dict(sorted(target_collision_hist.items())),
         },
         "scope":{
@@ -267,6 +302,16 @@ def run(n):
                 "no source-derived Z5 or helical phase map is used"
             ]
         },
+        "fibers":[
+            {"parent_source":parent,"deleted_interval":list(J),
+             "child_source_count":len(srcs),"split_demand":str(fiber_demand[(parent,J)]),
+             "parent_target_blocks":[
+                 {"block_id":block_ids[(parent,J,P)],"parent_target":base.encode_tree(P),
+                  "lift_target_count":len(block_targets[block_ids[(parent,J,P)]])}
+                 for P in sorted({key[2] for key in block_ids if key[0]==parent and key[1]==J})
+             ]}
+            for (parent,J),srcs in sorted(fiber_sources.items())
+        ],
         "blocks":block_rows,
         "D_edges":[],
     }
