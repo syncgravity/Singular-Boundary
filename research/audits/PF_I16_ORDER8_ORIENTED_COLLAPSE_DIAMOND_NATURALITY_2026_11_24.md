@@ -55,6 +55,17 @@ The boundary-footprint word census over the 3,984 support boundaries is:
 
 Thus the finite order-eight candidate family has genuine multi-footprint data, not just one distinguished footprint per boundary.
 
+### Eligible source marks by graph family
+
+The pinned source-labelled audit has this exact mark census across all witness rows and both root-preserving maps:
+
+| Source graph | Source records | Eligible marks per source record | Mark-set distribution in map rows | Source critical pairs |
+|---|---:|---|---|---:|
+| Graph 5 | 12 | 2 or 3 | \`(1,2,3)\`: 4 records; \`(2,3)\`: 4; \`(1,3)\`: 4 | 20 |
+| Graph 12 | 48 | 1 or 2 | \`(2,3)\`: 12 records; \`(1,3)\`: 12; \`(3)\`: 12; \`(2)\`: 6; \`(1)\`: 6 | 24 |
+
+For graph 12, no source record has three eligible marks. Thus there is no additional third-mark restriction beyond its two-mark source diamonds. The order-eight collapse audit instead checks both elementary collapse orders for all 24 graph-12 critical pairs across all 482 graph-12 witnesses and both root-preserving graph maps (23,136 lifted instances). Graph 5 contributes 20 source critical pairs across 514 witnesses and both maps (20,560 instances). Together these give the 43,696 lifted path comparisons below.
+
 ## 4. Source-side order-eight deletion diamonds
 
 The canonical source exporter generates 608 order-eight records and 490 pairs of simultaneous eligible non-root leaf deletions. The verifier independently composes endpoint compression in both orders and compares the final parent intervals, parent tree, and original-to-final port map.
