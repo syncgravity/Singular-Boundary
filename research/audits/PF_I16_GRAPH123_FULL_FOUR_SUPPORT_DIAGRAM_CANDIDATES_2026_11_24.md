@@ -103,7 +103,7 @@ Pinned input digests:
 - Ngrid=12 support inventory: \`5b56a7485c0ab01e76f93868e331a2cb1790df01131d98c33376f7cb6370af4f\`
 - Parent-compatibility output: \`4adf31790694d4080e51885e0d83fb9f90b690f0c5cb40818946a22bf693df88\`
 
-Successful replay: [45367265481](https://github.com/syncgravity/Singular-Boundary/actions/runs/45367265481).
+Successful clean replay: [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309), artifact [14947201304](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309/artifacts/14947201304).
 
 ## 7. Nonclaims and next obligation
 
@@ -116,4 +116,4 @@ This result does not establish:
 - geometric L8;
 - any all-orders Hall inequality, split-demand transport, or weighted one-link inequality.
 
-The next finite proof obligation is to connect these graph-1/2/3 source-eligible restriction checks to the graph-5/graph-12 order-eight collapse-diamond audit, then test source deletion diamonds and path-level naturality for graph families 1, 2, and 3. The current result supplies the full support complexes and their eligible one-step restrictions; it does not yet supply the two-step diamond comparison.
+The graph-1/2/3 two-order source deletion path comparison has since been completed: [PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md](PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md), with 4,084 / 4,084 path instances passing and same elementary-pair sets normalized by valid adjacent commutations. The next finite geometric obligation is to lift the remaining overlap-graph families 6, 7, 8, 9, 10, 11, and 13 to full four-support diagrams, then carry their eligible source diamonds through both collapse orders. The current finite result does not prove equality of collapse maps, naturality under arbitrary further restrictions, or an all-orders theorem.
