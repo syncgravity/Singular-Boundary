@@ -46,7 +46,7 @@ Aggregate results:
 |---|---:|
 | Four matched-edge relative collapses | 1,136 / 1,136 |
 | Labelled intersections recomputed | 4,260 / 4,260 |
-| Nonempty labelled intersections point-contractible | 2,840 / 2,840 |
+| Nonempty labelled intersections point-contractible | 1,988 / 1,988 |
 | Full overlap graph matches | 284 / 284 |
 | Four-support union point-contractible | 284 / 284 |
 | Anchored boundary cycles reconstructed | 1,136 / 1,136 |
