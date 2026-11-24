@@ -52,7 +52,7 @@ def run(n):
     block_targets=defaultdict(set)
     block_source_targets=defaultdict(dict)
     fiber_sources=defaultdict(set)
-    fiber_demand=defaultdict(lambda: 0)
+    fiber_demand=defaultdict(lambda: Fraction(0))
     source_target_marks=defaultdict(list)
     target_blocks=defaultdict(lambda: defaultdict(set))
     state_count=0
