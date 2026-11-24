@@ -244,6 +244,7 @@ def main():
     assert len(source_audit["source_parent_map_rows"])==58608
 
     face_vertices,face_edges,options,_=geom.build_target(inv)
+    cells,_,_,_,_,_,_=geom.make_geometry(face_vertices,face_edges)
     global FACE_EDGES
     FACE_EDGES=face_edges
     sources=hall.source_records(8)
@@ -258,7 +259,7 @@ def main():
     for wr in source_audit["witness_rows"]:
         fam=wr["family"]; pi=wr["pair_index"]; wi=wr["witness_index"]
         dw=data["per_pair"][pi][fam+"_witnesses"][wi]
-        supports=[complex_dict(geom.cells(tuple(sorted(s)))) for s in dw["support_face_indices"]]
+        supports=[complex_dict(cells(tuple(sorted(s)))) for s in dw["support_face_indices"]]
         edges=[data["fixed_first_edge"],wr["second_edge"],wr["third_edge"],wr["fourth_edge"]]
         cycles=[]
         for i in range(4):
