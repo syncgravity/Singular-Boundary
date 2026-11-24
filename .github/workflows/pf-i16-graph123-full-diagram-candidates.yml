@@ -1,0 +1,58 @@
+name: PF-I16 graph-1/2/3 full four-support diagram candidates
+
+on:
+  push:
+    branches:
+      - research/pf-i16-four-interval-diamond-2026-11-19
+    paths:
+      - research/scripts/verify_pf_i16_graph123_full_diagram_candidates.py
+      - research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py
+      - research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py
+      - .github/workflows/pf-i16-graph123-full-diagram-candidates.yml
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  full-diagram-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the four-interval research branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-four-interval-diamond-2026-11-19
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download pinned Ngrid=12 support inventory from theorem-index run 1013
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-support-inventory
+          run-id: 45361114673
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/inventory
+      - name: Download all-graph parent-compatible fourth-edge witnesses from run 1013
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-parent-compatibility
+          run-id: 45361114673
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/parent-compatibility
+      - name: Compile and lift graph-1/2/3 candidates to full four-support diagrams
+        run: |
+          python -m py_compile research/scripts/verify_pf_i16_graph123_full_diagram_candidates.py
+          python research/scripts/verify_pf_i16_graph123_full_diagram_candidates.py \
+            --inventory /tmp/pf-i16-input/inventory/pf_i16_four_interval_support_inventory.json \
+            --parent-compatibility /tmp/pf-i16-input/parent-compatibility/pf_i16_four_interval_parent_compatibility.json \
+            --output /tmp/pf_i16_graph123_full_diagram_candidates.json
+      - name: Upload full graph-1/2/3 diagram candidate audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-graph123-full-diagram-candidates
+          path: /tmp/pf_i16_graph123_full_diagram_candidates.json
+          if-no-files-found: error
+          retention-days: 90
