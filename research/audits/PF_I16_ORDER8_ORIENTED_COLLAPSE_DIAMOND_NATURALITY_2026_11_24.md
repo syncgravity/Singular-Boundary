@@ -2,7 +2,7 @@
 
 Date: 2026-11-24 UTC  
 Branch: `research/pf-i16-four-interval-diamond-2026-11-19`  
-Status: **finite local verifier passes on the current immutable order-eight artifacts; clean GitHub Actions replay is pending.** The result covers the graph-5 and graph-12 four-support candidate families, not all 490 order-eight source diamonds and not geometric L8.
+Status: **clean GitHub Actions replay succeeded** for the graph-5/graph-12 collapse-diamond audit (run [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223)). Separate full-diagram replay also succeeded for 284 graph-1/2/3 candidates (run [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309)). The finite support-diagram frontier now covers graph families 1, 2, 3, 5, and 12; two-order collapse-path diamonds are still verified only for graph 5 and graph 12.
 
 ## 1. Purpose
 
@@ -175,28 +175,35 @@ Common additional-pair counts:
 
 The order of common additional pairs agrees in 12,800 instances and is order-sensitive in 5,424. The latter are not failed replays: both local suffixes remain valid and have the same additional-pair set. They identify larger local switch templates that cannot be reduced to adjacent swaps alone.
 
-## 7. Coverage frontier for the other 446 source diamonds
+## 7. Updated coverage frontier across all order-eight source diamonds
 
-The parent-compatibility search has a finite candidate-edge frontier for all 13 order-eight overlap-graph types. These are **candidate fourth edges before full four-support diagram lifting**; they are not yet accepted full witnesses.
+The source inventory has 490 critical pairs across 608 source records and 13 overlap-graph families. The geometric and path-level coverage is now:
 
-| Graph | Source records | Source diamonds | Root-preserving graph automorphisms | Candidate fourth edges |
-|---:|---:|---:|---:|---:|
-| 1 | 2 | 6 | 6 | 99 |
-| 2 | 2 | 2 | 1 | 110 |
-| 3 | 2 | 2 | 2 | 75 |
-| 4 | 2 | 0 | 1 | 97 |
-| 5 | 12 | 20 | 2 | 103 |
-| 6 | 18 | 30 | 2 | 32 |
-| 7 | 12 | 8 | 1 | 65 |
-| 8 | 12 | 8 | 1 | 105 |
-| 9 | 18 | 6 | 2 | 32 |
-| 10 | 48 | 48 | 2 | 19 |
-| 11 | 48 | 48 | 2 | 23 |
-| 12 | 48 | 24 | 2 | 21 |
-| 13 | 384 | 288 | 6 | 18 |
-| **Total** | **608** | **490** | — | — |
+| Graph | Source records | Source diamonds | Root-preserving maps | Candidate fourth edges | Full four-support verification | Two-order collapse-path diamond |
+|---:|---:|---:|---:|---:|---|---|
+| 1 | 2 | 6 | 6 | 99 | 99 / 99 candidates pass | Not yet checked |
+| 2 | 2 | 2 | 1 | 110 | 110 / 110 candidates pass | Not yet checked |
+| 3 | 2 | 2 | 2 | 75 | 75 / 75 candidates pass | Not yet checked |
+| 4 | 2 | 0 | 1 | 97 | Candidate frontier only | No source diamond |
+| 5 | 12 | 20 | 2 | 103 | 514 witness rows pass | 20 source pairs; 20,560 lifted instances pass |
+| 6 | 18 | 30 | 2 | 32 | Candidate frontier only | Not yet checked |
+| 7 | 12 | 8 | 1 | 65 | Candidate frontier only | Not yet checked |
+| 8 | 12 | 8 | 1 | 105 | Candidate frontier only | Not yet checked |
+| 9 | 18 | 6 | 2 | 32 | Candidate frontier only | Not yet checked |
+| 10 | 48 | 48 | 2 | 19 | Candidate frontier only | Not yet checked |
+| 11 | 48 | 48 | 2 | 23 | Candidate frontier only | Not yet checked |
+| 12 | 48 | 24 | 2 | 21 | 482 witness rows pass | 24 source pairs; 23,136 lifted instances pass |
+| 13 | 384 | 288 | 6 | 18 | Candidate frontier only | Not yet checked |
+| **Total** | **608** | **490** | — | — | **1,280 verified candidate diagrams in families 1,2,3,5,12** | **44 / 490 source pairs path-lifted** |
 
-All 13 types have a nonempty candidate-edge frontier. The next geometric task is to lift the other 11 types to full four-support diagrams, including all 15 intersections, all eligible relative deletions, oriented boundary words, and both orders of each source deletion pair. The current 996-witness audit only completes graphs 5 and 12.
+The graph-1/2/3 full-diagram verifier checks 284 candidate diagrams (99, 110, and 75 respectively) against the accepted face inventory. It recomputes all 15 labelled intersections, the full overlap graph, point-contractibility of nonempty intersections and the full union, four matched-edge collapses, four anchored boundary cycles, four ordered footprint words, and all source-eligible single-deletion restrictions for every root-preserving source-to-support map. All 1,708 source-map rows pass. See [the separate graph-1/2/3 audit](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md).
+
+Important qualification: this is **one-step source-eligible restriction coverage**, not a two-step source deletion diamond. For graph 1, 2, and 3 the 10 source critical pairs (6+2+2) still need both orders of the geometric collapse path to be constructed and compared. For graph 5 and 12, those two-order paths are already checked in the 43,696 lifted instances.
+
+The 436 source diamonds in graph families 6, 7, 8, 9, 10, 11, and 13 remain without full four-support diagrams in this audit. Graph 4 has no source critical pairs. Thus the 490 source diamonds divide exactly into:
+- 10 graph-1/2/3 pairs with full support candidates and source-eligible one-step restrictions, but no two-order path comparison yet;
+- 44 graph-5/12 pairs with complete two-order path comparisons;
+- 436 pairs in the remaining graph families without full four-support geometric lifts.
 
 ## 8. Interpretation
 
@@ -214,10 +221,20 @@ It does **not** close geometric L8. In particular:
 - A finite factorization of collapse sequences is not yet a natural homotopy or equality of collapse maps.
 - No all-orders local switch lemma, all-orders accepted-face confluence theorem, or all-orders PF-I16 Hall inequality follows.
 
-## 9. Reproduction
+## 9. Graph-1/2/3 full-diagram replay
+
+Verifier: `research/scripts/verify_pf_i16_graph123_full_diagram_candidates.py`  
+Audit: [PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md)  
+Workflow: [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309), conclusion SUCCESS  
+Artifact: [14947201304](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309/artifacts/14947201304)  
+Decoded JSON SHA-256: `29c2be19fefb2e80bd788ec086621d0df071c24da3db165cec060f2ea9688f66`.
+
+The 284 candidate diagrams pass all full-diagram checks and 1,708 source-map rows. The verifier intentionally checks only source-eligible deletion indices; it does not claim that all four support deletions pass. The exact eligible support-index sets are graph 1 `{1,2,3}`, graph 2 `{1,3}`, and graph 3 `{0,2,3}`.
+
+## 10. Reproduction
 
 Verifier:
 
 `research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py`
 
-The CI step consumes the generated order-eight diagram JSON, accepted-face inventory, and source-labelled restriction audit. It emits row-level witness/pair path digests and the complete finite census above. The current branch workflow is the clean-checkout reproducibility gate; its conclusion is pending at the time of this record.
+The CI step consumes the generated order-eight diagram JSON, accepted-face inventory, and source-labelled restriction audit. It emits row-level witness/pair path digests and the complete finite census above. The clean-checkout reproducibility gate passed in workflow [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223), artifact [14947481287](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223/artifacts/14947481287). Decoded JSON SHA-256: `15b3b16d1d3f7ae2e7d49847f8df7fa15f9708b0c6376f5f1d8d4fcc03d8c00a`.
