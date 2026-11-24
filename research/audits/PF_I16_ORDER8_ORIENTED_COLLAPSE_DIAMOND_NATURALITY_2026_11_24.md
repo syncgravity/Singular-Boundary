@@ -17,7 +17,7 @@ The source-side deletion theorem and the target-side geometric comparison remain
 
 - Independent four-support diagram JSON SHA-256: `aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba`.
 - Accepted-face inventory face-key-table SHA-256: `c20b727809eeb173ec11f584c2d60fc7afa3283e39a2dc3ccde0187703ce9ec9`.
-- Source audit schema: `PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v1`.
+- Source audit schema: `PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v2`.
 - Source order: (n=8), with 608 canonical source records.
 
 The verifier imports the repository's canonical order-eight source exporter and geometric cell/collapse primitives. It independently reconstructs the boundary cycles, intersection contents, and elementary collapse paths.
