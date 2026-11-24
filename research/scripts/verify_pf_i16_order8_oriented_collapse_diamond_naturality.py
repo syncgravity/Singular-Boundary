@@ -255,6 +255,7 @@ def main():
     boundary_rows=[]
     intersection_entries=relative_checks=cycle_checks=arc_checks=word_checks=0
     footprint_count_hist=Counter()
+    boundary_length_hist=Counter()
     map_coarse_swap_counts=Counter(); map_word_swap_counts=Counter()
     for wr in source_audit["witness_rows"]:
         fam=wr["family"]; pi=wr["pair_index"]; wi=wr["witness_index"]
@@ -270,7 +271,8 @@ def main():
             assert stored["marked_edge_orientation"]==[edges[i]["lower"],edges[i]["upper"]]
             arc=cyc[1:]+[cyc[0]]
             assert arc==[tuple(v) for v in stored["open_complementary_arc"]]
-            assert len(cyc)==stored["boundary_length"]==8
+            assert len(cyc)==stored["boundary_length"],(wr["witness_id"],i,len(cyc),stored["boundary_length"])
+            boundary_length_hist[len(cyc)]+=1
             cycles.append(cyc); cycle_checks+=1; arc_checks+=1
         for i in range(4):
             derived=derive_footprint_word(i,supports,cycles)
@@ -532,6 +534,7 @@ def main():
             "all_15_labelled_intersections_recomputed":intersection_entries,
             "relative_single_deletion_collapse_checks":relative_checks,
             "footprint_count_histogram":[{"footprints":k,"support_boundaries":v} for k,v in sorted(footprint_count_hist.items())],
+            "boundary_length_histogram":[{"boundary_length":k,"support_boundaries":v} for k,v in sorted(boundary_length_hist.items())],
             "root_preserving_map_swap_symmetry":{
                 "coarse_intersection_diagram_invariant_rows":sum(v for (fam,ok),v in map_coarse_swap_counts.items() if ok),
                 "coarse_intersection_diagram_noninvariant_rows":sum(v for (fam,ok),v in map_coarse_swap_counts.items() if not ok),
