@@ -254,6 +254,7 @@ def main():
     boundary_rows=[]
     intersection_entries=relative_checks=cycle_checks=arc_checks=word_checks=0
     footprint_count_hist=Counter()
+    map_coarse_swap_counts=Counter(); map_word_swap_counts=Counter()
     for wr in source_audit["witness_rows"]:
         fam=wr["family"]; pi=wr["pair_index"]; wi=wr["witness_index"]
         dw=data["per_pair"][pi][fam+"_witnesses"][wi]
@@ -282,6 +283,25 @@ def main():
                 meets.append({"neighbors":[x["neighbor"],y["neighbor"]],"meet":bool(xv&yv)})
             assert meets==stored["footprint_meet_relations"]
             word_checks+=1
+        # The two root-preserving graph maps differ by swapping support labels 1 and 2.
+        # Check whether that swap preserves the coarse intersection table or the
+        # finer ordered boundary words; the source exporter prescribes neither word.
+        swap={0:0,1:2,2:1,3:3}
+        def swap_indices(inds):
+            return tuple(sorted(swap[x] for x in inds))
+        imap={tuple(x["indices"]):x for x in dw["diagram"]["intersections"]}
+        coarse_sig=lambda x:(x["nonempty"],x["face_count"],x["edge_count"],x["vertex_count"],x["point_contractible"])
+        coarse_ok=all(coarse_sig(e)==coarse_sig(imap[swap_indices(inds)]) for inds,e in imap.items())
+        map_coarse_swap_counts[(fam,coarse_ok)]+=1
+        word_rows={x["support"]:x["ordered_footprints"] for x in dw["diagram"]["anchored_boundary_footprint_words"]}
+        word_ok=True
+        for i in range(4):
+            relabelled=[(swap[x["neighbor"]],x["cell_type"],tuple(x["arc_positions"])) for x in word_rows[i]]
+            target_word=[(x["neighbor"],x["cell_type"],tuple(x["arc_positions"])) for x in word_rows[swap[i]]]
+            if relabelled!=target_word:
+                word_ok=False
+                break
+        map_word_swap_counts[(fam,word_ok)]+=1
             footprint_count_hist[len(derived)]+=1
         # Exact all-15 labelled intersection content, including empty entries.
         imap={tuple(x["indices"]):x for x in dw["diagram"]["intersections"]}
@@ -334,6 +354,8 @@ def main():
                 geometric_source_diamonds.add((edge_set(sr["full_overlap_edges"]),si,tuple(sorted((m,n)))))
     assert source_diamonds==source_diamonds_ok==490
     assert footprint_count_hist==Counter({1:514,2:1478,3:1992})
+    assert map_coarse_swap_counts==Counter({("graph5",True):178,("graph5",False):336,("graph12",True):110,("graph12",False):372})
+    assert map_word_swap_counts==Counter({("graph5",False):514,("graph12",False):482})
     assert len(geometric_source_diamonds)==44
 
     # Recheck the 58,608 finite source-to-target maps and collect the actual
@@ -509,6 +531,17 @@ def main():
             "all_15_labelled_intersections_recomputed":intersection_entries,
             "relative_single_deletion_collapse_checks":relative_checks,
             "footprint_count_histogram":[{"footprints":k,"support_boundaries":v} for k,v in sorted(footprint_count_hist.items())],
+            "root_preserving_map_swap_symmetry":{
+                "coarse_intersection_diagram_invariant_rows":sum(v for (fam,ok),v in map_coarse_swap_counts.items() if ok),
+                "coarse_intersection_diagram_noninvariant_rows":sum(v for (fam,ok),v in map_coarse_swap_counts.items() if not ok),
+                "ordered_footprint_word_invariant_rows":sum(v for (fam,ok),v in map_word_swap_counts.items() if ok),
+                "ordered_footprint_word_noninvariant_rows":sum(v for (fam,ok),v in map_word_swap_counts.items() if not ok),
+                "by_family":[{"family":fam,"coarse_invariant":map_coarse_swap_counts[(fam,True)],
+                    "coarse_noninvariant":map_coarse_swap_counts[(fam,False)],
+                    "ordered_word_invariant":map_word_swap_counts[(fam,True)],
+                    "ordered_word_noninvariant":map_word_swap_counts[(fam,False)]}
+                    for fam in ("graph5","graph12")]
+            },
             "source_witness_map_rows":len(map_rows),
             "parent_port_restriction_checks":parent_restrictions,
             "source_diamond_geometric_lifts":map_diamond_instances,
