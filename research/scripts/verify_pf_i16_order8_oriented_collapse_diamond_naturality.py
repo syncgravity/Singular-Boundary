@@ -244,7 +244,7 @@ def main():
     assert len(source_audit["source_parent_map_rows"])==58608
 
     face_vertices,face_edges,options,_=geom.build_target(inv)
-    cells,_,_,_,_,_,_=geom.make_geometry(face_vertices,face_edges)
+    cells,_,_,collapse,point_contractible,_,_=geom.make_geometry(face_vertices,face_edges)
     global FACE_EDGES
     FACE_EDGES=face_edges
     sources=hall.source_records(8)
@@ -317,13 +317,13 @@ def main():
                 assert entry["edge_count"]==len(cc["E"])
                 assert entry["vertex_count"]==len(cc["V"])
                 assert entry["nonempty"]==bool(cc["V"])
-                pc=geom.point_contractible(tuple(cc[k] for k in ("F","E","V"))) if cc["V"] else None
+                pc=point_contractible(tuple(cc[k] for k in ("F","E","V"))) if cc["V"] else None
                 assert entry["point_contractible"]==pc
                 intersection_entries+=1
         full=union_complex(supports,range(4))
         for i in range(4):
             target=union_complex(supports,[j for j in range(4) if j!=i])
-            ok=geom.collapse(tuple(full[k] for k in ("F","E","V")),
+            ok=collapse(tuple(full[k] for k in ("F","E","V")),
                              tuple(target[k] for k in ("F","E","V")))
             assert bool(ok)==bool(dw["diagram"]["relative_deletion_collapses"][str(i)])
             relative_checks+=1
