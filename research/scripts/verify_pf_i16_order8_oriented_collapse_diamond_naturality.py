@@ -283,6 +283,7 @@ def main():
                 meets.append({"neighbors":[x["neighbor"],y["neighbor"]],"meet":bool(xv&yv)})
             assert meets==stored["footprint_meet_relations"]
             word_checks+=1
+            footprint_count_hist[len(derived)]+=1
         # The two root-preserving graph maps differ by swapping support labels 1 and 2.
         # Check whether that swap preserves the coarse intersection table or the
         # finer ordered boundary words; the source exporter prescribes neither word.
@@ -302,7 +303,6 @@ def main():
                 word_ok=False
                 break
         map_word_swap_counts[(fam,word_ok)]+=1
-            footprint_count_hist[len(derived)]+=1
         # Exact all-15 labelled intersection content, including empty entries.
         imap={tuple(x["indices"]):x for x in dw["diagram"]["intersections"]}
         assert len(imap)==15
