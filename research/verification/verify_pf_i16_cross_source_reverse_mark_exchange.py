@@ -13,6 +13,7 @@ capacity allocation, a PFEL proof, or an all-orders Hall theorem.
 from __future__ import annotations
 import argparse, hashlib, json, sys
 from collections import Counter, defaultdict
+from fractions import Fraction
 from pathlib import Path
 
 import verify_pf_i16_projection_shifting_transitions as base
@@ -133,7 +134,7 @@ def run(n):
             "parent_target":base.encode_tree(key[2]),"child_source_count":ns,
             "lift_target_count":nt,"incidence_state_count":states,
             "split_demand_before_parent_target_choice":str(sum(
-                (1/source_rows[si][3] for si in srcs),0)),
+                (Fraction(1,source_rows[si][3]) for si in srcs),Fraction(0))),
             "same_source_S_edges":ns*(nt*(nt-1)//2),
             "cross_source_target_changing_S_edges":
                 (ns*(ns-1)//2)*(nt*(nt-1)//2)*2,
@@ -202,7 +203,7 @@ def run(n):
         for bid in bids:
             srcset.update(block_sources[bid])
             tgtset.update(block_targets[bid])
-            demand += sum((1/source_rows[si][3] for si in block_sources[bid]),0)
+            demand += sum((Fraction(1,source_rows[si][3]) for si in block_sources[bid]),Fraction(0))
         comp_size_hist[len(bids)]+=1
         comp_rows.append({"blocks":len(bids),"distinct_sources":len(srcset),
                           "distinct_targets":len(tgtset),
@@ -267,12 +268,7 @@ def run(n):
             ]
         },
         "blocks":block_rows,
-        "D_edges":[
-            {"block_left":a,"block_right":b,"source_index":si,"target":base.encode_tree(T),
-             "J":list(intervals[J]),"K":list(intervals[K]),
-             "P":base.encode_tree(P),"Q":base.encode_tree(Q),"ordinary_U":base.encode_tree(U)}
-            for a,b,si,T,intervals,J,K,P,Q,U in [] # replaced below
-        ],
+        "D_edges":[],
     }
     # Emit compact, explicit D witnesses without serializing source internals.
     result["D_edges"]=[
