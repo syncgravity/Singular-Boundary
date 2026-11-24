@@ -27,7 +27,8 @@ def load_payload(path: Path, expected: str):
     if path.suffix == ".gz" or raw[:2] == b"\x1f\x8b":
         raw = gzip.decompress(raw)
     digest = hashlib.sha256(raw).hexdigest()
-    matches = digest in expected if isinstance(expected, (tuple, list, set)) else digest == expected\n    if not matches:
+    matches = digest in expected if isinstance(expected, (tuple, list, set)) else digest == expected
+    if not matches:
         raise AssertionError((str(path), digest, expected))
     return json.loads(raw), digest
 
