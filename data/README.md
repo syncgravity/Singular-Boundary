@@ -16,7 +16,7 @@ The intake commit `826470c384aa0aa0147cb5ba17c474cea15059db` was pushed to `main
 
 ## Helical-spectroscopy source intake (2026-11-24)
 
-Thirteen Stage 27–35 archives and standalone outputs are staged under `data/raw/helical-spectroscopy-stage27-35-2026-11-24/` on branch `intake/helical-spectroscopy-stage27-35-2026-11-24`. Their source locations, exact sizes, SHA-256 values, and current remote-verification status are recorded in `sources/source-manifests/LFS_INTAKE_LOCAL_2026-11-24.csv`. The Stage 33 pre-fix and fixed archives are both retained. All 13 files were copied byte-for-byte and locally hash-verified; remote LFS availability and clean-checkout readback are pending.
+Thirteen Stage 27–35 archives and standalone outputs are stored under `data/raw/helical-spectroscopy-stage27-35-2026-11-24/` on branch `intake/helical-spectroscopy-stage27-35-2026-11-24`. Their source locations, exact sizes, SHA-256 values, and verification state are recorded in `sources/source-manifests/LFS_INTAKE_LOCAL_2026-11-24.csv`. The Stage 33 pre-fix and fixed archives are both retained. All 13 files were copied byte-for-byte, uploaded through LFS, fetched in a separate clone from branch commit `c94a4b8a3ca6b01c2fa97889ef2b8b3760eb28b9`, and matched to the local sources by size and SHA-256.
 
 The Stage 35 ZIP contains measurement/continuation code rather than an ensemble result archive. The separately included `stage35_seed101_samefield.npz` is only a same-field diagnostic, not an independent-chain ensemble. These files are preserved as historical research evidence; inclusion does not certify the helical operator, spectroscopy results, or a mass claim.
 
