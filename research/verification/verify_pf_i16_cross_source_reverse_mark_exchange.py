@@ -159,6 +159,14 @@ def run(n):
     non_diamond_by_target=[]
     first_connected_non_diamond=None
     first_disconnected_non_diamond=None
+    collision_class_counts=Counter()
+    collision_class_s_d_counts=Counter()
+    c_dsu=DSU(len(block_ids))
+    for a,b, *_ in d_edges:
+        c_dsu.union(a,b)
+    c_block_pair_witnesses=set()
+    c_source_pair_witnesses=0
+    first_c_witness=None
     for T,owners in target_blocks.items():
         incidences=[]
         for bid,srcs in owners.items():
@@ -174,6 +182,36 @@ def run(n):
                         same_target_non_diamond_pairs+=1
         if len(incidences)>1:
             non_diamond_by_target.append((T,len(incidences),len(owners),len({x[0] for x in incidences})))
+        # C is a common-parent sibling-incidence relation, not a source
+        # deletion diamond: two distinct child sources extend the same parent
+        # source by different marks, and share both parent target P and child
+        # target T. Preserve both source witnesses.
+        owner_ids=sorted(owners)
+        for ii,bi in enumerate(owner_ids):
+            key_i=block_keys_by_id[bi]
+            for bj in owner_ids[ii+1:]:
+                key_j=block_keys_by_id[bj]
+                if not (key_i[0]==key_j[0] and key_i[2]==key_j[2] and key_i[1]!=key_j[1]):
+                    continue
+                source_pairs=[(si,sj) for si in owners[bi] for sj in owners[bj] if si!=sj]
+                if not source_pairs:
+                    continue
+                c_dsu.union(bi,bj)
+                c_block_pair_witnesses.add((T,bi,bj))
+                c_source_pair_witnesses+=len(source_pairs)
+                if first_c_witness is None:
+                    si,sj=source_pairs[0]
+                    first_c_witness={
+                        "target":base.encode_tree(T),
+                        "left":{"source_index":si,"intervals":[list(x) for x in source_rows[si][0]],
+                                "overlap_tree":[list(x) for x in source_rows[si][1]],
+                                "parent_source":key_i[0],"deleted_interval":list(key_i[1]),
+                                "parent_target":base.encode_tree(key_i[2])},
+                        "right":{"source_index":sj,"intervals":[list(x) for x in source_rows[sj][0]],
+                                 "overlap_tree":[list(x) for x in source_rows[sj][1]],
+                                 "parent_source":key_j[0],"deleted_interval":list(key_j[1]),
+                                 "parent_target":base.encode_tree(key_j[2])}
+                    }
 
     for (si,T),marks in source_target_marks.items():
         # One source has at most one state per mark/target, but keep the exact
@@ -227,10 +265,19 @@ def run(n):
                 if si==sj or bi==bj:
                     continue
                 connected=(dsu.find(bi)==dsu.find(bj))
+                connected_with_C=(c_dsu.find(bi)==c_dsu.find(bj))
+                key_i=block_keys_by_id[bi]; key_j=block_keys_by_id[bj]
+                rel=(key_i[0]==key_j[0],key_i[2]==key_j[2],key_i[1]==key_j[1])
+                collision_class_counts[rel]+=1
+                collision_class_s_d_counts[(rel,connected)]+=1
                 if connected:
                     connected_non_diamond+=1
                 else:
                     disconnected_non_diamond+=1
+                # Store the C-augmented result separately; the two-colour
+                # S/D graph and its earlier counts remain unchanged.
+                if connected_with_C:
+                    pass
                 if connected and first_connected_non_diamond is None:
                     first_connected_non_diamond={
                         "target":base.encode_tree(T),
@@ -260,8 +307,45 @@ def run(n):
                                  "parent_target":base.encode_tree(block_keys_by_id[bj][2])}
                     }
 
+    c_comps=defaultdict(list)
+    c_comp_hist=Counter()
+    for bid in range(len(block_ids)):
+        c_comps[c_dsu.find(bid)].append(bid)
+    for bids in c_comps.values():
+        c_comp_hist[len(bids)]+=1
+    connected_non_diamond_c=0
+    disconnected_non_diamond_c=0
+    collision_class_c_counts=Counter()
+    first_disconnected_after_C=None
+    for T,owners in target_blocks.items():
+        inc=[(si,bid) for bid,srcs in owners.items() for si in srcs]
+        for i,(si,bi) in enumerate(inc):
+            for sj,bj in inc[i+1:]:
+                if si==sj or bi==bj:
+                    continue
+                key_i=block_keys_by_id[bi]; key_j=block_keys_by_id[bj]
+                rel=(key_i[0]==key_j[0],key_i[2]==key_j[2],key_i[1]==key_j[1])
+                connected=(c_dsu.find(bi)==c_dsu.find(bj))
+                collision_class_c_counts[(rel,connected)]+=1
+                if connected:
+                    connected_non_diamond_c+=1
+                else:
+                    disconnected_non_diamond_c+=1
+                    if first_disconnected_after_C is None:
+                        first_disconnected_after_C={
+                            "target":base.encode_tree(T),
+                            "left":{"source_index":si,"intervals":[list(x) for x in source_rows[si][0]],
+                                    "overlap_tree":[list(x) for x in source_rows[si][1]],
+                                    "parent_source":key_i[0],"deleted_interval":list(key_i[1]),
+                                    "parent_target":base.encode_tree(key_i[2])},
+                            "right":{"source_index":sj,"intervals":[list(x) for x in source_rows[sj][0]],
+                                     "overlap_tree":[list(x) for x in source_rows[sj][1]],
+                                     "parent_source":key_j[0],"deleted_interval":list(key_j[1]),
+                                     "parent_target":base.encode_tree(key_j[2])}
+                        }
+
     result={
-        "schema":"PF-I16-CROSS-SOURCE-REVERSE-MARK-EXCHANGE-v1",
+        "schema":"PF-I16-CROSS-SOURCE-REVERSE-MARK-EXCHANGE-v2",
         "order":n,
         "source_count":source_count,
         "counts":{
@@ -287,6 +371,15 @@ def run(n):
             "non_diamond_pairs_connected_by_global_S_D_paths":connected_non_diamond,
             "non_diamond_pairs_in_distinct_components":disconnected_non_diamond,
             "S_D_block_components":len(comps),
+            "C_parent_sibling_block_pair_witnesses":len(c_block_pair_witnesses),
+            "C_parent_sibling_source_pair_witnesses":c_source_pair_witnesses,
+            "C_augmented_S_C_D_block_components":len(c_comps),
+            "C_augmented_component_block_size_histogram":dict(sorted(c_comp_hist.items())),
+            "non_diamond_pairs_connected_after_C":connected_non_diamond_c,
+            "non_diamond_pairs_in_distinct_components_after_C":disconnected_non_diamond_c,
+            "C_augmented_collision_class_counts":[{"same_parent_source":k[0],"same_parent_target":k[1],"same_deleted_interval":k[2],"connected":conn,"pairs":v} for (k,conn),v in sorted(collision_class_c_counts.items())],
+            "first_C_parent_sibling_witness":first_c_witness,
+            "first_disconnected_non_diamond_after_C":first_disconnected_after_C,
             "S_D_component_block_size_histogram":dict(sorted(comp_size_hist.items())),
             "largest_components":comp_rows[:20],
             "first_connected_non_diamond_collision":first_connected_non_diamond,
@@ -296,9 +389,11 @@ def run(n):
         "scope":{
             "S_edges": "all target-changing sibling-lift edges within fixed (p,J,P), including distinct child sources",
             "D_edges": "same-source mutually surviving reverse-mark diamonds with exact common ordinary-parent U",
+            "C_relation": "distinct child sources extending the same parent source by different marks, sharing the same parent target P and child target T; this is a parent-sibling incidence, not a deletion diamond or proven capacity move",
             "nonclaims":[
                 "the duplicated block demand fields are diagnostics before choosing an allocation over parent targets P",
                 "component connectivity is not a fractional capacity allocation or a Hall proof",
+                "C parent-sibling incidences are common-parent/common-target collisions; they do not by themselves move demand or prove an augmenting operation",
                 "non-diamond collisions may remain even when their block endpoints are connected by longer S/D paths",
                 "no source-derived Z5 or helical phase map is used"
             ]
