@@ -1,32 +1,20 @@
-## PF-I16 · Complete four-cell rhombus-corner signature replay (2026-11-20)
+## PF-I16 · Finite order-eight source-diamond path audit (2026-11-24)
 
-The artifact-level verifier now checks the entire smallest cycle class, not only one example. From collapse artifact 14680929981, it reconstructs the typed symmetric differences and verifies **64/64** graph-5 four-cell cases have one face, two edges and one shared vertex, with **distinct residual endpoints in every case**. These are 32 distinct geometric witnesses represented under two root-preserving maps each. The two-edge-disk strict-equality model therefore does not apply to this finite class.
+<badge>Finite replay verified</badge> The order-eight geometric audit now has a path comparison for **all 490 source deletion critical pairs** across all 13 overlap-graph families.
 
-The actual local pattern is a rhombus-corner switch. Relative homotopy across the complementary two-edge arc is available if that arc is retained; the current collapse artifact records only the final target digest, not the full target cell inventory. Whether the arc survives into the common grandparent, whether a common collapse suffix factors through it, and whether every further support restriction preserves the comparison remain open.
+- **1,613** full four-support candidate diagrams pass across the audited candidate families; **58** candidates are excluded because the full union is not point-contractible and a source-eligible relative deletion fails.
+- **82,608** two-order collapse-path instances replay to their common retained two-support target.
+- **64,360** comparisons have identical elementary FE/EV pair sets and normalize by valid adjacent commutations.
+- **18,248** differing-pair comparisons are single connected alternating cycles and admit dependency-closed common-prefix/local-suffix factorizations.
 
-Verifier: [four-cell rhombus-corner audit](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/scripts/verify_pf_i16_four_cell_rhombus_corner_audit.py) · [corrected switch proof record](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_FOUR_CELL_ALTERNATING_CYCLE_SWITCH_2026_11_20.md).
----
+This is a finite \(n=8\) result, not an all-orders theorem. Equality of collapse maps, natural homotopy under arbitrary further restrictions, the all-orders geometric L8 theorem, and the multivalued-\(\pi\) Hall inequality remain open. The Hall workstream remains separate and continues to require reverse-mark-sensitive, nonuniform transport across parent fibers; no fixed-selector or equal-share row-normalization argument is reinstated.
 
-## PF-I16 · Four-cell geometry correction (2026-11-20)
+Primary records:
+- [Order-eight combined audit](../research/audits/PF_I16_ORDER8_ORIENTED_COLLAPSE_DIAMOND_NATURALITY_2026_11_24.md)
+- [Graph-1/2/3 source-diamond path audit](../research/audits/PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md)
+- [Remaining graph-family source-diamond path audit](../research/audits/PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md)
+- [Clean replay · remaining graph families](https://github.com/syncgravity/Singular-Boundary/actions/runs/45453607246)
 
-Artifact-level inspection of collapse certificate 14680929981 and independent diagram artifact 14681735833 corrects the initial abstract switch model. In witness b0290fe5f0ab7536d3d0 (graph 5, pair index 22, source marks [1,2]), the four-cycle has face 825, two adjacent rhombus edges sharing v=(-6,-3,5,6,-1), and distinct other endpoints w1=(-6,-2,5,6,-1), w2=(-6,-3,5,7,-1). The rhombus fourth vertex is z=(-6,-2,5,7,-1). Thus the finite pattern is **not** a two-edge disk, and the two collapse endpoint maps need not be equal.
-
-The corrected local candidate is a rhombus-corner switch: if the complementary two-edge arc P=[w1,z]∪[z,w2] is retained, both local collapses retract the rhombus onto P and relative-homotopy uniqueness gives a homotopy relative P. To pass to the final grandparent A, one needs a common subsequent collapse P→A fixing A. The currently inspected artifact provides only the final target digest, not the full target cell inventory needed to verify this factorization. The all-64 certificate check and every further source-restriction check remain open.
-
-The abstract two-edge-disk strict-equality lemma remains true under its extra hypothesis but is **not applied** to the finite Penrose certificate. See the [corrected switch audit](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_FOUR_CELL_ALTERNATING_CYCLE_SWITCH_2026_11_20.md).
----
-
-## PF-I16 · Four-support collapse history and four-cell switch (2026-11-20)
-
-The finite source-labelled geometric history is consolidated here: 996 retained four-support witnesses; 58,608 source/witness/port-map embeddings; 98,192 commuting parent port-map restrictions; and 5,012 successful two-path collapse diamonds (CI workflow 44833369833). Of these, 3,224 use the same elementary free-pair set and differ only by disjoint-pair swaps. The other 1,788 have different pair sets; workflow 44846395728 classifies every symmetric difference as one connected alternating cycle. The census is 64 graph-5 four-cell cycles, 340 graph-5 twelve-cell cycles, 624 graph-12 six-cell cycles, and 760 graph-12 eight-cell cycles (136 + 624). The joint parent/collapse filter leaves 18/64 common pair/fourth-edge cases sharing the same fourth matched edge; this is a finite candidate anchor, not a construction theorem.
-
-A general relative-homotopy uniqueness lemma is proved for two strong deformation retractions onto the same subcomplex. Its application to the 5,012 certificates is conditional on the regular-CW interpretation of the audited free-pair collapses; it does not supply restriction naturality.
-
-The smallest four-cell cycle has an abstract two-edge-disk switch lemma only under an additional regular-CW attachment hypothesis. Artifact-level inspection of an actual graph-5 certificate shows that the finite Penrose pattern is instead a rhombus-corner switch with distinct residual endpoints. A homotopy relative to the complementary two-edge arc is conditional on that arc being retained; the common-grandparent factorization and all 64 certificate checks remain open.
-
-Sources: [source-labelled audit](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_SOURCE_LABELLED_FOUR_SUPPORT_RESTRICTION_AUDIT_2026_11_20.md) · [relative-homotopy lemma](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_RELATIVE_HOMOTOPY_UNIQUENESS_FOR_COLLAPSE_DIAMONDS_2026_11_20.md) · [four-cell switch audit](https://github.com/syncgravity/Singular-Boundary/blob/research/pf-i16-four-interval-diamond-2026-11-19/research/audits/PF_I16_FOUR_CELL_ALTERNATING_CYCLE_SWITCH_2026_11_20.md).
-
-**Open:** certificate-level verification of the 64 four-cell attachments; decomposition of six/eight/twelve-cell cycles into restriction-natural switches; explicit oriented boundary-cycle comparison maps; arbitrary connected-support L7b; geometric L8; all-orders mixed Hall; and all physical continuum/mass-gap gates.
 ---
 
 ## PF-I16 · Exact centering of the face/pair Hamiltonian (2026-11-14)
