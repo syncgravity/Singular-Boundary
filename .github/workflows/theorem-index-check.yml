@@ -190,7 +190,7 @@ jobs:
             research/scripts/verify_pf_i16_four_cell_dependency_closed_common_suffix.py \
             research/scripts/verify_pf_i16_four_cell_switch_factorization.py \
             research/scripts/verify_pf_i16_four_cell_switch_restriction_naturality.py \
-            research/scripts/verify_pf_i16_graph5_404_third_mark_restriction_naturality.py \\
+            research/scripts/verify_pf_i16_graph5_404_third_mark_restriction_naturality.py \
             research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py
       - name: Install numerical verifier dependency
         run: python -m pip install --disable-pip-version-check numpy scipy
