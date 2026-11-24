@@ -60,9 +60,9 @@ def main():
                 complexes=[order8.complex_dict(cells(tuple(sorted(s)))) for s in supports]
                 # Each marked support must collapse to its exact matched edge.
                 edge_ok=[]
-                for i,(F,E,V) in enumerate(complexes):
+                for i,ccells in enumerate(complexes):
                     target=(set(),{tuple(sorted(edges[i]))},set(edges[i]))
-                    edge_ok.append(bool(collapse((set(F),set(E),set(V)),target)))
+                    edge_ok.append(bool(collapse((set(ccells["F"]),set(ccells["E"]),set(ccells["V"])),target)))
                 row["checks"]["four_matched_edge_relative_collapses"]=edge_ok
                 if not all(edge_ok): row["failures"].append("matched_edge_relative_collapse")
                 # All 15 labelled intersections are recomputed, including empty entries.
