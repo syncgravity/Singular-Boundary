@@ -77,7 +77,12 @@ Across the 996 witnesses, the 60 represented source records, and both root-prese
 | Source-diamond geometric lift instances | 43,696 |
 | Distinct source critical pairs represented geometrically | 44 |
 
-Both root-preserving graph maps remain admissible. This audit does not select a unique source-to-target labeling.
+Both root-preserving graph maps remain admissible. A direct label-swap diagnostic confirms that the ambiguity matters at the finer geometric level:
+
+- Swapping support labels 1 and 2 preserves the coarse 15-entry intersection signature in 288 of 996 witnesses (178 graph-5 and 110 graph-12), but changes it in the other 708.
+- The same swap preserves the ordered multi-footprint word data in 0 of 996 witnesses; all 996 ordered word systems distinguish the two labelings.
+
+This is not a proof that no more general geometric diagram isomorphism exists. It does show that the source's overlap graph alone supplies no criterion for selecting the boundary-word orientation required by the finer L7b comparison.
 
 ## 5. Elementary relative-collapse paths
 
