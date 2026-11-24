@@ -162,7 +162,7 @@ def main():
                     assert set(prefixL)==set(prefixR) and midL==midR
                     assert (blockL-dL)==(blockR-dR)
                     assert order8.replay(suffixL,midL,target,face_edges,face_vertices)==target
-                    assert order8.replay(suffixR,midR,target,face_edges,vertex_edges:=face_edges) == target
+                    assert order8.replay(suffixR,midR,target,face_edges,face_vertices)==target
                     prefix_norm=order8.normalize(prefixL,prefixR,full,midL,face_edges,face_vertices)
                     assert prefix_norm is not None
                     extraL=blockL-dL
