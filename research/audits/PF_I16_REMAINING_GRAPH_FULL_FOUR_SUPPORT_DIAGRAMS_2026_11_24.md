@@ -115,3 +115,11 @@ This is a finite candidate-family verification. It does not establish:
 - geometric L8;
 - the all-orders multivalued-\(\pi\) Hall inequality;
 - split-demand capacity-preserving transport or the weighted one-link inequality.
+
+
+## 8. Completed two-order path replay
+
+The 333 passing candidate diagrams are now the input to the clean path replay:
+[PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md](PF_I16_REMAINING_GRAPH_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md).
+
+All 436 source critical pairs in graph families 6, 7, 8, 9, 10, 11, and 13 pass 34,828 path instances. There are 34,804 same-pair-set cases, each normalized by valid adjacent swaps, and 24 graph-9 four-cell alternating-cycle cases, each with a three-pair dependency-closed suffix. This completes the finite n=8 source-diamond path comparison together with the graph-1/2/3 and graph-5/12 audits; it does not prove all-orders naturality or geometric L8.
