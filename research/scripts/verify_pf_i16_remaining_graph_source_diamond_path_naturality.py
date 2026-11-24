@@ -202,6 +202,8 @@ def main():
     assert by_graph=={str(k):v for k,v in expected.items()},by_graph
     assert total==34828
     assert len(source_diamond_keys)==436
+    expected_map_rows={4:194,6:648,7:780,8:1260,9:684,10:960,11:96,13:41472}
+    assert {k:map_rows[k] for k in expected_map_rows}==expected_map_rows
     assert all_checks["source_endpoint_compression_diamonds"]==total
     assert all_checks["retained_pair_common_footprints"]==total
     assert all_checks["two_order_paths_replay"]==total
@@ -213,7 +215,7 @@ def main():
                   "candidate_diagrams_sha256":sha(a.candidate_diagrams)},
         "candidate_diagrams_checked":sum(1 for x in candidates["candidates"] if x["full_diagram_pass"]),
         "candidate_diagrams_rejected":sum(1 for x in candidates["candidates"] if not x["full_diagram_pass"]),
-        "source_map_rows_by_graph":{str(k):map_rows[k] for k in (1,2,3)},
+        "source_map_rows_by_graph":{str(k):map_rows[k] for k in expected_map_rows},
         "source_diamond_path_instances_by_graph":by_graph,
         "total_source_diamond_path_instances":total,
         "checks":dict(all_checks),
