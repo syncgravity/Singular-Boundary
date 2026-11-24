@@ -1,6 +1,6 @@
 ## PF-I16 · Finite order-eight source-diamond path audit (2026-11-24)
 
-<badge>Finite replay verified</badge> The order-eight geometric audit now has a path comparison for **all 490 source deletion critical pairs** across all 13 overlap-graph families.
+**Finite replay verified.** The order-eight geometric audit now has a path comparison for **all 490 source deletion critical pairs** across all 13 overlap-graph families.
 
 - **1,613** full four-support candidate diagrams pass across the audited candidate families; **58** candidates are excluded because the full union is not point-contractible and a source-eligible relative deletion fails.
 - **82,608** two-order collapse-path instances replay to their common retained two-support target.
