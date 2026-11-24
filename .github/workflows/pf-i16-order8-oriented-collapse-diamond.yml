@@ -1,0 +1,66 @@
+name: PF-I16 order-eight oriented collapse-diamond replay
+
+on:
+  push:
+    branches:
+      - research/pf-i16-four-interval-diamond-2026-11-19
+    paths:
+      - research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py
+      - research/scripts/verify_pf_i16_hall_four_interval_parent_compatibility.py
+      - research/scripts/export_pf_i16_hall_source_records.py
+      - .github/workflows/pf-i16-order8-oriented-collapse-diamond.yml
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  order-eight-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the existing four-interval research branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-four-interval-diamond-2026-11-19
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download immutable support inventory from theorem-index run 995
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-support-inventory
+          run-id: 45254722491
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/inventory
+      - name: Download immutable independent diagram lift from theorem-index run 995
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-four-interval-independent-diagram-lifting
+          run-id: 45254722491
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/diagrams
+      - name: Download immutable source-labelled restriction audit from theorem-index run 995
+        uses: actions/download-artifact@v4
+        with:
+          name: pf-i16-source-labelled-four-support-restriction-audit
+          run-id: 45254722491
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/pf-i16-input/source-audit
+      - name: Compile and replay exact order-eight boundary/collapse audit
+        run: |
+          python -m py_compile research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py
+          python research/scripts/verify_pf_i16_order8_oriented_collapse_diamond_naturality.py \
+            --diagrams /tmp/pf-i16-input/diagrams/pf_i16_four_interval_independent_diagram_lifting.json \
+            --inventory /tmp/pf-i16-input/inventory/pf_i16_four_interval_support_inventory.json \
+            --source-audit /tmp/pf-i16-input/source-audit/pf_i16_source_labelled_four_support_restriction_audit.json.gz \
+            --output /tmp/pf_i16_order8_oriented_collapse_diamond_naturality.json
+      - name: Upload independently replayed order-eight audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-order8-oriented-collapse-diamond-independent-replay
+          path: /tmp/pf_i16_order8_oriented_collapse_diamond_naturality.json
+          if-no-files-found: error
+          retention-days: 90
