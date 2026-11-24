@@ -1,4 +1,4 @@
-name: Theorem source-index integrity # Includes PF-I16 coincident-time, bridge, and Doeblin audit/verifiers
+name: Theorem source-index integrity # Includes PF-I16 bridge, Doeblin, and finite switch restriction audit
 on:
   pull_request:
     paths:
