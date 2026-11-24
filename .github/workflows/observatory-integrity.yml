@@ -1,7 +1,7 @@
 name: Observatory local-link integrity
 on:
   push:
-    branches: [main]
+    branches: [main, research/pf-i16-four-interval-diamond-2026-11-19]
     paths:
       - 'observatory/**'
       - '.github/workflows/observatory-integrity.yml'
