@@ -164,7 +164,30 @@ Common additional-pair counts:
 
 The order of common additional pairs agrees in 12,800 instances and is order-sensitive in 5,424. The latter are not failed replays: both local suffixes remain valid and have the same additional-pair set. They identify larger local switch templates that cannot be reduced to adjacent swaps alone.
 
-## 7. Interpretation
+## 7. Coverage frontier for the other 446 source diamonds
+
+The parent-compatibility search has a finite candidate-edge frontier for all 13 order-eight overlap-graph types. These are **candidate fourth edges before full four-support diagram lifting**; they are not yet accepted full witnesses.
+
+| Graph | Source records | Source diamonds | Root-preserving graph automorphisms | Candidate fourth edges |
+|---:|---:|---:|---:|---:|
+| 1 | 2 | 6 | 6 | 99 |
+| 2 | 2 | 2 | 1 | 110 |
+| 3 | 2 | 2 | 2 | 75 |
+| 4 | 2 | 0 | 1 | 97 |
+| 5 | 12 | 20 | 2 | 103 |
+| 6 | 18 | 30 | 2 | 32 |
+| 7 | 12 | 8 | 1 | 65 |
+| 8 | 12 | 8 | 1 | 105 |
+| 9 | 18 | 6 | 2 | 32 |
+| 10 | 48 | 48 | 2 | 19 |
+| 11 | 48 | 48 | 2 | 23 |
+| 12 | 48 | 24 | 2 | 21 |
+| 13 | 384 | 288 | 6 | 18 |
+| **Total** | **608** | **490** | — | — |
+
+All 13 types have a nonempty candidate-edge frontier. The next geometric task is to lift the other 11 types to full four-support diagrams, including all 15 intersections, all eligible relative deletions, oriented boundary words, and both orders of each source deletion pair. The current 996-witness audit only completes graphs 5 and 12.
+
+## 8. Interpretation
 
 This advances the geometric L8 program in three concrete ways:
 
@@ -180,7 +203,7 @@ It does **not** close geometric L8. In particular:
 - A finite factorization of collapse sequences is not yet a natural homotopy or equality of collapse maps.
 - No all-orders local switch lemma, all-orders accepted-face confluence theorem, or all-orders PF-I16 Hall inequality follows.
 
-## 8. Reproduction
+## 9. Reproduction
 
 Verifier:
 
