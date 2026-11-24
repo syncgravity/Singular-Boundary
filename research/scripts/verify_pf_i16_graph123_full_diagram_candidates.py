@@ -8,7 +8,7 @@ deletion collapses, the full union, and anchored multi-footprint boundary
 words for each candidate witness.
 """
 from __future__ import annotations
-import argparse, hashlib, itertools, json
+import argparse, hashlib, itertools, json, traceback
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -40,6 +40,7 @@ def main():
     assert {x["graph_index"]:len(x["candidate_witnesses"]) for x in selected}==expected
 
     results=[]
+    summary_debug={}
     passed_by_graph=Counter()
     fail_by_graph=defaultdict(Counter)
     boundary_lengths=Counter()
@@ -120,6 +121,8 @@ def main():
                 row["full_diagram_pass"]=not row["failures"]
             except Exception as e:
                 row["failures"].append(type(e).__name__+":"+str(e))
+                if "traceback" not in summary_debug:
+                    summary_debug["traceback"]=traceback.format_exc()
                 row["full_diagram_pass"]=False
             if row["full_diagram_pass"]:
                 passed_by_graph[gi]+=1
@@ -142,6 +145,7 @@ def main():
         },
         "total_candidates":len(results),
         "total_full_diagram_passes":sum(passed_by_graph.values()),
+        "first_failure_traceback":summary_debug.get("traceback"),
         "nonclaims":[
             "this candidate family is finite and limited to graph families 1, 2, and 3",
             "no source-to-target port map or source deletion diamond is checked here",
