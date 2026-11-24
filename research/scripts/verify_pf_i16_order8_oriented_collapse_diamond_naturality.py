@@ -68,8 +68,6 @@ def derive_footprint_word(i, supports, cycles):
     for j in range(4):
         if i==j: continue
         common=intersection_complex(supports,[i,j])
-        boundary={e for e,n in Counter(
-            e for fid in supports[i]["F"] for e in ()).items()}  # replaced below
         counts=Counter()
         for fid in supports[i]["F"]:
             counts.update(FACE_EDGES[fid])
@@ -468,7 +466,7 @@ def main():
             "alternating_cycle_cell_count":cycle_size,
             "dependency_closed_left_suffix_pairs":len(blockL) if blockL is not None else None,
             "dependency_closed_right_suffix_pairs":len(blockR) if blockR is not None else None,
-            "common_extra_pair_count":len(blockL-set(L).intersection(set(R))) if blockL is not None else None,
+            "common_extra_pair_count":len(blockL-(set(L)-set(R))) if blockL is not None else None,
             "common_prefix_pair_set":bool(prefixL is not None),
             "common_intermediate_inventory":bool(prefixL is not None),
             "prefix_normalizing_valid_swaps":prefix_norm,
