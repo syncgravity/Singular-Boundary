@@ -1,0 +1,39 @@
+name: PF-I16 cross-source reverse-mark exchange census
+
+on:
+  push:
+    branches:
+      - research/pf-i16-parent-fiber-exchange-2026-11-23
+    paths:
+      - research/verification/verify_pf_i16_cross_source_reverse_mark_exchange.py
+      - research/verification/verify_pf_i16_projection_shifting_transitions.py
+      - .github/workflows/pf-i16-cross-source-reverse-mark-exchange.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out PF-I16 parent-fiber exchange branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/pf-i16-parent-fiber-exchange-2026-11-23
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact cross-source S/D incidence census
+        run: |
+          python research/verification/verify_pf_i16_cross_source_reverse_mark_exchange.py \
+            --output pf_i16_cross_source_reverse_mark_exchange.json
+      - name: Upload cross-source incidence and ordinary-parent witnesses
+        uses: actions/upload-artifact@v4
+        with:
+          name: pf-i16-cross-source-reverse-mark-exchange-n6-n8
+          path: pf_i16_cross_source_reverse_mark_exchange.json
+          if-no-files-found: error
+          retention-days: 90
