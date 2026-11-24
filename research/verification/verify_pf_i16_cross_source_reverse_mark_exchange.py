@@ -70,7 +70,7 @@ def run(n):
             parent=parent_data(intervals,tau,Jidx)
             fiber=(parent,J)
             fiber_sources[fiber].add(source_index)
-            fiber_demand[fiber] += 1/d
+            fiber_demand[fiber] += Fraction(1,d)
             C=base.canonical_parent_targets(parent,parent_cache)
             raw=candidate_outputs(intervals,tau,forced_last=Jidx)
             raw_outputs+=len(raw)
@@ -133,8 +133,9 @@ def run(n):
         s_edge_count += same_source_s_edges + cross_source_s_edges
         block_rows.append({
             "block_id":bid,"parent_source":key[0],"deleted_interval":list(key[1]),
-            "parent_target":base.encode_tree(key[2]),"child_source_count":ns,
-            "lift_target_count":nt,"incidence_state_count":states,
+            "parent_target":base.encode_tree(key[2]),"child_source_count":ns,"child_source_indices":srcs,
+            "lift_target_count":nt,"lift_targets":[base.encode_tree(T) for T in Ts],
+            "incidence_state_count":states,
             "split_demand_before_parent_target_choice":str(sum(
                 (Fraction(1,source_rows[si][3]) for si in srcs),Fraction(0))),
             "same_source_S_edges":ns*(nt*(nt-1)//2),
@@ -304,7 +305,8 @@ def run(n):
         },
         "fibers":[
             {"parent_source":parent,"deleted_interval":list(J),
-             "child_source_count":len(srcs),"split_demand":str(fiber_demand[(parent,J)]),
+             "child_source_count":len(srcs),"child_source_indices":sorted(srcs),
+             "split_demand":str(fiber_demand[(parent,J)]),
              "parent_target_blocks":[
                  {"block_id":block_ids[(parent,J,P)],"parent_target":base.encode_tree(P),
                   "lift_target_count":len(block_targets[block_ids[(parent,J,P)]])}
@@ -317,8 +319,13 @@ def run(n):
     }
     # Emit compact, explicit D witnesses without serializing source internals.
     result["D_edges"]=[
-        {"block_left":a,"block_right":b,"source_index":si,"target":base.encode_tree(T),
-         "J_index":J,"K_index":K,"P":base.encode_tree(P),"Q":base.encode_tree(Q),
+        {"block_left":a,"block_right":b,"source_index":si,
+         "source_intervals":[list(x) for x in source_rows[si][0]],
+         "source_overlap_tree":[list(x) for x in source_rows[si][1]],
+         "target":base.encode_tree(T),
+         "J_index":J,"J_interval":list(source_rows[si][0][J]),
+         "K_index":K,"K_interval":list(source_rows[si][0][K]),
+         "P":base.encode_tree(P),"Q":base.encode_tree(Q),
          "ordinary_U":base.encode_tree(U)}
         for a,b,si,T,J,K,P,Q,U in d_edges
     ]
