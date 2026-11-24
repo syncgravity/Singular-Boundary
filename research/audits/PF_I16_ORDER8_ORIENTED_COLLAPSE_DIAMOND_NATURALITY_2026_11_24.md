@@ -111,6 +111,13 @@ The alternating-cycle sizes are:
 | 8 | 9,120 |
 | 12 | 1,360 |
 
+The source-graph split is informative:
+
+| Source graph family | Same pair set | Different pair set | Alternating-cycle types |
+|---|---:|---:|---|
+| Graph 5 | 18,944 | 1,616 | 256 four-cell; 1,360 twelve-cell |
+| Graph 12 | 6,528 | 16,608 | 7,488 six-cell; 9,120 eight-cell |
+
 No differing-pair case in this finite family decomposes into multiple alternating components.
 
 ## 6. Dependency-closed local switch factorization
