@@ -239,7 +239,7 @@ def main():
     face_sha=digest(inv["face_key_table"])
     assert diagram_sha=="aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba",diagram_sha
     assert face_sha=="c20b727809eeb173ec11f584c2d60fc7afa3283e39a2dc3ccde0187703ce9ec9",face_sha
-    assert source_audit["schema"]=="PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v1"
+    assert source_audit["schema"]=="PF-I16-SOURCE-LABELLED-FOUR-SUPPORT-RESTRICTION-AUDIT-v2"
     assert len(source_audit["witness_rows"])==996
     assert len(source_audit["source_parent_map_rows"])==58608
 
