@@ -175,7 +175,6 @@ when distinct child sources \(x\ne x'\) extend the same parent source \(p\) by t
 
 The verifier adds these C-incidences to the existing S/D block graph and recomputes connectivity. The C relation is deliberately narrow: it requires the same parent source and the same parent target, not merely a shared child target.
 
-<text></text>
 
 | Quantity | \(n=6\) | \(n=8\) |
 |---|---:|---:|
