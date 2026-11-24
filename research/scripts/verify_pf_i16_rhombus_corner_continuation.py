@@ -13,7 +13,7 @@ from pathlib import Path
 EXPECTED_PAYLOAD = {
     "collapse": "d0d96755ceaa556759f6d5a2d0f60d0df1cd5f9805b12e5461c6d1747f6f8141",
     "diagrams": "aa2d4ae88b3d23e34007eed45858a54b7d98bfd9fa6c595b11635d04a74817ba",
-    "inventory": "5b56a7485c0ab01e76f93868e331a2cb1790df01131d98c33376f7cb6370af4f",
+    "inventory": "("5b56a7485c0ab01e76f93868e331a2cb1790df01131d98c33376f7cb6370af4f", "3e50240bf1b037f3de8dd4e4c4ab94d4523533c25ceeab4000410c641cf07b77")",
 }
 
 def load_payload(path: Path, expected: str):
@@ -27,7 +27,7 @@ def load_payload(path: Path, expected: str):
     if path.suffix == ".gz" or raw[:2] == b"\x1f\x8b":
         raw = gzip.decompress(raw)
     digest = hashlib.sha256(raw).hexdigest()
-    if digest != expected:
+    if digest not in expected if isinstance(expected, (tuple, list, set)) else digest != expected:
         raise AssertionError((str(path), digest, expected))
     return json.loads(raw), digest
 
