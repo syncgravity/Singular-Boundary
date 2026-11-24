@@ -411,6 +411,7 @@ def main():
     # support-pair. The path is U4 -> U3(-m) -> U2(-m,-n), and conversely.
     path_rows=[]
     pair_set_counts=Counter(); cycle_counts=Counter(); same_swap_counts=Counter()
+    family_pair_counts=defaultdict(Counter)
     block_counts=Counter(); extra_counts=Counter(); prefix_swap_counts=Counter()
     extra_order_counts=Counter()
     for (key,pair),weight in sorted(weights.items(),key=lambda x:(x[0][0],x[0][1])):
@@ -430,6 +431,7 @@ def main():
         assert replay(R,full,target,face_edges,face_vertices)==target
         same=set(L)==set(R)
         pair_set_counts["same" if same else "different"]+=weight
+        family_pair_counts[key[0]]["same_pair_set" if same else "different_pair_set"]+=weight
         cycle_size=None; swaps=None
         blockL=blockR=None; prefixL=prefixR=None; suffixL=suffixR=None
         prefix_norm=None; extra_wordL=extra_wordR=()
@@ -441,6 +443,7 @@ def main():
             ok,cycle_size=alternating_cycle(L,R)
             assert ok and cycle_size in (4,6,8,12),(key,pair,cycle_size)
             cycle_counts[cycle_size]+=weight
+            family_pair_counts[key[0]][f"alternating_cycle_{cycle_size}_cells"]+=weight
             dL=set(L)-set(R); dR=set(R)-set(L)
             blockL,sl,prefixL,suffixL=dependency_close(L,full,target,dL,face_edges,face_vertices)
             blockR,sr,prefixR,suffixR=dependency_close(R,full,target,dR,face_edges,face_vertices)
@@ -518,6 +521,7 @@ def main():
             "different_elementary_pair_sets":pair_set_counts["different"],
             "different_pair_sets_form_one_connected_alternating_cycle":sum(cycle_counts.values()),
             "alternating_cycle_cell_counts":[{"cells":k,"rows":v} for k,v in sorted(cycle_counts.items())],
+            "by_source_graph_family":[{"family":fam,**dict(counts)} for fam,counts in sorted(family_pair_counts.items())],
             "dependency_closed_factorizations":sum(prefix_swap_counts.values()),
             "common_prefix_pair_set_and_intermediate_inventory":sum(prefix_swap_counts.values()),
             "common_extra_pair_set":sum(prefix_swap_counts.values()),
