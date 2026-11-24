@@ -253,6 +253,7 @@ def main():
     witness_lookup={}
     boundary_rows=[]
     intersection_entries=relative_checks=cycle_checks=arc_checks=word_checks=0
+    footprint_count_hist=Counter()
     for wr in source_audit["witness_rows"]:
         fam=wr["family"]; pi=wr["pair_index"]; wi=wr["witness_index"]
         dw=data["per_pair"][pi][fam+"_witnesses"][wi]
@@ -281,6 +282,7 @@ def main():
                 meets.append({"neighbors":[x["neighbor"],y["neighbor"]],"meet":bool(xv&yv)})
             assert meets==stored["footprint_meet_relations"]
             word_checks+=1
+            footprint_count_hist[len(derived)]+=1
         # Exact all-15 labelled intersection content, including empty entries.
         imap={tuple(x["indices"]):x for x in dw["diagram"]["intersections"]}
         assert len(imap)==15
@@ -331,6 +333,7 @@ def main():
             if edge_set(sr["full_overlap_edges"]) in (G5,G12):
                 geometric_source_diamonds.add((edge_set(sr["full_overlap_edges"]),si,tuple(sorted((m,n)))))
     assert source_diamonds==source_diamonds_ok==490
+    assert footprint_count_hist==Counter({1:514,2:1478,3:1992})
     assert len(geometric_source_diamonds)==44
 
     # Recheck the 58,608 finite source-to-target maps and collect the actual
@@ -502,6 +505,7 @@ def main():
             "ordered_multi_footprint_words_reconstructed":word_checks,
             "all_15_labelled_intersections_recomputed":intersection_entries,
             "relative_single_deletion_collapse_checks":relative_checks,
+            "footprint_count_histogram":[{"footprints":k,"support_boundaries":v} for k,v in sorted(footprint_count_hist.items())],
             "source_witness_map_rows":len(map_rows),
             "parent_port_restriction_checks":parent_restrictions,
             "source_diamond_geometric_lifts":map_diamond_instances,
