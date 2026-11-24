@@ -2,7 +2,7 @@
 
 Date: 2026-11-24 UTC  
 Branch: `research/pf-i16-four-interval-diamond-2026-11-19`  
-Status: **clean GitHub Actions replay succeeded** for the graph-5/graph-12 collapse-diamond audit (run [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223)). Separate full-diagram replay also succeeded for 284 graph-1/2/3 candidates (run [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309)). The finite support-diagram frontier now covers graph families 1, 2, 3, 5, and 12; two-order collapse-path diamonds are still verified only for graph 5 and graph 12.
+Status: **clean GitHub Actions replay succeeded** for the graph-5/graph-12 collapse-diamond audit (run [45449218223](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218223)). Separate full-diagram replay also succeeded for 284 graph-1/2/3 candidates (run [45449218309](https://github.com/syncgravity/Singular-Boundary/actions/runs/45449218309)). The finite support-diagram and two-order path frontier now covers graph families 1, 2, 3, 5, and 12. The 10 graph-1/2/3 source critical pairs pass 4,084 two-order path instances with same-pair-set adjacent commutation; the 44 graph-5/12 pairs pass 43,696 instances, including the alternating-cycle cases.
 
 ## 1. Purpose
 
@@ -181,9 +181,9 @@ The source inventory has 490 critical pairs across 608 source records and 13 ove
 
 | Graph | Source records | Source diamonds | Root-preserving maps | Candidate fourth edges | Full four-support verification | Two-order collapse-path diamond |
 |---:|---:|---:|---:|---:|---|---|
-| 1 | 2 | 6 | 6 | 99 | 99 / 99 candidates pass | Not yet checked |
-| 2 | 2 | 2 | 1 | 110 | 110 / 110 candidates pass | Not yet checked |
-| 3 | 2 | 2 | 2 | 75 | 75 / 75 candidates pass | Not yet checked |
+| 1 | 2 | 6 | 6 | 99 | 99 / 99 candidates pass | 3,564 instances pass; same pair set |
+| 2 | 2 | 2 | 1 | 110 | 110 / 110 candidates pass | 220 instances pass; same pair set |
+| 3 | 2 | 2 | 2 | 75 | 75 / 75 candidates pass | 300 instances pass; same pair set |
 | 4 | 2 | 0 | 1 | 97 | Candidate frontier only | No source diamond |
 | 5 | 12 | 20 | 2 | 103 | 514 witness rows pass | 20 source pairs; 20,560 lifted instances pass |
 | 6 | 18 | 30 | 2 | 32 | Candidate frontier only | Not yet checked |
@@ -194,28 +194,30 @@ The source inventory has 490 critical pairs across 608 source records and 13 ove
 | 11 | 48 | 48 | 2 | 23 | Candidate frontier only | Not yet checked |
 | 12 | 48 | 24 | 2 | 21 | 482 witness rows pass | 24 source pairs; 23,136 lifted instances pass |
 | 13 | 384 | 288 | 6 | 18 | Candidate frontier only | Not yet checked |
-| **Total** | **608** | **490** | — | — | **1,280 verified candidate diagrams in families 1,2,3,5,12** | **44 / 490 source pairs path-lifted** |
+| **Total** | **608** | **490** | — | — | **1,280 verified candidate diagrams in families 1,2,3,5,12** | **54 / 490 source pairs; 47,780 lifted instances** |
 
-The graph-1/2/3 full-diagram verifier checks 284 candidate diagrams (99, 110, and 75 respectively) against the accepted face inventory. It recomputes all 15 labelled intersections, the full overlap graph, point-contractibility of nonempty intersections and the full union, four matched-edge collapses, four anchored boundary cycles, four ordered footprint words, and all source-eligible single-deletion restrictions for every root-preserving source-to-support map. All 1,708 source-map rows pass. See [the separate graph-1/2/3 audit](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md).
+The graph-1/2/3 full-diagram verifier checks 284 candidate diagrams (99, 110, and 75 respectively) against the accepted face inventory. It recomputes all 15 labelled intersections, the full overlap graph, point-contractibility of nonempty intersections and the full union, four matched-edge collapses, four anchored boundary cycles, four ordered footprint words, and all source-eligible single-deletion restrictions for every root-preserving source-to-support map. All 1,708 source-map rows pass. See [the separate graph-1/2/3 full-diagram audit](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md).
 
-Important qualification: this is **one-step source-eligible restriction coverage**, not a two-step source deletion diamond. For graph 1, 2, and 3 the 10 source critical pairs (6+2+2) still need both orders of the geometric collapse path to be constructed and compared. For graph 5 and 12, those two-order paths are already checked in the 43,696 lifted instances.
+The subsequent graph-1/2/3 source-diamond verifier checks both orders for all ten distinct source critical pairs across the candidate diagrams and root-preserving maps. All 4,084 path instances replay to the same retained two-support complex. In all 4,084, the elementary FE/EV pair sets are identical and one path normalizes to the other by valid adjacent commutations. See [the graph-1/2/3 path-naturality audit](PF_I16_GRAPH123_SOURCE_DIAMOND_PATH_NATURALITY_2026_11_24.md).
 
-The 436 source diamonds in graph families 6, 7, 8, 9, 10, 11, and 13 remain without full four-support diagrams in this audit. Graph 4 has no source critical pairs. Thus the 490 source diamonds divide exactly into:
-- 10 graph-1/2/3 pairs with full support candidates and source-eligible one-step restrictions, but no two-order path comparison yet;
-- 44 graph-5/12 pairs with complete two-order path comparisons;
+For graph 5 and 12, the two-order paths are checked in 43,696 lifted instances. Of these, 25,472 have the same pair set and normalize by adjacent commutations; the other 18,224 have different pair sets, each a single alternating cycle, and factor through a common normalized prefix plus dependency-closed local suffixes.
+
+The remaining 436 source diamonds lie in graph families 6, 7, 8, 9, 10, 11, and 13, and remain without full four-support diagrams in this audit. Graph 4 has no source critical pairs. Thus the 490 source diamonds divide exactly into:
+- 54 graph-1/2/3/5/12 pairs with complete finite two-order path comparisons;
 - 436 pairs in the remaining graph families without full four-support geometric lifts.
 
 ## 8. Interpretation
 
-This advances the geometric L8 program in three concrete ways:
+This advances the finite geometric confluence audit in four concrete ways:
 
-1. It independently authenticates the complete oriented boundary cycles and multi-footprint words for all 996 current four-support candidates.
-2. It upgrades the 44 represented source critical pairs from relative-collapse booleans to explicit two-order elementary collapse paths.
-3. It shows that every differing-pair collapse diamond in this represented family has a single alternating-cycle discrepancy and a valid dependency-closed common-prefix/local-suffix factorization.
+1. It independently authenticates the complete oriented boundary cycles and multi-footprint words for the 996 graph-5/graph-12 four-support witnesses.
+2. It verifies 284 additional full four-support diagrams in graph families 1, 2, and 3, including all source-eligible one-step restrictions across 1,708 source-map rows.
+3. It upgrades the ten graph-1/2/3 source critical pairs to 4,084 two-order path comparisons; all have identical elementary-pair sets and valid adjacent-swap normalizations.
+4. It verifies 43,696 graph-5/graph-12 two-order path instances; differing-pair cases are single alternating cycles and factor through a common normalized prefix plus dependency-closed local suffixes.
 
 It does **not** close geometric L8. In particular:
 
-- 446 of the 490 order-eight source diamonds belong to other overlap-graph families and are not geometrically lifted here.
+- 436 of the 490 order-eight source diamonds in graph families 6, 7, 8, 9, 10, 11, and 13 remain without full four-support geometric lifts.
 - Both root-preserving graph maps remain possible.
 - The source does not prescribe a unique ℤ^5 edge displacement or oriented boundary word.
 - A finite factorization of collapse sequences is not yet a natural homotopy or equality of collapse maps.
