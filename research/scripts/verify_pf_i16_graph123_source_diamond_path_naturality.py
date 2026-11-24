@@ -37,6 +37,7 @@ def main():
 
     face_vertices,face_edges,_,_=geom.build_target(inv)
     cells,_,intersection,_,point_contractible,_,_=geom.make_geometry(face_vertices,face_edges)
+    order8.FACE_EDGES=face_edges
     fixed=[(tuple(x["lower"]),tuple(x["upper"])) for x in inv["fixed_triple_edges"]]
     assert len(fixed)==3
     graphs={x["graph_index"]:frozenset(tuple(sorted(e)) for e in x["edges"])
