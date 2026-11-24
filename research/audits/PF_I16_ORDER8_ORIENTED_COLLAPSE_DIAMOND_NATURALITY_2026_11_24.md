@@ -194,7 +194,7 @@ The source inventory has 490 critical pairs across 608 source records and 13 ove
 | 11 | 48 | 48 | 2 | 23 | 1 / 23 | 96 instances in replay |
 | 12 | 48 | 24 | 2 | 21 | 482 witness rows pass | 24 pairs; 23,136 instances pass |
 | 13 | 384 | 288 | 6 | 18 | 18 / 18 | 31,104 instances in replay |
-| **Total** | **608** | **490** | — | **1,171** | **1,613 passing diagrams** | **54 pairs / 47,780 instances pass; 436 pairs / 34,828 instances in replay** |
+| **Total** | **608** | **490** | — | **799** | **1,613 passing diagrams** | **54 pairs / 47,780 instances pass; 436 pairs / 34,828 instances in replay** |
 
 The graph-1/2/3 full-diagram verifier checks 284 candidate diagrams (99, 110, and 75 respectively) against the accepted face inventory. It recomputes all 15 labelled intersections, the full overlap graph, point-contractibility of nonempty intersections and the full union, four matched-edge collapses, four anchored boundary cycles, four ordered footprint words, and all source-eligible single-deletion restrictions for every root-preserving source-to-support map. All 1,708 source-map rows pass. See [the separate graph-1/2/3 full-diagram audit](PF_I16_GRAPH123_FULL_FOUR_SUPPORT_DIAGRAM_CANDIDATES_2026_11_24.md).
 
