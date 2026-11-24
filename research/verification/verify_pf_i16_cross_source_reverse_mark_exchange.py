@@ -234,6 +234,11 @@ def run(n):
                 dsu.union(bJ,bK)
                 d_edges.append((bJ,bK,si,T,Jidx,Kidx,P,Q,U))
 
+    # C edges were built from cross-source common-parent/common-target
+    # witnesses above; now add all certified D edges to obtain S/C/D.
+    for a,b, *_ in d_edges:
+        c_dsu.union(a,b)
+
     # Components of the block graph under witnessed D edges; S-connected
     # blocks are already represented by their block vertices.
     comps=defaultdict(list)
@@ -377,6 +382,7 @@ def run(n):
             "C_augmented_component_block_size_histogram":dict(sorted(c_comp_hist.items())),
             "non_diamond_pairs_connected_after_C":connected_non_diamond_c,
             "non_diamond_pairs_in_distinct_components_after_C":disconnected_non_diamond_c,
+            "S_D_collision_class_counts":[{"same_parent_source":k[0],"same_parent_target":k[1],"same_deleted_interval":k[2],"connected":conn,"pairs":v} for (k,conn),v in sorted(collision_class_s_d_counts.items())],
             "C_augmented_collision_class_counts":[{"same_parent_source":k[0],"same_parent_target":k[1],"same_deleted_interval":k[2],"connected":conn,"pairs":v} for (k,conn),v in sorted(collision_class_c_counts.items())],
             "first_C_parent_sibling_witness":first_c_witness,
             "first_disconnected_non_diamond_after_C":first_disconnected_after_C,
