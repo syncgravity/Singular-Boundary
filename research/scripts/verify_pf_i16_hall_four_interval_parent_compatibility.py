@@ -417,6 +417,21 @@ def main():
             "graph_5_vs_graph_12_candidate_intersection_sha256": sha_edges(pair_intersection),
         },
         "four_interval_graphs": graph_rows,
+        "all_graph_candidate_edges_with_support_witnesses": [
+            {
+                "graph_index": index,
+                "graph_edges": [list(e) for e in sorted(graph)],
+                "fourth_adjacency_vector": [int((i, 3) in graph) for i in range(3)],
+                "candidate_witnesses": [
+                    {
+                        "edge": {"lower": list(edge[0]), "upper": list(edge[1])},
+                        **witnesses_by_graph[graph][edge],
+                    }
+                    for edge in sorted(feasible_by_graph[graph])
+                ],
+            }
+            for index, graph in enumerate(graphs, 1)
+        ],
         "obstruction_pair": {
             "graph_5_edges": [list(e) for e in sorted(g5)],
             "graph_5_feasible_fourth_edge_count": len(feasible_by_graph[g5]),
