@@ -161,3 +161,94 @@ Successful run: [45362601045](https://github.com/syncgravity/Singular-Boundary/a
 The artifact contains full fiber/source/parent-target/child-target records, all certified D-edge witnesses with ordinary common-parent targets, component summaries, and the first connected and disconnected non-diamond collision witnesses.
 
 **Next proof obligation:** classify the disconnected non-diamond collision blocks and determine whether their source demands admit a separate capacity allocation or whether a genuinely new exchange primitive is required. Do not infer a Hall obstruction from disconnectedness.
+
+
+## 7. Parent-sibling C-incidence refinement
+
+A second exact pass asks whether a restricted class of non-diamond collisions can be connected without inventing a common child source.
+
+Define a **C-incidence** between two distinct blocks
+\[
+B(p,J,P),\qquad B(p,K,P),\qquad J\ne K,
+\]
+when distinct child sources \(x\ne x'\) extend the same parent source \(p\) by the different deleted marks \(J,K\), and both incidences contain the same child target \(T\) with the same parent target \(P\). This retains both source witnesses. It is not a source deletion diamond, and it is not yet a target-changing capacity move.
+
+The verifier adds these C-incidences to the existing S/D block graph and recomputes connectivity. The C relation is deliberately narrow: it requires the same parent source and the same parent target, not merely a shared child target.
+
+<text></text>
+
+| Quantity | \(n=6\) | \(n=8\) |
+|---|---:|---:|
+| Distinct C block-pair/target witnesses | 82 | 5,786 |
+| Distinct child-source-pair witnesses | 242 | 36,142 |
+| S/C/D block components | 1 | 30 |
+| Largest S/C/D component | 45 blocks | 3,916 blocks |
+| Non-diamond pairs connected after C | 842 | 1,156,140 |
+| Non-diamond pairs still in distinct components | 0 | 4,881 |
+
+At \(n=6\), the C-augmented graph is connected across all 45 blocks. At \(n=8\), it has one 3,916-block component, 27 components of size two, and two components of size five.
+
+### Collision classification at \(n=8\)
+
+The table distinguishes whether two colliding source incidences have the same parent source \(p\), the same parent target \(P\), and the same deleted interval \(J\). The last column is the number still disconnected after adding C.
+
+| Same \(p\)? | Same \(P\)? | Same \(J\)? | Total pairs | Connected after C | Disconnected after C |
+|---|---|---|---:|---:|---:|
+| No | No | No | 572,501 | 569,993 | 2,508 |
+| No | Yes | No | 193,500 | 192,400 | 1,100 |
+| No | Yes | Yes | 329,900 | 328,707 | 1,193 |
+| Yes | No | No | 28,978 | 28,898 | 80 |
+| Yes | Yes | No | 36,142 | 36,142 | 0 |
+| **Total** | | | **1,161,021** | **1,156,140** | **4,881** |
+
+Thus the C relation resolves every collision in the same-parent/same-parent-target/different-mark class. It does not resolve collisions whose parent sources differ, or whose parent targets differ.
+
+### First residual collision after S/C/D
+
+A concrete \(n=8\) residual pair is:
+
+\[
+T=\{(1,2),(2,3),(3,4),(3,5),(3,6),(6,7),(6,8)\}.
+\]
+
+Left source:
+- matching intervals \((1,4),(2,5),(3,7),(6,8)\);
+- overlap tree \((0,2),(1,2),(2,3)\);
+- deleted mark \(J=(2,5)\);
+- parent source intervals \((1,3),(2,5),(4,6)\), parent tree \((0,1),(1,2)\);
+- parent target \(P=\{(1,2),(2,3),(2,4),(4,5),(4,6)\}\).
+
+Right source:
+- matching intervals \((1,4),(2,7),(3,5),(6,8)\);
+- overlap tree \((0,1),(0,2),(1,3)\);
+- deleted mark \(K=(6,8)\);
+- parent source intervals \((1,4),(2,6),(3,5)\), parent tree \((0,1),(0,2)\);
+- parent target \(Q=\{(1,2),(2,3),(3,4),(3,5),(3,6)\}\).
+
+The two incidences share \(T\), but \(p\ne q\) and \(P\ne Q\). They therefore have neither a D witness (no common child source), nor a C witness (no common parent source and parent target). Their block vertices remain in different S/C/D components.
+
+This gives a concrete next structural boundary: the residual collisions require a transition that changes parent source and/or parent target, or a separate capacity estimate. It does not show a Hall deficiency.
+
+## 8. Interpretation and next proof obligation
+
+The finite progression is now:
+
+1. Sibling-lift S moves within fixed \((p,J,P)\) blocks.
+2. Same-source D moves witnessed by a guarded deletion diamond and ordinary common-parent target \(U\in C(r)\).
+3. Cross-source C incidences between different one-leaf extensions of the same parent source, at the same parent target and child target.
+
+This three-relation complex connects every non-diamond collision at \(n=6\), and all but 4,881 at \(n=8\). The residual class is concentrated at changes of parent source or parent target.
+
+The next finite test should be **recursive parent projection of the 4,881 residual \(n=8\) collisions**: map each endpoint \((p,P)\) to its canonical-leaf parent incidence at order six, find shortest S/C/D paths in the order-six graph, and then test whether each such path has an actual source-preserving lift back to order eight. The parent-level path alone is not enough; every lifted step must retain the exact child source, mark, guarded inverse, and ordinary common-parent witness.
+
+No all-orders parent-fiber exchange lemma follows from connectivity at \(n=6\) or \(n=8\). PFEL, quotient Hall, all-orders multivalued-\(\pi\) Hall, and the weighted one-link inequality remain open.
+
+## 9. Follow-up reproduction record
+
+The C-incidence refinement is included in verifier commit \`c6bf2c83396cad395df3b403e8795df5840b691e\` and passed in workflow [45363512929](https://github.com/syncgravity/Singular-Boundary/actions/runs/45363512929), conclusion **SUCCESS**.
+
+Artifact: [14905217719](https://github.com/syncgravity/Singular-Boundary/actions/runs/45363512929/artifacts/14905217719)  
+Artifact ZIP SHA-256: \`a36f61cf8c1e5f0c3e321767f95b774a1cdf54cd13e365703eae99ecd674a421\`  
+Decoded JSON SHA-256: \`285991694ddd38ef7d75baf9d10301652d99317b112b69e3d211e7b532bbf8f1\`  
+Verifier blob SHA: \`be4876be9f1c0de7d5fa766fec7c4b3c9f578fc7\`  
+Workflow blob SHA: \`ab6dc9518864d8194fd38ae1d8761187795a5110\`
