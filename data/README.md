@@ -20,6 +20,8 @@ Thirteen Stage 27–35 archives and standalone outputs are stored under `data/ra
 
 The Stage 35 ZIP contains measurement/continuation code rather than an ensemble result archive. The separately included `stage35_seed101_samefield.npz` is only a same-field diagnostic, not an independent-chain ensemble. These files are preserved as historical research evidence; inclusion does not certify the helical operator, spectroscopy results, or a mass claim.
 
+A convenience bundle, `data/raw/helical-spectroscopy-stage27-35-2026-11-24/helical-spectroscopy-stage27-35-2026-11-24.zip`, contains exactly those 13 files. The individual LFS objects remain in place. The bundle hash and size are recorded as a separate row in the dated intake manifest.
+
 ## Still unavailable in this intake
 
 - `ASSET_INDEX.csv` and `ORIGIN.csv` are not present in the local project trees inspected for this intake. The missing index has not been reconstructed or substituted.
