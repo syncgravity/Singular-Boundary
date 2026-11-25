@@ -24,6 +24,8 @@ The original Stage 33 output archive already contains the production measurement
 
 The convenience bundle, `data/raw/helical-spectroscopy-stage27-35-2026-11-24/helical-spectroscopy-stage27-35-2026-11-24.zip`, now contains the original 13 files plus the supplemental Stage 35 partial-chain archive. The individual LFS objects remain in place. The bundle hash and size are recorded as a separate row in the dated intake manifest.
 
+The supplemental archive and updated convenience bundle were fetched from branch commit `600f316e` in a fresh clone on 2026-11-25. Their byte counts and SHA-256 values matched the intake manifest; clean-checkout verification is recorded there.
+
 ## Still unavailable in this intake
 
 - `ASSET_INDEX.csv` and `ORIGIN.csv` are not present in the local project trees inspected for this intake. The missing index has not been reconstructed or substituted.
